@@ -111,8 +111,9 @@
 		<dependency>
 			<groupId>org.xml-cml</groupId>
 			<artifactId>html</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<version>0.2-SNAPSHOT</version>
 		</dependency>
+		
 		<!--  to avoid Xerces Hell? 
 		http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
 		 -->
