@@ -1,0 +1,166 @@
+    // format
+    <meta name="dc.format" content="text/html" />
+    // language
+    <meta name="dc.language" content="en" />
+    // volume
+    <meta name="prism.volume" content="2014" />
+    // issue
+    <meta name="prism.number" content="" />
+    // start page
+    <meta name="prism.startingPage" content="" />
+
+// urls
+    <meta name="citation_fulltext_html_url" content="http://www.hindawi.com/journals/ija/2014/801626/" />
+    <meta name="citation_pdf_url"
+      content="http://downloads.hindawi.com/journals/ija/2014/801626.pdf" />
+    <meta name="citation_abstract_html_url" content="http://www.hindawi.com/journals/ija/2014/801626/abs/" />
+    // publisher
+    <meta name="citation_publisher" content="Hindawi Publishing Corporation" />
+    <meta name="dc.publisher" content="Hindawi Publishing Corporation" />
+    <meta name="Author" content="Hindawi Publishing Corporation" />
+
+    // journal description
+    <meta name="Description"
+      content="International Journal of Agronomy is a peer-reviewed, open access journal that publishes original research articles as well as review articles in all areas of agronomy." />
+    // issn
+    <meta name="citation_issn" content="1687-8159" />
+    <meta name="prism.issn" content="1687-8159" />
+// ===
+              // journal
+    <meta name="prism.publicationName" content="International Journal of Agronomy" />
+    <meta name="dc.source" content="International Journal of Agronomy" />
+    <meta name="citation_journal_title" content="International Journal of Agronomy" />
+    // authors
+    <meta name="citation_authors"
+      content="Ali, Muaid S.; Sutradhar, Apurba; Edano, Ma Lourdes; Edwards, Jeffrey T.; Girma, Kefyalew" />
+    <meta name="dc.creator" content="Ali, Muaid S." /> ... etc
+    <meta name="dc.creator" content="Girma, Kefyalew" />
+      // title
+    <meta name="citation_title"
+      content="Response of Winter Wheat Grain Yield and Phosphorus Uptake to Foliar Phosphite Fertilization" />
+    <meta name="dc.title"
+      content="Response of Winter Wheat Grain Yield and Phosphorus Uptake to Foliar Phosphite Fertilization" />
+      // volume
+    <meta name="citation_volume" content="2014" />
+    // date
+    <meta name="dcterms.issued" content="2014/05/08" />
+    <meta name="citation_date" content="2014/05/08" />
+    <meta name="dc.date" content="2014/05/08" />
+    <meta name="prism.publicationDate" content="2014/05/08" />
+    // year
+    <meta name="citation_year" content="2014" />
+    // doi
+    <meta name="citation_doi" content="10.1155/2014/801626" />
+    <meta name="dc.identifier" content="doi:10.1155/2014/801626" />
+    <meta name="prism.doi" content="10.1155/2014/801626" />
+    // abstract
+    <meta name="citation_abstract"
+      content="One of the major problems that potentially hinders the use of foliar fertilization as a tool to improve nutrient use efficiency is the lack of effective formulations. A phosphite based product, Nutri-phite (3&amp;#x25; N, 8.7&amp;#x25; P, and 5.8&amp;#x25; K) was used as model phosphite formulation for foliar application in winter wheat (Triticum aestivum L). Five field trials were established in the fall of 2009 and 2010 at Perkins, Perry, and Morrison, OK. Treatments encompassed the application of nitrogen (N) at 100 or 75&amp;#x25; of crop need and phosphorus at 100 (P 100&amp;#x25;) and 80&amp;#x25; (P 80&amp;#x25;) sufficiency with and without Nutri-phite. Nutri-phite was applied at one and/or two stages of wheat; GS 13 to 14 and GS 49 to 53 at the rate of 433 and 148&amp;#x2009;g&amp;#x2009;ha&amp;#x2212;1 P and N, respectively. Grain yield was increased by Nutri-phite treatments, especially at Morrison. Grain P concentration of plots treated with two applications of Nutri-phite ranged from 13 to 55&amp;#x25; more than the nontreated and standard NP received plots at Perkins in 2009/10 and Perry in 2010/11. Grain P uptake was increased due to application of Nutri-phite at Perkins in 2009/10 and Morrison and Perry in 2010/11. Combined over three year-locations, Nutri-phite increased grain P concentration by 11.6&amp;#x25;. The higher grain P concentration of plots treated with Nutri-phite compared to the other treatments clearly demonstrates its potential in improving P status of wheat grain." />
+    <meta name="dc.description"
+      content="One of the major problems that potentially hinders the use of foliar fertilization as a tool to improve nutrient use efficiency is the lack of effective formulations. A phosphite based product, Nutri-phite (3&amp;#x25; N, 8.7&amp;#x25; P, and 5.8&amp;#x25; K) was used as model phosphite formulation for foliar application in winter wheat (Triticum aestivum L). Five field trials were established in the fall of 2009 and 2010 at Perkins, Perry, and Morrison, OK. Treatments encompassed the application of nitrogen (N) at 100 or 75&amp;#x25; of crop need and phosphorus at 100 (P 100&amp;#x25;) and 80&amp;#x25; (P 80&amp;#x25;) sufficiency with and without Nutri-phite. Nutri-phite was applied at one and/or two stages of wheat; GS 13 to 14 and GS 49 to 53 at the rate of 433 and 148&amp;#x2009;g&amp;#x2009;ha&amp;#x2212;1 P and N, respectively. Grain yield was increased by Nutri-phite treatments, especially at Morrison. Grain P concentration of plots treated with two applications of Nutri-phite ranged from 13 to 55&amp;#x25; more than the nontreated and standard NP received plots at Perkins in 2009/10 and Perry in 2010/11. Grain P uptake was increased due to application of Nutri-phite at Perkins in 2009/10 and Morrison and Perry in 2010/11. Combined over three year-locations, Nutri-phite increased grain P concentration by 11.6&amp;#x25;. The higher grain P concentration of plots treated with Nutri-phite compared to the other treatments clearly demonstrates its potential in improving P status of wheat grain." />
+    // type
+    <meta name="dc.type" content="Research article" />
+    <meta name="prism.section" content="Research article" />
+      
+
+  </head>
+    language meta@dc.language
+    format meta@dc.format
+    volume meta@prism.volume
+    issue meta@prism.number
+    startPage meta@prism.startingPage
+    publisher meta[@name='dc.publisher' or @name='citation_publisher' or @name='Author']
+    issn meta[@name='citation_publisher' or @name='prism.issn']
+    journal meta[@name='dc.source' or @name='prism.publicationName' or @name='citation_journal_title']
+    author meta[@name='dc.creator' or @name='citation_authors'] |
+     body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+    title meta[@name='dc.title' or @name='citation_title'] |
+       body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+    volume meta[@name='citation_volume']
+    date meta[@name='dcterms.issued' or @name='citation_date' or @name='dc.date' or @name='prism.publicationDate']
+    year meta[@name='citation_year']
+    doi meta[@name='citation_doi' or @name='prism.doi' or @name='dc.identifier'] | 
+        body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+    abstract meta[@name='citation_abstract' or @name='dc.description']
+    type meta[@name='prism.section' or @name='dc.type'] |
+     body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+    address body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+    copyrightlicence body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/text()
+    licenceurl body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/a[@rel='licence']/@href()
+    
+  
+  <body>
+    <div id="container">
+      <div id="content">
+        <div class="middle_content">
+          <div>
+          
+          // journal
+            <pre>
+              International Journal of Agronomy
+              <br></br>
+          // volume
+          // year 
+          // ID  
+          // page count   
+              Volume 2014 (2014), Article ID 801626, 8 pages
+              <br></br>
+          // doi
+              <a href="http://dx.doi.org/10.1155/2014/801626">http://dx.doi.org/10.1155/2014/801626</a>
+            </pre>
+            // article type
+            <div class="article_type">Research Article</div>
+            // title
+            <h2>Response of Winter Wheat Grain Yield and Phosphorus Uptake to
+              Foliar Phosphite Fertilization</h2>
+              // authors
+            <div class="author_gp">
+              <a href="/40745167/">Muaid S. Ali</a>
+              ,
+              <sup>1</sup>
+               
+              <a href="/60494652/">Apurba Sutradhar</a>
+              ,
+              <sup>2</sup>
+               
+              <a href="/10235915/">Ma Lourdes Edano</a>
+              ,
+              <sup>2</sup>
+               
+              <a href="/94313941/">Jeffrey T. Edwards</a>
+              ,
+              <sup>2</sup>
+               and
+              <a href="/37690528/">Kefyalew Girma</a>
+              <sup>3</sup>
+            </div>
+            // addresses
+            <p>
+              <sup>1</sup>
+              Marshes Research Center, Thi-Qar University, Al-Nasiriyah,
+              Thi-Qar, Iraq
+              <br></br>
+              <sup>2</sup>
+              Department of Plant and Soil Sciences, Oklahoma State University,
+              Stillwater, OK 74078, USA
+              <br></br>
+              <sup>3</sup>
+              Department of Crop and Soil Sciences, Washington State
+              University, Prosser, WA 99350, USA
+            </p>
+            // publ dates
+            <p>Received 26 September 2013; Revised 13 March 2014; Accepted 18
+              March 2014; Published 8 May 2014</p>
+            <p>Academic Editor: Robert J. Kremer </p>
+            <div class="xml-content">
+            // copyright
+              <p>
+                Copyright © 2014 Muaid S. Ali et al. 
+            // licence
+            This is an open access
+                article distributed under the
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>
+                , which permits unrestricted use, distribution, and reproduction
+                in any medium, provided the original work is properly cited.
+              </p>
+            </div>

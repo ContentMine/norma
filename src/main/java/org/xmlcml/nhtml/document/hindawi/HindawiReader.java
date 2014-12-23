@@ -1,7 +1,7 @@
-package org.xmlcml.nhtml.journal.hindawi;
+package org.xmlcml.nhtml.document.hindawi;
 
 import org.xmlcml.nhtml.InputType;
-import org.xmlcml.nhtml.journal.DocumentReader;
+import org.xmlcml.nhtml.document.DocumentReader;
 
 public class HindawiReader extends DocumentReader {
 

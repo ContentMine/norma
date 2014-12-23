@@ -1,4 +1,4 @@
-package org.xmlcml.nhtml.journal;
+package org.xmlcml.nhtml.document;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

@@ -1,0 +1,122 @@
+
+<tagger name="hindawi">
+
+	<xsl:stylesheet version="2.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:h="http://www.w3.org/1999/xhtml">
+		<xsl:template match="/">
+			<xsl:apply-templates />
+		</xsl:template>
+
+		<!--Identity template, strips PIs and comments -->
+		<xsl:template match="@*|*|text()">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|*|text()" />
+			</xsl:copy>
+		</xsl:template>
+
+		<!-- strip whitespace -->
+		<xsl:template match="text()[normalize-space(.)='']"></xsl:template>
+
+		<!-- non-content tags -->
+		<xsl:template match="h:link | h:script | h:style | h:input | h:object" />
+		<xsl:template
+			match="h:div[@id='site_head' or @id='dvLinks' or @id='banner' 
+      or @id='journal_navigation' or @id='left_column' or @class='lock' or @class='right_column_actions'
+      or @class='footer_space' or @class='footer'
+      ]" />
+
+		<!-- SVG -->
+		<xsl:template match="svg:*">
+			<svg:svg>MATH</svg:svg>
+		</xsl:template>
+
+		<!-- one level of grouping applied to "xml-content" -->
+		<xsl:template match="h:div[@class='xml-content']">
+			<h:div class="xml-content">
+				<xsl:for-each-group select="h:*"
+					group-starting-with="h:h4">
+					<h:section title="{self::h:h4}">
+						<xsl:for-each select="current-group()">
+							<xsl:copy>
+								<xsl:apply-templates select="@*|*|text()" />
+							</xsl:copy>
+						</xsl:for-each>
+					</h:section>
+				</xsl:for-each-group>
+			</h:div>
+		</xsl:template>
+
+	</xsl:stylesheet>
+
+	<tagList>
+		<tag name="abstract">//*[local-name()='abstract']</tag>
+		<!-- <h4 id="sec1">1. Introduction </h4> -->
+		<tag name="background">//*[local-name()='h4' and contains(.,'Introduction')]
+		</tag>
+		<!-- these need editing -->
+		<tag name="results">//*[local-name()='h4' and contains(., 'Results')]
+		</tag>
+		<tag name="discussion">//*[local-name()='h4' and contains(., 'Discussion')]</tag>
+		<tag name="additionfiles">//*[local-name()='h4' and contains(., 'Supporting Information')]
+		</tag>
+		<tag name="methods">//*[local-name()='h4' and and contains(., 'Materials and Methods')]
+		</tag>
+		<tag name="acknowledge">//*[local-name()='ack']</tag>
+		<tag name="references">//*[local-name()='ref-list']</tag>
+		<tag name="conclusion"> .='Conclusion'</tag>
+		<tag name="competing">//*[local-name()='fn' and @fn-type='conflict']
+		</tag>
+		<tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']
+		</tag>
+		<tag name="figure">//*[local-name()='fig']/*[local-name()='caption']
+		</tag> 
+	</tagList>
+	<metadataList>
+		<metadata name="language">meta[@name='@dc.language']/@content</metadata>
+		<metadata name="format">meta[@name='@dc.format']/@content</metadata>
+		<metadata name="volume">meta[@name='@prism.volume']/@content</metadata>
+		<metadata name="issue">meta[@name='@prism.number']/@content</metadata>
+		<metadata name="startPage">meta[@name='@prism.startingPage']/@content</metadata>
+		<metadata name="publisher">meta[@name='dc.publisher']/@content</metadata>
+		<metadata name="publisher">meta[@name='citation_publisher']/@content</metadata>
+		<metadata name="publisher">meta[@name='Author']/@content</metadata>
+		<metadata name="issn">meta[@name='citation_publisher']/@content</metadata>
+		<metadata name="issn">meta[@name='prism.issn']/@content</metadata>
+		<metadata name="journal">meta[@name='dc.source']/@content</metadata>
+		<metadata name="journal">meta[@name='prism.publicationName']/@content</metadata>
+		<metadata name="journal">meta[@name='citation_journal_title']/@content
+		</metadata>
+		<metadata name="author">meta[@name='dc.creator']/@content</metadata>
+		<metadata name="authors">meta[@name='citation_authors']/@content</metadata>
+		<metadata name="author">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+		</metadata>
+		<metadata name="title">meta[@name='dc.title']/@content</metadata>
+		<metadata name="title">meta[@name='citation_title']/@content</metadata>
+		<metadata name="title">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+		</metadata>
+		<metadata name="volume">meta[@name='citation_volume']/@content</metadata>
+		<metadata name="date">meta[@name='dcterms.issued']/@content</metadata>
+		<metadata name="date">meta[@name='citation_date']/@content</metadata>
+		<metadata name="date">meta[@name='dc.date']/@content</metadata>
+		<metadata name="date">meta[@name='prism.publicationDate']/@content</metadata>
+		<metadata name="year">meta[@name='citation_year']/@content</metadata>
+		<metadata name="doi">meta[@name='citation_doi']/@content</metadata>
+		<metadata name="doi">meta[@name='prism.doi']/@content</metadata>
+		<metadata name="doi">meta[@name='dc.identifier']/@content</metadata>
+		<metadata name="doi">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+		</metadata>
+		<metadata name="abstract">meta[@name='citation_abstract']/@content</metadata>
+		<metadata name="abstract">meta[@name='dc.description']/@content</metadata>
+		<metadata name="type">meta[@name='prism.section']/@content</metadata>
+		<metadata name="type">meta[@name='dc.type']/@content</metadata>
+		<metadata name="type">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+		</metadata>
+		<metadata name="address">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+		</metadata>
+		<metadata name="copyrightlicence">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/text()
+		</metadata>
+		<metadata name="licenceurl">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/a[@rel='licence']/@href()
+		</metadata>
+	</metadataList>
+</tagger>

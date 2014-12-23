@@ -113,7 +113,11 @@
 			<artifactId>html</artifactId>
 			<version>0.2-SNAPSHOT</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+ 			<version>9.6.0-3</version>
+		</dependency>		
 		<!--  to avoid Xerces Hell? 
 		http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
 		 -->
