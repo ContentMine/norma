@@ -17,7 +17,7 @@ public class TaggerElement extends AbstractTElement {
 		super(TAG);
 	}
 
-	public MetadataListElement getMetadataListElement() {
+	public AbstractTElement getMetadataListElement() {
 		List<Element> elements = XMLUtil.getQueryElements(this, "./*[local-name()='"+MetadataListElement.TAG+"']");
 		return elements.size() != 1 ? null : (MetadataListElement) elements.get(0);
 	}

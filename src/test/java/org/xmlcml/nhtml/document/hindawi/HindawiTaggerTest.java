@@ -14,16 +14,18 @@ import nu.xom.Element;
 
 import org.junit.Test;
 import org.xmlcml.nhtml.Fixtures;
+import org.xmlcml.nhtml.tagger.AbstractTElement;
 import org.xmlcml.nhtml.tagger.MetadataElement;
 import org.xmlcml.nhtml.tagger.TagElement;
 import org.xmlcml.nhtml.tagger.hindawi.HindawiTagger;
+import org.xmlcml.xml.XMLUtil;
 
 public class HindawiTaggerTest {
 
 	@Test
 	public void testMetadataDefinitions() {
 		HindawiTagger hindawiTagger = new HindawiTagger();
-		List<MetadataElement> metadataElements = hindawiTagger.getMetadataElements();
+		List<MetadataElement> metadataElements = hindawiTagger.getMetadataDefinitions();
 		Assert.assertEquals("metadata", 37, metadataElements.size());
 	}
 	
@@ -53,5 +55,14 @@ public class HindawiTaggerTest {
     	transformer.transform(new StreamSource(Fixtures.F507405_XML),  
     		new StreamResult(new FileOutputStream(new File(saxonDir, "groupTest.xml"))));
 
+	}
+	
+	@Test
+	public void testMetadataExtraction() throws Exception {
+		HindawiTagger hindawiTagger = new HindawiTagger();
+		AbstractTElement metadataElementList = hindawiTagger.extractMetadataElements(Fixtures.F507405_XML);
+		new File("target/hindawi/").mkdirs();
+		XMLUtil.debug(metadataElementList, new FileOutputStream("target/hindawi/metadata.xml"), 1);
+		Assert.assertEquals("metadata", 16, metadataElementList.size());
 	}
 }

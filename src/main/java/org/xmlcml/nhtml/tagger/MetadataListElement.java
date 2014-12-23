@@ -1,13 +1,11 @@
 package org.xmlcml.nhtml.tagger;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 import nu.xom.Element;
 
 import org.apache.log4j.Logger;
-import org.xmlcml.nhtml.tagger.DocumentTagger.InputType;
 import org.xmlcml.xml.XMLUtil;
 
 public class MetadataListElement extends AbstractTElement {
@@ -36,13 +34,5 @@ public class MetadataListElement extends AbstractTElement {
 		return metadataList;
 	}
 	
-//	public List<String> getAllTagNames() {
-//		List<String> allTagNames = new ArrayList<String>();
-//		for (TagElement tagElement : this.getTagElements()) {
-//			allTagNames.add(tagElement.getName());
-//		}
-//		return allTagNames;
-//	}
-
 
 }

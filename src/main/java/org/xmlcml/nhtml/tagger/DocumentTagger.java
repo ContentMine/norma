@@ -1,15 +1,22 @@
 package org.xmlcml.nhtml.tagger;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import nu.xom.Attribute;
+import nu.xom.Builder;
+import nu.xom.Document;
 import nu.xom.Element;
+import nu.xom.Node;
 
 import org.apache.log4j.Logger;
+import org.xmlcml.html.util.HtmlUtil;
 import org.xmlcml.xml.XMLUtil;
 
 /** reads a set of tag definitions and uses them to tag an Element and later search it.
@@ -85,13 +92,14 @@ public class DocumentTagger {
 	
 	private List<String> tagNames;
 	private List<TagElement> tagElementList;
-	private List<MetadataElement> metadataElementList;
+	private List<MetadataElement> metadataDefinitions;
 	private TaggerElement taggerElement;
 
 	private InputType type;
 	private List<Element> styleSheetList;
-	private MetadataListElement metadataListElement;
+	private AbstractTElement metadataListElement;
 	private TagListElement tagListElement;
+	private Map<String, String> metadataByName;
 	
 	protected DocumentTagger() {
 	}
@@ -162,24 +170,20 @@ public class DocumentTagger {
 		return taggerElement.getAttributeValue(NAME);
 	}
 	
-	public List<MetadataElement> getMetadataList() {
-		return null;
-	}
-	
 	protected String getXpathForTag(String tagName) {
 		TagElement tagElement = getTagWithName(tagName);
 		return (tagElement == null) ? null : tagElement.getXPath();
 	}
 
-	public List<MetadataElement> getMetadataElements() {
-		if (metadataElementList == null) {
-			metadataElementList = new ArrayList<MetadataElement>();
+	public List<MetadataElement> getMetadataDefinitions() {
+		if (metadataDefinitions == null) {
+			metadataDefinitions = new ArrayList<MetadataElement>();
 			List<Element> tagElements = XMLUtil.getQueryElements(metadataListElement, "*[local-name()='"+MetadataElement.TAG+"']");
 			for (Element tagElement : tagElements) {
-				metadataElementList.add((MetadataElement)tagElement);
+				metadataDefinitions.add((MetadataElement)tagElement);
 			}
 		}
-		return metadataElementList;
+		return metadataDefinitions;
 	}
 
 	public List<Element> getStyleSheetElements() {
@@ -254,6 +258,33 @@ public class DocumentTagger {
 
 	public void debug(String msg) {
 		XMLUtil.debug(taggerElement, msg);
+	}
+
+	public AbstractTElement extractMetadataElements(File file) throws Exception {
+		Document doc = new Builder().build(new FileInputStream(file));
+		return doc == null ? new MetadataListElement() : extractMetadataElements(doc.getRootElement());
+	}
+
+	private MetadataListElement extractMetadataElements(Element element) {
+		getMetadataDefinitions();
+		metadataByName = new HashMap<String, String>();
+		MetadataListElement metadataListElement = new MetadataListElement();
+		for (MetadataElement metadataDefinition : metadataDefinitions) {
+			String name = metadataDefinition.getName();
+			String oldValue = metadataByName.get(name);
+			if (oldValue == null) {
+				String xpath = metadataDefinition.getXPath();
+				List<String> valueList = HtmlUtil.getQueryHtmlStrings(element, xpath);
+				if (valueList.size() > 0) {
+					String newValue = valueList.get(0);
+					metadataByName.put(name,  newValue);
+					MetadataElement metadataElement = new MetadataElement(name, newValue);
+					metadataListElement.appendChild(metadataElement);
+				}
+			}
+		}
+		
+		return metadataListElement;
 	}
 
 }
