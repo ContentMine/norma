@@ -1,10 +1,11 @@
-package org.xmlcml.nhtml.journal.hindawi;
+package org.xmlcml.nhtml.document.hindawi;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.nhtml.InputType;
 import org.xmlcml.nhtml.RawInput;
-import org.xmlcml.nhtml.journal.DocumentReader;
+import org.xmlcml.nhtml.document.DocumentReader;
+import org.xmlcml.nhtml.document.hindawi.HindawiReader;
 
 public class URLReaderTest {
 

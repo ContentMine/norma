@@ -1,13 +1,14 @@
-package org.xmlcml.nhtml.journal.hindawi;
+package org.xmlcml.nhtml.document.hindawi;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.nhtml.InputType;
-import org.xmlcml.nhtml.journal.DocumentReader;
+import org.xmlcml.nhtml.document.DocumentReader;
 import org.xmlcml.xml.XMLUtil;
 
 public class HtmlReadTest {
@@ -19,8 +20,11 @@ public class HtmlReadTest {
 		hindawiReader.readURL(urlString);
 		HtmlElement rawHtml = hindawiReader.getOrCreateRawXHtml();
 		Assert.assertNotNull("raw input", rawHtml);
-		File file = new File("target/htmlsvg/");
-		file.mkdirs();
-		XMLUtil.debug(rawHtml, new FileOutputStream(new File(file, "507405.xml")), 1);
+		File file = new File("target/htmlsvg/507405.xml");
+		FileUtils.touch(file);
+		XMLUtil.debug(rawHtml, new FileOutputStream(file), 1);
+		long size = FileUtils.sizeOf(file);
+		Assert.assertTrue("size "+size, (207900 < size) && (size < 207940));
+		
 	}
 }
