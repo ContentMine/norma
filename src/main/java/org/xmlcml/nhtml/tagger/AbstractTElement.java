@@ -75,6 +75,10 @@ public abstract class AbstractTElement extends Element {
 			}
 		}
 	}
+
+	public int size() {
+		return this.getChildElements().size();
+	}
 	
 	
 

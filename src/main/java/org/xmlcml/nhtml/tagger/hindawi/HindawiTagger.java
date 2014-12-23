@@ -1,11 +1,15 @@
 package org.xmlcml.nhtml.tagger.hindawi;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.List;
+
+import nu.xom.Builder;
+import nu.xom.Document;
+import nu.xom.Element;
 
 import org.apache.log4j.Logger;
 import org.xmlcml.nhtml.tagger.DocumentTagger;
-import org.xmlcml.nhtml.tagger.MetadataElement;
 
 public class HindawiTagger extends DocumentTagger {
 
@@ -22,6 +26,7 @@ public class HindawiTagger extends DocumentTagger {
 	public static String getTaggerName() {
 		return HINDAWI;
 	}
+
 
 
 }

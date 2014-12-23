@@ -73,50 +73,51 @@
 		</tag> 
 	</tagList>
 	<metadataList>
-		<metadata name="language">meta[@name='@dc.language']/@content</metadata>
-		<metadata name="format">meta[@name='@dc.format']/@content</metadata>
-		<metadata name="volume">meta[@name='@prism.volume']/@content</metadata>
-		<metadata name="issue">meta[@name='@prism.number']/@content</metadata>
-		<metadata name="startPage">meta[@name='@prism.startingPage']/@content</metadata>
-		<metadata name="publisher">meta[@name='dc.publisher']/@content</metadata>
-		<metadata name="publisher">meta[@name='citation_publisher']/@content</metadata>
-		<metadata name="publisher">meta[@name='Author']/@content</metadata>
-		<metadata name="issn">meta[@name='citation_publisher']/@content</metadata>
-		<metadata name="issn">meta[@name='prism.issn']/@content</metadata>
-		<metadata name="journal">meta[@name='dc.source']/@content</metadata>
-		<metadata name="journal">meta[@name='prism.publicationName']/@content</metadata>
-		<metadata name="journal">meta[@name='citation_journal_title']/@content
+		<metadata name="doi">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_doi']/@content</metadata>
+		<metadata name="language">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.language']/@content</metadata>
+		<metadata name="format">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.format']/@content</metadata>
+		<metadata name="volume">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.volume']/@content</metadata>
+		<metadata name="issue">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.number']/@content</metadata>
+		<metadata name="startPage">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.startingPage']/@content</metadata>
+		<metadata name="publisher">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.publisher']/@content</metadata>
+		<metadata name="publisher">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_publisher']/@content</metadata>
+		<metadata name="publisher">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='Author']/@content</metadata>
+		<metadata name="issn">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_publisher']/@content</metadata>
+		<metadata name="issn">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.issn']/@content</metadata>
+		<metadata name="journal">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.source']/@content</metadata>
+		<metadata name="journal">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.publicationName']/@content</metadata>
+		<metadata name="journal">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_journal_title']/@content
 		</metadata>
-		<metadata name="author">meta[@name='dc.creator']/@content</metadata>
-		<metadata name="authors">meta[@name='citation_authors']/@content</metadata>
-		<metadata name="author">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+		<metadata name="author">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.creator']/@content</metadata>
+		<metadata name="authors">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_authors']/@content</metadata>
+		<metadata name="author">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
 		</metadata>
-		<metadata name="title">meta[@name='dc.title']/@content</metadata>
-		<metadata name="title">meta[@name='citation_title']/@content</metadata>
-		<metadata name="title">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+		<metadata name="title">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.title']/@content</metadata>
+		<metadata name="title">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_title']/@content</metadata>
+		<metadata name="title">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
 		</metadata>
-		<metadata name="volume">meta[@name='citation_volume']/@content</metadata>
-		<metadata name="date">meta[@name='dcterms.issued']/@content</metadata>
-		<metadata name="date">meta[@name='citation_date']/@content</metadata>
-		<metadata name="date">meta[@name='dc.date']/@content</metadata>
-		<metadata name="date">meta[@name='prism.publicationDate']/@content</metadata>
-		<metadata name="year">meta[@name='citation_year']/@content</metadata>
-		<metadata name="doi">meta[@name='citation_doi']/@content</metadata>
-		<metadata name="doi">meta[@name='prism.doi']/@content</metadata>
-		<metadata name="doi">meta[@name='dc.identifier']/@content</metadata>
-		<metadata name="doi">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+		<metadata name="volume">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_volume']/@content</metadata>
+		<metadata name="date">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dcterms.issued']/@content</metadata>
+		<metadata name="date">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_date']/@content</metadata>
+		<metadata name="date">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.date']/@content</metadata>
+		<metadata name="date">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.publicationDate']/@content</metadata>
+		<metadata name="year">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_year']/@content</metadata>
+		<metadata name="doi">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_doi']/@content</metadata>
+		<metadata name="doi">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.doi']/@content</metadata>
+		<metadata name="doi">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.identifier']/@content</metadata>
+		<metadata name="doi">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
 		</metadata>
-		<metadata name="abstract">meta[@name='citation_abstract']/@content</metadata>
-		<metadata name="abstract">meta[@name='dc.description']/@content</metadata>
-		<metadata name="type">meta[@name='prism.section']/@content</metadata>
-		<metadata name="type">meta[@name='dc.type']/@content</metadata>
-		<metadata name="type">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+		<metadata name="abstract">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='citation_abstract']/@content</metadata>
+		<metadata name="abstract">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.description']/@content</metadata>
+		<metadata name="type">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='prism.section']/@content</metadata>
+		<metadata name="type">/*[local-name()='html']/*[local-name()='head']/*[local-name()='meta' and @name='dc.type']/@content</metadata>
+		<metadata name="type">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
 		</metadata>
-		<metadata name="address">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+		<metadata name="address">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
 		</metadata>
-		<metadata name="copyrightlicence">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/text()
+		<metadata name="copyrightlicence">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/text()
 		</metadata>
-		<metadata name="licenceurl">body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']p/a[@rel='licence']/@href()
+		<metadata name="licenceurl">/*[local-name()='html']/*[local-name()='body']/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/a[@rel='licence']/@href
 		</metadata>
 	</metadataList>
 </tagger>
