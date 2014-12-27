@@ -1,5 +1,7 @@
 package org.xmlcml.nhtml.tagger;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 public class TagElement extends AbstractTElement {
@@ -9,6 +11,8 @@ public class TagElement extends AbstractTElement {
 	public static final String TAG_NAME = "name";
 	public static final String TAG = "tag";
 
+	public String expandedXPath;
+	
 	public TagElement() {
 		super(TAG);
 	}
@@ -19,5 +23,16 @@ public class TagElement extends AbstractTElement {
 
 	public String getXPath() {
 		return this.getValue();
+	}
+
+	public void expandVariablesInValue(List<VariableElement> variableElementList) {
+		if (expandedXPath == null) {
+			String value = this.getXPath();
+			expandedXPath = VariableElement.expandRefsInValue(variableElementList, value);
+		}
+	}
+	
+	public String getExpandedXPath() {
+		return expandedXPath;
 	}
 }

@@ -26,28 +26,11 @@ import org.xmlcml.xml.XMLUtil;
  */
 public class DocumentTagger {
 
-	/** prefix for ContentMine tags.
-	 * 
-	 */
-	private static final String CM_PREFIX = "cm_";
-	private static final String CM_SUFFIX = "_";
-	private static Pattern CM_TAG_PATTERN = Pattern.compile(CM_PREFIX+"([^\\s]+)"+CM_SUFFIX);
-
-
-	private static final String CLASS = "class";
-
-	public enum InputType {
-		HTML,
-		SVG,
-		XML;
-	}
-
 	private final static Logger LOG = Logger.getLogger(DocumentTagger.class);
 
 	
 	protected static final File NHTML_DIR = new File("src/main/resources/org/xmlcml/nhtml");
 	
-	public static final String ATTRIBUTE_TAG= "tag";
 	public static final String NAME = "name";
 
 	private static final String OR = " | ";
@@ -89,17 +72,20 @@ public class DocumentTagger {
 
 	public static final String TAG = "tagger";
 	private static final String STYLESHEET = "stylesheet";
+	private static final String ADDED_TAG = "tag";
 	
 	private List<String> tagNames;
 	private List<TagElement> tagElementList;
 	private List<MetadataElement> metadataDefinitions;
 	private TaggerElement taggerElement;
 
-	private InputType type;
 	private List<Element> styleSheetList;
 	private AbstractTElement metadataListElement;
 	private TagListElement tagListElement;
 	private Map<String, String> metadataByName;
+
+
+	private List<VariableElement> variableElementList;
 	
 	protected DocumentTagger() {
 	}
@@ -113,6 +99,7 @@ public class DocumentTagger {
 		taggerElement = (TaggerElement) AbstractTElement.createElement(taggerFile);
 		metadataListElement = taggerElement.getMetadataListElement();
 		tagListElement = taggerElement.getTagListElement();
+		this.expandVariablesInTags();
 	}
 
 	protected TaggerElement getTaggerElement() {
@@ -128,34 +115,16 @@ public class DocumentTagger {
 	 * @param element
 	 */
 	static void addTag(String tagName, Element element) {
-		Attribute attribute = element.getAttribute(CLASS);
+		Attribute attribute = element.getAttribute(ADDED_TAG);
 		if (attribute == null) {
-			attribute = new Attribute(CLASS, tagName);
-		} else {
-			String value = attribute.getValue().trim();
-			if (value.length() > 0) {
-				value += " ";
-			}
-			value += createTagValue(tagName);
-			attribute = new Attribute(CLASS, value);
+			attribute = new Attribute(ADDED_TAG, tagName);
+			element.addAttribute(attribute);
 		}
-		element.addAttribute(attribute);
 	}
 	
 	static String getTagName(Element element) {
-		String tag = null;
-		String attValue = element.getAttributeValue(CLASS);
-		if (attValue != null) {
-			Matcher matcher = CM_TAG_PATTERN.matcher(attValue);
-			if (matcher.matches()) {
-				tag = matcher.group(1);
-			}
-		}
+		String tag = element.getAttributeValue(ADDED_TAG);
 		return tag;
-	}
-
-	public static String createTagValue(String tagName) {
-		return CM_PREFIX+tagName+CM_SUFFIX;
 	}
 
 	public List<Element> findSectionsFromTagDefinitions(Element elementToSearch, String tagName) {
@@ -171,8 +140,17 @@ public class DocumentTagger {
 	}
 	
 	protected String getXpathForTag(String tagName) {
+		LOG.trace("tagName "+tagName);
 		TagElement tagElement = getTagWithName(tagName);
-		return (tagElement == null) ? null : tagElement.getXPath();
+		String xpath = (tagElement == null) ? null : tagElement.getXPath();
+		LOG.trace("xpath "+xpath);
+		return xpath;
+	}
+
+	protected String getExpandedXpathForTag(String tagName) {
+		TagElement tagElement = getTagWithName(tagName);
+		String xpath = (tagElement == null) ? null : tagElement.getExpandedXPath();
+		return xpath;
 	}
 
 	public List<MetadataElement> getMetadataDefinitions() {
@@ -212,7 +190,7 @@ public class DocumentTagger {
 	 * @return
 	 */
 	public TagElement getTagWithName(String tagName) {
-		List<Element> tagElements = XMLUtil.getQueryElements(taggerElement, "*[local-name()='"+TagElement.TAG+"' and @name='"+tagName+"']");
+		List<Element> tagElements = XMLUtil.getQueryElements(tagListElement, "*[local-name()='"+TagElement.TAG+"' and @name='"+tagName+"']");
 		return tagElements.size() != 1 ? null : (TagElement) tagElements.get(0);
 	}
 	
@@ -222,15 +200,17 @@ public class DocumentTagger {
 			tagNames = new ArrayList<String>();
 			for (Element tagElement : tagElements) {
 				String tagName = ((TagElement)tagElement).getName();
+				LOG.trace("tag: "+tagName);
 				tagNames.add(tagName);
 			}
 		}
 		return tagNames;
 	}
 
-	public void addTagsToSections(Element elementToTag) {
+	public Element addTagsToSections(Element elementToTag) {
 		getTagNames();
 		int count = 0;
+		LOG.debug("tag names "+tagNames);
 		for (String tagName : tagNames) {
 			List<Element> sections = findSectionsFromMatchingTags(elementToTag, tagName);
 			for (Element section : sections) {
@@ -239,6 +219,7 @@ public class DocumentTagger {
 			}
 		}
 		LOG.debug("tagged "+count+" sections");
+		return elementToTag;
 	}
 
 	/** query with a single section name.
@@ -248,11 +229,12 @@ public class DocumentTagger {
 	 * @return list of sections
 	 */
 	public List<Element> findSectionsFromMatchingTags(Element element, String tagName) {
-		String xpath = getXpathForTag(tagName);
+		String xpath = getExpandedXpathForTag(tagName);
 		if (xpath == null) {
 			throw new RuntimeException("Cannot find xpath definition for: "+tagName);
 		}
 		List<Element> elements = XMLUtil.getQueryElements(element, xpath);
+		LOG.trace("taggables: "+elements.size());
 		return elements;
 	}
 
@@ -285,6 +267,38 @@ public class DocumentTagger {
 		}
 		
 		return metadataListElement;
+	}
+
+	public Element addTagsToSections(File file) throws Exception {
+		Document doc = new Builder().build(new FileInputStream(file));
+		LOG.debug("tagging "+file);
+		return doc == null ? new MetadataListElement() : addTagsToSections(doc.getRootElement());
+	}
+
+	public List<VariableElement> getOrCreateVariableElementList() {
+		if (variableElementList == null) {
+			List<Element> variableElements = XMLUtil.getQueryElements(tagListElement, "*[local-name()='"+VariableElement.TAG+"']");
+			variableElementList = new ArrayList<VariableElement>();
+			for (Element variableElement : variableElements) {
+				variableElementList.add((VariableElement) variableElement);
+			}
+		}
+		return variableElementList;
+	}
+
+	public void expandVariablesInVariables() {
+		getOrCreateVariableElementList();
+		for (VariableElement variableElement : variableElementList) {
+			variableElement.expandVariablesInValue(variableElementList);
+		}
+	}
+
+	public void expandVariablesInTags() {
+		getTagElements();
+		expandVariablesInVariables();
+		for (TagElement tagElement : tagElementList) {
+			tagElement.expandVariablesInValue(variableElementList);
+		}
 	}
 
 }

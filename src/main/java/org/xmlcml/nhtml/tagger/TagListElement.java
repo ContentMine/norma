@@ -1,13 +1,11 @@
 package org.xmlcml.nhtml.tagger;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 import nu.xom.Element;
 
 import org.apache.log4j.Logger;
-import org.xmlcml.nhtml.tagger.DocumentTagger.InputType;
 import org.xmlcml.xml.XMLUtil;
 
 public class TagListElement extends AbstractTElement {

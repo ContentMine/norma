@@ -17,6 +17,10 @@ public class Fixtures {
 	
 	public final static File F507405_HTML = new File(Fixtures.TEST_HINDAWI_DIR, "507405.html");
 	public final static File F507405_XML = new File(Fixtures.TEST_HINDAWI_DIR, "507405.xml");
+	public final static File F507405_GROUPED_XHTML = new File(Fixtures.TEST_HINDAWI_DIR, "507405.grouped.html");
+	public final static File F247835_XML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.xml");
+	public final static File F247835_GROUPED_XHTML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.grouped.html");
+	public final static File F247835_TAGGED_XHTML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.tagged.xhtml");
 	
 	public final static File TEST_STYLE_DIR = new File(Fixtures.TEST_NHTML_DIR, "style");
 	public final static File XSLT2_TEST1_XML = new File(Fixtures.TEST_STYLE_DIR, "xslt2Test1.xml");
