@@ -44,6 +44,8 @@ public abstract class AbstractTElement extends Element {
 			newElement = new MetadataListElement();
 		} else if (tag.equals(StylesheetElement.TAG)) {
 			newElement = new StylesheetElement();
+		} else if (tag.equals(VariableElement.TAG)) {
+			newElement = new VariableElement();
 		} else {
 			throw new RuntimeException("unsupported tag element: "+tag);
 		}
