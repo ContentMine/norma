@@ -42,4 +42,27 @@
     </h:div>
   </xsl:template>
 
+<!-- not yet working
+  <xsl:template match="h:div[@class='xml-content']">
+    <h:div class="xml-content" >
+    <xsl:message>GROUPING</xsl:message>
+      <xsl:for-each-group select="h:*" group-starting-with="h:h4">
+        <h:section title="{self::h:h4}">
+          <xsl:for-each select="current-group()">
+			<xsl:for-each-group select="h:*" group-starting-with="h:h5">
+				<h:section title="{self::h:h5}">
+					<xsl:for-each select="current-group()">
+						<xsl:copy>
+							<xsl:apply-templates select="@*|*|text()" />
+						</xsl:copy>
+					</xsl:for-each>
+				</h:section>
+			</xsl:for-each-group>
+          </xsl:for-each> 
+        </h:section>
+      </xsl:for-each-group>
+    </h:div>
+  </xsl:template>
+-->
+
 </xsl:stylesheet>

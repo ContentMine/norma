@@ -1,9 +1,11 @@
 
-<tagger name="hindawi">
+<tagger name="nlm">
 
 	<xsl:stylesheet version="2.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
 		xmlns:h="http://www.w3.org/1999/xhtml">
+		
+		<!--  shouldn't be necessary -->
 		<xsl:template match="/">
 			<xsl:apply-templates />
 		</xsl:template>
@@ -15,65 +17,54 @@
 			</xsl:copy>
 		</xsl:template>
 
-		<!-- strip whitespace -->
-		<xsl:template match="text()[normalize-space(.)='']"></xsl:template>
-
-		<!-- non-content tags -->
-		<xsl:template match="h:link | h:script | h:style | h:input | h:object" />
-		<xsl:template
-			match="h:div[@id='site_head' or @id='dvLinks' or @id='banner' 
-      or @id='journal_navigation' or @id='left_column' or @class='lock' or @class='right_column_actions'
-      or @class='footer_space' or @class='footer'
-      ]" />
-
-		<!-- SVG -->
-		<xsl:template match="svg:*">
-			<svg:svg>MATH</svg:svg>
-		</xsl:template>
-
-<!--  NOT YET INTEGRATED -->
-		<!-- one level of grouping applied to "xml-content" -->
-		<xsl:template match="h:div[@class='xml-content']">
-			<h:div class="xml-content">
-				<xsl:for-each-group select="h:*" group-starting-with="h:h4">
-					<h:section title="{self::h:h4}">
-						<xsl:for-each select="current-group()">
-							<xsl:copy>
-								<xsl:apply-templates select="@*|*|text()" />
-							</xsl:copy>
-						</xsl:for-each>
-					</h:section>
-				</xsl:for-each-group>
-			</h:div>
-		</xsl:template>
 		
 	</xsl:stylesheet>
 
+<!--  NLM has no namespace?? -->
 	<tagList>
-	    <variable name="body">/h:html/h:body</variable>
-	    <variable name="middleContent">{$body}/h:div[@id='container']/h:div[@id='content']/h:div[@class='middle_content']</variable>
-	    <variable name="middleXmlContent">{$middleContent}/h:div/h:div[@class='xml-content']</variable>
+	    <variable name="article">article</variable>
+	    <variable name="front">{$article}/front</variable>
+	    <variable name="journal_meta">{$front}/journal-meta</variable>
+	    <variable name="article_meta">{$front}/article-meta</variable>
+	    <variable name="contrib_group">{$article_meta}/contrib-group</variable>
+	    <variable name="body">{$article}/body</variable>
+	    <variable name="back">{$article}/back</variable>
 
 <!-- uses Xpath 1.0, so cannot use regex matches(a,b,c) etc -->
-		<tag name="abstract">{$middleXmlContent}/h:section[@title='Abstract']</tag> <!--  checked -->
-		<tag name="copyright">{$middleXmlContent}/h:section/h:p[contains(.,'Copyright')]</tag> <!--  checked -->
-		<tag name="background">{$middleXmlContent}/h:section[contains(@title,'Introduction')]</tag> <!--  checked -->
-		<tag name="results">{$middleXmlContent}/h:section[contains(@title,'Results')]</tag> <!--  checked -->
-		<tag name="discussion">{$middleXmlContent}/h:section[contains(@title,'Discussion')]</tag> <!--  checked -->
-		<tag name="conclusion">{$middleXmlContent}/h:section[contains(@title,'Conclusions')]</tag> <!--  checked -->
-		<tag name="abbreviations">{$middleXmlContent}/h:section[contains(@title,'Abbreviations')]</tag> <!--  checked -->
-		<tag name="disclosure">{$middleXmlContent}/h:section[contains(@title,'Disclosure')]</tag> <!--  checked -->
-		<tag name="acknowledgments">{$middleXmlContent}/h:section[contains(@title,'Acknowledgments')]</tag> <!--  checked -->
-		<tag name="competing">{$middleXmlContent}/h:section[contains(@title,'Conflict of Interests')]</tag> <!--  checked -->
-		<tag name="references">{$middleContent}//h:section[contains(@title,'References')]</tag> <!--  checked -->
-		<tag name="methods">{$middleXmlContent}/h:section[contains(@title,'Materials and Methods')]</tag> <!--  checked -->
-		<tag name="table">{$middleXmlContent}//h:div[@class='fig' and starts-with(@id, 'tab')]/h:div[@class='groupcaption']</tag>
-		<tag name="figure">{$middleXmlContent}//*[@class='fig']/*[@class='groupcaption' and starts-with(.,'Figure ')]</tag> 
+		<tag name="journaltitle">{$journal_meta}/journal-title-group/journal-title</tag> <!--  ??? -->
+		<tag name="issn">{$journal_meta}/issn</tag> <!--  ??? -->
+		<tag name="doi">{$article_meta}/article-id[@pub-id-type='doi']</tag> <!--  ??? -->
+		<tag name="author">{$contrib_group}/contrib[@contrib-type='author']</tag> <!--  ??? -->
+		<tag name="abstract">{$article_meta}/abstract</tag> <!--  ??? -->
+		<tag name="license">{$article_meta}/permissions/license</tag> <!--  ??? -->
+		<tag name="copyright">{$article_meta}/notYetDone</tag> <!--  ??? -->
+		<tag name="funding_group">{$article_meta}/funding-group</tag> <!--  ??? -->
+		<tag name="page_counts">{$article_meta}/counts/page-count/@count</tag> <!--  ??? -->
+		<tag name="data_availability">{$article_meta}/custom-meta-group/custom-meta[@id='data-availability']</tag> <!--  ??? -->
+
+		<!--  more metadata from front could be added if required;  
+		 history of publication
+		 volume
+		 issue
+		 -->
+		
+		<tag name="background">{$body}/sec[title='Introduction']</tag> <!--  ??? -->
+<!--  results and discussions seem to overlap for PLoSONE -->
+		<tag name="results">{$body}/sec[title='Results and Discussion']</tag> <!--  ??? -->
+		<tag name="discussion">{$body}/sec[title='Results and Discussion']</tag> <!--  ??? -->
+		<tag name="conclusion">{$body}/sec[title='Conclusions']</tag> <!--  ??? -->
+		<tag name="abbreviations">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="disclosure">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="acknowledgments">{$back}/ack</tag> <!--  ??? -->
+		<tag name="competing">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="references">{$back}/ref-list</tag> <!--  ??? -->
+		<tag name="methods">{$body}/sec[title='Materials and Methods']</tag> <!--  ??? -->
+		
+		<tag name="table">{$body}//h:div[@class='fig' and starts-with(@id, 'tab')]/h:div[@class='groupcaption']</tag>
+		<tag name="figure">{$body}//*[@class='fig']/*[@class='groupcaption' and starts-with(.,'Figure ')]</tag> 
 		<!-- 
-		<tag name="additionfiles">//h:h4[contains(., 'Supporting Information')]
-		</tag>
-		<tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']
-		</tag>
+		<tag name="additionfiles">//h:h4[contains(., 'Supporting Information')]</tag>
+		<tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']</tag>
 		-->
 	</tagList>
 	<metadataList>
