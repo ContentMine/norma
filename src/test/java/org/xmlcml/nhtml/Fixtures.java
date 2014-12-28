@@ -21,7 +21,11 @@ public class Fixtures {
 	public final static File F247835_XML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.xml");
 	public final static File F247835_GROUPED_XHTML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.grouped.html");
 	public final static File F247835_TAGGED_XHTML = new File(Fixtures.TEST_HINDAWI_DIR, "247835.tagged.xhtml");
-	
+
+	public final static File TEST_PLOSONE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "plosone");
+	public final static File F0113556_XML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.xml");
+	public final static File F0113556_TAGGED_XML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.tagged.xml");
+
 	public final static File TEST_STYLE_DIR = new File(Fixtures.TEST_NHTML_DIR, "style");
 	public final static File XSLT2_TEST1_XML = new File(Fixtures.TEST_STYLE_DIR, "xslt2Test1.xml");
 	public final static File XSLT2_TEST1_XSL = new File(Fixtures.TEST_STYLE_DIR, "xslt2Test1.xsl");

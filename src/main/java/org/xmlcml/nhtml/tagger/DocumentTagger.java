@@ -6,14 +6,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
 import nu.xom.Document;
 import nu.xom.Element;
-import nu.xom.Node;
+import nu.xom.XPathContext;
 
 import org.apache.log4j.Logger;
 import org.xmlcml.html.util.HtmlUtil;
@@ -83,9 +81,9 @@ public class DocumentTagger {
 	private AbstractTElement metadataListElement;
 	private TagListElement tagListElement;
 	private Map<String, String> metadataByName;
-
-
 	private List<VariableElement> variableElementList;
+	
+	private XPathContext xPathContext;
 	
 	protected DocumentTagger() {
 	}
@@ -100,6 +98,11 @@ public class DocumentTagger {
 		metadataListElement = taggerElement.getMetadataListElement();
 		tagListElement = taggerElement.getTagListElement();
 		this.expandVariablesInTags();
+		setXpathContext(HtmlUtil.XHTML_XPATH);
+	}
+
+	private void setXpathContext(XPathContext xPathContext) {
+		this.xPathContext = xPathContext;
 	}
 
 	protected TaggerElement getTaggerElement() {
@@ -233,8 +236,9 @@ public class DocumentTagger {
 		if (xpath == null) {
 			throw new RuntimeException("Cannot find xpath definition for: "+tagName);
 		}
-		List<Element> elements = XMLUtil.getQueryElements(element, xpath);
-		LOG.trace("taggables: "+elements.size());
+		List<Element> elements = (xPathContext == null) ?
+			XMLUtil.getQueryElements(element, xpath) :
+			XMLUtil.getQueryElements(element, xpath, xPathContext);
 		return elements;
 	}
 
