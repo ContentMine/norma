@@ -5,15 +5,15 @@ import java.io.File;
 import org.apache.log4j.Logger;
 import org.xmlcml.nhtml.tagger.DocumentTagger;
 
-public class PlosoneTagger extends DocumentTagger {
+public class HTMLPlosoneTagger extends DocumentTagger {
 
-	private final static Logger LOG = Logger.getLogger(PlosoneTagger.class);
+	private final static Logger LOG = Logger.getLogger(HTMLPlosoneTagger.class);
 
 	public final static String PLOSONE = "plosone";
 	private static final File TAGGER_PLOSONE_DIR = new File(TAGGER_DIR, PLOSONE);
-	public static final File PLOSONE_TAGDEFINITIONS_FILE = new File(TAGGER_PLOSONE_DIR, "documentTagger.xml");
+	public static final File PLOSONE_TAGDEFINITIONS_FILE = new File(TAGGER_PLOSONE_DIR, "htmlTagger.xml");
 
-	public PlosoneTagger() {
+	public HTMLPlosoneTagger() {
 		super(PLOSONE_TAGDEFINITIONS_FILE);
 	}
 

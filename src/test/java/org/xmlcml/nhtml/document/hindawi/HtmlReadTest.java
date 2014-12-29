@@ -24,7 +24,7 @@ public class HtmlReadTest {
 		Assert.assertNotNull("raw input", rawHtml);
 		File file = new File("target/htmlsvg/507405.xml");
 		FileUtils.touch(file);
-		XMLUtil.debug(rawHtml, new FileOutputStream(file), 1);
+		XMLUtil.debug(rawHtml, new FileOutputStream(file), 0);
 		long size = FileUtils.sizeOf(file);
 		Assert.assertTrue("size "+size, /*(207900 < size) && */(size < 207940));
 	}

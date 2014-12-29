@@ -294,6 +294,7 @@ public class DocumentTagger {
 		getOrCreateVariableElementList();
 		for (VariableElement variableElement : variableElementList) {
 			variableElement.expandVariablesInValue(variableElementList);
+			LOG.debug(variableElement);
 		}
 	}
 

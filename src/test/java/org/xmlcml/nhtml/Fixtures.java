@@ -25,6 +25,8 @@ public class Fixtures {
 	public final static File TEST_PLOSONE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "plosone");
 	public final static File F0113556_XML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.xml");
 	public final static File F0113556_TAGGED_XML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.tagged.xml");
+	public final static File F0113556_HTML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.html");
+	public final static File F0113556_TAGGED_HTML = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556.tagged.html");
 
 	public final static File TEST_STYLE_DIR = new File(Fixtures.TEST_NHTML_DIR, "style");
 	public final static File XSLT2_TEST1_XML = new File(Fixtures.TEST_STYLE_DIR, "xslt2Test1.xml");
