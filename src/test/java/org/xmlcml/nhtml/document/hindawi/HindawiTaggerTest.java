@@ -90,7 +90,7 @@ public class HindawiTaggerTest {
 		DocumentTagger hindawiTagger = new HindawiTagger();
 		AbstractTElement metadataElementList = hindawiTagger.extractMetadataElements(Fixtures.F507405_XML);
 		new File("target/hindawi/").mkdirs();
-		XMLUtil.debug(metadataElementList, new FileOutputStream("target/hindawi/metadata.xml"), 1);
+		XMLUtil.debug(metadataElementList, new FileOutputStream("target/hindawi/metadata.xml"), 0);
 		Assert.assertEquals("metadata", 16, metadataElementList.size());
 	}
 	
@@ -99,7 +99,7 @@ public class HindawiTaggerTest {
 		DocumentTagger hindawiTagger = new HindawiTagger();
 		Element taggedElement = hindawiTagger.addTagsToSections(Fixtures.F507405_GROUPED_XHTML);
 		new File("target/hindawi/").mkdirs();
-		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged507405.xml"), 1);
+		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged507405.xml"), 0);
 //		Assert.assertEquals("metadata", 16, taggedElement.size());
 	}
 	
@@ -117,7 +117,7 @@ public class HindawiTaggerTest {
 		String message = XMLUtil.equalsCanonically(Fixtures.F247835_TAGGED_XHTML, taggedElement, true);
 		Assert.assertNull("message: "+message, message);
 		new File("target/hindawi/").mkdirs();
-		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged247835.xml"), 1);
+		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged247835.xml"), 0);
 		
 		Assert.assertEquals("x", 1, XMLUtil.getQueryElements(taggedElement, "//*[@tag='abstract']").size());
 		Assert.assertEquals("x", 1, XMLUtil.getQueryElements(taggedElement, "//*[@tag='copyright']").size());

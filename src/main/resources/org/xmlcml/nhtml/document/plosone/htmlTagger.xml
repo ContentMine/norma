@@ -1,0 +1,167 @@
+
+<tagger name="nlm">
+
+	<xsl:stylesheet version="2.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:h="http://www.w3.org/1999/xhtml">
+		
+		<!--  shouldn't be necessary -->
+		<xsl:template match="/">
+			<xsl:apply-templates />
+		</xsl:template>
+
+		<!--Identity template, strips PIs and comments -->
+		<xsl:template match="@*|*|text()">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|*|text()" />
+			</xsl:copy>
+		</xsl:template>
+
+		
+	</xsl:stylesheet>
+
+	<tagList>
+	    <variable name="html">/h:html</variable>
+	    <variable name="head">{$html}/h:head</variable>
+	    <variable name="body">{$html}/h:body</variable>
+	    <variable name="page_wrap">{$body}/h:div[@id='page-wrap']</variable>
+	    <variable name="topbanner">{$page_wrap}/h:div[@id='topbanner']</variable>
+	    <variable name="center">{$topbanner}/h:div[@class='center']</variable>
+	    <variable name="pagebdy_wrap">{$center}/h:div[@id='pagebdy-wrap']</variable>
+	    <variable name="pagebdy">{$pagebdy_wrap}/h:div[@id='pagebdy']</variable>
+	    <variable name="article_block">{$pagebdy}/h:div[@id='article-block']</variable>
+	    <variable name="header">{$article_block}/h:div[@class='header']</variable>
+	    <variable name="authors">{$header}/h:ul[@class='authors']</variable>
+	    <variable name="author">{$authors}/h:li[h:span[@class='author']]</variable>
+	    <variable name="date_doi_line">{$header}/h:ul[@class='date-doi-line']</variable>
+	    <variable name="publication_date">{$date_doi_line}/h:li[starts-with(.,'Published')]</variable>
+	    <variable name="doi">{$date_doi_line}/h:li[starts-with(.,'DOI:')]</variable>
+	    
+	    <variable name="main_cf">{$article_block}/h:div[@class='main cf']</variable>
+	    <variable name="article">{$main_cf}/h:div[@class='article']</variable>
+	    <variable name="abstract">{$article}/h:div[@class='abstract']</variable>
+	    <variable name="articleinfo">{$article}/h:div[@class='articleinfo']</variable>
+	    <!-- this really needs grouping -->
+	    <variable name="citation">{$articleinfo}/h:p[h:strong[normalize-space(.)='Citation:']]</variable>
+	    <variable name="received">{$articleinfo}/h:p/h:strong[.='Received:']</variable>
+	    <variable name="accepted">{$articleinfo}/h:p/h:strong[.='Accepted:']</variable>
+	    <variable name="published">{$articleinfo}/h:p/h:strong[.='Published:']</variable>
+	    <variable name="copyright_licence">{$articleinfo}/h:p[contains(.,'opyright') or contains(.,'Creative Commons')]</variable>
+	    <variable name="data_availability">{$articleinfo}/h:p[h:strong[normalize-space(.)='Data Availability:']]</variable>
+	    <variable name="funding">{$articleinfo}/h:p[h:strong[normalize-space(.)='Funding:']]</variable>
+	    <variable name="competing">{$articleinfo}/h:p[h:strong[normalize-space(.)='Competing interests:']]</variable>
+	    <variable name="section">{$article}/h:div[@class='section']</variable>
+	    <variable name="introduction">{$section}[h:h3[.='Introduction']]</variable>
+	    <variable name="materials_methods">{$section}[h:h3[.='Materials and Methods']]</variable>
+	    <variable name="results_discussion">{$section}[h:h3[.='Results and Discussion']]</variable>
+	    <variable name="conclusions">{$section}[h:h3[.='Conclusions']]</variable>
+	    <variable name="acknowledgments">{$article}/h:div[h:h3[.='Acknowledgments']]</variable>
+	    <variable name="contributions">{$article}/h:div[h:h3[.='Author Contributions']]</variable>
+	    <variable name="references">{$article}/h:div[h:h3[.='References']]</variable>
+	    <variable name="reference">{$references}/h:ol/h:li</variable>
+
+<!--  uses <div class="figure"> for BOTH figures and tables :-( -->	    
+	    <variable name="figure">{$section}/h:div[@class='figure']</variable>
+	    <variable name="figure_inline_download">{$figure}/h:div[@class='figure-inline-download']</variable>
+	    <variable name="figure_inline_download_png">{$figure_inline_download}//h:a[.='PNG']/@href</variable>
+	    <!--  this is table as image?? -->
+	    <variable name="table_title">{$figure}/h:p[h:strong[starts-with(normalize-space(.),'Table ')]]</variable>
+	    <!--  figure -->
+	    <variable name="figure_title">{$figure}/h:p[h:strong[starts-with(normalize-space(.),'Figure ')]]</variable>
+	    <!-- gets whole caption -->
+	    <variable name="figure_caption">{$figure}[h:p/h:strong[starts-with(normalize-space(.),'Figure ')]]/h:p</variable>
+	    
+	    <tag  name="html">{$html}</tag>
+	    <tag  name="head">{$head}</tag>
+	    <tag  name="body">{$body}</tag>
+	    <tag  name="page_wrap">{$page_wrap}</tag>
+	    <tag  name="topbanner">{$topbanner}</tag>
+	    <tag  name="center">{$center}</tag>
+	    <tag  name="pagebdy_wrap">{$pagebdy_wrap}</tag>
+	    <tag  name="pagebdy">{$pagebdy}</tag>
+	    <tag  name="article_block">{$article_block}</tag>
+	    <tag  name="header">{$header}</tag>
+	    <tag  name="authors">{$authors}</tag>
+	    <tag  name="author">{$author}</tag>
+	    <tag  name="date_doi_line">{$date_doi_line}</tag>
+	    <tag  name="publication_date">{$publication_date}</tag>
+	    <tag  name="doi">{$doi}</tag>
+	    
+	    <tag  name="main_cf">{$main_cf}</tag>
+	    <tag  name="article">{$article}</tag>
+	    <tag  name="abstract">{$abstract}</tag>
+ 	    <tag  name="articleinfo">{$articleinfo}</tag>
+	    <tag  name="citation">{$citation}</tag>
+	    <tag  name="received">{$received}</tag>
+	    <tag  name="accepted">{$accepted}</tag>
+	    <tag  name="published">{$published}</tag>
+	    <tag  name="copyright licence">{$copyright_licence}</tag>
+	    <tag  name="data_availability">{$data_availability}</tag>
+	    <tag  name="funding">{$funding}</tag>
+	    <tag  name="competing">{$competing}</tag>
+	    <tag  name="introduction">{$introduction}</tag>
+	    <tag  name="materials methods">{$materials_methods}</tag>
+	    <tag  name="results discussion">{$results_discussion}</tag>
+	    <tag  name="conclusions">{$conclusions}</tag>
+	    <tag  name="acknowledgments">{$acknowledgments}</tag>
+	    <tag  name="contributions">{$contributions}</tag>
+	    <tag  name="references">{$references}</tag>
+	    <tag  name="reference">{$reference}</tag>
+	    
+	    <tag  name="figure">{$figure}</tag>
+	    <tag  name="figure_inline_download">{$figure_inline_download}</tag>
+	    <tag  name="figure_inline_download_png">{$figure_inline_download_png}</tag>
+	    <tag  name="table_title">{$table_title}</tag>
+	    <tag  name="figure_title">{$figure_title}</tag>
+	    <tag  name="figure_caption">{$figure_caption}</tag>
+
+	</tagList>
+	
+	<metadataList>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="language">/h:html/h:head/h:meta[@name='dc.language']/@content</metadata>
+		<metadata name="format">/h:html/h:head/h:meta[@name='dc.format']/@content</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='prism.volume']/@content</metadata>
+		<metadata name="issue">/h:html/h:head/h:meta[@name='prism.number']/@content</metadata>
+		<metadata name="startPage">/h:html/h:head/h:meta[@name='prism.startingPage']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='dc.publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='citation_publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='Author']/@content</metadata>
+		<metadata name="issn">/h:html/h:head/h:meta[@name='prism.issn']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='dc.source']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='prism.publicationName']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='citation_journal_title']/@content
+		</metadata>
+		<metadata name="author">/h:html/h:head/h:meta[@name='dc.creator']/@content</metadata>
+		<metadata name="authors">/h:html/h:head/h:meta[@name='citation_authors']/@content</metadata>
+		<metadata name="author">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+		</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='dc.title']/@content</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='citation_title']/@content</metadata>
+		<metadata name="title">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+		</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='citation_volume']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dcterms.issued']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='citation_date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dc.date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='prism.publicationDate']/@content</metadata>
+		<metadata name="year">/h:html/h:head/h:meta[@name='citation_year']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='prism.doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='dc.identifier']/@content</metadata>
+		<metadata name="doi">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+		</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='citation_abstract']/@content</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='dc.description']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='prism.section']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='dc.type']/@content</metadata>
+		<metadata name="type">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+		</metadata>
+		<metadata name="address">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+		</metadata>
+		<metadata name="copyrightlicence">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/text()
+		</metadata>
+		<metadata name="licenceurl">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/a[@rel='licence']/@href
+		</metadata>
+	</metadataList>
+</tagger>

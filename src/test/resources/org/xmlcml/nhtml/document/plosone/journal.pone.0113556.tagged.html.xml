@@ -1,145 +1,100 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:dc="http://purl.org/dc/terms/" xmlns:doi="http://dx.doi.org/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
-	lang="en" xml:lang="en" itemtype="http://schema.org/Article"
-	class="no-js">
-	<head prefix="og: http://ogp.me/ns#">
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en" xml:lang="en" itemtype="http://schema.org/Article" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/terms/" xmlns:doi="http://dx.doi.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#">
+	<head prefix="og: http://ogp.me/ns#" tag="head">
 		<title>PLOS ONE: Flowering Dynamics and Pollinator Visitation of
 			Oilseed Echium (Echium plantagineum)</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
-		<meta name="description"
-			content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world." />
-		<meta name="keywords"
-			content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering" />
-		<meta name="almHost" content="http://alm.plos.org/api/v3/articles" />
-		<meta name="searchHost" content="http://api.plos.org/search" />
-		<meta name="termsHost" content="http://api.plos.org/terms" />
-		<meta name="solrApiKey" content="plos" />
-		<meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft" />
-		<meta name="currentJournal" content="PLoSONE" />
-		<meta name="almRequestBatchSize" content="" />
-		<meta name="citation_publisher" content="Public Library of Science" />
-		<meta name="citation_doi" content="10.1371/journal.pone.0113556" />
-		<meta name="dc.identifier" content="10.1371/journal.pone.0113556" />
-		<meta name="citation_title"
-			content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)" />
-		<meta itemprop="name"
-			content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)" />
-		<meta name="citation_author" content="Carrie A. Eberle" />
-		<meta name="citation_author_institution"
-			content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America" />
-		<meta name="citation_author" content="Frank Forcella" />
-		<meta name="citation_author_institution"
-			content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America" />
-		<meta name="citation_author" content="Russ Gesch" />
-		<meta name="citation_author" content="Sharon Weyers" />
-		<meta name="citation_author_institution"
-			content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America" />
-		<meta name="citation_author" content="Dean Peterson" />
-		<meta name="citation_author_institution"
-			content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America" />
-		<meta name="citation_author" content="James Eklund" />
-		<meta name="citation_author_institution"
-			content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America" />
-		<meta name="citation_date" content="2014/11/26" />
-		<meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0113556.pdf" />
-		<meta name="citation_journal_title" content="PLOS ONE" />
-		<meta name="citation_firstpage" content="e113556" />
-		<meta name="citation_issue" content="11" />
-		<meta name="citation_volume" content="9" />
-		<meta name="citation_issn" content="1932-6203" />
-		<meta name="citation_journal_abbrev" content="PLoS ONE" />
-		<meta name="citation_reference"
-			content="citation_title=The biology of Australian weeds. 8; citation_volume=48; citation_number=1; citation_pages=3-16; citation_date=1982; " />
-		<meta name="citation_reference"
-			content="citation_title=Oxidative stability of Echium plantagineum oil bodies; citation_volume=112; citation_number=2; citation_pages=741-749; citation_date=2010; " />
-		<meta name="citation_reference"
-			content="citation_title=Stearidonic acid (18:4n-3): Metabolism, nutritional importance, medical uses and natural sources; citation_volume=109; citation_number=3; citation_pages=1226-1236; citation_date=2007; " />
-		<meta name="citation_reference"
-			content="citation_title=Honeybees and the nectar of Echium plantagineum L. in southeastern Australia; citation_volume=9; citation_number=4; citation_pages=125-139; citation_date=1984; " />
-		<meta name="citation_reference" content="citation_number=5; " />
-		<meta name="citation_reference"
-			content="citation_title=Evaluating honey bees as pollinators of virgin flowers of Echium plantagineum L. (Boraginaceae) by pollen tube fluorescence; citation_volume=31; citation_number=6; citation_pages=83-95; citation_date=1992; " />
-		<meta name="citation_reference"
-			content="citation_title=Floral resources and limiting factors affecting commercial beekeeping in Australia; citation_volume=90; citation_number=7; citation_pages=208-209; citation_date=1988; " />
-		<meta name="citation_reference" content="citation_number=8; " />
-		<meta name="citation_reference" content="citation_number=9; " />
-		<meta name="citation_reference" content="citation_number=10; " />
-		<meta name="citation_reference"
-			content="citation_title=Nutrition and health in honey bees; citation_volume=41; citation_number=11; citation_pages=278-294; citation_date=2010; " />
-		<meta name="citation_reference"
-			content="citation_title=Nutritional stress due to habitat loss may explain recent honeybee colony collapses, Biol Conserv; citation_volume=142; citation_number=12; citation_pages=2369-2372; citation_date=2009; " />
-		<meta name="citation_reference"
-			content="citation_title=Batcheler-corrected point distance versus belt transect for sampling habitat and woody vegetation; citation_volume=42; citation_number=13; citation_pages=2052-2063; citation_date=2012; " />
-		<meta name="citation_reference" content="citation_number=14; " />
-		<meta name="citation_reference"
-			content="citation_title=Native or exotic? Double or single? Evaluating plants for pollinator-friendly gardens; citation_volume=87; citation_number=15; citation_pages=219-232; citation_date=2001; " />
-		<meta name="citation_reference"
-			content="citation_title=The technology crops guide to growing echium. © Technology Crop International. Winston-Salem, NC, USA; citation_number=16; citation_date=2010; " />
-		<meta name="citation_reference"
-			content="citation_title=Consequences of plant population size for pollinator visitation and plant reproductive success; citation_number=17; citation_date=2007; " />
-		<meta name="citation_reference"
-			content="citation_title=Temporal patterns of reproduction and outcrossing in weedy populations of Echium plantagineum; citation_volume=34; citation_number=18; citation_pages=81-92; citation_date=1988; " />
-		<meta name="citation_reference"
-			content="citation_title=Flowering and seed production of Echium plantagineum L; citation_volume=18; citation_number=19; citation_pages=83-97; citation_date=1978; " />
-		<meta name="citation_reference" content="citation_number=20; " />
-		<meta name="citation_reference"
-			content="citation_title=Nectar sugar content: estimating standing crop and secretion rate in the field; citation_volume=34; citation_number=21; citation_pages=1-10; citation_date=2003; " />
-		<meta name="citation_reference"
-			content="citation_title=Supplemental feeding of honey bee colonies; citation_number=22; citation_pages=413; citation_date=1977; " />
-		<meta name="citation_reference" content="citation_number=23; " />
-		<meta name="citation_reference"
-			content="citation_title=Honey bee nutrition; citation_volume=150; citation_number=24; citation_pages=773-776; citation_date=2010; " />
-		<meta name="citation_reference"
-			content="citation_title=Effect of honey bees on soybeans's yield; citation_volume=15; citation_number=25; citation_pages=84-86; citation_date=1975a; " />
-		<meta name="citation_reference"
-			content="citation_title=Variability in floral characteristics influences honey bee visitation to soybean blossoms; citation_volume=15; citation_number=26; citation_pages=767-771; citation_date=1975b; " />
-		<meta name="citation_reference"
-			content="citation_title=Shade induced changes in flower and pod number and flower and fruit abscission in soybean; citation_volume=85; citation_number=27; citation_pages=221-225; citation_date=1993; " />
-		<meta name="citation_reference"
-			content="citation_title=Quantitative and qualitative variation in floral nectar of soybean cultivars in southeastern Missouri; citation_volume=13; citation_number=28; citation_pages=1091-1096; citation_date=1984; " />
-		<meta name="citation_reference"
-			content="citation_title=Pollination of two oil-producing species: camelina (Camelina sativa L. Crantz.) and pennycress (Thlaspi arvense L.) double-cropping in Germany; citation_volume=6; citation_number=29; citation_pages=242-251; citation_date=2013; " />
-		<meta name="citation_reference"
-			content="citation_title=Honey bee contribution to canola pollination in southern Brasil; citation_volume=68; citation_number=30; citation_pages=255-259; citation_date=2011; " />
-		<meta name="citation_reference"
-			content="citation_title=Spatial and temporal variation in pollinator effectiveness: do unmanaged insects provide consistent pollination services to mass flowering crops; citation_volume=49; citation_number=31; citation_pages=126-134; citation_date=2012; " />
-		<meta name="citation_reference"
-			content="citation_title=Crotalaria retusa poisoning of pigs and poultry; citation_volume=53; citation_number=32; citation_pages=109-114; citation_date=1977; " />
-		<meta name="citation_reference"
-			content="citation_title=Hepatotoxic pyrrolizidine alkaloids in pollen and drying-related implications for commercial processing of bee pollen; citation_volume=56; citation_number=33; citation_pages=5662-5672; citation_date=2008; " />
-		<meta name="citation_reference"
-			content="citation_title=Pyrrolizidine alkaloids in honey from Echium plantagineum L; citation_volume=29; citation_number=34; citation_pages=958-960; citation_date=1981; " />
-		<meta name="citation_reference" content="citation_number=35; " />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@plosone" />
-		<meta name="twitter:title"
-			content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)" />
-		<meta name="twitter:description"
-			content="Echium (Echium plantagineum L.) is an alternative oilseed crop in summer-wet temperate regions that provides floral resources to pollinators. Its seed oil is rich in omega-3 fatty acids, such as stearidonic acid, which is desired highly by the cosmetic industry. Seeds were sown in field plots over three years in western Minnesota in spring (early-sown) or early summer (late-sown), and flower abundance, pollinator visitation, and seed yields were studied. Initial flowering commenced 41 to 55 d after sowing, and anthesis duration (first flowering to harvest) was 34 to 70 d. Late sowing dates delayed anthesis, but increased the intensity of visitation by pollinators. Cumulative flower densities ranged from 1 to 4.5 billion ha-1. Flowers attracted numerous honey bees (Apis mellifera L.), as many as 35 per minute of observation, which represented about 50% of all insect visitors. Early-sown echium produced seed yields up to 750 kg ha-1, which were 2-29 times higher than those of late-sown echium. Early sowing of echium in Minnesota provides abundant floral resources for pollinators for up to two months and simultaneously produces seed yields whose profits rival those of corn (Zea mays L.)." />
-		<meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0113556.strk" />
-		<meta property="og:title"
-			content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url"
-			content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0113556" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"/>
+		<meta name="description" content="PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world."/>
+		<meta name="keywords" content="PLOS, Public Library of Science, Open Access, Open-Access, Science, Medicine, Biology, Research, Peer-review, Inclusive, Interdisciplinary, Ante-disciplinary, Physics, Chemistry, Engineering"/>
+		<meta name="almHost" content="http://alm.plos.org/api/v3/articles"/>
+		<meta name="searchHost" content="http://api.plos.org/search"/>
+		<meta name="termsHost" content="http://api.plos.org/terms"/>
+		<meta name="solrApiKey" content="plos"/>
+		<meta name="almAPIKey" content="3pezRBRXdyzYW6ztfwft"/>
+		<meta name="currentJournal" content="PLoSONE"/>
+		<meta name="almRequestBatchSize" content=""/>
+		<meta name="citation_publisher" content="Public Library of Science"/>
+		<meta name="citation_doi" content="10.1371/journal.pone.0113556"/>
+		<meta name="dc.identifier" content="10.1371/journal.pone.0113556"/>
+		<meta name="citation_title" content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)"/>
+		<meta itemprop="name" content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)"/>
+		<meta name="citation_author" content="Carrie A. Eberle"/>
+		<meta name="citation_author_institution" content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America"/>
+		<meta name="citation_author" content="Frank Forcella"/>
+		<meta name="citation_author_institution" content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America"/>
+		<meta name="citation_author" content="Russ Gesch"/>
+		<meta name="citation_author" content="Sharon Weyers"/>
+		<meta name="citation_author_institution" content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America"/>
+		<meta name="citation_author" content="Dean Peterson"/>
+		<meta name="citation_author_institution" content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America"/>
+		<meta name="citation_author" content="James Eklund"/>
+		<meta name="citation_author_institution" content="United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America"/>
+		<meta name="citation_date" content="2014/11/26"/>
+		<meta name="citation_pdf_url" content="http://dx.plos.org/10.1371/journal.pone.0113556.pdf"/>
+		<meta name="citation_journal_title" content="PLOS ONE"/>
+		<meta name="citation_firstpage" content="e113556"/>
+		<meta name="citation_issue" content="11"/>
+		<meta name="citation_volume" content="9"/>
+		<meta name="citation_issn" content="1932-6203"/>
+		<meta name="citation_journal_abbrev" content="PLoS ONE"/>
+		<meta name="citation_reference" content="citation_title=The biology of Australian weeds. 8; citation_volume=48; citation_number=1; citation_pages=3-16; citation_date=1982; "/>
+		<meta name="citation_reference" content="citation_title=Oxidative stability of Echium plantagineum oil bodies; citation_volume=112; citation_number=2; citation_pages=741-749; citation_date=2010; "/>
+		<meta name="citation_reference" content="citation_title=Stearidonic acid (18:4n-3): Metabolism, nutritional importance, medical uses and natural sources; citation_volume=109; citation_number=3; citation_pages=1226-1236; citation_date=2007; "/>
+		<meta name="citation_reference" content="citation_title=Honeybees and the nectar of Echium plantagineum L. in southeastern Australia; citation_volume=9; citation_number=4; citation_pages=125-139; citation_date=1984; "/>
+		<meta name="citation_reference" content="citation_number=5; "/>
+		<meta name="citation_reference" content="citation_title=Evaluating honey bees as pollinators of virgin flowers of Echium plantagineum L. (Boraginaceae) by pollen tube fluorescence; citation_volume=31; citation_number=6; citation_pages=83-95; citation_date=1992; "/>
+		<meta name="citation_reference" content="citation_title=Floral resources and limiting factors affecting commercial beekeeping in Australia; citation_volume=90; citation_number=7; citation_pages=208-209; citation_date=1988; "/>
+		<meta name="citation_reference" content="citation_number=8; "/>
+		<meta name="citation_reference" content="citation_number=9; "/>
+		<meta name="citation_reference" content="citation_number=10; "/>
+		<meta name="citation_reference" content="citation_title=Nutrition and health in honey bees; citation_volume=41; citation_number=11; citation_pages=278-294; citation_date=2010; "/>
+		<meta name="citation_reference" content="citation_title=Nutritional stress due to habitat loss may explain recent honeybee colony collapses, Biol Conserv; citation_volume=142; citation_number=12; citation_pages=2369-2372; citation_date=2009; "/>
+		<meta name="citation_reference" content="citation_title=Batcheler-corrected point distance versus belt transect for sampling habitat and woody vegetation; citation_volume=42; citation_number=13; citation_pages=2052-2063; citation_date=2012; "/>
+		<meta name="citation_reference" content="citation_number=14; "/>
+		<meta name="citation_reference" content="citation_title=Native or exotic? Double or single? Evaluating plants for pollinator-friendly gardens; citation_volume=87; citation_number=15; citation_pages=219-232; citation_date=2001; "/>
+		<meta name="citation_reference" content="citation_title=The technology crops guide to growing echium. © Technology Crop International. Winston-Salem, NC, USA; citation_number=16; citation_date=2010; "/>
+		<meta name="citation_reference" content="citation_title=Consequences of plant population size for pollinator visitation and plant reproductive success; citation_number=17; citation_date=2007; "/>
+		<meta name="citation_reference" content="citation_title=Temporal patterns of reproduction and outcrossing in weedy populations of Echium plantagineum; citation_volume=34; citation_number=18; citation_pages=81-92; citation_date=1988; "/>
+		<meta name="citation_reference" content="citation_title=Flowering and seed production of Echium plantagineum L; citation_volume=18; citation_number=19; citation_pages=83-97; citation_date=1978; "/>
+		<meta name="citation_reference" content="citation_number=20; "/>
+		<meta name="citation_reference" content="citation_title=Nectar sugar content: estimating standing crop and secretion rate in the field; citation_volume=34; citation_number=21; citation_pages=1-10; citation_date=2003; "/>
+		<meta name="citation_reference" content="citation_title=Supplemental feeding of honey bee colonies; citation_number=22; citation_pages=413; citation_date=1977; "/>
+		<meta name="citation_reference" content="citation_number=23; "/>
+		<meta name="citation_reference" content="citation_title=Honey bee nutrition; citation_volume=150; citation_number=24; citation_pages=773-776; citation_date=2010; "/>
+		<meta name="citation_reference" content="citation_title=Effect of honey bees on soybeans's yield; citation_volume=15; citation_number=25; citation_pages=84-86; citation_date=1975a; "/>
+		<meta name="citation_reference" content="citation_title=Variability in floral characteristics influences honey bee visitation to soybean blossoms; citation_volume=15; citation_number=26; citation_pages=767-771; citation_date=1975b; "/>
+		<meta name="citation_reference" content="citation_title=Shade induced changes in flower and pod number and flower and fruit abscission in soybean; citation_volume=85; citation_number=27; citation_pages=221-225; citation_date=1993; "/>
+		<meta name="citation_reference" content="citation_title=Quantitative and qualitative variation in floral nectar of soybean cultivars in southeastern Missouri; citation_volume=13; citation_number=28; citation_pages=1091-1096; citation_date=1984; "/>
+		<meta name="citation_reference" content="citation_title=Pollination of two oil-producing species: camelina (Camelina sativa L. Crantz.) and pennycress (Thlaspi arvense L.) double-cropping in Germany; citation_volume=6; citation_number=29; citation_pages=242-251; citation_date=2013; "/>
+		<meta name="citation_reference" content="citation_title=Honey bee contribution to canola pollination in southern Brasil; citation_volume=68; citation_number=30; citation_pages=255-259; citation_date=2011; "/>
+		<meta name="citation_reference" content="citation_title=Spatial and temporal variation in pollinator effectiveness: do unmanaged insects provide consistent pollination services to mass flowering crops; citation_volume=49; citation_number=31; citation_pages=126-134; citation_date=2012; "/>
+		<meta name="citation_reference" content="citation_title=Crotalaria retusa poisoning of pigs and poultry; citation_volume=53; citation_number=32; citation_pages=109-114; citation_date=1977; "/>
+		<meta name="citation_reference" content="citation_title=Hepatotoxic pyrrolizidine alkaloids in pollen and drying-related implications for commercial processing of bee pollen; citation_volume=56; citation_number=33; citation_pages=5662-5672; citation_date=2008; "/>
+		<meta name="citation_reference" content="citation_title=Pyrrolizidine alkaloids in honey from Echium plantagineum L; citation_volume=29; citation_number=34; citation_pages=958-960; citation_date=1981; "/>
+		<meta name="citation_reference" content="citation_number=35; "/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@plosone"/>
+		<meta name="twitter:title" content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)"/>
+		<meta name="twitter:description" content="Echium (Echium plantagineum L.) is an alternative oilseed crop in summer-wet temperate regions that provides floral resources to pollinators. Its seed oil is rich in omega-3 fatty acids, such as stearidonic acid, which is desired highly by the cosmetic industry. Seeds were sown in field plots over three years in western Minnesota in spring (early-sown) or early summer (late-sown), and flower abundance, pollinator visitation, and seed yields were studied. Initial flowering commenced 41 to 55 d after sowing, and anthesis duration (first flowering to harvest) was 34 to 70 d. Late sowing dates delayed anthesis, but increased the intensity of visitation by pollinators. Cumulative flower densities ranged from 1 to 4.5 billion ha-1. Flowers attracted numerous honey bees (Apis mellifera L.), as many as 35 per minute of observation, which represented about 50% of all insect visitors. Early-sown echium produced seed yields up to 750 kg ha-1, which were 2-29 times higher than those of late-sown echium. Early sowing of echium in Minnesota provides abundant floral resources for pollinators for up to two months and simultaneously produces seed yields whose profits rival those of corn (Zea mays L.)."/>
+		<meta name="twitter:image" content="http://dx.plos.org/10.1371/journal.pone.0113556.strk"/>
+		<meta property="og:title" content="Flowering Dynamics and Pollinator Visitation of Oilseed Echium (Echium plantagineum)"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0113556"/>
 	</head>
-	<body>
+	<body tag="body">
 		<div id="page-wrap">
 			<div id="topbanner" class="cf">
 				<!-- Div for the ad at the top of journal home page -->
 				<div class="center">
 					<!-- pagehdr-wrap -->
 					<!--body and html tags gets closed in global_footer.ftl -->
-					<script type="text/javascript"
-						src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+					<script type="text/javascript" src="/javascript/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
 					<div id="pagebdy-wrap">
 						<div id="pagebdy">
 							<div id="article-block" class="cf">
 								<div class="header" id="hdr-article">
-									<h1 property="dc:title" datatype="" rel="dc:type"
-										href="foo">
+									<h1 property="dc:title" datatype="" rel="dc:type" href="foo">
 										Flowering Dynamics and Pollinator Visitation of Oilseed Echium
 										(
 										<i>Echium plantagineum</i>
@@ -263,9 +218,9 @@
 								<div class="main cf" id="pjax-container">
 									<div class="article">
 										<div class="abstract">
-											<a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"></a>
+											<a id="abstract0" name="abstract0" toc="abstract0" title="Abstract"/>
 											<h2>Abstract</h2>
-											<a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"></a>
+											<a id="article1.front1.article-meta1.abstract1.p1" name="article1.front1.article-meta1.abstract1.p1"/>
 											<p>
 												Echium (
 												<em>Echium plantagineum</em>
@@ -346,9 +301,9 @@
 											</p>
 										</div>
 										<div id="section1" class="section">
-											<a id="s1" name="s1" toc="s1" title="Introduction"></a>
+											<a id="s1" name="s1" toc="s1" title="Introduction"/>
 											<h3>Introduction</h3>
-											<a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"></a>
+											<a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1"/>
 											<p>
 												Echium (
 												<em>Echium plantagineum</em>
@@ -363,7 +318,7 @@
 												growing interest in supporting pollinators warrants further
 												exploration of agricultural production of echium.
 											</p>
-											<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"></a>
+											<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2"/>
 											<p>
 												Echium seeds contain about 27% oil that is enriched with
 												high levels of stearidonic acid (SDA) and gamma-linolenic
@@ -377,7 +332,7 @@
 												<a href="#pone.0113556-GuilGuerrero1">[3]</a>
 												.
 											</p>
-											<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"></a>
+											<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3"/>
 											<p>
 												In addition to its seed oil value, echium is highly
 												attractive to pollinating insects, especially honey bees.
@@ -398,7 +353,7 @@
 												echium's ability to support pollinators, its history as a
 												weed has limited its use as a crop.
 											</p>
-											<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"></a>
+											<a id="article1.body1.sec1.p4" name="article1.body1.sec1.p4"/>
 											<p>
 												Reports on growing echium as a crop are rare. Berti et al.
 												<a href="#pone.0113556-Berti1">[8]</a>
@@ -428,7 +383,7 @@
 												restrict echium from achieving relatively high seed yields
 												in some sites and years.
 											</p>
-											<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"></a>
+											<a id="article1.body1.sec1.p5" name="article1.body1.sec1.p5"/>
 											<p>
 												Our interest in echium arose from a desire to extend floral
 												resources for pollinators
@@ -457,10 +412,10 @@
 											</p>
 										</div>
 										<div id="section2" class="section">
-											<a id="s2" name="s2" toc="s2" title="Materials and Methods"></a>
+											<a id="s2" name="s2" toc="s2" title="Materials and Methods"/>
 											<h3>Materials and Methods</h3>
 											<h4>2.1 Plot establishment</h4>
-											<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"></a>
+											<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1"/>
 											<p>Experiments were performed at the USDA-ARS Swan Lake
 												Research Farm, Stevens County, MN (45.68°N, 95.80°W) on a
 												Barnes loam soil (fine-silty, mixed, super-active, frigid
@@ -475,7 +430,7 @@
 												were 2.4 by 3.1 m. The variability in plot sizes is unlikely
 												to have influenced flowering dynamics, but potentially could
 												have affected pollinator visitation and seed yields.</p>
-											<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"></a>
+											<a id="article1.body1.sec2.sec1.p2" name="article1.body1.sec2.sec1.p2"/>
 											<p>
 												Previous crops were soybean (
 												<em>Glycine max</em>
@@ -498,7 +453,7 @@
 												at 207 kPa pressure. Weeds that escaped herbicide control
 												were removed by hand.
 											</p>
-											<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"></a>
+											<a id="article1.body1.sec2.sec1.p3" name="article1.body1.sec2.sec1.p3"/>
 											<p>
 												Echium seeds were obtained originally from Technology Crops
 												International (TCI) in 2008. Harvested seeds were cleaned
@@ -511,7 +466,7 @@
 												<sup>−1</sup>
 												based on germination percent of seed stocks).
 											</p>
-											<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"></a>
+											<a id="article1.body1.sec2.sec1.p4" name="article1.body1.sec2.sec1.p4"/>
 											<p>
 												Sowing dates were May 26 and July 7, 2011; April 25 and June
 												15, 2012; and May 14, June 13, and July 8, 2013 (
@@ -529,12 +484,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-t001">
 												<div class="img">
-													<a name="pone-0113556-t001" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t001&amp;representation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t001">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t001&amp;representation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-t001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t001">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -542,43 +493,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t001/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t001/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t001/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t001/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t001.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t001.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t001/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t001/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t001/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t001.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t001.TIF"/>
 																)
 															</a>
 														</li>
@@ -595,7 +540,7 @@
 												</p>
 												<span>doi:10.1371/journal.pone.0113556.t001</span>
 											</div>
-											<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"></a>
+											<a id="article1.body1.sec2.sec1.p5" name="article1.body1.sec2.sec1.p5"/>
 											<p>
 												Weather data were collected throughout the growing season at
 												the Swan Lake Research Farm Weather Station (
@@ -607,7 +552,7 @@
 												659, 1238 (2013).
 											</p>
 											<h4>2.2 Flowering Dynamics</h4>
-											<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"></a>
+											<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1"/>
 											<p>Percent ground cover of echium flowers (flower area) was
 												estimated visually in each plot from the time open flowers
 												were first visible through the end of anthesis for all three
@@ -620,7 +565,7 @@
 												measured from the start of flowering to the time of
 												swathing; because echium is an indeterminate crop, anthesis
 												persisted until the crop was harvested.</p>
-											<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"></a>
+											<a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2"/>
 											<p>
 												In 2013, number of open flowers were measured once per week
 												during anthesis using the Batcheler corrected point distance
@@ -651,7 +596,7 @@
 												) was calculated by integrating the area under the curve.
 											</p>
 											<h4>2.3 Nectar Collection and Analysis</h4>
-											<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"></a>
+											<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1"/>
 											<p>
 												Nectar analysis was performed on early-sown echium flowers
 												on July 16 and August 7, 2013, following protocols described
@@ -684,14 +629,12 @@
 												<a href="#pone.0113556-Corbet2">[15]</a>
 												equation for nectar sucrose content:
 											</p>
-											<a name="pone.0113556.e001" id="pone.0113556.e001"></a>
+											<a name="pone.0113556.e001" id="pone.0113556.e001"/>
 											<span class="equation">
-												<img
-													src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.e001&amp;representation=PNG"
-													class="inline-graphic"/>
+												<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.e001&amp;representation=PNG" class="inline-graphic"/>
 											</span>
 											<br/>
-												<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"></a>
+												<a id="article1.body1.sec2.sec3.p2" name="article1.body1.sec2.sec3.p2"/>
 												<p>giving the total sucrose produced in 2 h by a single
 													echium flower. The µg of sucrose produced was averaged
 													across the two sampling dates for the 10 flowers sampled
@@ -703,7 +646,7 @@
 													echium flower to calculate the potential sucrose production
 													of a hectare of echium throughout anthesis.</p>
 												<h4>2.4 Insect Counts</h4>
-												<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"></a>
+												<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1"/>
 												<p>Pollinator
 													visitations to the plots were recorded from the time open
 													flowers were first visible through the end of anthesis.
@@ -736,7 +679,7 @@
 													likely provided nesting habitat for native pollinators.
 												</p>
 												<h4>2.5 Seed Harvest</h4>
-												<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"></a>
+												<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1"/>
 												<p>
 													Echium seeds were harvested by swathing sections in each
 													plot on September 15 and October 25, 2011; August 12 and
@@ -767,7 +710,7 @@
 													.
 												</p>
 												<h4>2.6 Statistical Analysis</h4>
-												<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"></a>
+												<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1"/>
 												<p>
 													Estimation of open flower density was done using Transect
 													Point Density software
@@ -802,10 +745,10 @@
 												</p>
 										</div>
 										<div id="section3" class="section">
-											<a id="s3" name="s3" toc="s3" title="Results and Discussion"></a>
+											<a id="s3" name="s3" toc="s3" title="Results and Discussion"/>
 											<h3>Results and Discussion</h3>
 											<h4>3.1 Flowering dynamics</h4>
-											<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"></a>
+											<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1"/>
 											<p>
 												Time from sowing to first flower averaged 45 d and varied
 												little across sowing dates. Flowering ended at swathing,
@@ -824,7 +767,7 @@
 												<a href="#pone.0113556-Piggin2">[19]</a>
 												.
 											</p>
-											<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"></a>
+											<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2"/>
 											<p>
 												Flowering peaked at or near 40% cover within 2 to 3 weeks of
 												the start of flowering, and remained above 10% for most of
@@ -854,12 +797,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-g001">
 												<div class="img">
-													<a name="pone-0113556-g001" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g001&amp;representation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g001">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g001&amp;representation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-g001" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g001&amp;representation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g001">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g001&amp;representation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -867,43 +806,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g001/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g001/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g001/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g001/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g001.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g001.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g001/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g001/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g001/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g001.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g001.TIF"/>
 																)
 															</a>
 														</li>
@@ -916,7 +849,7 @@
 															abundances.</span>
 													</strong>
 												</p>
-												<a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"></a>
+												<a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1"/>
 												<p>Percent flower cover of early- mid- and late-sown echium
 													in 2011 (a), 2012 (b), and 2013 (c) and total pollinators
 													observed per min per observer (d, e, and f). Proportions of
@@ -927,12 +860,8 @@
 											</div>
 											<div class="figure" id="pone-0113556-t002">
 												<div class="img">
-													<a name="pone-0113556-t002" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t002&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t002">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t002&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-t002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t002&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t002">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t002&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -940,43 +869,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t002/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t002/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t002/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t002/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t002.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t002.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t002/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t002/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t002/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t002.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t002.TIF"/>
 																)
 															</a>
 														</li>
@@ -996,7 +919,7 @@
 												</p>
 												<span>doi:10.1371/journal.pone.0113556.t002</span>
 											</div>
-											<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"></a>
+											<a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3"/>
 											<p>
 												Coverage times of flower area (%t) for early- and
 												late-sowing dates were 1577 and 765%t in 2011, 769 and 535%t
@@ -1015,12 +938,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-t003">
 												<div class="img">
-													<a name="pone-0113556-t003" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t003&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t003">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t003&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-t003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t003&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t003">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t003&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -1028,43 +947,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t003/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t003/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t003/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t003/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t003.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t003.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t003/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t003/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t003/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t003.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t003.TIF"/>
 																)
 															</a>
 														</li>
@@ -1093,7 +1006,7 @@
 												<span>doi:10.1371/journal.pone.0113556.t003</span>
 											</div>
 											<h4>3.2 Pollinator Food Provisions</h4>
-											<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"></a>
+											<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1"/>
 											<p>
 												The sum density of flowers produced per hectare over the
 												anthesis period (
@@ -1117,12 +1030,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-g002">
 												<div class="img">
-													<a name="pone-0113556-g002" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g002&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g002">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g002&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-g002" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g002&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g002">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g002&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -1130,43 +1039,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g002/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g002/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g002/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g002/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g002.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g002.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g002/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g002/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g002/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g002.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g002.TIF"/>
 																)
 															</a>
 														</li>
@@ -1178,7 +1081,7 @@
 														<span>Flower density of echium throughout anthesis.</span>
 													</strong>
 												</p>
-												<a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"></a>
+												<a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1"/>
 												<p>
 													Open flowers ha
 													<sup>−1</sup>
@@ -1187,7 +1090,7 @@
 												</p>
 												<span>doi:10.1371/journal.pone.0113556.g002</span>
 											</div>
-											<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"></a>
+											<a id="article1.body1.sec3.sec2.p2" name="article1.body1.sec3.sec2.p2"/>
 											<p>
 												In 2013, nectar was extracted from flowers at three time
 												points on two dates during peak flowering, and nectar
@@ -1217,7 +1120,7 @@
 												<a href="#pone-0113556-t003">table 3</a>
 												).
 											</p>
-											<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"></a>
+											<a id="article1.body1.sec3.sec2.p3" name="article1.body1.sec3.sec2.p3"/>
 											<p>
 												A healthy honey bee colony requires approximately 100–200 kg
 												yr
@@ -1240,7 +1143,7 @@
 												throughout anthesis and that honey bees forage the full
 												nectar flow on every day throughout anthesis.
 											</p>
-											<a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"></a>
+											<a id="article1.body1.sec3.sec2.p4" name="article1.body1.sec3.sec2.p4"/>
 											<p>
 												Corbet and Delfosse
 												<a href="#pone.0113556-Corbet1">[4]</a>
@@ -1266,7 +1169,7 @@
 												most of their annual energy needs during a single one- to
 												two-month flowering/foraging season.
 											</p>
-											<a id="article1.body1.sec3.sec2.p5" name="article1.body1.sec3.sec2.p5"></a>
+											<a id="article1.body1.sec3.sec2.p5" name="article1.body1.sec3.sec2.p5"/>
 											<p>
 												Comparison of sugar production values by echium to those of
 												soybean reveals the potential value of having echium on the
@@ -1305,7 +1208,7 @@
 												soybean is an order of magnitude lower than that for echium.
 											</p>
 											<h4>3.3 Pollinator Visitations</h4>
-											<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"></a>
+											<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1"/>
 											<p>
 												Insect visitors were present immediately upon initial
 												observations of open flowers (
@@ -1342,12 +1245,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-g003">
 												<div class="img">
-													<a name="pone-0113556-g003" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g003&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g003">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g003&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-g003" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g003&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g003">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g003&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -1355,43 +1254,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g003/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g003/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g003/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g003/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g003.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g003.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g003/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g003/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g003/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g003.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g003.TIF"/>
 																)
 															</a>
 														</li>
@@ -1404,7 +1297,7 @@
 														</span>
 													</strong>
 												</p>
-												<a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"></a>
+												<a id="article1.body1.sec3.sec3.fig1.caption1.p1" name="article1.body1.sec3.sec3.fig1.caption1.p1"/>
 												<p>Average sucrose (μg) in nectar secreted from 900-1100 h,
 													1200-1400 h, and 1500-1700 h during two days in the 2013
 													growing season. Sucrose quantity was based on volume and
@@ -1416,12 +1309,8 @@
 											</div>
 											<div class="figure" id="pone-0113556-g004">
 												<div class="img">
-													<a name="pone-0113556-g004" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g004&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g004">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g004&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-g004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g004&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.g004">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.g004&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -1429,43 +1318,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g004/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g004/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g004/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g004/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g004.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g004.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.g004/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.g004/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.g004/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.g004.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.g004.TIF"/>
 																)
 															</a>
 														</li>
@@ -1477,11 +1360,11 @@
 														<span>Honey bee visiting an echium flower.</span>
 													</strong>
 												</p>
-												<a id="article1.body1.sec3.sec3.fig2.caption1.p1" name="article1.body1.sec3.sec3.fig2.caption1.p1"></a>
+												<a id="article1.body1.sec3.sec3.fig2.caption1.p1" name="article1.body1.sec3.sec3.fig2.caption1.p1"/>
 												<p>Photo by James Eklund.</p>
 												<span>doi:10.1371/journal.pone.0113556.g004</span>
 											</div>
-											<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"></a>
+											<a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2"/>
 											<p>
 												Pollinator visitation times (pvt) were 271 and 356 pvt in
 												2011, 376 and 897 pvt in 2012, and 1787, 1774, and 2662 pvt
@@ -1503,7 +1386,7 @@
 												plant species in the local area early in the season may have
 												distracted pollinators from echium.
 											</p>
-											<a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"></a>
+											<a id="article1.body1.sec3.sec3.p3" name="article1.body1.sec3.sec3.p3"/>
 											<p>
 												Honey bees comprised the majority of pollinators often
 												representing more than half of the observed insects (
@@ -1521,7 +1404,7 @@
 												indicating that the increased pvt was not due solely to the
 												increased presence of honey bees.
 											</p>
-											<a id="article1.body1.sec3.sec3.p4" name="article1.body1.sec3.sec3.p4"></a>
+											<a id="article1.body1.sec3.sec3.p4" name="article1.body1.sec3.sec3.p4"/>
 											<p>As a comparison to commodity crops, the pvt for corn and
 												soybean in 2013 were 177 and 378, which were four and two
 												times less than the lowest pvt for echium across all years,
@@ -1531,7 +1414,7 @@
 												respectively, of all insects observed, which was over 8
 												times lower than the average proportion of honey bee visits
 												of 42% in echium (data not shown).</p>
-											<a id="article1.body1.sec3.sec3.p5" name="article1.body1.sec3.sec3.p5"></a>
+											<a id="article1.body1.sec3.sec3.p5" name="article1.body1.sec3.sec3.p5"/>
 											<p>
 												A caveat regarding echium as a forage resource for honey
 												bees is that its pollen contains pyrrolizidine alkaloids,
@@ -1553,7 +1436,7 @@
 												Northern Great Plains should not be problematic.
 											</p>
 											<h4>3.4 Seed Yields</h4>
-											<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"></a>
+											<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1"/>
 											<p>
 												The average seed yield across all planting dates and years
 												was 330±49 kg ha
@@ -1570,7 +1453,7 @@
 												early-sowing date in 2011 and the lowest yield occurred
 												during the drought year of 2012 for the late-sowing date.
 											</p>
-											<a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"></a>
+											<a id="article1.body1.sec3.sec4.p2" name="article1.body1.sec3.sec4.p2"/>
 											<p>
 												Seed yield modeled with stepwise selection methods indicated
 												growing season days, vegetative rainfall, and anthesis
@@ -1590,12 +1473,8 @@
 											</p>
 											<div class="figure" id="pone-0113556-t004">
 												<div class="img">
-													<a name="pone-0113556-t004" title="Click for larger image "
-														href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t004&amp;resentation=PNG_M"
-														data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t004">
-														<img
-															src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t004&amp;resentation=PNG_I"
-															alt="thumbnail" class="thumbnail"/>
+													<a name="pone-0113556-t004" title="Click for larger image " href="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t004&amp;resentation=PNG_M" data-doi="info:doi/10.1371/journal.pone.0113556" data-uri="info:doi/10.1371/journal.pone.0113556.t004">
+														<img src="/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0113556.t004&amp;resentation=PNG_I" alt="thumbnail" class="thumbnail"/>
 													</a>
 												</div>
 												<div class="figure-inline-download">
@@ -1603,43 +1482,37 @@
 													<ul>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t004/powerpoint">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/powerpoint">
 																	PPT
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t004/powerpoint">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/powerpoint">
 																PowerPoint slide
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t004/largerimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/largerimage">
 																	PNG
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t004/largerimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/largerimage">
 																larger image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t004.PNG_L"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t004.PNG_L"/>
 																)
 															</a>
 														</li>
 														<li>
 															<div class="icon">
-																<a
-																	href="/article/info:doi/10.1371/journal.pone.0113556.t004/originalimage">
+																<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/originalimage">
 																	TIFF
 																</a>
 															</div>
-															<a
-																href="/article/info:doi/10.1371/journal.pone.0113556.t004/originalimage">
+															<a href="/article/info:doi/10.1371/journal.pone.0113556.t004/originalimage">
 																original image
 																(
-																<span id="info:doi/10.1371/journal.pone.0113556.t004.TIF"></span>
+																<span id="info:doi/10.1371/journal.pone.0113556.t004.TIF"/>
 																)
 															</a>
 														</li>
@@ -1659,7 +1532,7 @@
 												</p>
 												<span>doi:10.1371/journal.pone.0113556.t004</span>
 											</div>
-											<a id="article1.body1.sec3.sec4.p3" name="article1.body1.sec3.sec4.p3"></a>
+											<a id="article1.body1.sec3.sec4.p3" name="article1.body1.sec3.sec4.p3"/>
 											<p>In Minnesota, average rainfall in June and July is 102 and
 												99 mm while that in August and September is only 85 and 74
 												mm (weatherdb.com). Since rainfall during anthesis was the
@@ -1670,7 +1543,7 @@
 												first flower, synchronizes anthesis with higher summer
 												rainfall and would be expected to achieve highest combined
 												flower production and seed yield.</p>
-											<a id="article1.body1.sec3.sec4.p4" name="article1.body1.sec3.sec4.p4"></a>
+											<a id="article1.body1.sec3.sec4.p4" name="article1.body1.sec3.sec4.p4"/>
 											<p>
 												Echium yields for several experiments across North Dakota
 												averaged 251 kg ha
@@ -1705,7 +1578,7 @@
 												<sup>−1</sup>
 												(see below).
 											</p>
-											<a id="article1.body1.sec3.sec4.p5" name="article1.body1.sec3.sec4.p5"></a>
+											<a id="article1.body1.sec3.sec4.p5" name="article1.body1.sec3.sec4.p5"/>
 											<p>
 												Corn and soybean are the two main crops in the Upper Midwest
 												and Northern Great Plains. Median gross returns (N = 2553
@@ -1738,9 +1611,9 @@
 											</p>
 										</div>
 										<div id="section4" class="section">
-											<a id="s4" name="s4" toc="s4" title="Conclusions"></a>
+											<a id="s4" name="s4" toc="s4" title="Conclusions"/>
 											<h3>Conclusions</h3>
-											<a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"></a>
+											<a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1"/>
 											<p>
 												When sown in April or May in the Upper Midwest and Northern
 												Great Plains, oilseed echium produces high seed yields whose
@@ -1768,16 +1641,15 @@
 											</p>
 										</div>
 										<div>
-											<a id="ack" name="ack" toc="ack" title="Acknowledgments"></a>
+											<a id="ack" name="ack" toc="ack" title="Acknowledgments"/>
 											<h3>Acknowledgments</h3>
-											<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"></a>
+											<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1"/>
 											<p>We would like to thank Technology Crops International for
 												providing seed and Braaten's Apiaries (Glenwood, MN) for
 												providing honey bee hives.</p>
 										</div>
 										<div class="contributions">
-											<a id="authcontrib" name="authcontrib" toc="authcontrib"
-												title="Author Contributions"></a>
+											<a id="authcontrib" name="authcontrib" toc="authcontrib" title="Author Contributions"/>
 											<h3>Author Contributions</h3>
 											<p>Conceived and designed the experiments: CAE FF RG SW.
 												Performed the experiments: CAE DP JE. Analyzed the data: CAE
@@ -1785,36 +1657,29 @@
 												the paper: CAE FF RG SW.</p>
 										</div>
 										<div>
-											<a id="references" name="references" toc="references"
-												title="References"></a>
+											<a id="references" name="references" toc="references" title="References"/>
 											<h3>References</h3>
 											<ol class="references">
 												<li>
 													<span class="label">1.
 													</span>
-													<a name="pone.0113556-Piggin1" id="pone.0113556-Piggin1"></a>
+													<a name="pone.0113556-Piggin1" id="pone.0113556-Piggin1"/>
 													Piggin CM (1982) The biology of Australian weeds. 8.
 													<em>Echium plantagineum</em>
 													L. J Aust Inst Agric Sci 48:3–16.
 													<ul class="find" data-citedArticleID="13150975">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1823,31 +1688,25 @@
 												<li>
 													<span class="label">2.
 													</span>
-													<a name="pone.0113556-Gray1" id="pone.0113556-Gray1"></a>
+													<a name="pone.0113556-Gray1" id="pone.0113556-Gray1"/>
 													Gray DA, Payne G, McClements DJ, Decker EA, Lad M (2010)
 													Oxidative stability of Echium
 													<em>plantagineum</em>
 													oil bodies. Eur J Lipid Sci Technol 112:741–749.
 													doi: 10.1002/ejlt.200900280
-													<ul class="find" data-citedArticleID="13150980"
-														data-doi="10.1002/ejlt.200900280">
+													<ul class="find" data-citedArticleID="13150980" data-doi="10.1002/ejlt.200900280">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1856,30 +1715,24 @@
 												<li>
 													<span class="label">3.
 													</span>
-													<a name="pone.0113556-GuilGuerrero1" id="pone.0113556-GuilGuerrero1"></a>
+													<a name="pone.0113556-GuilGuerrero1" id="pone.0113556-GuilGuerrero1"/>
 													Guil-Guerrero JL (2007) Stearidonic acid (18:4n-3):
 													Metabolism, nutritional importance, medical uses and
 													natural sources. Eur J Lipid Sci Technol 109:1226–1236.
 													doi: 10.1002/ejlt.200700207
-													<ul class="find" data-citedArticleID="13150985"
-														data-doi="10.1002/ejlt.200700207">
+													<ul class="find" data-citedArticleID="13150985" data-doi="10.1002/ejlt.200700207">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1888,30 +1741,24 @@
 												<li>
 													<span class="label">4.
 													</span>
-													<a name="pone.0113556-Corbet1" id="pone.0113556-Corbet1"></a>
+													<a name="pone.0113556-Corbet1" id="pone.0113556-Corbet1"/>
 													Corbet SA, Delfosse ES (1984) Honeybees and the nectar of
 													<em>Echium plantagineum</em>
 													L. in southeastern Australia. Austral J Ecol 9:125–139.
 													doi: 10.1111/j.1442-9993.1984.tb01351.x
-													<ul class="find" data-citedArticleID="13150990"
-														data-doi="10.1111/j.1442-9993.1984.tb01351.x">
+													<ul class="find" data-citedArticleID="13150990" data-doi="10.1111/j.1442-9993.1984.tb01351.x">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1920,18 +1767,18 @@
 												<li>
 													<span class="label">5.
 													</span>
-													<a name="pone.0113556-Cullen1" id="pone.0113556-Cullen1"></a>
+													<a name="pone.0113556-Cullen1" id="pone.0113556-Cullen1"/>
 													Cullen JM, Delfosse EE (1984)
 													<em>Echium plantagineum</em>
 													: Catalyst for conflict and change in Australia. In:
 													Delfosse ES, editor. Proc VI Int Symp Biol Contr Weeds.
 													Agric Canada: pp.249–292.
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">6.
 													</span>
-													<a name="pone.0113556-Davis1" id="pone.0113556-Davis1"></a>
+													<a name="pone.0113556-Davis1" id="pone.0113556-Davis1"/>
 													Davis AR (1992) Evaluating honey bees as pollinators of
 													virgin flowers of
 													<em>Echium plantagineum</em>
@@ -1939,23 +1786,17 @@
 													Res 31:83–95.
 													<ul class="find" data-citedArticleID="13151000">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1964,29 +1805,23 @@
 												<li>
 													<span class="label">7.
 													</span>
-													<a name="pone.0113556-Mathieson1" id="pone.0113556-Mathieson1"></a>
+													<a name="pone.0113556-Mathieson1" id="pone.0113556-Mathieson1"/>
 													Mathieson S (1988) Floral resources and limiting factors
 													affecting commercial beekeeping in Australia. Australasian
 													Beekeeper 90:208–209.
 													<ul class="find" data-citedArticleID="13151005">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -1995,7 +1830,7 @@
 												<li>
 													<span class="label">8.
 													</span>
-													<a name="pone.0113556-Berti1" id="pone.0113556-Berti1"></a>
+													<a name="pone.0113556-Berti1" id="pone.0113556-Berti1"/>
 													Berti M, Fischer S, Wilckens R, Hevis F, Araos R (2004)
 													Echium (
 													<em>E. vulgare</em>
@@ -2003,56 +1838,50 @@
 													<em>E. plantagineum</em>
 													) wild population characteristics in Chile. AAIC Abstract.
 													<a href="foo">www.aaic.org/04progrm.htm</a>
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">9.
 													</span>
-													<a name="pone.0113556-NNFCC1" id="pone.0113556-NNFCC1"></a>
+													<a name="pone.0113556-NNFCC1" id="pone.0113556-NNFCC1"/>
 													NNFCC (2009) Echium Crop Fact Sheet. National Non-Food Crop
 													Centre, United Kingdom. Available:
 													http://www.nnfcc.co.uk%2Fpublications%2F​nnfcc-crop-factsheet-echium.Accessed
 													13 May 2013.
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">10.
 													</span>
-													<a name="pone.0113556-Berti2" id="pone.0113556-Berti2"></a>
+													<a name="pone.0113556-Berti2" id="pone.0113556-Berti2"/>
 													Berti M, Johnson BL, Dash S, Fischer S, Wilckens R, et al.
 													<strong>.</strong>
 													(2007). Echium: A source of stearidonic acid adapted to the
 													northern Great Plains in the US. In:Janick J, Whipkey
 													Aeditors. Issues in New Crops and New Uses. ASHAS Press:
 													pp.120–125.
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">11.
 													</span>
-													<a name="pone.0113556-Brodschneider1" id="pone.0113556-Brodschneider1"></a>
+													<a name="pone.0113556-Brodschneider1" id="pone.0113556-Brodschneider1"/>
 													Brodschneider R, Crailscheim K (2010) Nutrition and health
 													in honey bees. Apidologie 41:278–294.
 													doi: 10.1051/apido/2010012
-													<ul class="find" data-citedArticleID="13151025"
-														data-doi="10.1051/apido/2010012">
+													<ul class="find" data-citedArticleID="13151025" data-doi="10.1051/apido/2010012">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2061,30 +1890,24 @@
 												<li>
 													<span class="label">12.
 													</span>
-													<a name="pone.0113556-Naug1" id="pone.0113556-Naug1"></a>
+													<a name="pone.0113556-Naug1" id="pone.0113556-Naug1"/>
 													Naug D (2009) Nutritional stress due to habitat loss may
 													explain recent honeybee colony collapses, Biol Conserv.
 													142:2369–2372.
 													doi: 10.1016/j.biocon.2009.04.007
-													<ul class="find" data-citedArticleID="13151030"
-														data-doi="10.1016/j.biocon.2009.04.007">
+													<ul class="find" data-citedArticleID="13151030" data-doi="10.1016/j.biocon.2009.04.007">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="hfoo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="hfoo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2093,30 +1916,24 @@
 												<li>
 													<span class="label">13.
 													</span>
-													<a name="pone.0113556-Rempel1" id="pone.0113556-Rempel1"></a>
+													<a name="pone.0113556-Rempel1" id="pone.0113556-Rempel1"/>
 													Rempel RS, Reid DEB, Jackson J (2012) Batcheler-corrected
 													point distance versus belt transect for sampling habitat
 													and woody vegetation. Can J For Res 42:2052–2063.
 													doi: 10.1139/x2012-146
-													<ul class="find" data-citedArticleID="13151035"
-														data-doi="10.1139/x2012-146">
+													<ul class="find" data-citedArticleID="13151035" data-doi="10.1139/x2012-146">
 														<li>
-															<a href="foo" target="_new"
-																title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2125,41 +1942,35 @@
 												<li>
 													<span class="label">14.
 													</span>
-													<a name="pone.0113556-Kushneriuk1" id="pone.0113556-Kushneriuk1"></a>
+													<a name="pone.0113556-Kushneriuk1" id="pone.0113556-Kushneriuk1"/>
 													Kushneriuk RS, Rempel RS (2009) Transect Point Density
 													(TPD). Ontario Ministry of Natural Resources. Centre for
 													Northern Forest Ecosystem Research, Thunder Bay, Ontario.
 													<a href="foo">http://www.cnfer.on.ca/SEP/</a>
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">15.
 													</span>
-													<a name="pone.0113556-Corbet2" id="pone.0113556-Corbet2"></a>
+													<a name="pone.0113556-Corbet2" id="pone.0113556-Corbet2"/>
 													Corbet SA, Bee J, Dasmahapatra K, Gale S, Gorringe E, et
 													al. (2001) Native or exotic? Double or single? Evaluating
 													plants for pollinator-friendly gardens. Annals of Botany
 													87:219–232.
 													doi: 10.1006/anbo.2000.1322
-													<ul class="find" data-citedArticleID="13151045"
-														data-doi="10.1006/anbo.2000.1322">
+													<ul class="find" data-citedArticleID="13151045" data-doi="10.1006/anbo.2000.1322">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2168,29 +1979,23 @@
 												<li>
 													<span class="label">16.
 													</span>
-													<a name="pone.0113556-TechnologyCropsInternational1" id="pone.0113556-TechnologyCropsInternational1"></a>
+													<a name="pone.0113556-TechnologyCropsInternational1" id="pone.0113556-TechnologyCropsInternational1"/>
 													Technology Crops International (2010) The technology crops
 													guide to growing echium. © Technology Crop International.
 													Winston-Salem, NC, USA. techcrops.com
 													<ul class="find" data-citedArticleID="13151050">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2199,33 +2004,26 @@
 												<li>
 													<span class="label">17.
 													</span>
-													<a name="pone.0113556-Vivarelli1" id="pone.0113556-Vivarelli1"></a>
+													<a name="pone.0113556-Vivarelli1" id="pone.0113556-Vivarelli1"/>
 													Vivarelli D (2007) Consequences of plant population size
 													for pollinator visitation and plant reproductive success.
 													Ph.D. Thesis. University of Bologna: Italy. pp 106.
-													<a
-														href="foo">http://amsdottorato.cib.unibo.it/324/1/c​omplete_for_web_def.pdf
+													<a href="foo">http://amsdottorato.cib.unibo.it/324/1/c​omplete_for_web_def.pdf
 													</a>
 													.
 													<ul class="find" data-citedArticleID="13151055">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2234,31 +2032,25 @@
 												<li>
 													<span class="label">18.
 													</span>
-													<a name="pone.0113556-Burdon1" id="pone.0113556-Burdon1"></a>
+													<a name="pone.0113556-Burdon1" id="pone.0113556-Burdon1"/>
 													Burdon JJ, Jarosz AM, Brown AHD (1988) Temporal patterns of
 													reproduction and outcrossing in weedy populations of
 													<em>Echium plantagineum</em>
 													. Biol J Lin Soc 34:81–92.
 													doi: 10.1111/j.1095-8312.1988.tb01949.x
-													<ul class="find" data-citedArticleID="13151060"
-														data-doi="10.1111/j.1095-8312.1988.tb01949.x">
+													<ul class="find" data-citedArticleID="13151060" data-doi="10.1111/j.1095-8312.1988.tb01949.x">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2267,30 +2059,24 @@
 												<li>
 													<span class="label">19.
 													</span>
-													<a name="pone.0113556-Piggin2" id="pone.0113556-Piggin2"></a>
+													<a name="pone.0113556-Piggin2" id="pone.0113556-Piggin2"/>
 													Piggin CM (1978) Flowering and seed production of
 													<em>Echium plantagineum</em>
 													L. Weed Res 18:83–97.
 													doi: 10.1111/j.1365-3180.1978.tb01140.x
-													<ul class="find" data-citedArticleID="13151065"
-														data-doi="10.1111/j.1365-3180.1978.tb01140.x">
+													<ul class="find" data-citedArticleID="13151065" data-doi="10.1111/j.1365-3180.1978.tb01140.x">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2299,40 +2085,34 @@
 												<li>
 													<span class="label">20.
 													</span>
-													<a name="pone.0113556-McGregor1" id="pone.0113556-McGregor1"></a>
+													<a name="pone.0113556-McGregor1" id="pone.0113556-McGregor1"/>
 													McGregor SE (1976) Insect pollination of cultivated crop
 													plants. In: Agricultural Handbook No. 496. Version with
 													some updated information for some crop species available at
 													<a href="foo">http://gears</a>
 													. Tuscon.ars.ag.gov/book/. pp 275–280.
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">21.
 													</span>
-													<a name="pone.0113556-Corbet3" id="pone.0113556-Corbet3"></a>
+													<a name="pone.0113556-Corbet3" id="pone.0113556-Corbet3"/>
 													Corbet SA (2003) Nectar sugar content: estimating standing
 													crop and secretion rate in the field. Apidologie 34:1–10.
 													doi: 10.1051/apido:2002049
-													<ul class="find" data-citedArticleID="13151075"
-														data-doi="10.1051/apido:2002049">
+													<ul class="find" data-citedArticleID="13151075" data-doi="10.1051/apido:2002049">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2341,30 +2121,24 @@
 												<li>
 													<span class="label">22.
 													</span>
-													<a name="pone.0113556-Standifer1" id="pone.0113556-Standifer1"></a>
+													<a name="pone.0113556-Standifer1" id="pone.0113556-Standifer1"/>
 													Standifer LN, Moeller FE, Kauffeld NM, Herbert Jr EW,
 													Shimanuki H (1977) Supplemental feeding of honey bee
 													colonies. United States Department of Agriculture
 													Agriculture Information Bulletin. No 413.
 													<ul class="find" data-citedArticleID="13151080">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2373,7 +2147,7 @@
 												<li>
 													<span class="label">23.
 													</span>
-													<a name="pone.0113556-Axel1" id="pone.0113556-Axel1"></a>
+													<a name="pone.0113556-Axel1" id="pone.0113556-Axel1"/>
 													Axel D, Cédric A, Jean-François O, Mickaël H, Bernard VE,
 													et al.
 													<strong>.</strong>
@@ -2382,35 +2156,28 @@
 													Ecosystems Biodiversity, PhD Oscar Grillo (Ed.) ISBN:
 													978-953-307-417-7, InTech DOI: 10.5772/24523. Available
 													from:
-													<a
-														href="foo">http://www.intechopen.com/books/ecosyste​ms-biodiversity/why-enhancement-of-flora​l-resources-in-agro-ecosystems-benefit-h​oneybees-and-beekeepers-
+													<a href="foo">http://www.intechopen.com/books/ecosyste​ms-biodiversity/why-enhancement-of-flora​l-resources-in-agro-ecosystems-benefit-h​oneybees-and-beekeepers-
 													</a>
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 												<li>
 													<span class="label">24.
 													</span>
-													<a name="pone.0113556-Huang1" id="pone.0113556-Huang1"></a>
+													<a name="pone.0113556-Huang1" id="pone.0113556-Huang1"/>
 													Huang Z (2010) Honey bee nutrition. Am Bee J 150:773–776.
 													<ul class="find" data-citedArticleID="13151090">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2419,30 +2186,23 @@
 												<li>
 													<span class="label">25.
 													</span>
-													<a name="pone.0113556-Erickson1" id="pone.0113556-Erickson1"></a>
+													<a name="pone.0113556-Erickson1" id="pone.0113556-Erickson1"/>
 													Erickson EH (1975a) Effect of honey bees on soybeans's
 													yield. Crop Sci 15:84–86.
 													doi: 10.2135/cropsci1975.0011183x001500010025x
-													<ul class="find" data-citedArticleID="13151095"
-														data-doi="10.2135/cropsci1975.0011183x001500010025x">
+													<ul class="find" data-citedArticleID="13151095" data-doi="10.2135/cropsci1975.0011183x001500010025x">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2451,31 +2211,24 @@
 												<li>
 													<span class="label">26.
 													</span>
-													<a name="pone.0113556-Erickson2" id="pone.0113556-Erickson2"></a>
+													<a name="pone.0113556-Erickson2" id="pone.0113556-Erickson2"/>
 													Erickson EH (1975b) Variability in floral characteristics
 													influences honey bee visitation to soybean blossoms. Crop
 													Sci 15:767–771.
 													doi: 10.2135/cropsci1975.0011183x001500060008x
-													<ul class="find" data-citedArticleID="13151100"
-														data-doi="10.2135/cropsci1975.0011183x001500060008x">
+													<ul class="find" data-citedArticleID="13151100" data-doi="10.2135/cropsci1975.0011183x001500060008x">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2484,31 +2237,24 @@
 												<li>
 													<span class="label">27.
 													</span>
-													<a name="pone.0113556-Jiang1" id="pone.0113556-Jiang1"></a>
+													<a name="pone.0113556-Jiang1" id="pone.0113556-Jiang1"/>
 													Jiang H, Egli DB (1993) Shade induced changes in flower and
 													pod number and flower and fruit abscission in soybean.
 													Agron J 85:221–225.
 													doi: 10.2134/agronj1993.00021962008500020011x
-													<ul class="find" data-citedArticleID="13151105"
-														data-doi="10.2134/agronj1993.00021962008500020011x">
+													<ul class="find" data-citedArticleID="13151105" data-doi="10.2134/agronj1993.00021962008500020011x">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2517,29 +2263,23 @@
 												<li>
 													<span class="label">28.
 													</span>
-													<a name="pone.0113556-Severson1" id="pone.0113556-Severson1"></a>
+													<a name="pone.0113556-Severson1" id="pone.0113556-Severson1"/>
 													Severson DW, Erickson EH (1984) Quantitative and
 													qualitative variation in floral nectar of soybean cultivars
 													in southeastern Missouri. Env Entomol 13:1091–1096.
 													<ul class="find" data-citedArticleID="13151110">
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2548,7 +2288,7 @@
 												<li>
 													<span class="label">29.
 													</span>
-													<a name="pone.0113556-Groeneveld1" id="pone.0113556-Groeneveld1"></a>
+													<a name="pone.0113556-Groeneveld1" id="pone.0113556-Groeneveld1"/>
 													Groeneveld JH, Klein AM (2013) Pollination of two
 													oil-producing species: camelina (
 													<em>Camelina sativa</em>
@@ -2556,25 +2296,19 @@
 													<em>Thlaspi arvense</em>
 													L.) double-cropping in Germany. GCB Bioenergy 6:242–251.
 													doi: 10.1111/gcbb.12122
-													<ul class="find" data-citedArticleID="13151115"
-														data-doi="10.1111/gcbb.12122">
+													<ul class="find" data-citedArticleID="13151115" data-doi="10.1111/gcbb.12122">
 														<li>
-															<a href="foo" target="_new"
-																title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2583,30 +2317,24 @@
 												<li>
 													<span class="label">30.
 													</span>
-													<a name="pone.0113556-DeSousaRosa1" id="pone.0113556-DeSousaRosa1"></a>
+													<a name="pone.0113556-DeSousaRosa1" id="pone.0113556-DeSousaRosa1"/>
 													De Sousa Rosa A, Blochtein B, Lima DK (2011) Honey bee
 													contribution to canola pollination in southern Brasil. Sci
 													Agric 68:255–259.
 													doi: 10.1590/s0103-90162011000200018
-													<ul class="find" data-citedArticleID="13151120"
-														data-doi="10.1590/s0103-90162011000200018">
+													<ul class="find" data-citedArticleID="13151120" data-doi="10.1590/s0103-90162011000200018">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2615,32 +2343,26 @@
 												<li>
 													<span class="label">31.
 													</span>
-													<a name="pone.0113556-Rader1" id="pone.0113556-Rader1"></a>
+													<a name="pone.0113556-Rader1" id="pone.0113556-Rader1"/>
 													Rader R, Howlett BG, Cunningham SA, Westcott DA, Edwards W
 													(2012) Spatial and temporal variation in pollinator
 													effectiveness: do unmanaged insects provide consistent
 													pollination services to mass flowering crops. J Appl Ecol
 													49:126–134.
 													doi: 10.1111/j.1365-2664.2011.02066.x
-													<ul class="find" data-citedArticleID="13151125"
-														data-doi="10.1111/j.1365-2664.2011.02066.x">
+													<ul class="find" data-citedArticleID="13151125" data-doi="10.1111/j.1365-2664.2011.02066.x">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2649,31 +2371,25 @@
 												<li>
 													<span class="label">32.
 													</span>
-													<a name="pone.0113556-Hooper1" id="pone.0113556-Hooper1"></a>
+													<a name="pone.0113556-Hooper1" id="pone.0113556-Hooper1"/>
 													Hooper PT, Scanlan WA (1977)
 													<em>Crotalaria retusa</em>
 													poisoning of pigs and poultry. Australian Veterinary
 													Journal 53:109–114.
 													doi: 10.1111/j.1751-0813.1977.tb00129.x
-													<ul class="find" data-citedArticleID="13151130"
-														data-doi="10.1111/j.1751-0813.1977.tb00129.x">
+													<ul class="find" data-citedArticleID="13151130" data-doi="10.1111/j.1751-0813.1977.tb00129.x">
 														<li>
-															<a href="foo"
-																target="_new" title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2682,31 +2398,25 @@
 												<li>
 													<span class="label">33.
 													</span>
-													<a name="pone.0113556-Boppr1" id="pone.0113556-Boppr1"></a>
+													<a name="pone.0113556-Boppr1" id="pone.0113556-Boppr1"/>
 													Boppré M, Colgate SM, Edgar JA, Fischer OW (2008)
 													Hepatotoxic pyrrolizidine alkaloids in pollen and
 													drying-related implications for commercial processing of
 													bee pollen. J Agric Food Chem 56:5662–5672.
 													doi: 10.1021/jf800568u
-													<ul class="find" data-citedArticleID="13151135"
-														data-doi="10.1021/jf800568u">
+													<ul class="find" data-citedArticleID="13151135" data-doi="10.1021/jf800568u">
 														<li>
-															<a href="foo" target="_new"
-																title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2715,31 +2425,25 @@
 												<li>
 													<span class="label">34.
 													</span>
-													<a name="pone.0113556-Culvenor1" id="pone.0113556-Culvenor1"></a>
+													<a name="pone.0113556-Culvenor1" id="pone.0113556-Culvenor1"/>
 													Culvenor CCJ, Edgar JA, Smith LW (1981) Pyrrolizidine
 													alkaloids in honey from
 													<em>Echium plantagineum</em>
 													L. J Agric Food Chem 29:958–960.
 													doi: 10.1021/jf00107a018
-													<ul class="find" data-citedArticleID="13151140"
-														data-doi="10.1021/jf00107a018">
+													<ul class="find" data-citedArticleID="13151140" data-doi="10.1021/jf00107a018">
 														<li>
-															<a href="foo" target="_new"
-																title="Go to article in CrossRef">
+															<a href="foo" target="_new" title="Go to article in CrossRef">
 																View Article
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in PubMed">
+															<a href="foo" target="_new" title="Go to article in PubMed">
 																PubMed/NCBI
 															</a>
 														</li>
 														<li>
-															<a
-																href="foo"
-																target="_new" title="Go to article in Google Scholar">
+															<a href="foo" target="_new" title="Go to article in Google Scholar">
 																Google Scholar
 															</a>
 														</li>
@@ -2748,15 +2452,14 @@
 												<li>
 													<span class="label">35.
 													</span>
-													<a name="pone.0113556-Australia1" id="pone.0113556-Australia1"></a>
+													<a name="pone.0113556-Australia1" id="pone.0113556-Australia1"/>
 													Australia New Zealand Food Authority. 2001. Pyrrolizidine
 													alkaloids in food: A toxicological review and risk
 													assessment. Tech. Rep. Ser. No. 2, ANZFA, PO Box 7168,
 													Canberra BC, ACT 2610.
-													<a
-														href="foo">http://www.foodstandards.gov.au/publicat​ions/documents/TR2.pdf
+													<a href="foo">http://www.foodstandards.gov.au/publicat​ions/documents/TR2.pdf
 													</a>
-													<ul class="find-nolinks"></ul>
+													<ul class="find-nolinks"/>
 												</li>
 											</ol>
 										</div>
