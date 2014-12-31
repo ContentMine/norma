@@ -1,0 +1,155 @@
+
+<tagger name="bmc">
+
+	<xsl:stylesheet version="2.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:h="http://www.w3.org/1999/xhtml">
+		
+		<!--  shouldn't be necessary -->
+		<xsl:template match="/">
+			<xsl:apply-templates />
+		</xsl:template>
+
+		<!--Identity template, strips PIs and comments -->
+		<xsl:template match="@*|*|text()">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|*|text()" />
+			</xsl:copy>
+		</xsl:template>
+
+		
+	</xsl:stylesheet>
+
+<!--  no namespace in XML -->
+	<tagList>
+	    <variable name="art">art</variable>
+	    <variable name="fm">{$art}/fm</variable>
+	    <variable name="bibl">{$fm}/bibl</variable>
+	    <variable name="title">{$bibl}/title</variable>
+	    <variable name="aug">{$bibl}/aug</variable>
+	    <variable name="au">{$aug}/au</variable>
+	    <variable name="insg">{$bibl}/insg</variable>
+	    <variable name="ins">{$insg}/ins</variable>
+	    <variable name="source">{$bibl}/source</variable>
+	    <variable name="journal_title">{$bibl}/section/title</variable>
+	    <variable name="issn">{$bibl}/issn</variable>
+	    <variable name="pubdate">{$bibl}/pubdate</variable>
+	    <variable name="volume">{$bibl}/volume</variable>
+	    <variable name="issue">{$bibl}/issue</variable>
+	    <variable name="fpage">{$bibl}/fpage</variable>
+	    <variable name="url">{$bibl}/url</variable>
+	    <variable name="doi">{$bibl}/xrefbib/pubid[@type='doi']</variable>
+	    <variable name="history">{$fm}/history</variable>
+	    <variable name="rec">{$history}/rec</variable>
+	    <variable name="acc">{$history}/acc</variable>
+	    <variable name="pub">{$history}/pub</variable>
+	    <variable name="copyrt">{$fm}/copyrt</variable>
+	    <variable name="kwdg">{$fm}/kwdg</variable>
+	    <variable name="kwd">{$kwdg}/kwd</variable>
+	    <variable name="abs">{$fm}/abs/sec</variable>
+	    
+	    <variable name="bdy">{$art}/bdy</variable>
+	    <variable name="background">{$bdy}/sec[st[p(.='Background')]]</variable>
+	    <variable name="methods">{$bdy}/sec[st[p(.='Methods')]]</variable>
+	    <variable name="results_discussion">{$bdy}/sec[st[p(.='Results and discussion')]]</variable>
+	    <variable name="conclusions">{$bdy}/sec[st[p(.='Conclusions')]]</variable>
+	    <variable name="endnote">{$bdy}/sec[st[p(.='Endnote')]]</variable>
+	    <variable name="abbreviations">{$bdy}/sec[st[p(.='Abbreviations')]]</variable>
+	    <variable name="competing">{$bdy}/sec[st[p(.='Competing interests')]]</variable>
+	    <variable name="contributions">{$bdy}/sec[st[p[contains(.'Authors') and contains(.'contributions)]]</variable>
+	    
+	    <variable name="bm">{$art}/bm</variable>
+	    <variable name="acknowledgments">{$bm}/ack</variable>
+	    <variable name="references">{$bm}/refgrp</variable>
+	    <variable name="reference">{$refgrp}/bibl</variable>
+	    
+	    <variable name="article_meta">{$front}/article-meta</variable>
+	    <variable name="contrib_group">{$article_meta}/contrib-group</variable>
+	    <variable name="body">{$article}/body</variable>
+	    <variable name="back">{$article}/back</variable>
+
+<!-- uses Xpath 1.0, so cannot use regex matches(a,b,c) etc -->
+		<tag name="journaltitle">{$journal_meta}/journal-title-group/journal-title</tag> <!--  ??? -->
+		<tag name="issn">{$journal_meta}/issn</tag> <!--  ??? -->
+		<tag name="doi">{$article_meta}/article-id[@pub-id-type='doi']</tag> <!--  ??? -->
+		<tag name="author">{$contrib_group}/contrib[@contrib-type='author']</tag> <!--  ??? -->
+		<tag name="abstract">{$article_meta}/abstract</tag> <!--  ??? -->
+		<tag name="license">{$article_meta}/permissions/license</tag> <!--  ??? -->
+		<tag name="copyright">{$article_meta}/notYetDone</tag> <!--  ??? -->
+		<tag name="funding_group">{$article_meta}/funding-group</tag> <!--  ??? -->
+		<tag name="page_counts">{$article_meta}/counts/page-count/@count</tag> <!--  ??? -->
+		<tag name="data_availability">{$article_meta}/custom-meta-group/custom-meta[@id='data-availability']</tag> <!--  ??? -->
+
+		<!--  more metadata from front could be added if required;  
+		 history of publication
+		 volume
+		 issue
+		 -->
+		
+		<tag name="background">{$body}/sec[title='Introduction']</tag> <!--  ??? -->
+<!--  results and discussions seem to overlap for PLoSONE -->
+		<tag name="results">{$body}/sec[title='Results and Discussion']</tag> <!--  ??? -->
+		<tag name="discussion">{$body}/sec[title='Results and Discussion']</tag> <!--  ??? -->
+		<tag name="conclusion">{$body}/sec[title='Conclusions']</tag> <!--  ??? -->
+		<tag name="abbreviations">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="disclosure">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="acknowledgments">{$back}/ack</tag> <!--  ??? -->
+		<tag name="competing">{$body}/notYetDone</tag> <!--  ??? -->
+		<tag name="references">{$back}/ref-list</tag> <!--  ??? -->
+		<tag name="methods">{$body}/sec[title='Materials and Methods']</tag> <!--  ??? -->
+		
+		<tag name="table">{$body}//h:div[@class='fig' and starts-with(@id, 'tab')]/h:div[@class='groupcaption']</tag>
+		<tag name="figure">{$body}//*[@class='fig']/*[@class='groupcaption' and starts-with(.,'Figure ')]</tag> 
+		<!-- 
+		<tag name="additionfiles">//h:h4[contains(., 'Supporting Information')]</tag>
+		<tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']</tag>
+		-->
+	</tagList>
+	<metadataList>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="language">/h:html/h:head/h:meta[@name='dc.language']/@content</metadata>
+		<metadata name="format">/h:html/h:head/h:meta[@name='dc.format']/@content</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='prism.volume']/@content</metadata>
+		<metadata name="issue">/h:html/h:head/h:meta[@name='prism.number']/@content</metadata>
+		<metadata name="startPage">/h:html/h:head/h:meta[@name='prism.startingPage']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='dc.publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='citation_publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='Author']/@content</metadata>
+		<metadata name="issn">/h:html/h:head/h:meta[@name='prism.issn']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='dc.source']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='prism.publicationName']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='citation_journal_title']/@content
+		</metadata>
+		<metadata name="author">/h:html/h:head/h:meta[@name='dc.creator']/@content</metadata>
+		<metadata name="authors">/h:html/h:head/h:meta[@name='citation_authors']/@content</metadata>
+		<metadata name="author">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+		</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='dc.title']/@content</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='citation_title']/@content</metadata>
+		<metadata name="title">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+		</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='citation_volume']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dcterms.issued']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='citation_date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dc.date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='prism.publicationDate']/@content</metadata>
+		<metadata name="year">/h:html/h:head/h:meta[@name='citation_year']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='prism.doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='dc.identifier']/@content</metadata>
+		<metadata name="doi">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+		</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='citation_abstract']/@content</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='dc.description']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='prism.section']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='dc.type']/@content</metadata>
+		<metadata name="type">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+		</metadata>
+		<metadata name="address">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+		</metadata>
+		<metadata name="copyrightlicence">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/text()
+		</metadata>
+		<metadata name="licenceurl">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/a[@rel='licence']/@href
+		</metadata>
+	</metadataList>
+</tagger>

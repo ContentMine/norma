@@ -1,13 +1,32 @@
 
-<tagger name="nlm">
+<tagger name="elsevier">
 
 	<xsl:stylesheet version="2.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
 		xmlns:h="http://www.w3.org/1999/xhtml">
 		
-		<!--  shouldn't be necessary -->
 		<xsl:template match="/">
 			<xsl:apply-templates />
+		</xsl:template>
+
+		<!-- remove interactive components -->
+		<xsl:template match="
+		    h:script 
+		  | comment()
+		  | h:div[@id='header-area']
+		  | h:form
+		  | h:div[@style='clear:both' or @class='pdfModalWindow' or
+		      @id='suggestedPdfList' or @id='sdpa' or @id='appbackground' or @id='appDialog']
+		  | h:div[@id='articleToolbar' or @id='articleToolbarDummy']
+		  | h:div[@class='topBorder' or @class='publisherLogo']
+		  | h:div[@id='leftPane' or @id='rightPane' or @id='footer-area' or @id='footer-area-dummy']
+		  | h:div[@class='publicationCover cover2']
+		  | h:div[@class='head headTemplate page_fragment_ind']
+		  | h:div[@id='articleToolbar']
+		  | h:div[@id='appDialog']
+		  | h:form
+		  | h:dd[@class='menuButtonLinks']
+		  		  ">
 		</xsl:template>
 
 		<!--Identity template, strips PIs and comments -->
@@ -20,11 +39,18 @@
 		
 	</xsl:stylesheet>
 
+<!--  no namespace -->	
 	<tagList>
-	    <variable name="html">/h:html</variable>
-	    <variable name="head">{$html}/h:head</variable>
-	    <variable name="meta">{$head}/h:meta</variable>
-	    <variable name="body">{$html}/h:body</variable>
+	    <variable name="html">/html</variable>
+	    <variable name="head">{$html}head</variable>
+	    <variable name="meta">{$head}meta</variable>
+	    <variable name="body">{$html}body</variable>
+	    <variable name="header_area">{$body}div[@id='header-area']</variable> <!-- delete -->
+	    <variable name="page_area">{$body}div[@id='page-area']</variable>
+	    <variable name="center_page">{$page_area}div[@id='centerPage']</variable>
+	    <variable name="center_content">{$center_page}div[@id='centerContent']</variable>
+	    <variable name="center_inner">{$center_page}div[@id='centerInner']</variable>
+	    
 	    <variable name="page_wrap">{$body}/h:div[@id='page-wrap']</variable>
 	    <variable name="topbanner">{$page_wrap}/h:div[@id='topbanner']</variable>
 	    <variable name="center">{$topbanner}/h:div[@class='center']</variable>
@@ -58,7 +84,8 @@
 	    <variable name="conclusions">{$section}[h:h3[.='Conclusions']]</variable>
 	    <variable name="acknowledgments">{$article}/h:div[h:h3[.='Acknowledgments']]</variable>
 	    <variable name="contributions">{$article}/h:div[h:h3[.='Author Contributions']]</variable>
-	    <variable name="references">{$article}/h:div[h:h3[.='References']]</variable>
+	    
+	    <variable name="references">{$article}/h:div[h:h3[.='References']]</variable> <!-- OK -->
 	    <variable name="reference">{$references}/h:ol/h:li</variable>
 
 <!--  uses <div class="figure"> for BOTH figures and tables :-( -->	    

@@ -12,10 +12,13 @@ import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import org.apache.commons.io.FileUtils;
+import nu.xom.Element;
+
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.nhtml.util.NHTMLTransformer;
+import org.xmlcml.xml.XMLUtil;
 
 public class MiscTest {
 
@@ -139,6 +142,7 @@ I'd consider this answer an argument against the Java way of doing things.
 //	}
 	
 	@Test
+	@Ignore // xsl file deleted
 	public void testSaxon0() throws Exception {
 //		http://stackoverflow.com/questions/9925483/calling-java-from-xsl-saxon	
 
@@ -210,5 +214,30 @@ I'd consider this answer an argument against the Java way of doing things.
 		transformer.transform(new StreamSource(System.in), saxResult1);
 
 		// th1 feeds th2, which in turn feeds System.out.
+	}
+	
+	@Test
+	public void testRecursiveGrouping() throws Exception {
+		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/flatFile.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/recursivegrouper.xsl");
+		File groupedFile = new File("target/testgroup/recursiveGroup.xml");
+	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+	}
+	
+	@Test
+	// http://stackoverflow.com/questions/27406846/nesting-flat-xml-siblings/27407470#27407470 
+	public void testRecursiveGroupingStackExample() throws Exception {
+		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/stackexample.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/recursivegrouperstack.xsl");
+		File groupedFile = new File("target/testgroup/stackexample.xml");
+	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+	}
+	
+	@Test
+	public void testH1H2Grouping() throws Exception {
+		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/flatFile.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/h1h2grouper.xsl");
+		File groupedFile = new File("target/testgroup/h1h2grouper.xml");
+	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
 	}
 }

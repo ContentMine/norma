@@ -236,6 +236,9 @@ public class DocumentTagger {
 		if (xpath == null) {
 			throw new RuntimeException("Cannot find xpath definition for: "+tagName);
 		}
+		if (Tags.CITATION_AUTHOR.equals(tagName)) {
+			LOG.debug("TEST");
+		}
 		List<Element> elements = (xPathContext == null) ?
 			XMLUtil.getQueryElements(element, xpath) :
 			XMLUtil.getQueryElements(element, xpath, xPathContext);

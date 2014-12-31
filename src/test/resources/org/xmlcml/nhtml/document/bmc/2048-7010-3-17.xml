@@ -7,28 +7,96 @@
 		<dochead>Research</dochead>
 		<bibl>
 			<title>
-				<p>Household adoption of soil-improving practices and food insecurity in Ghana</p>
+				<p>Household adoption of soil-improving practices and food
+					insecurity in Ghana</p>
 			</title>
 			<aug>
-				<au id="A1"><snm>Nata</snm><mi>T</mi><fnm>Jifar</fnm><insr iid="I1"/><email>jifartn12@tamu.edu</email></au>
-				<au id="A2" ca="yes"><snm>Mjelde</snm><mi>W</mi><fnm>James</fnm><insr iid="I2"/><email>j-mjelde@tamu.edu</email></au>
-				<au id="A3"><snm>Boadu</snm><mi>O</mi><fnm>Frederick</fnm><insr iid="I2"/><email>f-boadu@tamu.edu</email></au>
+				<au id="A1">
+					<snm>Nata</snm>
+					<mi>T</mi>
+					<fnm>Jifar</fnm>
+					<insr iid="I1" />
+					<email>jifartn12@tamu.edu</email>
+				</au>
+				<au id="A2" ca="yes">
+					<snm>Mjelde</snm>
+					<mi>W</mi>
+					<fnm>James</fnm>
+					<insr iid="I2" />
+					<email>j-mjelde@tamu.edu</email>
+				</au>
+				<au id="A3">
+					<snm>Boadu</snm>
+					<mi>O</mi>
+					<fnm>Frederick</fnm>
+					<insr iid="I2" />
+					<email>f-boadu@tamu.edu</email>
+				</au>
 			</aug>
 			<insg>
-				<ins id="I1"><p>Water Management and Hydrological Science, Texas A&amp;M University, College Station, TX, USA</p></ins>
-				<ins id="I2"><p>Department of Agricultural Economics, Texas A&amp;M University, College Station, TX, USA</p></ins>
+				<ins id="I1">
+					<p>Water Management and Hydrological Science, Texas A&amp;M
+						University, College Station, TX, USA</p>
+				</ins>
+				<ins id="I2">
+					<p>Department of Agricultural Economics, Texas A&amp;M University,
+						College Station, TX, USA</p>
+				</ins>
 			</insg>
 			<source>Agriculture &amp; Food Security</source>
-			<section><title><p>Agricultural Ecology</p></title></section><issn>2048-7010</issn>
+			<section>
+				<title>
+					<p>Agricultural Ecology</p>
+				</title>
+			</section>
+			<issn>2048-7010</issn>
 			<pubdate>2014</pubdate>
 			<volume>3</volume>
 			<issue>1</issue>
 			<fpage>17</fpage>
 			<url>http://www.agricultureandfoodsecurity.com/content/3/1/17</url>
-			<xrefbib><pubid idtype="doi">10.1186/2048-7010-3-17</pubid></xrefbib>
+			<xrefbib>
+				<pubid idtype="doi">10.1186/2048-7010-3-17</pubid>
+			</xrefbib>
 		</bibl>
-		<history><rec><date><day>28</day><month>3</month><year>2014</year></date></rec><acc><date><day>27</day><month>8</month><year>2014</year></date></acc><pub><date><day>10</day><month>11</month><year>2014</year></date></pub></history>
-		<cpyrt><year>2014</year><collab>Nata et al.; licensee BioMed Central Ltd.</collab><note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/4.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<url>http://creativecommons.org/publicdomain/zero/1.0/</url>) applies to the data made available in this article, unless otherwise stated.</note></cpyrt>
+		<history>
+			<rec>
+				<date>
+					<day>28</day>
+					<month>3</month>
+					<year>2014</year>
+				</date>
+			</rec>
+			<acc>
+				<date>
+					<day>27</day>
+					<month>8</month>
+					<year>2014</year>
+				</date>
+			</acc>
+			<pub>
+				<date>
+					<day>10</day>
+					<month>11</month>
+					<year>2014</year>
+				</date>
+			</pub>
+		</history>
+		<cpyrt>
+			<year>2014</year>
+			<collab>Nata et al.; licensee BioMed Central Ltd.</collab>
+			<note>
+				This is an Open Access article distributed under the terms of the
+				Creative Commons Attribution License (
+				<url>http://creativecommons.org/licenses/by/4.0</url>
+				), which permits unrestricted use, distribution, and reproduction in
+				any medium, provided the original work is properly credited. The
+				Creative Commons Public Domain Dedication waiver (
+				<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+				) applies to the data made available in this article, unless
+				otherwise stated.
+			</note>
+		</cpyrt>
 		<kwdg>
 			<kwd>Ghana</kwd>
 			<kwd>Food security</kwd>
@@ -44,17 +112,53 @@
 				<sec>
 					<st>
 						<p>Background</p>
-					</st><p>The persistent problem of poor agricultural practices and technology use leads to food insecurity for some farmers in Ghana. Studies show that the adoption of improved agricultural practices and technology may help stabilize production and lessen food insecurity. This study addresses the link between food insecurity and the adoption of soil-improving practices. To address this link, the objectives of this study are to examine factors associated with the adoption of soil-improving practices by Ghanaian farmers and how this adoption impacts the probability of increased food security. Using survey data, two logit models are estimated to determine 1) the likelihood of adopting soil-improving practices including how food security may influence adoption and 2) the relationship between technology adoption and food security.</p>
+					</st>
+					<p>The persistent problem of poor agricultural practices and
+						technology use leads to food insecurity for some farmers in Ghana.
+						Studies show that the adoption of improved agricultural practices
+						and technology may help stabilize production and lessen food
+						insecurity. This study addresses the link between food insecurity
+						and the adoption of soil-improving practices. To address this
+						link, the objectives of this study are to examine factors
+						associated with the adoption of soil-improving practices by
+						Ghanaian farmers and how this adoption impacts the probability of
+						increased food security. Using survey data, two logit models are
+						estimated to determine 1) the likelihood of adopting
+						soil-improving practices including how food security may influence
+						adoption and 2) the relationship between technology adoption and
+						food security.</p>
 				</sec>
 				<sec>
 					<st>
 						<p>Results</p>
-					</st><p>In the adoption model, being a food secure household, the use of insecticides and seasonal lease land tenure increase the probability of adopting such soil-improving practices. Farming on better soil decreases the probability of adopting soil-improving practices. Higher incomes along with the use of chemical fertilizers, farming on better soil, and the use of commercial seeds increase the probability of the household being food secure. The results on fertilizer, soil, and seeds are most likely associated with increased production. The use of insecticides (which may be an indicator of an insect infestation) lowers the probability of being food secure. Household characteristics such as income, age, education level, and household size are not significant in influencing the adoption decision or improving household food security.</p>
+					</st>
+					<p>In the adoption model, being a food secure household, the use of
+						insecticides and seasonal lease land tenure increase the
+						probability of adopting such soil-improving practices. Farming on
+						better soil decreases the probability of adopting soil-improving
+						practices. Higher incomes along with the use of chemical
+						fertilizers, farming on better soil, and the use of commercial
+						seeds increase the probability of the household being food secure.
+						The results on fertilizer, soil, and seeds are most likely
+						associated with increased production. The use of insecticides
+						(which may be an indicator of an insect infestation) lowers the
+						probability of being food secure. Household characteristics such
+						as income, age, education level, and household size are not
+						significant in influencing the adoption decision or improving
+						household food security.</p>
 				</sec>
 				<sec>
 					<st>
 						<p>Conclusions</p>
-					</st><p>The results lend support to a need to fine-tune the fertilizer subsidy policy implemented by the Government of Ghana. The government needs to consider that the use of fertilizer may have conflicting influences on adoption of soil-improving practices and food security. Improved seed research and distribution would improve the households&#8217; food security. Inferences also suggest that it is important to consider land contract markets in policy decisions.</p>
+					</st>
+					<p>The results lend support to a need to fine-tune the fertilizer
+						subsidy policy implemented by the Government of Ghana. The
+						government needs to consider that the use of fertilizer may have
+						conflicting influences on adoption of soil-improving practices and
+						food security. Improved seed research and distribution would
+						improve the households&#8217; food security. Inferences also
+						suggest that it is important to consider land contract markets in
+						policy decisions.</p>
 				</sec>
 			</sec>
 		</abs>
@@ -63,44 +167,156 @@
 		<sec>
 			<st>
 				<p>Background</p>
-			</st><p>Agriculture is a major source of livelihood in Ghana, supporting 46% of the total households and accounting for 30% of Ghana&#8217;s gross domestic product in 2010 <abbrgrp>
+			</st>
+			<p>
+				Agriculture is a major source of livelihood in Ghana, supporting 46%
+				of the total households and accounting for 30% of Ghana&#8217;s
+				gross domestic product in 2010
+				<abbrgrp>
 					<abbr bid="B1">1</abbr>
-				</abbrgrp>. Although agriculture is a growing sector in Ghana&#8217;s economy with a mean annual growth rate of approximately 5.3% <abbrgrp>
+				</abbrgrp>
+				. Although agriculture is a growing sector in Ghana&#8217;s economy
+				with a mean annual growth rate of approximately 5.3%
+				<abbrgrp>
 					<abbr bid="B1">1</abbr>
-				</abbrgrp>, food insecurity remains an issue. Food security is composed of three basic elements: availability, access, and utilization <abbrgrp>
+				</abbrgrp>
+				, food insecurity remains an issue. Food security is composed of
+				three basic elements: availability, access, and utilization
+				<abbrgrp>
 					<abbr bid="B2">2</abbr>
 					<abbr bid="B3">3</abbr>
-				</abbrgrp>. Availability is the condition where there is physical presence of food in the form of domestic production, commercial imports, and aid. Access is the ability to acquire food through a combination of home production and stocks, purchasing, borrowing, personal gifts, and in-kind or food aid. Utilization is the household&#8217;s use of acquired food including the ability to absorb and metabolize nutrients. Using these elements, food security is generally defined as &#8220;Secure access by all people at all times to enough food for a healthy life&#8221; <abbrgrp>
+				</abbrgrp>
+				. Availability is the condition where there is physical presence of
+				food in the form of domestic production, commercial imports, and
+				aid. Access is the ability to acquire food through a combination of
+				home production and stocks, purchasing, borrowing, personal gifts,
+				and in-kind or food aid. Utilization is the household&#8217;s use of
+				acquired food including the ability to absorb and metabolize
+				nutrients. Using these elements, food security is generally defined
+				as &#8220;Secure access by all people at all times to enough food
+				for a healthy life&#8221;
+				<abbrgrp>
 					<abbr bid="B3">3</abbr>
-				</abbrgrp>, p. 2.</p><p>Wolter <abbrgrp>
+				</abbrgrp>
+				, p. 2.
+			</p>
+			<p>
+				Wolter
+				<abbrgrp>
 					<abbr bid="B4">4</abbr>
-				</abbrgrp> notes that for a proper perspective of agriculture and food security in Ghana, one needs to consider the two faces of Ghana agriculture. Ghana is facing stagnating production in the food crop sector contributing to food insecurity, but increasing exports in horticulture crops <abbrgrp>
+				</abbrgrp>
+				notes that for a proper perspective of agriculture and food security
+				in Ghana, one needs to consider the two faces of Ghana agriculture.
+				Ghana is facing stagnating production in the food crop sector
+				contributing to food insecurity, but increasing exports in
+				horticulture crops
+				<abbrgrp>
 					<abbr bid="B4">4</abbr>
-				</abbrgrp>. A 2009 study for the World Food Programme (WFP) estimates that 1.2 million people in Ghana (approximately 5% of the population) have limited access to sufficient and nutritious food <abbrgrp>
+				</abbrgrp>
+				. A 2009 study for the World Food Programme (WFP) estimates that 1.2
+				million people in Ghana (approximately 5% of the population) have
+				limited access to sufficient and nutritious food
+				<abbrgrp>
 					<abbr bid="B5">5</abbr>
-				</abbrgrp>. Out of these 1.2 million people, almost 55% are from households that are primarily food and cash crop farmers, agro-pastoralist, food processors, or unskilled laborers. The basic underlying factors noted by the Biederlack and Rivers <abbrgrp>
+				</abbrgrp>
+				. Out of these 1.2 million people, almost 55% are from households
+				that are primarily food and cash crop farmers, agro-pastoralist,
+				food processors, or unskilled laborers. The basic underlying factors
+				noted by the Biederlack and Rivers
+				<abbrgrp>
 					<abbr bid="B5">5</abbr>
-				</abbrgrp> for the food insecure households are high dependency on agriculture, lack of education, lack of access to output markets, and poverty. Other studies such as <abbrgrp>
+				</abbrgrp>
+				for the food insecure households are high dependency on agriculture,
+				lack of education, lack of access to output markets, and poverty.
+				Other studies such as
+				<abbrgrp>
 					<abbr bid="B6">6</abbr>
-				</abbrgrp> and <abbrgrp>
+				</abbrgrp>
+				and
+				<abbrgrp>
 					<abbr bid="B7">7</abbr>
-				</abbrgrp> attribute ineffective production techniques, inadequate extension access, and inadequate input supplies as causes of food insecurity.</p><p>To improve food security, Ghana has implemented several programs through accelerated agriculture growth and development strategies <abbrgrp>
+				</abbrgrp>
+				attribute ineffective production techniques, inadequate extension
+				access, and inadequate input supplies as causes of food insecurity.
+			</p>
+			<p>
+				To improve food security, Ghana has implemented several programs
+				through accelerated agriculture growth and development strategies
+				<abbrgrp>
 					<abbr bid="B8">8</abbr>
-				</abbrgrp>. Stabilizing production in a sustainable way through soil-improving practices may be one way of ensuring food security for the growing Ghanaian population. Haggblade and Tembo <abbrgrp>
+				</abbrgrp>
+				. Stabilizing production in a sustainable way through soil-improving
+				practices may be one way of ensuring food security for the growing
+				Ghanaian population. Haggblade and Tembo
+				<abbrgrp>
 					<abbr bid="B9">9</abbr>
-				</abbrgrp>, for example, argue that farming with minimum tillage, cover crops, and crop rotation holds promise for stabilizing production and ensuring food security from their experiments in Zambia. There, however, is little information concerning the relationship between food security and adoption of soil-improving practices in Ghana. Adoption of recommended soil management practices may improve soil quality, help adaptation to climate change, and is essential to advancing food security <abbrgrp>
+				</abbrgrp>
+				, for example, argue that farming with minimum tillage, cover crops,
+				and crop rotation holds promise for stabilizing production and
+				ensuring food security from their experiments in Zambia. There,
+				however, is little information concerning the relationship between
+				food security and adoption of soil-improving practices in Ghana.
+				Adoption of recommended soil management practices may improve soil
+				quality, help adaptation to climate change, and is essential to
+				advancing food security
+				<abbrgrp>
 					<abbr bid="B10">10</abbr>
-				</abbrgrp>.</p><p>The agriculture technology adoption literature, which includes the adoption of soil conservation/soil-improving practices, presents diverse results depending on location of the study, type of technology, and other factors considered. Pender and Gebremedhin <abbrgrp>
+				</abbrgrp>
+				.
+			</p>
+			<p>
+				The agriculture technology adoption literature, which includes the
+				adoption of soil conservation/soil-improving practices, presents
+				diverse results depending on location of the study, type of
+				technology, and other factors considered. Pender and Gebremedhin
+				<abbrgrp>
 					<abbr bid="B11">11</abbr>
-				</abbrgrp> argue that as a result of population pressure, more land is being cultivated causing arable land to become increasingly scarce. Landholdings per household may become smaller, reducing per farm production and subsequently smaller investments in the land. As a result, a vicious circle of low productivity, inadequate investment capacity, and continued degradation exert further pressure on the existing cultivated land <abbrgrp>
+				</abbrgrp>
+				argue that as a result of population pressure, more land is being
+				cultivated causing arable land to become increasingly scarce.
+				Landholdings per household may become smaller, reducing per farm
+				production and subsequently smaller investments in the land. As a
+				result, a vicious circle of low productivity, inadequate investment
+				capacity, and continued degradation exert further pressure on the
+				existing cultivated land
+				<abbrgrp>
 					<abbr bid="B11">11</abbr>
-				</abbrgrp>. Solutions to this cycle call for the need to apply sustainable land practices to resolve the long-term impact of degradation on productivity and food production. Reviews of this literature <abbrgrp>
+				</abbrgrp>
+				. Solutions to this cycle call for the need to apply sustainable
+				land practices to resolve the long-term impact of degradation on
+				productivity and food production. Reviews of this literature
+				<abbrgrp>
 					<abbr bid="B12">12</abbr>
 					<abbr bid="B13">13</abbr>
 					<abbr bid="B14">14</abbr>
-				</abbrgrp> suggest that there is a general consensus pointing to a positive relationship between agriculture technology use and output, hence on households&#8217; food security status. There are potential location-specific effects <abbrgrp>
+				</abbrgrp>
+				suggest that there is a general consensus pointing to a positive
+				relationship between agriculture technology use and output, hence on
+				households&#8217; food security status. There are potential
+				location-specific effects
+				<abbrgrp>
 					<abbr bid="B14">14</abbr>
-				</abbrgrp>, including both socio-economic households&#8217; characteristics and bio-physical conditions of agricultural practices that need to be understood if relevant information for policy purposes is to be developed. This study starts to fill in the gap by providing information on farmers&#8217; decision-making regarding the use of soil-improving practices and food security.</p><p>The overall objectives of this study are to examine factors associated with the adoption of soil-improving practices by Ghanaian farmers and how this adoption impacts the probability of increased food security. Factors associated with the probability of adoption of soil-improving practices of households in the GA West District in Greater Accra Region of Ghana are examined. This study also explores if and how food insecure agricultural households differ from food secure agricultural households in terms of agricultural practices, household characteristics, and adoption of soil-improving technologies. To achieve these objectives, a survey of Ghanaian farmers was conducted. Logit models are used to determine likelihood of adopting soil-improving practices and the association between adoption of soil-improving practices and food security.</p>
+				</abbrgrp>
+				, including both socio-economic households&#8217; characteristics
+				and bio-physical conditions of agricultural practices that need to
+				be understood if relevant information for policy purposes is to be
+				developed. This study starts to fill in the gap by providing
+				information on farmers&#8217; decision-making regarding the use of
+				soil-improving practices and food security.
+			</p>
+			<p>The overall objectives of this study are to examine factors
+				associated with the adoption of soil-improving practices by Ghanaian
+				farmers and how this adoption impacts the probability of increased
+				food security. Factors associated with the probability of adoption
+				of soil-improving practices of households in the GA West District in
+				Greater Accra Region of Ghana are examined. This study also explores
+				if and how food insecure agricultural households differ from food
+				secure agricultural households in terms of agricultural practices,
+				household characteristics, and adoption of soil-improving
+				technologies. To achieve these objectives, a survey of Ghanaian
+				farmers was conducted. Logit models are used to determine likelihood
+				of adopting soil-improving practices and the association between
+				adoption of soil-improving practices and food security.</p>
 		</sec>
 		<sec>
 			<st>
@@ -109,385 +325,549 @@
 			<sec>
 				<st>
 					<p>Study area</p>
-				</st><p>The study area is the GA West District in Greater Accra Region of Ghana (Figure&#160;<figr fid="F1">1</figr>). The major agricultural crops in the Greater Accra region are cassava, rice, and maize. Cassava covers one-half of the cropping area, while rice and maize comprise approximately one-fourth of the cropping area in 2010 <abbrgrp>
+				</st>
+				<p>
+					The study area is the GA West District in Greater Accra Region of
+					Ghana (Figure&#160;
+					<figr fid="F1">1</figr>
+					). The major agricultural crops in the Greater Accra region are
+					cassava, rice, and maize. Cassava covers one-half of the cropping
+					area, while rice and maize comprise approximately one-fourth of the
+					cropping area in 2010
+					<abbrgrp>
 						<abbr bid="B15">15</abbr>
-					</abbrgrp>. Production of cassava was 68,170 tons, while rice and maize production were 12,741 tons and 3,584 tons in 2010 <abbrgrp>
+					</abbrgrp>
+					. Production of cassava was 68,170 tons, while rice and maize
+					production were 12,741 tons and 3,584 tons in 2010
+					<abbrgrp>
 						<abbr bid="B15">15</abbr>
-					</abbrgrp>.</p>
-				<fig id="F1"><title><p>Figure 1</p></title><caption><p>Location of the study area in Ghana, the Greater Accra region and GA West</p></caption><text>
-   <p><b>Location of the study area in Ghana, the Greater Accra region and GA West.</b> (Source: Wikomedia Commons).</p>
-</text><graphic file="2048-7010-3-17-1"/></fig>
+					</abbrgrp>
+					.
+				</p>
+				<fig id="F1">
+					<title>
+						<p>Figure 1</p>
+					</title>
+					<caption>
+						<p>Location of the study area in Ghana, the Greater Accra region
+							and GA West</p>
+					</caption>
+					<text>
+						<p>
+							<b>Location of the study area in Ghana, the Greater Accra region
+								and GA West.</b>
+							(Source: Wikomedia Commons).
+						</p>
+					</text>
+					<graphic file="2048-7010-3-17-1" />
+				</fig>
 			</sec>
 			<sec>
 				<st>
 					<p>Description of survey</p>
-				</st><p>Survey data was collected during the fall of 2012. Approval of the survey was obtained from the Institutional Review Board at Texas A&amp;M (IRB2013-0513). Informed consent was obtained from each participant before they answered the survey. Information on food security, farming practices, socio-economic characteristics, food consumption, asset ownership, soil-improving practices, technological adoption, and income for 116 households was collected. The detailed survey consisted of 14 pages of questions <abbrgrp>
+				</st>
+				<p>Survey
+					data was collected during the fall of 2012. Approval of the survey
+					was obtained from the Institutional Review Board at Texas A&amp;M
+					(IRB2013-0513). Informed consent was obtained from each participant
+					before they answered the survey. Information on food security,
+					farming practices, socio-economic characteristics, food
+					consumption, asset ownership, soil-improving practices,
+					technological adoption, and income for 116 households was
+					collected. The detailed survey consisted of 14 pages of questions
+					<abbrgrp>
 						<abbr bid="B16">16</abbr>
-					</abbrgrp>. The questionnaire was pretested using households within the study region. The survey was part of a larger study on soil fertility improvement in Ghana conducted by the Norman Borlaug Institute at Texas A&amp;M University.</p><p>Face-to-face interviews were conducted by extension agents from the Ministry of Food and Agriculture in Ghana, working for the district agriculture office. Respondents were chosen to account for diversity in farming systems and socio-economic conditions within the district. The interviews took place in a cluster of 14 rural villages within Ga West District. Even though all the villages lie in the same region of Ghana, there is considerable diversity in farming practices, especially in terms of practices used, crops grown, and education level. Unfortunately, there is no official information on the number of households (to provide a sampling frame); as such, respondents were identified with the help of the extension agents. These agents have considerable knowledge concerning the specific localities of villages. A village consists of two to approximately ten dwellings. Given the dispersion of the villages, the extension agent teams split into two groups to interview the farmers. The data collection process was time-consuming because the data collectors had to walk between the widely dispersed villages to conduct the interviews. Completion of the survey took between 30&#160;min and an hour depending on the complexity of the respondents&#8217; household and farming operations. One person per household completed the survey, usually the household head.</p>
+					</abbrgrp>.
+					The questionnaire was pretested using households within the study
+					region. The survey was part of a larger study on soil fertility
+					improvement in Ghana conducted by the Norman Borlaug Institute at
+					Texas A&amp;M University.
+				</p>
+				<p>Face-to-face interviews were conducted by extension agents from
+					the Ministry of Food and Agriculture in Ghana, working for the
+					district agriculture office. Respondents were chosen to account for
+					diversity in farming systems and socio-economic conditions within
+					the district. The interviews took place in a cluster of 14 rural
+					villages within Ga West District. Even though all the villages lie
+					in the same region of Ghana, there is considerable diversity in
+					farming practices, especially in terms of practices used, crops
+					grown, and education level. Unfortunately, there is no official
+					information on the number of households (to provide a sampling
+					frame); as such, respondents were identified with the help of the
+					extension agents. These agents have considerable knowledge
+					concerning the specific localities of villages. A village consists
+					of two to approximately ten dwellings. Given the dispersion of the
+					villages, the extension agent teams split into two groups to
+					interview the farmers. The data collection process was
+					time-consuming because the data collectors had to walk between the
+					widely dispersed villages to conduct the interviews. Completion of
+					the survey took between 30&#160;min and an hour depending on the
+					complexity of the respondents&#8217; household and farming
+					operations. One person per household completed the survey, usually
+					the household head.</p>
 			</sec>
 			<sec>
 				<st>
 					<p>Logit model for adoption choice</p>
-				</st><p>A logit model is used to provide changes in probability of the adoption of soil-improving practices associated with various household characteristics. A household is categorized as <it>adopter</it> if they use (adopt) one or more of the five soil-improving practices: no-till, minimum till, applying mulch, planting cover crops, and using crop rotation. <it>Non-adopters</it> are households that do not use any of these practices. The use of logit models in economics is based on random utility theory <abbrgrp>
+				</st>
+				<p>
+					A logit model is used to provide changes in probability of the
+					adoption of soil-improving practices associated with various
+					household characteristics. A household is categorized as
+					<it>adopter</it>
+					if they use (adopt) one or more of the five soil-improving
+					practices: no-till, minimum till, applying mulch, planting cover
+					crops, and using crop rotation.
+					<it>Non-adopters</it>
+					are households that do not use any of these practices. The use of
+					logit models in economics is based on random utility theory
+					<abbrgrp>
 						<abbr bid="B17">17</abbr>
-					</abbrgrp>. Households are assumed to choose the alternative(s) that maximize their utility subject to a set of constraints <abbrgrp>
+					</abbrgrp>
+					. Households are assumed to choose the alternative(s) that maximize
+					their utility subject to a set of constraints
+					<abbrgrp>
 						<abbr bid="B17">17</abbr>
 						<abbr bid="B18">18</abbr>
-					</abbrgrp>. Indirect utility, the basis for this analysis, measures the maximum utility that a household achieves given the price level and constraints <abbrgrp>
+					</abbrgrp>
+					. Indirect utility, the basis for this analysis, measures the
+					maximum utility that a household achieves given the price level and
+					constraints
+					<abbrgrp>
 						<abbr bid="B18">18</abbr>
-					</abbrgrp>. According to the random utility theory, indirect utility has both a deterministic component and a random (unobservable) component. Assuming two (0 and 1) choices and the commonly used linear utility model, the household&#8217;s utility associated with choice zero is:</p><p>
+					</abbrgrp>
+					. According to the random utility theory, indirect utility has both
+					a deterministic component and a random (unobservable) component.
+					Assuming two (0 and 1) choices and the commonly used linear utility
+					model, the household&#8217;s utility associated with choice zero
+					is:
+				</p>
+				<p>
 					<display-formula id="M1">
-						<m:math name="2048-7010-3-17-i1" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub>
-   <m:mi>U</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>0</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>=</m:mo>
-<m:msub>
-   <m:mi>V</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>0</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>+</m:mo>
-<m:msub>
-   <m:mo>&#1013;</m:mo>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>0</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>,</m:mo>
-<m:mspace width="0.5em"/>
-<m:mtext mathvariant="normal">where</m:mtext>
-<m:mspace width="0.5em"/>
-<m:msub>
-   <m:mi>V</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>0</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>=</m:mo>
-<m:mi>X</m:mi>
-<m:msub>
-   <m:mo>&#946;</m:mo>
-   <m:mn>0</m:mn>
-</m:msub>
-</m:math>
+						<m:math name="2048-7010-3-17-i1" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:msub>
+								<m:mi>U</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>0</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>=</m:mo>
+							<m:msub>
+								<m:mi>V</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>0</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>+</m:mo>
+							<m:msub>
+								<m:mo>&#1013;</m:mo>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>0</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>,</m:mo>
+							<m:mspace width="0.5em" />
+							<m:mtext mathvariant="normal">where</m:mtext>
+							<m:mspace width="0.5em" />
+							<m:msub>
+								<m:mi>V</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>0</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>=</m:mo>
+							<m:mi>X</m:mi>
+							<m:msub>
+								<m:mo>&#946;</m:mo>
+								<m:mn>0</m:mn>
+							</m:msub>
+						</m:math>
 					</display-formula>
-				</p><p>where <it>V</it>
+				</p>
+				<p>
+					where
+					<it>V</it>
 					<sub>
-						<it>i</it>0</sub> is the deterministic utility associated with household <it>i</it> and alternative 0, <it>X</it> is a matrix of independent variables with the corresponding parameter vector <it>&#946;</it>
-					<sub>0</sub>, and <it>&#1013;</it>
+						<it>i</it>
+						0
+					</sub>
+					is the deterministic utility associated with household
+					<it>i</it>
+					and alternative 0,
+					<it>X</it>
+					is a matrix of independent variables with the corresponding
+					parameter vector
+					<it>&#946;</it>
+					<sub>0</sub>
+					, and
+					<it>&#1013;</it>
 					<sub>
-						<it>i</it>0</sub> is the random component. Similarly, for choice one, the household&#8217;s utility is:</p><p>
+						<it>i</it>
+						0
+					</sub>
+					is the random component. Similarly, for choice one, the
+					household&#8217;s utility is:
+				</p>
+				<p>
 					<display-formula id="M1a">
-						<m:math name="2048-7010-3-17-i2" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub>
-   <m:mi>U</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>1</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>=</m:mo>
-<m:msub>
-   <m:mi>V</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>1</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>+</m:mo>
-<m:msub>
-   <m:mo>&#1013;</m:mo>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>1</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>,</m:mo>
-<m:mspace width="0.5em"/>
-<m:mtext mathvariant="normal">where</m:mtext>
-<m:mspace width="0.5em"/>
-<m:msub>
-   <m:mi>V</m:mi>
-   <m:mrow>
-      <m:mi>i</m:mi>
-      <m:mn>1</m:mn>
-   </m:mrow>
-</m:msub>
-<m:mo>=</m:mo>
-<m:mi>X</m:mi>
-<m:msub>
-   <m:mo>&#946;</m:mo>
-   <m:mn>1</m:mn>
-</m:msub>
-<m:mo>.</m:mo>
-</m:math>
+						<m:math name="2048-7010-3-17-i2" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:msub>
+								<m:mi>U</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>1</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>=</m:mo>
+							<m:msub>
+								<m:mi>V</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>1</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>+</m:mo>
+							<m:msub>
+								<m:mo>&#1013;</m:mo>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>1</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>,</m:mo>
+							<m:mspace width="0.5em" />
+							<m:mtext mathvariant="normal">where</m:mtext>
+							<m:mspace width="0.5em" />
+							<m:msub>
+								<m:mi>V</m:mi>
+								<m:mrow>
+									<m:mi>i</m:mi>
+									<m:mn>1</m:mn>
+								</m:mrow>
+							</m:msub>
+							<m:mo>=</m:mo>
+							<m:mi>X</m:mi>
+							<m:msub>
+								<m:mo>&#946;</m:mo>
+								<m:mn>1</m:mn>
+							</m:msub>
+							<m:mo>.</m:mo>
+						</m:math>
 					</display-formula>
-				</p><p>The utilities are unobservable, but the observed choice reveals which choice provides the larger utility. Letting <it>Y</it> = 1 denote the household&#8217;s choice of alternative 1, the probability that household will choose 1 <abbrgrp>
+				</p>
+				<p>
+					The utilities are unobservable, but the observed choice reveals
+					which choice provides the larger utility. Letting
+					<it>Y</it>
+					= 1 denote the household&#8217;s choice of alternative 1, the
+					probability that household will choose 1
+					<abbrgrp>
 						<abbr bid="B19">19</abbr>
-					</abbrgrp>:</p><p>
+					</abbrgrp>
+					:
+				</p>
+				<p>
 					<display-formula id="M2">
-						<m:math name="2048-7010-3-17-i3" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign="left">
-   <m:mtr>
-      <m:mtd>
-         <m:mo>Pr</m:mo>
-         <m:mo stretchy="true">[</m:mo>
-         <m:mi>Y</m:mi>
-         <m:mo>=</m:mo>
-         <m:mn>1</m:mn>
-         <m:mfenced open="|" close="">
-            <m:mrow>
-               <m:mi>X</m:mi>
-               <m:mo stretchy="true">]</m:mo>
-            </m:mrow>
-         </m:mfenced>
-      </m:mtd>
-      <m:mtd>
-         <m:mo>=</m:mo>
-         <m:mo>Pr</m:mo>
-         <m:mfenced open="[" close="]">
-            <m:mrow>
-               <m:msub>
-                  <m:mi>U</m:mi>
-                  <m:mrow>
-                     <m:mi>i</m:mi>
-                     <m:mn>1</m:mn>
-                  </m:mrow>
-               </m:msub>
-               <m:mo>></m:mo>
-               <m:msub>
-                  <m:mi>U</m:mi>
-                  <m:mrow>
-                     <m:mi>i</m:mi>
-                     <m:mn>0</m:mn>
-                  </m:mrow>
-               </m:msub>
-            </m:mrow>
-         </m:mfenced>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd/>
-      <m:mtd>
-         <m:mo>=</m:mo>
-         <m:mo>Pr</m:mo>
-         <m:mfenced open="[" close="]">
-            <m:mrow>
-               <m:mi>X</m:mi>
-               <m:msub>
-                  <m:mo>&#946;</m:mo>
-                  <m:mn>1</m:mn>
-               </m:msub>
-               <m:mo>+</m:mo>
-               <m:msub>
-                  <m:mo>&#1013;</m:mo>
-                  <m:mrow>
-                     <m:mi>i</m:mi>
-                     <m:mn>1</m:mn>
-                  </m:mrow>
-               </m:msub>
-               <m:mo>></m:mo>
-               <m:mi>X</m:mi>
-               <m:msub>
-                  <m:mo>&#946;</m:mo>
-                  <m:mn>0</m:mn>
-               </m:msub>
-               <m:mo>+</m:mo>
-               <m:msub>
-                  <m:mo>&#1013;</m:mo>
-                  <m:mrow>
-                     <m:mi>i</m:mi>
-                     <m:mn>0</m:mn>
-                  </m:mrow>
-               </m:msub>
-               <m:mfenced open="|" close="">
-                  <m:mi>X</m:mi>
-               </m:mfenced>
-            </m:mrow>
-         </m:mfenced>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd/>
-      <m:mtd>
-         <m:mo>=</m:mo>
-         <m:mi mathvariant="italic">Pr</m:mi>
-         <m:mo stretchy="true">[</m:mo>
-         <m:mi>X</m:mi>
-         <m:msub>
-            <m:mo>&#946;</m:mo>
-            <m:mn>1</m:mn>
-         </m:msub>
-         <m:mo>-</m:mo>
-         <m:mi>X</m:mi>
-         <m:msub>
-            <m:mo>&#946;</m:mo>
-            <m:mn>0</m:mn>
-         </m:msub>
-         <m:mo>+</m:mo>
-         <m:msub>
-            <m:mo>&#1013;</m:mo>
-            <m:mrow>
-               <m:mi>i</m:mi>
-               <m:mn>1</m:mn>
-            </m:mrow>
-         </m:msub>
-         <m:mo>-</m:mo>
-         <m:msub>
-            <m:mo>&#1013;</m:mo>
-            <m:mrow>
-               <m:mi>i</m:mi>
-               <m:mn>0</m:mn>
-            </m:mrow>
-         </m:msub>
-         <m:mo>></m:mo>
-         <m:mn>0</m:mn>
-         <m:mfenced open="|" close="">
-            <m:mrow>
-               <m:mi>X</m:mi>
-               <m:mo stretchy="true">]</m:mo>
-            </m:mrow>
-         </m:mfenced>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd/>
-      <m:mtd>
-         <m:mo>=</m:mo>
-         <m:mo>Pr</m:mo>
-         <m:mo stretchy="true">[</m:mo>
-         <m:mi>X</m:mi>
-         <m:mfenced open="(" close=")">
-            <m:mrow>
-               <m:msub>
-                  <m:mo>&#946;</m:mo>
-                  <m:mn>1</m:mn>
-               </m:msub>
-               <m:mo>-</m:mo>
-               <m:msub>
-                  <m:mo>&#946;</m:mo>
-                  <m:mn>0</m:mn>
-               </m:msub>
-            </m:mrow>
-         </m:mfenced>
-         <m:mo>+</m:mo>
-         <m:msub>
-            <m:mo>&#1013;</m:mo>
-            <m:mrow>
-               <m:mi>i</m:mi>
-               <m:mn>1</m:mn>
-            </m:mrow>
-         </m:msub>
-         <m:mo>-</m:mo>
-         <m:msub>
-            <m:mo>&#1013;</m:mo>
-            <m:mrow>
-               <m:mi>i</m:mi>
-               <m:mn>0</m:mn>
-            </m:mrow>
-         </m:msub>
-         <m:mo>></m:mo>
-         <m:mn>0</m:mn>
-         <m:mfenced open="|" close="">
-            <m:mrow>
-               <m:mi>X</m:mi>
-               <m:mo stretchy="true">]</m:mo>
-            </m:mrow>
-         </m:mfenced>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd/>
-      <m:mtd>
-         <m:mo>=</m:mo>
-         <m:mo>Pr</m:mo>
-         <m:mo stretchy="true">[</m:mo>
-         <m:mi>X</m:mi>
-         <m:mo>&#946;</m:mo>
-         <m:mo>+</m:mo>
-         <m:msub>
-            <m:mo>&#1013;</m:mo>
-            <m:mi>i</m:mi>
-         </m:msub>
-         <m:mo>></m:mo>
-         <m:mn>0</m:mn>
-         <m:mfenced open="|" close="">
-            <m:mrow>
-               <m:mi>X</m:mi>
-               <m:mo stretchy="true">]</m:mo>
-            </m:mrow>
-         </m:mfenced>
-         <m:mo>.</m:mo>
-      </m:mtd>
-   </m:mtr>
-</m:mtable>
-</m:math>
+						<m:math name="2048-7010-3-17-i3" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:mtable columnalign="left">
+								<m:mtr>
+									<m:mtd>
+										<m:mo>Pr</m:mo>
+										<m:mo stretchy="true">[</m:mo>
+										<m:mi>Y</m:mi>
+										<m:mo>=</m:mo>
+										<m:mn>1</m:mn>
+										<m:mfenced open="|" close="">
+											<m:mrow>
+												<m:mi>X</m:mi>
+												<m:mo stretchy="true">]</m:mo>
+											</m:mrow>
+										</m:mfenced>
+									</m:mtd>
+									<m:mtd>
+										<m:mo>=</m:mo>
+										<m:mo>Pr</m:mo>
+										<m:mfenced open="[" close="]">
+											<m:mrow>
+												<m:msub>
+													<m:mi>U</m:mi>
+													<m:mrow>
+														<m:mi>i</m:mi>
+														<m:mn>1</m:mn>
+													</m:mrow>
+												</m:msub>
+												<m:mo>></m:mo>
+												<m:msub>
+													<m:mi>U</m:mi>
+													<m:mrow>
+														<m:mi>i</m:mi>
+														<m:mn>0</m:mn>
+													</m:mrow>
+												</m:msub>
+											</m:mrow>
+										</m:mfenced>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd />
+									<m:mtd>
+										<m:mo>=</m:mo>
+										<m:mo>Pr</m:mo>
+										<m:mfenced open="[" close="]">
+											<m:mrow>
+												<m:mi>X</m:mi>
+												<m:msub>
+													<m:mo>&#946;</m:mo>
+													<m:mn>1</m:mn>
+												</m:msub>
+												<m:mo>+</m:mo>
+												<m:msub>
+													<m:mo>&#1013;</m:mo>
+													<m:mrow>
+														<m:mi>i</m:mi>
+														<m:mn>1</m:mn>
+													</m:mrow>
+												</m:msub>
+												<m:mo>></m:mo>
+												<m:mi>X</m:mi>
+												<m:msub>
+													<m:mo>&#946;</m:mo>
+													<m:mn>0</m:mn>
+												</m:msub>
+												<m:mo>+</m:mo>
+												<m:msub>
+													<m:mo>&#1013;</m:mo>
+													<m:mrow>
+														<m:mi>i</m:mi>
+														<m:mn>0</m:mn>
+													</m:mrow>
+												</m:msub>
+												<m:mfenced open="|" close="">
+													<m:mi>X</m:mi>
+												</m:mfenced>
+											</m:mrow>
+										</m:mfenced>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd />
+									<m:mtd>
+										<m:mo>=</m:mo>
+										<m:mi mathvariant="italic">Pr</m:mi>
+										<m:mo stretchy="true">[</m:mo>
+										<m:mi>X</m:mi>
+										<m:msub>
+											<m:mo>&#946;</m:mo>
+											<m:mn>1</m:mn>
+										</m:msub>
+										<m:mo>-</m:mo>
+										<m:mi>X</m:mi>
+										<m:msub>
+											<m:mo>&#946;</m:mo>
+											<m:mn>0</m:mn>
+										</m:msub>
+										<m:mo>+</m:mo>
+										<m:msub>
+											<m:mo>&#1013;</m:mo>
+											<m:mrow>
+												<m:mi>i</m:mi>
+												<m:mn>1</m:mn>
+											</m:mrow>
+										</m:msub>
+										<m:mo>-</m:mo>
+										<m:msub>
+											<m:mo>&#1013;</m:mo>
+											<m:mrow>
+												<m:mi>i</m:mi>
+												<m:mn>0</m:mn>
+											</m:mrow>
+										</m:msub>
+										<m:mo>></m:mo>
+										<m:mn>0</m:mn>
+										<m:mfenced open="|" close="">
+											<m:mrow>
+												<m:mi>X</m:mi>
+												<m:mo stretchy="true">]</m:mo>
+											</m:mrow>
+										</m:mfenced>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd />
+									<m:mtd>
+										<m:mo>=</m:mo>
+										<m:mo>Pr</m:mo>
+										<m:mo stretchy="true">[</m:mo>
+										<m:mi>X</m:mi>
+										<m:mfenced open="(" close=")">
+											<m:mrow>
+												<m:msub>
+													<m:mo>&#946;</m:mo>
+													<m:mn>1</m:mn>
+												</m:msub>
+												<m:mo>-</m:mo>
+												<m:msub>
+													<m:mo>&#946;</m:mo>
+													<m:mn>0</m:mn>
+												</m:msub>
+											</m:mrow>
+										</m:mfenced>
+										<m:mo>+</m:mo>
+										<m:msub>
+											<m:mo>&#1013;</m:mo>
+											<m:mrow>
+												<m:mi>i</m:mi>
+												<m:mn>1</m:mn>
+											</m:mrow>
+										</m:msub>
+										<m:mo>-</m:mo>
+										<m:msub>
+											<m:mo>&#1013;</m:mo>
+											<m:mrow>
+												<m:mi>i</m:mi>
+												<m:mn>0</m:mn>
+											</m:mrow>
+										</m:msub>
+										<m:mo>></m:mo>
+										<m:mn>0</m:mn>
+										<m:mfenced open="|" close="">
+											<m:mrow>
+												<m:mi>X</m:mi>
+												<m:mo stretchy="true">]</m:mo>
+											</m:mrow>
+										</m:mfenced>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd />
+									<m:mtd>
+										<m:mo>=</m:mo>
+										<m:mo>Pr</m:mo>
+										<m:mo stretchy="true">[</m:mo>
+										<m:mi>X</m:mi>
+										<m:mo>&#946;</m:mo>
+										<m:mo>+</m:mo>
+										<m:msub>
+											<m:mo>&#1013;</m:mo>
+											<m:mi>i</m:mi>
+										</m:msub>
+										<m:mo>></m:mo>
+										<m:mn>0</m:mn>
+										<m:mfenced open="|" close="">
+											<m:mrow>
+												<m:mi>X</m:mi>
+												<m:mo stretchy="true">]</m:mo>
+											</m:mrow>
+										</m:mfenced>
+										<m:mo>.</m:mo>
+									</m:mtd>
+								</m:mtr>
+							</m:mtable>
+						</m:math>
 					</display-formula>
-				</p><p>One cannot estimate the separate effects of the individual beta coefficients, but can only estimate the differences in the betas. Different assumptions on the error terms give rises to the various quantitative choice models. Here, the error terms are assumed to have the standard logistic distribution which gives rise to the conditional logit model. Here, the predicted household choice is based on the following:</p><p>
+				</p>
+				<p>One cannot estimate the separate effects of the individual beta
+					coefficients, but can only estimate the differences in the betas.
+					Different assumptions on the error terms give rises to the various
+					quantitative choice models. Here, the error terms are assumed to
+					have the standard logistic distribution which gives rise to the
+					conditional logit model. Here, the predicted household choice is
+					based on the following:</p>
+				<p>
 					<display-formula id="M3">
-						<m:math name="2048-7010-3-17-i4" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign="left">
-   <m:mtr>
-      <m:mtd>
-         <m:mtext mathvariant="normal">Choice</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">zero</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mi mathvariant="normal">if</m:mi>
-         <m:mspace width="0.5em"/>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>&lt;</m:mo>
-         <m:mn>0</m:mn>
-         <m:mo>,</m:mo>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">and</m:mtext>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd>
-         <m:mtext mathvariant="normal">Choice</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">one</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mi mathvariant="normal">if</m:mi>
-         <m:mspace width="0.5em"/>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>></m:mo>
-         <m:mn>0</m:mn>
-      </m:mtd>
-   </m:mtr>
-</m:mtable>
-</m:math>
+						<m:math name="2048-7010-3-17-i4" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:mtable columnalign="left">
+								<m:mtr>
+									<m:mtd>
+										<m:mtext mathvariant="normal">Choice</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">zero</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mi mathvariant="normal">if</m:mi>
+										<m:mspace width="0.5em" />
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>&lt;</m:mo>
+										<m:mn>0</m:mn>
+										<m:mo>,</m:mo>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">and</m:mtext>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd>
+										<m:mtext mathvariant="normal">Choice</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">one</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mi mathvariant="normal">if</m:mi>
+										<m:mspace width="0.5em" />
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>></m:mo>
+										<m:mn>0</m:mn>
+									</m:mtd>
+								</m:mtr>
+							</m:mtable>
+						</m:math>
 					</display-formula>
-				</p><p>where the &#8220;cutoff&#8221; point between the two possible choices is zero. In the model, <it>Y</it> = 0 is designated as a household that does not adopt soil-improving practices and <it>Y</it> = 1 is a household adopting soil-improving practices. For estimation propose, the base group is <it>non-adopters</it>.</p><p>Description of the independent variables and expected signs with respect to the base variables are given in Table&#160;<tblr tid="T1">1</tblr>. A positive sign indicates that the characteristic is expected to increase the probability of adoption of soil-improving practices. A &#8220;?&#8221; indicates no prior expectation of the effect of the variable on adoption. The main variable of interest is food secure vs. insecure households. Chronic, seasonal, vulnerable, and food secure households are as described in the next section. Based on these four categories, food insecure households are those that fall in any one of the three food insecure categories: chronic, seasonal, and vulnerable. Food security is expected to lead to a higher probability of adoption of soil-improving technologies because the household may have been able to forgo short-run food production to increase the productivity of the soil without compromising the hunger of the household.</p>
+				</p>
+				<p>
+					where the &#8220;cutoff&#8221; point between the two possible
+					choices is zero. In the model,
+					<it>Y</it>
+					= 0 is designated as a household that does not adopt soil-improving
+					practices and
+					<it>Y</it>
+					= 1 is a household adopting soil-improving practices. For
+					estimation propose, the base group is
+					<it>non-adopters</it>
+					.
+				</p>
+				<p>
+					Description of the independent variables and expected signs with
+					respect to the base variables are given in Table&#160;
+					<tblr tid="T1">1</tblr>
+					. A positive sign indicates that the characteristic is expected to
+					increase the probability of adoption of soil-improving practices. A
+					&#8220;?&#8221; indicates no prior expectation of the effect of the
+					variable on adoption. The main variable of interest is food secure
+					vs. insecure households. Chronic, seasonal, vulnerable, and food
+					secure households are as described in the next section. Based on
+					these four categories, food insecure households are those that fall
+					in any one of the three food insecure categories: chronic,
+					seasonal, and vulnerable. Food security is expected to lead to a
+					higher probability of adoption of soil-improving technologies
+					because the household may have been able to forgo short-run food
+					production to increase the productivity of the soil without
+					compromising the hunger of the household.
+				</p>
 				<table id="T1">
 					<title>
 						<p>Table 1</p>
 					</title>
 					<caption>
 						<p>
-							<b>Description of variables and expected signs used in the conditional and ordered logit models</b>
+							<b>Description of variables and expected signs used in the
+								conditional and ordered logit models</b>
 						</p>
 					</caption>
 					<tgroup align="left" cols="5">
-						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
-						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
-						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
-						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
-						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*" />
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*" />
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*" />
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*" />
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*" />
 						<thead valign="top">
 							<row rowsep="1">
 								<entry colname="c1" morerows="1" valign="top">
@@ -534,13 +914,14 @@
 								<entry colname="c1" morerows="1" valign="top">
 									<p>&#8195;Application of soil-improving practices</p>
 								</entry>
-								<entry colname="c2" morerows="1"/>
-								<entry colname="c3" morerows="1"/>
+								<entry colname="c2" morerows="1" />
+								<entry colname="c3" morerows="1" />
 								<entry colname="c4">
 									<p>No adoption = 0</p>
 								</entry>
 								<entry colname="c5" morerows="1" valign="top">
-									<p>Mulching, cover crops, crop rotation, no-till, and minimum till</p>
+									<p>Mulching, cover crops, crop rotation, no-till, and minimum
+										till</p>
 								</entry>
 							</row>
 							<row>
@@ -552,12 +933,12 @@
 								<entry colname="c1" morerows="3" valign="top">
 									<p>&#8195;Food insecurity groups</p>
 								</entry>
-								<entry colname="c2" morerows="3"/>
-								<entry colname="c3" morerows="3"/>
+								<entry colname="c2" morerows="3" />
+								<entry colname="c3" morerows="3" />
 								<entry colname="c4">
 									<p>Chronic = 1</p>
 								</entry>
-								<entry colname="c5" morerows="3"/>
+								<entry colname="c5" morerows="3" />
 							</row>
 							<row>
 								<entry colname="c4">
@@ -583,14 +964,14 @@
 								<entry colname="c1" morerows="1" valign="top">
 									<p>&#8195;Application of soil-improving practices</p>
 								</entry>
-								<entry colname="c2" morerows="1"/>
+								<entry colname="c2" morerows="1" />
 								<entry colname="c3" morerows="1" valign="top">
 									<p>+</p>
 								</entry>
 								<entry colname="c4">
 									<p>No adoption = 0</p>
 								</entry>
-								<entry colname="c5" morerows="1"/>
+								<entry colname="c5" morerows="1" />
 							</row>
 							<row>
 								<entry colname="c4">
@@ -610,7 +991,7 @@
 								<entry colname="c4">
 									<p>Food insecure = 0</p>
 								</entry>
-								<entry colname="c5" morerows="1"/>
+								<entry colname="c5" morerows="1" />
 							</row>
 							<row>
 								<entry colname="c4">
@@ -732,7 +1113,7 @@
 								<entry colname="c3">
 									<p>?</p>
 								</entry>
-								<entry colname="c4"/>
+								<entry colname="c4" />
 								<entry colname="c5">
 									<p>Years</p>
 								</entry>
@@ -750,7 +1131,7 @@
 								<entry colname="c4">
 									<p>No or pre-school = 0</p>
 								</entry>
-								<entry colname="c5" morerows="1"/>
+								<entry colname="c5" morerows="1" />
 							</row>
 							<row>
 								<entry colname="c4">
@@ -767,7 +1148,7 @@
 								<entry colname="c3">
 									<p>?</p>
 								</entry>
-								<entry colname="c4"/>
+								<entry colname="c4" />
 								<entry colname="c5">
 									<p>Number</p>
 								</entry>
@@ -785,7 +1166,7 @@
 								<entry colname="c4">
 									<p>Poor = 0</p>
 								</entry>
-								<entry colname="c5" morerows="1"/>
+								<entry colname="c5" morerows="1" />
 							</row>
 							<row>
 								<entry colname="c4">
@@ -816,7 +1197,8 @@
 							</row>
 							<row>
 								<entry colname="c1" morerows="1" valign="top">
-									<p>&#8195;Long term proprietorship&#8212;dropped to avoid collinearity issues</p>
+									<p>&#8195;Long term proprietorship&#8212;dropped to avoid
+										collinearity issues</p>
 								</entry>
 								<entry colname="c2" morerows="1" valign="top">
 									<p>+</p>
@@ -860,7 +1242,8 @@
 							</row>
 							<row>
 								<entry colname="c1" morerows="1" rowsep="1" valign="top">
-									<p>&#8195;Information and training (access) from extension services</p>
+									<p>&#8195;Information and training (access) from extension
+										services</p>
 								</entry>
 								<entry colname="c2" morerows="1" rowsep="1" valign="top">
 									<p>+</p>
@@ -871,7 +1254,7 @@
 								<entry colname="c4">
 									<p>No access = 0</p>
 								</entry>
-								<entry colname="c5" morerows="1" rowsep="1"/>
+								<entry colname="c5" morerows="1" rowsep="1" />
 							</row>
 							<row rowsep="1">
 								<entry colname="c4">
@@ -885,143 +1268,200 @@
 			<sec>
 				<st>
 					<p>Ordered logit for food insecurity</p>
-				</st><p>An ordered logit model is estimated to investigate the factors influencing a household&#8217;s food security category. Different scales or categories have been developed to classify levels of food insecurity. The classification of households&#8217; food insecurity used here is based on the duration of time a household goes without sufficient food: chronic, transitory, and vulnerable <abbrgrp>
+				</st>
+				<p>
+					An ordered logit model is estimated to investigate the factors
+					influencing a household&#8217;s food security category. Different
+					scales or categories have been developed to classify levels of food
+					insecurity. The classification of households&#8217; food insecurity
+					used here is based on the duration of time a household goes without
+					sufficient food: chronic, transitory, and vulnerable
+					<abbrgrp>
 						<abbr bid="B2">2</abbr>
 						<abbr bid="B20">20</abbr>
 						<abbr bid="B21">21</abbr>
-					</abbrgrp>:</p><p indent="1">Chronic food insecure&#8212;occurs if the household was persistently unable to meet the minimum daily requirement over the past 12&#160;months;</p><p indent="1">Seasonal food insecure&#8212;occurs if there was a cyclical pattern of inadequate access to food over the past 12&#160;months. Typically, the period of food shortage is between planting and harvesting. It is commonly associated with climate shocks, natural disasters, economic crises, or conflicts;</p><p indent="1">Vulnerable food insecure&#8212;occurs if the household is at risk of transitory or chronically food insecure, but currently has a minimum acceptable food intake; and</p><p indent="1">Food secure household&#8212;is a household where all members have not lived in hunger over the past 5&#160;years.</p><p>Ordered logit is used to take advantage of the ordinal nature of the food security categories. For example, a household in the seasonal food insecure category is &#8220;worse off&#8221; than a household in the vulnerable category, but they are &#8220;better off&#8221; than a chronic food insecure household.</p><p>The ordered logit is an extension of the previous conditional logit model by adding multiple cutoff points. For the four food secure categories model, the model predicts that a household is in the four food security categories based on the following <abbrgrp>
+					</abbrgrp>
+					:
+				</p>
+				<p indent="1">Chronic food insecure&#8212;occurs if the household was
+					persistently unable to meet the minimum daily requirement over the
+					past 12&#160;months;</p>
+				<p indent="1">Seasonal food insecure&#8212;occurs if there was a
+					cyclical pattern of inadequate access to food over the past
+					12&#160;months. Typically, the period of food shortage is between
+					planting and harvesting. It is commonly associated with climate
+					shocks, natural disasters, economic crises, or conflicts;</p>
+				<p indent="1">Vulnerable food insecure&#8212;occurs if the household
+					is at risk of transitory or chronically food insecure, but
+					currently has a minimum acceptable food intake; and</p>
+				<p indent="1">Food secure household&#8212;is a household where all
+					members have not lived in hunger over the past 5&#160;years.</p>
+				<p>Ordered logit is used to take advantage of the ordinal nature of
+					the food security categories. For example, a household in the
+					seasonal food insecure category is &#8220;worse off&#8221; than a
+					household in the vulnerable category, but they are &#8220;better
+					off&#8221; than a chronic food insecure household.</p>
+				<p>
+					The ordered logit is an extension of the previous conditional logit
+					model by adding multiple cutoff points. For the four food secure
+					categories model, the model predicts that a household is in the
+					four food security categories based on the following
+					<abbrgrp>
 						<abbr bid="B19">19</abbr>
-					</abbrgrp>:</p><p>
+					</abbrgrp>
+					:
+				</p>
+				<p>
 					<display-formula id="M4">
-						<m:math name="2048-7010-3-17-i5" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mtable columnalign="left">
-   <m:mtr>
-      <m:mtd>
-         <m:mtext mathvariant="normal">Chronic</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">food</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">insecure</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>&lt;</m:mo>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>a</m:mi>
-         </m:msub>
-         <m:mo>,</m:mo>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd>
-         <m:mspace width="2em"/>
-         <m:mtext mathvariant="normal">seasonal</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">food</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">insecure</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>a</m:mi>
-         </m:msub>
-         <m:mo>&lt;</m:mo>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>&lt;</m:mo>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>b</m:mi>
-         </m:msub>
-         <m:mo>,</m:mo>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd>
-         <m:mtext mathvariant="normal">vulnerable</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">food</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">insecure</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>b</m:mi>
-         </m:msub>
-         <m:mo>&lt;</m:mo>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>&lt;</m:mo>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>c</m:mi>
-         </m:msub>
-         <m:mo>,</m:mo>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">and</m:mtext>
-      </m:mtd>
-   </m:mtr>
-   <m:mtr>
-      <m:mtd>
-         <m:mspace width="5em"/>
-         <m:mtext mathvariant="normal">food</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mtext mathvariant="normal">secure</m:mtext>
-         <m:mspace width="0.5em"/>
-         <m:mi>X</m:mi>
-         <m:mover accent="true">
-            <m:mo>&#946;</m:mo>
-            <m:mo stretchy="true">^</m:mo>
-         </m:mover>
-         <m:mo>></m:mo>
-         <m:msub>
-            <m:mover accent="true">
-               <m:mi>u</m:mi>
-               <m:mo stretchy="true">^</m:mo>
-            </m:mover>
-            <m:mi>c</m:mi>
-         </m:msub>
-         <m:mo>.</m:mo>
-      </m:mtd>
-   </m:mtr>
-</m:mtable>
-</m:math>
+						<m:math name="2048-7010-3-17-i5" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:mtable columnalign="left">
+								<m:mtr>
+									<m:mtd>
+										<m:mtext mathvariant="normal">Chronic</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">food</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">insecure</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>&lt;</m:mo>
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>a</m:mi>
+										</m:msub>
+										<m:mo>,</m:mo>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd>
+										<m:mspace width="2em" />
+										<m:mtext mathvariant="normal">seasonal</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">food</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">insecure</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>a</m:mi>
+										</m:msub>
+										<m:mo>&lt;</m:mo>
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>&lt;</m:mo>
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>b</m:mi>
+										</m:msub>
+										<m:mo>,</m:mo>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd>
+										<m:mtext mathvariant="normal">vulnerable</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">food</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">insecure</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>b</m:mi>
+										</m:msub>
+										<m:mo>&lt;</m:mo>
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>&lt;</m:mo>
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>c</m:mi>
+										</m:msub>
+										<m:mo>,</m:mo>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">and</m:mtext>
+									</m:mtd>
+								</m:mtr>
+								<m:mtr>
+									<m:mtd>
+										<m:mspace width="5em" />
+										<m:mtext mathvariant="normal">food</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mtext mathvariant="normal">secure</m:mtext>
+										<m:mspace width="0.5em" />
+										<m:mi>X</m:mi>
+										<m:mover accent="true">
+											<m:mo>&#946;</m:mo>
+											<m:mo stretchy="true">^</m:mo>
+										</m:mover>
+										<m:mo>></m:mo>
+										<m:msub>
+											<m:mover accent="true">
+												<m:mi>u</m:mi>
+												<m:mo stretchy="true">^</m:mo>
+											</m:mover>
+											<m:mi>c</m:mi>
+										</m:msub>
+										<m:mo>.</m:mo>
+									</m:mtd>
+								</m:mtr>
+							</m:mtable>
+						</m:math>
 					</display-formula>
-				</p><p>With four categories, three cutoff points are estimated, the <inline-formula>
-						<m:math name="2048-7010-3-17-i6" xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mover accent="true">
-   <m:mo>&#956;</m:mo>
-   <m:mo stretchy="true">^</m:mo>
-</m:mover>
-<m:mo mathvariant="italic">'</m:mo>
-<m:mi>s</m:mi>
-</m:math>
-					</inline-formula>. The logistic model is estimated for the adoption and food category models using maximum likelihood techniques programmed in STATA version 11 <abbrgrp>
+				</p>
+				<p>
+					With four categories, three cutoff points are estimated, the
+					<inline-formula>
+						<m:math name="2048-7010-3-17-i6" xmlns:m="http://www.w3.org/1998/Math/MathML">
+							<m:mover accent="true">
+								<m:mo>&#956;</m:mo>
+								<m:mo stretchy="true">^</m:mo>
+							</m:mover>
+							<m:mo mathvariant="italic">'</m:mo>
+							<m:mi>s</m:mi>
+						</m:math>
+					</inline-formula>
+					. The logistic model is estimated for the adoption and food
+					category models using maximum likelihood techniques programmed in
+					STATA version 11
+					<abbrgrp>
 						<abbr bid="B22">22</abbr>
-					</abbrgrp>.</p><p>The adoption and food security model include the same independent variables with two exceptions. In the adoption model, an independent variable indicating whether the household food secure or not is included. In the food security model, a variable indicating the adoption of soil-improving practices is included. In both models, the marginal effects are not equal to the coefficients. Marginal effects, calculated at the mean of the continuous independent variables, are provided by STATA based on either continuous or discrete variables.</p>
+					</abbrgrp>
+					.
+				</p>
+				<p>The adoption and food security model include the same independent
+					variables with two exceptions. In the adoption model, an
+					independent variable indicating whether the household food secure
+					or not is included. In the food security model, a variable
+					indicating the adoption of soil-improving practices is included. In
+					both models, the marginal effects are not equal to the
+					coefficients. Marginal effects, calculated at the mean of the
+					continuous independent variables, are provided by STATA based on
+					either continuous or discrete variables.</p>
 			</sec>
 		</sec>
 		<sec>
@@ -1031,25 +1471,46 @@
 			<sec>
 				<st>
 					<p>Adoption of soil-improving practices</p>
-				</st><p>The chi-squared test <it>p</it> value is 0.00, indicating that the coefficients of independent variables are not jointly equal to zero (Table&#160;<tblr tid="T2">2</tblr>). Moreover, the model fit is within the range expected for cross-sectional data with a pseudo <it>R</it>
-					<sup>2</sup> of 0.32. Estimated coefficients are presented in Table&#160;<tblr tid="T2">2</tblr> and marginal effects in Table&#160;<tblr tid="T3">3</tblr>. The independent variable signs are interpreted with respect to the base, non-adopters<it>.</it> In the following discussion, a significant level of 0.15 is assumed<sup>a</sup>.</p>
+				</st>
+				<p>
+					The chi-squared test
+					<it>p</it>
+					value is 0.00, indicating that the coefficients of independent
+					variables are not jointly equal to zero (Table&#160;
+					<tblr tid="T2">2</tblr>
+					). Moreover, the model fit is within the range expected for
+					cross-sectional data with a pseudo
+					<it>R</it>
+					<sup>2</sup>
+					of 0.32. Estimated coefficients are presented in Table&#160;
+					<tblr tid="T2">2</tblr>
+					and marginal effects in Table&#160;
+					<tblr tid="T3">3</tblr>
+					. The independent variable signs are interpreted with respect to
+					the base, non-adopters
+					<it>.</it>
+					In the following discussion, a significant level of 0.15 is assumed
+					<sup>a</sup>
+					.
+				</p>
 				<table id="T2">
 					<title>
 						<p>Table 2</p>
 					</title>
 					<caption>
 						<p>
-							<b>Estimated coefficients for adoption of soil-improving practices model</b>
+							<b>Estimated coefficients for adoption of soil-improving
+								practices model</b>
 						</p>
 					</caption>
 					<tgroup align="left" cols="7">
-						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
-						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
-						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
-						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
-						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
-						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
-						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*" />
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*" />
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*" />
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*" />
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*" />
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*" />
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*" />
 						<thead valign="top">
 							<row rowsep="1">
 								<entry colname="c1">
@@ -1078,9 +1539,12 @@
 									<p>
 										<b>
 											<it>p </it>
-										</b><b>&gt; | </b><b>
+										</b>
+										<b>&gt; | </b>
+										<b>
 											<it>z </it>
-										</b><b>|</b>
+										</b>
+										<b>|</b>
 									</p>
 								</entry>
 								<entry colname="c6" nameend="c7" namest="c6">
@@ -1091,9 +1555,19 @@
 							</row>
 						</thead>
 						<tfoot>
-							<p>Base group: non-adopters<it>.</it>
-							</p><p>Number of observation = 116.</p><p>Chi squared = 45.65, probability &gt; chi squared = 0.0000.</p><p>Pseudo <it>R</it>
-								<sup>2</sup> = 0.32.</p>
+							<p>
+								Base group: non-adopters
+								<it>.</it>
+							</p>
+							<p>Number of observation = 116.</p>
+							<p>Chi squared = 45.65, probability &gt; chi squared = 0.0000.
+							</p>
+							<p>
+								Pseudo
+								<it>R</it>
+								<sup>2</sup>
+								= 0.32.
+							</p>
 						</tfoot>
 						<tbody>
 							<row>
@@ -1450,17 +1924,18 @@
 					</title>
 					<caption>
 						<p>
-							<b>Marginal effects for the adoption of soil-improving practices model</b>
+							<b>Marginal effects for the adoption of soil-improving practices
+								model</b>
 						</p>
 					</caption>
 					<tgroup align="left" cols="7">
-						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
-						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
-						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
-						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
-						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
-						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
-						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*" />
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*" />
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*" />
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*" />
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*" />
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*" />
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*" />
 						<thead valign="top">
 							<row rowsep="1">
 								<entry colname="c1">
@@ -1489,9 +1964,12 @@
 									<p>
 										<b>
 											<it>p </it>
-										</b><b>&gt; | </b><b>
+										</b>
+										<b>&gt; | </b>
+										<b>
 											<it>z </it>
-										</b><b>|</b>
+										</b>
+										<b>|</b>
 									</p>
 								</entry>
 								<entry colname="c6" nameend="c7" namest="c6">
@@ -1826,27 +2304,128 @@
 							</row>
 						</tbody>
 					</tgroup>
-				</table><p>The coefficients associated with food security (whether the household is food secure or not), use of chemical fertilizers, use of insecticides, soil quality (medium-quality soil), and seasonal lease arrangement are significant. Food secure households are more likely to adopt soil-improving practices than food insecure households. Food secure households may be willing to sacrifice some production for increased soil quality because they are not hungry. Kristjanson et al. <abbrgrp>
+				</table>
+				<p>
+					The coefficients associated with food security (whether the
+					household is food secure or not), use of chemical fertilizers, use
+					of insecticides, soil quality (medium-quality soil), and seasonal
+					lease arrangement are significant. Food secure households are more
+					likely to adopt soil-improving practices than food insecure
+					households. Food secure households may be willing to sacrifice some
+					production for increased soil quality because they are not hungry.
+					Kristjanson et al.
+					<abbrgrp>
 						<abbr bid="B23">23</abbr>
-					</abbrgrp> found a similar relationship between farming practices and number of months with food deficit for five African countries. Their study observed that households that experience a larger number of months with a food deficit per year make less changes to their farming practices (such as introducing micro-catchments, ridges, rotations, improved pastures, and trees) compared to households with fewer months with food deficits. Ajayi <abbrgrp>
+					</abbrgrp>
+					found a similar relationship between farming practices and number
+					of months with food deficit for five African countries. Their study
+					observed that households that experience a larger number of months
+					with a food deficit per year make less changes to their farming
+					practices (such as introducing micro-catchments, ridges, rotations,
+					improved pastures, and trees) compared to households with fewer
+					months with food deficits. Ajayi
+					<abbrgrp>
 						<abbr bid="B24">24</abbr>
-					</abbrgrp> notes that farmers have a good understanding of food security and soil fertility issues. This understanding may contribute to the positive association between adoption of soil-improving practices and food insecure/secure category.</p><p>The use of chemical fertilizers decreases the probability of adopting soil-improving practices. Given the nature of the survey questions, one can only speculate as to why this is the case. It may be the case that households are substituting fertilizers for soil-improving practices to maintain yields. The use of insecticides increases the likelihood of adoption of soil-improving practices. Application of insecticides may indicate pest infestations, and households are adopting soil conservative practices to help control insects. Soil quality is categorized as either poor or medium quality according to the subjective opinion of the respondent. This coefficient is negative indicating that respondents with higher quality soil are less likely to adopt soil-improving practices than those farming poorer quality soil. It appears that households with better quality soil may have less of an incentive to adopt land-conserving practices than those households with poorer soils. Households may be adopting soil-improving practices as their soil quality deteriorates. As their soil deteriorates and yields decrease, households may only then perceive the benefits of adopting soil-improving practices. These results are in line with Mbaga-Semgalawe and Folmer <abbrgrp>
+					</abbrgrp>
+					notes that farmers have a good understanding of food security and
+					soil fertility issues. This understanding may contribute to the
+					positive association between adoption of soil-improving practices
+					and food insecure/secure category.
+				</p>
+				<p>
+					The use of chemical fertilizers decreases the probability of
+					adopting soil-improving practices. Given the nature of the survey
+					questions, one can only speculate as to why this is the case. It
+					may be the case that households are substituting fertilizers for
+					soil-improving practices to maintain yields. The use of
+					insecticides increases the likelihood of adoption of soil-improving
+					practices. Application of insecticides may indicate pest
+					infestations, and households are adopting soil conservative
+					practices to help control insects. Soil quality is categorized as
+					either poor or medium quality according to the subjective opinion
+					of the respondent. This coefficient is negative indicating that
+					respondents with higher quality soil are less likely to adopt
+					soil-improving practices than those farming poorer quality soil. It
+					appears that households with better quality soil may have less of
+					an incentive to adopt land-conserving practices than those
+					households with poorer soils. Households may be adopting
+					soil-improving practices as their soil quality deteriorates. As
+					their soil deteriorates and yields decrease, households may only
+					then perceive the benefits of adopting soil-improving practices.
+					These results are in line with Mbaga-Semgalawe and Folmer
+					<abbrgrp>
 						<abbr bid="B25">25</abbr>
-					</abbrgrp>, who found that the perception of soil erosion as a priority issue increases the probability of adoption of improved soil conservation practices.</p><p>Seasonal leases tend to increase the probability of adoption over long-term proprietorship. Again, one can only speculate as to why this is the case. Adoption may be because of the short-term lease arrangements. Landowners may require producers to use conserving practices, or leaseholders may be afraid of losing their leases if they do not use conserving practices. It may be the case that the lessee has an incentive to take care of the land to be able to obtain a contract for next season.</p><p>Household characteristics such as age, income, household size, and education are not significant in influencing the likelihood of adopting soil-improving practices. Although variables included in previous studies vary, studies such as <abbrgrp>
+					</abbrgrp>
+					, who found that the perception of soil erosion as a priority issue
+					increases the probability of adoption of improved soil conservation
+					practices.
+				</p>
+				<p>Seasonal leases tend to increase the probability of adoption over
+					long-term proprietorship. Again, one can only speculate as to why
+					this is the case. Adoption may be because of the short-term lease
+					arrangements. Landowners may require producers to use conserving
+					practices, or leaseholders may be afraid of losing their leases if
+					they do not use conserving practices. It may be the case that the
+					lessee has an incentive to take care of the land to be able to
+					obtain a contract for next season.</p>
+				<p>
+					Household characteristics such as age, income, household size, and
+					education are not significant in influencing the likelihood of
+					adopting soil-improving practices. Although variables included in
+					previous studies vary, studies such as
+					<abbrgrp>
 						<abbr bid="B26">26</abbr>
 						<abbr bid="B27">27</abbr>
 						<abbr bid="B28">28</abbr>
-					</abbrgrp> also found that characteristics such as age or experience, type of land tenure, or education are not significant determinates of adoption of soil management practices. Household characteristics do not influence the adoption of soil-improving practices despite the results of the previous studies <abbrgrp>
+					</abbrgrp>
+					also found that characteristics such as age or experience, type of
+					land tenure, or education are not significant determinates of
+					adoption of soil management practices. Household characteristics do
+					not influence the adoption of soil-improving practices despite the
+					results of the previous studies
+					<abbrgrp>
 						<abbr bid="B29">29</abbr>
 						<abbr bid="B30">30</abbr>
-					</abbrgrp> that suggest these factors may influence adoption behavior. Knowles and Bradshaw <abbrgrp>
+					</abbrgrp>
+					that suggest these factors may influence adoption behavior. Knowles
+					and Bradshaw
+					<abbrgrp>
 						<abbr bid="B14">14</abbr>
-					</abbrgrp> note that there are few if any universal factors influencing adoption; thereby, concluding efforts to promote conservation agricultural need to be tailor made for individual locations. Although variability exists in the survey data, the study region is fairly homogenous. One unique characteristic of this region is the nearness to the capital city and the benefits this brings in terms of educational and infrastructure facilities. Households in the rural areas of the GA West District in Greater Accra Region are uniformly more educated compared to other regions and have higher incomes. This lack of sufficient variability in these variables may be the cause of their insignificance.</p>
+					</abbrgrp>
+					note that there are few if any universal factors influencing
+					adoption; thereby, concluding efforts to promote conservation
+					agricultural need to be tailor made for individual locations.
+					Although variability exists in the survey data, the study region is
+					fairly homogenous. One unique characteristic of this region is the
+					nearness to the capital city and the benefits this brings in terms
+					of educational and infrastructure facilities. Households in the
+					rural areas of the GA West District in Greater Accra Region are
+					uniformly more educated compared to other regions and have higher
+					incomes. This lack of sufficient variability in these variables may
+					be the cause of their insignificance.
+				</p>
 			</sec>
 			<sec>
 				<st>
 					<p>Food security categorization</p>
-				</st><p>In the food security model, the chi-squared test <it>p</it> value is 0.001, indicating that the coefficients of independent variables are not jointly equal to zero (Table&#160;<tblr tid="T4">4</tblr>). Chi-squared tests of the equality of the three cutoff points are rejected at <it>p</it> values of 0.00 or less. The significant differences in the cutoff points indicates that the four categories differ; all four categories should be included in the model. Estimated coefficients from an ordered logit model are difficult to interpret because they are in log-odds units; as such, the marginal effects (Table&#160;<tblr tid="T5">5</tblr>) are discussed.</p>
+				</st>
+				<p>
+					In the food security model, the chi-squared test
+					<it>p</it>
+					value is 0.001, indicating that the coefficients of independent
+					variables are not jointly equal to zero (Table&#160;
+					<tblr tid="T4">4</tblr>
+					). Chi-squared tests of the equality of the three cutoff points are
+					rejected at
+					<it>p</it>
+					values of 0.00 or less. The significant differences in the cutoff
+					points indicates that the four categories differ; all four
+					categories should be included in the model. Estimated coefficients
+					from an ordered logit model are difficult to interpret because they
+					are in log-odds units; as such, the marginal effects (Table&#160;
+					<tblr tid="T5">5</tblr>
+					) are discussed.
+				</p>
 				<table id="T4">
 					<title>
 						<p>Table 4</p>
@@ -1857,13 +2436,13 @@
 						</p>
 					</caption>
 					<tgroup align="left" cols="7">
-						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
-						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
-						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
-						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
-						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
-						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
-						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*" />
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*" />
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*" />
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*" />
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*" />
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*" />
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*" />
 						<thead valign="top">
 							<row rowsep="1">
 								<entry colname="c1">
@@ -1892,9 +2471,12 @@
 									<p>
 										<b>
 											<it>p </it>
-										</b><b>&gt; | </b><b>
+										</b>
+										<b>&gt; | </b>
+										<b>
 											<it>z </it>
-										</b><b>|</b>
+										</b>
+										<b>|</b>
 									</p>
 								</entry>
 								<entry colname="c6" nameend="c7" namest="c6">
@@ -1905,8 +2487,14 @@
 							</row>
 						</thead>
 						<tfoot>
-							<p>Number of observation = 116.</p><p>Chi squared = 35.00, probability &gt;chi squared = 0.002.</p><p>Pseudo <it>R</it>
-								<sup>2</sup> = 0.13.</p>
+							<p>Number of observation = 116.</p>
+							<p>Chi squared = 35.00, probability &gt;chi squared = 0.002.</p>
+							<p>
+								Pseudo
+								<it>R</it>
+								<sup>2</sup>
+								= 0.13.
+							</p>
 						</tfoot>
 						<tbody>
 							<row>
@@ -2246,8 +2834,8 @@
 								<entry colname="c3">
 									<p>1.448</p>
 								</entry>
-								<entry colname="c4"/>
-								<entry colname="c5"/>
+								<entry colname="c4" />
+								<entry colname="c5" />
 								<entry colname="c6">
 									<p>-1.557</p>
 								</entry>
@@ -2270,8 +2858,8 @@
 								<entry colname="c3">
 									<p>1.525</p>
 								</entry>
-								<entry colname="c4"/>
-								<entry colname="c5"/>
+								<entry colname="c4" />
+								<entry colname="c5" />
 								<entry colname="c6">
 									<p>1.957</p>
 								</entry>
@@ -2294,8 +2882,8 @@
 								<entry colname="c3">
 									<p>1.554</p>
 								</entry>
-								<entry colname="c4"/>
-								<entry colname="c5"/>
+								<entry colname="c4" />
+								<entry colname="c5" />
 								<entry colname="c6">
 									<p>2.930</p>
 								</entry>
@@ -2316,13 +2904,13 @@
 						</p>
 					</caption>
 					<tgroup align="left" cols="7">
-						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
-						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
-						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
-						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
-						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
-						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
-						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*" />
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*" />
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*" />
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*" />
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*" />
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*" />
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*" />
 						<thead valign="top">
 							<row rowsep="1">
 								<entry colname="c1">
@@ -2351,9 +2939,12 @@
 									<p>
 										<b>
 											<it>p </it>
-										</b><b>&gt; | </b><b>
+										</b>
+										<b>&gt; | </b>
+										<b>
 											<it>z </it>
-										</b><b>|</b>
+										</b>
+										<b>|</b>
 									</p>
 								</entry>
 								<entry colname="c6" nameend="c7" namest="c6">
@@ -2364,7 +2955,8 @@
 							</row>
 						</thead>
 						<tfoot>
-							<p>The marginal effects are for the discrete change in the qualitative 0&#8211;1 variables.</p>
+							<p>The marginal effects are for the discrete change in the
+								qualitative 0&#8211;1 variables.</p>
 						</tfoot>
 						<tbody>
 							<row>
@@ -3677,62 +4269,294 @@
 							</row>
 						</tbody>
 					</tgroup>
-				</table><p>Marginal effects are interpreted relative to the category and sign. A positive coefficient for a category indicates an increase in that variable increases the probability of being in that category, whereas, a negative coefficient indicates a decrease in probability of being in that category. Four variables have significant marginal effects (<it>p</it> values &#8804;0.15) in all four equations: use of chemical fertilizers, having medium-quality soil, income, and use of insecticides. The use of chemical fertilizers decreases the probability of being in either the chronic or seasonal insecure categories and increases the probability of being in either the vulnerable insecure and secure categories. Farming medium-quality soil over poor soil has a similar effect, decreasing the probability of being in either chronic or seasonal and increasing the probability of being in either vulnerable or secure categories. These results are most likely associated with increased production from the use of chemical fertilizers and/or farming better soils.</p><p>Previous studies have shown that the adoption of agricultural innovation and sustainable land practices may influence the level of agricultural productivity which in turn helps determine farm income and household food insecurity <abbrgrp>
+				</table>
+				<p>
+					Marginal effects are interpreted relative to the category and sign.
+					A positive coefficient for a category indicates an increase in that
+					variable increases the probability of being in that category,
+					whereas, a negative coefficient indicates a decrease in probability
+					of being in that category. Four variables have significant marginal
+					effects (
+					<it>p</it>
+					values &#8804;0.15) in all four equations: use of chemical
+					fertilizers, having medium-quality soil, income, and use of
+					insecticides. The use of chemical fertilizers decreases the
+					probability of being in either the chronic or seasonal insecure
+					categories and increases the probability of being in either the
+					vulnerable insecure and secure categories. Farming medium-quality
+					soil over poor soil has a similar effect, decreasing the
+					probability of being in either chronic or seasonal and increasing
+					the probability of being in either vulnerable or secure categories.
+					These results are most likely associated with increased production
+					from the use of chemical fertilizers and/or farming better soils.
+				</p>
+				<p>
+					Previous studies have shown that the adoption of agricultural
+					innovation and sustainable land practices may influence the level
+					of agricultural productivity which in turn helps determine farm
+					income and household food insecurity
+					<abbrgrp>
 						<abbr bid="B31">31</abbr>
 						<abbr bid="B32">32</abbr>
-					</abbrgrp>. Minten and Barrett <abbrgrp>
+					</abbrgrp>
+					. Minten and Barrett
+					<abbrgrp>
 						<abbr bid="B33">33</abbr>
-					</abbrgrp> show that Madagascarian farmers regard productivity-enhancing innovations, such as improved access to agricultural equipment, irrigation, and cattle, as key elements to increase their food security. Asfaw and Shiferaw <abbrgrp>
+					</abbrgrp>
+					show that Madagascarian farmers regard productivity-enhancing
+					innovations, such as improved access to agricultural equipment,
+					irrigation, and cattle, as key elements to increase their food
+					security. Asfaw and Shiferaw
+					<abbrgrp>
 						<abbr bid="B34">34</abbr>
-					</abbrgrp> show that small holder farmers in Tanzania and Ethiopia are able to produce more and create a market surplus by planting improved varieties of chickpea and pigeon pea. Wollini et al. <abbrgrp>
+					</abbrgrp>
+					show that small holder farmers in Tanzania and Ethiopia are able to
+					produce more and create a market surplus by planting improved
+					varieties of chickpea and pigeon pea. Wollini et al.
+					<abbrgrp>
 						<abbr bid="B35">35</abbr>
-					</abbrgrp> note that the use of improved agricultural practices can have a positive effect on food security and biodiversity through crop rotation and intercropping. Farmers may be able to grow crops that can be harvested at different times and have different climate and environmental stress response characteristics. Such practices are a way of hedging the risks of drought, irregular temperatures, and rainfall variability. Specifically, for Ghana, Diao and Sarpong <abbrgrp>
+					</abbrgrp>
+					note that the use of improved agricultural practices can have a
+					positive effect on food security and biodiversity through crop
+					rotation and intercropping. Farmers may be able to grow crops that
+					can be harvested at different times and have different climate and
+					environmental stress response characteristics. Such practices are a
+					way of hedging the risks of drought, irregular temperatures, and
+					rainfall variability. Specifically, for Ghana, Diao and Sarpong
+					<abbrgrp>
 						<abbr bid="B36">36</abbr>
-					</abbrgrp> identify soil fertility depletion as the main bio-physical factor that deters improvements in productivity and per capita food production.</p><p>Increasing income decreases the probability of being food insecure and increases the probability of the household being in either the vulnerable or food secure category. As incomes increase, households have more funds to purchase inputs or food; the marginal effects reflect this idea. Studies such as <abbrgrp>
+					</abbrgrp>
+					identify soil fertility depletion as the main bio-physical factor
+					that deters improvements in productivity and per capita food
+					production.
+				</p>
+				<p>
+					Increasing income decreases the probability of being food insecure
+					and increases the probability of the household being in either the
+					vulnerable or food secure category. As incomes increase, households
+					have more funds to purchase inputs or food; the marginal effects
+					reflect this idea. Studies such as
+					<abbrgrp>
 						<abbr bid="B37">37</abbr>
 						<abbr bid="B38">38</abbr>
-					</abbrgrp> also show positive associations between income and food security.</p><p>The use of insecticides has an opposite effect of the previous two variables, namely increases the probability of being in the chronic or seasonal food insecure categories and decreases the probability of being in vulnerable insecure or secure category. Again, one can only speculate as to why, but insecticide use may be an indicator that there is a pest attack on the crop. Hence, households that experienced pest attacks may have decreased production and reduced food security. Failure to apply insecticides would most likely cause even smaller yields. Conway and Toenniessen <abbrgrp>
+					</abbrgrp>
+					also show positive associations between income and food security.
+				</p>
+				<p>
+					The use of insecticides has an opposite effect of the previous two
+					variables, namely increases the probability of being in the chronic
+					or seasonal food insecure categories and decreases the probability
+					of being in vulnerable insecure or secure category. Again, one can
+					only speculate as to why, but insecticide use may be an indicator
+					that there is a pest attack on the crop. Hence, households that
+					experienced pest attacks may have decreased production and reduced
+					food security. Failure to apply insecticides would most likely
+					cause even smaller yields. Conway and Toenniessen
+					<abbrgrp>
 						<abbr bid="B39">39</abbr>
-					</abbrgrp> suggest that low soil fertility and crop losses from pests have reduced harvests and food security in Africa.</p><p>The marginal effect of the use of commercial seeds is significant in two categories: seasonal and secure. Commercial seed use is very close to significant (<it>p</it> = 0.153) for the vulnerability category and is not significant for the chronic category. The use of commercial seeds increases the probability of being in the vulnerable or secure categories while decreasing the probability of being seasonal food insecure. As with the use of chemical fertilizers, commercial seed marginal effects are most likely related to increased yields. Commercial seeds are expected to increase yields providing higher yields for personal consumption or sale.</p><p>Household characteristics, such as education level of the household, age of the household head and household size, and sharecropping, and training and information from the Ghana extension service are not significantly associated with the probability of households improving their food security position. As in the adoption model, their insignificance may be because of the households in the survey area are relatively homogenous in those factors.</p><p>Three variables of particular interest to agricultural policy-makers are adoption of soil improvement techniques, education level, and access to extension service. Adoption of soil-improving practices and increased education levels have the expected effects, namely decreasing the probability of being in chronic and seasonal food insecure categories and increasing the probability of being in vulnerable and food secure categories. Adoption, however, is not significant. It may be the case (given the conditional logit results) that soil quality is related to adoption of soil-enhancing practices, as such soil quality is picking up any adoption behavior in the food security model. Training and information from the extension service has an unexpected effect but the effect is insignificant; extension services increases the probability of being in chronic or seasonal categories and decreases the probability of being in vulnerable or food secure categories. Several reasons may exist for the extension results. Similar to Rubas&#8217; <abbrgrp>
+					</abbrgrp>
+					suggest that low soil fertility and crop losses from pests have
+					reduced harvests and food security in Africa.
+				</p>
+				<p>
+					The marginal effect of the use of commercial seeds is significant
+					in two categories: seasonal and secure. Commercial seed use is very
+					close to significant (
+					<it>p</it>
+					= 0.153) for the vulnerability category and is not significant for
+					the chronic category. The use of commercial seeds increases the
+					probability of being in the vulnerable or secure categories while
+					decreasing the probability of being seasonal food insecure. As with
+					the use of chemical fertilizers, commercial seed marginal effects
+					are most likely related to increased yields. Commercial seeds are
+					expected to increase yields providing higher yields for personal
+					consumption or sale.
+				</p>
+				<p>Household characteristics, such as education level of the
+					household, age of the household head and household size, and
+					sharecropping, and training and information from the Ghana
+					extension service are not significantly associated with the
+					probability of households improving their food security position.
+					As in the adoption model, their insignificance may be because of
+					the households in the survey area are relatively homogenous in
+					those factors.</p>
+				<p>
+					Three variables of particular interest to agricultural
+					policy-makers are adoption of soil improvement techniques,
+					education level, and access to extension service. Adoption of
+					soil-improving practices and increased education levels have the
+					expected effects, namely decreasing the probability of being in
+					chronic and seasonal food insecure categories and increasing the
+					probability of being in vulnerable and food secure categories.
+					Adoption, however, is not significant. It may be the case (given
+					the conditional logit results) that soil quality is related to
+					adoption of soil-enhancing practices, as such soil quality is
+					picking up any adoption behavior in the food security model.
+					Training and information from the extension service has an
+					unexpected effect but the effect is insignificant; extension
+					services increases the probability of being in chronic or seasonal
+					categories and decreases the probability of being in vulnerable or
+					food secure categories. Several reasons may exist for the extension
+					results. Similar to Rubas&#8217;
+					<abbrgrp>
 						<abbr bid="B12">12</abbr>
-					</abbrgrp> finding that outreach is not a universal factor influencing technology adoption; extension services may not influence food secure. Rubas <abbrgrp>
+					</abbrgrp>
+					finding that outreach is not a universal factor influencing
+					technology adoption; extension services may not influence food
+					secure. Rubas
+					<abbrgrp>
 						<abbr bid="B12">12</abbr>
-					</abbrgrp> concludes that outreach agents may want to alter their approaches. Another reason may be the respondent&#8217;s social desirability bias behavior <abbrgrp>
+					</abbrgrp>
+					concludes that outreach agents may want to alter their approaches.
+					Another reason may be the respondent&#8217;s social desirability
+					bias behavior
+					<abbrgrp>
 						<abbr bid="B40">40</abbr>
-					</abbrgrp>. The survey was conducted by extension agents who have worked with farmers in the region over a long period of time. It is possible as Legget et al. <abbrgrp>
+					</abbrgrp>
+					. The survey was conducted by extension agents who have worked with
+					farmers in the region over a long period of time. It is possible as
+					Legget et al.
+					<abbrgrp>
 						<abbr bid="B40">40</abbr>
-					</abbrgrp> has suggested that the respondents presented themselves in a socially desirable frame (respond that they received training/information) to look good in the eyes of the survey personnel, in this case extension agents.</p>
+					</abbrgrp>
+					has suggested that the respondents presented themselves in a
+					socially desirable frame (respond that they received
+					training/information) to look good in the eyes of the survey
+					personnel, in this case extension agents.
+				</p>
 			</sec>
 		</sec>
 		<sec>
 			<st>
 				<p>Conclusions</p>
-			</st><p>It appears that soil quality should be the center of the focus in addressing the issues of adopting soil-improving practices and food insecurity in Ghana. Households with higher quality soil are more likely to be associated with the use of soil-improving practices and are more likely to be in an improved food insecure category. Given the high priority, the government of Ghana has placed on food security, policies that encourage the use of yield enhancing inputs, chemical fertilizers, and commercial seeds that may be beneficial in improving farm households&#8217; food security status. Adoption of soil-improving practices and yield enhancing inputs, however, may not always be compatible.</p><p>Priorities may differ between food secure and food insecure households in terms of adopting soil-improving practices. It is estimated that food secure households are more likely to be associated with the use of soil-improving practices than food insecure households. Food insecure households may be weighing the immediate need for increased production from the limited land they farm against longer term needs. Food secure households may have been able to afford to adopt soil-improving practices even if there is temporary drop in yields. Hence, policies may have to be customized for the different categories of food secure households to increase adoption of soil-improving practices.</p><p>Household characteristics such as income, age, education level, and household size emerge as not associated with improving household food security or the adoption decision in all food insecurity groups. There might be other factors that are outside the control of households to determine the food security position of households. Exogenous factors such as weather and crop prices are beyond the farmer control but may determine food security &#8220;better&#8221; than the influence of household characteristics. Further research into why households appear to differ little between the categories should be conducted or is it entirely related to soil quality.</p><p>Four recommendations emerge to improve the food security status of households based on their soil-improving practice choice decisions. First, the results from the food security model lend support for a need for the government to eliminate the problems that saddled the distribution of fertilizers in response to the fertilizer subsidy program announced during the 2008 planting season. Results suggest that the use of chemical fertilizers improves the food security status of households. The adoption model, however, suggests a catch-22 may exist. Although increasing use of chemical fertilizers reduces food insecurity, it also reduces the probability of adopting soil-improving practices. This is an unexpected result. Households may be using the application of chemical fertilizer as a short-term solution to restore soil fertility. This practice, however, may be a short-sighted substitute activity for a longer term solution of adoption of soil-improving practices. This is just speculation; more research work is necessary in this area. At this time, the government needs to approach these two different issues cautiously.</p><p>Second, the results suggest a need to improve the seed research and distribution. A recent study has indicated a woeful adoption of improved seed in Ghana since 1997 <abbrgrp>
+			</st>
+			<p>It appears that soil quality should be the center of the focus in
+				addressing the issues of adopting soil-improving practices and food
+				insecurity in Ghana. Households with higher quality soil are more
+				likely to be associated with the use of soil-improving practices and
+				are more likely to be in an improved food insecure category. Given
+				the high priority, the government of Ghana has placed on food
+				security, policies that encourage the use of yield enhancing inputs,
+				chemical fertilizers, and commercial seeds that may be beneficial in
+				improving farm households&#8217; food security status. Adoption of
+				soil-improving practices and yield enhancing inputs, however, may
+				not always be compatible.</p>
+			<p>Priorities may differ between food secure and food insecure
+				households in terms of adopting soil-improving practices. It is
+				estimated that food secure households are more likely to be
+				associated with the use of soil-improving practices than food
+				insecure households. Food insecure households may be weighing the
+				immediate need for increased production from the limited land they
+				farm against longer term needs. Food secure households may have been
+				able to afford to adopt soil-improving practices even if there is
+				temporary drop in yields. Hence, policies may have to be customized
+				for the different categories of food secure households to increase
+				adoption of soil-improving practices.</p>
+			<p>Household characteristics such as income, age, education level,
+				and household size emerge as not associated with improving household
+				food security or the adoption decision in all food insecurity
+				groups. There might be other factors that are outside the control of
+				households to determine the food security position of households.
+				Exogenous factors such as weather and crop prices are beyond the
+				farmer control but may determine food security &#8220;better&#8221;
+				than the influence of household characteristics. Further research
+				into why households appear to differ little between the categories
+				should be conducted or is it entirely related to soil quality.</p>
+			<p>Four recommendations emerge to improve the food security status of
+				households based on their soil-improving practice choice decisions.
+				First, the results from the food security model lend support for a
+				need for the government to eliminate the problems that saddled the
+				distribution of fertilizers in response to the fertilizer subsidy
+				program announced during the 2008 planting season. Results suggest
+				that the use of chemical fertilizers improves the food security
+				status of households. The adoption model, however, suggests a
+				catch-22 may exist. Although increasing use of chemical fertilizers
+				reduces food insecurity, it also reduces the probability of adopting
+				soil-improving practices. This is an unexpected result. Households
+				may be using the application of chemical fertilizer as a short-term
+				solution to restore soil fertility. This practice, however, may be a
+				short-sighted substitute activity for a longer term solution of
+				adoption of soil-improving practices. This is just speculation; more
+				research work is necessary in this area. At this time, the
+				government needs to approach these two different issues cautiously.
+			</p>
+			<p>
+				Second, the results suggest a need to improve the seed research and
+				distribution. A recent study has indicated a woeful adoption of
+				improved seed in Ghana since 1997
+				<abbrgrp>
 					<abbr bid="B41">41</abbr>
-				</abbrgrp>. Banful <abbrgrp>
+				</abbrgrp>
+				. Banful
+				<abbrgrp>
 					<abbr bid="B41">41</abbr>
-				</abbrgrp> notes that approximately 3% of Ghana&#8217;s maize area is planted to hybrids which have twice the yield potential of the currently planted seeds. She notes that the system is either not solving the binding constraints on Ghana&#8217;s farmers to adopt the variety or the extension service is unable to disseminate the net benefits of the new varieties. Third, the results point to a need to improve the institutional framework, especially land markets to improve land use contracting. Farmers leasing land have been shown to increase technology adoption, but there is little contract enforcement mechanisms within the judicial system to promote land lease contracts. Fourth, given the importance of soil quality is in both models, policies that enhance soil quality are important. Information on improving soil quality may need to be delivered to farmers in a way that is understandable and easy to use.</p><p>Contrary to <it>a priori</it> expectations, both access to agricultural extension services and education are insignificant in both adoption of soil-improving practices and food insecurity categorization. <it>A priori</it>, it was felt that these factors should increase adoption of soil-improving practices and improve the food security position of the household. Further, research is necessary to better understand the relationship between these variables.</p>
+				</abbrgrp>
+				notes that approximately 3% of Ghana&#8217;s maize area is planted
+				to hybrids which have twice the yield potential of the currently
+				planted seeds. She notes that the system is either not solving the
+				binding constraints on Ghana&#8217;s farmers to adopt the variety or
+				the extension service is unable to disseminate the net benefits of
+				the new varieties. Third, the results point to a need to improve the
+				institutional framework, especially land markets to improve land use
+				contracting. Farmers leasing land have been shown to increase
+				technology adoption, but there is little contract enforcement
+				mechanisms within the judicial system to promote land lease
+				contracts. Fourth, given the importance of soil quality is in both
+				models, policies that enhance soil quality are important.
+				Information on improving soil quality may need to be delivered to
+				farmers in a way that is understandable and easy to use.
+			</p>
+			<p>
+				Contrary to
+				<it>a priori</it>
+				expectations, both access to agricultural extension services and
+				education are insignificant in both adoption of soil-improving
+				practices and food insecurity categorization.
+				<it>A priori</it>
+				, it was felt that these factors should increase adoption of
+				soil-improving practices and improve the food security position of
+				the household. Further, research is necessary to better understand
+				the relationship between these variables.
+			</p>
 		</sec>
 		<sec>
 			<st>
 				<p>Endnote</p>
-			</st><p>
-				<sup>a</sup>As requested by a reviewer, the level of significance is arbitrary, depends on the sample size, and involves trade-offs between consequences of type I and II errors. A level of 0.15 is used in this study to include in the discussion any potentially important variables that might be nonsignificant because of the sample size and data limitations. Further, given that several of the variables are significant between 0.05 and 0.11 and relatively few variables between 0.15 and 0.25 (a natural break), it was felt that a larger significance level of 0.15 is appropriate. Exact <it>p</it> values are provided in the tables for the interested reader.</p>
+			</st>
+			<p>
+				<sup>a</sup>
+				As requested by a reviewer, the level of significance is arbitrary,
+				depends on the sample size, and involves trade-offs between
+				consequences of type I and II errors. A level of 0.15 is used in
+				this study to include in the discussion any potentially important
+				variables that might be nonsignificant because of the sample size
+				and data limitations. Further, given that several of the variables
+				are significant between 0.05 and 0.11 and relatively few variables
+				between 0.15 and 0.25 (a natural break), it was felt that a larger
+				significance level of 0.15 is appropriate. Exact
+				<it>p</it>
+				values are provided in the tables for the interested reader.
+			</p>
 		</sec>
 		<sec>
 			<st>
 				<p>Abbreviations</p>
-			</st><p>WFP: World Food Programme.</p>
+			</st>
+			<p>WFP: World Food Programme.</p>
 		</sec>
 		<sec>
 			<st>
 				<p>Competing interests</p>
-			</st><p>The authors declare that they have no competing interests.</p>
+			</st>
+			<p>The authors declare that they have no competing interests.</p>
 		</sec>
 		<sec>
 			<st>
 				<p>Authors&#8217; contributions</p>
-			</st><p>JTN, JWM, and FOB are involved in the conception and design, data collection and analysis, manuscript writing, and final approval of the manuscript.</p>
+			</st>
+			<p>JTN, JWM, and FOB are involved in the conception and design, data
+				collection and analysis, manuscript writing, and final approval of
+				the manuscript.</p>
 		</sec>
 	</bdy>
 	<bm>
@@ -3740,15 +4564,920 @@
 			<sec>
 				<st>
 					<p>Acknowledgements</p>
-				</st><p>This work was supported by the McKnight Foundation Grant No. 09-1170, administered by Norman Borlaug Institute for International Agriculture at Texas A&amp;M University.</p>
+				</st>
+				<p>This work was supported by the McKnight Foundation Grant No.
+					09-1170, administered by Norman Borlaug Institute for International
+					Agriculture at Texas A&amp;M University.</p>
 			</sec>
 		</ack>
-		<refgrp><bibl id="B1"><aug><au><cnm>Institute of Statistical, Social, and Economic Research</cnm></au></aug><source>The State of the Ghanaian Economy in 2010</source><publisher>Legon: University of Ghana</publisher><pubdate>2010</pubdate></bibl><bibl id="B2"><aug><au><snm>Devereux</snm><fnm>S</fnm></au></aug><source>Desk Review: Distinguishing Between Chronic and Transitory Food Insecurity in Emergency Needs Assessments</source><publisher>World Food Programme</publisher><pubdate>2006</pubdate><note><url>http://www.livestock-emergency.net/userfiles/file/assessment-review/Institue-Development-Studies-2006.pdf</url>. Accessed 20 October 2012</note></bibl><bibl id="B3"><aug><au><snm>Maxwell</snm><fnm>S</fnm></au><au><snm>Frankenberger</snm><fnm>T</fnm></au></aug><source>Household Food Security: Concepts, Indicators, and Measurements, a Technical Review</source><publisher>Rome: International Fund for Agricultural Development</publisher><pubdate>1992</pubdate><note><url>http://www.ifad.org/hfs/tools/hfs/hfspub/index.htm</url>. Accessed 4 November 2013</note></bibl><bibl id="B4"><title><p>Ghana: Agriculture is Becoming a Business</p></title><aug><au><snm>Wolter</snm><fnm>D</fnm></au></aug><source>OECD Journal General Papers</source><pubdate>2009</pubdate><volume>5</volume><issue>2</issue><fpage>9</fpage><lpage>32</lpage><note><url>http://dx.doi.org/10.1787/gen_papers-2009-5ks9zs5gt1d2</url>. Accessed 18 September 2013</note></bibl><bibl id="B5"><aug><au><snm>Biederlack</snm><fnm>L</fnm></au><au><snm>Rivers</snm><fnm>J</fnm></au></aug><source>Comprehensive Food Security &amp; Vulnerability Analysis (CFSVA): Ghana. United Nations World Food Programme</source><pubdate>2009</pubdate><note><url>http://documents.wfp.org/stellent/groups/public/documents/ena/wfp201820.pdf</url>. Accessed 12 November 2014</note></bibl><bibl id="B6"><aug><au><snm>Mulugeta</snm><fnm>T</fnm></au><au><snm>Hundie</snm><fnm>B</fnm></au></aug><source>Impacts of Adoption of Improved Wheat Technologies on Households&#8217; Food Consumption in Southeastern Ethiopia, Prepared for Presentation at the International Association of Agricultural Economists (IAAE) Triennial Conference</source><publisher>Foz do Igua&#231;u, Brazil</publisher><pubdate>2009</pubdate><note><url>http://ageconsearch.umn.edu/bitstream/126766/2/Mulugeta.pdf</url>. Accessed 29 November 2012</note></bibl><bibl id="B7"><aug><au><cnm>World Bank</cnm></au></aug><source>Agriculture for Development, World Development Report 2008</source><publisher>Washington, DC</publisher><pubdate>2008</pubdate><note><url>http://web.worldbank.org/WBSITE/EXTERNAL/EXTDEC/EXTRESEARCH/EXTWDRS/0,,contentMDK:23062293~pagePK:478093~piPK:477627~theSitePK:477624,00.html</url>. Accessed 4 November 2013</note></bibl><bibl id="B8"><aug><au><cnm>Ghana Ministry of Food and Agriculture</cnm></au></aug><source>Food and Agricultural Sector Development Policy. August 2007</source><publisher>Accra</publisher><pubdate>2011</pubdate><note><url>http://mofa.gov.gh/site/?page_id=598</url>. Accessed 19 September 2012</note></bibl><bibl id="B9"><aug><au><snm>Haggblade</snm><fnm>S</fnm></au><au><snm>Tembo</snm><fnm>G</fnm></au></aug><source>Development, Diffusion and Impacts of Conservation Farming in Zambia</source><publisher>International Food Policy Research Institute, EPTD Discussion Paper 108</publisher><pubdate>2003</pubdate><note><url>http://ageconsearch.umn.edu/handle/54464</url>. Accessed 4 November 2013</note></bibl><bibl id="B10"><title><p>Sustainable management of soil resources and food security</p></title><aug><au><snm>Lal</snm><fnm>R</fnm></au><au><snm>Stewart</snm><fnm>BA</fnm></au></aug><source>Advances in Soil Science World Soil Resources and Food Security</source><publisher>Boca Raton: CRC Press, Taylor and Francis Group, LLC</publisher><editor>Lal R, Stewart BA</editor><pubdate>2012</pubdate><fpage>1</fpage><lpage>10</lpage></bibl><bibl id="B11"><title><p>Determinants of agricultural and land management practices and impacts in crop production and household income in highlands of Tigray, Ethiopia</p></title><aug><au><snm>Pender</snm><fnm>J</fnm></au><au><snm>Gebremedhin</snm><fnm>B</fnm></au></aug><source>J Afr Econ</source><pubdate>2006</pubdate><volume>17</volume><fpage>395</fpage><lpage>450</lpage></bibl><bibl id="B12"><aug><au><snm>Rubas</snm><fnm>D</fnm></au></aug><source>Technology adoption: who is likely to adopt and how does the timing affect the benefits?</source><publisher>TX, USA: Texas A&amp;M University, Department of Agricultural Economics, College Station</publisher><series>
-   <title>
-      <p>PhD thesis</p>
-   </title>
-</series><pubdate>2004</pubdate></bibl><bibl id="B13"><title><p>Agricultural sustainability and technology adoption: issues and policies for developing countries</p></title><aug><au><snm>Lee</snm><fnm>DR</fnm></au></aug><source>Am J Agric Econ</source><pubdate>2005</pubdate><volume>87</volume><issue>5</issue><fpage>1325</fpage><lpage>1334</lpage><xrefbib><pubid idtype="doi">10.1111/j.1467-8276.2005.00826.x</pubid></xrefbib></bibl><bibl id="B14"><title><p>Farmers&#8217; adoption of conservation agriculture: a review and synthesis of recent research</p></title><aug><au><snm>Knowler</snm><fnm>D</fnm></au><au><snm>Bradshaw</snm><fnm>B</fnm></au></aug><source>Food Policy</source><pubdate>2007</pubdate><volume>32</volume><issue>1</issue><fpage>25</fpage><lpage>48</lpage><xrefbib><pubid idtype="doi">10.1016/j.foodpol.2006.01.003</pubid></xrefbib></bibl><bibl id="B15"><aug><au><cnm>Ghana Statistical, Research and Information Directorate</cnm></au></aug><source>Agriculture in Ghana: Facts and Figures</source><publisher>Accra: Ghana Ministry of Food and Agriculture</publisher><pubdate>2010</pubdate><note>
-   <url>http://mofa.gov.gh/site/wp-content/uploads/2011/10/AGRICULTURE-IN-GHANA-FF-2010.pdf</url>
-</note></bibl><bibl id="B16"><aug><au><snm>Nata</snm><fnm>J</fnm></au></aug><source>Household segmentation in food insecurity and soil improving practices in Ghana. M.S. Thesis</source><publisher>Texas A&amp;M University, College Station</publisher><pubdate>2013</pubdate></bibl><bibl id="B17"><aug><au><snm>Train</snm><fnm>KE</fnm></au></aug><source>Discrete Choice Models with Simulation</source><publisher>New York: Cambridge University Press</publisher><pubdate>2007</pubdate></bibl><bibl id="B18"><aug><au><snm>Mas-Colell</snm><fnm>A</fnm></au><au><snm>Whinston</snm><fnm>MD</fnm></au><au><snm>Green</snm><fnm>JR</fnm></au></aug><source>Microeconomic Theory</source><publisher>New York: Oxford University Press</publisher><pubdate>1995</pubdate></bibl><bibl id="B19"><aug><au><snm>Wiggins</snm><fnm>S</fnm></au><au><snm>Maunder</snm><fnm>N</fnm></au><au><snm>Carnegie</snm><fnm>J</fnm></au><au><snm>Roberts</snm><fnm>B</fnm></au><au><snm>Mokoena</snm><fnm>R</fnm></au><au><snm>Tregurtha</snm><fnm>N</fnm></au></aug><source>Scoping Study Towards DFIDSA&#8217;s Regional Hunger and Vulnerability Programme</source><publisher>Pretoria: Department Fund for International Development, Southern African Regional Poverty Network</publisher><pubdate>2004</pubdate><note><url>http://www.eldis.org/go/home&amp;id=24431&amp;type=Document#.VGO7yWftiBu</url>. Accessed 12 November 2014</note></bibl><bibl id="B20"><aug><au><snm>Bickel</snm><fnm>G</fnm></au><au><snm>Nord</snm><fnm>M</fnm></au><au><snm>Price</snm><fnm>P</fnm></au><au><snm>Hamilton</snm><fnm>W</fnm></au><au><snm>Cook</snm><fnm>J</fnm></au></aug><source>Guide to Measure Household Food Security</source><publisher>Washington, DC: U.S. Department of Agriculture, Office of Analysis, Nutrition, and Evaluation</publisher><pubdate>2000</pubdate><note><url>http://www.fns.usda.gov/sites/default/files/FSGuide_0.pdf</url>. Accessed 12 November 2014</note></bibl><bibl id="B21"><aug><au><snm>Greene</snm><fnm>WH</fnm></au></aug><source>Econometric Analysis</source><publisher>Upper Saddle River: Pearson Prentice Hall</publisher><edition>7</edition><pubdate>2012</pubdate></bibl><bibl id="B22"><aug><au><cnm>StataCorp</cnm></au></aug><source>Stata Statistical Software: Release 11</source><publisher>College Station: StataCorp LP</publisher><pubdate>2009</pubdate></bibl><bibl id="B23"><title><p>Are food insecure smallholder households making changes in their farming practices: evidence from East Africa</p></title><aug><au><snm>Kristjanson</snm><fnm>P</fnm></au><au><snm>Neufeldt</snm><fnm>H</fnm></au><au><snm>Gassner</snm><fnm>A</fnm></au><au><snm>Mango</snm><fnm>J</fnm></au><au><snm>Kyasse</snm><fnm>FB</fnm></au><au><snm>Desta</snm><fnm>S</fnm></au><au><snm>Sayula</snm><fnm>G</fnm></au><au><snm>Thiede</snm><fnm>B</fnm></au><au><snm>Furch</snm><fnm>W</fnm></au><au><snm>Thornton</snm><fnm>PK</fnm></au><au><snm>Coe</snm><fnm>R</fnm></au></aug><source>Food Security</source><pubdate>2012</pubdate><volume>2012</volume><issue>4</issue><fpage>381</fpage><lpage>397</lpage></bibl><bibl id="B24"><title><p>User acceptability of sustainable soil fertility technologies: lessons from farmers&#8217; knowledge, attitude and practice in Southern Africa</p></title><aug><au><snm>Ajayi</snm><fnm>OC</fnm></au></aug><source>J Sustain Agric</source><pubdate>2007</pubdate><volume>30</volume><issue>3</issue><fpage>21</fpage><lpage>40</lpage><xrefbib><pubid idtype="doi">10.1300/J064v30n03_04</pubid></xrefbib></bibl><bibl id="B25"><title><p>Household adoption behaviour of improved soil conservation: the case of the North Pare and West Usambara Mountains of Tanzania</p></title><aug><au><snm>Mbaga-Semgalawe</snm><fnm>Z</fnm></au><au><snm>Folmer</snm><fnm>H</fnm></au></aug><source>Land Use Policy</source><pubdate>2000</pubdate><volume>17</volume><fpage>321</fpage><lpage>336</lpage><xrefbib><pubid idtype="doi">10.1016/S0264-8377(00)00033-8</pubid></xrefbib></bibl><bibl id="B26"><title><p>A note on the adoption of soil conservation measures in the northern province of South Africa</p></title><aug><au><snm>Anim</snm><fnm>FDK</fnm></au></aug><source>J Agric Econ</source><pubdate>1999</pubdate><volume>50</volume><issue>2</issue><fpage>336</fpage><lpage>345</lpage></bibl><bibl id="B27"><title><p>Modeling farmers&#8217; decisions on integrated soil nutrient management in sub-Saharan Africa: a multinomial logit analysis in Cameroon</p></title><aug><au><snm>Nkamleu</snm><fnm>GB</fnm></au></aug><source>Advances in Integrated Soil Fertility Management in Sub-Saharan Africa: Challenges and Opportunities</source><publisher>Dordrecht: Springer</publisher><editor>Bationo A, Waswa B, Kihara J, Kimetu J</editor><pubdate>2007</pubdate><fpage>891</fpage><lpage>904</lpage></bibl><bibl id="B28"><title><p>Adoption of soil conservation: the case of the Philippine uplands</p></title><aug><au><snm>Lapar</snm><fnm>LA</fnm></au><au><snm>Pandey</snm><fnm>S</fnm></au></aug><source>Agric Econ</source><pubdate>1999</pubdate><volume>21</volume><fpage>241</fpage><lpage>256</lpage><xrefbib><pubid idtype="doi">10.1016/S0169-5150(99)00028-6</pubid></xrefbib></bibl><bibl id="B29"><title><p>Socioeconomic factors affecting the adoption potential of improved tree fallows in Africa</p></title><aug><au><snm>Franzel</snm><fnm>S</fnm></au></aug><source>Agrofor Syst</source><pubdate>1999</pubdate><volume>47</volume><fpage>305</fpage><lpage>321</lpage><xrefbib><pubid idtype="doi">10.1023/A:1006292119954</pubid></xrefbib></bibl><bibl id="B30"><title><p>Household-level determinants of adoption of improved natural resources management practices among smallholder farmers in western Kenya</p></title><aug><au><snm>Marenya</snm><fnm>PP</fnm></au><au><snm>Barrett</snm><fnm>CB</fnm></au></aug><source>Food Policy</source><pubdate>2007</pubdate><volume>32</volume><fpage>515</fpage><lpage>536</lpage><xrefbib><pubid idtype="doi">10.1016/j.foodpol.2006.10.002</pubid></xrefbib></bibl><bibl id="B31"><title><p>Adoption of improved land use technologies to increase food security in Burkina Faso: relating animal traction, productivity, and non-farm income</p></title><aug><au><snm>Savadogo</snm><fnm>K</fnm></au><au><snm>Reardon</snm><fnm>T</fnm></au><au><snm>Pietola</snm><fnm>K</fnm></au></aug><source>Agric Syst</source><pubdate>1998</pubdate><volume>58</volume><issue>3</issue><fpage>441.464</fpage></bibl><bibl id="B32"><title><p>Food security, climate change, and sustainable land management: a review</p></title><aug><au><snm>Branca</snm><fnm>G</fnm></au><au><snm>Lipper</snm><fnm>L</fnm></au><au><snm>McCarthy</snm><fnm>N</fnm></au><au><snm>Jolejloe</snm><fnm>MC</fnm></au></aug><source>Agron Sustain Dev</source><pubdate>2013</pubdate><volume>33</volume><issue>4</issue><fpage>635</fpage><lpage>650</lpage><xrefbib><pubid idtype="doi">10.1007/s13593-013-0133-1</pubid></xrefbib></bibl><bibl id="B33"><title><p>Agricultural technology, productivity, and poverty in Madagascar</p></title><aug><au><snm>Minten</snm><fnm>B</fnm></au><au><snm>Barrett</snm><fnm>CB</fnm></au></aug><source>World Dev</source><pubdate>2008</pubdate><volume>36</volume><issue>5</issue><fpage>797</fpage><lpage>822</lpage><xrefbib><pubid idtype="doi">10.1016/j.worlddev.2007.05.004</pubid></xrefbib></bibl><bibl id="B34"><aug><au><snm>Asfaw</snm><fnm>S</fnm></au><au><snm>Shiferaw</snm><fnm>B</fnm></au></aug><source>Agricultural Technology Adoption and Rural Poverty: Application of Endogenous Switching Regression for Selected East African Countries</source><publisher>Poster Presented at the Joint 3rd African Association of Agricultural Economists (AAAE) 19-23 September</publisher><pubdate>2010</pubdate><note><url>http://ageconsearch.umn.edu/handle/97049</url>. Accessed 2 December 2012</note></bibl><bibl id="B35"><aug><au><snm>Wollini</snm><fnm>D</fnm></au><au><snm>Lee</snm><fnm>R</fnm></au><au><snm>Thies</snm><fnm>JE</fnm></au></aug><source>Effects of Participation in Organic Markets and Farmer-Based Organizations on the Adoption of Soil Conservation Practices Among Small-Scale Farmers in Honduras</source><publisher>Paper Presented at the American Agricultural Economics Association Annual Meeting, Orlando, FL 27-29 July</publisher><pubdate>2008</pubdate><note><url>http://ideas.repec.org/p/ags/aaea08/6423.html</url>. Accessed 20 October 2012</note></bibl><bibl id="B36"><aug><au><snm>Diao</snm><fnm>X</fnm></au><au><snm>Sarpong</snm><fnm>D</fnm></au></aug><source>Cost Implication of Agricultural Land Degradation in Ghana: an Economy Wide Multimarket Model Assessment. Discussion Paper 698</source><publisher>Washington, DC: International Food Policy Research Institute</publisher><pubdate>2007</pubdate><note><url>http://www.ifpri.org/publication/cost-implications-agricultural-land-degradation-ghana</url>. Accessed 2 November 2012</note></bibl><bibl id="B37"><title><p>Non-farm work and food security among farm households in Northern Ghana</p></title><aug><au><snm>Owusua</snm><fnm>V</fnm></au><au><snm>Abdulaib</snm><fnm>A</fnm></au><au><snm>Abdul-Rahmana</snm><fnm>S</fnm></au></aug><source>Food Policy</source><pubdate>2011</pubdate><volume>36</volume><issue>2</issue><fpage>108</fpage><lpage>118</lpage><xrefbib><pubid idtype="doi">10.1016/j.foodpol.2010.09.002</pubid></xrefbib></bibl><bibl id="B38"><title><p>Impact of off-farm income on food security and nutrition in Nigeria</p></title><aug><au><snm>Babatunde</snm><fnm>RO</fnm></au><au><snm>Qaim</snm><fnm>M</fnm></au></aug><source>Food Policy</source><pubdate>2010</pubdate><volume>35</volume><fpage>303</fpage><lpage>311</lpage><xrefbib><pubid idtype="doi">10.1016/j.foodpol.2010.01.006</pubid></xrefbib></bibl><bibl id="B39"><title><p>Science for African food security</p></title><aug><au><snm>Conway</snm><fnm>G</fnm></au><au><snm>Toenniessen</snm><fnm>G</fnm></au></aug><source>Science</source><pubdate>2003</pubdate><volume>299</volume><issue>5610</issue><fpage>1187</fpage><lpage>1188</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1126/science.1081978</pubid><pubid idtype="pmpid" link="fulltext">12595678</pubid></pubidlist></xrefbib></bibl><bibl id="B40"><title><p>Social desirability bias in contingent valuation surveys administered through in-person interviews</p></title><aug><au><snm>Leggett</snm><fnm>CG</fnm></au><au><snm>Kleckner</snm><fnm>NS</fnm></au><au><snm>Boyle</snm><fnm>KJ</fnm></au><au><snm>Duffield</snm><fnm>JW</fnm></au><au><snm>Mitchell</snm><fnm>RC</fnm></au></aug><source>Land Econ</source><pubdate>2003</pubdate><volume>79</volume><issue>4</issue><fpage>561</fpage><lpage>575</lpage><xrefbib><pubid idtype="doi">10.2307/3147300</pubid></xrefbib></bibl><bibl id="B41"><aug><au><snm>Banful</snm><fnm>AB</fnm></au></aug><source>Operational Details of the 2008 Fertilizer Subsidy in Ghana - Preliminary Report. IFPRI Ghana Strategy Support Program (GSSP), Background Paper GSSP 18, May 2009</source><note><url>http://www.ifpri.org/sites/default/files/publications/gsspwp18.pdf</url>. Accessed 3 November 2013</note></bibl></refgrp>
+		<refgrp>
+			<bibl id="B1">
+				<aug>
+					<au>
+						<cnm>Institute of Statistical, Social, and Economic Research</cnm>
+					</au>
+				</aug>
+				<source>The State of the Ghanaian Economy in 2010</source>
+				<publisher>Legon: University of Ghana</publisher>
+				<pubdate>2010</pubdate>
+			</bibl>
+			<bibl id="B2">
+				<aug>
+					<au>
+						<snm>Devereux</snm>
+						<fnm>S</fnm>
+					</au>
+				</aug>
+				<source>Desk Review: Distinguishing Between Chronic and Transitory
+					Food Insecurity in Emergency Needs Assessments</source>
+				<publisher>World Food Programme</publisher>
+				<pubdate>2006</pubdate>
+				<note>
+					<url>http://www.livestock-emergency.net/userfiles/file/assessment-review/Institue-Development-Studies-2006.pdf</url>
+					. Accessed 20 October 2012
+				</note>
+			</bibl>
+			<bibl id="B3">
+				<aug>
+					<au>
+						<snm>Maxwell</snm>
+						<fnm>S</fnm>
+					</au>
+					<au>
+						<snm>Frankenberger</snm>
+						<fnm>T</fnm>
+					</au>
+				</aug>
+				<source>Household Food Security: Concepts, Indicators, and
+					Measurements, a Technical Review</source>
+				<publisher>Rome: International Fund for Agricultural Development</publisher>
+				<pubdate>1992</pubdate>
+				<note>
+					<url>http://www.ifad.org/hfs/tools/hfs/hfspub/index.htm</url>
+					. Accessed 4 November 2013
+				</note>
+			</bibl>
+			<bibl id="B4">
+				<title>
+					<p>Ghana: Agriculture is Becoming a Business</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Wolter</snm>
+						<fnm>D</fnm>
+					</au>
+				</aug>
+				<source>OECD Journal General Papers</source>
+				<pubdate>2009</pubdate>
+				<volume>5</volume>
+				<issue>2</issue>
+				<fpage>9</fpage>
+				<lpage>32</lpage>
+				<note>
+					<url>http://dx.doi.org/10.1787/gen_papers-2009-5ks9zs5gt1d2</url>
+					. Accessed 18 September 2013
+				</note>
+			</bibl>
+			<bibl id="B5">
+				<aug>
+					<au>
+						<snm>Biederlack</snm>
+						<fnm>L</fnm>
+					</au>
+					<au>
+						<snm>Rivers</snm>
+						<fnm>J</fnm>
+					</au>
+				</aug>
+				<source>Comprehensive Food Security &amp; Vulnerability Analysis
+					(CFSVA): Ghana. United Nations World Food Programme</source>
+				<pubdate>2009</pubdate>
+				<note>
+					<url>http://documents.wfp.org/stellent/groups/public/documents/ena/wfp201820.pdf</url>
+					. Accessed 12 November 2014
+				</note>
+			</bibl>
+			<bibl id="B6">
+				<aug>
+					<au>
+						<snm>Mulugeta</snm>
+						<fnm>T</fnm>
+					</au>
+					<au>
+						<snm>Hundie</snm>
+						<fnm>B</fnm>
+					</au>
+				</aug>
+				<source>Impacts of Adoption of Improved Wheat Technologies on
+					Households&#8217; Food Consumption in Southeastern Ethiopia,
+					Prepared for Presentation at the International Association of
+					Agricultural Economists (IAAE) Triennial Conference</source>
+				<publisher>Foz do Igua&#231;u, Brazil</publisher>
+				<pubdate>2009</pubdate>
+				<note>
+					<url>http://ageconsearch.umn.edu/bitstream/126766/2/Mulugeta.pdf</url>
+					. Accessed 29 November 2012
+				</note>
+			</bibl>
+			<bibl id="B7">
+				<aug>
+					<au>
+						<cnm>World Bank</cnm>
+					</au>
+				</aug>
+				<source>Agriculture for Development, World Development Report 2008</source>
+				<publisher>Washington, DC</publisher>
+				<pubdate>2008</pubdate>
+				<note>
+					<url>http://web.worldbank.org/WBSITE/EXTERNAL/EXTDEC/EXTRESEARCH/EXTWDRS/0,,contentMDK:23062293~pagePK:478093~piPK:477627~theSitePK:477624,00.html</url>
+					. Accessed 4 November 2013
+				</note>
+			</bibl>
+			<bibl id="B8">
+				<aug>
+					<au>
+						<cnm>Ghana Ministry of Food and Agriculture</cnm>
+					</au>
+				</aug>
+				<source>Food and Agricultural Sector Development Policy. August 2007</source>
+				<publisher>Accra</publisher>
+				<pubdate>2011</pubdate>
+				<note>
+					<url>http://mofa.gov.gh/site/?page_id=598</url>
+					. Accessed 19 September 2012
+				</note>
+			</bibl>
+			<bibl id="B9">
+				<aug>
+					<au>
+						<snm>Haggblade</snm>
+						<fnm>S</fnm>
+					</au>
+					<au>
+						<snm>Tembo</snm>
+						<fnm>G</fnm>
+					</au>
+				</aug>
+				<source>Development, Diffusion and Impacts of Conservation Farming
+					in Zambia</source>
+				<publisher>International Food Policy Research Institute, EPTD
+					Discussion Paper 108</publisher>
+				<pubdate>2003</pubdate>
+				<note>
+					<url>http://ageconsearch.umn.edu/handle/54464</url>
+					. Accessed 4 November 2013
+				</note>
+			</bibl>
+			<bibl id="B10">
+				<title>
+					<p>Sustainable management of soil resources and food security</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Lal</snm>
+						<fnm>R</fnm>
+					</au>
+					<au>
+						<snm>Stewart</snm>
+						<fnm>BA</fnm>
+					</au>
+				</aug>
+				<source>Advances in Soil Science World Soil Resources and Food
+					Security</source>
+				<publisher>Boca Raton: CRC Press, Taylor and Francis Group, LLC</publisher>
+				<editor>Lal R, Stewart BA</editor>
+				<pubdate>2012</pubdate>
+				<fpage>1</fpage>
+				<lpage>10</lpage>
+			</bibl>
+			<bibl id="B11">
+				<title>
+					<p>Determinants of agricultural and land management practices and
+						impacts in crop production and household income in highlands of
+						Tigray, Ethiopia</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Pender</snm>
+						<fnm>J</fnm>
+					</au>
+					<au>
+						<snm>Gebremedhin</snm>
+						<fnm>B</fnm>
+					</au>
+				</aug>
+				<source>J Afr Econ</source>
+				<pubdate>2006</pubdate>
+				<volume>17</volume>
+				<fpage>395</fpage>
+				<lpage>450</lpage>
+			</bibl>
+			<bibl id="B12">
+				<aug>
+					<au>
+						<snm>Rubas</snm>
+						<fnm>D</fnm>
+					</au>
+				</aug>
+				<source>Technology adoption: who is likely to adopt and how does the
+					timing affect the benefits?</source>
+				<publisher>TX, USA: Texas A&amp;M University, Department of
+					Agricultural Economics, College Station</publisher>
+				<series>
+					<title>
+						<p>PhD thesis</p>
+					</title>
+				</series>
+				<pubdate>2004</pubdate>
+			</bibl>
+			<bibl id="B13">
+				<title>
+					<p>Agricultural sustainability and technology adoption: issues and
+						policies for developing countries</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Lee</snm>
+						<fnm>DR</fnm>
+					</au>
+				</aug>
+				<source>Am J Agric Econ</source>
+				<pubdate>2005</pubdate>
+				<volume>87</volume>
+				<issue>5</issue>
+				<fpage>1325</fpage>
+				<lpage>1334</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1111/j.1467-8276.2005.00826.x</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B14">
+				<title>
+					<p>Farmers&#8217; adoption of conservation agriculture: a review
+						and synthesis of recent research</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Knowler</snm>
+						<fnm>D</fnm>
+					</au>
+					<au>
+						<snm>Bradshaw</snm>
+						<fnm>B</fnm>
+					</au>
+				</aug>
+				<source>Food Policy</source>
+				<pubdate>2007</pubdate>
+				<volume>32</volume>
+				<issue>1</issue>
+				<fpage>25</fpage>
+				<lpage>48</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/j.foodpol.2006.01.003</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B15">
+				<aug>
+					<au>
+						<cnm>Ghana Statistical, Research and Information Directorate</cnm>
+					</au>
+				</aug>
+				<source>Agriculture in Ghana: Facts and Figures</source>
+				<publisher>Accra: Ghana Ministry of Food and Agriculture</publisher>
+				<pubdate>2010</pubdate>
+				<note>
+					<url>http://mofa.gov.gh/site/wp-content/uploads/2011/10/AGRICULTURE-IN-GHANA-FF-2010.pdf</url>
+				</note>
+			</bibl>
+			<bibl id="B16">
+				<aug>
+					<au>
+						<snm>Nata</snm>
+						<fnm>J</fnm>
+					</au>
+				</aug>
+				<source>Household segmentation in food insecurity and soil improving
+					practices in Ghana. M.S. Thesis</source>
+				<publisher>Texas A&amp;M University, College Station</publisher>
+				<pubdate>2013</pubdate>
+			</bibl>
+			<bibl id="B17">
+				<aug>
+					<au>
+						<snm>Train</snm>
+						<fnm>KE</fnm>
+					</au>
+				</aug>
+				<source>Discrete Choice Models with Simulation</source>
+				<publisher>New York: Cambridge University Press</publisher>
+				<pubdate>2007</pubdate>
+			</bibl>
+			<bibl id="B18">
+				<aug>
+					<au>
+						<snm>Mas-Colell</snm>
+						<fnm>A</fnm>
+					</au>
+					<au>
+						<snm>Whinston</snm>
+						<fnm>MD</fnm>
+					</au>
+					<au>
+						<snm>Green</snm>
+						<fnm>JR</fnm>
+					</au>
+				</aug>
+				<source>Microeconomic Theory</source>
+				<publisher>New York: Oxford University Press</publisher>
+				<pubdate>1995</pubdate>
+			</bibl>
+			<bibl id="B19">
+				<aug>
+					<au>
+						<snm>Wiggins</snm>
+						<fnm>S</fnm>
+					</au>
+					<au>
+						<snm>Maunder</snm>
+						<fnm>N</fnm>
+					</au>
+					<au>
+						<snm>Carnegie</snm>
+						<fnm>J</fnm>
+					</au>
+					<au>
+						<snm>Roberts</snm>
+						<fnm>B</fnm>
+					</au>
+					<au>
+						<snm>Mokoena</snm>
+						<fnm>R</fnm>
+					</au>
+					<au>
+						<snm>Tregurtha</snm>
+						<fnm>N</fnm>
+					</au>
+				</aug>
+				<source>Scoping Study Towards DFIDSA&#8217;s Regional Hunger and
+					Vulnerability Programme</source>
+				<publisher>Pretoria: Department Fund for International Development,
+					Southern African Regional Poverty Network</publisher>
+				<pubdate>2004</pubdate>
+				<note>
+					<url>http://www.eldis.org/go/home&amp;id=24431&amp;type=Document#.VGO7yWftiBu</url>
+					. Accessed 12 November 2014
+				</note>
+			</bibl>
+			<bibl id="B20">
+				<aug>
+					<au>
+						<snm>Bickel</snm>
+						<fnm>G</fnm>
+					</au>
+					<au>
+						<snm>Nord</snm>
+						<fnm>M</fnm>
+					</au>
+					<au>
+						<snm>Price</snm>
+						<fnm>P</fnm>
+					</au>
+					<au>
+						<snm>Hamilton</snm>
+						<fnm>W</fnm>
+					</au>
+					<au>
+						<snm>Cook</snm>
+						<fnm>J</fnm>
+					</au>
+				</aug>
+				<source>Guide to Measure Household Food Security</source>
+				<publisher>Washington, DC: U.S. Department of Agriculture, Office of
+					Analysis, Nutrition, and Evaluation</publisher>
+				<pubdate>2000</pubdate>
+				<note>
+					<url>http://www.fns.usda.gov/sites/default/files/FSGuide_0.pdf</url>
+					. Accessed 12 November 2014
+				</note>
+			</bibl>
+			<bibl id="B21">
+				<aug>
+					<au>
+						<snm>Greene</snm>
+						<fnm>WH</fnm>
+					</au>
+				</aug>
+				<source>Econometric Analysis</source>
+				<publisher>Upper Saddle River: Pearson Prentice Hall</publisher>
+				<edition>7</edition>
+				<pubdate>2012</pubdate>
+			</bibl>
+			<bibl id="B22">
+				<aug>
+					<au>
+						<cnm>StataCorp</cnm>
+					</au>
+				</aug>
+				<source>Stata Statistical Software: Release 11</source>
+				<publisher>College Station: StataCorp LP</publisher>
+				<pubdate>2009</pubdate>
+			</bibl>
+			<bibl id="B23">
+				<title>
+					<p>Are food insecure smallholder households making changes in their
+						farming practices: evidence from East Africa</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Kristjanson</snm>
+						<fnm>P</fnm>
+					</au>
+					<au>
+						<snm>Neufeldt</snm>
+						<fnm>H</fnm>
+					</au>
+					<au>
+						<snm>Gassner</snm>
+						<fnm>A</fnm>
+					</au>
+					<au>
+						<snm>Mango</snm>
+						<fnm>J</fnm>
+					</au>
+					<au>
+						<snm>Kyasse</snm>
+						<fnm>FB</fnm>
+					</au>
+					<au>
+						<snm>Desta</snm>
+						<fnm>S</fnm>
+					</au>
+					<au>
+						<snm>Sayula</snm>
+						<fnm>G</fnm>
+					</au>
+					<au>
+						<snm>Thiede</snm>
+						<fnm>B</fnm>
+					</au>
+					<au>
+						<snm>Furch</snm>
+						<fnm>W</fnm>
+					</au>
+					<au>
+						<snm>Thornton</snm>
+						<fnm>PK</fnm>
+					</au>
+					<au>
+						<snm>Coe</snm>
+						<fnm>R</fnm>
+					</au>
+				</aug>
+				<source>Food Security</source>
+				<pubdate>2012</pubdate>
+				<volume>2012</volume>
+				<issue>4</issue>
+				<fpage>381</fpage>
+				<lpage>397</lpage>
+			</bibl>
+			<bibl id="B24">
+				<title>
+					<p>User acceptability of sustainable soil fertility technologies:
+						lessons from farmers&#8217; knowledge, attitude and practice in
+						Southern Africa</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Ajayi</snm>
+						<fnm>OC</fnm>
+					</au>
+				</aug>
+				<source>J Sustain Agric</source>
+				<pubdate>2007</pubdate>
+				<volume>30</volume>
+				<issue>3</issue>
+				<fpage>21</fpage>
+				<lpage>40</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1300/J064v30n03_04</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B25">
+				<title>
+					<p>Household adoption behaviour of improved soil conservation: the
+						case of the North Pare and West Usambara Mountains of Tanzania</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Mbaga-Semgalawe</snm>
+						<fnm>Z</fnm>
+					</au>
+					<au>
+						<snm>Folmer</snm>
+						<fnm>H</fnm>
+					</au>
+				</aug>
+				<source>Land Use Policy</source>
+				<pubdate>2000</pubdate>
+				<volume>17</volume>
+				<fpage>321</fpage>
+				<lpage>336</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/S0264-8377(00)00033-8</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B26">
+				<title>
+					<p>A note on the adoption of soil conservation measures in the
+						northern province of South Africa</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Anim</snm>
+						<fnm>FDK</fnm>
+					</au>
+				</aug>
+				<source>J Agric Econ</source>
+				<pubdate>1999</pubdate>
+				<volume>50</volume>
+				<issue>2</issue>
+				<fpage>336</fpage>
+				<lpage>345</lpage>
+			</bibl>
+			<bibl id="B27">
+				<title>
+					<p>Modeling farmers&#8217; decisions on integrated soil nutrient
+						management in sub-Saharan Africa: a multinomial logit analysis in
+						Cameroon</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Nkamleu</snm>
+						<fnm>GB</fnm>
+					</au>
+				</aug>
+				<source>Advances in Integrated Soil Fertility Management in
+					Sub-Saharan Africa: Challenges and Opportunities</source>
+				<publisher>Dordrecht: Springer</publisher>
+				<editor>Bationo A, Waswa B, Kihara J, Kimetu J</editor>
+				<pubdate>2007</pubdate>
+				<fpage>891</fpage>
+				<lpage>904</lpage>
+			</bibl>
+			<bibl id="B28">
+				<title>
+					<p>Adoption of soil conservation: the case of the Philippine
+						uplands</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Lapar</snm>
+						<fnm>LA</fnm>
+					</au>
+					<au>
+						<snm>Pandey</snm>
+						<fnm>S</fnm>
+					</au>
+				</aug>
+				<source>Agric Econ</source>
+				<pubdate>1999</pubdate>
+				<volume>21</volume>
+				<fpage>241</fpage>
+				<lpage>256</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/S0169-5150(99)00028-6</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B29">
+				<title>
+					<p>Socioeconomic factors affecting the adoption potential of
+						improved tree fallows in Africa</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Franzel</snm>
+						<fnm>S</fnm>
+					</au>
+				</aug>
+				<source>Agrofor Syst</source>
+				<pubdate>1999</pubdate>
+				<volume>47</volume>
+				<fpage>305</fpage>
+				<lpage>321</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1023/A:1006292119954</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B30">
+				<title>
+					<p>Household-level determinants of adoption of improved natural
+						resources management practices among smallholder farmers in
+						western Kenya</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Marenya</snm>
+						<fnm>PP</fnm>
+					</au>
+					<au>
+						<snm>Barrett</snm>
+						<fnm>CB</fnm>
+					</au>
+				</aug>
+				<source>Food Policy</source>
+				<pubdate>2007</pubdate>
+				<volume>32</volume>
+				<fpage>515</fpage>
+				<lpage>536</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/j.foodpol.2006.10.002</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B31">
+				<title>
+					<p>Adoption of improved land use technologies to increase food
+						security in Burkina Faso: relating animal traction, productivity,
+						and non-farm income</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Savadogo</snm>
+						<fnm>K</fnm>
+					</au>
+					<au>
+						<snm>Reardon</snm>
+						<fnm>T</fnm>
+					</au>
+					<au>
+						<snm>Pietola</snm>
+						<fnm>K</fnm>
+					</au>
+				</aug>
+				<source>Agric Syst</source>
+				<pubdate>1998</pubdate>
+				<volume>58</volume>
+				<issue>3</issue>
+				<fpage>441.464</fpage>
+			</bibl>
+			<bibl id="B32">
+				<title>
+					<p>Food security, climate change, and sustainable land management:
+						a review</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Branca</snm>
+						<fnm>G</fnm>
+					</au>
+					<au>
+						<snm>Lipper</snm>
+						<fnm>L</fnm>
+					</au>
+					<au>
+						<snm>McCarthy</snm>
+						<fnm>N</fnm>
+					</au>
+					<au>
+						<snm>Jolejloe</snm>
+						<fnm>MC</fnm>
+					</au>
+				</aug>
+				<source>Agron Sustain Dev</source>
+				<pubdate>2013</pubdate>
+				<volume>33</volume>
+				<issue>4</issue>
+				<fpage>635</fpage>
+				<lpage>650</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1007/s13593-013-0133-1</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B33">
+				<title>
+					<p>Agricultural technology, productivity, and poverty in Madagascar
+					</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Minten</snm>
+						<fnm>B</fnm>
+					</au>
+					<au>
+						<snm>Barrett</snm>
+						<fnm>CB</fnm>
+					</au>
+				</aug>
+				<source>World Dev</source>
+				<pubdate>2008</pubdate>
+				<volume>36</volume>
+				<issue>5</issue>
+				<fpage>797</fpage>
+				<lpage>822</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/j.worlddev.2007.05.004</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B34">
+				<aug>
+					<au>
+						<snm>Asfaw</snm>
+						<fnm>S</fnm>
+					</au>
+					<au>
+						<snm>Shiferaw</snm>
+						<fnm>B</fnm>
+					</au>
+				</aug>
+				<source>Agricultural Technology Adoption and Rural Poverty:
+					Application of Endogenous Switching Regression for Selected East
+					African Countries</source>
+				<publisher>Poster Presented at the Joint 3rd African Association of
+					Agricultural Economists (AAAE) 19-23 September</publisher>
+				<pubdate>2010</pubdate>
+				<note>
+					<url>http://ageconsearch.umn.edu/handle/97049</url>
+					. Accessed 2 December 2012
+				</note>
+			</bibl>
+			<bibl id="B35">
+				<aug>
+					<au>
+						<snm>Wollini</snm>
+						<fnm>D</fnm>
+					</au>
+					<au>
+						<snm>Lee</snm>
+						<fnm>R</fnm>
+					</au>
+					<au>
+						<snm>Thies</snm>
+						<fnm>JE</fnm>
+					</au>
+				</aug>
+				<source>Effects of Participation in Organic Markets and Farmer-Based
+					Organizations on the Adoption of Soil Conservation Practices Among
+					Small-Scale Farmers in Honduras</source>
+				<publisher>Paper Presented at the American Agricultural Economics
+					Association Annual Meeting, Orlando, FL 27-29 July</publisher>
+				<pubdate>2008</pubdate>
+				<note>
+					<url>http://ideas.repec.org/p/ags/aaea08/6423.html</url>
+					. Accessed 20 October 2012
+				</note>
+			</bibl>
+			<bibl id="B36">
+				<aug>
+					<au>
+						<snm>Diao</snm>
+						<fnm>X</fnm>
+					</au>
+					<au>
+						<snm>Sarpong</snm>
+						<fnm>D</fnm>
+					</au>
+				</aug>
+				<source>Cost Implication of Agricultural Land Degradation in Ghana:
+					an Economy Wide Multimarket Model Assessment. Discussion Paper 698</source>
+				<publisher>Washington, DC: International Food Policy Research
+					Institute</publisher>
+				<pubdate>2007</pubdate>
+				<note>
+					<url>http://www.ifpri.org/publication/cost-implications-agricultural-land-degradation-ghana</url>
+					. Accessed 2 November 2012
+				</note>
+			</bibl>
+			<bibl id="B37">
+				<title>
+					<p>Non-farm work and food security among farm households in
+						Northern Ghana</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Owusua</snm>
+						<fnm>V</fnm>
+					</au>
+					<au>
+						<snm>Abdulaib</snm>
+						<fnm>A</fnm>
+					</au>
+					<au>
+						<snm>Abdul-Rahmana</snm>
+						<fnm>S</fnm>
+					</au>
+				</aug>
+				<source>Food Policy</source>
+				<pubdate>2011</pubdate>
+				<volume>36</volume>
+				<issue>2</issue>
+				<fpage>108</fpage>
+				<lpage>118</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/j.foodpol.2010.09.002</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B38">
+				<title>
+					<p>Impact of off-farm income on food security and nutrition in
+						Nigeria</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Babatunde</snm>
+						<fnm>RO</fnm>
+					</au>
+					<au>
+						<snm>Qaim</snm>
+						<fnm>M</fnm>
+					</au>
+				</aug>
+				<source>Food Policy</source>
+				<pubdate>2010</pubdate>
+				<volume>35</volume>
+				<fpage>303</fpage>
+				<lpage>311</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.1016/j.foodpol.2010.01.006</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B39">
+				<title>
+					<p>Science for African food security</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Conway</snm>
+						<fnm>G</fnm>
+					</au>
+					<au>
+						<snm>Toenniessen</snm>
+						<fnm>G</fnm>
+					</au>
+				</aug>
+				<source>Science</source>
+				<pubdate>2003</pubdate>
+				<volume>299</volume>
+				<issue>5610</issue>
+				<fpage>1187</fpage>
+				<lpage>1188</lpage>
+				<xrefbib>
+					<pubidlist>
+						<pubid idtype="doi">10.1126/science.1081978</pubid>
+						<pubid idtype="pmpid" link="fulltext">12595678</pubid>
+					</pubidlist>
+				</xrefbib>
+			</bibl>
+			<bibl id="B40">
+				<title>
+					<p>Social desirability bias in contingent valuation surveys
+						administered through in-person interviews</p>
+				</title>
+				<aug>
+					<au>
+						<snm>Leggett</snm>
+						<fnm>CG</fnm>
+					</au>
+					<au>
+						<snm>Kleckner</snm>
+						<fnm>NS</fnm>
+					</au>
+					<au>
+						<snm>Boyle</snm>
+						<fnm>KJ</fnm>
+					</au>
+					<au>
+						<snm>Duffield</snm>
+						<fnm>JW</fnm>
+					</au>
+					<au>
+						<snm>Mitchell</snm>
+						<fnm>RC</fnm>
+					</au>
+				</aug>
+				<source>Land Econ</source>
+				<pubdate>2003</pubdate>
+				<volume>79</volume>
+				<issue>4</issue>
+				<fpage>561</fpage>
+				<lpage>575</lpage>
+				<xrefbib>
+					<pubid idtype="doi">10.2307/3147300</pubid>
+				</xrefbib>
+			</bibl>
+			<bibl id="B41">
+				<aug>
+					<au>
+						<snm>Banful</snm>
+						<fnm>AB</fnm>
+					</au>
+				</aug>
+				<source>Operational Details of the 2008 Fertilizer Subsidy in Ghana
+					- Preliminary Report. IFPRI Ghana Strategy Support Program (GSSP),
+					Background Paper GSSP 18, May 2009</source>
+				<note>
+					<url>http://www.ifpri.org/sites/default/files/publications/gsspwp18.pdf</url>
+					. Accessed 3 November 2013
+				</note>
+			</bibl>
+		</refgrp>
 	</bm>
 </art>
