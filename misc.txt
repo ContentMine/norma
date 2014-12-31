@@ -1,1 +1,0 @@
-http://stackoverflow.com/questions/1485987/log4j-properties-file-where-to-put-it
