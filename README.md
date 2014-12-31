@@ -20,13 +20,13 @@ We have now split this into two components:
   
 The workflow is then roughly
 
-$ 
+```
 {PDF, HTML, ...} => Norma => NHTML => AMI => results (XML or JSON)
                       ^                ^
                       |                |
                     tagger           plugin
                     
-$
+```
 
 ## Taggers and Normalization
 
