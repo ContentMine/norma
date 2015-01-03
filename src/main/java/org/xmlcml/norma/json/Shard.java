@@ -6,8 +6,10 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.norma.util.JsonUtil;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 public class Shard {
@@ -29,8 +31,8 @@ public class Shard {
 	}
 
 	public static Shard createShard(JsonObject jsonObject) {
-		String name = jsonObject.get("name").getAsString();
-		Integer value = jsonObject.get("value").getAsInt();
+		String name =   JsonUtil.getString(jsonObject, "name");
+		Integer value = JsonUtil.getInteger(jsonObject, "value");
 		Shard shard = new Shard(
 			name,
 			value
@@ -61,10 +63,15 @@ public class Shard {
 	 * @return
 	 */
 	public static List<Shard> getAsShardArray(JsonObject jsonObject, String name ) {
-		JsonArray jsonArray = jsonObject.get(name).getAsJsonArray();
+		JsonElement element = jsonObject.get(name);
 		List<Shard> shardList = new ArrayList<Shard>();
-		for (int i = 0; i < jsonArray.size(); i++) {
-			shardList.add(Shard.createShard(jsonArray.get(i).getAsJsonObject()));
+		if (element.isJsonArray()) {
+			JsonArray jsonArray = jsonObject.get(name).getAsJsonArray();
+			for (int i = 0; i < jsonArray.size(); i++) {
+				shardList.add(Shard.createShard(jsonArray.get(i).getAsJsonObject()));
+			}
+		} else {
+			shardList.add(Shard.createShard(element.getAsJsonObject()));
 		}
 		return shardList;
 	}

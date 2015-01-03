@@ -67,18 +67,18 @@ public class BibSource {
 		}
 		
 		public static BibSource createBibSource(JsonObject jsonObject) {
-			String doi                = jsonObject.get("doi").getAsString();
-			String last_updated       = jsonObject.get("last_updated").getAsString();
-			String description        = jsonObject.get("description").getAsString();
+			String doi                = JsonUtil.getString(jsonObject, "doi");
+			String last_updated       = JsonUtil.getString(jsonObject, "last_updated");
+			String description        = JsonUtil.getString(jsonObject, "description");
 			Collection<String> author = JsonUtil.getAsStringArray(jsonObject, "author");
-			String firstpage          = jsonObject.get("firstpage").getAsString();
-			String id                 = jsonObject.get("id").getAsString();
-			String volume             = jsonObject.get("volume").getAsString();
-			String fulltext_xml       = jsonObject.get("fulltext_xml").getAsString();
-			String created_date       = jsonObject.get("created_date").getAsString();
-			String date               = jsonObject.get("date").getAsString();
-			String issue              = jsonObject.get("issue").getAsString();
-			String fulltext_pdf       = jsonObject.get("fulltext_pdf").getAsString();
+			String firstpage          = JsonUtil.getString(jsonObject, "firstpage");
+			String id                 = JsonUtil.getString(jsonObject, "id");
+			String volume             = JsonUtil.getString(jsonObject, "volume");
+			String fulltext_xml       = JsonUtil.getString(jsonObject, "fulltext_xml");
+			String created_date       = JsonUtil.getString(jsonObject, "created_date");
+			String date               = JsonUtil.getString(jsonObject, "date");
+			String issue              = JsonUtil.getString(jsonObject, "issue");
+			String fulltext_pdf       = JsonUtil.getString(jsonObject, "fulltext_pdf");
 			
 			BibSource bibSource = new BibSource(
 		        doi,
