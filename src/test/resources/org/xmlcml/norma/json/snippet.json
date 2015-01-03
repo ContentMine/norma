@@ -18,29 +18,29 @@
     "xml": ""
   },
   "sections": {
-    "abstract": { # as in summary },
-    "description": { # as in summary },
-    "introduction": { # as in summary },
-    "methods": { # as in summary },
-    "results": { # as in summary },
-    "discussion": { # as in summary },
-    "conclusion": { # as in summary },
-    "case_report": { # as in summary },
-    "keyword": { # as in summary },
-    "acknowledgement": { # as in summary },
-    "author_contrib": { # as in summary },
-    "competing_interest": { # as in summary },
+    "abstract": { "a": "b" },
+    "description": { "a": "b" },
+    "introduction": { "a": "b" },
+    "methods": { "a": "b" },
+    "results": { "a": "b" },
+    "discussion": { "a": "b" },
+    "conclusion": { "a": "b" },
+    "case_report": { "a": "b" },
+    "keyword": { "a": "b" },
+    "acknowledgement": { "a": "b" },
+    "author_contrib": { "a": "b" },
+    "competing_interest": { "a": "b" },
     "references": {
-      # some standard reference format here? more bibJSON?? citePROC?
+      "a": " some standard reference format here? more bibJSON?? citePROC?"
     },
-    "tables": { # as in summary },
+    "tables": { "a": "b" },
     "figures": [
       {
         "url": "http://some.url.png",
         "caption": "..."
       }
     ],
-    "appendix": { # as in summary },
+    "appendix": { "a": "b" },
   },
   "author": [
     {
@@ -62,10 +62,10 @@
     }
   ],
   "editor": [
-    # as in author
+    "a": " as in author"
   ],
   "reviewer": [
-    # as in author
+    "a": "as in author"
   ],
   "date": {
     "published": "2014-12-31T22:00:00+00:00",
@@ -122,3 +122,4 @@
     "(c) Elsevier 2015"
   ]
 }
+
