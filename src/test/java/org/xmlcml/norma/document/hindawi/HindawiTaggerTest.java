@@ -16,7 +16,7 @@ import org.xmlcml.norma.tagger.DocumentTagger;
 import org.xmlcml.norma.tagger.MetadataElement;
 import org.xmlcml.norma.tagger.TagElement;
 import org.xmlcml.norma.tagger.hindawi.HindawiTagger;
-import org.xmlcml.norma.util.NHTMLTransformer;
+import org.xmlcml.norma.util.SHTMLTransformer;
 import org.xmlcml.xml.XMLUtil;
 
 public class HindawiTaggerTest {
@@ -47,7 +47,7 @@ public class HindawiTaggerTest {
 	@Test
 	public void testGrouping() throws Exception {
 		File outfile = new File("target/hindawi/507405.grouped.xml");
-	    NHTMLTransformer.transform(Fixtures.F507405_XML, Fixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
+	    SHTMLTransformer.transform(Fixtures.F507405_XML, Fixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
 	    XMLUtil.equalsCanonically(Fixtures.F507405_GROUPED_XHTML, outfile, true);
 
 	}
@@ -139,7 +139,7 @@ public class HindawiTaggerTest {
 	private void ensureGroupedFile(File groupedFile, File rawFile) throws Exception {
 		if (XMLUtil.isXMLFile(groupedFile) != null || true) {
 			LOG.debug("FORCE TRANSFORM");
-		    NHTMLTransformer.transform(rawFile, Fixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
+		    SHTMLTransformer.transform(rawFile, Fixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
 		}
 	}
 }

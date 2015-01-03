@@ -8,7 +8,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-public class NHTMLTransformer {
+public class SHTMLTransformer {
 
 	private static  Transformer createTransformer(File stylesheet) throws Exception {
 		System.setProperty("javax.xml.transform.TransformerFactory",
@@ -19,7 +19,7 @@ public class NHTMLTransformer {
 	}
 
 	public static void transform(File infile, File stylesheet, File outfile) throws Exception {
-		Transformer transformer = NHTMLTransformer.createTransformer(stylesheet);
+		Transformer transformer = SHTMLTransformer.createTransformer(stylesheet);
 	    File outputDir = outfile.getParentFile();
 	    outputDir.mkdirs();
 		transformer.transform(new StreamSource(infile),  

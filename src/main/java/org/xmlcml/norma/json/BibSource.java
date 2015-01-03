@@ -4,6 +4,9 @@ import java.util.Collection;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.norma.util.JsonUtil;
+
+import com.google.gson.JsonObject;
 
 /** bibliographic data within a catalog entry.
  * 
@@ -62,6 +65,38 @@ public class BibSource {
 			setIssue(issue);
 			setFulltext_pdf(fulltext_pdf);
 		}
+		
+		public static BibSource createBibSource(JsonObject jsonObject) {
+			String doi                = jsonObject.get("doi").getAsString();
+			String last_updated       = jsonObject.get("last_updated").getAsString();
+			String description        = jsonObject.get("description").getAsString();
+			Collection<String> author = JsonUtil.getAsStringArray(jsonObject, "author");
+			String firstpage          = jsonObject.get("firstpage").getAsString();
+			String id                 = jsonObject.get("id").getAsString();
+			String volume             = jsonObject.get("volume").getAsString();
+			String fulltext_xml       = jsonObject.get("fulltext_xml").getAsString();
+			String created_date       = jsonObject.get("created_date").getAsString();
+			String date               = jsonObject.get("date").getAsString();
+			String issue              = jsonObject.get("issue").getAsString();
+			String fulltext_pdf       = jsonObject.get("fulltext_pdf").getAsString();
+			
+			BibSource bibSource = new BibSource(
+		        doi,
+		        last_updated,
+		        description,
+				author,
+		        firstpage,
+		        id,
+		        volume,
+		        fulltext_xml,
+		        created_date,
+		        date,
+		        issue,
+		        fulltext_pdf
+					);
+			return bibSource;
+		}
+		
 		public String getDoi() {
 			return doi;
 		}
@@ -135,5 +170,22 @@ public class BibSource {
 			this.fulltext_pdf = fulltext_pdf;
 		}
 		
-		
+		@Override 
+		public String toString() {
+			String s = "";
+			s += " / "+doi;
+			s += " / "+last_updated;
+			s += " / "+description;
+			s += " / "+author;
+			s += " / "+firstpage;
+			s += " / "+id;
+			s += " / "+volume;
+			s += " / "+fulltext_xml;
+			s += " / "+created_date; 
+			s += " / "+date; 
+			s += " / "+issue;
+			s += " / "+fulltext_pdf;
+			return s;
+
+		}
 }

@@ -27,7 +27,7 @@ public class DocumentTagger {
 	private final static Logger LOG = Logger.getLogger(DocumentTagger.class);
 
 	
-	protected static final File NHTML_DIR = new File("src/main/resources/org/xmlcml/nhtml");
+	protected static final File NORMA_DIR = new File("src/main/resources/org/xmlcml/norma");
 	
 	public static final String NAME = "name";
 
@@ -66,7 +66,7 @@ public class DocumentTagger {
 		
 		
 		};
-	protected static final File TAGGER_DIR = new File(NHTML_DIR, "document");
+	protected static final File TAGGER_DIR = new File(NORMA_DIR, "document");
 
 	public static final String TAG = "tagger";
 	private static final String STYLESHEET = "stylesheet";

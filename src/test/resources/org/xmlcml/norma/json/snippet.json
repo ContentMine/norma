@@ -1,0 +1,124 @@
+{
+  "type": "article",
+  "publisher": {
+    "name": "Public Library of Science (PLoS)"
+  },
+  "journal": {
+    "issn": "1932-6203",
+    "name": "PLoS ONE",
+    "volume": "1",
+    "issue": "5",
+    "pages": "123--234"
+  },
+  "title": "Correction: Diet Modification and Metformin Have a Beneficial Effect in a Fly Model of Obesity and Mucormycosis",
+  "summary": {
+    "text": "...",
+    "html": "",
+    "shtml": "",
+    "xml": ""
+  },
+  "sections": {
+    "abstract": { # as in summary },
+    "description": { # as in summary },
+    "introduction": { # as in summary },
+    "methods": { # as in summary },
+    "results": { # as in summary },
+    "discussion": { # as in summary },
+    "conclusion": { # as in summary },
+    "case_report": { # as in summary },
+    "keyword": { # as in summary },
+    "acknowledgement": { # as in summary },
+    "author_contrib": { # as in summary },
+    "competing_interest": { # as in summary },
+    "references": {
+      # some standard reference format here? more bibJSON?? citePROC?
+    },
+    "tables": { # as in summary },
+    "figures": [
+      {
+        "url": "http://some.url.png",
+        "caption": "..."
+      }
+    ],
+    "appendix": { # as in summary },
+  },
+  "author": [
+    {
+      "raw": "Erdös et al."
+    },
+    {
+      "name": "Erdös, Paul",
+      "alternate": ["Paul Erdos"],
+      "firstname": "Paul",
+      "lastname": "Erdös",
+      "orcid": "..."
+    },
+    {
+      "name": "Smith-Unna, Richard",
+      "alternate": ["Richard Smith-Unna"],
+      "firstname": "Richard",
+      "lastname": "Smith-Unna",
+      "orcid": "..."
+    }
+  ],
+  "editor": [
+    # as in author
+  ],
+  "reviewer": [
+    # as in author
+  ],
+  "date": {
+    "published": "2014-12-31T22:00:00+00:00",
+    "submitted": "2014-07-14T22:00:00+00:00",
+    "accepted": "2014-11-15T22:00:00+00:00"
+  },
+  "link": [
+    {
+      "type": "journaltocs",
+      "url": "http://feeds.plos.org/~r/plosone/PLoSONE/~3/x4KAHz2zIf0/info%3Adoi%2F10.1371%2Fjournal.pone.0116684"
+    },
+    {
+      "type": "fulltext_html",
+      "url": "..."
+    },
+    {
+      "type": "fulltext_xml",
+      "url": "..."
+    },
+    {
+      "type": "fulltext_pdf",
+      "url": "..."
+    },
+    {
+      "type": "supplementary_file",
+      "url": "...",
+      "description": "..."
+    },
+    {
+      "type": "supplementary_file",
+      "url": "...",
+      "description": "..."
+    }
+  ],
+  "identifier": [
+    {
+      "type": "doi",
+      "id": "10.1371/journal.pone.0116684"
+    },
+    {
+      "type": "pmid",
+      "id": "..."
+    }
+  ],
+  "license": [
+    {
+      "type": "copyheart",
+      "url": "http://copyheart.org/manifesto/",
+      "description": "A great license",
+      "jurisdiction": "universal"
+    }
+  ],
+  "copyright": [
+    "(c) Elsevier 2015"
+  ]
+}

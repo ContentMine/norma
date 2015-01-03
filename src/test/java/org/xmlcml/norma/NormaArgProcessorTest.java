@@ -3,6 +3,7 @@ package org.xmlcml.norma;
 import junit.framework.Assert;
 
 import org.junit.Test;
+import org.xmlcml.norma.json.Shard;
 
 public class NormaArgProcessorTest {
 
@@ -18,5 +19,10 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("input", 2, argProcessor.getInputList().size());
 		Assert.assertEquals("input", "foo", argProcessor.getInputList().get(0));
 		Assert.assertEquals("input", "bar", argProcessor.getInputList().get(1));
+	}
+	
+	@Test
+	public void testFoo() {
+		Shard shard;
 	}
 }

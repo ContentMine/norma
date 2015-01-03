@@ -5,6 +5,8 @@ import java.util.Collection;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
+import com.google.gson.JsonObject;
+
 public class CatalogEntry {
 
 	
@@ -34,6 +36,26 @@ public class CatalogEntry {
 		setTimed_out(timed_out);
 	}
 	
+	public static CatalogEntry createCatalogEntry(JsonObject jsonObject) {
+		CatalogEntry catalogEntry = null;
+		try {
+			Hits hits                = Hits.createHits(jsonObject.get("hits").getAsJsonObject());
+			Collection<Shard> shards = Shard.getAsShardArray(jsonObject, "_shards");
+			Integer took             = jsonObject.get("took").getAsInt();
+			Boolean timed_out        = jsonObject.get("timed_out").getAsBoolean();
+	
+			catalogEntry = new CatalogEntry(
+				hits,
+				shards,
+				took,
+				timed_out
+				);
+		} catch (Exception e) {
+			throw new RuntimeException("cannot create CatalogEntry", e);
+		}
+		return catalogEntry;
+	}
+	
 	public Hits getHits() {
 		return hits;
 	}
@@ -57,6 +79,22 @@ public class CatalogEntry {
 	}
 	public void setTimed_out(Boolean timed_out) {
 		this.timed_out = timed_out;
+	}
+	
+	/**
+		Hits hits,
+		Collection<Shard> _shards,
+		Integer took,
+		Boolean timed_out
+	 */
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(hits.toString()+" / ");
+		sb.append(Shard.toString(_shards)+" / ");
+		sb.append(took+" / ");
+		sb.append(timed_out+" / ");
+		return sb.toString();
+		
 	}
 
 }
