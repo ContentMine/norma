@@ -1,9 +1,15 @@
 package org.xmlcml.norma.json;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.norma.util.JsonUtil;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 /** a collection of hits from the ContentMine catalog.
  * 
@@ -36,6 +42,20 @@ public class Hits {
 		setMax_score(max_score);
 	}
 
+	public static Hits createHits(JsonObject jsonObject) {
+		Collection<Hit> hits      = Hit.getAsHitArray(jsonObject, "hits");
+		Integer total             = jsonObject.get("total").getAsInt();
+		Double max_score          = jsonObject.get("max_score").getAsDouble();
+
+		Hits hitx = new Hits(
+				hits,
+				total,
+				max_score
+				);
+		return hitx;
+	}
+	
+
 	public Collection<Hit> getHits() {
 		return hits;
 	}
@@ -59,4 +79,14 @@ public class Hits {
 	public void setMax_score(Double max_score) {
 		this.max_score = max_score;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(hits.toString() + " / ");
+		sb.append(total+" / ");
+		sb.append(max_score+" / ");
+		return sb.toString();
+	}
+
 }

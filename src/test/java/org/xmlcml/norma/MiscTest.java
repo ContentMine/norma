@@ -18,7 +18,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.norma.util.NHTMLTransformer;
+import org.xmlcml.norma.util.SHTMLTransformer;
 
 public class MiscTest {
 
@@ -111,8 +111,8 @@ I'd consider this answer an argument against the Java way of doing things.
 //	@Test
 //	public void testSaxon() throws Exception {
 //	    SAXTransformerFactory saxTransformerFactory = new net.sf.saxon.TransformerFactoryImpl();
-////	    File styleFile = new File("src/main/resources/org/xmlcml/nhtml/style/groupTest.xsl");
-//	    File styleFile = new File("src/main/resources/org/xmlcml/nhtml/style/miniTest.xsl");
+////	    File styleFile = new File("src/main/resources/org/xmlcml/norma/style/groupTest.xsl");
+//	    File styleFile = new File("src/main/resources/org/xmlcml/norma/style/miniTest.xsl");
 //	    Assert.assertTrue("xsl ", styleFile.exists());
 //	    FileInputStream styleIs = new FileInputStream(styleFile);
 //	    InputSource styleSource = new InputSource(styleIs);
@@ -218,27 +218,27 @@ I'd consider this answer an argument against the Java way of doing things.
 	
 	@Test
 	public void testRecursiveGrouping() throws Exception {
-		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/flatFile.xml");
-		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/recursivegrouper.xsl");
+		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/flatFile.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/recursivegrouper.xsl");
 		File groupedFile = new File("target/testgroup/recursiveGroup.xml");
-	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
 	// http://stackoverflow.com/questions/27406846/nesting-flat-xml-siblings/27407470#27407470 
 	public void testRecursiveGroupingStackExample() throws Exception {
-		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/stackexample.xml");
-		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/recursivegrouperstack.xsl");
+		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/stackexample.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/recursivegrouperstack.xsl");
 		File groupedFile = new File("target/testgroup/stackexample.xml");
-	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
 	public void testH1H2Grouping() throws Exception {
-		File flatFile = new File("src/test/resources/org/xmlcml/nhtml/style/flatFile.xml");
-		File styleFile = new File("src/test/resources/org/xmlcml/nhtml/style/h1h2grouper.xsl");
+		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/flatFile.xml");
+		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/h1h2grouper.xsl");
 		File groupedFile = new File("target/testgroup/h1h2grouper.xml");
-	    NHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
