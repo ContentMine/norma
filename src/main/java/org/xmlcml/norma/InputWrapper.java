@@ -28,7 +28,7 @@ public class InputWrapper {
 	private URL url;
 	private File file;
 	private String content;
-	private Journal journal;
+	private Pubstyle journal;
 	private HtmlElement htmlElement;
 
 	public InputWrapper(File file, String inputName) {
@@ -54,7 +54,7 @@ public class InputWrapper {
 		preliminaryReadToDetermineEncoding();
 		deduceContentType();
 		if (journal == null) {
-			journal = Journal.deduceJournal(content);
+			journal = Pubstyle.deduceJournal(content);
 		}
 		journal.read();
 		return htmlElement;

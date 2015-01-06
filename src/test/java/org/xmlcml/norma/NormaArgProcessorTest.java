@@ -1,9 +1,10 @@
 package org.xmlcml.norma;
 
+import java.io.File;
+
 import junit.framework.Assert;
 
 import org.junit.Test;
-import org.xmlcml.norma.json.Shard;
 
 public class NormaArgProcessorTest {
 
@@ -21,8 +22,21 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("input", "bar", argProcessor.getInputList().get(1));
 	}
 	
+//	@Test
+//	public void testFoo() {
+//		Shard shard;
+//	}
+	
 	@Test
-	public void testFoo() {
-		Shard shard;
+	public void testPDF() {
+		String[] args = {
+			"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
+			"-o", "plugh",
+			"-h",
+		};
+		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
+		Assert.assertEquals("input", 1, argProcessor.getInputList().size());
 	}
+	
 }

@@ -12,6 +12,7 @@ public enum InputType {
 	LATEX,
 	PDF,
 	PNG,
+	PPT,
 	SVG,
 	XHTML,
 	XML,

@@ -202,17 +202,12 @@ public class CatalogEntryTest {
 	}
 	
 	@Test
-//	@Ignore // not yet working
 	public void testCompleteCatalog() throws IOException {
 		
 	    JsonParser parser = new JsonParser();
 		String RSU_JSON = FileUtils.readFileToString(RSU_JSON_FILE);
-//		LOG.debug("\n"+RSU_JSON.substring(0,200));
 	    JsonElement jsonElement = parser.parse(RSU_JSON);
 	    JsonObject jsonObject = jsonElement.getAsJsonObject();
-	    JsonElement element1 = jsonObject.get("hits");
-	    
-//	    jsonObject.getAsJsonArray();
 	    CatalogEntry catalogEntry = CatalogEntry.createCatalogEntry(jsonObject);
 	    Assert.assertEquals("took", 2, catalogEntry.getTook().intValue());
 	    Assert.assertFalse("timed_out", catalogEntry.getTimed_out());
@@ -221,20 +216,4 @@ public class CatalogEntryTest {
 	}
 	
 	
-	@Test
-	@Ignore // incorrect snippet
-	public void testSkeletonArticle() throws IOException {
-		
-	    JsonParser parser = new JsonParser();
-		String SNIPPET_JSON = FileUtils.readFileToString(SNIPPET_JSON_FILE);
-		LOG.debug("\n"+SNIPPET_JSON.substring(0,200));
-	    JsonElement jsonElement = parser.parse(SNIPPET_JSON);
-	    JsonObject jsonObject = jsonElement.getAsJsonObject();
-	    jsonObject.getAsJsonArray();
-	    CatalogEntry catalogEntry = CatalogEntry.createCatalogEntry(jsonObject);
-	    Assert.assertEquals("took", 2, catalogEntry.getTook().intValue());
-	    Assert.assertFalse("timed_out", catalogEntry.getTimed_out());
-	    Assert.assertEquals("hit", "[0.5521466 / b11a6a6453b24ecb9313f9eec27501c4 /  / 10.1371/journal.pone.0001764 / 2014-12-02 0449 / PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world. / [Alessandro Achilli, Ugo A. Perego, Claudio M. Bravi, Michael D. Coble, Qing-Peng Kong, Scott R. Woodward, Antonio Salas, Antonio Torroni, Hans-Jürgen Bandelt] / The Phylogeny of the Four Pan-American MtDNA Haplogroups: Implications for Evolutionary and Disease Studies / e1764 / b11a6a6453b24ecb9313f9eec27501c4 / 3 / 2014-12-02 0449 / 2008/3/12 / 3 / http://dx.plos.org/10.1371/journal.pone.0001764.pdf / contentmine / , 0.5521422 / b11a6a6453b24ecb9313f9eec27501c5 /  / 10.1371/journal.pone.0001765 / 2014-12-02 0448 / PLOS ONE: an inclusive, peer-reviewed, open-access resource from the PUBLIC LIBRARY OF SCIENCE. Reports of well-performed scientific studies from all disciplines freely available to the whole world. / [Foo Bar, Plugh Xyzzy] / Junk title / e1765 / b11a6a6453b24ecb9313f9eec27501c5 / 8 / 2014-12-02 0448 / 2008/3/19 / 4 / http://dx.plos.org/10.1371/journal.pone.0001765.pdf / contentmine / ] / 54 / 0.75475913 /  / successful / 5 / failed / 0 / total / 5 /  / 2 / false / ",
-	    		catalogEntry.toString());
-	}
 }
