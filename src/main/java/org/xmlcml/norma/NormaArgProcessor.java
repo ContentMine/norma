@@ -22,16 +22,35 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	public final static String HELP_NORMA = "Norma help";
 
-	public static final String J = "-j";
-	public static final String JOURNAL = "--journal";
-	public static final String JOURNAL_HELP = "\n"
-			+ "JOURNAL:\nName or code of journal or publisher. \n"
-			+ "this is a list of journals so Norma knows how to interpret the input. At present only \n"
-			+ "one is allowed. The journal/s determine the format of the XML or HTML, the metadata, and\n"
-			+ "soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com'\n"
-			+ "to get a list of these use "+JOURNAL+" without arguments";
+//	public static final String P = "-p";
+//	public static final String PUBSTYLE = "--pubstyle";
+//	public static final String PUBSTYLE_HELP = "\n"
+//			+ "PUBTYPE:\nCode or mnemomic to identifier the publisher or journal style. \n"
+//			+ "this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument \n"
+//			+ "is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and\n"
+//			+ "soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.\n"
+//			+ "To get a list of these use "+PUBSTYLE+" without arguments. Note: under early devlopment and also that \n"
+//			+ "publisher styles change and can be transferred between publishers and journals";
 
-	private List<String> journalList;
+	
+	public final static ArgumentOption PUBSTYLE_OPTION = new ArgumentOption(
+		"-p",
+		"--pubstyle",
+		"\n"
+		+ "PUBTYPE:\nCode or mnemomic to identifier the publisher or journal style. \n"
+		+ "this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument \n"
+		+ "is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and\n"
+		+ "soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.\n"
+		+ "To get a list of these use "+"-p"+" without arguments. Note: under early devlopment and note also that \n"
+		+ "publisher styles change and can be transferred between publishers and journals",
+		Pubstyle.class,
+		Pubstyle.PLOSONE,
+		1, 1
+		);
+	
+	private List<String> pubstyleList;
+
+	private Pubstyle pubstyle;
 
 	public NormaArgProcessor() {
 		super();
@@ -50,6 +69,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	protected boolean parseArgs(ListIterator<String> listIterator) {
 		boolean parsed = true;
+//		this.applyDefaults();
 		while(listIterator.hasNext()) {
 			if (!super.parseArgs(listIterator)) {
 				parsed &= parseArgs1(listIterator);
@@ -58,6 +78,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		return parsed;
 	}
 	
+//	protected void applyDefaults() {
+//		super.applyDefaults();
+//		pubstyleList = PUBSTYLE_OPTION.getDefaults().getDefaultStrings();
+//	}
+
 	protected boolean parseArgs1(ListIterator<String> listIterator) {
 		boolean processed = false;
 		if (listIterator.hasNext()) {
@@ -65,8 +90,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			String arg = listIterator.next();
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
-			} else if (J.equals(arg) || JOURNAL.equals(arg)) {
-				processJournal(listIterator); 
+			} else if (PUBSTYLE_OPTION.matches(arg)) {
+				processPubstyle(PUBSTYLE_OPTION, listIterator); 
 			} else {
 				processed = false;
 				LOG.error("Unknown arg: ("+arg+"), trying to recover");
@@ -75,17 +100,14 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		return processed;
 	}
 
-	private void processJournal(ListIterator<String> listIterator) {
+	private void processPubstyle(ArgumentOption argOption, ListIterator<String> listIterator) {
 		List<String> inputs = createTokenListUpToNextMinus(listIterator);
 		if (inputs.size() == 0) {
-			journalList = new ArrayList<String>();
-			LOG.error("Must give at least one journal (currently only one). Current options are:");
-			for (Journal journal : Journal.getJournals()) {
-				System.err.println("> "+journal.toString());
-			}
-			
+			pubstyleList = new ArrayList<String>();
+			Pubstyle.help();
 		} else {
-			journalList = inputs;
+			String name = argOption.processArgs(inputs).getString();
+			pubstyle = Pubstyle.getPubstyle(name);
 		}
 	}
 

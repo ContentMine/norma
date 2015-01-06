@@ -23,47 +23,68 @@ public class DefaultArgProcessor {
 	public static final String[] DEFAULT_EXTENSIONS = {"html", "xml"};
 	public final static String H = "-h";
 	public final static String HELP = "--help";
-	public static final String I = "-i";
-	public static final String INPUT = "--input";
-	public static final String INPUT_HELP = "\nINPUT:\nInput stream (Files, directories, URLs), Norma tries to guess reasonable actions. \n"
-			+ "also expands some simple wildcards. The argument can either be a single object, or a list. Within objects\n"
-			+ "the content of curly brackets {...} is expanded as wildcards (cannot recurse). There can be multiple {...}\n"
-			+ "within an object and all are expanded (but be sensible - this could generate the known universe and crash the\n"
-			+ "system. (If this is misused it will be withdrawn). Objects (URLs, files) can be mixed but it's probably a\n"
-			+ "poor idea.\n"
-			+ "\n"
-			+ "The logic is: \n"
-			+ "(a) if an object starts with 'www' or 'http:' or 'https;' it's assumed to be a URL\n"
-			+ "(b) if it is a directory, then the contents (filtered by extension) are added to the list as files\n"
-			+ "(c) if it's a file it's added to the list\n"
-			+ "the wildcards in files and URLs are then expanded and the results added to the list\n"
-			+ "\n"
-			+ "Current wildcards:\n"
-			+ "  {n1:n2} n1,n2 integers: generate n1 ... n2 inclusive\n"
-			+ "  {foo,bar,plugh} list of strings\n"
-			+"";
+
+	public final static ArgumentOption INPUT_OPTION = new ArgumentOption(
+			"-i",
+			"--input",
+			"\nINPUT:\nInput stream (Files, directories, URLs), Norma tries to guess reasonable actions. \n"
+					+ "also expands some simple wildcards. The argument can either be a single object, or a list. Within objects\n"
+					+ "the content of curly brackets {...} is expanded as wildcards (cannot recurse). There can be multiple {...}\n"
+					+ "within an object and all are expanded (but be sensible - this could generate the known universe and crash the\n"
+					+ "system. (If this is misused it will be withdrawn). Objects (URLs, files) can be mixed but it's probably a\n"
+					+ "poor idea.\n"
+					+ "\n"
+					+ "The logic is: \n"
+					+ "(a) if an object starts with 'www' or 'http:' or 'https;' it's assumed to be a URL\n"
+					+ "(b) if it is a directory, then the contents (filtered by extension) are added to the list as files\n"
+					+ "(c) if it's a file it's added to the list\n"
+					+ "the wildcards in files and URLs are then expanded and the results added to the list\n"
+					+ "\n"
+					+ "Current wildcards:\n"
+					+ "  {n1:n2} n1,n2 integers: generate n1 ... n2 inclusive\n"
+					+ "  {foo,bar,plugh} list of strings\n"
+					+"",
+					String.class,
+					(String) null,
+			1, Integer.MAX_VALUE
+			);
+
 			
-	
-	public static final String O = "-o";
-	public static final String OUTPUT = "--output";
-	public static final String OUTPUT_HELP = "\nOUTPUT\n Output is to local filestore ATM. If there is only one input\n"
+	public final static ArgumentOption OUTPUT_OPTION = new ArgumentOption(
+			"-o",
+			"--output",
+			"\"\nOUTPUT\n Output is to local filestore ATM. If there is only one input\n"
 			+ "after wildcard expansion then a filename can be given. Else the argument must be a writeable directory; Norma\n"
 			+ "will do her best to create filenames derived from the input names. Directory structures will not be preserved\n"
-			+ "See also --recursive and --extensions";
+			+ "See also --recursive and --extensions",
+			String.class,
+			(String) null,
+			0, 1
+			);
 	
-	public static final String R = "-r";
-	public static final String RECURSIVE = "--recursive";
-	public static final String RECURSIVE_HELP = "\nRECURSIVE input directories\n "
+	public final static ArgumentOption RECURSIVE_OPTION = new ArgumentOption(
+			"-r",
+			"--recursive",
+			"\nRECURSIVE input directories\n "
 			+ "If the input is a directory then by default only the first level is searched\n"
 			+ "if the --recursive flag is set then all files in the directory tree may be input\n"
-			+ "See also --extensions";
+			+ "See also --extensions",
+			Boolean.class,
+			(Boolean)false,
+			0, 0
+			);
 	
-	public static final String E = "-e";
-	public static final String EXTENSIONS = "--extensions";
-	public static final String EXTENSIONS_HELP = "\nEXTENSIONS \n "
+	public final static ArgumentOption EXTENSION_OPTION = new ArgumentOption(
+		"-e",
+		"--extensions",
+		"\nEXTENSIONS \n "
 			+ "When a directory or directories are searched then all files are input by default\n"
 			+ "It is possible to limit the search by using only certain extensions(which "
-			+ "See also --recursive";
+			+ "See also --recursive",
+		String.class,
+		(String) null,
+		1, Integer.MAX_VALUE
+		);
 
 	
 	private static final Pattern INTEGER_RANGE_PATTERN = Pattern.compile("(\\d+):(\\d+)");
@@ -230,13 +251,13 @@ public class DefaultArgProcessor {
 //			LOG.info("arg: "+arg);
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
-			} else if (E.equals(arg) || EXTENSIONS.equals(arg)) {
+			} else if (EXTENSION_OPTION.matches(arg)) {
 				processExtensions(listIterator);
-			} else if (I.equals(arg) || INPUT.equals(arg)) {
+			} else if (INPUT_OPTION.matches(arg)) {
 				processInput(listIterator); 
-			} else if (O.equals(arg) || OUTPUT.equals(arg)) {
+			} else if (OUTPUT_OPTION.matches(arg)) {
 				processOutput(listIterator); 
-			} else if (R.equals(arg) || RECURSIVE.equals(arg)) {
+			} else if (RECURSIVE_OPTION.matches(arg)) {
 				processRecursive(listIterator); 
 			} else if (H.equals(arg) || HELP.equals(arg)) {
 				processHelp();
@@ -250,10 +271,18 @@ public class DefaultArgProcessor {
 	}
 	
 	protected void processHelp() {
-		System.out.println(INPUT_HELP);
-		System.out.println(OUTPUT_HELP);
-		System.out.println(RECURSIVE_HELP);
-		System.out.println(EXTENSIONS_HELP);
+		System.out.println(INPUT_OPTION.getHelp());
+		System.out.println(OUTPUT_OPTION.getHelp());
+		System.out.println(RECURSIVE_OPTION.getHelp());
+		System.out.println(EXTENSION_OPTION.getHelp());
 	}
+
+
+//	protected void applyDefaults() {
+//		inputList = INPUT_OPTION.getDefaults().getDefaultStrings();
+//		output = OUTPUT_OPTION.getDefaults().getDefaultString();
+//		recursive = RECURSIVE_OPTION.getDefaults().getDefaultBoolean();
+//		extensions = EXTENSION_OPTION.getDefaults().getDefaultStrings();
+//	}
 
 }

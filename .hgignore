@@ -3,6 +3,7 @@
 ^.classpath$
 ^.hgignore~$
 ^.git/
+^opentools
 ^target/.*
 /target/
 ^\.idea/

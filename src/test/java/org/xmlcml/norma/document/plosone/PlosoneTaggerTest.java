@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import junit.framework.Assert;
 import nu.xom.Element;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,8 +19,11 @@ import org.xmlcml.norma.tagger.plosone.XMLPlosoneTagger;
 import org.xmlcml.xml.XMLUtil;
 
 public class PlosoneTaggerTest {
-
+	
 	private static final Logger LOG = Logger.getLogger(PlosoneTaggerTest.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
 
 	
 //    
