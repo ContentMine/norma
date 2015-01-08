@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,6 +11,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
+import org.xmlcml.xml.XMLUtil;
 
 /** wraps the input, optionally determing its type.
  * 
@@ -28,8 +31,9 @@ public class InputWrapper {
 	private URL url;
 	private File file;
 	private String content;
-	private Pubstyle journal;
+	private Pubstyle pubstyle;
 	private HtmlElement htmlElement;
+	private InputType inputType;
 
 	public InputWrapper(File file, String inputName) {
 		this.file = file;
@@ -50,24 +54,47 @@ public class InputWrapper {
 		return inputWrapperList;
 	}
 
-	public HtmlElement transform() {
-		preliminaryReadToDetermineEncoding();
-		deduceContentType();
-		if (journal == null) {
-			journal = Pubstyle.deduceJournal(content);
+	public HtmlElement transform(Pubstyle pubstyle) {
+		this.pubstyle = pubstyle;
+		findInputType();
+		normalizeToXHTML();
+		if (pubstyle == null) {
+			pubstyle = Pubstyle.deducePubstyle(htmlElement);
 		}
-		journal.read();
+		if (pubstyle != null) {
+			pubstyle.applyTagger();
+		}
 		return htmlElement;
 	}
 
-	private Object deduceContentType() {
-		// TODO Auto-generated method stub
-		return null;
+
+	private void normalizeToXHTML() {
+		if (InputType.PDF.equals(inputType)) {
+			try {
+				PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
+				htmlElement = converter.readAndConvertToXHTML(new File(inputName));
+			} catch (Exception e) {
+				throw new RuntimeException("cannot convert PDF: "+inputName, e);
+			}
+		} else if (InputType.SVG.equals(inputType)) {
+			LOG.error("cannot turn SVG into XHTML yet");
+		} else if (InputType.XML.equals(inputType)) {
+			LOG.debug("using XML");
+		} else if (InputType.XHTML.equals(inputType)) {
+			LOG.debug("using XHTML");
+		} else {
+			LOG.error("cannot process "+inputName+" into XHTML yet");
+		}
 	}
 
-	private void preliminaryReadToDetermineEncoding() {
-		// TODO Auto-generated method stub
-		
+	private void findInputType() {
+		inputType = InputType.getInputType(inputName);
 	}
-
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		if (file != null) sb.append(file);
+		if (url != null) sb.append(url);
+		return sb.toString();
+	}
 }

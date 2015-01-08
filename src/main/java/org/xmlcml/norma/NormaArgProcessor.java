@@ -69,7 +69,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	protected boolean parseArgs(ListIterator<String> listIterator) {
 		boolean parsed = true;
-//		this.applyDefaults();
 		while(listIterator.hasNext()) {
 			if (!super.parseArgs(listIterator)) {
 				parsed &= parseArgs1(listIterator);
@@ -114,6 +113,10 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	protected void processHelp() {
 		super.processHelp();
 		LOG.info(HELP_NORMA);
+	}
+
+	public Pubstyle getPubstyle() {
+		return pubstyle;
 	}
 
 
