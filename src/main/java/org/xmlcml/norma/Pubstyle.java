@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.html.HtmlElement;
 
 /** format and metadata of scholarly Journal.
  * 
@@ -18,6 +19,7 @@ import org.apache.log4j.Logger;
 public class Pubstyle {
 
 	private static final Logger LOG = Logger.getLogger(Pubstyle.class);
+	
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -44,8 +46,11 @@ public class Pubstyle {
 		this.name = name;
 	}
 	
-	public static Pubstyle deduceJournal(String content) {
-		throw new RuntimeException("NYI");
+	public static Pubstyle deducePubstyle(HtmlElement element) {
+		
+		LOG.error("deducePubstylel NYI");
+		return null;
+		
 	}
 	
 	public static Pubstyle getPubstyle(String name) {
@@ -61,8 +66,8 @@ public class Pubstyle {
 		return name;
 	}
 
-	public void read() {
-		throw new RuntimeException("NYI");
+	public void applyTagger() {
+		LOG.error("tagger NYI");
 	}
 
 	public static List<Pubstyle> getPubstyles() {
