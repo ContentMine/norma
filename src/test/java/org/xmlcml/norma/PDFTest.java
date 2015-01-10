@@ -9,6 +9,7 @@ public class PDFTest {
 
 	@Test
 	// 16 pp
+	@Ignore // too long
 	public void testReadPDFNoTag() {
 		String[] args = {
 				"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
@@ -20,6 +21,7 @@ public class PDFTest {
 	}
 	
 	@Test
+	@Ignore // too long
 	public void testReadPDF13054() {
 		String[] args = {
 				"-i", new File(Fixtures.TEST_BMC_DIR, "s13054-014-0721-8.pdf").toString(),
@@ -42,6 +44,7 @@ public class PDFTest {
 	}
 	
 	@Test
+	@Ignore // too long
 	public void testReadSedarBlackbirdPDF() {
 		String[] args = {
 				"-i", new File(Fixtures.TEST_SEDAR_DIR, "blackbird.pdf").toString(),
