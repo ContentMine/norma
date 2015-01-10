@@ -6,6 +6,10 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.document.bmc.BmcReader;
+import org.xmlcml.norma.pubstyle.PubstyleReader;
+import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
+import org.xmlcml.norma.pubstyle.plosone.PlosoneReader;
 
 /** format and metadata of scholarly Journal.
  * 
@@ -24,26 +28,40 @@ public class Pubstyle {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	public final static Pubstyle BMC = new Pubstyle("bmc");
-	public final static Pubstyle HINDAWI = new Pubstyle("hindawi");
-	public final static Pubstyle PLOSONE = new Pubstyle("plosone");
+	public final static Pubstyle BMC     = new Pubstyle(
+			"bmc", 
+			"src/main/resources/org/xmlcml/norma/document/bmc/",
+			new BmcReader());
+	public final static Pubstyle HINDAWI = new Pubstyle(
+			"hindawi", 
+			"src/main/resources/org/xmlcml/norma/document/hindawi/",
+			new HindawiReader());
+	public final static Pubstyle PLOSONE = new Pubstyle(
+			"plosone",
+			"src/main/resources/org/xmlcml/norma/document/plosone/",
+			new PlosoneReader());
 	
 	private String name;
+	private String taggerLocation;
+	private PubstyleReader documentReader;
 	
-	public final static List<Pubstyle> JOURNALS;
+	public final static List<Pubstyle> PUBSTYLES;
 	static {
-		JOURNALS = new ArrayList<Pubstyle>();
+		PUBSTYLES = new ArrayList<Pubstyle>();
 		
-		JOURNALS.add(Pubstyle.BMC);
-		JOURNALS.add(Pubstyle.HINDAWI);
-		JOURNALS.add(Pubstyle.PLOSONE);
+		PUBSTYLES.add(Pubstyle.BMC);
+		PUBSTYLES.add(Pubstyle.HINDAWI);
+		PUBSTYLES.add(Pubstyle.PLOSONE);
 	};
 	
 	private Pubstyle() {
 	}
 	
-	public Pubstyle(String name) {
-		this.name = name;
+	public Pubstyle(String name, String taggerLocation, PubstyleReader documentReader) {
+		this();
+		setName(name);
+		setTaggerLocation(taggerLocation);
+		setDocumentReader(documentReader);
 	}
 	
 	public static Pubstyle deducePubstyle(HtmlElement element) {
@@ -54,12 +72,32 @@ public class Pubstyle {
 	}
 	
 	public static Pubstyle getPubstyle(String name) {
-		for (Pubstyle j : JOURNALS) {
+		for (Pubstyle j : PUBSTYLES) {
 			if (j.getName().equals(name)) {
 				return j;
 			}
  		}
 		return null;
+	}
+
+	public PubstyleReader getPubstyleReader() {
+		return documentReader;
+	}
+
+	public void setDocumentReader(PubstyleReader documentReader) {
+		this.documentReader = documentReader;
+	}
+
+	public String getTaggerLocation() {
+		return taggerLocation;
+	}
+
+	public void setTaggerLocation(String taggerLocation) {
+		this.taggerLocation = taggerLocation;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	private String getName() {
@@ -71,7 +109,7 @@ public class Pubstyle {
 	}
 
 	public static List<Pubstyle> getPubstyles() {
-		return JOURNALS;
+		return PUBSTYLES;
 	};
 	
 	public String toString() {

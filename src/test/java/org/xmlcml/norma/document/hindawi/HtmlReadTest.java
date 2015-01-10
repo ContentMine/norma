@@ -8,20 +8,20 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.InputType;
-import org.xmlcml.norma.document.DocumentReader;
+import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.document.hindawi.HindawiReader;
+import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.xml.XMLUtil;
 
 public class HtmlReadTest {
 
 	@Test
 	@Ignore // remote read
-	public void readRawHtmlSVGTest() throws Exception {
+	public void readRawHtmlTest() throws Exception {
 		String urlString = "http://www.hindawi.com/journals/ija/2014/507405/";
-		DocumentReader hindawiReader = new HindawiReader(InputType.HTML);
+		PubstyleReader hindawiReader = new HindawiReader(InputFormat.HTML);
 		hindawiReader.readURL(urlString);
-		HtmlElement rawHtml = hindawiReader.getOrCreateRawXHtml();
+		HtmlElement rawHtml = hindawiReader.getOrCreateXHtmlFromRawHtml();
 		Assert.assertNotNull("raw input", rawHtml);
 		File file = new File("target/htmlsvg/507405.xml");
 		FileUtils.touch(file);

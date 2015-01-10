@@ -10,13 +10,13 @@ package org.xmlcml.norma;
 public class RawInput implements HasInputType {
 
 	private byte[] rawBytes;
-	private InputType inputType;
+	private InputFormat inputType;
 
 	public RawInput(byte[] rawBytes) {
 		this.rawBytes = rawBytes;
 	}
 
-	public InputType getInputType() {
+	public InputFormat getInputType() {
 		return this.inputType;
 	}
 

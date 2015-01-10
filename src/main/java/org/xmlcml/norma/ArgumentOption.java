@@ -47,6 +47,7 @@ public class ArgumentOption {
 	private Integer integerValue;
 	private Double  doubleValue;
 	private Boolean booleanValue;
+	private String args;
 	
 	public ArgumentOption() {
 	}
@@ -54,6 +55,7 @@ public class ArgumentOption {
 	public ArgumentOption(
 			String brief, 
 			String lng, 
+			String args,
 			String help,
 			Class<?> type,
 			Object defalt,
@@ -63,6 +65,7 @@ public class ArgumentOption {
 		setBrief(brief);
 		setLong(lng);
 		setHelp(help);
+		setArgs(args);
 		setType(type);
 		setDefault(defalt);
 		setMinCount(minCount);
@@ -85,8 +88,24 @@ public class ArgumentOption {
 		this.lng = lng;
 	}
 
+	public String getArgs() {
+		return args;
+	}
+
+	public void setArgs(String args) {
+		this.args = args;
+	}
+
 	public String getHelp() {
-		return help;
+		StringBuilder sb = new StringBuilder();
+		sb.append("\n"+brief);
+		sb.append(" or "+lng+" ");
+	    if (args.trim().length() > 0) {
+	    	sb.append(" "+args);
+	    }
+		sb.append("\n");
+		sb.append(help);
+		return sb.toString();
 	}
 
 	public void setHelp(String help) {

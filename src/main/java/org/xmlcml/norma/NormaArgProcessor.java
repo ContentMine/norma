@@ -36,15 +36,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public final static ArgumentOption PUBSTYLE_OPTION = new ArgumentOption(
 		"-p",
 		"--pubstyle",
+		"pub_code",
 		"\n"
-		+ "PUBTYPE:\nCode or mnemomic to identifier the publisher or journal style. \n"
+		+ "PUBSTYLE:\nCode or mnemomic to identifier the publisher or journal style. \n"
 		+ "this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument \n"
 		+ "is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and\n"
 		+ "soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.\n"
-		+ "To get a list of these use "+"-p"+" without arguments. Note: under early devlopment and note also that \n"
+		+ "To get a list of these use "+"--pubstyle"+" without arguments. Note: under early development and note also that \n"
 		+ "publisher styles change and can be transferred between publishers and journals",
-		Pubstyle.class,
-		Pubstyle.PLOSONE,
+		String.class,
+		Pubstyle.PLOSONE.toString(),
 		1, 1
 		);
 	
@@ -87,6 +88,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		if (listIterator.hasNext()) {
 			processed = true;
 			String arg = listIterator.next();
+			LOG.debug("norma:"+arg);
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
 			} else if (PUBSTYLE_OPTION.matches(arg)) {
@@ -111,13 +113,21 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	protected void processHelp() {
+		System.out.println(
+				"\n"
+				+ "====NORMA====\n"
+				+ "Norma converters raw files into scholarlyHTML, and adds tags to sections.\n"
+				+ "Some of the conversion is dependent on publication type (--pubstyle) while some\n"
+				+ "is constant for all documents. Where possible Norma guesses the input type, but can\n"
+				+ "also be guided with the --extensions flag where the file/URL has no extension. "
+				+ ""
+				);
+		System.out.println(PUBSTYLE_OPTION.getHelp());
 		super.processHelp();
-		LOG.info(HELP_NORMA);
 	}
 
 	public Pubstyle getPubstyle() {
 		return pubstyle;
 	}
-
 
 }

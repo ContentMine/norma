@@ -1,7 +1,6 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +10,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.util.HtmlUnitWrapper;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
-import org.xmlcml.xml.XMLUtil;
+import org.xmlcml.norma.pubstyle.PubstyleReader;
 
 /** wraps the input, optionally determing its type.
  * 
@@ -33,7 +33,7 @@ public class InputWrapper {
 	private String content;
 	private Pubstyle pubstyle;
 	private HtmlElement htmlElement;
-	private InputType inputType;
+	private InputFormat inputType;
 
 	public InputWrapper(File file, String inputName) {
 		this.file = file;
@@ -54,10 +54,10 @@ public class InputWrapper {
 		return inputWrapperList;
 	}
 
-	public HtmlElement transform(Pubstyle pubstyle) {
+	public HtmlElement transform(Pubstyle pubstyle) throws Exception {
 		this.pubstyle = pubstyle;
 		findInputType();
-		normalizeToXHTML();
+		normalizeToXHTML(pubstyle);
 		if (pubstyle == null) {
 			pubstyle = Pubstyle.deducePubstyle(htmlElement);
 		}
@@ -68,27 +68,45 @@ public class InputWrapper {
 	}
 
 
-	private void normalizeToXHTML() {
-		if (InputType.PDF.equals(inputType)) {
+	/** maybe move to Pubstyle later.
+	 * 
+	 * @param pubstyle
+	 */
+	private void normalizeToXHTML(Pubstyle pubstyle) throws Exception {
+		if (InputFormat.PDF.equals(inputType)) {
 			try {
 				PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 				htmlElement = converter.readAndConvertToXHTML(new File(inputName));
 			} catch (Exception e) {
 				throw new RuntimeException("cannot convert PDF: "+inputName, e);
 			}
-		} else if (InputType.SVG.equals(inputType)) {
+		} else if (InputFormat.SVG.equals(inputType)) {
 			LOG.error("cannot turn SVG into XHTML yet");
-		} else if (InputType.XML.equals(inputType)) {
-			LOG.debug("using XML");
-		} else if (InputType.XHTML.equals(inputType)) {
-			LOG.debug("using XHTML");
+		} else if (InputFormat.XML.equals(inputType)) {
+			LOG.debug("using XML; not yet implemented");
+		} else if (InputFormat.HTML.equals(inputType)) {
+			readRawHTML(pubstyle);
+		} else if (InputFormat.XHTML.equals(inputType)) {
+			LOG.debug("using XHTML; not yet  implemented");
 		} else {
-			LOG.error("cannot process "+inputName+" into XHTML yet");
+			LOG.error("no processor found to convert "+inputName+" ("+inputType+") into XHTML yet");
 		}
 	}
 
+	private void readRawHTML(Pubstyle pubstyle) throws Exception {
+		LOG.debug("using HTML");
+		PubstyleReader reader = pubstyle.getPubstyleReader();
+		reader.setFormat(inputType);
+		reader.readFile(new File(inputName));
+//		HtmlUnitWrapper htmlUnitWrapper = new HtmlUnitWrapper();
+//		HtmlElement htmlElement = htmlUnitWrapper.readAndCreateElement(url);
+
+		htmlElement = reader.getOrCreateXHtmlFromRawHtml();
+		LOG.debug("read HTML");
+	}
+
 	private void findInputType() {
-		inputType = InputType.getInputType(inputName);
+		inputType = InputFormat.getInputType(inputName);
 	}
 	
 	public String toString() {

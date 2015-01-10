@@ -95,17 +95,5 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	
 	}
 	
-	@Test
-	public void testPlosonePDF() {
-		String[] args = {
-				"-i", 
-			       new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884.pdf").toString(),
-				"-o", new File("target/sedar/image.g.11.7/").toString(),
-		};
-		Norma norma = new Norma();
-		norma.run(args);
-	
-	}
-	
 	
 }

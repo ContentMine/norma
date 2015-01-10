@@ -32,7 +32,7 @@ public class SedarTest {
 	
 	@Test
 	public void testExtractOrgChart() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "image.g.11.7.svg"));
+		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg"));
 		BoxChart boxChart = new BoxChart(rawChart);
 		boxChart.createChart();
 		
