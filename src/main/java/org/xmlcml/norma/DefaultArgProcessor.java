@@ -27,6 +27,7 @@ public class DefaultArgProcessor {
 	public final static ArgumentOption INPUT_OPTION = new ArgumentOption(
 			"-i",
 			"--input",
+			"file(s)_and/or_url(s)",
 			"\nINPUT:\nInput stream (Files, directories, URLs), Norma tries to guess reasonable actions. \n"
 					+ "also expands some simple wildcards. The argument can either be a single object, or a list. Within objects\n"
 					+ "the content of curly brackets {...} is expanded as wildcards (cannot recurse). There can be multiple {...}\n"
@@ -53,7 +54,8 @@ public class DefaultArgProcessor {
 	public final static ArgumentOption OUTPUT_OPTION = new ArgumentOption(
 			"-o",
 			"--output",
-			"\"\nOUTPUT\n Output is to local filestore ATM. If there is only one input\n"
+			"file_or_directory",
+			"\nOUTPUT\n Output is to local filestore ATM. If there is only one input\n"
 			+ "after wildcard expansion then a filename can be given. Else the argument must be a writeable directory; Norma\n"
 			+ "will do her best to create filenames derived from the input names. Directory structures will not be preserved\n"
 			+ "See also --recursive and --extensions",
@@ -65,6 +67,7 @@ public class DefaultArgProcessor {
 	public final static ArgumentOption RECURSIVE_OPTION = new ArgumentOption(
 			"-r",
 			"--recursive",
+			"",
 			"\nRECURSIVE input directories\n "
 			+ "If the input is a directory then by default only the first level is searched\n"
 			+ "if the --recursive flag is set then all files in the directory tree may be input\n"
@@ -77,6 +80,7 @@ public class DefaultArgProcessor {
 	public final static ArgumentOption EXTENSION_OPTION = new ArgumentOption(
 		"-e",
 		"--extensions",
+		"ext1 [ext2...]",
 		"\nEXTENSIONS \n "
 			+ "When a directory or directories are searched then all files are input by default\n"
 			+ "It is possible to limit the search by using only certain extensions(which "
@@ -248,7 +252,7 @@ public class DefaultArgProcessor {
 		if (listIterator.hasNext()) {
 			processed = true;
 			String arg = listIterator.next();
-//			LOG.info("arg: "+arg);
+			LOG.debug("def:"+arg);
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
 			} else if (EXTENSION_OPTION.matches(arg)) {
@@ -262,19 +266,21 @@ public class DefaultArgProcessor {
 			} else if (H.equals(arg) || HELP.equals(arg)) {
 				processHelp();
 			} else {
+				listIterator.previous();
 				processed = false;
-//				listIterator.previous();
-//				LOG.error("Unknown arg: ("+arg+"), trying to recover");
 			}
 		}
 		return processed;
 	}
 	
 	protected void processHelp() {
+		System.out.println("\n"
+		+ "====general options====\n");
 		System.out.println(INPUT_OPTION.getHelp());
 		System.out.println(OUTPUT_OPTION.getHelp());
 		System.out.println(RECURSIVE_OPTION.getHelp());
 		System.out.println(EXTENSION_OPTION.getHelp());
+		System.out.println("\n");
 	}
 
 

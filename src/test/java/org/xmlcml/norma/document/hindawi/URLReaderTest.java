@@ -3,10 +3,10 @@ package org.xmlcml.norma.document.hindawi;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.norma.InputType;
+import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
-import org.xmlcml.norma.document.DocumentReader;
 import org.xmlcml.norma.document.hindawi.HindawiReader;
+import org.xmlcml.norma.pubstyle.PubstyleReader;
 
 public class URLReaderTest {
 
@@ -14,7 +14,7 @@ public class URLReaderTest {
 	@Ignore // uses URL
 	public void testReadURL() throws Exception {
 		String urlString = "http://www.hindawi.com/journals/ija/2014/507405/";
-		DocumentReader hindawiReader = new HindawiReader(InputType.HTML);
+		PubstyleReader hindawiReader = new HindawiReader(InputFormat.HTML);
 		hindawiReader.readURL(urlString);
 		RawInput rawInput = hindawiReader.getRawInput();
 		Assert.assertNotNull("raw input", rawInput);

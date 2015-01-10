@@ -1,4 +1,4 @@
-package org.xmlcml.norma.document;
+package org.xmlcml.norma.pubstyle;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -10,12 +10,12 @@ import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.norma.InputType;
+import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
 
-public abstract class DocumentReader {
+public abstract class PubstyleReader {
 
 	private URL url;
 	private RawInput rawInput;
@@ -23,12 +23,16 @@ public abstract class DocumentReader {
 	private File file;
 	private HtmlElement htmlElement;
 	
-	protected DocumentReader() {
+	protected PubstyleReader() {
 		setDefaults();
 	}
 
-	public DocumentReader(InputType type) {
+	public PubstyleReader(InputFormat type) {
 		this();
+		setFormat(type);
+	}
+
+	public void setFormat(InputFormat type) {
 		inputReader = InputReader.createReader(type);
 	}
 
@@ -59,18 +63,18 @@ public abstract class DocumentReader {
 		return this.rawInput;
 	}
 
-	public HtmlElement getOrCreateRawXHtml() throws Exception {
+	public HtmlElement getOrCreateXHtmlFromRawHtml() throws Exception {
 		byte[] rawBytes = (rawInput == null) ? null : rawInput.getRawBytes();
 		if (rawBytes != null) {
 			HtmlFactory htmlFactory = new HtmlFactory();
 			ByteArrayInputStream bais = new ByteArrayInputStream(rawBytes);
-			// see if it's well-formed to start with...
-			nu.xom.Document document = XMLUtil.parseQuietlyToDocument(bais);
-			if (document != null) {
-				htmlElement = htmlFactory.parse(document.getRootElement());
-			} else {
+			// see if it's well-formed to start with... // poor strategy
+//			nu.xom.Document document = XMLUtil.parseQuietlyToDocument(bais);
+//			if (document != null) {
+//				htmlElement = htmlFactory.parse(document.getRootElement());
+//			} else {
 				htmlElement = htmlFactory.parse(bais);
-			}
+//			}
 		}
 		return htmlElement;
 	}

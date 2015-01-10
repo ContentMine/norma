@@ -1,11 +1,11 @@
-package org.xmlcml.norma.document.hindawi;
+package org.xmlcml.norma.pubstyle.hindawi;
 
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 
 public class HindawiReader extends PubstyleReader {
 
-	 HindawiReader() {
+	public HindawiReader() {
 		super();
 	}
 
