@@ -6,10 +6,11 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.document.bmc.BmcReader;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
+import org.xmlcml.norma.pubstyle.bmc.BmcReader;
 import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
 import org.xmlcml.norma.pubstyle.plosone.PlosoneReader;
+import org.xmlcml.norma.tagger.PubstyleTagger;
 
 /** format and metadata of scholarly Journal.
  * 
@@ -43,7 +44,7 @@ public class Pubstyle {
 	
 	private String name;
 	private String taggerLocation;
-	private PubstyleReader documentReader;
+	private PubstyleReader pubstyleReader;
 	
 	public final static List<Pubstyle> PUBSTYLES;
 	static {
@@ -57,11 +58,11 @@ public class Pubstyle {
 	private Pubstyle() {
 	}
 	
-	public Pubstyle(String name, String taggerLocation, PubstyleReader documentReader) {
+	public Pubstyle(String name, String taggerLocation, PubstyleReader reader) {
 		this();
 		setName(name);
 		setTaggerLocation(taggerLocation);
-		setDocumentReader(documentReader);
+		setPubstyleReader(reader);
 	}
 	
 	public static Pubstyle deducePubstyle(HtmlElement element) {
@@ -81,11 +82,11 @@ public class Pubstyle {
 	}
 
 	public PubstyleReader getPubstyleReader() {
-		return documentReader;
+		return pubstyleReader;
 	}
 
-	public void setDocumentReader(PubstyleReader documentReader) {
-		this.documentReader = documentReader;
+	public void setPubstyleReader(PubstyleReader documentReader) {
+		this.pubstyleReader = documentReader;
 	}
 
 	public String getTaggerLocation() {
@@ -104,8 +105,13 @@ public class Pubstyle {
 		return name;
 	}
 
-	public void applyTagger() {
-		LOG.error("tagger NYI");
+	public void applyTagger(InputFormat inputFormat, HtmlElement htmlElement) {
+		PubstyleTagger tagger = pubstyleReader.getTagger(inputFormat);
+		if (tagger == null) {
+			LOG.error("Cannot find tagger for: "+inputFormat);
+		} else {
+			tagger.addTagsToSections(htmlElement);
+		}
 	}
 
 	public static List<Pubstyle> getPubstyles() {

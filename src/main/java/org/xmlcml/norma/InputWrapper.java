@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import nu.xom.Nodes;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -33,7 +35,8 @@ public class InputWrapper {
 	private String content;
 	private Pubstyle pubstyle;
 	private HtmlElement htmlElement;
-	private InputFormat inputType;
+	private InputFormat inputFormat;
+	private PubstyleReader pubstyleReader;
 
 	public InputWrapper(File file, String inputName) {
 		this.file = file;
@@ -56,13 +59,13 @@ public class InputWrapper {
 
 	public HtmlElement transform(Pubstyle pubstyle) throws Exception {
 		this.pubstyle = pubstyle;
-		findInputType();
+		findInputFormat();
 		normalizeToXHTML(pubstyle);
 		if (pubstyle == null) {
 			pubstyle = Pubstyle.deducePubstyle(htmlElement);
 		}
 		if (pubstyle != null) {
-			pubstyle.applyTagger();
+			pubstyle.applyTagger(inputFormat, htmlElement);
 		}
 		return htmlElement;
 	}
@@ -73,40 +76,68 @@ public class InputWrapper {
 	 * @param pubstyle
 	 */
 	private void normalizeToXHTML(Pubstyle pubstyle) throws Exception {
-		if (InputFormat.PDF.equals(inputType)) {
+		if (InputFormat.PDF.equals(inputFormat)) {
 			try {
 				PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 				htmlElement = converter.readAndConvertToXHTML(new File(inputName));
 			} catch (Exception e) {
 				throw new RuntimeException("cannot convert PDF: "+inputName, e);
 			}
-		} else if (InputFormat.SVG.equals(inputType)) {
+		} else if (InputFormat.SVG.equals(inputFormat)) {
 			LOG.error("cannot turn SVG into XHTML yet");
-		} else if (InputFormat.XML.equals(inputType)) {
+		} else if (InputFormat.XML.equals(inputFormat)) {
 			LOG.debug("using XML; not yet implemented");
-		} else if (InputFormat.HTML.equals(inputType)) {
+		} else if (InputFormat.HTML.equals(inputFormat)) {
 			readRawHTML(pubstyle);
-		} else if (InputFormat.XHTML.equals(inputType)) {
+		} else if (InputFormat.XHTML.equals(inputFormat)) {
 			LOG.debug("using XHTML; not yet  implemented");
 		} else {
-			LOG.error("no processor found to convert "+inputName+" ("+inputType+") into XHTML yet");
+			LOG.error("no processor found to convert "+inputName+" ("+inputFormat+") into XHTML yet");
 		}
 	}
 
 	private void readRawHTML(Pubstyle pubstyle) throws Exception {
-		LOG.debug("using HTML");
-		PubstyleReader reader = pubstyle.getPubstyleReader();
-		reader.setFormat(inputType);
-		reader.readFile(new File(inputName));
+		LOG.trace("using HTML");
+		pubstyleReader = pubstyle.getPubstyleReader();
+		pubstyleReader.setFormat(inputFormat);
+		pubstyleReader.readFile(new File(inputName));
+		// may need to go to this at some stage
 //		HtmlUnitWrapper htmlUnitWrapper = new HtmlUnitWrapper();
 //		HtmlElement htmlElement = htmlUnitWrapper.readAndCreateElement(url);
 
-		htmlElement = reader.getOrCreateXHtmlFromRawHtml();
-		LOG.debug("read HTML");
+		htmlElement = pubstyleReader.getOrCreateXHtmlFromRawHtml();
+		
+		removeExtraneousHtmlTags();
+		LOG.trace("read HTML");
 	}
 
-	private void findInputType() {
-		inputType = InputFormat.getInputType(inputName);
+	private void removeExtraneousHtmlTags() {
+		Nodes nodes = htmlElement.query( 
+				"//*["
+				+ "local-name()='script'"
+				+ " or local-name()='link'"
+				+ " or local-name()='object'"
+				+ " or local-name()='iframe' "
+				+ " or local-name()='fieldset' "
+				+ " or local-name()='button' "
+				+ " or local-name()='style' "
+				+ " or @class='mobile-hidden' "
+				+ " or @id='left-article-box' "
+				+ " or @id='branding' "
+				+ " or @id='pagehdr-wrap' "
+				+ " or @id='topbanner' "
+				+ " or @id='pageftr' "
+				+ " or @class='sidebar' "
+				+ "] "
+				+ "| //comment()"
+				+ "");
+		for (int i = nodes.size()-1; i >= 0; i--) {
+			nodes.get(i).detach();
+		}
+	}
+
+	private void findInputFormat() {
+		inputFormat = InputFormat.getInputFormat(inputName);
 	}
 	
 	public String toString() {

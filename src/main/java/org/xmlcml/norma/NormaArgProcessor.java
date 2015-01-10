@@ -88,7 +88,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		if (listIterator.hasNext()) {
 			processed = true;
 			String arg = listIterator.next();
-			LOG.debug("norma:"+arg);
+			LOG.trace("norma:"+arg);
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
 			} else if (PUBSTYLE_OPTION.matches(arg)) {

@@ -57,7 +57,7 @@ public class VariableElement extends AbstractTElement {
 				}
 			}
 			if (expandedValue0 == null) {
-				throw new RuntimeException("Cannot find value for :"+ref);
+				throw new RuntimeException("Cannot find value for ["+ref+"]");
 			}
 			sb.append(expandedValue0);
 			current = matcher.end();

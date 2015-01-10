@@ -3,9 +3,9 @@ package org.xmlcml.norma.tagger.elsevier;
 import java.io.File;
 
 import org.apache.log4j.Logger;
-import org.xmlcml.norma.tagger.DocumentTagger;
+import org.xmlcml.norma.tagger.PubstyleTagger;
 
-public class HTMLElsevierTagger extends DocumentTagger {
+public class HTMLElsevierTagger extends PubstyleTagger {
 
 	private final static Logger LOG = Logger.getLogger(HTMLElsevierTagger.class);
 

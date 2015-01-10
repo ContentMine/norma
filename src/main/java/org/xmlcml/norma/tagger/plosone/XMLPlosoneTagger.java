@@ -3,9 +3,9 @@ package org.xmlcml.norma.tagger.plosone;
 import java.io.File;
 
 import org.apache.log4j.Logger;
-import org.xmlcml.norma.tagger.DocumentTagger;
+import org.xmlcml.norma.tagger.PubstyleTagger;
 
-public class XMLPlosoneTagger extends DocumentTagger {
+public class XMLPlosoneTagger extends PubstyleTagger {
 
 	private final static Logger LOG = Logger.getLogger(XMLPlosoneTagger.class);
 
