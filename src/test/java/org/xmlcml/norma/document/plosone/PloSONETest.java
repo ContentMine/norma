@@ -67,7 +67,7 @@ public class PloSONETest {
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		LOG.debug(htmlElement.toXML().substring(0, 200));
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 43, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 3, divElements.size()); 
 	}
 	
 	@Test
