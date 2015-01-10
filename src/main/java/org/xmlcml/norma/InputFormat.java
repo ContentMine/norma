@@ -30,7 +30,7 @@ public enum InputFormat {
 	}
 	
 	
-	public static InputFormat getInputType(String inputName) {
+	public static InputFormat getInputFormat(String inputName) {
 		inputName = inputName.toUpperCase();
 		if (is(InputFormat.DOC, inputName)) {
 			LOG.error("Cannot parse DOC");

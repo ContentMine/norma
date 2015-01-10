@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.HashMap;
 
 import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
@@ -13,6 +14,7 @@ import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.input.InputReader;
+import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.xml.XMLUtil;
 
 public abstract class PubstyleReader {
@@ -22,9 +24,12 @@ public abstract class PubstyleReader {
 	private InputReader inputReader;
 	private File file;
 	private HtmlElement htmlElement;
+	private InputFormat inputFormat;
+	private HashMap<InputFormat, PubstyleTagger> taggerByFormatMap;
 	
 	protected PubstyleReader() {
 		setDefaults();
+		addTaggers();
 	}
 
 	public PubstyleReader(InputFormat type) {
@@ -32,10 +37,15 @@ public abstract class PubstyleReader {
 		setFormat(type);
 	}
 
-	public void setFormat(InputFormat type) {
-		inputReader = InputReader.createReader(type);
+	public void setFormat(InputFormat inputFormat) {
+		this.inputFormat = inputFormat;
+		inputReader = InputReader.createReader(inputFormat);
 	}
 
+	public InputFormat getInputFormat() {
+		return inputFormat;
+	}
+	
 	private void setDefaults() {
 	}
 
@@ -77,5 +87,23 @@ public abstract class PubstyleReader {
 //			}
 		}
 		return htmlElement;
+	}
+	
+	protected abstract void addTaggers();
+
+	protected void addTagger(InputFormat format, PubstyleTagger tagger) {
+		ensureTaggerByFormatMap();
+		taggerByFormatMap.put(format, tagger);
+	}
+
+	private void ensureTaggerByFormatMap() {
+		if (taggerByFormatMap == null) {
+			taggerByFormatMap = new HashMap<InputFormat, PubstyleTagger>();
+		}
+	}
+
+	public PubstyleTagger getTagger(InputFormat inputFormat) {
+		ensureTaggerByFormatMap();
+		return taggerByFormatMap.get(inputFormat);
 	}
 }

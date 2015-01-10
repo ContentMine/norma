@@ -252,7 +252,7 @@ public class DefaultArgProcessor {
 		if (listIterator.hasNext()) {
 			processed = true;
 			String arg = listIterator.next();
-			LOG.debug("def:"+arg);
+			LOG.trace("def:"+arg);
 			if (!arg.startsWith(MINUS)) {
 				LOG.error("Parsing failed at: ("+arg+"), expected \"-\" trying to recover");
 			} else if (EXTENSION_OPTION.matches(arg)) {

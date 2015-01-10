@@ -1,0 +1,41 @@
+		 <?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/" xmlns="http://purl.org/rss/1.0/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+	<cc:Work rdf:about="http://www.agricultureandfoodsecurity.com/content/3/1/17">
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/" />
+	</cc:Work>
+	<cc:License rdf:about="http://creativecommons.org/licenses/by/2.0/">
+		<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+		<cc:permits rdf:resource="http://web.resource.org/cc/Distribution" />
+		<cc:requires rdf:resource="http://web.resource.org/cc/Notice" />
+		<cc:requires rdf:resource="http://web.resource.org/cc/Attribution" />
+		<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+	</cc:License>
+	<item rdf:about="http://www.agricultureandfoodsecurity.com/content/3/1/17">
+		<title>Household adoption of soil-improving practices and food
+			insecurity
+			in Ghana
+		</title>
+		<dc:title>Household adoption of soil-improving practices
+			and food insecurity in Ghana
+		</dc:title>
+		<dc:creator>Nata, Jifar T</dc:creator>
+		<dc:creator>Mjelde, James W</dc:creator>
+		<dc:creator>Boadu, Frederick O</dc:creator>
+		<dc:identifier>info:doi/10.1186/2048-7010-3-17</dc:identifier>
+		<dc:source>Agriculture
+			& Food Security 2014, 3:17</dc:source>
+		<dc:date>2014-11-10</dc:date>
+		<prism:publicationName>Agriculture
+			& Food Security</prism:publicationName>
+		<prism:publicationDate>2014-11-10</prism:publicationDate>
+		<prism:volume>3</prism:volume>
+		<prism:number>1</prism:number>
+		<prism:section>Research</prism:section>
+		<prism:startingPage>17</prism:startingPage>
+		<prism:copyright>2014 Nata et
+			al.; licensee BioMed Central Ltd.
+		</prism:copyright>
+	</item>
+</rdf:RDF> 
