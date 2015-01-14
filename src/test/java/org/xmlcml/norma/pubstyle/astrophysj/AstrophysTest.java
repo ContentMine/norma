@@ -14,6 +14,7 @@ import org.xmlcml.xml.XMLUtil;
 public class AstrophysTest {
 
 	@Test
+	@Ignore // too long
 	public void testReadPDF() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_ASTROPHYS_DIR, "0004-637X_754_2_85.pdf"));
