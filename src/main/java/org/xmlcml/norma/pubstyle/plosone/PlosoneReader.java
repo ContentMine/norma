@@ -17,8 +17,8 @@ public class PlosoneReader extends PubstyleReader {
 
 	@Override
 	protected void addTaggers() {
-		this.addTagger(InputFormat.HTML, new HTMLPlosoneTagger());
-		this.addTagger(InputFormat.XML, new XMLPlosoneTagger());
+//		this.addTagger(InputFormat.HTML, new HTMLPlosoneTagger());
+//		this.addTagger(InputFormat.XML, new XMLPlosoneTagger());
 	}
 
 

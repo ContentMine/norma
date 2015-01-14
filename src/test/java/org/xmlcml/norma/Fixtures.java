@@ -16,6 +16,8 @@ public class Fixtures {
 	public final static File TEST_HINDAWI_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "hindawi");
 	public final static File TEST_BMC_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "bmc");
 	public final static File TEST_SEDAR_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "sedar");
+	public final static File TEST_ASTROPHYS_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "astrophysj");
+	
 	public static final File BMC_0277_PDF = new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf");
 	
 	public final static File F507405_HTML = new File(Fixtures.TEST_HINDAWI_DIR, "507405.html");
