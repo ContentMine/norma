@@ -8,10 +8,6 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:dc="http://purl.org/dc/terms/"
-      xmlns:doi="http://dx.doi.org/"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#"
       lang="en" xml:lang="en"
       itemscope itemtype="http://schema.org/Article"
       class="no-js">

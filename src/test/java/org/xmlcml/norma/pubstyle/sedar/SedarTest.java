@@ -9,7 +9,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.BoxChart;
+import org.xmlcml.norma.SVGBoxChart;
 import org.xmlcml.norma.Fixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
@@ -33,7 +33,7 @@ public class SedarTest {
 	@Test
 	public void testExtractOrgChart() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg"));
-		BoxChart boxChart = new BoxChart(rawChart);
+		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		
 	}
@@ -41,7 +41,7 @@ public class SedarTest {
 	@Test
 	public void testExtractOrgChartBlackbird() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "blackbird.g.8.8.svg"));
-		BoxChart boxChart = new BoxChart(rawChart);
+		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		
 	}
@@ -49,7 +49,7 @@ public class SedarTest {
 	@Test
 	public void testExtractOrgChartPennWest() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "pennwest.g.11.1.svg"));
-		BoxChart boxChart = new BoxChart(rawChart);
+		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		
 	}
@@ -57,7 +57,7 @@ public class SedarTest {
 	@Test
 	public void testExtractOrgChartRooster() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "rooster.g.7.6.svg"));
-		BoxChart boxChart = new BoxChart(rawChart);
+		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		
 	}

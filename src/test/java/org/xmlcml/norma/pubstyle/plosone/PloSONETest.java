@@ -91,5 +91,26 @@ public class PloSONETest {
 //		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
 	}
 	
+	@Test
+	/** this is a raw HTML
+	 * 
+	 */
+	public void testPlosoneRawHTMLNoPubstyle() throws Exception {
+		File outputFile = new File("target/plosone/0115884.nopubstyle.html");
+		String[] args = {
+				"-i", new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.html").toString(),
+//				"--pubstyle", "src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml",
+				"-o", outputFile.toString(),
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+		Assert.assertTrue(outputFile.exists());
+		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+		Assert.assertEquals("div elements "+divElements.size(), 61, divElements.size()); 
+		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+//		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
+	}
+	
 
 }

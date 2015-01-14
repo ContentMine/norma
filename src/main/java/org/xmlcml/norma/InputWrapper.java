@@ -12,8 +12,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.util.HtmlUnitWrapper;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
+import org.xmlcml.norma.pubstyle.DefaultPubstyleReader;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 
 /** wraps the input, optionally determing its type.
@@ -98,7 +98,7 @@ public class InputWrapper {
 
 	private void readRawHTML(Pubstyle pubstyle) throws Exception {
 		LOG.trace("using HTML");
-		pubstyleReader = pubstyle.getPubstyleReader();
+		pubstyleReader = (pubstyle == null) ? new DefaultPubstyleReader() : pubstyle.getPubstyleReader();
 		pubstyleReader.setFormat(inputFormat);
 		pubstyleReader.readFile(new File(inputName));
 		// may need to go to this at some stage
