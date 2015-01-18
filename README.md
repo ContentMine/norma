@@ -1,7 +1,7 @@
-# NHTML
+# Norma
 
 A tool to convert a variety of inputs into normalized, tagged, XHTML (with embedded/linked SVG and PNG where
-appropriate. The emphasis is on scholarly publicatuions but much of the technology is general. Likely to be renamed soonish (?Norma).
+appropriate. The emphasis is on scholarly publicatuions but much of the technology is general.  Used to be called NHTML.
 
 ## Overview
 
@@ -66,8 +66,3 @@ Some graphics is published as vectors within PDF and these can be converted into
 ### DOC/X
 
 Some years ago I wrote a semi-complete parser for DOCX but it's lost... Probably could resurrect if required. Most likely use would be theses or possibly arXiv.
-
-
-
-
-
