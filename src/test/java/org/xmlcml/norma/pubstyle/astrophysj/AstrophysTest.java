@@ -2,12 +2,16 @@ package org.xmlcml.norma.pubstyle.astrophysj;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.SVGPolyline;
+import org.xmlcml.graphics.svg.SVGText;
+import org.xmlcml.graphics.svg.objects.SVGPlot;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.Fixtures;
-import org.xmlcml.norma.SVGPlot;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
 
@@ -27,8 +31,13 @@ public class AstrophysTest {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
 		SVGPlot plot = new SVGPlot(rawChart);
 		plot.createPlot();
-		
+		List<SVGText> textList = plot.getSVGTextList();
+//		for (SVGText text : textList) {
+//			System.out.print(text.getValue()+" ");
+//		}
+		List<SVGPolyline> lineList = plot.getSVGPolylineList();
+		for (SVGPolyline line : lineList) {
+			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
+		}
 	}
-	
-
 }

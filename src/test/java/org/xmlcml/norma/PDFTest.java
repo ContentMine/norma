@@ -2,6 +2,7 @@ package org.xmlcml.norma;
 
 import java.io.File;
 
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -33,10 +34,13 @@ public class PDFTest {
 	}
 		
 	@Test
+	@Ignore // SVG input not yet written
 	public void testReadSedarSVG() {
+		File inputFile = new File(Fixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg");
+		Assert.assertTrue(inputFile.exists());
 		String[] args = {
-				"-i", new File(Fixtures.TEST_SEDAR_DIR, "image.g.11.7.svg").toString(),
-				"-o", new File("target/sedar/image.g.11.7/").toString(),
+				"-i", inputFile.toString(),
+				"-o", new File("target/sedar/westernZagros.g.11.7/").toString(),
 		};
 		Norma norma = new Norma();
 		norma.run(args);
