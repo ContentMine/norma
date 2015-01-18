@@ -86,20 +86,21 @@ public class PloSONETest {
 		Assert.assertTrue(outputFile.exists());
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 61, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
 //		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
 	}
 	
 	@Test
-	/** this is a raw HTML
+	/** no pubstyle so remove the extraneous tags but not divs.
+	 * 
+	 * This test is fragile as we shall change the default tags
 	 * 
 	 */
 	public void testPlosoneRawHTMLNoPubstyle() throws Exception {
 		File outputFile = new File("target/plosone/0115884.nopubstyle.html");
 		String[] args = {
 				"-i", new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.html").toString(),
-//				"--pubstyle", "src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml",
 				"-o", outputFile.toString(),
 		};
 		Norma norma = new Norma();
@@ -107,9 +108,35 @@ public class PloSONETest {
 		Assert.assertTrue(outputFile.exists());
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 61, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 118, divElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
-//		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
+		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
+	}
+	
+	@Test
+	/** pubstyle remove some divs.
+	 * 
+	 * This test is fragile as we shall change the default tags and the default divs
+	 * 
+	 * The HTML is so broken that the nesting of the reference lists are wrong
+	 * 
+	 * 
+	 */
+	public void testPlosoneRawHTMLPubstyle() throws Exception {
+		File outputFile = new File("target/plosone/0115884.pubstyle.html");
+		String[] args = {
+				"-i", new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.html").toString(),
+				"-p", "plosone",
+				"-o", outputFile.toString(),
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+		Assert.assertTrue(outputFile.exists());
+		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 
+		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+		Assert.assertEquals("p elements "+pElements.size(), 38, pElements.size()); 
 	}
 	
 

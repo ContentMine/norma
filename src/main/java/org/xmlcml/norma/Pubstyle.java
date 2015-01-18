@@ -66,10 +66,8 @@ public class Pubstyle {
 	}
 	
 	public static Pubstyle deducePubstyle(HtmlElement element) {
-		
-		LOG.error("deducePubstylel NYI");
+		LOG.error("deducePubstyle from input document NYI");
 		return null;
-		
 	}
 	
 	public static Pubstyle getPubstyle(String name) {
@@ -106,11 +104,15 @@ public class Pubstyle {
 	}
 
 	public void applyTagger(InputFormat inputFormat, HtmlElement htmlElement) {
-		PubstyleTagger tagger = pubstyleReader.getTagger(inputFormat);
-		if (tagger == null) {
-			LOG.error("Cannot find tagger for: "+inputFormat);
+		if (pubstyleReader == null) {
+			LOG.error("cannot find a pubstyleReader");
 		} else {
-			tagger.addTagsToSections(htmlElement);
+			PubstyleTagger tagger = pubstyleReader.getTagger(inputFormat);
+			if (tagger == null) {
+				LOG.error(name+" pubstyle: cannot find tagger for: "+inputFormat);
+			} else {
+				tagger.addTagsToSections(htmlElement);
+			}
 		}
 	}
 

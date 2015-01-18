@@ -2,6 +2,7 @@ package org.xmlcml.norma.tagger;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -32,6 +33,7 @@ public class PubstyleTagger {
 	}
 	
 	protected static final File NORMA_DIR = new File("src/main/resources/org/xmlcml/norma");
+	protected static final String NORMA_DIR_RESOURCE = "/org/xmlcml/norma";
 	
 	public static final String NAME = "name";
 
@@ -70,7 +72,10 @@ public class PubstyleTagger {
 		
 		
 		};
+	protected static final String PUBSTYLE = "pubstyle";
+	
 	protected static final File TAGGER_DIR = new File(NORMA_DIR, "pubstyle");
+	protected static final String TAGGER_DIR_RESOURCE = NORMA_DIR_RESOURCE + "/"+ "pubstyle";
 
 	public static final String TAG = "tagger";
 	private static final String STYLESHEET = "stylesheet";
@@ -97,8 +102,27 @@ public class PubstyleTagger {
 		readAndParse(taggerFile);
 	}
 
+	protected PubstyleTagger(String taggerResource) {
+		this();
+		LOG.debug("resource: "+taggerResource);
+		InputStream inputStream = this.getClass().getResourceAsStream(taggerResource);
+		if (inputStream == null) {
+			throw new RuntimeException("Cannot parse input resource: "+taggerResource);
+		}
+		readAndParse(inputStream);
+	}
+
+	private void readAndParse(InputStream inputStream) {
+		taggerElement = (TaggerElement) AbstractTElement.createElement(inputStream);
+		createTagListAndMetadata();
+	}
+
 	private void readAndParse(File taggerFile) {
 		taggerElement = (TaggerElement) AbstractTElement.createElement(taggerFile);
+		createTagListAndMetadata();
+	}
+
+	private void createTagListAndMetadata() {
 		metadataListElement = taggerElement.getMetadataListElement();
 		tagListElement = taggerElement.getTagListElement();
 		this.expandVariablesInTags();
@@ -217,7 +241,7 @@ public class PubstyleTagger {
 	public Element addTagsToSections(Element elementToTag) {
 		getTagNames();
 		int count = 0;
-		LOG.trace("tag names "+tagNames);
+		LOG.debug("tag names "+tagNames);
 		for (String tagName : tagNames) {
 			List<Element> sections = findSectionsFromMatchingTags(elementToTag, tagName);
 			for (Element section : sections) {

@@ -5,10 +5,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
-import org.apache.commons.io.IOUtils;
-import org.jsoup.Jsoup;
+import nu.xom.Element;
+import nu.xom.Node;
+import nu.xom.Nodes;
+
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.InputFormat;
@@ -26,6 +30,18 @@ public abstract class PubstyleReader {
 	private HtmlElement htmlElement;
 	private InputFormat inputFormat;
 	private HashMap<InputFormat, PubstyleTagger> taggerByFormatMap;
+	
+	public static List<String> EXTRANEOUS_TAGS = Arrays.asList(new String[] {
+			"button",
+			"fieldset",
+			"iframe",
+			"input",
+			"link",
+			"object",
+			"script",
+			"style",
+	});
+;
 	
 	protected PubstyleReader() {
 		setDefaults();
@@ -106,4 +122,126 @@ public abstract class PubstyleReader {
 		ensureTaggerByFormatMap();
 		return taggerByFormatMap.get(inputFormat);
 	}
+
+	/** removes a number of publisher tags which clutter the HTML.
+	 * 
+	 * These tags should not affect the content (they are mainly interactive). Currently:
+	 * script
+	 * link
+	 * object
+	 * iframe
+	 * fieldset
+	 * button
+	 * style
+	 * 
+	 * This functionality can be overridden in subclasses if required
+	 * 
+	 * 
+	 * @param htmlElement
+	 */
+	public void removeExtraneousHtmlTags(List<String> tagNames) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < tagNames.size(); i++) {
+			String tagName = tagNames.get(i);
+			if (i == 0) {
+				sb.append("//*[local-name()='"+tagName+"'");
+			} else if (i == tagNames.size() - 1) {
+				sb.append("]");
+				sb.append(" | //comment()");
+			} else {
+				sb.append(" or local-name()='"+tagName+"'");
+			}
+		}
+		Nodes nodes = htmlElement.query(sb.toString());
+		for (int i = nodes.size()-1; i >= 0; i--) {
+			nodes.get(i).detach();
+		}
+	}
+
+	/** many tags are common to the problem so we can bundle them here.
+	 * 
+	 */
+	protected void removeExtraneousHtmlTagsAndXPaths() {
+		removeExtraneousHtmlTags(EXTRANEOUS_TAGS);
+		removeExtraneousXPaths();
+	}
+
+	protected void removeExtraneousXPaths() {
+		List<String> extraneousXPaths = getExtraneousXPaths();
+		for (String xpath : extraneousXPaths) {
+			removeNodes(xpath);
+		}
+	}
+	
+	private void removeNodes(String xpath) {
+		Nodes nodes = htmlElement.query(xpath);
+		for (int i = nodes.size() - 1; i >= 0; i--) {
+			nodes.get(i).detach();
+		}
+	}
+
+	protected abstract List<String> getExtraneousXPaths();
+
+	/** normalizes tags and known problems.
+	 * 
+	 * @param htmlElement
+	 */
+	public void normalize() {
+		removeExtraneousHtmlTagsAndXPaths();
+		normalizeTagNames();
+		normalizeDivStructure();
+		normalizeCharacters();
+	}
+
+
+	/** currently changes em->i, strong->i, etc.
+	 * 
+	 */
+	protected void normalizeTagNames() {
+		changeTagName("em", "i");
+		changeTagName("strong", "b");
+	}
+
+	private void changeTagName(String tag0, String tag1) {
+		Nodes nodes = htmlElement.query("//*[local-name()='"+tag0+"']");
+		for (int i = 0; i < nodes.size(); i++) {
+			replaceNode((Element)nodes.get(i), tag1);
+		}
+	}
+
+	/** replace element by one with a new tag.
+	 * 
+	 * transfers children so that order of processing should not matter.
+	 * old element is destroyed.
+	 * 
+	 * @param element
+	 * @param tag
+	 */
+	private void replaceNode(Element element, String tag) {
+		HtmlElement newHtmlElement = new HtmlFactory().createElementFromTag(tag);
+		XMLUtil.copyAttributes(element, newHtmlElement);
+		int size = element.getChildCount();
+		for (int i = 0; i < size; i++) {
+			Node child = element.getChild(0);
+			child.detach();
+			newHtmlElement.appendChild(child);
+		}
+	}
+
+	/** create a div structure if missing.
+	 * 
+	 */
+	protected void normalizeDivStructure() {
+	}
+
+	/** normalize problem characters.
+	 * 
+	 */
+	protected void normalizeCharacters() {
+	}
+
+	public HtmlElement getHtmlElement() {
+		return htmlElement;
+	}
+
 }

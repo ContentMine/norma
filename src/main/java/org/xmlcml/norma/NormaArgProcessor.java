@@ -7,6 +7,8 @@ import java.util.ListIterator;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.args.ArgumentOption;
+import org.xmlcml.args.DefaultArgProcessor;
 
 /** 
  * Processes commandline arguments.
@@ -21,17 +23,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 	
 	public final static String HELP_NORMA = "Norma help";
-
-//	public static final String P = "-p";
-//	public static final String PUBSTYLE = "--pubstyle";
-//	public static final String PUBSTYLE_HELP = "\n"
-//			+ "PUBTYPE:\nCode or mnemomic to identifier the publisher or journal style. \n"
-//			+ "this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument \n"
-//			+ "is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and\n"
-//			+ "soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.\n"
-//			+ "To get a list of these use "+PUBSTYLE+" without arguments. Note: under early devlopment and also that \n"
-//			+ "publisher styles change and can be transferred between publishers and journals";
-
 	
 	public final static ArgumentOption PUBSTYLE_OPTION = new ArgumentOption(
 		"-p",

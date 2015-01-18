@@ -1,6 +1,7 @@
 package org.xmlcml.norma.tagger;
 
 import java.io.File;
+import java.io.InputStream;
 
 import nu.xom.Comment;
 import nu.xom.Element;
@@ -18,8 +19,17 @@ public abstract class AbstractTElement extends Element {
 		super(tag);
 	}
 	
+	public static AbstractTElement createElement(InputStream inputStream) {
+		Element element = XMLUtil.parseQuietlyToDocument(inputStream).getRootElement();
+		return createTagDefinitionsElement(element);
+	}
+
 	public static AbstractTElement createElement(File file) {
 		Element element = XMLUtil.parseQuietlyToDocument(file).getRootElement();
+		return createTagDefinitionsElement(element);
+	}
+
+	private static AbstractTElement createTagDefinitionsElement(Element element) {
 		AbstractTElement tagDefinitionsElement = AbstractTElement.createElement(element);
 		return tagDefinitionsElement;
 	}

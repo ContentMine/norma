@@ -246,5 +246,44 @@ public class PlosoneTaggerTest {
 		
 //		http://www.plosone.org/article/fetchObjectAttachment.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0111303&representation=XML			
 	}
+	
+	@Test
+	public void testIOCommands() throws Exception {
+
+		File outputFile = new File("target/plosone/0113556.html");
+		outputFile.getParentFile().mkdirs();
+		String[] args = {
+				"-i", Fixtures.F0113556_HTML.toString(),
+				"-o", outputFile.toString(),
+			};
+			Norma.main(args);
+	}
+
+	@Test
+	public void testTaggingCommands() throws Exception {
+
+		File outputFile = new File("target/plosone/0113556.tagged.html");
+		outputFile.getParentFile().mkdirs();
+		String[] args = {
+				"-i", Fixtures.F0113556_HTML.toString(),
+				"-p", // gives list of pubstyles to sysout
+				"-o", outputFile.toString(),
+			};
+			Norma.main(args);
+	}
+
+	@Test
+	public void testIOAndTaggingCommands() throws Exception {
+
+		File outputFile = new File("target/plosone/0113556.tagged.html");
+		outputFile.getParentFile().mkdirs();
+		String[] args = {
+				"-i", Fixtures.F0113556_HTML.toString(),
+				"-p", "plosone",
+				"-o", outputFile.toString(),
+			};
+			Norma.main(args);
+	}
+
 
 }

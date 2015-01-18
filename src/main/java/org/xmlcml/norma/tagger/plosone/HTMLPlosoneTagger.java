@@ -10,11 +10,11 @@ public class HTMLPlosoneTagger extends PubstyleTagger {
 	private final static Logger LOG = Logger.getLogger(HTMLPlosoneTagger.class);
 
 	public final static String PLOSONE = "plosone";
-	private static final File TAGGER_PLOSONE_DIR = new File(TAGGER_DIR, PLOSONE);
-	public static final File PLOSONE_TAGDEFINITIONS_FILE = new File(TAGGER_PLOSONE_DIR, "htmlTagger.xml");
+	private static final String PLOSONE_TAGGER_DIR_RESOURCE = TAGGER_DIR_RESOURCE+"/"+PLOSONE;
+	public static final String PLOSONE_TAGGER_RESOURCE = PLOSONE_TAGGER_DIR_RESOURCE+"/"+"htmlTagger.xml";
 
 	public HTMLPlosoneTagger() {
-		super(PLOSONE_TAGDEFINITIONS_FILE);
+		super(PLOSONE_TAGGER_RESOURCE);
 	}
 
 	public static String getTaggerName() {

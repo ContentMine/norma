@@ -1,5 +1,8 @@
 package org.xmlcml.norma.pubstyle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.norma.tagger.plosone.HTMLPlosoneTagger;
@@ -21,5 +24,9 @@ public class DefaultPubstyleReader extends PubstyleReader {
 		this.addTagger(InputFormat.XML, new XMLPlosoneTagger());
 	}
 
+	@Override
+	protected List<String> getExtraneousXPaths() {
+		return new ArrayList<String>();
+	}
 
 }

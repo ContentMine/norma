@@ -72,7 +72,7 @@ public class Norma {
 			InputWrapper inputWrapper;
 			File file = new File(inputName);
 			if (file.exists()) {
-				List<String> extensions = argProcessor.extensions;
+				List<String> extensions = argProcessor.getExtensions();
 				boolean recursive = argProcessor.isRecursive();
 				addInputWrappersForFiles(inputName, file, extensions, recursive);
 			} else{

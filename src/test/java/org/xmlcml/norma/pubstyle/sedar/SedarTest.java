@@ -3,13 +3,15 @@ package org.xmlcml.norma.pubstyle.sedar;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import junit.framework.Assert;
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.objects.SVGBoxChart;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.SVGBoxChart;
 import org.xmlcml.norma.Fixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
@@ -33,6 +35,7 @@ public class SedarTest {
 	@Test
 	public void testExtractOrgChart() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg"));
+		Assert.assertNotNull(rawChart);
 		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		
