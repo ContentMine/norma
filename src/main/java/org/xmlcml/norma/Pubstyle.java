@@ -1,16 +1,27 @@
 package org.xmlcml.norma;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import nu.xom.Element;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.pubstyle.DefaultPubstyleReader;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.norma.pubstyle.bmc.BmcReader;
 import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
 import org.xmlcml.norma.pubstyle.plosone.PlosoneReader;
 import org.xmlcml.norma.tagger.PubstyleTagger;
+import org.xmlcml.xml.XMLUtil;
 
 /** format and metadata of scholarly Journal.
  * 
@@ -55,7 +66,7 @@ public class Pubstyle {
 		PUBSTYLES.add(Pubstyle.PLOSONE);
 	};
 	
-	private Pubstyle() {
+	protected Pubstyle() {
 	}
 	
 	public Pubstyle(String name, String taggerLocation, PubstyleReader reader) {
@@ -79,7 +90,16 @@ public class Pubstyle {
 		return null;
 	}
 
-	public PubstyleReader getPubstyleReader() {
+	public PubstyleReader getPubstyleReaderOrCreateDefault() {
+		if (pubstyleReader == null) {
+			pubstyleReader = new DefaultPubstyleReader();
+		}
+		return pubstyleReader;
+	}
+
+	public PubstyleReader getPubstyleReaderOrCreateDefault(HtmlElement htmlElement) {
+		getPubstyleReaderOrCreateDefault();
+		pubstyleReader.setHtmlElement(htmlElement);
 		return pubstyleReader;
 	}
 
@@ -124,11 +144,30 @@ public class Pubstyle {
 		return name;
 	}
 
+	public HtmlElement readRawHtmlAndCreateWellFormed(InputFormat inputFormat, String inputName) throws Exception {
+		LOG.trace("using HTML");
+		readInput(inputFormat, inputName);
+		
+		// may need to go to this at some stage
+	//		HtmlUnitWrapper htmlUnitWrapper = new HtmlUnitWrapper();
+	//		HtmlElement htmlElement = htmlUnitWrapper.readAndCreateElement(url);
+	
+		pubstyleReader.getOrCreateXHtmlFromRawHtml();
+		HtmlElement htmlElement = pubstyleReader.getHtmlElement();
+		return htmlElement;
+	}
+
+	private void readInput(InputFormat inputFormat, String inputName) throws Exception {
+		pubstyleReader = getPubstyleReaderOrCreateDefault();
+		pubstyleReader.setFormat(inputFormat);
+		pubstyleReader.readFile(new File(inputName));
+	}
+
 	public static void help() {
 		LOG.error("Normally give at least one pubstyle (currently only one). Current options are:");
 		for (Pubstyle pubstyle : Pubstyle.getPubstyles()) {
 			System.err.println("> "+pubstyle.toString());
 		}
 	}
-	
+
 }

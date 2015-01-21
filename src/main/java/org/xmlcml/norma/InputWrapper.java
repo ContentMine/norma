@@ -7,13 +7,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import net.sf.saxon.style.XSLStylesheet;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
-import org.xmlcml.norma.pubstyle.DefaultPubstyleReader;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
+import org.xmlcml.norma.util.SHTMLTransformer;
 import org.xmlcml.xml.XMLUtil;
 
 /** wraps the input, optionally determing its type.
@@ -24,19 +26,19 @@ import org.xmlcml.xml.XMLUtil;
 public class InputWrapper {
 
 	
-	private static final Logger LOG = Logger.getLogger(InputWrapper.class);
+	static final Logger LOG = Logger.getLogger(InputWrapper.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private String inputName;
+	String inputName;
 	private URL url;
 	private File file;
 	private String content;
 	private Pubstyle pubstyle;
 	public HtmlElement htmlElement;
 	private InputFormat inputFormat;
-	private PubstyleReader pubstyleReader;
+	PubstyleReader pubstyleReader;
 
 	public InputWrapper(File file, String inputName) {
 		this.file = file;
@@ -57,18 +59,17 @@ public class InputWrapper {
 		return inputWrapperList;
 	}
 
-	public HtmlElement transform(Pubstyle style) throws Exception {
-		this.pubstyle = style;
+	public HtmlElement transform(NormaArgProcessor argProcessor) throws Exception {
+		this.pubstyle = argProcessor.getPubstyle();
 		findInputFormat();
-		LOG.debug("html "+htmlElement);
-		normalizeToXHTML(pubstyle); // creates htmlElement
-		LOG.debug(">> "+htmlElement.toXML());
+		normalizeToXHTML(argProcessor); // creates htmlElement
+//		LOG.debug(">> "+htmlElement.toXML());
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/norma.html"), 1);
 		if (pubstyle == null) {
 			this.pubstyle = Pubstyle.deducePubstyle(htmlElement);
 		}
 		if (pubstyle != null) {
-			pubstyle.applyTagger(inputFormat, htmlElement);
+			pubstyle.applyTagger(getInputFormat(), htmlElement);
 		} else {
 			LOG.debug("No pubstyle/s declared or deduced");
 		}
@@ -80,43 +81,36 @@ public class InputWrapper {
 	 * 
 	 * @param pubstyle
 	 */
-	private void normalizeToXHTML(Pubstyle pubstyle) throws Exception {
-		if (InputFormat.PDF.equals(inputFormat)) {
+	private void normalizeToXHTML(NormaArgProcessor argProcessor) throws Exception {
+		ensurePubstyle();
+		if (InputFormat.PDF.equals(getInputFormat())) {
 			try {
 				PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 				htmlElement = converter.readAndConvertToXHTML(new File(inputName));
 			} catch (Exception e) {
 				throw new RuntimeException("cannot convert PDF: "+inputName, e);
 			}
-		} else if (InputFormat.SVG.equals(inputFormat)) {
+		} else if (InputFormat.SVG.equals(getInputFormat())) {
 			LOG.error("cannot turn SVG into XHTML yet");
-		} else if (InputFormat.XML.equals(inputFormat)) {
-			LOG.debug("using XML; not yet implemented");
-		} else if (InputFormat.HTML.equals(inputFormat)) {
-			readRawHTML(pubstyle);
-		} else if (InputFormat.XHTML.equals(inputFormat)) {
+		} else if (InputFormat.XML.equals(getInputFormat())) {
+			htmlElement = SHTMLTransformer.transform(new File(inputName), new File(argProcessor.getStylesheet()), new File(argProcessor.getOutput()));
+		} else if (InputFormat.HTML.equals(getInputFormat())) {
+			htmlElement = pubstyle.readRawHtmlAndCreateWellFormed(inputFormat, inputName);
+		} else if (InputFormat.XHTML.equals(getInputFormat())) {
 			LOG.debug("using XHTML; not yet  implemented");
 		} else {
-			LOG.error("no processor found to convert "+inputName+" ("+inputFormat+") into XHTML yet");
+			LOG.error("no processor found to convert "+inputName+" ("+getInputFormat()+") into XHTML yet");
 		}
 	}
 
-	private void readRawHTML(Pubstyle pubstyle) throws Exception {
-		LOG.trace("using HTML");
-		pubstyleReader = (pubstyle == null) ? new DefaultPubstyleReader() : pubstyle.getPubstyleReader();
-		pubstyleReader.setFormat(inputFormat);
-		pubstyleReader.readFile(new File(inputName));
-		// may need to go to this at some stage
-//		HtmlUnitWrapper htmlUnitWrapper = new HtmlUnitWrapper();
-//		HtmlElement htmlElement = htmlUnitWrapper.readAndCreateElement(url);
-
-		pubstyleReader.getOrCreateXHtmlFromRawHtml();
-		pubstyleReader.normalize();
-		htmlElement = pubstyleReader.getHtmlElement();
+	private void ensurePubstyle() {
+		if (pubstyle == null) {
+			pubstyle = new DefaultPubstyle();
+		}
 	}
 
 	private void findInputFormat() {
-		inputFormat = InputFormat.getInputFormat(inputName);
+		setInputFormat(InputFormat.getInputFormat(inputName));
 	}
 	
 	public String toString() {
@@ -124,5 +118,13 @@ public class InputWrapper {
 		if (file != null) sb.append(file);
 		if (url != null) sb.append(url);
 		return sb.toString();
+	}
+
+	public InputFormat getInputFormat() {
+		return inputFormat;
+	}
+
+	public void setInputFormat(InputFormat inputFormat) {
+		this.inputFormat = inputFormat;
 	}
 }

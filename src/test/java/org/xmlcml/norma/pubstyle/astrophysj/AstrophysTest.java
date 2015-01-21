@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
 
+import junit.framework.Assert;
+
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -36,8 +38,12 @@ public class AstrophysTest {
 //			System.out.print(text.getValue()+" ");
 //		}
 		List<SVGPolyline> lineList = plot.getSVGPolylineList();
+		int[] sizes = {294, 178, 178};
+		Assert.assertEquals(sizes.length,  lineList.size());
+		int i = 0;
 		for (SVGPolyline line : lineList) {
-			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
+			Assert.assertEquals(sizes[i++], line.getReal2Array().size());
+//			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
 		}
 	}
 }

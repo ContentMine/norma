@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +14,7 @@ import nu.xom.Element;
 import nu.xom.Node;
 import nu.xom.Nodes;
 
+import org.apache.commons.lang3.tuple.Pair;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.InputFormat;
@@ -30,6 +32,7 @@ public abstract class PubstyleReader {
 	private HtmlElement htmlElement;
 	private InputFormat inputFormat;
 	private HashMap<InputFormat, PubstyleTagger> taggerByFormatMap;
+	private List<Pair<String, String>> tagReplacementList;
 	
 	public static List<String> EXTRANEOUS_TAGS = Arrays.asList(new String[] {
 			"button",
@@ -94,13 +97,7 @@ public abstract class PubstyleReader {
 		if (rawBytes != null) {
 			HtmlFactory htmlFactory = new HtmlFactory();
 			ByteArrayInputStream bais = new ByteArrayInputStream(rawBytes);
-			// see if it's well-formed to start with... // poor strategy
-//			nu.xom.Document document = XMLUtil.parseQuietlyToDocument(bais);
-//			if (document != null) {
-//				htmlElement = htmlFactory.parse(document.getRootElement());
-//			} else {
-				htmlElement = htmlFactory.parse(bais);
-//			}
+			htmlElement = htmlFactory.parse(bais);
 		}
 		return htmlElement;
 	}
@@ -184,13 +181,15 @@ public abstract class PubstyleReader {
 
 	/** normalizes tags and known problems.
 	 * 
-	 * @param htmlElement
 	 */
-	public void normalize() {
-		removeExtraneousHtmlTagsAndXPaths();
-		normalizeTagNames();
-		normalizeDivStructure();
-		normalizeCharacters();
+	public HtmlElement normalize() {
+		if (htmlElement != null) {
+			removeExtraneousHtmlTagsAndXPaths();
+			normalizeTagNames();
+			normalizeDivStructure();
+			normalizeCharacters();
+		}
+		return htmlElement;
 	}
 
 
@@ -198,8 +197,21 @@ public abstract class PubstyleReader {
 	 * 
 	 */
 	protected void normalizeTagNames() {
-		changeTagName("em", "i");
-		changeTagName("strong", "b");
+		ensureTagNameReplacementList();
+		for (Pair<String, String> tagReplacement : tagReplacementList) {
+			changeTagName(tagReplacement.getLeft(), tagReplacement.getRight());
+		}
+		
+//		changeTagName("em", "i");
+//		changeTagName("strong", "b");
+	}
+
+	private void ensureTagNameReplacementList() {
+		if (tagReplacementList == null) {
+			tagReplacementList = new ArrayList<Pair<String, String>>();
+		}
+		// TODO Auto-generated method stub
+		
 	}
 
 	private void changeTagName(String tag0, String tag1) {
@@ -242,6 +254,10 @@ public abstract class PubstyleReader {
 
 	public HtmlElement getHtmlElement() {
 		return htmlElement;
+	}
+
+	public void setHtmlElement(HtmlElement htmlElement) {
+		this.htmlElement = htmlElement;
 	}
 
 }

@@ -9,6 +9,7 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.euclid.Real2;
@@ -19,7 +20,10 @@ import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.objects.SVGBoxChart;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlFactory;
+import org.xmlcml.html.util.HtmlUtil;
 import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
 
@@ -139,4 +143,27 @@ public class BMCTest {
 		}
 		
 	}
+	
+	@Test 
+	public void testReadXML() throws Exception {
+		File outputFile = new File("target/bmc/15_1_511.html");
+		String[] args = {
+				"-i", new File(Fixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_15_1_511/fulltext.nodtd.xml").toString(),
+				"-p", "bmc",
+				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/bmc/toHtml.xsl",
+				"-o", outputFile.toString(),
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+		
+		Assert.assertTrue(outputFile.exists());
+		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
+		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");
+		Assert.assertEquals("span elements "+spanElements.size(), 1054, spanElements.size()); 
+		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+		Assert.assertEquals("p elements "+pElements.size(), 147, pElements.size()); 
+	}
+	
 }

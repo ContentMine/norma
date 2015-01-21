@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.xml.XMLUtil;
 
 public class Norma {
@@ -117,15 +117,25 @@ public class Norma {
 
 	private void normalizeInputs() {
 		this.pubstyle = argProcessor.getPubstyle();
+		this.ensurePubstyle();
 		htmlElementOutputList = new ArrayList<HtmlElement>();
 		for (InputWrapper inputWrapper : inputWrapperList) {
 			try {
-				HtmlElement element = inputWrapper.transform(pubstyle);
-				htmlElementOutputList.add(element);
+				HtmlElement htmlElement = inputWrapper.transform(argProcessor);
+				XMLUtil.debug(htmlElement, new FileOutputStream("target/transformedHtml"), 1);
+				PubstyleReader pubstyleReader = pubstyle.getPubstyleReaderOrCreateDefault(htmlElement);
+				pubstyleReader.normalize();
+				htmlElementOutputList.add(pubstyleReader.getHtmlElement());
 			} catch (Exception e) {
 				e.printStackTrace();
 				LOG.error("Failed to read/process : "+inputWrapper+ " ("+e.getMessage()+")");
 			}
+		}
+	}
+
+	private void ensurePubstyle() {
+		if (pubstyle == null) {
+			pubstyle = new DefaultPubstyle();
 		}
 	}
 

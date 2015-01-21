@@ -192,7 +192,7 @@ public class CatalogEntryTest {
 	@Test
 	public void testDeserializeCatalogEntry() {
 	    JsonParser parser = new JsonParser();
-		LOG.debug("\n"+CATALOG_ENTRY_JSON.substring(0,200));
+		LOG.trace("\n"+CATALOG_ENTRY_JSON.substring(0,200));
 	    JsonElement jsonElement = parser.parse(CATALOG_ENTRY_JSON);
 	    CatalogEntry catalogEntry = CatalogEntry.createCatalogEntry(jsonElement.getAsJsonObject());
 	    Assert.assertEquals("took", 2, catalogEntry.getTook().intValue());
