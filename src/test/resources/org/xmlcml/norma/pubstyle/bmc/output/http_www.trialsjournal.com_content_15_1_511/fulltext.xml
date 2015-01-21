@@ -1,0 +1,524 @@
+<?xml version='1.0'?>
+<!DOCTYPE art SYSTEM 'http://www.biomedcentral.com/xml/article.dtd'>
+<art>
+	<ui>1745-6215-15-511</ui>
+	<ji>1745-6215</ji>
+	<fm>
+		<dochead>Study protocol</dochead>
+		<bibl>
+			<title>
+				<p>A core outcome set for clinical trials on non-specific low back pain: study protocol for the development of a core domain set</p>
+			</title>
+			<aug>
+				<au id="A1" ca="yes"><snm>Chiarotto</snm><fnm>Alessandro</fnm><insr iid="I1"/><email>a.chiarotto@vu.nl</email></au>
+				<au id="A2"><snm>Terwee</snm><mi>B</mi><fnm>Caroline</fnm><insr iid="I2"/><email>cb.terwee@vumc.nl</email></au>
+				<au id="A3"><snm>Deyo</snm><mi>A</mi><fnm>Richard</fnm><insr iid="I3"/><email>deyor@ohsu.edu</email></au>
+				<au id="A4"><snm>Boers</snm><fnm>Maarten</fnm><insr iid="I2"/><email>m.boers@vumc.nl</email></au>
+				<au id="A5"><snm>Lin</snm><mnm>Christine</mnm><fnm>Chung-Wei</fnm><insr iid="I4"/><email>clin@georgeinstitute.org.au</email></au>
+				<au id="A6"><snm>Buchbinder</snm><fnm>Rachelle</fnm><insr iid="I5"/><email>rachelle.buchbinder@monash.edu</email></au>
+				<au id="A7"><snm>Corbin</snm><mi>P</mi><fnm>Terry</fnm><insr iid="I6"/><email>terry@terrypcorbin.com</email></au>
+				<au id="A8"><snm>Costa</snm><mi>OP</mi><fnm>Leonardo</fnm><insr iid="I7"/><email>leonardo.costa@unicid.edu.br</email></au>
+				<au id="A9"><snm>Foster</snm><mi>E</mi><fnm>Nadine</fnm><insr iid="I8"/><email>n.foster@keele.ac.uk</email></au>
+				<au id="A10"><snm>Grotle</snm><fnm>Margreth</fnm><insr iid="I9"/><email>margreth.grotle@medisin.uio.no</email></au>
+				<au id="A11"><snm>Koes</snm><mi>W</mi><fnm>Bart</fnm><insr iid="I10"/><email>b.koes@erasmusmc.nl</email></au>
+				<au id="A12"><snm>Kovacs</snm><mi>M</mi><fnm>Francisco</fnm><insr iid="I11"/><email>fmkovacs@kovacs.org</email></au>
+				<au id="A13"><snm>Maher</snm><mi>G</mi><fnm>Chris</fnm><insr iid="I4"/><email>cmaher@georgeinstitute.org.au</email></au>
+				<au id="A14"><snm>Pearson</snm><mi>M</mi><fnm>Adam</fnm><insr iid="I12"/><email>Adam.M.Pearson@hitchcock.org</email></au>
+				<au id="A15"><snm>Peul</snm><mi>C</mi><fnm>Wilco</fnm><insr iid="I13"/><email>W.C.Peul@lumc.nl</email></au>
+				<au id="A16"><snm>Schoene</snm><mi>L</mi><fnm>Mark</fnm><insr iid="I14"/><email>mlschoene@aol.com</email></au>
+				<au id="A17"><snm>Turk</snm><mi>C</mi><fnm>Dennis</fnm><insr iid="I15"/><email>turkdc@u.washington.edu</email></au>
+				<au id="A18"><snm>van Tulder</snm><mi>W</mi><fnm>Maurits</fnm><insr iid="I1"/><email>maurits.van.tulder@vu.nl</email></au>
+				<au id="A19"><snm>Ostelo</snm><mi>W</mi><fnm>Raymond</fnm><insr iid="I1"/><insr iid="I2"/><email>r.ostelo@vu.nl</email></au>
+			</aug>
+			<insg>
+				<ins id="I1"><p>Department of Health Sciences, Faculty of Earth &amp; Life Sciences, EMGO+ Institute for Health and Care Research, VU University, de Boelelaan 1085, 1081HV Amsterdam, The Netherlands</p></ins>
+				<ins id="I2"><p>Department of Epidemiology &amp; Biostatistics, EMGO+ Institute for Health and Care Research, VU University Medical Center, van der Boechorstraat 7, 1081 BT Amsterdam, The Netherlands</p></ins>
+				<ins id="I3"><p>Departments of Family Medicine, Internal Medicine, Public Health and Preventive Medicine, Oregon Institute of Occupational Health Sciences, Oregon Health and Science University, 3181 SW Sam Jackson Park Road, Portland, OR 97239, USA</p></ins>
+				<ins id="I4"><p>The George Institute for Global Health, Sydney Medical School, The University of Sydney, PO Box M201, Missenden Rd, NSW 2050, Australia</p></ins>
+				<ins id="I5"><p>Monash Department of Clinical Epidemiology, Cabrini Institute and Department of Epidemiology and Preventive Medicine, School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia - Cabrini Medical Centre, 183 Wattletree Rd, Melbourne, VIC, Australia</p></ins>
+				<ins id="I6"><p>Consumer Representative, Cochrane Collaboration Back Review Group, Maple Grove, MN 55311, USA</p></ins>
+				<ins id="I7"><p>Masters and Doctoral Programs in Physical Therapy, Universidade Cidade de Sao Paulo, Rua Ces&#225;rio Galeno 448, Sao Paulo, Brazil</p></ins>
+				<ins id="I8"><p>Arthritis Research UK Primary Care Centre, Institute of Primary Care and Health Sciences, Keele University, Keele, Staffordshire ST5 5BG, UK</p></ins>
+				<ins id="I9"><p>Oslo and Akershus University College of Applied Sciences, Faculty of Health Sciences and FORMI, Oslo University Hospital, Ullevaal N-0407, Oslo, Norway</p></ins>
+				<ins id="I10"><p>Department of General Practice, Erasmus MC, University Medical Center, PO Box 20403000CA Rotterdam, The Netherlands</p></ins>
+				<ins id="I11"><p>Spanish Back Pain Research Network (REIDE), Fundacion Kovacs, Paseo de Mallorca 36, 07012 Palma de Mallorca, Spain</p></ins>
+				<ins id="I12"><p>Department of Orthopaedic Surgery, Dartmouth-Hitchcock Medical Center, One Medical Center Drive, Lebanon NH03756, USA</p></ins>
+				<ins id="I13"><p>Department of Neurosurgery, Leiden University Medical Center, Postzone J11-R, Postbus 9600, 2300RC Leiden, The Netherlands</p></ins>
+				<ins id="I14"><p>Consumer Representative, Cochrane Collaboration Back Review Group, Newbury, MA 01951, USA</p></ins>
+				<ins id="I15"><p>Department of Anesthesiology &amp; Pain Medicine and Center for Pain Research on Impact, Measurement &amp; Effectiveness, University of Washington, 1949 NE Pacific Street, Seattle, WA 98195-6540, USA</p></ins>
+			</insg>
+			<source>Trials</source>
+			<issn>1745-6215</issn>
+			<pubdate>2014</pubdate>
+			<volume>15</volume>
+			<issue>1</issue>
+			<fpage>511</fpage>
+			<url>http://www.trialsjournal.com/content/15/1/511</url>
+			<xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-15-511</pubid><pubid idtype="pmpid">25540987</pubid></pubidlist></xrefbib>
+		</bibl>
+		<history><rec><date><day>13</day><month>8</month><year>2014</year></date></rec><acc><date><day>11</day><month>12</month><year>2014</year></date></acc><pub><date><day>26</day><month>12</month><year>2014</year></date></pub></history>
+		<cpyrt><year>2014</year><collab>Chiarotto et al.; licensee BioMed Central.</collab><note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/4.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<url>http://creativecommons.org/publicdomain/zero/1.0/</url>) applies to the data made available in this article, unless otherwise stated.</note></cpyrt>
+		<kwdg>
+			<kwd>Non-specific low back pain</kwd>
+			<kwd>Core outcome set</kwd>
+			<kwd>Domains</kwd>
+			<kwd>Clinical trials</kwd>
+			<kwd>Efficacy</kwd>
+			<kwd>Effectiveness</kwd>
+			<kwd>Health interventions</kwd>
+		</kwdg>
+		<abs>
+			<sec>
+				<st>
+					<p>Abstract</p>
+				</st>
+				<sec>
+					<st>
+						<p>Background</p>
+					</st><p>Low back pain (LBP) is one of the most disabling and costly disorders affecting modern society, and approximately 90% of patients are labelled as having non-specific LBP (NSLBP). Several interventions for patients with NSLBP have been assessed in clinical trials, but heterogeneous reporting of outcomes in these trials has hindered comparison of results and performance of meta-analyses. Moreover, there is a risk of selective outcome reporting bias. To address these issues, the development of a core outcome set (COS) that should be measured in all clinical trials for a specific health condition has been recommended. A standardized set of outcomes for LBP was proposed in 1998, however, with evolution in COS development methodology, new instruments, interventions, and understanding of measurement properties, it is appropriate to update that proposal. This protocol describes the methods used in the initial step in developing a COS for NSLBP, namely, establishing a core domain set that should be measured in all clinical trials.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Methods/Design</p>
+					</st><p>An International Steering Committee including researchers, clinicians, and patient representatives from four continents was formed to guide the development of this COS. The approach of initiatives like Core Outcome Measures in Effectiveness Trials (COMET) and Outcome Measures in Rheumatology (OMERACT) was followed. Participants were invited to participate in a Delphi study aimed at generating a consensus-based core domain set for NSLBP. A list of potential core domains was drafted and presented to the Delphi participants who were asked to judge which domains were core. Participant suggestions about overlap, aggregation, or addition of potential core domains were addressed during the study. The patients&#8217; responses were isolated to assess whether there was substantial disagreement with the rest of the Delphi panel. <it>A priori</it> thresholds for consensus were established before each Delphi round. All participants&#8217; responses were analysed from a quantitative and qualitative perspective to ascertain that no substantial discrepancies between the two approaches emerged.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Discussion</p>
+					</st><p>We present the initial step in developing a COS for NSLBP. The next step will be to determine which measurement instruments adequately cover the domains.</p>
+				</sec>
+			</sec>
+		</abs>
+	</fm>
+	<bdy>
+		<sec>
+			<st>
+				<p>Background</p>
+			</st><p>Low back pain (LBP) is the leading global contributor to years lived with disability (YLDs) and the sixth global contributor to disability-adjusted life years (DALYs) <abbrgrp>
+					<abbr bid="B1">1</abbr>
+					<abbr bid="B2">2</abbr>
+				</abbrgrp>. The costs associated with LBP are high and they represent a substantial burden to society <abbrgrp>
+					<abbr bid="B3">3</abbr>
+				</abbrgrp>. Approximately 90% of patients with LBP are labelled as having non-specific LBP (NSLBP), a diagnosis based on exclusion of a specific cause or pathology <abbrgrp>
+					<abbr bid="B4">4</abbr>
+				</abbrgrp>. A wide range of health interventions for patients with NSLBP has been evaluated in clinical trials <abbrgrp>
+					<abbr bid="B5">5</abbr>
+				</abbrgrp>. The results of clinical trials addressing similar interventions are often summarized in systematic reviews <abbrgrp>
+					<abbr bid="B6">6</abbr>
+				</abbrgrp>, but authors of these reviews have reported that outcomes are inconsistently measured and reported across trials <abbrgrp>
+					<abbr bid="B7">7</abbr>
+					<abbr bid="B8">8</abbr>
+				</abbrgrp>. This limits ability to compare findings between studies or pool data for formal meta-analyses. Furthermore, inconsistency can be the result of selective outcome reporting bias (selective reporting of favourable outcomes) which can strongly affect the conclusions of systematic reviews <abbrgrp>
+					<abbr bid="B9">9</abbr>
+				</abbrgrp>.</p><p>To reduce heterogeneity in outcomes measured across clinical trials, development of core outcome sets (COSs) in specific health conditions has been advocated <abbrgrp>
+					<abbr bid="B10">10</abbr>
+				</abbrgrp>. A COS is an agreed minimum set of outcomes that should be measured and reported in all clinical trials for a particular health condition <abbrgrp>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp>. A COS might increase reporting of important outcomes, reduce the risk of selective outcome reporting, and increase the feasibility of conducting meta-analyses <abbrgrp>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp>. The existence of a COS also ensures that authors of clinical trials report on outcomes that are relevant for all stakeholders <abbrgrp>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp>. Editors of Cochrane Review Groups have agreed that the availability of COSs would enhance reliability of the reviews <abbrgrp>
+					<abbr bid="B12">12</abbr>
+				</abbrgrp>.</p><p>In 1998, following an expert panel discussion held at the second international LBP Forum (The Hague, Netherlands), a proposal for a standardized set of outcomes in LBP clinical research was published <abbrgrp>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp>. Five domains were proposed for measurement (pain symptoms, back-related function, generic wellbeing, disability social role, and satisfaction with care) and specific measurement instruments were recommended for each domain <abbrgrp>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp>. This proposal has been highly cited and widely adopted over the years. However, a workshop discussion among LBP researchers during the 2012 twelfth LBP Forum (Odense, Denmark) underlined the wish to update the existing recommendations considering recent advancements in the fields of COS development and clinimetrics <abbrgrp>
+					<abbr bid="B11">11</abbr>
+					<abbr bid="B14">14</abbr>
+				</abbrgrp>. There were two primary reasons: to explore if relevant domains were missing, and to critically appraise the recommended measurement instruments in light of a large body of newer data on measurement properties of instruments for LBP <abbrgrp>
+					<abbr bid="B15">15</abbr>
+				</abbrgrp>.</p><p>The aim of this study is to update the recommended domains for LBP clinical research <abbrgrp>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp> through the development of a COS. The Core Outcome Measures in Effectiveness Trials (COMET) <abbrgrp>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp> and the Outcome Measures in Rheumatology (OMERACT) <abbrgrp>
+					<abbr bid="B16">16</abbr>
+				</abbrgrp> initiatives provide methodological guidance, involving a stepwise approach, to development of a COS. The first step is to determine which domains should be measured in all clinical trials (&#8216;what&#8217; to measure, the &#8216;core domain set&#8217;), and the second is to determine the instruments that should be used to assess the domains (&#8216;how&#8217; to measure, the &#8216;core outcome measurement set&#8217;) <abbrgrp>
+					<abbr bid="B11">11</abbr>
+					<abbr bid="B17">17</abbr>
+				</abbrgrp>. This protocol presents the methods that will be adopted to reach a consensus on the core domain set.</p><p>Our goals are to present a detailed context for reporting in the results manuscript, and to provide a resource for COS developers of any health condition. Despite encouragement of the COMET initiative to make COS protocols publicly available, few have been published <abbrgrp>
+					<abbr bid="B18">18</abbr>
+					<abbr bid="B19">19</abbr>
+				</abbrgrp>, providing the motivation for this paper.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Methods/Design</p>
+			</st><p>An International Steering Committee was formed to initiate and support the development of this COS. Members of the Steering Committee were chosen to represent various disciplines, geographical areas, and types of expertise. As a result, the Steering Committee includes 18 members among whom: 14 are researchers from different disciplines with ample experience in LBP clinical research (RD, CL, RB, LC, NF, MG, BK, FK, CM, AP, WP, DT, MvT, RO), three are experts in consensus-based research procedures (CT, MB, DT), six are authors of several publications in the field of clinimetrics (CT, RB, LC, FK, MG, RO), six are healthcare providers involved in the management of patients with LBP (MB, RB, LC, FK, AP, WP), and two are patient representatives (TC, MS). The members represent Europe, Australia, and North and South America.</p><p>The project team consisted of one investigator (AC), appointed to coordinate the day-to-day management of the project, and three members of the Steering Committee working at the same institution (CT, MB, RO). During face-to-face meetings, the project team established the methodology and addressed key aspects. The other members of the Steering Committee were contacted by email regarding critical decisions; when more than half of the members agreed on a decision, this was followed unless substantial and convincing arguments were raised by one or more members in disagreement. Definitions of key concepts and terms used in this study protocol follow those recently outlined by the OMERACT initiative <abbrgrp>
+					<abbr bid="B17">17</abbr>
+				</abbrgrp> and are presented in Table&#160;<tblr tid="T1">1</tblr>.</p>
+			<table id="T1">
+				<title>
+					<p>Table 1</p>
+				</title>
+				<caption>
+					<p>
+						<b>Definitions of the terms used in this study protocol (Adapted from Boers </b><b>
+							<it>et al</it>
+						</b><b>.</b>
+						<abbrgrp>
+							<abbr bid="B17">17</abbr>
+						</abbrgrp><b>)</b>
+					</p>
+				</caption>
+				<tgroup align="left" cols="2">
+					<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+					<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+					<thead valign="top">
+						<row rowsep="1">
+							<entry colname="c1">
+								<p>
+									<b>Concept</b>
+								</p>
+							</entry>
+							<entry colname="c2">
+								<p>
+									<b>Definition</b>
+								</p>
+							</entry>
+						</row>
+					</thead>
+					<tbody valign="top">
+						<row>
+							<entry colname="c1">
+								<p>Health Condition</p>
+							</entry>
+							<entry colname="c2">
+								<p>A situation of impaired health.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Health Intervention</p>
+							</entry>
+							<entry colname="c2">
+								<p>An activity performed by, for, with, or on behalf of a client(s) whose purpose is to improve individual or population health, to alter or diagnose the course of a health condition, or to improve functioning.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Core Area</p>
+							</entry>
+							<entry colname="c2">
+								<p>An aspect of health or a health condition that needs to be measured to appropriately assess the effects of a health intervention (core areas are broad concepts consisting of a number of more specific concepts called domains).</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Domain or Subdomain</p>
+							</entry>
+							<entry colname="c2">
+								<p>Component of core area: a concept to be measured, a further specification of an aspect of health, categorized within a core area.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Outcome</p>
+							</entry>
+							<entry colname="c2">
+								<p>Any identified result in a (sub)domain arising from exposure to a casual factor or a health intervention.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Measurement Instrument</p>
+							</entry>
+							<entry colname="c2">
+								<p>A tool to measure a quality or quantity of a variable, in this context a (sub)domain or a contextual factor.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Outcome Measurement Instrument</p>
+							</entry>
+							<entry colname="c2">
+								<p>A measurement instrument chosen to assess outcome(s).</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Core Domain Set</p>
+							</entry>
+							<entry colname="c2">
+								<p>For study of health interventions, the minimum set of domains and subdomains necessary to adequately cover all core areas (fully measure all relevant concepts of a specific health condition within a specified scope); it describes what to measure.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Core Outcome Measurement Set</p>
+							</entry>
+							<entry colname="c2">
+								<p>The minimum set of outcome measurement instruments that must be administered in each intervention study of a certain health condition within a specified setting to adequately cover a corresponding core domain set; it describes how to measure.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="c1">
+								<p>Scope</p>
+							</entry>
+							<entry colname="c2">
+								<p>The set of factors that describes the studies and circumstances to which the core outcome set will apply. This is determined by the study questions and includes the health condition(s), target population, interventions, and so forth.</p>
+							</entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="c1">
+								<p>Contextual Factor</p>
+							</entry>
+							<entry colname="c2">
+								<p>Variable that is not an outcome of the study, but needs to be recognized (and measured) to understand the study results. This includes potential confounders and effect modifiers.</p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<sec>
+				<st>
+					<p>Scope of this core outcome set</p>
+				</st><p>The Steering Committee recommended that this COS should apply to measuring efficacy or effectiveness of health interventions in clinical trials for patients with NSLBP, defined as &#8216;low back pain not attributable to a recognizable, known specific pathology (eg infection, tumour, fracture, axial spondyloarthritis)&#8217; <abbrgrp>
+						<abbr bid="B20">20</abbr>
+					</abbrgrp>. All interventions for NSLBP are targeted by this COS, regardless of type, setting, or mode of administration. In line with COMET definition <abbrgrp>
+						<abbr bid="B11">11</abbr>
+					</abbrgrp>, this does not imply that primary outcomes of a clinical trial should always be those of the COS or that outcome measures should be restricted to the domains of the COS. However, domains of this COS should be considered for inclusion in all clinical trials on NSLBP, besides the measurement of trial-specific domains. There is no intent that this COS should be considered as a requirement for regulatory approval of drugs or devices, or that an intervention should demonstrate benefits on all COS measures to be judged efficacious or effective.</p><p>Other goals of this COS are to provide a recommendation on reporting of adverse events (AEs) in clinical trials on NSLBP and to identify contextual factors (such as confounders and effect modifiers) that should be measured alongside core domains (Table&#160;<tblr tid="T1">1</tblr>). However, it is out of our scope to reach consensus on contextual factors that should be measured and reported in all clinical trials. For measurement and reporting of contextual factors, we refer to the prominent work of the National Institutes of Health (NIH) Task Force that recently published a report about minimum baseline measures for clinical studies on chronic LBP <abbrgrp>
+						<abbr bid="B21">21</abbr>
+					</abbrgrp>.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Identification of existing knowledge</p>
+				</st><p>The Steering Committee identified initiatives that could potentially overlap with this study at an early stage of this project. None of these initiatives had the same scope as this COS. In this subsection, we report where partial conceptual overlap between this COS and the other initiatives could lie:</p><p indent="1">1. The Initiative on Methods, Measurement, and Pain Assessment in Clinical Trials (IMMPACT) has developed a consensus-based set of outcome domains and measurement instruments for clinical trials on chronic pain <abbrgrp>
+						<abbr bid="B22">22</abbr>
+						<abbr bid="B23">23</abbr>
+					</abbrgrp>. IMMPACT leaves ample space for the definition of more specialized COSs for some specific subgroups of patients with pain, such as this COS which focuses only on patients with NSLBP.</p><p indent="1">2. A core set for LBP based on the International Classification of Functioning (ICF) was developed by linking the health issues associated with LBP to the categories of the ICF framework <abbrgrp>
+						<abbr bid="B24">24</abbr>
+					</abbrgrp>. These core sets are available for use in clinical studies or to guide assessment of patients with LBP, but they do not have a specific focus on the measurement of outcomes in clinical trials.</p><p indent="1">3. The recent NIH Task Force recommended baseline research standards for clinical studies on chronic LBP (CLBP) <abbrgrp>
+						<abbr bid="B21">21</abbr>
+					</abbrgrp>. These recommendations are proposed to describe, stratify, and compare reports on patients with chronic LBP, but they are not prescriptive for the reporting of core outcomes in clinical trials.</p><p indent="1">4. The International Consortium for Health Outcomes Measurement (ICHOM) has recently developed a standardized set of outcomes for LBP <abbrgrp>
+						<abbr bid="B25">25</abbr>
+					</abbrgrp>. The ICHOM initiative aims at targeting &#8216;all providers around the world&#8217; and all LBP disorders. This suggests a rather broad scope focused on the provision of healthcare, rather than a specific focus on core outcomes for all health interventions assessed in clinical trials for NSLBP.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Stakeholder involvement</p>
+				</st><p>Different stakeholders can be involved in the development of a COS: researchers, healthcare providers, patients, managers, government agencies, and industry representatives <abbrgrp>
+						<abbr bid="B11">11</abbr>
+					</abbrgrp>. The involvement of multiple stakeholders in the consensus process for a COS is strongly recommended by COS methodologists <abbrgrp>
+						<abbr bid="B11">11</abbr>
+						<abbr bid="B16">16</abbr>
+						<abbr bid="B26">26</abbr>
+					</abbrgrp>. For this COS, the Steering Committee decided to focus on four groups of stakeholders:</p><p indent="1">1. Healthcare researchers: these are professionals working in all fields of clinical research relevant for NSLBP (such as orthopaedics, physiotherapy, psychology, chiropractic, anaesthesiology, rheumatology, physical medicine, and rehabilitation), methodologists, or statisticians who currently work only as researchers. All researchers involved in this project should be authors of published scientific articles on clinical research for LBP.</p><p indent="1">2. Healthcare providers: these are professionals from different disciplines who have clinical experience in the management of patients with NSLBP.</p><p indent="1">3. Professionals who work both as healthcare researchers and providers: a separate category is made for these professionals because they might bring a perspective on core outcomes that may differ from that of people who perform only one of the two jobs.</p><p indent="1">4. Patients: this group is composed of people who have or have had NSLBP, and who sought healthcare for their NSLBP. Previous research has shown that it is limiting not to include patients in the development of a COS <abbrgrp>
+						<abbr bid="B16">16</abbr>
+					</abbrgrp>. Patients have the perspective of living with the health condition and this may substantially differ from those of researchers and providers.</p><p>The decision to focus on these groups of stakeholders was based on practical considerations related to the resources of time and money available for the project. Members of the Steering Committee represented all these stakeholder groups, and representatives of each were invited to participate in the Delphi study used to reach consensus on this core domain set.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>A conceptual framework</p>
+				</st><p>A comprehensive framework of health can be beneficial in developing a COS, favouring the content validity of the end product. A recent review identified five conceptual frameworks that could be relevant for COSs development <abbrgrp>
+						<abbr bid="B27">27</abbr>
+					</abbrgrp>. However, only the five Ds (discomfort, disability, drug toxicity, dollar cost, and death) and the ICF framework have been used to develop COSs in different health areas, and they cover somewhat different areas of outcome <abbrgrp>
+						<abbr bid="B27">27</abbr>
+					</abbrgrp>. The OMERACT initiative has developed a new framework that aims at including all key aspects of a health condition to ensure comprehensiveness of COSs <abbrgrp>
+						<abbr bid="B17">17</abbr>
+					</abbrgrp>.</p><p>The OMERACT Filter 2.0 framework was created to broaden the ICF framework and combine it with Wilson and Cleary&#8217;s model of health-related quality of life <abbrgrp>
+						<abbr bid="B28">28</abbr>
+					</abbrgrp>. The framework is subdivided into core areas (Table&#160;<tblr tid="T1">1</tblr>) that encompass the complete content of what is measurable in a clinical trial, including both patient-centred and intervention-specific information. It includes three core areas that describe the &#8216;impact of health conditions&#8217; (&#8216;death&#8217;, &#8216;life impact&#8217;, and &#8216;resource use and economic impact&#8217;) and one core area that describes &#8216;pathophysiological manifestations&#8217;. An explanation of the four core areas of the OMERACT framework is presented in Table&#160;<tblr tid="T2">2</tblr>. OMERACT recommends the inclusion of at least one domain from each core area in every COS <abbrgrp>
+						<abbr bid="B17">17</abbr>
+					</abbrgrp>. However, our Steering Committee decided that, initially, no requirements related to the core areas should be applied to the domains that may become part of this core domain set. Regarding &#8216;death&#8217;, it was noted that this is a mandatory reporting requirement for all clinical trials, but a rare event in NSLBP. Regarding &#8216;pathophysiological manifestations&#8217;, it was noted that they might be out of the scope of some clinical trials, given that NSLBP is defined by its lack of known pathophysiology. The Delphi study will be used to evaluate whether substantial and convincing arguments generate further discussion on this within the Steering Committee. The OMERACT Filter 2.0 framework was used by the Steering Committee to help the development of a list of potential core domains and for discussion during the Delphi study.</p>
+				<table id="T2">
+					<title>
+						<p>Table 2</p>
+					</title>
+					<caption>
+						<p>
+							<b>OMERACT Filter 2.0 framework which specify all aspects of a health condition that should be considered in clinical trials (Adapted from Boers </b><b>
+								<it>et al</it>
+							</b><b>.</b>
+							<abbrgrp>
+								<abbr bid="B17">17</abbr>
+							</abbrgrp><b>)</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="2">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Core Area</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>Specification</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>
+								<sup>a</sup>These core areas belong to the concept &#8216;impact of health conditions&#8217; which includes all aspects of health or a health condition that are important to the patient and society.</p><p>
+								<sup>b</sup>This core area belong to the concept &#8216;pathophysiological manifestations of health conditions&#8217;.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Death<sup>a</sup>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>This core area includes possible specifications of death, such as generic or disease-specific (all-cause versus disease-specific mortality), and intervention-specific (for example, death due to surgery).</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Life Impact<sup>a</sup>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>This core area can include domains of the ICF <abbrgrp>
+											<abbr bid="B35">35</abbr>
+										</abbrgrp> (such as activity and participation) and domains within the concept of health-related quality of life <abbrgrp>
+											<abbr bid="B28">28</abbr>
+										</abbrgrp> (such as functional status, general health perceptions, and overall quality of life).</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Resource Use/Economical Impact<sup>a</sup>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>This core area describes the economic impact of health conditions both on society and on the individual. In fact, the presence of a health condition and its treatment incur resource use.</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Pathophysiological Manifestations<sup>b</sup>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>This core area is to assess whether or not the effect of the intervention specifically targets the pathophysiology of the health condition. Pathophysiology can include psychosocial manifestations. Example domains are: ICF body function, reversible manifestations (including modifiable risk factors and actual manifestations of ill health), and irreversible manifestations (including unmodifiable risk factors and damage). This area can also encompass all biomarkers and surrogate outcomes.</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</sec>
+			<sec>
+				<st>
+					<p>Methods to reach consensus on a core domain set for non-specific low back pain</p>
+				</st><p>A Delphi technique was used in this study, as in some other COS efforts <abbrgrp>
+						<abbr bid="B26">26</abbr>
+					</abbrgrp>. This method is usually used to gain consensus among a group of experts or informed respondents that constitute the Delphi panel <abbrgrp>
+						<abbr bid="B29">29</abbr>
+					</abbrgrp>. The respondents take part anonymously in sequential questionnaires that constitute different rounds. After each round, the group responses are fed back to the panellists who can reconsider their views based on this report of the group views <abbrgrp>
+						<abbr bid="B29">29</abbr>
+					</abbrgrp>. The Delphi method avoids situations in which the group is dominated by the views of a few prominent personalities.</p><p>Before running the Delphi procedure, one member of the project team (AC) selected the people who were invited to be members of the panel. The project team and the Steering Committee took responsibility for drawing a list of potential core domains that was used in the Delphi study. The pre-Delphi steps described in this subsection have been completed, while the Delphi procedure itself is nearing completion.</p>
+				<sec>
+					<st>
+						<p>Selection of panel members</p>
+					</st><p>We decided that at least 80 experts were required to participate in each round of the Delphi. Based on previous experience with Delphi studies <abbrgrp>
+							<abbr bid="B14">14</abbr>
+						</abbrgrp>, we calculated a minimum response rate of 40% that led to the conclusion that at least 200 people had to be invited in the first round. A list of researchers who had extensively published on LBP was compiled using an approach aimed at minimizing selection bias. First, a search in Web of Science was performed to identify authors of at least 25 publications on LBP over the last 10&#160;years (between 2003 and 2013). Those who were authors of at least two clinical trials or one systematic review of clinical trials on NSLBP were considered eligible. One reviewer (AC) screened titles and abstracts of publications of each author against the inclusion criteria. Only researchers with a retrievable email address were selected for invitation to the Delphi procedure. To ensure that notable researchers were not excluded from this list, convenience sampling was added to the systematic search. Members of the Steering Committee were asked to indicate the names of five researchers from different disciplines that should absolutely be included in this consensus exercise. Names recommended by the Steering Committee were added to the existing list.</p><p>Healthcare providers for the Delphi panel were recruited through convenience sampling. Each member of the Steering Committee was asked to identify a minimum of 10 clinicians from different disciplines who had clinical experience in managing patients with NSLBP.</p><p>Patients were also recruited through convenience sampling. Inclusion criteria for patients were: present or past history of NSLBP, attendance of healthcare for their back complaint, and fluent understanding of written English. Three members of the Steering Committee from different geographical locations (CL, MS, and RO) were asked to identify providers who could have direct contact to patients. Patients identified by these providers were contacted by email, provided further information about the study, and invited to participate. Those who agreed were sent an informative document giving explanations of technical terms that could be encountered during the questionnaires. Those who confirmed their interest were invited to take part in the Delphi study.</p><p>All members of the Steering Committee were also invited to take part in the Delphi study. This implies that they expressed their opinion twice regarding aspects discussed previously within the Steering Committee and then in the Delphi study (for example, regarding AEs). It was decided not to exclude their opinion from the Delphi results, where responses remained anonymous and could be seen by the whole panel. We considered that this fact could outweigh the disadvantage of having their opinion counting twice for some issues. The final list of selected panellists was known only to the project team member who compiled it (AC), and was not shared with the Steering Committee or any other panellist.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Generation of a list of potential core domains</p>
+					</st><p>To make a list of (sub)domains that are routinely used as outcomes in efficacy or effectiveness trials for NSLBP, a search was performed of five recent Cochrane systematic reviews) <abbrgrp>
+							<abbr bid="B8">8</abbr>
+							<abbr bid="B30">30</abbr>
+							<abbr bid="B31">31</abbr>
+							<abbr bid="B32">32</abbr>
+						</abbrgrp> (Oosterhuis T <it>et al.</it> unpublished data). This first list of domains was subsequently enriched by adding (sub)domains included in the comprehensive ICF core set for LBP <abbrgrp>
+							<abbr bid="B24">24</abbr>
+						</abbrgrp> and in a conceptual model developed to characterize the burden of LBP <abbrgrp>
+							<abbr bid="B33">33</abbr>
+						</abbrgrp>. The comprehensive ICF core set and the conceptual model on the burden of LBP were adopted in this developmental phase because they both considered the patients&#8217; perspective <abbrgrp>
+							<abbr bid="B33">33</abbr>
+							<abbr bid="B34">34</abbr>
+						</abbrgrp>. Subdomains that seemed to cover the same domain were grouped together to make a first draft list of domains (version one) where domains were classified into one of the core areas included in the OMERACT framework (Table&#160;<tblr tid="T2">2</tblr>). To find appropriate terms and definitions for each domain, we consulted the ICF Framework <abbrgrp>
+							<abbr bid="B35">35</abbr>
+						</abbrgrp>, the Health Framework of the Patient-Reported Outcomes Measurement Information System (PROMIS) <abbrgrp>
+							<abbr bid="B36">36</abbr>
+						</abbrgrp>, the Wilson and Cleary Model <abbrgrp>
+							<abbr bid="B28">28</abbr>
+						</abbrgrp>, and IMMPACT <abbrgrp>
+							<abbr bid="B22">22</abbr>
+							<abbr bid="B23">23</abbr>
+						</abbrgrp>. When a definition was not found in one of these frameworks, it was searched in individual published papers.</p><p>Different features of the version one list of domains were discussed among the project team. A second literature search based on points of discussion was conducted and led to the development of the version two list. Feedback for version two was invited from other members of the Steering Committee, who were asked to provide critical comments on each domain. The members were also asked to indicate if there were important missing potential core domains and to indicate if they thought that certain domains were too broad or should be aggregated. The project team adjusted version two according to this input and formulated the final list of potential core domains (version three) that was used during the Delphi study.</p>
+				</sec>
+			</sec>
+			<sec>
+				<st>
+					<p>Delphi procedure</p>
+				</st><p>A minimum of two Delphi rounds (including both closed and open-ended questions) was planned <it>a priori</it>. Considering that it is not feasible to weight responses from different stakeholder groups, all panel members were invited to participate, irrespective of the number from each stakeholder group. Panel members were invited to participate in each round of the Delphi study, unless they explicitly indicated during the study that they did not wish to receive further invitations.</p><p>The project team designed the Delphi questionnaires, sent invitations and reminders to panel members, analysed the responses, and formulated the feedback reports. Questionnaires used during the whole Delphi procedure were pilot-tested by three members of the project team (CT, MB, RO) and by one or two selected panellists. For this Delphi study, the online software SurveyMonkey (SurveyMonkey, Palo Alto, United States) was used and invitations for participation were sent by email. Each round was online for three or four weeks and reminder emails were sent approximately every seven days after the initial invitation. Recommendations of a group of COS methodologists for the use of the Delphi method were followed in this study <abbrgrp>
+						<abbr bid="B26">26</abbr>
+					</abbrgrp>.</p>
+				<sec>
+					<st>
+						<p>Delphi round one</p>
+					</st><p>In the first round, participants were initially given information about the study and about the formulation of the questionnaire. They completed questions about their educational and professional background, their experience with clinical research relevant for NSLBP, and whether they were invited to participate as patients. The version three list of potential core domains, subdivided into core areas, was used to rate their importance. In the survey, the order of core areas and the order of domains within core areas were randomized. Panel members were asked to indicate if each domain was important enough to be included in this core domain set; response options were &#8216;Yes&#8217;, &#8216;No&#8217; and &#8216;Unsure/I do not know&#8217;. Participants were strongly encouraged to provide arguments for their choices and to suggest modifications of definitions or wording of the domains. Participants were then asked to indicate if they considered that there was a large conceptual overlap between some domains, to suggest whether some domains had be aggregated, and to suggest potential core domains not included in the list. They were also asked to indicate what they would consider to be an ideal number of domains for this COS.</p><p>Finally, participants were asked to assess whether they agreed on a specific approach for the reporting of AEs. This approach highlighted that AEs cannot be considered as one of the potential core domains because they could affect multiple core areas and domains. Therefore, only AEs occurring outside of core domains could be listed specifically as AEs, because those occurring within a defined core domain would be summarized within the results for that domain. Panellists were asked to provide reasons for their responses.</p><p>The responses of round one were analysed and collated in the feedback report. Frequencies for the response options on the importance of domains were calculated for the whole panel. Responses to open questions were checked to evaluate if substantial arguments emerged against the overall trend of frequencies. Responses of the patients&#8217; group were highlighted and analysed separately to assess if they differed from the other panel responses.</p><p>The project team established <it>a priori</it> that domains for which more than 60% of the responders chose the response option &#8216;No&#8217; and less than 20% chose the response option &#8216;Yes&#8217; would be dropped from the list of potential core domains. The project team considered the suggestions for the aggregation of certain domains and the strength of the arguments. Suggested missing core domains were added to the list for the next round. Descriptive statistics were used to summarize responses on the ideal number of domains and on the reporting of AEs.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Delphi round two</p>
+					</st><p>The feedback report was provided to the panel members along with the second round of the survey. A proposal was presented for deleting domains that did not have at least 67% of first round respondents in favour or unsure about inclusion in the core domain set. Other proposals were driven by comments of the first round and concerned exclusion, aggregation, or retention of other potential core domains. For example, if in round one several comments were made about the breadth of one domain covering other more specific domains, a proposal was made to erase this broad domain. Panellists were asked to indicate whether or not they agreed with all the proposals and <it>a priori</it> consensus was set at 67% respondent agreement. Panellists were also asked to judge if missing core domains suggested in the first round were important enough to be included in the list. Response options were the same as the first round and these domains were added to the list of potential core domains if 67% of respondents were in favour or unsure of their inclusion.</p><p>Upon completion of the second round, responses were analysed and combined in the feedback report. As in the first round, patients&#8217; responses were analysed separately to assess if they had different opinions from the rest of the panel. Results were discussed by the project team, which assessed whether substantial arguments emerged against the overall consensus obtained with quantitative answers.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Delphi round three</p>
+					</st><p>The feedback report of the second round was presented to all participants invited to the third round. Based on previous results, the potential core domains left in the list were presented in the third round to ask if each domain was indeed core. Response options were the same as the first round and participants were given the opportunity to provide arguments for their choices.</p><p>Frequencies for the response options were calculated for the whole panel and for each of the four stakeholder groups separately to evaluate if discrepancies existed between the groups. Reasons for all choices were checked to ensure that no convincing arguments were raised against the dominating group response. <it>A priori</it> consensus was set at 67% of the panel agreeing that a domain was core, with domains reaching this threshold to be included in this COS. If there were clear discrepancies between stakeholder groups or controversial arguments emerged, the results were presented to the Steering Committee that made final decisions.</p>
+				</sec>
+			</sec>
+			<sec>
+				<st>
+					<p>Ethical approval</p>
+				</st><p>As this project does not involve experiments with patients or study subjects, according to the Dutch Medical Research in Human Subjects Act (WMO), it is exempt from ethical approval in The Netherlands. No ethical approval is required in other countries from which other patients were invited to take part in the Delphi study (United States and Italy). All patients involved were asked for their consent before participation in the Delphi study, and all procedures were conducted according to the Declaration of Helsinki.</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Discussion</p>
+			</st><p>Development of a COS is an iterative approach that includes, firstly, determination of the domains that should be measured and reported and, secondly, determination of which outcome measurement instruments should be used to measure the domains <abbrgrp>
+					<abbr bid="B11">11</abbr>
+					<abbr bid="B17">17</abbr>
+				</abbrgrp>. This study protocol presents the methodology that has been adopted for development of a consensus-based core domain set for clinical trials of health interventions for NSLBP. It forms the first step in updating the proposal of standardized measurement in LBP made in 1998 by Deyo <it>et al</it>. <abbrgrp>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp>. Conceptualisation and design of the second step for this COS will now need to be established, and recently published methodological guidance <abbrgrp>
+					<abbr bid="B37">37</abbr>
+					<abbr bid="B38">38</abbr>
+				</abbrgrp> in this field could act as a useful reference for formulating the core outcome measurement set for NSLBP.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Trial status</p>
+			</st><p>The third round of the Delphi study has recently been completed and the results will be analysed and reviewed by the Steering Committee. A publication reporting the results of the Delphi study will be submitted for publication in late 2014.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Abbreviations</p>
+			</st><p>AE: Adverse event; COMET: Core Outcome Measures Effectiveness Trials; COS: Core outcome set; DALYs: Disability-adjusted life years; ICF: International Classification of Functioning; ICHOM: International Consortium for Health Outcomes Measurement; IMMPACT: Initiative on the Methods, Measurement, and Pain Assessment in Clinical Trials; LBP: Low back pain; NIH: National Institutes of Health; NSLBP: Non-specific low back pain; OMERACT: Outcome Measures Rheumatoid Arthritis Clinical Trials; PROMIS: Patient Reported Outcomes Measurement Information System; YLDs: Years lived with disability.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Competing interests</p>
+			</st><p>The authors declare that they have no competing interests.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Authors&#8217; contributions</p>
+			</st><p>AC, CT, MB and RO conceived and designed the study. AC conducted the study and wrote the first draft of this manuscript. CT, MB and RO conducted the study and provided important intellectual revision of the manuscript. RD and CL participated in conception and design of the study and provided important intellectual revision of the manuscript. RB, TC, LC, NF, MG, BK, FK, CM, AP, WP, MS, DT, and MvT participated in conception and design of the study, and revised the manuscript. All authors read and approved the final version of this manuscript.</p>
+		</sec>
+	</bdy>
+	<bm>
+		<ack>
+			<sec>
+				<st>
+					<p>Acknowledgements</p>
+				</st><p>This research project was funded by the Wetenschappelijk College Fysiotherapie (WCF) of the Royal Dutch Society for Physical Therapy (KNGF). The funding body did not have any role in trial design, collection, analysis, and interpretation of data, nor in writing the manuscript and deciding to submit this manuscript for publication. The views expressed here are those of the authors and do not necessarily reflect those of their funding bodies.</p>
+			</sec>
+		</ack>
+		<refgrp><bibl id="B1"><title><p>Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990&#8211;2010: a systematic analysis for the Global Burden of Disease Study 2010</p></title><aug><au><snm>Vos</snm><fnm>T</fnm></au><au><snm>Flaxman</snm><fnm>AD</fnm></au><au><snm>Naghavi</snm><fnm>M</fnm></au><au><snm>Lozano</snm><fnm>R</fnm></au><au><snm>Michaud</snm><fnm>C</fnm></au><au><snm>Ezzati</snm><fnm>M</fnm></au><au><snm>Shibuya</snm><fnm>K</fnm></au><au><snm>Salomon</snm><fnm>JA</fnm></au><au><snm>Abdalla</snm><fnm>S</fnm></au><au><snm>Aboyans</snm><fnm>V</fnm></au><au><snm>Abraham</snm><fnm>J</fnm></au><au><snm>Ackerman</snm><fnm>I</fnm></au><au><snm>Aggarwal</snm><fnm>R</fnm></au><au><snm>Ahn</snm><fnm>SY</fnm></au><au><snm>Ali</snm><fnm>MK</fnm></au><au><snm>Alvarado</snm><fnm>M</fnm></au><au><snm>Anderson</snm><fnm>HR</fnm></au><au><snm>Anderson</snm><fnm>LM</fnm></au><au><snm>Andrews</snm><fnm>KG</fnm></au><au><snm>Atkinson</snm><fnm>C</fnm></au><au><snm>Baddour</snm><fnm>LM</fnm></au><au><snm>Bahalim</snm><fnm>AN</fnm></au><au><snm>Barker-Collo</snm><fnm>S</fnm></au><au><snm>Barrero</snm><fnm>LH</fnm></au><au><snm>Bartels</snm><fnm>DH</fnm></au><au><snm>Bas&#225;&#241;ez</snm><fnm>MG</fnm></au><au><snm>Baxter</snm><fnm>A</fnm></au><au><snm>Bell</snm><fnm>ML</fnm></au><au><snm>Benjamin</snm><fnm>EJ</fnm></au><au><snm>Bennett</snm><fnm>D</fnm></au><etal/></aug><source>Lancet</source><pubdate>2012</pubdate><volume>380</volume><fpage>2163</fpage><lpage>2196</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0140-6736(12)61729-2</pubid><pubid idtype="pmpid" link="fulltext">23245607</pubid></pubidlist></xrefbib></bibl><bibl id="B2"><title><p>Disability-adjusted life years (DALYs) for 291 diseases and injuries in 21 regions, 1990&#8211;2010: a systematic analysis for the Global Burden of Disease Study 2010</p></title><aug><au><snm>Murray</snm><fnm>CJ</fnm></au><au><snm>Vos</snm><fnm>T</fnm></au><au><snm>Lozano</snm><fnm>R</fnm></au><au><snm>Naghavi</snm><fnm>M</fnm></au><au><snm>Flaxman</snm><fnm>AD</fnm></au><au><snm>Michaud</snm><fnm>C</fnm></au><au><snm>Ezzati</snm><fnm>M</fnm></au><au><snm>Shibuya</snm><fnm>K</fnm></au><au><snm>Salomon</snm><fnm>JA</fnm></au><au><snm>Abdalla</snm><fnm>S</fnm></au><au><snm>Aboyans</snm><fnm>V</fnm></au><au><snm>Abraham</snm><fnm>J</fnm></au><au><snm>Ackerman</snm><fnm>I</fnm></au><au><snm>Aggarwal</snm><fnm>R</fnm></au><au><snm>Ahn</snm><fnm>SY</fnm></au><au><snm>Ali</snm><fnm>MK</fnm></au><au><snm>Alvarado</snm><fnm>M</fnm></au><au><snm>Anderson</snm><fnm>HR</fnm></au><au><snm>Anderson</snm><fnm>LM</fnm></au><au><snm>Andrews</snm><fnm>KG</fnm></au><au><snm>Atkinson</snm><fnm>C</fnm></au><au><snm>Baddour</snm><fnm>LM</fnm></au><au><snm>Bahalim</snm><fnm>AN</fnm></au><au><snm>Barker-Collo</snm><fnm>S</fnm></au><au><snm>Barrero</snm><fnm>LH</fnm></au><au><snm>Bartels</snm><fnm>DH</fnm></au><au><snm>Bas&#225;&#241;ez</snm><fnm>MG</fnm></au><au><snm>Baxter</snm><fnm>A</fnm></au><au><snm>Bell</snm><fnm>ML</fnm></au><au><snm>Benjamin</snm><fnm>EJ</fnm></au><etal/></aug><source>Lancet</source><pubdate>2012</pubdate><volume>381</volume><fpage>628</fpage></bibl><bibl id="B3"><title><p>A systematic review of low back pain cost of illness studies in the United States and internationally</p></title><aug><au><snm>Dagenais</snm><fnm>S</fnm></au><au><snm>Caro</snm><fnm>J</fnm></au><au><snm>Haldeman</snm><fnm>S</fnm></au></aug><source>Spine J</source><pubdate>2008</pubdate><volume>8</volume><fpage>8</fpage><lpage>20</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.spinee.2007.10.005</pubid><pubid idtype="pmpid" link="fulltext">18164449</pubid></pubidlist></xrefbib></bibl><bibl id="B4"><title><p>Diagnosis and treatment of low back pain</p></title><aug><au><snm>Koes</snm><fnm>BW</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au><au><snm>Thomas</snm><fnm>S</fnm></au></aug><source>BMJ</source><pubdate>2006</pubdate><volume>332</volume><fpage>1430</fpage><lpage>1434</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1136/bmj.332.7555.1430</pubid><pubid idtype="pmcid">1479671</pubid><pubid idtype="pmpid" link="fulltext">16777886</pubid></pubidlist></xrefbib></bibl><bibl id="B5"><title><p>Low back pain symptoms show a similar pattern of improvement following a wide range of primary care treatments: a systematic review of randomized clinical trials</p></title><aug><au><snm>Artus</snm><fnm>M</fnm></au><au><snm>van der Windt</snm><fnm>DA</fnm></au><au><snm>Jordan</snm><fnm>KP</fnm></au><au><snm>Hay</snm><fnm>EM</fnm></au></aug><source>Rheumatology (Oxford)</source><pubdate>2010</pubdate><volume>49</volume><fpage>2346</fpage><lpage>2356</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/rheumatology/keq245</pubid><pubid idtype="pmpid" link="fulltext">20713495</pubid></pubidlist></xrefbib></bibl><bibl id="B6"><title><p>2009 updated method guidelines for systematic reviews in the Cochrane Back Review Group</p></title><aug><au><snm>Furlan</snm><fnm>AD</fnm></au><au><snm>Pennick</snm><fnm>V</fnm></au><au><snm>Bombardier</snm><fnm>C</fnm></au><au><snm>van Tulder</snm><fnm>M</fnm></au><au><cnm>Editioral Board, Cochrane Back Review Group</cnm></au></aug><source>Spine (Phila Pa 1976)</source><pubdate>2009</pubdate><volume>34</volume><fpage>1929</fpage><lpage>1941</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/BRS.0b013e3181b1c99f</pubid><pubid idtype="pmpid" link="fulltext">19680101</pubid></pubidlist></xrefbib></bibl><bibl id="B7"><title><p>Exercise therapy for treatment of non-specific low back pain</p></title><aug><au><snm>Hayden</snm><fnm>JA</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au><au><snm>Malmivaara</snm><fnm>A</fnm></au><au><snm>Koes</snm><fnm>BW</fnm></au></aug><source>Cochrane Database Syst Rev</source><pubdate>2005</pubdate><fpage>CD000335</fpage></bibl><bibl id="B8"><title><p>Spinal manipulative therapy for acute low back pain</p></title><aug><au><snm>Rubinstein</snm><fnm>SM</fnm></au><au><snm>Terwee</snm><fnm>CB</fnm></au><au><snm>Assenfeldt</snm><fnm>WJ</fnm></au><au><snm>de Boer</snm><fnm>MR</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au></aug><source>Cochrane Database Syst Rev</source><pubdate>2012</pubdate><volume>9</volume><note>CD008880</note></bibl><bibl id="B9"><title><p>The impact of outcome reporting bias in randomized controlled trials on a cohort of systematic reviews</p></title><aug><au><snm>Kirkham</snm><fnm>JJ</fnm></au><au><snm>Dwan</snm><fnm>KM</fnm></au><au><snm>Altman</snm><fnm>DG</fnm></au><au><snm>Gamble</snm><fnm>C</fnm></au><au><snm>Dodd</snm><fnm>S</fnm></au><au><snm>Smyth</snm><fnm>R</fnm></au><au><snm>Williamson</snm><fnm>PR</fnm></au></aug><source>BMJ</source><pubdate>2010</pubdate><volume>340</volume><fpage>c365</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1136/bmj.c365</pubid><pubid idtype="pmpid" link="fulltext">20156912</pubid></pubidlist></xrefbib></bibl><bibl id="B10"><title><p>Standardising outcomes for clinical trials and systematic reviews</p></title><aug><au><snm>Clarke</snm><fnm>M</fnm></au></aug><source>Trials</source><pubdate>2007</pubdate><volume>8</volume><fpage>39</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-8-39</pubid><pubid idtype="pmcid">2169261</pubid><pubid idtype="pmpid" link="fulltext">18039365</pubid></pubidlist></xrefbib></bibl><bibl id="B11"><title><p>Developing core outcome sets for clinical trials: issues to consider</p></title><aug><au><snm>Williamson</snm><fnm>PR</fnm></au><au><snm>Altman</snm><fnm>DG</fnm></au><au><snm>Blazeby</snm><fnm>JM</fnm></au><au><snm>Clarke</snm><fnm>M</fnm></au><au><snm>Devane</snm><fnm>D</fnm></au><au><snm>Gargon</snm><fnm>E</fnm></au><au><snm>Tugwell</snm><fnm>P</fnm></au></aug><source>Trials</source><pubdate>2012</pubdate><volume>13</volume><fpage>132</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-13-132</pubid><pubid idtype="pmcid">3472231</pubid><pubid idtype="pmpid" link="fulltext">22867278</pubid></pubidlist></xrefbib></bibl><bibl id="B12"><title><p>Can a core outcome set improve the quality of systematic reviews?&#8212;a survey of the Co-ordinating Editors of Cochrane Review Groups</p></title><aug><au><snm>Kirkham</snm><fnm>JJ</fnm></au><au><snm>Gargon</snm><fnm>E</fnm></au><au><snm>Clarke</snm><fnm>M</fnm></au><au><snm>Williamson</snm><fnm>PR</fnm></au></aug><source>Trials</source><pubdate>2013</pubdate><volume>14</volume><fpage>21</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-14-21</pubid><pubid idtype="pmcid">3575292</pubid><pubid idtype="pmpid" link="fulltext">23339751</pubid></pubidlist></xrefbib></bibl><bibl id="B13"><title><p>Outcome measures for low back pain research. A proposal for standardized use</p></title><aug><au><snm>Deyo</snm><fnm>RA</fnm></au><au><snm>Battie</snm><fnm>M</fnm></au><au><snm>Beurskens</snm><fnm>AJ</fnm></au><au><snm>Bombardier</snm><fnm>C</fnm></au><au><snm>Croft</snm><fnm>P</fnm></au><au><snm>Koes</snm><fnm>B</fnm></au><au><snm>Malmivaara</snm><fnm>A</fnm></au><au><snm>Roland</snm><fnm>M</fnm></au><au><snm>von Korff</snm><fnm>M</fnm></au><au><snm>Waddell</snm><fnm>G</fnm></au></aug><source>Spine (Phila Pa 1976)</source><pubdate>1998</pubdate><volume>23</volume><fpage>2003</fpage><lpage>2013</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/00007632-199809150-00018</pubid><pubid idtype="pmpid" link="fulltext">9779535</pubid></pubidlist></xrefbib></bibl><bibl id="B14"><title><p>The COSMIN study reached international consensus on taxonomy, terminology, and definitions of measurement properties for health-related patient-reported outcomes</p></title><aug><au><snm>Mokkink</snm><fnm>LB</fnm></au><au><snm>Terwee</snm><fnm>CB</fnm></au><au><snm>Patrick</snm><fnm>DL</fnm></au><au><snm>Alonso</snm><fnm>J</fnm></au><au><snm>Stratford</snm><fnm>PW</fnm></au><au><snm>Knol</snm><fnm>DL</fnm></au><au><snm>Bouter</snm><fnm>LM</fnm></au><au><snm>de Vet</snm><fnm>HCW</fnm></au></aug><source>J Clin Epidemiol</source><pubdate>2010</pubdate><volume>63</volume><fpage>737</fpage><lpage>745</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.jclinepi.2010.02.006</pubid><pubid idtype="pmpid" link="fulltext">20494804</pubid></pubidlist></xrefbib></bibl><bibl id="B15"><title><p>Core Outcomes for Clinical Research in Low Back Pain: Revisited</p></title><aug><au><snm>Lin</snm><fnm>CWC</fnm></au><au><snm>Ostelo</snm><fnm>RW</fnm></au><au><snm>Maher</snm><fnm>CG</fnm></au><au><snm>Grotle</snm><fnm>M</fnm></au><au><snm>Koes</snm><fnm>BW</fnm></au></aug><source>Abstract Book of the XII &#8216;International Low Back Pain Forum&#8217;</source><publisher>Odense</publisher><pubdate>2012</pubdate></bibl><bibl id="B16"><title><p>OMERACT: an international initiative to improve outcome measurement in rheumatology</p></title><aug><au><snm>Tugwell</snm><fnm>P</fnm></au><au><snm>Boers</snm><fnm>M</fnm></au><au><snm>Brooks</snm><fnm>P</fnm></au><au><snm>Simon</snm><fnm>L</fnm></au><au><snm>Strand</snm><fnm>V</fnm></au><au><snm>Idzerda</snm><fnm>L</fnm></au></aug><source>Trials</source><pubdate>2007</pubdate><volume>8</volume><fpage>38</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-8-38</pubid><pubid idtype="pmcid">2169260</pubid><pubid idtype="pmpid" link="fulltext">18039364</pubid></pubidlist></xrefbib></bibl><bibl id="B17"><title><p>Developing core outcome measurement sets for clinical trials: OMERACT Filter 2.0</p></title><aug><au><snm>Boers</snm><fnm>M</fnm></au><au><snm>Kirwan</snm><fnm>JR</fnm></au><au><snm>Wells</snm><fnm>G</fnm></au><au><snm>Beaton</snm><fnm>D</fnm></au><au><snm>Gossec</snm><fnm>L</fnm></au><au><snm>D&#8217;Agostino</snm><fnm>MA</fnm></au><au><snm>Conaghan</snm><fnm>PG</fnm></au><au><snm>Bingham</snm><fnm>CO</fnm></au><au><snm>Brooks</snm><fnm>P</fnm></au><au><snm>Landew&#233;</snm><fnm>R</fnm></au><au><snm>March</snm><fnm>L</fnm></au><au><snm>Simon</snm><fnm>LS</fnm></au><au><snm>Singh</snm><fnm>JA</fnm></au><au><snm>Strand</snm><fnm>V</fnm></au><au><snm>Tugwell</snm><fnm>P</fnm></au></aug><source>J Clin Epidemiol</source><pubdate>2014</pubdate><volume>67</volume><fpage>745</fpage><lpage>753</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.jclinepi.2013.11.013</pubid><pubid idtype="pmpid" link="fulltext">24582946</pubid></pubidlist></xrefbib></bibl><bibl id="B18"><title><p>MOMENT &#8211; management of otitis media with effusion in cleft palate: protocol for a systematic review of the literature and identification of a core outcome set using a Delphi survey</p></title><aug><au><snm>Harman</snm><fnm>NL</fnm></au><au><snm>Bruce</snm><fnm>IA</fnm></au><au><snm>Callery</snm><fnm>P</fnm></au><au><snm>Tierney</snm><fnm>S</fnm></au><au><snm>Sharif</snm><fnm>MO</fnm></au><au><snm>O&#8217;Brien</snm><fnm>K</fnm></au><au><snm>Williamson</snm><fnm>PR</fnm></au></aug><source>Trials</source><pubdate>2013</pubdate><volume>14</volume><fpage>70</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-14-70</pubid><pubid idtype="pmcid">3716725</pubid><pubid idtype="pmpid" link="fulltext">23497540</pubid></pubidlist></xrefbib></bibl><bibl id="B19"><title><p>The CONSENSUS study: protocol for a mixed methods study to establish which outcomes should be included in a core outcome set for oropharyngeal cancer</p></title><aug><au><snm>Waters</snm><fnm>AMI</fnm></au><au><snm>Smith</snm><fnm>CT</fnm></au><au><snm>Young</snm><fnm>B</fnm></au><au><snm>Jones</snm><fnm>TM</fnm></au></aug><source>Trials</source><pubdate>2014</pubdate><volume>15</volume><fpage>168</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-15-168</pubid><pubid idtype="pmcid">4023496</pubid><pubid idtype="pmpid" link="fulltext">24885068</pubid></pubidlist></xrefbib></bibl><bibl id="B20"><title><p>Non-specific low back pain</p></title><aug><au><snm>Balagu&#233;</snm><fnm>F</fnm></au><au><snm>Mannion</snm><fnm>AF</fnm></au><au><snm>Pellis&#233;</snm><fnm>F</fnm></au><au><snm>Cedraschi</snm><fnm>C</fnm></au></aug><source>Lancet</source><pubdate>2012</pubdate><volume>379</volume><fpage>482</fpage><lpage>491</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0140-6736(11)60610-7</pubid><pubid idtype="pmpid" link="fulltext">21982256</pubid></pubidlist></xrefbib></bibl><bibl id="B21"><title><p>Report of the NIH task force on research standards for chronic low back pain</p></title><aug><au><snm>Deyo</snm><fnm>RA</fnm></au><au><snm>Dworkin</snm><fnm>SF</fnm></au><au><snm>Amtmann</snm><fnm>D</fnm></au><au><snm>Andersson</snm><fnm>G</fnm></au><au><snm>Borenstein</snm><fnm>D</fnm></au><au><snm>Carragee</snm><fnm>E</fnm></au><au><snm>Carrino</snm><fnm>J</fnm></au><au><snm>Chou</snm><fnm>R</fnm></au><au><snm>Cook</snm><fnm>K</fnm></au><au><snm>DeLitto</snm><fnm>A</fnm></au><au><snm>Goertz</snm><fnm>C</fnm></au><au><snm>Khalsa</snm><fnm>P</fnm></au><au><snm>Loeser</snm><fnm>J</fnm></au><au><snm>Mackey</snm><fnm>S</fnm></au><au><snm>Panagis</snm><fnm>J</fnm></au><au><snm>Rainville</snm><fnm>J</fnm></au><au><snm>Tosteson</snm><fnm>T</fnm></au><au><snm>Turk</snm><fnm>D</fnm></au><au><snm>Von Korff</snm><fnm>M</fnm></au><au><snm>Weiner</snm><fnm>DK</fnm></au></aug><source>Spine (Phila Pa 1976)</source><pubdate>2014</pubdate><volume>39</volume><fpage>1128</fpage><lpage>1143</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/BRS.0000000000000434</pubid><pubid idtype="pmpid" link="fulltext">24887571</pubid></pubidlist></xrefbib></bibl><bibl id="B22"><title><p>Core outcome domains for chronic pain clinical trials: IMMPACT recommendations</p></title><aug><au><snm>Turk</snm><fnm>DC</fnm></au><au><snm>Dworkin</snm><fnm>RH</fnm></au><au><snm>Allen</snm><fnm>RR</fnm></au><au><snm>Bellamy</snm><fnm>N</fnm></au><au><snm>Brandenburg</snm><fnm>N</fnm></au><au><snm>Carr</snm><fnm>DB</fnm></au><au><snm>Cleeland</snm><fnm>C</fnm></au><au><snm>Dionne</snm><fnm>R</fnm></au><au><snm>Farrar</snm><fnm>JT</fnm></au><au><snm>Galer</snm><fnm>BS</fnm></au><au><snm>Hewitt</snm><fnm>DK</fnm></au><au><snm>Jadad</snm><fnm>AR</fnm></au><au><snm>Katz</snm><fnm>NP</fnm></au><au><snm>Kramer</snm><fnm>LD</fnm></au><au><snm>Manning</snm><fnm>DC</fnm></au><au><snm>McCormick</snm><fnm>CG</fnm></au><au><snm>McDermott</snm><fnm>MP</fnm></au><au><snm>McGrath</snm><fnm>P</fnm></au><au><snm>Quessy</snm><fnm>S</fnm></au><au><snm>Rappaport</snm><fnm>BA</fnm></au><au><snm>Robinson</snm><fnm>JP</fnm></au><au><snm>Royal</snm><fnm>MA</fnm></au><au><snm>Simon</snm><fnm>L</fnm></au><au><snm>Stauffer</snm><fnm>JW</fnm></au><au><snm>Stein</snm><fnm>W</fnm></au><au><snm>Tollett</snm><fnm>J</fnm></au><au><snm>Witter</snm><fnm>J</fnm></au></aug><source>Pain</source><pubdate>2003</pubdate><volume>106</volume><fpage>337</fpage><lpage>345</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.pain.2003.08.001</pubid><pubid idtype="pmpid">14659516</pubid></pubidlist></xrefbib></bibl><bibl id="B23"><title><p>Core outcome measures for chronic pain clinical trials: IMMPACT recommendations</p></title><aug><au><snm>Dworkin</snm><fnm>RH</fnm></au><au><snm>Turk</snm><fnm>DC</fnm></au><au><snm>Farrar</snm><fnm>JT</fnm></au><au><snm>Haythornthwaite</snm><fnm>JA</fnm></au><au><snm>Jensen</snm><fnm>MP</fnm></au><au><snm>Katz</snm><fnm>NP</fnm></au><au><snm>Kerns</snm><fnm>RD</fnm></au><au><snm>Stucki</snm><fnm>G</fnm></au><au><snm>Allen</snm><fnm>RR</fnm></au><au><snm>Bellamy</snm><fnm>N</fnm></au><au><snm>Carr</snm><fnm>DB</fnm></au><au><snm>Chandler</snm><fnm>J</fnm></au><au><snm>Cowan</snm><fnm>P</fnm></au><au><snm>Dionne</snm><fnm>R</fnm></au><au><snm>Galer</snm><fnm>BS</fnm></au><au><snm>Hertz</snm><fnm>S</fnm></au><au><snm>Jadad</snm><fnm>AR</fnm></au><au><snm>Kramer</snm><fnm>LD</fnm></au><au><snm>Manning</snm><fnm>DC</fnm></au><au><snm>Martin</snm><fnm>S</fnm></au><au><snm>McCormick</snm><fnm>CG</fnm></au><au><snm>McDermott</snm><fnm>MP</fnm></au><au><snm>McGrath</snm><fnm>P</fnm></au><au><snm>Quessy</snm><fnm>S</fnm></au><au><snm>Rappaport</snm><fnm>BA</fnm></au><au><snm>Robbins</snm><fnm>W</fnm></au><au><snm>Robinson</snm><fnm>JP</fnm></au><au><snm>Rothman</snm><fnm>M</fnm></au><au><snm>Royal</snm><fnm>MA</fnm></au><au><snm>Simon</snm><fnm>L</fnm></au><etal/></aug><source>Pain</source><pubdate>2005</pubdate><volume>113</volume><fpage>9</fpage><lpage>19</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.pain.2004.09.012</pubid><pubid idtype="pmpid">15621359</pubid></pubidlist></xrefbib></bibl><bibl id="B24"><title><p>ICF core sets for low back pain</p></title><aug><au><snm>Cieza</snm><fnm>A</fnm></au><au><snm>Stucki</snm><fnm>G</fnm></au><au><snm>Weigl</snm><fnm>M</fnm></au><au><snm>Disler</snm><fnm>P</fnm></au><au><snm>Jackel</snm><fnm>W</fnm></au><au><snm>van der Linden</snm><fnm>S</fnm></au><au><snm>Kostanjsek</snm><fnm></fnm></au><au><snm>de Bie</snm><fnm>R</fnm></au></aug><source>J Rehabil Med</source><pubdate>2004</pubdate><volume>Suppl 44</volume><fpage>69</fpage><lpage>74</lpage></bibl><bibl id="B25"><title><p>The ICHOM Standard Set for Low Back Pain</p></title><note>[<url>http://www.ichom.org/project/low-back-pain</url>]</note></bibl><bibl id="B26"><title><p>Using the Delphi technique to determine which outcomes to measure in clinical trials: recommendations for the future based on a systematic review of existing studies</p></title><aug><au><snm>Sinha</snm><fnm>IP</fnm></au><au><snm>Smyth</snm><fnm>RL</fnm></au><au><snm>Williamson</snm><fnm>PR</fnm></au></aug><source>PLoS Med</source><pubdate>2011</pubdate><volume>8</volume><fpage>e1000393</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1371/journal.pmed.1000393</pubid><pubid idtype="pmcid">3026691</pubid><pubid idtype="pmpid" link="fulltext">21283604</pubid></pubidlist></xrefbib></bibl><bibl id="B27"><title><p>Can we decide which outcomes should be measured in every clinical trial? A scoping review of the existing conceptual frameworks and processes to develop core outcome sets</p></title><aug><au><snm>Idzerda</snm><fnm>L</fnm></au><au><snm>Rader</snm><fnm>T</fnm></au><au><snm>Tugwell</snm><fnm>P</fnm></au><au><snm>Boers</snm><fnm>M</fnm></au></aug><source>J Rheumatol</source><pubdate>2014</pubdate><volume>41</volume><fpage>986</fpage><lpage>993</lpage><xrefbib><pubidlist><pubid idtype="doi">10.3899/jrheum.131308</pubid><pubid idtype="pmpid" link="fulltext">24584917</pubid></pubidlist></xrefbib></bibl><bibl id="B28"><title><p>Linking clinical variables with health-related quality of life. A conceptual model of patient outcomes</p></title><aug><au><snm>Wilson</snm><fnm>IB</fnm></au><au><snm>Cleary</snm><fnm>PD</fnm></au></aug><source>JAMA</source><pubdate>1995</pubdate><volume>273</volume><fpage>59</fpage><lpage>65</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1001/jama.1995.03520250075037</pubid><pubid idtype="pmpid" link="fulltext">7996652</pubid></pubidlist></xrefbib></bibl><bibl id="B29"><title><p>Diagnostic classification of patients with low back pain: report on a survey of physical therapy experts</p></title><aug><au><snm>Binkley</snm><fnm>J</fnm></au><au><snm>Finch</snm><fnm>E</fnm></au><au><snm>Hall</snm><fnm>T</fnm></au><au><snm>Black</snm><fnm>T</fnm></au><au><snm>Gowland</snm><fnm>C</fnm></au></aug><source>Phys Ther</source><pubdate>1993</pubdate><volume>73</volume><fpage>138</fpage><lpage>150</lpage><xrefbib><pubid idtype="pmpid" link="fulltext">8438002</pubid></xrefbib></bibl><bibl id="B30"><title><p>Behavioural treatment for chronic low back pain</p></title><aug><au><snm>Henschke</snm><fnm>N</fnm></au><au><snm>Ostelo</snm><fnm>RW</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au><au><snm>Vlaeyen</snm><fnm>JW</fnm></au><au><snm>Morley</snm><fnm>S</fnm></au><au><snm>Assenfeldt</snm><fnm>WJ</fnm></au><au><snm>Main</snm><fnm>CJ</fnm></au></aug><source>Cochrane Database Syst Rev</source><pubdate>2010</pubdate><volume>7</volume><note>CD002014</note></bibl><bibl id="B31"><title><p>Rehabilitation after lumbar disc surgery</p></title><aug><au><snm>Oosterhuis</snm><fnm>T</fnm></au><au><snm>Costa</snm><fnm>LO</fnm></au><au><snm>Maher</snm><fnm>CG</fnm></au><au><snm>de Vet</snm><fnm>HC</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au><au><snm>Ostelo</snm><fnm>RW</fnm></au></aug><source>Cochrane Database Syst Rev</source><pubdate>2014</pubdate><volume>3</volume><note>CD003007</note></bibl><bibl id="B32"><title><p>Multidisciplinary biopsychosocial rehabilitation for chronic low back pain</p></title><aug><au><snm>Kamper</snm><fnm>SJ</fnm></au><au><snm>Apeldoorn</snm><fnm>AT</fnm></au><au><snm>Chiarotto</snm><fnm>A</fnm></au><au><snm>Smeets</snm><fnm>RJ</fnm></au><au><snm>Ostelo</snm><fnm>RW</fnm></au><au><snm>Guzman</snm><fnm>J</fnm></au><au><snm>van Tulder</snm><fnm>MW</fnm></au></aug><source>Cochrante Database Syst Rev</source><pubdate>2014</pubdate><volume>9</volume><note>CD000963</note></bibl><bibl id="B33"><title><p>A validity-driven approach to the understanding of the personal and societal burden of low back pain: development of a conceptual and measurement model</p></title><aug><au><snm>Buchbinder</snm><fnm>R</fnm></au><au><snm>Batterham</snm><fnm>R</fnm></au><au><snm>Elsworth</snm><fnm>G</fnm></au><au><snm>Dionne</snm><fnm>CE</fnm></au><au><snm>Irvin</snm><fnm>E</fnm></au><au><snm>Osborne</snm><fnm>RH</fnm></au></aug><source>Arthritis Res Ther</source><pubdate>2011</pubdate><volume>13</volume><fpage>R152</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/ar3468</pubid><pubid idtype="pmcid">3308082</pubid><pubid idtype="pmpid" link="fulltext">21933393</pubid></pubidlist></xrefbib></bibl><bibl id="B34"><title><p>ICF core sets for low back pain: do they include what matters to patients?</p></title><aug><au><snm>Mullis</snm><fnm>R</fnm></au><au><snm>Barber</snm><fnm>J</fnm></au><au><snm>Lewis</snm><fnm>M</fnm></au><au><snm>Hay</snm><fnm>E</fnm></au></aug><source>J Rehabil Med</source><pubdate>2007</pubdate><volume>39</volume><fpage>353</fpage><lpage>357</lpage><xrefbib><pubidlist><pubid idtype="doi">10.2340/16501977-0059</pubid><pubid idtype="pmpid" link="fulltext">17549324</pubid></pubidlist></xrefbib></bibl><bibl id="B35"><title><p>ICF Browser</p></title><note>[<url>http://apps.who.int/classification/icfbrowser/</url>]</note></bibl><bibl id="B36"><title><p>PROMIS Domain Framework</p></title><note>[<url>http://www.nihpromis.org/measures/domainframework/</url>]</note></bibl><bibl id="B37"><title><p>Developing core outcome sets: methods for identifying and including patient-reported outcomes (PROs)</p></title><aug><au><snm>Macefield</snm><fnm>RC</fnm></au><au><snm>Jacobs</snm><fnm>M</fnm></au><au><snm>Korfage</snm><fnm>IJ</fnm></au><au><snm>Nicklin</snm><fnm>J</fnm></au><au><snm>Whistance</snm><fnm>RN</fnm></au><au><snm>Brookes</snm><fnm>ST</fnm></au><au><snm>Sprangers</snm><fnm>MA</fnm></au><au><snm>Blazeby</snm><fnm>JM</fnm></au></aug><source>Trials</source><pubdate>2014</pubdate><volume>15</volume><fpage>49</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-15-49</pubid><pubid idtype="pmcid">3916696</pubid><pubid idtype="pmpid" link="fulltext">24495582</pubid></pubidlist></xrefbib></bibl><bibl id="B38"><title><p>Core outcome measures in effectiveness trials (COMET) initiative: protocol for an international Delphi study to achieve consensus on how to select outcome measurement instruments for outcomes included in a &#8216;core outcome set&#8217;</p></title><aug><au><snm>Prinsen</snm><fnm>CA</fnm></au><au><snm>Vohra</snm><fnm>S</fnm></au><au><snm>Rose</snm><fnm>MR</fnm></au><au><snm>King-Jones</snm><fnm>S</fnm></au><au><snm>Ishaque</snm><fnm>S</fnm></au><au><snm>Bhaloo</snm><fnm>Z</fnm></au><au><snm>Adams</snm><fnm>D</fnm></au><au><snm>Terwee</snm><fnm>CB</fnm></au></aug><source>Trials</source><pubdate>2014</pubdate><volume>15</volume><fpage>247</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-15-247</pubid><pubid idtype="pmcid">4082295</pubid><pubid idtype="pmpid" link="fulltext">24962012</pubid></pubidlist></xrefbib></bibl></refgrp>
+	</bm>
+</art>

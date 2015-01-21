@@ -104,7 +104,7 @@ public class PubstyleTagger {
 
 	protected PubstyleTagger(String taggerResource) {
 		this();
-		LOG.debug("resource: "+taggerResource);
+		LOG.trace("resource: "+taggerResource);
 		InputStream inputStream = this.getClass().getResourceAsStream(taggerResource);
 		if (inputStream == null) {
 			throw new RuntimeException("Cannot parse input resource: "+taggerResource);
@@ -241,7 +241,7 @@ public class PubstyleTagger {
 	public Element addTagsToSections(Element elementToTag) {
 		getTagNames();
 		int count = 0;
-		LOG.debug("tag names "+tagNames);
+		LOG.trace("tag names "+tagNames);
 		for (String tagName : tagNames) {
 			List<Element> sections = findSectionsFromMatchingTags(elementToTag, tagName);
 			for (Element section : sections) {

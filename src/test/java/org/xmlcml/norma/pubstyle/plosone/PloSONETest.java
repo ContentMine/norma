@@ -67,7 +67,7 @@ public class PloSONETest {
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		LOG.debug(htmlElement.toXML().substring(0, 200));
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 1, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 78, divElements.size()); 
 	}
 	
 	@Test
@@ -86,7 +86,7 @@ public class PloSONETest {
 		Assert.assertTrue(outputFile.exists());
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 118, divElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
 //		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
 	}
@@ -114,12 +114,34 @@ public class PloSONETest {
 	}
 	
 	@Test
+	/** no pubstyle so remove the extraneous tags but not divs.
+	 * 
+	 * This test is fragile as we shall change the default tags
+	 * 
+	 */
+	public void testPlosoneRawHTMLNoDefaults() throws Exception {
+		File outputFile = new File("target/plosone/0115884.defaults.html");
+		String[] args = {
+				"-i", new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.html").toString(),
+				"-d", // don't delete any tags
+				"-o", outputFile.toString(),
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+		Assert.assertTrue(outputFile.exists());
+		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+		Assert.assertEquals("div elements "+divElements.size(), 118, divElements.size()); 
+		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+		Assert.assertEquals("p elements "+pElements.size(), 53, pElements.size()); 
+	}
+	
+	@Test
 	/** pubstyle remove some divs.
 	 * 
 	 * This test is fragile as we shall change the default tags and the default divs
 	 * 
 	 * The HTML is so broken that the nesting of the reference lists are wrong
-	 * 
 	 * 
 	 */
 	public void testPlosoneRawHTMLPubstyle() throws Exception {
@@ -137,6 +159,30 @@ public class PloSONETest {
 		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
 		Assert.assertEquals("p elements "+pElements.size(), 38, pElements.size()); 
+	}
+	
+	@Test
+	/** basic XML for NLM.
+	 * 
+	 * @throws Exception
+	 */
+	public void testPlosoneXMLNoPubstyle() throws Exception {
+		File outputFile = new File("target/plosone/0115884.pubstyle.html");
+		String[] args = {
+				"-i", new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.nodtd.xml").toString(),
+				"-p", "nlm",
+				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
+				"-o", outputFile.toString(),
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+		
+		Assert.assertTrue(outputFile.exists());
+		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+//		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 
+		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+		Assert.assertEquals("p elements "+pElements.size(), 28, pElements.size()); 
 	}
 	
 

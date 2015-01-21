@@ -224,8 +224,7 @@ public class PlosoneTaggerTest {
 		Assert.assertEquals("journaltitle", 0, XMLUtil.getQueryElements(taggedElement, "//*[@tag='journaltitle']").size());
 		for (String tag : Tags.TAG_LIST) {
 			int size = XMLUtil.getQueryElements(taggedElement, "//*[@tag='"+tag+"']").size();
-//			LOG.info(tag+"="+size);
-			System.out.println(tag+"="+size);
+			LOG.trace(tag+"="+size);
 		}
 
 	}
