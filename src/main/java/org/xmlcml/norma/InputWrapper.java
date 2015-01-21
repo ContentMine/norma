@@ -62,8 +62,12 @@ public class InputWrapper {
 	public HtmlElement transform(NormaArgProcessor argProcessor) throws Exception {
 		this.pubstyle = argProcessor.getPubstyle();
 		findInputFormat();
-		normalizeToXHTML(argProcessor); // creates htmlElement
-//		LOG.debug(">> "+htmlElement.toXML());
+		try {
+			normalizeToXHTML(argProcessor); // creates htmlElement
+		} catch (Exception e) {
+			LOG.debug("Cannot convert file/s " + e);
+			return null;
+		}
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/norma.html"), 1);
 		if (pubstyle == null) {
 			this.pubstyle = Pubstyle.deducePubstyle(htmlElement);
@@ -83,24 +87,38 @@ public class InputWrapper {
 	 */
 	private void normalizeToXHTML(NormaArgProcessor argProcessor) throws Exception {
 		ensurePubstyle();
-		if (InputFormat.PDF.equals(getInputFormat())) {
-			try {
+		try {
+			if (InputFormat.PDF.equals(getInputFormat())) {
 				PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 				htmlElement = converter.readAndConvertToXHTML(new File(inputName));
-			} catch (Exception e) {
-				throw new RuntimeException("cannot convert PDF: "+inputName, e);
+			} else if (InputFormat.SVG.equals(getInputFormat())) {
+				LOG.error("cannot turn SVG into XHTML yet");
+			} else if (InputFormat.XML.equals(getInputFormat())) {
+				transformXmlToHTML(argProcessor);
+			} else if (InputFormat.HTML.equals(getInputFormat())) {
+				htmlElement = pubstyle.readRawHtmlAndCreateWellFormed(inputFormat, inputName);
+			} else if (InputFormat.XHTML.equals(getInputFormat())) {
+				LOG.debug("using XHTML; not yet  implemented");
+			} else {
+				LOG.error("no processor found to convert "+inputName+" ("+getInputFormat()+") into XHTML yet");
 			}
-		} else if (InputFormat.SVG.equals(getInputFormat())) {
-			LOG.error("cannot turn SVG into XHTML yet");
-		} else if (InputFormat.XML.equals(getInputFormat())) {
-			htmlElement = SHTMLTransformer.transform(new File(inputName), new File(argProcessor.getStylesheet()), new File(argProcessor.getOutput()));
-		} else if (InputFormat.HTML.equals(getInputFormat())) {
-			htmlElement = pubstyle.readRawHtmlAndCreateWellFormed(inputFormat, inputName);
-		} else if (InputFormat.XHTML.equals(getInputFormat())) {
-			LOG.debug("using XHTML; not yet  implemented");
-		} else {
-			LOG.error("no processor found to convert "+inputName+" ("+getInputFormat()+") into XHTML yet");
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("cannot convert "+getInputFormat()+" "+inputName, e);
 		}
+	}
+
+	private void transformXmlToHTML(NormaArgProcessor argProcessor) throws Exception {
+		String stylesheet = argProcessor.getStylesheet();
+		String outputFile = argProcessor.getOutput();
+		if (inputName == null) {
+			throw new RuntimeException("No input file given");
+		} else if (stylesheet == null) {
+			throw new RuntimeException("No stylesheet file given");
+		} else if (outputFile == null) {
+			throw new RuntimeException("No output file given");
+		} 
+		htmlElement = SHTMLTransformer.transform(new File(inputName), new File(stylesheet), new File(outputFile));
 	}
 
 	private void ensurePubstyle() {

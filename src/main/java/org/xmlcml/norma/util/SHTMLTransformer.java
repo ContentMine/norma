@@ -37,12 +37,17 @@ public class SHTMLTransformer {
 
 	public static HtmlElement transform(File infile, File stylesheet, File outfile) throws Exception {
 		HtmlElement htmlElement = null;
-		if (infile != null && stylesheet != null && outfile != null) {
+		if (infile == null) {
+			LOG.debug("null input file");
+		} else if (stylesheet == null) {
+			LOG.debug("null stylesheet");
+		} else if (outfile == null) {
+			LOG.debug("null output file");
+		} else {
 			Transformer transformer = SHTMLTransformer.createTransformer(stylesheet);
 		    File outputDir = outfile.getParentFile();
 		    outputDir.mkdirs();
-		    LOG.debug("transforming: "+infile);
-		    LOG.debug("wrote HTML to "+outfile);
+		    LOG.debug("transforming: "+infile+"; wrote HTML to "+outfile);
 		    OutputStream baos = new ByteArrayOutputStream();
 			transformer.transform(new StreamSource(infile),  new StreamResult(baos));
 			String xmlString = baos.toString();
