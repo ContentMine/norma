@@ -149,7 +149,7 @@
 							<mapper>
 								<type>perm</type>
 								<filemode>555</filemode>
-								<prefix>/usr/share/ami-repo</prefix>
+								<prefix>/usr/share/norma-repo</prefix>
 							</mapper>
 						</data>
 
