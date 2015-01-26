@@ -1,0 +1,155 @@
+<argList>
+	<arg name="char" 
+		brief="-c"
+		long="--chars"
+		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
+		class="org.xmlcml.args.StringPair"
+		default=""
+		min="1" 
+		max="Integer.MAX_VALUE"
+		methodName="processChars"
+		>
+		<help>
+			"
+			CHARS:
+			Replaces one character by another. There are many cases where original characters are unsuitable 
+			for science and can be replaced (often by low codepoints).
+			Smart (balanced) quotes can usually be replaced by \" or '
+			mdash is often used where minus is better
+			Format, strings of form u1234 
+			",
+		</help>
+	</arg>	
+	<arg name="div"
+		brief="-d"
+		long="--divs"
+		args="expression [expression] ..."
+		class="java.lang.String"
+		default=""
+		min="1" 
+		max="Integer.MAX_VALUE"
+		methodName="processDivs"
+		>
+		<help>
+			
+			DIVS:
+			List of expressions identifying XML element to wrap as divs/sections
+			Examples might be h1, h2, h3, or numbers sections
+			Still under development.
+
+		</help>
+	</arg>	
+	<arg name="name"			
+		brief="-n"
+		long="--name"
+		args=" tag1,tag2 [tag1,tag2 ....]"
+		class="org.xmlcml.args.StringPair"
+		default=""
+		min="1" 
+		max="Integer.MAX_VALUE"
+		methodName="processNames"
+		>
+		<help>
+
+			NAME:
+			List of comma-separated pairs of tags; the first is replaced by the second. Example might be:
+			  em,i strong,b
+			i.e. replace all &lt;em>...&lt;/em> by &lt;i>...&lt;/i>
+			
+		</help>
+	</arg>	
+	<arg name="pubstyle"
+		brief="-p"
+		long="--pubstyle"
+		args="pub_code"
+		class="java.lang.String"
+		default="Pubstyle.PLOSONE.toString()"
+		min="1" 
+		max="1"
+		methodName="processPubstyle"
+		>
+		<help>
+			
+			PUBSTYLE:
+			Code or mnemomic to identifier the publisher or journal style. 
+			this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument 
+			is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and
+			soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
+			To get a list of these use "+"--pubstyle"+" without arguments. Note: under early development and note also that 
+			publisher styles change and can be transferred between publishers and journals
+			
+		</help>
+	</arg>	
+	<arg name="strip"
+		brief="-s"
+		long="--strip"
+		args="[options to strip]"
+		class="java.lang.String"
+		default="Pubstyle.PLOSONE.toString()"
+		min="0" 
+		max="Integer.MAX_VALUE"
+		methodName="processStrip"
+		>
+		<help>
+			
+			STRIP:
+			List of XML components to strip from the raw well-formed HTML;
+			if a list is given, then use that; if this argument is missing (or the single
+			string '#pubstyle' then the Pubstyle deualts are used. If there are no arguments
+			then no stripping is done. a single '?' will list the Pubstyle defaults
+			The following are allowed:
+			  an element local name (e.g. input)
+			  an XPath expression (e.g. //*[@class='foobar'])
+			  !DOCTYPE (strips &lt;!DOCTYPE ...> which speeds up reading)
+			  an attribute (e.g. @class) (NotYetImplemented)
+			
+			Note that tokens are whitespace-separated (sorry if this interacts with XPath)
+			
+			Examples: 
+			  input script object (removes these three element
+			  //*[contains(@class,'sidebar')]  (removes &lt;div class='sidebar'> ... &lt;/div>
+			  !DOCTYPE (removes &lt;!DOCTYPE ...> before parsing))
+			  !DOCTYPE input script object //*[contains(@class,'sidebar')] (removes all the above)
+			
+		</help>
+	</arg>	
+	<arg name="tidy"
+		brief="-t"
+		long="--tidy"
+		args="[HTML tidy option]"
+		class="java.lang.String"
+		default="JSoup"
+		min="1"
+		max="1"
+		methodName="processTidy"
+		>
+		<help>
+			
+			TIDY:
+			Choose an HTML tidy tool. At present we have:
+			  JTidy JSoup and HtmlUnit 
+			(NYI) This is very experimental at present.
+			
+		</help>
+	</arg>			
+	<arg name="xsl"
+		brief="-x"
+		long="--xsl"
+		args="stylesheet"
+		class="java.lang.String"
+		default="nlm"
+		min="1" 
+		max="1"
+		methodName="processXsl"
+		>
+		<help>
+			
+			XSL:
+			Transform XML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
+			or a code from one of {nlm, jats ...}
+			the codes are checked first and then the document reference.
+			
+		</help>
+	</arg>	
+</argList>
+			

@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -146,6 +147,8 @@ public class BMCTest {
 	
 	@Test 
 	public void testReadXML() throws Exception {
+		System.out.println("=========================================================================================");
+		System.out.println("=========================================================================================");
 		File outputFile = new File("target/bmc/15_1_511.html");
 		String[] args = {
 				"-i", new File(Fixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_15_1_511/fulltext.nodtd.xml").toString(),
@@ -157,6 +160,7 @@ public class BMCTest {
 		norma.run(args);
 		
 		Assert.assertTrue(outputFile.exists());
+		LOG.debug(outputFile+"; "+FileUtils.sizeOf(outputFile));
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
 		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
