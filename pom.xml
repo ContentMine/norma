@@ -160,7 +160,7 @@
 							<mapper>
 								<type>perm</type>
 								<filemode>555</filemode>
-								<prefix>/usr/share/norma/exampleData/html</prefix>
+								<prefix>/usr/share/norma-repo/exampleData/html</prefix>
 							</mapper>
 						</data>
 						<data>
@@ -169,7 +169,7 @@
 							<mapper>
 								<type>perm</type>
 								<filemode>555</filemode>
-								<prefix>/usr/share/norma/exampleData/html</prefix>
+								<prefix>/usr/share/norma-repo/exampleData/html</prefix>
 							</mapper>
 						</data>
 
@@ -178,7 +178,7 @@
 							<type>link</type>
 							<symlink>true</symlink>
 							<linkName>/usr/bin/norma</linkName>
-							<linkTarget>/usr/share/norma/bin/norma</linkTarget>
+							<linkTarget>/usr/share/norma-repo/bin/norma</linkTarget>
 						</data>
 
 					</dataSet>

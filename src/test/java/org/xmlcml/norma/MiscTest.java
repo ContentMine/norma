@@ -3,6 +3,7 @@ package org.xmlcml.norma;
 import java.io.File;
 
 import java.io.FileOutputStream;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -15,6 +16,7 @@ import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -23,9 +25,6 @@ import org.xmlcml.norma.util.SHTMLTransformer;
 
 public class MiscTest {
 
-	
-	private static final Logger LOG = Logger.getLogger(MiscTest.class);
-	
 	public void test() {
 		/** for example only
 		System.setProperty("javax.xml.transform.TransformerFactory", "net.sf.saxon.TransformerFactoryImpl");  // use saxon for xslt 2.0 support
@@ -256,4 +255,38 @@ I'd consider this answer an argument against the Java way of doing things.
 			Assert.assertEquals("bad Url", MalformedURLException.class, e.getClass());
 		}
 	}
+	
+	private static final Logger LOG = Logger.getLogger(MiscTest.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}	
+	
+	@Test
+	public void testReflection() throws Exception {
+		String methodName = "stringLength";
+		Method method = this.getClass().getDeclaredMethod(methodName, String.class);
+		method.setAccessible(true);
+		LOG.debug(method);
+		Class<?>[] parameterTypes = method.getParameterTypes();
+		for (Class<?> parameterType : parameterTypes) {
+			LOG.debug(parameterType);
+		}
+		String ss = "Hello World!";
+		try {
+			Integer length = (Integer) method.invoke(this, ss);
+			Assert.assertEquals(""+length, ss.length(), (int)length); 
+		} catch (Exception e) {
+			LOG.debug(e);
+		}
+		
+	}
+	
+	public Integer stringLength(String s) {
+		return (s == null) ? -1 : s.length();
+	}
+	
+	public void debugObject(Object o) {
+		LOG.debug(o);
+	}
+	
 }
