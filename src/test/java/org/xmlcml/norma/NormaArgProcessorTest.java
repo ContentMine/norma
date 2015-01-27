@@ -14,7 +14,6 @@ public class NormaArgProcessorTest {
 		String[] args = {
 			"-i", "foo", "bar", 
 			"-o", "plugh",
-			"-h",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
@@ -28,7 +27,6 @@ public class NormaArgProcessorTest {
 		String[] args = {
 			"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
 			"-o", "plugh",
-			"-h",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
@@ -40,7 +38,6 @@ public class NormaArgProcessorTest {
 		String[] args = {
 			"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
 			"-o", "plugh",
-			"-h",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
@@ -64,7 +61,7 @@ public class NormaArgProcessorTest {
 	
 	@Test
 	public void testHelp() {
-		NormaArgProcessor argProcessor = new NormaArgProcessor(new String[]{"-h"});
+//		NormaArgProcessor argProcessor = new NormaArgProcessor(new String[]{"-h"});
 	}
 	
 }
