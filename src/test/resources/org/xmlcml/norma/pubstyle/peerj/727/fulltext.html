@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8"><script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/analytics.js" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgYGUVVVGwIEXVRaAgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    
+    <title>Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics [PeerJ]</title>
+
+    
+        
+    <meta name="citation_title" content="Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics"><meta name="citation_date" content="2015-01-27"><meta name="citation_doi" content="10.7717/peerj.727"><meta name="citation_language" content="en"><meta name="citation_pdf_url" content="https://peerj.com/articles/727.pdf"><meta name="citation_fulltext_html_url" content="https://peerj.com/articles/727"><meta name="citation_volume" content="3"><meta name="citation_firstpage" content="e727"><meta name="citation_keywords" content="Zebrafish; Intracellular calcium; Yellow cameleon; 
+          WWOX
+        "><meta name="citation_journal_title" content="PeerJ"><meta name="citation_journal_abbrev" content="PeerJ"><meta name="citation_publisher" content="PeerJ Inc."><meta name="citation_issn" content="2167-8359"><meta name="citation_author" content="Yusuke Tsuruwaka"><meta name="citation_author_institution" content="Marine Bioresource Exploration Research Group, Japan Agency for Marine-Earth Science and Technology (JAMSTEC), Yokosuka, Japan"><meta name="citation_author_email" content="tsuruwaka@jamstec.go.jp"><meta name="citation_author" content="Masataka Konishi"><meta name="citation_author_institution" content="School of Materials Science, Japan Advanced Institute of Science and Technology (JAIST), Nomi, Ishikawa, Japan"><meta name="citation_author" content="Eriko Shimada"><meta name="citation_author_institution" content="Department of Animal Science, University of California, Davis, CA, USA">
+    <meta name="description" content="We investigated the role of the WW domain-containing oxidoreductase (wwox) gene in the embryonic development of zebrafish, with particular emphasis on intracellular Ca2+ dynamics because Ca2+ is an important intracellular messenger. Comparisons between zebrafish wwox and human WWOX sequences identified highly conserved domain structures. wwox was expressed in developing heart tissues in the zebrafish embryo. Moreover, wwox knockdown induced pericardial edema with similarities to conditions observed in human breast cancer. The wwox knockdown embryos with the edema died within a week. High Ca2+ levels were observed at the boundary between the edema and yolk in wwox knockdown embryos.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics">
+    <meta property="og:url" content="https://peerj.com/articles/727">
+    <meta property="og:site_name" content="PeerJ">
+
+                    <meta property="og:image" content="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-small.jpg">
+        <meta name="twitter:image" content="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-small.jpg">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://peerj.com/articles/727">
+    <meta name="twitter:site" content="@thePeerJ">
+    <meta name="twitter:title" content="Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics">
+    <meta name="twitter:description" content="We investigated the role of the WW domain-containing oxidoreductase (wwox) gene in the embryonic development of zebrafish, with particular emphasis on intracellular Ca2+ dynamics because Ca2+ is an important intracellular messenger. Comparisons between zebrafish wwox and human WWOX sequences identified highly conserved domain structures. wwox was expressed in developing heart tissues in the zebrafish embryo. Moreover, wwox knockdown induced pericardial edema with similarities to conditions observed in human breast cancer. The wwox knockdown embryos with the edema died within a week. High Ca2+ levels were observed at the boundary between the edema and yolk in wwox knockdown embryos.">
+
+    <link rel="alternate" type="application/pdf" href="https://peerj.com/articles/727.pdf">
+    <link rel="alternate" type="application/rdf+xml" href="https://peerj.com/articles/727.rdf">
+    <link rel="alternate" type="application/json" href="https://peerj.com/articles/727.json">
+    <link rel="alternate" type="application/xml" href="https://peerj.com/articles/727.xml">
+    <link rel="alternate" type="application/unixref+xml" href="https://peerj.com/articles/727.unixref">
+    <link rel="alternate" type="application/vnd.citationstyles.csl+json" href="https://peerj.com/articles/727.citeproc">
+    <link rel="alternate" type="text/html" href="https://peerj.com/articles/727.html">
+
+    <link rel="canonical" href="https://peerj.com/articles/727/">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="fb:app_id" content="534542813234464">
+
+                        <link rel="stylesheet" href="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/01e6f72-c4cc437.css">
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="/assets/css/ie8.css">
+<![endif]-->
+
+<!--[if lt IE 10]>
+    <link rel="stylesheet" href="/assets/css/ie9.css">
+<![endif]-->
+
+    <style>html, body { height: 100%; }</style>
+    
+
+    <link rel="stylesheet" href="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/2679997-509e8f8.css">
+
+    <link rel="stylesheet" href="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/4647346-64fe734.css">
+        <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/jquery.js"></script>
+
+<script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/jquery-migrate.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/assets/js/html5shiv.js"></script>
+
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="/assets/js/json2.js"></script>
+<![endif]-->
+
+<script>
+    var PeerJ = {
+        Article: {},
+        User: {
+            anonymous: true        },
+        Publication: {},
+        Production: {},
+        Event: {},
+        Com: {},
+        Payment: {},
+        Annotation: {},
+        Search: {},
+        Home: {},
+        Subjects: {},
+        Sync: {}
+    };
+</script>
+    
+    <link rel="shortcut icon" href="https://d2pdyyx74uypu5.cloudfront.net/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://d2pdyyx74uypu5.cloudfront.net/images/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://peerj.com/articles/osd.xml" title="PeerJ">
+     
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31208920-1', 'peerj.com');
+    ga('require', 'displayfeatures');
+    var gaSendPageView = setTimeout(function() { gaSendPageView = null; ga('send', 'pageview'); }, 3000);
+
+    // adjust bounce rate in google analytics as if someone is reading an article, its not really a bounce
+    // http://www.quickonlinetips.com/archives/2014/08/adjusted-bounce-rate-in-universal-google-analytics/
+    setTimeout("ga('send','event','adjusted bounce rate','page visit 15 seconds or more')",15000);
+
+      
+    </script>
+<script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/MathJax.js" type="text/javascript"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+
+
+<body class=""><div style="display: none;" id="MathJax_Message"></div><div style="display: none;" class="fr-window fr-window-fresco"><div style="display: none;" class="fr-bubble"><div class="fr-frames fr-frames-landscape"><div class="fr-frames-move"></div></div><div style="display: none;" class="fr-thumbnails"><div style="width: 1297px; margin-left: -648.5px;" class="fr-thumbnails-wrapper"><div class="fr-thumbnails-slider"><div style="display: none; height: 58px;" class="fr-thumbnails-side fr-thumbnails-side-previous"><div class="fr-thumbnails-side-button"><div class="fr-thumbnails-side-button-background"></div><div class="fr-thumbnails-side-button-icon"></div></div></div><div style="width: 1296px;" class="fr-thumbnails-thumbs"><div style="width: 1px;" class="fr-thumbnails-slide"></div></div><div style="display: none; height: 58px;" class="fr-thumbnails-side fr-thumbnails-side-next"><div class="fr-thumbnails-side-button"><div class="fr-thumbnails-side-button-background"></div><div class="fr-thumbnails-side-button-icon"></div></div></div></div></div></div><div style="display: none;" class="fr-touch"><div class="fr-touch-wrapper"><div class="fr-touch-background"></div><div class="fr-touch-info"><div class="fr-touch-info-padder"><div class="fr-touch-caption-wrapper"><div class="fr-touch-caption"></div></div></div></div><div class="fr-touch-button fr-touch-close"><span class="fr-touch-button-background"></span><span class="fr-touch-button-icon"></span></div><div class="fr-touch-button fr-touch-more"><span class="fr-touch-button-background"></span><span class="fr-touch-button-icon"></span></div></div></div></div></div><div style="display: none;" class="fr-overlay fr-overlay-fresco"><div class="fr-overlay-background"></div></div>
+    
+    
+            <!-- FreshDesk variable (TODO: move elsewhere) -->
+
+<nav class="navbar navbar-fixed-top navbar-inverse navbar-alpha" role="navigation"><div class="navbar-inner"><!-- .btn-navbar is used as the toggle for collapsed navbar content --><a class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><!-- logo --><ul class="nav pull-left nav-sections"><li><a href="https://peerj.com/" class="nav-logo  nav-section"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/nav-logo-blue.png" alt="PeerJ" class="nav-logo-out" height="15" width="46"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/nav-logo-white.png" alt="PeerJ" class="nav-logo-over" height="15" width="46"></a></li></ul><!-- sections --><ul class="nav pull-left nav-collapse nav-sections nav-sections-main collapse search-hide"><li><a href="https://peerj.com/articles/" class="active nav-section">ARTICLES</a></li><li><a href="https://peerj.com/preprints/" class=" nav-section">PREPRINTS</a></li><li><a href="https://peerj.com/questions/" class=" nav-section">DISCUSSIONS</a></li><!-- more --><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://blog.peerj.com/">Blog</a></li><li><a href="https://peerj.com/about/">Who we are</a></li><li><a href="https://peerj.com/academic-boards/advisors/">Academic advisors</a></li><li><a href="https://peerj.com/about/how-it-works/">How PeerJ works</a></li><li><a href="https://peerj.com/pricing/institutions/">Institutional plans</a></li><li><a href="https://peerj.com/about/reviews/">Reviews and awards</a></li><li><a href="https://peerj.com/about/contact/">Contact</a></li></ul></li></ul><!-- search --><div class="nav nav-collapse collapse pull-right"><form class="navbar-search" action="/search/"><input autocomplete="off" name="q" data-autocomplete-url="/search/" class="search-query ui-autocomplete-input" placeholder="Search" type="text"><!--<i class="icon-search"></i>--></form></div><ul class="nav pull-right nav-collapse collapse search-hide"><!-- anonymous --><li><a href="https://peerj.com/login">Login</a></li></ul><ul style="width: 191.458px;" class="nav pull-right search-hide nav-shifter"></ul><!-- for authors, my manuscripts --><ul style="visibility: visible;" class="nav nav-center nav-collapse collapse search-hide pull-right"><!-- for authors --><li class="dropdown nav-authors"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-info4 icon-large nav-icon icomoon"></i><span class="visible-wide">FOR AUTHORS</span><b class="caret"></b></a><ul class="dropdown-menu"><li><a href="https://peerj.com/about/author-instructions/">Submission Guidelines</a></li><!-- NOTE: replace with new subject areas path when ready --><li><a href="https://peerj.com/subjects/">Subject Areas</a></li><li><a href="https://peerj.com/academic-boards/">Editorial Board</a></li><li><a href="https://peerj.com/about/editorial-criteria/">Editorial Criteria</a></li><li><a href="https://peerj.com/pricing/">Pricing</a></li><li><a href="https://peerj.com/about/FAQ/">FAQ</a></li><li><a href="https://peerj.com/about/aims-and-scope/">Aims and Scope</a></li><li><a href="https://peerj.com/about/author-interviews/">Author Interviews</a></li><li><a href="https://peerj.com/about/policies-and-procedures/">Policies and Procedures</a></li><!--<li><a href="#">Why PeerJ?</a></li>--></ul></li><!-- my manuscripts --><!-- note: dropdown classes used just to maintain display --><li class="nav-manuscripts dropdown"><a href="https://peerj.com/manuscripts/start/" class="dropdown-toggle"><span>SUBMIT ARTICLE</span></a></li></ul></div></nav>
+    
+        <div class="item-top-navbar headroom headroom--top">
+    <div class="item-top-navbar-inner">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <a href="https://peerj.com/" class="brand item-top-navbar-brand" title="PeerJ"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/nav-logo-blue.png" alt="PeerJ" height="26" width="53"></a>
+
+                    <span class="item-top-navbar-social">
+                                                
+                        
+                                                                          
+                                                                            
+                        <a class="pj-socialism tw-soc" href="http://twitter.com/share?url=https%3A%2F%2Fpeerj.com%2Farticles%2F727%2F&amp;via=thePeerJ&amp;text=loss%20of%20wwox%20in%20zebrafish&amp;related=" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=500,height=500,scrollbars,resizable'); return false;">Twitter</a>
+
+                        <a class="pj-socialism fb-soc" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fpeerj.com%2Farticles%2F727%2F" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=500,height=500,scrollbars,resizable'); return false;">Facebook</a>
+
+                        <a class="pj-socialism go-soc" href="https://plus.google.com/share?url=https%3A%2F%2Fpeerj.com%2Farticles%2F727%2F" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=500,height=500,scrollbars,resizable'); return false;">Google+</a>
+
+                        <a class="pj-socialism em-soc" href="mailto:?Subject=Relevant%20research%20paper%20in%20PeerJ&amp;Body=Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2%2B%20dynamics%20https%3A%2F%2Fpeerj.com%2Farticles%2F727%2F" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=500,height=500,scrollbars,resizable'); return false;">Email</a>
+                    </span>
+                </div>
+                <div class="span6 item-top-navbar-title">
+                                            <span class="item-top-navbar-preprint"><i class="icon-group"></i> Peer-reviewed:</span>
+                                        Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics
+                </div>
+                <div class="span3" style="margin-left: 20px">
+                                           <div style="display: block;" class="item-metrics-counts-top-nav article-item-metrics-counts">
+                                                                    <span style="display: inline;" class="article-item-metrics-count">
+                                        <span data-count="visitors">52</span>
+                                        <span class="article-item-metrics-label">Visitors</span>
+                                    </span>
+                                
+                            <span style="display: inline;" class="article-item-metrics-count">
+                                <span data-count="views-html">115</span>
+                                <span class="article-item-metrics-label">Views</span>
+                            </span>
+
+                            <span style="display: inline;" class="article-item-metrics-count">
+                                <span data-count="views-pdf">14</span>
+                                <span class="article-item-metrics-label">Downloads</span>
+                            </span>
+                       </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="wrap">
+        <noscript><div class="alert alert-warning"><i class="icon icon-warning-sign"></i>
+                PeerJ works best with JavaScript enabled</div></noscript>
+
+        
+        <div id="nav-pad"></div>
+
+        
+        <div class="container">
+            
+	<div class="row">
+        <!-- Left sidebar -->
+	    <div class="span3 article-item-leftbar-wrap article-sidebar" style="width:250px">
+	        &nbsp;
+	        <div class="article-item-leftbar" style="width:250px">
+                <div class="affix-top" data-spy="affix" data-offset-top="600" data-offset-bottom="170" style="width:250px">
+        
+<div class="btn-group notification-actions-btn" style="display:inline-block">
+
+            <span data-original-title="Receive article updates" class="btn btn-mini btn-success follow-btn" id="item-left-follow-btn" title="" data-toggle="tooltip" data-success-modal="#followModal" data-href="/follow/publication/727/0/">
+        <i class="icon-bullhorn"></i> <span style="display: none;" class="button_text_subscribe">Subscribe</span><span style="display: inline;" class="button_text_follow">Follow</span></span>
+    
+            <a id="item-flag-button" class="btn btn-mini" data-toggle="modal" href="#flagModal"><span data-original-title="Report an issue" data-toggle="tooltip" title=""><i class="icon-large icon-flag"></i></span></a>
+    </div>
+
+        <div class="btn-group open" style="display:inline-block">
+                
+    <a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Download as <i class="icon-large icon-download"></i></a>
+
+    <ul class="dropdown-menu">
+                   <li><a href="https://peerj.com/articles/727.pdf" class="article-download-pdf">PDF</a></li>
+           <li><a href="https://peerj.com/articles/727.xml" class="article-download-xml">XML</a></li>
+           <li><a href="https://peerj.com/articles/727.ris" class="article-download-ris">RIS</a></li>
+           <li><a href="https://peerj.com/articles/727.bib" class="article-download-bibtex">BibTeX</a></li>
+                <li><a href="http://www.mendeley.com/import/?doi=10.7717/peerj.727">Save to Mendeley</a></li>
+                    <li><a href="http://www.readcube.com/articles/10.7717/peerj.727">Read in ReadCube</a></li>
+            </ul>
+</div>
+
+        <nav class="article-sidebar-block">
+        <div class="article-navigation"><ul class="nav nav-list"><li class="article-anchor"><a href="#intro">Introduction</a></li><li class="article-anchor"><a href="#materials%7Cmethods">Materials and Methods</a></li><li class="article-anchor"><a href="#results">Results</a></li><li class="article-anchor"><a href="#discussion">Discussion</a></li><li class="article-anchor"><a href="#conclusion">Conclusion</a></li><li class="article-anchor"><a href="#additional-information">Additional Information and Declarations</a></li></ul></div>
+    </nav>
+
+        <nav class="article-sidebar-block">
+        <ul class="nav nav-list">
+                        <li>
+                <a href="https://peerj.com/articles/727/reviews/" rel="version-history"><i class="icon-group icon-fixed-width"></i> Peer Review information</a>
+            </li>
+            
+                            
+                                    <li><a href="http://scholar.google.com/scholar?cites=https%3A%2F%2Fpeerj.com%2Farticles%2F727%2F" target="_blank"><i class="icon-copy icon-fixed-width"></i> Citations in Google Scholar</a></li>
+                            
+            
+            <li><a href="#questions"><i class="icon-comments icon-fixed-width"></i> Questions
+                    <span style="display: none;" class="annotation-counter annotation-counter-questioning">0</span></a></li>
+
+            <li><a href="#links"><i class="icon-link icon-fixed-width"></i> Links
+                    <span style="display: none;" class="annotation-counter annotation-counter-linking">0</span></a></li>
+        </ul>
+    </nav>
+
+
+        </div>
+
+<nav class="article-sidebar-block">
+    <div class="subjects-navigation"><h3 class="slim facet-h3">Subject areas</h3><ul class="nav nav-list"><li class="article-anchor"><a href="https://peerj.com/subjects/?filter=Developmental%20Biology">Developmental Biology</a></li><li class="article-anchor"><a href="https://peerj.com/subjects/?filter=Molecular%20Biology">Molecular Biology</a></li></ul></div>
+</nav>
+
+<div id="article-item-metrics-container" class="show-when-at-top">
+            <div style="display: block;" class="article-item-metrics-counts row-fluid" data-src="/articles/727/counter/">
+            <div class="article-item-metrics-count span4">
+                <div data-count="visitors">52</div>
+                <div class="article-item-metrics-label">Visitors</div>
+            </div>
+
+            <div class="article-item-metrics-count span4">
+                <div data-count="views-html">115</div>
+                <div class="article-item-metrics-label">Views</div>
+            </div>
+
+            <div class="article-item-metrics-count span4">
+                <div data-count="views-pdf">14</div>
+                <div class="article-item-metrics-label">Downloads</div>
+            </div>
+        </div>
+    
+    <div class="article-item-metrics-modal-link">
+        <i class="icon-signal"></i> <!--suppress HtmlUnknownAnchorTarget -->
+        <a id="item-usage-btn" data-toggle="modal" href="#metricsModal">
+            View all metrics + mentions on the Web</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div id="annotations-sidebar" class="span5"><div data-selector="#p-1" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-1">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-2" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-2">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-3" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-3">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-4" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-4">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-5" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-5">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-6" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-6">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-7" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-7">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-8" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-8">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-9" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-9">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-10" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-10">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-11" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-11">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-12" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-12">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-14" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-14">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-17" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-17">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-19" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-19">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-20" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-20">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-21" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-21">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-22" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-22">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#p-23" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23p-23">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#fig-1" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23fig-1">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#fig-2" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23fig-2">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#fig-3" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23fig-3">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div><div data-selector="#fig-4" class="annotations annotations-positioned"><a data-toggle="annotation-form" class="btn btn-primary add-annotation" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1&amp;selector=%23fig-4">Ask a question about this section</a><button class="btn btn-default close-annotations">Close</button><div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div><div style="display: block;" class="annotation-form-container"></div></div></div>
+
+        <div id="article-item-middle" class="span7">
+            
+                                    
+            <!-- Main article -->
+            <article itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle"><header class="article-meta front"><h1 class="article-title" itemprop="name">Loss of <i>wwox</i> expression in zebrafish embryos causes edema and alters Ca<sup>2+</sup> dynamics</h1>
+<div class="article-authors">
+<span class="contrib" itemscope="itemscope" itemtype="http://schema.org/Person" id="author-1" data-jats-contrib-type="author" data-jats-corresp="yes" itemprop="author"><a href="https://peerj.com/articles/727/author-1" rel="author" itemprop="url"><span class="name" itemprop="name"><span class="given-names" itemprop="givenName">Yusuke</span> <span class="surname" itemprop="familyName">Tsuruwaka</span></span></a><a data-original-title="email the corresponding author" class="corresp" href="mailto:tsuruwaka@jamstec.go.jp" target="_blank" title="" data-toggle="tooltip" itemprop="email"><i class="icon-envelope">​</i></a><sup class="contrib-xref-group"><a class="aff xref" href="#aff-1" itemprop="affiliation" itemscope="itemscope" itemtype="http://schema.org/Organization" itemref="aff-1">1</a></sup></span>, <span class="contrib" itemscope="itemscope" itemtype="http://schema.org/Person" id="author-2" data-jats-contrib-type="author" itemprop="author"><a href="https://peerj.com/articles/727/author-2" rel="author" itemprop="url"><span class="name" itemprop="name"><span class="given-names" itemprop="givenName">Masataka</span> <span class="surname" itemprop="familyName">Konishi</span></span></a><sup class="contrib-xref-group"><a class="aff xref" href="#aff-2" itemprop="affiliation" itemscope="itemscope" itemtype="http://schema.org/Organization" itemref="aff-2">2</a></sup></span>, <span class="contrib" itemscope="itemscope" itemtype="http://schema.org/Person" id="author-3" data-jats-contrib-type="author" itemprop="author"><a href="https://peerj.com/articles/727/author-3" rel="author" itemprop="url"><span class="name" itemprop="name"><span class="given-names" itemprop="givenName">Eriko</span> <span class="surname" itemprop="familyName">Shimada</span></span></a><sup class="contrib-xref-group"><a class="aff xref" href="#aff-3" itemprop="affiliation" itemscope="itemscope" itemtype="http://schema.org/Organization" itemref="aff-3">3</a></sup></span>
+</div><div class="article-publication-date"><span class="article-meta-value">January 27, 2015</span></div>
+<div id="article-item-article-information-container"><div class="row-fluid row-article-item-section-heading"><div class="span1 article-main-left-span1"><i class="article-section-indicator icon-chevron-right"></i></div><h2>Author and article information</h2><div class="article-item-section-toggle" id="article-item-article-information"></div></div><div style="display: none;" class="row-fluid row-article-item-section"><div class="span1 article-main-left-span1">&nbsp;</div><div class="span11 article-item-section-content"><div class="article-item-section" id="article-information">
+<div class="article-notes">
+<div itemscope="itemscope" itemtype="http://schema.org/Organization" id="aff-1">
+<span class="article-label-container"><a class="article-label">1</a></span><span itemprop="address"><span class="institution">Marine Bioresource Exploration Research Group, Japan Agency for Marine-Earth Science and Technology (JAMSTEC)</span>, <span class="addr-line">Yokosuka</span>, <span class="country">Japan</span></span>
+</div>
+<div itemscope="itemscope" itemtype="http://schema.org/Organization" id="aff-2">
+<span class="article-label-container"><a class="article-label">2</a></span><span itemprop="address"><span class="institution">School of Materials Science, Japan Advanced Institute of Science and Technology (JAIST)</span>, <span class="addr-line">Nomi, Ishikawa</span>, <span class="country">Japan</span></span>
+</div>
+<div itemscope="itemscope" itemtype="http://schema.org/Organization" id="aff-3">
+<span class="article-label-container"><a class="article-label">3</a></span><span itemprop="address"><span class="institution">Department of Animal Science, University of California</span>, <span class="addr-line">Davis, CA</span>, <span class="country">USA</span></span>
+</div>
+</div>
+<dl class="article-identifiers">
+<dt> DOI</dt>
+<dd><a href="http://dx.doi.org/10.7717/peerj.727" itemprop="sameAs">10.7717/peerj.727</a></dd>
+</dl>
+<dl class="article-dates">
+<dt>Published</dt>
+<dd><time itemprop="datePublished">2015-01-27</time></dd>
+<dt>Accepted</dt>
+<dd><time itemprop="dateAccepted">2014-12-24</time></dd>
+<dt>Received</dt>
+<dd><time itemprop="dateCreated">2014-07-31</time></dd>
+</dl>
+<dl class="article-editors">
+<dt>Academic Editor</dt>
+<dd itemprop="editor" itemscope="itemscope" itemtype="http://schema.org/Person"><a href="https://peerj.com/articles/727/editor-1" class="contrib" id="editor-1" data-jats-contrib-type="editor"><span class="name" itemprop="name"><span class="given-names" itemprop="givenName">Juan</span> <span class="surname" itemprop="familyName">Riesgo-Escovar</span></span></a></dd>
+</dl>
+<dl class="article-subjects">
+<dt>Subject Areas</dt>
+<dd>
+<a class="subject" itemprop="about" href="https://peerj.com/subjects/?filter=Developmental%20Biology">Developmental Biology</a>, <a class="subject" itemprop="about" href="https://peerj.com/subjects/?filter=Molecular%20Biology">Molecular Biology</a>
+</dd>
+<dt>Keywords</dt>
+<dd>
+<span class="kwd" itemprop="keywords">Zebrafish</span>, <span class="kwd" itemprop="keywords">Intracellular calcium</span>, <span class="kwd" itemprop="keywords">Yellow cameleon</span>, <span class="kwd" itemprop="keywords">
+          <i>WWOX</i>
+        </span>
+</dd>
+</dl>
+<dl class="article-license">
+<dt>Copyright</dt>
+<dd>© <span itemprop="copyrightYear">2015</span> <span itemprop="copyrightHolder">Tsuruwaka et al.</span>
+</dd>
+<dt>Licence</dt>
+<dd><span class="license-p">This is an open access article distributed under the terms of the <a class="ext-link" href="http://creativecommons.org/licenses/by/4.0/" rel="license" data-jats-ext-link-type="uri">Creative Commons Attribution License</a>,
+ which permits unrestricted use, distribution, reproduction and 
+adaptation in any medium and for any purpose provided that it is 
+properly attributed. For attribution, the original author(s), title, 
+publication source (PeerJ) and either DOI or URL of the article must be 
+cited.</span></dd>
+</dl>
+<dl class="self-citation">
+<dt>Cite this article</dt>
+<dd>
+<span class="self-citation-authors">Tsuruwaka Y, Konishi M, Shimada E.</span> (<span class="self-citation-year">2015</span>) <span class="self-citation-title">Loss of <i>wwox</i> expression in zebrafish embryos causes edema and alters Ca<sup>2+</sup> dynamics</span>. <span itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="self-citation-journal" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">PeerJ</span></span> <span class="self-citation-volume" itemprop="volumeNumber">3</span></span>:<span class="self-citation-elocation" itemprop="pageStart">e727</span> <a href="http://dx.doi.org/10.7717/peerj.727" itemprop="url">http://dx.doi.org/10.7717/peerj.727</a>
+</dd>
+</dl>
+</div></div></div></div><div id="article-item-abstract-container"><div class="row-fluid row-article-item-section-heading"><div class="span1 article-main-left-span1"><i class="article-section-indicator icon-chevron-down"></i></div><h2>Abstract</h2><div class="article-item-section-toggle" id="article-item-abstract"></div></div><div class="row-fluid row-article-item-section"><div class="span1 article-main-left-span1">&nbsp;</div><div class="span11 article-item-section-content"><div class="abstract" itemprop="description"><p>We investigated the role of the WW domain-containing oxidoreductase (<i>wwox</i>) gene in the embryonic development of zebrafish, with particular emphasis on intracellular Ca<sup>2+</sup> dynamics because Ca<sup>2+</sup> is an important intracellular messenger. Comparisons between zebrafish <i>wwox</i> and human <i>WWOX</i> sequences identified highly conserved domain structures. <i>wwox</i> was expressed in developing heart tissues in the zebrafish embryo. Moreover, <i>wwox</i> knockdown induced pericardial edema with similarities to conditions observed in human breast cancer. The <i>wwox</i> knockdown embryos with the edema died within a week. High Ca<sup>2+</sup> levels were observed at the boundary between the edema and yolk in <i>wwox</i> knockdown embryos.</p></div><div class="alert alert-info self-citation" style="margin-top:20px"><p style="color:#333;font-weight:500">Cite this as</p>
+<span class="self-citation-authors">Tsuruwaka Y, Konishi M, Shimada E.</span> (<span class="self-citation-year">2015</span>) <span class="self-citation-title">Loss of <i>wwox</i> expression in zebrafish embryos causes edema and alters Ca<sup>2+</sup> dynamics</span>. <span itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="self-citation-journal" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">PeerJ</span></span> <span class="self-citation-volume" itemprop="volumeNumber">3</span></span>:<span class="self-citation-elocation" itemprop="pageStart">e727</span> <a href="http://dx.doi.org/10.7717/peerj.727" itemprop="url">http://dx.doi.org/10.7717/peerj.727</a>
+</div></div></div></div>
+</header><main><div class="body" lang="en">
+
+</div><div><div class="row-fluid row-article-item-section-heading"><div class="span1 article-main-left-span1"><i class="article-section-indicator icon-chevron-down"></i></div><h2>Main article text</h2><div class="article-item-section-toggle" id="article-item-main-text"></div></div><div class="row-fluid row-article-item-section"><div class="span1 article-main-left-span1">&nbsp;</div><div class="span11 article-item-section-content"><div id="article-item-main-sections"><section class="sec" id="intro"><h2 class="heading">Introduction</h2>
+<p class="has-plink" id="p-1"><a href="#p-1" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>WW domain-containing oxidoreductase (<i>WWOX</i>) is a tumor suppressor gene that is reportedly absent in several cancers, including those of breast, prostate, and ovary (<a data-original-title="WWOX, the tumour suppressor gene affected in multiple cancers" class="xref xref-bibr" href="http://scholar.google.com/scholar_lookup?title=WWOX,%20the%20tumour%20suppressor%20gene%20affected%20in%20multiple%20cancers&amp;author=Lewandowska&amp;publication_year=2009" title="" data-jats-ref-type="bibr" data-jats-rid="ref-11">Lewandowska et al., 2009</a>; <a data-original-title="WWOX gene and gene product: tumor suppression through specific protein interactions" class="xref xref-bibr" href="http://dx.doi.org/10.2217%2Ffon.09.152" title="" data-jats-ref-type="bibr" data-jats-rid="ref-18">Salah, Aqeilan &amp; Huebner, 2010</a>), and has been associated with cancer progression in <i>Wwox</i> conditional knockout (KO) mice (<a data-original-title="WWOX tumor suppressor gene" class="xref xref-bibr" href="http://scholar.google.com/scholar_lookup?title=WWOX%20tumor%20suppressor%20gene&amp;author=Yang&amp;publication_year=2008" title="" data-jats-ref-type="bibr" data-jats-rid="ref-24">Yang &amp; Zhang, 2008</a>; <a data-original-title="WW domain-containing oxidoreductase’s role in myriad cancers: clinical significance and future implications" class="xref xref-bibr" href="http://dx.doi.org/10.1177%2F1535370213519213" title="" data-jats-ref-type="bibr" data-jats-rid="ref-9">Gardenswartz &amp; Aqeilan, 2014</a>; <a data-original-title="Common chromosomal fragile site gene WWOX in metabolic disorders and tumors" class="xref xref-bibr" href="http://dx.doi.org/10.7150%2Fijbs.7727" title="" data-jats-ref-type="bibr" data-jats-rid="ref-12">Li et al., 2014</a>). <i>WWOX</i>
+ is a 46-kDa protein with two N-terminal WW domains and a central 
+short-chain dehydrogenase/reductase domain (SDR domain). These WW 
+domains may be involved in protein–protein interactions, whereas the SDR
+ domain may play roles in steroid metabolism and bone development (<a data-original-title="Tumor suppressor WWOX binds to ΔNp63α and sensitizes cancer cells to chemotherapy" class="xref xref-bibr" href="http://dx.doi.org/10.1038%2Fcddis.2013.6" title="" data-jats-ref-type="bibr" data-jats-rid="ref-19">Salah et al., 2013</a>; <a data-original-title="Common chromosomal fragile site gene WWOX in metabolic disorders and tumors" class="xref xref-bibr" href="http://dx.doi.org/10.7150%2Fijbs.7727" title="" data-jats-ref-type="bibr" data-jats-rid="ref-12">Li et al., 2014</a>). <i>WWOX</i> is essential for vertebrate development and bone metabolism, which are dependent on intracellular Ca<sup>2+</sup> levels (<a data-original-title="The WWOX tumor suppressor is essential for postnatal survival and normal bone metabolism" class="xref xref-bibr" href="http://dx.doi.org/10.1074%2Fjbc.M800855200" title="" data-jats-ref-type="bibr" data-jats-rid="ref-2">Aqeilan et al., 2008</a>). Accordingly, Ca<sup>2+</sup> signaling is known to be a key messenger in various biological phenomena (<a data-original-title="Ca2+ signaling and intracellular Ca2+ binding proteins" class="xref xref-bibr" href="http://dx.doi.org/10.1093%2Foxfordjournals.jbchem.a021466" title="" data-jats-ref-type="bibr" data-jats-rid="ref-15">Niki et al., 1996</a>; <a data-original-title="Calcium signaling in vertebrate embryonic patterning and morphogenesis" class="xref xref-bibr" href="http://dx.doi.org/10.1016%2Fj.ydbio.2007.04.043" title="" data-jats-ref-type="bibr" data-jats-rid="ref-20">Slusarski &amp; Pelegri, 2007</a>), and intracellular Ca<sup>2+</sup> levels are reportedly increased in advanced sarcoma (<a data-original-title="Calcium-activated chloride channel ANO1 promotes breast cancer progression by activating EGFR and CAMK signaling" class="xref xref-bibr" href="http://dx.doi.org/10.1073%2Fpnas.1217072110" title="" data-jats-ref-type="bibr" data-jats-rid="ref-6">Britschgi et al., 2013</a>). However, it is difficult to monitor intracellular Ca<sup>2+</sup> levels in various developmental stages of mammals because their embryos are not transparent. Hence, we focused on zebrafish (<i>Danio rerio</i>),
+ which provides an established model to study human cancer and offers 
+several advantages over mammalian model systems, including rapid 
+development of transparent embryos (<a data-original-title="Zebrafish as a cancer model system" class="xref xref-bibr" href="http://dx.doi.org/10.1016%2FS1535-6108%2802%2900052-1" title="" data-jats-ref-type="bibr" data-jats-rid="ref-1">Amatruda et al., 2002</a>; <a data-original-title="Zebrafish as a cancer model" class="xref xref-bibr" href="http://dx.doi.org/10.1158%2F1541-7786.MCR-07-2167" title="" data-jats-ref-type="bibr" data-jats-rid="ref-8">Feitsma &amp; Cuppen, 2008</a>). In the present study, we investigated the function of <i>wwox</i> in vertebrate development using <i>D. rerio</i> as a model organism, and assessed the ensuing effects on intracellular Ca<sup>2+</sup> dynamics.</p></section><section class="sec" id="materials|methods"><h2 class="heading">Materials and Methods</h2>
+<section class="sec" id="materials"><h3 class="heading">Materials</h3>
+<p class="has-plink" id="p-2"><a href="#p-2" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Adult
+ wild-type zebrafish were purchased from a local pet store (Remix, 
+Nagoya, Japan) and were maintained at 28.5 °C in 2-L tank equipped with a
+ system that circulates conditioned filtered tap water under a 14-h/10-h
+ light/dark cycle. Embryos were generated from natural crosses. 
+Fertilized eggs were rinsed with autoclaved 1/3 Ringer’s solution 
+containing 1.67 mM HEPES, 38.7 mM NaCl, 0.97 mM potassium chloride, and 
+0.60 mM calcium chloride (pH 7.2) to remove debris. Constructs of yellow
+ cameleon 2.12 (pCS2-YC2.12) were kindly provided by A. Miyawaki (RIKEN 
+Advanced Science Institute, Wako, Japan). The open reading frame of 
+YC2.12 was inserted between <i>Bam</i>HI and <i>Eco</i>RI restriction 
+sites located downstream of the SP6 promoter sequence in the pCS2 
+vector. Using SP6 RNA polymerase from the mMessage mMachine SP6 <i>in vitro</i> transcription kit (Life Technologies, Carlsbad, CA, USA), 5′-capped YC2.12 mRNA was synthesized <i>in vitro</i>
+ using pCS2-YC2.12 as a template. Synthesized mRNA from a single 
+expected electrophoretic band was purified, dissolved in nuclease-free 
+water, and stored at −80  °C before use. No approval was required to 
+conduct studies on fish according to the Ministry of Education, Culture,
+ Sports, Science and Technology, Notice No. 71 (in effect since June 1, 
+2006).</p></section><section class="sec"><h3 class="heading">Total RNA extraction</h3>
+<p class="has-plink" id="p-3"><a href="#p-3" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Total
+ RNA was extracted from whole fish embryos at various developmental 
+stages. After rinsing with 10 mM phosphate-buffered saline (PBS) at pH 
+7.4 (2.9 mM NaH<sub>2</sub>PO<sub>4</sub>, 9.0 mM Na<sub>2</sub>HPO<sub>4</sub>,
+ and 138 mM NaCl) and 100% ethanol three times, total RNA was extracted 
+using an SV Total RNA Isolation System (Promega Corp., Madison, WI, USA)
+ according to the manufacturer’s instructions.</p></section><section class="sec"><h3 class="heading">Polymerase chain reaction (PCR) and complementary DNA (cDNA) cloning</h3>
+<p class="has-plink" id="p-4"><a href="#p-4" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Target <i>wwox</i>
+ cDNA was synthesized from total RNA (2.7 µg) using a SMART RACE cDNA 
+Amplification Kit (Takara Bio, Shiga, Japan) and was amplified using an 
+Advantage 2 PCR Kit (Takara Bio) with the following primers (accession 
+no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=BC044560" data-jats-ext-link-type="DDBJ/EMBL/GenBank">BC044560</a>):
+ forward GCTGCCAAACAAACACCTC and reverse TTCCCAGATAACTTCCGAGC. The PCR 
+program comprised an initial denaturation step at 94 °C for 2 min, 
+followed by 35 cycles of 94 °C for 15 s, 55 °C for 30 s, 72 °C for 1 
+min, and a final extension step at 72 °C for 7 min. PCR products were 
+purified by agarose gel electrophoresis, and PCR products were cloned 
+using a pTAC-2 vector containing M13F and M13R, a DynaExpress TA PCR 
+Cloning Kit (pTAC-2), and Jet Competent Cells (Biodynamics Laboratory, 
+Tokyo, Japan). The M13 universal primer (forward GTAAAACGACGGCCAGT) was 
+used in sequencing analyses with GENETYX ver. 8.0 software (Genetyx, 
+Tokyo, Japan), the Clustal W multiple sequence alignment algorithm (<a class="uri" href="http://www.clustal.org/">www.clustal.org/</a>), and the Basic Local Alignment Search Tool (<a class="uri" href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</a>), and homology between zebrafish <i>wwox</i> and human <i>WWOX</i> cDNA sequences was calculated. RNA rescue experiments were performed after preparing <i>wwox</i>
+ mRNA (ADH domain region) by replacing pTAC-2 with the pCS-2 vector. The
+ open reading frame of the ADH domain was inserted between <i>Bam</i>HI and <i>XhoI</i>
+ restriction sites located downstream of the SP6 promoter sequence in 
+the pCS2 vector. Relative mRNA abundance was then semiquantitated after 
+scanning gels, and pixel intensities were determined for each band and 
+were normalized to those of <i>β</i>-actin using ImageJ software (National Institutes of Health, Bethesda, Washington, D.C. USA). Zebrafish <i>β</i>-actin (accession no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=AF057040.1" data-jats-ext-link-type="DDBJ/EMBL/GenBank">AF057040.1</a>)
+ forward and reverse primers were TGGCATTGCTGACCGTATGC and 
+GTCATGGACGCCCATTGTGA, respectively. Experiments were repeated six times,
+ and data are presented as the mean ± standard error of the mean (SEM).</p></section><section class="sec"><h3 class="heading">Construction of antisense morpholinos (MOs) and small interfering RNA (siRNA)</h3>
+<p class="has-plink" id="p-5"><a href="#p-5" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>MOs
+ (Gene Tools, LLC, Philomath, OR, USA) and siRNA (B-Bridge 
+International, Inc., Tokyo, Japan) were used to knockdown the expression
+ of <i>wwox</i> (accession number: <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=BC044560" data-jats-ext-link-type="DDBJ/EMBL/GenBank">BC044560</a>). In these experiments, a <i>wwox</i> MO was designed to disrupt <i>wwox</i> translation, and <i>wwox</i> siRNA was designed to target the N-terminal <i>wwox</i> WW domain sequence. MO sequences were as follows: Danio-<i>wwox</i> MO, 5′-TATTTGAGAGCCGCCATTGCGAAAT-3′ (3′-fluorescein), and 5-mis-Danio <i>wwox</i>
+ MO (negative control), 5′-TAaTTGAcAGCgGCgATTGCcAAAT-3′ 
+(3′-fluorescein). The standard MO control 
+5′-CCTCTTACCTCAGTTACAATTTATA-3′ (3′-fluorescein) was obtained from Gene 
+Tools and was used as a positive control. The <i>wwox</i> siRNA sequence
+ was 5′-GAGCAAAGCCCGUGUGGAA-3′. Approximately 3 nL of MOs (1 mM) or 
+siRNA (50 µM) were injected into single-cell zebrafish embryos, and 
+phenotype rescue was achieved by co-injection of a target gene RNA (ADH 
+domain) that does not bind MO or siRNA, as previously described in ZFIN (<a class="uri" href="https://wiki.zfin.org/display/prot/RNAi+for+Zebrafish">https://wiki.zfin.org/display/prot/RNAi+for+Zebrafish</a>) and <a data-original-title="A primer for morpholino use in zebrafish" class="xref xref-bibr" href="http://dx.doi.org/10.1089%2Fzeb.2008.0555" title="" data-jats-ref-type="bibr" data-jats-rid="ref-5">Bill et al. (2009)</a>.</p></section><section class="sec"><h3 class="heading">Microinjection</h3>
+<p class="has-plink" id="p-6"><a href="#p-6" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Microinjection
+ needles were prepared from model GD-1 microcapillaries using a model 
+PC-10 micropipette puller (Narishige, Tokyo, Japan). Embryos were placed
+ in an agarose chamber and were soaked in 1/3 Ringer’s solution. 
+Approximately 3 nL of synthetic mRNA (0.5 ng/mL) and siRNA (50 µM) were 
+then injected into blastodiscs of each single-cell embryo. Subsequently,
+ embryos were transferred to new dishes that contained the same medium 
+and were incubated at 28.5 °C. Numbers of eggs were 2460 in <i>wwox</i> MO, 2590 in <i>wwox</i>
+ siRNA, and 770 in rescue experiments. Positive yellow fluorescent 
+protein (YFP) expression was detected in mRNA-injected embryos using a 
+Leica L2 microscope equipped with a L5 FL Stereofluorescence System 
+(Leica, Tokyo, Japan). Images were captured using a CoolSNAP cooled 5.0 
+charge-coupled device camera with RS Image Software (Roper Industries, 
+Inc., Sarasota, FL, USA). Embryos were embedded in 3% methylcellulose 
+(Sigma-Aldrich, St. Louis, MO, USA) to straighten their bodies, and body
+ length images were measured from the head to the tail along with body 
+axis in lateral view (<i>n</i> = 30) in three independent experiments 
+using RS Image Software. Eye sizes were measured and the longest 
+diameters of eyeballs were recorded. Data are presented as means ± SEM, 
+and differences between groups were identified using Student’s <i>t</i>-test and were considered significant when <i>p</i> &lt; 0.01.</p></section><section class="sec"><h3 class="heading">Ca<sup>2+</sup> imaging</h3>
+<p class="has-plink" id="p-7"><a href="#p-7" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Embryos
+ expressing YC2.12 mRNA were mounted in glass-bottom (0.08 mm) Petri 
+dishes (35 mm; Matsunami Glass, Ind., Ltd., Osaka, Japan) that contained
+ 1/3 Ringer’s solution supplemented with 3% methylcellulose. YC2.12 is a
+ Förster resonance energy transfer-based indicator that exploits 
+conformational changes following binding of calcium to the CaM motif, 
+which alters the distance between the relative orientations of cyan 
+fluorescent protein and YFP, and is reflected by energy transfer between
+ the markers. Fluorescence was quantified as previously described (<a data-original-title="Dynamic and quantitative Ca2+ measurements using improved cameleons" class="xref xref-bibr" href="http://dx.doi.org/10.1073%2Fpnas.96.5.2135" title="" data-jats-ref-type="bibr" data-jats-rid="ref-14">Miyawaki et al., 1999</a>; <a data-original-title="Real-time monitoring of dynamic intracellular Ca(2+) movement during early embryogenesis through expression of yellow cameleon" class="xref xref-bibr" href="http://dx.doi.org/10.1089%2Fzeb.2007.0519" title="" data-jats-ref-type="bibr" data-jats-rid="ref-22">Tsuruwaka et al., 2007</a>). Embryos at prim-15 stage (30 h post fertiliation; hpf) were analyzed because Ca<sup>2+</sup> imaging could not be performed after 33 hpf due to the remarkable pigment patterns on zebrafish bodies (<a data-original-title="Real-time monitoring of dynamic intracellular Ca(2+) movement during early embryogenesis through expression of yellow cameleon" class="xref xref-bibr" href="http://dx.doi.org/10.1089%2Fzeb.2007.0519" title="" data-jats-ref-type="bibr" data-jats-rid="ref-22">Tsuruwaka et al., 2007</a>).</p></section><section class="sec"><h3 class="heading">Oligonucleotide tailing with digoxigenin (DIG)-dUTP/dATP</h3>
+<p class="has-plink" id="p-8"><a href="#p-8" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>The <i>wwox</i>
+ antisense probe 5′-TAAATGGACACTTGCGGGAATACAAACACT-3′ was obtained from 
+Hokkaido System Science Co., Ltd. (Sapporo, Japan), and was labeled with
+ DIG-11-UTP using a DIG Oligonucleotide Tailing Kit, 2nd Generation 
+(Roche, Mannheim, Germany). Probe concentrations were estimated using an
+ absorption spectrometer.</p></section><section class="sec"><h3 class="heading">
+<i>In situ</i> hybridization</h3>
+<p class="has-plink" id="p-9"><a href="#p-9" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>In
+ these experiments, embryos were manually dechorionated, fixed overnight
+ in 4% buffered paraformaldehyde (PFA) at 4 °C, dehydrated with a series
+ of graded methanol (MeOH) solutions, and stored at −20 °C in MeOH for 
+further use. After thawing, embryos were immersed in a series of 75%, 
+50%, and 25% MeOH solutions in PBS containing 0.1% Tween 20 (PBST; pH 
+7.0) for 5 min at room temperature (RT). Endogenous peroxidase activity 
+was inhibited by incubation in 3% H<sub>2</sub>O<sub>2</sub> in MeOH for
+ 20 min at RT. Embryos were then rehydrated using a graded MeOH series 
+to 100% PBST, and were permeabilized using 10 µg/mL proteinase K 
+(Promega Corp.) in PBST at 37 °C for 30 min. To stop the reaction, 
+embryos were washed with 2 mg/mL glycine in PBST for 2 min, refixed in 
+4% buffered PFA for 20 min, and then washed five times in PBST for 5 min
+ each time. Subsequently, embryos were prehybridized for 1–8 h at 55 °C 
+in hybridization buffer containing 50% formamide, 5 × saline–sodium 
+citrate (SSC; 20 × SSC, 3 M NaCl, and 300 mM trisodium citrate), 0.1% 
+Tween 20, 500 µg/mL tRNA (Sigma-Aldrich), and 50 µg/mL heparin 
+(Sigma–Aldrich; pH 6.0–6.5). Before hybridization, the probe was heated 
+for 10 min at 80 °C. Hybridization was performed overnight at 55 °C in 
+100 µL of hybridization buffer containing 50–100 ng of the DIG-labeled 
+oligonucleotide probe.</p>
+<p class="has-plink" id="p-10"><a href="#p-10" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>After
+ hybridization, embryos were briefly washed in hybridization buffer 
+(without tRNA and heparin), and were then washed in a gradient of 
+hybridization buffer/2 × SSC of 75%/25%, 50%/50%, and 25%/75% at 55 °C 
+for 30 min each, with a final wash in 100% 2 × SSC. Subsequently, 
+embryos were washed two times in 2 × SSC for 30 min at RT, followed by a
+ 10-min wash at RT over a gradient of 0.2 × SSC/PBST of 75%/25%, 
+50%/50%, and 25%/75%, and a final wash in 100% PBST. Embryos were then 
+preabsorbed for 2 h at RT under slow agitation in antibody buffer 
+comprising PBST, 2% sheep serum, and 2 mg/mL bovine serum albumin. 
+Subsequently, embryos were incubated with Anti-Digoxigenin-Fluorescein 
+Fab fragments (dilution, 1:1000; Roche) in antibody buffer overnight at 4
+ °C under gentle agitation according to the manufacturer’s protocol.</p>
+<p class="has-plink" id="p-11"><a href="#p-11" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>After
+ antibody incubation, embryos were washed six times for 15 min each in 
+PBST, and microscope analyses were performed on embryos mounted in 
+glass-bottom dishes using a Zeiss Axiovert 200 fluorescence microscope 
+(Carl Zeiss, Oberkochen, Germany).</p></section></section><section class="sec" id="results"><h2 class="heading">Results</h2>
+<section class="sec"><h3 class="heading">Homology between zebrafish <i>wwox</i> and human <i>WWOX</i> sequences</h3>
+<p class="has-plink" id="p-12"><a href="#p-12" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Homology of zebrafish and human <i>wwox</i> sequences was assessed using sequences retrieved from the GenBank database (<a class="uri" href="http://www.ncbi.nlm.nih.gov/genbank/">http://www.ncbi.nlm.nih.gov/genbank/</a>). Amino acid homology between these species was 72% (<a title="" data-original-title="" class="xref xref-fig" href="#fig-1" data-jats-ref-type="fig" data-jats-rid="fig-1">Fig. 1A</a>), and WW and ADH domain structures and nuclear localization signals (NLS) were highly conserved. Tyr<sup>33</sup> was also conserved in the zebrafish <i>wwox</i> (<a title="" data-original-title="" class="xref xref-fig" href="#fig-1" data-jats-ref-type="fig" data-jats-rid="fig-1">Fig. 1A</a>), suggesting that Tyr<sup>33</sup> phosphorylation may activate <i>WWOX</i> and lead to activation of p53 and JNK1 in zebrafish, as it does in humans (<a data-original-title="Molecular mechanisms underlying WOX1 activation during apoptotic and stress responses" class="xref xref-bibr" href="http://dx.doi.org/10.1016%2FS0006-2952%2803%2900484-2" title="" data-jats-ref-type="bibr" data-jats-rid="ref-7">Chang et al., 2003</a>). Subsequent RT-PCR analyses indicated that <i>wwox</i> was expressed at each embryonic developmental stage of zebrafish (<a title="" data-original-title="" class="xref xref-fig" href="#fig-1" data-jats-ref-type="fig" data-jats-rid="fig-1">Fig. 1B</a>).</p>
+<figure class="fig has-plink" id="fig-1"><a href="#fig-1" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a><div class="image-container"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-2x.jpg" title="View the full image" class="fresco" data-fresco-caption="Figure 1: Alignment of human and zebrafish WWOX amino acid sequences, and expression of zebrafish wwox using RT-PCR." data-fresco-group="figure" data-fresco-options="fit: 'width', ui: 'outside', thumbnails: false, loop: true, position: true, preload: false"><img class="graphic" src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/fig-1-1x.jpg" sizes="(min-width: 1200px) 581px, (max-width: 1199px) and (min-width: 980px) 462px, (max-width: 979px) and (min-width: 768px) 347px, (max-width: 767px) calc(100vw - 50px)" srcset="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-2x.jpg 1200w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-1x.jpg 600w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-small.jpg 355w" data-image-id="fig-1" alt="Alignment of human and zebrafish WWOX amino acid sequences, and expression of zebrafish wwox using RT-PCR." data-full="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-full.png" data-thumb="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-thumb.jpg" data-original="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1.png" data-image-type="figure" data-jats-mimetype="image" data-jats-mime-subtype="png"></a></div>
+<figcaption><h4 class="heading">
+<span class="caption-label">Figure 1: </span>Alignment of human and zebrafish <i>WWOX</i> amino acid sequences, and expression of zebrafish <i>wwox</i> using RT-PCR.</h4>
+<span class="p">(A) Human and zebrafish <i>WWOX</i> amino acid sequence alignments Human <i>WWOX</i> (accession no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=AF187014" data-jats-ext-link-type="DDBJ/EMBL/GenBank">AF187014</a>), zebrafish <i>wwox</i> (accession no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=BC044560" data-jats-ext-link-type="DDBJ/EMBL/GenBank">BC044560</a>),
+ the WW domain (amino acids 18–47 and 59–87, circled with red boxes), 
+the NLS (amino acids 50–55, underlined), the ADH domain (amino acids 
+121–330, circled with a blue box) and Tyr<sup>33</sup> (*) are shown. (B) Expression of zebrafish <i>wwox</i> at various developmental stages was determined using RT-PCR and gel image analyses were normalized to <i>β</i>-actin expression (accession no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=AF057040.1" data-jats-ext-link-type="DDBJ/EMBL/GenBank">AF057040.1</a>). Data are presented as means ± SEM; M, marker; No RT, RT-PCR reaction without reverse transcriptase.</span><div class="figcaption-footer">
+<div class="article-image-download"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-1-full.png" class="btn btn-mini" download="peerj-727-fig-1.png"><i class="icon-large icon-picture">&nbsp;</i> Download full-size image</a></div>
+<div class="object-id article-component-doi">DOI: <a data-original-title="Cite this object using this DOI" href="http://dx.doi.org/10.7717/peerj.727/fig-1" data-toggle="tooltip" title="">10.7717/peerj.727/fig-1</a>
+</div>
+</div></figcaption></figure></section><section class="sec"><h3 class="heading">Knockdown and detection of zebrafish <i>wwox</i>
+</h3>
+<p class="has-plink" id="p-14"><a href="#p-14" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Injections of <i>wwox</i>
+ targeting MOs into zebrafish embryos resulted in phenotypic alterations
+ that were characteristic of pericardial edema at 48 hpf during the 
+long-pec stage (<a title="" data-original-title="" class="xref xref-fig" href="#fig-2" data-jats-ref-type="fig" data-jats-rid="fig-2">Fig. 2A</a>). A similar phenotype was produced by siRNA knockdown during development (<a title="" data-original-title="" class="xref xref-fig" href="#fig-2" data-jats-ref-type="fig" data-jats-rid="fig-2">Fig. 2B</a>),
+ with 56% and 62% penetrance of edema in 48 hpf embryos after injections
+ with MOs and siRNA, respectively. Edema was particularly severe around 
+the heart and caused death of embryos within 1 week. However, <i>wwox</i> mRNA rescued the phenotype in MO and siRNA injected embryos (<a title="" data-original-title="" class="xref xref-fig" href="#fig-2" data-jats-ref-type="fig" data-jats-rid="fig-2">Figs. 2C</a> and <a title="" data-original-title="" class="xref xref-fig" href="#fig-2" data-jats-ref-type="fig" data-jats-rid="fig-2">2D</a>). Knockdown of <i>wwox</i> caused noticeable reductions in eye sizes and body lengths, and embryos had twisted backbones (<a title="" data-original-title="" class="xref xref-fig" href="#fig-2" data-jats-ref-type="fig" data-jats-rid="fig-2">Fig. 2E</a>).
+ The formation of edema was apparent from the segmentation period and a 
+distinct phenotype was observed during the long-pec stage (data not 
+shown). In subsequent fluorescence whole-mount <i>in situ</i> hybridization experiments, <i>wwox</i> expression was detected in developing hearts of zebrafish embryos, and was further visualized in tissue sections using <i>in situ</i> hybridization and immunocytochemical staining methods. Strong <i>wwox</i> expression was detected in developing hearts at 48 hpf and weak expression was observed in putative digestive organs (<a title="" data-original-title="" class="xref xref-fig" href="#fig-3" data-jats-ref-type="fig" data-jats-rid="fig-3">Fig. 3A</a>). Ventricles had higher <i>wwox</i> expression than atriums, and weak localized expression was detected in optic nerves (<a title="" data-original-title="" class="xref xref-fig" href="#fig-3" data-jats-ref-type="fig" data-jats-rid="fig-3">Fig. 3B</a>). Moreover, <i>wwox</i>
+ expression became detectable from the prim-5 stage (24 hpf) and was 
+clear at the prim-25 stage (36 hpf) during formation of the developing 
+heart (<a title="" data-original-title="" class="xref xref-fig" href="#fig-3" data-jats-ref-type="fig" data-jats-rid="fig-3">Fig. 3C</a>).</p>
+<figure class="fig has-plink" id="fig-2"><a href="#fig-2" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a><div class="image-container"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-2x.jpg" title="View the full image" class="fresco" data-fresco-caption="Figure 2: Knockdown of wwox induced pericardial edema and reduced eye formation in embryos during the long-pec stage at 48 h post fertilization." data-fresco-group="figure" data-fresco-options="fit: 'width', ui: 'outside', thumbnails: false, loop: true, position: true, preload: false"><img class="graphic" src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/fig-2-1x.jpg" sizes="(min-width: 1200px) 581px, (max-width: 1199px) and (min-width: 980px) 462px, (max-width: 979px) and (min-width: 768px) 347px, (max-width: 767px) calc(100vw - 50px)" srcset="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-2x.jpg 1200w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-1x.jpg 600w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-small.jpg 355w" data-image-id="fig-2" alt="Knockdown of wwox induced pericardial edema and reduced eye formation in embryos during the long-pec stage at 48 h post fertilization." data-full="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-full.png" data-thumb="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-thumb.jpg" data-original="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2.png" data-image-type="figure" data-jats-mimetype="image" data-jats-mime-subtype="png"></a></div>
+<figcaption><h4 class="heading">
+<span class="caption-label">Figure 2: </span>Knockdown of <i>wwox</i> induced pericardial edema and reduced eye formation in embryos during the long-pec stage at 48 h post fertilization.</h4>
+<span class="p">Arrows indicate edema; (A) Upper, A bright-field image of a (i) wild-type embryo; (ii) <i>wwox</i> negative-control MO-injected embryo; and (iii) <i>wwox</i> MO-injected embryo; Lower, fluorescence image of the upper panel. (B) A <i>wwox</i> siRNA-injected embryo. (C) A <i>wwox</i> rescued MO-injected embryo (upper, bright-field image; lower, fluorescence image). (D) A <i>wwox</i>
+ rescued siRNA-injected embryo. (E) Quantification of body lengths and 
+eye sizes of long-pec embryos; 30 embryos were examined in three 
+independent experiments and data are expressed as means ± SEM (<sup>∗∗</sup><i>p</i> &lt; 0.01); WT, wildtype; Scale bars, 250 µm.</span><div class="figcaption-footer">
+<div class="article-image-download"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-2-full.png" class="btn btn-mini" download="peerj-727-fig-2.png"><i class="icon-large icon-picture">&nbsp;</i> Download full-size image</a></div>
+<div class="object-id article-component-doi">DOI: <a data-original-title="Cite this object using this DOI" href="http://dx.doi.org/10.7717/peerj.727/fig-2" data-toggle="tooltip" title="">10.7717/peerj.727/fig-2</a>
+</div>
+</div></figcaption></figure><figure class="fig has-plink" id="fig-3"><a href="#fig-3" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a><div class="image-container"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-2x.jpg" title="View the full image" class="fresco" data-fresco-caption="Figure 3: Determination of wwox expression in developing zebrafish hearts using fluorescent whole-mount in situ hybridization." data-fresco-group="figure" data-fresco-options="fit: 'width', ui: 'outside', thumbnails: false, loop: true, position: true, preload: false"><img class="graphic" src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/fig-3-1x.jpg" sizes="(min-width: 1200px) 581px, (max-width: 1199px) and (min-width: 980px) 462px, (max-width: 979px) and (min-width: 768px) 347px, (max-width: 767px) calc(100vw - 50px)" srcset="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-2x.jpg 1200w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-1x.jpg 600w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-small.jpg 355w" data-image-id="fig-3" alt="Determination of wwox expression in developing zebrafish hearts using fluorescent whole-mount in situ hybridization." data-full="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-full.png" data-thumb="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-thumb.jpg" data-original="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3.png" data-image-type="figure" data-jats-mimetype="image" data-jats-mime-subtype="png"></a></div>
+<figcaption><h4 class="heading">
+<span class="caption-label">Figure 3: </span>Determination of <i>wwox</i> expression in developing zebrafish hearts using fluorescent whole-mount <i>in situ</i> hybridization.</h4>
+<span class="p">(A) Lateral view of the heart (upper) and tail (lower) 
+of the embryo at the long-pec stage; Arrow, ventricle; arrow heads, 
+putative digestive organs. (B) A cardiac tissue section of the long-pec 
+embryo; Arrow heads show optic nerves. (C) Lateral view of embryos at 
+prim-5 (upper) and prim-25 (lower); Arrows indicate putative ventricles;
+ Scale bars, 250 µm.</span><div class="figcaption-footer">
+<div class="article-image-download"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-3-full.png" class="btn btn-mini" download="peerj-727-fig-3.png"><i class="icon-large icon-picture">&nbsp;</i> Download full-size image</a></div>
+<div class="object-id article-component-doi">DOI: <a data-original-title="Cite this object using this DOI" href="http://dx.doi.org/10.7717/peerj.727/fig-3" data-toggle="tooltip" title="">10.7717/peerj.727/fig-3</a>
+</div>
+</div></figcaption></figure></section><section class="sec"><h3 class="heading">Analysis of intracellular Ca<sup>2+</sup> dynamics after edema formation</h3>
+<p class="has-plink" id="p-17"><a href="#p-17" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Inhibition of <i>wwox</i> expression caused morphological abnormalities, and Ca<sup>2+</sup> signaling patterns are reportedly altered during zebrafish morphogenesis (<a data-original-title="Real-time monitoring of dynamic intracellular Ca(2+) movement during early embryogenesis through expression of yellow cameleon" class="xref xref-bibr" href="http://dx.doi.org/10.1089%2Fzeb.2007.0519" title="" data-jats-ref-type="bibr" data-jats-rid="ref-22">Tsuruwaka et al., 2007</a>; <a data-original-title="Ca2+ signalling and early embryonic patterning during zebrafish development" class="xref xref-bibr" href="http://dx.doi.org/10.1111%2Fj.1440-1681.2007.04709.x" title="" data-jats-ref-type="bibr" data-jats-rid="ref-23">Webb &amp; Miller, 2007</a>). Therefore, we analyzed intracellular Ca<sup>2+</sup>
+ dynamics after edema formation in embryos that had been simultaneous 
+transfected with yellow cameleon, YC2.12, and siRNA. Patterns of Ca<sup>2+</sup> dynamics strikingly differed between <i>wwox</i> knockdown embryos and normal fish (<a title="" data-original-title="" class="xref xref-fig" href="#fig-4" data-jats-ref-type="fig" data-jats-rid="fig-4">Fig. 4</a>), with maximal Ca<sup>2+</sup> levels at the boundary between the edema and yolk.</p>
+<figure class="fig has-plink" id="fig-4"><a href="#fig-4" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a><div class="image-container"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-2x.jpg" title="View the full image" class="fresco" data-fresco-caption="Figure 4: Comparison of intracellular Ca2+ dynamics in prim-15 stage (30 hpf) embryos." data-fresco-group="figure" data-fresco-options="fit: 'width', ui: 'outside', thumbnails: false, loop: true, position: true, preload: false"><img class="graphic" src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/fig-4-1x.jpg" sizes="(min-width: 1200px) 581px, (max-width: 1199px) and (min-width: 980px) 462px, (max-width: 979px) and (min-width: 768px) 347px, (max-width: 767px) calc(100vw - 50px)" srcset="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-2x.jpg 1200w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-1x.jpg 600w, https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-small.jpg 355w" data-image-id="fig-4" alt="Comparison of intracellular Ca2+ dynamics in prim-15 stage (30 hpf) embryos." data-full="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-full.png" data-thumb="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-thumb.jpg" data-original="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4.png" data-image-type="figure" data-jats-mimetype="image" data-jats-mime-subtype="png"></a></div>
+<figcaption><h4 class="heading">
+<span class="caption-label">Figure 4: </span>Comparison of intracellular Ca<sup>2+</sup> dynamics in prim-15 stage (30 hpf) embryos.</h4>
+<span class="p">Upper, bright field image; lower, color-coded image; (A) wildtype; (B) <i>wwox</i> knockdown produced edema formation and induced altered Ca<sup>2+</sup> dynamics; Scale bars, 250 µm. The color-coded image shows Ca<sup>2+</sup> levels as white (high Ca<sup>2+</sup>) and blue (low Ca<sup>2+</sup>).</span><div class="figcaption-footer">
+<div class="article-image-download"><a href="https://dfzljdn9uc3pi.cloudfront.net/2015/727/1/fig-4-full.png" class="btn btn-mini" download="peerj-727-fig-4.png"><i class="icon-large icon-picture">&nbsp;</i> Download full-size image</a></div>
+<div class="object-id article-component-doi">DOI: <a data-original-title="Cite this object using this DOI" href="http://dx.doi.org/10.7717/peerj.727/fig-4" data-toggle="tooltip" title="">10.7717/peerj.727/fig-4</a>
+</div>
+</div></figcaption></figure><p class="has-plink" id="p-19"><a href="#p-19" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Relatively high rates of intracellular Ca<sup>2+</sup> dynamics were observed among areas of heart tissue and in putative digestive organs that expressed <i>wwox</i>. High Ca<sup>2+</sup> levels were observed in putative digestive organs, but no corresponding morphological changes were noted.</p></section></section><section class="sec" id="discussion"><h2 class="heading">Discussion</h2>
+<p class="has-plink" id="p-20"><a href="#p-20" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Human <i>WWOX</i> has been functionally associated with breast cancers in humans, and zebrafish and human <i>WWOX</i> amino acid sequences are highly homologous. Thus, despite the absence of breast tissue in zebrafish, zebrafish and human <i>WWOX</i> may have similar functions. In the present study, knockdown of <i>wwox</i> in zebrafish embryos produced a pericardial edema phenotype.</p>
+<p class="has-plink" id="p-21"><a href="#p-21" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a><a data-original-title="WWOX protein expression in normal human tissues" class="xref xref-bibr" href="http://dx.doi.org/10.1007%2Fs10735-006-9046-5" title="" data-jats-ref-type="bibr" data-jats-rid="ref-16">Nunez, Ludes-Meyers &amp; Aldaz (2006)</a> reported high <i>WWOX</i> mRNA expression in human breast, ovaries, testes, and prostate tissues, and <i>WWOX</i> expression was reportedly absent in several breast cancers (<a data-original-title="WWOX, the tumour suppressor gene affected in multiple cancers" class="xref xref-bibr" href="http://scholar.google.com/scholar_lookup?title=WWOX,%20the%20tumour%20suppressor%20gene%20affected%20in%20multiple%20cancers&amp;author=Lewandowska&amp;publication_year=2009" title="" data-jats-ref-type="bibr" data-jats-rid="ref-11">Lewandowska et al., 2009</a>).
+ Although zebrafish do not possess mammary tissues such as those in 
+humans, edema formation was observed around the pectoral region in <i>wwox</i> deficient zebrafish, as shown in mice (<a data-original-title="WWOX induces apoptosis and inhibits proliferation in cervical cancer and cell lines" class="xref xref-bibr" href="http://dx.doi.org/10.3892%2Fijmm.2013.1314" title="" data-jats-ref-type="bibr" data-jats-rid="ref-17">Qu et al., 2013</a>). Previous studies implicate <i>WWOX</i> in the development of gastric carcinoma (<a data-original-title="Loss of WWOX expression in gastric carcinoma" class="xref xref-bibr" href="http://dx.doi.org/10.1158%2F1078-0432.CCR-03-0594" title="" data-jats-ref-type="bibr" data-jats-rid="ref-3">Aqeilan et al., 2004</a>), suggesting that additional effects of <i>wwox</i> dysregulation may be associated with the present zebrafish phenotype. Accordingly, high levels of Ca<sup>2+</sup> were observed in tissues with high <i>wwox</i>
+ expression, with the exception of the dorsal region, which was subject 
+to deleterious digestive tract and blood vessel environments that 
+reflected dysfunctions of the heart pump. Analyses of Ca<sup>2+</sup> dynamics in <i>wwox</i> knockdown zebrafish suggested novel roles of dorsal–posterior regions other than the pericardial edema. Specifically, <i>wwox</i> knockdown embryos displayed early lethality that was similar to that in <i>Wwox</i> KO mice, which died by 4 weeks of age (<a data-original-title="Targeted deletion of Wwox reveals a tumor suppressor function" class="xref xref-bibr" href="http://dx.doi.org/10.1073%2Fpnas.0609783104" title="" data-jats-ref-type="bibr" data-jats-rid="ref-4">Aqeilan et al., 2007</a>). Other phenotypes observed in <i>Wwox</i> KO mice included abnormal bone structures and reduced postnatal growth (<a data-original-title="Generation and characterization of mice carrying a conditional allele of the Wwox tumor suppressor gene" class="xref xref-bibr" href="http://dx.doi.org/10.1371%2Fjournal.pone.0007775" title="" data-jats-ref-type="bibr" data-jats-rid="ref-13">Ludes-Meyers et al., 2009</a>). Developmental retardation, as indicated by small eyes and heads and abnormal bone formations, was also observed in <i>wwox</i> knockdown zebrafish embryos. Similarly, postnatal day 18 <i>Wwox</i>
+ KO mice showed notable differences in bone structure, with 
+significantly decreased bone volume and cortical thickness compared with
+ wild-type mice. Moreover, a <i>Wwox</i> gene mutation (<i>lde</i>) was identified in rats and led to phenotypic lethal dwarfism with epilepsy (<a data-original-title="A spontaneous mutation of the Wwox gene and audiogenic seizures in rats with lethal dwarfism and epilepsy" class="xref xref-bibr" href="http://dx.doi.org/10.1111%2Fj.1601-183X.2009.00502.x" title="" data-jats-ref-type="bibr" data-jats-rid="ref-21">Suzuki et al., 2009</a>). These defects in bone formation further suggest that <i>wwox</i> knockdown alters Ca<sup>2+</sup> dynamics. In a previous study, <a data-original-title="Ca2+ signalling and early embryonic patterning during zebrafish development" class="xref xref-bibr" href="http://dx.doi.org/10.1111%2Fj.1440-1681.2007.04709.x" title="" data-jats-ref-type="bibr" data-jats-rid="ref-23">Webb &amp; Miller (2007)</a> showed that Ca<sup>2+</sup> signaling changes with somite formation during zebrafish development. Moreover, alterations of Ca<sup>2+</sup> dynamics at various sites suggest that multiple organ failure have led to death in the present embryos.</p>
+<p class="has-plink" id="p-22"><a href="#p-22" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>In summary, we demonstrated the utility of the present fish model in studies of <i>wwox</i> gene function. The present data show strong effects of <i>wwox</i> knockdown in developing heart tissue and weaker effects on putative digestive organs. Subsequently, high Ca<sup>2+</sup> levels were observed at ventral–dorsal–posterior regions along with the blood circulation of <i>wwox</i> knockdown zebrafish embryos. Therefore, inhibition of <i>wwox</i> could have pointed a non-cell-autonomous phenotype. These data suggest roles of <i>wwox</i> in multiple tissues during fish embryonic development, as previously reported in mice. In morphological studies, inhibition of <i>wwox</i> expression led to edema formation, resembling that previously shown in developing tumors (<a data-original-title="Hedgehog signaling in development and cancer" class="xref xref-bibr" href="http://dx.doi.org/10.1016%2Fj.devcel.2008.11.010" title="" data-jats-ref-type="bibr" data-jats-rid="ref-10">Jiang &amp; Hui, 2008</a>). Finally, abnormal Ca<sup>2+</sup> dynamics were observed after inhibition of <i>wwox</i> expression, suggesting that monitoring of Ca<sup>2+</sup>
+ levels may provide an additional indicator for phenotype analyses. 
+However, further studies are required to determine whether the present 
+zebrafish edema was derived from carcinogenic processes.</p></section><section id="conclusion" class="sec"><h2 class="heading">Conclusion</h2>
+<p class="has-plink" id="p-23"><a href="#p-23" class="plink"><i class="icon-comment icon-flip-horizontal"></i></a>Zebrafish <i>wwox</i> was expressed highly in developing heart tissues and detectably in putative digestive organs. Loss of <i>wwox</i>
+ function caused edema in the pectoral region, developmental 
+retardations such as small eyes and short body lengths, and altered Ca<sup>2+</sup> dynamics.</p></section><div class="sec" id="additional-information">
+<h2 class="heading">Additional Information and Declarations</h2>
+<div class="fn-group" data-jats-content-type="competing-interests">
+<h3 class="heading">Competing Interests</h3>
+<div class="fn" id="conflict-1" data-jats-fn-type="conflict"><p>The authors declare there are no competing interests.</p></div>
+</div>
+<div class="fn-group" data-jats-content-type="author-contributions">
+<h3 class="heading">Author Contributions</h3>
+<div class="fn" id="contribution-1" data-jats-fn-type="con"><p><a class="xref xref-contrib" href="#author-1" data-jats-ref-type="contrib" data-jats-rid="author-1">Yusuke Tsuruwaka</a>
+ conceived and designed the experiments, performed the experiments, 
+analyzed the data, contributed reagents/materials/analysis tools, wrote 
+the paper, prepared figures and/or tables, reviewed drafts of the paper.</p></div>
+<div class="fn" id="contribution-2" data-jats-fn-type="con"><p><a class="xref xref-contrib" href="#author-2" data-jats-ref-type="contrib" data-jats-rid="author-2">Masataka Konishi</a> performed the experiments.</p></div>
+<div class="fn" id="contribution-3" data-jats-fn-type="con"><p><a class="xref xref-contrib" href="#author-3" data-jats-ref-type="contrib" data-jats-rid="author-3">Eriko Shimada</a> performed the experiments, analyzed the data, wrote the paper, reviewed drafts of the paper.</p></div>
+</div>
+<div class="fn-group" data-jats-content-type="other">
+<h3 class="heading">Animal Ethics</h3>
+<div class="fn" id="addinfo-1" data-jats-fn-type="other">
+<p>The following information was supplied relating to ethical approvals (i.e., approving body and any reference numbers):</p>
+<p>No approval was required to conduct studies on fish according to the 
+Ministry of Education, Culture, Sports, Science and Technology, Notice 
+No. 71 (in effect since June 1, 2006).</p>
+</div>
+</div>
+<div class="fn-group" data-jats-content-type="other">
+<h3 class="heading">DNA Deposition</h3>
+<div class="fn" id="addinfo-2" data-jats-fn-type="other">
+<p>The following information was supplied regarding the deposition of DNA sequences:</p>
+<p>GenBank accession no. <a class="ext-link" href="https://www.ncbi.nlm.nih.gov/nucleotide?term=BC044560" data-jats-ext-link-type="DDBJ/EMBL/GenBank">BC044560</a>.</p>
+</div>
+</div>
+<h3 class="heading">Funding</h3>
+<div>The authors declare there was no funding for this work.</div>
+</div></div></div></div></div></main><footer class="back">
+<div><div class="row-fluid row-article-item-section-heading"><div class="span1 article-main-left-span1"><i class="article-section-indicator icon-chevron-down"></i></div><h2>Acknowledgements</h2><div class="article-item-section-toggle" id="article-item-acknowledgements-text"></div></div><div class="row-fluid row-article-item-section"><div class="span1 article-main-left-span1">&nbsp;</div><div class="span11 article-item-section-content"><section class="ack" id="acknowledgements"><h2 style="display: none;" class="heading">Acknowledgements</h2>
+<p>We wish to thank Dr. Atsushi Miyawaki for providing the YC2.12 construct and Dr. Takafumi Konishi for his helpful advice.</p></section></div></div></div><div><div class="row-fluid row-article-item-section-heading"><div class="span1 article-main-left-span1"><i class="article-section-indicator icon-chevron-down"></i></div><h2>References</h2><div class="article-item-section-toggle" id="article-item-references-text"></div></div><div class="row-fluid row-article-item-section"><div class="span1 article-main-left-span1">&nbsp;</div><div class="span11 article-item-section-content"><section class="ref-list-container" id="references"><h2 style="display: none;" class="heading">References</h2>
+<ul class="ref-list" data-jats-content-type="authoryear">
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-1">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Amatruda</span> <span class="given-names" itemprop="givenName">JF</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Shepard</span> <span class="given-names" itemprop="givenName">JL</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Stern</span> <span class="given-names" itemprop="givenName">HM</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Zon</span> <span class="given-names" itemprop="givenName">LI</span></span>.</b> <b class="year" itemprop="datePublished">2002</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1016%2FS1535-6108%2802%2900052-1">Zebrafish as a cancer model system</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Cancer Cell</span></span> <b itemprop="volumeNumber">1</b></span>:<span class="fpage" itemprop="startPage">229</span>-<span class="lpage" itemprop="endPage">231</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-2">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">RI</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hassan</span> <span class="given-names" itemprop="givenName">MQ</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">de Bruin</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hagan</span> <span class="given-names" itemprop="givenName">JP</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Volinia</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Palumbo</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hussain</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lee</span> <span class="given-names" itemprop="givenName">SH</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Gaur</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Stein</span> <span class="given-names" itemprop="givenName">GS</span></span><span class="hide hidden-authors">, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lian</span> <span class="given-names" itemprop="givenName">JB</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Croce</span> <span class="given-names" itemprop="givenName">CM</span></span></span><a class="show-all-authors" title="Show hidden authors" href="#">+2 more</a>.</b> <b class="year" itemprop="datePublished">2008</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1074%2Fjbc.M800855200">The <i>WWOX</i> tumor suppressor is essential for postnatal survival and normal bone metabolism</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Journal of Biological Chemistry</span></span> <b itemprop="volumeNumber">283</b></span>:<span class="fpage" itemprop="startPage">21629</span>-<span class="lpage" itemprop="endPage">21639</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-3">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">RI</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kuroki</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Pekarsky</span> <span class="given-names" itemprop="givenName">Y</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Trapasso</span> <span class="given-names" itemprop="givenName">F</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Baffa</span> <span class="given-names" itemprop="givenName">R</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Huebner</span> <span class="given-names" itemprop="givenName">K</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Edmonds</span> <span class="given-names" itemprop="givenName">P</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Croce</span> <span class="given-names" itemprop="givenName">CM</span></span>.</b> <b class="year" itemprop="datePublished">2004</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1158%2F1078-0432.CCR-03-0594">Loss of <i>WWOX</i> expression in gastric carcinoma</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Clinical Cancer Research</span></span> <b itemprop="volumeNumber">10</b></span>:<span class="fpage" itemprop="startPage">3053</span>-<span class="lpage" itemprop="endPage">3058</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-4">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">RI</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Trapasso</span> <span class="given-names" itemprop="givenName">F</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hussain</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Costinean</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Marshall</span> <span class="given-names" itemprop="givenName">D</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Pekarsky</span> <span class="given-names" itemprop="givenName">Y</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hagan</span> <span class="given-names" itemprop="givenName">JP</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Zanesi</span> <span class="given-names" itemprop="givenName">N</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kaou</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Stein</span> <span class="given-names" itemprop="givenName">GS</span></span><span class="hide hidden-authors">, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lian</span> <span class="given-names" itemprop="givenName">JB</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Croce</span> <span class="given-names" itemprop="givenName">CM</span></span></span><a class="show-all-authors" title="Show hidden authors" href="#">+2 more</a>.</b> <b class="year" itemprop="datePublished">2007</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1073%2Fpnas.0609783104">Targeted deletion of <i>Wwox</i> reveals a tumor suppressor function</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Proceedings of the National Academy of Sciences of the United States of America</span></span> <b itemprop="volumeNumber">104</b></span>:<span class="fpage" itemprop="startPage">3949</span>-<span class="lpage" itemprop="endPage">3954</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-5">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bill</span> <span class="given-names" itemprop="givenName">BR</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Petzold</span> <span class="given-names" itemprop="givenName">AM</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Clark</span> <span class="given-names" itemprop="givenName">KJ</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Schimmenti</span> <span class="given-names" itemprop="givenName">LA</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Ekker</span> <span class="given-names" itemprop="givenName">SC</span></span>.</b> <b class="year" itemprop="datePublished">2009</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1089%2Fzeb.2008.0555">A primer for morpholino use in zebrafish</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Zebrafish</span></span> <b itemprop="volumeNumber">6</b></span>:<span class="fpage" itemprop="startPage">69</span>-<span class="lpage" itemprop="endPage">77</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-6">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Britschgi</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bill</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Brinkhaus</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Rothwell</span> <span class="given-names" itemprop="givenName">C</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Clay</span> <span class="given-names" itemprop="givenName">I</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Duss</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Rebhan</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Raman</span> <span class="given-names" itemprop="givenName">P</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Guy</span> <span class="given-names" itemprop="givenName">CT</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Wetzel</span> <span class="given-names" itemprop="givenName">K</span></span><span class="hide hidden-authors">, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">George</span> <span class="given-names" itemprop="givenName">E</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Popa</span> <span class="given-names" itemprop="givenName">MO</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lilley</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Choudhury</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Gosling</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Wang</span> <span class="given-names" itemprop="givenName">L</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Fitzgerald</span> <span class="given-names" itemprop="givenName">S</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Borawski</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Baffoe</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Labow</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Gaither</span> <span class="given-names" itemprop="givenName">LA</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bentires-Alj</span> <span class="given-names" itemprop="givenName">M</span></span></span><a class="show-all-authors" title="Show hidden authors" href="#">+12 more</a>.</b> <b class="year" itemprop="datePublished">2013</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1073%2Fpnas.1217072110">Calcium-activated chloride channel ANO1 promotes breast cancer progression by activating EGFR and CAMK signaling</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Proceedings of the National Academy of Sciences of the United States of America</span></span> <b itemprop="volumeNumber">110</b></span>:<span class="fpage" itemprop="startPage">E1026</span>-<span class="lpage" itemprop="endPage">E1034</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-7">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Chang</span> <span class="given-names" itemprop="givenName">NS</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Doherty</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Ensign</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lewis</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Heath</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Schultz</span> <span class="given-names" itemprop="givenName">L</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Chen</span> <span class="given-names" itemprop="givenName">ST</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Oppermann</span> <span class="given-names" itemprop="givenName">U</span></span>.</b> <b class="year" itemprop="datePublished">2003</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1016%2FS0006-2952%2803%2900484-2">Molecular mechanisms underlying WOX1 activation during apoptotic and stress responses</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Biochemical Pharmacology</span></span> <b itemprop="volumeNumber">66</b></span>:<span class="fpage" itemprop="startPage">1347</span>-<span class="lpage" itemprop="endPage">1354</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-8">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Feitsma</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Cuppen</span> <span class="given-names" itemprop="givenName">E</span></span>.</b> <b class="year" itemprop="datePublished">2008</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1158%2F1541-7786.MCR-07-2167">Zebrafish as a cancer model</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Molecular Cancer Research</span></span> <b itemprop="volumeNumber">6</b></span>:<span class="fpage" itemprop="startPage">685</span>-<span class="lpage" itemprop="endPage">694</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-9">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Gardenswartz</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">RI</span></span>.</b> <b class="year" itemprop="datePublished">2014</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1177%2F1535370213519213">WW domain-containing oxidoreductase’s role in myriad cancers: clinical significance and future implications</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Experimental Biology and Medicine</span></span> <b itemprop="volumeNumber">239</b></span>:<span class="fpage" itemprop="startPage">253</span>-<span class="lpage" itemprop="endPage">263</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-10">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Jiang</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hui</span> <span class="given-names" itemprop="givenName">CC</span></span>.</b> <b class="year" itemprop="datePublished">2008</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1016%2Fj.devcel.2008.11.010">Hedgehog signaling in development and cancer</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Developmental Cell</span></span> <b itemprop="volumeNumber">5</b></span>:<span class="fpage" itemprop="startPage">801</span>-<span class="lpage" itemprop="endPage">812</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-11">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lewandowska</span> <span class="given-names" itemprop="givenName">U</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Zelazowski</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Seta</span> <span class="given-names" itemprop="givenName">K</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Byczewska</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Pluciennik</span> <span class="given-names" itemprop="givenName">E</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bednarek</span> <span class="given-names" itemprop="givenName">AK</span></span>.</b> <b class="year" itemprop="datePublished">2009</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://scholar.google.com/scholar_lookup?title=WWOX,%20the%20tumour%20suppressor%20gene%20affected%20in%20multiple%20cancers&amp;author=Lewandowska&amp;publication_year=2009">WWOX, the tumour suppressor gene affected in multiple cancers</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Journal of Physiology and Pharmacology</span></span> <b itemprop="volumeNumber">60</b></span>:<span class="fpage" itemprop="startPage">47</span>-<span class="lpage" itemprop="endPage">56</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-12">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Li</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Liu</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Ren</span> <span class="given-names" itemprop="givenName">Y</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Yang</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Liu</span> <span class="given-names" itemprop="givenName">P</span></span>.</b> <b class="year" itemprop="datePublished">2014</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.7150%2Fijbs.7727">Common chromosomal fragile site gene <i>WWOX</i> in metabolic disorders and tumors</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">International Journal of Biological Sciences</span></span> <b itemprop="volumeNumber">10</b></span>:<span class="fpage" itemprop="startPage">142</span>-<span class="lpage" itemprop="endPage">148</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-13">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Ludes-Meyers</span> <span class="given-names" itemprop="givenName">JH</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kil</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Parker-Thornburg</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kusewitt</span> <span class="given-names" itemprop="givenName">DF</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bedford</span> <span class="given-names" itemprop="givenName">MT</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aldaz</span> <span class="given-names" itemprop="givenName">CM</span></span>.</b> <b class="year" itemprop="datePublished">2009</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1371%2Fjournal.pone.0007775">Generation and characterization of mice carrying a conditional allele of the <i>Wwox</i> tumor suppressor gene</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">PLoS ONE</span></span> <b itemprop="volumeNumber">4</b></span>:<span class="elocation-id" itemprop="startPage">e7775</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-14">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Miyawaki</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Griesbeck</span> <span class="given-names" itemprop="givenName">O</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Heim</span> <span class="given-names" itemprop="givenName">R</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Tsien</span> <span class="given-names" itemprop="givenName">RY</span></span>.</b> <b class="year" itemprop="datePublished">1999</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1073%2Fpnas.96.5.2135">Dynamic and quantitative Ca<sup>2+</sup> measurements using improved cameleons</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Proceedings of the National Academy of Sciences of the United States of America</span></span> <b itemprop="volumeNumber">96</b></span>:<span class="fpage" itemprop="startPage">2135</span>-<span class="lpage" itemprop="endPage">2140</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-15">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Niki</span> <span class="given-names" itemprop="givenName">I</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Yokokura</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Sudo</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kato</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Hidaka</span> <span class="given-names" itemprop="givenName">H</span></span>.</b> <b class="year" itemprop="datePublished">1996</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1093%2Foxfordjournals.jbchem.a021466">Ca<sup>2+</sup> signaling and intracellular Ca<sup>2+</sup> binding proteins</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Journal of Biochemistry</span></span> <b itemprop="volumeNumber">120</b></span>:<span class="fpage" itemprop="startPage">685</span>-<span class="lpage" itemprop="endPage">698</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-16">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Nunez</span> <span class="given-names" itemprop="givenName">MI</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Ludes-Meyers</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aldaz</span> <span class="given-names" itemprop="givenName">CM</span></span>.</b> <b class="year" itemprop="datePublished">2006</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1007%2Fs10735-006-9046-5"><i>WWOX</i> protein expression in normal human tissues</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Journal of Molecular Histology</span></span> <b itemprop="volumeNumber">37</b></span>:<span class="fpage" itemprop="startPage">115</span>-<span class="lpage" itemprop="endPage">125</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-17">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Qu</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lu</span> <span class="given-names" itemprop="givenName">W</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Li</span> <span class="given-names" itemprop="givenName">B</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Lu</span> <span class="given-names" itemprop="givenName">C</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Wan</span> <span class="given-names" itemprop="givenName">X</span></span>.</b> <b class="year" itemprop="datePublished">2013</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.3892%2Fijmm.2013.1314"><i>WWOX</i> induces apoptosis and inhibits proliferation in cervical cancer and cell lines</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">International Journal of Molecular Medicine</span></span> <b itemprop="volumeNumber">31</b></span>:<span class="fpage" itemprop="startPage">1139</span>-<span class="lpage" itemprop="endPage">1147</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-18">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Salah</span> <span class="given-names" itemprop="givenName">Z</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">R</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Huebner</span> <span class="given-names" itemprop="givenName">K</span></span>.</b> <b class="year" itemprop="datePublished">2010</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.2217%2Ffon.09.152"><i>WWOX</i> gene and gene product: tumor suppression through specific protein interactions</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Future Oncology</span></span> <b itemprop="volumeNumber">6</b></span>:<span class="fpage" itemprop="startPage">249</span>-<span class="lpage" itemprop="endPage">259</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-19">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Salah</span> <span class="given-names" itemprop="givenName">Z</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Bar-mag</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Kohn</span> <span class="given-names" itemprop="givenName">Y</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Pichiorri</span> <span class="given-names" itemprop="givenName">F</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Palumbo</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Melino</span> <span class="given-names" itemprop="givenName">G</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Aqeilan</span> <span class="given-names" itemprop="givenName">RI</span></span>.</b> <b class="year" itemprop="datePublished">2013</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1038%2Fcddis.2013.6">Tumor suppressor <i>WWOX</i> binds to ΔNp63<i>α</i> and sensitizes cancer cells to chemotherapy</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Cell Death &amp; Disease</span></span> <b itemprop="volumeNumber">4</b></span>:<span class="elocation-id" itemprop="startPage">e480</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-20">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Slusarski</span> <span class="given-names" itemprop="givenName">DC</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Pelegri</span> <span class="given-names" itemprop="givenName">F</span></span>.</b> <b class="year" itemprop="datePublished">2007</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1016%2Fj.ydbio.2007.04.043">Calcium signaling in vertebrate embryonic patterning and morphogenesis</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Developmental Biology</span></span> <b itemprop="volumeNumber">307</b></span>:<span class="fpage" itemprop="startPage">1</span>-<span class="lpage" itemprop="endPage">13</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-21">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Suzuki</span> <span class="given-names" itemprop="givenName">H</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Katayama</span> <span class="given-names" itemprop="givenName">K</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Takenaka</span> <span class="given-names" itemprop="givenName">M</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Amakasu</span> <span class="given-names" itemprop="givenName">K</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Saito</span> <span class="given-names" itemprop="givenName">K</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Suzuki</span> <span class="given-names" itemprop="givenName">K</span></span>.</b> <b class="year" itemprop="datePublished">2009</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1111%2Fj.1601-183X.2009.00502.x">A spontaneous mutation of the <i>Wwox</i> gene and audiogenic seizures in rats with lethal dwarfism and epilepsy</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Genes, Brain, and Behavior</span></span> <b itemprop="volumeNumber">8</b></span>:<span class="fpage" itemprop="startPage">650</span>-<span class="lpage" itemprop="endPage">660</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-22">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Tsuruwaka</span> <span class="given-names" itemprop="givenName">Y</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Konishi</span> <span class="given-names" itemprop="givenName">T</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Miyawaki</span> <span class="given-names" itemprop="givenName">A</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Takagi</span> <span class="given-names" itemprop="givenName">M</span></span>.</b> <b class="year" itemprop="datePublished">2007</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1089%2Fzeb.2007.0519">Real-time monitoring of dynamic intracellular Ca(2+) movement during early embryogenesis through expression of yellow cameleon</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Zebrafish</span></span> <b itemprop="volumeNumber">4</b></span>:<span class="fpage" itemprop="startPage">253</span>-<span class="lpage" itemprop="endPage">260</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-23">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Webb</span> <span class="given-names" itemprop="givenName">SE</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Miller</span> <span class="given-names" itemprop="givenName">AL</span></span>.</b> <b class="year" itemprop="datePublished">2007</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://dx.doi.org/10.1111%2Fj.1440-1681.2007.04709.x">Ca<sup>2+</sup> signalling and early embryonic patterning during zebrafish development</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Clinical and Experimental Pharmacology &amp; Physiology</span></span> <b itemprop="volumeNumber">34</b></span>:<span class="fpage" itemprop="startPage">897</span>-<span class="lpage" itemprop="endPage">904</span> </span>
+</div></li>
+<li class="ref"><div class="citation" itemprop="citation" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle" id="ref-24">
+<span class="citation-authors-year"><b><span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Yang</span> <span class="given-names" itemprop="givenName">J</span></span>, <span class="name" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><span class="surname" itemprop="familyName">Zhang</span> <span class="given-names" itemprop="givenName">W</span></span>.</b> <b class="year" itemprop="datePublished">2008</b>.</span> <cite itemprop="name"><a class="article-title" target="_blank" itemprop="url" href="http://scholar.google.com/scholar_lookup?title=WWOX%20tumor%20suppressor%20gene&amp;author=Yang&amp;publication_year=2008"><i>WWOX</i> tumor suppressor gene</a>.</cite> <span><span class="volume" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/PublicationVolume"><span class="source" itemprop="isPartOf" itemscope="itemscope" itemtype="http://schema.org/Periodical"><span itemprop="name">Histology and Histopathology</span></span> <b itemprop="volumeNumber">23</b></span>:<span class="fpage" itemprop="startPage">877</span>-<span class="lpage" itemprop="endPage">882</span> </span>
+</div></li>
+</ul></section></div></div></div></footer></article>
+
+            <!-- annotations -->
+            <ul class="nav nav-tabs annotation-tabs-nav">
+                <li class="active"><a href="#questions" data-toggle="tab"><i class="icon-comments"></i> Questions
+                        <span style="display: none;" class="annotation-counter annotation-counter-questioning">0</span></a></li>
+                <li><a href="#links" data-toggle="tab"><i class="icon-link"></i> Links
+                        <span style="display: none;" class="annotation-counter annotation-counter-linking">0</span></a></li>
+            </ul>
+
+            <div class="tab-content annotation-tab-content">
+                <div class="tab-pane active" id="questions">
+                    <div id="questions-summaries"></div><div class="annotations" id="questions" data-target="articles/727" data-counts="1">
+    <div class="row-fluid row-article-item-section">
+        <div class="span1 article-main-left-span1">&nbsp;</div>
+        <div class="span11 article-item-section-content">
+            
+            <div>
+                <div class="annotations" data-total-results="0" data-collection-motivation="questioning">
+    </div>
+            </div>
+
+            <a class="btn btn-primary annotation-create-button add-annotation" id="annotation-create-question" data-toggle="annotation-form" data-target="#annotation-question-create-container" href="https://peerj.com/questions.form?format=html&amp;target=articles%2F727&amp;_counts=1"><i class="icon-plus"></i> Ask a question</a>
+            <div class="help-block annotation-learn-more"><a href="https://peerj.com/about/FAQ/academic-contribution/" target="_blank">Learn more about Q&amp;A</a></div>
+            <div class="annotation-form-container" id="annotation-question-create-container"></div>
+        </div>
+    </div>
+</div>
+                </div>
+
+                <div class="tab-pane" id="links">
+                    <div class="annotations" id="links" data-target="articles/727" data-counts="1">
+    <div class="row-fluid row-article-item-section">
+        <div class="span1 article-main-left-span1">&nbsp;</div>
+        <div class="span11 article-item-section-content">
+            
+            <div>
+                <div class="annotations" data-total-results="0" data-collection-motivation="linking">
+    </div>
+            </div>
+
+            <a class="btn btn-primary annotation-create-button add-annotation" id="annotation-create-link" data-toggle="annotation-form" data-target="#annotation-link-create-container" href="https://peerj.com/links.form?format=html&amp;target=articles%2F727&amp;_counts=1"><i class="icon-plus"></i> Add a link</a>
+            <div class="annotation-form-container" id="annotation-link-create-container"></div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <div style="height: 13495px;" class="span2 article-item-rightbar-wrap article-sidebar">
+            <!-- Signup Button -->
+            <div style="margin-bottom:12px;">
+    <form action="/follow/publication/727/0/" method="post">
+      <button class="btn btn-success">Sign up for content alerts <i class="icon-large icon-chevron-right icon-white"></i></button>
+    </form>
+</div>
+
+            <!-- Related content (loaded asynchronously) -->
+            <div style="display: block;" data-async-sidebar="/articles/727/sidebar/">
+<div style="margin-bottom: 15px;">
+    <h3 class="slim">Similar Papers</h3>
+
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span12"><a class="article-similar-publication article-similar-title" href="https://peerj.com/articles/253/">Regulation of antimycin biosynthesis by the orphan ECF RNA polymerase sigma factor σAntA</a></div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span12"><a class="article-similar-publication article-similar-title" href="https://peerj.com/articles/276/">Biblio-MetReS for user-friendly mining of genes and biological processes in scientific documents</a></div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span12"><a class="article-similar-publication article-similar-title" href="https://peerj.com/articles/203/">ezRAD: a simplified method for genomic genotyping in non-model organisms</a></div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span12"><a class="article-similar-publication article-similar-title" href="https://peerj.com/articles/566/">Nestling activity levels during begging behaviour predicts activity level and body mass in adulthood</a></div>
+        </div>
+    </div>
+<div style="margin-bottom: 15px;">
+    <h3 class="slim">Similar Academic Editors</h3>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span2"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/chpIccWYjDkfLlxrDadfCiCX2fgmcs5ULws4FnQkTp8i50_54368925422a7.jpg" class="ae-img" style="width:25px"></div>
+            <div class="span10">
+               <a class="article-similar-editor" href="https://peerj.com/user/12384/">Charlotte Lindqvist</a>
+               -
+               <a class="article-similar-editor-cat" itemprop="about" href="https://peerj.com/academic-boards/subjects/20/Evolutionary%20Studies/">
+                    Evolutionary Studies
+               </a>
+            </div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span2"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/kaL7TEEWnsqOEhTAWQvjtNrXrBiawV21BJ9FyYLuhTS4i50_5474563de8ea.jpg" class="ae-img" style="width:25px"></div>
+            <div class="span10">
+               <a class="article-similar-editor" href="https://peerj.com/user/13391/">Karine Dubrana</a>
+               -
+               <a class="article-similar-editor-cat" itemprop="about" href="https://peerj.com/academic-boards/subjects/27/Molecular%20Biology/">
+                    Molecular Biology
+               </a>
+            </div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span2"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/esf97EPW370H4yuoUga8SBLSy6fZVmngWcS0qzDMi50_548f1652dd6118.jpg" class="ae-img" style="width:25px"></div>
+            <div class="span10">
+               <a class="article-similar-editor" href="https://peerj.com/user/14055/">Esta Sterneck</a>
+               -
+               <a class="article-similar-editor-cat" itemprop="about" href="https://peerj.com/academic-boards/subjects/27/Molecular%20Biology/">
+                    Molecular Biology
+               </a>
+            </div>
+        </div>
+            <div class="row-fluid" style="margin-top: 10px;">
+            <div class="span2"><img src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/e_Savithramma_DineshKumar.jpg" class="ae-img" style="width:25px"></div>
+            <div class="span10">
+               <a class="article-similar-editor" href="https://peerj.com/user/1578/">Savithramma Dinesh-Kumar</a>
+               -
+               <a class="article-similar-editor-cat" itemprop="about" href="https://peerj.com/academic-boards/subjects/32/Plant%20Science/">
+                    Plant Science
+               </a>
+            </div>
+        </div>
+        <div class="row-fluid" style="margin-top: 10px;">
+        <div class="span2">&nbsp;</div>
+        <div class="span10">
+            <a href="https://peerj.com/academic-boards/editors/">View all Academic Editors &gt;</a>
+        </div>
+    </div>
+</div>
+
+</div>
+        </div>
+    </div>
+
+    <!-- Flag Modal -->
+        <div id="flagModal" class="modal hide" style="max-height:none">
+      <div class="modal-header" style="text-align: center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class="slim">Flag an issue</h3>
+      </div>
+
+      <form id="article-flag-form" data-href="/issues/727/flag/" method="post">
+
+          <div class="modal-body" style="max-height:350px;overflow-y:auto">
+              <div class="alert alert-info">
+                    <p><strong>Common use cases</strong><br>
+                    Typos, corrections needed, missing information, abuse, etc
+                    </p>
+
+                    <p><strong>Our promise</strong><br>
+                    PeerJ promises to address all issues as quickly and professionally as possible. We
+                    thank you in advance for your patience and understanding.
+                    </p>
+              </div>
+
+                <div id="flag-modal-result" style="margin-left:45px;">
+
+                                            <div>
+                            <label><strong>Type of issue</strong></label>
+                            <p>
+                            <select id="moderation_flag_category" name="moderation_flag[category]" class="span4">
+        <option selected="selected" value="typo">Typo</option><option value="metadata">Missing or incorrect metadata</option><option value="quality">Quality: PDF, figure, table, or data quality</option><option value="download">Download issues</option><option value="abuse">Abusive behavior</option><option value="misconduct">Research misconduct</option><option value="other">Other issue not listed above</option></select>
+                            
+                            </p>
+                         </div>
+                        <div>
+                            <label><strong>Details</strong> <i data-original-title="Please be as detailed as possible within the 500 character limit. Any details you provide will not be shown publicly." class="icon-large icon-question-sign" title="" data-toggle="tooltip"></i></label>
+                            <div>
+                                <textarea id="moderation_flag_detail" name="moderation_flag[detail]" required="required" class="span4" placeholder="Enter any details about this issue. Kept confidential with PeerJ staff." rows="5" data-counter-target="#flag-counter"></textarea>
+                                
+                                <div style="margin:10px 0 0 0; color:#777777; float: left; display: block"><span id="flag-counter" class="label label-important">NaN</span> characters remaining</div>
+                            </div>
+                         </div>
+                        
+                                    </div>
+
+          </div>
+        </form>
+        <div id="flag-modal-footer" class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <input class="btn btn-success save-flag-btn" value="Send report" type="submit">
+        </div>
+</div>
+
+    <!-- Follow Publication Modal -->
+        <div id="followModal" class="modal hide" style="max-height:none">
+      <div class="modal-header" style="text-align:center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="slim" id="followModalLabel">Follow this publication for updates</h3>
+              </div>
+
+    <div>
+        <div class="modal-body" style="max-height:350px;overflow-y:auto">
+            <div class="row-fluid" style="margin-bottom: 15px">
+                <div class="span1">
+                    <i class="icon-large icon-bullhorn"></i>
+                </div>
+                <div class="span11">
+                    "Following" is like subscribing to any updates related to a publication.
+                    These updates will appear in your home dashboard each time you visit PeerJ.
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span1">
+                    <i class="icon-large icon-envelope"></i>
+                </div>
+                <div class="span11">
+                    <p>
+                    You can also choose to receive updates via daily or weekly email digests.
+                    If you are following multiple publications then we will send you
+                    no more than one email per day or week based on your preferences.
+                    </p>
+                    <p>
+                    <em>Note: You are now also subscribed to the subject areas of this publication</em>
+                    and will receive updates in the daily or weekly email digests if turned on.
+                    You can <a href="https://peerj.com/settings/details/">add specific subject areas</a> through your profile settings.
+                    </p>
+                </div>
+            </div>
+
+                     <hr>
+                <div id="follow-modal-result" style="margin-left:-40px;padding-top:7px;">
+                                    </div>
+
+          </div>
+
+        </div>
+
+        <div id="follow-modal-footer" class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div>
+
+    <!-- Unfollow Publication Modal -->
+    <div id="unfollowModal" class="modal hide">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Change notification settings or unfollow</h3>
+    </div>
+
+    <form id="article-unfollow-form" data-href="/follow/publication/727/1/" method="put" class="form-horizontal">
+
+
+        <div id="unfollow-form-load-result" class="modal-body" data-href="/follow/publication/727/edit/" style="max-height:350px;overflow-y:auto">
+            <p>Loading ...</p>
+        </div>
+
+    </form>
+        <div class="modal-footer">
+            <button class="btn follow-close-btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <input class="btn btn-success update-follow-btn" value="Update" type="submit">
+        </div>
+</div>
+
+    <!-- Metrics Modal -->
+    <div id="metricsModal" class="modal hide">
+    <div class="modal-body" style="max-height:330px;overflow-y:auto">
+
+        <div class="row-fluid">
+            <div class="span12">
+                <p class="leadh2">Usage since published - updated daily</p>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+                            <div class="span8">
+                    <h3 style="margin-bottom:10px">Social referrals <small>unique visitors</small></h3>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">Twitter</div>
+                            <div class="span3" style="text-align:right;min-height:0">11</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">Google+</div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">Facebook</div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">LinkedIn</div>
+                            <div class="span3" style="text-align:right;min-height:0">0</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">Reddit</div>
+                            <div class="span3" style="text-align:right;min-height:0">0</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px; color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">Slashdot</div>
+                            <div class="span3" style="text-align:right;min-height:0">0</div>
+                        </div>
+                                        
+                    <h3 style="margin:30px 0 10px 0">Top referrals <small>unique visitors</small></h3>
+                                                                <div class="row-fluid" style="font-size: 16px;  color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">
+                                                                    From bookmark or typed URL
+                                                            </div>
+                            <div class="span3" style="text-align:right;min-height:0">7</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px;  color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">
+                                                                    <a style="word-wrap:break-word" href="http://yahoo/" target="_blank" rel="nofollow">yahoo</a>
+                                                            </div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px;  color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">
+                                                                    <a style="word-wrap:break-word" href="http://l.facebook.com/l.php" target="_blank" rel="nofollow">l.facebook.com</a>
+                                                            </div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px;  color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">
+                                                                    <a style="word-wrap:break-word" href="http://jp.mg5.mail.yahoo.co.jp/neo/launch" target="_blank" rel="nofollow">jp.mg5.mail.yahoo.co.jp</a>
+                                                            </div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                            <div class="row-fluid" style="font-size: 16px;  color: #444; border-bottom: 1px solid #ccc; margin-bottom: 5px;">
+                            <div class="span8" style="min-height:0">
+                                                                    <a style="word-wrap:break-word" href="http://ivory.idyll.org/blog/" target="_blank" rel="nofollow">ivory.idyll.org</a>
+                                                            </div>
+                            <div class="span3" style="text-align:right;min-height:0">2</div>
+                        </div>
+                                                        </div>
+            
+            <div class="span4" style="overflow-x:hidden;">
+                <h3 style="margin-bottom:10px">Social networks</h3>
+
+                <!-- Twitter -->
+                <div class="article-share-item">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://peerj.com/articles/727/" data-text="Loss of wwox expression in zebrafish embryos causes edema and alters Ca2+ dynamics" data-via="thePeerJ" data-related="thePeerJ">Tweet</a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="article-share-item">
+                    <div class="fb-like" data-href="https://peerj.com/articles/727/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-action="recommend"></div>
+                </div>
+
+                <!-- Google Plus -->
+                <div class="article-share-item">
+                    <div class="g-plus" data-action="share" data-annotation="bubble" data-width="450"></div>
+                </div>
+
+                <!--
+                <h3 style="margin-bottom:10px;margin-top:10px">Alt metrics</h3>
+                -->
+
+                <!-- Impact Story -->
+                <div style="opacity:0.77;overflow:hidden" class="impactstory-embed" data-id="10.7717/peerj.727" data-id-type="doi" data-verbose-badges="true" data-api-key="peerj-3fowy5"></div>
+
+                <!-- Altmetric -->
+                <div class="altmetric-embed" data-badge-popover="right" data-link-target="_blank" data-doi="10.7717/peerj.727"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+    <!-- Wiki Modal -->
+    
+    <!-- Links Modal -->
+    <div class="modal hide fade" id="article-links-modal">
+    <div class="modal-header">
+        <a data-dismiss="modal" aria-hidden="true" class="close">×</a>
+
+        <h3 class="modal-title">Links</h3>
+    </div>
+
+    <div class="modal-body"></div>
+
+    <div class="modal-footer">
+        <a href="https://peerj.com/links.form?target=articles%2F727" class="btn btn-primary">Add a link</a>
+        <button class="btn follow-close-btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+    <!-- Citing Modal -->
+    <div id="citing-modal" class="modal hide">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h2 class="slim"><i class="icon-copy"></i> Articles citing this paper</h2>
+    </div>
+  <div class="modal-body">Loading citing articles… <i class="icon icon-spinner icon-spin"></i></div>
+</div>
+
+        </div>
+
+        
+                <div id="push"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="foot">
+            <div class="container">
+                
+                                    <div class="row">
+	<div class="span7">
+		<b>About us -</b> <a href="https://peerj.com/about/" class="aboutLink" data-target="team">PeerJ team</a> 
+		| <a href="https://peerj.com/about/publications/" class="aboutLink" data-target="journals">Our publications</a> | <a href="https://peerj.com/about/partnerships/" class="aboutLink" data-target="partnership">Partnerships</a> | <a href="https://peerj.com/about/endorsements/" class="aboutLink" data-target="endorsements">Endorsements</a>
+		 <i class="icon-trophy"></i> <a href="https://peerj.com/about/reviews/" class="aboutLink" data-target="reviews">Reviews + awards</a>
+	</div>
+	<div class="span5">
+		<b>Resources -</b> <a href="https://peerj.com/about/FAQ/">FAQ</a> | <a href="https://peerj.com/about/careers/">Careers</a> | <a href="https://peerj.com/about/press/">Press
+		room</a> | <a href="https://peerj.com/about/terms/">Terms of use</a> | <a href="https://peerj.com/about/privacy/">Privacy</a> | <a href="https://peerj.com/about/contact/" class="aboutLink" data-target="contact">Contact</a>
+	</div>
+	<div class="span7">
+		<b>Academic boards -</b> <a href="https://peerj.com/academic-boards/advisors/">Advisors</a> | <a href="https://peerj.com/academic-boards/editors/">Editors</a> |
+		<a href="https://peerj.com/academic-boards/subjects/">Subject areas</a>
+	</div>
+	<div class="span5">
+		<b>Follow us -</b>
+		<a href="http://blog.peerj.com/">PeerJ blog</a> |
+		<a data-original-title="Follow on Twitter" href="http://twitter.com/thePeerJ/" title="" data-toggle="tooltip">Twitter</a>
+		|
+		<a data-original-title="Follow on Facebook" href="http://facebook.com/thePeerJ/" title="" data-toggle="tooltip">Facebook</a>
+		|
+		<a data-original-title="Follow on Google+" href="http://peerj.com/+" title="" data-toggle="tooltip">Google+</a>
+		|
+		<a data-original-title="Follow on LinkedIn" href="http://www.linkedin.com/company/peerj" title="" data-toggle="tooltip">LinkedIn</a>
+		|
+        <a data-original-title="Follow on Pinterest" href="http://www.pinterest.com/thepeerj/boards/" title="" data-toggle="tooltip">Pinterest</a>
+
+	</div>
+	<div class="span7">
+		<b>Submission guides -</b> 
+		<a href="https://peerj.com/about/aims-and-scope/"><em>PeerJ</em> instructions</a> | 
+		<a href="https://peerj.com/about/preprints/scope-and-instructions/"><em>PeerJ PrePrints</em> instructions</a>
+	</div>
+	<div class="span5">
+		<b>Article feeds <i class="icon-rss"></i> </b>
+		<a href="https://peerj.com/articles/index.atom" rel="alternate" title="Articles (Atom)" type="application/atom+xml">Atom</a> |
+		<a href="https://peerj.com/articles/index.rss2">RSS 2.0</a> |
+		<a href="https://peerj.com/articles/index.json">JSON</a> |
+		<a href="https://peerj.com/articles/index.rss1">RSS 1.0</a>
+	</div>
+    <div class="span7">&nbsp;</div>
+    <div class="span5">
+        <b>PrePrint feeds <i class="icon-rss"></i> </b>
+        <a href="https://peerj.com/preprints/index.atom" rel="alternate" title="PrePrints (Atom)" type="application/atom+xml">Atom</a> |
+        <a href="https://peerj.com/preprints/index.rss2">RSS 2.0</a> |
+        <a href="https://peerj.com/preprints/index.json">JSON</a> |
+        <a href="https://peerj.com/preprints/index.rss1">RSS 1.0</a>
+    </div>
+
+</div>
+
+<div id="fb-root"></div>
+                
+                <div class="row" style="margin-top:10px;font-size:12px">
+    <div class="span12" style="color:#888">
+                <span style="margin-right:7px"><span style="font-style:italic">PeerJ</span> ISSN: 2167-8359</span>
+        <span><span style="font-style:italic">PeerJ PrePrints</span> ISSN: 2167-9843</span>
+    </div>
+</div>
+            </div>
+        </div>
+    </footer>
+
+        <div id="alerts" data-async-alerts="/alerts/">    <div id="instit-alert" class="well peerj-paper-well peerj-announcement-fixed">
+        <i class="icon-remove peerj-announce-close"></i>
+        <h2></h2>
+        Your institution has a plan with PeerJ, so that you don't have to pay to publish Open Access. <a id="instit-href" class="open" href="">See if you qualify <i class="icon-share-alt"></i></a>
+    </div>
+
+    <div id="qa-announce-alert" class="well peerj-paper-well peerj-announcement-fixed">
+        <i class="icon-remove peerj-announce-close"></i>
+        <h2 class="slim">Publish for <strong>free</strong></h2>
+        Comment on Articles or Preprints and we'll waive your author fee<br> <strong><a class="open" href="http://blog.peerj.com/post/89045427878/interact-with-our-articles-publish-your-own-for-free" target="_blank">Learn more</a></strong>
+    </div>
+
+    <div style="display: block;" id="submit-announce-alert" class="well peerj-paper-well peerj-announcement-fixed">
+        <i class="icon-remove peerj-announce-close"></i>
+        <h2 class="slim"><strong>Submit</strong> your next article to PeerJ</h2>
+        and join thousands of satisfied authors.<br> <strong><a class="open" href="https://peerj.com/about/author-interviews/">Author interviews</a></strong> / <strong><a class="open" href="https://peerj.com/edu/">Institutional case studies</a></strong>
+    </div>
+</div>
+
+                    <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/4449d57-531d3ee.js"></script>
+    
+    <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/73eacb4-ab1eb45.js"></script>
+    
+<script>
+    $(function() {
+        $("[data-toggle=tooltip]").tooltip({ container: "body", placement: "bottom"});
+        PeerJ.Sixpack.init('https://peerj.com', null);    });
+</script>
+    
+
+    <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/2fdf27f-be3ac86.js"></script>
+
+    <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/647d92e-2c10fc9.js"></script>
+        <!--[if gt IE 8]><!-->
+        <script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/highlight.js"></script>
+
+        <script>
+            $(function () {
+                // syntax highlighting for code blocks
+                $("pre > code").each(function (i, node) {
+                    // specify the code language
+                    // TODO: this won't be needed once using JATS 1.1
+                    var $node = $(node);
+                    var preformatType = $node.attr('data-jats-preformat-type');
+
+                    if (preformatType && preformatType !== 'code') {
+                        $node.addClass('language-' + preformatType);
+                    }
+
+                    hljs.highlightBlock(node);
+                });
+            });
+        </script>
+    <!--<![endif]-->
+
+    <!-- initialise the follow button -->
+    <script>
+        $(function() {
+            PeerJ.Event.Follow.init(true);
+        });
+    </script>
+
+    <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+        messageStyle: "none",
+        "HTML-CSS": {
+            linebreaks: { automatic: true },
+            scale: 80
+        },
+        menuSettings: {
+            zoom: "Click"
+        }
+    });
+</script>
+<script>
+(function() {
+    var script = document.createElement("script");
+    script.setAttribute("type", "text/javascript");
+    script.setAttribute("src", "https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,Safe");
+    document.getElementsByTagName("head")[0].appendChild(script);
+})();
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","licenseKey":"d5eeba4cf5","applicationID":"1495858","transactionName":"MQcDZBMHX0EFUBBcXghNIkUSEl5fS0MRV10PAQBECAlf","queueTime":0,"applicationTime":185,"atts":"HUAAElsdTE8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script>
+
+<ul style="display: none;" tabindex="0" id="ui-id-1" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"></ul><span class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="status"></span><div style="display: none;" class="fr-loading"><div class="fr-loading-offset"><div class="fr-loading-background"></div><div class="fr-loading-icon"></div></div></div><script async="" src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/participate.js" type="text/javascript"></script><div class="annotations-outer-heatmap"><div style="height: 4.80534%; top: 0%;" class="current-scroll"></div></div><script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/nr-476.js"></script><script src="Loss%20of%20wwox%20expression%20in%20zebrafish%20embryos%20causes%20edema%20and%20alters%20Ca2+%20dynamics%20%5BPeerJ%5D_files/d5eeba4cf5.js" type="text/javascript"></script></body></html>
