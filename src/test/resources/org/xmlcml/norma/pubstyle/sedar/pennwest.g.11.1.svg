@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g title="org.xmlcml.svg2xml.page.MixedAnalyzer2" id="g.11.1" transform="matrix(1.0,0.0,0.0,1.0,-138.36,-72.36)">
+  <g>
+   <path stroke="black" fill="#ffffff" stroke-width="0.0" z="1441" d="M258.12 106.68 L326.76 106.68 L326.76 72.36 L258.12 72.36 Z" />
+   <path fill="none" stroke="cyan" stroke-width="6.25" z="1442" d="M258.12 106.68 L326.76 106.68 L326.76 72.36 L258.12 72.36 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1650" d="M258.12 89.52 L151.32 89.64 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1806" d="M151.32 89.52 L151.44 248.04 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1656" d="M245.16 89.52 L245.16 138.96 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1648" d="M326.76 92.64 L416.64 92.64 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1651" d="M363.6 92.64 L363.6 180.0 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1649" d="M416.52 92.64 L416.64 138.96 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1657" d="M312.72 106.8 L313.68 138.96 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1755" d="M138.36 128.52 L163.8 128.52 L163.8 116.16 L138.36 116.16 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1756" d="M138.36 128.52 L163.8 128.52 L163.8 116.04 L138.36 116.04 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1758" d="M231.6 128.52 L257.16 128.52 L257.16 116.16 L231.6 116.16 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1759" d="M231.6 128.52 L257.04 128.52 L257.04 116.04 L231.6 116.04 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1765" d="M300.24 131.16 L325.68 131.16 L325.68 118.68 L300.24 118.68 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1766" d="M300.24 131.16 L325.68 131.16 L325.68 118.68 L300.24 118.68 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1779" d="M348.0 131.16 L378.0 131.16 L378.0 118.68 L348.0 118.68 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1780" d="M348.0 131.16 L378.0 131.16 L378.0 118.68 L348.0 118.68 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1772" d="M402.72 131.16 L428.16 131.16 L428.16 118.68 L402.72 118.68 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1773" d="M402.72 131.16 L428.16 131.16 L428.16 118.68 L402.72 118.68 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1468" d="M220.8 160.8 L270.6 160.8 L270.6 138.96 L220.8 138.96 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1469" d="M220.8 160.8 L270.6 160.8 L270.6 138.96 L220.8 138.96 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1491" d="M284.16 160.8 L343.32 160.8 L343.32 138.96 L284.16 138.96 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1492" d="M284.04 160.8 L343.32 160.8 L343.32 138.96 L284.04 138.96 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1520" d="M385.44 160.8 L447.84 160.8 L447.84 138.96 L385.44 138.96 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1521" d="M385.44 160.8 L447.84 160.8 L447.84 138.96 L385.44 138.96 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1837" d="M419.16 158.76 L419.64 295.8 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1808" d="M245.64 160.8 L245.16 248.16 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1827" d="M313.68 160.8 L313.8 195.96 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1829" d="M300.24 184.2 L326.76 184.2 L326.76 170.64 L300.24 170.64 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1830" d="M300.24 184.2 L326.76 184.2 L326.76 170.64 L300.24 170.64 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1552" d="M364.2 180.0 C341.16 180.0 322.44 187.2 322.44 195.96 C322.44 204.72 341.16 211.8 364.2 211.8 C387.12 211.8 405.84 204.72 405.84 195.96 C405.84 187.2 387.12 180.0 364.2 180.0 " />
+   <path fill="none" stroke="red" stroke-width="6.25" z="1553" d="M364.2 180.0 C341.16 180.0 322.44 187.2 322.44 195.96 C322.44 204.72 341.16 211.8 364.2 211.8 C387.12 211.8 405.84 204.72 405.84 195.96 C405.84 187.2 387.12 180.0 364.2 180.0 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1828" d="M313.68 195.84 L322.44 195.96 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1810" d="M138.36 211.8 L172.56 211.8 L172.56 198.36 L138.36 198.36 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1811" d="M138.36 211.8 L172.44 211.8 L172.44 198.24 L138.36 198.24 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1819" d="M231.6 211.8 L258.12 211.8 L258.12 198.36 L231.6 198.36 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1820" d="M231.6 211.8 L258.12 211.8 L258.12 198.24 L231.6 198.24 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1652" d="M364.2 211.8 L364.68 229.44 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1788" d="M349.08 226.32 L379.08 226.32 L379.08 213.96 L349.08 213.96 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1789" d="M349.08 226.32 L379.08 226.32 L379.08 213.84 L349.08 213.84 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1658" d="M364.68 229.44 C341.64 229.44 323.04 236.64 323.04 245.4 C323.04 254.16 341.64 261.24 364.68 261.24 C387.6 261.24 406.32 254.16 406.32 245.4 C406.32 236.64 387.6 229.44 364.68 229.44 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1659" d="M364.68 229.44 C341.64 229.44 323.04 236.64 323.04 245.4 C323.04 254.16 341.64 261.24 364.68 261.24 C387.6 261.24 406.32 254.16 406.32 245.4 C406.32 236.64 387.6 229.44 364.68 229.44 Z" />
+   <path stroke="black" fill="orange" stroke-width="6.25" z="1733" d="M198.24 232.08 C175.32 232.08 156.6 239.16 156.6 247.92 C156.6 256.68 175.32 263.88 198.24 263.88 C221.28 263.88 240.0 256.68 240.0 247.92 C240.0 239.16 221.28 232.08 198.24 232.08 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1734" d="M198.24 232.08 C175.32 232.08 156.6 239.16 156.6 247.92 C156.6 256.68 175.32 263.88 198.24 263.88 C221.28 263.88 240.0 256.68 240.0 247.92 C240.0 239.16 221.28 232.08 198.24 232.08 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1840" d="M421.32 252.36 L447.84 252.36 L447.84 238.8 L421.32 238.8 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1841" d="M421.32 252.36 L447.84 252.36 L447.84 238.8 L421.32 238.8 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1839" d="M419.28 245.28 L406.32 245.4 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1807" d="M156.6 248.04 L151.32 248.16 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1809" d="M245.28 248.16 L240.0 248.04 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1653" d="M365.16 255.96 L364.68 279.96 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1654" d="M197.64 261.24 L198.0 292.44 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1797" d="M349.68 276.36 L379.56 276.36 L379.56 263.88 L349.68 263.88 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1798" d="M349.68 276.24 L379.56 276.24 L379.56 263.88 L349.68 263.88 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1699" d="M364.68 279.96 C341.64 279.96 323.04 287.04 323.04 295.8 C323.04 304.56 341.64 311.64 364.68 311.64 C387.72 311.64 406.32 304.56 406.32 295.8 C406.32 287.04 387.72 279.96 364.68 279.96 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1700" d="M364.68 279.96 C341.64 279.96 323.04 287.04 323.04 295.8 C323.04 304.56 341.64 311.64 364.68 311.64 C387.72 311.64 406.32 304.56 406.32 295.8 C406.32 287.04 387.72 279.96 364.68 279.96 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1848" d="M421.8 303.36 L448.44 303.36 L448.44 289.8 L421.8 289.8 Z" />
+   <path fill="none" stroke="#ffffff" stroke-width="6.25" z="1849" d="M421.8 303.36 L448.44 303.36 L448.44 289.8 L421.8 289.8 Z" />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1618" d="M197.88 292.44 L152.88 316.92 L197.88 341.4 L243.0 316.92 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1619" d="M197.88 292.44 L152.88 316.92 L197.88 341.4 L243.0 316.92 Z" />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1655" d="M364.68 295.56 L365.52 320.52 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1838" d="M419.28 295.56 L406.32 295.8 " />
+   <path stroke="black" fill="#ffffff" stroke-width="6.25" z="1589" d="M365.52 320.52 L320.4 345.0 L365.52 369.48 L410.52 345.0 " />
+   <path fill="none" stroke="#000000" stroke-width="6.25" z="1590" d="M365.52 320.52 L320.4 345.0 L365.52 369.48 L410.52 345.0 Z" />
+  </g>
+  <g>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1443" x="276.24" y="90.12" font-size="7.553" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1444" x="280.44" y="90.12" font-size="7.553" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1445" x="283.8" y="90.12" font-size="7.553" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1446" x="287.52" y="90.12" font-size="7.553" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1448" x="293.28" y="90.12" font-size="7.553" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1449" x="300.24" y="90.12" font-size="7.553" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1450" x="303.6" y="90.12" font-size="7.553" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1451" x="306.48" y="90.12" font-size="7.553" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1453" x="269.88" y="98.88" font-size="7.553" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1454" x="274.08" y="98.88" font-size="7.553" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1455" x="277.44" y="98.88" font-size="7.553" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1456" x="279.6" y="98.88" font-size="7.553" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1457" x="282.12" y="98.88" font-size="7.553" >o</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1458" x="285.84" y="98.88" font-size="7.553" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1459" x="287.88" y="98.88" font-size="7.553" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1460" x="291.12" y="98.88" font-size="7.553" >u</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="778.0" font-family="TimesNewRoman" font-weight="normal" z="1461" x="294.96" y="98.88" font-size="7.553" >m</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="611.0" font-family="TimesNewRoman" font-weight="normal" z="1463" x="302.76" y="98.88" font-size="7.553" >L</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1464" x="307.2" y="98.88" font-size="7.553" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1465" x="309.24" y="98.88" font-size="7.553" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1466" x="313.08" y="98.88" font-size="7.553" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1760" x="237.84" y="124.2" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1761" x="240.6" y="124.2" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1762" x="243.36" y="124.2" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1763" x="246.12" y="124.2" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1767" x="306.48" y="126.6" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1768" x="309.24" y="126.6" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1769" x="312.0" y="126.6" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1770" x="314.76" y="126.6" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1781" x="354.6" y="126.6" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1782" x="357.36" y="126.6" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1783" x="360.12" y="126.6" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1784" x="361.56" y="126.6" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1785" x="364.32" y="126.6" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1786" x="367.08" y="126.6" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1774" x="408.96" y="126.6" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1775" x="411.72" y="126.6" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1776" x="414.48" y="126.6" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1777" x="417.24" y="126.6" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1470" x="235.2" y="150.36" font-size="5.994" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1471" x="238.2" y="150.36" font-size="5.994" >6</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1472" x="241.2" y="150.36" font-size="5.994" >4</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1473" x="244.2" y="150.36" font-size="5.994" >7</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1474" x="247.2" y="150.36" font-size="5.994" >4</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1475" x="250.2" y="150.36" font-size="5.994" >5</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1476" x="253.2" y="150.36" font-size="5.994" >6</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1493" x="292.56" y="150.36" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1494" x="295.92" y="150.36" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1495" x="298.56" y="150.36" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1496" x="301.56" y="150.36" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1498" x="306.12" y="150.36" font-size="5.994" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1499" x="311.64" y="150.36" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1500" x="314.28" y="150.36" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1501" x="316.56" y="150.36" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1503" x="319.92" y="150.36" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1504" x="323.28" y="150.36" font-size="5.994" >R</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1505" x="327.24" y="150.36" font-size="5.994" >O</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1506" x="331.56" y="150.36" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1522" x="393.0" y="150.36" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1523" x="396.36" y="150.36" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1524" x="399.0" y="150.36" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1525" x="402.0" y="150.36" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1527" x="406.56" y="150.36" font-size="5.994" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1528" x="412.08" y="150.36" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1529" x="414.72" y="150.36" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1530" x="417.0" y="150.36" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1532" x="420.36" y="150.36" font-size="5.994" >S</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1533" x="423.72" y="150.36" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1534" x="426.36" y="150.36" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1535" x="429.24" y="150.36" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1536" x="432.36" y="150.36" font-size="5.994" >h</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1537" x="435.36" y="150.36" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1538" x="437.04" y="150.36" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1539" x="438.6" y="150.36" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1478" x="231.0" y="157.2" font-size="5.994" >A</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1479" x="235.32" y="157.2" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1480" x="236.88" y="157.2" font-size="5.994" >b</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1481" x="239.88" y="157.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1482" x="242.52" y="157.2" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1483" x="244.56" y="157.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1484" x="246.36" y="157.2" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="611.0" font-family="TimesNewRoman" font-weight="normal" z="1486" x="250.56" y="157.2" font-size="5.994" >L</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1487" x="254.16" y="157.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1488" x="255.96" y="157.2" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1489" x="258.84" y="157.2" font-size="5.994" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1508" x="299.16" y="157.2" font-size="5.994" >H</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1509" x="303.48" y="157.2" font-size="5.994" >o</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1510" x="306.6" y="157.2" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1511" x="308.04" y="157.2" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1512" x="311.04" y="157.2" font-size="5.994" >c</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1513" x="313.68" y="157.2" font-size="5.994" >o</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="611.0" font-family="TimesNewRoman" font-weight="normal" z="1515" x="318.36" y="157.2" font-size="5.994" >L</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1516" x="321.96" y="157.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1517" x="323.76" y="157.2" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1518" x="326.76" y="157.2" font-size="5.994" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1541" x="403.8" y="157.2" font-size="5.994" >C</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1542" x="407.76" y="157.2" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1543" x="409.8" y="157.2" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1544" x="412.44" y="157.2" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1545" x="415.32" y="157.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="611.0" font-family="TimesNewRoman" font-weight="normal" z="1547" x="419.52" y="157.2" font-size="5.994" >L</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1548" x="423.12" y="157.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1549" x="424.92" y="157.2" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1550" x="427.92" y="157.2" font-size="5.994" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1831" x="306.36" y="178.92" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1832" x="309.12" y="178.92" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1833" x="310.56" y="178.92" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1834" x="313.32" y="178.92" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1835" x="316.08" y="178.92" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1554" x="342.96" y="192.24" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1555" x="346.32" y="192.24" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1556" x="348.96" y="192.24" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1557" x="351.96" y="192.24" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1559" x="356.52" y="192.24" font-size="5.994" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1560" x="362.04" y="192.24" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1561" x="364.68" y="192.24" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1562" x="366.96" y="192.24" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1564" x="370.32" y="192.24" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1565" x="373.68" y="192.24" font-size="5.994" >R</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1566" x="377.64" y="192.24" font-size="5.994" >O</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1567" x="381.96" y="192.24" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="611.0" font-family="TimesNewRoman" font-weight="normal" z="1569" x="340.2" y="199.2" font-size="5.994" >L</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1570" x="343.92" y="199.2" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="778.0" font-family="TimesNewRoman" font-weight="normal" z="1571" x="345.48" y="199.2" font-size="5.994" >m</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1572" x="350.16" y="199.2" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1573" x="351.6" y="199.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1574" x="353.4" y="199.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1575" x="356.04" y="199.2" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1577" x="360.6" y="199.2" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1578" x="363.96" y="199.2" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1579" x="366.6" y="199.2" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1580" x="368.64" y="199.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1581" x="370.44" y="199.2" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1582" x="373.32" y="199.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1583" x="375.96" y="199.2" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1584" x="378.0" y="199.2" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1585" x="380.4" y="199.2" font-size="5.994" >h</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1586" x="383.4" y="199.2" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1587" x="384.96" y="199.2" font-size="5.994" >p</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1812" x="147.0" y="206.52" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1813" x="149.76" y="206.52" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1814" x="152.52" y="206.52" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1815" x="153.96" y="206.52" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1816" x="156.72" y="206.52" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1817" x="159.48" y="206.52" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1821" x="237.72" y="206.52" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1822" x="240.48" y="206.52" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1823" x="241.92" y="206.52" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1824" x="244.68" y="206.52" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1825" x="247.44" y="206.52" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1790" x="355.56" y="222.0" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1791" x="358.32" y="222.0" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1792" x="361.08" y="222.0" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1793" x="362.52" y="222.0" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1794" x="365.28" y="222.0" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1795" x="368.04" y="222.0" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1660" x="340.2" y="241.68" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1661" x="343.56" y="241.68" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1662" x="346.2" y="241.68" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1663" x="349.2" y="241.68" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1665" x="353.76" y="241.68" font-size="5.994" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1666" x="359.28" y="241.68" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1667" x="361.92" y="241.68" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1668" x="364.2" y="241.68" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1670" x="367.56" y="241.68" font-size="5.994" >N</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1671" x="371.88" y="241.68" font-size="5.994" >o</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1672" x="375.0" y="241.68" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1673" x="376.92" y="241.68" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1674" x="378.72" y="241.68" font-size="5.994" >h</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1675" x="381.6" y="241.68" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1676" x="384.24" y="241.68" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1677" x="386.28" y="241.68" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1735" x="185.4" y="244.2" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1736" x="188.76" y="244.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1737" x="191.4" y="244.2" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1738" x="194.4" y="244.2" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="944.0" font-family="TimesNewRoman" font-weight="normal" z="1740" x="198.96" y="244.2" font-size="5.994" >W</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1741" x="204.48" y="244.2" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1742" x="207.12" y="244.2" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1743" x="209.4" y="244.2" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1842" x="427.44" y="246.96" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1843" x="430.2" y="246.96" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1844" x="431.64" y="246.96" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1845" x="434.4" y="246.96" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1846" x="437.16" y="246.96" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1679" x="341.52" y="248.64" font-size="5.994" >H</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1680" x="345.84" y="248.64" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1681" x="348.48" y="248.64" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1682" x="350.52" y="248.64" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1683" x="352.68" y="248.64" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1684" x="354.12" y="248.64" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1685" x="356.76" y="248.64" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1687" x="360.36" y="248.64" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1688" x="363.72" y="248.64" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1689" x="366.36" y="248.64" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1690" x="368.28" y="248.64" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1691" x="370.08" y="248.64" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1692" x="372.96" y="248.64" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1693" x="375.6" y="248.64" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1694" x="377.64" y="248.64" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1695" x="380.04" y="248.64" font-size="5.994" >h</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1696" x="383.04" y="248.64" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1697" x="384.6" y="248.64" font-size="5.994" >p</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1745" x="186.0" y="251.28" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1746" x="189.36" y="251.28" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1747" x="192.0" y="251.28" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1748" x="193.8" y="251.28" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1749" x="195.72" y="251.28" font-size="5.994" >o</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1750" x="198.84" y="251.28" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1751" x="200.28" y="251.28" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1752" x="202.92" y="251.28" font-size="5.994" >u</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="778.0" font-family="TimesNewRoman" font-weight="normal" z="1753" x="206.04" y="251.28" font-size="5.994" >m</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1799" x="356.16" y="271.92" font-size="5.515" >5</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1800" x="358.92" y="271.92" font-size="5.515" >4</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1801" x="361.68" y="271.92" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1802" x="363.12" y="271.92" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1803" x="365.88" y="271.92" font-size="5.515" >9</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1804" x="368.64" y="271.92" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1701" x="345.84" y="292.08" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1702" x="349.2" y="292.08" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1703" x="351.84" y="292.08" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1704" x="354.48" y="292.08" font-size="5.994" >c</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1705" x="357.12" y="292.08" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1707" x="361.32" y="292.08" font-size="5.994" >R</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1708" x="365.4" y="292.08" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1709" x="366.96" y="292.08" font-size="5.994" >v</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1710" x="369.96" y="292.08" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1711" x="372.6" y="292.08" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1713" x="376.2" y="292.08" font-size="5.994" >O</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1714" x="380.64" y="292.08" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1715" x="382.2" y="292.08" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1729" x="376.8" y="296.76" font-size="3.956" >(</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1730" x="378.12" y="296.76" font-size="3.956" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1731" x="380.16" y="296.76" font-size="3.956" >)</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1850" x="428.04" y="298.08" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="250.0" font-family="TimesNewRoman" font-weight="normal" z="1851" x="430.8" y="298.08" font-size="5.515" >.</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1852" x="432.24" y="298.08" font-size="5.515" >0</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1853" x="435.0" y="298.08" font-size="5.515" >1</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="833.0" font-family="TimesNewRoman" font-weight="normal" z="1854" x="437.76" y="298.08" font-size="5.515" >%</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1717" x="348.0" y="299.28" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1718" x="351.36" y="299.28" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1719" x="354.0" y="299.28" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1720" x="356.04" y="299.28" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1721" x="357.84" y="299.28" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1722" x="360.72" y="299.28" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1723" x="363.36" y="299.28" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1724" x="365.4" y="299.28" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1725" x="367.68" y="299.28" font-size="5.994" >h</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1726" x="370.68" y="299.28" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1727" x="372.24" y="299.28" font-size="5.994" >p</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1620" x="182.04" y="314.52" font-size="5.994" >C</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1621" x="186.0" y="314.52" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1622" x="188.76" y="314.52" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1623" x="191.64" y="314.52" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1624" x="194.28" y="314.52" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1625" x="197.4" y="314.52" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1626" x="198.96" y="314.52" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1627" x="201.72" y="314.52" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1629" x="206.16" y="314.52" font-size="5.994" >O</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1630" x="210.6" y="314.52" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1631" x="212.16" y="314.52" font-size="5.994" >l</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1633" x="179.52" y="321.72" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1634" x="182.16" y="321.72" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1635" x="185.04" y="321.72" font-size="5.994" >d</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1637" x="189.6" y="321.72" font-size="5.994" >G</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1638" x="193.92" y="321.72" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1639" x="196.56" y="321.72" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1641" x="200.52" y="321.72" font-size="5.994" >A</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1642" x="204.84" y="321.72" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1643" x="207.12" y="321.72" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1644" x="209.4" y="321.72" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1645" x="212.04" y="321.72" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1646" x="213.84" y="321.72" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="556.0" font-family="TimesNewRoman" font-weight="normal" z="1591" x="351.0" y="342.6" font-size="5.994" >P</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1592" x="354.36" y="342.6" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1593" x="357.0" y="342.6" font-size="5.994" >a</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1594" x="359.64" y="342.6" font-size="5.994" >c</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1595" x="362.28" y="342.6" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1597" x="366.48" y="342.6" font-size="5.994" >R</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1598" x="370.56" y="342.6" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1599" x="372.12" y="342.6" font-size="5.994" >v</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1600" x="375.12" y="342.6" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="333.0" font-family="TimesNewRoman" font-weight="normal" z="1601" x="377.76" y="342.6" font-size="5.994" >r</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="667.0" font-family="TimesNewRoman" font-weight="normal" z="1603" x="346.56" y="349.68" font-size="5.994" >B</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1604" x="350.64" y="349.68" font-size="5.994" >i</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1605" x="352.08" y="349.68" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1606" x="353.88" y="349.68" font-size="5.994" >u</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="778.0" font-family="TimesNewRoman" font-weight="normal" z="1607" x="357.0" y="349.68" font-size="5.994" >m</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1608" x="361.44" y="349.68" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="500.0" font-family="TimesNewRoman" font-weight="normal" z="1609" x="364.2" y="349.68" font-size="5.994" >n</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="722.0" font-family="TimesNewRoman" font-weight="normal" z="1611" x="368.76" y="349.68" font-size="5.994" >A</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1612" x="372.96" y="349.68" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1613" x="375.36" y="349.68" font-size="5.994" >s</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="444.0" font-family="TimesNewRoman" font-weight="normal" z="1614" x="377.64" y="349.68" font-size="5.994" >e</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="278.0" font-family="TimesNewRoman" font-weight="normal" z="1615" x="380.28" y="349.68" font-size="5.994" >t</text>
+   <text stroke="none" fill="#000000" fontName="MIBUPJ+Times-Roman" width="389.0" font-family="TimesNewRoman" font-weight="normal" z="1616" x="382.08" y="349.68" font-size="5.994" >s</text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,132 @@
+<tagger name="nlm">
+
+	<xsl:stylesheet version="2.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:h="http://www.w3.org/1999/xhtml">
+		
+		<!--  shouldn't be necessary -->
+		<xsl:template match="/">
+			<xsl:apply-templates />
+		</xsl:template>
+
+		<!--Identity template, strips PIs and comments -->
+		<xsl:template match="@*|*|text()">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|*|text()" />
+			</xsl:copy>
+		</xsl:template>
+
+		
+	</xsl:stylesheet>
+
+	<tagList>
+	<!-- plosone -->
+	    <variable name="plos_html">/h:html</variable>
+	    <variable name="plos_head">{$plos_html}/h:head</variable>
+	    <variable name="plos_meta">{$plos_head}/h:meta</variable>
+	    <variable name="plos_body">{$plos_html}/h:body</variable>
+	    <variable name="plos_page_wrap">{$plos_body}/h:div[@id='page-wrap']</variable>
+	    <variable name="plos_topbanner">{$plos_page_wrap}/h:div[@id='topbanner']</variable>
+	    <variable name="plos_center">{$plos_topbanner}/h:div[@class='center']</variable>
+	    <variable name="plos_pagebdy_wrap">{$plos_center}/h:div[@id='pagebdy-wrap']</variable>
+	    <variable name="plos_pagebdy">{$plos_pagebdy_wrap}/h:div[@id='pagebdy']</variable>
+	    <variable name="plos_article_block">{$plos_pagebdy}/h:div[@id='article-block']</variable>
+	    <variable name="plos_header">{$plos_article_block}/h:div[@class='header']</variable>
+	    <variable name="plos_authors">{$plos_header}/h:ul[@class='authors']</variable>
+	    <variable name="plos_author">{$plos_authors}/h:li[h:span[@class='author']]</variable>
+	    <variable name="plos_date_doi_line">{$plos_header}/h:ul[@class='date-doi-line']</variable>
+	    <variable name="plos_publication_date">{$plos_date_doi_line}/h:li[starts-with(.,'Published')]</variable>
+	    <variable name="plos_doi">{$plos_date_doi_line}/h:li[starts-with(.,'DOI:')]</variable>
+	    
+	    <variable name="plos_main_cf">{$plos_article_block}/h:div[@class='main cf']</variable>
+	    <variable name="plos_article">{$plos_main_cf}/h:div[@class='article']</variable>
+	    <variable name="plos_abstract">{$plos_article}/h:div[@class='abstract']</variable>
+	    <variable name="plos_articleinfo">{$plos_article}/h:div[@class='articleinfo']</variable>
+	    <!-- this really needs grouping -->
+	    <variable name="plos_citation">{$plos_articleinfo}/h:p[h:strong[normalize-space(.)='Citation:']]</variable>
+	    <variable name="plos_received">{$plos_articleinfo}/h:p/h:strong[.='Received:']</variable>
+	    <variable name="plos_accepted">{$plos_articleinfo}/h:p/h:strong[.='Accepted:']</variable>
+	    <variable name="plos_published">{$plos_articleinfo}/h:p/h:strong[.='Published:']</variable>
+	    <variable name="plos_copyright_licence">{$plos_articleinfo}/h:p[contains(.,'opyright') or contains(.,'Creative Commons')]</variable>
+	    <variable name="plos_data_availability">{$plos_articleinfo}/h:p[h:strong[normalize-space(.)='Data Availability:']]</variable>
+	    <variable name="plos_funding">{$plos_articleinfo}/h:p[h:strong[normalize-space(.)='Funding:']]</variable>
+	    <variable name="plos_competing">{$plos_articleinfo}/h:p[h:strong[normalize-space(.)='Competing interests:']]</variable>
+	    <variable name="plos_section">{$plos_article}/h:div[@class='section']</variable>
+	    <variable name="plos_introduction">{$plos_section}[h:h3[.='Introduction']]</variable>
+	    <variable name="plos_materials_methods">{$plos_section}[h:h3[.='Materials and Methods']]</variable>
+	    <variable name="plos_results_discussion">{$plos_section}[h:h3[.='Results and Discussion']]</variable>
+	    <variable name="plos_conclusions">{$plos_section}[h:h3[.='Conclusions']]</variable>
+	    <variable name="plos_acknowledgments">{$plos_article}/h:div[h:h3[.='Acknowledgments']]</variable>
+	    <variable name="plos_contributions">{$plos_article}/h:div[h:h3[.='Author Contributions']]</variable>
+	    <variable name="plos_references">{$plos_article}/h:div[h:h3[.='References']]</variable>
+	    <variable name="plos_reference">{$plos_references}/h:ol/h:li</variable>
+
+<!--  uses <div class="figure"> for BOTH figures and tables :-( -->	    
+	    <variable name="plos_figure">{$plos_section}/h:div[@class='figure']</variable>
+	    <variable name="plos_figure_inline_download">{$plos_figure}/h:div[@class='figure-inline-download']</variable>
+	    <variable name="plos_figure_inline_download_png">{$plos_figure_inline_download}//h:a[.='PNG']/@href</variable>
+	    <!--  this is table as image?? -->
+	    <variable name="plos_table_title">{$plos_figure}/h:p[h:strong[starts-with(normalize-space(.),'Table ')]]</variable>
+	    <!--  figure -->
+	    <variable name="plos_figure_title">{$plos_figure}/h:p[h:strong[starts-with(normalize-space(.),'Figure ')]]</variable>
+	    <!-- gets whole caption -->
+	    <variable name="plos_figure_caption">{$plos_figure}[h:p/h:strong[starts-with(normalize-space(.),'Figure ')]]/h:p</variable>
+
+<!--  from meta tags -->
+
+<!-- highwire metadata -->
+		<variable name="citation_abstract">{$meta}[@name='citation_abstract' or @name='dc.description' or @name='description']</variable>
+		<variable name="citation_abstract_html_url">{$meta}[@name='']</variable>
+ 		<variable name="citation_author">{$meta}[@name='citation_author' or @name='dc.creator']</variable>
+		<variable name="citation_author_institution">{$meta}[@name='citation_author_institution']</variable>
+		<variable name="citation_authors">{$meta}[@name='citation_authors']</variable>
+		<variable name="citation_date">{$meta}[@name='citation_date']</variable>
+		<variable name="citation_doi">{$meta}[@name='citation_doi' or @name='prism.doi' or @name='dc.identifier']</variable>
+		<variable name="citation_fulltext_html_url">{$meta}[@name='citation_fulltext_html_url']</variable>
+		<variable name="citation_journal_title">{$meta}[@name='citation_journal_title']</variable>
+		<variable name="citation_firstpage">{$meta}[@name='citation_firstpage']</variable>
+		<variable name="citation_issue">{$meta}[@name='citation_issue']</variable>
+		<variable name="citation_issn">{$meta}[@name='citation_issn']</variable>
+		<variable name="citation_journal_abbrev">{$meta}[@name='citation_journal_abbrev']</variable>
+		<variable name="citation_pdf_url">{$meta}[@name='citation_pdf_url']</variable>
+		<variable name="citation_publisher">{$meta}[@name='citation_publisher']</variable>
+		<variable name="citation_reference">{$meta}[@name='citation_reference']</variable>
+		<variable name="citation_title">{$meta}[@name='citation_title']</variable>
+		<variable name="citation_volume">{$meta}[@name='citation_volume']</variable>
+		
+		<variable name="current_journal">{$meta}[@name='currentJournal']</variable>
+		<variable name="date">{$meta}[@name='dcterms.issued' or @name='citation_date' or @name='dc.date' or @name='prism.publicationDate']</variable>
+		
+		<!-- dublin core -->
+		<!-- abstract , accessRights , accrualMethod , accrualPeriodicity , accrualPolicy , alternative , audience , 
+		available , bibliographicCitation , conformsTo , contributor , coverage , created , creator , date , dateAccepted , 
+		dateCopyrighted , dateSubmitted , description , educationLevel , extent , format , hasFormat , hasPart , hasVersion , 
+		identifier , instructionalMethod , isFormatOf , isPartOf , isReferencedBy , isReplacedBy , isRequiredBy , issued , 
+		isVersionOf , language , license , mediator , medium , modified , provenance , publisher , references , relation , 
+		replaces , requires , rights , rightsHolder , source , spatial , subject , tableOfContents , temporal , title , type , valid -->
+		
+		<variable name="dc_date">{$meta}[@name='dc.date']</variable>
+		<variable name="dc_identifier">{$meta}[@name='dc.identifier']</variable>
+		<variable name="dc_source">{$meta}[@name='dc.source']</variable>
+		<variable name="dc_copyright">{$meta}[@name='dc.copyright' or @name='prism.copyright']</variable>
+		<variable name="dc_rights">{$meta}[@name='dc.rights']</variable>
+		<variable name="dc_rights_agent">{$meta}[@name='dc.rightsAgent' or @name='prism.rightsAgent']</variable>
+		
+		<variable name="format">{$meta}[@name='dc.format']</variable>
+		<variable name="issn">{$meta}[@name='prism.issn']</variable>
+		<variable name="issue">{$meta}[@name='prism.number']</variable>
+		<variable name="journal">{$meta}[@name='dc.source' or @name='prism.publicationName' or @name='citation_journal_title']</variable>
+		<variable name="language">{$meta}[@name='dc.language']</variable>
+		<variable name="prism_section">{$meta}[@name='prism.section']</variable>
+		<variable name="publication_date">{$meta}[@name='prism.publicationDate']</variable>
+		<variable name="publication_name">{$meta}[@name='prism.publicationName']</variable>
+		<variable name="publisher">{$meta}[@name='dc.publisher' or @name='citation_publisher' or @name='Author']</variable>
+		<variable name="startPage">{$meta}[@name='prism.startingPage']</variable>
+		<variable name="title">{$meta}[@name='dc.title' or @name='citation_title']</variable>
+		<variable name="volume">{$meta}[@name='citation_volume' or @name='prism.volume']</variable>
+		<variable name="number">{$meta}[@name='prism.number']</variable>
+		<variable name="year">{$meta}[@name='citation_year']</variable>
+
+    </tagList>
+</tagger>
+

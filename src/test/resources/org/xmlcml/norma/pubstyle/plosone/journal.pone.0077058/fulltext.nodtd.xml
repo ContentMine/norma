@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-02790</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0077058</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories>
+<title-group>
+<article-title>A New Hadrosauroid Dinosaur from the Early Late Cretaceous of Shanxi Province, China</article-title>
+<alt-title alt-title-type="running-head">New Hadrosauroid Dinosaur from China</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>Run-Fu</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>You</surname><given-names>Hai-Lu</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Xu</surname><given-names>Shi-Chao</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>Suo-Zhu</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Yi</surname><given-names>Jian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Xie</surname><given-names>Li-Juan</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Jia</surname><given-names>Lei</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>Ya-Xian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Shanxi Museum of Geological and Mineral Science and Technology, Taiyuan, Shanxi Province, People's Republic of China</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Key Laboratory of Vertebrate Evolution and Human Origins of Chinese Academy of Sciences, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences, Beijing, People's Republic of China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Evans</surname><given-names>David C.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Royal Ontario Museum, Canada</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">youhailu@ivpp.ac.cn</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: RFW HLY. Analyzed the data: RFW HLY SCX SZW JY LJX YXL LJ. Wrote the paper: HLY. Performed the field work: SCX SZW JY LJX YXL LJ.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>18</day><month>10</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>10</issue>
+<elocation-id>e77058</elocation-id>
+<history>
+<date date-type="received"><day>14</day><month>1</month><year>2013</year></date>
+<date date-type="accepted"><day>25</day><month>8</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Wang et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background</title>
+<p>The origin of hadrosaurid dinosaurs is far from clear, mainly due to the paucity of their early Late Cretaceous close relatives. Compared to numerous Early Cretaceous basal hadrosauroids, which are mainly from Eastern Asia, only six early Late Cretaceous (pre-Campanian) basal hadrosauroids have been found: three from Asia and three from North America.</p>
+</sec><sec>
+<title>Methodology/Principal Findings</title>
+<p>Here we describe a new hadrosauroid dinosaur, <italic>Yunganglong datongensis</italic> gen. et sp. nov., from the early Late Cretaceous Zhumapu Formation of Shanxi Province in northern China. The new taxon is represented by an associated but disarticulated partial adult skeleton including the caudodorsal part of the skull. Cladistic analysis and comparative studies show that <italic>Yunganglong</italic> represents one of the most basal Late Cretaceous hadrosauroids and is diagnosed by a unique combination of features in its skull and femur.</p>
+</sec><sec>
+<title>Conclusions/Significance</title>
+<p>The discovery of <italic>Yunganglong</italic> adds another record of basal Hadrosauroidea in the early Late Cretaceous, and helps to elucidate the origin and evolution of Hadrosauridae.</p>
+</sec></abstract>
+<funding-group><funding-statement>Funding was provided by the National Natural Science Foundation of China, the Hundred Talents Project of the Chinese Academy of Sciences, and the Department of Land and Resources of Shanxi Province. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="12"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Hadrosauroids were facultative bipedal dinosaurs that dominated Cretaceous Laurasian megaherbivorous niches <xref ref-type="bibr" rid="pone.0077058-Norman1">[1]</xref>, <xref ref-type="bibr" rid="pone.0077058-Horner1">[2]</xref>. During the Late Cretaceous, they gave rise to hadrosaurid dinosaurs, which are characterized by duck-like bills and complex grinding dentitions that rival those of horses and bovids <xref ref-type="bibr" rid="pone.0077058-Erickson1">[3]</xref>. However, the origin of hadrosaurids is far from clear, mainly due to the paucity of early Late Cretaceous close relatives. Basal hadrosauroids are mainly known from the Early Cretaceous of Eastern Asia, and especially northern China <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref>. Until now, only six pre-Campanian Late Cretaceous basal hadrosauroids have been reported: three from Asia (<italic>Shuangmiaosaurus gilmorei</italic>, <italic>Levnesovia transoxiana</italic>, and <italic>Nanyangosaurus zhugeii</italic>, see discussion section below on its age) and three from North America (<italic>Eolambia caroljonesa</italic>, <italic>Protohadros byrdi</italic>, and <italic>Jeyawati rugoculus</italic>) <xref ref-type="bibr" rid="pone.0077058-You1">[5]</xref>–<xref ref-type="bibr" rid="pone.0077058-McDonald2">[10]</xref>. Therefore, the discovery of new early Late Cretaceous basal hadrosauroids has important phylogenetic and paleobiogeographical significance and can help elucidate the evolution of hadrosauroids, especially the origin of hadrosaurids.</p>
+<p>Definitions of relevant taxa follow Sereno <xref ref-type="bibr" rid="pone.0077058-Sereno1">[11]</xref>: Hadrosauriformes is the least inclusive clade containing <italic>Iguanodon bernissartensis</italic> Boulenger in Beneden 1881 and <italic>Parasaurolophus walkeri</italic> Parks 1922, Hadrosauroidea is the most inclusive taxon containing <italic>Parasaurolophus walkeri</italic> Parks 1922 but not <italic>Iguanodon bernissartensis</italic> Boulenger in Beneden 1881, and Hadrosauridae is the least inclusive taxon containing <italic>Saurolophus osborni</italic> Brown 1912 and <italic>Parasaurolophus walkeri</italic> Parks 1922 and including <italic>Hadrosaurus foulkii</italic> Leidy 1858. The term “basal hadrosauroids” here refers to all members of non-Hadrosauridae Hadrosauroidea.</p>
+<p>In 1958, C. C. Young (Z.-J. Yang) <xref ref-type="bibr" rid="pone.0077058-Young1">[12]</xref> reported the first dinosaur record in Shanxi Province of northern China. These remains were recovered from two localities in Zuoyun County of northern Shanxi (<xref ref-type="fig" rid="pone-0077058-g001">Fig. 1</xref>). The material is fragmentary, and Young did not name any new dinosaur species; rather, he assigned some of them to existing taxa <xref ref-type="bibr" rid="pone.0077058-Young1">[12]</xref>. The first locality (Xinyaogou) yielded theropod (cf. <italic>Velociraptor mongoliensis</italic>, represented by a single tooth), ceratopsian (cf. <italic>Microceratops gobiensis</italic>, represented by two partial mandibles, three isolated teeth, several vertebrae, one humerus, one femur, and other fragmentary specimens), and hadrosauroid (<italic>Bactrosaurus johnsoni</italic>, represented by two isolated teeth, some vertebrae including a series of 25 caudals, one rib, one right humerus, and several manual and pedal bones). The second locality (Zhanmagou) yielded Sauropoda indet. (represented by one partial dorsal and one fragmentary caudal vertebrae) and Allosauridae indet. (represented by one caudal, one partial right scapula, two distal ends of ischia, one proximal end of right tibia, one partial right fibula, one left metatarsal, and one pedal phalanx). Based on the different dinosaur components, Young considered the Xinyaogou dinosaur assemblage to be Late Cretaceous in age and the Zhanmagou dinosaur assemblage to be Early Cretaceous or earlier in age.</p>
+<fig id="pone-0077058-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g001</object-id><label>Figure 1</label><caption>
+<title>Locality of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A)-Shanxi Province in China. (B)-Zuoyun County in Shanxi Province.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g001" position="float" xlink:type="simple"/></fig>
+<p>More than half a century later, the Department of Land and Resources of Shanxi Province initiated a project to find dinosaurs for the Shanxi Museum of Geology (SXMG) now being constructed. In 2011 and 2012, a number of dinosaur localities were discovered and excavated in Zuoyun County. Preliminary observations indicate the existence of hadrosauroid, ankylosaur, and ceratopsian remains from the early Late Cretaceous Zhumapu Formation, and stegosaur and sauropod remains from the late Early Cretaceous Zuoyun Formation. In this paper, a partial associated hadrosauroid skeleton from 2011 Locality 7 (SXMG V 00001, field number ZY007) is described and diagnosed as a new genus and species.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<p>No permits were required for this study, which complied with all relevant regulations. We obtained permission from the Shanxi Museum of Geological and Mineral Science and Technology to access the collections. The specimens were discovered and excavated by the crew (including co-authors of this study) of the Shanxi Museum of Geological and Mineral Science and Technology.</p>
+<sec id="s2a">
+<title>Nomenclatural Acts</title>
+<p>The electronic edition of this article conforms to the requirements of the amended International Code of Zoological Nomenclature, and hence the new names contained herein are available under that Code from the electronic edition of this article. This published work and the nomenclatural acts it contains have been registered in ZooBank, the online registration system for the ICZN. The ZooBank LSIDs (Life Science Identifiers) can be resolved and the associated information viewed through any standard web browser by appending the LSID to the prefix “<ext-link ext-link-type="uri" xlink:href="http://zoobank.org/" xlink:type="simple">http://zoobank.org/</ext-link>”. The LSID for this publication is: urn:lsid:zoobank.org:pub:26AD8279-F3F8-4A6F-A16F-B163BB54F7EE. The electronic edition of this work was published in a journal with an ISSN, and has been archived and is available from the following digital repositories: PubMed Central, LOCKSS.</p>
+</sec><sec id="s2b">
+<title>Phylogenetic Analysis</title>
+<p>Numerous cladistic analyses have been conducted in order to elucidate the phylogenetic relationships among hadrosauroids in recent years; for example, at least four papers were published in 2012 <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref>, <xref ref-type="bibr" rid="pone.0077058-PrietoMrquez1">[13]</xref>–<xref ref-type="bibr" rid="pone.0077058-McDonald3">[15]</xref>. However, many of these focused on the phylogeny of Hadrosauridae or its subclades; for example, lambeosaurine was the subject of <xref ref-type="bibr" rid="pone.0077058-PrietoMrquez1">[13]</xref>, while saurolophine was the subject of <xref ref-type="bibr" rid="pone.0077058-Godefroit1">[14]</xref>. Although McDonald <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref> and McDonald et al. <xref ref-type="bibr" rid="pone.0077058-McDonald3">[15]</xref> included most of the basal hadrosauroids, the results were poorly resolved and most taxa were clustered in a polytomy in the strict consensus tree. Thus, the phylogeny presented in <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref> is based on a maximum agreement subtree that entailed the deletion of 30 operational taxonomic unites, while that of <xref ref-type="bibr" rid="pone.0077058-McDonald3">[15]</xref> is based on Adams consensus tree.</p>
+<p>In order to assess the phylogenetic position of the new taxon, we performed a cladistic analysis based on Sues and Averianov <xref ref-type="bibr" rid="pone.0077058-Sues1">[6]</xref>. This data matrix has been used by one of the authors (YHL) on the study of <italic>Jintasaurus</italic> <xref ref-type="bibr" rid="pone.0077058-You2">[16]</xref>. In the current analysis <italic>Nanyangosaurus</italic>, <italic>Shuangmiaosaurus</italic>, and <italic>Yunganglong</italic> were added to the matrix, to increase its taxonomic representation. This new data matrix was compiled in Mesquite 2.72 <xref ref-type="bibr" rid="pone.0077058-Maddison1">[17]</xref>, and consists of 138 characters and 38 ornithopod taxa (<xref ref-type="supplementary-material" rid="pone.0077058.s001">Supporting Information S1</xref>). Two character codings were modified: character 37 (Postorbital, length of squamosal process; 0: short, postorbital-squamosal joint reaches point at mid-length of supratemporal fenestra; 1: long, postorbital-squamosal joint near level of posterior border of supratemporal fenestra) is changed from ‘0’ to ‘?’ for <italic>Protohadros</italic> because the character state is not clear based on the original descriptive paper (i. e., the squamosal process of the postorbital is partially present) <xref ref-type="bibr" rid="pone.0077058-Head1">[9]</xref> and a new character state (coronoid process orientation: 2, inclined caudally) is added to reflect this unique feature in <italic>Shuangmiaosaurus</italic> <xref ref-type="bibr" rid="pone.0077058-You1">[5]</xref>. The data matrix was analyzed by a Traditional search in TNT 1.1 <xref ref-type="bibr" rid="pone.0077058-Goloboff1">[18]</xref> with 100 replications of Wagner trees and tree bisection reconnection (TBR) branch swapping (with 100 trees to save per replicate). All characters were unordered and equally weighted. <italic>Hypsilophodon</italic> was selected as outgroup, as in the original analysis <xref ref-type="bibr" rid="pone.0077058-Sues1">[6]</xref>.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Systematic Paleontology</title>
+<p>Dinosauria Owen, 1842 <xref ref-type="bibr" rid="pone.0077058-Owen1">[19]</xref></p>
+<p>Ornithischia Seeley, 1887 <xref ref-type="bibr" rid="pone.0077058-Seeley1">[20]</xref></p>
+<p>Ornithopoda Marsh, 1881 <xref ref-type="bibr" rid="pone.0077058-Marsh1">[21]</xref></p>
+<p>Iguanodontia Dollo, 1888 <xref ref-type="bibr" rid="pone.0077058-Dollo1">[22]</xref> sensu Sereno, 2005 <xref ref-type="bibr" rid="pone.0077058-Sereno1">[11]</xref></p>
+<p>Ankylopollexia Sereno, 1986 <xref ref-type="bibr" rid="pone.0077058-Sereno2">[23]</xref> sensu Sereno, 2005 <xref ref-type="bibr" rid="pone.0077058-Sereno1">[11]</xref></p>
+<p>Styracosterna Sereno, 1986 <xref ref-type="bibr" rid="pone.0077058-Sereno2">[23]</xref> sensu Sereno, 2005 <xref ref-type="bibr" rid="pone.0077058-Sereno1">[11]</xref></p>
+<p>Hadrosauriformes Sereno, 1997 <xref ref-type="bibr" rid="pone.0077058-Sereno3">[24]</xref> sensu Sereno, 1998 <xref ref-type="bibr" rid="pone.0077058-Sereno4">[25]</xref></p>
+<p>Hadrosauroidea Cope, 1870 <xref ref-type="bibr" rid="pone.0077058-Cope1">[26]</xref> sensu Sereno, 2005 <xref ref-type="bibr" rid="pone.0077058-Sereno1">[11]</xref></p>
+<p><italic>Yunganglong</italic> gen. nov.</p>
+<p>urn:lsid:zoobank.org:act:C0BC17BE-AFA2-46E9-9712-3F7767C31C56</p>
+<p><italic>Yunganglong datongensis</italic> sp. nov.</p>
+<p>urn:lsid:zoobank.org:act:A906797B-9B90-4C19-AC96-AD8726A7EDD9</p>
+<sec id="s3a1">
+<title>Holotype</title>
+<p>SXMG V 00001 (Shanxi Museum of Geology, Taiyuan, Shanxi Province, China). Associated but disarticulated partial skeleton of one individual, including the caudodorsal part of the skull (ZY007-37 and -38, separated along the floor of the braincase), two cervical vertebrae (-40 and -41), partial dorsal neural arch and neural processes (-36), two caudals (-27, proximal; -19, middle), distal portions of both ischia (-11, left; -12, right), distal end of left femur (-32), proximal portion of right tibia (-1), and distal portion of left tibia with astragalus (-2). See <xref ref-type="table" rid="pone-0077058-t001">Table 1</xref> for measurements.</p>
+<table-wrap id="pone-0077058-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.t001</object-id><label>Table 1</label><caption>
+<title>Measurements of bones of the holotype of <italic>Yunganglong datongensis</italic> (SXMG V 00001) (in millimeters).</title>
+</caption><alternatives><graphic id="pone-0077058-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Bone</td>
+<td align="left" rowspan="1" colspan="1">Dimension</td>
+<td align="left" rowspan="1" colspan="1">Measurement</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Caudodorsal part of the skull (ZY007-37, -38)</td>
+<td align="left" rowspan="1" colspan="1">Width between the pendent paroccipital processes</td>
+<td align="left" rowspan="1" colspan="1">370</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height from the apex of the supraoccipital to the ventral edge of the occipital condyle</td>
+<td align="left" rowspan="1" colspan="1">175</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Length of preserved parietal</td>
+<td align="left" rowspan="1" colspan="1">140</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Midline length from the caudal end of the parietal to the caudal end of the paroccipital processes</td>
+<td align="left" rowspan="1" colspan="1">120</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cervical (ZY007-40)</td>
+<td align="left" rowspan="1" colspan="1">Length of centrum including cranial articular process</td>
+<td align="left" rowspan="1" colspan="1">135</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Length of centrum</td>
+<td align="left" rowspan="1" colspan="1">90</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">105</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of caudal articular surface</td>
+<td align="left" rowspan="1" colspan="1">140</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of centrum on the cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">88</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of total vertebra</td>
+<td align="left" rowspan="1" colspan="1">195</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Diameter of neural canal</td>
+<td align="left" rowspan="1" colspan="1">36</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Proximal caudal (ZY007-27)</td>
+<td align="left" rowspan="1" colspan="1">Length of centrum</td>
+<td align="left" rowspan="1" colspan="1">89</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">160</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of caudal articular surface</td>
+<td align="left" rowspan="1" colspan="1">156</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of centrum on the cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">175</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of total vertebra</td>
+<td align="left" rowspan="1" colspan="1">540</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Diameter of neural canal</td>
+<td align="left" rowspan="1" colspan="1">23</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Middle caudal (ZY007-19)</td>
+<td align="left" rowspan="1" colspan="1">Length of centrum</td>
+<td align="left" rowspan="1" colspan="1">95</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">107</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Width of caudal articular surface</td>
+<td align="left" rowspan="1" colspan="1">110</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of centrum on the cranial articular surface</td>
+<td align="left" rowspan="1" colspan="1">123</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Height of total vertebra</td>
+<td align="left" rowspan="1" colspan="1">330</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Diameter of neural canal</td>
+<td align="left" rowspan="1" colspan="1">23</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Distal portion of left ischium (ZY007-11)</td>
+<td align="left" rowspan="1" colspan="1">Length</td>
+<td align="left" rowspan="1" colspan="1">295</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cross section at proximal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">49/44/160</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Expanded distal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">100/70/290</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Distal portion of right ischium (ZY007-12)</td>
+<td align="left" rowspan="1" colspan="1">Length</td>
+<td align="left" rowspan="1" colspan="1">270</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cross section at proximal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">50/48/170</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Expanded distal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">97/69/290</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Distal end of left femur (ZY007-32)</td>
+<td align="left" rowspan="1" colspan="1">Preserved length</td>
+<td align="left" rowspan="1" colspan="1">320</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cross section of preserved proximal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">103/66/490</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Craniocaudal length of medial condyle</td>
+<td align="left" rowspan="1" colspan="1">270</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Craniocaudal length of lateral condyle</td>
+<td align="left" rowspan="1" colspan="1">240</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Proximal portion of right tibia (ZY007-1)</td>
+<td align="left" rowspan="1" colspan="1">Preserved length</td>
+<td align="left" rowspan="1" colspan="1">565</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cross section of preserved distal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">110/100/350</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Distal portion of left tibia (ZY007-2)</td>
+<td align="left" rowspan="1" colspan="1">Preserved length</td>
+<td align="left" rowspan="1" colspan="1">385</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Cross section of preserved distal end (length/width/perimeter)</td>
+<td align="left" rowspan="1" colspan="1">120/97/360</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s3a2">
+<title>Etymology</title>
+<p>The generic name “Yungang” is after “Yungang Grottoes”, a UNESCO World Heritage built in the 5<sup>th</sup> and 6<sup>th</sup> centuries about 50 km east of the fossil locality; “long” means “dragon” in Chinese. The specific name reflects “Datong”, the city in which the locality is situated.</p>
+</sec><sec id="s3a3">
+<title>Locality and horizon</title>
+<p>In the vicinity of Zuoyun County, Datong City, Shanxi Province, P. R. China. Lower part of Zhumapu Formation, lower Upper Cretaceous <xref ref-type="bibr" rid="pone.0077058-Shanxi1">[27]</xref>.</p>
+<p>In the Zuoyun area, the Zhumapu Formation reaches 722 m in thickness. It overlies the Lower Cretaceous Zuoyun Formation with a parallel unconformity relationship and is covered by Tertiary basalts. The age of the Zhumapu Formation is determined by biostratigraphic correlations, including evidences from angiosperm plants, spores and pollens, ostracodes, and bivalves <xref ref-type="bibr" rid="pone.0077058-Shanxi1">[27]</xref>. No radiometric-based age has been obtained for this formation.</p>
+</sec><sec id="s3a4">
+<title>Differential diagnosis (for genus and species by monotypy)</title>
+<p>Basal hadrosauroid with the following unique combination of four character states: 1) caudal surface of the supraoccipital inclined steeply forward at approximately 45<sup>0</sup> (present in <italic>Yunganglong</italic> and more advanced taxa, but nearly vertical in <italic>Jintasaurus</italic> and less derived Hadrosauriformes); 2) caudolaterally extended horizontal portion of the paroccipital process and accompanying squamosal (present in <italic>Yunganglong</italic> and more advanced taxa, but laterally extended in <italic>Jintasaurus</italic> and less derived Hadrosauriformes); 3) pendent portion of the paroccipital process does not curve cranially (observed in <italic>Yunganglong</italic> and <italic>Jintasaurus</italic>; the pendant portion does curve cranially in <italic>Bactrosaurus</italic> and more advanced taxa); 4) intercondylar extensor groove of the femur deep, U-shaped, partially enclosed by expansion of medial and lateral condyles (present in <italic>Yunganglong</italic> and less derived Hadrosauriformes, but canal fully enclosed by fusion of lateral and medial condyles in <italic>Nanyangosaurus</italic> and more advanced taxa).</p>
+</sec></sec><sec id="s3b">
+<title>Specimen Description</title>
+<p>The caudodorsal part of the skull is preserved, including the parietal, paroccipital processes, and the almost complete braincase (<xref ref-type="fig" rid="pone-0077058-g002">Figs. 2</xref>, <xref ref-type="fig" rid="pone-0077058-g003">3</xref>). In occipital view, the skull is transversely wide and dorsoventrally low, with the width between the pendent paroccipital processes of 37.0 cm and the height from the apex of the supraoccipital to the ventral edge of the occipital condyle of 17.5 cm.</p>
+<fig id="pone-0077058-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g002</object-id><label>Figure 2</label><caption>
+<title>Photos of caudodorsal part of the skull of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A)-Right lateral view. (B)-Dorsal view. (C)-Caudal view. Scale bar?=?10 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g002" position="float" xlink:type="simple"/></fig><fig id="pone-0077058-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g003</object-id><label>Figure 3</label><caption>
+<title>Interpretive drawings of caudodorsal part of the skull of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A)-Right lateral view. (B)-Dorsal view. (C)-Caudal view. Scale bar?=?10 cm. bo?=?basioccipital, bs?=?basisphenoid, eo?=?exoccipital, ls?=?laterosphenoid, oo?=?opisthotic, pa?=?parietal, po?=?prootic, pop?=?paroccipital process, ps?=?parasphenoid, so?=?supraoccipital, sq?=?squamosal.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g003" position="float" xlink:type="simple"/></fig>
+<p>In dorsal view, the preserved parietal length is 14.0 cm, and the narrowest transverse width at the mid-length of the parietals is 6.0 cm. There is a low sagittal crest along the midline of the preserved parietal portion, but whether or not it continued caudally to form a tall nuchal crest as in <italic>Levnesovia</italic> <xref ref-type="bibr" rid="pone.0077058-Sues1">[6]</xref> and <italic>Jintasaurus</italic> <xref ref-type="bibr" rid="pone.0077058-PrietoMrquez1">[13]</xref> is not clear.</p>
+<p>The caudal surface of the supraoccipital is steeply inclined rostrally; the bone is nearly horizontal. In occipital view, the dorsal portion of the supraoccipital consists of a median knob-like dorsal process and two dorsolateral projections. Ventrally, the supraoccipital is separated from the exoccipitals by a slit-like transverse groove on the latter, which continues laterally underneath the opisthotics. The ventral edge of this groove forms a strong horizontal ridge, which borders the foramen magnum dorsally. The lateral sides of the foramen magnum are enclosed by the exoccipitals, which bear a knob-like ventral corner on each side. The exoccipitals also meet along the floor of the foramen magnum.</p>
+<p>The paroccipital processes strongly bend caudolaterally, enclosing an arc of around 100 degrees in dorsal view and thereby, increasing the length of skull. The longitudinal distance from the caudal end of the parietal to an imaginary point on the midline between the caudal ends of the paroccipital processes is 12.0 cm, almost the same length as the parietal. In lateral view, the straight and vertical pendent portions of the paroccipital processes are set caudal to the occipital condyle, with their ventral tips slightly below the ventral edge of the occipital condyle.</p>
+<p>The occipital condyle is formed by the basioccipital and describes a crescent in caudal view. Its caudal surface is vertical and slightly bulging, while its ventral surface is strongly convex. The surface is generally smooth, and one groove is visible on the left half of the caudal surface (<xref ref-type="fig" rid="pone-0077058-g002">Fig. 2C</xref>). A short neck divides the occipital condyle and the basal tubera. The basal tubera seem to be formed more by the basisphenoid than by the basioccipital, and those two bones are well fused to each other. The basal tubera are separated by a longitudinal median recess, and a delicate ridge appears along the midline. A round craniolaterally facing fossa exists on the cranial surface of each side of the basal tubera.</p>
+<p>The braincase is broken along a line through the exits of the cranial nerves. The positions of these cranial nerve exits are conventional compared to other hadrosauroids, and generally correspond to those in closely related taxa, such as <italic>Levnesovia</italic>. Three foramina pierce the fused opisthotic and exoccipital laterally for cranial nerves X-XII. The rostral two foramina for cranial nerves X and XI are merged, giving a larger appearance than the caudal one for cranial nerve XII. The auditory recess, which includes the fenestra vestibule (fenestra ovalis of <xref ref-type="bibr" rid="pone.0077058-Sues1">[6]</xref>), exit for cranial nerve IX, and foramen for the jugular vein, is bounded by the fused basisphenoid and parasphenoid ventrally, the prootic dorsally, and the fused opisthotic and exoccipital caudally. Rostral to the auditory recess is the large, round trigeminal foramen.</p>
+<p>Two cervicals (ZY007-40, -41) are preserved, and ZY007-40 is almost complete (<xref ref-type="fig" rid="pone-0077058-g004">Fig. 4</xref>). The centrum is strongly opisthocoelous, with the round cranial articular condyle more than half the length of the centrum. The cranial-most protruding point is above the midlevel of the centrum. The caudal articular surface is deeply concave and elliptical in caudal view, being wider than high. The lateral side of the centrum is slightly higher than long, and is divided by a midlevel ridge into dorsal and ventral depressions. The large parapophysis occupies the cranial half of this ridge. The ventral surface is slightly convex, especially at the caudal half. The neural canal is large and round, about half the height of the centrum. The prezygapophysis starts from the dorsolateral corner of the cranial half of the neural arch and does not protrude beyond the cranial edge of the articular condyle. The dorsomedially facing smooth articular facet is large, oval, and flat. The short stem of the prezygapophysis also gives rise to the diapophysis, which projects caudoventrolaterally. The robust postzygapophysis is directed more caudally than laterally, with its entire articular facet beyond the caudal edge of the centrum. The neural spine is not well preserved, but seems to have been delicate.</p>
+<fig id="pone-0077058-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g004</object-id><label>Figure 4</label><caption>
+<title>Cervical vertebra of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A)-Cranial view. (B)-Right lateral view. (C)-Dorsal view. (D)-Caudal view. (E)-Left lateral view. (F)-Ventral view. Abbreviations: dia, diapophysis; par, parapophysis; poz, postzygapophysis; prz, prezygapophysis. Scale bar?=?6 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g004" position="float" xlink:type="simple"/></fig>
+<p>A partial dorsal neural arch and neural spine are preserved (ZY007-36) (<xref ref-type="fig" rid="pone-0077058-g005">Fig. 5A, B</xref>). The diapophysis projects dorsolaterally and slightly caudally and has a triangular cross section. The long, oval, and flat postzygapophysis articular facet faces lateroventrally. Only the basal portion of the neural spine is preserved; it is plate-like and thin transversely.</p>
+<fig id="pone-0077058-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g005</object-id><label>Figure 5</label><caption>
+<title>Partial dorsal and two caudal vertebra of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A, B)-Partial dorsal neural arch and neural spine in (A) dorsal and (B) caudal views. (C, E)-Proximal caudal in (C) left lateral and (E) caudal views. (D, F)-Middle caudal in (D) left lateral and (F) caudal views. Abbreviations: chf, chevron facet; dia, diapophysis; ns, neural spine; poz, postzygapophysis; prz, prezygapophysis; transverse process, trp. Scale bar?=?6 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g005" position="float" xlink:type="simple"/></fig>
+<p>One proximal (ZY007-27) (<xref ref-type="fig" rid="pone-0077058-g005">Fig. 5 C, E</xref>) and one middle (ZY007-19) (<xref ref-type="fig" rid="pone-0077058-g005">Fig. 5 D, F</xref>) caudal are preserved. The proximal caudal's centrum is narrow and slightly amphicoelous. The articular surfaces are elliptical with relatively narrow ventral ends. The partial right transverse process starts at the neurocentral junction and projects laterally. The neural spine is tall, almost double the height of the centrum. The cross section of the neural spine is rectangular, with the transverse width less than half the longitudinal length. The tip of the neural spine expands slightly. The centrum of the middle caudal is dorsoventrally lower but proximodistally longer than that of the proximal caudal, with hexagonal articular surfaces. The transverse process is not present, and the neural spine projects caudodorsally.</p>
+<p>The distal portions of both ischia are preserved (ZY007-11 left, -12 right) (<xref ref-type="fig" rid="pone-0077058-g006">Fig. 6</xref>). The preserved shaft is triangular in cross section, with a flat medial surface to contact its counterpart. This flat surface continues to the distal end. The craniolateral surface bears a shallow longitudinal depression, while the caudolateral surface is flat. The distal end slightly expands craniolaterally to form a hemispherical expansion. The expanded distal end is about double the width of the shaft diameter.</p>
+<fig id="pone-0077058-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g006</object-id><label>Figure 6</label><caption>
+<title>Distal portions of ischia of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A, C)-Distal portion of left ischium in (A) medial and (C) cranial views. (B, D)-Distal portion of right ischium in (C) medial and slightly caudal and (D) distal and slightly dorsal views. Abbreviation: cede, cranially expanded distal end. Scale bar?=?10 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g006" position="float" xlink:type="simple"/></fig>
+<p>The distal end of the left femur is preserved (ZY007-32). The cross section of the preserved proximal end of the shaft is elliptical, and its transverse width is twice its craniocaudal width. The intercondylar extensor groove of the femur is deep, U-shaped, partially enclosed by expansion of medial and lateral condyles. The medial condyle is slightly larger than the lateral. The medial surface of the medial condyle is flat, while the lateral surface of the lateral condyle bears a stout longitudinal ridge. The caudal condyles are strongly developed, fan-shaped, and longer proximodistally than craniocaudally in lateral and medial views. In caudal view, the medial condyle is more expanded than the lateral, about three times wider transversely. On the lateral surface of the medial condyle, a small longitudinal ridge develops close to the shaft (<xref ref-type="fig" rid="pone-0077058-g007">Fig. 7D</xref>).</p>
+<fig id="pone-0077058-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g007</object-id><label>Figure 7</label><caption>
+<title>Distal end of left femur of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A)-Cranial view. (B)- Caudal view. (C)-Proximal view. (D)-Distal view (E)-Lateral view. (F)-Medial view. Abbreviations: ieg, intercondylar extensor groove; ifg, intercondylar flexor groove; lc, lateral condyle; mc, medial condyle. Scale bar?=?10 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g007" position="float" xlink:type="simple"/></fig>
+<p>The proximal portion of the right tibia (ZY007-1) (<xref ref-type="fig" rid="pone-0077058-g008">Fig. 8 A–F</xref>) and the distal portion of the left tibia with astragalus (ZY007-2) (<xref ref-type="fig" rid="pone-0077058-g008">Fig. 8 G–K</xref>) are preserved. The cnemial crest is well developed and protrudes craniolaterally. Two laterally-projecting condyles exist on the caudal half of the proximal end. The midshaft is ovate in cross section. The distal end of the left tibia is articulated with the astragalus. In cranial view, the astragalus is triangular, with a clear short ascending process. In caudal view, the astragalus is also triangular, with a delicate ascending process at its proximolateral corner.</p>
+<fig id="pone-0077058-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g008</object-id><label>Figure 8</label><caption>
+<title>Tibia and astragalus of <italic>Yunganglong datongensis</italic> (SXMG V 00001).</title>
+<p>(A–F)-Proximal portion of right tibia in (A) media, (B) cranial, (C) lateral, (D) caudal, (E) proximal, and (F) distal views. (G–K)-Distal portion of left tibia with astragalus in (G) cranial, (H) caudal, (I) medial, (J) lateral, and (K) distal views. Abbreviations: as, astragalus; cc, cnemial crest; cf, concavity for articulation of distal end of fibula; cmc, caudomedial condyle; lc, lateral condyle; lm, lateral malleolus; mm, medial malleolus. Scale bar?=?10 cm.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g008" position="float" xlink:type="simple"/></fig></sec><sec id="s3c">
+<title>Phylogenetic Analysis</title>
+<p>Phylogenetic analysis recovered 303 MPTs (most parsimonious trees) of 294 steps, with a CI (consistency index) of 0.534 and a RI (retention index) of 0.858. The strict consensus tree recovered <italic>Yunganglong</italic>, <italic>Jintasaurus</italic>, <italic>Protohadros</italic>, <italic>Nanyangosaurus</italic>, <italic>Shuangmiaosaurus</italic>, <italic>Levnesovia</italic>, <italic>Bactrosaurus</italic>, <italic>Tanius</italic>, and <italic>Telmatosaurus</italic> in an unresolved polytomy between <italic>Probactrosaurus</italic> and (<italic>Aralosaurus</italic>+Hadrosauridae) with poor bootstrap frequencies and bremer supports (<xref ref-type="fig" rid="pone-0077058-g009">Fig. 9</xref>).</p>
+<fig id="pone-0077058-g009" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0077058.g009</object-id><label>Figure 9</label><caption>
+<title>Phylogenetic relationships of <italic>Yunganglong datongensis</italic> (SXMG V 00001) based on strict consensus tree obtained in this study.</title>
+<p>Bremer supports no less than 1 and bootstrap frequencies more than 50 are indicated above and below relevant branches, respectively. “•” represents node-based definition, and “?” represents branch-based definition.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0077058.g009" position="float" xlink:type="simple"/></fig>
+<p>In the strict consensus tree, the Hadrosauroidea clade is supported by 7 unambiguous synapomorphies (40[1], parietal sagittal crest long, more than 2/3 length of parietal; 46[1], antorbital fenestra external opening absent; 57[1], lacrimal-nasal contact absent; 74[1], length of basipterygoid processes extending well below level of ventral border of occipital condyle; 75[1], occipital condyle articular surface vertical; 103[1], cervical zygapophyseal peduncles on arches elevated, extending well above level of neural canal, zygapophyses long and dorsally arched; 114[1], humeral distal condyles compressed mediolaterally, flaring little from shaft of humerus), the (<italic>Probactrosaurus</italic>+more advanced taxa) clade is supported by 4 unambiguous synapomorphies (55[1], line of alveolar foramina on medial side of maxilla located dorsal to mid-height of maxilla; 83[1], dentary alveolar trough narrow parallel-sided grooves; 94[1], at least 2, and often 3, teeth in vertical series contributing to occlusal surface per tooth position; 96[1], ornamentation on labial surface of maxillary teeth absence of all but primary carina), the clade above <italic>Probactrosaurus</italic> is strongly supported by 19 unambiguous synapomorphies (37[1], squamosal process of postorbital long, postorbital-squamosal joint near level of posterior border of supratemporal fenestra; 38[0], parietal long, length/minimum width ratio greater than 2; 51[1], jugal process of maxilla reduced to short projection but retaining a distinct facet; 52[1], location of apex at or anterior to center of maxilla in lateral exposure; 56[1], ectopterygoid-jugal contact absent, palatine-jugal contact enhanced; 65[1], quadratojugal foramen absent; 66[1], well-defined paraquadrate notch of quadrate absent, reduced to poorly defined embayment of quadrate; 72[1], paroccipital process and accompanying squamosal curved anteriorly; 77[1], predentary gracile and shovel-shaped, straight to gently rounded anterior margin, numerous nutrient foramina across entire anterior margin, rounded, triangular denticles project anteriorly and fit into a continuous transverse slot on underside of premaxilla; 89[1], surangular foramen absent; 93[1], 3 or more replacement teeth per tooth position; 99[1], dentary tooth crown dominated by on primary ridge on lingual surface, secondary ridges faint if present; 101[1], 12–13 cervical vertebrae; 106[1], scapular proximal end dorsoventrally narrow, no wider than distal portion of scapula, acromion process projects horizontally, anteroventral corner notched, articulation restricted; 118[2], manual digit I absent; 128[1], pubis obturator foramen fully open, tubercle absent; 131[1], femoral distal condyles expanded anteriorly, with anterior ends meeting or fusing together and enclosing extensor tunnel; 132[1], tibia cnemial crest extending on diaphysis; 137[1], pedal unguals dorsoventrally flattened and broadened, hoof-like), the (<italic>Aralosaurus</italic>+Hadrosauridae) clade is supported by 8 unambiguous synapomorphies (41[1], squamosals approaching midline, separated by narrow band of parietal; 54[1], ectopterygoid ridge of maxilla well developed into lateral and well demarcated border continuous along posterior region of maxilla; 58[1], jugal expanded dorsoventrally in front of orbit, lacrimal pushed dorsally to lie completely above the level of the maxilla, jugal forms lower portion of orbital rim; 60[1], free ventral flange of jugal present, jugal dorsoventrally constricted beneath infratemporal fenestra to set off flange anterior to constriction; 61[1], ventral flange of jugal rounded or lobate; 62[1], ratio of depth of jugal at constriction below infratemporal fenestra to length of free flange on jugal small, 0.70–0.90; 95[1], maxillary tooth crown elongate and lanceolate, height/width ratio at least 2.5 at center of tooth row; 98[1], apex of dentary teeth central, tooth straight and nearly symmetrical), and the Hadrosauridae clade is supported by 5 unambiguous synapomorphies (45[1], posteroventral surface of squamosal forming deep, nearly vertical, well-exposed face in posterior view; 63[1], jugal contributed to infratemporal fenestra, acute angle between postorbital bar and jugular bar; 71[1], ventrolateral corner of supraoccipital inset into exoccipital so that supraoccipital is “locked” between exoccipitals; 92[1], greater than 32 tooth positions in dentary and maxillary tooth rows; 112[1], deltopectoral crest of humerus extends at least to midshaft or longer) (<xref ref-type="supplementary-material" rid="pone.0077058.s002">Supporting Information S2</xref>).</p>
+<p>The 50% majority rule tree further resolved (<italic>Yunganglong</italic>, <italic>Jintasaurus</italic>, <italic>Protohadros</italic>, <italic>Nanyangosaurus</italic>, and <italic>Shuangmiaosaurus</italic>) as more basal than a trichotomy of <italic>Tanius</italic>, (<italic>Levnesovia</italic>+<italic>Bactrosaurus</italic>), and (<italic>Telmatosaurus</italic>+more advanced taxa). Mapping synapomorphies onto the majority rule tree showed that the clade (<italic>Yunganglong</italic>, <italic>Jintasaurus</italic>, <italic>Protohadros</italic>, <italic>Nanyangosaurus</italic>, <italic>Shuangmiaosaurus</italic>+more advanced taxa) is supported by 9 unambiguous synapomorphies (37[1], squamosal process of postorbital long, postorbital-squamosal joint near level of posterior border of supratemporal fenestra; 38[0], parietal long, length/minimum width ratio greater than 2; 51[1], jugal process of maxilla reduced to short projection but retaining a distinct facet; 65[1], quadratojugal foramen absent; 66[1], well-defined paraquadrate notch of quadrate absent, reduced to poorly defined embayment of quadrate; 93[1], 3 or more replacement teeth per tooth position; 118[2], manual digit I absent; 132[1], tibia cnemial crest extending on diaphysis; 137[1], pedal unguals dorsoventrally flattened and broadened, hoof-like), while the clade ((<italic>Levnesovia</italic>+<italic>Bactrosaurus</italic>)+<italic>Tanius</italic>+(<italic>Telmatosaurus</italic>+more advanced taxa)) is supported by 8 unambiguous synapomorphies (4[1], present of premaxillary foramen ventral to anterior margin of external nares that opens onto the palate and connected by a canal to the narial fossa; 52[1], location of apex at or anterior to center of maxilla in lateral exposure; 56[1], ectopterygoid-jugal contact absent, palatine-jugal contact enhanced; 72[1], paroccipital process and accompanying squamosal curved anteriorly; 77[1], predentary gracile and shovel-shaped, straight to gently rounded anterior margin, numerous nutrient foramina across entire anterior margin, rounded, triangular denticles project anteriorly and fit into a continuous transverse slot on underside of premaxilla; 89[1], surangular foramen absent; 99[1], dentary tooth crown dominated by on primary ridge on lingual surface, secondary ridges faint if present; 129[1], shaft of ischium nearly straight in lateral view) (<xref ref-type="supplementary-material" rid="pone.0077058.s003">Supporting Information S3</xref>).</p>
+<p>The strict consensus tree recovered by our analysis is more resolved than those consensus trees of <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref> and <xref ref-type="bibr" rid="pone.0077058-McDonald3">[15]</xref> regarding the phylogeny of basal hadrosauroids, although the relationships among <italic>Yunganglong</italic>, <italic>Jintasaurus</italic>, <italic>Protohadros</italic>, <italic>Nanyangosaurus</italic>, <italic>Shuangmiaosaurus</italic>, <italic>Levnesovia</italic>, <italic>Bactrosaurus</italic>, <italic>Tanius</italic>, and <italic>Telmatosaurus</italic> are still not resolved. The single most parsimonious tree of <xref ref-type="bibr" rid="pone.0077058-PrietoMrquez1">[13]</xref> recovered <italic>Protohadros</italic>, <italic>Tanius</italic>, <italic>Bactrosaurus</italic>, <italic>Gilmoreosaurus</italic>, and <italic>Telmatosaurus</italic> as successively more derived than <italic>Probactrosaurus</italic>; in contrast, in our analysis, although <italic>Probactrosaurus</italic> is recovered as more basal than <italic>Protohadros</italic>, <italic>Tanius</italic>, <italic>Bactrosaurus</italic>, and <italic>Telmatosaurus</italic>, the relationships among the latter four plus <italic>Yunganglong</italic>, <italic>Jintasaurus</italic>, <italic>Nanyangosaurus</italic>, <italic>Shuangmiaosaurus</italic>, <italic>Levnesovia</italic> are not resolved. The analysis of <xref ref-type="bibr" rid="pone.0077058-Godefroit1">[14]</xref> focused on saurolophine hadrosauroids and only used two basal hadrosauroids, with <italic>Probactrosaurus</italic> more basal than <italic>Bactrosaurus</italic>.</p>
+</sec></sec><sec id="s4">
+<title>Comparison and Discussion</title>
+<p>In <italic>Yunganglong</italic> the caudal surface of the supraoccipital is inclined steeply forward at approximately 45<sup>0</sup>. In contrast, the caudal surface is nearly vertical in <italic>Jintasaurus</italic> and less derived Hadrosauriformes. The condition in <italic>Protohadros</italic>, <italic>Nanyangosaurus</italic>, and <italic>Shuangmiaosaurus</italic> is not known.</p>
+<p><italic>Yunganglong</italic> has relatively poorly developed cranial expansion of the distal condyles of the femur and a moderately deep and fully opened intercondylar extensor groove. In contrast, in <italic>Nanyangosaurus</italic>, <italic>Bactrosaurus</italic>, <italic>Levnesovia</italic>, <italic>Tanius</italic>, <italic>Telmatosaurus</italic>, and Hadrosauridae, the cranial ends of the expanded condyles meet or fuse together and enclose the extensor tunnel. The condition in <italic>Jintasaurus</italic>, <italic>Protohadros</italic>, and <italic>Shuangmiaosaurus</italic> is not known.</p>
+<p><italic>Nanyangosaurus</italic> is a medium-sized (?4.5 m) basal hadrosauroid represented by a nearly complete post-cervical vertebral column, the distal portions of both ischia, and elements of the fore and hind limbs. The age of the <italic>Nanyangosaurus</italic>-bearing red beds in the Xiaguan Basin of southern Henan Province was argued to be Early Cretaceous by Xu et al. <xref ref-type="bibr" rid="pone.0077058-Xu1">[7]</xref> based on the evolutionary grade of <italic>Nanyangosaurus</italic>, which is intermediate between <italic>Probactrosaurus</italic> and Hadrosauridae. However, the data matrix of Xu <xref ref-type="bibr" rid="pone.0077058-Xu1">[7]</xref> only included seven hadrosauroids (plus <italic>Hypsilophodon</italic>, <italic>Camptosaurus</italic>, <italic>Iguanodon</italic>, and <italic>Ouranosaurus</italic>), and our results and those of another cladistic analysis <xref ref-type="bibr" rid="pone.0077058-McDonald1">[4]</xref> suggest a more derived position for <italic>Nanyangosaurus</italic>. Furthermore, regional geological workers insist on an early Late Cretaceous age for the <italic>Nanyangosaurus</italic>-bearing red beds in Xiaguan Basin of southern Henan Province, which is partially equivalent to the famous dinosaur egg-bearing red beds in the neighboring Xixia Basin <xref ref-type="bibr" rid="pone.0077058-Feng1">[28]</xref>, <xref ref-type="bibr" rid="pone.0077058-Zhou1">[29]</xref>. They also prefer the use of the name Xiaguan Formation to refer to the red beds in the Xiaguan Basin based on priority <xref ref-type="bibr" rid="pone.0077058-Zhou1">[29]</xref>. Therefore, we regard the horizon of <italic>Nanyangosaurus</italic> to be the Xiaguan Formation of early Late Cretaceous age.</p>
+<p><italic>Shuangmiaosaurus</italic> was recovered from the Late Cretaceous of Liaoning Province of northeastern China, and is represented by a left maxilla (holotype) and a referred left dentary <xref ref-type="bibr" rid="pone.0077058-You1">[5]</xref>. The lack of overlapping elements between it and <italic>Yunganglong</italic> precludes further comparison.</p>
+<p>The available information does not allow direct anatomical comparisons between <italic>Yunganglong</italic> and two other early Late Cretaceous non-hadrosaurids from North America: the Cenomanian <italic>Protohadros</italic> <xref ref-type="bibr" rid="pone.0077058-Head1">[9]</xref> and the Turonian <italic>Jeyawati</italic> <xref ref-type="bibr" rid="pone.0077058-McDonald2">[10]</xref>. The North American Campanian <italic>Glishades</italic> is probably an indeterminate member of Hadrosauridae <xref ref-type="bibr" rid="pone.0077058-Campione1">[30]</xref> rather than a non-hadrosaurid hadrosauroid <xref ref-type="bibr" rid="pone.0077058-PrietoMarquez1">[31]</xref>. The late Campanian - early Maastrichtian European <italic>Tethyshadros</italic> is an insular dwarf with a possible close relationship to <italic>Telmatosaurus</italic> <xref ref-type="bibr" rid="pone.0077058-DallaVecchia1">[32]</xref>.</p>
+<p><italic>Eolambia caroljonesa</italic> from the lower Cenomanian Mussentuchit Member of the Cedar Mountain Formation in eastern Utah recently received a detailed redescription and was recovered as the sister taxon of <italic>Probactrosaurus gobiensis</italic> from the Early Cretaceous of China <xref ref-type="bibr" rid="pone.0077058-Campione1">[30]</xref>. <italic>Eolambia</italic> is different from <italic>Yunganglong</italic> in numerous features, such as the nearly vertical caudal surface of the supraoccipital, the rostrally curved distal end of the paroccipital process, the caudoventrally-directed occipital condyle, and the expanded boot-like distal end of the ischium. All these features are absent in <italic>Yunganglong</italic>.</p>
+<p>Young <xref ref-type="bibr" rid="pone.0077058-Young1">[12]</xref> assigned the hadrosauroid material recovered from the Zuoyun area to <italic>Bactrosaurus johnsoni</italic>. Unfortunately, no overlapping material can be compared between Young's material and <italic>Yunganglong</italic>. However, based on the more basal phylogenetic position and lower stratigraphic horizon of <italic>Yunganglong</italic> compared to <italic>Bactrosaurus johnsoni</italic>, Young's material probably does not belong to <italic>Bactrosaurus</italic> but might pertain to <italic>Yunganglong</italic>.</p>
+</sec><sec id="s5">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0077058.s001" xlink:href="info:doi/10.1371/journal.pone.0077058.s001" position="float" xlink:type="simple"><label>Supporting Information S1</label><caption>
+<p><bold>Data Matrix.tnt.</bold></p>
+<p>(TNT)</p>
+</caption></supplementary-material><supplementary-material id="pone.0077058.s002" mimetype="application/x-emf" xlink:href="info:doi/10.1371/journal.pone.0077058.s002" position="float" xlink:type="simple"><label>Supporting Information S2</label><caption>
+<p><bold>Synapomorphies of strict consensus.</bold></p>
+<p>(EMF)</p>
+</caption></supplementary-material><supplementary-material id="pone.0077058.s003" mimetype="application/x-emf" xlink:href="info:doi/10.1371/journal.pone.0077058.s003" position="float" xlink:type="simple"><label>Supporting Information S3</label><caption>
+<p><bold>Synapomorphies of 50 majority.</bold></p>
+<p>(EMF)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>We are grateful to Mr. Zhi-Lu Tang for arranging this study; to the crew of the Shanxi Museum of Geological and Mineral Science and Technology for discovering, excavating, and preparing the specimen; to Mr. Jing-Tao Yang for processing the photos; to Mrs. Jin-Ling Huang for drawing <xref ref-type="fig" rid="pone-0077058-g003">Figure 3</xref>; to Andrew McDonald for improving the draft; to Drs. Andrew McDonald, Pascal Godefroit, and an anonymous reviewer for reviewing the ms; and to Dr. David Evans for handling this ms.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0077058-Norman1"><label>1</label>
+<mixed-citation publication-type="other" xlink:type="simple">Norman DB (2004) Basal Iguanodontia. In: Weishampel DB, Dodson P, Osmólska H, editors. The Dinosauria, Second Edition. Berkeley, CA: University of California Press. pp. 413–437.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Horner1"><label>2</label>
+<mixed-citation publication-type="other" xlink:type="simple">Horner JR, Weishampel DB, Forster CA (2004) Hadrosauridae. In: Weishampel DB, Dodson P, Osmólska H, editors. The Dinosauria, Second Edition. Berkeley, CA: University of California Press. pp. 438–463.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Erickson1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erickson</surname><given-names>GM</given-names></name>, <name name-style="western"><surname>Krick</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Hamilton</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bourne</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Norell</surname><given-names>MA</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Complex Dental Structure and Wear Biomechanics in Hadrosaurid Dinosaurs</article-title>. <source>Science</source> <volume>338</volume>: <fpage>98</fpage>–<lpage>101</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-McDonald1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McDonald</surname><given-names>AT</given-names></name> (<year>2012</year>) <article-title>Phylogeny of Basal Iguanodonts (Dinosauria: Ornithischia): An Update</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e36745</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-You1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>You</surname><given-names>HL</given-names></name>, <name name-style="western"><surname>Ji</surname><given-names>Q</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>YX</given-names></name> (<year>2003</year>) <article-title>A new hadrosauroid dinosaur from the mid-Cretaceous of Liaoning, China</article-title>. <source>Acta Geol Sin-Engl Ed</source> <volume>77</volume>: <fpage>148</fpage>–<lpage>154</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Sues1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sues</surname><given-names>HD</given-names></name>, <name name-style="western"><surname>Averianov</surname><given-names>A</given-names></name> (<year>2009</year>) <article-title>A new basal hadrosauroid dinosaur from the Late Cretaceous of Uzbekistan and the early radiation of duck-billed dinosaurs</article-title>. <source>Proc R Soc B-Biol Sci</source> <volume>276</volume>: <fpage>2549</fpage>–<lpage>2555</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Xu1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xu</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Zhao</surname><given-names>XJ</given-names></name>, <name name-style="western"><surname>Lü</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>WB</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>ZY</given-names></name>, <etal>et al</etal>. (<year>2000</year>) <article-title>A new iguanodontian from Sangping Formation of Neixiang, Henan and its stratigraphical implication</article-title>. <source>Vertebr Palasiat</source> <volume>38</volume>: <fpage>185</fpage>–<lpage>191</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Kirkland1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kirkland JI (1998) A new hadrosaurid from the Upper Cedar Mountain Formation (Albian-Cenomanian: Cretaceous) of eastern Utah - the oldest known hadrosaurid (Lambeosaurine?). In: Lucas SG, Kirkland JI, Estep JW, editors. Lower and Middle Cretaceous Terrestrial Ecosystems. Albuquerque, NM: New Mexico Museum of Natural History and Science. pp. 283–295.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Head1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Head</surname><given-names>JJ</given-names></name> (<year>1998</year>) <article-title>A new species of basal hadrosaurid (Dinosauria, Ornithischia) from the Cenomanian of Texas</article-title>. <source>J Vertebr Paleontol</source> <volume>18</volume>: <fpage>718</fpage>–<lpage>734</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-McDonald2"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McDonald</surname><given-names>AT</given-names></name>, <name name-style="western"><surname>Wolfe</surname><given-names>DG</given-names></name>, <name name-style="western"><surname>Kirkland</surname><given-names>JI</given-names></name> (<year>2010</year>) <article-title>A new basal hadrosauroid (Dinosauria: Ornithopoda) from the Turonian of New Mexico</article-title>. <source>J Vertebr Paleontol</source> <volume>30</volume>: <fpage>799</fpage>–<lpage>812</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Sereno1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sereno PC (2005) Stem Archosauria Version 1.0. TaxonSearch website. Available: <ext-link ext-link-type="uri" xlink:href="http://wwwtaxonsearchorg/Archive/stem-archosauria-10php" xlink:type="simple">http://wwwtaxonsearchorg/Archive/stem-archosauria-10php</ext-link>. Accessed 2013 Jan 15.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Young1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Young</surname><given-names>CC</given-names></name> (<year>1958</year>) <article-title>The first record of dinosaurian remains from Shansi</article-title>. <source>Vertebr Palasiat</source> <volume>2</volume><supplement>(4)</supplement>: <fpage>231</fpage>–<lpage>236</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-PrietoMrquez1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prieto-Márquez</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Chiappe</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Joshi</surname><given-names>SH</given-names></name> (<year>2012</year>) <article-title>The Lambeosaurine Dinosaur <italic>Magnapaulia laticaudus</italic> from the Late Cretaceous of Baja California, Northwestern Mexico</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e38207</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Godefroit1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Godefroit</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Bolotsky</surname><given-names>YL</given-names></name>, <name name-style="western"><surname>Lauters</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>A New Saurolophine Dinosaur from the Latest Cretaceous of Far Eastern Russia</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e36849</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-McDonald3"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McDonald</surname><given-names>AT</given-names></name>, <name name-style="western"><surname>Espilez</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Mampel</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Kirkland</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Alcala</surname><given-names>L</given-names></name> (<year>2012</year>) <article-title>An unusual new basal iguanodont (Dinosauria: Ornithopoda) from the Lower Cretaceous of Teruel, Spain</article-title>. <source>Zootaxa</source> <volume>3595</volume>: <fpage>61</fpage>–<lpage>76</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-You2"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>You</surname><given-names>HL</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>DQ</given-names></name> (<year>2009</year>) <article-title>A new basal hadrosauriform dinosaur (Ornithischia: Iguanodontia) from the Early Cretaceous of northwestern China</article-title>. <source>Can J Earth Sci</source> <volume>46</volume>: <fpage>949</fpage>–<lpage>957</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Maddison1"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Maddison WP, Maddison DR (2011) Mesquite: a modular system for evolutionary analysis. Version 2.75. website. Available: <ext-link ext-link-type="uri" xlink:href="http://mesquiteprojectorg.org" xlink:type="simple">http://mesquiteprojectorg.org</ext-link>. Accessed 2012 May 30.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Goloboff1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Goloboff</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Farris</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Nixon</surname><given-names>KC</given-names></name> (<year>2008</year>) <article-title>TNT, a free program for phylogenetic analysis. Version 1.1: Willi Hennig Society Edition</article-title>. <source>Cladistics</source> <volume>24</volume>: <fpage>774</fpage>–<lpage>786</lpage> Available: <ext-link ext-link-type="uri" xlink:href="http://www.zmuc.dk/public/phylogeny/TNT" xlink:type="simple">http://www.zmuc.dk/public/phylogeny/TNT</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Owen1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Owen</surname><given-names>R</given-names></name> (<year>1842</year>) <article-title>Report on British fossil reptiles</article-title>. <source>Report of the British Association of Advanced Sciences</source> <volume>9</volume>: <fpage>60</fpage>–<lpage>204</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Seeley1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seeley</surname><given-names>HG</given-names></name> (<year>1887</year>) <article-title>On the classification of the fossil animals commonly named Dinosauria</article-title>. <source>Proceedings of the Royal Society of London</source> <volume>43</volume>: <fpage>165</fpage>–<lpage>171</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Marsh1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marsh</surname><given-names>OC</given-names></name> (<year>1881</year>) <article-title>Principal characters of American Jurassic dinosaurs. Part V</article-title>. <source>American Journal of Science (Third Series)</source> <volume>21</volume>: <fpage>417</fpage>–<lpage>423</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Dollo1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dollo</surname><given-names>L</given-names></name> (<year>1888</year>) <article-title>Iguanodontidae et Camptonotidae</article-title>. <source>C R Acad Paris</source> <volume>106</volume>: <fpage>775</fpage>–<lpage>777</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Sereno2"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sereno</surname><given-names>PC</given-names></name> (<year>1986</year>) <article-title>Phylogeny of the bird-hipped dinosaurs (Order Ornithischia)</article-title>. <source>Natl Geogr Res</source> <volume>2</volume>: <fpage>234</fpage>–<lpage>256</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Sereno3"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sereno</surname><given-names>PC</given-names></name> (<year>1997</year>) <article-title>The origin and evolution of dinosaurs</article-title>. <source>Annu Rev Earth Planet Sci</source> <volume>25</volume>: <fpage>435</fpage>–<lpage>489</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Sereno4"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sereno</surname><given-names>PC</given-names></name> (<year>1998</year>) <article-title>A rationale for phylogenetic definitions, with application to the higher-level taxonomy of Dinosauria</article-title>. <source>Neues Jahrbuch für Geologie und Paläontologie Abhandlungen</source> <volume>210</volume>: <fpage>41</fpage>–<lpage>83</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Cope1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cope</surname><given-names>ED</given-names></name> (<year>1870</year>) <article-title>Synopsis of the extinct Batrachia, Reptilia, and Aves of North America</article-title>. <source>Trans Am Philos Soc</source> <volume>14</volume>: <fpage>1</fpage>–<lpage>252</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Shanxi1"><label>27</label>
+<mixed-citation publication-type="other" xlink:type="simple">Shanxi Regional Geological Survey Team (1984) Jurassic and Cretaceous in Shanxi Province: Regional Geological Survey Team of Shanxi Bureau of Geology and Mineral resources. 131 p.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Feng1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feng</surname><given-names>ZJ</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>SQ</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>ZY</given-names></name> (<year>1999</year>) <article-title>The age of the Late Cretaceous red beds in southwestern Henan Province</article-title>. <source>Regional Geology of China</source> <volume>18</volume><supplement>(3)</supplement>: <fpage>320</fpage>–<lpage>328</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Zhou1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhou</surname><given-names>SQ</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>GB</given-names></name>, <name name-style="western"><surname>Feng</surname><given-names>ZJ</given-names></name> (<year>2003</year>) <article-title>The age of Xiaguan Formation in Xiaguan-Gaoqiu Basin of Neixiang County, Henan Province</article-title>. <source>Resources Survey &amp; Environment</source> <volume>24</volume><supplement>(1)</supplement>: <fpage>69</fpage>–<lpage>74</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-Campione1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Campione</surname><given-names>NE</given-names></name>, <name name-style="western"><surname>Brink</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Freedman</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>McGarrity</surname><given-names>CT</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>DC</given-names></name> (<year>2012</year>) <article-title>‘<italic>Glishades ericksoni</italic>’, an indeterminate juvenile hadrosaurid from the Two Medicine Formation of Montana: implications for hadrosauroid diversity in the latest Cretaceous (Campanian-Maastrichtian) of western North America</article-title>. <source>Palaeobio Palaeoenv</source> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s12549-012-0097-1" xlink:type="simple">10.1007/s12549-012-0097-1</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0077058-PrietoMarquez1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prieto-Marquez</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Global phylogeny of hadrosauridae (Dinosauria: Ornithopoda) using parsimony and Bayesian methods</article-title>. <source>Zool J Linn Soc</source> <volume>159</volume>: <fpage>435</fpage>–<lpage>502</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0077058-DallaVecchia1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dalla Vecchia</surname><given-names>FM</given-names></name> (<year>2009</year>) <article-title>Tethyshadros insularis, a new hadrosauroid dinosaur (Ornithischia) from the upper Cretaceous of Italy</article-title>. <source>J Vertebr Paleontol</source> <volume>29</volume>: <fpage>1100</fpage>–<lpage>1116</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

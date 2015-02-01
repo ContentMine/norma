@@ -1,0 +1,126 @@
+
+<tagger name="hindawi">
+
+	<xsl:stylesheet version="2.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:h="http://www.w3.org/1999/xhtml">
+		<xsl:template match="/">
+			<xsl:apply-templates />
+		</xsl:template>
+
+		<!--Identity template, strips PIs and comments -->
+		<xsl:template match="@*|*|text()">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|*|text()" />
+			</xsl:copy>
+		</xsl:template>
+
+		<!-- strip whitespace -->
+		<xsl:template match="text()[normalize-space(.)='']"></xsl:template>
+
+		<!-- non-content tags -->
+		<xsl:template match="h:link | h:script | h:style | h:input | h:object" />
+		<xsl:template
+			match="h:div[@id='site_head' or @id='dvLinks' or @id='banner' 
+      or @id='journal_navigation' or @id='left_column' or @class='lock' or @class='right_column_actions'
+      or @class='footer_space' or @class='footer'
+      ]" />
+
+		<!-- SVG -->
+		<xsl:template match="svg:*">
+			<svg:svg>MATH</svg:svg>
+		</xsl:template>
+
+<!--  NOT YET INTEGRATED -->
+		<!-- one level of grouping applied to "xml-content" -->
+		<xsl:template match="h:div[@class='xml-content']">
+			<h:div class="xml-content">
+				<xsl:for-each-group select="h:*" group-starting-with="h:h4">
+					<h:section title="{self::h:h4}">
+						<xsl:for-each select="current-group()">
+							<xsl:copy>
+								<xsl:apply-templates select="@*|*|text()" />
+							</xsl:copy>
+						</xsl:for-each>
+					</h:section>
+				</xsl:for-each-group>
+			</h:div>
+		</xsl:template>
+		
+	</xsl:stylesheet>
+
+	<tagList>
+	    <variable name="body">/h:html/h:body</variable>
+	    <variable name="middleContent">{$body}/h:div[@id='container']/h:div[@id='content']/h:div[@class='middle_content']</variable>
+	    <variable name="middleXmlContent">{$middleContent}/h:div/h:div[@class='xml-content']</variable>
+
+<!-- uses Xpath 1.0, so cannot use regex matches(a,b,c) etc -->
+		<tag name="abstract">{$middleXmlContent}/h:section[@title='Abstract']</tag> <!--  checked -->
+		<tag name="copyright">{$middleXmlContent}/h:section/h:p[contains(.,'Copyright')]</tag> <!--  checked -->
+		<tag name="background">{$middleXmlContent}/h:section[contains(@title,'Introduction')]</tag> <!--  checked -->
+		<tag name="results">{$middleXmlContent}/h:section[contains(@title,'Results')]</tag> <!--  checked -->
+		<tag name="discussion">{$middleXmlContent}/h:section[contains(@title,'Discussion')]</tag> <!--  checked -->
+		<tag name="conclusion">{$middleXmlContent}/h:section[contains(@title,'Conclusions')]</tag> <!--  checked -->
+		<tag name="abbreviations">{$middleXmlContent}/h:section[contains(@title,'Abbreviations')]</tag> <!--  checked -->
+		<tag name="disclosure">{$middleXmlContent}/h:section[contains(@title,'Disclosure')]</tag> <!--  checked -->
+		<tag name="acknowledgments">{$middleXmlContent}/h:section[contains(@title,'Acknowledgments')]</tag> <!--  checked -->
+		<tag name="competing">{$middleXmlContent}/h:section[contains(@title,'Conflict of Interests')]</tag> <!--  checked -->
+		<tag name="references">{$middleContent}//h:section[contains(@title,'References')]</tag> <!--  checked -->
+		<tag name="methods">{$middleXmlContent}/h:section[contains(@title,'Materials and Methods')]</tag> <!--  checked -->
+		<tag name="table">{$middleXmlContent}//h:div[@class='fig' and starts-with(@id, 'tab')]/h:div[@class='groupcaption']</tag>
+		<tag name="figure">{$middleXmlContent}//*[@class='fig']/*[@class='groupcaption' and starts-with(.,'Figure ')]</tag> 
+		<!-- 
+		<tag name="additionfiles">//h:h4[contains(., 'Supporting Information')]
+		</tag>
+		<tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']
+		</tag>
+		-->
+	</tagList>
+	<metadataList>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="language">/h:html/h:head/h:meta[@name='dc.language']/@content</metadata>
+		<metadata name="format">/h:html/h:head/h:meta[@name='dc.format']/@content</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='prism.volume']/@content</metadata>
+		<metadata name="issue">/h:html/h:head/h:meta[@name='prism.number']/@content</metadata>
+		<metadata name="startPage">/h:html/h:head/h:meta[@name='prism.startingPage']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='dc.publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='citation_publisher']/@content</metadata>
+		<metadata name="publisher">/h:html/h:head/h:meta[@name='Author']/@content</metadata>
+		<metadata name="issn">/h:html/h:head/h:meta[@name='prism.issn']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='dc.source']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='prism.publicationName']/@content</metadata>
+		<metadata name="journal">/h:html/h:head/h:meta[@name='citation_journal_title']/@content
+		</metadata>
+		<metadata name="author">/h:html/h:head/h:meta[@name='dc.creator']/@content</metadata>
+		<metadata name="authors">/h:html/h:head/h:meta[@name='citation_authors']/@content</metadata>
+		<metadata name="author">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='author_gp']/a/text()
+		</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='dc.title']/@content</metadata>
+		<metadata name="title">/h:html/h:head/h:meta[@name='citation_title']/@content</metadata>
+		<metadata name="title">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='article_type']/text()
+		</metadata>
+		<metadata name="volume">/h:html/h:head/h:meta[@name='citation_volume']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dcterms.issued']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='citation_date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='dc.date']/@content</metadata>
+		<metadata name="date">/h:html/h:head/h:meta[@name='prism.publicationDate']/@content</metadata>
+		<metadata name="year">/h:html/h:head/h:meta[@name='citation_year']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='citation_doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='prism.doi']/@content</metadata>
+		<metadata name="doi">/h:html/h:head/h:meta[@name='dc.identifier']/@content</metadata>
+		<metadata name="doi">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/pre/a[@href]/text()
+		</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='citation_abstract']/@content</metadata>
+		<metadata name="abstract">/h:html/h:head/h:meta[@name='dc.description']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='prism.section']/@content</metadata>
+		<metadata name="type">/h:html/h:head/h:meta[@name='dc.type']/@content</metadata>
+		<metadata name="type">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/h2/text()
+		</metadata>
+		<metadata name="address">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/p[1]/text()
+		</metadata>
+		<metadata name="copyrightlicence">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/text()
+		</metadata>
+		<metadata name="licenceurl">/h:html/h:body/div[@id='container']/div[@id='content']/div[@class='middle_content']/div/div[@class='xml_content']/p/a[@rel='licence']/@href
+		</metadata>
+	</metadataList>
+</tagger>

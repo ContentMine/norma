@@ -1,0 +1,9 @@
+Package: [[name]]
+Section: contrib/java
+Priority: optional
+Architecture: all
+Homepage: https://bitbucket.org/petermr/norma/wiki/Home
+Depends: java7-runtime
+Version: [[version]]
+Maintainer: Peter Murray-Rust 
+Description: [[description]]

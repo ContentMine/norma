@@ -1,0 +1,109 @@
+{
+  "publisher": {
+    "value": [
+      "BioMed Central Ltd"
+    ]
+  },
+  "journal": {
+    "value": [
+      "Trials"
+    ]
+  },
+  "title": {
+    "value": [
+      "A core outcome set for clinical trials on non-specific low back pain: study protocol for the development of a core domain set"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Alessandro Chiarotto",
+      "Caroline B Terwee",
+      "Richard A Deyo",
+      "Maarten Boers",
+      "Chung-Wei C Lin",
+      "Rachelle Buchbinder",
+      "Terry P Corbin",
+      "Leonardo OP Costa",
+      "Nadine E Foster",
+      "Margreth Grotle",
+      "Bart W Koes",
+      "Francisco M Kovacs",
+      "Chris G Maher",
+      "Adam M Pearson",
+      "Wilco C Peul",
+      "Mark L Schoene",
+      "Dennis C Turk",
+      "Maurits W van Tulder",
+      "Raymond W Ostelo"
+    ]
+  },
+  "date": {
+    "value": [
+      "2014-12-26"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1186/1745-6215-15-511"
+    ]
+  },
+  "volume": {
+    "value": [
+      "15"
+    ]
+  },
+  "issue": {
+    "value": [
+      "1"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "511"
+    ]
+  },
+  "description": {
+    "value": [
+      "Low back pain (LBP) is one of the most disabling and costly disorders affecting modern society, and approximately 90% of patients are labelled as having non-specific LBP (NSLBP). Several interventions for patients with NSLBP have been assessed in clinical trials, but heterogeneous reporting of outcomes in these trials has hindered comparison of results and performance of meta-analyses. Moreover, there is a risk of selective outcome reporting bias. To address these issues, the development of a core outcome set (COS) that should be measured in all clinical trials for a specific health condition has been recommended. A standardized set of outcomes for LBP was proposed in 1998, however, with evolution in COS development methodology, new instruments, interventions, and understanding of measurement properties, it is appropriate to update that proposal. This protocol describes the methods used in the initial step in developing a COS for NSLBP, namely, establishing a core domain set that should be measured in all clinical trials."
+    ]
+  },
+  "abstract": {
+    "value": [
+      "Low back pain (LBP) is one of the most disabling and costly disorders affecting modern society, and approximately 90% of patients are labelled as having non-specific LBP (NSLBP). Several interventions for patients with NSLBP have been assessed in clinical trials, but heterogeneous reporting of outcomes in these trials has hindered comparison of results and performance of meta-analyses. Moreover, there is a risk of selective outcome reporting bias. To address these issues, the development of a core outcome set (COS) that should be measured in all clinical trials for a specific health condition has been recommended. A standardized set of outcomes for LBP was proposed in 1998, however, with evolution in COS development methodology, new instruments, interventions, and understanding of measurement properties, it is appropriate to update that proposal. This protocol describes the methods used in the initial step in developing a COS for NSLBP, namely, establishing a core domain set that should be measured in all clinical trials."
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.trialsjournal.com/content/15/1/511"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://www.trialsjournal.com/content/pdf/1745-6215-15-511.pdf"
+    ]
+  },
+  "fulltext_xml": {
+    "value": [
+      "/content/download/xml/1745-6215-15-511.xml"
+    ]
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": []
+  },
+  "figure_caption": {
+    "value": []
+  },
+  "license": {
+    "value": [
+      "\r\n\t\t\t\tThis is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.\r\n\t\t\t"
+    ]
+  },
+  "copyright": {
+    "value": [
+      "\r\n            © 2014 Chiarotto et al.; licensee BioMed Central. \r\n        "
+    ]
+  }
+}
