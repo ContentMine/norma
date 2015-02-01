@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-21358</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0113556</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology and life sciences</subject><subj-group><subject>Agriculture</subject><subj-group><subject>Agroecology</subject><subj-group><subject>Agronomic ecology</subject></subj-group></subj-group><subj-group><subject>Crop science</subject><subj-group><subject>Crop management</subject><subject>Crops</subject></subj-group></subj-group><subj-group><subject>Agricultural production</subject></subj-group></subj-group><subj-group><subject>Ecology</subject><subj-group><subject>Plant ecology</subject><subj-group><subject>Plant-animal interactions</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Ecology and environmental sciences</subject></subj-group></article-categories>
+<title-group>
+<article-title>Flowering Dynamics and Pollinator Visitation of Oilseed Echium (<italic>Echium plantagineum</italic>)</article-title>
+<alt-title alt-title-type="running-head">Pollinators and Echium</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Eberle</surname><given-names>Carrie A.</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Forcella</surname><given-names>Frank</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gesch</surname><given-names>Russ</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Weyers</surname><given-names>Sharon</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>Dean</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Eklund</surname><given-names>James</given-names></name><xref ref-type="aff" rid="aff1"/></contrib>
+</contrib-group>
+<aff id="aff1"><addr-line>United States Department of Agriculture-Agricultural Research Service, North Central Soil Conservation Research Lab, Morris, Minnesota, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Cheng</surname><given-names>Zhihui</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Northwest A&amp;F University, China</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">carrie.eberle@ars.usda.gov</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: CAE FF RG SW. Performed the experiments: CAE DP JE. Analyzed the data: CAE FF. Contributed reagents/materials/analysis tools: FF. Wrote the paper: CAE FF RG SW.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2014</year></pub-date>
+<pub-date pub-type="epub"><day>26</day><month>11</month><year>2014</year></pub-date>
+<volume>9</volume>
+<issue>11</issue>
+<elocation-id>e113556</elocation-id>
+<history>
+<date date-type="received"><day>13</day><month>5</month><year>2014</year></date>
+<date date-type="accepted"><day>28</day><month>10</month><year>2014</year></date>
+</history>
+<permissions>
+<copyright-year>2014</copyright-year>
+<license xlink:type="simple"><license-p>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</license-p></license></permissions>
+<abstract>
+<p>Echium (<italic>Echium plantagineum</italic> L.) is an alternative oilseed crop in summer-wet temperate regions that provides floral resources to pollinators. Its seed oil is rich in omega-3 fatty acids, such as stearidonic acid, which is desired highly by the cosmetic industry. Seeds were sown in field plots over three years in western Minnesota in spring (early-sown) or early summer (late-sown), and flower abundance, pollinator visitation, and seed yields were studied. Initial flowering commenced 41 to 55 d after sowing, and anthesis duration (first flowering to harvest) was 34 to 70 d. Late sowing dates delayed anthesis, but increased the intensity of visitation by pollinators. Cumulative flower densities ranged from 1 to 4.5 billion ha<sup>−1</sup>. Flowers attracted numerous honey bees (<italic>Apis mellifera</italic> L.), as many as 35 per minute of observation, which represented about 50% of all insect visitors. Early-sown echium produced seed yields up to 750 kg ha<sup>−1</sup>, which were 2–29 times higher than those of late-sown echium. Early sowing of echium in Minnesota provides abundant floral resources for pollinators for up to two months and simultaneously produces seed yields whose profits rival those of corn (<italic>Zea mays</italic> L.).</p>
+</abstract>
+<funding-group><funding-statement>This work was supported through the USDA-National Institute of Food and Agriculture (NIFA) award 2012-67009-20272. The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="16"/></counts><custom-meta-group><custom-meta id="data-availability" xlink:type="simple"><meta-name>Data Availability</meta-name><meta-value>The authors confirm that all data underlying the findings are fully available without restriction. All relevant data are within the paper.</meta-value></custom-meta></custom-meta-group></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Echium (<italic>Echium plantagineum</italic> L., Boraginaceae) is a winter annual weed in Mediterranean climates <xref ref-type="bibr" rid="pone.0113556-Piggin1">[1]</xref>. However, high concentrations of desirable fatty acids occur in its seeds, and its flowers are attractive to pollinators. Given its history as a weed elsewhere, attempts to grow echium as a crop are uncommon. The combined benefits of commercially valuable fatty acids coupled with the growing interest in supporting pollinators warrants further exploration of agricultural production of echium.</p>
+<p>Echium seeds contain about 27% oil that is enriched with high levels of stearidonic acid (SDA) and gamma-linolenic acid (GLA) <xref ref-type="bibr" rid="pone.0113556-Gray1">[2]</xref>. These fatty acids are rare in plants and highly valued in the health and personal care industries. Stearidonic acid, in particular, is an essential ingredient in anti-wrinkle cosmetics, and both SDA and GLA provide health benefits analogous to fish oils <xref ref-type="bibr" rid="pone.0113556-GuilGuerrero1">[3]</xref>.</p>
+<p>In addition to its seed oil value, echium is highly attractive to pollinating insects, especially honey bees. Echium is a common melliferous (honey producing) plant native to the Mediterranean Basin and naturalized throughout southern Australia, where it is used widely for honey production <xref ref-type="bibr" rid="pone.0113556-Corbet1">[4]</xref>,<xref ref-type="bibr" rid="pone.0113556-Cullen1">[5]</xref>,<xref ref-type="bibr" rid="pone.0113556-Davis1">[6]</xref>. Nearly 15% of Australian honey is derived from echium <xref ref-type="bibr" rid="pone.0113556-Mathieson1">[7]</xref>. Regions that support high densities of honey bee colonies and/or desire to augment nutritional resources for native pollinators have critical needs for such plants. Despite echium's ability to support pollinators, its history as a weed has limited its use as a crop.</p>
+<p>Reports on growing echium as a crop are rare. Berti et al. <xref ref-type="bibr" rid="pone.0113556-Berti1">[8]</xref> reported seed yields of 115 to 617 kg ha<sup>−1</sup> for autumn-sown echium in Chillan Province, Chile. Echium also has been grown successfully as a spring-sown crop in the United Kingdom, with yields of 200 to 300 kg ha<sup>−1</sup> <xref ref-type="bibr" rid="pone.0113556-NNFCC1">[9]</xref>; and at four locations in North Dakota, where yields ranged from 63 to 425 kg ha<sup>−1</sup> and averaged 251±29.5 kg ha<sup>−1</sup> across 12 site-years <xref ref-type="bibr" rid="pone.0113556-Berti2">[10]</xref>. No weedy tendencies of echium in or near the North Dakota experimental sites were observed. Relationships between seed yields and growing season temperatures or rainfall totals (North Dakota Agricultural Weather Network values) in North Dakota were not obvious in our examination of the data from Berti et al. <xref ref-type="bibr" rid="pone.0113556-Berti2">[10]</xref>, which indicated that the short growing season and relatively low rainfall of the Northern Great Plains did not restrict echium from achieving relatively high seed yields in some sites and years.</p>
+<p>Our interest in echium arose from a desire to extend floral resources for pollinators <italic>via</italic> high-value oilseed crops in the Upper Midwest and Northern Great Plains of the USA. This region supplies a large proportion of the nation's transient honey bee colonies, and such colonies suffer high yearly losses. Summer-time nutrition is thought to play an important role for subsequent over-winter survival and vigor during the colonies' fruit and nut pollination activities in California and other southern locations <xref ref-type="bibr" rid="pone.0113556-Brodschneider1">[11]</xref>,<xref ref-type="bibr" rid="pone.0113556-Naug1">[12]</xref>. Echium production in the Upper Midwest and Northern Great Plains may help solve this dilemma. Consequently, we examined the effects of echium sowing date on flowering dynamics, pollinator visitations, and seed yields, and the potential energy (nectar) an echium crop may provide to pollinators. Based on three years of data we were able to document extraordinary levels of flower production and pollinator visitation, as well as provide guidance regarding planting dates that assures both high seed yields and pollinator resources.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>2.1 Plot establishment</title>
+<p>Experiments were performed at the USDA-ARS Swan Lake Research Farm, Stevens County, MN (45.68°N, 95.80°W) on a Barnes loam soil (fine-silty, mixed, super-active, frigid Calcic Hapludoll) during 2011, 2012, and 2013. Treatments (planting dates) were arranged in a randomized complete block design with three replications in 2011 and 2012. Plots were 3.1 by 12.2 m. In 2013, data were collected from four replications of each of two separate but proximal experiments involving nine oilseed crops, including echium. In the first experiment (May-sowing) the plots were 6.1 by 18.3 m, and in the other (June and July sowings) the plots were 2.4 by 3.1 m. The variability in plot sizes is unlikely to have influenced flowering dynamics, but potentially could have affected pollinator visitation and seed yields.</p>
+<p>Previous crops were soybean (<italic>Glycine max</italic> L. [Merr]) in 2010 and wheat (<italic>Triticum aestivum</italic> L.) otherwise. Fertilizer was applied at a rate of 77-33-33 kg ha<sup>−1</sup> of N-P-K and incorporated with the field cultivator or a no-till drill at sowing. Fertilizer applications were based on those recommended in the NNFCC crop fact sheet <xref ref-type="bibr" rid="pone.0113556-NNFCC1">[9]</xref>. For weed control, trifluralin herbicide (2,6-dinitro-<italic>N,N-</italic>dipropyl-4-(trifluoromethyl)aniline) was applied preplanting at 0.75 kg ai ha<sup>−1</sup> through a 3.1-m tractor-mounted boom that delivered 187 L ha<sup>−1</sup> at 207 kPa pressure. Weeds that escaped herbicide control were removed by hand.</p>
+<p>Echium seeds were obtained originally from Technology Crops International (TCI) in 2008. Harvested seeds were cleaned and resown each year thereafter. Seeds were sown 1.5 to 2.5 cm deep in rows spaced by 20 cm and at a rate of 11 to 17 kg seed ha<sup>−1</sup> depending upon viability (TCI growing guide for echium recommends a seeding rate of 11 kg viable seed ha<sup>−1</sup> based on germination percent of seed stocks).</p>
+<p>Sowing dates were May 26 and July 7, 2011; April 25 and June 15, 2012; and May 14, June 13, and July 8, 2013 (<xref ref-type="table" rid="pone-0113556-t001">table 1</xref>). Early sowing of echium was completed as soon as field conditions allowed each spring. Late sowing was as near to 7 weeks after early sowing as was possible based on weather conditions. Late sowing of echium was done 6, 7, and 8 weeks after early sowing in 2011, 2012, and 2013 respectively. An additional mid-season sowing date was planted on June 13, 2013 (4 weeks after the early sowing) in order to evaluate if seed yields could be improved relative to the late sowing and to provide uninterrupted floral resources to pollinators from early summer to autumn.</p>
+<table-wrap id="pone-0113556-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.t001</object-id><label>Table 1</label><caption>
+<title>Echium sowing date and associated flowering dynamics, cumulative rainfall (from sowing to harvest), cumulative thermal time of air (from sowing to harvest), and seed yield.</title>
+</caption><alternatives><graphic id="pone-0113556-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Year</td>
+<td align="left" rowspan="1" colspan="1">Planting Time</td>
+<td align="left" rowspan="1" colspan="1">Time to first flower (days)</td>
+<td align="left" rowspan="1" colspan="1">Anthesis Duration (days)</td>
+<td align="left" rowspan="1" colspan="1">Rainfall (mm)</td>
+<td align="left" rowspan="1" colspan="1">Thermal time (Cum °d)</td>
+<td align="left" rowspan="1" colspan="1">Seed Yield (kg ha<sup>−1</sup>±SD)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">2011</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">42</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+<td align="left" rowspan="1" colspan="1">304</td>
+<td align="left" rowspan="1" colspan="1">2352</td>
+<td align="left" rowspan="1" colspan="1">773±181</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">41</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">245</td>
+<td align="left" rowspan="1" colspan="1">2015</td>
+<td align="left" rowspan="1" colspan="1">27±6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2012</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">55</td>
+<td align="left" rowspan="1" colspan="1">247</td>
+<td align="left" rowspan="1" colspan="1">2179</td>
+<td align="left" rowspan="1" colspan="1">327±20</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">55</td>
+<td align="left" rowspan="1" colspan="1">34</td>
+<td align="left" rowspan="1" colspan="1">148</td>
+<td align="left" rowspan="1" colspan="1">1992</td>
+<td align="left" rowspan="1" colspan="1">85±19</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2013</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">44</td>
+<td align="left" rowspan="1" colspan="1">57</td>
+<td align="left" rowspan="1" colspan="1">292</td>
+<td align="left" rowspan="1" colspan="1">2003</td>
+<td align="left" rowspan="1" colspan="1">430±151</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Mid</td>
+<td align="left" rowspan="1" colspan="1">36</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">238</td>
+<td align="left" rowspan="1" colspan="1">1978</td>
+<td align="left" rowspan="1" colspan="1">387±33</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">46</td>
+<td align="left" rowspan="1" colspan="1">48</td>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">1867</td>
+<td align="left" rowspan="1" colspan="1">258±125</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>Weather data were collected throughout the growing season at the Swan Lake Research Farm Weather Station (<ext-link ext-link-type="uri" xlink:href="http://www.ars.usda.gov/Services/docs.htm?docid=3512" xlink:type="simple">http://www.ars.usda.gov/Services/docs.htm?docid=3512</ext-link>). Cumulative soil thermal times (at 5 cm depth; base temperature, 0°) between January 1 and the sowing dates each year were 474 and 1270 (2011), 393 and 1268 (2012), and 201, 659, 1238 (2013).</p>
+</sec><sec id="s2b">
+<title>2.2 Flowering Dynamics</title>
+<p>Percent ground cover of echium flowers (flower area) was estimated visually in each plot from the time open flowers were first visible through the end of anthesis for all three years. Visual estimates were made by two observers by viewing the crop from above and approximating the percent of the total area that was covered by flowers. Cumulative flower area was estimated by calculating the areas under the curves throughout anthesis. These integrals represent the coverage time (%t) of flower area. Anthesis duration was measured from the start of flowering to the time of swathing; because echium is an indeterminate crop, anthesis persisted until the crop was harvested.</p>
+<p>In 2013, number of open flowers were measured once per week during anthesis using the Batcheler corrected point distance estimation <xref ref-type="bibr" rid="pone.0113556-Rempel1">[13]</xref>. A 1.8 m transect rope with six pre-marked points 30 cm apart was used to establish three transects within each plot. The distance from each point to the center of the nearest open flower was measured, as was the distance from the center of the first open flower to the center of the next nearest open flower. Measurements were taken on at least five different dates throughout anthesis for each planting date. During field measurements, the maximum search distance for a flower was set to 15 cm to ensure that individual flowers were not included more than once. During data analysis, the maximum search distance for each date was adjusted to exclude approximately 30% of the flowers, as per Remple <xref ref-type="bibr" rid="pone.0113556-Rempel1">[13]</xref>. Calculations of flower density (f ha<sup>−1</sup>) were performed using Transect Point Density software <xref ref-type="bibr" rid="pone.0113556-Kushneriuk1">[14]</xref>. The average flower density within each planting date was plotted by the day of year. The sum of flowers produced per hectare throughout anthesis (∑f ha<sup>−1</sup>) was calculated by integrating the area under the curve.</p>
+</sec><sec id="s2c">
+<title>2.3 Nectar Collection and Analysis</title>
+<p>Nectar analysis was performed on early-sown echium flowers on July 16 and August 7, 2013, following protocols described by Corbet et al. <xref ref-type="bibr" rid="pone.0113556-Corbet2">[15]</xref>. On the former date the mean temperature was 26.4°C, mean solar radiation was 0.33 kwh/m<sup>2</sup> (PAR = 479), with a mean RH of 71%, and no measurable rainfall 24 h before nectar was removed. On the latter date the mean temperature was 18.2°C, mean solar radiation was 0.30 kwh/m<sup>2</sup> (PAR = 525), with a mean RH of 74%, and 0.64 cm of rainfall 24 h before nectar was removed. Nectar was extracted from 10 open flowers using a 1, 5, or 10 µL microcapillary. The length of the nectar column in the microcapillary was measured immediately after extraction. Degree Brix (°Bx; % sucrose) was recorded for each flower using an Eclipse low volume handheld refractometer (Bellingham + Stanley Inc, GA, USA). “Standing crops” of nectar were removed at three time points: 900, 1200, and 1500 h, from 10 different flowers at each time, and the flowers were tagged and isolated with insect exclusion bags. After 2 h of exclusion, the flowers were resampled for nectar volume and °Bx. Nectar volume was calculated by dividing the length of the nectar column by the total length of the microcapillary and multiplying by the microcapillary volume. Sugar content was calculated from the Corbet et al. <xref ref-type="bibr" rid="pone.0113556-Corbet2">[15]</xref> equation for nectar sucrose content:</p>
+<disp-formula id="pone.0113556.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0113556.e001" xlink:type="simple"/></disp-formula>
+<p>giving the total sucrose produced in 2 h by a single echium flower. The µg of sucrose produced was averaged across the two sampling dates for the 10 flowers sampled during each time interval. The daily sucrose production per echium flower was approximated by summing the average µg of sucrose produced during each of the three time intervals. The sum of flowers produced per hectare throughout anthesis was multiplied by the daily sucrose production of a single echium flower to calculate the potential sucrose production of a hectare of echium throughout anthesis.</p>
+</sec><sec id="s2d">
+<title>2.4 Insect Counts</title>
+<p>Pollinator visitations to the plots were recorded from the time open flowers were first visible through the end of anthesis. Visitation was documented by investigators walking along the length of each plot for 1–2 minutes and listing the number of individuals observed in each of the following insect categories: honey bee, bumble bee, other bee, fly, butterfly, and other insects. Insect counts were conducted between 1100 and 1400 h on rainless days, with wind speeds &lt;7 m s<sup>−1</sup>, when the temperature &gt;5°C and the sky was ≥50% clear or when the temperature was &gt;10°C with any sky cover. All insect counts were divided by the number of observers and the minutes of each observation period giving number of insects observed by one observer in 1 min. Integrating under the curves of pollinator-time relationships allowed calculation of pollinator visitation time (pvt) throughout anthesis. A ratio of insect visitation to flower area was derived by dividing pvt by %t for each planting date. A larger value indicates more insects per flower area. The 52-ha research farm harbored one commercial-grade honey bee colony in 2011 and 2012, and four colonies in 2013. In addition, a commercial apiary with 34 hives was located within two miles of the research farm, which supported consistent bee visitation each year. Otherwise, the research farm was surrounded by narrow strips of semi-natural vegetation (tree-lined lakeshore, woodland, wetlands, and grassed fence lines and roadsides), which likely provided nesting habitat for native pollinators.</p>
+</sec><sec id="s2e">
+<title>2.5 Seed Harvest</title>
+<p>Echium seeds were harvested by swathing sections in each plot on September 15 and October 25, 2011; August 12 and September 12, 2012; for the early and late planted plots, respectively and August 23, 2013 for the early planted plot. The 2013 mid planted plot was harvested on September 11 by straight combining without swathing. The 2013 late planted plot was harvested on October 10 by hand harvesting two rows, allowing the plant material to dry, and hand threshing the seed. Variation in harvesting techniques in 2013 was unavoidable due to unforeseen problems with machinery and labor availability. Swaths typically were 1.5 m wide and the length of the plot. Swathing and direct harvesting occurred when the bottom third of former flowers along branches of the cyme-type infructescence had black seeds (dried and fully mature), the middle third had grayish seeds (physiologically mature), and the upper third had green seeds or still-maturing flowers <xref ref-type="bibr" rid="pone.0113556-TechnologyCropsInternational1">[16]</xref>. Echium does not have seed pods; instead, its fruits are small nutlets, typically four per flower, whose dark colors are easily visible at the base of the mature tubular calyx, the corolla having abscised earlier. Swaths were combined or hand threshed (small plots in 2013). Seeds were dried and chaff removed prior to calculating yield based upon 10% seed moisture <xref ref-type="bibr" rid="pone.0113556-TechnologyCropsInternational1">[16]</xref>.</p>
+</sec><sec id="s2f">
+<title>2.6 Statistical Analysis</title>
+<p>Estimation of open flower density was done using Transect Point Density software <xref ref-type="bibr" rid="pone.0113556-Kushneriuk1">[14]</xref>, which calculates a corrected point density (CPD, open flower density) based on point to object densities and adjusts for clustering within the plots giving a 95% confidence limit. There were a total of 72 points used to calculate the CPD for each date. Standard error was calculated by subtracting the lower confidence limit from the upper confidence limit and dividing by the t value multiplied by two. Multiple regression modeling was performed using stepwise selection in SAS 9.3 statistical software. Predictor variables for anthesis period were modeled using sowing date (early, mid, late), days to flower (days from sowing to first flower), anthesis-rainfall, vegetative-rainfall, anthesis thermal time (from first flower to harvest), and total thermal time. Yield was modeled using sowing date, growing season days (from sowing to swathing), thermal time, anthesis-rainfall, and vegetative-rainfall. Only variables with a <italic>P</italic>-value &lt;0.15 were included in the model. Standardized regression coefficients (SRC) are computed in SAS 9.3 by dividing a parameter estimate by the ratio of the sample standard deviation of the dependent variable to the sample standard deviation of the regressor (SAS 9.3). The SRC indicates how many standard deviations a given variable will change per standard deviation increase in the predictor variable independent of scale.</p>
+</sec></sec><sec id="s3">
+<title>Results and Discussion</title>
+<sec id="s3a">
+<title>3.1 Flowering dynamics</title>
+<p>Time from sowing to first flower averaged 45 d and varied little across sowing dates. Flowering ended at swathing, typically in late August but extended into early October for late sowings. The average of 55 d for anthesis duration in the relatively wet climate of Minnesota was similar to flowering of cultivated and weedy populations in Mediterranean-like environments. The flowering period for echium is about 30 to 40 d in its native Mediterranean Basin <xref ref-type="bibr" rid="pone.0113556-Vivarelli1">[17]</xref>, whereas in weedy populations in southern Australia, the duration of flowering is approximately 60 days <xref ref-type="bibr" rid="pone.0113556-Burdon1">[18]</xref>. The anthesis duration of potted plants under natural light conditions was 71 d in southern Australia <xref ref-type="bibr" rid="pone.0113556-Piggin2">[19]</xref>.</p>
+<p>Flowering peaked at or near 40% cover within 2 to 3 weeks of the start of flowering, and remained above 10% for most of anthesis (<xref ref-type="fig" rid="pone-0113556-g001">figure 1a–c</xref>). In 2011, the anthesis duration, was about 70 d for both planting dates (<xref ref-type="table" rid="pone-0113556-t001">table 1</xref>). In contrast, flowering duration was shorter during 2012 and 2013 ranging from 34–57 d. Stepwise selection multiple regression modeling indicated days to first flower, anthesis-rainfall, and vegetative-rainfall were significant variables in determining anthesis duration, with negative, positive, and positive coefficients, respectively (<xref ref-type="table" rid="pone-0113556-t002">table 2</xref>). Thus, the lower the number of days to first flower from sowing, the longer the duration of flowering. Rainfall during anthesis was most strongly associated with increased anthesis time (SRC  = 0.42; <xref ref-type="table" rid="pone-0113556-t002">table 2</xref>): as anthesis rainfall increased so did the number of anthesis days. Therefore, drought conditions during July 2012, during anthesis of the late-planted echium, likely contributed to the short duration of flowering that year. Higher rainfall during vegetative growth also increased flowering duration.</p>
+<fig id="pone-0113556-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.g001</object-id><label>Figure 1</label><caption>
+<title>Dynamics of open flower cover and total pollinator abundances.</title>
+<p>Percent flower cover of early- mid- and late-sown echium in 2011 (a), 2012 (b), and 2013 (c) and total pollinators observed per min per observer (d, e, and f). Proportions of honey bees compared to total pollinators in 2011 (g), 2012 (h), and 2013 (i). Error bars (a–f) are standard deviation.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.g001" position="float" xlink:type="simple"/></fig><table-wrap id="pone-0113556-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.t002</object-id><label>Table 2</label><caption>
+<title>Stepwise multiple regression model of anthesis duration using days to flower (DTF), anthesis rainfall (ARF), and vegetative rainfall (VRF). R<sup>2</sup> = 0.77.</title>
+</caption><alternatives><graphic id="pone-0113556-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">DF</td>
+<td align="left" rowspan="1" colspan="1">Parameter Estimate</td>
+<td align="left" rowspan="1" colspan="1">Standard Error</td>
+<td align="left" rowspan="1" colspan="1"><italic>t</italic> Value</td>
+<td align="left" rowspan="1" colspan="1">Pr&gt; <italic>|t|</italic></td>
+<td align="left" rowspan="1" colspan="1">SRC<xref ref-type="table-fn" rid="nt101">a</xref></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Intercept</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">60.89</td>
+<td align="left" rowspan="1" colspan="1">12.7</td>
+<td align="left" rowspan="1" colspan="1">4.79</td>
+<td align="left" rowspan="1" colspan="1">0.0001</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DTF</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">−0.64</td>
+<td align="left" rowspan="1" colspan="1">0.21</td>
+<td align="left" rowspan="1" colspan="1">−3.11</td>
+<td align="left" rowspan="1" colspan="1">0.0055</td>
+<td align="left" rowspan="1" colspan="1">−0.38</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ARF</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.21</td>
+<td align="left" rowspan="1" colspan="1">0.07</td>
+<td align="left" rowspan="1" colspan="1">3.18</td>
+<td align="left" rowspan="1" colspan="1">0.0048</td>
+<td align="left" rowspan="1" colspan="1">0.42</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VRF</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+<td align="left" rowspan="1" colspan="1">2.56</td>
+<td align="left" rowspan="1" colspan="1">0.0187</td>
+<td align="left" rowspan="1" colspan="1">0.37</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label>a</label><p>SRC, Stepwise regression coefficient.</p></fn></table-wrap-foot></table-wrap>
+<p>Coverage times of flower area (%t) for early- and late-sowing dates were 1577 and 765%t in 2011, 769 and 535%t in 2012, and 1113 and 972%t in 2013 (<xref ref-type="table" rid="pone-0113556-t003">table 3</xref>). Thus, late sowings had 49%, 70% and 87% of the flower coverage time as early sowings of echium in 2011, 2012, and 2013, respectively. The mid-sowing date for echium in 2013 had 929%t, which was 83% of the early-sown echium flower coverage time. For comparison with standard commodity crops, the 2013 flower coverage time for corn was 9%t and that for soybean was 2%t. These values are 57 and 215 times smaller than even the lowest %t of echium. Therefore, the combined extent and duration of flower availability to pollinators was much less in corn and soybean than in echium.</p>
+<table-wrap id="pone-0113556-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.t003</object-id><label>Table 3</label><caption>
+<title>Flower coverage time (%t), pollinator visitation time (pvt), pollinator visitiation intensity (pvt %t<sup>−1</sup>), sum of flowers produced per hectare (∑f ha<sup>−1</sup>), sucrose per hectare per year (s h<sup>−1</sup> y<sup>−1</sup>), and ratio of pollinator visitation time to flower coverage time (pvt %t<sup>−1</sup>).</title>
+</caption><alternatives><graphic id="pone-0113556-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Year</td>
+<td align="left" rowspan="1" colspan="1">Planting time</td>
+<td align="left" rowspan="1" colspan="1">%t</td>
+<td align="left" rowspan="1" colspan="1">pvt</td>
+<td align="left" rowspan="1" colspan="1">pvt %t<sup>−1</sup></td>
+<td align="left" rowspan="1" colspan="1">∑f ha<sup>−1</sup> (billion)</td>
+<td align="left" rowspan="1" colspan="1">s h<sup>−1</sup> y<sup>−1</sup> (kg)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">2011</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">1577</td>
+<td align="left" rowspan="1" colspan="1">271</td>
+<td align="left" rowspan="1" colspan="1">0.17</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">765</td>
+<td align="left" rowspan="1" colspan="1">356</td>
+<td align="left" rowspan="1" colspan="1">0.47</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2012</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">769</td>
+<td align="left" rowspan="1" colspan="1">376</td>
+<td align="left" rowspan="1" colspan="1">0.50</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">535</td>
+<td align="left" rowspan="1" colspan="1">897</td>
+<td align="left" rowspan="1" colspan="1">1.68</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2013</td>
+<td align="left" rowspan="1" colspan="1">Early</td>
+<td align="left" rowspan="1" colspan="1">1113</td>
+<td align="left" rowspan="1" colspan="1">1787</td>
+<td align="left" rowspan="1" colspan="1">1.61</td>
+<td align="left" rowspan="1" colspan="1">1.01</td>
+<td align="left" rowspan="1" colspan="1">641</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Mid</td>
+<td align="left" rowspan="1" colspan="1">929</td>
+<td align="left" rowspan="1" colspan="1">1774</td>
+<td align="left" rowspan="1" colspan="1">1.91</td>
+<td align="left" rowspan="1" colspan="1">4.59</td>
+<td align="left" rowspan="1" colspan="1">2911</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Late</td>
+<td align="left" rowspan="1" colspan="1">972</td>
+<td align="left" rowspan="1" colspan="1">2662</td>
+<td align="left" rowspan="1" colspan="1">2.74</td>
+<td align="left" rowspan="1" colspan="1">0.98</td>
+<td align="left" rowspan="1" colspan="1">609</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap></sec><sec id="s3b">
+<title>3.2 Pollinator Food Provisions</title>
+<p>The sum density of flowers produced per hectare over the anthesis period (<xref ref-type="fig" rid="pone-0113556-g002">figure 2</xref>) was 1.01, 4.59, and 0.96 billion ∑f ha<sup>−1</sup> for the early, mid, and late sown echium in 2013 (<xref ref-type="table" rid="pone-0113556-t003">table 3</xref>). Although, the early sowing date had the highest flower coverage time (%t) of the three planting dates, the mid planting date had the highest sum flower density throughout the anthesis period. For comparison, a very high and prolific soybean population of 500,000 plants ha<sup>−1</sup> bearing 800 flowers plant<sup>−1</sup> <xref ref-type="bibr" rid="pone.0113556-McGregor1">[20]</xref> would produce 400 million flowers ha<sup>−1</sup>, which is two to ten times lower than that of echium.</p>
+<fig id="pone-0113556-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.g002</object-id><label>Figure 2</label><caption>
+<title>Flower density of echium throughout anthesis.</title>
+<p>Open flowers ha<sup>−1</sup> in early, mid, and late sown echium during 2013. Error bars are standard error.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.g002" position="float" xlink:type="simple"/></fig>
+<p>In 2013, nectar was extracted from flowers at three time points on two dates during peak flowering, and nectar sucrose production was calculated on a 2-h basis for each time point (figure 3). Echium flowers produced nectar from 900 to 1700 h, providing a food resource to foraging insects from dawn to dusk. Sucrose production for each time point was not significantly different between the two sampling dates, despite varying weather conditions <xref ref-type="bibr" rid="pone.0113556-Corbet3">[21]</xref>. The cumulative nectar sucrose produced by an individual echium flower throughout the day was equivalent to 635 µg of sucrose d<sup>−1</sup>, with peak production from 12:00–14:00 h. The sum densities of flowers throughout anthesis was used to estimate the potential energy each sowing-date of echium would provide to pollinators by multiplying the cumulative nectar sucrose produced by a single flower in a day by the sum of flowers produced throughout anthesis. This estimate gave a potential of 641, 2911, and 609 kg of sucrose ha<sup>−1</sup> season<sup>−1</sup> produced by the early, mid, and late planted echium, respectively (<xref ref-type="table" rid="pone-0113556-t003">table 3</xref>).</p>
+<p>A healthy honey bee colony requires approximately 100–200 kg yr<sup>−1</sup> of sugar <xref ref-type="bibr" rid="pone.0113556-Standifer1">[22]</xref>,<xref ref-type="bibr" rid="pone.0113556-Axel1">[23]</xref>,<xref ref-type="bibr" rid="pone.0113556-Huang1">[24]</xref>. The TCI Growing Guide <xref ref-type="bibr" rid="pone.0113556-TechnologyCropsInternational1">[16]</xref> for echium suggests placement of two honey bee hives per hectare to ensure good seed set. Our results indicated a hectare of early or late planted echium in 2013 had the potential to support 3–6 hives for an entire year while the mid-sown echium could have supported 15–29 hives on its nectar production. This level of colony support assumes (unrealistically) that the flowers produce nectar equally throughout anthesis and that honey bees forage the full nectar flow on every day throughout anthesis.</p>
+<p>Corbet and Delfosse <xref ref-type="bibr" rid="pone.0113556-Corbet1">[4]</xref> reported a nectar sugar yield of 300 kg ha<sup>−1</sup> yr<sup>−1</sup>, which is about half of what we predicted for our early sown crop in 2013. They also reported that nectar secretion in echium is affected by density of flowers, with higher densities of flowers having lower secretion rates. We extracted nectar before peak flower density was reached in the 2013 early sown crop, thus nectar production later in the season may have decreased as the flower density increased. These assumptions likely led to overestimations of sucrose production. More detailed investigations into nectar production throughout anthesis, as well as pollen production, and foraging by honey bees, are needed to give a more accurate recommendation for hive densities that can be supported near echium fields. Regardless of inaccuracies, however, the results indicate that echium not only can support high densities of honey bee colonies, but can supply most of their annual energy needs during a single one- to two-month flowering/foraging season.</p>
+<p>Comparison of sugar production values by echium to those of soybean reveals the potential value of having echium on the landscape. Erickson <xref ref-type="bibr" rid="pone.0113556-Erickson1">[25]</xref>,<xref ref-type="bibr" rid="pone.0113556-Erickson2">[26]</xref> examined nectar production of several soybean varieties, but emphasized ‘Hark’ (MG I), which was attractive to honey bees. ‘Hark’ produced 0.01±0.002 µL flower<sup>−1</sup> of nectar, and the sugar concentration of soybean nectar extracted directly from bee's stomachs was 36.2±1.94%, giving approximately 5 µg sugar per flower. Thus, at a flower density of 100–800 flowers per plant <xref ref-type="bibr" rid="pone.0113556-McGregor1">[20]</xref>,<xref ref-type="bibr" rid="pone.0113556-Jiang1">[27]</xref> and plant density of 0.5 million ha<sup>−1</sup> we calculated approximately 0.5 to 4 L ha<sup>−1</sup> of nectar and 0.25 to 2 kg ha<sup>−1</sup> of sugar would be available to nectar-gathering insects. Similarly, Severson and Erickson <xref ref-type="bibr" rid="pone.0113556-Severson1">[28]</xref> reported soybean nectar carbohydrate (sugar) levels of 16 to 134 µg flower<sup>−1</sup> for a range of cultivars. These values convert to 2 to 54 kg ha<sup>−1</sup> of sugar at the same flower density mentioned above. In brief, even the highest value of nectar sugar production for soybean is an order of magnitude lower than that for echium.</p>
+</sec><sec id="s3c">
+<title>3.3 Pollinator Visitations</title>
+<p>Insect visitors were present immediately upon initial observations of open flowers (<xref ref-type="fig" rid="pone-0113556-g001">figure 1</xref> d–f and <xref ref-type="fig" rid="pone-0113556-g003">figure 4</xref>). At times of peak flowering, 10 to 70 pollinators min<sup>−1</sup> were observed. The numbers of pollinators visiting echium were much higher than those reported for other oilseed crops, such as <italic>Thlaspi arvense</italic> L. (1.1 pollinators min<sup>−1</sup>) and <italic>Camelina sativa</italic> L. Crantz. (3.1 pollinators min<sup>1</sup>) <xref ref-type="bibr" rid="pone.0113556-Groeneveld1">[29]</xref>, but span the values for <italic>Brassica napus</italic> L. (20 pollinators min<sup>−1</sup>) <xref ref-type="bibr" rid="pone.0113556-DeSousaRosa1">[30]</xref> and <italic>B. rapa</italic> L. (10 to 50 pollinators min<sup>−1</sup>) <xref ref-type="bibr" rid="pone.0113556-Rader1">[31]</xref>.</p>
+<fig id="pone-0113556-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.g003</object-id><label>Figure 3</label><caption>
+<title>Sucrose produced by echium flowers throughout a day.</title>
+<p>Average sucrose (μg) in nectar secreted from 900-1100 h, 1200-1400 h, and 1500-1700 h during two days in the 2013 growing season. Sucrose quantity was based on volume and ○Brix of nectar extracted from individual flowers 2 hours after standing nectar was removed from the flower. Average ± S.E. sucrose amount is for 20 flowers at each time point.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.g003" position="float" xlink:type="simple"/></fig><fig id="pone-0113556-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.g004</object-id><label>Figure 4</label><caption>
+<title>Honey bee visiting an echium flower.</title>
+<p>Photo by James Eklund.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.g004" position="float" xlink:type="simple"/></fig>
+<p>Pollinator visitation times (pvt) were 271 and 356 pvt in 2011, 376 and 897 pvt in 2012, and 1787, 1774, and 2662 pvt in 2013 (<xref ref-type="table" rid="pone-0113556-t003">table 3</xref>) for early and late planting dates, respectively. In 2011, 2012, and 2013 the late planted echium had 132%, 239%, and 149% higher pvt than the early planting dates. These data are surprising considering the %t was reduced in the later plantings. The ratio of pollinator visitation time to flower coverage time (pvt %t<sup>−1</sup>) increased in the later sown echium relative to the early sown echium each year (<xref ref-type="table" rid="pone-0113556-t003">table 3</xref>). Results suggest that either insect populations early in the flowering season were too low to make full use of available echium flowers or, less likely, flowers of other plant species in the local area early in the season may have distracted pollinators from echium.</p>
+<p>Honey bees comprised the majority of pollinators often representing more than half of the observed insects (<xref ref-type="fig" rid="pone-0113556-g001">figure 1</xref> g–i). Exceptions were at the beginning of the anthesis periods for each year and sowing date treatment when the flower area was very low. Presumably, at those times honey bee scouts had not yet found the echium flowers. Other insects, especially hoverflies (Syrphidae), were primary floral visitors during the earliest and latest observations of the flowering seasons. The additional three honey bee hives in 2013 may have contributed partially to the increased pvt; however, the other insect groups also had increased numbers in 2013 relative to 2011 and 2012, indicating that the increased pvt was not due solely to the increased presence of honey bees.</p>
+<p>As a comparison to commodity crops, the pvt for corn and soybean in 2013 were 177 and 378, which were four and two times less than the lowest pvt for echium across all years, which shows that presence of echium provides valuable insect forage in a landscape dominated by corn and soybean. Honey bee visits to corn and soybean only accounted for 5 and 4%, respectively, of all insects observed, which was over 8 times lower than the average proportion of honey bee visits of 42% in echium (data not shown).</p>
+<p>A caveat regarding echium as a forage resource for honey bees is that its pollen contains pyrrolizidine alkaloids, which is potentially harmful to mammals <xref ref-type="bibr" rid="pone.0113556-Hooper1">[32]</xref>,<xref ref-type="bibr" rid="pone.0113556-Boppr1">[33]</xref>. Alkaloids from the pollen may infuse into nectar in beehives and, thereby, contaminate honey. Fortunately, human exposure to contaminated honey is unlikely <xref ref-type="bibr" rid="pone.0113556-Culvenor1">[34]</xref>,<xref ref-type="bibr" rid="pone.0113556-Australia1">[35]</xref>, and the plants are common sources of safe honey in southern Australia <xref ref-type="bibr" rid="pone.0113556-Mathieson1">[7]</xref> where echium is abundant. Consequently, use of echium as a melliferous plant on landscapes of the Upper Midwest and Northern Great Plains should not be problematic.</p>
+</sec><sec id="s3d">
+<title>3.4 Seed Yields</title>
+<p>The average seed yield across all planting dates and years was 330±49 kg ha<sup>−1</sup>. Early-sown echium had 285, 386, and 167% higher yield than late-sown echium in 2011, 2012, and 2013, respectively (<xref ref-type="table" rid="pone-0113556-t001">table 1</xref>). Across the three years, early planting dates averaged 510 kg ha<sup>−1</sup>, and late planting dates averaged 123 kg ha<sup>−1</sup>. The absolute highest yield was observed for the early-sowing date in 2011 and the lowest yield occurred during the drought year of 2012 for the late-sowing date.</p>
+<p>Seed yield modeled with stepwise selection methods indicated growing season days, vegetative rainfall, and anthesis rainfall were all significant terms in predicting yield (R<sup>2</sup> = 0.85, <xref ref-type="table" rid="pone-0113556-t004">table 4</xref>). Thermal time was not a significant factor and not included in the final model. Rainfall during anthesis was positively associated with yield and had the highest standardized estimate and, therefore, the most influence on yield. Growing season days were correlated negatively with yield, meaning a longer growing period resulted in lower yield. This correlation may be explained partially by increased seed loss due to shattering as the echium crop matured longer.</p>
+<table-wrap id="pone-0113556-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0113556.t004</object-id><label>Table 4</label><caption>
+<title>Stepwise multiple regression model of seed yield using growing season days (GD), anthesis rainfall (ARF) and vegetative rainfall (VRF). R<sup>2</sup> = 0.85.</title>
+</caption><alternatives><graphic id="pone-0113556-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0113556.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">DF</td>
+<td align="left" rowspan="1" colspan="1">Parameter Estimate</td>
+<td align="left" rowspan="1" colspan="1">Standard Error</td>
+<td align="left" rowspan="1" colspan="1">t Value</td>
+<td align="left" rowspan="1" colspan="1">Pr&gt; |t|</td>
+<td align="left" rowspan="1" colspan="1">SRC</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Intercept</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">1546.93</td>
+<td align="left" rowspan="1" colspan="1">308.64</td>
+<td align="left" rowspan="1" colspan="1">5.01</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">GD</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">−19.89</td>
+<td align="left" rowspan="1" colspan="1">3.66</td>
+<td align="left" rowspan="1" colspan="1">−5.43</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+<td align="left" rowspan="1" colspan="1">−0.76</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ARF</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">12.26</td>
+<td align="left" rowspan="1" colspan="1">1.43</td>
+<td align="left" rowspan="1" colspan="1">8.55</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+<td align="left" rowspan="1" colspan="1">1.11</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VRF</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">0.66</td>
+<td align="left" rowspan="1" colspan="1">0.2</td>
+<td align="left" rowspan="1" colspan="1">3.4</td>
+<td align="left" rowspan="1" colspan="1">0.003</td>
+<td align="left" rowspan="1" colspan="1">0.39</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>In Minnesota, average rainfall in June and July is 102 and 99 mm while that in August and September is only 85 and 74 mm (weatherdb.com). Since rainfall during anthesis was the most significant term in determining yield, the manipulation of sowing time can be used to time echium growth with rainfall during anthesis, thereby increasing yield. Consequently, sowing echium in May, and assuming 45 days to first flower, synchronizes anthesis with higher summer rainfall and would be expected to achieve highest combined flower production and seed yield.</p>
+<p>Echium yields for several experiments across North Dakota averaged 251 kg ha<sup>−1</sup> and were as high as 425 kg ha<sup>−1</sup><xref ref-type="bibr" rid="pone.0113556-Berti2">[10]</xref>. Target sowing dates for these experiments were late May, and growing season durations ranged from 77 to 99 d, whereas durations for the current experiments ranged from 89 to 112 d (<xref ref-type="table" rid="pone-0113556-t001">table 1</xref>). In contrast, weedy echium growing in an ungrazed pasture in southern NSW produced over 30000 seed m<sup>−2</sup> and had a 100-seed weight of 0.38 g <xref ref-type="bibr" rid="pone.0113556-Piggin2">[19]</xref>. These values convert to a seed yield of approximately 1100 kg ha<sup>−1</sup>. Plants in nearby grazed and mowed pastures produced about half of this amount (500 and 650 kg ha<sup>−1</sup>). These Australian seed production values included seeds retained on harvested plants as well as those in the litter and soil (2.5 cm depth). The average overall seed yield for the current experiments of 330 kg ha<sup>−1</sup> is much lower than that for southern Australia, but higher than that for North Dakota, and it was above the minimum production goal of 250 kg ha<sup>−1</sup> (see below).</p>
+<p>Corn and soybean are the two main crops in the Upper Midwest and Northern Great Plains. Median gross returns (N = 2553 and 2209 farms) for these crops in 2012 were $2776 and $1628 ha<sup>−1</sup>, whereas net returns were $894 and $526 ha<sup>−1</sup> according to the Farm Financial Database for Minnesota and the surrounding region (<ext-link ext-link-type="uri" xlink:href="http://www.finbin.umn.edu" xlink:type="simple">http://www.finbin.umn.edu</ext-link>). Net returns represented 32% of gross returns for both crops. To garner attention by growers, echium likely would have to match the net returns of corn or soybean. Assuming that the gross return to net return ratio is the same for echium as for corn and soybean, and that the contract price for echium seed is $5.30 kg<sup>−1</sup> <xref ref-type="bibr" rid="pone.0113556-NNFCC1">[9]</xref>, then echium seed yields would need to be 310 kg ha<sup>−1</sup> to match the net return of soybean and 527 kg ha<sup>−1</sup> to match corn in 2012. Corn and soybean prices in 2012 were uncommonly high, thus an echium seed yield of 250 to 300 kg ha<sup>−1</sup> probably represents a reasonable minimum production goal for profitability and grower acceptance.</p>
+</sec></sec><sec id="s4">
+<title>Conclusions</title>
+<p>When sown in April or May in the Upper Midwest and Northern Great Plains, oilseed echium produces high seed yields whose value can rival those of standard commodity crops. With echium seed valued at $5.30 kg<sup>−1</sup>, early sown echium crops in 2011, 2012, and 2013 would have generated gross returns of $3710, $1733, and $2279 ha<sup>−1</sup>, respectively. In 2010, 2011 and 2012 the average gross returns for corn were $2020, $2260 and $2776 ha<sup>−1</sup> (<ext-link ext-link-type="uri" xlink:href="http://finbin.umn.edu" xlink:type="simple">http://finbin.umn.edu</ext-link>), which overall makes echium a seemingly viable alternative crop from an economic perspective. In addition to its economic value, oilseed echium provides valuable ecosystem services (floral resources for pollinators) that cannot be matched by crops such as corn, soybean, and wheat. Early sown echium had high insect visitation and did not suffer the yield losses of late sown crops. From an agro-ecosystem perspective, early sown echium offers a high yielding crop to farmers and provides a valuable forage resource for pollinating insects.</p>
+</sec></body>
+<back>
+<ack>
+<p>We would like to thank Technology Crops International for providing seed and Braaten's Apiaries (Glenwood, MN) for providing honey bee hives.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0113556-Piggin1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Piggin</surname><given-names>CM</given-names></name> (<year>1982</year>) <article-title>The biology of Australian weeds. 8</article-title>. <source><italic>Echium plantagineum</italic> L</source>. <source>J Aust Inst Agric Sci</source> <volume>48</volume>:<fpage>3</fpage>–<lpage>16</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Gray1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gray</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Payne</surname><given-names>G</given-names></name>, <name name-style="western"><surname>McClements</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Decker</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>Lad</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Oxidative stability of Echium <italic>plantagineum</italic> oil bodies</article-title>. <source>Eur J Lipid Sci Technol</source> <volume>112</volume>:<fpage>741</fpage>–<lpage>749</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-GuilGuerrero1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guil-Guerrero</surname><given-names>JL</given-names></name> (<year>2007</year>) <article-title>Stearidonic acid (18:4n-3): Metabolism, nutritional importance, medical uses and natural sources</article-title>. <source>Eur J Lipid Sci Technol</source> <volume>109</volume>:<fpage>1226</fpage>–<lpage>1236</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Corbet1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Corbet</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Delfosse</surname><given-names>ES</given-names></name> (<year>1984</year>) <article-title>Honeybees and the nectar of <italic>Echium plantagineum</italic> L. in southeastern Australia</article-title>. <source>Austral J Ecol</source> <volume>9</volume>:<fpage>125</fpage>–<lpage>139</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Cullen1"><label>5</label>
+<mixed-citation publication-type="book" xlink:type="simple">Cullen JM, Delfosse EE (1984) <italic>Echium plantagineum</italic>: Catalyst for conflict and change in Australia. In: Delfosse ES, editor. Proc VI Int Symp Biol Contr Weeds. Agric Canada: pp.249–292.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Davis1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davis</surname><given-names>AR</given-names></name> (<year>1992</year>) <article-title>Evaluating honey bees as pollinators of virgin flowers of <italic>Echium plantagineum</italic> L. (Boraginaceae) by pollen tube fluorescence</article-title>. <source>J Apicult Res</source> <volume>31</volume>:<fpage>83</fpage>–<lpage>95</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Mathieson1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mathieson</surname><given-names>S</given-names></name> (<year>1988</year>) <article-title>Floral resources and limiting factors affecting commercial beekeeping in Australia</article-title>. <source>Australasian Beekeeper</source> <volume>90</volume>:<fpage>208</fpage>–<lpage>209</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Berti1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Berti M, Fischer S, Wilckens R, Hevis F, Araos R (2004) Echium (<italic>E. vulgare</italic> and <italic>E. plantagineum</italic>) wild population characteristics in Chile. AAIC Abstract. <ext-link ext-link-type="uri" xlink:href="http://www.aaic.org/04progrm.htm" xlink:type="simple">www.aaic.org/04progrm.htm</ext-link></mixed-citation>
+</ref>
+<ref id="pone.0113556-NNFCC1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">NNFCC (2009) Echium Crop Fact Sheet. National Non-Food Crop Centre, United Kingdom. Available: http://www.nnfcc.co.uk%2Fpublications%2Fnnfcc-crop-factsheet-echium. Accessed 13 May 2013.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Berti2"><label>10</label>
+<mixed-citation publication-type="book" xlink:type="simple">Berti M, Johnson BL, Dash S, Fischer S, Wilckens R, <etal>et al</etal>.<bold>.</bold> (2007). Echium: A source of stearidonic acid adapted to the northern Great Plains in the US. In:Janick J, Whipkey Aeditors. Issues in New Crops and New Uses. ASHAS Press: pp.120–125.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Brodschneider1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brodschneider</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Crailscheim</surname><given-names>K</given-names></name> (<year>2010</year>) <article-title>Nutrition and health in honey bees</article-title>. <source>Apidologie</source> <volume>41</volume>:<fpage>278</fpage>–<lpage>294</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Naug1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Naug</surname><given-names>D</given-names></name> (<year>2009</year>) <article-title>Nutritional stress due to habitat loss may explain recent honeybee colony collapses, Biol Conserv</article-title>. <volume>142</volume>:<fpage>2369</fpage>–<lpage>2372</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Rempel1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rempel</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Reid</surname><given-names>DEB</given-names></name>, <name name-style="western"><surname>Jackson</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>Batcheler-corrected point distance versus belt transect for sampling habitat and woody vegetation</article-title>. <source>Can J For Res</source> <volume>42</volume>:<fpage>2052</fpage>–<lpage>2063</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Kushneriuk1"><label>14</label>
+<mixed-citation publication-type="other" xlink:type="simple">Kushneriuk RS, Rempel RS (2009) Transect Point Density (TPD). Ontario Ministry of Natural Resources. Centre for Northern Forest Ecosystem Research, Thunder Bay, Ontario. <ext-link ext-link-type="uri" xlink:href="http://www.cnfer.on.ca/SEP/" xlink:type="simple">http://www.cnfer.on.ca/SEP/</ext-link></mixed-citation>
+</ref>
+<ref id="pone.0113556-Corbet2"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Corbet</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Bee</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Dasmahapatra</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Gale</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Gorringe</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Native or exotic? Double or single? Evaluating plants for pollinator-friendly gardens</article-title>. <source>Annals of Botany</source> <volume>87</volume>:<fpage>219</fpage>–<lpage>232</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-TechnologyCropsInternational1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Technology Crops International</surname></name> (<year>2010</year>) <article-title>The technology crops guide to growing echium. © Technology Crop International. Winston-Salem, NC, USA</article-title>. <source>techcrops.com</source></mixed-citation>
+</ref>
+<ref id="pone.0113556-Vivarelli1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vivarelli</surname><given-names>D</given-names></name> (<year>2007</year>) <article-title>Consequences of plant population size for pollinator visitation and plant reproductive success</article-title>. <source>Ph.D. Thesis. University of Bologna: Italy</source>. pp 106. <ext-link ext-link-type="uri" xlink:href="http://amsdottorato.cib.unibo.it/324/1/complete_for_web_def.pdf" xlink:type="simple">http://amsdottorato.cib.unibo.it/324/1/complete_for_web_def.pdf</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Burdon1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burdon</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Jarosz</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Brown</surname><given-names>AHD</given-names></name> (<year>1988</year>) <article-title>Temporal patterns of reproduction and outcrossing in weedy populations of <italic>Echium plantagineum</italic></article-title>. <source>Biol J Lin Soc</source> <volume>34</volume>:<fpage>81</fpage>–<lpage>92</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Piggin2"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Piggin</surname><given-names>CM</given-names></name> (<year>1978</year>) <article-title>Flowering and seed production of <italic>Echium plantagineum</italic> L</article-title>. <source>Weed Res</source> <volume>18</volume>:<fpage>83</fpage>–<lpage>97</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-McGregor1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">McGregor SE (1976) Insect pollination of cultivated crop plants. In: Agricultural Handbook No. 496. Version with some updated information for some crop species available at <ext-link ext-link-type="uri" xlink:href="http://gears" xlink:type="simple">http://gears</ext-link>. Tuscon.ars.ag.gov/book/. pp 275–280.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Corbet3"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Corbet</surname><given-names>SA</given-names></name> (<year>2003</year>) <article-title>Nectar sugar content: estimating standing crop and secretion rate in the field</article-title>. <source>Apidologie</source> <volume>34</volume>:<fpage>1</fpage>–<lpage>10</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Standifer1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Standifer</surname><given-names>LN</given-names></name>, <name name-style="western"><surname>Moeller</surname><given-names>FE</given-names></name>, <name name-style="western"><surname>Kauffeld</surname><given-names>NM</given-names></name>, <name name-style="western"><surname>Herbert Jr</surname><given-names>EW</given-names></name>, <name name-style="western"><surname>Shimanuki</surname><given-names>H</given-names></name> (<year>1977</year>) <article-title>Supplemental feeding of honey bee colonies</article-title>. <source>United States Department of Agriculture Agriculture Information Bulletin</source>. No <fpage>413</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Axel1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">Axel D, Cédric A, Jean-François O, Mickaël H, Bernard VE, <etal>et al</etal>.<bold>.</bold> (2011) Why enhancement of floral resources in agro-ecosystems benefit honeybees and beekeepers? Ecosystems Biodiversity, PhD Oscar Grillo (Ed.) ISBN: 978-953-307-417-7, InTech DOI: 10.5772/24523. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.intechopen.com/books/ecosystems-biodiversity/why-enhancement-of-floral-resources-in-agro-ecosystems-benefit-honeybees-and-beekeepers-" xlink:type="simple">http://www.intechopen.com/books/ecosystems-biodiversity/why-enhancement-of-floral-resources-in-agro-ecosystems-benefit-honeybees-and-beekeepers-</ext-link></mixed-citation>
+</ref>
+<ref id="pone.0113556-Huang1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Huang</surname><given-names>Z</given-names></name> (<year>2010</year>) <article-title>Honey bee nutrition</article-title>. <source>Am Bee J</source> <volume>150</volume>:<fpage>773</fpage>–<lpage>776</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Erickson1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erickson</surname><given-names>EH</given-names></name> (<year>1975a</year>) <article-title>Effect of honey bees on soybeans's yield</article-title>. <source>Crop Sci</source> <volume>15</volume>:<fpage>84</fpage>–<lpage>86</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Erickson2"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erickson</surname><given-names>EH</given-names></name> (<year>1975b</year>) <article-title>Variability in floral characteristics influences honey bee visitation to soybean blossoms</article-title>. <source>Crop Sci</source> <volume>15</volume>:<fpage>767</fpage>–<lpage>771</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Jiang1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jiang</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Egli</surname><given-names>DB</given-names></name> (<year>1993</year>) <article-title>Shade induced changes in flower and pod number and flower and fruit abscission in soybean</article-title>. <source>Agron J</source> <volume>85</volume>:<fpage>221</fpage>–<lpage>225</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Severson1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Severson</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Erickson</surname><given-names>EH</given-names></name> (<year>1984</year>) <article-title>Quantitative and qualitative variation in floral nectar of soybean cultivars in southeastern Missouri</article-title>. <source>Env Entomol</source> <volume>13</volume>:<fpage>1091</fpage>–<lpage>1096</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Groeneveld1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Groeneveld</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Klein</surname><given-names>AM</given-names></name> (<year>2013</year>) <article-title>Pollination of two oil-producing species: camelina (<italic>Camelina sativa</italic> L. Crantz.) and pennycress (<italic>Thlaspi arvense</italic> L.) double-cropping in Germany</article-title>. <source>GCB Bioenergy</source> <volume>6</volume>:<fpage>242</fpage>–<lpage>251</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-DeSousaRosa1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>De Sousa Rosa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Blochtein</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Lima</surname><given-names>DK</given-names></name> (<year>2011</year>) <article-title>Honey bee contribution to canola pollination in southern Brasil</article-title>. <source>Sci Agric</source> <volume>68</volume>:<fpage>255</fpage>–<lpage>259</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Rader1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rader</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Howlett</surname><given-names>BG</given-names></name>, <name name-style="western"><surname>Cunningham</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Westcott</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Edwards</surname><given-names>W</given-names></name> (<year>2012</year>) <article-title>Spatial and temporal variation in pollinator effectiveness: do unmanaged insects provide consistent pollination services to mass flowering crops</article-title>. <source>J Appl Ecol</source> <volume>49</volume>:<fpage>126</fpage>–<lpage>134</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Hooper1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hooper</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Scanlan</surname><given-names>WA</given-names></name> (<year>1977</year>) <article-title><italic>Crotalaria retusa</italic> poisoning of pigs and poultry</article-title>. <source>Australian Veterinary Journal</source> <volume>53</volume>:<fpage>109</fpage>–<lpage>114</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Boppr1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boppré</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Colgate</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Edgar</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Fischer</surname><given-names>OW</given-names></name> (<year>2008</year>) <article-title>Hepatotoxic pyrrolizidine alkaloids in pollen and drying-related implications for commercial processing of bee pollen</article-title>. <source>J Agric Food Chem</source> <volume>56</volume>:<fpage>5662</fpage>–<lpage>5672</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Culvenor1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Culvenor</surname><given-names>CCJ</given-names></name>, <name name-style="western"><surname>Edgar</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>LW</given-names></name> (<year>1981</year>) <article-title>Pyrrolizidine alkaloids in honey from <italic>Echium plantagineum</italic> L</article-title>. <source>J Agric Food Chem</source> <volume>29</volume>:<fpage>958</fpage>–<lpage>960</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0113556-Australia1"><label>35</label>
+<mixed-citation publication-type="other" xlink:type="simple">Australia New Zealand Food Authority. 2001. Pyrrolizidine alkaloids in food: A toxicological review and risk assessment. Tech. Rep. Ser. No. 2, ANZFA, PO Box 7168, Canberra BC, ACT 2610. <ext-link ext-link-type="uri" xlink:href="http://www.foodstandards.gov.au/publications/documents/TR2.pdf" xlink:type="simple">http://www.foodstandards.gov.au/publications/documents/TR2.pdf</ext-link></mixed-citation>
+</ref>
+</ref-list></back>
+</article>

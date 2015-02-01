@@ -10,6 +10,7 @@ import org.xmlcml.args.ArgIterator;
 import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.args.StringPair;
+import org.xmlcml.files.FileContainer;
 
 /** 
  * Processes commandline arguments.
@@ -140,5 +141,9 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public String getTidyName() {
 		return tidyName;
 	}
-	
+
+//	public FileContainer getFileContainer() {
+//		return fileC;
+//	}
+
 }

@@ -64,7 +64,7 @@ public class BMCTest {
 	// this one has outline glyphs... :-( // all papers in this journal do :-(
 	// 4 boxes and three lines
 	public void testExtractFlowChart() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_BMC_DIR, "1745-6215-15-486.29.0.svg"));
+		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
 		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		List<SVGPath> pathList = boxChart.getSVGPathList();
@@ -151,7 +151,7 @@ public class BMCTest {
 		System.out.println("=========================================================================================");
 		File outputFile = new File("target/bmc/15_1_511.html");
 		String[] args = {
-				"-i", new File(Fixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_15_1_511/fulltext.nodtd.xml").toString(),
+				"-i", new File(Fixtures.BMC_15_1_511_DIR, "fulltext.nodtd.xml").toString(),
 				"-p", "bmc",
 				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/bmc/toHtml.xsl",
 				"-o", outputFile.toString(),

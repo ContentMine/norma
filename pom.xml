@@ -164,7 +164,7 @@
 							</mapper>
 						</data>
 						<data>
-							<src>${basedir}/src/test/resources/org/xmlcml/norma/pubstyle/plosone/journal.pone.0111303.html</src>
+							<src>${basedir}/src/test/resources/org/xmlcml/norma/pubstyle/plosone/journal.pone.0111303/fulltext.html</src>
 							<type>file</type>
 							<mapper>
 								<type>perm</type>

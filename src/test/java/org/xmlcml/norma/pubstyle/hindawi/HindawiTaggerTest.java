@@ -114,7 +114,7 @@ public class HindawiTaggerTest {
 	 */
 	@Ignore // Jenkins fails with NoSuchMethod (no idea why)
 	public void test247835() throws Exception {
-		ensureGroupedFile(Fixtures.F247835_GROUPED_XHTML, Fixtures.F247835_XML);
+		ensureGroupedFile(Fixtures.F247835_GROUPED_XHTML, new File(Fixtures.F247835_DIR, "fulltext.xml"));
 		PubstyleTagger hindawiTagger = new HTMLHindawiTagger();
 		Element taggedElement = hindawiTagger.addTagsToSections(Fixtures.F247835_GROUPED_XHTML);
 		String message = XMLUtil.equalsCanonically(Fixtures.F247835_TAGGED_XHTML, taggedElement, true);
