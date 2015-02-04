@@ -34,16 +34,13 @@ public class AstrophysTest {
 		SVGPlot plot = new SVGPlot(rawChart);
 		plot.createPlot();
 		List<SVGText> textList = plot.getSVGTextList();
-//		for (SVGText text : textList) {
-//			System.out.print(text.getValue()+" ");
-//		}
 		List<SVGPolyline> lineList = plot.getSVGPolylineList();
 		int[] sizes = {294, 178, 178};
 		Assert.assertEquals(sizes.length,  lineList.size());
 		int i = 0;
 		for (SVGPolyline line : lineList) {
 			Assert.assertEquals(sizes[i++], line.getReal2Array().size());
-			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
+//			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
 		}
 	}
 }
