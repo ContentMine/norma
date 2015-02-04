@@ -8,7 +8,7 @@ public class HTMLPlosoneTagger extends PubstyleTagger {
 	private final static Logger LOG = Logger.getLogger(HTMLPlosoneTagger.class);
 
 	public final static String PLOSONE = "plosone";
-	private static final String PLOSONE_TAGGER_DIR_RESOURCE = TAGGER_DIR_RESOURCE+"/"+PLOSONE;
+	private static final String PLOSONE_TAGGER_DIR_RESOURCE = PUBSTYLE_RESOURCE+"/"+PLOSONE;
 	public static final String PLOSONE_TAGGER_RESOURCE = PLOSONE_TAGGER_DIR_RESOURCE+"/"+"htmlTagger.xml";
 
 	public HTMLPlosoneTagger() {

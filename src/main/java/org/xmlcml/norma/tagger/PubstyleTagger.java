@@ -32,8 +32,8 @@ public class PubstyleTagger {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	protected static final File NORMA_DIR = new File("src/main/resources/org/xmlcml/norma");
-	protected static final String NORMA_DIR_RESOURCE = "/org/xmlcml/norma";
+//	protected static final File NORMA_DIR = new File("src/main/resources/org/xmlcml/norma");
+	protected static final String NORMA_RESOURCE = "/org/xmlcml/norma";
 	
 	public static final String NAME = "name";
 
@@ -74,8 +74,8 @@ public class PubstyleTagger {
 		};
 	protected static final String PUBSTYLE = "pubstyle";
 	
-	protected static final File TAGGER_DIR = new File(NORMA_DIR, "pubstyle");
-	protected static final String TAGGER_DIR_RESOURCE = NORMA_DIR_RESOURCE + "/"+ "pubstyle";
+//	protected static final File PUBSTYLE_DIR = new File(NORMA_DIR, "pubstyle");
+	protected static final String PUBSTYLE_RESOURCE = NORMA_RESOURCE + "/"+ "pubstyle";
 
 	public static final String TAG = "tagger";
 	private static final String STYLESHEET = "stylesheet";

@@ -91,6 +91,7 @@ public class NormaArgProcessorTest {
 			"-x", "nlm2html",                  // stylesheet to use (code)
 			"-e", "xml"                        // type of file to transform
 		};
+		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<QuickscrapeDirectory> quickscrapeDirectoryList = argProcessor.getQuickscrapeDirectoryList();
 		Assert.assertNotNull(quickscrapeDirectoryList);
