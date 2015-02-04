@@ -1,16 +1,8 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.xml.transform.Transformer;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
-
-import nu.xom.Element;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -21,7 +13,6 @@ import org.xmlcml.norma.pubstyle.bmc.BmcReader;
 import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
 import org.xmlcml.norma.pubstyle.plosone.PlosoneReader;
 import org.xmlcml.norma.tagger.PubstyleTagger;
-import org.xmlcml.xml.XMLUtil;
 
 /** format and metadata of scholarly Journal.
  * 
