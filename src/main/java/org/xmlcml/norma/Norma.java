@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.xml.XMLUtil;
@@ -34,19 +35,16 @@ public class Norma {
 		argProcessor = new NormaArgProcessor(args);
 		createInputList();
 		findFileTypesAndExpandDirectories();
-		normalizeInputs();
-		writeOutput();
+		normalizeAndTransformInputs();
+		writeOutputHtml();
 	}
 
-	private void writeOutput() {
+	private void writeOutputHtml() {
 		String outputName = null;
 		try {
 			outputName = argProcessor.getOutput();
 			if (outputName != null) {
 				mkdirs(outputName);
-	//			for (HtmlElement htmlElement : outputList) {
-	//				XMLUtil.debug(htmlElement, new FileOutputStream(new File()));
-	//			}
 				if (htmlElementOutputList.size() == 1) {
 					XMLUtil.debug(htmlElementOutputList.get(0), new FileOutputStream(new File(outputName)), 1);
 					LOG.debug("Wrote XML File: "+outputName);
@@ -69,7 +67,6 @@ public class Norma {
 	private void findFileTypesAndExpandDirectories() {
 		inputWrapperList = new ArrayList<InputWrapper>();
 		for (String inputName : inputList) {
-			InputWrapper inputWrapper;
 			File file = new File(inputName);
 			if (file.exists()) {
 				List<String> extensions = argProcessor.getExtensions();
@@ -115,7 +112,7 @@ public class Norma {
 		}
 	}
 
-	private void normalizeInputs() {
+	private void normalizeAndTransformInputs() {
 		this.pubstyle = argProcessor.getPubstyle();
 		this.ensurePubstyle();
 		htmlElementOutputList = new ArrayList<HtmlElement>();
@@ -143,5 +140,9 @@ public class Norma {
 	private void createInputList() {
 		argProcessor.expandWildcardsExhaustively();
 		inputList = argProcessor.getInputList();
+	}
+
+	public DefaultArgProcessor getArgProcessor() {
+		return argProcessor;
 	}
 }

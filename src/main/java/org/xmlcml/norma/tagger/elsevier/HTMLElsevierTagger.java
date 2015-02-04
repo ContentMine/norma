@@ -1,7 +1,5 @@
 package org.xmlcml.norma.tagger.elsevier;
 
-import java.io.File;
-
 import org.apache.log4j.Logger;
 import org.xmlcml.norma.tagger.PubstyleTagger;
 

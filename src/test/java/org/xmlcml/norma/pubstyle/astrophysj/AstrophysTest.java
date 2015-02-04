@@ -43,7 +43,7 @@ public class AstrophysTest {
 		int i = 0;
 		for (SVGPolyline line : lineList) {
 			Assert.assertEquals(sizes[i++], line.getReal2Array().size());
-//			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
+			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
 		}
 	}
 }

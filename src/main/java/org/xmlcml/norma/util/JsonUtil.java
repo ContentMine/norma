@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
