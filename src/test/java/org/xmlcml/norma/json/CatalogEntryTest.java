@@ -10,7 +10,6 @@ import junit.framework.Assert;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.google.gson.Gson;

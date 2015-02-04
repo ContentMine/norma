@@ -7,7 +7,7 @@
 		default=""
 		min="1" 
 		max="Integer.MAX_VALUE"
-		methodName="processChars"
+		methodName="parseChars"
 		>
 		<help>
 			"
@@ -28,7 +28,7 @@
 		default=""
 		min="1" 
 		max="Integer.MAX_VALUE"
-		methodName="processDivs"
+		methodName="parseDivs"
 		>
 		<help>
 			
@@ -47,7 +47,7 @@
 		default=""
 		min="1" 
 		max="Integer.MAX_VALUE"
-		methodName="processNames"
+		methodName="parseNames"
 		>
 		<help>
 
@@ -66,7 +66,7 @@
 		default="Pubstyle.PLOSONE.toString()"
 		min="1" 
 		max="1"
-		methodName="processPubstyle"
+		methodName="parsePubstyle"
 		>
 		<help>
 			
@@ -88,7 +88,7 @@
 		default="Pubstyle.PLOSONE.toString()"
 		min="0" 
 		max="Integer.MAX_VALUE"
-		methodName="processStrip"
+		methodName="parseStrip"
 		>
 		<help>
 			
@@ -121,7 +121,7 @@
 		default="JSoup"
 		min="1"
 		max="1"
-		methodName="processTidy"
+		methodName="parseTidy"
 		>
 		<help>
 			
@@ -131,7 +131,8 @@
 			(NYI) This is very experimental at present.
 			
 		</help>
-	</arg>			
+	</arg>
+				
 	<arg name="xsl"
 		brief="-x"
 		long="--xsl"
@@ -139,8 +140,8 @@
 		class="java.lang.String"
 		default="nlm"
 		min="1" 
-		max="1"
-		methodName="processXsl"
+		max="5"
+		methodName="parseXsl"
 		>
 		<help>
 			

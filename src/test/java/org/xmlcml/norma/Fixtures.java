@@ -41,6 +41,7 @@ public class Fixtures {
 	public final static File F0113556_HTML = new File(Fixtures.F0113556_DIR, "fulltext.html");
 	public final static File F0113556_TAGGED_HTML = new File(Fixtures.F0113556_DIR, "fulltext.tagged.html");
 	public final static File F0115884_DIR = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
+	public final static File F0115884A_DIR = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884a");
 	public final static File F0115884_HTML = new File(Fixtures.F0115884_DIR, "fulltext.html");
 
 	public final static File TEST_STYLE_DIR = new File(Fixtures.TEST_NORMA_DIR, "style");
