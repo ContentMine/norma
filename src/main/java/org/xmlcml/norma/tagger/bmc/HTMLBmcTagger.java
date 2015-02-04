@@ -11,12 +11,11 @@ public class HTMLBmcTagger extends PubstyleTagger {
 
 	public final static String BMC = "bmc";
 	
-	private static final File TAGGER_BMC_DIR = new File(TAGGER_DIR, BMC);
-	private static final String BMC_TAGGER_DIR_RESOURCE = TAGGER_DIR_RESOURCE+"/"+BMC;
-	public static final String BMC_TAGGER_RESOURCE = BMC_TAGGER_DIR_RESOURCE+"/"+"htmlTagger.xml";
+	private static final String BMC_TAGGER_RESOURCE = PUBSTYLE_RESOURCE+"/"+BMC;
+	public static final String BMC_TAGGER_HTML = BMC_TAGGER_RESOURCE+"/"+"htmlTagger.xml";
 
 	public HTMLBmcTagger() {
-		super(BMC_TAGGER_RESOURCE);
+		super(BMC_TAGGER_HTML);
 	}
 
 	public static String getTaggerName() {

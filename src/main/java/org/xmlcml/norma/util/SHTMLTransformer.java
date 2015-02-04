@@ -91,6 +91,27 @@ public class SHTMLTransformer {
 	}
 
 	private static String transformToXML(StreamSource streamSource, Transformer transformer) throws TransformerException {
+// use this later		
+		/**
+SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(false);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+
+Builder builder = new Builder(reader);
+builder.build("contacts.xml");
+
+OR
+
+XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+xmlReader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+Builder builder = new Builder(xmlReader);
+nu.xom.Document doc = builder.build(fXmlFile);
+		 */
 		OutputStream baos = new ByteArrayOutputStream();
 		transformer.transform(streamSource,  new StreamResult(baos));
 		return baos.toString();
