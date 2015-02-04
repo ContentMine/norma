@@ -170,7 +170,7 @@ public class PloSONETest {
 	public void testPlosoneXMLNoPubstyle() throws Exception {
 		File outputFile = new File("target/plosone/0115884.pubstyle.html");
 		String[] args = {
-				"-i", new File(Fixtures.F0115884_DIR, "fulltext.nodtd.xml").toString(),
+				"-i", new File(Fixtures.F0115884A_DIR, "fulltext.nodtd.xml").toString(),
 				"-p", "nlm",
 				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
 				"-o", outputFile.toString(),

@@ -1,13 +1,5 @@
 package org.xmlcml.norma.tagger.hindawi;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.util.List;
-
-import nu.xom.Builder;
-import nu.xom.Document;
-import nu.xom.Element;
-
 import org.apache.log4j.Logger;
 import org.xmlcml.norma.tagger.PubstyleTagger;
 

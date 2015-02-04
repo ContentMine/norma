@@ -12,8 +12,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.Fixtures;
 import org.xmlcml.norma.tagger.AbstractTElement;
-import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.norma.tagger.MetadataElement;
+import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.norma.tagger.TagElement;
 import org.xmlcml.norma.tagger.hindawi.HTMLHindawiTagger;
 import org.xmlcml.norma.util.SHTMLTransformer;
@@ -49,7 +49,7 @@ public class HindawiTaggerTest {
 	@Ignore // Jenkins fail NoSuchMethod 
 	public void testGrouping() throws Exception {
 		File outfile = new File("target/hindawi/507405.grouped.xml");
-	    SHTMLTransformer.transform(Fixtures.F507405_XML, Fixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
+	    SHTMLTransformer.transform(Fixtures.F507405_XML, SHTMLTransformer.createTransformer(Fixtures.GROUP_MAJOR_SECTIONS_XSL), outfile);
 	    XMLUtil.equalsCanonically(Fixtures.F507405_GROUPED_XHTML, outfile, true);
 
 	}

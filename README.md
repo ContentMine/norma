@@ -32,15 +32,17 @@ The workflow is then roughly
 ## Taggers and Normalization
 
 Each document type has a tagger, based on its format, structure and vocabulary. For example an HTML file from
-PLoSONE is not well-formed and must be converted, largely automatic. Some documents are "flat" and must be grouped into sections (e.g. Elsevier and Hindawi HTML have no structuring ``div``s. Then the tagger will identify sections
-based on XPaths and add tags which should be normalized across a wide range of input sources.
+PLoSONE is not well-formed and must be converted, largely automatically. Some documents are "flat" and must be grouped into sections (e.g. Elsevier and Hindawi HTML have no structuring ``div``s. After normalization the tagger will identify sections
+based on XPaths in pubstyle; and add tags which should be standardized across a wide range of input sources.
 
 ### Format
 
-Taggers will be created in XML, and use XSLT2 where possible. The tagger carries out the following:
 
  * normalize to well-formed XHTML. This may be automatic but may also require some specific editing for some of the
- worst inputs (lackof quotes, etc.) We use Jsoup and HtmlUnit as appropriate and these do a good job most of the time.
+ worst inputs (lack of quotes, etc.) We use Jsoup and HtmlUnit as appropriate and these do a good job most of the time.
+ 
+Taggers will be created in XML, and use XSLT2 where possible. The tagger carries out the following:
+
  * structure the XHTML. Some publications are "flat" (e.g h2 and h3 are siblings) and need structuring (XSLT2)
  * tag the XHTML. We use XPath (with XSLT2) to add ``tag`` attributes to sections. These can be then recognized by AMI using the ``-x`` xpath-like option.
  
@@ -66,3 +68,26 @@ Some graphics is published as vectors within PDF and these can be converted into
 ### DOC/X
 
 Some years ago I wrote a semi-complete parser for DOCX but it's lost... Probably could resurrect if required. Most likely use would be theses or possibly arXiv.
+
+## Output
+
+The preferred output method is to offer a FileContainer (-f) option, to which output files can be added. A FC is essentially a directory 
+with conventional names for files and (possibly) subdirectories.
+
+Thus 
+```
+norma -f foo/bar/
+```
+will expect a variety of files in ```foo/bar``` created either by Quickscrape or repeated applications of other CM software (e.g. Norma
+or AMI). Norma will then output the normalised result as a file such as 
+```
+article.schol.html
+```
+
+Where Norma is not given a FileContainer then the output directory or file must be specified.
+
+## Inputs and outputs
+
+Norma will normally carry out a 1-to-1 conversion - given a file ```foo.xml``` it will create ```foo.schol.html```. However we also
+provide for multiple input files , either through a list or from wildcards
+

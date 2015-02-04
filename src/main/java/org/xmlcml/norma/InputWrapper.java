@@ -1,13 +1,12 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+
 import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import net.sf.saxon.style.XSLStylesheet;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
@@ -22,10 +21,13 @@ import org.xmlcml.xml.XMLUtil;
  * 
  * @author pm286
  *
+ * NOTE: All documents here are W3C DOMs. (So that the transformer can re-consume them)
+ * 
  */
 public class InputWrapper {
 
 	
+
 	static final Logger LOG = Logger.getLogger(InputWrapper.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -39,6 +41,8 @@ public class InputWrapper {
 	public HtmlElement htmlElement;
 	private InputFormat inputFormat;
 	PubstyleReader pubstyleReader;
+	private NormaArgProcessor argProcessor;
+	private List<org.w3c.dom.Document> stylesheetDocumentList;
 
 	public InputWrapper(File file, String inputName) {
 		this.file = file;
@@ -60,10 +64,11 @@ public class InputWrapper {
 	}
 
 	public HtmlElement transform(NormaArgProcessor argProcessor) throws Exception {
+		this.argProcessor = argProcessor;
 		this.pubstyle = argProcessor.getPubstyle();
 		findInputFormat();
 		try {
-			normalizeToXHTML(argProcessor); // creates htmlElement
+			normalizeToXHTML(); // creates htmlElement
 		} catch (Exception e) {
 			LOG.debug("Cannot convert file/s " + e);
 			return null;
@@ -85,7 +90,7 @@ public class InputWrapper {
 	 * 
 	 * @param pubstyle
 	 */
-	private void normalizeToXHTML(NormaArgProcessor argProcessor) throws Exception {
+	private void normalizeToXHTML() throws Exception {
 		ensurePubstyle();
 		try {
 			if (InputFormat.PDF.equals(getInputFormat())) {
@@ -94,7 +99,7 @@ public class InputWrapper {
 			} else if (InputFormat.SVG.equals(getInputFormat())) {
 				LOG.error("cannot turn SVG into XHTML yet");
 			} else if (InputFormat.XML.equals(getInputFormat())) {
-				transformXmlToHTML(argProcessor);
+				transformXmlToHTML();
 			} else if (InputFormat.HTML.equals(getInputFormat())) {
 				htmlElement = pubstyle.readRawHtmlAndCreateWellFormed(inputFormat, inputName);
 			} else if (InputFormat.XHTML.equals(getInputFormat())) {
@@ -107,19 +112,35 @@ public class InputWrapper {
 			throw new RuntimeException("cannot convert "+getInputFormat()+" "+inputName, e);
 		}
 	}
+	
 
-	private void transformXmlToHTML(NormaArgProcessor argProcessor) throws Exception {
-		String stylesheet = argProcessor.getStylesheet();
+	private void transformXmlToHTML() throws Exception {
+		ensureXslDocumentList();
 		String outputFile = argProcessor.getOutput();
 		if (inputName == null) {
 			throw new RuntimeException("No input file given");
-		} else if (stylesheet == null) {
-			throw new RuntimeException("No stylesheet file given");
+		} else if (stylesheetDocumentList.size() == 0) {
+			throw new RuntimeException("No stylesheet file/s given");
 		} else if (outputFile == null) {
 			throw new RuntimeException("No output file given");
 		} 
-		htmlElement = SHTMLTransformer.transform(new File(inputName), new File(stylesheet), new File(outputFile));
+		if (stylesheetDocumentList.size() >1) {
+			throw new RuntimeException("Only one stylesheet allowed at present");
+		}
+		htmlElement = SHTMLTransformer.transform(new File(inputName), SHTMLTransformer.createTransformer(stylesheetDocumentList.get(0)), new File(outputFile));
 	}
+
+	private void ensureXslDocumentList() {
+		if (stylesheetDocumentList == null) {
+			List<String> xslNameList = argProcessor.getStylesheetNameList();
+			stylesheetDocumentList = new ArrayList<org.w3c.dom.Document>();
+			for (String xslName : xslNameList) {
+				org.w3c.dom.Document stylesheetDocument = argProcessor.createW3CStylesheetDocument(xslName);
+				stylesheetDocumentList.add(stylesheetDocument);
+			}
+		}
+	}
+
 
 	private void ensurePubstyle() {
 		if (pubstyle == null) {
