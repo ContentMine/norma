@@ -71,10 +71,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	public NormaArgProcessor(String[] args) {
 		this();
-		expandDefaults();
 		parseArgs(args);
-		normalizeAndTransform();
-		
 	}
 
 	// ============= METHODS =============
@@ -143,7 +140,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	// ==========================
 	
-	private void normalizeAndTransform() {
+	void normalizeAndTransform() {
 		ensureXslDocumentList();
 		if (xslDocumentList.size() > 0) {
 			if (quickscrapeDirectoryList!= null) {

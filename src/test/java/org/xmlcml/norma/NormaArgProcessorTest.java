@@ -92,13 +92,13 @@ public class NormaArgProcessorTest {
 			"-e", "xml"                        // type of file to transform
 		};
 		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
-		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
+		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		argProcessor.normalizeAndTransform();
 		List<QuickscrapeDirectory> quickscrapeDirectoryList = argProcessor.getQuickscrapeDirectoryList();
 		Assert.assertNotNull(quickscrapeDirectoryList);
 		Assert.assertEquals("QuickscrapeDirectory/s",  1,  quickscrapeDirectoryList.size());
 		QuickscrapeDirectory quickscrapeDirectory = quickscrapeDirectoryList.get(0);
 		List<File> files = quickscrapeDirectory.listFiles(true);
-		LOG.debug(files);
 		Assert.assertEquals(5, files.size());
 		
 	}
@@ -112,9 +112,6 @@ public class NormaArgProcessorTest {
 		norma.run(args);
 		DefaultArgProcessor argProcessor = (DefaultArgProcessor) norma.getArgProcessor();
 		List<ArgumentOption> chosenOptions = argProcessor.getChosenArgumentList();
-		for (ArgumentOption option : chosenOptions) {
-			LOG.debug("OPT> "+option);
-		}
 	}
 	
 }
