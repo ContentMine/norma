@@ -46,5 +46,11 @@ public class JsonUtil {
 		JsonElement element = jsonObject.get(name);
 		return element == null ? null : element.getAsInt();
 	}
+	
+	public static JsonObject createInteger(String name, Integer integer) {
+		JsonObject jsonObject = new JsonObject();
+		jsonObject.addProperty(name, integer);
+		return jsonObject;
+	}
 
 }

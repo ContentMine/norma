@@ -82,6 +82,12 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	/** normalizes an XML file and writes out shtml.
+	 * 
+	 * Not fully tagged. this is to test rirectory mechanism.
+	 * 
+	 * @throws IOException
+	 */
 	public void testQuickscrapeDirectory() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
@@ -100,7 +106,6 @@ public class NormaArgProcessorTest {
 		QuickscrapeDirectory quickscrapeDirectory = quickscrapeDirectoryList.get(0);
 		List<File> files = quickscrapeDirectory.listFiles(true);
 		Assert.assertEquals(5, files.size());
-		
 	}
 	
 	@Test
