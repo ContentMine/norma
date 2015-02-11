@@ -5,9 +5,8 @@
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
 		class="org.xmlcml.args.StringPair"
 		default=""
-		min="1" 
-		max="Integer.MAX_VALUE"
-		methodName="parseChars"
+		countRange="{1,*}"
+		parseMethod="parseChars"
 		>
 		<help>
 			"
@@ -26,9 +25,8 @@
 		args="expression [expression] ..."
 		class="java.lang.String"
 		default=""
-		min="1" 
-		max="Integer.MAX_VALUE"
-		methodName="parseDivs"
+		countRange="{1,*}"
+		parseMethod="parseDivs"
 		>
 		<help>
 			
@@ -45,9 +43,8 @@
 		args=" tag1,tag2 [tag1,tag2 ....]"
 		class="org.xmlcml.args.StringPair"
 		default=""
-		min="1" 
-		max="Integer.MAX_VALUE"
-		methodName="parseNames"
+		countRange="{1,*}"
+		parseMethod="parseNames"
 		>
 		<help>
 
@@ -64,9 +61,8 @@
 		args="pub_code"
 		class="java.lang.String"
 		default="Pubstyle.PLOSONE"
-		min="1" 
-		max="1"
-		methodName="parsePubstyle"
+		countRange="{0,1}"
+		parseMethod="parsePubstyle"
 		>
 		<help>
 			
@@ -75,6 +71,7 @@
 			this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument 
 			is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and
 			soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
+			
 			To get a list of these use "+"--pubstyle"+" without arguments. Note: under early development and note also that 
 			publisher styles change and can be transferred between publishers and journals
 			
@@ -86,9 +83,8 @@
 		args="[options to strip]"
 		class="java.lang.String"
 		default=""
-		min="0" 
-		max="Integer.MAX_VALUE"
-		methodName="parseStrip"
+		countRange="{0,*}"
+		parseMethod="parseStrip"
 		>
 		<help>
 			
@@ -119,9 +115,8 @@
 		args="[HTML tidy option]"
 		class="java.lang.String"
 		default="JSoup"
-		min="1"
-		max="1"
-		methodName="parseTidy"
+		countRange="{1,1}"
+		parseMethod="parseTidy"
 		>
 		<help>
 			
@@ -139,9 +134,8 @@
 		args="stylesheet"
 		class="java.lang.String"
 		default="nlm2html"
-		min="1" 
-		max="5"
-		methodName="parseXsl"
+		countRange="{1,5}"
+		parseMethod="parseXsl"
 		>
 		<help>
 			
