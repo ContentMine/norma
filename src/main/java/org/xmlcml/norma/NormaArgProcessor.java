@@ -77,21 +77,21 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	// ============= METHODS =============
 	
  	public void parseChars(ArgumentOption charOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(charOption);
 		charPairList = charOption.processArgs(inputs).getStringPairValues();
 	}
 
 	public void parseDivs(ArgumentOption divOption, ArgIterator argIterator) {
-		divList = argIterator.createTokenListUpToNextMinus();
+		divList = argIterator.createTokenListUpToNextMinus(divOption);
 	}
 
 	public void parseNames(ArgumentOption nameOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(nameOption);
 		namePairList = nameOption.processArgs(inputs).getStringPairValues();
 	}
 	
 	public void parsePubstyle(ArgumentOption pubstyleOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(pubstyleOption);
 		if (inputs.size() == 0) {
 			stripList = new ArrayList<String>();
 			Pubstyle.help();
@@ -102,7 +102,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseStrip(ArgumentOption stripOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(stripOption);
 		if (inputs.size() == 0) {
 			stripList = new ArrayList<String>();
 		} else {
@@ -111,12 +111,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseTidy(ArgumentOption tidyOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(tidyOption);
 		tidyName = tidyOption.processArgs(inputs).getStringValue();
 	}
 
 	public void parseXsl(ArgumentOption xslOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus();
+		List<String> inputs = argIterator.createTokenListUpToNextMinus(xslOption);
 		xslNameList = xslOption.processArgs(inputs).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
 		for (String xslName : xslNameList) {
