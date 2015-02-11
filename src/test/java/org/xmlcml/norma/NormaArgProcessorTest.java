@@ -93,7 +93,7 @@ public class NormaArgProcessorTest {
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
 		String[] args = {
-			"-f", container0115884.toString(), // output from quickscrape
+			"-q", container0115884.toString(), // output from quickscrape
 			"-x", "nlm2html",                  // stylesheet to use (code)
 			"-e", "xml"                        // type of file to transform
 		};
