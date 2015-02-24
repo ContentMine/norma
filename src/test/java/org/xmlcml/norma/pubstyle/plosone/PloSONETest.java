@@ -175,14 +175,15 @@ public class PloSONETest {
 		File outputFile = new File("target/plosone/0115884.pubstyle.html");
 		String[] args = {
 				"-i", new File(Fixtures.F0115884A_DIR, "fulltext.nodtd.xml").toString(),
-				"-p", "nlm",
-				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
+				"--pubstyle", "nlm",
+				"--xsl", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
 				"-o", outputFile.toString(),
 		};
 		Norma norma = new Norma();
 		norma.run(args);
 		
 		Assert.assertTrue(outputFile.exists());
+		LOG.debug("size: "+FileUtils.sizeOf(outputFile));
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
 //		Assert.assertEquals("div elements "+divElements.size(), 28, divElements.size()); 

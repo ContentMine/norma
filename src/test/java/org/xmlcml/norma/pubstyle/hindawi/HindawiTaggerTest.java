@@ -16,7 +16,7 @@ import org.xmlcml.norma.tagger.MetadataElement;
 import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.norma.tagger.TagElement;
 import org.xmlcml.norma.tagger.hindawi.HTMLHindawiTagger;
-import org.xmlcml.norma.util.SHTMLTransformer;
+import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
 public class HindawiTaggerTest {
@@ -49,7 +49,8 @@ public class HindawiTaggerTest {
 	@Ignore // Jenkins fail NoSuchMethod 
 	public void testGrouping() throws Exception {
 		File outfile = new File("target/hindawi/507405.grouped.xml");
-	    SHTMLTransformer.transform(Fixtures.F507405_XML, SHTMLTransformer.createTransformer(Fixtures.GROUP_MAJOR_SECTIONS_XSL), outfile);
+		TransformerWrapper transformerWrapper = new TransformerWrapper();
+	    transformerWrapper.transform(Fixtures.F507405_XML, Fixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
 	    XMLUtil.equalsCanonically(Fixtures.F507405_GROUPED_XHTML, outfile, true);
 
 	}
@@ -142,7 +143,8 @@ public class HindawiTaggerTest {
 	private void ensureGroupedFile(File groupedFile, File rawFile) throws Exception {
 		if (XMLUtil.isXMLFile(groupedFile) != null || true) {
 			LOG.debug("FORCE TRANSFORM");
-		    SHTMLTransformer.transform(rawFile, Fixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
+			TransformerWrapper transformerWrapper = new TransformerWrapper();
+		    transformerWrapper.transform(rawFile, Fixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
 		}
 	}
 }

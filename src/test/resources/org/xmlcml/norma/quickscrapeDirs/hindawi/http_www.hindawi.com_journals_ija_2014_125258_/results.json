@@ -1,0 +1,94 @@
+{
+  "publisher": {
+    "value": [
+      "Hindawi Publishing Corporation"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Agronomy"
+    ]
+  },
+  "title": {
+    "value": [
+      "Effect of Seed Distribution and Population on Maize (<i>Zea mays</i> L.) Grain Yield"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Chim, Bee Khim; Omara, Peter; Macnack, Natasha; Mullock, Jeremiah; Dhital, Sulochana; Raun, William"
+    ]
+  },
+  "date": {
+    "value": [
+      "2014/12/09"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1155/2014/125258"
+    ]
+  },
+  "volume": {
+    "value": [
+      "2014"
+    ]
+  },
+  "issue": {
+    "value": [
+      ""
+    ]
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  },
+  "abstract": {
+    "value": [
+      "Maize planting is normally accomplished by hand in the developing world where two or more seeds are placed per hill with a heterogeneous plant spacing and density. To understand the interaction between seed distribution and distance between hills, experiments were established in 2012 and 2013 at Lake Carl Blackwell (LCB) and Efaw Agronomy Research Stations, near Stillwater, OK. A randomized complete block design was used with three replications and 9 treatments and a factorial treatment structure of 1, 2, and 3 seeds per hill using interrow spacing of 0.16, 0.32, and 0.48&#x2009;m. Data for normalized difference vegetation index (NDVI), intercepted photosynthetically active radiation (IPAR), grain yield, and grain N uptake were collected. Results showed that, on average, NDVI and IPAR increased with number of seeds per hill and decreased with increasing plant spacing. In three of four site-years, planting 1 or 2 seeds per hill, 0.16&#x2009;m apart, increased grain yield and N uptake. Over sites, planting 1 seed, every 0.16&#x2009;m, increased yields by an average of 1.15&#x2009;Mg&#x2009;ha&#x2212;1 (range: 0.33 to 2.46&#x2009;Mg&#x2009;ha&#x2212;1) when compared to the farmer practice of placing 2 to 3 seeds per hill, every 0.48&#x2009;m."
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.hindawi.com/journals/ija/2014/125258/"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://downloads.hindawi.com/journals/ija/2014/125258.pdf"
+    ]
+  },
+  "fulltext_ePUB": {
+    "value": [
+      "http://downloads.hindawi.com/journals/ija/2014/125258.epub"
+    ]
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": [
+      "fig1/",
+      "fig2/",
+      "fig1/",
+      "fig2/",
+      "fig3/",
+      "fig3/"
+    ]
+  },
+  "figure_caption": {
+    "value": []
+  },
+  "license": {
+    "value": [
+      "Copyright © 2014 Bee Khim Chim  et al. This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited."
+    ]
+  },
+  "copyright": {
+    "value": [
+      "Copyright © 2014 Bee Khim Chim  et al. This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited."
+    ]
+  }
+}

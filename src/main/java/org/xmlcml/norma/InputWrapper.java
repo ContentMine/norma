@@ -1,12 +1,13 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-
 import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import nu.xom.Document;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
@@ -14,7 +15,7 @@ import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
-import org.xmlcml.norma.util.SHTMLTransformer;
+import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
 /** wraps the input, optionally determing its type.
@@ -127,7 +128,8 @@ public class InputWrapper {
 		if (stylesheetDocumentList.size() >1) {
 			throw new RuntimeException("Only one stylesheet allowed at present");
 		}
-		htmlElement = SHTMLTransformer.transform(new File(inputName), SHTMLTransformer.createTransformer(stylesheetDocumentList.get(0)), new File(outputFile));
+		TransformerWrapper transformerWrapper = new TransformerWrapper(argProcessor.isStandalone());
+		htmlElement = transformerWrapper.transform(new File(inputName), stylesheetDocumentList.get(0), outputFile);
 	}
 
 	private void ensureXslDocumentList() {

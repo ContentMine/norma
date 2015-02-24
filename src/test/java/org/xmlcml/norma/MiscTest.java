@@ -1,7 +1,6 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-
 import java.io.FileOutputStream;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -21,7 +20,8 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.norma.util.SHTMLTransformer;
+import org.vafer.jdeb.shaded.compress.io.FileUtils;
+import org.xmlcml.norma.util.TransformerWrapper;
 
 public class MiscTest {
 
@@ -219,9 +219,11 @@ I'd consider this answer an argument against the Java way of doing things.
 	@Test
 	public void testRecursiveGrouping() throws Exception {
 		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/flatFile.xml");
+		LOG.debug("flatfile "+FileUtils.sizeOf(flatFile));
 		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/recursivegrouper.xsl");
 		File groupedFile = new File("target/testgroup/recursiveGroup.xml");
-	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+		TransformerWrapper transformerWrapper = new TransformerWrapper();
+	    transformerWrapper.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
@@ -230,7 +232,8 @@ I'd consider this answer an argument against the Java way of doing things.
 		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/stackexample.xml");
 		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/recursivegrouperstack.xsl");
 		File groupedFile = new File("target/testgroup/stackexample.xml");
-	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+		TransformerWrapper transformerWrapper = new TransformerWrapper();
+	    transformerWrapper.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
@@ -238,7 +241,8 @@ I'd consider this answer an argument against the Java way of doing things.
 		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/flatFile.xml");
 		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/h1h2grouper.xsl");
 		File groupedFile = new File("target/testgroup/h1h2grouper.xml");
-	    SHTMLTransformer.transform(flatFile, styleFile, groupedFile);
+		TransformerWrapper transformerWrapper = new TransformerWrapper();
+	    transformerWrapper.transform(flatFile, styleFile, groupedFile);
 	}
 	
 	@Test
