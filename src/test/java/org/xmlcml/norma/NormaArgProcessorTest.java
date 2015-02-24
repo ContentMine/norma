@@ -2,11 +2,11 @@ package org.xmlcml.norma;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.Assert;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
@@ -14,7 +14,8 @@ import org.junit.Test;
 import org.vafer.jdeb.shaded.compress.io.FileUtils;
 import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.files.QuickscrapeDirectory;
+import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.files.QuickscrapeNormaList;
 
 public class NormaArgProcessorTest {
 
@@ -27,6 +28,8 @@ public class NormaArgProcessorTest {
 	
 	@Test
 	public void testArgs() {
+		FileUtils.deleteQuietly(new File("foo"));
+		FileUtils.deleteQuietly(new File("bar"));
 		String[] args = {
 			"-i", "foo", "bar", 
 			"-o", "plugh",
@@ -84,28 +87,65 @@ public class NormaArgProcessorTest {
 	@Test
 	/** normalizes an XML file and writes out shtml.
 	 * 
-	 * Not fully tagged. this is to test rirectory mechanism.
+	 * Not fully tagged. this is to test directory mechanism.
 	 * 
 	 * @throws IOException
 	 */
-	public void testQuickscrapeDirectory() throws IOException {
+	public void testQuickscrapeNorma() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
 		String[] args = {
 			"-q", container0115884.toString(), // output from quickscrape
 			"-x", "nlm2html",                  // stylesheet to use (code)
-			"-e", "xml"                        // type of file to transform
+			"-e", "xml"                       // type of file to transform
 		};
-		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
 		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
 		argProcessor.normalizeAndTransform();
-		List<QuickscrapeDirectory> quickscrapeDirectoryList = argProcessor.getQuickscrapeDirectoryList();
-		Assert.assertNotNull(quickscrapeDirectoryList);
-		Assert.assertEquals("QuickscrapeDirectory/s",  1,  quickscrapeDirectoryList.size());
-		QuickscrapeDirectory quickscrapeDirectory = quickscrapeDirectoryList.get(0);
-		List<File> files = quickscrapeDirectory.listFiles(true);
+		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertNotNull(quickscrapeNormaList);
+		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
+		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
+		LOG.debug("QN "+quickscrapeNorma.toString());
+		List<File> files = quickscrapeNorma.listFiles(true);
 		Assert.assertEquals(5, files.size());
+	}
+	
+	/** normalizes an XML file and writes out shtml.
+	 * 
+	 * Not fully tagged. this is to test directory mechanism.
+	 * 
+	 * @throws IOException
+	 */
+	@Test
+	public void testQuickscrapeNormaWithDTD() throws IOException {
+		File container0115884 = new File("target/plosone/0115884withdtd/");
+		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
+		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		String[] args = {
+			"-q", container0115884.toString(), // output from quickscrape
+			"-x", "nlm2html",                  // stylesheet to use (code)
+			"--standalone", "false",           // force use of DTD. May fail
+			"-e", "xml"                       // type of file to transform
+		};
+		int expectedFileCount = 5; // because of the output file
+		
+		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
+		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		try {
+			argProcessor.normalizeAndTransform();
+		} catch (Exception e) {
+			// not connected
+			String errorMessage = ExceptionUtils.getRootCauseMessage(e);
+			Assert.assertEquals("UnknownHostException: dtd.nlm.nih.gov", errorMessage.trim());
+			expectedFileCount = 4; // no output file
+		}
+		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertNotNull(quickscrapeNormaList);
+		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
+		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
+		List<File> files = quickscrapeNorma.listFiles(true);
+		Assert.assertEquals(expectedFileCount, files.size());
 	}
 	
 	@Test

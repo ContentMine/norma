@@ -3,6 +3,7 @@ package org.xmlcml.norma;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,14 +19,15 @@ import javax.xml.transform.TransformerException;
 import nu.xom.Builder;
 import nu.xom.Element;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.args.ArgIterator;
 import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.args.StringPair;
-import org.xmlcml.files.QuickscrapeDirectory;
-import org.xmlcml.norma.util.SHTMLTransformer;
+import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
 /** 
@@ -62,7 +64,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private List<String> xslNameList;
 	private Map<String, String> stylesheetByNameMap;
 	private List<org.w3c.dom.Document> xslDocumentList;
-	private Map<org.w3c.dom.Document, Transformer> transformerByStylesheetMap;
+	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
+	private boolean standalone;
 
 	public NormaArgProcessor() {
 		super();
@@ -76,48 +79,57 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	// ============= METHODS =============
 	
- 	public void parseChars(ArgumentOption charOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(charOption);
-		charPairList = charOption.processArgs(inputs).getStringPairValues();
+ 	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
 
-	public void parseDivs(ArgumentOption divOption, ArgIterator argIterator) {
-		divList = argIterator.createTokenListUpToNextMinus(divOption);
+	public void parseDivs(ArgumentOption option, ArgIterator argIterator) {
+		divList = argIterator.createTokenListUpToNextMinus(option);
 	}
 
-	public void parseNames(ArgumentOption nameOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(nameOption);
-		namePairList = nameOption.processArgs(inputs).getStringPairValues();
+	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
 	
-	public void parsePubstyle(ArgumentOption pubstyleOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(pubstyleOption);
-		if (inputs.size() == 0) {
+	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 			Pubstyle.help();
 		} else {
-			String name = pubstyleOption.processArgs(inputs).getStringValue();
+			String name = option.processArgs(tokens).getStringValue();
 			pubstyle = Pubstyle.getPubstyle(name);
 		}
 	}
 
-	public void parseStrip(ArgumentOption stripOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(stripOption);
-		if (inputs.size() == 0) {
-			stripList = new ArrayList<String>();
-		} else {
-			stripList = inputs;
+	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		try {
+			standalone = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
+		} catch (Exception e) {
+			throw new RuntimeException("bad boolean: "+tokens.get(0));
 		}
 	}
 
-	public void parseTidy(ArgumentOption tidyOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(tidyOption);
-		tidyName = tidyOption.processArgs(inputs).getStringValue();
+	public void parseStrip(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		if (tokens.size() == 0) {
+			stripList = new ArrayList<String>();
+		} else {
+			stripList = tokens;
+		}
 	}
 
-	public void parseXsl(ArgumentOption xslOption, ArgIterator argIterator) {
-		List<String> inputs = argIterator.createTokenListUpToNextMinus(xslOption);
-		xslNameList = xslOption.processArgs(inputs).getStringValues();
+	public void parseTidy(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		tidyName = option.processArgs(tokens).getStringValue();
+	}
+
+	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		xslNameList = option.processArgs(tokens).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
 		for (String xslName : xslNameList) {
 			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(xslName);
@@ -142,62 +154,121 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	void normalizeAndTransform() {
 		ensureXslDocumentList();
+		LOG.debug("NORMALIZE and TRANSFORM - needs moving");
 		if (xslDocumentList.size() > 0) {
-			if (quickscrapeDirectoryList!= null) {
-				for (QuickscrapeDirectory quickscrapeDirectory : quickscrapeDirectoryList) {
-					transform(quickscrapeDirectory, xslDocumentList.get(0));
-				}
+			if (quickscrapeNormaList!= null) {
+				transformQuickscrapeNormaList();
 			} else if (inputList != null) {
-				for (String filename : inputList) {
-					transform(new File(filename), xslDocumentList.get(0));
-				}
+				createQuickscrapeNormaListFromInputList();
+				transformQuickscrapeNormaList();
+//				transformInputList();
 			}
 		}
 	}
 
-	private void transform(File file, org.w3c.dom.Document xslDocument) {
-		Transformer transformer = cacheTransformer(xslDocument);
+	private void createQuickscrapeNormaListFromInputList() {
+		if (inputList != null) {
+			getOrCreateOutputDirectory();
+			// assume that files are not within a quickscrapeNorma
+			for (String filename : inputList) {
+				File file = new File(filename);
+				if (file.isDirectory()) {
+					LOG.error("should not have any directories in inputList: "+file);
+					continue;
+				}
+				String name = FilenameUtils.getName(filename);
+				if (QuickscrapeNorma.isReservedFilename(name)) {
+					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
+					continue;
+				}
+				String qnFilename = QuickscrapeNorma.getQNFilename(name);
+			}
+		}
+	}
+
+	private void getOrCreateOutputDirectory() {
+		if (output == null) {
+			throw new RuntimeException("[output] is required to create quickscrape diectories");
+		}
+		File outputDir = new File(output);
+		if (outputDir.exists()) {
+			if (!outputDir.isDirectory()) {
+				throw new RuntimeException("quickscrapeNormaRoot "+outputDir+" must be a directory");
+			}
+		} else {
+			outputDir.mkdirs();
+		}
+	}
+
+	private void transformInputList() {
+		for (String filename : inputList) {
+			try {
+				String xmlString = transform(new File(filename), xslDocumentList.get(0));
+				LOG.debug("XML "+xmlString );
+			} catch (IOException e) {
+				LOG.error("Cannot transform "+filename+"; "+e);
+			}
+		}
+	}
+
+	private void transformQuickscrapeNormaList() {
+		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
+			try {
+				transform(quickscrapeNorma, xslDocumentList.get(0));
+			} catch (IOException e) {
+				LOG.error("Cannot transform "+quickscrapeNorma+"; "+e);
+			}
+		}
+	}
+
+	private String transform(File file, org.w3c.dom.Document xslDocument) throws IOException {
+		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
+		String xmlString = null;
 		try {
-			String xmlString = SHTMLTransformer.transformToXML(file, transformer);
-			LOG.error("output not bound in");
+//			TransformerWrapper transformerWrapper = new TransformerWrapper();
+			xmlString = transformerWrapper.transformToXML(file);
+			LOG.error("output not bound in transform // FIXME");
 		} catch (TransformerException e) {
 			throw new RuntimeException("cannot transform: ", e);
 		}
+		return xmlString;
 	}
 
-	private void transform(QuickscrapeDirectory quickscrapeDirectory, org.w3c.dom.Document xslDocument) {
-		if (extensionList == null || extensionList.size() == 0) {
-			LOG.debug("No extensions, so no input files");
-		} else if (XML.equals(extensionList.get(0))) {
-		    if (quickscrapeDirectory.hasFulltextXML()) {
-				Transformer transformer = cacheTransformer(xslDocument);
-				File fulltextXML = quickscrapeDirectory.getFulltextXML();
+	private void transform(QuickscrapeNorma quickscrapeNorma, org.w3c.dom.Document xslDocument) throws IOException {
+	    if (quickscrapeNorma.hasFulltextXML()) {
+			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
+			String extension = (extensionList == null || extensionList.size() != 1) ? null : extensionList.get(0);
+			String filetype = QuickscrapeNorma.RESERVED_FILES_BY_EXTENSION.get(extension);
+			File fulltext = (filetype == null) ? null :quickscrapeNorma.getFulltextXML();
+			if (fulltext == null) {
+				LOG.error("nothing to transform for fulltext.xml "+extensionList);
+			} else {
 				try {
-					String xmlString = SHTMLTransformer.transformToXML(fulltextXML, transformer);
-					quickscrapeDirectory.writeFile(xmlString, QuickscrapeDirectory.SCHOLARLY_HTML);
+					String xmlString = transformerWrapper.transformToXML(fulltext);
+					quickscrapeNorma.writeFile(xmlString, QuickscrapeNorma.SCHOLARLY_HTML);
 				} catch (TransformerException e) {
 					throw new RuntimeException("cannot transform: ", e);
 				}
-		    }
-		} else {
-			LOG.debug("only XML transformations supported");
-		}
+			}
+	    }
 	}
 
-	private Transformer cacheTransformer(org.w3c.dom.Document xslDocument) {
-		if (transformerByStylesheetMap == null) {
-			transformerByStylesheetMap = new HashMap<org.w3c.dom.Document, Transformer>();
+	private TransformerWrapper getOrCreateTransformerWrapperForStylesheet(org.w3c.dom.Document xslDocument) {
+		if (transformerWrapperByStylesheetMap == null) {
+			transformerWrapperByStylesheetMap = new HashMap<org.w3c.dom.Document, TransformerWrapper>();
 		}
-		Transformer transformer = transformerByStylesheetMap.get(xslDocument);
-		if (transformer == null) {
+		TransformerWrapper transformerWrapper = transformerWrapperByStylesheetMap.get(xslDocument);
+//		Transformer javaxTransformer = transformerWrapperByStylesheetMap.get(xslDocument);
+		if (transformerWrapper == null) {
 			try {
-				transformer = SHTMLTransformer.createTransformer(xslDocument);
-				transformerByStylesheetMap.put(xslDocument,  transformer);
+				transformerWrapper = new TransformerWrapper(standalone);
+				Transformer javaxTransformer = transformerWrapper.createTransformer(xslDocument);
+				transformerWrapperByStylesheetMap.put(xslDocument,  transformerWrapper);
 			} catch (Exception e) {
 				throw new RuntimeException("Cannot create transformer from xslDocument", e);
 			}
 		}
-		return transformer;
+		return transformerWrapper;
 	}
 
 	private void ensureXslDocumentList() {
@@ -297,6 +368,10 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	public String getTidyName() {
 		return tidyName;
+	}
+
+	public boolean isStandalone() {
+		return standalone;
 	}
 
 

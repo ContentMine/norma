@@ -33,8 +33,8 @@ public class Norma {
 
 	public void run(String[] args) {
 		argProcessor = new NormaArgProcessor(args);
-		createInputList();
-		findFileTypesAndExpandDirectories();
+//		createInputList();
+		createInputWrappers();
 		normalizeAndTransformInputs();
 		writeOutputHtml();
 	}
@@ -64,14 +64,16 @@ public class Norma {
 		}
 	}
 
-	private void findFileTypesAndExpandDirectories() {
+	private void createInputWrappers() {
 		inputWrapperList = new ArrayList<InputWrapper>();
+		inputList = argProcessor.getInputList();
 		for (String inputName : inputList) {
 			File file = new File(inputName);
 			if (file.exists()) {
-				List<String> extensions = argProcessor.getExtensions();
-				boolean recursive = argProcessor.isRecursive();
-				addInputWrappersForFiles(inputName, file, extensions, recursive);
+//				List<String> extensions = argProcessor.getExtensions();
+//				boolean recursive = argProcessor.isRecursive();
+//				addInputWrappersForFiles(inputName, file, extensions, recursive);
+				addInputWrappersForFile(inputName);
 			} else{
 				addInputWrapperForURL(inputName);
 			}
@@ -100,8 +102,7 @@ public class Norma {
 		}
 	}
 
-	private void addInputWrappersForFiles(String inputName, File file,
-			List<String> extensions, boolean recursive) {
+	private void addInputWrappersForFiles(String inputName, File file, List<String> extensions, boolean recursive) {
 		InputWrapper inputWrapper;
 		if (!file.isDirectory()) {
 			inputWrapper = new InputWrapper(file, inputName);
@@ -112,9 +113,20 @@ public class Norma {
 		}
 	}
 
+	private void addInputWrappersForFile(String inputName) {
+		InputWrapper inputWrapper;
+		File file = new File(inputName);
+		if (!file.isDirectory()) {
+			inputWrapper = new InputWrapper(file, inputName);
+			inputWrapperList.add(inputWrapper);
+		}
+	}
+
 	private void normalizeAndTransformInputs() {
+		// not currentlyUsed
 		this.pubstyle = argProcessor.getPubstyle();
 		this.ensurePubstyle();
+		
 		htmlElementOutputList = new ArrayList<HtmlElement>();
 		for (InputWrapper inputWrapper : inputWrapperList) {
 			try {
