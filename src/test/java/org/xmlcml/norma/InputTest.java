@@ -13,6 +13,8 @@ import org.apache.log4j.Logger;
 import org.eclipse.jetty.util.log.Log;
 import org.junit.Test;
 import org.xmlcml.args.DefaultArgProcessor;
+import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.files.QuickscrapeNormaList;
 
 /** tests the various uses of the -i/--input argument.
  * 
@@ -102,8 +104,64 @@ public class InputTest {
 		Assert.assertEquals("inputList", 5, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm1.xml", inputList.get(0));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm5.xml", inputList.get(4));
+		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertNotNull(qnList);
+		Assert.assertEquals("qnlist", 0, qnList.size());
 	}
 	
+	@Test
+	public void testMakeSingleQuickscrape() {
+		File quickscrapeDir = new File("target/quickscrape/single/");
+		FileUtils.deleteQuietly(quickscrapeDir);
+		String[] args = {
+				"-i", 
+				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
+				"-o", quickscrapeDir.toString()
+		};
+		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		List<String> inputList = argProcessor.getInputList();
+		Assert.assertEquals("inputList", 1, inputList.size());
+		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
+		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertNotNull(qnList);
+		Assert.assertEquals("qnlist", 1, qnList.size());
+		argProcessor.run();
+		qnList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertEquals("qnlist", 1, qnList.size());
+		QuickscrapeNorma qn = qnList.get(0);
+		Assert.assertTrue("fulltext.xml", qn.hasFulltextXML());
+		Assert.assertFalse("fulltext.html", qn.hasFulltextHTML());
+		File fulltextXML = qn.getFulltextXML();
+		Assert.assertTrue("fulltextXML", fulltextXML.exists());
+		File fulltextHTML = qn.getFulltextHTML();
+		Assert.assertFalse("fulltextXML", fulltextHTML.exists());
+	}
+	
+	@Test
+	public void testMakeMultipleQuickscrape() {
+		File quickscrapeDir = new File("target/quickscrape/multiple/");
+		FileUtils.deleteQuietly(quickscrapeDir);
+		String[] args = {
+				"-i", 
+				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
+				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
+				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
+				"-o", quickscrapeDir.toString()
+		};
+		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		List<String> inputList = argProcessor.getInputList();
+		Assert.assertEquals("inputList", 3, inputList.size());
+		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
+		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
+		argProcessor.run();
+		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
+		Assert.assertEquals("qnlist", 3, qnList.size());
+		Assert.assertTrue("fulltext.xml", qnList.get(0).hasFulltextXML());
+		Assert.assertTrue("fulltext.xml", qnList.get(1).hasFulltextXML());
+		Assert.assertTrue("fulltext.xml", qnList.get(2).hasFulltextXML());
+	}
+	
+
 	@Test
 	public void testWildcards() {
 		String[] args = {

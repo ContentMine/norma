@@ -33,10 +33,9 @@ public class Norma {
 
 	public void run(String[] args) {
 		argProcessor = new NormaArgProcessor(args);
-//		createInputList();
-		createInputWrappers();
-		normalizeAndTransformInputs();
-		writeOutputHtml();
+//		createInputWrappers();
+		argProcessor.run();
+//		writeOutputHtml();
 	}
 
 	private void writeOutputHtml() {
@@ -122,6 +121,7 @@ public class Norma {
 		}
 	}
 
+	// probably deprecate later
 	private void normalizeAndTransformInputs() {
 		// not currentlyUsed
 		this.pubstyle = argProcessor.getPubstyle();

@@ -19,6 +19,7 @@ import javax.xml.transform.TransformerException;
 import nu.xom.Builder;
 import nu.xom.Element;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -27,6 +28,7 @@ import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.args.StringPair;
 import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.files.QuickscrapeNormaList;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
@@ -152,6 +154,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	// ==========================
 	
+	@Deprecated
 	void normalizeAndTransform() {
 		ensureXslDocumentList();
 		LOG.debug("NORMALIZE and TRANSFORM - needs moving");
@@ -159,37 +162,73 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			if (quickscrapeNormaList!= null) {
 				transformQuickscrapeNormaList();
 			} else if (inputList != null) {
-				createQuickscrapeNormaListFromInputList();
+				createQNListFromInputList();
 				transformQuickscrapeNormaList();
 //				transformInputList();
 			}
 		}
 	}
 
-	private void createQuickscrapeNormaListFromInputList() {
-		if (inputList != null) {
-			getOrCreateOutputDirectory();
-			// assume that files are not within a quickscrapeNorma
-			for (String filename : inputList) {
-				File file = new File(filename);
-				if (file.isDirectory()) {
-					LOG.error("should not have any directories in inputList: "+file);
-					continue;
-				}
-				String name = FilenameUtils.getName(filename);
-				if (QuickscrapeNorma.isReservedFilename(name)) {
-					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
-					continue;
-				}
-				String qnFilename = QuickscrapeNorma.getQNFilename(name);
+	void transformQNList() {
+		ensureXslDocumentList();
+		if (xslDocumentList.size() > 0) {
+			if (quickscrapeNormaList!= null) {
+				transformQuickscrapeNormaList();
 			}
 		}
 	}
 
-	private void getOrCreateOutputDirectory() {
-		if (output == null) {
-			throw new RuntimeException("[output] is required to create quickscrape diectories");
+	void createQNListFromInputList() {
+		if (inputList != null) {
+			LOG.debug("CREATING QN FROM INPUT:"+inputList);
+			if (output == null) {
+				LOG.info("[output] is required to create quickscrape diectories");
+			} else {
+				getOrCreateOutputDirectory();
+				ensureQuickscrapeNormaList();
+				createNewQNsAndAddToList();
+			}
 		}
+	}
+
+	private void createNewQNsAndAddToList() {
+		ensureQuickscrapeNormaList();
+		for (String filename : inputList) {
+			try {
+				QuickscrapeNorma qn = createQuickscrapeNorma(filename);
+				if (qn != null) {
+					quickscrapeNormaList.add(qn);
+				}
+			} catch (IOException e) {
+				LOG.error("Failed to create QN: "+filename);
+			}
+		}
+	}
+
+	private QuickscrapeNorma createQuickscrapeNorma(String filename) throws IOException {
+		QuickscrapeNorma quickscrapeNorma = null;
+		File file = new File(filename);
+		if (file.isDirectory()) {
+			LOG.error("should not have any directories in inputList: "+file);
+		} else {
+			if (output != null) {
+				String name = FilenameUtils.getName(filename);
+				if (QuickscrapeNorma.isReservedFilename(name)) {
+					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
+				}
+				String qnFilename = QuickscrapeNorma.getQNFilename(name);
+				String dirName = FilenameUtils.removeExtension(name);
+				File qnDir = new File(output, dirName);
+				quickscrapeNorma = new QuickscrapeNorma(qnDir);
+				quickscrapeNorma.createDirectory(qnDir, false);
+				FileUtils.copyFile(file, quickscrapeNorma.getFulltextXML());
+				LOG.debug("QNF "+qnFilename+"; "+qnDir);
+			}
+		}
+		return quickscrapeNorma;
+	}
+
+	private void getOrCreateOutputDirectory() {
 		File outputDir = new File(output);
 		if (outputDir.exists()) {
 			if (!outputDir.isDirectory()) {
@@ -372,6 +411,23 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	public boolean isStandalone() {
 		return standalone;
+	}
+	
+	@Override
+	/** parse args and resolve their dependencies.
+	 * 
+	 * (don't run any argument actions)
+	 * 
+	 */
+	public void parseArgs(String[] args) {
+		super.parseArgs(args);
+		createQNListFromInputList();
+	}
+
+	@Override
+	public void run() {
+//		createQNListFromInputList();
+		transformQNList();
 	}
 
 

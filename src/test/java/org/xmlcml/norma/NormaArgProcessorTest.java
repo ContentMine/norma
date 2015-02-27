@@ -118,6 +118,7 @@ public class NormaArgProcessorTest {
 	 * @throws IOException
 	 */
 	@Test
+	@Ignore // FIXME 
 	public void testQuickscrapeNormaWithDTD() throws IOException {
 		File container0115884 = new File("target/plosone/0115884withdtd/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
@@ -128,6 +129,8 @@ public class NormaArgProcessorTest {
 			"--standalone", "false",           // force use of DTD. May fail
 			"-e", "xml"                       // type of file to transform
 		};
+		if (1==1) throw new RuntimeException("Recast as QN");
+
 		int expectedFileCount = 5; // because of the output file
 		
 		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
