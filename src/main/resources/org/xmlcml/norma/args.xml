@@ -136,15 +136,19 @@
 		brief="-x"
 		long="--xsl"
 		args="stylesheet"
-		default="nlm2html"
 		countRange="{1,5}"
 		parseMethod="parseXsl"
+		runMethod="transform"
+		required="--input --output"
 		>
 		<help>
 			XSL:
-			Transform XML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
+			Transform XML or HTML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
 			or a code from one of {nlm, jats ...}
 			the codes are checked first and then the document reference.
+			
+			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in qsNorma and
+			determine the type of files to convert.
 		</help>
 	</arg>
 </argList>

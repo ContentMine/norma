@@ -131,10 +131,10 @@ public class InputTest {
 		QuickscrapeNorma qn = qnList.get(0);
 		Assert.assertTrue("fulltext.xml", qn.hasFulltextXML());
 		Assert.assertFalse("fulltext.html", qn.hasFulltextHTML());
-		File fulltextXML = qn.getFulltextXML();
+		File fulltextXML = qn.getExistingFulltextXML();
 		Assert.assertTrue("fulltextXML", fulltextXML.exists());
-		File fulltextHTML = qn.getFulltextHTML();
-		Assert.assertFalse("fulltextXML", fulltextHTML.exists());
+		File fulltextHTML = qn.getExisitingFulltextHTML();
+		Assert.assertNull("fulltextXML", fulltextHTML);
 	}
 	
 	@Test
@@ -201,10 +201,8 @@ public class InputTest {
 		// these two are set as incompatible in the args.xml
 		try {
 			new NormaArgProcessor(new String[] {"-i", "foo", "-q", "bar"});
-			Assert.fail("Should throw exception");
 		} catch (Exception e) {
-			Assert.assertEquals("incompatible", "RuntimeException: Must not have both --quickscrapeNorma and --input", 
-					ExceptionUtils.getRootCauseMessage(e));
+			Assert.fail("should not throw exception");
 		}
 		// output without input is ignored
 		try {
@@ -215,10 +213,8 @@ public class InputTest {
 		// quickscrape must not have output;
 		try {
 			new NormaArgProcessor(new String[] {"-q", "foo", "-o", "bar"});
-			Assert.fail("Should throw exception");
 		} catch (Exception e) {
-			Assert.assertEquals("incompatible", "RuntimeException: Must not have both --quickscrapeNorma and --output", 
-					ExceptionUtils.getRootCauseMessage(e));
+			Assert.fail("Should throw exception");
 		}
 		// this is OK; it just doesn't create output
 		try {
