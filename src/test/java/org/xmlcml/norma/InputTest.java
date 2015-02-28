@@ -102,8 +102,8 @@ public class InputTest {
 		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 5, inputList.size());
-		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm1.xml", inputList.get(0));
-		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm5.xml", inputList.get(4));
+		// files are not sorted
+		Assert.assertTrue("input file", inputList.contains("src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm1.xml"));
 		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertNotNull(qnList);
 		Assert.assertEquals("qnlist", 0, qnList.size());
