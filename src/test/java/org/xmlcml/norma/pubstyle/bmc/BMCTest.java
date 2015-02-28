@@ -3,6 +3,7 @@ package org.xmlcml.norma.pubstyle.bmc;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.euclid.Real2;
+import org.xmlcml.files.QuickscrapeNorma;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGPath;
@@ -35,6 +37,7 @@ import com.google.common.collect.Multiset.Entry;
 public class BMCTest {
 
 	
+	private static final String SRC_MAIN_RESOURCES = "src/main/resources";
 	private static final Logger LOG = Logger.getLogger(BMCTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -144,25 +147,54 @@ public class BMCTest {
 		}
 		
 	}
-	
+
+	/** convert BMC XML to scholarlyHtml.
+	 * 
+	 * @throws Exception
+	 */
 	@Test 
-	@Ignore // FIXME
-	public void testReadXML() throws Exception {
-		System.out.println("=========================================================================================");
-		System.out.println("=========================================================================================");
-		File outputFile = new File("target/bmc/15_1_511.html");
+	public void testTransformBMCXMLToHtml() throws Exception {
+		// this is a valid QSNorma directory
+		QuickscrapeNorma qsNorma = new QuickscrapeNorma(Fixtures.BMC_15_1_511_DIR);
+		// it's got 4 files
+		Assert.assertEquals("reserved files", 4, qsNorma.getReservedFileList().size());
+		Assert.assertNotNull("fulltext.xml", qsNorma.getExistingFulltextXML());
+		Assert.assertNotNull("fulltext.html", qsNorma.getExisitingFulltextHTML());
+		Assert.assertNotNull("fulltext.pdf", qsNorma.getExisitingFulltextPDF());
+		Assert.assertNotNull("results.json", qsNorma.getExistingResultsJSON());
+		// these files don't exist yet
+		Assert.assertNull("scholarly.html", qsNorma.getExistingScholarlyHTML());
+		Assert.assertNull("results.xml", qsNorma.getExistingResultsXML());
+		// make a copy for the tests
+		File qsNormaDir = new File("target/bmc/15_1_511");
+		// clean any existing files
+		if (qsNormaDir.exists()) FileUtils.forceDelete(qsNormaDir);
+		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, qsNormaDir);
+		// now run the transformation
 		String[] args = {
-				"-i", new File(Fixtures.BMC_15_1_511_DIR, "fulltext.nodtd.xml").toString(),
-				"-p", "bmc",
-				"-x", "src/main/resources/org/xmlcml/norma/pubstyle/bmc/toHtml.xsl",
-				"-o", outputFile.toString(),
+				// the qsNorma directory
+				"--quickscrapeNorma", qsNormaDir.toString(),
+				// we will transform the fulltext.xml into ...
+				"--input", "fulltext.xml",
+				// a new scholarly.html
+				"--output", "scholarly.html",
+				// using a BMC-specifc stylesheet (BMC is not JATS-compliant)
+				"--xsl", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
 		};
+		// the primary entry point
 		Norma norma = new Norma();
+		// run() calls parseArgs() which:
+		// parses all arguments and checks for consistency of qsNorma
+		// then run() executes all arguments with runMethod. In this case it's transform() (for XSL)
 		norma.run(args);
-		
-		Assert.assertTrue(outputFile.exists());
-		LOG.debug(outputFile+"; "+FileUtils.sizeOf(outputFile));
-		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
+		// this will have created a new scholarlyHtml . The remaing commands are just to verify its content
+		// this makes a new object but doesn't affect the filestore
+		QuickscrapeNorma qsNormaNew = new QuickscrapeNorma(qsNormaDir);
+		// there should be a new scholarly.html
+		File scholarlyHtml = qsNormaNew.getExistingScholarlyHTML();
+		Assert.assertNotNull("scholarly.html", scholarlyHtml);
+		// parse it into an HtmlElement we can query
+		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
 		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
 		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");

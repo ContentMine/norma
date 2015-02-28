@@ -62,7 +62,6 @@ public class TransformerWrapper {
 	public Transformer createTransformer(org.w3c.dom.Document xslStylesheet) throws Exception {
 		System.setProperty(JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY,
 	            NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL);
-		LOG.debug("STYLE: "+xslStylesheet.getChildNodes().item(0).getChildNodes().getLength());
 	    TransformerFactory tfactory = TransformerFactory.newInstance();
 	    DOMSource domSource = new DOMSource(xslStylesheet);
 	    javaxTransformer = tfactory.newTransformer(domSource);

@@ -23,12 +23,12 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.w3c.dom.Document;
 import org.xmlcml.args.ArgIterator;
 import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.args.StringPair;
 import org.xmlcml.files.QuickscrapeNorma;
-import org.xmlcml.files.QuickscrapeNormaList;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
@@ -154,36 +154,40 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	// ==========================
 	
-	@Deprecated
-	void normalizeAndTransform() {
+	public void transform(ArgumentOption option) {
+		LOG.trace("TRANSFORM "+option.getVerbose());
+		if (option.getVerbose().equals("--xsl")) {
+			applyXSLDocumentListToQNList();
+		}
+	}
+		
+
+	// ==========================
+	
+
+	void applyXSLDocumentListToQNList() {
 		ensureXslDocumentList();
-		LOG.debug("NORMALIZE and TRANSFORM - needs moving");
-		if (xslDocumentList.size() > 0) {
-			if (quickscrapeNormaList!= null) {
-				transformQuickscrapeNormaList();
-			} else if (inputList != null) {
-				createQNListFromInputList();
-				transformQuickscrapeNormaList();
-//				transformInputList();
-			}
+		ensureQuickscrapeNormaList();
+		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
+			applyXSLDocumentListToQN(quickscrapeNorma);
 		}
 	}
 
-	void transformQNList() {
-		ensureXslDocumentList();
-		if (xslDocumentList.size() > 0) {
-			if (quickscrapeNormaList!= null) {
-				transformQuickscrapeNormaList();
+	private void applyXSLDocumentListToQN(QuickscrapeNorma quickscrapeNorma) {
+		for (org.w3c.dom.Document xslDocument : xslDocumentList) {
+			try {
+				transform(quickscrapeNorma, xslDocument);
+			} catch (IOException e) {
+				LOG.error("Cannot transform "+quickscrapeNorma+"; "+e);
 			}
 		}
 	}
 
 	void createQNListFromInputList() {
-		if (inputList != null) {
-			LOG.debug("CREATING QN FROM INPUT:"+inputList);
-			if (output == null) {
-				LOG.info("[output] is required to create quickscrape diectories");
-			} else {
+		// proceed unless there is a single reserved file for input
+		if (QuickscrapeNorma.isNonEmptyNonReservedInputList(inputList)) {
+			if (output != null) {
+				LOG.debug("CREATING QN FROM INPUT:"+inputList);
 				getOrCreateOutputDirectory();
 				ensureQuickscrapeNormaList();
 				createNewQNsAndAddToList();
@@ -216,13 +220,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 				if (QuickscrapeNorma.isReservedFilename(name)) {
 					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
 				}
-				String qnFilename = QuickscrapeNorma.getQNFilename(name);
+				String qnFilename = QuickscrapeNorma.getQNReservedFilenameForExtension(name);
 				String dirName = FilenameUtils.removeExtension(name);
 				File qnDir = new File(output, dirName);
 				quickscrapeNorma = new QuickscrapeNorma(qnDir);
 				quickscrapeNorma.createDirectory(qnDir, false);
-				FileUtils.copyFile(file, quickscrapeNorma.getFulltextXML());
-				LOG.debug("QNF "+qnFilename+"; "+qnDir);
+				File destFile = quickscrapeNorma.getReservedFile(qnFilename);
+				if (destFile != null) {
+					FileUtils.copyFile(file, destFile);
+					LOG.debug("QNF "+qnFilename+"; "+qnDir);
+				}
 			}
 		}
 		return quickscrapeNorma;
@@ -250,16 +257,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	private void transformQuickscrapeNormaList() {
-		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
-			try {
-				transform(quickscrapeNorma, xslDocumentList.get(0));
-			} catch (IOException e) {
-				LOG.error("Cannot transform "+quickscrapeNorma+"; "+e);
-			}
-		}
-	}
-
 	private String transform(File file, org.w3c.dom.Document xslDocument) throws IOException {
 		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
 		String xmlString = null;
@@ -274,22 +271,29 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	private void transform(QuickscrapeNorma quickscrapeNorma, org.w3c.dom.Document xslDocument) throws IOException {
-	    if (quickscrapeNorma.hasFulltextXML()) {
-			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
-			String extension = (extensionList == null || extensionList.size() != 1) ? null : extensionList.get(0);
-			String filetype = QuickscrapeNorma.RESERVED_FILES_BY_EXTENSION.get(extension);
-			File fulltext = (filetype == null) ? null :quickscrapeNorma.getFulltextXML();
-			if (fulltext == null) {
-				LOG.error("nothing to transform for fulltext.xml "+extensionList);
-			} else {
-				try {
-					String xmlString = transformerWrapper.transformToXML(fulltext);
-					quickscrapeNorma.writeFile(xmlString, QuickscrapeNorma.SCHOLARLY_HTML);
-				} catch (TransformerException e) {
-					throw new RuntimeException("cannot transform: ", e);
-				}
-			}
-	    }
+		String inputName = getSingleInput();
+		if (inputName == null) {
+			throw new RuntimeException("Must have single input option");
+		}
+		if (!QuickscrapeNorma.isReservedFilename(inputName)) {
+			throw new RuntimeException("Input must be reserved file; found: "+inputName);
+		}
+		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
+		if (inputFile == null) {
+			throw new RuntimeException("Could not find input file: "+inputName);
+		}
+		if (!QuickscrapeNorma.isReservedFilename(output)) {
+			throw new RuntimeException("output must be reserved file; found: "+output);
+		}
+		File outputFile = quickscrapeNorma.getReservedFile(output);
+		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
+		try {
+			LOG.debug("Writing : "+outputFile);
+			String xmlString = transformerWrapper.transformToXML(inputFile);
+			quickscrapeNorma.writeFile(xmlString, output);
+		} catch (TransformerException e) {
+			throw new RuntimeException("cannot transform: ", e);
+		}
 	}
 
 	private TransformerWrapper getOrCreateTransformerWrapperForStylesheet(org.w3c.dom.Document xslDocument) {
@@ -426,8 +430,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	@Override
 	public void run() {
-//		createQNListFromInputList();
-		transformQNList();
+		runArgsOnQNList();
+//		transformQNList();
 	}
 
 
