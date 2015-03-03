@@ -150,6 +150,8 @@ public class BMCTest {
 
 	/** convert BMC XML to scholarlyHtml.
 	 * 
+	 * SHOWCASE
+	 * 
 	 * @throws Exception
 	 */
 	@Test 
@@ -203,4 +205,54 @@ public class BMCTest {
 		Assert.assertEquals("p elements "+pElements.size(), 147, pElements.size()); 
 	}
 	
+	/** convert BMC XML to scholarlyHtml.
+	 * 
+	 * SHOWCASE
+	 * 
+	 * @throws Exception
+	 */
+	@Test 
+	public void testTransformSeveralXMLToHtml() throws Exception {
+		File[] qsnFiles = {
+				 Fixtures.TEST_ELIFE_QSN0,
+				 Fixtures.TEST_F1000_QSN0,
+				 Fixtures.TEST_FRONTIERS_QSN0,
+				 Fixtures.TEST_MDPI_QSN0,
+				 Fixtures.TEST_PEERJ_QSN0,
+				 Fixtures.TEST_PENSOFT_QSN0,
+				 Fixtures.TEST_PLOSONE_QSN0
+		};
+		int nqs = qsnFiles.length;
+		File[] targetFiles = new File[nqs];
+		for (int i = 0; i < nqs; i++) {
+			QuickscrapeNorma qsNorma = new QuickscrapeNorma(qsnFiles[i]);
+			targetFiles[i] = new File("target/test/file"+i);
+			qsNorma.copyTo(targetFiles[i], true);
+		}
+		String[] args = {
+				"--quickscrapeNorma", 
+				targetFiles[0].toString(),
+				targetFiles[1].toString(),
+				targetFiles[2].toString(),
+				targetFiles[3].toString(),
+				targetFiles[4].toString(),
+				targetFiles[5].toString(),
+				targetFiles[6].toString(),
+				"--input", "fulltext.xml",
+				"--output", "scholarly.html",
+				"--xsl", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
+		};
+		Norma norma = new Norma();
+		norma.run(args);
+//		QuickscrapeNorma qsNormaNew = new QuickscrapeNorma(qsNormaDir);
+//		Assert.assertNotNull("scholarly.html", scholarlyHtml);
+//		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
+//		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
+//		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
+//		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");
+//		Assert.assertEquals("span elements "+spanElements.size(), 1054, spanElements.size()); 
+//		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
+//		Assert.assertEquals("p elements "+pElements.size(), 147, pElements.size()); 
+	}
+
 }
