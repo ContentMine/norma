@@ -72,7 +72,7 @@ public class InputTest {
 		String[] args = {
 				"-i", new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString()
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(0));
@@ -86,7 +86,7 @@ public class InputTest {
 				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
 				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 3, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
@@ -99,7 +99,7 @@ public class InputTest {
 				Fixtures.TEST_NUMBERED_DIR.toString(),
 				"-e", "xml"
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 5, inputList.size());
 		// files are not sorted
@@ -118,14 +118,14 @@ public class InputTest {
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
 				"-o", quickscrapeDir.toString()
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
 		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertNotNull(qnList);
 		Assert.assertEquals("qnlist", 1, qnList.size());
-		argProcessor.run();
+		argProcessor.runAndOutput();
 		qnList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertEquals("qnlist", 1, qnList.size());
 		QuickscrapeNorma qn = qnList.get(0);
@@ -148,12 +148,12 @@ public class InputTest {
 				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
 				"-o", quickscrapeDir.toString()
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 3, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
-		argProcessor.run();
+		argProcessor.runAndOutput();
 		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertEquals("qnlist", 3, qnList.size());
 		Assert.assertTrue("fulltext.xml", qnList.get(0).hasFulltextXML());
@@ -168,7 +168,7 @@ public class InputTest {
 				"-i", 
 				Fixtures.TEST_NUMBERED_DIR+"/nlm{2,4}.xml"
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		LOG.debug(inputList);
 		Assert.assertEquals("inputList", 3, inputList.size());
@@ -183,7 +183,7 @@ public class InputTest {
 				"-i", 
 				Fixtures.TEST_NUMBERED_DIR+"/nlm{2:4}.xml"
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm{2:4}.xml", inputList.get(0));

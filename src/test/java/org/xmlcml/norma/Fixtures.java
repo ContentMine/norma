@@ -40,6 +40,7 @@ public class Fixtures {
 	public final static File F0113556_TAGGED_XML = new File(Fixtures.F0113556_DIR, "fulltext.tagged.xml");
 	public final static File F0113556_HTML = new File(Fixtures.F0113556_DIR, "fulltext.html");
 	public final static File F0113556_TAGGED_HTML = new File(Fixtures.F0113556_DIR, "fulltext.tagged.html");
+	
 	public final static File F0115884_DIR = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	public final static File F0115884A_DIR = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884a");
 	public final static File F0115884_HTML = new File(Fixtures.F0115884_DIR, "fulltext.html");
@@ -53,6 +54,24 @@ public class Fixtures {
 	// edited copies of NLM-compliant XML files, numbered "nlm1.xml, etc"
 	public final static File TEST_NUMBERED_DIR = new File(Fixtures.TEST_MISC_DIR, "numbered/");
 	
+	public final static File TEST_ELIFE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "elife");
+	public final static File TEST_ELIFE_QSN0 = new File(Fixtures.TEST_ELIFE_DIR, "e04407");
 	
+	public final static File TEST_F1000_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "f1000research");
+	public final static File TEST_F1000_QSN0 = new File(Fixtures.TEST_F1000_DIR, "3-190");
+	
+	public final static File TEST_FRONTIERS_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "frontiers");
+	public final static File TEST_FRONTIERS_QSN0 = new File(Fixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
+	
+	public final static File TEST_MDPI_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "mdpi");
+	public final static File TEST_MDPI_QSN0 = new File(Fixtures.TEST_MDPI_DIR, "04-00932");
+	
+	public final static File TEST_PEERJ_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "peerj");
+	public final static File TEST_PEERJ_QSN0 = new File(Fixtures.TEST_PEERJ_DIR, "727");
+	
+	public final static File TEST_PENSOFT_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "pensoft");
+	public final static File TEST_PENSOFT_QSN0 = new File(Fixtures.TEST_PENSOFT_DIR, "4478");
+	
+	public final static File TEST_PLOSONE_QSN0 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
 }

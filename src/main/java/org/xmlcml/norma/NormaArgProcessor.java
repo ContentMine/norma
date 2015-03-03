@@ -152,13 +152,17 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		super.printHelp();
 	}
 	
-	// ==========================
+	// ===========run===============
 	
 	public void transform(ArgumentOption option) {
 		LOG.trace("TRANSFORM "+option.getVerbose());
 		if (option.getVerbose().equals("--xsl")) {
 			applyXSLDocumentListToQNList();
 		}
+	}
+		
+	public void runTest(ArgumentOption option) {
+		LOG.debug("RUN_TEST "+"is a dummy");
 	}
 		
 
@@ -426,12 +430,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
 		createQNListFromInputList();
-	}
-
-	@Override
-	public void run() {
-		runArgsOnQNList();
-//		transformQNList();
 	}
 
 

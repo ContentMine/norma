@@ -101,7 +101,7 @@ public class NormaArgProcessorTest {
 			"--input", "fulltext.xml",          // type of file to transform
 			"--output", "scholarly.html"       // output
 		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertNotNull(quickscrapeNormaList);
 		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
@@ -135,7 +135,7 @@ public class NormaArgProcessorTest {
 		int expectedFileCount = 5; // because of the output file
 		
 		// note the XML file has a DTD and takes 10 secs to process because of repeated downloads.
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		try {
 //			argProcessor.normalizeAndTransform();
 		} catch (Exception e) {
