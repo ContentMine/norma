@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>org.xml-cml</groupId>
-	<artifactId>nhtml</artifactId>
+	<artifactId>norma</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>nHTML</name>
+	<name>norma</name>
 	<description>A Java library for processing multiple legacy formats into normalized HTML5</description>
 
 	<licenses>
