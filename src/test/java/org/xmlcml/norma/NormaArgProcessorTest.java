@@ -27,6 +27,24 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	public void testNoArgs() {
+		String[] args = {
+		};
+		new NormaArgProcessor(args);
+	}
+	
+	@Test
+	@Ignore // to cut down output
+	public void testNoArgsMain() {
+		String[] args = {
+		};
+		Norma.main(args);
+		Assert.assertTrue("finished", true);
+		LOG.debug("finished");
+	}
+	
+
+	@Test
 	public void testArgs() {
 		FileUtils.deleteQuietly(new File("foo"));
 		FileUtils.deleteQuietly(new File("bar"));
