@@ -136,7 +136,12 @@ public class InputTest {
 		File fulltextHTML = qn.getExisitingFulltextHTML();
 		Assert.assertNull("fulltextXML", fulltextHTML);
 	}
+
 	
+	/** create multiple input directories from multiple input.
+	 * 
+	 * SHOWCASE
+	 */
 	@Test
 	public void testMakeMultipleQuickscrape() {
 		File quickscrapeDir = new File("target/quickscrape/multiple/");
@@ -152,10 +157,17 @@ public class InputTest {
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 3, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
+		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/peerj-727.xml", inputList.get(1));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
 		argProcessor.runAndOutput();
 		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
 		Assert.assertEquals("qnlist", 3, qnList.size());
+		Assert.assertEquals("qsNorma dir", "target/quickscrape/multiple/mdpi-04-00932", qnList.get(0).getDirectory().toString());
+		Assert.assertEquals("qsNorma dir", "target/quickscrape/multiple/peerj-727", qnList.get(1).getDirectory().toString());
+		Assert.assertEquals("qnNorma dir", "target/quickscrape/multiple/pensoft-4478", qnList.get(2).getDirectory().toString());
+		Assert.assertEquals("filecount0", 1, qnList.get(0).listFiles(false).size());
+		Assert.assertEquals("filecount1", 1, qnList.get(1).listFiles(false).size());
+		Assert.assertEquals("filecount2", 1, qnList.get(2).listFiles(false).size());
 		Assert.assertTrue("fulltext.xml", qnList.get(0).hasFulltextXML());
 		Assert.assertTrue("fulltext.xml", qnList.get(1).hasFulltextXML());
 		Assert.assertTrue("fulltext.xml", qnList.get(2).hasFulltextXML());
