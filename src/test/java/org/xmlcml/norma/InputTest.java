@@ -109,6 +109,9 @@ public class InputTest {
 		Assert.assertEquals("qnlist", 0, qnList.size());
 	}
 	
+	/** creates single `QSNorma` directory
+	 * 
+	 */
 	@Test
 	public void testMakeSingleQuickscrape() {
 		File quickscrapeDir = new File("target/quickscrape/single/");
