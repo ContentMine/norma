@@ -6,6 +6,8 @@
 ^.git/
 ^opentools
 ^ijsem/.*
+^trialstemp/.*
+^trialsdata/.*
 ^target/.*
 /target/
 ^\.idea/

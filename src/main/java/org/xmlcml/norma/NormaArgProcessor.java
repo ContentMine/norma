@@ -173,7 +173,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		ensureXslDocumentList();
 		ensureQuickscrapeNormaList();
 		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
-			applyXSLDocumentListToQN(quickscrapeNorma);
+			try {
+				applyXSLDocumentListToQN(quickscrapeNorma);
+			} catch (Exception e) {
+				LOG.error("Cannot transform file", e);
+			}
 		}
 	}
 
@@ -284,7 +288,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
 		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file: "+inputName);
+			throw new RuntimeException("Could not find input file "+inputName+" in directory "+quickscrapeNorma.getDirectory());
 		}
 		if (!QuickscrapeNorma.isReservedFilename(output)) {
 			throw new RuntimeException("output must be reserved file; found: "+output);

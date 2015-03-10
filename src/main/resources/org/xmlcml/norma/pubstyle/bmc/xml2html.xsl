@@ -28,16 +28,6 @@
 	    </div>
 	</xsl:template>
 
-<!--  COPY (must relearn <xs:copy> ) 
-	<xsl:template match="p |
-	    sup | sub |
-	    tr | td | table | thead | tbody | tgroup | colspec | caption | col | colgroup " >
-		<xsl:element name="{local-name()}">
-			<xsl:for-each select="@*"><xsl:attribute name="{local-name()}"><xsl:value-of select="."/></xsl:attribute></xsl:for-each>
-			<xsl:apply-templates select="*|text()" />
-		</xsl:element>
-	</xsl:template>
--->
 <!--  COPY -->
 	<xsl:template match="p |
 	    sup | sub |
@@ -121,7 +111,7 @@
 	</xsl:template>
 	
 	<xsl:template match="bdy">
-	  <xsl:apply-templates select="/art/fm/abs"/>
+<!-- 	  <xsl:apply-templates select="/art/fm/abs"/> -->
 	  <xsl:apply-templates/>
 	</xsl:template>
 	
