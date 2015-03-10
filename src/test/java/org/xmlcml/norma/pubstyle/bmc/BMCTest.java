@@ -198,11 +198,11 @@ public class BMCTest {
 		// parse it into an HtmlElement we can query
 		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 210, divElements.size()); 
 		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");
 		Assert.assertEquals("span elements "+spanElements.size(), 1054, spanElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
-		Assert.assertEquals("p elements "+pElements.size(), 147, pElements.size()); 
+		Assert.assertEquals("p elements "+pElements.size(), 144, pElements.size()); 
 	}
 	
 	/** convert BMC XML to scholarlyHtml.
