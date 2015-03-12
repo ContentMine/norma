@@ -1,0 +1,1993 @@
+<?xml version='1.0'?>
+<!DOCTYPE art SYSTEM 'http://www.biomedcentral.com/xml/article.dtd'>
+<art>
+	<ui>1745-6215-16-1</ui>
+	<ji>1745-6215</ji>
+	<fm>
+		<dochead>Methodology</dochead>
+		<bibl>
+			<title>
+				<p>Lessons learned from recruiting socioeconomically disadvantaged smokers into a pilot randomized controlled trial to explore the role of Exercise Assisted Reduction then Stop (EARS) smoking</p>
+			</title>
+			<aug>
+				<au id="A1" ca="yes"><snm>Thompson</snm><mi>P</mi><fnm>Tom</fnm><insr iid="I1"/><email>tom.thompson@plymouth.ac.uk</email></au>
+				<au id="A2"><snm>Greaves</snm><mi>J</mi><fnm>Colin</fnm><insr iid="I2"/><email>C.J.Greaves@exeter.ac.uk</email></au>
+				<au id="A3"><snm>Ayres</snm><fnm>Richard</fnm><insr iid="I1"/><email>richard.ayres@plymouth.ac.uk</email></au>
+				<au id="A4"><snm>Aveyard</snm><fnm>Paul</fnm><insr iid="I3"/><email>paul.aveyard@phc.ox.ac.uk</email></au>
+				<au id="A5"><snm>Warren</snm><mi>C</mi><fnm>Fiona</fnm><insr iid="I2"/><email>F.C.Warren@exeter.ac.uk</email></au>
+				<au id="A6"><snm>Byng</snm><fnm>Richard</fnm><insr iid="I1"/><email>richard.byng@plymouth.ac.uk</email></au>
+				<au id="A7"><snm>Taylor</snm><mi>S</mi><fnm>Rod</fnm><insr iid="I2"/><email>R.Taylor@exeter.ac.uk</email></au>
+				<au id="A8"><snm>Campbell</snm><mi>L</mi><fnm>John</fnm><insr iid="I2"/><email>john.campbell@exeter.ac.uk</email></au>
+				<au id="A9"><snm>Ussher</snm><fnm>Michael</fnm><insr iid="I4"/><email>mussher@sgul.ac.uk</email></au>
+				<au id="A10"><snm>Michie</snm><fnm>Susan</fnm><insr iid="I5"/><email>s.michie@ucl.ac.uk</email></au>
+				<au id="A11"><snm>West</snm><fnm>Robert</fnm><insr iid="I6"/><email>robert.west@ucl.ac.uk</email></au>
+				<au id="A12"><snm>Taylor</snm><mi>H</mi><fnm>Adrian</fnm><insr iid="I1"/><email>adrian.taylor@plymouth.ac.uk</email></au>
+			</aug>
+			<insg>
+				<ins id="I1"><p>Plymouth University Peninsula School of Medicine and Dentistry, ITTC Building, Plymouth Science Park, Plymouth PL6 8BX, UK</p></ins>
+				<ins id="I2"><p>University of Exeter Medical School, St Luke's Campus, Heavitree Road, Exeter EX1 2LU, UK</p></ins>
+				<ins id="I3"><p>Nuffield Department of Primary Care Health Sciences, University of Oxford, New Radcliffe House, Walton Street, Jericho, Oxford OX2 6NW, UK</p></ins>
+				<ins id="I4"><p>Institute of Population Health Research, St George&#8217;s University of London, Cranmer Terrace, London SW17 ORE, UK</p></ins>
+				<ins id="I5"><p>Research Department of Clinical, Educational and Health Psychology, University College London, 1-19 Torrington Place, London WC1E 7HB, UK</p></ins>
+				<ins id="I6"><p>Department of Epidemiology and Public Health, Health Behaviour Research Centre, University College London, Gower Street, London, WC1E 6BT, UK</p></ins>
+			</insg>
+			<source>Trials</source>
+			<issn>1745-6215</issn>
+			<pubdate>2015</pubdate>
+			<volume>16</volume>
+			<issue>1</issue>
+			<fpage>1</fpage>
+			<url>http://www.trialsjournal.com/content/16/1/1</url>
+			<xrefbib><pubid idtype="doi">10.1186/1745-6215-16-1</pubid></xrefbib>
+		</bibl>
+		<history><rec><date><day>24</day><month>4</month><year>2014</year></date></rec><acc><date><day>24</day><month>11</month><year>2014</year></date></acc><pub><date><day>12</day><month>2</month><year>2015</year></date></pub></history>
+		<cpyrt><year>2015</year><collab>Thompson et al.; licensee BioMed Central.</collab><note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/4.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<url>http://creativecommons.org/publicdomain/zero/1.0/</url>) applies to the data made available in this article, unless otherwise stated.</note></cpyrt>
+		<kwdg>
+			<kwd>Harm reduction</kwd>
+			<kwd>Tobacco control</kwd>
+			<kwd>Physical activity</kwd>
+			<kwd>Recruitment</kwd>
+			<kwd>Smoking cessation</kwd>
+			<kwd>Primary care</kwd>
+			<kwd>Community medicine</kwd>
+		</kwdg>
+		<abs>
+			<sec>
+				<st>
+					<p>Abstract</p>
+				</st>
+				<sec>
+					<st>
+						<p>Background</p>
+					</st><p>Research is needed on what influences recruitment to smoking reduction trials, and how to increase their reach. The present study aimed to i) assess the feasibility of recruiting a disadvantaged population, ii) examine the effects of recruitment methods on participant characteristics, iii) identify resource requirements for different recruitment methods, and iv) to qualitatively assess the acceptability of recruitment. This was done as part of a pilot two-arm trial of the effectiveness of a novel behavioral support intervention focused on increasing physical activity and reducing smoking, among disadvantaged smokers not wishing to quit.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Methods</p>
+					</st><p>Smokers were recruited through mailed invitations from three primary care practices (62 participants) and one National Health Stop Smoking Service (SSS) database (31 participants). Six other participants were recruited via a variety of other community-based approaches. Data were collected through questionnaires, field notes, work sampling, and databases. Chi-squared and t-tests were used to compare baseline characteristics of participants.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Results</p>
+					</st><p>We randomized between 5.1 and 11.1% of those invited through primary care and SSS, with associated researcher time to recruit one participant varying from 18 to 157 minutes depending on time and intensity invested.Only six participants were recruited through a wide variety of other community-based approaches, with an associated researcher time of 469 minutes to recruit one participant. Targets for recruiting a disadvantaged population were met, with 91% of the sample in social classes C2 to E (NRS social grades, UK), and 41% indicating mental health problems. Those recruited from SSS were more likely to respond to an initial letter, had used cessation aids before, and had attempted to quit in the past year. Overall, initial responders were more likely to be physically active than those who were recruited via follow-up telephone calls. No other demographics or behaviour characteristics were associated with recruitment approach or intensity of effort. Qualitative feedback indicated that participants had been attracted by the prospect of support that focused on smoking reduction rather than abrupt quitting.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Conclusions</p>
+					</st><p>Mailed invitations, and follow-up, from health professionals was an effective method of recruiting disadvantaged smokers into a trial of an exercise intervention to aid smoking reduction. Recruitment via community outreach approaches was largely ineffective.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Trial registration</p>
+					</st><p>ISRCTN identifier: <a href="http://www.isrctn.com/13837944">13837944</a>, registered on 6 July 2010</p>
+				</sec>
+			</sec>
+		</abs>
+	</fm>
+	<bdy>
+		<sec>
+			<st>
+				<p>Background</p>
+			</st><p>Smokers from disadvantaged groups (such as the unemployed, low-skilled manual workers, and people with mental health problems) attempt to quit at the same rate as others but the success rate in quitting is lower <abbrgrp>
+					<abbr bid="B1">1</abbr>
+				</abbrgrp>. Smoking has been identified as one of the main contributing factors to health inequalities in industrial countries <abbrgrp>
+					<abbr bid="B2">2</abbr>
+				</abbrgrp> and, in England and Wales, accounts for nearly half the difference of smoking-attributed mortality (among males) between the highest and lowest socioeconomic groups <abbrgrp>
+					<abbr bid="B3">3</abbr>
+				</abbrgrp>. Smoking reduction may increase the motivation to quit, which is highly predictive of quit attempts, and reduce smoking dependence, which is related to successful quitting <abbrgrp>
+					<abbr bid="B4">4</abbr>
+				</abbrgrp>. Also, offering an intervention to support smoking reduction may increase the reach of services to disadvantaged smokers who would not engage in cessation programs <abbrgrp>
+					<abbr bid="B5">5</abbr>
+					<abbr bid="B6">6</abbr>
+				</abbrgrp>. Offering support for smoking reduction may attenuate the commonly reported barriers to engagement of &#8216;fear of failure&#8217; and &#8216;fear of being judged&#8217; when attempting to abruptly quit <abbrgrp>
+					<abbr bid="B7">7</abbr>
+				</abbrgrp>.</p><p>Evidence for the effectiveness of smoking cessation interventions for disadvantaged groups is limited <abbrgrp>
+					<abbr bid="B1">1</abbr>
+					<abbr bid="B8">8</abbr>
+					<abbr bid="B9">9</abbr>
+					<abbr bid="B10">10</abbr>
+				</abbrgrp>. The lack of evidence may have resulted from both the inherent difficulties in recruiting and engaging with such groups in clinical trials, and the predominant focus on abrupt quitting rather than smoking reduction. Further research is therefore needed on how best to recruit disadvantaged smokers to increase intervention reach <abbrgrp>
+					<abbr bid="B7">7</abbr>
+				</abbrgrp> with appropriate behavioral support <abbrgrp>
+					<abbr bid="B7">7</abbr>
+					<abbr bid="B10">10</abbr>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp>
+			</p><p>More detailed and transparent information on the reach of trials and interventions (such as the proportion of the targeted population that participated) targeting disadvantaged groups is needed to better assess and plan interventions <abbrgrp>
+					<abbr bid="B12">12</abbr>
+				</abbrgrp>. Various approaches may improve recruitment into studies among disadvantaged groups <abbrgrp>
+					<abbr bid="B13">13</abbr>
+					<abbr bid="B14">14</abbr>
+				</abbrgrp>, including the following: engagement with the target population when developing the intervention and preparing participant information about the study and intervention, using a variety of community networks and settings to invite the target population, and use of follow-up telephone calls to explain the study methods and intervention. In a review, the most effective strategies for recruiting smokers into trials <abbrgrp>
+					<abbr bid="B15">15</abbr>
+				</abbrgrp> suggested that tailored interventions, recruitment methods that are proactive in nature (for example, approaching potential participants directly) <abbrgrp>
+					<abbr bid="B16">16</abbr>
+				</abbrgrp>, and more intensive recruitment strategies (such as repeated provision of information and contact) may help. But in general there is insufficient knowledge regarding the factors influencing recruitment and the most effective strategies for recruiting into randomized trials <abbrgrp>
+					<abbr bid="B17">17</abbr>
+					<abbr bid="B18">18</abbr>
+					<abbr bid="B19">19</abbr>
+				</abbrgrp>, particularly among disadvantaged groups.</p><p>This article reports on the feasibility and acceptability of strategies specifically designed to recruit disadvantaged smokers who wished to reduce their smoking but not quit, into a phase two pragmatic pilot randomized controlled trial: the Exercise Assisted Reduction then Stop (EARS) trial (Health Technology Assessment (HTA) number: 07/78/02, International Standardized Randomized Controlled Trial Number (ISRCTN): 13837944, UK Clinical Research Network (UKCRN) Study ID: 8937. The specific objectives of this study as related to the present paper were: i) to identify the feasibility of recruiting disadvantaged smokers through a variety of settings (through primary care, National Health Service (NHS) Stop Smoking Services (SSS), and through more generalized community approaches) as well as to examine the effect of using varying degrees of recruitment activity intensity (recruitment by invitation letter only compared with an invitation letter plus follow-up reminder telephone calls, and through various levels of community engagement); ii) to examine how recruitment of participants through different locations and different levels of recruitment intensity impact on participant characteristics; iii) to identify the time requirements associated with each recruitment approach; and iv) to qualitatively explore the effectiveness and acceptability of different approaches to recruitment.</p><p>Overall, the trial sought to identify uncertainties about the methods and intervention to support smoking reduction with physical activity and behavioral support. The two-arm randomized controlled trial consisted of a weekly one-to-one counselling-based intervention of up to 12 weeks, supporting self-directed changes in smoking and physical activity behaviors, compared with usual care (brief advice on available SSS), among disadvantaged smokers wishing to cut down but not quit. Data collection took place at baseline, eight weeks, and 16 weeks post baseline. The primary outcome was the number of participants achieving confirmed expired air carbon monoxide abstinence at four weeks post-quitting. Other outcomes included the number of quit attempts made, the number achieving at least 50% reduction in smoking at 16 weeks, changes in physical activity, and various other behavioral and process measures. The protocol and main findings of the study have been published <abbrgrp>
+					<abbr bid="B20">20</abbr>
+				</abbrgrp>.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Methods</p>
+			</st>
+			<sec>
+				<st>
+					<p>Locating and defining a disadvantaged population</p>
+				</st><p>We set a target to recruit participants of whom at least 75% were unemployed or in social class C2 to E (NRS Social Grades, UK (skilled manual workers, semi-skilled and unskilled manual workers, state pensioners, casual and lowest grade workers, and those unemployed with state benefits only), 30% were single parents, and 20% had indicators of a mental health problem (indicated by answering &#8216;moderately&#8217; or &#8216;extremely&#8217; anxious or depressed to item five of the EQ-5D questionnaire). These criteria were based on the high prevalence of smoking among these groups <abbrgrp>
+						<abbr bid="B1">1</abbr>
+					</abbrgrp>. Recruitment took place in the neighborhoods of Devonport and Stonehouse in Plymouth, United Kingdom, selected for having high deprivation (index of multiple deprivation score of 52 to 59.9, placing them within the 3% &#8216;most deprived&#8217; areas in England <abbrgrp>
+						<abbr bid="B21">21</abbr>
+					</abbrgrp>). Local data indicated that smoking prevalence among adults was over 40%, and the location had generally poor health, with a life expectancy 12.6 years lower than some other areas of the city <abbrgrp>
+						<abbr bid="B22">22</abbr>
+					</abbrgrp>.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Inclusion and exclusion criteria</p>
+				</st><p>Participants were eligible if they were over 18-years-old, smoked at least 10 cigarettes per day (and had done so for at least two years), did not intend to quit in the next month, were able to engage in moderate intensity physical activity (walking without stopping for at least 15 minutes), were registered with a general practitioner (GP), and did not wish to use nicotine replacement therapy (NRT) to reduce smoking. The study focus was initially on reducing smoking, not quitting, so those who expressed a desire to quit immediately were referred directly to the NHS SSS without entering the study. Those wishing to use NRT were excluded to avoid any confounding of the effects of physical activity on their smoking behaviour. We excluded those with severe mental health problems and ongoing substance misuse due the potential difficulties of engaging them in the intervention, given the large uncertainties and complexities of its delivery, and those who may have put the safety of the research team at risk. Due to the exploratory nature of the study, participants were required to be able to converse in English.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Recruitment</p>
+				</st><p>Recruitment was over a 12-month-period between May 2011 and May 2012, with a recruitment target of 120 smokers. Recruitment was split between two distinct approaches: 1) primary care and 2) other community-based approaches.</p>
+				<sec>
+					<st>
+						<p>Primary care</p>
+					</st><p>Initially, one primary care medical practice in each of the two neighborhoods was identified and approached to be included in the research study; a third practice with patients from both areas was approached later in the study in order to expand the scope of recruitment to meet the planned sample size. We planned to recruit 50% (n = 60) of participants through primary care. GP practice lists were searched based on cursory inclusion and exclusion criteria (see Taylor <it>et al</it>., for more details <abbrgrp>
+							<abbr bid="B20">20</abbr>
+						</abbrgrp>). A list of potential participants was generated and invitation letters, in batches of 100 per practice, were sent every two weeks from the GP with a postal reminder a week later. To begin with, postal invitations were sent without making any follow-up telephone calls so a response rate to a letter-only invitation could be established. Following on from this, and to increase reach to people with low literacy, telephone calls were made to those who did not respond directly to the invitation letter to check that they had received and understood the invitation, and to explore the effect of follow-up calls on increasing recruitment rates. If there was no answer on the first call a message was left to enquire if the invitation had been received and to leave a contact number for further information. Up to four more calls were made but, to avoid harassment, no further messages were left. Interested participants returned a form indicating interest in the study or telephoned a researcher. They were then screened for eligibility by telephone and provided consent for a researcher to contact their GP to confirm eligibility. Once eligibility was confirmed by their GP, the volunteer was invited to attend a baseline assessment.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Community</p>
+					</st><p>The other 50% (n = 60) of the targeted recruitment was categorized as &#8216;other community approaches&#8217;. There were two distinct recruitment methods. The first (for which a target of n = 30 was set) involved the searching of the local NHS SSS database for people who had used the service within the last two years but had failed to quit. The same procedure of mailed invitations and follow-up telephone calls as used for recruitment through GP practices was then adopted, without applying the cursory inclusion and exclusion criteria in the first instance. The second method involved outreach in an attempt to recruit smokers who may not engage with traditional services and may experience higher levels of disadvantage. Potential participants were contacted through: workplaces, educational sites, community sites, and a range of other media (see Table&#160;<tblr tid="T1">1</tblr>). Interested participants contacted the research team directly (in person) and indirectly by telephone or by returning contact details with a request for further information. Following screening, to determine eligibility, a time for attending a baseline session was arranged.</p>
+					<table id="T1">
+						<title>
+							<p>Table 1</p>
+						</title>
+						<caption>
+							<p>
+								<b>Locations and activities involved in community recruitment</b>
+							</p>
+						</caption>
+						<tgroup align="left" cols="2">
+							<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+							<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+							<thead valign="top">
+								<row rowsep="1">
+									<entry colname="c1">
+										<p>
+											<b>Workplace site</b>
+										</p>
+									</entry>
+									<entry colname="c2">
+										<p>
+											<b>Recruitment activity</b>
+										</p>
+									</entry>
+								</row>
+							</thead>
+							<tbody valign="top">
+								<row>
+									<entry colname="c1">
+										<p>Local adult education and training provider</p>
+									</entry>
+									<entry colname="c2">
+										<p>Flyers and information packs in the reception. Contact at centre informed about study and given packs to distribute.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Post Office Manual Data Entry Centre (MDEC)</p>
+									</entry>
+									<entry colname="c2">
+										<p>Information cascaded through managers to all employees in team briefings.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1" nameend="c2" namest="c1">
+										<p>Educational site</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local primary school</p>
+									</entry>
+									<entry colname="c2">
+										<p>Article in parent newsletter with study contact details.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Parent and toddler groups; several local children&#8217;s centers</p>
+									</entry>
+									<entry colname="c2">
+										<p>Mother and toddler groups visited. Researchers attended groups and talked with parents. Posters and packs left, or given out during groups. Collected details of interested persons.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1" nameend="c2" namest="c1">
+										<p>Community site or organization</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Job centre (Devonport)</p>
+									</entry>
+									<entry colname="c2">
+										<p>Researcher outside the job centre approached smokers explaining the study; 100 packs and reply sheets given out over several periods in a week. Contact details of interested persons collected.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local community hub cafe</p>
+									</entry>
+									<entry colname="c2">
+										<p>Local health promotion sessions and food bank sessions attended by researchers; information given out to interested persons.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local community cooperative organization</p>
+									</entry>
+									<entry colname="c2">
+										<p>Flyers and posters given out to a local community employer for distribution.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1" morerows="1">
+										<p>YMCA (community-run gym)</p>
+									</entry>
+									<entry colname="c2">
+										<p>Posters on display. Fitness Manager promoted study to users of the Stonehouse Gym.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c2">
+										<p>Researchers attended a children&#8217;s session; one pack given out.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local gym</p>
+									</entry>
+									<entry colname="c2">
+										<p>Gym instructors informed about study and provided with information packs and reply sheets to distribute to interested persons.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local social club</p>
+									</entry>
+									<entry colname="c2">
+										<p>Central contact informed about study and provided with information packs and reply sheets.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Public health</p>
+									</entry>
+									<entry colname="c2">
+										<p>Posters and information packs with reply sheets given to the local health club in Devonport.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Three Local Housing Associations</p>
+									</entry>
+									<entry colname="c2">
+										<p>180 flyers distributed through mailboxes in housing association residences in Plymouth; flyers distributed and attendance at residents&#8217; meetings. Posters, flyers, and packs left at site for visitors.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Neighborhood Managers (City Council)</p>
+									</entry>
+									<entry colname="c2">
+										<p>Researchers met with managers in Devonport and Stonehouse. Information distributed.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local community learning centre</p>
+									</entry>
+									<entry colname="c2">
+										<p>Information and flyers displayed. Researchers attended information sessions. Contact details of interested persons collected.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1" nameend="c2" namest="c1">
+										<p>Other</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Local library</p>
+									</entry>
+									<entry colname="c2">
+										<p>Flyers and posters on display.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Heart Radio/Plymouth Sound/Radio; local paper</p>
+									</entry>
+									<entry colname="c2">
+										<p>Radio chat about the study and news advert in paper.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Word of mouth</p>
+									</entry>
+									<entry colname="c2">
+										<p>First 60 trial participants asked to invite friends and/or acquaintances to join the study once they had completed the final follow-up assessment.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Individual contacts (for example, church minister, day support facility member, or publican)</p>
+									</entry>
+									<entry colname="c2">
+										<p>Posters displayed by contacts.</p>
+									</entry>
+								</row>
+								<row>
+									<entry colname="c1">
+										<p>Increasing Access to Psychological Therapies Service, Plymouth</p>
+									</entry>
+									<entry colname="c2">
+										<p>Met and encouraged Psychological Wellbeing Practitioners to refer to the study opportunistically. Left flyers, information packs, and reply sheets to be distributed. Encouraged by email.</p>
+									</entry>
+								</row>
+								<row rowsep="1">
+									<entry colname="c1">
+										<p>Posters displayed around local shops and businesses</p>
+									</entry>
+									<entry colname="c2">
+										<p>Trial posters with contact details displayed in up to 50 local shops and businesses, (newsagents, hairdressers, tattoo parlors, and so on).</p>
+									</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table><p>Informed consent was obtained from all successfully recruited participants before being randomized into the trial.</p>
+				</sec>
+			</sec>
+			<sec>
+				<st>
+					<p>Data collection</p>
+				</st><p>Data collection consisted of four elements:</p><p indent="1">1. Number of invitation letters sent, responses received, telephone calls made, participants declining participation, participants who were ineligible, and participants entering the trial through which recruitment location were all recorded on databases throughout the recruitment period, at the recruitment location and individual level, to allow conversion rates to be produced by recruitment location and by recruitment activity intensity.</p><p indent="1">2. As part of the main trial, the following data was collected at baseline: demographic information (age, sex, cohabiting status, cohabiting with other smokers, whether they were the parent of a resident child under 16, job status, age at leaving fulltime education, ethnicity, weight, and height), smoking history (age on starting smoking, longest period of cessation in the last year, attempts at cutting down, cessation aids used in past year, use of SSS, and satisfaction with previous use of SSS), number of cigarettes being smoked per day, Fagerstr&#246;m Test for Nicotine Dependence (FTND) <abbrgrp>
+						<abbr bid="B23">23</abbr>
+						<abbr bid="B24">24</abbr>
+					</abbrgrp> scores, stage of readiness to use physical activity to control smoking behaviour (scored as either pre-contemplation, contemplation, preparation, action, or maintenance) <abbrgrp>
+						<abbr bid="B25">25</abbr>
+					</abbrgrp>, expired air carbon monoxide (CO) with cessation or abstinence defined as less than 10 parts per million (PPM) (Bedfont Smokerlyser, Harrietsham, Kent United Kingdom) which is deemed to represent biochemically verified abstinence <abbrgrp>
+						<abbr bid="B26">26</abbr>
+					</abbrgrp>, and physical activity data (self-reported seven day recall of physical activity and by accelerometer). In the present paper this data was used to compare the characteristics of those recruited through different locations and via different recruitment activity intensity.</p><p indent="1">3. The time spent by the research team on recruitment activity including: searching GP and SSS databases for potential participants (including screening potential participants for eligibility for GP databases only), preparation and mailing of invitation letters, making follow-up phone calls to non-responders to the mailed invitation, contacting interested participants to screen for eligibility, and arranging baseline appointments were recorded on the trial database. Additional information relating to the time spent recruiting through broader community approaches was recorded via researcher activity logs, diaries, and work sampling procedures.</p><p indent="1">4. Qualitative data were collected through a combination of field notes, regular documented meetings, audio recorded interviews with the research team, and opportunistic feedback from stakeholders. Semi-structured, audio recorded interviews were also completed with the use of a topic guide on a purposively sampled range of participants after completing the trial to cover a range of demographics and achieved outcomes.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Data analyses</p>
+				</st><p>To calculate the conversion rates from invitation to entry into the trial, a percentage was derived from the total number of invites sent out via each location and the resulting number of randomizations from each location. Conversion rates for broader community approaches was not possible to determine due to the open-ended nature of the majority of the methods (it is unknown how many people may have read, for example, a flyer or poster and therefore it is impossible to derive a denominator).</p><p>Pearson&#8217;s chi-squared and t-tests (independent, two-sample, and two-tailed) were completed for categorical and continuous variables, respectively, to compare characteristics of those recruited through primary care and SSS, and to compare those recruited by initial invitation letter only or by initial invitation letter plus follow-up telephone calls. Statistical analyses were completed using Stata SE (version 12.0, StataCorp LP, College Station, Texas, USA).</p><p>To calculate time associated with various recruitment methods, the time associated with samples of invitations sent to groups of potential participants sent via each location which received the same intensity of effort (considered to represent best practice) was totalled and divided by the number of participants successfully recruited. All time associated with broader community approaches was also totalled and divided by the number of participants successfully recruited via these approaches. This resulted in a total amount of time spent by the research team per participant randomized. Reasons for ineligibility were also recorded.</p><p>Qualitative data were analyzed using surface-level thematic analyses and case studies in NVivo (version 9 (QSR International Pty Ltd, Doncaster, Victoria, Australia). Ethical approval for the study was granted by the NHS National Research Ethics Service Committee South West, in the United Kingdom (Local Research Ethics Committee number: 10/H0106/59).</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Results</p>
+			</st>
+			<sec>
+				<st>
+					<p>Recruitment rates</p>
+				</st><p>Invitations sent from primary care (with no follow-up telephone calls, n = 361) led to 5.1% of those invited being randomized into the study. With attempted contact by follow-up telephone calls to non-responders (n = 485) this proportion increased to 8.8%. Invitations sent from SSS (with no follow-up telephone calls, n = 255) led to 6.8% of those invited being randomized into the study. With follow-up telephone calls to non-responders (n = 137) this proportion increased to 11.1%.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Comparison of participant characteristics</p>
+				</st><p>Baseline descriptive data for the recruited sample can be found in Table&#160;<tblr tid="T2">2</tblr>. Those recruited through SSS, compared with primary care, were more likely to be recruited through letter invitation (<it>X</it>
+					<sup>2</sup> (1, <it>N =</it> 93) = 6.43, <it>P</it> = 0.01), to have used cessation aids before (<it>X</it>
+					<sup>2</sup> (1, <it>N =</it> 93) = 26.35, <it>P</it> &lt;0.01), and to have made a quit attempt in the past year (<it>X</it>
+					<sup>2</sup> (1, <it>N =</it> 93) =8.23, <it>P</it> &lt;0.01). No other variables were associated with recruitment from primary care or SSS in univariate analyses.</p>
+				<table id="T2">
+					<title>
+						<p>Table 2</p>
+					</title>
+					<caption>
+						<p>
+							<b>Sample characteristics</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="2">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1"/>
+								<entry colname="c2">
+									<p>
+										<b>Total sample (N = 99)</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>
+								<sup>a</sup>All single parents female apart from one male, recruited through SSS. As a percentage of women (up to aged 47, the oldest parent with an under 16 year child) the percentage of female single parents across all recruitment methods was 17%.</p><p>
+								<sup>b</sup>Job status from NRS social grades, UK.</p><p>
+								<sup>c</sup>Answered &#8216;moderately&#8217; or &#8216;extremely&#8217; anxious or depressed to item five of the EQ-5D questionnaire.</p><p>
+								<sup>d</sup>Includes only smokers who had stopped smoking for at least 24 hours in the previous year.</p><p>
+								<sup>e</sup>At least 24 hours&#8217; reported abstinence.</p><p>BMI: Body mass index; CO: Carbon monoxide; FTND: Fagerstr&#246;m test for nicotine dependence; IQR: Interquartile range; ppm: Parts per million; SD: Standard deviation; SSS, Stop Smoking Service.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Female (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>55 (56.1)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Age (mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>46.6 (11.3); 47.5 (38.3 - 55.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Ethnicity (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>White British</p>
+								</entry>
+								<entry colname="c2">
+									<p>95 (96.0)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Cohabiting (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>50 (50.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Children under 16 (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>28 (28.3)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Single parent<sup>a</sup> (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>6 (6.1)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Employed (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>54 (54.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Job status<sup>b</sup> (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>A to C1</p>
+								</entry>
+								<entry colname="c2">
+									<p>9 (9.0)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>C2 to E (excluding unemployed)</p>
+								</entry>
+								<entry colname="c2">
+									<p>45 (45.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Unemployed</p>
+								</entry>
+								<entry colname="c2">
+									<p>45 (45.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Age on leaving education (mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>16.3 (1.9); 16 (15 - 16)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Age on starting smoking (mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>14.7 (3.5); 14 (13 - 16)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Does partner or other cohabitant smoke? (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Yes</p>
+								</entry>
+								<entry colname="c2">
+									<p>31 (31.3)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>No</p>
+								</entry>
+								<entry colname="c2">
+									<p>27 (27.3)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Not applicable</p>
+								</entry>
+								<entry colname="c2">
+									<p>41 (41.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>BMI (mean (SD), n; median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>28.1 (6.4), 98; 27.3 (22.4 - 32.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Indicated mental health problem<sup>c</sup> (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>41 (41.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Duration of smoking (years, mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>31.9 (12.2); 34.2 (23.3 - 42.2)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Previously used SSS (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>41 (41.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Satisfaction with previous use of SSS (if used) (scale 1 to 11); mean (SD), n</p>
+								</entry>
+								<entry colname="c2">
+									<p>8.3 (2.8), 40</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Participant made a quit attempt lasting 24 hours or more in the past year (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>37 (37.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Did the participant cut down before previous cessation?<sup>d</sup> (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Yes</p>
+								</entry>
+								<entry colname="c2">
+									<p>5 (13.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>No</p>
+								</entry>
+								<entry colname="c2">
+									<p>32 (86.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Total, n</p>
+								</entry>
+								<entry colname="c2">
+									<p>37</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Used cessation aids as part of a quit attempt in previous 12 months<sup>e</sup> (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Yes</p>
+								</entry>
+								<entry colname="c2">
+									<p>29 (78.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>No</p>
+								</entry>
+								<entry colname="c2">
+									<p>8 (21.6)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Total, n</p>
+								</entry>
+								<entry colname="c2">
+									<p>37</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Used cessation aids not as part of a quit attempt in previous 12 months (n, (%))</p>
+								</entry>
+								<entry colname="c2"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Yes</p>
+								</entry>
+								<entry colname="c2">
+									<p>21 (33.9)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>No</p>
+								</entry>
+								<entry colname="c2">
+									<p>41 (66.1)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Total, n</p>
+								</entry>
+								<entry colname="c2">
+									<p>62</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Self-reported cigarettes smoked per day (mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>21.6 (14.3), 19.1 (14.4 - 24.4)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Expired air CO (ppm), mean (SD)</p>
+								</entry>
+								<entry colname="c2">
+									<p>18.0 (8.0)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>FTND (mean (SD); median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>5.6 (2.0); 6 (4 - 7)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Readiness to use physical activity as a way of controlling smoking, action and maintenance stage (n, (%))</p>
+								</entry>
+								<entry colname="c2">
+									<p>9 (9.1)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Self-reported minutes of moderate and vigorous physical activity over previous 7 days (median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>315 (120 - 540)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Accelerometer data</p>
+								</entry>
+								<entry colname="c2">
+									<p>n = 66</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Minutes spent in moderate/vigorous/very vigorous activity per day (mean (SD), n; median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>31.9 (24.5); 28.37 (13.2 - 44.8)</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Step counts (mean (SD), n; median (IQR))</p>
+								</entry>
+								<entry colname="c2">
+									<p>7701.7 (3536.2); 7343.5 (4909 - 9853)</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table><p>Those recruited via initial invitation letter, compared with those recruited via a follow-up telephone call, were more likely to have used SSS in the past (<it>X</it>
+					<sup>2</sup> (1, <it>N =</it> 93) = 4.45, <it>P</it> =0.035) and to self-report completing at least 30 minutes of moderate and vigorous physical activity per day at baseline (<it>X</it>
+					<sup>2</sup> (1, <it>N =</it> 92) = 4.45, <it>P</it> =0.035), but other variables were not associated with the recruitment method.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Recruitment rates and associated researcher time based on best practice</p>
+				</st><p>Based on the figures above and data collected on researcher time dedicated to each recruitment method, to recruit 100 participants (with a 5.1% conversion rate) through primary care (via <it>letter invitation only,</it> without follow-up) would require 1,961 invitations to be sent and 1,800 minutes (30 hours) of researcher time. To recruit 100 participants via letter invitation and follow-up telephone reminders (8.8% conversion rate) would require 1,336 invitations to be sent and would require 7,134 minutes (118.9 hours) of researcher time.</p><p>To recruit 100 participants (with a 6.8% conversion rate) through SSS (via <it>letter invitation only,</it> without follow-up) would require 1,471 invitations to be sent and 2,400 minutes (40 hours) of researcher time. To recruit 100 participants via letter invitation and follow-up telephone reminders (11.1% conversion rate) would require 901 invitations to be sent and 7,547 minutes (125.8 hours) of researcher time. Further details can be found in Tables&#160;<tblr tid="T3">3</tblr> and <tblr tid="T4">4</tblr>.</p>
+				<table id="T3">
+					<title>
+						<p>Table 3</p>
+					</title>
+					<caption>
+						<p>
+							<b>Time associated with recruiting 100 participants through stop smoking services</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="7">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1"/>
+								<entry colname="c2" nameend="c3" namest="c2">
+									<p>
+										<b>Denominator</b>
+									</p>
+								</entry>
+								<entry colname="c4" nameend="c5" namest="c4">
+									<p>
+										<b>To recruit 100 (letter only - 6.8% response)</b>
+									</p>
+								</entry>
+								<entry colname="c6" nameend="c7" namest="c6">
+									<p>
+										<b>To recruit 100 (letter plus follow-up telephone calls - 11.1% response)</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>*Letter only. **Letter plus follow-up telephone call. GP: General practitioner.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Activity</p>
+								</entry>
+								<entry colname="c2">
+									<p>Number</p>
+								</entry>
+								<entry colname="c3">
+									<p>Time (minutes)</p>
+								</entry>
+								<entry colname="c4">
+									<p>Number</p>
+								</entry>
+								<entry colname="c5">
+									<p>Time (minutes)</p>
+								</entry>
+								<entry colname="c6">
+									<p>Number</p>
+								</entry>
+								<entry colname="c7">
+									<p>Time (minutes)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Database searching</p>
+								</entry>
+								<entry colname="c2">
+									<p>Per practice/location</p>
+								</entry>
+								<entry colname="c3">
+									<p>60</p>
+								</entry>
+								<entry colname="c4">
+									<p>Per practice</p>
+								</entry>
+								<entry colname="c5">
+									<p>60</p>
+								</entry>
+								<entry colname="c6">
+									<p>Per practice</p>
+								</entry>
+								<entry colname="c7">
+									<p>60</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Initial screening</p>
+								</entry>
+								<entry colname="c2">
+									<p>To produce 200 eligible</p>
+								</entry>
+								<entry colname="c3">
+									<p>60</p>
+								</entry>
+								<entry colname="c4">
+									<p>1,471</p>
+								</entry>
+								<entry colname="c5">
+									<p>441</p>
+								</entry>
+								<entry colname="c6">
+									<p>901</p>
+								</entry>
+								<entry colname="c7">
+									<p>270</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Mailing invitations</p>
+								</entry>
+								<entry colname="c2">
+									<p>200</p>
+								</entry>
+								<entry colname="c3">
+									<p>240</p>
+								</entry>
+								<entry colname="c4">
+									<p>1,471</p>
+								</entry>
+								<entry colname="c5">
+									<p>1,765</p>
+								</entry>
+								<entry colname="c6">
+									<p>901</p>
+								</entry>
+								<entry colname="c7">
+									<p>1,081</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>GP screening of responses</p>
+								</entry>
+								<entry colname="c2">
+									<p>1</p>
+								</entry>
+								<entry colname="c3">
+									<p>2</p>
+								</entry>
+								<entry colname="c4">
+									<p>100</p>
+								</entry>
+								<entry colname="c5">
+									<p>200</p>
+								</entry>
+								<entry colname="c6">
+									<p>100</p>
+								</entry>
+								<entry colname="c7">
+									<p>200</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1" morerows="1" rowsep="1" valign="top">
+									<p>Associated researcher time</p>
+								</entry>
+								<entry colname="c2" morerows="1" rowsep="1" valign="top">
+									<p>1</p>
+								</entry>
+								<entry colname="c3">
+									<p>24*</p>
+								</entry>
+								<entry colname="c4" morerows="1" rowsep="1" valign="top">
+									<p>100</p>
+								</entry>
+								<entry colname="c5" morerows="1" rowsep="1" valign="top">
+									<p>2,400</p>
+								</entry>
+								<entry colname="c6" morerows="1" rowsep="1" valign="top">
+									<p>100</p>
+								</entry>
+								<entry colname="c7" morerows="1" rowsep="1" valign="top">
+									<p>7,547</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c3">
+									<p>157**</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+				<table id="T4">
+					<title>
+						<p>Table 4</p>
+					</title>
+					<caption>
+						<p>
+							<b>Time associated with recruiting 100 participants through primary care</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="7">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1"/>
+								<entry colname="c2" nameend="c3" namest="c2">
+									<p>
+										<b>Denominator</b>
+									</p>
+								</entry>
+								<entry colname="c4" nameend="c5" namest="c4">
+									<p>
+										<b>To recruit 100 (letter only - 5.1% response)</b>
+									</p>
+								</entry>
+								<entry colname="c6" nameend="c7" namest="c6">
+									<p>
+										<b>To recruit 100 (letter plus follow-up telephone calls - 8.8% response)</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>*Letter only. **Letter plus follow-up telephone call. GP: general practitioner.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Activity</p>
+								</entry>
+								<entry colname="c2">
+									<p>Number</p>
+								</entry>
+								<entry colname="c3">
+									<p>Time (minutes)</p>
+								</entry>
+								<entry colname="c4">
+									<p>Number</p>
+								</entry>
+								<entry colname="c5">
+									<p>Time (minutes)</p>
+								</entry>
+								<entry colname="c6">
+									<p>Number</p>
+								</entry>
+								<entry colname="c7">
+									<p>Time (minutes)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Database searching</p>
+								</entry>
+								<entry colname="c2">
+									<p>Per practice/location</p>
+								</entry>
+								<entry colname="c3">
+									<p>60</p>
+								</entry>
+								<entry colname="c4">
+									<p>Per practice</p>
+								</entry>
+								<entry colname="c5">
+									<p>60</p>
+								</entry>
+								<entry colname="c6">
+									<p>Per practice</p>
+								</entry>
+								<entry colname="c7">
+									<p>60</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Initial screening</p>
+								</entry>
+								<entry colname="c2">
+									<p>To produce 200 eligible</p>
+								</entry>
+								<entry colname="c3">
+									<p>60</p>
+								</entry>
+								<entry colname="c4">
+									<p>1,961</p>
+								</entry>
+								<entry colname="c5">
+									<p>588</p>
+								</entry>
+								<entry colname="c6">
+									<p>1,336</p>
+								</entry>
+								<entry colname="c7">
+									<p>401</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Mailing invitations</p>
+								</entry>
+								<entry colname="c2">
+									<p>200</p>
+								</entry>
+								<entry colname="c3">
+									<p>240</p>
+								</entry>
+								<entry colname="c4">
+									<p>1,961</p>
+								</entry>
+								<entry colname="c5">
+									<p>2,353</p>
+								</entry>
+								<entry colname="c6">
+									<p>1,336</p>
+								</entry>
+								<entry colname="c7">
+									<p>1,603</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>GP screening of responses</p>
+								</entry>
+								<entry colname="c2">
+									<p>1</p>
+								</entry>
+								<entry colname="c3">
+									<p>2</p>
+								</entry>
+								<entry colname="c4">
+									<p>100</p>
+								</entry>
+								<entry colname="c5">
+									<p>200</p>
+								</entry>
+								<entry colname="c6">
+									<p>100</p>
+								</entry>
+								<entry colname="c7">
+									<p>200</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1" morerows="1" rowsep="1" valign="top">
+									<p>Associated researcher time</p>
+								</entry>
+								<entry colname="c2" morerows="1" rowsep="1" valign="top">
+									<p>1</p>
+								</entry>
+								<entry colname="c3">
+									<p>18*</p>
+								</entry>
+								<entry colname="c4" morerows="1" rowsep="1" valign="top">
+									<p>100</p>
+								</entry>
+								<entry colname="c5" morerows="1" rowsep="1" valign="top">
+									<p>1,800</p>
+								</entry>
+								<entry colname="c6" morerows="1" rowsep="1" valign="top">
+									<p>100</p>
+								</entry>
+								<entry colname="c7" morerows="1" rowsep="1" valign="top">
+									<p>7,134</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c3">
+									<p>145**</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table><p>The reasons for ineligibility were similar across recruitment methods (Table&#160;<tblr tid="T5">5</tblr>). The main reason for ineligibility (for more than 50% of those ineligible) was due to the individual having already quit smoking. A summary of recruitment via different locations is shown in Table&#160;<tblr tid="T6">6</tblr>, and the flow of participants through each recruitment method up to randomization is shown in Figure&#160;<figr fid="F1">1</figr>.</p>
+				<table id="T5">
+					<title>
+						<p>Table 5</p>
+					</title>
+					<caption>
+						<p>
+							<b>Reasons for ineligibility (other community not shown, 0% ineligible)</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="3">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Reasons for ineligibility</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>Primary care</b>
+									</p>
+								</entry>
+								<entry colname="c3">
+									<p>
+										<b>SSS</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>NRT: Nicotine replacement therapy; SSS, Stop Smoking Services.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Health/physical (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>15.8</p>
+								</entry>
+								<entry colname="c3">
+									<p>20.5</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Already quit (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>57.9</p>
+								</entry>
+								<entry colname="c3">
+									<p>53.8</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Smokes &lt;10 cigarettes per day (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>10.5</p>
+								</entry>
+								<entry colname="c3">
+									<p>10.4</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Close friend or relative of somebody already in the trial (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>0.0</p>
+								</entry>
+								<entry colname="c3">
+									<p>5.1</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Currently using NRT (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5.3</p>
+								</entry>
+								<entry colname="c3">
+									<p>5.1</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Under 18 years (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>0.0</p>
+								</entry>
+								<entry colname="c3">
+									<p>5.1</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Wants to quit immediately (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>10.5</p>
+								</entry>
+								<entry colname="c3">
+									<p>0.0</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+				<table id="T6">
+					<title>
+						<p>Table 6</p>
+					</title>
+					<caption>
+						<p>
+							<b>Participant recruitment by recruitment method</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="3">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Recruitment method</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>N = 99, n (%)</b>
+									</p>
+								</entry>
+								<entry colname="c3">
+									<p>
+										<b>% of target</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Primary care</p>
+								</entry>
+								<entry colname="c2">
+									<p>62 (62.6)</p>
+								</entry>
+								<entry colname="c3">
+									<p>62/60 (103.3%)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Letter only</p>
+								</entry>
+								<entry colname="c2">
+									<p>31 (31.3)</p>
+								</entry>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Letter plus reminder telephone calls</p>
+								</entry>
+								<entry colname="c2">
+									<p>31 (31.3)</p>
+								</entry>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Stop Smoking Services</p>
+								</entry>
+								<entry colname="c2">
+									<p>31 (31.3)</p>
+								</entry>
+								<entry colname="c3">
+									<p>31/30 (103.3%)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Letter only</p>
+								</entry>
+								<entry colname="c2">
+									<p>24 (24.2)</p>
+								</entry>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Letter plus reminder telephone calls</p>
+								</entry>
+								<entry colname="c2">
+									<p>7 (7.1)</p>
+								</entry>
+								<entry colname="c3"/>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Community (without invitation letter)</p>
+								</entry>
+								<entry colname="c2">
+									<p>6 (6.1)</p>
+								</entry>
+								<entry colname="c3">
+									<p>6/30 (20.0%)</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+				<fig id="F1"><title><p>Figure 1</p></title><caption><p>CONSORT diagram showing recruitment approaches and participant flow up to randomization.</p></caption><text>
+   <p>
+      <b>CONSORT diagram showing recruitment approaches and participant flow up to randomization.</b>
+   </p>
+</text><graphic file="1745-6215-16-1-1"/></fig>
+			</sec>
+			<sec>
+				<st>
+					<p>Qualitative observations</p>
+				</st><p>A qualitative summary of the variety of other community approaches to recruitment are presented in Table&#160;<tblr tid="T7">7</tblr>. The various approaches resulted in only six participants entering the study and had a directly associated researcher time of 469 minutes to recruit one participant. To recruit 100 participants via other community approaches would require 46,900 minutes (781.7 hours) of researcher time.</p>
+				<table id="T7">
+					<title>
+						<p>Table 7</p>
+					</title>
+					<caption>
+						<p>
+							<b>Location and summary of effectiveness of recruitment efforts</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="2">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Workplace site</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>Relative success and qualitative observations</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Local adult education and training provider</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Despite being followed-up on after initial provision of information, nobody came forward expressing an interest in the study. Location was identified as an attempt to target the unemployed and low skilled. A general feeling that the information became lost amongst lots of other available information.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Post Office Manual Data Entry Centre (MDEC)</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. After initial meeting and briefing with the personnel manager, information was distributed at team meetings to all employees (n = 500. Despite following up with the personnel manager, nobody came forward expressing an interest. No confirmation of the quality of information that was cascaded to all employees; uncertainty over how well or enthusiastically the information was distributed. Likely to have been a low priority among the managers and a potential burden on their time.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1" nameend="c2" namest="c1">
+									<p>Educational site</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local primary school</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. A small article about the study published and distributed to parents within the newsletter failed to attract any interest. Potentially intended to target single parents, but likely to be too broad an approach which people took little notice of as the information became lost amongst other more relevant information in the newsletter. Potentially out of place in the school letter context.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Mother and toddler groups; several local children&#8217;s centers</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Intended to target single parents as much as possible, the mother and toddler groups consisted of relatively low numbers, not all of whom were smokers. Small amounts of interest were shown, but researchers reported that the mothers&#8217; focus was on their children and they were generally not very receptive to the information being offered. Researcher potentially viewed as an &#8216;outsider&#8217;.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1" nameend="c2" namest="c1">
+									<p>Community site/organization</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Job centre (Devonport)</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 1. Intended to target the unemployed, one person was recruited into the trial from approximately 100 information packs being distributed. Researcher found it to be quite an &#8216;intrusive&#8217; activity on people smoking outside the job centre and met with some degree of hostility. Reported a sense that people would take the information just to get them to &#8216;go away&#8217;. A feeling that people were not very receptive to the information as they were there for other reasons with other pressing concerns. Potentially being viewed as &#8216;an outsider&#8217;.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local community hub cafe</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Intended to target the unemployed and low skilled. Researchers reported a feeling that the people attending this location had multiple other serious issues (housing, drug addiction, and so on) which made them unreceptive to the information on offer. For most, smoking behaviour was not a high priority.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local community cooperative organization</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Reports that once the information had been handed over and staff briefed about the study, it would quickly become a low priority among staff given information for distribution.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>YMCA (community-run gym)</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. No idea on the number of smokers actually using the service. Potential again for the enthusiasm for promoting the study to be lost once the information is left with those outside the study team, despite follow-up attempts.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local gym</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Impression that promoting the study was a very low priority for the gym instructors, with no interest being generated.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local social club</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 2. The contact at the small local social club was very proactive and involved with the study. They had their own motivation to promote healthy initiatives to the local community and as such generated interest. The comparative success of this location was reported to be solely due to the individual&#8217;s motivation for promoting the study and encouraging their service users to take part.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Public health</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Similar reports to other groups where information was left for groups attended by potential participants - not all attending were smokers, and with relatively low numbers attending, no interest was generated.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Three Local Housing Associations</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Potential for information to be dropped to houses which had already received an invitation via their GP. This type of invitation possibly lacked the &#8216;authority&#8217; of the invitation coming directly from their GP.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Neighborhood Managers (City Council)</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. It was again reported that whilst enthusiasm was high amongst the neighborhood managers when meeting with the research team, the study took a very low priority for what is a very busy work force.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local community learning centre</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Intended to target the unemployed and low skilled, it was unpredictable how many people would attend the sessions at which the researchers provided information and again not all attendees would be smokers. Potentially seen as &#8216;an outsider&#8217;.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1" nameend="c2" namest="c1">
+									<p>Other</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Local library</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. No way of knowing how many people read or saw the information on display. Potential for information to become lost amongst swathes of other information.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Heart Radio/Plymouth Sound/Radio Devon/Newspaper</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Broad awareness of the study was generated and interest attracted from people too far outside the study areas to be offered inclusion. The approach was not targeted enough at the disadvantaged groups intended.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Word of mouth</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Proved to be ineffective, attracting no interest. Potentially due to lack of motivation on an individual level in promoting the study; potentially could be improved by incentivizing referral.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Individual contacts (such as minister of religion, local day support facility member, and publican)</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 1. One person recruited opportunistically through a researcher&#8217;s local contact. Relatively small reach via this approach and again reliant on individual promotion of study by people outside the study team.</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Increasing Access to Psychological Therapies Service (IAPT), Plymouth</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Intended to target those with mental health problems. Systems for recruiting and referring individuals were problematic and at times convoluted (due to data protection). Communication between the research team and IAPT was difficult as there was a sense that the study was a low priority for the practitioners who had other issues to deal with.</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Posters displayed around local shops and businesses</p>
+								</entry>
+								<entry colname="c2">
+									<p>Total recruited = 0. Generally reported to be wholly ineffectual, assumed to be due to individuals&#8217; lack of motivation to take the initiative and contact the research team directly.</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table><p>One participant was recruited opportunistically after enquiring at the health centre where the study was based about support services for smokers; another participant was recruited through a friend who had been approached via SSS. A summary of the characteristics of the participants interviewed at the end of the study can be found in Table&#160;<tblr tid="T8">8</tblr>.</p>
+				<table id="T8">
+					<title>
+						<p>Table 8</p>
+					</title>
+					<caption>
+						<p>
+							<b>Characteristics of participants who were interviewed at the end of the study</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="3">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1"/>
+								<entry colname="c2">
+									<p>
+										<b>Control (N = 10) (20% of sample)</b>
+									</p>
+								</entry>
+								<entry colname="c3">
+									<p>
+										<b>Intervention (N = 15) (30% of initial sample)</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>
+								<sup>a</sup>Job status from NRS social grades, UK.</p><p>*no data on 50% reduction for three participants. CO: Carbon monoxide; FTND: Fagerstr&#246;m test for nicotine dependence; ppm: Parts per million; MVPA: Moderate and vigorous physical activity; SD: Standard deviation.</p>
+						</tfoot>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>Demographics</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Age (years); mean, <it>(</it>SD)<it>)</it>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>46 (11)</p>
+								</entry>
+								<entry colname="c3">
+									<p>52 (11)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Gender (m<it>:</it>f)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5:5</p>
+								</entry>
+								<entry colname="c3">
+									<p>8:7</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Job status<sup>
+											<it>a</it>
+										</sup>; n (%)</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>A1 to C1</p>
+								</entry>
+								<entry colname="c2">
+									<p>0 (0)</p>
+								</entry>
+								<entry colname="c3">
+									<p>0 (0)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>C2 to E (excluding unemployed)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5 (50)</p>
+								</entry>
+								<entry colname="c3">
+									<p>9 (60)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Unemployed</p>
+								</entry>
+								<entry colname="c2">
+									<p>5 (50)</p>
+								</entry>
+								<entry colname="c3">
+									<p>6 (40)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Single parenthood; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>1 (10)</p>
+								</entry>
+								<entry colname="c3">
+									<p>0 (0)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Baseline data</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Smoking characteristics</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Tobacco (grams/day); mean (SD)</p>
+								</entry>
+								<entry colname="c2">
+									<p>17.4 (8.7)</p>
+								</entry>
+								<entry colname="c3">
+									<p>18.4 (12.5)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>FTND; mean (SD)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5.3 (1.9)</p>
+								</entry>
+								<entry colname="c3">
+									<p>4.9 (1.7)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Self-reported MVPA (minutes/week); mean (SD)</p>
+								</entry>
+								<entry colname="c2">
+									<p>595 (757)</p>
+								</entry>
+								<entry colname="c3">
+									<p>401 (644)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Self-reported MVPA (minutes/week); Range; n (%)</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>0</p>
+								</entry>
+								<entry colname="c2">
+									<p>2 (20)</p>
+								</entry>
+								<entry colname="c3">
+									<p>4 (27)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>1 - 499</p>
+								</entry>
+								<entry colname="c2">
+									<p>4 (40)</p>
+								</entry>
+								<entry colname="c3">
+									<p>9 (60)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>500 - 1999</p>
+								</entry>
+								<entry colname="c2">
+									<p>3 (30)</p>
+								</entry>
+								<entry colname="c3">
+									<p>1 (7)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>2000+</p>
+								</entry>
+								<entry colname="c2">
+									<p>1 (10)</p>
+								</entry>
+								<entry colname="c3">
+									<p>1 (7)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Quit attempt in past year; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5 (50)</p>
+								</entry>
+								<entry colname="c3">
+									<p>5 (33)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Outcomes</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Quit attempt made; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>0 (0)</p>
+								</entry>
+								<entry colname="c3">
+									<p>5 (33)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>
+										<it>Four-</it>week CO confirmed abstinence; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>n/a</p>
+								</entry>
+								<entry colname="c3">
+									<p>4 (80)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>&gt;50% reduction in smoking; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>2 (20)</p>
+								</entry>
+								<entry colname="c3">
+									<p>4 (&gt;33)*</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>No change in smoking; n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>8 (80)</p>
+								</entry>
+								<entry colname="c3">
+									<p>4 (&gt;26)*</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1"/>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Recruitment</p>
+								</entry>
+								<entry colname="c2"/>
+								<entry colname="c3"/>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Avenue (GP:SSS:community); n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>5:5:0 (50:50:0)</p>
+								</entry>
+								<entry colname="c3">
+									<p>7:6:2 (47:40:13)</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Type (letter:telephone:other); n (%)</p>
+								</entry>
+								<entry colname="c2">
+									<p>7:3:0 (70:30:0)</p>
+								</entry>
+								<entry colname="c3">
+									<p>6:7:2 (40:47:13)</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table><p>The novel approach of actively promoting support for reduction in smoking was well received by the majority of the sample. Many emphasized the appeal of reduction against the alternative of stopping abruptly. The appeal of reducing smoking appeared to stem from an underlying desire to change behaviour, but due to a lack of confidence or desire to stop abruptly, reduction seemed a much more manageable objective:</p><p>&#8216;I think that was probably it, the reduction thinking. Well you know, rather than sort of go cold turkey and completely stop I thought, &#8220;Oh you know, you could help me reduce it,&#8221; which you did, so you know that obviously it worked.&#8217; <it>(Female, 60 to 65 years, unemployed, moderate smoker, intervention)</it>
+				</p><p>&#8216;Yeah it did as well, because I thought, &#8220;I don&#8217;t really want to, I am not ready to stop yet,&#8221; and I thought cutting down is quite good.&#8217; <it>(Female, 35 to 40 years, employed part-time, moderate smoker, control)</it>
+				</p><p>For some, past experiences of failed quitting heightened the appeal of support for reduction as a novel approach to tackling their smoking behaviour:</p><p>&#8216;Well, for three or four years I&#8217;ve been trying to give up smoking [and] last month [I] done 10 months, and then I had a smoke&#8230;This one appealed to me because you cut down, you know, every week you cut down two cigarettes a week and you just cut down and cut down and I eventually got down to none.&#8217; <it>(Male, 60 to 65 years, unemployed, moderate smoker, intervention, successful quitter)</it>
+				</p><p>The message in the trial invitation of support to cut down did not appear to threaten people&#8217;s sense of control over their own behaviour, compared with a message around abrupt quitting. For some, it was clear that a pervading message of the need to stop smoking would have completely alienated them from engaging in the study:</p><p>&#8216;[The researcher] was saying &#8220;We can help you to cut down. We may in time be able to stop you smoking&#8221; and I said &#8220;Well, that&#8217;s a very sensible attitude to take&#8221; because someone telling me &#8220;I&#8217;m going to stop you smoking&#8221; I&#8217;d tell them to&#8230; go away! So that&#8217;s what made me do it initially, because they weren&#8217;t threatening me that they could stop me smoking. But even at this time, there is no-one that can tell me &#8220;I can stop you smoking&#8221; you know what I mean?&#8217; <it>(Male, 55 to 60 years, unemployed, heavy smoker, intervention)</it>
+				</p><p>The invitation was designed, as was the intervention, to be supportive and client-centered and a step away from traditional services, and the supportive and unpressurised nature of the invitation was well received:</p><p>&#8216;You know, I say, when [the researcher] gave me the leaflet I thought &#8220;Yeah, alright, I&#8217;ve heard all this before&#8221; and I thought &#8220;Well, here we go with the hard sell&#8221;. But [they were] totally different. [They were] so relaxed, so friendly, and that&#8217;s what pushed me towards it. If [they] had tried to come across with the hard sell I would most probably have just ignored [them] and said cheerio. But I think just approaching people in a friendly manner&#8230;I mean, sometimes it helps.&#8217; <it>(Male, 55 to 60 years, employed full time, heavy smoker, intervention)</it>
+				</p><p>Negative experiences of using NRT and other medicinal therapies emerged as a strong theme linked to motivation for taking part. The intervention was envisaged as a novel alternative to NRT, and people&#8217;s description of past experiences seemed to confirm this particular aspect of the intervention:</p><p>&#8216;Oh I&#8217;ve tried a couple of times to cut out smoking totally &#8216;cause I&#8217;ve tried the smoking aids and all the things you know, the puffer and the patches and that hasn&#8217;t worked, so I thought &#8220;Oh well, I&#8217;ll give this a try then try and cut down,&#8221; yeah.&#8217; <it>(Male, 40 to 45 years, employed part-time, very heavy smoker, intervention)</it>
+				</p><p>The appeal of the invitation to reduce smoking, as opposed to quit, was supported by the Health Trainers when interviewed, who identified a desire to reduce smoking as the primary factor when asked &#8216;What attracted participants to the study?&#8217;:</p><p>&#8216;They&#8217;re only coming in because we&#8217;ve said reducing smoking, rather than quitting and I think that&#8217;s what is getting them into the surgery&#8230;&#8217; <it>(Health Trainer three)</it>
+				</p><p>&#8216;Um, a different approach maybe, slightly different to what they&#8217;ve actually done before, and I think it wasn&#8217;t about quitting, it&#8217;s about trying to reduce rather than them quitting&#8230;&#8217; <it>(Health Trainer two)</it>
+				</p><p>Overall, there was a clear indication that the invitation appealed to, and reached, people who would not have been interested in support to quit.</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Discussion</p>
+			</st><p>This unique study provides much needed data on the engagement of disadvantaged populations with a focus on harm reduction as opposed to abrupt quitting, and provides a systematic attempt to assess the effects of increasing intensity of recruitment activity (via follow-up telephone calls) and recruitment methods on accessing disadvantaged groups.</p><p>Recruitment targets were met for the operational definition of a disadvantaged group of 91% in social class C2 to E (target 75%), 41% with an indicated mental health problem (target 20%), but failed to reach the proposed target of 30% for single parents (17% of sample). This was a particularly difficult group to target, partly due to this information not being available from GP and SSS databases, and also due to the difficulty in targeting single parents within the community. From the attempts that were made to target this sample within the community (parent and toddler groups and school settings) no single parents were recruited. More robust and effective methods are needed to understand the best way to engage with single parents who smoke. Since conducting the study we have become aware of several smoking and harm reduction studies (for example, studies cited in the National Institute for Health and Care Excellence (NICE) guidelines on harm reduction, 2013, and these may provide further ideas on how best to recruit single parents. Future ideas for recruitment of single parents may include the use of midwifery records which record the smoking status of antenatal women.</p><p>The greatest reason (&gt;50%) for ineligibility was an individual having already quit smoking, although it is possible that potential participants used this as an excuse for not participating. Records of smoking status, held by both GP practices and SSS, were obviously dated in terms of the last contact at which they were recorded as smoking, thereby increasing the resources needed for inviting and screening.</p><p>The sample consisted overall of relatively heavy smokers (with a mean of 20 self-reported cigarettes per day, compared with a national average of 12.7 cigarettes per day) <abbrgrp>
+					<abbr bid="B27">27</abbr>
+				</abbrgrp>, indicating that the invitation to support reduction can recruit heavier smokers, building on previous survey data <abbrgrp>
+					<abbr bid="B28">28</abbr>
+				</abbrgrp>. The sample self-reported high levels of daily physical activity, averaging more than the recommended 30 minutes of moderate andvigorous activity per day, although objectively measured physical activity suggested that individuals were overestimating their levels of activity. There is evidence to suggest that this is fairly typical of a disadvantaged population due to higher levels of activity associated with work and active transport <abbrgrp>
+					<abbr bid="B29">29</abbr>
+					<abbr bid="B30">30</abbr>
+					<abbr bid="B31">31</abbr>
+				</abbrgrp>. The higher levels of activity may also reflect self-selection bias; the trial invitation referred to an intervention which included physical activity and lifestyle support which may have attracted a more active sample. Of those recruited, the gender balance was relatively even and similar to levels of engagement within the NHS SSS <abbrgrp>
+					<abbr bid="B32">32</abbr>
+				</abbrgrp>. Overall, approximately 44% and 56% of all mailed invitations went to males and females respectively, indicating very similar recruitment rates for males (7.7%) and females (7.4%), suggesting the approach to recruitment and appeal of the invitation is equally effective at recruiting both males and females.</p><p>Whilst the use of follow-up telephone calls was effective at increasing recruitment rates, this increased researcher time (and costs) about five to seven-fold per participant recruited. The findings suggest that those recruited via follow-up telephone calls represented a harder-to-reach population, being both less likely to have used SSS in the past and less physically active. The use of follow-up telephone calls therefore may offer added value in reaching the more service-resistant smokers. It is possible that the reach of the intervention was higher than indicated in the recruitment rates presented; potentially anywhere between 10 and 66% of smokers invited into the study were not interested or were ineligible due to having a desire to quit <abbrgrp>
+					<abbr bid="B33">33</abbr>
+				</abbrgrp>. For example, if 1,000 invites were sent, but potentially 66% of those invited were not part of the targeted population, the conversion rates of 5.1 to 11.1% presented here may in fact represent 11.6 to 25.2%, allowing for those who were no part of the intended targeted population for recruitment.</p><p>Differences were observed in those recruited through primary care and SSS predominantly in terms of smoking history. Those recruited through SSS were more likely to have used cessation aids in the past and more likely to have made a quit attempt in the previous 12 months. Another significant difference was that those invited through SSS were more likely to respond directly to the letter invitation than to the follow-up telephone call. These differences probably reflected a much more motivated group coming through SSS, as they had already engaged with a service to help address their smoking behaviour and were likely to have contemplated changing smoking behaviour. Of those recruited through primary care nearly three quarters (72.6%) had never previously engaged with SSS. When considered alongside differences in previous cessation aid use and previous quit attempts, this finding suggests that those recruited via primary care represented a much harder-to-reach group of smokers than those who had attended SSS.</p><p>The use of an invitation to receive support to cut down, sent out via primary care, could therefore be a valid way of increasing the reach of traditional smoking services. The nature of the invitation itself (not being branded as part of the SSS and offering support to cut down as opposed to quit) may also have played a large part in increasing the interest in participation in the study among those harder-to-reach smokers, and qualitative data supported this premise. There appears to be value in the invitation as a successful &#8216;smoking cessation induction approach for those who would not otherwise engage with traditional services.</p><p>Other community approaches were generally very unsuccessful, only recruiting six out of a targeted 30 participants. Data collected suggested this was due to three main reasons. First, when information was given to third parties for distribution the effectiveness relied on the individual&#8217;s motivation and priority for promoting the study, which was frequently low. Second, when the researchers took an active role in promoting the study in community-based locations they felt they were viewed as an &#8216;outsider&#8217; and treated with some degree of skepticism (as has been shown elsewhere <abbrgrp>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp>) and, on occasion, hostility. Third, the recruitment approach of distributing information in the form of flyers, posters, and public advertisements, all of which relied on the smoker&#8217;s motivation to directly contact the research team, was shown to be completely ineffective. An additional element restricting the effectiveness of the community-based recruitment approaches was concern over the researchers&#8217; personal safety, which restricted the kinds of activity that were deemed appropriate. Our experiences mirrored those of public health outreach workers trying to recruit smokers into SSS to attempt abrupt quitting in the same location a year before the present trial.</p><p>Overall, more research is needed about community-based recruitment approaches, although the indications from the present study suggest they are likely to be ineffective. Additional time spent with, and incentives for, community groups could be explored along with enrolling community &#8216;gatekeepers&#8217; into the study as part of the research team and promoting partnership working. There is little evidence to suggest that the distribution of information via posters and other community media is effective; the possibility remains that doing so may raise the profile and increase the legitimacy of the research, making recruitment via other avenues more likely <abbrgrp>
+					<abbr bid="B34">34</abbr>
+				</abbrgrp>, although this cannot be quantified from the current research.</p><p>It is a limitation that the present study did not seek to recruit homeless and other disadvantaged smokers who were not registered with a GP, as well as excluding those with serious mental illness (groups demonstrating high levels of smoking), but within the scope of the study this was necessary to ensure adequate screening during recruitment and safety of the research team. Smoking reduction trials may have particular appeal amongst such groups and future research in this area would be appropriate.</p><p>Overall, assessing the reach of the current study (in line with the RE-AIM framework, used for assessing an intervention&#8217;s Reach, Effectiveness, Adoption, Implementation, and Maintenance <abbrgrp>
+					<abbr bid="B35">35</abbr>
+				</abbrgrp>) is problematic due to lack of any denominator figure for the eligible population from which the sample was derived. Ethical approval was not obtained for profiling those who were invited into the study but did not respond and were not successfully contacted by the research team. A future study should carefully consider ways to address this in order to more firmly establish the reach of the study in terms of accessing the most disadvantaged groups within society.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Conclusions</p>
+			</st><p>This study has demonstrated that using General Practice lists is a powerful way of recruiting patients to health interventions in an area of deprivation, and much more effective than community approaches. More than 98% of people in the United Kingdom in all areas are registered with a GP and on average visit 5.3 times per year <abbrgrp>
+					<abbr bid="B36">36</abbr>
+				</abbrgrp>. People trust information provided via their GP more than other sources <abbrgrp>
+					<abbr bid="B37">37</abbr>
+				</abbrgrp>, and this almost certainly was the reason for the much higher response rate. It provides important and pragmatic information for the future recruitment of disadvantaged populations into research trials.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Abbreviations</p>
+			</st><p>BMI: Body mass index; CO: Carbon monoxide; EARS: Exercise assisted reduction then stop; FTND: Fagerstr&#246;m test for nicotine dependence; GP: General practitioner; HTA: Health technology assessment; IQR: Interquartile range; ISRCTN: International Standardized Randomized Controlled Trial Number; LREC: Local Research Ethics Committee; NHS: National Health Service; NICE: National institute for health and care excellence; NRT: Nicotine replacement therapy; PA: Physical activity; PC: Primary care; SD: Standard deviation; SSS: Stop smoking services.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Competing interests</p>
+			</st><p>PA has been a consultant and done research for manufacturers of smoking cessation products. RW has undertaken research and consultancy for companies that develop and manufacture smoking cessation medications. He is Co-Director of the National Centre for Smoking Cessation and Training and a trustee of the stop smoking charity, QUIT. He has a share of a patent on a novel nicotine delivery device. All other authors have declared no competing interests.</p><p>RW has undertaken research and consultancy for companies that develop and manufacture smoking cessation medications. He is co-Director of the National Centre for Smoking Cessation and Training and a trustee of the stop-smoking charity, QUIT. He has a share of a patent on a novel nicotine delivery device. All other authors have declared no competing interests.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Authors&#8217; contributions</p>
+			</st><p>TT was responsible for the day-to-day operationalization and management of the study, the initial drafting of the text, and the completion of the statistical analyses. AHT (as Principal Investigator) had overall responsibility for the study and initial drafting of the text, and completing the statistical analyses in the text. FW was involved in completing the statistical analyses. RA and RB advised and supported the development of recruitment methods. PA and CG participated in the design of the intervention and its methods. RT supported with the trial design and statistical analysis plan. JC, MU, SM and RW participated in the overall design and methods of the study. All authors were involved in all stages of the work: the design, development of methods, analysis, commenting upon and drafting the manuscript. All authors read and approved the final manuscript.</p>
+		</sec>
+	</bdy>
+	<bm>
+		<ack>
+			<sec>
+				<st>
+					<p>Acknowledgements</p>
+				</st><p>This paper presents independent research funded by the National Institute for Health Research (NIHR) under its Health Technology Assessment Research Programme (grant reference number: 07/78/02). The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health.</p><p>The team would like to acknowledge and thank the three researchers working as Health Trainers on the project (Julie Lloyd, Maggie Kelly, and Mel Fairbairn) for their insights and tireless efforts in recruiting for the trial, Naomi Southern for her diligent administrative support throughout, Russ Moody and his team at the Stop Smoking Services in Plymouth for their support, all the staff at the various GP practices involved with recruitment, and all the broader community contacts who supported recruitment.</p>
+			</sec>
+		</ack>
+		<refgrp><bibl id="B1"><title><p>Socioeconomic status and smoking: a review</p></title><aug><au><snm>Hiscock</snm><fnm>R</fnm></au><au><snm>Bauld</snm><fnm>L</fnm></au><au><snm>Amos</snm><fnm>A</fnm></au><au><snm>Fidler</snm><fnm>JA</fnm></au><au><snm>Munafo</snm><fnm>M</fnm></au></aug><source>Ann N Y Acad Sci</source><pubdate>2012</pubdate><volume>1248</volume><fpage>107</fpage><lpage>123</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1749-6632.2011.06202.x</pubid><pubid idtype="pmpid" link="fulltext">22092035</pubid></pubidlist></xrefbib></bibl><bibl id="B2"><title><p>Socio-demographic predictors of quitting smoking: how important are household factors?</p></title><aug><au><snm>Chandola</snm><fnm>T</fnm></au><au><snm>Head</snm><fnm>J</fnm></au><au><snm>Bartley</snm><fnm>M</fnm></au></aug><source>Addiction</source><pubdate>2004</pubdate><volume>99</volume><fpage>770</fpage><lpage>777</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1360-0443.2004.00756.x</pubid><pubid idtype="pmpid" link="fulltext">15139875</pubid></pubidlist></xrefbib></bibl><bibl id="B3"><title><p>Social inequalities in male mortality, and in male mortality from smoking: indirect estimation from national death rates in England and Wales, Poland, and North America</p></title><aug><au><snm>Jha</snm><fnm>P</fnm></au><au><snm>Peto</snm><fnm>R</fnm></au><au><snm>Zatonski</snm><fnm>W</fnm></au><au><snm>Boreham</snm><fnm>J</fnm></au><au><snm>Jarvis</snm><fnm>MJ</fnm></au><au><snm>Lopez</snm><fnm>AD</fnm></au></aug><source>Lancet</source><pubdate>2006</pubdate><volume>368</volume><fpage>367</fpage><lpage>370</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0140-6736(06)68975-7</pubid><pubid idtype="pmpid" link="fulltext">16876664</pubid></pubidlist></xrefbib></bibl><bibl id="B4"><title><p>Predictors of attempts to stop smoking and their success in adult general population samples: a systematic review</p></title><aug><au><snm>Vangeli</snm><fnm>E</fnm></au><au><snm>Stapleton</snm><fnm>J</fnm></au><au><snm>Smit</snm><fnm>ES</fnm></au><au><snm>Borland</snm><fnm>R</fnm></au><au><snm>West</snm><fnm>R</fnm></au></aug><source>Addiction</source><pubdate>2011</pubdate><volume>106</volume><fpage>2110</fpage><lpage>2121</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1360-0443.2011.03565.x</pubid><pubid idtype="pmpid" link="fulltext">21752135</pubid></pubidlist></xrefbib></bibl><bibl id="B5"><title><p>Evaluating initial reach and robustness of a practical randomized trial of smoking reduction</p></title><aug><au><snm>Glasgow</snm><fnm>RE</fnm></au><au><snm>Estabrooks</snm><fnm>PA</fnm></au><au><snm>Marcus</snm><fnm>AC</fnm></au><au><snm>Smith</snm><fnm>TL</fnm></au><au><snm>Gaglio</snm><fnm>B</fnm></au><au><snm>Levinson</snm><fnm>AH</fnm></au><etal/></aug><source>Heal Psychol</source><pubdate>2008</pubdate><volume>27</volume><fpage>780</fpage><lpage>788</lpage></bibl><bibl id="B6"><title><p>Do behavioral smoking reduction approaches reach more or different smokers? two studies; similar answers</p></title><aug><au><snm>Glasgow</snm><fnm>RE</fnm></au><au><snm>Gaglio</snm><fnm>B</fnm></au><au><snm>France</snm><fnm>EK</fnm></au><au><snm>Marcus</snm><fnm>A</fnm></au><au><snm>Riley</snm><fnm>KM</fnm></au><au><snm>Levinson</snm><fnm>A</fnm></au><etal/></aug><source>Addict Behav</source><pubdate>2006</pubdate><volume>31</volume><fpage>509</fpage><lpage>518</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.addbeh.2005.05.039</pubid><pubid idtype="pmpid" link="fulltext">15979815</pubid></pubidlist></xrefbib></bibl><bibl id="B7"><title><p>Improving access to smoking cessation services for disadvantaged groups: a systematic review</p></title><aug><au><snm>Murray</snm><fnm>RL</fnm></au><au><snm>Bauld</snm><fnm>L</fnm></au><au><snm>Hackshaw</snm><fnm>LE</fnm></au><au><snm>McNeill</snm><fnm>A</fnm></au></aug><source>J Public Health</source><pubdate>2009</pubdate><volume>31</volume><fpage>258</fpage><lpage>277</lpage><xrefbib><pubid idtype="doi">10.1093/pubmed/fdp008</pubid></xrefbib></bibl><bibl id="B8"><title><p>A systematic review and meta-analysis of the effectiveness of behavioral smoking cessation interventions in selected disadvantaged groups</p></title><aug><au><snm>Bryant</snm><fnm>J</fnm></au><au><snm>Bonevski</snm><fnm>B</fnm></au><au><snm>Paul</snm><fnm>C</fnm></au><au><snm>McElduff</snm><fnm>P</fnm></au><au><snm>Attia</snm><fnm>J</fnm></au></aug><source>Addiction</source><pubdate>2011</pubdate><volume>106</volume><fpage>1568</fpage><lpage>1585</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1360-0443.2011.03467.x</pubid><pubid idtype="pmpid" link="fulltext">21489007</pubid></pubidlist></xrefbib></bibl><bibl id="B9"><title><p>Systematic review: smoking cessation intervention strategies for adults and adults in special populations</p></title><aug><au><snm>Ranney</snm><fnm>L</fnm></au><au><snm>Melvin</snm><fnm>C</fnm></au><au><snm>Lux</snm><fnm>L</fnm></au><au><snm>McClain</snm><fnm>E</fnm></au><au><snm>Lohr</snm><fnm>KN</fnm></au></aug><source>Ann Intern Med</source><pubdate>2006</pubdate><volume>145</volume><fpage>845</fpage><lpage>856</lpage><xrefbib><pubidlist><pubid idtype="doi">10.7326/0003-4819-145-11-200612050-00142</pubid><pubid idtype="pmpid" link="fulltext">16954352</pubid></pubidlist></xrefbib></bibl><bibl id="B10"><title><p>Low-income groups and behaviour change interventions: a review of intervention content, effectiveness and theoretical frameworks</p></title><aug><au><snm>Michie</snm><fnm>S</fnm></au><au><snm>Jochelson</snm><fnm>K</fnm></au><au><snm>Markham</snm><fnm>WA</fnm></au><au><snm>Bridle</snm><fnm>C</fnm></au></aug><source>J Epidemiol Commun Heal</source><pubdate>2009</pubdate><volume>63</volume><fpage>610</fpage><lpage>622</lpage><xrefbib><pubid idtype="doi">10.1136/jech.2008.078725</pubid></xrefbib></bibl><bibl id="B11"><aug><au><snm>Michie</snm><fnm>S</fnm></au><au><snm>Rumsey</snm><fnm>N</fnm></au><au><snm>Fussell</snm><fnm>S</fnm></au><au><snm>Hardeman</snm><fnm>W</fnm></au><au><snm>Johnston</snm><fnm>M</fnm></au><au><snm>Newman</snm><fnm>S</fnm></au><etal/></aug><source>Improving Health - Changing Behaviour: NHS Health Trainer Handbook</source><publisher>London: Department of Health and British Psychological Society</publisher><pubdate>2008</pubdate></bibl><bibl id="B12"><title><p>Evaluating the public health impact of health promotion interventions: the RE-AIM framework</p></title><aug><au><snm>Glasgow</snm><fnm>RE</fnm></au><au><snm>Vogt</snm><fnm>TM</fnm></au><au><snm>Boles</snm><fnm>SM</fnm></au></aug><source>Am J Public Heal</source><pubdate>1999</pubdate><volume>89</volume><fpage>1322</fpage><lpage>1327</lpage><xrefbib><pubid idtype="doi">10.2105/AJPH.89.9.1322</pubid></xrefbib></bibl><bibl id="B13"><title><p>Accessing the community: gaining insider perspectives from the outside</p></title><aug><au><snm>Sixsmith</snm><fnm>J</fnm></au><au><snm>Boneham</snm><fnm>M</fnm></au><au><snm>Goldring</snm><fnm>JE</fnm></au></aug><source>Qual Heal Res</source><pubdate>2003</pubdate><volume>13</volume><fpage>578</fpage><lpage>589</lpage><xrefbib><pubid idtype="doi">10.1177/1049732302250759</pubid></xrefbib></bibl><bibl id="B14"><title><p>&#8220;Reaching the hard to reach&#8221; &#8211; lessons learned from the VCS (voluntary and community sector). A qualitative study</p></title><aug><au><snm>Flanagan</snm><fnm>SM</fnm></au><au><snm>Hancock</snm><fnm>B</fnm></au></aug><source>BMC Heal Serv Res</source><pubdate>2010</pubdate><volume>10</volume><fpage>92</fpage><xrefbib><pubid idtype="doi">10.1186/1472-6963-10-92</pubid></xrefbib></bibl><bibl id="B15"><title><p>Interventions for recruiting smokers into cessation programmes</p></title><aug><au><snm>Marcano Belisario</snm><fnm>JS</fnm></au><au><snm>Bruggeling</snm><fnm>MN</fnm></au><au><snm>Gunn</snm><fnm>LH</fnm></au><au><snm>Brusamento</snm><fnm>S</fnm></au><au><snm>Car</snm><fnm>J</fnm></au></aug><source>Cochrane Database Syst Rev</source><pubdate>2012</pubdate><volume>12</volume><note>CD009187</note></bibl><bibl id="B16"><title><p>Proactive recruitment predicts participant retention to end of treatment in a secondhand smoke reduction trial with low-income maternal smokers</p></title><aug><au><snm>Collins</snm><fnm>BN</fnm></au><au><snm>Wileyto</snm><fnm>EP</fnm></au><au><snm>Hovell</snm><fnm>MF</fnm></au><au><snm>Nair</snm><fnm>US</fnm></au><au><snm>Jaffe</snm><fnm>K</fnm></au><au><snm>Tolley</snm><fnm>NM</fnm></au><etal/></aug><source>Transl Behav Med</source><pubdate>2011</pubdate><volume>1</volume><fpage>394</fpage><lpage>399</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1007/s13142-011-0059-6</pubid><pubid idtype="pmcid">3717634</pubid><pubid idtype="pmpid" link="fulltext">24073063</pubid></pubidlist></xrefbib></bibl><bibl id="B17"><title><p>Methods to improve recruitment to randomized controlled trials: Cochrane systematic review and meta-analysis</p></title><aug><au><snm>Treweek</snm><fnm>S</fnm></au><au><snm>Lockhart</snm><fnm>P</fnm></au><au><snm>Pitkethly</snm><fnm>M</fnm></au><au><snm>Cook</snm><fnm>JA</fnm></au><au><snm>Kjeldstrom</snm><fnm>M</fnm></au><au><snm>Johansen</snm><fnm>M</fnm></au><etal/></aug><source>BMJ Open</source><pubdate>2013</pubdate><volume>3</volume><fpage>e002360</fpage><xrefbib><pubidlist><pubid idtype="pmcid">3586125</pubid><pubid idtype="pmpid" link="fulltext">23396504</pubid></pubidlist></xrefbib></bibl><bibl id="B18"><title><p>What influences recruitment to randomized controlled trials? a review of trials funded by two UK funding agencies</p></title><aug><au><snm>McDonald</snm><fnm>AM</fnm></au><au><snm>Knight</snm><fnm>RC</fnm></au><au><snm>Campbell</snm><fnm>MK</fnm></au><au><snm>Entwistle</snm><fnm>VA</fnm></au><au><snm>Grant</snm><fnm>AM</fnm></au><au><snm>Cook</snm><fnm>JA</fnm></au><etal/></aug><source>Trials</source><pubdate>2006</pubdate><volume>7</volume><fpage>9</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-7-9</pubid><pubid idtype="pmcid">1475627</pubid><pubid idtype="pmpid" link="fulltext">16603070</pubid></pubidlist></xrefbib></bibl><bibl id="B19"><title><p>Recruitment to clinical trials: a meta-ethnographic synthesis of studies of reasons for participation</p></title><aug><au><snm>McCann</snm><fnm>S</fnm></au><au><snm>Campbell</snm><fnm>M</fnm></au><au><snm>Entwistle</snm><fnm>V</fnm></au></aug><source>J Heal Serv Res Policy</source><pubdate>2013</pubdate><volume>18</volume><fpage>233</fpage><lpage>241</lpage><xrefbib><pubid idtype="doi">10.1177/1355819613483126</pubid></xrefbib></bibl><bibl id="B20"><title><p>A pilot randomized trial to assess the methods and procedures for evaluating the clinical effectiveness and cost-effectiveness of Exercise Assisted Reduction then Stop (EARS) among disadvantaged smokers</p></title><aug><au><snm>Taylor</snm><fnm>AH</fnm></au><au><snm>Thompson</snm><fnm>TP</fnm></au><au><snm>Greaves</snm><fnm>CJ</fnm></au><au><snm>Taylor</snm><fnm>RS</fnm></au><au><snm>Green</snm><fnm>C</fnm></au><au><snm>Warren</snm><fnm>FC</fnm></au><etal/></aug><source>Health Technol Assess</source><pubdate>2014</pubdate><volume>18</volume><fpage>1</fpage><lpage>324</lpage></bibl><bibl id="B21"><title><p>English Indices of Deprivation 2010</p></title><aug><au><cnm>Department of Communities and Local Government</cnm></au></aug><source>English Indices Deprivation 2010</source><pubdate>2011</pubdate><note>available from <url>https://www.gov.uk/government/statistics/english-indices-of-deprivation-2010</url></note></bibl><bibl id="B22"><title><p>Life expectancy in Plymouth - produced as part of Plymouth&#8217;s joint strategic needs assessment</p></title><note>[<url>http://www.plymouth.gov.uk/jsnalifeexpectancyreport.pdf</url>]</note></bibl><bibl id="B23"><title><p>The Fagerstrom Test for Nicotine Dependence: a revision of the Fagerstrom tolerance questionnaire</p></title><aug><au><snm>Heatherton</snm><fnm>TF</fnm></au><au><snm>Kozlowski</snm><fnm>LT</fnm></au><au><snm>Frecker</snm><fnm>RC</fnm></au><au><snm>Fagerstrom</snm><fnm>KO</fnm></au></aug><source>Br J Addict</source><pubdate>1991</pubdate><volume>86</volume><fpage>1119</fpage><lpage>1127</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1360-0443.1991.tb01879.x</pubid><pubid idtype="pmpid">1932883</pubid></pubidlist></xrefbib></bibl><bibl id="B24"><title><p>Determinants of tobacco use and renaming the FTND to the Fagerstrom Test for Cigarette Dependence</p></title><aug><au><snm>Fagerstrom</snm><fnm>K</fnm></au></aug><source>Nicotine Tob Res</source><pubdate>2012</pubdate><volume>14</volume><fpage>75</fpage><lpage>78</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/ntr/ntr137</pubid><pubid idtype="pmpid" link="fulltext">22025545</pubid></pubidlist></xrefbib></bibl><bibl id="B25"><title><p>Readiness to use physical activity as a smoking cessation aid: a multiple behaviour change application of the transtheoretical model among quitters attending stop smoking clinics</p></title><aug><au><snm>Everson-Hock</snm><fnm>ES</fnm></au><au><snm>Taylor</snm><fnm>AH</fnm></au><au><snm>Ussher</snm><fnm>M</fnm></au></aug><source>Patient Educ Couns</source><pubdate>2010</pubdate><volume>79</volume><fpage>156</fpage><lpage>159</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.pec.2009.09.016</pubid><pubid idtype="pmpid" link="fulltext">19818578</pubid></pubidlist></xrefbib></bibl><bibl id="B26"><title><p>Outcome criteria in smoking cessation trials: proposal for a common standard</p></title><aug><au><snm>West</snm><fnm>R</fnm></au><au><snm>Hajek</snm><fnm>P</fnm></au><au><snm>Stead</snm><fnm>L</fnm></au><au><snm>Stapleton</snm><fnm>J</fnm></au></aug><source>Addiction</source><pubdate>2005</pubdate><volume>100</volume><fpage>299</fpage><lpage>303</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1360-0443.2004.00995.x</pubid><pubid idtype="pmpid" link="fulltext">15733243</pubid></pubidlist></xrefbib></bibl><bibl id="B27"><title><p>Statistics on smoking: England, 2013</p></title><aug><au><snm>Eastwood</snm><fnm>P</fnm></au></aug><source>Heal Soc Care Inf Cent</source><pubdate>2013</pubdate><note>
+   <url>http://www.hscic.gov.uk/catalogue/PUB11454/smok-eng-2013-rep.pdf</url>
+</note></bibl><bibl id="B28"><title><p>Relapse prevention in UK stop smoking services: current practice, systematic reviews of effectiveness and cost-effectiveness analysis</p></title><aug><au><snm>Coleman</snm><fnm>T</fnm></au><au><snm>Agboola</snm><fnm>S</fnm></au><au><snm>Leonardi-Bee</snm><fnm>J</fnm></au><au><snm>Taylor</snm><fnm>M</fnm></au><au><snm>McEwen</snm><fnm>A</fnm></au><au><snm>McNeill</snm><fnm>A</fnm></au></aug><source>Heal Technol Assess</source><pubdate>2010</pubdate><volume>14</volume><fpage>1</fpage><lpage>152</lpage><note>iii&#8211;iv</note></bibl><bibl id="B29"><title><p>How socio-economic status contributes to participation in leisure-time physical activity</p></title><aug><au><snm>Cerin</snm><fnm>E</fnm></au><au><snm>Leslie</snm><fnm>E</fnm></au></aug><source>Soc Sci Med</source><pubdate>2008</pubdate><volume>66</volume><fpage>2596</fpage><lpage>2609</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.socscimed.2008.02.012</pubid><pubid idtype="pmpid" link="fulltext">18359137</pubid></pubidlist></xrefbib></bibl><bibl id="B30"><title><p>Explaining socio-economic status differences in walking for transport: an ecological analysis of individual, social and environmental factors</p></title><aug><au><snm>Cerin</snm><fnm>E</fnm></au><au><snm>Leslie</snm><fnm>E</fnm></au><au><snm>Owen</snm><fnm>N</fnm></au></aug><source>Soc Sci Med</source><pubdate>2009</pubdate><volume>68</volume><fpage>1013</fpage><lpage>1020</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.socscimed.2009.01.008</pubid><pubid idtype="pmpid" link="fulltext">19193480</pubid></pubidlist></xrefbib></bibl><bibl id="B31"><title><p>Can the built environment reduce health inequalities? A study of neighborhood socioeconomic disadvantage and walking for transport</p></title><aug><au><snm>Turrell</snm><fnm>G</fnm></au><au><snm>Haynes</snm><fnm>M</fnm></au><au><snm>Wilson</snm><fnm>LA</fnm></au><au><snm>Giles-Corti</snm><fnm>B</fnm></au></aug><source>Heal Place</source><pubdate>2013</pubdate><volume>19</volume><fpage>89</fpage><lpage>98</lpage></bibl><bibl id="B32"><title><p>Performance of English stop smoking services in first 10&#160;years: analysis of service monitoring data</p></title><aug><au><snm>West</snm><fnm>R</fnm></au><au><snm>May</snm><fnm>S</fnm></au><au><snm>West</snm><fnm>M</fnm></au><au><snm>Croghan</snm><fnm>E</fnm></au><au><snm>McEwen</snm><fnm>A</fnm></au></aug><source>BMJ</source><pubdate>2013</pubdate><volume>347</volume><fpage>f4921</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1136/bmj.f4921</pubid><pubid idtype="pmpid" link="fulltext">23963106</pubid></pubidlist></xrefbib></bibl><bibl id="B33"><title><p>Smoking and Smoking Cessation in England 2011. London: Smoking in England; 2012</p></title><aug><au><snm>West</snm><fnm>R</fnm></au><au><snm>Brown</snm><fnm>J</fnm></au></aug><note>
+   <url>http://www.smokinginengland.info</url>
+</note></bibl><bibl id="B34"><title><p>Gaining access to underresearched populations in women&#8217;s health research</p></title><aug><au><snm>Berg</snm><fnm>JA</fnm></au></aug><source>Heal Care Women Int</source><pubdate>1999</pubdate><volume>20</volume><fpage>237</fpage><lpage>243</lpage><xrefbib><pubid idtype="doi">10.1080/073993399245737</pubid></xrefbib></bibl><bibl id="B35"><title><p>The RE-AIM framework: a systematic review of use over time</p></title><aug><au><snm>Gaglio</snm><fnm>B</fnm></au><au><snm>Shoup</snm><fnm>JA</fnm></au><au><snm>Glasgow</snm><fnm>RE</fnm></au></aug><source>Am J Public Heal</source><pubdate>2013</pubdate><volume>103</volume><fpage>e38</fpage><lpage>e46</lpage></bibl><bibl id="B36"><title><p>Trends in consultation rates in general practice 1995/1996 to 2008/2009: analysis of the QResearch database</p></title><aug><au><snm>Hippisley-Cox</snm><fnm>J</fnm></au><au><snm>Vinogradova</snm><fnm>Y</fnm></au></aug><note>
+   <url>http://www.hscic.gov.uk/catalogue/PUB01077/tren-cons-rate-gene-prac-95-09-95-09-rep.pdf</url>
+</note></bibl><bibl id="B37"><title><p>92% patients have trust in their GP despite diminishing resources - RCGP response to GP patient survey results out today</p></title><note>[<url>http://www.rcgp.org.uk/news/2013/december/92-per-cent-patients-have-trust-in-their-gp-despite-diminishing-resources.aspx</url>]</note></bibl></refgrp>
+	</bm>
+</art>

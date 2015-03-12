@@ -1,0 +1,93 @@
+{
+  "publisher": {
+    "value": [
+      "BioMed Central Ltd"
+    ]
+  },
+  "journal": {
+    "value": [
+      "Trials"
+    ]
+  },
+  "title": {
+    "value": [
+      "Comparing different dosing regimens of bevacizumab in the treatment of neovascular macular degeneration: study protocol for a randomised controlled trial"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Alexander Foss",
+      "Margaret Childs",
+      "Barnaby Reeves",
+      "Theo Empeslidis",
+      "Paul Tesha",
+      "Sushma Dhar-Munshi",
+      "Samah Mughal",
+      "Lucy Culliford",
+      "Chris Rogers",
+      "Wei Tan",
+      "Alan Montgomery"
+    ]
+  },
+  "date": {
+    "value": [
+      "2015-03-10"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1186/s13063-015-0608-2"
+    ]
+  },
+  "volume": {
+    "value": [
+      "16"
+    ]
+  },
+  "issue": {
+    "value": [
+      "1"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "85"
+    ]
+  },
+  "description": {
+    "value": [
+      "Bevacizumab (Avastin®) is as effective as ranibizumab (Lucentis®) in the treatment of neovascular age-related macular degeneration (nAMD). However it has two important structural differences. First, it has two active sites instead of one; second, it retains the Fc portion of the antibody which would be expected to confer a significantly longer half-life. These agents have been associated with systemic complications including strokes, so it is desirable to use the smallest effective dose. Furthermore, the standard dosing regimen requires monthly hospital visits, which present a significant challenge both to the hospital services and to the patients (who are elderly)."
+    ]
+  },
+  "abstract": {
+    "value": [
+      "Bevacizumab (Avastin®) is as effective as ranibizumab (Lucentis®) in the treatment of neovascular age-related macular degeneration (nAMD). However it has two important structural differences. First, it has two active sites instead of one; second, it retains the Fc portion of the antibody which would be expected to confer a significantly longer half-life. These agents have been associated with systemic complications including strokes, so it is desirable to use the smallest effective dose. Furthermore, the standard dosing regimen requires monthly hospital visits, which present a significant challenge both to the hospital services and to the patients (who are elderly)."
+    ]
+  },
+  "fulltext_html": {
+    "value": []
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://www.trialsjournal.com/content/pdf/s13063-015-0608-2.pdf"
+    ]
+  },
+  "fulltext_xml": {
+    "value": []
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": []
+  },
+  "figure_caption": {
+    "value": []
+  },
+  "license": {
+    "value": []
+  },
+  "copyright": {
+    "value": []
+  }
+}

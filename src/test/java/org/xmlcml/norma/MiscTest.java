@@ -15,12 +15,12 @@ import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.vafer.jdeb.shaded.compress.io.FileUtils;
 import org.xmlcml.norma.util.TransformerWrapper;
 
 public class MiscTest {

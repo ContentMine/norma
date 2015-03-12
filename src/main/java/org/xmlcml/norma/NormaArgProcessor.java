@@ -212,7 +212,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 					quickscrapeNormaList.add(qn);
 				}
 			} catch (IOException e) {
-				LOG.error("Failed to create QN: "+filename);
+				LOG.error("Failed to create QN: "+filename+"; "+e);
 			}
 		}
 	}

@@ -1,0 +1,97 @@
+{
+  "publisher": {
+    "value": [
+      "BioMed Central Ltd"
+    ]
+  },
+  "journal": {
+    "value": [
+      "Trials"
+    ]
+  },
+  "title": {
+    "value": [
+      "Effectiveness of a computerized drug-monitoring program to detect and prevent adverse drug events and medication non-adherence in outpatient ambulatory care: study protocol of a randomized controlled trial"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Alan J Forster",
+      "Tobias E Erlanger",
+      "Alison Jennings",
+      "Claudine Auger",
+      "David Buckeridge",
+      "Carl van Walraven",
+      "Robyn Tamblyn"
+    ]
+  },
+  "date": {
+    "value": [
+      "2015-01-08"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1186/1745-6215-16-2"
+    ]
+  },
+  "volume": {
+    "value": [
+      "16"
+    ]
+  },
+  "issue": {
+    "value": [
+      "1"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "2"
+    ]
+  },
+  "description": {
+    "value": [
+      "Medications are an effective intervention for managing and preventing health problems but their benefit can be undermined by non-adherence or adverse drug events (ADEs). Since these issues may be interconnected, efforts to improve non-adherence should also include reduction of ADEs. We have developed the ISTOP-ADE system (Information Systems-enabled Outreach for Preventing Adverse Drug Events), which enables timely monitoring and managing of ADEs. The objectives of this study are to determine whether the ISTOP-ADE system, compared to routine care, will reduce: a) the probability of discontinuing the use of prognosis-altering medications; b) the probability of a patient experiencing a severe ADE; c) the proportion of patients experiencing ADEs, preventable ADEs and ameliorable ADEs; and d) health services utilization."
+    ]
+  },
+  "abstract": {
+    "value": [
+      "Medications are an effective intervention for managing and preventing health problems but their benefit can be undermined by non-adherence or adverse drug events (ADEs). Since these issues may be interconnected, efforts to improve non-adherence should also include reduction of ADEs. We have developed the ISTOP-ADE system (Information Systems-enabled Outreach for Preventing Adverse Drug Events), which enables timely monitoring and managing of ADEs. The objectives of this study are to determine whether the ISTOP-ADE system, compared to routine care, will reduce: a) the probability of discontinuing the use of prognosis-altering medications; b) the probability of a patient experiencing a severe ADE; c) the proportion of patients experiencing ADEs, preventable ADEs and ameliorable ADEs; and d) health services utilization."
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.trialsjournal.com/content/16/1/2"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://www.trialsjournal.com/content/pdf/1745-6215-16-2.pdf"
+    ]
+  },
+  "fulltext_xml": {
+    "value": [
+      "/content/download/xml/1745-6215-16-2.xml"
+    ]
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": []
+  },
+  "figure_caption": {
+    "value": []
+  },
+  "license": {
+    "value": [
+      "\r\n\t\t\t\tThis is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.\r\n\t\t\t"
+    ]
+  },
+  "copyright": {
+    "value": [
+      "\r\n            © 2015 Forster et al.; licensee BioMed Central. \r\n        "
+    ]
+  }
+}

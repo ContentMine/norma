@@ -3,9 +3,9 @@ package org.xmlcml.norma;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.vafer.jdeb.shaded.compress.io.FileUtils;
 
 public class ClinicalTrialsDemo {
 

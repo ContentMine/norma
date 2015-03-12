@@ -1,0 +1,107 @@
+{
+  "publisher": {
+    "value": [
+      "BioMed Central Ltd"
+    ]
+  },
+  "journal": {
+    "value": [
+      "Trials"
+    ]
+  },
+  "title": {
+    "value": [
+      "Improving Decision making On Location of Care with the frail Elderly and their caregivers (the DOLCE study): study protocol for a cluster randomized controlled trial"
+    ]
+  },
+  "authors": {
+    "value": [
+      "France Légaré",
+      "Nathalie Brière",
+      "Dawn Stacey",
+      "Henriette Bourassa",
+      "Sophie Desroches",
+      "Serge Dumont",
+      "Kimberly Fraser",
+      "Adriana Freitas",
+      "Louis‐Paul Rivest",
+      "Lise Roy"
+    ]
+  },
+  "date": {
+    "value": [
+      "2015-02-12"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1186/s13063-015-0567-7"
+    ]
+  },
+  "volume": {
+    "value": [
+      "16"
+    ]
+  },
+  "issue": {
+    "value": [
+      "1"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "50"
+    ]
+  },
+  "description": {
+    "value": [
+      "One of the toughest decisions faced by elderly people is whether to stay at home or move to a care facility. This study seeks to evaluate the impact of training interprofessional home-care teams in shared decision making combined with a decision aid on the proportion of elderly people who report being active in the decision-making process regarding whether to stay at home or move to a care facility."
+    ]
+  },
+  "abstract": {
+    "value": [
+      "One of the toughest decisions faced by elderly people is whether to stay at home or move to a care facility. This study seeks to evaluate the impact of training interprofessional home-care teams in shared decision making combined with a decision aid on the proportion of elderly people who report being active in the decision-making process regarding whether to stay at home or move to a care facility."
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.trialsjournal.com/content/16/1/50"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://www.trialsjournal.com/content/pdf/s13063-015-0567-7.pdf"
+    ]
+  },
+  "fulltext_xml": {
+    "value": [
+      "/content/download/xml/s13063-015-0567-7.xml"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://trialsjournal.com/content/download/supplementary/s13063-015-0567-7-s1.doc"
+    ]
+  },
+  "figure": {
+    "value": [
+      "/content/figures/s13063-015-0567-7-1.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Figure 1.",
+      "Study flow diagram."
+    ]
+  },
+  "license": {
+    "value": [
+      "\r\n\t\t\t\tThis is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.\r\n\t\t\t"
+    ]
+  },
+  "copyright": {
+    "value": [
+      "\r\n            © 2015 Légaré et al.; licensee BioMed Central. \r\n        "
+    ]
+  }
+}

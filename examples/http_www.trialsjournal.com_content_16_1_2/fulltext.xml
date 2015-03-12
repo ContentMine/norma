@@ -1,0 +1,491 @@
+<?xml version='1.0'?>
+<!DOCTYPE art SYSTEM 'http://www.biomedcentral.com/xml/article.dtd'>
+<art>
+	<ui>1745-6215-16-2</ui>
+	<ji>1745-6215</ji>
+	<fm>
+		<dochead>Study protocol</dochead>
+		<bibl>
+			<title>
+				<p>Effectiveness of a computerized drug-monitoring program to detect and prevent adverse drug events and medication non-adherence in outpatient ambulatory care: study protocol of a randomized controlled trial</p>
+			</title>
+			<aug>
+				<au id="A1" ca="yes"><snm>Forster</snm><mi>J</mi><fnm>Alan</fnm><insr iid="I1"/><insr iid="I2"/><insr iid="I3"/><insr iid="I4"/><email>aforster@ohri.ca</email></au>
+				<au id="A2"><snm>Erlanger</snm><mi>E</mi><fnm>Tobias</fnm><insr iid="I5"/><insr iid="I6"/><email>tobias@erlanger.ch</email></au>
+				<au id="A3"><snm>Jennings</snm><fnm>Alison</fnm><insr iid="I1"/><email>ajennings@ohri.ca</email></au>
+				<au id="A4"><snm>Auger</snm><fnm>Claudine</fnm><insr iid="I7"/><insr iid="I8"/><email>claudine.auger@umontreal.ca</email></au>
+				<au id="A5"><snm>Buckeridge</snm><fnm>David</fnm><insr iid="I5"/><insr iid="I6"/><email>david.buckeridge@mcgill.ca</email></au>
+				<au id="A6"><snm>van Walraven</snm><fnm>Carl</fnm><insr iid="I1"/><insr iid="I3"/><insr iid="I4"/><email>carlv@ohri.ca</email></au>
+				<au id="A7"><snm>Tamblyn</snm><fnm>Robyn</fnm><insr iid="I5"/><insr iid="I6"/><insr iid="I9"/><email>robyn.tamblyn@mcgill.ca</email></au>
+			</aug>
+			<insg>
+				<ins id="I1"><p>Clinical Epidemiology Program, Ottawa Hospital Research Institute, 1053 Carling Avenue, Ottawa, ON K1Y 4E9, Canada</p></ins>
+				<ins id="I2"><p>The Ottawa Hospital, 1053 Carling Avenue, Ottawa, ON K1Y 4E9, Canada</p></ins>
+				<ins id="I3"><p>Department of Epidemiology and Community Medicine and Department of Medicine University of Ottawa, 451 Smyth Road, Ottawa, ON K1H 8M5, Canada</p></ins>
+				<ins id="I4"><p>Institute for Clinical Evaluative Sciences &#8211; Ottawa (ICES@uOttawa), ASB-1, 1053 Carling Avenue, Ottawa, ON K1Y 4E9, Canada</p></ins>
+				<ins id="I5"><p>Department of Epidemiology, Biostatistics and Occupational Health, McGill University, 1020 Pine Avenue West, Montr&#233;al, QC H3A 1A2, Canada</p></ins>
+				<ins id="I6"><p>Clinical and Health Informatics Research Group, McGill University, 1140 Pine Avenue West, Montr&#233;al, QC H3A 1A3, Canada</p></ins>
+				<ins id="I7"><p>School of Rehabilitation, Universit&#233; de Montr&#233;al, C.P. 6128, succursale Centre-ville, Montr&#233;al, QC H3C 3J7, Canada</p></ins>
+				<ins id="I8"><p>Center for Interdisciplinary Research in Rehabilitation of Greater Montreal (CRIR), site Centre de R&#233;adaptation Lucie-Bruneau, 2275 Avenue Laurier Est, Montr&#233;al, QC H2H 2N8, Canada</p></ins>
+				<ins id="I9"><p>Department of Medicine, Royal Victoria Hospital, McGill University, 687 Pine Avenue West, Room A3.09, Montr&#233;al, QC H3A 1A1, Canada</p></ins>
+			</insg>
+			<source>Trials</source>
+			<issn>1745-6215</issn>
+			<pubdate>2015</pubdate>
+			<volume>16</volume>
+			<issue>1</issue>
+			<fpage>2</fpage>
+			<url>http://www.trialsjournal.com/content/16/1/2</url>
+			<xrefbib><pubidlist><pubid idtype="doi">10.1186/1745-6215-16-2</pubid><pubid idtype="pmpid">25572800</pubid></pubidlist></xrefbib>
+		</bibl>
+		<history><rec><date><day>27</day><month>5</month><year>2014</year></date></rec><acc><date><day>24</day><month>11</month><year>2014</year></date></acc><pub><date><day>8</day><month>1</month><year>2015</year></date></pub></history>
+		<cpyrt><year>2015</year><collab>Forster et al.; licensee BioMed Central.</collab><note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/4.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<url>http://creativecommons.org/publicdomain/zero/1.0/</url>) applies to the data made available in this article, unless otherwise stated.</note></cpyrt>
+		<kwdg>
+			<kwd>Patient safety</kwd>
+			<kwd>Pharmacoepidemiology</kwd>
+			<kwd>Adverse drug events</kwd>
+			<kwd>Drug adherence and persistence</kwd>
+			<kwd>Health information technology</kwd>
+			<kwd>Health services research</kwd>
+		</kwdg>
+		<abs>
+			<sec>
+				<st>
+					<p>Abstract</p>
+				</st>
+				<sec>
+					<st>
+						<p>Background</p>
+					</st>
+					<p>Medications are an effective intervention for managing and preventing health problems but their benefit can be undermined by non-adherence or adverse drug events (ADEs). Since these issues may be interconnected, efforts to improve non-adherence should also include reduction of ADEs. We have developed the ISTOP-ADE system (Information Systems-enabled Outreach for Preventing Adverse Drug Events), which enables timely monitoring and managing of ADEs. The objectives of this study are to determine whether the ISTOP-ADE system, compared to routine care, will reduce: a) the probability of discontinuing the use of prognosis-altering medications; b) the probability of a patient experiencing a severe ADE; c) the proportion of patients experiencing ADEs, preventable ADEs and ameliorable ADEs; and d) health services utilization.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Methods/design</p>
+					</st>
+					<p>We will randomly assign 2,200 adult ambulatory patients in the province of Qu&#233;bec who have been prescribed an incident medication for the management or prevention of a chronic health condition, to routine care or the ISTOP-ADE system. The ISTOP-ADE system consists of an interactive voice response system (IVRS) paired with pharmacist support. The IVRS will call patients at 3 and 17&#160;days post-prescription to determine if they are experiencing any problems and connect them with a pharmacist when required or desired by the patient. We will evaluate medication persistence at 180&#160;days and health-care utilization using provincial administrative data. Two blinded physicians will ascertain ADE status through a case review.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Discussion</p>
+					</st>
+					<p>We expect the ISTOP-ADE intervention to be feasible and to improve the quality of patient care through improved medication adherence, reduced ADE duration and reduced number of ADEs resulting in an emergency department or inpatient encounter. This in turn could lower health-care utilization, saving costs and lowering the burden on emergency departments and family practices. The success of ISTOP-ADE would present opportunities to implement this intervention through health systems, health insurance agents and commercial pharmacies.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Trial registration</p>
+					</st>
+					<p>ClinicalTrials.gov Identifier: <a href="https://clinicaltrials.gov/ct2/show/NCT02059044?term=ISTOP&amp;rank=1">NCT02059044</a>. Date registered: 10 January 2014.</p>
+				</sec>
+			</sec>
+		</abs>
+	</fm>
+	<bdy>
+		<sec>
+			<st>
+				<p>Background</p>
+			</st>
+			<p>Medications are an effective intervention for managing and preventing many acute and chronic health-care problems. Their benefit is commonly reduced by non-adherence, in which patients either do not take or stop taking the medication as prescribed, or by adverse drug events (ADEs), in which patients experience side effects of the medications. These issues are interrelated. Some patients do not take their medication due to their fear of an impending ADE, while others stop taking the medication because of an ADE. Therefore, efforts to increase adherence should include efforts to target ADE reduction specifically.</p>
+			<p>To address these concerns, we have developed the Information Systems-enabled Outreach for Preventing ADEs (ISTOP-ADE) system (protocol version 1, 1 March 2012). The ISTOP-ADE system consists of a set of business processes supported by a technology infrastructure. The information technology is designed to connect providers to patients and includes an electronic health record system, a clinical data repository and an interactive voice response system (IVRS). This system enables timely monitoring of patients for ADEs and couples it with an effective arm to manage ADEs if, and when, they occur.</p>
+			<p>We recently established the feasibility and acceptability of the ISTOP-ADE system in a prospective cohort study. The pilot study included 628 patients who were prescribed an incident prescription. The ISTOP-ADE system successfully contacted 90% of patients. Important measures of the system&#8217;s effectiveness included the identification of 45% of ADEs, 50% of all potential ADEs and 30% of primary non-adherence episodes. In terms of potential benefits, it positively influenced the management of 42% of all medication-related problems. In terms of acceptability, almost all patients found it easy to use and understand and reported they would use the system again if it was provided to them. Physicians and pharmacists also supported the system 
+				<abbrgrp>
+					<abbr bid="B1">1</abbr>
+					<abbr bid="B2">2</abbr>
+				</abbrgrp>. While these results are favorable, a controlled clinical trial in which patients are randomly assigned to the ISTOP-ADE system or routine care is required to determine the system&#8217;s effectiveness. We therefore designed this study.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Methods/design</p>
+			</st>
+			<p>This study has been approved by the McGill Institutional Review Board (A01-B02-02A) and the Ottawa Health Science Network Research Ethics Board (20130285-01H).</p>
+			<sec>
+				<st>
+					<p>Setting</p>
+				</st>
+				<p>This research will occur during ambulatory care in the province of Qu&#233;bec, Canada. We will study prescriptions in patients receiving primary care from a selected group of physicians using the Medical Office of the 21st Century (MOXXI) electronic health record system. MOXXI was developed by the McGill University&#8217;s Clinical and Health Informatics Research Group. It is currently used by over 100 primary care physicians in Montr&#233;al and Qu&#233;bec City. The MOXXI system is linked to the provincial insurance company, R&#233;gie de l&#8217;assurance maladie du Qu&#233;bec (RAMQ), resulting in an electronic medical record that displays a drug profile of prescribed as well as dispensed drugs, emergency department visits and hospitalizations in the past 12&#160;months, a list of active and past health problems, and an electronic prescribing tool. Data stored by MOXXI have been used by the McGill research team for medical research in the past 
+					<abbrgrp>
+						<abbr bid="B3">3</abbr>
+						<abbr bid="B4">4</abbr>
+					</abbrgrp>.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Primary objective</p>
+				</st>
+				<p>The primary objective is to determine whether the ISTOP-ADE system, compared to routine care, will reduce the probability of discontinuing the use of prognosis-altering medications in patients prescribed an incident medication to manage or prevent a chronic health condition.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Secondary objectives</p>
+				</st>
+				<p indent="1">a. Determine whether the ISTOP-ADE system, compared to routine care, will reduce the probability of a patient experiencing a severe ADE (defined as an ADE lasting at least 7&#160;days or causing an emergency department visit).</p>
+				<p indent="1">b. Determine whether the ISTOP-ADE system, compared to routine care, will reduce the proportion of patients experiencing ADEs, preventable ADEs and ameliorable ADEs.</p>
+				<p indent="1">c. Determine whether the ISTOP-ADE system, compared to routine care, will reduce health services utilization (comprising physician visits, emergency department encounters and hospitalizations) at 12&#160;months following an incident prescription.</p>
+				<p indent="1">d. Measure the costs associated with the ISTOP-ADE system.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Participants</p>
+				</st>
+				<p>This study will include French- and English-speaking adult patients (age &gt;18) who receive a high-risk incident prescription, use RAMQ insurance to pay for medications and are followed by a physician who has consented to be in the MOXXI research network. We will exclude patients if their physicians do not deem them appropriate for study inclusion.</p>
+				<p>We define high-risk prescriptions as medications commonly used to prevent progression or complications related to the following conditions: congestive heart failure, hypertension, dyslipidaemia, type 2 diabetes mellitus, coronary artery disease, cerebrovascular disease, atrial fibrillation, chronic renal failure, chronic obstructive lung disease, depression, dementia, autoimmune conditions, seizures, and chronic pain. The selected medications (Table&#160;
+					<tblr tid="T1">1</tblr>) have an important impact on outcomes or they have been shown to have a high frequency of ADEs 
+					<abbrgrp>
+						<abbr bid="B5">5</abbr>
+						<abbr bid="B6">6</abbr>
+					</abbrgrp>. We will consider prescriptions as &#8216;incident&#8217; if the patient had not received a prior prescription for that medication in the 12&#160;months preceding the index event.</p>
+				<table id="T1">
+					<title>
+						<p>Table 1</p>
+					</title>
+					<caption>
+						<p>
+							<b>Included diseases and drug classes for the ISTOP-ADE study</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="2">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Disease entity</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>Drug classes included</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tfoot>
+							<p>Participants will be enrolled in the ISTOP-ADE study if they have an incident prescription for a high-risk medication. We define high-risk prescriptions as medications commonly used to prevent progression or complications related to key conditions (disease entities). The selected drug classes have an important impact on outcomes or they have been shown to have a high frequency of ADEs.</p>
+						</tfoot>
+						<tbody>
+							<row>
+								<entry colname="c1">
+									<p>Congestive heart failure</p>
+								</entry>
+								<entry colname="c2">
+									<p>Angiotensin-converting enzyme inhibitors, angiotensin II receptor antagonists, hydralazine, mineralocorticoid (aldosterone) receptor antagonists, nitrate, diuretic, cardiac glycoside, &#946;-adrenergic blocking agents</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Diabetes mellitus</p>
+								</entry>
+								<entry colname="c2">
+									<p>Sulfonylurea/insulin secretagogue, biguanide, A-glucosidase inhibitor thiazolidinedione, incretin therapy (dipeptidyl peptidase-4 inhibitor), insulin</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Hypertension</p>
+								</entry>
+								<entry colname="c2">
+									<p>&#946;-adrenergic blocking agents, diuretic, calcium-channel blocking agents, angiotensin-converting enzyme inhibitors, angiotensin II receptor antagonists, nitrate, central &#945;-agonists</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Coronary artery disease</p>
+								</entry>
+								<entry colname="c2">
+									<p>&#946;-adrenergic blocking agents, statin, calcium-channel blocking agents, angiotensin-converting enzyme inhibitors, angiotensin II receptor antagonists, nitrate, acetylsalicylic acid, clopidogrel</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Dyslipidemia</p>
+								</entry>
+								<entry colname="c2">
+									<p>Statin, cholestyramine resin, fibric acid derivatives, niacin derivative, cholesterol absorption inhibitor</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Cerebrovascular disease</p>
+								</entry>
+								<entry colname="c2">
+									<p>Acetylsalicylic acid, clopidogrel, statin, dypiramidole</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Atrial fibrillation</p>
+								</entry>
+								<entry colname="c2">
+									<p>&#946;-adrenergic blocking agents, cardiac glycoside, class III anti-arrhythmics, class Ic anti-arrhythmics, calcium-channel blocking agents, vitamin K antagonist, thrombin inhibitor, Acetylsalicylic acid</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Chronic kidney disease</p>
+								</entry>
+								<entry colname="c2">
+									<p>Angiotensin-converting enzyme inhibitors, angiotensin II receptor antagonists, thiazide diuretic, &#946;-adrenergic blocking agents, calcium-channel blocking agents</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Chronic obstructive pulmonary disease</p>
+								</entry>
+								<entry colname="c2">
+									<p>Short-acting bronchodilators, long-acting bronchodilators, phosphodiesterase type-4 inhibitors, combination inhaled corticosteroids and long-acting bronchodilators, theophylline</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Depression</p>
+								</entry>
+								<entry colname="c2">
+									<p>Serotonin-specific reuptake inhibitors, serotonin-norepinephrine reuptake inhibitors, monoamine oxidase inhibitors, tricyclic antidepressants, quetiapine, bupropion, trazodone, mirtazapine</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Dementia</p>
+								</entry>
+								<entry colname="c2">
+									<p>Parasympathomimetic (cholinergic)</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>Autoimmune conditions</p>
+								</entry>
+								<entry colname="c2">
+									<p>Corticosteroids</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>Seizures, chronic pain</p>
+								</entry>
+								<entry colname="c2">
+									<p>Anticonvulsants</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</sec>
+			<sec>
+				<st>
+					<p>Eligibility assessment and consent</p>
+				</st>
+				<p>When a physician uses MOXXI to prescribe a new medication for a patient, a pop-up window will appear on their computer screen to indicate the patient&#8217;s eligibility. This pop-up window will prompt the doctor to inform the patient of the study, confirm their eligibility and seek consent. We will obtain informed consent from each participant. If the patient consents, the physician will confirm the patient&#8217;s phone number, preferred language and preferred time of day to be called. If the physician deems the patient ineligible or the patient does not consent, then the reason will be captured in MOXXI using a standard classification.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Randomization</p>
+				</st>
+				<p>The unit of analysis for the study is the individual patient, each of whom we will randomly assign to the intervention or control arms using a computer algorithm. We will perform stratified randomization at the physician practice level with block sizes of four. We will only randomize patients once a physician confirms the patient&#8217;s eligibility for enrolment. We will update the ISTOP-ADE system with the patient&#8217;s treatment group but this information will not be available to the prescribing physician or the patient.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Intervention</p>
+				</st>
+				<p>The intervention consists of an IVRS call coupled with pharmacist support. We will program the IVRS to call patients automatically on day 3 and day 17 following their prescription. If a call is not answered, the system will make as many as eight separate attempts (two per day over a maximum of 4&#160;days) before marking the call as unsuccessful. If a call is answered, the IVRS will proceed through a calling algorithm. The following questions will be asked at each call:</p>
+				<p indent="1">1. Since receiving your medication, have you started taking it?</p>
+				<p indent="1">2. Since receiving your medication, have you had any problems?</p>
+				<p indent="1">3. Since receiving your medication, have you developed any new symptoms?</p>
+				<p indent="1">4. Would you like to speak to a pharmacist?</p>
+				<p>If the patient answers &#8216;No&#8217; to the first question or &#8216;Yes&#8217; to any of the three remaining questions, the IVRS will inform the patient that a pharmacist will personally contact them within 2 business days. The IVRS will send an email to a pharmacist informing them of the patient&#8217;s request. In addition, the IVRS will be capable of receiving inbound calls from patients regarding their medications at any time. This will also connect the patient to the pharmacist according to the same business rules as for the outbound IVRS calls.</p>
+				<p>When required, the pharmacist will contact the patient. Prior to contact, the pharmacist will access the electronic health record to obtain background information on the patient&#8217;s health status and medication use. During the call, the pharmacist will document the patient&#8217;s problems as well as their recommendation for resolving the problem in the electronic health record. If the pharmacist deems the patient&#8217;s problems are significant, then the pharmacist can escalate the issue to the patient&#8217;s primary care physician using the electronic health record.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Control</p>
+				</st>
+				<p>The control arm consists of routine care.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Instrumentation</p>
+				</st>
+				<sec>
+					<st>
+						<p>Interview at 21&#160;days</p>
+					</st>
+					<p>We will perform a standard interview of patients at 21&#160;days to determine the development of new symptoms, medication use and health services use since their prescription. The study personnel performing the interview will not have access to knowledge regarding the study group to which the patient is allocated.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Administrative database interrogation</p>
+					</st>
+					<p>We will link the study database to the drug benefit and hospital record files contained at RAMQ using the patient&#8217;s provincial health insurance number.</p>
+				</sec>
+			</sec>
+			<sec>
+				<st>
+					<p>Outcome assessment</p>
+				</st>
+				<sec>
+					<st>
+						<p>Primary outcome: medication persistence at 180&#160;days</p>
+					</st>
+					<p>We define persistence as &#8216;having a continuous supply of at least one medication used to treat the index condition, with gaps no greater than 90&#160;days, in the first 6&#160;months of treatment&#8217;. We will use validated methods to measure medication persistence using administrative claims data on prescription refills 
+						<abbrgrp>
+							<abbr bid="B7">7</abbr>
+							<abbr bid="B8">8</abbr>
+							<abbr bid="B9">9</abbr>
+							<abbr bid="B10">10</abbr>
+							<abbr bid="B11">11</abbr>
+						</abbrgrp>. Prescription refills provide a good proxy measure of medication use because refill rates are strongly correlated with targeted clinical outcomes such as blood pressure 
+						<abbrgrp>
+							<abbr bid="B7">7</abbr>
+						</abbrgrp>. We will construct medication dispensing histories for all patients and medications during the study follow-up period using the RAMQ medication file.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Secondary outcome: ADEs within 21&#160;days</p>
+					</st>
+					<p>We will use previously developed methods to ascertain ADE status 
+						<abbrgrp>
+							<abbr bid="B12">12</abbr>
+							<abbr bid="B13">13</abbr>
+							<abbr bid="B14">14</abbr>
+							<abbr bid="B15">15</abbr>
+							<abbr bid="B16">16</abbr>
+							<abbr bid="B17">17</abbr>
+						</abbrgrp>. Specifically, a clinician will create a case summary describing the post-prescription course for each patient experiencing a problem. Problems will be identified during the 21-day interview. The clinician will compile information derived from the post-intervention interview and a review of the patient&#8217;s MOXXI record using a standardized format. The summary will elaborate on the patient&#8217;s underlying health conditions, the medications currently being used (including the index prescription), the timing of the problem, the management of the problem, the timing of the resolution and what the patient was told about the cause of the problem.</p>
+					<p>To define ADE status, two physicians (blinded to allocation group) will review each case summary and determine whether the case represents an ADE. This determination is made using a six-point classification system with a cut-point of 3. A case is considered to be an ADE if both reviewers agree that the case was an undesirable outcome and that outcome was more likely caused by medication use than the patient&#8217;s underlying health condition. This method has been widely adopted as the standard approach for ADE classification in patient safety research 
+						<abbrgrp>
+							<abbr bid="B12">12</abbr>
+							<abbr bid="B13">13</abbr>
+							<abbr bid="B14">14</abbr>
+							<abbr bid="B15">15</abbr>
+							<abbr bid="B16">16</abbr>
+							<abbr bid="B17">17</abbr>
+						</abbrgrp>. For an ADE, the reviewers will further classify its duration, preventability, amelioration and severity using standard definitions 
+						<abbrgrp>
+							<abbr bid="B12">12</abbr>
+							<abbr bid="B13">13</abbr>
+							<abbr bid="B14">14</abbr>
+							<abbr bid="B15">15</abbr>
+							<abbr bid="B16">16</abbr>
+							<abbr bid="B17">17</abbr>
+							<abbr bid="B18">18</abbr>
+							<abbr bid="B19">19</abbr>
+						</abbrgrp>.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Health services utilization</p>
+					</st>
+					<p>Standard methods to measure health services use using provincial claims data will be used. All physician visits, emergency department visits, hospitalizations and medication claims during the 12&#160;months following index prescription will be identified using the RAMQ data through MOXXI.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Intervention costs</p>
+					</st>
+					<p>We will record the entire amount of time the study pharmacist spends supporting patients in the intervention group. This will allow us to calculate costs at the patient level as well as aggregated at the population level. We will also track implementation and support costs for the IVRS, including calling charges. These costs will be prorated across the study population.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Explanatory variables</p>
+					</st>
+					<p>To determine factors that influence outcomes, we will use data in the MOXXI system to derive baseline information on patients, including demographic information (age, gender, language of choice and location of residence), active and past medical diagnoses and medication use in the preceding year (number of new drug starts and adherence).</p>
+				</sec>
+			</sec>
+			<sec>
+				<st>
+					<p>Blinding</p>
+				</st>
+				<p>Due to the nature of the study, blinding of patients and health-care providers will not be possible. However, we will blind personnel performing the interviews and physicians performing the assessment of ADE status of study group allocation.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Sample size</p>
+				</st>
+				<p>We have based our sample size on the following assumptions:</p>
+				<p indent="1">a. A baseline probability of non-persistence of 25% (based on a prior research study evaluating persistence with anti-hypertensive therapy using the same methods we will for this study) 
+					<abbrgrp>
+						<abbr bid="B11">11</abbr>
+					</abbrgrp>
+				</p>
+				<p indent="1">b. A minimally clinical important difference of 20%</p>
+				<p indent="1">c. A 10% loss to follow-up (based on our pilot study)</p>
+				<p indent="1">d. An enrollment rate of 50% (based on our pilot study)</p>
+				<p indent="1">e. Other specifications: &#945;&#8201;=&#8201;0.05, &#946;&#8201;=&#8201;0.20 and two-sided tests for significance will be used</p>
+				<p>Given these assumptions, we will need to approach 4,708 patients in total (2,354 patients in each treatment arm being eligible and approached for enrollment). This will result in 2,354 patients being enrolled (1,177 patients in each arm) and 2,118 patients evaluated for the composite outcome (1,059 patients in each arm). To be more conservative, we will enroll 1,100 patients in each arm.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Data management and analysis</p>
+				</st>
+				<p>Data will be exported from the MOXXI system and analyzed using SAS software (Cary, NC, USA). All data analysis will be performed in secure physical locations using hardware that is password protected. Only study personnel will have access to the data. Simple descriptive statistics to describe the patient population, call statistics and outcome measures will be used. Continuous variables will be described using median and inter-quartile ranges, while categorical variables will be described using frequency distributions. The statistical significance of any associations between group assignment and measures will be assessed using the Wilcoxon rank sum test and or the chi-square test, respectively, for continuous and categorical variables. Since the primary outcome is binary, tests to compare outcomes between the intervention and control groups will be simple chi-square statistics. An alpha of 0.05 as a threshold to determine statistical significance using a two-tailed distribution will be applied.</p>
+				<p>As a sensitivity analysis, logistic regression modeling will be used to assess possible baseline factors that are associated with the outcome and differ between the intervention and control groups. Analogous analyses to assess significance for the individual components of the composite primary outcome and the binary secondary outcome variables will also be performed (ADE occurrence, preventable ADE occurrence and ameliorable ADE occurrence).</p>
+				<p>To compare health services utilization, since the outcomes are event data, which follow a Poisson distribution, incidence rates for the outcome will be calculated. Incidence rates will be calculated using PROC GENMOD to create a <it>t</it>-test. Multivariable Poisson regression will be used to compare the rates, while adjusting for baseline factors. The model will use the treatment group as an independent covariate. If over-dispersion is noted, a negative binomial model will be used.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Ethical considerations</p>
+				</st>
+				<p>The physicians and their patients enrolled in the MOXXI program are covered under an umbrella consent program, which is approved and monitored by McGill&#8217;s Institutional Review Board. In addition, patients will be given opportunities to become informed about the project and to withdraw, as appropriately defined under the Tri-Council&#8217;s guidelines.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Timeline</p>
+				</st>
+				<p>The entire ISTOP-ADE study will take 5&#160;years from start to finish. Patient enrolment will run for 3&#160;years to ensure sample size requirements are met. Patient follow-up will continue for 1&#160;year from enrolment. Case summaries and physician reviews, as well as data validation and quality checks will occur throughout the lifespan of the study. We have budgeted 12&#160;months to accomplish the analysis and knowledge translation activities.</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Discussion</p>
+			</st>
+			<p>We have planned this randomized trial to assess the effectiveness and cost-effectiveness of an automated outreach program to monitor patients receiving a new ambulatory care prescription. It is an important study as the intervention has shown promising results in a pilot study. Some health payers and pharmacies may feel that this intervention is already warranted on face value and based on our preliminary findings. We have advised against this approach as the system has not been compared against routine care. In a situation where there are limited resources, it is not appropriate to invest in interventions of unknown effectiveness.</p>
+			<p>We chose adherence with prognosis-altering medications as our primary outcome. This outcome is important as many studies have demonstrated poor adherence &#8211; approximately 50% of patients with chronic illness do not take their medication as prescribed &#8211; and this in turn has been estimated to have major impacts on disease progression and health-care costs 
+				<abbrgrp>
+					<abbr bid="B20">20</abbr>
+					<abbr bid="B21">21</abbr>
+				</abbrgrp>. We will assess this outcome using administrative data. This ascertainment method has been demonstrated to be accurate and will not be biased by an inability to blind patients to the intervention. Our secondary outcomes are similarly important. In particular, ADEs are common following incident prescriptions 
+				<abbrgrp>
+					<abbr bid="B15">15</abbr>
+					<abbr bid="B16">16</abbr>
+				</abbrgrp>. While many of the symptoms related to ADEs are short in duration, a substantial proportion of patients have symptoms lasting longer than 7&#160;days and can lead patients to discontinue their medications on their own. Collectively, these outcomes will allow us to assess adequately the value of our intervention to patients and the health-care system.</p>
+			<p>Our study will also give us an opportunity to assess further implementation issues. We will track the costs of the intervention closely, including the workload required by our pharmacist to follow up the automated calls and by the physicians, who may need to do extra work to respond to patient complaints. We will also assess the failed automated calls to assess which patients do not accept this type of intervention. Finally, we will conduct an assessment of patient factors associated with adherence. All of this information will guide decisions pertaining to whether and how this system should be implemented, and to whom it should be directed.</p>
+			<p>This is an ambitious study, which will run in over 100 primary care practices in two large urban settings. It will take 3&#160;years to complete the recruitment and follow-up. We are randomizing patients at the patient rather than provider level because there is little risk of contamination or co-intervention. The patients are unlikely to interact with each other, and, based on our pilot study, there was very little interaction between patients and doctors within the 3&#160;weeks of their prescription. There are some sources of bias in our design to be considered. The primary risk is the lack of blinding in patients and primary care doctors. This is a concern as knowledge of allocation could change behavior. However, based on findings from our pilot study, we predict this is unlikely. In addition, outcome assessment is done objectively or by blinded reviewers. In short, this study will have internal validity and will be generalizable.</p>
+			<p>In summary, we have previously developed an automated outreach program for patients prescribed new medications. We have tested this intervention in a pilot study. This work found the intervention to be feasible and suggested it might improve the quality of patient care through reduced ADE duration and improved medication adherence. We have designed this randomized trial to test whether the intervention is effective compared to routine care. If the ISTOP-ADE system were demonstrated to be effective, then there would be significant opportunities to implement this intervention through health systems, health insurance agents and commercial pharmacies.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Trial status</p>
+			</st>
+			<p>The ISTOP-ADE study is anticipated to start early 2015.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Abbreviations</p>
+			</st>
+			<p>ADE: adverse drug event; ISTOP-ADE: Information Systems-enabled Outreach for Preventing ADEs; IVRS: interactive voice response system; MOXXI: Medical Office of the 21st Century; RAMQ: R&#233;gie de l&#8217;assurance maladie du Qu&#233;bec.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Competing interests</p>
+			</st>
+			<p>The authors declare that they have no competing interests.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Authors&#8217; contributions</p>
+			</st>
+			<p>AF, RT, CA, DB and CVW conceived the study and participated in its design and oversight. AF, AJ and TEE participated in writing the manuscript. All authors read and approved the final version of the manuscript.</p>
+		</sec>
+	</bdy>
+	<bm>
+		<ack>
+			<sec>
+				<st>
+					<p>Acknowledgements</p>
+				</st>
+				<p>The ISTOP-ADE study is receiving funding from the Canadian Institutes of Health Research (ResearchNet ID: 159794).</p>
+			</sec>
+		</ack>
+		<refgrp><bibl id="B1"><title><p>Usability of a computerised drug monitoring programme to detect adverse drug events and non-compliance in outpatient ambulatory care</p></title><aug><au><snm>Auger</snm><fnm>C</fnm></au><au><snm>Forster</snm><fnm>AJ</fnm></au><au><snm>Oake</snm><fnm>N</fnm></au><au><snm>Tamblyn</snm><fnm>R</fnm></au></aug><source>BMJ Qual Saf</source><pubdate>2013</pubdate><volume>22</volume><fpage>306</fpage><lpage>16</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1136/bmjqs-2012-001492</pubid><pubid idtype="pmpid" link="fulltext">23396853</pubid></pubidlist></xrefbib></bibl><bibl id="B2"><title><p>Using information technology to improve the monitoring of outpatient prescribing</p></title><aug><au><snm>Forster</snm><fnm>AJ</fnm></au><au><snm>Auger</snm><fnm>C</fnm></au></aug><source>JAMA Intern Med</source><pubdate>2013</pubdate><volume>173</volume><fpage>382</fpage><lpage>4</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1001/jamainternmed.2013.2002</pubid><pubid idtype="pmpid" link="fulltext">23381469</pubid></pubidlist></xrefbib></bibl><bibl id="B3"><title><p>A randomized trial of the effectiveness of on-demand versus computer-triggered drug decision support in primary care</p></title><aug><au><snm>Tamblyn</snm><fnm>R</fnm></au><au><snm>Huang</snm><fnm>A</fnm></au><au><snm>Taylor</snm><fnm>L</fnm></au><au><snm>Kawasumi</snm><fnm>Y</fnm></au><au><snm>Bartlett</snm><fnm>G</fnm></au><au><snm>Grad</snm><fnm>R</fnm></au><etal/></aug><source>J Am Med Inform Assoc</source><pubdate>2008</pubdate><volume>15</volume><fpage>430</fpage><lpage>8</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1197/jamia.M2606</pubid><pubid idtype="pmcid">2442270</pubid><pubid idtype="pmpid" link="fulltext">18436904</pubid></pubidlist></xrefbib></bibl><bibl id="B4"><title><p>Detection of adverse drug events and other treatment outcomes using an electronic prescribing system</p></title><aug><au><snm>Eguale</snm><fnm>T</fnm></au><au><snm>Tamblyn</snm><fnm>R</fnm></au><au><snm>Winslade</snm><fnm>N</fnm></au><au><snm>Buckeridge</snm><fnm>D</fnm></au></aug><source>Drug Saf</source><pubdate>2008</pubdate><volume>31</volume><fpage>1005</fpage><lpage>16</lpage><xrefbib><pubidlist><pubid idtype="doi">10.2165/00002018-200831110-00005</pubid><pubid idtype="pmpid">18840020</pubid></pubidlist></xrefbib></bibl><bibl id="B5"><title><p>Trouble getting started: predictors of primary medication nonadherence</p></title><aug><au><snm>Fischer</snm><fnm>MA</fnm></au><au><snm>Choudhry</snm><fnm>NK</fnm></au><au><snm>Brill</snm><fnm>G</fnm></au><au><snm>Avorn</snm><fnm>J</fnm></au><au><snm>Schneeweiss</snm><fnm>S</fnm></au><au><snm>Hutchins</snm><fnm>D</fnm></au><etal/></aug><source>Am J Med</source><pubdate>2011</pubdate><volume>124</volume><fpage>1081</fpage></bibl><bibl id="B6"><title><p>Primary medication non-adherence: analysis of 195,930 electronic prescriptions</p></title><aug><au><snm>Fischer</snm><fnm>MA</fnm></au><au><snm>Stedman</snm><fnm>MR</fnm></au><au><snm>Lii</snm><fnm>J</fnm></au><au><snm>Vogeli</snm><fnm>C</fnm></au><au><snm>Shrank</snm><fnm>WH</fnm></au><au><snm>Brookhart</snm><fnm>MA</fnm></au><etal/></aug><source>J Gen Intern Med</source><pubdate>2010</pubdate><volume>25</volume><fpage>284</fpage><lpage>90</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1007/s11606-010-1253-9</pubid><pubid idtype="pmcid">2842539</pubid><pubid idtype="pmpid" link="fulltext">20131023</pubid></pubidlist></xrefbib></bibl><bibl id="B7"><title><p>Validation of patient reports, automated pharmacy records, and pill counts with electronic monitoring of adherence to antihypertensive therapy</p></title><aug><au><snm>Choo</snm><fnm>PW</fnm></au><au><snm>Rand</snm><fnm>CS</fnm></au><au><snm>Inui</snm><fnm>TS</fnm></au><au><snm>Lee</snm><fnm>ML</fnm></au><au><snm>Cain</snm><fnm>E</fnm></au><au><snm>Cordeiro-Breault</snm><fnm>M</fnm></au><etal/></aug><source>Med Care</source><pubdate>1999</pubdate><volume>37</volume><fpage>846</fpage><lpage>57</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/00005650-199909000-00002</pubid><pubid idtype="pmpid" link="fulltext">10493464</pubid></pubidlist></xrefbib></bibl><bibl id="B8"><title><p>Estimating medication persistency using administrative claims data</p></title><aug><au><snm>Sikka</snm><fnm>R</fnm></au><au><snm>Xia</snm><fnm>F</fnm></au><au><snm>Aubert</snm><fnm>RE</fnm></au></aug><source>Am J Manag Care</source><pubdate>2005</pubdate><volume>11</volume><fpage>449</fpage><lpage>57</lpage><xrefbib><pubid idtype="pmpid" link="fulltext">16044982</pubid></xrefbib></bibl><bibl id="B9"><title><p>A general method of compliance assessment using centralized pharmacy records. Description and validation</p></title><aug><au><snm>Steiner</snm><fnm>JF</fnm></au><au><snm>Koepsell</snm><fnm>TD</fnm></au><au><snm>Fihn</snm><fnm>SD</fnm></au><au><snm>Inui</snm><fnm>TS</fnm></au></aug><source>Med Care</source><pubdate>1988</pubdate><volume>26</volume><fpage>814</fpage><lpage>23</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/00005650-198808000-00007</pubid><pubid idtype="pmpid">3398608</pubid></pubidlist></xrefbib></bibl><bibl id="B10"><title><p>The assessment of refill compliance using pharmacy records: methods, validity, and applications</p></title><aug><au><snm>Steiner</snm><fnm>JF</fnm></au><au><snm>Prochazka</snm><fnm>AV</fnm></au></aug><source>J Clin Epidemiol</source><pubdate>1997</pubdate><volume>50</volume><fpage>105</fpage><lpage>16</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0895-4356(96)00268-5</pubid><pubid idtype="pmpid" link="fulltext">9048695</pubid></pubidlist></xrefbib></bibl><bibl id="B11"><title><p>Influence of physicians&#8217; management and communication ability on patients&#8217; persistence with antihypertensive medication</p></title><aug><au><snm>Tamblyn</snm><fnm>R</fnm></au><au><snm>Abrahamowicz</snm><fnm>M</fnm></au><au><snm>Dauphinee</snm><fnm>D</fnm></au><au><snm>Wenghofer</snm><fnm>E</fnm></au><au><snm>Jacques</snm><fnm>A</fnm></au><au><snm>Klass</snm><fnm>D</fnm></au><etal/></aug><source>Arch Intern Med</source><pubdate>2010</pubdate><volume>170</volume><fpage>1064</fpage><lpage>72</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1001/archinternmed.2010.167</pubid><pubid idtype="pmpid" link="fulltext">20585073</pubid></pubidlist></xrefbib></bibl><bibl id="B12"><title><p>Incidence and preventability of adverse drug events in hospitalized adults</p></title><aug><au><snm>Bates</snm><fnm>DW</fnm></au><au><snm>Leape</snm><fnm>LL</fnm></au><au><snm>Petrycki</snm><fnm>S</fnm></au></aug><source>J Gen Intern Med</source><pubdate>1993</pubdate><volume>8</volume><fpage>289</fpage><lpage>94</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1007/BF02600138</pubid><pubid idtype="pmpid">8320571</pubid></pubidlist></xrefbib></bibl><bibl id="B13"><title><p>Ottawa Hospital Patient Safety Study: incidence and timing of adverse events in patients admitted to a Canadian teaching hospital</p></title><aug><au><snm>Forster</snm><fnm>AJ</fnm></au><au><snm>Asmis</snm><fnm>TR</fnm></au><au><snm>Clark</snm><fnm>HD</fnm></au><au><snm>Al Saied</snm><fnm>G</fnm></au><au><snm>Code</snm><fnm>CC</fnm></au><au><snm>Caughey</snm><fnm>SC</fnm></au><etal/></aug><source>CMAJ</source><pubdate>2004</pubdate><volume>170</volume><fpage>1235</fpage><lpage>40</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1503/cmaj.1030683</pubid><pubid idtype="pmcid">385353</pubid><pubid idtype="pmpid" link="fulltext">15078845</pubid></pubidlist></xrefbib></bibl><bibl id="B14"><title><p>Adverse drug events occurring following hospital discharge</p></title><aug><au><snm>Forster</snm><fnm>AJ</fnm></au><au><snm>Murff</snm><fnm>HJ</fnm></au><au><snm>Peterson</snm><fnm>JF</fnm></au><au><snm>Gandhi</snm><fnm>TK</fnm></au><au><snm>Bates</snm><fnm>DW</fnm></au></aug><source>J Gen Intern Med</source><pubdate>2005</pubdate><volume>20</volume><fpage>317</fpage><lpage>23</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1525-1497.2005.30390.x</pubid><pubid idtype="pmcid">1490089</pubid><pubid idtype="pmpid">15857487</pubid></pubidlist></xrefbib></bibl><bibl id="B15"><title><p>Adverse drug events in ambulatory care</p></title><aug><au><snm>Gandhi</snm><fnm>TK</fnm></au><au><snm>Weingart</snm><fnm>SN</fnm></au><au><snm>Borus</snm><fnm>J</fnm></au><au><snm>Seger</snm><fnm>AC</fnm></au><au><snm>Peterson</snm><fnm>J</fnm></au><au><snm>Burdick</snm><fnm>E</fnm></au><etal/></aug><source>N Engl J Med</source><pubdate>2003</pubdate><volume>348</volume><fpage>1556</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1056/NEJMsa020703</pubid><pubid idtype="pmpid" link="fulltext">12700376</pubid></pubidlist></xrefbib></bibl><bibl id="B16"><title><p>Incidence and preventability of adverse drug events among older persons in the ambulatory setting</p></title><aug><au><snm>Gurwitz</snm><fnm>JH</fnm></au><au><snm>Field</snm><fnm>TS</fnm></au><au><snm>Harrold</snm><fnm>LR</fnm></au><au><snm>Rothschild</snm><fnm>J</fnm></au><au><snm>Debellis</snm><fnm>K</fnm></au><au><snm>Seger</snm><fnm>AC</fnm></au><etal/></aug><source>JAMA</source><pubdate>2003</pubdate><volume>289</volume><fpage>1107</fpage><lpage>16</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1001/jama.289.9.1107</pubid><pubid idtype="pmpid" link="fulltext">12622580</pubid></pubidlist></xrefbib></bibl><bibl id="B17"><title><p>The critical care safety study: the incidence and nature of adverse events and serious medical errors in intensive care</p></title><aug><au><snm>Rothschild</snm><fnm>JM</fnm></au><au><snm>Landrigan</snm><fnm>CP</fnm></au><au><snm>Cronin</snm><fnm>JW</fnm></au><au><snm>Kaushal</snm><fnm>R</fnm></au><au><snm>Lockley</snm><fnm>SW</fnm></au><au><snm>Burdick</snm><fnm>E</fnm></au><etal/></aug><source>Crit Care Med</source><pubdate>2005</pubdate><volume>33</volume><fpage>1694</fpage><lpage>700</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1097/01.CCM.0000171609.91035.BD</pubid><pubid idtype="pmpid" link="fulltext">16096443</pubid></pubidlist></xrefbib></bibl><bibl id="B18"><title><p>Clarification of terminology in drug safety</p></title><aug><au><snm>Aronson</snm><fnm>J</fnm></au><au><snm>Ferner</snm><fnm>R</fnm></au></aug><source>Drug Saf</source><pubdate>2005</pubdate><volume>28</volume><fpage>851</fpage><lpage>70</lpage><xrefbib><pubidlist><pubid idtype="doi">10.2165/00002018-200528100-00003</pubid><pubid idtype="pmpid">16180936</pubid></pubidlist></xrefbib></bibl><bibl id="B19"><title><p>Adverse drug reactions: definitions, diagnosis, and management</p></title><aug><au><snm>Edwards</snm><fnm>I</fnm></au><au><snm>Aronson</snm><fnm>J</fnm></au></aug><source>Lancet</source><pubdate>2000</pubdate><volume>356</volume><fpage>1255</fpage><lpage>9</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0140-6736(00)02799-9</pubid><pubid idtype="pmpid" link="fulltext">11072960</pubid></pubidlist></xrefbib></bibl><bibl id="B20"><title><p>Interventions for enhancing medication adherence</p></title><aug><au><snm>Nieuwlaat</snm><fnm>R</fnm></au><au><snm>Wilczynski</snm><fnm>N</fnm></au><au><snm>Navarro</snm><fnm>T</fnm></au><au><snm>Hobson</snm><fnm>N</fnm></au><au><snm>Jeffery</snm><fnm>R</fnm></au><au><snm>Keepanasseril</snm><fnm>A</fnm></au><etal/></aug><source>Cochrane Database Syst Rev</source><pubdate>2008</pubdate><note>Issue 2. Art. No.: CD000011. doi:10.1002/14651858.CD000011.pub3</note></bibl><bibl id="B21"><title><p>Meta-analysis of trials of interventions to improve medication adherence</p></title><aug><au><snm>Peterson</snm><fnm>AM</fnm></au><au><snm>Takiya</snm><fnm>L</fnm></au><au><snm>Finley</snm><fnm>R</fnm></au></aug><source>Am J Health Syst Pharm</source><pubdate>2003</pubdate><volume>60</volume><fpage>657</fpage><lpage>665</lpage><xrefbib><pubid idtype="pmpid" link="fulltext">12701547</pubid></xrefbib></bibl></refgrp>
+	</bm>
+</art>
