@@ -1,0 +1,107 @@
+{
+  "publisher": {
+    "value": [
+      "BioMed Central Ltd"
+    ]
+  },
+  "journal": {
+    "value": [
+      "Trials"
+    ]
+  },
+  "title": {
+    "value": [
+      "Lessons learned from recruiting socioeconomically disadvantaged smokers into a pilot randomized controlled trial to explore the role of Exercise Assisted Reduction then Stop (EARS) smoking"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Tom P Thompson",
+      "Colin J Greaves",
+      "Richard Ayres",
+      "Paul Aveyard",
+      "Fiona C Warren",
+      "Richard Byng",
+      "Rod S Taylor",
+      "John L Campbell",
+      "Michael Ussher",
+      "Susan Michie",
+      "Robert West",
+      "Adrian H Taylor"
+    ]
+  },
+  "date": {
+    "value": [
+      "2015-02-12"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1186/1745-6215-16-1"
+    ]
+  },
+  "volume": {
+    "value": [
+      "16"
+    ]
+  },
+  "issue": {
+    "value": [
+      "1"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "1"
+    ]
+  },
+  "description": {
+    "value": [
+      "Research is needed on what influences recruitment to smoking reduction trials, and how to increase their reach. The present study aimed to i) assess the feasibility of recruiting a disadvantaged population, ii) examine the effects of recruitment methods on participant characteristics, iii) identify resource requirements for different recruitment methods, and iv) to qualitatively assess the acceptability of recruitment. This was done as part of a pilot two-arm trial of the effectiveness of a novel behavioral support intervention focused on increasing physical activity and reducing smoking, among disadvantaged smokers not wishing to quit."
+    ]
+  },
+  "abstract": {
+    "value": [
+      "Research is needed on what influences recruitment to smoking reduction trials, and how to increase their reach. The present study aimed to i) assess the feasibility of recruiting a disadvantaged population, ii) examine the effects of recruitment methods on participant characteristics, iii) identify resource requirements for different recruitment methods, and iv) to qualitatively assess the acceptability of recruitment. This was done as part of a pilot two-arm trial of the effectiveness of a novel behavioral support intervention focused on increasing physical activity and reducing smoking, among disadvantaged smokers not wishing to quit."
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.trialsjournal.com/content/16/1/1"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://www.trialsjournal.com/content/pdf/1745-6215-16-1.pdf"
+    ]
+  },
+  "fulltext_xml": {
+    "value": [
+      "/content/download/xml/1745-6215-16-1.xml"
+    ]
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": [
+      "/content/figures/1745-6215-16-1-1.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Figure 1.",
+      "CONSORT diagram showing recruitment approaches and participant flow up to randomization."
+    ]
+  },
+  "license": {
+    "value": [
+      "\r\n\t\t\t\tThis is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.\r\n\t\t\t"
+    ]
+  },
+  "copyright": {
+    "value": [
+      "\r\n            © 2015 Thompson et al.; licensee BioMed Central. \r\n        "
+    ]
+  }
+}

@@ -1,0 +1,1942 @@
+<?xml version='1.0'?>
+<!DOCTYPE art SYSTEM 'http://www.biomedcentral.com/xml/article.dtd'>
+<art>
+    <ui>s13063-015-0567-7</ui>
+    <ji>1745-6215</ji>
+    <fm>
+       <dochead>Study protocol</dochead>
+       <bibl>
+          <title>
+             <p>Improving Decision making On Location of Care with the frail Elderly and their caregivers (the DOLCE study): study protocol for a cluster randomized controlled trial</p>
+          </title>
+          <aug>
+             <au id="A1" ca="yes">
+                <snm>L&#233;gar&#233;</snm>
+                <fnm>France</fnm>
+                <insr iid="I1"/>
+                <insr iid="I2"/>
+                <email>France.Legare@mfa.ulaval.ca</email>
+             </au>
+             <au id="A2">
+                <snm>Bri&#232;re</snm>
+                <fnm>Nathalie</fnm>
+                <insr iid="I3"/>
+                <email>nathalie.briere@csssvc.qc.ca</email>
+             </au>
+             <au id="A3">
+                <snm>Stacey</snm>
+                <fnm>Dawn</fnm>
+                <insr iid="I4"/>
+                <insr iid="I5"/>
+                <email>Dawn.stacey@uottawa.ca</email>
+             </au>
+             <au id="A4">
+                <snm>Bourassa</snm>
+                <fnm>Henriette</fnm>
+                <insr iid="I6"/>
+                <email>Henriette_bourass@videotron.ca</email>
+             </au>
+             <au id="A5">
+                <snm>Desroches</snm>
+                <fnm>Sophie</fnm>
+                <insr iid="I1"/>
+                <insr iid="I7"/>
+                <email>Sophie.Desroches@fsaa.ulaval.ca</email>
+             </au>
+             <au id="A6">
+                <snm>Dumont</snm>
+                <fnm>Serge</fnm>
+                <insr iid="I3"/>
+                <insr iid="I8"/>
+                <email>Serge.Dumont@svs.ulaval.ca</email>
+             </au>
+             <au id="A7">
+                <snm>Fraser</snm>
+                <fnm>Kimberly</fnm>
+                <insr iid="I9"/>
+                <email>kdfraser@ualberta.ca</email>
+             </au>
+             <au id="A8">
+                <snm>Freitas</snm>
+                <fnm>Adriana</fnm>
+                <insr iid="I1"/>
+                <email>Adriana.Freitas@crchudequebec.ulaval.ca</email>
+             </au>
+             <au id="A9">
+                <snm>Rivest</snm>
+                <fnm>Louis&#8208;Paul</fnm>
+                <insr iid="I10"/>
+                <email>Louis-Paul.Rivest@mat.ulaval.ca</email>
+             </au>
+             <au id="A10">
+                <snm>Roy</snm>
+                <fnm>Lise</fnm>
+                <insr iid="I6"/>
+                <email>Liseroy47@videotron.ca</email>
+             </au>
+          </aug>
+          <insg>
+             <ins id="I1">
+                <p>Research Centre of the CHU de Qu&#233;bec, St-Fran&#231;ois D&#8217;Assise Hospital, 10, rue de l&#8217;Espinay D6-735, Quebec City G1L 3&#160;L5, Canada</p>
+             </ins>
+             <ins id="I2">
+                <p>Department of Family Medicine and Emergency Medicine, Faculty of Medicine, Universit&#233; Laval, 1050, avenue de la M&#233;decine, Quebec City G1V 0A6, Canada</p>
+             </ins>
+             <ins id="I3">
+                <p>Centre de sant&#233; et de services sociaux (CSSS) de la Vieille-Capitale, 880, rue P&#232;re-Marquette, Quebec City G1M 2R9, Canada</p>
+             </ins>
+             <ins id="I4">
+                <p>Ottawa Hospital Research Institute, 501 Smyth Road, Ottawa K1H 8 L6, Canada</p>
+             </ins>
+             <ins id="I5">
+                <p>School of Nursing, University of Ottawa, 451 Smyth Road, Ottawa K1H 8&#160;M5, Canada</p>
+             </ins>
+             <ins id="I6">
+                <p>Caregivers&#8217; representative, Research Centre of the CHU de Qu&#233;bec, St-Fran&#231;ois D&#8217;Assise Hospital, 10, rue de l&#8217;Espinay, Quebec City G1L 3&#160;L5, Canada</p>
+             </ins>
+             <ins id="I7">
+                <p>Department of Food Science and Nutrition, Universit&#233; Laval, 2425 rue de l&#8217;agriculture, Quebec City G1V 0A6, Canada</p>
+             </ins>
+             <ins id="I8">
+                <p>School of Social Work, Universit&#233; Laval, 1030, av. des Sciences-Humaines, Quebec City G1V 0A6, Canada</p>
+             </ins>
+             <ins id="I9">
+                <p>Faculty of Nursing, University of Alberta, 11405 87 Avenue, Edmonton T6G 1C9, Canada</p>
+             </ins>
+             <ins id="I10">
+                <p>Faculty of Sciences and Engineering, Department of Mathematics and Statistics, Universit&#233; Laval, 1045 rue de la m&#233;decine, Quebec City G1V 0A6, Canada</p>
+             </ins>
+          </insg>
+          <source>Trials</source>
+          <issn>1745-6215</issn>
+          <pubdate>2015</pubdate>
+          <volume>16</volume>
+          <issue>1</issue>
+          <fpage>50</fpage>
+          <url>http://www.trialsjournal.com/content/16/1/50</url>
+          <xrefbib>
+             <pubidlist>
+                <pubid idtype="doi">10.1186/s13063-015-0567-7</pubid>
+             </pubidlist>
+          </xrefbib>
+       </bibl>
+       <history>
+          <rec>
+             <date>
+                <day>7</day>
+                <month>10</month>
+                <year>2014</year>
+             </date>
+          </rec>
+          <acc>
+             <date>
+                <day>15</day>
+                <month>1</month>
+                <year>2015</year>
+             </date>
+          </acc>
+          <pub>
+             <date>
+                <day>12</day>
+                <month>2</month>
+                <year>2015</year>
+             </date>
+          </pub>
+       </history>
+       <cpyrt>
+          <year>2015</year>
+          <collab>L&#233;gar&#233; et al.; licensee BioMed Central.</collab>
+          <note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/4.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<url>http://creativecommons.org/publicdomain/zero/1.0/</url>) applies to the data made available in this article, unless otherwise stated.</note>
+       </cpyrt>
+       <kwdg>
+          <kwd>Elderly</kwd>
+          <kwd>Home care</kwd>
+          <kwd>Shared decision making</kwd>
+          <kwd>Interprofessional</kwd>
+          <kwd>Implementation</kwd>
+          <kwd>Knowledge translation</kwd>
+          <kwd>Training</kwd>
+          <kwd>Ottawa decision support framework</kwd>
+          <kwd>Decisional conflict scale</kwd>
+          <kwd>Cluster randomized trial</kwd>
+       </kwdg>
+       <abs>
+          <sec>
+             <st>
+                <p>Abstract</p>
+             </st>
+             <sec>
+                <st>
+                   <p>Background</p>
+                </st>
+                <p>One of the toughest decisions faced by elderly people is whether to stay at home or move to a care facility. This study seeks to evaluate the impact of training interprofessional home-care teams in shared decision making combined with a decision aid on the proportion of elderly people who report being active in the decision-making process regarding whether to stay at home or move to a care facility.</p>
+             </sec>
+             <sec>
+                <st>
+                   <p>Methods/Design</p>
+                </st>
+                <p>We propose a multicenter cluster randomized trial conducted with home-care interprofessional teams in the Province of Quebec with 2 data collection phases: before and after the intervention. Units of randomization will be centers for primary healthcare and social services. We will enroll 16 of these and ask each to provide one home-care interprofessional team involved in decisions and care planning with eligible clients. Clients will be included if they i) are aged &#8805;65; ii) are receiving care from the participating home-care interprofessional team; iii) have faced the decision about staying at home or moving to a care facility in the past 3 to 6&#160;months; iv) are able to read, understand and write French or English; and v) are able to give informed consent. If clients are unable to provide informed consent, their primary caregiver who was involved in the decision-making process will be eligible to participate. The intervention arm will receive training in shared decision making and use of a decision aid. The control arm will receive &#8216;usual care&#8217;. The primary outcome of interest is the assumed role in the decision-making process as assessed in clients or caregivers with a modified version of the Control Preferences Scale. Multilevel modeling will be used to take the hierarchical structure of the data into account. The study has obtained full ethical approval. The trial will comply with CONSORT guidelines adapted for cluster randomized trials.</p>
+             </sec>
+             <sec>
+                <st>
+                   <p>Discussion</p>
+                </st>
+                <p>Home care is a rapidly growing sector and this study will lay the foundations of a national strategy to ensure that IP home-care teams provide the highest quality of care for seriously ill elderly people and support for their families.</p>
+             </sec>
+             <sec>
+                <st>
+                   <p>Trial registration</p>
+                </st>
+                <p>ClinicalTrials.gov <url>NCT02244359</url> (registered 18 September 2014).</p>
+             </sec>
+          </sec>
+       </abs>
+    </fm>
+    <bdy>
+       <sec>
+          <st>
+             <p>Background</p>
+          </st>
+          <p>Striving to provide the right care in the right place and at the right time for an aging population requiring care is a priority issue for most ministries of health across Canada <abbrgrp>
+                <abbr bid="B1">1</abbr>
+             </abbrgrp>,<abbrgrp>
+                <abbr bid="B2">2</abbr>
+             </abbrgrp>. One of the toughest decisions for elderly people in Canada is whether to remain at home (with or without assistance) or move to a residential care facility <abbrgrp>
+                <abbr bid="B3">3</abbr>
+             </abbrgrp>. Because this decision is rarely clinically cut-and-dry and is highly preference-sensitive <abbrgrp>
+                <abbr bid="B4">4</abbr>
+             </abbrgrp>,<abbrgrp>
+                <abbr bid="B5">5</abbr>
+             </abbrgrp>, it requires shared decision making (SDM) <abbrgrp>
+                <abbr bid="B6">6</abbr>
+             </abbrgrp>. Shared decision making, a process whereby health professionals and clients work together to make healthcare choices, is fundamental to informed consent and client-centered care <abbrgrp>
+                <abbr bid="B7">7</abbr>
+             </abbrgrp>-<abbrgrp>
+                <abbr bid="B10">10</abbr>
+             </abbrgrp>. Given the emphasis on integrated healthcare services and engagement of clients as partners in their care, finding effective ways to involve clients in sharing decisions with healthcare teams is critical <abbrgrp>
+                <abbr bid="B11">11</abbr>
+             </abbrgrp>-<abbrgrp>
+                <abbr bid="B13">13</abbr>
+             </abbrgrp>. An interprofessional (IP) approach to SDM (IP-SDM approach) is especially relevant to home-care teams working with elderly people. IP-SDM enables IP teams to support them in facing decisions, meet their decisional needs, and reach healthcare choices that are agreed upon by the client, family members/caregivers and the IP team together <abbrgrp>
+                <abbr bid="B14">14</abbr>
+             </abbrgrp>-<abbrgrp>
+                <abbr bid="B16">16</abbr>
+             </abbrgrp>. Since 2007, our team has worked toward expanding SDM beyond the physician-client dyad to IP teams <abbrgrp>
+                <abbr bid="B17">17</abbr>
+             </abbrgrp> while aiming for rigorous evaluation of interventions for implementing SDM in clinical practice <abbrgrp>
+                <abbr bid="B18">18</abbr>
+             </abbrgrp>. A previous study found that, overall, home-care providers intend to engage in an IP-SDM approach with elderly people but that various barriers interfere with them doing so <abbrgrp>
+                <abbr bid="B19">19</abbr>
+             </abbrgrp>. We therefore developed a training program in SDM <abbrgrp>
+                <abbr bid="B20">20</abbr>
+             </abbrgrp> combined with a decision aid and piloted these with one IP home-care team in Quebec City and one in Edmonton. However, we did not evaluate its impact on clinical practices nor on clients and their caregivers. Therefore, in this study, we seek to evaluate the impact of training IP home-care teams in SDM combined with a decision aid on the proportion of elderly people who report being active in the decision-making process regarding whether to stay at home or move to a care facility.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Methods/Design</p>
+          </st>
+          <sec>
+             <st>
+                <p>Trial design and setting</p>
+             </st>
+             <p>We propose a multicenter cluster randomized trial conducted with home-care IP teams in the Province of Quebec and with 2 data collection phases: before (pre) and after (post) the intervention (Figure&#160;<figr fid="F1">1</figr>). The unit of randomization will be the center for primary healthcare and social services (CPHSS). CPHSSs (known in Quebec as <it>Centres de sant&#233; et de services sociales</it>) are the result of mergers between local community service centers, long-term care facilities and, in most cases, a hospital. The CPHSS is accountable for providing the local population with accessibility, continuity and quality of care. Our proposed study design decreases the potential of contamination bias since our proposed intervention targets one home-care IP team in each eligible CPHSS. During 2 data collection phases (pre- and post-intervention), we will assess the outcomes detailed below. Clients and caregivers will not be the same for pre- and post-intervention data collections, but IP teams and providers will be the same. Ethics committee review approval has been obtained from the CHU de Qu&#233;bec multicenter ethics committee (approval number: MP-CHU-QC-14-001). This trial is registered at clinicaltrials.gov (registration number: NCT02244359).
+                  </p>
+             
+                <fig id="F1">
+                   <title>
+                      <p>Figure 1</p>
+                   </title>
+                   <caption>
+                      <p>Study flow diagram. </p>
+                   </caption>
+                   <text>
+                      <p>
+                            <b>Study flow diagram.</b> CPHSS, center for primary healthcare and social services; IP, interprofessional; IP-SDM, interprofessional approach to shared decision making.</p>
+                   </text>
+                   <graphic file="s13063-015-0567-7-1"/>
+                </fig>
+             
+          </sec>
+          <sec>
+             <st>
+                <p>Engagement with and inclusion of clients, their families and caregivers</p>
+             </st>
+             <p>The proposed project builds on a long history of successful partnerships with clients&#8217; and caregivers&#8217; representatives. The IP-SDM conceptual model <abbrgrp>
+                   <abbr bid="B15">15</abbr>
+                </abbrgrp>,<abbrgrp>
+                   <abbr bid="B16">16</abbr>
+                </abbrgrp>,<abbrgrp>
+                   <abbr bid="B21">21</abbr>
+                </abbrgrp>, the decision to be addressed and the training in SDM combined with a decision aid <abbrgrp>
+                   <abbr bid="B22">22</abbr>
+                </abbrgrp> to be evaluated were all identified and developed with stakeholders. Moreover, we have involved 2 caregivers&#8217; representatives (LR, HB), one of whom is a representative of a nonprofit organization who is dedicated to representing caregivers in the writing of this proposal. HB reviewed all questionnaires to ensure their acceptability by clients and caregivers.</p>
+             <p>This project builds on previous successful client/caregiver partnerships as well as on successful relationships with healthcare organizations such as the CPHSS. An advisory board including representatives of all stakeholders is providing guidance throughout the project.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Inclusion/exclusion criteria for participants and recruitment</p>
+             </st>
+             <p>We will target all CPHSSs in the eastern part of the Province of Quebec <abbrgrp>
+                   <abbr bid="B23">23</abbr>
+                </abbrgrp>. We will contact the directors of all potentially eligible CPHSSs in a random manner. We will present the project and seek their interest in participating in the study. One home-care IP team who is involved in decisions and care planning with eligible clients in participating CPHSSs will be eligible to participate in the trial. An IP healthcare team refers to the presence of a minimum of 2 healthcare providers from different professions involved in client care and who collaborate to provide integrated and cohesive client care <abbrgrp>
+                   <abbr bid="B24">24</abbr>
+                </abbrgrp>,<abbrgrp>
+                   <abbr bid="B25">25</abbr>
+                </abbrgrp>. Clients will be included if they i) are aged &#8805;65&#160;years; ii) are receiving care from the home-care team; iii) have faced the decision about whether to stay at home or move to a care facility in the previous 3 to 6&#160;months; iv) are able to read, understand and write French or English; and v) are able to give informed consent. For clients who cannot provide informed consent, we will identify the primary caregiver who was involved in the decision of interest. Clients will be recruited by the research team in a consecutive manner. We will keep detailed information on the flow of clients throughout the trial. All participants (providers, clients and caregivers) will sign consent forms approved by the ethics boards of the 16 CPHSSs (see detailed list, Additional file <supplr sid="S1">1</supplr>).</p></sec>
+          <sec>
+             <st>
+                <p>Intervention arm</p>
+             </st>
+             <p>This intervention will include training in SDM and a decision aid. More specifically, the training in SDM will include i) a 1.5-hour online tutorial, based on the Ottawa Decision Support Tutorial <abbrgrp>
+                   <abbr bid="B26">26</abbr>
+                </abbrgrp>, and ii) a 3.5-hour skills building workshop, which includes a video that demonstrates SDM in the context of IP home-care teams. Providers will be asked to give clients and their caregivers a copy of the decision aid. The intervention will be staggered over a 6-month period.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Control/usual care arm</p>
+             </st>
+             <p>The providers and clients from the control group will not receive any particular intervention apart from the completion of data collection forms. We call the control group &#8216;usual care&#8217; because clients from the control group will be exposed to the standard procedure for decisions regarding location of care currently in use in the Province of Quebec. This procedure will also be used in the intervention group.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Allocation of participants to trial groups</p>
+             </st>
+             <p>Potential confounding variables will be controlled by randomization. The unit of randomization will be the CPHSS with stratification by urban or rural setting <abbrgrp>
+                   <abbr bid="B27">27</abbr>
+                </abbrgrp>. For CPHSS enrollment, 2 random lists will be prepared to establish the order in which CPHSSs will be contacted. We will follow this order systematically until the enrollment of 4 urban and 12 rural CPHSSs is complete.</p>
+             <p>A second randomization will occur after participants have completed their baseline measures. This randomization will be stratified to minimize the differences within groups due to geographic location. Thus, 2 urban and 6 rural CPHSSs will be allocated to each group. Randomization and allocation will be done using computer software, and data will be entered by an experienced, independent biostatistician.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Protecting against sources of bias</p>
+             </st>
+             <p>Given the nature of this trial, the investigators, research assistants (who will enroll participants) and participating CPHSSs and their IP home-care teams will not be blinded to group allocation because they will be aware of which CPHSSs are receiving the intervention. However, sources of bias will be minimized by the following procedures:</p><p>1. Strict allocation concealment will be respected by using standardized tools and by instructing research assistants not to tell clients to which group their IP home-care team has been randomized. Moreover, each research assistant will collect data only on the intervention group or only on the control group; they will not change trial arms.</p>
+                <p>2. The design of data collection forms and packages will be similar in both groups.</p>
+                <p>3. Double data entry will be centrally performed by 2 independent data clerks who will attribute a secret group code to intervention and control groups and will thus be blinded to group allocation.</p>
+                <p>4. Data analyses will be performed blindly by our study biostatistician who will not be involved with randomization.</p>
+                <p>5. Team members will access the group code only after analyses and interpretation of the results are completed. Recruitment of clients will be sequential and will be performed by a research assistant who will be given names of potentially eligible clients directly from a central registry that is in place in all CPHSSs. She/he will then approach all potentially eligible participants consecutively, thus reducing selection bias. We do not expect that providers in the participating CPHSSs will influence one another regarding the intervention, particularly given the significant geographical distance between IP home-care clinical sites. Sociodemographic data in each group will be compared to assess confounding variables.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Proposed frequency and duration of follow-up</p>
+             </st>
+             <p>There will be 2 data collection phases: 1) the pre-intervention data collection, lasting 3&#160;months (for a sample of 5 clients/CPHSS), will be used to compare CPHSSs (intervention versus control) on the basis of the CPHSS clientele profile on the proportion of clients reporting an active role in the decision-making process about whether to remain at home or move to a care facility; and 2) postintervention, lasting 10 to 12&#160;months.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Outcome measures</p>
+             </st>
+             <p>The primary outcome of interest is the assumed role in the decision making. We will use the modified version of the Control Preferences Scale <abbrgrp>
+                   <abbr bid="B28">28</abbr>
+                </abbrgrp> designed to assess the assumed role in the decision-making process reported by the client or the caregiver <abbrgrp>
+                   <abbr bid="B29">29</abbr>
+                </abbrgrp>. The scale consists of a single question to assess the client&#8217;s perception of locus of control over the decision-making process. This is the scale used most in studies assessing the implementation of SDM in clinical practices <abbrgrp>
+                   <abbr bid="B18">18</abbr>
+                </abbrgrp>,<abbrgrp>
+                   <abbr bid="B30">30</abbr>
+                </abbrgrp>. It is responsive to change and correlates with patients&#8217; as well as with clinicians&#8217; reported levels of patient involvement <abbrgrp>
+                   <abbr bid="B31">31</abbr>
+                </abbrgrp>. Response options (n&#8201;=&#8201;5) are as follows: A) I made the decision; B) I made the decision after seriously considering my providers&#8217; opinions; C) My providers and I shared the responsibility for the decision making; D) My providers made the decision after seriously considering my opinion; E) My providers made the decision. A and B represent a client-controlled decision-making process, C represents a shared decision-making process, and D and E represent a practitioner-controlled decision-making process <abbrgrp>
+                   <abbr bid="B29">29</abbr>
+                </abbrgrp>. We will combine A, B and C to identify the proportion of clients reporting an active role in the decision-making process, and we will combine D and E to identify a passive role. We will perform our analysis by assessing the increase in the percentage of clients reporting an active role.</p>
+             <p>Measures of secondary outcomes will be collected. More specifically, in clients and caregivers, we will assess their preferred and chosen option (remain at home or move to care facility); decisional conflict using the Decisional Conflict Scale <abbrgrp>
+                   <abbr bid="B32">32</abbr>
+                </abbrgrp>,<abbrgrp>
+                   <abbr bid="B33">33</abbr>
+                </abbrgrp>; decisional regret using the Decisional Regret Scale <abbrgrp>
+                   <abbr bid="B34">34</abbr>
+                </abbrgrp>; HR-QoL (only in client) using 2 subscales from the Nottingham Health Profile: Social Isolation and Emotional Reactions <abbrgrp>
+                   <abbr bid="B35">35</abbr>
+                </abbrgrp>-<abbrgrp>
+                   <abbr bid="B38">38</abbr>
+                </abbrgrp>; and burden of care (only in caregivers) using a validated scale <abbrgrp>
+                   <abbr bid="B39">39</abbr>
+                </abbrgrp>-<abbrgrp>
+                   <abbr bid="B42">42</abbr>
+                </abbrgrp>.</p>
+             <p>In providers, at study entry and exit, we will assess their intention to engage in SDM behaviors in the context of an IP home-care team sharing the decision with elderly people about whether to stay at home or move to another location.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Statistical consideration</p>
+             </st>
+             <sec>
+                <st>
+                   <p>Sample size</p>
+                </st>
+                <p>The primary outcome of interest is the proportion of elderly people who report an active role in the decision-making process regarding whether to stay at home or move to a care facility. Our estimate of the sample size is based on our updated reviews of interventions to improve the uptake of SDM <abbrgrp>
+                      <abbr bid="B43">43</abbr>
+                   </abbrgrp> and earlier studies in primary care, in which we observed a 20% absolute difference between groups with an expected baseline value of 50% for the active role <abbrgrp>
+                      <abbr bid="B44">44</abbr>
+                   </abbrgrp>. Our biostatisticians provided a number of scenarios with ICCs ranging from 0.02 to 0.05 and the number of clusters ranging from 12 to 16. We used a conservative value of ICC of 0.05 as the upper limit. In order to detect a difference of 20% (50% to 70%) between the intervention group and the control group after the intervention with 80% power, and a 5% significance level, we would require a total of 186 clients for an individually randomized trial. In considering an ICC of 0.05 and 16 clusters (CPHSSs), we would need a sample size of 456 clients in total. Allowing for a 10% loss to follow-up, 501 clients will be recruited (32/CPHSS). We will also recruit 5 clients/CPHSS before the intervention. This is deemed a sufficient number to be able to compare CPHSSs (experimental versus control) at trial entry on the basis of their clientele profiles <abbrgrp>
+                      <abbr bid="B45">45</abbr>
+                   </abbrgrp>.</p>
+             </sec>
+             <sec>
+                <st>
+                   <p>Analysis plan</p>
+                </st>
+                <p>We will perform a descriptive statistical analysis of organizational (CPHSS/health professionals) and socio-demographic (clients/health professionals) characteristics in order to assure the comparability of the intervention and control groups. Potentially confounding variables, if any, will be introduced as covariates in mathematical modeling analysis. Multilevel modeling will be used to take the hierarchical structure of the data into account by specifying random effects at each of the 2 levels: 1) CPHSS and 2) client. For each outcome analyzed, according to the type of variable (continuous or categorical), the goodness of fit and the assumptions of each model will be assessed. Statistical analysis will be performed using the SAS statistical package <abbrgrp>
+                      <abbr bid="B46">46</abbr>
+                   </abbrgrp>. The primary outcome, i.e. the proportion of clients reporting an active role in the decision-making process, will be analyzed through multilevel logistic regression using the GLIMMIX procedure of the SAS program. The least squared mean proportions will be estimated and compared to assess the effect of the intervention on the primary outcome. Secondary outcomes will be comparisons between the 2 groups (intervention, control) using multilevel modeling. The <it>P</it> value will be adjusted for any multiple comparison tests. Adjustment for multiple comparisons will only be made for secondary outcomes, using the Bonferroni method. This will avoid significant results being due to chance alone. Analysis will be performed after the pre-intervention data collection (for providing performance feedback during the workshop) and at the end of the trial. We will explore the impact of differences between male and female clients on the primary outcome.</p>
+             </sec>
+          </sec>
+          <sec>
+             <st>
+                <p>Compliance</p>
+             </st>
+             <p>We will reinforce compliance with the intervention by i) sending reminders before the training in SDM; ii) providing interactive workshops in each of the participating IP home-care clinical sites at a time convenient for providers; iii) offering continuing professional development credits; and iv) monitoring the number of participants accessing and completing knowledge scores in the online tutorial. Compliance with correct completion of questionnaires will be reinforced by detailed instructions provided by the research assistant beforehand and verification of the completed questionnaires by the research assistant afterwards. We will gather detailed information on the flow of participants throughout the trial.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Losses to follow-up</p>
+             </st>
+             <p>We expect few losses to follow-up in this trial due to the stability of the population studied, only one data collection point for clients and caregivers, and additional measures to minimize loss. All study participants will be included in the analysis as part of the group to which they were randomized, regardless of whether they completed the study or not (&#8216;Intention-to-treat&#8217; analysis). &#8216;Worst-case scenario&#8217; sensitivity analysis will be performed for missing data on clients.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Trial steering committee</p>
+             </st>
+             <p>The trial steering committee will include all co-principal investigators (FL, DS and NB), the project coordinator (AF), a biostatistician and one caregiver representative. Given the integrated knowledge approach underlying this trial and the nature of the trial, we do not plan to have a data monitoring committee. Research assistants will be instructed to report any adverse events or unintended effects of the trial interventions or trial conduct.</p>
+          </sec>
+          <sec>
+             <st>
+                <p>Dissemination policy</p>
+             </st>
+             <p>All stakeholders have been directly involved in designing our IP-SDM model and intervention and providing feedback to make them more relevant to the home-care setting. All team members will contribute to the dissemination of study results. We will tailor effective knowledge translation strategies for each targeted users&#8217; group (for example, policy makers, clinicians, healthcare organization managers, seniors&#8217; associations). We will disseminate study results a) at conferences (scientific and professional) whose themes relate to SDM, IP and health policy; b) on the websites of team members; and c) as articles in peer-reviewed journals and professional journals.</p>
+          </sec>
+       </sec>
+       <sec>
+          <st>
+             <p>Discussion</p>
+          </st>
+          <p>We have described the methods that we will use to evaluate the impact of training interprofessional home-care teams in shared decision making combined with a decision aid on the proportion of elderly people who report being active in the decision-making process regarding whether to stay at home or move to a care facility. Results from this trial will lay the groundwork for a national strategy regarding the improvement of the decision-making process for the significant numbers of aging Canadians who are facing a potential transition to care facilities and for their caregivers. Furthermore, skills gained by participants in the intervention arm of this study are likely to be transferable to supporting clients who are making other decisions, such as those relating to mental health. Thus, the results of the proposed trial will concretely address identified challenges and knowledge gaps: 1) the growing number of aging Canadians facing the decision regarding the location of care who need client-centered decision support; 2) the need for improvement of the decision-making process regarding the location of care; 3) the need for a framework to guide IP home-care teams in this process; and 4) the need for training in this process <abbrgrp>
+                <abbr bid="B47">47</abbr>
+             </abbrgrp>. This project will help IP home-care teams in providing the highest quality of care for seriously ill elderly people and in providing support for their families.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Trial status</p>
+          </st>
+          <p>Client recruitment started on 14 October 2014, and we anticipate recruitment will be completed in March 2016.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Abbreviations</p>
+          </st>
+          <p>CPHSS: center for primary healthcare and social services</p>
+          <p>CSSS: Centre de sant&#233; et de services sociaux</p>
+          <p>IP: interprofessional</p>
+          <p>IP-SDM approach: interprofessional (IP) approach to SDM</p>
+          <p>SDM: shared decision making</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Competing interests</p>
+          </st>
+          <p>All authors declare that they have no competing interests.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Authors&#8217; contributions</p>
+          </st>
+          <p>FL, NB and DS conceived the study. HB and LR validated the relevance of the trial and provided guidance on the methods. LPR provided guidance for the planned statistical analyses. SDe, KF and SDu provided guidance on the interprofessional approach to shared decision making model and the training package. FL and AF drafted the manuscript. All authors have read and approved the final version of the manuscript. FL is its guarantor.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Authors&#8217; information</p>
+          </st>
+          <p>France L&#233;gar&#233;, BSc Arch, MD, PhD, CCFP, FCFP, holds the Canada Research Chair in Implementation of Shared Decision Making in Primary Care and is a family physician and clinical scientist at the Department of Family Medicine and Emergency Medicine, Faculty of Medicine, Universit&#233; Laval, Quebec City, Canada. Nathalie Bri&#232;re, PhD, is Executive Consultant in University Affairs and Interprofessional Collaboration at the CSSS de la Vieille-Capitale, Quebec City. Dawn Stacey, RN, PhD, CON(C), holds the University Research Chair in Knowledge Translation to Patients, is Director of the Patient Decision Aids Research Group, a scientist at the Ottawa Hospital Research Institute, and a full professor at the School of Nursing, University of Ottawa. Henriette Bourassa is a caregivers&#8217; representative at the Research Centre of the CHU de Qu&#233;bec, Quebec City. Sophie Desroches, PhD, is an assistant professor in the Department of Food and Nutrition Sciences, Faculty of Agriculture and Food Sciences, Universit&#233; Laval, a researcher with the Public Health and Practice-Changing Research Group at the Research Centre of the CHU de Qu&#233;bec, and a Funded Junior Researcher-1 with the Fonds de la recherche en sant&#233; du Qu&#233;bec (FRSQ). Serge Dumont, PhD, is a full professor in Social Services at Universit&#233; Laval, Scientific Director of the CSSS de la Vieille-Capitale, and a researcher in the Michel-Sarrazin Research Group in Psychosocial Oncology and Palliative Care (ERMOS). Kimberly Fraser, RN, PhD, is an assistant professor at the Faculty of Nursing, University of Alberta, and a research affiliate with the Glenrose Rehabilitation Hospital, Alberta Health Services. Adriana Freitas, PhD, is Project Coordinator, Research Centre of the CHU de Qu&#233;bec. Louis-Paul Rivest, PhD, holds a Canada Research Chair in Statistical Sampling and Data Analysis and is a full professor at the Faculty of Science and Engineering, Department of Mathematics and Statistics, Universit&#233; Laval. Lise Roy is a caregivers&#8217; representative at the Research Centre of the CHU de Qu&#233;bec, Quebec City.</p>
+       </sec>
+       <sec>
+          <st>
+             <p>Additional file</p>
+          </st>
+          <suppl id="S1">
+             <title>
+                <p>Additional file 1:</p>
+             </title>
+             <text>
+                <p>
+                              <b>List of the ethics boards for the 16 centers for primary healthcare and social services (CPHSS).</b>                            
+                </p>
+             </text>
+             <file name="s13063-015-0567-7-S1.doc">
+                <p>Click here for file</p>
+             </file>
+          </suppl>
+          
+       </sec>
+    </bdy>
+    <bm>
+       <ack>
+          <sec>
+             <st>
+                <p>Acknowledgements</p>
+             </st>
+             <p>Dr. L&#233;gar&#233; is supported by a Canada Research Chair in Implementation of Shared Decision Making in Primary Care, Universit&#233; Laval. Dr. Stacey is supported by a University of Ottawa Research Chair. Dr. Desroches is supported by new investigator award from the Canada Institutes of Health Research (CIHR). Dr. Rivest is supported by a Canada Research Chair in Statistical Sampling and Biostatistics.</p>
+             <sec>
+                <st>
+                   <p>Funding</p>
+                </st>
+                <p>This research is funded by TVN (Technology Evaluation in the Elderly Network), which is supported by the Government of Canada through the Networks of Centres of Excellence (NCE) program, by the Minist&#232;re de la Sant&#233; et des Services sociaux (MSSS) du Qu&#233;bec and by the Agence de la Sant&#233; et des Services sociaux de la Capitale Nationale. We also have the support of the following local health networks: the Consortium InterESt Sant&#233;, the CSSS du Rocher Perc&#233; and the CSSS de la Vieille Capitale.</p>
+             </sec>
+          </sec>
+       </ack>
+       <refgrp>
+          
+          <bibl id="B1">
+             <insg>
+                <ins>
+                   <p>Alberta Health and Wellness</p>
+                </ins>
+             </insg>
+             <source>Continuing care strategy: aging in the right place</source>
+             <publisher>Alberta Health and Wellness, Edmonton</publisher>
+             <pubdate>2008</pubdate>
+          </bibl>
+          <bibl id="B2">
+             <note>Minist&#232;re de la Famille et des A&#238;n&#233;s du Qu&#233;bec. Vieillir et vivre ensemble: Chez soi, dans sa communaut&#233;, au Qu&#233;bec. In. Qu&#233;bec MdlFedAd, editor. Qu&#233;bec: Minist&#232;re de la Famille et des A&#238;n&#233;s du Qu&#233;bec; 2012.</note>
+          </bibl>
+          <bibl id="B3">
+             <insg>
+                <ins>
+                   <p>Canadian Institute for Health Information</p>
+                </ins>
+             </insg>
+             <source>Health care in Canada, 2011: a focus on seniors and aging</source>
+             <publisher>ONT, Ottawa</publisher>
+             <pubdate>2011</pubdate>
+          </bibl>
+          <bibl id="B4">
+             <title>
+                <p>Living well in care homes: a systematic review of qualitative studies</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Bradshaw</snm>
+                   <fnm>SA</fnm>
+                </au>
+                <au>
+                   <snm>Playford</snm>
+                   <fnm>ED</fnm>
+                </au>
+                <au>
+                   <snm>Riazi</snm>
+                   <fnm>A</fnm>
+                </au>
+             </aug>
+             <source>Age Ageing</source>
+             <pubdate>2012</pubdate>
+             <volume>41</volume>
+             <fpage>429</fpage>
+             <lpage>40</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1093/ageing/afs069</pubid>
+                   <pubid idtype="pmpid" link="fulltext">22678747</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B5">
+             <title>
+                <p>Aging, health and place in residential care facilities in Beijing</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Cheng</snm>
+                   <fnm>Y</fnm>
+                </au>
+                <au>
+                   <snm>Rosenberg</snm>
+                   <fnm>MW</fnm>
+                </au>
+                <au>
+                   <snm>Wang</snm>
+                   <fnm>W</fnm>
+                </au>
+                <au>
+                   <snm>Yang</snm>
+                   <fnm>L</fnm>
+                </au>
+                <au>
+                   <snm>Li</snm>
+                   <fnm>H</fnm>
+                </au>
+             </aug>
+             <source>China Soc Sci Med</source>
+             <pubdate>2011</pubdate>
+             <volume>72</volume>
+             <fpage>365</fpage>
+             <lpage>72</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/j.socscimed.2010.10.008</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B6">
+             <aug>
+                <au>
+                   <snm>Brownlee</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Hurley</snm>
+                   <fnm>V</fnm>
+                </au>
+                <au>
+                   <snm>Moulton</snm>
+                   <fnm>B</fnm>
+                </au>
+             </aug>
+             <source>Avoidable ignorance patient decision aids and shared making</source>
+             <publisher>New America Foundation, Washington, DC</publisher>
+             <pubdate>2012</pubdate>
+          </bibl>
+          <bibl id="B7">
+             <title>
+                <p>Decision-making in the physician-patient encounter: revisiting the shared treatment decision-making model</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Charles</snm>
+                   <fnm>C</fnm>
+                </au>
+                <au>
+                   <snm>Gafni</snm>
+                   <fnm>A</fnm>
+                </au>
+                <au>
+                   <snm>Whelan</snm>
+                   <fnm>T</fnm>
+                </au>
+             </aug>
+             <source>Soc Sci Med</source>
+             <pubdate>1999</pubdate>
+             <volume>49</volume>
+             <fpage>651</fpage>
+             <lpage>61</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/S0277-9536(99)00145-8</pubid>
+                   <pubid idtype="pmpid" link="fulltext">10452420</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B8">
+             <title>
+                <p>Framework for teaching and learning informed shared decision making</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Towle</snm>
+                   <fnm>A</fnm>
+                </au>
+                <au>
+                   <snm>Godolphin</snm>
+                   <fnm>W</fnm>
+                </au>
+             </aug>
+             <source>BMJ</source>
+             <pubdate>1999</pubdate>
+             <volume>319</volume>
+             <fpage>766</fpage>
+             <lpage>71</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1136/bmj.319.7212.766</pubid>
+                   <pubid idtype="pmpid" link="fulltext">10488010</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B9">
+             <title>
+                <p>Shared decision-making in primary care: the neglected second half of the consultation</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Elwyn</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Edwards</snm>
+                   <fnm>A</fnm>
+                </au>
+                <au>
+                   <snm>Kinnersley</snm>
+                   <fnm>P</fnm>
+                </au>
+             </aug>
+             <source>Br J Gen Pract</source>
+             <pubdate>1999</pubdate>
+             <volume>49</volume>
+             <fpage>477</fpage>
+             <lpage>82</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="pmpid" link="fulltext">10562751</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B10">
+             <title>
+                <p>An integrative model of shared decision making in medical encounters</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Makoul</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Clayman</snm>
+                   <fnm>ML</fnm>
+                </au>
+             </aug>
+             <source>Patient Educ Couns</source>
+             <pubdate>2006</pubdate>
+             <volume>60</volume>
+             <fpage>301</fpage>
+             <lpage>12</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/j.pec.2005.06.010</pubid>
+                   <pubid idtype="pmpid" link="fulltext">16051459</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B11">
+             <title>
+                <p>Patient and public involvement in clinical practice guidelines: a knowledge synthesis of existing programs</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Boivin</snm>
+                   <fnm>A</fnm>
+                </au>
+                <au>
+                   <snm>van der Weijden</snm>
+                   <fnm>T</fnm>
+                </au>
+                <au>
+                   <snm>Pakenham</snm>
+                   <fnm>C</fnm>
+                </au>
+                <au>
+                   <snm>Burgers</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>J</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Med Decis Making</source>
+             <pubdate>2011</pubdate>
+             <volume>31</volume>
+             <fpage>E45</fpage>
+             <lpage>74</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1177/0272989X11424401</pubid>
+                   <pubid idtype="pmpid" link="fulltext">21959267</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B12">
+             <title>
+                <p>Translating shared decision-making into health care clinical practices: Proof of concepts</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Elwyn</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Fishbein</snm>
+                   <fnm>M</fnm>
+                </au>
+                <au>
+                   <snm>Fremont</snm>
+                   <fnm>P</fnm>
+                </au>
+                <au>
+                   <snm>Frosch</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Gagnon</snm>
+                   <fnm>MP</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Implement Sci</source>
+             <pubdate>2008</pubdate>
+             <volume>3</volume>
+             <fpage>2</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1186/1748-5908-3-2</pubid>
+                   <pubid idtype="pmpid" link="fulltext">18194521</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B13">
+             <title>
+                <p>Rx for the &#8216;blockbuster drug&#8217; of patient engagement</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Dentzer</snm>
+                   <fnm>S</fnm>
+                </au>
+             </aug>
+             <source>Health Aff (Millwood)</source>
+             <pubdate>2013</pubdate>
+             <volume>32</volume>
+             <fpage>202</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1377/hlthaff.2013.0037</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B14">
+             <title>
+                <p>Advancing theories, models and measurement for an interprofessional approach to shared decision making in primary care: a study protocol</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+                <au>
+                   <snm>Elwyn</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Pluye</snm>
+                   <fnm>P</fnm>
+                </au>
+                <au>
+                   <snm>Gagnon</snm>
+                   <fnm>MP</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>BMC Health Serv Res</source>
+             <pubdate>2008</pubdate>
+             <volume>8</volume>
+             <fpage>2</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1186/1472-6963-8-2</pubid>
+                   <pubid idtype="pmpid" link="fulltext">18173848</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B15">
+             <title>
+                <p>Interprofessionalism and shared decision-making in primary care: a stepwise approach towards a new model</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Pouliot</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Gauvin</snm>
+                   <fnm>FP</fnm>
+                </au>
+                <au>
+                   <snm>Desroches</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Kryworuchko</snm>
+                   <fnm>J</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>J Interprof Care</source>
+             <pubdate>2011</pubdate>
+             <volume>25</volume>
+             <fpage>18</fpage>
+             <lpage>25</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.3109/13561820.2010.490502</pubid>
+                   <pubid idtype="pmpid" link="fulltext">20795835</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B16">
+             <title>
+                <p>Validating a conceptual model for an inter-professional approach to shared decision making: a mixed methods study</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Gagnon</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Dunn</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Pluye</snm>
+                   <fnm>P</fnm>
+                </au>
+                <au>
+                   <snm>Frosch</snm>
+                   <fnm>D</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>J Eval Clin Pract</source>
+             <pubdate>2011</pubdate>
+             <volume>17</volume>
+             <fpage>554</fpage>
+             <lpage>64</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1111/j.1365-2753.2010.01515.x</pubid>
+                   <pubid idtype="pmpid" link="fulltext">20695950</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B17">
+             <title>
+                <p>Shared decision making models to inform an interprofessional perspective on decision making: a theory analysis</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Pouliot</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Kryworuchko</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Dunn</snm>
+                   <fnm>S</fnm>
+                </au>
+             </aug>
+             <source>Patient Educ Couns</source>
+             <pubdate>2010</pubdate>
+             <volume>80</volume>
+             <fpage>164</fpage>
+             <lpage>72</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/j.pec.2009.10.015</pubid>
+                   <pubid idtype="pmpid" link="fulltext">19945813</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B18">
+             <title>
+                <p>Interventions for improving the adoption of shared decision making by healthcare professionals</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Ratte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Kryworuchko</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Gravel</snm>
+                   <fnm>K</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Cochrane Database Syst Rev</source>
+             <pubdate>2010</pubdate>
+             <volume>5</volume>
+             <note>Article ID CD006732</note>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="pmpid" link="fulltext">20464744</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B19">
+             <title>
+                <p>Healthcare providers&#8217; intentions to engage in an interprofessional approach to shared decision-making in home care programs: a mixed methods study</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Briere</snm>
+                   <fnm>N</fnm>
+                </au>
+                <au>
+                   <snm>Fraser</snm>
+                   <fnm>K</fnm>
+                </au>
+                <au>
+                   <snm>Desroches</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Dumont</snm>
+                   <fnm>S</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>J Interprof Care</source>
+             <pubdate>2013</pubdate>
+             <volume>27</volume>
+             <fpage>214</fpage>
+             <lpage>22</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.3109/13561820.2013.763777</pubid>
+                   <pubid idtype="pmpid" link="fulltext">23394265</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B20">
+             <title>
+                <p>Training health professionals in shared decision-making: an international environmental scan</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Politi</snm>
+                   <fnm>MC</fnm>
+                </au>
+                <au>
+                   <snm>Drolet</snm>
+                   <fnm>R</fnm>
+                </au>
+                <au>
+                   <snm>Desroches</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Bekker</snm>
+                   <fnm>H</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Patient Educ Couns</source>
+             <pubdate>2012</pubdate>
+             <volume>88</volume>
+             <fpage>159</fpage>
+             <lpage>69</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/j.pec.2012.01.002</pubid>
+                   <pubid idtype="pmpid" link="fulltext">22305195</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B21">
+             <title>
+                <p>A conceptual framework for interprofessional shared decision making in home care: protocol for a feasibility study</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Briere</snm>
+                   <fnm>N</fnm>
+                </au>
+                <au>
+                   <snm>Desroches</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Dumont</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Fraser</snm>
+                   <fnm>K</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>BMC Health Serv Res</source>
+             <pubdate>2011</pubdate>
+             <volume>11</volume>
+             <fpage>23</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1186/1472-6963-11-23</pubid>
+                   <pubid idtype="pmpid" link="fulltext">21281487</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B22">
+             <title>
+                <p>A systematic process for creating and appraising clinical vignettes to illustrate interprofessional shared decision making</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Briere</snm>
+                   <fnm>N</fnm>
+                </au>
+                <au>
+                   <snm>Robitaille</snm>
+                   <fnm>H</fnm>
+                </au>
+                <au>
+                   <snm>Fraser</snm>
+                   <fnm>K</fnm>
+                </au>
+                <au>
+                   <snm>Desroches</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+             </aug>
+             <source>J Interprof Care</source>
+             <pubdate>2014</pubdate>
+             <volume>28</volume>
+             <fpage>453</fpage>
+             <lpage>9</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.3109/13561820.2014.911157</pubid>
+                   <pubid idtype="pmpid" link="fulltext">24766619</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B23">
+             <note>Estimation de la population du Qu&#233;bec selon la r&#233;gion (RSS), le sexe, l'&#226;ge et le group d'&#226;ge au 1 er juillet, de 1981 &#224; 2005 (janvier 2010). [<url>http://www.informa.msss.gouv.qc.ca/Details.aspx?Id=I6tttF3Fd1c=</url>]</note>
+          </bibl>
+          <bibl id="B24">
+             <title>
+                <p>The conceptual basis for interprofessional collaboration: core concepts and theoretical frameworks</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>D&#8217;Amour</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Ferrada-Videla</snm>
+                   <fnm>M</fnm>
+                </au>
+                <au>
+                   <snm>San Martin Rodriguez</snm>
+                   <fnm>L</fnm>
+                </au>
+                <au>
+                   <snm>Beaulieu</snm>
+                   <fnm>MD</fnm>
+                </au>
+             </aug>
+             <source>J Interprof Care</source>
+             <pubdate>2005</pubdate>
+             <volume>19</volume>
+             <issue>Suppl 1</issue>
+             <fpage>116</fpage>
+             <lpage>31</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1080/13561820500082529</pubid>
+                   <pubid idtype="pmpid" link="fulltext">16096150</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B25">
+             <title>
+                <p>Interprofessionality as the field of interprofessional practice and interprofessional education: an emerging concept</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>D&#8217;Amour</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Oandasan</snm>
+                   <fnm>I</fnm>
+                </au>
+             </aug>
+             <source>J Interprof Care</source>
+             <pubdate>2005</pubdate>
+             <volume>19</volume>
+             <issue>Suppl 1</issue>
+             <fpage>8</fpage>
+             <lpage>20</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1080/13561820500081604</pubid>
+                   <pubid idtype="pmpid" link="fulltext">16096142</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B26">
+             <title>
+                <p>Integrating patient decision support in an undergraduate nursing curriculum: an implementation project</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Higuchi</snm>
+                   <fnm>KA</fnm>
+                </au>
+                <au>
+                   <snm>Menard</snm>
+                   <fnm>P</fnm>
+                </au>
+                <au>
+                   <snm>Davies</snm>
+                   <fnm>B</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+                <au>
+                   <snm>O&#8217;Connor</snm>
+                   <fnm>AM</fnm>
+                </au>
+             </aug>
+             <source>Int J Nurs Educ Scholarsh</source>
+             <pubdate>2009</pubdate>
+             <volume>6</volume>
+             <fpage>Article10</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.2202/1548-923X.1741</pubid>
+                   <pubid idtype="pmpid" link="fulltext">19341354</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B27">
+             <title>
+                <p>Comparison of rural and urban users and non-users of home care in Canada</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Forbes</snm>
+                   <fnm>DA</fnm>
+                </au>
+                <au>
+                   <snm>Janzen</snm>
+                   <fnm>BL</fnm>
+                </au>
+             </aug>
+             <source>Can J Rural Med</source>
+             <pubdate>2004</pubdate>
+             <volume>9</volume>
+             <fpage>227</fpage>
+             <lpage>35</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="pmpid" link="fulltext">15603694</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B28">
+             <title>
+                <p>Do patients want to participate in medical decision making?</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Strull</snm>
+                   <fnm>WM</fnm>
+                </au>
+                <au>
+                   <snm>Lo</snm>
+                   <fnm>B</fnm>
+                </au>
+                <au>
+                   <snm>Charles</snm>
+                   <fnm>G</fnm>
+                </au>
+             </aug>
+             <source>JAMA</source>
+             <pubdate>1984</pubdate>
+             <volume>252</volume>
+             <fpage>2990</fpage>
+             <lpage>4</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1001/jama.1984.03350210038026</pubid>
+                   <pubid idtype="pmpid" link="fulltext">6502860</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B29">
+             <title>
+                <p>Decision making during serious illness: what role do patients really want to play?</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Degner</snm>
+                   <fnm>LF</fnm>
+                </au>
+                <au>
+                   <snm>Sloan</snm>
+                   <fnm>JA</fnm>
+                </au>
+             </aug>
+             <source>J Clin Epidemiol</source>
+             <pubdate>1992</pubdate>
+             <volume>45</volume>
+             <fpage>941</fpage>
+             <lpage>50</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/0895-4356(92)90110-9</pubid>
+                   <pubid idtype="pmpid" link="fulltext">1432023</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B30">
+             <title>
+                <p>Patients&#8217; perceptions of sharing in decisions: a systematic review of interventions to enhance shared decision making in routine clinical practice</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Turcotte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Ratte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Kryworuchko</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+             </aug>
+             <source>Patient</source>
+             <pubdate>2012</pubdate>
+             <volume>5</volume>
+             <fpage>1</fpage>
+             <lpage>19</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.2165/11592180-000000000-00000</pubid>
+                   <pubid idtype="pmpid" link="fulltext">22276987</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B31">
+             <title>
+                <p>Impact of DECISION&#8201;+&#8201;2 on patient and physician assessment of shared decision making implementation in the context of antibiotics use for acute respiratory infections</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Guerrier</snm>
+                   <fnm>M</fnm>
+                </au>
+                <au>
+                   <snm>Nadeau</snm>
+                   <fnm>C</fnm>
+                </au>
+                <au>
+                   <snm>Rheaume</snm>
+                   <fnm>C</fnm>
+                </au>
+                <au>
+                   <snm>Turcotte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Labrecque</snm>
+                   <fnm>M</fnm>
+                </au>
+             </aug>
+             <source>Implement Sci</source>
+             <pubdate>2013</pubdate>
+             <volume>8</volume>
+             <fpage>144</fpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1186/1748-5908-8-144</pubid>
+                   <pubid idtype="pmpid" link="fulltext">24369771</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B32">
+             <title>
+                <p>A method for evaluating health care providers&#8217; decision making: the Provider Decision Process Assessment Instrument</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Dolan</snm>
+                   <fnm>JG</fnm>
+                </au>
+             </aug>
+             <source>Med Decis Making</source>
+             <pubdate>1999</pubdate>
+             <volume>19</volume>
+             <fpage>38</fpage>
+             <lpage>41</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1177/0272989X9901900105</pubid>
+                   <pubid idtype="pmpid" link="fulltext">9917018</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B33">
+             <title>
+                <p>Prise de d&#233;cision pargag&#233;e: traduction et validation d'une &#233;chelle de confort d&#233;cisionnel du m&#233;decin</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>L&#233;gar&#233;</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+                <au>
+                   <snm>O'Connor</snm>
+                   <fnm>AM</fnm>
+                </au>
+                <au>
+                   <snm>Dolan</snm>
+                   <fnm>JG</fnm>
+                </au>
+                <au>
+                   <snm>B&#233;langer-Ducharme</snm>
+                   <fnm>F</fnm>
+                </au>
+             </aug>
+             <source>P&#233;dagogie m&#233;dicale</source>
+             <pubdate>2003</pubdate>
+             <volume>4</volume>
+             <fpage>216</fpage>
+             <lpage>22</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1051/pmed:2003031</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B34">
+             <title>
+                <p>Validation of a decision regret scale</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Brehaut</snm>
+                   <fnm>JC</fnm>
+                </au>
+                <au>
+                   <snm>O'Connor</snm>
+                   <fnm>AM</fnm>
+                </au>
+                <au>
+                   <snm>Wood</snm>
+                   <fnm>TJ</fnm>
+                </au>
+                <au>
+                   <snm>Hack</snm>
+                   <fnm>TF</fnm>
+                </au>
+                <au>
+                   <snm>Siminoff</snm>
+                   <fnm>L</fnm>
+                </au>
+                <au>
+                   <snm>Gordon</snm>
+                   <fnm>E</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Med Decis Making</source>
+             <pubdate>2003</pubdate>
+             <volume>23</volume>
+             <fpage>281</fpage>
+             <lpage>92</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1177/0272989X03256005</pubid>
+                   <pubid idtype="pmpid" link="fulltext">12926578</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B35">
+             <title>
+                <p>Comparisons between the Nottingham Health Profile and the Short Form-36 for assessing the quality of life of community-dwelling elderly</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Faria</snm>
+                   <fnm>CD</fnm>
+                </au>
+                <au>
+                   <snm>Teixeira-Salmela</snm>
+                   <fnm>LF</fnm>
+                </au>
+                <au>
+                   <snm>Nascimento</snm>
+                   <fnm>VB</fnm>
+                </au>
+                <au>
+                   <snm>Costa</snm>
+                   <fnm>AP</fnm>
+                </au>
+                <au>
+                   <snm>Brito</snm>
+                   <fnm>ND</fnm>
+                </au>
+                <au>
+                   <snm>Rodrigues-De-Paula</snm>
+                   <fnm>F</fnm>
+                </au>
+             </aug>
+             <source>Rev Bras Fisioter</source>
+             <pubdate>2011</pubdate>
+             <volume>15</volume>
+             <fpage>399</fpage>
+             <lpage>405</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1590/S1413-35552011005000023</pubid>
+                   <pubid idtype="pmpid" link="fulltext">22002188</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B36">
+             <title>
+                <p>Measurement properties of the Nottingham Health Profile and Short Form 36 health status measures in a population sample of elderly people living at home: Results from ELPHS</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Sharples</snm>
+                   <fnm>L</fnm>
+                </au>
+                <au>
+                   <snm>Todd</snm>
+                   <fnm>C</fnm>
+                </au>
+                <au>
+                   <snm>Caine</snm>
+                   <fnm>N</fnm>
+                </au>
+                <au>
+                   <snm>Tait</snm>
+                   <fnm>S</fnm>
+                </au>
+             </aug>
+             <source>Br J Health Psychol</source>
+             <pubdate>2000</pubdate>
+             <volume>5</volume>
+             <fpage>217</fpage>
+             <lpage>33</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1348/135910700168874</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B37">
+             <title>
+                <p>Assessment of quality of life in haemodialysis patients: a comparison of the Nottingham Health Profile and the Short Form 36</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Zengin</snm>
+                   <fnm>N</fnm>
+                </au>
+                <au>
+                   <snm>Oren</snm>
+                   <fnm>B</fnm>
+                </au>
+                <au>
+                   <snm>Gul</snm>
+                   <fnm>A</fnm>
+                </au>
+                <au>
+                   <snm>Ustundag</snm>
+                   <fnm>H</fnm>
+                </au>
+             </aug>
+             <source>Int J Nurs Pract</source>
+             <pubdate>2014</pubdate>
+             <volume>20</volume>
+             <fpage>115</fpage>
+             <lpage>25</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1111/ijn.12130</pubid>
+                   <pubid idtype="pmpid" link="fulltext">24713007</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B38">
+             <title>
+                <p>The French version of the Nottingham Health Profile. A comparison of items weights with those of the source version</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Bucquet</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Condon</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Ritchie</snm>
+                   <fnm>K</fnm>
+                </au>
+             </aug>
+             <source>Soc Sci Med</source>
+             <pubdate>1990</pubdate>
+             <volume>30</volume>
+             <fpage>829</fpage>
+             <lpage>35</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/0277-9536(90)90207-9</pubid>
+                   <pubid idtype="pmpid" link="fulltext">2315749</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B39">
+             <title>
+                <p>Fid&#233;lit&#233; de la traduction fran&#231;aise de trois instruments d'&#233;valuation des aidants naturels de malades d&#233;ments</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>H&#233;bert</snm>
+                   <fnm>R</fnm>
+                </au>
+                <au>
+                   <snm>Bravo</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Girouard</snm>
+                   <fnm>D</fnm>
+                </au>
+             </aug>
+             <source>Can J Aging</source>
+             <pubdate>1993</pubdate>
+             <volume>12</volume>
+             <fpage>324</fpage>
+             <lpage>37</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1017/S0714980800013726</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B40">
+             <title>
+                <p>Efficacy of a support group programme for care-givers of demented patients in the community: a randomized controlled trial</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Hebert</snm>
+                   <fnm>R</fnm>
+                </au>
+                <au>
+                   <snm>Leclerc</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Bravo</snm>
+                   <fnm>G</fnm>
+                </au>
+                <au>
+                   <snm>Girouard</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Lefrancois</snm>
+                   <fnm>R</fnm>
+                </au>
+             </aug>
+             <source>Arch Gerontol Geriatr</source>
+             <pubdate>1994</pubdate>
+             <volume>18</volume>
+             <fpage>1</fpage>
+             <lpage>14</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1016/0167-4943(94)90043-4</pubid>
+                   <pubid idtype="pmpid" link="fulltext">15374309</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B41">
+             <aug>
+                <au>
+                   <snm>Zarit</snm>
+                   <fnm>SH</fnm>
+                </au>
+                <au>
+                   <snm>Orr</snm>
+                   <fnm>NK</fnm>
+                </au>
+                <au>
+                   <snm>Zarit</snm>
+                   <fnm>JM</fnm>
+                </au>
+             </aug>
+             <source>The hidden victims of Alzheimer&#8217;s disease: families under stress</source>
+             <publisher>New York University Press, New York</publisher>
+             <pubdate>1985</pubdate>
+          </bibl>
+          <bibl id="B42">
+             <title>
+                <p>Relatives of the impaired elderly: correlates of feelings of burden</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Zarit</snm>
+                   <fnm>SH</fnm>
+                </au>
+                <au>
+                   <snm>Reever</snm>
+                   <fnm>KE</fnm>
+                </au>
+                <au>
+                   <snm>Bach-Peterson</snm>
+                   <fnm>J</fnm>
+                </au>
+             </aug>
+             <source>Gerontologist</source>
+             <pubdate>1980</pubdate>
+             <volume>20</volume>
+             <fpage>649</fpage>
+             <lpage>55</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1093/geront/20.6.649</pubid>
+                   <pubid idtype="pmpid" link="fulltext">7203086</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B43">
+             <title>
+                <p>Interventions for improving the adoption of shared decision making by healthcare professionals</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Stacey</snm>
+                   <fnm>D</fnm>
+                </au>
+                <au>
+                   <snm>Turcotte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Cossi</snm>
+                   <fnm>MJ</fnm>
+                </au>
+                <au>
+                   <snm>Kryworuchko</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Graham</snm>
+                   <fnm>ID</fnm>
+                </au>
+                <etal/>
+             </aug>
+             <source>Cochrane Database Syst Rev</source>
+             <pubdate>2014</pubdate>
+             <volume>9</volume>
+             <note>Article ID CD006732</note>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="pmpid" link="fulltext">25222632</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B44">
+             <title>
+                <p>Training family physicians in shared decision-making to reduce the overuse of antibiotics in acute respiratory infections: a cluster randomized trial</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Legare</snm>
+                   <fnm>F</fnm>
+                </au>
+                <au>
+                   <snm>Labrecque</snm>
+                   <fnm>M</fnm>
+                </au>
+                <au>
+                   <snm>Cauchon</snm>
+                   <fnm>M</fnm>
+                </au>
+                <au>
+                   <snm>Castel</snm>
+                   <fnm>J</fnm>
+                </au>
+                <au>
+                   <snm>Turcotte</snm>
+                   <fnm>S</fnm>
+                </au>
+                <au>
+                   <snm>Grimshaw</snm>
+                   <fnm>J</fnm>
+                </au>
+             </aug>
+             <source>CMAJ</source>
+             <pubdate>2012</pubdate>
+             <volume>184</volume>
+             <fpage>E726</fpage>
+             <lpage>34</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.1503/cmaj.120568</pubid>
+                   <pubid idtype="pmpid" link="fulltext">22847969</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B45">
+             <aug>
+                <au>
+                   <snm>Zar</snm>
+                   <fnm>JH</fnm>
+                </au>
+             </aug>
+             <source>Biostatistical analysis</source>
+             <publisher>Pearson Prentice Hall, Upper Saddle River, NJ</publisher>
+             <edition>5</edition>
+             <pubdate>2010</pubdate>
+          </bibl>
+          <bibl id="B46">
+             <title>
+                <p>PROC MIXED to fit Multilevel Models, Hierarchical Models, and Individual Growth Models</p>
+             </title>
+             <aug>
+                <au>
+                   <snm>Singer</snm>
+                   <fnm>JD</fnm>
+                </au>
+                <au>
+                   <snm>Using</snm>
+                   <fnm>SAS</fnm>
+                </au>
+             </aug>
+             <source>J Educ Behav Stat</source>
+             <pubdate>1998</pubdate>
+             <volume>24</volume>
+             <fpage>323</fpage>
+             <lpage>55</lpage>
+             <xrefbib>
+                <pubidlist>
+                   <pubid idtype="doi">10.2307/1165280</pubid>
+                </pubidlist>
+             </xrefbib>
+          </bibl>
+          <bibl id="B47">
+             <note>Couet N, Desroches S, Robitaille H, Vaillancourt H, Leblanc A, Turcotte S, et al. Assessments of the extent to which health-care providers involve patients in decision making: a systematic review of studies using the OPTION instrument. Health Expect. 2013. doi:10.1111/hex.12054</note>
+          </bibl>
+       </refgrp>
+    </bm>
+ </art>
