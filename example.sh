@@ -39,4 +39,19 @@ echo
 ls -lt
 
 cd ../..
+echo
+echo "run the same process on a directory CONTAINING several SQN directories"
+echo
+mkdir target/bmctest4
+cp -R examples/http* target/bmctest4
+cd target/bmctest4
+pwd
+ls -lt
+cd ../..
+echo 
+echo "transforming several files with same args except one is a containing directory"
+echo
+target/appassembler/bin/norma -q target/bmctest4/ -i fulltext.xml -o scholarly.html --xsl bmc2html
+ls -ltR target/bmctest4
+
 
