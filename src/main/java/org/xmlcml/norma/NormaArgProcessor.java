@@ -82,21 +82,21 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	// ============= METHODS =============
 	
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parseDivs(ArgumentOption option, ArgIterator argIterator) {
-		divList = argIterator.createTokenListUpToNextMinus(option);
+		divList = argIterator.createTokenListUpToNextNonDigitMinus(option);
 	}
 
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
 	
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 			Pubstyle.help();
@@ -107,7 +107,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		try {
 			standalone = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
 		} catch (Exception e) {
@@ -116,7 +116,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseStrip(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 		} else {
@@ -125,12 +125,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseTidy(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
 
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextMinus(option);
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		xslNameList = option.processArgs(tokens).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
 		for (String xslName : xslNameList) {
