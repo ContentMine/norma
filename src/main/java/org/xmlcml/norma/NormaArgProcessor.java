@@ -279,7 +279,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	private void transform(QuickscrapeNorma quickscrapeNorma, org.w3c.dom.Document xslDocument) throws IOException {
-		String inputName = getSingleInput();
+		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
