@@ -1,9 +1,9 @@
 # Norma
 
-_edited 20150312_
+_edited 20150326_
 
 A tool to convert a variety of inputs into normalized, tagged, XHTML (with embedded/linked SVG and PNG where
-appropriate). The initial emphasis is on scholarly publications but much of the technology is general.  [Used to be called NHTML.]
+appropriate). The initial emphasis is on scholarly publications but much of the technology is general.  
 
 ## Overview
 
