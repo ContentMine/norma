@@ -3,4 +3,6 @@
 .hg/
 .hgignore
 .classpath
+.project
+.settings/
 target/

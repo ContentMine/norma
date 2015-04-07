@@ -32,6 +32,11 @@ public class Norma {
 		argProcessor.runAndOutput();
 	}
 
+	public void run(String args) {
+		argProcessor = new NormaArgProcessor(args.split("\\s+"));
+		argProcessor.runAndOutput();
+	}
+
 	public DefaultArgProcessor getArgProcessor() {
 		return argProcessor;
 	}

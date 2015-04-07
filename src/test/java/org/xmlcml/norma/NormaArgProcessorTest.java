@@ -105,29 +105,25 @@ public class NormaArgProcessorTest {
 	@Test
 	/** normalizes an XML file and writes out shtml.
 	 * 
+	 *  // SHOWCASE
 	 * Not fully tagged. this is to test directory mechanism.
 	 * 
 	 * @throws IOException
 	 */
-	public void testQuickscrapeNorma() throws IOException {
+	public void testCreateScholarlyHtml() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String[] args = {
-			"-q", container0115884.toString(), // output from quickscrape
-			"-x", "nlm2html",                  // stylesheet to use (code)
-			"--input", "fulltext.xml",          // type of file to transform
-			"--output", "scholarly.html"       // output
-		};
-		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
-		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
+		String args = "-q "+container0115884.toString()+" -x nlm2html --input fulltext.xml --output scholarly.html";
+		Norma norma = new Norma();
+		norma.run(args);
+		QuickscrapeNormaList quickscrapeNormaList = norma.getArgProcessor().getQuickscrapeNormaList();
 		Assert.assertNotNull(quickscrapeNormaList);
 		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
 		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
-		LOG.debug("QN "+quickscrapeNorma.toString());
 		List<File> files = quickscrapeNorma.listFiles(true);
 		LOG.debug(files);
-		Assert.assertEquals(4, files.size());
+		Assert.assertEquals(5, files.size());
 	}
 	
 	/** normalizes an XML file and writes out shtml.
@@ -171,10 +167,32 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	/** transforms PDF to text
+	 * 
+	 *  // SHOWCASE
+	 * 
+	 * @throws IOException
+	 */
+	public void testPDF2TXT() throws IOException {
+		File container0115884 = new File("target/plosone/0115884/");
+		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
+		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		String args = "-q "+container0115884.toString()+" -x pdf2txt --input fulltext.pdf --output fulltext.pdf.txt";
+		LOG.debug(args);
+		Norma norma = new Norma();
+		norma.run(args);
+		QuickscrapeNormaList quickscrapeNormaList = norma.getArgProcessor().getQuickscrapeNormaList();
+		Assert.assertNotNull(quickscrapeNormaList);
+		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
+		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
+		List<File> files = quickscrapeNorma.listFiles(true);
+		LOG.debug(files);
+		Assert.assertEquals(5, files.size());
+	}
+	
+	@Test
 	public void testPubstyle() throws Exception {
-		String[] args = new String[] {
-				"--pubstyle", "bmc"
-		};
+		String args = "--pubstyle bmc";
 		Norma norma = new Norma();
 		norma.run(args);
 		DefaultArgProcessor argProcessor = (DefaultArgProcessor) norma.getArgProcessor();

@@ -29,6 +29,7 @@ import org.xmlcml.args.ArgumentOption;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.args.StringPair;
 import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
 
@@ -40,6 +41,7 @@ import org.xmlcml.xml.XMLUtil;
  */
 public class NormaArgProcessor extends DefaultArgProcessor{
 	
+	private static final String PDF2TXT = "pdf2txt";
 	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -157,7 +159,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public void transform(ArgumentOption option) {
 		LOG.trace("TRANSFORM "+option.getVerbose());
 		if (option.getVerbose().equals("--xsl")) {
-			applyXSLDocumentListToQNList();
+			if (PDF2TXT.equals(option.getStringValue())) {
+				applyPDFConverterToQNList();
+			} else {
+				applyXSLDocumentListToQNList();
+			}
 		}
 	}
 		
@@ -168,6 +174,45 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	// ==========================
 	
+	void applyPDFConverterToQNList() {
+		ensureQuickscrapeNormaList();
+		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
+			try {
+				applyPDF2TXT(quickscrapeNorma);
+			} catch (Exception e) {
+				LOG.error("Cannot transform file", e);
+			}
+		}
+	}
+
+	private void applyPDF2TXT(QuickscrapeNorma quickscrapeNorma) throws IOException {
+		File inputFile = checkAndGetInputFile(quickscrapeNorma);
+		File outputFile = checkAndGetOutputFile(quickscrapeNorma);
+		LOG.debug("Writing : "+outputFile);
+		PDF2TXTConverter converter = new PDF2TXTConverter();
+		try {
+			String txt = converter.readPDF(new FileInputStream(inputFile), true);
+			quickscrapeNorma.writeFile(txt, output);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+	}
+
+	private File checkAndGetInputFile(QuickscrapeNorma quickscrapeNorma) {
+		String inputName = getString();
+		if (inputName == null) {
+			throw new RuntimeException("Must have single input option");
+		}
+		if (!QuickscrapeNorma.isReservedFilename(inputName)) {
+			throw new RuntimeException("Input must be reserved file; found: "+inputName);
+		}
+		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
+		if (inputFile == null) {
+			throw new RuntimeException("Could not find input file "+inputName+" in directory "+quickscrapeNorma.getDirectory());
+		}
+		return inputFile;
+	}
+
 
 	void applyXSLDocumentListToQNList() {
 		ensureXslDocumentList();
@@ -279,21 +324,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	private void transform(QuickscrapeNorma quickscrapeNorma, org.w3c.dom.Document xslDocument) throws IOException {
-		String inputName = getString();
-		if (inputName == null) {
-			throw new RuntimeException("Must have single input option");
-		}
-		if (!QuickscrapeNorma.isReservedFilename(inputName)) {
-			throw new RuntimeException("Input must be reserved file; found: "+inputName);
-		}
-		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
-		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file "+inputName+" in directory "+quickscrapeNorma.getDirectory());
-		}
-		if (!QuickscrapeNorma.isReservedFilename(output)) {
-			throw new RuntimeException("output must be reserved file; found: "+output);
-		}
-		File outputFile = quickscrapeNorma.getReservedFile(output);
+		File inputFile = checkAndGetInputFile(quickscrapeNorma);
+		File outputFile = checkAndGetOutputFile(quickscrapeNorma);
 		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
 		try {
 			LOG.debug("Writing : "+outputFile);
@@ -302,6 +334,14 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		} catch (TransformerException e) {
 			throw new RuntimeException("cannot transform: ", e);
 		}
+	}
+
+	private File checkAndGetOutputFile(QuickscrapeNorma quickscrapeNorma) {
+		if (!QuickscrapeNorma.isReservedFilename(output)) {
+			throw new RuntimeException("output must be reserved file; found: "+output);
+		}
+		File outputFile = quickscrapeNorma.getReservedFile(output);
+		return outputFile;
 	}
 
 	private TransformerWrapper getOrCreateTransformerWrapperForStylesheet(org.w3c.dom.Document xslDocument) {
