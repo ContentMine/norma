@@ -1,0 +1,936 @@
+<?xml version='1.0'?>
+<!DOCTYPE art SYSTEM 'http://www.biomedcentral.com/xml/article.dtd'>
+<art>
+	<ui>1471-2148-14-70</ui>
+	<ji>1471-2148</ji>
+	<fm>
+		<dochead>Research article</dochead>
+		<bibl>
+			<title>
+				<p>Revealing the maternal demographic history of <it>Panthera leo</it> using ancient DNA and a spatially explicit genealogical analysis</p>
+			</title>
+			<aug>
+				<au ca="yes" id="A1"><snm>Barnett</snm><fnm>Ross</fnm><insr iid="I1"/><insr iid="I9"/><email>drrossbarnett@gmail.com</email></au>
+				<au id="A2"><snm>Yamaguchi</snm><fnm>Nobuyuki</fnm><insr iid="I2"/><email>yamaguchi@qu.edu.qa</email></au>
+				<au id="A3"><snm>Shapiro</snm><fnm>Beth</fnm><insr iid="I3"/><email>beth.shapiro@gmail.com</email></au>
+				<au id="A4"><snm>Ho</snm><mi>YW</mi><fnm>Simon</fnm><insr iid="I4"/><email>simon.ho@sydney.edu.au</email></au>
+				<au id="A5"><snm>Barnes</snm><fnm>Ian</fnm><insr iid="I5"/><email>ian.barnes@rhul.ac.uk</email></au>
+				<au id="A6"><snm>Sabin</snm><fnm>Richard</fnm><insr iid="I6"/><email>r.sabin@nhm.ac.uk</email></au>
+				<au id="A7"><snm>Werdelin</snm><fnm>Lars</fnm><insr iid="I7"/><email>lars.werdelin@nrm.se</email></au>
+				<au id="A8"><snm>Cuisin</snm><fnm>Jacques</fnm><insr iid="I8"/><email>cuisin@mnhn.fr</email></au>
+				<au id="A9"><snm>Larson</snm><fnm>Greger</fnm><insr iid="I1"/><email>greger.larson@durham.ac.uk</email></au>
+			</aug>
+			<insg>
+				<ins id="I1"><p>Durham Evolution and Ancient DNA, Department of Archaeology, Durham University, Durham DH1 3LE, UK</p></ins>
+				<ins id="I2"><p>Department of Biological and Environmental Sciences, Qatar University, Doha, Qatar</p></ins>
+				<ins id="I3"><p>Department of Ecology and Evolutionary Biology, University of California Santa Cruz, Santa Cruz, CA 95064, USA</p></ins>
+				<ins id="I4"><p>School of Biological Sciences, University of Sydney, Sydney, NSW 2006, Australia</p></ins>
+				<ins id="I5"><p>School of Biological Sciences, Royal Holloway University of London, Egham, Surrey TW20 0EX, UK</p></ins>
+				<ins id="I6"><p>Department of Life Science, Natural History Museum, Cromwell Road, London SW7 5BD, UK</p></ins>
+				<ins id="I7"><p>Department of Palaeobiology, Swedish Museum of Natural History, Box 50007, Stockholm SE-10405, Sweden</p></ins>
+				<ins id="I8"><p>Mus&#233;um National d&#8217;Histoire Naturelle, 54 Rue Cuvier, Paris 75005, France</p></ins>
+				<ins id="I9"><p>Current Address: Centre for GeoGenetics, K&#248;benhavn Universitet, The Natural History Museum &#216;ster Voldgade, Copenhagen 5-7 DK-1350, Denmark</p></ins>
+			</insg>
+			<source>BMC Evolutionary Biology</source>
+			<section><title><p>Phylogenetics and phylogeography</p></title></section><issn>1471-2148</issn>
+			<pubdate>2014</pubdate>
+			<volume>14</volume>
+			<issue>1</issue>
+			<fpage>70</fpage>
+			<url>http://www.biomedcentral.com/1471-2148/14/70</url>
+			<xrefbib><pubidlist><pubid idtype="pmpid">24690312</pubid><pubid idtype="doi">10.1186/1471-2148-14-70</pubid></pubidlist></xrefbib>
+		</bibl>
+		<history><rec><date><day>18</day><month>12</month><year>2013</year></date></rec><acc><date><day>13</day><month>3</month><year>2014</year></date></acc><pub><date><day>2</day><month>4</month><year>2014</year></date></pub></history>
+		<cpyrt><year>2014</year><collab>Barnett et al.; licensee BioMed Central Ltd.</collab><note>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<url>http://creativecommons.org/licenses/by/2.0</url>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited.</note></cpyrt>
+		<kwdg>
+			<kwd>Barbary lion</kwd>
+			<kwd>
+				<it>Panthera leo</it>
+			</kwd>
+			<kwd>Extinction</kwd>
+			<kwd>Mitochondrial DNA</kwd>
+			<kwd>Ancient DNA</kwd>
+			<kwd>Phylogeography</kwd>
+		</kwdg>
+		<abs>
+			<sec>
+				<st>
+					<p>Abstract</p>
+				</st>
+				<sec>
+					<st>
+						<p>Background</p>
+					</st><p>Understanding the demographic history of a population is critical to conservation and to our broader understanding of evolutionary processes. For many tropical large mammals, however, this aim is confounded by the absence of fossil material and by the misleading signal obtained from genetic data of recently fragmented and isolated populations. This is particularly true for the lion which as a consequence of millennia of human persecution, has large gaps in its natural distribution and several recently extinct populations.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Results</p>
+					</st><p>We sequenced mitochondrial DNA from museum-preserved individuals, including the extinct Barbary lion (<it>Panthera leo leo</it>) and Iranian lion (<it>P. l. persica</it>), as well as lions from West and Central Africa. We added these to a broader sample of lion sequences, resulting in a data set spanning the historical range of lions. Our Bayesian phylogeographical analyses provide evidence for highly supported, reciprocally monophyletic lion clades. Using a molecular clock, we estimated that recent lion lineages began to diverge in the Late Pleistocene. Expanding equatorial rainforest probably separated lions in South and East Africa from other populations. West African lions then expanded into Central Africa during periods of rainforest contraction. Lastly, we found evidence of two separate incursions into Asia from North Africa, first into India and later into the Middle East.</p>
+				</sec>
+				<sec>
+					<st>
+						<p>Conclusions</p>
+					</st><p>We have identified deep, well-supported splits within the mitochondrial phylogeny of African lions, arguing for recognition of some regional populations as worthy of independent conservation. More morphological and nuclear DNA data are now needed to test these subdivisions.</p>
+				</sec>
+			</sec>
+		</abs>
+	</fm>
+	<bdy>
+		<sec>
+			<st>
+				<p>Background</p>
+			</st><p>Understanding the population history of a species is critical, not only to gain insight into past evolutionary processes, but also as a means of predicting responses to future environmental change <abbrgrp>
+					<abbr bid="B1">1</abbr>
+					<abbr bid="B2">2</abbr>
+					<abbr bid="B3">3</abbr>
+					<abbr bid="B4">4</abbr>
+				</abbrgrp>. Estimates of demographic history are increasingly reliant on genetic data, particularly in many tropical regions where the mammalian fossil record is constrained by poor preservation of bone (e.g. <abbrgrp>
+					<abbr bid="B5">5</abbr>
+				</abbrgrp>). However, large carnivoran species have usually experienced historical persecution, and now occupy only a small subset of their former range <abbrgrp>
+					<abbr bid="B6">6</abbr>
+					<abbr bid="B7">7</abbr>
+					<abbr bid="B8">8</abbr>
+					<abbr bid="B9">9</abbr>
+				</abbrgrp>. This is problematic because sampling solely from extant populations provides an incomplete and potentially misleading view of the overall demographic history of a species <abbrgrp>
+					<abbr bid="B10">10</abbr>
+					<abbr bid="B11">11</abbr>
+				</abbrgrp> Under such circumstances, it is particularly important to incorporate historically collected samples into the data set, in order to achieve a more complete record of the spatial distribution of past genetic diversity <abbrgrp>
+					<abbr bid="B12">12</abbr>
+					<abbr bid="B13">13</abbr>
+				</abbrgrp>.</p><p>The lion (<it>Panthera leo, sensu lato</it>) had one of the largest geographical distributions of any terrestrial mammal during the Late Pleistocene, ranging from southern Africa (<it>Panthera leo ssp.</it>), through northern Eurasia (<it>Panthera leo spelaea</it>), to Central America (<it>Panthera leo atrox</it>) <abbrgrp>
+					<abbr bid="B14">14</abbr>
+				</abbrgrp>. However, studies of the lion&#8217;s population history are made challenging by its sparse African Pleistocene fossil record <abbrgrp>
+					<abbr bid="B15">15</abbr>
+				</abbrgrp>, as well as large-scale, human-driven extirpations in many parts of its historical range <abbrgrp>
+					<abbr bid="B16">16</abbr>
+					<abbr bid="B17">17</abbr>
+				</abbrgrp>. Widespread hunting and anthropogenic changes to lion habitat are continuing to reduce lion populations across their entire range <abbrgrp>
+					<abbr bid="B6">6</abbr>
+					<abbr bid="B18">18</abbr>
+				</abbrgrp>. On the Kathiawar Peninsula in India, the Asian lion subspecies <it>P. leo persica</it> survives as a population of only ~400 individuals and has been classified as &#8220;Endangered&#8221; by the IUCN <abbrgrp>
+					<abbr bid="B18">18</abbr>
+				</abbrgrp>. Lions in Africa have experienced a suspected ~30% loss of the free-ranging population in the past two decades and are now classified as &#8220;Vulnerable&#8221; by the IUCN <abbrgrp>
+					<abbr bid="B18">18</abbr>
+				</abbrgrp>. Of special concern are the populations in West and Central Africa, which may be close to extinction in the wild and are underrepresented in the captive zoo population <abbrgrp>
+					<abbr bid="B19">19</abbr>
+					<abbr bid="B20">20</abbr>
+					<abbr bid="B21">21</abbr>
+				</abbrgrp>.</p><p>Despite this regional variation in population dynamics and decline, all African lions are grouped under one conservation heading as <it>P. leo leo</it>
+				<abbrgrp>
+					<abbr bid="B18">18</abbr>
+				</abbrgrp>. A lack of robust data is a hindrance to producing an integrated and comprehensive evolutionary history for <it>P. leo</it> upon which to test assumptions about evolutionarily significant units <abbrgrp>
+					<abbr bid="B22">22</abbr>
+				</abbrgrp>. Therefore, a better understanding of the evolutionary relationships among modern lion populations is critical to developing evidence-based plans for their conservation and management.</p><p>Previous analyses of short fragments of the mitochondrial control region (hypervariable region I) from modern and recently extinct lion populations revealed several distinct mitochondrial clades, but were unable to provide strong statistical support for these groupings <abbrgrp>
+					<abbr bid="B19">19</abbr>
+					<abbr bid="B20">20</abbr>
+					<abbr bid="B23">23</abbr>
+					<abbr bid="B24">24</abbr>
+				</abbrgrp>. Nonetheless, the extinct North African Barbary lion and the Asian lion (including the extinct Middle Eastern population) clearly form a mitochondrial group that is distinct from all sub-Saharan African lions <abbrgrp>
+					<abbr bid="B19">19</abbr>
+					<abbr bid="B23">23</abbr>
+				</abbrgrp>. This pattern is supported by morphological analyses that show similarities in cranial characters among North African and Asian lions, and separate these two populations from sub-Saharan African lions <abbrgrp>
+					<abbr bid="B25">25</abbr>
+					<abbr bid="B26">26</abbr>
+				</abbrgrp>. Relationships among modern lions have also been studied using longer sequences of mitochondrial cytochrome <it>b</it> (<it>cytb</it>) and nuclear DNA sampled from extant populations in eastern and southern Africa <abbrgrp>
+					<abbr bid="B27">27</abbr>
+					<abbr bid="B28">28</abbr>
+					<abbr bid="B29">29</abbr>
+				</abbrgrp> and West and Central Africa <abbrgrp>
+					<abbr bid="B20">20</abbr>
+				</abbrgrp>.</p><p>The results from genetic analyses have generally supported the accepted geographical subspecies designations <abbrgrp>
+					<abbr bid="B6">6</abbr>
+					<abbr bid="B30">30</abbr>
+				</abbrgrp>, though confusion has occasionally arisen when using voucher specimens from zoological collections to represent wild populations <abbrgrp>
+					<abbr bid="B31">31</abbr>
+				</abbrgrp>. The Moroccan Royal Lion collection, for example, has been used as a proxy for extinct North African Barbary lions [e.g. 28], despite the fact that mitochondrial studies have demonstrated that these samples cluster with lions from Central Africa, rather than North Africa <abbrgrp>
+					<abbr bid="B19">19</abbr>
+					<abbr bid="B20">20</abbr>
+				</abbrgrp>. These studies have provided crucial information for understanding the phylogeographical relationships among modern lions. However, they were based on very short fragments of mitochondrial DNA, or samples drawn only from the extant populations, or data sets that included individuals with questionable geographical origins. For these reasons, there is a clear need for the phylogeography of the modern lion to be investigated using a robust molecular data set that includes representatives of extinct populations.</p><p>In order to investigate the demographic and evolutionary history of African and Asian lions (<it>Panthera leo, sensu stricto)</it>, we have used a combination of ancient and modern DNA sequences. We make use of a new approach that integrates spatial and Bayesian phylogenetic analyses, allowing ancestral geographical states to be co-estimated with the phylogeny, evolutionary rate, and coalescence times <abbrgrp>
+					<abbr bid="B32">32</abbr>
+				</abbrgrp>. We place this history into the context of environmental changes in the late Quaternary and discuss whether the current taxonomic and management paradigm reflects biological reality.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Methods</p>
+			</st>
+			<sec>
+				<st>
+					<p>DNA extraction and amplification</p>
+				</st><p>We collected bone and tissue samples from known-origin lion specimens kept in natural history collections (Table&#160;<tblr tid="T1">1</tblr>) that had previously produced 130&#160;bp sequences of the HVR1 control region <abbrgrp>
+						<abbr bid="B19">19</abbr>
+						<abbr bid="B23">23</abbr>
+						<abbr bid="B33">33</abbr>
+					</abbrgrp>. We extracted DNA using an ion-exchange column method <abbrgrp>
+						<abbr bid="B34">34</abbr>
+					</abbrgrp>. Briefly, we reduced samples of cortical bone to powder in a mikrodismembrator (Sartorius). We then digested bone powder overnight at 50&#176;C in 2&#160;ml of buffer (0.425&#160;M EDTA pH8, 1&#160;mM Tris&#8211;HCl pH8, 0.05%&#160;w/v SDS, 0.33&#160;mg/ml Proteinase K) under constant rotation. We concentrated the digested solution to approximately 500&#160;&#956;l using centrifugal filters with a molecular weight cut-off of 30&#160;kDa (Amicon&#174; Ultra, Millipore). We passed the concentrated solution through a silica column (QIAquick&#174;, Qiagen) following the manufacturer&#8217;s protocol, and eluted the final extract in 100&#160;&#956;l of TE buffer. We measured DNA concentration (Table&#160;<tblr tid="T1">1</tblr>) using 2&#160;&#956;l of extract on the Qubit&#174; platform (Invitrogen), and stored the extracts at -20&#176;C.</p>
+				<table id="T1">
+					<title>
+						<p>Table 1</p>
+					</title>
+					<caption>
+						<p>
+							<b>All ancient samples used in the analyses with their total DNA concentration, together with information on origin and previously published control region sequences</b>
+						</p>
+					</caption>
+					<tgroup align="left" cols="9">
+						<colspec align="left" colname="c1" colnum="1" colwidth="1*"/>
+						<colspec align="left" colname="c2" colnum="2" colwidth="1*"/>
+						<colspec align="left" colname="c3" colnum="3" colwidth="1*"/>
+						<colspec align="left" colname="c4" colnum="4" colwidth="1*"/>
+						<colspec align="left" colname="c5" colnum="5" colwidth="1*"/>
+						<colspec align="left" colname="c6" colnum="6" colwidth="1*"/>
+						<colspec align="left" colname="c7" colnum="7" colwidth="1*"/>
+						<colspec align="left" colname="c8" colnum="8" colwidth="1*"/>
+						<colspec align="left" colname="c9" colnum="9" colwidth="1*"/>
+						<thead valign="top">
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>
+										<b>Extract ID</b>
+									</p>
+								</entry>
+								<entry colname="c2">
+									<p>
+										<b>Element</b>
+									</p>
+								</entry>
+								<entry colname="c3">
+									<p>
+										<b>Place of origin</b>
+									</p>
+								</entry>
+								<entry colname="c4">
+									<p>
+										<b>Region</b>
+									</p>
+								</entry>
+								<entry colname="c5">
+									<p>
+										<b>Museum accession number (Museum)</b>
+									</p>
+								</entry>
+								<entry colname="c6">
+									<p>
+										<b>CytB haplotype</b>
+									</p>
+								</entry>
+								<entry colname="c7">
+									<p>
+										<b>Genbank accession</b>
+									</p>
+								</entry>
+								<entry colname="c8">
+									<p>
+										<b>Control region haplotype</b>
+									</p>
+								</entry>
+								<entry colname="c9">
+									<p>
+										<b>Total DNA concentration (ng/&#956;l)</b>
+									</p>
+								</entry>
+							</row>
+						</thead>
+						<tbody valign="top">
+							<row>
+								<entry colname="c1">
+									<p>PL1</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Senegal</p>
+								</entry>
+								<entry colname="c4">
+									<p>West</p>
+								</entry>
+								<entry colname="c5">
+									<p>A1892 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>C</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545522</p>
+								</entry>
+								<entry colname="c8">
+									<p>M4</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.529</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL2</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Senegal</p>
+								</entry>
+								<entry colname="c4">
+									<p>West</p>
+								</entry>
+								<entry colname="c5">
+									<p>1890-490 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>D</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545523</p>
+								</entry>
+								<entry colname="c8">
+									<p>M4</p>
+								</entry>
+								<entry colname="c9">
+									<p>2.4</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL3</p>
+								</entry>
+								<entry colname="c2">
+									<p>Mandible</p>
+								</entry>
+								<entry colname="c3">
+									<p>Barbary</p>
+								</entry>
+								<entry colname="c4">
+									<p>North</p>
+								</entry>
+								<entry colname="c5">
+									<p>A58:5827 (STOCKHOLM)</p>
+								</entry>
+								<entry colname="c6">
+									<p>G</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545524</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>3.14</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL4</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Burkina Faso</p>
+								</entry>
+								<entry colname="c4">
+									<p>West</p>
+								</entry>
+								<entry colname="c5">
+									<p>1926-248 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>C</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545525</p>
+								</entry>
+								<entry colname="c8">
+									<p>M3</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.869</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL5</p>
+								</entry>
+								<entry colname="c2">
+									<p>Tissue</p>
+								</entry>
+								<entry colname="c3">
+									<p>Tunisia</p>
+								</entry>
+								<entry colname="c4">
+									<p>North</p>
+								</entry>
+								<entry colname="c5">
+									<p>BARBARY C (LEIDEN)</p>
+								</entry>
+								<entry colname="c6">
+									<p>E</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545526</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>10.2</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL6</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>North Africa</p>
+								</entry>
+								<entry colname="c4">
+									<p>North</p>
+								</entry>
+								<entry colname="c5">
+									<p>A7912 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>E</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545527</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>3.89</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL7</p>
+								</entry>
+								<entry colname="c2">
+									<p>Vertebra</p>
+								</entry>
+								<entry colname="c3">
+									<p>Algeria</p>
+								</entry>
+								<entry colname="c4">
+									<p>West</p>
+								</entry>
+								<entry colname="c5">
+									<p>1862-54 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>E</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545528</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>1.22</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL8</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Iran</p>
+								</entry>
+								<entry colname="c4">
+									<p>Middle East</p>
+								</entry>
+								<entry colname="c5">
+									<p>1962-2847 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>F</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545529</p>
+								</entry>
+								<entry colname="c8">
+									<p>M10</p>
+								</entry>
+								<entry colname="c9">
+									<p>3.92</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL9</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Iran</p>
+								</entry>
+								<entry colname="c4">
+									<p>Middle East</p>
+								</entry>
+								<entry colname="c5">
+									<p>1962-2854 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>F</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545530</p>
+								</entry>
+								<entry colname="c8">
+									<p>M10</p>
+								</entry>
+								<entry colname="c9">
+									<p>3.94</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL11</p>
+								</entry>
+								<entry colname="c2">
+									<p>Mandible</p>
+								</entry>
+								<entry colname="c3">
+									<p>Tower of London</p>
+								</entry>
+								<entry colname="c4">
+									<p>North</p>
+								</entry>
+								<entry colname="c5">
+									<p>1952.10.20.15 (NHM)</p>
+								</entry>
+								<entry colname="c6">
+									<p>E</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545531</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.146</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL12</p>
+								</entry>
+								<entry colname="c2">
+									<p>Mandible</p>
+								</entry>
+								<entry colname="c3">
+									<p>Tower of London</p>
+								</entry>
+								<entry colname="c4">
+									<p>North</p>
+								</entry>
+								<entry colname="c5">
+									<p>1952.10.20.16 (NHM)</p>
+								</entry>
+								<entry colname="c6">
+									<p>H</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545532</p>
+								</entry>
+								<entry colname="c8">
+									<p>M11</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.091</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL13</p>
+								</entry>
+								<entry colname="c2">
+									<p>Vertebra</p>
+								</entry>
+								<entry colname="c3">
+									<p>Sudan</p>
+								</entry>
+								<entry colname="c4">
+									<p>Central</p>
+								</entry>
+								<entry colname="c5">
+									<p>1995-164 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>A</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545533</p>
+								</entry>
+								<entry colname="c8">
+									<p>M8</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.59</p>
+								</entry>
+							</row>
+							<row>
+								<entry colname="c1">
+									<p>PL15</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Central African Republic</p>
+								</entry>
+								<entry colname="c4">
+									<p>Central</p>
+								</entry>
+								<entry colname="c5">
+									<p>1996-2516 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>A</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545534</p>
+								</entry>
+								<entry colname="c8">
+									<p>M6</p>
+								</entry>
+								<entry colname="c9">
+									<p>5.01</p>
+								</entry>
+							</row>
+							<row rowsep="1">
+								<entry colname="c1">
+									<p>PL16</p>
+								</entry>
+								<entry colname="c2">
+									<p>Skull</p>
+								</entry>
+								<entry colname="c3">
+									<p>Central African Republic</p>
+								</entry>
+								<entry colname="c4">
+									<p>Central</p>
+								</entry>
+								<entry colname="c5">
+									<p>1996-2517 (PARIS)</p>
+								</entry>
+								<entry colname="c6">
+									<p>B</p>
+								</entry>
+								<entry colname="c7">
+									<p>KJ545535</p>
+								</entry>
+								<entry colname="c8">
+									<p>M6</p>
+								</entry>
+								<entry colname="c9">
+									<p>0.304</p>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table><p>We selected primers to amplify short (&lt;200&#160;bp) overlapping fragments of mitochondrial <it>cytb</it> in order to maximize the success rate of amplification from historical specimens. We designed novel primers specific to <it>Panthera leo</it> that minimized contaminant DNA sequences, and also selected previously designed primers that successfully amplified DNA from pantherine cats <abbrgrp>
+						<abbr bid="B35">35</abbr>
+					</abbrgrp>. Nuclear inserts of mitochondrial regions are a known problem in pantherine cats and we carefully selected primers that preferentially amplified the cytoplasmic copy <abbrgrp>
+						<abbr bid="B36">36</abbr>
+						<abbr bid="B37">37</abbr>
+					</abbrgrp>. We used either Ampli<it>Taq</it>&#174; Gold (ABI) or KAPA2G&#8482; Robust HotStart (KAPA Biosystems) in PCRs according to manufacturers&#8217; guidelines, with a 90&#160;s activation step at 95&#176;C, followed by 45&#160;cycles of 95&#176;C for 45&#160;s, T<sub>A</sub> (Additional file <supplr sid="S1">1</supplr>: Figure S1, Additional file <supplr sid="S2">2</supplr>: Figure S2, Additional file <supplr sid="S3">3</supplr>: Table S1, Additional file <supplr sid="S4">4</supplr>: Table S2 and Additional file <supplr sid="S5">5</supplr>: Table S3) for 45&#160;s, and 72&#176;C for 45&#160;s with a final extension at 72&#176;C for 5&#160;min. PCRs were resolved on an agarose gel. Successful amplifications were purified by the addition of exonuclease I (0.1 u/&#956;l, Fermentas, UK), buffer (B16, Fermentas, UK) and FastAP (0.0025 u/&#956;l, Fermentas, UK), heated at 37&#176;C for 10&#160;min, then inactivated at 65&#176;C for 15&#160;min. Purified PCRs were sequenced using BigDye&#174; chemistry (ABI) and read on an ABI3730 at DBS Genomics (Durham, UK).</p>
+				<suppl id="S1">
+					<title>
+						<p>Additional file 1: Figure S1</p>
+					</title>
+					<text>
+						<p>Schematic of contig overlaps indicating their amplification positions along 1140bp of cytochrome <it>b.</it>
+						</p>
+					</text>
+					<file name="1471-2148-14-70-S1.pdf">
+   <p>Click here for file</p>
+</file>
+				</suppl>
+				<suppl id="S2">
+					<title>
+						<p>Additional file 2: Figure S2</p>
+					</title>
+					<text>
+						<p>Neighbour-joining trees produced with PAUP* <abbrgrp>
+								<abbr bid="B72">72</abbr>
+							</abbrgrp> of individual amplicons produced in this study, compared to known cymt (AF053040 &amp; AF053018) and numt (AF053053 &amp; AF053054) sequences from tiger <abbrgrp>
+								<abbr bid="B73">73</abbr>
+							</abbrgrp>.</p>
+					</text>
+					<file name="1471-2148-14-70-S2.pdf">
+   <p>Click here for file</p>
+</file>
+				</suppl>
+				<suppl id="S3">
+					<title>
+						<p>Additional file 3: Table S1</p>
+					</title>
+					<text>
+						<p>List of all Genbank accessible comparative sequences and relevant information.</p>
+					</text>
+					<file name="1471-2148-14-70-S3.docx">
+   <p>Click here for file</p>
+</file>
+				</suppl>
+				<suppl id="S4">
+					<title>
+						<p>Additional file 4: Table S2</p>
+					</title>
+					<text>
+						<p>List of all primers used and their annealing temperatures and lengths.</p>
+					</text>
+					<file name="1471-2148-14-70-S4.docx">
+   <p>Click here for file</p>
+</file>
+				</suppl>
+				<suppl id="S5">
+					<title>
+						<p>Additional file 5: Table S3</p>
+					</title>
+					<text>
+						<p>Table of number of independent PCRs sequenced for each region. Cells with an outlined border indicate regions containing unique mutations not found in other lions. Where 2 cells share the same outlined border indicates mutation identified in region of PCR overlap and present in both contigs.</p>
+					</text>
+					<file name="1471-2148-14-70-S5.xls">
+   <p>Click here for file</p>
+</file>
+				</suppl>
+			</sec>
+			<sec>
+				<st>
+					<p>Data analysis</p>
+				</st><p>Contigs were assembled in Se-Al v2.0a11 <abbrgrp>
+						<abbr bid="B38">38</abbr>
+					</abbrgrp> and then aligned with 74 previously published lion sequences (Additional file <supplr sid="S3">3</supplr>: Table S1). For a subset of individuals, both <it>cytb</it> and HVR1 control region sequences were available (Additional file <supplr sid="S3">3</supplr>: Table S1). We did not identify any nonsense or frameshift mutations in our data. In every instance, overlapping contigs were complementary, including overlaps where diagnostic mutations were also found (Additional file <supplr sid="S1">1</supplr>: Figure S1, Additional file <supplr sid="S2">2</supplr>: Figure S2, Additional file <supplr sid="S3">3</supplr>: Table S1, Additional file <supplr sid="S4">4</supplr>: Table S2 and Additional file <supplr sid="S5">5</supplr>: Table S1). Both individual amplicons and assembled contigs showed greater similarity to mitochondrial sequences than to nuclear inserts of mitochondrial regions (Additional file <supplr sid="S1">1</supplr>: Figure S1, Additional file <supplr sid="S2">2</supplr>: Figure S2, Additional file <supplr sid="S3">3</supplr>: Table S1, Additional file <supplr sid="S4">4</supplr>: Table S2 and Additional file <supplr sid="S5">5</supplr>: Table S1).</p><p>To estimate the relationships among <it>cytb</it> haplotypes, we generated a median network <abbrgrp>
+						<abbr bid="B39">39</abbr>
+					</abbrgrp> using the median-joining algorithm in the program Network v4.610 (<url>http://www.fluxus-engineering.com</url>). More published sequences were available on GenBank that consisted only of <it>cytb</it> than of <it>cytb</it>&#8201;+&#8201;control region. Network analysis allowed us to confirm that congruent trees were inferred using both a shorter DNA dataset containing more sequences and our longer DNA dataset containing fewer sequences.</p><p>Bayesian phylogenetic analyses were performed using BEAST v1.7 <abbrgrp>
+						<abbr bid="B40">40</abbr>
+					</abbrgrp>. The <it>cytb</it> and control region data were concatenated (1186&#160;bp) and the HKY substitution model was selected for each region using the Bayesian information criterion. This criterion has been shown to perform well under a variety of simulation scenarios <abbrgrp>
+						<abbr bid="B41">41</abbr>
+					</abbrgrp>. Owing to the intraspecific nature of the data set, a strict molecular clock was assumed and a separate rate was allowed for each region. However, calibrating the molecular clock can be difficult when the data set involves deep coalescence events <abbrgrp>
+						<abbr bid="B42">42</abbr>
+						<abbr bid="B43">43</abbr>
+						<abbr bid="B44">44</abbr>
+					</abbrgrp>. Although our data set includes ancient DNA samples, they are not old enough to provide sufficient calibrating information for the molecular clock <abbrgrp>
+						<abbr bid="B45">45</abbr>
+					</abbrgrp>. Instead, we favour an approach that combines two sources of calibrating information. First, we employed a previous estimate of the substitution rate based on the control region of cave lions, calibrated using the radiocarbon dates of the samples <abbrgrp>
+						<abbr bid="B45">45</abbr>
+					</abbrgrp>. This was implemented using a normal prior (mean 5.35&#215;10<sup>&#8722;7</sup> substitutions/site/year, standard deviation 2.28&#215;10<sup>&#8722;7</sup> substitutions/site/year) for the substitution rate of the control region. The mutation rate of <it>cytb</it>, relative to the control region, was estimated in the analysis. Second, we added a sequence from a cave lion, <it>P. leo spelaea</it>, which allowed us to specify a calibration for the divergence between <it>P. leo leo</it> and <it>P. leo spelaea</it>. We used a normal prior with a mean of 550,000&#160;years and standard deviation of 25,000&#160;years for the timing of this split, based on the appearance of the ancestral cave lion <it>P. leo fossilis</it> in the European fossil record <abbrgrp>
+						<abbr bid="B35">35</abbr>
+						<abbr bid="B46">46</abbr>
+					</abbrgrp>.</p><p>An analysis using Bayes factors <abbrgrp>
+						<abbr bid="B47">47</abbr>
+					</abbrgrp> supported a model with constant population size as the best-fitting coalescent model for the data set. We obtained posterior estimates of parameters via Markov chain Monte Carlo (MCMC) sampling. Samples were drawn every 1,000 steps over 10,000,000 MCMC steps, with the first 10% discarded as burn-in. Acceptable sampling and convergence to the stationary distribution were checked by inspection of traces using Tracer v1.5 <abbrgrp>
+						<abbr bid="B48">48</abbr>
+					</abbrgrp>.</p><p>For the phylogeographical analyses, we ran two independent MCMC simulations of 50,000,000 steps each using the discrete phylogeographical model described in Edwards <it>et al</it>. <abbrgrp>
+						<abbr bid="B32">32</abbr>
+					</abbrgrp>. We assigned each sequence to one of seven geographical locations, broadly reflecting traditional subspecies designations <abbrgrp>
+						<abbr bid="B6">6</abbr>
+						<abbr bid="B30">30</abbr>
+					</abbrgrp>: Middle East, Asia, Central Africa, East Africa, West Africa, South Africa, and North Africa (Table&#160;<tblr tid="T1">1</tblr> and Additional file <supplr sid="S3">3</supplr>: Table S1), and estimated rates of diffusion to and from each location. Settings for the analysis matched those described above, except we replaced the constant-size coalescent prior with the flexible Gaussian Markov random field prior (skyride plot; <abbrgrp>
+						<abbr bid="B49">49</abbr>
+					</abbrgrp>).</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Data authenticity</p>
+				</st><p>We employed strict protocols to eliminate contamination and other potential artefacts <abbrgrp>
+						<abbr bid="B50">50</abbr>
+					</abbrgrp>. We used only specimens that had been shown previously to contain authentic endogenous DNA <abbrgrp>
+						<abbr bid="B19">19</abbr>
+						<abbr bid="B23">23</abbr>
+						<abbr bid="B24">24</abbr>
+						<abbr bid="B33">33</abbr>
+					</abbrgrp>. DNA extractions were performed in a physically isolated laboratory separated from any modern molecular biology work, and in which no work on felids had ever been attempted. Samples were co-extracted with negative controls in extract:control ratios of between 2:1 and 9:1. We used sterile reagents, filtered pipette tips, and bleached and UV-irradiated surfaces and instruments. We set up PCRs in an isolated facility, under positive air pressure in a dedicated sterile hood, incorporating negative PCR and extraction controls. Following set-up, we manually transported PCRs to a different laboratory for thermal cycling and post-PCR work. We confirmed all putative novel mutations on the basis of at least three independent PCRs (Additional file <supplr sid="S1">1</supplr>: Figure S1, Additional file <supplr sid="S2">2</supplr>: Figure S2, Additional file <supplr sid="S3">3</supplr>: Table S1, Additional file <supplr sid="S4">4</supplr>: Table S2 and Additional file <supplr sid="S5">5</supplr>: Table S1). Additionally, several specimens (PL1, PL4, PL13, PL15, and PL16) produced sequences that were identical to those previously published for lions from nearby geographic regions.</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Results</p>
+			</st><p>We amplified a 1051&#160;bp fragment of <it>cytb</it> from 14 museum-preserved lions (Table&#160;<tblr tid="T1">1</tblr>). These lions were sampled from extinct populations in North Africa and the Middle East and endangered populations in West and Central Africa (Figure&#160;<figr fid="F1">1</figr>).</p>
+			<fig id="F1"><title><p>Figure 1</p></title><caption><p>A map of the source areas for the lion samples analysed in this study</p></caption><text>
+   <p><b>A map of the source areas for the lion samples analysed in this study.</b> Numbers within circles correspond to PL numbers in Table&#160;<tblr tid="T1">1</tblr>. Squares correspond to sequences available on Genbank and identified in Additional file <supplr sid="S3">3</supplr>: Table S1. Colours of squares and circles correspond to those used in Figure&#160;<figr fid="F2">2</figr>. *PL11 and PL12 are medieval English lions that have been identified as North African lions (<it>P. leo leo</it>) based on mitochondrial HVR sequences and morphological data.</p>
+</text><graphic file="1471-2148-14-70-1"/></fig><p>From these, we identified four new mitochondrial haplotypes: one from North Africa, one from a suspected Barbary lion present in medieval London, one from Iran, and one from Senegal. All other samples produced haplotypes identical to published data and were compatible with their geographical origin (Additional file <supplr sid="S3">3</supplr>: Table S1). Four of the six Barbary lions exhibited a <it>cytb</it> sequence identical to that of the extant Indian lion (Table&#160;<tblr tid="T1">1</tblr> &amp; Additional file <supplr sid="S3">3</supplr>: Table S1).</p><p>Network analyses of North African and Asian <it>cytb</it> sequences show a simple starburst pattern with a basal haplotype shared between North African and Indian lions (Figure&#160;<figr fid="F2">2</figr>A). Additional diversity is represented by Iranian lions that share a haplotype separated by a single synonymous mutation from the central Indian haplotype, and a wild-shot North African lion and putative Barbary lion from medieval England that differ by two and three synonymous mutations, respectively.</p>
+			<fig id="F2"><title><p>Figure 2</p></title><caption><p>Phylogenetic analyses of lion sequence data</p></caption><text>
+   <p><b>Phylogenetic analyses of lion sequence data. A)</b> Median network of 1051&#160;bp of <it>cytb</it> for all 88 lion individuals identified from GenBank plus those generated in this study. <it>Panthera leo spelaea</it> was used as an outgroup. Circles are proportional to haplotype frequencies and black circles represent hypothesized intermediate haplotypes. The number of links represent the number of mutations between haplotypes. Haplotypes are labelled from A to S and correspond to sequences labelled in Table&#160;<tblr tid="T1">1</tblr> and Additional file <supplr sid="S3">3</supplr>: Table S1. <b>B)</b> Phylogenetic tree from a Bayesian analysis of combined <it>cytb</it> and control region data for all lion taxa where available (n&#8201;=&#8201;54). Posterior probabilities of supported clades are shown at nodes. Estimates of divergence times: <b>(a)</b> 124,200&#160;years (95% credibility: 81,800-183,500); <b>(b)</b> 61,500&#160;years (32,700-97,300); <b>(c)</b> 51,000&#160;years (26,600-83,100); <b>(d)</b> 81,900&#160;years (45,700-122,200); <b>(e)</b> 57,800&#160;years (26,800-96,600); <b>(f)</b> 21,100&#160;years (8300&#8211;38,800). Branch colours correspond to reconstructed ancestral geographic states (Purple, South Africa; Yellow, East Africa; Orange, West Africa; Red, Central Africa; Teal, North Africa; Blue, South Asia; Green, Near-East). Tip colours correspond to origins of samples.</p>
+</text><graphic file="1471-2148-14-70-2"/></fig><p>Bayesian phylogenetic analysis of combined <it>cytb</it> and control region data suggests a clear clustering pattern in which North African/Asian, western African, central African, eastern-southern African, and southern African lion populations are recognized, although the two Southern African clusters are not as internally coherent as the other three clades (Figure&#160;<figr fid="F2">2</figr>B). The most recent common ancestor of the five groups (node a in Figure&#160;<figr fid="F2">2</figr>B) was estimated to have existed in the Late Pleistocene (124,200&#160;years BP, 95% HPD: 81,800-183,500). This date overlaps considerably with two published estimates for the MRCA of lions, 74,000-203,000&#160;years BP <abbrgrp>
+					<abbr bid="B35">35</abbr>
+				</abbrgrp> or 145,000-502,000&#160;years BP <abbrgrp>
+					<abbr bid="B28">28</abbr>
+				</abbrgrp>. It should be noted that the external fossil calibration prior used in our analysis has had a substantial effect on the estimates of divergence times when compared to using only the internally calibrated mutation rate from the control region data. If <it>Panthera leo fossilis</it> is a poor indicator of the split between <it>P.leo leo</it> and <it>P.leo spelaea</it>, then this would have concomitant effects on the divergence estimate <abbrgrp>
+					<abbr bid="B44">44</abbr>
+				</abbrgrp>.</p><p>The phylogeographical methods also allowed us to estimate the divergence times of individual lion clades (Figure&#160;<figr fid="F2">2</figr>B). The split between North African/Asian and West and Central African lions (node b in Figure&#160;<figr fid="F2">2</figr>B) took place approximately 61,500&#160;years BP (95% HPD: 32,700-97,300). North African/Asian and West African lions split (node c in Figure&#160;<figr fid="F2">2</figr>B) by approximately 51,000&#160;years BP (95% HPD: 26,600-83,100). The movement of lions out of Africa and into the Near-East/Asia appears to have occurred in two recent waves. The first expansion from North Africa (node f in Figure&#160;<figr fid="F2">2</figr>B) occurred around 21,100&#160;years BP (95% HPD: 8,300-38,800) resulting in the major Asian lion clade, and the second migration later produced the Middle-Eastern lion clade.</p><p>The geographical component incorporated into the Bayesian analysis also allowed us to reconstruct ancestral geographical states (Figures&#160;<figr fid="F2">2</figr>B and <figr fid="F3">3</figr>) and assign probabilities to the movements. It should be noted that these reconstructed movements are only based on maternally inherited mitochondrial DNA, and are therefore subject to future modification when biparentally inherited nuclear DNA becomes available. As suggested previously <abbrgrp>
+					<abbr bid="B23">23</abbr>
+					<abbr bid="B28">28</abbr>
+				</abbrgrp>, the geographical base of the lion tree is located in sub-Saharan Africa, with movement between East and South Africa (Bayes factor: 4.83/4.66). The West African population probably acted as a source from which a population expanded into Central Africa (Bayes factor: 3.00). During the Holocene, the North African population expanded into South Asia (Bayes factor: 4.37/4.50), and then again into the Near East (Bayes factor: 21.03).</p>
+			<fig id="F3"><title><p>Figure 3</p></title><caption><p>Reconstructed distribution of the modern lion at different times</p></caption><text>
+   <p><b>Reconstructed distribution of the modern lion at different times.</b> Estimates of spatial diffusion pathways at Marine Isotope Stage (MIS) time points: <b>A.</b> MIS5 <b>B.</b> MIS4-MIS3 <b>C.</b> MIS2-MIS1 <b>D.</b> Estimated natural distribution prior to anthropogenic disturbance. Black arrows show estimated spatial diffusions, with thicknesses proportional to Bayes factors. Movement from East Africa to South Africa (4.83), from South Africa to East Africa (4.66), from West Africa to Central Africa (3.00), from North Africa to South Asia (4.37), from South Asia to North Africa (4.50), from North Africa to Middle East (21.03). Tropical rainforest is shown in light grey (present distribution), maximal extent during humid periods (black dashed line), and minimal extent during arid periods (white dashed line). The Great Rift Valley is shown in dark grey. African rivers are shown in blue. Co, Congo; Ng, Niger; Ni, Nile; Se, Senegal.</p>
+</text><graphic file="1471-2148-14-70-3"/></fig>
+		</sec>
+		<sec>
+			<st>
+				<p>Discussion</p>
+			</st>
+			<sec>
+				<st>
+					<p>Demographic and evolutionary history</p>
+				</st><p>We identified a Late Pleistocene origin for all five major phylogeographical groups of the modern lion (Figure&#160;<figr fid="F2">2</figr>), thus providing additional support for a single-African-origin model. This model was first proposed by Yamaguchi <it>et al.</it>
+					<abbrgrp>
+						<abbr bid="B14">14</abbr>
+					</abbrgrp> based on morphology, distribution, and parietal art and has been reinforced by aDNA studies of extinct Late Pleistocene lions <abbrgrp>
+						<abbr bid="B23">23</abbr>
+						<abbr bid="B24">24</abbr>
+						<abbr bid="B35">35</abbr>
+					</abbrgrp>. Additional analyses of ancient DNA from historical examples of modern lions suggest that sub-Saharan Africa, with a tentatively identified focal point in eastern-southern Africa, was the likely evolutionary cradle of the modern lion <abbrgrp>
+						<abbr bid="B23">23</abbr>
+					</abbrgrp>. The eastern-southern origin has been independently supported by Antunes <it>et al.</it>
+					<abbrgrp>
+						<abbr bid="B28">28</abbr>
+					</abbrgrp>, who based their findings on mtDNA and lion feline immunodeficiency virus (FIV) sequences amplified from 357 modern East African, South African and Indian lions. Our results, showing longer branches amongst eastern-southern African lions (Figure&#160;<figr fid="F2">2</figr>), also support the idea that the evolutionary cradle of the modern lion was in eastern-southern Africa.</p><p>Our results suggest a very late date for the most recent common ancestor of all five phylogeographical groups. Burger <it>et al.</it>
+					<abbrgrp>
+						<abbr bid="B35">35</abbr>
+					</abbrgrp> previously concluded that the most recent common ancestor of the modern lion lived 74&#8211;203 thousand years BP based on mitochondrial <it>cytb</it> sequences calibrated with fossil data from <it>P. leo fossilis</it>. Antunes <it>et al.</it>
+					<abbrgrp>
+						<abbr bid="B28">28</abbr>
+					</abbrgrp> suggested c. 145&#8211;502 thousand years BP for a major range expansion of the modern lion, including the colonization of south-western Eurasia based on mtDNA (12S and 16S rRNA genes). Although our estimate of the divergence time overlaps with both previous estimates, we demonstrate that the modern lion exodus from Africa took place only ~21,000&#160;years ago. This analysis has not previously been possible due to the extinction of sister populations in North Africa and Middle East, now accessible for study through ancient DNA.</p><p>Our use of statistical phylogeography and DNA sequences from purported refugial regions allows us to reconstruct the past movements of lion populations and place them in the context of palaeoclimatic evidence. Late Pleistocene Africa experienced massive, sudden fluctuations in hydrology caused by the glacial/interglacial cycle, with concomitant effects on vegetation and biome distribution <abbrgrp>
+						<abbr bid="B51">51</abbr>
+						<abbr bid="B52">52</abbr>
+						<abbr bid="B53">53</abbr>
+					</abbrgrp>. More specifically, several episodes of rapid cycling between high humidity and aridity have been identified from the palynological record <abbrgrp>
+						<abbr bid="B51">51</abbr>
+						<abbr bid="B53">53</abbr>
+						<abbr bid="B54">54</abbr>
+					</abbrgrp>, with the three most recent humid phases having occurred during Marine Isotope Stage 5 (MIS5, 120-110Ka), Marine Isotope stage 3 (MIS3, 50-45Ka) and the early Holocene (10-6Ka) <abbrgrp>
+						<abbr bid="B55">55</abbr>
+						<abbr bid="B56">56</abbr>
+						<abbr bid="B57">57</abbr>
+					</abbrgrp>. During periods of high humidity, tropical rainforest expanded across the equatorial region, and the Sahara became savanna <abbrgrp>
+						<abbr bid="B52">52</abbr>
+						<abbr bid="B55">55</abbr>
+						<abbr bid="B56">56</abbr>
+					</abbrgrp>. Conversely, during periods of high aridity, tropical rainforest contracted to form isolated refugia as the Sahara expanded <abbrgrp>
+						<abbr bid="B51">51</abbr>
+						<abbr bid="B52">52</abbr>
+						<abbr bid="B54">54</abbr>
+						<abbr bid="B56">56</abbr>
+					</abbrgrp>. The timing and nature of these changes correlate well with inferred patterns of lion diversification and suggest a mechanism to explain the phylogeographical patterning of lions in Africa and Asia.</p><p>During the Middle Pleistocene, prior to MIS5, lions were probably widespread over Africa, occupying regions of savanna/scrub-woodland. During the humid period of MIS5, tropical rainforest expansion eastward from the Gulf of Guinea to the Great Rift Valley would have isolated southern and eastern African populations from western and northern populations, corresponding to the basal divergence among lion lineages ~124,200&#160;years BP (95% HPD: 81,800-183,500). As aridity increased, leading into MIS4, the Sahara expanded and separated lion populations in North Africa and West Africa. This climatic phase corresponds to the bifurcation of these two populations, which is estimated to have occurred ~51,000&#160;years (95% HPD: 26,600-83,100).</p><p>The contraction of tropical rainforests, as the continent dried, permitted the expansion of lions from West Africa into newly open biomes in central Africa, and a signal of this movement is recovered by the statistical phylogeographical analysis. At the same time, there is evidence for a complicated interaction between populations in East and South Africa, with the Rift Valley potentially acting as a partial barrier to dispersal. Lastly, our phylogenetic and demographic reconstructions provide evidence for two separate excursions into Asia by lions from North Africa, initially during the end-Pleistocene ~21,000&#160;years BP (95% HPD: 8,300-38,800). The most recent population movement involves Iranian lions that appear to be descended from North African lions dispersing during the mid-late Holocene. The recent dates for emigration to Asia are interesting because lion remains have been found from throughout the Late Pleistocene in the Middle East <abbrgrp>
+						<abbr bid="B58">58</abbr>
+						<abbr bid="B59">59</abbr>
+					</abbrgrp>. However, the genetic data presented here only reflect the most recently arrived populations in the region. Populations that resulted from earlier expansions are unlikely to be detected since their genetic signatures would have been overwritten by those of later expansions.</p><p>The identification of well-supported phylogeographical groups of lions naturally prompts the question of what has maintained these divisions. Several obvious dispersal barriers have been proposed in previous publications, including the Great Rift Valley <abbrgrp>
+						<abbr bid="B27">27</abbr>
+					</abbrgrp>, tropical rainforests <abbrgrp>
+						<abbr bid="B20">20</abbr>
+					</abbrgrp>, and the Sahara <abbrgrp>
+						<abbr bid="B26">26</abbr>
+					</abbrgrp>, though other topographic obstacles are also likely to have played a role. The separation between West African and Central African lions occurs in the region between Benin and Cameroon, an area bisected by the Niger River (Figure&#160;<figr fid="F3">3</figr>). Similarly, the Central African lions appear to be bounded by the Nile on their eastern front, separating them from the Eastern African group (Figure&#160;<figr fid="F3">3</figr>), though the sparse sampling from this region makes identifying barriers difficult. The influence of large rivers on African mammal phylogeography has been demonstrated for chimpanzees and bonobos (<it>Pan</it> spp.), where the Niger River may act as a subspecies barrier <abbrgrp>
+						<abbr bid="B60">60</abbr>
+					</abbrgrp>. Other African savannah ungulates, such as giraffes (<it>Giraffa camelopardalis</it>) also show a congruent pattern <abbrgrp>
+						<abbr bid="B5">5</abbr>
+					</abbrgrp>. Similarly, large rivers appear to act as biogeographic boundaries to a certain extent, even for the jaguar (<it>Panthera onca</it>) which is renowned for its ability to swim <abbrgrp>
+						<abbr bid="B61">61</abbr>
+					</abbrgrp>. It is probable that deserts, valleys, and rivers and watershed boundaries have all acted to maintain the phylogeographical structure of lions.</p>
+			</sec>
+			<sec>
+				<st>
+					<p>Conservation</p>
+				</st><p>Our analyses recovered five major phylogeographical groups in the modern lion: North African/Asian, West African, Central African, South African, and East-South African. All of these could be designated as Evolutionarily Significant Units (ESUs) in the absence of conflicting morphological or nuclear DNA data <abbrgrp>
+						<abbr bid="B62">62</abbr>
+					</abbrgrp> (Figure&#160;<figr fid="F2">2</figr>). This pattern is consistent with previous studies based on control region data from across the species range <abbrgrp>
+						<abbr bid="B23">23</abbr>
+					</abbrgrp>, and studies using other mitochondrial regions to examine detailed phylogeographical patterns in sub-Saharan Africa <abbrgrp>
+						<abbr bid="B27">27</abbr>
+						<abbr bid="B28">28</abbr>
+					</abbrgrp> and western-central Africa <abbrgrp>
+						<abbr bid="B20">20</abbr>
+					</abbrgrp>.</p><p>International bodies currently recognize only two lion conservation units: African and Asian lions <abbrgrp>
+						<abbr bid="B18">18</abbr>
+					</abbrgrp> on the basis of early attempts to categorize lions using crude allozyme separation <abbrgrp>
+						<abbr bid="B63">63</abbr>
+						<abbr bid="B64">64</abbr>
+					</abbrgrp>. DNA sequence studies have questioned these widely accepted legislative conservation units because the current dichotomy does not coincide with the intraspecific phylogeny estimated using a wider sampling regime <abbrgrp>
+						<abbr bid="B19">19</abbr>
+						<abbr bid="B20">20</abbr>
+						<abbr bid="B23">23</abbr>
+						<abbr bid="B28">28</abbr>
+					</abbrgrp>.</p><p>Our results further suggest that this dichotomy requires revision (Figure&#160;<figr fid="F2">2</figr>). The mitochondrial data clearly show that Asian lions are nested within the diversity present in Central, West, and North Africa. Perhaps <it>Panthera leo persica</it> should be treated as consubspecific with <it>Panthera leo leo,</it> or alternatively the other phylogeographical groups could be considered for elevation to the same status. Of particular concern are the central African and western African populations, which may be close to extinction, with estimates of ~800 lions in West Africa and ~900 lions in Central Africa <abbrgrp>
+						<abbr bid="B65">65</abbr>
+					</abbrgrp>. Our data confirm the distinct nature of western African lions and the need to afford them appropriate protection <abbrgrp>
+						<abbr bid="B66">66</abbr>
+					</abbrgrp>. At the same time, we encourage a careful approach when discussing ESUs based on mtDNA, rather than morphology or nuclear DNA, due to the scale-dependent and static nature of many units (see <abbrgrp>
+						<abbr bid="B23">23</abbr>
+					</abbrgrp> for detailed arguments).</p><p>The close phylogenetic relationships among Barbary, Iranian, and Indian lion populations are noteworthy given their considerable geographical separation (Figures&#160;<figr fid="F1">1</figr> and <figr fid="F2">2</figr>). Nonetheless, the extinct North African Barbary lion harboured appreciable genetic diversity prior to extirpation, including unique <it>cytb</it> haplotypes (Table&#160;<tblr tid="T1">1</tblr>, Figure&#160;<figr fid="F2">2</figr>A). Individuals PL3 and PL12 (Table&#160;<tblr tid="T1">1</tblr>) differ from the majority haplotype, though neither sample is associated with a specific provenance. PL3 was collected in &#8220;Barbary&#8221; according to museum notes, whereas PL12 was kept in the Tower of London during the 15th Century and its North African origin has only recently been identified <abbrgrp>
+						<abbr bid="B33">33</abbr>
+					</abbrgrp>. In comparison to the Barbary lions from Tunisia and Algeria, the divergent haplotypes might reflect the historical presence of additional population subdivisions within North African lions (e.g., Atlas Mountains and Mediterranean coast populations), evidence of a large, diverse, panmictic population, or incomplete lineage sorting. Barbary lion samples with precise provenance data would be needed to resolve the issue.</p><p>The restoration of the extinct North African Barbary lion has attracted the attention of conservationists both inside and outside North Africa <abbrgrp>
+						<abbr bid="B19">19</abbr>
+						<abbr bid="B31">31</abbr>
+						<abbr bid="B67">67</abbr>
+						<abbr bid="B68">68</abbr>
+					</abbrgrp>. Although circumstantial evidence suggested that the Barbary lion could have survived in captivity <abbrgrp>
+						<abbr bid="B67">67</abbr>
+						<abbr bid="B68">68</abbr>
+					</abbrgrp>, the most likely descendants of wild Barbary lions from the Moroccan Royal Menagerie do not appear to be (maternally) Barbary [19, this study]. However, there is a close mitochondrial relationship between the Barbary lion and the extant Indian lion, and this has been tentatively (but independently) supported by non-molecular studies <abbrgrp>
+						<abbr bid="B26">26</abbr>
+						<abbr bid="B30">30</abbr>
+					</abbrgrp>.</p><p>In the tiger, another charismatic felid species, studies of ancient mitochondrial DNA have suggested a close relationship between the extinct central Asian Caspian tiger (<it>Panthera tigris virgata</it>) and the extant Amur tiger (<it>P. t. altaica</it>) <abbrgrp>
+						<abbr bid="B69">69</abbr>
+					</abbrgrp>. This has allowed conservationists to discuss the translocation of Amur tiger stock to occupy the former range of the Caspian tiger <abbrgrp>
+						<abbr bid="B70">70</abbr>
+					</abbrgrp>, with support from the World Tiger Summit <abbrgrp>
+						<abbr bid="B71">71</abbr>
+					</abbrgrp>. Similarly, if no examples of purebred Barbary lions can be found within the zoo population, there might be scope for restoration of the North African lion population using the closely related Indian lion.</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Conclusion</p>
+			</st><p>Ancient DNA, in combination with Bayesian phylogeographical analysis, has enabled us to infer a maternal evolutionary and demographic history of the lion that would be impossible using modern data alone. The inclusion of representatives of populations from North Africa, West Africa, Central Africa, and the Middle East fills major gaps in our understanding of the past and present distribution of lions and our analysis has led to two major findings. Firstly, our identification of the influence of cyclical changes in African climate, and of the expansion from refugia in western, southern and northern Africa, highlight the importance of these regions for lion diversity. Secondly, population subdivisions identified here are sufficiently divergent to warrant recognition as ESUs. Our data regarding these ESUs will greatly aid conservation planning of these important taxa over the complete natural range of modern lions.</p><p>These data can now also be used to help establish the likely provenance of zoo lions, as an assessment before potential inclusion in <it>ex-situ</it> breeding programmes. The search should now focus on nuclear markers to expand and confirm the subdivisions we have identified. The need for this will become increasingly clear as the unique lion populations of sub-Saharan Africa edge closer to endangered status.</p>
+			<sec>
+				<st>
+					<p>Availability of data</p>
+				</st><p>The data supporting the results of this article are available from GenBank (DNA sequences, accession nos. KJ545522-KJ545535).</p>
+			</sec>
+		</sec>
+		<sec>
+			<st>
+				<p>Abbreviations</p>
+			</st><p>MIS: Marine Isotope Stage; ESU: Evolutionarily Significant Unit; HPD: Highest Posterior Density; HVR1: Highly Variable Region 1; EDTA: Ethylenediaminetetraacetic acid; SDS: Sodium Dodecyl Sulfate; PCR: Polymerase Chain Reaction; IUCN: International Union for Conservation of Nature; MCMC: Markov Chain Monte Carlo; cytb: cytochrome b; bp: base pairs; kDa: KiloDaltons.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Competing interests</p>
+			</st><p>The authors declare they have no competing interests.</p>
+		</sec>
+		<sec>
+			<st>
+				<p>Authors&#8217; contributions</p>
+			</st><p>RB, GL, and NY conceived the study. RB carried out the molecular genetic work. RB, BS, and SYWH performed data analysis. NY, RS, JC, and LW coordinated sampling of material. NY, IB, and LW interpreted the biological context of results. All authors wrote, read and approved the final manuscript.</p>
+		</sec>
+	</bdy>
+	<bm>
+		<ack>
+			<sec>
+				<st>
+					<p>Acknowledgements</p>
+				</st><p>We thank F. Renoud and D. Robineau (Mus&#233;um national d&#8217;Histoire naturelle, Paris), B. Fernholm and O. Gr&#246;nwall, (Swedish Museum of Natural History, Stockholm), and C. Smeenk (Natural History Museum, Leiden) for access to sample material. We also thank J. Burger (Johannes Gutenburg University, Mainz) for helpful comments and discussion. This project has received funding from the European Union&#8217;s Seventh Framework Programme for research, technological development and demonstration under grant agreement no. FP7-PEOPLE-2011-IEF-298820.</p>
+			</sec>
+		</ack>
+		<refgrp><bibl id="B1"><title><p>The impact of past climate change on genetic variation and population connectivity in the Icelandic arctic fox</p></title><aug><au><snm>Mellows</snm><fnm>A</fnm></au><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>Dalen</snm><fnm>L</fnm></au><au><snm>Sandoval-Castellanos</snm><fnm>E</fnm></au><au><snm>Linderholm</snm><fnm>A</fnm></au><au><snm>McGovern</snm><fnm>TH</fnm></au><au><snm>Church</snm><fnm>MJ</fnm></au><au><snm>Larson</snm><fnm>G</fnm></au></aug><source>Proc Biol Sci</source><pubdate>2012</pubdate><volume>279</volume><issue>1747</issue><fpage>4568</fpage><lpage>4573</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1098/rspb.2012.1796</pubid><pubid idtype="pmcid">3479732</pubid><pubid idtype="pmpid" link="fulltext">22977155</pubid></pubidlist></xrefbib></bibl><bibl id="B2"><title><p>Ancient DNA reveals lack of postglacial habitat tracking in the arctic fox</p></title><aug><au><snm>Dal&#233;n</snm><fnm>L</fnm></au><au><snm>Nystr&#246;m</snm><fnm>V</fnm></au><au><snm>Valdiosera</snm><fnm>C</fnm></au><au><snm>Germonpre</snm><fnm>M</fnm></au><au><snm>Sablin</snm><fnm>M</fnm></au><au><snm>Turner</snm><fnm>E</fnm></au><au><snm>Angerbj&#246;rn</snm><fnm>A</fnm></au><au><snm>Arsuaga</snm><fnm>JL</fnm></au><au><snm>G&#246;therstrom</snm><fnm>A</fnm></au></aug><source>Proc Natl Acad Sci U S A</source><pubdate>2007</pubdate><volume>104</volume><issue>16</issue><fpage>6726</fpage><lpage>6729</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1073/pnas.0701341104</pubid><pubid idtype="pmcid">1871853</pubid><pubid idtype="pmpid" link="fulltext">17420452</pubid></pubidlist></xrefbib></bibl><bibl id="B3"><title><p>Considering evolutionary processes in conservation biology</p></title><aug><au><snm>Crandall</snm><fnm>KA</fnm></au><au><snm>Bininda-Emonds</snm><fnm>ORP</fnm></au><au><snm>Mace</snm><fnm>GM</fnm></au><au><snm>Wayne</snm><fnm>RK</fnm></au></aug><source>Trends Ecol Evol</source><pubdate>2000</pubdate><volume>15</volume><issue>7</issue><fpage>290</fpage><lpage>295</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/S0169-5347(00)01876-0</pubid><pubid idtype="pmpid" link="fulltext">10856956</pubid></pubidlist></xrefbib></bibl><bibl id="B4"><title><p>Species-specific responses of Late Quaternary megafauna to climate and humans</p></title><aug><au><snm>Lorenzen</snm><fnm>ED</fnm></au><au><snm>Nogues-Bravo</snm><fnm>D</fnm></au><au><snm>Orlando</snm><fnm>L</fnm></au><au><snm>Weinstock</snm><fnm>J</fnm></au><au><snm>Binladen</snm><fnm>J</fnm></au><au><snm>Marske</snm><fnm>KA</fnm></au><au><snm>Ugan</snm><fnm>A</fnm></au><au><snm>Borregaard</snm><fnm>MK</fnm></au><au><snm>Gilbert</snm><fnm>MT</fnm></au><au><snm>Nielsen</snm><fnm>R</fnm></au><au><snm>Ho</snm><fnm>SYW</fnm></au><au><snm>Goebel</snm><fnm>T</fnm></au><au><snm>Graf</snm><fnm>KE</fnm></au><au><snm>Byers</snm><fnm>D</fnm></au><au><snm>Stenderup</snm><fnm>JT</fnm></au><au><snm>Rasmussen</snm><fnm>M</fnm></au><au><snm>Campos</snm><fnm>PF</fnm></au><au><snm>Leonard</snm><fnm>JA</fnm></au><au><snm>Koepfli</snm><fnm>KP</fnm></au><au><snm>Froese</snm><fnm>D</fnm></au><au><snm>Zazula</snm><fnm>G</fnm></au><au><snm>Stafford</snm><fnm>TW</fnm><suf>Jr</suf></au><au><snm>Aaris-Sorensen</snm><fnm>K</fnm></au><au><snm>Batra</snm><fnm>P</fnm></au><au><snm>Haywood</snm><fnm>AM</fnm></au><au><snm>Singarayer</snm><fnm>JS</fnm></au><au><snm>Valdes</snm><fnm>PJ</fnm></au><au><snm>Boeskorov</snm><fnm>G</fnm></au><au><snm>Burns</snm><fnm>JA</fnm></au><au><snm>Davydov</snm><fnm>SP</fnm></au><etal/></aug><source>Nature</source><pubdate>2011</pubdate><volume>479</volume><issue>7373</issue><fpage>359</fpage><lpage>364</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1038/nature10574</pubid><pubid idtype="pmpid" link="fulltext">22048313</pubid></pubidlist></xrefbib></bibl><bibl id="B5"><title><p>Comparative phylogeography of African savannah ungulates</p></title><aug><au><snm>Lorenzen</snm><fnm>ED</fnm></au><au><snm>Heller</snm><fnm>R</fnm></au><au><snm>Siegismund</snm><fnm>HR</fnm></au></aug><source>Mol Ecol</source><pubdate>2012</pubdate><volume>21</volume><issue>15</issue><fpage>3656</fpage><lpage>3670</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2012.05650.x</pubid><pubid idtype="pmpid" link="fulltext">22702960</pubid></pubidlist></xrefbib></bibl><bibl id="B6"><aug><au><snm>Nowell</snm><fnm>K</fnm></au><au><snm>Jackson</snm><fnm>P</fnm></au></aug><source>Wild Cats: Status Survey and Conservation Action Plan</source><publisher>Gland, Switzerland and Cambridge, UK: IUCN/SSC Cat Specialist Group</publisher><pubdate>1996</pubdate></bibl><bibl id="B7"><aug><au><snm>Mills</snm><fnm>G</fnm></au><au><snm>Hofer</snm><fnm>H</fnm></au></aug><source>Hyaenas: Status Survey and Conservation Action Plan</source><publisher>Gland, Switzerland and Cambridge, UK: IUCN/SSC Hyaena Specialist Group</publisher><pubdate>1998</pubdate></bibl><bibl id="B8"><aug><au><snm>Servheen</snm><fnm>C</fnm></au><au><snm>Herrero</snm><fnm>S</fnm></au><au><snm>Peyton</snm><fnm>B</fnm></au></aug><source>Bears: Status Survey and Conservation Action Plan</source><publisher>Gland, Switzerland and Cambridge, UK: IUCN/SSC Bear Specialise Group IUCN/SSC Polar Bear Specialist Group</publisher><pubdate>1999</pubdate></bibl><bibl id="B9"><aug><au><snm>Sillero-Zubri</snm><fnm>C</fnm></au><au><snm>Hoffmann</snm><fnm>M</fnm></au><au><snm>Macdonald</snm><fnm>DW</fnm></au></aug><source>Canids: Foxes, Wolves, Jackals And Dogs: Status Survey and Conservation Action Plan</source><publisher>Gland, Switzerland and Cambridge, UK: IUCN/SSC Dog Specialist Group</publisher><pubdate>2004</pubdate></bibl><bibl id="B10"><title><p>Using phylochronology to reveal cryptic population histories: review and synthesis of 29 ancient DNA studies</p></title><aug><au><snm>Ramakrishnan</snm><fnm>U</fnm></au><au><snm>Hadly</snm><fnm>EA</fnm></au></aug><source>Mol Ecol</source><pubdate>2009</pubdate><volume>18</volume><fpage>1310</fpage><lpage>1330</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2009.04092.x</pubid><pubid idtype="pmpid" link="fulltext">19281471</pubid></pubidlist></xrefbib></bibl><bibl id="B11"><title><p>Faunal histories from Holocene ancient DNA</p></title><aug><au><snm>de Bruyn</snm><fnm>M</fnm></au><au><snm>Hoelzel</snm><fnm>AR</fnm></au><au><snm>Carvalho</snm><fnm>GR</fnm></au><au><snm>Hofreiter</snm><fnm>M</fnm></au></aug><source>Trends Ecol Evol</source><pubdate>2011</pubdate><volume>26</volume><fpage>405</fpage><lpage>413</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.tree.2011.03.021</pubid><pubid idtype="pmpid" link="fulltext">21529992</pubid></pubidlist></xrefbib></bibl><bibl id="B12"><title><p>Phylogeography and mitochondrial diversity of extirpated brown bear (Ursus arctos) populations in the contiguous United States and Mexico</p></title><aug><au><snm>Miller</snm><fnm>CR</fnm></au><au><snm>Waits</snm><fnm>LP</fnm></au><au><snm>Joyce</snm><fnm>P</fnm></au></aug><source>Mol Ecol</source><pubdate>2006</pubdate><volume>15</volume><fpage>4477</fpage><lpage>4485</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2006.03097.x</pubid><pubid idtype="pmpid" link="fulltext">17107477</pubid></pubidlist></xrefbib></bibl><bibl id="B13"><title><p>Ancient DNA evidence for the loss of a highly divergent brown bear clade during historical times</p></title><aug><au><snm>Calvignac</snm><fnm>S</fnm></au><au><snm>Hughes</snm><fnm>S</fnm></au><au><snm>Tougard</snm><fnm>C</fnm></au><au><snm>Michaux</snm><fnm>JR</fnm></au><au><snm>Thevenot</snm><fnm>M</fnm></au><au><snm>Philippe</snm><fnm>M</fnm></au><au><snm>Hamdine</snm><fnm>W</fnm></au><au><snm>Hanni</snm><fnm>C</fnm></au></aug><source>Mol Ecol</source><pubdate>2008</pubdate><volume>17</volume><fpage>1962</fpage><lpage>1970</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2008.03631.x</pubid><pubid idtype="pmpid" link="fulltext">18363668</pubid></pubidlist></xrefbib></bibl><bibl id="B14"><title><p>Evolution of the mane and group-living in the lion (<it>Panthera leo</it>): a review</p></title><aug><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au><au><snm>Werdelin</snm><fnm>L</fnm></au><au><snm>MacDonald</snm><fnm>DW</fnm></au></aug><source>J Zool</source><pubdate>2004</pubdate><volume>263</volume><fpage>329</fpage><lpage>342</lpage><xrefbib><pubid idtype="doi">10.1017/S0952836904005242</pubid></xrefbib></bibl><bibl id="B15"><aug><au><snm>Turner</snm><fnm>A</fnm></au><au><snm>Ant&#243;n</snm><fnm>M</fnm></au></aug><source>The Big Cats and Their Fossil Relatives</source><publisher>New York: Columbia University Press</publisher><pubdate>1997</pubdate></bibl><bibl id="B16"><title><p>Inventory of free-ranging lions <it>Panthera leo</it> in Africa</p></title><aug><au><snm>Bauer</snm><fnm>H</fnm></au><au><snm>Van Der Merwe</snm><fnm>S</fnm></au></aug><source>Oryx</source><pubdate>2004</pubdate><volume>38</volume><issue>1</issue><fpage>26</fpage><lpage>31</lpage></bibl><bibl id="B17"><title><p>Past and present distribution of the North African-Asian lion subgroup: a review</p></title><aug><au><snm>Schnitzler</snm><fnm>AE</fnm></au></aug><source>Mammal Rev</source><pubdate>2011</pubdate><volume>41</volume><issue>3</issue><fpage>220</fpage><lpage>243</lpage><xrefbib><pubid idtype="doi">10.1111/j.1365-2907.2010.00181.x</pubid></xrefbib></bibl><bibl id="B18"><title><p>IUCN Red List of Threatened Species</p></title><note>[<url>http://www.iucnredlist.org</url>]</note></bibl><bibl id="B19"><title><p>Lost populations and preserving genetic diversity in the lion <it>Panthera leo</it>: Implications for its <it>ex situ</it> conservation</p></title><aug><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au></aug><source>Conserv Genet</source><pubdate>2006</pubdate><volume>7</volume><issue>4</issue><fpage>507</fpage><lpage>514</lpage><xrefbib><pubid idtype="doi">10.1007/s10592-005-9062-0</pubid></xrefbib></bibl><bibl id="B20"><title><p>Genetic diversity, evolutionary history and implications for conservation of the lion (Panthera leo) in West and Central Africa</p></title><aug><au><snm>Bertola</snm><fnm>LD</fnm></au><au><snm>van Hooft</snm><fnm>WF</fnm></au><au><snm>Vrieling</snm><fnm>K</fnm></au><au><snm>Uit de Weerd</snm><fnm>DR</fnm></au><au><snm>York</snm><fnm>DS</fnm></au><au><snm>Bauer</snm><fnm>H</fnm></au><au><snm>Prins</snm><fnm>HHT</fnm></au><au><snm>Funston</snm><fnm>PJ</fnm></au><au><snm>de Haes HA</snm><fnm>U</fnm></au><au><snm>Leirs</snm><fnm>H</fnm></au><au><snm>van Haeringen</snm><fnm>WA</fnm></au><au><snm>Sogbohossou Tumenta</snm><fnm>EPN</fnm></au><au><snm>de Iongh</snm><fnm>HH</fnm></au></aug><source>J Biogeography</source><pubdate>2011</pubdate><volume>38</volume><issue>7</issue><fpage>1356</fpage><lpage>1367</lpage><xrefbib><pubid idtype="doi">10.1111/j.1365-2699.2011.02500.x</pubid></xrefbib></bibl><bibl id="B21"><title><p>Lion status updates from five range countries in West and Central Africa</p></title><aug><au><snm>Henschel</snm><fnm>P</fnm></au><au><snm>Azani</snm><fnm>D</fnm></au><au><snm>Burton</snm><fnm>C</fnm></au><au><snm>Malanda</snm><fnm>G</fnm></au><au><snm>Saidu</snm><fnm>Y</fnm></au><au><snm>Sam</snm><fnm>M</fnm></au><au><snm>Hunter</snm><fnm>L</fnm></au></aug><source>Cat News</source><pubdate>2010</pubdate><volume>52</volume><issue>Spring</issue><fpage>34</fpage><lpage>39</lpage></bibl><bibl id="B22"><title><p>The role of taxonomy in species conservation</p></title><aug><au><snm>Mace</snm><fnm>GM</fnm></au></aug><source>Trans R Soc B</source><pubdate>2004</pubdate><volume>359</volume><issue>1444</issue><fpage>711</fpage><lpage>719</lpage><xrefbib><pubid idtype="doi">10.1098/rstb.2003.1454</pubid></xrefbib></bibl><bibl id="B23"><title><p>The origin, current diversity, and future conservation of the modern lion (<it>Panthera leo</it>)</p></title><aug><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au></aug><source>Proc R Soc Lond B</source><pubdate>2006</pubdate><volume>273</volume><issue>1598</issue><fpage>2159</fpage><lpage>2168</lpage><xrefbib><pubid idtype="doi">10.1098/rspb.2006.3578</pubid></xrefbib></bibl><bibl id="B24"><title><p>Phylogeography of lions (Panthera leo ssp.) reveals three distinct taxa and late Pleistocene reduction in genetic diversity</p></title><aug><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>Shapiro</snm><fnm>B</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au><au><snm>Ho</snm><fnm>SYW</fnm></au><au><snm>Burger</snm><fnm>J</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Higham</snm><fnm>TFG</fnm></au><au><snm>Wheeler</snm><fnm>HT</fnm></au><au><snm>Rosendahl</snm><fnm>W</fnm></au><au><snm>Sher</snm><fnm>A</fnm></au><au><snm>Sotnikova</snm><fnm>M</fnm></au><au><snm>Kuznetsova</snm><fnm>T</fnm></au><au><snm>Baryshnikov</snm><fnm>G</fnm></au><au><snm>Martin</snm><fnm>LD</fnm></au><au><snm>Harington</snm><fnm>CR</fnm></au><au><snm>Burns</snm><fnm>JA</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au></aug><source>Mol Ecol</source><pubdate>2009</pubdate><volume>18</volume><issue>8</issue><fpage>1668</fpage><lpage>1677</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2009.04134.x</pubid><pubid idtype="pmpid" link="fulltext">19302360</pubid></pubidlist></xrefbib></bibl><bibl id="B25"><title><p>Divided infraorbital foramen in the lion (<it>Panthera leo</it>): its implications for colonisation history, population bottlenecks, and conservation of the Asian lion (<it>P.l.persica</it>)</p></title><aug><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Kitchener</snm><fnm>AC</fnm></au><au><snm>Driscoll</snm><fnm>CA</fnm></au><au><snm>Macdonald</snm><fnm>DW</fnm></au></aug><source>Contrib Zoology</source><pubdate>2009</pubdate><volume>78</volume><issue>2</issue><fpage>77</fpage><lpage>83</lpage></bibl><bibl id="B26"><title><p>Geographical variation and phylogenetics of modern lions based on craniometric data</p></title><aug><au><snm>Mazak</snm><fnm>JH</fnm></au></aug><source>J Zoology</source><pubdate>2010</pubdate><volume>281</volume><issue>3</issue><fpage>194</fpage><lpage>209</lpage></bibl><bibl id="B27"><title><p>Molecular genetic variation across the southern and eastern ranges of the African lion, <it>Panthera leo</it></p></title><aug><au><snm>Dubach</snm><fnm>J</fnm></au><au><snm>Patterson</snm><fnm>BD</fnm></au><au><snm>Briggs</snm><fnm>MB</fnm></au><au><snm>Venzke</snm><fnm>K</fnm></au><au><snm>Flamand</snm><fnm>J</fnm></au><au><snm>Stander</snm><fnm>P</fnm></au><au><snm>Scheepers</snm><fnm>L</fnm></au><au><snm>Kays</snm><fnm>RW</fnm></au></aug><source>Conserv Genet</source><pubdate>2005</pubdate><volume>6</volume><fpage>15</fpage><lpage>24</lpage><xrefbib><pubid idtype="doi">10.1007/s10592-004-7729-6</pubid></xrefbib></bibl><bibl id="B28"><title><p>The evolutionary dynamics of the lion <it>Panthera leo</it> revealed by host and viral population genomics</p></title><aug><au><snm>Antunes</snm><fnm>A</fnm></au><au><snm>Troyer</snm><fnm>JL</fnm></au><au><snm>Roelke</snm><fnm>ME</fnm></au><au><snm>Pecon-Slattery</snm><fnm>J</fnm></au><au><snm>Packer</snm><fnm>C</fnm></au><au><snm>Winterbach</snm><fnm>C</fnm></au><au><snm>Winterbach</snm><fnm>H</fnm></au><au><snm>Hemson</snm><fnm>G</fnm></au><au><snm>Frank</snm><fnm>L</fnm></au><au><snm>Stander</snm><fnm>P</fnm></au><au><snm>Siefert</snm><fnm>L</fnm></au><au><snm>Driciru</snm><fnm>M</fnm></au><au><snm>Funston</snm><fnm>PJ</fnm></au><au><snm>Alexander</snm><fnm>KA</fnm></au><au><snm>Prager</snm><fnm>KC</fnm></au><au><snm>Mills</snm><fnm>G</fnm></au><au><snm>Wildt</snm><fnm>D</fnm></au><au><snm>Bush</snm><fnm>M</fnm></au><au><snm>O'Brien</snm><fnm>SJ</fnm></au><au><snm>Johnson</snm><fnm>WE</fnm></au></aug><source>PLoS Genet</source><pubdate>2008</pubdate><volume>4</volume><issue>11</issue><fpage>e1000251</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1371/journal.pgen.1000251</pubid><pubid idtype="pmcid">2572142</pubid><pubid idtype="pmpid" link="fulltext">18989457</pubid></pubidlist></xrefbib></bibl><bibl id="B29"><title><p>Genetic perspectives on &#8220;Lion Conservation Units&#8221; in Eastern and Southern Africa</p></title><aug><au><snm>Dubach</snm><fnm>JM</fnm></au><au><snm>Briggs</snm><fnm>MB</fnm></au><au><snm>White</snm><fnm>PA</fnm></au><au><snm>Ament</snm><fnm>BA</fnm></au><au><snm>Patterson</snm><fnm>BD</fnm></au></aug><source>Conserv Genet</source><pubdate>2013</pubdate><volume>14</volume><issue>4</issue><fpage>741</fpage><lpage>755</lpage><xrefbib><pubid idtype="doi">10.1007/s10592-013-0453-3</pubid></xrefbib></bibl><bibl id="B30"><title><p>Untersuchungen zur Stammesgeschichte der Pantherkatzen (Pantherinae), Teil III: Zur Artgeschichte des L&#246;wen <it>Panthera (Panthera) leo</it> (Linnaeus 1758)</p></title><aug><au><snm>Hemmer</snm><fnm>H</fnm></au></aug><source>Veroffentlichungen der Zoologischen Staatssammlung Munchen</source><pubdate>1974</pubdate><volume>17</volume><fpage>167</fpage><lpage>280</lpage></bibl><bibl id="B31"><title><p>Maintaining the genetic health of putative Barbary lions in captivity: an analysis of Moroccan Royal Lions</p></title><aug><au><snm>Black</snm><fnm>S</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Harland</snm><fnm>A</fnm></au><au><snm>Groombridge</snm><fnm>J</fnm></au></aug><source>Eur J Wildl Res</source><pubdate>2009</pubdate><volume>56</volume><fpage>21</fpage><lpage>31</lpage></bibl><bibl id="B32"><title><p>Multiple hybridizations between ancient brown and polar bears and an Irish origin for the modern polar bear matriline</p></title><aug><au><snm>Edwards</snm><fnm>CJ</fnm></au><au><snm>Suchard</snm><fnm>MA</fnm></au><au><snm>Lemey</snm><fnm>P</fnm></au><au><snm>Welch</snm><fnm>JJ</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au><au><snm>Fulton</snm><fnm>TL</fnm></au><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>O&#8217;Connell</snm><fnm>TC</fnm></au><au><snm>Coxon</snm><fnm>P</fnm></au><au><snm>Monaghan</snm><fnm>N</fnm></au><au><snm>Valdiosera</snm><fnm>CE</fnm></au><au><snm>Lorenzen</snm><fnm>ED</fnm></au><au><snm>Willerslev</snm><fnm>E</fnm></au><au><snm>Baryshnikov</snm><fnm>GF</fnm></au><au><snm>Rambaut</snm><fnm>A</fnm></au><au><snm>Thomas</snm><fnm>MG</fnm></au><au><snm>Bradley</snm><fnm>DG</fnm></au><au><snm>Shapiro</snm><fnm>B</fnm></au></aug><source>Curr Biol</source><pubdate>2011</pubdate><volume>21</volume><fpage>1251</fpage><lpage>1258</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.cub.2011.05.058</pubid><pubid idtype="pmpid" link="fulltext">21737280</pubid></pubidlist></xrefbib></bibl><bibl id="B33"><title><p>Ancient DNA analysis indicates the first English lions originated from North Africa</p></title><aug><au><snm>Barnett</snm><fnm>R</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Shapiro</snm><fnm>B</fnm></au><au><snm>Sabin</snm><fnm>R</fnm></au></aug><source>Contrib Zoology</source><pubdate>2008</pubdate><volume>77</volume><issue>1</issue><fpage>7</fpage><lpage>16</lpage></bibl><bibl id="B34"><title><p>Ancient DNA extraction from bones and teeth</p></title><aug><au><snm>Rohland</snm><fnm>N</fnm></au><au><snm>Hofreiter</snm><fnm>M</fnm></au></aug><source>Nat Protoc</source><pubdate>2007</pubdate><volume>2</volume><issue>7</issue><fpage>1756</fpage><lpage>1762</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1038/nprot.2007.247</pubid><pubid idtype="pmpid" link="fulltext">17641642</pubid></pubidlist></xrefbib></bibl><bibl id="B35"><title><p>Molecular phylogeny of the extinct cave lion <it>Panthera leo spelaea</it></p></title><aug><au><snm>Burger</snm><fnm>J</fnm></au><au><snm>Rosendahl</snm><fnm>W</fnm></au><au><snm>Loreille</snm><fnm>O</fnm></au><au><snm>Hemmer</snm><fnm>H</fnm></au><au><snm>Eriksson</snm><fnm>T</fnm></au><au><snm>G&#246;therstrom</snm><fnm>A</fnm></au><au><snm>Hiller</snm><fnm>J</fnm></au><au><snm>Collins</snm><fnm>MJ</fnm></au><au><snm>Wess</snm><fnm>T</fnm></au><au><snm>Alt</snm><fnm>KW</fnm></au></aug><source>Mol Phylogenet Evol</source><pubdate>2004</pubdate><volume>30</volume><issue>3</issue><fpage>841</fpage><lpage>849</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.ympev.2003.07.020</pubid><pubid idtype="pmpid" link="fulltext">15012963</pubid></pubidlist></xrefbib></bibl><bibl id="B36"><title><p>Supermatrix and species tree methods resolve phylogenetic relationships amoung the big cats, <it>Panthera</it> (Carnivora: Felidae)</p></title><aug><au><snm>Davis</snm><fnm>BW</fnm></au><au><snm>Li</snm><fnm>G</fnm></au><au><snm>Murphy</snm><fnm>WJ</fnm></au></aug><source>Mol Phylogenet Evol</source><pubdate>2010</pubdate><volume>56</volume><issue>1</issue><fpage>64</fpage><lpage>76</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.ympev.2010.01.036</pubid><pubid idtype="pmpid" link="fulltext">20138224</pubid></pubidlist></xrefbib></bibl><bibl id="B37"><title><p>Evolutionary analysis of a large mtDNA translocation (numt) into the nuclear genome of the <it>Panthera</it> genus species</p></title><aug><au><snm>Kim</snm><fnm>J-H</fnm></au><au><snm>Antunes</snm><fnm>A</fnm></au><au><snm>Luo</snm><fnm>S-J</fnm></au><au><snm>Menninger</snm><fnm>J</fnm></au><au><snm>Nash</snm><fnm>WG</fnm></au><au><snm>O&#8217;Brien</snm><fnm>SJ</fnm></au><au><snm>Johnson</snm><fnm>WE</fnm></au></aug><source>Gene</source><pubdate>2006</pubdate><volume>366</volume><issue>2</issue><fpage>292</fpage><lpage>302</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.gene.2005.08.023</pubid><pubid idtype="pmcid">1592465</pubid><pubid idtype="pmpid" link="fulltext">16380222</pubid></pubidlist></xrefbib></bibl><bibl id="B38"><aug><au><snm>Rambaut</snm><fnm>A</fnm></au></aug><source>Se-Al: Sequence Alignment Editor v2.0a11 Carbon</source><publisher>Oxford: University of Oxford</publisher><pubdate>1996</pubdate></bibl><bibl id="B39"><title><p>Median-joining networks for inferring intraspecific phylogenies</p></title><aug><au><snm>Bandelt</snm><fnm>HJ</fnm></au><au><snm>Forster</snm><fnm>P</fnm></au><au><snm>Rohl</snm><fnm>A</fnm></au></aug><source>Mol Biol Evol</source><pubdate>1999</pubdate><volume>16</volume><fpage>37</fpage><lpage>48</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/oxfordjournals.molbev.a026036</pubid><pubid idtype="pmpid" link="fulltext">10331250</pubid></pubidlist></xrefbib></bibl><bibl id="B40"><title><p>Bayesian phylogenetics with BEAUti and the BEAST 1.7</p></title><aug><au><snm>Drummond</snm><fnm>AJ</fnm></au><au><snm>Suchard</snm><fnm>MA</fnm></au><au><snm>Xie</snm><fnm>D</fnm></au><au><snm>Rambaut</snm><fnm>A</fnm></au></aug><source>Mol Biol Evol</source><pubdate>2012</pubdate><volume>29</volume><issue>8</issue><fpage>1969</fpage><lpage>1973</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/molbev/mss075</pubid><pubid idtype="pmcid">3408070</pubid><pubid idtype="pmpid" link="fulltext">22367748</pubid></pubidlist></xrefbib></bibl><bibl id="B41"><title><p>Performance criteria for selecting evolutionary models in phylogenetics: a comprehensive study based on simulated datasets</p></title><aug><au><snm>Luo</snm><fnm>A</fnm></au><au><snm>Qiao</snm><fnm>H</fnm></au><au><snm>Zhang</snm><fnm>Y</fnm></au><au><snm>Shi</snm><fnm>W</fnm></au><au><snm>Ho</snm><fnm>SYW</fnm></au><au><snm>Xu</snm><fnm>W</fnm></au><au><snm>Zhang</snm><fnm>A</fnm></au><au><snm>Zhu</snm><fnm>C</fnm></au></aug><source>BMC Evol Biol</source><pubdate>2010</pubdate><volume>10</volume><fpage>242</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1186/1471-2148-10-242</pubid><pubid idtype="pmcid">2925852</pubid><pubid idtype="pmpid" link="fulltext">20696057</pubid></pubidlist></xrefbib></bibl><bibl id="B42"><title><p>Pleistocene Chinese cave hyenas and the recent Eurasian history of the spotted hyena, Crocuta Crocuta</p></title><aug><au><snm>Sheng</snm><fnm>G-L</fnm></au><au><snm>Soubrier</snm><fnm>J</fnm></au><au><snm>Liu</snm><fnm>J</fnm></au><au><snm>Werdelin</snm><fnm>L</fnm></au><au><snm>Llamas</snm><fnm>B</fnm></au><au><snm>Thomson</snm><fnm>VA</fnm></au><au><snm>Tuke</snm><fnm>J</fnm></au><au><snm>Wu</snm><fnm>L-J</fnm></au><au><snm>Hou</snm><fnm>X-D</fnm></au><au><snm>Chen</snm><fnm>Q-J</fnm></au><au><snm>Lai</snm><fnm>X</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au></aug><source>Mol Ecol</source><pubdate>2013</pubdate><volume>23</volume><issue>3</issue><fpage>522</fpage><lpage>533</lpage><xrefbib><pubid idtype="pmpid" link="fulltext">24320717</pubid></xrefbib></bibl><bibl id="B43"><title><p>Ancient hyenas highlight the old problem of estimating evolutionary rates</p></title><aug><au><snm>Shapiro</snm><fnm>B</fnm></au><au><snm>Ho</snm><fnm>SYW</fnm></au></aug><source>Mol Eco</source><pubdate>2014</pubdate><volume>23</volume><issue>3</issue><fpage>499</fpage><lpage>501</lpage><xrefbib><pubid idtype="doi">10.1111/mec.12621</pubid></xrefbib></bibl><bibl id="B44"><title><p>Time-dependent rates of molecular evolution</p></title><aug><au><snm>Ho</snm><fnm>SYW</fnm></au><au><snm>Lanfear</snm><fnm>R</fnm></au><au><snm>Bromham</snm><fnm>L</fnm></au><au><snm>Phillips</snm><fnm>MJ</fnm></au><au><snm>Soubrier</snm><fnm>J</fnm></au><au><snm>Rodrigo</snm><fnm>AG</fnm></au><au><snm>Cooper</snm><fnm>A</fnm></au></aug><source>Mol Ecol</source><pubdate>2011</pubdate><volume>20</volume><issue>15</issue><fpage>3087</fpage><lpage>3101</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2011.05178.x</pubid><pubid idtype="pmpid" link="fulltext">21740474</pubid></pubidlist></xrefbib></bibl><bibl id="B45"><title><p>Bayesian estimation of substitution rates from ancient DNA sequences with low information content</p></title><aug><au><snm>Ho</snm><fnm>SYW</fnm></au><au><snm>Lanfear</snm><fnm>R</fnm></au><au><snm>Phillips</snm><fnm>MJ</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au><au><snm>Thomas</snm><fnm>JA</fnm></au><au><snm>Kolokotronis</snm><fnm>S</fnm></au><au><snm>Shapiro</snm><fnm>B</fnm></au></aug><source>Syst Biol</source><pubdate>2011</pubdate><volume>60</volume><issue>3</issue><fpage>366</fpage><lpage>375</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/sysbio/syq099</pubid><pubid idtype="pmpid" link="fulltext">21296909</pubid></pubidlist></xrefbib></bibl><bibl id="B46"><title><p>Los Carnivoros de los Yacimientos Pleistocenos de la Sierra de Atapuerca</p></title><aug><au><snm>Garc&#237;a Garc&#237;a</snm><fnm>N</fnm></au></aug><source>T&#233;sis Doctoral Madrid</source><publisher>Spain: Universidad Complutense de Madrid</publisher><pubdate>2001</pubdate></bibl><bibl id="B47"><title><p>Bayesian selection of continuous-time Markov chain evolutionary models</p></title><aug><au><snm>Suchard</snm><fnm>MA</fnm></au><au><snm>Weiss</snm><fnm>RE</fnm></au><au><snm>Sinsheimer</snm><fnm>JS</fnm></au></aug><source>Mol Biol Evol</source><pubdate>2001</pubdate><volume>18</volume><fpage>1001</fpage><lpage>1013</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/oxfordjournals.molbev.a003872</pubid><pubid idtype="pmpid" link="fulltext">11371589</pubid></pubidlist></xrefbib></bibl><bibl id="B48"><aug><au><snm>Rambaut</snm><fnm>A</fnm></au><au><snm>Drummond</snm><fnm>AJ</fnm></au></aug><source>Tracer v1.5</source><publisher>1.5 edn</publisher><pubdate>2009</pubdate><note>
+   <url>http://tree.bio.ed.ac.uk/software/tracer/</url>
+</note></bibl><bibl id="B49"><title><p>Smooth skyride through a rough skyline: Bayesian coalescent-based inference of population dynamics</p></title><aug><au><snm>Minin</snm><fnm>VN</fnm></au><au><snm>Bloomquist</snm><fnm>EW</fnm></au><au><snm>Suchard</snm><fnm>MA</fnm></au></aug><source>Mol Biol Evol</source><pubdate>2008</pubdate><volume>25</volume><fpage>1459</fpage><lpage>1471</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1093/molbev/msn090</pubid><pubid idtype="pmcid">3302198</pubid><pubid idtype="pmpid" link="fulltext">18408232</pubid></pubidlist></xrefbib></bibl><bibl id="B50"><title><p>Assessing ancient DNA studies</p></title><aug><au><snm>Gilbert</snm><fnm>MTP</fnm></au><au><snm>Bandelt</snm><fnm>H-J</fnm></au><au><snm>Hofreiter</snm><fnm>M</fnm></au><au><snm>Barnes</snm><fnm>I</fnm></au></aug><source>Trends Ecol Evol</source><pubdate>2005</pubdate><volume>20</volume><issue>10</issue><fpage>541</fpage><lpage>544</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.tree.2005.07.005</pubid><pubid idtype="pmpid" link="fulltext">16701432</pubid></pubidlist></xrefbib></bibl><bibl id="B51"><title><p>Orbital scale vegetation change in Africa</p></title><aug><au><snm>Dupont</snm><fnm>L</fnm></au></aug><source>Quaternary Sci Rev</source><pubdate>2011</pubdate><volume>30</volume><issue>25&#8211;26</issue><fpage>3589</fpage><lpage>3602</lpage></bibl><bibl id="B52"><title><p>Holocene vegetation change and the mammal faunas of South America and Africa</p></title><aug><au><snm>De Vivo</snm><fnm>M</fnm></au><au><snm>Carmignotto</snm><fnm>AP</fnm></au></aug><source>J Biogeography</source><pubdate>2004</pubdate><volume>31</volume><fpage>943</fpage><lpage>957</lpage><xrefbib><pubid idtype="doi">10.1111/j.1365-2699.2004.01068.x</pubid></xrefbib></bibl><bibl id="B53"><title><p>Pollen Records, Late Pleistocene/Africa</p></title><aug><au><snm>Meadows</snm><fnm>ME</fnm></au><au><snm>Chase</snm><fnm>BM</fnm></au></aug><source>Encyclopaedia of Quaternary Science</source><publisher>Elsevier Science Ltd. North Holland</publisher><editor>Elias SA</editor><pubdate>2007</pubdate><fpage>2606</fpage><lpage>2613</lpage></bibl><bibl id="B54"><title><p>Ecological consequences of early Late Pleistocene megadroughts in tropical Africa</p></title><aug><au><snm>Cohen</snm><fnm>AS</fnm></au><au><snm>Stone</snm><fnm>JR</fnm></au><au><snm>Beuning</snm><fnm>KRM</fnm></au><au><snm>Park</snm><fnm>LE</fnm></au><au><snm>Reinthal</snm><fnm>PN</fnm></au><au><snm>Dettmar</snm><fnm>D</fnm></au><au><snm>Scholz</snm><fnm>CA</fnm></au><au><snm>Johnsor</snm><fnm>TC</fnm></au><au><snm>King</snm><fnm>JW</fnm></au><au><snm>Talbot</snm><fnm>MR</fnm></au><au><snm>Brown</snm><fnm>ET</fnm></au><au><snm>Ivory</snm><fnm>SJ</fnm></au></aug><source>Proc Natl Acad Sci U S A</source><pubdate>2007</pubdate><volume>104</volume><issue>42</issue><fpage>16422</fpage><lpage>16427</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1073/pnas.0703873104</pubid><pubid idtype="pmcid">2034256</pubid><pubid idtype="pmpid" link="fulltext">17925446</pubid></pubidlist></xrefbib></bibl><bibl id="B55"><title><p>Wet phases in the Sahara/Sahel region and human migration patterns in North Africa</p></title><aug><au><snm>Castaneda</snm><fnm>IS</fnm></au><au><snm>Mulitza</snm><fnm>S</fnm></au><au><snm>Schefuss</snm><fnm>E</fnm></au><au><snm>dos Santos</snm><fnm>RAL</fnm></au><au><snm>Damste</snm><fnm>JSS</fnm></au><au><snm>Schouten</snm><fnm>S</fnm></au></aug><source>Proc Natl Acad Sci U S A</source><pubdate>2009</pubdate><volume>106</volume><issue>48</issue><fpage>20159</fpage><lpage>20163</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1073/pnas.0905771106</pubid><pubid idtype="pmcid">2776605</pubid><pubid idtype="pmpid" link="fulltext">19910531</pubid></pubidlist></xrefbib></bibl><bibl id="B56"><title><p>The environmental context for the origins of modern human diversity: A synthesis of regional variability in African climate 150,000-30,000&#160;years ago</p></title><aug><au><snm>Blome</snm><fnm>MW</fnm></au><au><snm>Cohen</snm><fnm>AS</fnm></au><au><snm>Tryon</snm><fnm>CA</fnm></au><au><snm>Brooks</snm><fnm>AS</fnm></au><au><snm>Russell</snm><fnm>J</fnm></au></aug><source>J Hum Evol</source><pubdate>2012</pubdate><volume>62</volume><issue>5</issue><fpage>563</fpage><lpage>592</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1016/j.jhevol.2012.01.011</pubid><pubid idtype="pmpid" link="fulltext">22513381</pubid></pubidlist></xrefbib></bibl><bibl id="B57"><title><p>A humid corridor across the Sahara for the migration of early modern humans out of Africa 120,000&#160;years ago</p></title><aug><au><snm>Osborne</snm><fnm>AH</fnm></au><au><snm>Vance</snm><fnm>D</fnm></au><au><snm>Rohling</snm><fnm>EJ</fnm></au><au><snm>Barton</snm><fnm>N</fnm></au><au><snm>Rogerson</snm><fnm>M</fnm></au><au><snm>Fello</snm><fnm>N</fnm></au></aug><source>Proc Natl Acad Sci U S A</source><pubdate>2008</pubdate><volume>105</volume><issue>43</issue><fpage>16444</fpage><lpage>16447</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1073/pnas.0804472105</pubid><pubid idtype="pmcid">2575439</pubid><pubid idtype="pmpid" link="fulltext">18936490</pubid></pubidlist></xrefbib></bibl><bibl id="B58"><title><p>Carnivores and their prey in the Wezmeh cave (Kermanshah, Iran): a late Pleistocene refuge in the Zagros</p></title><aug><au><snm>Mashkour</snm><fnm>M</fnm></au><au><snm>Monchot</snm><fnm>H</fnm></au><au><snm>Trinkaus</snm><fnm>E</fnm></au><au><snm>Reyss</snm><fnm>J</fnm></au><au><snm>Biglari</snm><fnm>F</fnm></au><au><snm>Bailon</snm><fnm>S</fnm></au><au><snm>Heydari</snm><fnm>S</fnm></au><au><snm>Abdi</snm><fnm>K</fnm></au></aug><source>Int J Osteoarchaeology</source><pubdate>2008</pubdate><volume>19</volume><issue>6</issue><fpage>678</fpage><lpage>694</lpage></bibl><bibl id="B59"><title><p>Middle Pleistocene (Early Toringian) Carnivore Remains from Northern Israel</p></title><aug><au><snm>Tchernov</snm><fnm>E</fnm></au><au><snm>Tsoukala</snm><fnm>E</fnm></au></aug><source>Quaternary Res</source><pubdate>1997</pubdate><volume>48</volume><fpage>122</fpage><lpage>136</lpage><xrefbib><pubid idtype="doi">10.1006/qres.1997.1901</pubid></xrefbib></bibl><bibl id="B60"><title><p>Rivers influence the population genetic structure of bonobos (<it>Pan paniscus</it>)</p></title><aug><au><snm>Eriksson</snm><fnm>J</fnm></au><au><snm>Hohmann</snm><fnm>G</fnm></au><au><snm>Boesch</snm><fnm>C</fnm></au><au><snm>Vigilant</snm><fnm>L</fnm></au></aug><source>Mol Ecol</source><pubdate>2004</pubdate><volume>13</volume><issue>11</issue><fpage>3425</fpage><lpage>3435</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1111/j.1365-294X.2004.02332.x</pubid><pubid idtype="pmpid" link="fulltext">15488001</pubid></pubidlist></xrefbib></bibl><bibl id="B61"><title><p>Phylogeography, population history and conservation genetics of jaguars (<it>Panthera onca</it>, Mammalia, Felidae)</p></title><aug><au><snm>Eizirik</snm><fnm>E</fnm></au><au><snm>Kim</snm><fnm>JH</fnm></au><au><snm>Menotti-Raymond</snm><fnm>M</fnm></au><au><snm>Crawshaw</snm><fnm>PG</fnm></au><au><snm>O&#8217;Brien</snm><fnm>SJ</fnm></au><au><snm>Johnson</snm><fnm>WE</fnm></au></aug><source>Mol Ecol</source><pubdate>2001</pubdate><volume>10</volume><issue>1</issue><fpage>65</fpage><lpage>79</lpage><xrefbib><pubidlist><pubid idtype="doi">10.1046/j.1365-294X.2001.01144.x</pubid><pubid idtype="pmpid" link="fulltext">11251788</pubid></pubidlist></xrefbib></bibl><bibl id="B62"><title><p>Applications of mitochondrial DNA analysis in conservation- a critical review</p></title><aug><au><snm>Moritz</snm><fnm>C</fnm></au></aug><source>Mol Ecol</source><pubdate>1994</pubdate><volume>3</volume><fpage>401</fpage><lpage>411</lpage><xrefbib><pubid idtype="doi">10.1111/j.1365-294X.1994.tb00080.x</pubid></xrefbib></bibl><bibl id="B63"><title><p>Biochemical Genetic-Variation in Geographic Isolates of African and Asiatic Lions</p></title><aug><au><snm>O&#8217;Brien</snm><fnm>SJ</fnm></au><au><snm>Martenson</snm><fnm>JS</fnm></au><au><snm>Packer</snm><fnm>C</fnm></au><au><snm>Herbst</snm><fnm>L</fnm></au><au><snm>Devos</snm><fnm>V</fnm></au><au><snm>Joslin</snm><fnm>P</fnm></au><au><snm>Ottjoslin</snm><fnm>J</fnm></au><au><snm>Wildt</snm><fnm>DE</fnm></au><au><snm>Bush</snm><fnm>M</fnm></au></aug><source>Natl Geographic Res</source><pubdate>1987</pubdate><volume>3</volume><issue>1</issue><fpage>114</fpage><lpage>124</lpage></bibl><bibl id="B64"><title><p>Evidence for African origins of founders if the asiatic lion species survival plan</p></title><aug><au><snm>O&#8217;Brien</snm><fnm>SJ</fnm></au><au><snm>Joslin</snm><fnm>P</fnm></au><au><snm>Smith</snm><fnm>GL</fnm><suf>III</suf></au><au><snm>Wolfe</snm><fnm>R</fnm></au><au><snm>Schaffer</snm><fnm>N</fnm></au><au><snm>Heath</snm><fnm>E</fnm></au><au><snm>Ott-Joslin</snm><fnm>J</fnm></au><au><snm>Rawal</snm><fnm>PP</fnm></au><au><snm>Bhattacharjee</snm><fnm>KK</fnm></au><au><snm>Martenson</snm><fnm>JS</fnm></au></aug><source>Zoo Biol</source><pubdate>1987</pubdate><volume>6</volume><fpage>99</fpage><lpage>116</lpage><xrefbib><pubid idtype="doi">10.1002/zoo.1430060202</pubid></xrefbib></bibl><bibl id="B65"><title><p>Research needs for lion conservation in West and Central Africa</p></title><aug><au><snm>Bauer</snm><fnm>H</fnm></au><au><snm>de Iongh</snm><fnm>HH</fnm></au><au><snm>Princee</snm><fnm>FPG</fnm></au><au><snm>Ngantou</snm><fnm>D</fnm></au></aug><source>C R Biologies</source><pubdate>2003</pubdate><volume>326</volume><fpage>S112</fpage><lpage>S118</lpage><xrefbib><pubid idtype="pmpid">14558459</pubid></xrefbib></bibl><bibl id="B66"><title><p>Endangered classification for West African lions</p></title><aug><au><snm>Bauer</snm><fnm>H</fnm></au><au><snm>Nowell</snm><fnm>K</fnm></au><au><snm>Breitenmoser</snm><fnm>C</fnm></au><au><snm>Breitenmoser</snm><fnm>U</fnm></au><au><snm>Jackson</snm><fnm>P</fnm></au></aug><source>Cat News</source><pubdate>2004</pubdate><volume>41</volume><fpage>35</fpage><lpage>36</lpage></bibl><bibl id="B67"><title><p>The North African Barbary lion and the Atlas Lion Project</p></title><aug><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Haddane</snm><fnm>B</fnm></au></aug><source>Int Zoo News</source><pubdate>2002</pubdate><volume>49</volume><fpage>465</fpage><lpage>481</lpage></bibl><bibl id="B68"><title><p>Urgent call for further breeding of the relic zoo population of the critically endangered Barbary lion (<it>Panthera leo leo</it> Linnaeus 1758)</p></title><aug><au><snm>Burger</snm><fnm>J</fnm></au><au><snm>Hemmer</snm><fnm>H</fnm></au></aug><source>Eur J Wildl Res</source><pubdate>2006</pubdate><volume>52</volume><fpage>54</fpage><lpage>58</lpage><xrefbib><pubid idtype="doi">10.1007/s10344-005-0009-z</pubid></xrefbib></bibl><bibl id="B69"><title><p>Mitochondrial phylogeography illuminates the origin of the extinct Caspian tiger and its relationship to the Amur tiger</p></title><aug><au><snm>Driscoll</snm><fnm>CA</fnm></au><au><snm>Yamaguchi</snm><fnm>N</fnm></au><au><snm>Bar-Gal</snm><fnm>GK</fnm></au><au><snm>Roca</snm><fnm>AL</fnm></au><au><snm>Luo</snm><fnm>S</fnm></au><au><snm>Macdonald</snm><fnm>DW</fnm></au><au><snm>O&#8217;Brien</snm><fnm>SJ</fnm></au></aug><source>PLoS One</source><pubdate>2009</pubdate><volume>4</volume><issue>1</issue><fpage>e4125</fpage><xrefbib><pubidlist><pubid idtype="doi">10.1371/journal.pone.0004125</pubid><pubid idtype="pmcid">2624500</pubid><pubid idtype="pmpid" link="fulltext">19142238</pubid></pubidlist></xrefbib></bibl><bibl id="B70"><aug><au><snm>Jungius</snm><fnm>H</fnm></au></aug><source>Feasibility Study on the Possible Restoration of the Caspian Tiger in Central Asia</source><publisher>WWF</publisher><pubdate>2010</pubdate><note>
+   <url>http://www.wwf.ru/resources/publ/book/eng/460</url>
+</note></bibl><bibl id="B71"><title><p>Tigers could reappear in Kazakhstan under new plan</p></title><note>
+   <url>http://wwf.panda.org/?uNewsID=200017</url>
+</note></bibl><bibl id="B72"><aug><au><snm>Swofford</snm><fnm>DL</fnm></au></aug><source>PAUP*. Phylogenetic Analysis Using Parsimony (*and Other Methods) v4.0b10</source><publisher>Sunderland, Massachusetts: Sinauer Associates</publisher><pubdate>2002</pubdate></bibl><bibl id="B73"><title><p>Sorting out tiger (Panthera tigris): mitochondrial sequences, nuclear inserts, systematics, and conservation genetics</p></title><aug><au><snm>Cracraft</snm><fnm>J</fnm></au><au><snm>Feinstein</snm><fnm>J</fnm></au><au><snm>Vaughn</snm><fnm>J</fnm></au><au><snm>Helm-Bychowski</snm><fnm>K</fnm></au></aug><source>Anim Conserv</source><pubdate>1998</pubdate><volume>1</volume><fpage>139</fpage><lpage>150</lpage><xrefbib><pubid idtype="doi">10.1111/j.1469-1795.1998.tb00021.x</pubid></xrefbib></bibl></refgrp>
+	</bm>
+</art>

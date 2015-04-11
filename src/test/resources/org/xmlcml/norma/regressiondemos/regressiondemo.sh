@@ -5,6 +5,33 @@
 # clean old directories
 rm -rf temp*
 
+# create new CMDirectories
+
+# single XML file
+rm -rf cmdir_xml
+../../../../../../../target/appassembler/bin/norma -i singleFiles/test_xml_1471-2148-14-70.xml -o cmdir_xml
+
+rm -rf cmdirs_xml
+../../../../../../../target/appassembler/bin/norma -i \
+    singleFiles/test_xml_1471-2148-14-70.xml \
+    singleFiles/plosone_0115884.xml \
+	 -o cmdirs_xml
+
+rm -rf cmdirs_all
+../../../../../../../target/appassembler/bin/norma -i \
+    	singleFiles/test_xml_1471-2148-14-70.xml \
+	    singleFiles/test_pdf_1471-2148-14-70.pdf \
+    	singleFiles/plosone_0115884.xml \
+	 -o cmdirs_all
+
+# convert PDF to TXT (not yet working)
+../../../../../../../target/appassembler/bin/norma \
+    	-q cmdirs_all/test_pdf_1471-2148-14-70 \
+		-i fulltext.pdf \
+		-o fulltext.pdf.txt
+
+# create scholarly.html for 9 publishers
+
 echo norma acp
 cp -R quickscrapeDirs/acp/acp-15-1013-2015 temp-acp
 rm temp-acp/scholarly.html
