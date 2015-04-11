@@ -24,11 +24,13 @@ rm -rf cmdirs_all
     	singleFiles/plosone_0115884.xml \
 	 -o cmdirs_all
 
-# convert PDF to TXT (not yet working)
+# convert PDF to TXT (
 ../../../../../../../target/appassembler/bin/norma \
     	-q cmdirs_all/test_pdf_1471-2148-14-70 \
+		--xsl pdf2txt \
 		-i fulltext.pdf \
 		-o fulltext.pdf.txt
+ls -lt cmdirs_all/test_pdf_1471-2148-14-70/fulltext.pdf.txt
 
 # create scholarly.html for 9 publishers
 

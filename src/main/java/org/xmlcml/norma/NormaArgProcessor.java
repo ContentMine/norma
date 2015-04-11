@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +58,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	
 	public final static String DOCTYPE = "!DOCTYPE";
+	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html"});
 		
 	// options
 	private List<StringPair> charPairList;
@@ -70,6 +72,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	private boolean standalone;
+	private List<String> transformList;
 
 	public NormaArgProcessor() {
 		super();
@@ -131,6 +134,29 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
 
+	/** supersedes parseXsl.
+	 * 
+	 * @param option
+	 * @param argIterator
+	 */
+	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokenList = option.processArgs(tokens).getStringValues();
+		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
+		transformList = new ArrayList<String>();
+		// at present we allow only one option
+		for (String token : tokenList) {
+			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
+			if (xslDocument != null) {
+				xslDocumentList.add(xslDocument);
+			} else if (TRANSFORM_OPTIONS.contains(token)) {
+				transformList.add(token);
+			} else {
+				LOG.error("Cannot process transform token: "+token);
+			}
+		}
+	}
+
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		xslNameList = option.processArgs(tokens).getStringValues();
@@ -156,7 +182,22 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	// ===========run===============
 	
+	/** obsolete
+	 * 
+	 * @param option
+	 */
 	public void transform(ArgumentOption option) {
+		LOG.trace("TRANSFORM "+option.getVerbose());
+		if (option.getVerbose().equals("--xsl")) {
+			if (PDF2TXT.equals(option.getStringValue())) {
+				applyPDFConverterToQNList();
+			} else {
+				applyXSLDocumentListToQNList();
+			}
+		}
+	}
+		
+	public void runTransform(ArgumentOption option) {
 		LOG.trace("TRANSFORM "+option.getVerbose());
 		if (option.getVerbose().equals("--xsl")) {
 			if (PDF2TXT.equals(option.getStringValue())) {
