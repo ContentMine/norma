@@ -14,12 +14,18 @@ We must do this in two stages (later we may combine this)
 
 None of the files is in ContentMine (CM) directory format, so we have to create this. Taking a single file
 
-```e0115544.xml```
+```
+e0115544.xml
+```
 in the directory
-```src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/```
+```
+src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/
+```
 
 we can create a commandline:
-```norma -i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml -o target/plos10/```
+```
+norma -i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml -o target/plos10/
+```
 
 (You may  have to adjust the directories). We set the output (`-o`) to be the (new) CM directory parent `target/plos10/`, but you may
 want somewhere else. Running this gives debug output (this may vary):
@@ -33,7 +39,9 @@ so we have created `fulltext.xml` in `target/plos10/e0119090/`. Notice how the f
 
 We can use the same directory and create a `scholarly.html` from the `fulltext.xml`.
 
-```norma -q target/plos10/e0119090 --input fulltext.xml --output scholarly.html --xsl nlm2html```
+```
+norma -q target/plos10/e0119090 --input fulltext.xml --output scholarly.html --xsl nlm2html
+```
 
 read this as:
  * run `norma` as a transformer
@@ -79,6 +87,7 @@ Then we convert them. Now the topr directory is `target/plos10/`. It's not a CM 
 norma -q target/plos10/ -i fulltext.xml -o scholarly.html --xsl nlm2html
 ```
 which will create:
+
 ```
 localhost:norma pm286$ tree target/plos10
 target/plos10
