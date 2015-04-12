@@ -7,10 +7,9 @@ import java.util.List;
 import junit.framework.Assert;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.args.DefaultArgProcessor;
 import org.xmlcml.files.QuickscrapeNorma;
@@ -245,4 +244,90 @@ public class InputTest {
 		}
 	}
 	
+	@Test
+	public void testXMLSuffix() {
+		String args = 
+			"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0119090.xml"+
+			" -o target/plos10/";
+		Norma norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testXMLSuffixAndTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0119090.xml"+
+				" -o target/plos10/";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q target/plos10/e0119090/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testSeveralXMLTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0116215.xml"
+				+" -o target/plos10/";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q"
+				+ " target/plos100/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testRecursiveTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/"
+				+" -o target/plos10/"
+				+ " -r true"
+				+ " -e xml"
+				+ ""
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q"
+				+ " target/plos10/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	
+	@Test
+	// FIXME
+	@Ignore // cannot deal with nonconventional suffixes yet
+	public void testNXMLSuffixAndScholarlyHTML() {
+		String args = 
+			"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/PLoS_One_2015_Mar_6_10(3)_e0119090.nxml"+
+			" -o target/plos10/";
+		Norma norma = new Norma();
+		norma.run(args);
+	}
 }

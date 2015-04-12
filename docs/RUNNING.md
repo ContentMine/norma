@@ -1,5 +1,9 @@
 # RUNNING NORMA
 
+edited _20150412_
+
+(Note "QuickscrapeNorma" will change to "ContentMine" and "QSN" to "CM")
+
 Norma is run by:
 ```
 norma [args]
@@ -7,13 +11,14 @@ norma [args]
 where `[args]` are zero or more arguments. If `norma` is run with no arguments
 ```norma```
 then she outputs all the possible arguments with full description. (This is controlled by 
-```src/main/resources/org/xmlxml/norma/args.xml`` - see INSTALLING.md for details).
+```src/main/resources/org/xmlxml/norma/args.xml`` ).
 
 `norma` is designed to use a `QuickscrapeNorma` (or `QSNorma`) directory as the primary input/output mechanism
 (see QUICKSCRAPE_NORMA.md). This directory holds conventionally named files which are used for input and output
 by `norma` and `AMI` plugins. `norma` will generally not create output files which are not contained in a `QSNorma`.
 
 ## Creating a `QSNorma` directory
+
 The commonest way to do this is to read an `{XML|HTML|PDF}` file into `norma` and create a `QSNorma` directory with a
 *copy* of the input file. (This is because some input files may be read-only, either because of permissions or because
 they are received as `inputStream`s. Example:

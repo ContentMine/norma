@@ -1,17 +1,8 @@
 package org.xmlcml.norma;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.pubstyle.PubstyleReader;
-import org.xmlcml.xml.XMLUtil;
 
 public class Norma {
 
