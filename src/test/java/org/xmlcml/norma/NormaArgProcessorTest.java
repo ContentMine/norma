@@ -114,7 +114,7 @@ public class NormaArgProcessorTest {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String args = "-q "+container0115884.toString()+" -x nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+container0115884.toString()+" --xsl nlm2html --input fulltext.xml --output scholarly.html";
 		Norma norma = new Norma();
 		norma.run(args);
 		QuickscrapeNormaList quickscrapeNormaList = norma.getArgProcessor().getQuickscrapeNormaList();

@@ -319,6 +319,11 @@ public class InputTest {
 		norma.run(args);
 	}
 	
+	@Test
+	public void testOutputWorks() {
+		
+	}
+	
 	
 	@Test
 	// FIXME

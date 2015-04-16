@@ -1,4 +1,4 @@
-# PLoS Resource
+# PLoS Resource and Species Tutorial
 
 Currently the PLoS scraper is not deployed so we have downloaded 100 random files from PLoSONE from the (Europe) PMC web site. This shows how they are transformed to `scholarly.html` for use by `ami-plugins`. 
 
@@ -71,9 +71,9 @@ localhost:norma pm286$ ls src/test/resources/org/xmlcml/norma/pubstyle/plosone/p
 e0115544.xml	e0116596.xml	e0117956.xml	e0118685.xml	e0118757.xml	e0119090.xml
 e0116215.xml	e0116903.xml	e0118659.xml	e0118692.xml	e0118792.xml
 ```
-we want to convert them to `schilarly.html` :
+we want to convert them to `scholarly.html` :
 ```
-norma --input src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/ --output target/plos10/  --recursive true --extensions xml
+norma --input src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/ --output target/plos10/  --extensions xml
 ```
 This means 
  * take the `--input` as the given directory
@@ -125,6 +125,8 @@ target/plos10
     ├── fulltext.xml
     └── scholarly.html
 ```
+
+The results of this will be used in SpeciesTutorial.md
 
 
  
