@@ -200,8 +200,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.xml-cml</groupId>
-			<artifactId>html</artifactId>
-			<version>0.2-SNAPSHOT</version>
+			<artifactId>contentmine</artifactId>
+			<version>0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.saxon</groupId>

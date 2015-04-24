@@ -3,7 +3,6 @@ package org.xmlcml.norma.pubstyle.bmc;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,8 +13,8 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.euclid.Real2;
-import org.xmlcml.files.QuickscrapeNorma;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGPath;
@@ -156,26 +155,26 @@ public class BMCTest {
 	 */
 	@Test 
 	public void testTransformBMCXMLToHtml() throws Exception {
-		// this is a valid QSNorma directory
-		QuickscrapeNorma qsNorma = new QuickscrapeNorma(Fixtures.BMC_15_1_511_DIR);
+		// this is a valid CMDir directory
+		CMDir cmDir = new CMDir(Fixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
-		Assert.assertEquals("reserved files", 4, qsNorma.getReservedFileList().size());
-		Assert.assertNotNull("fulltext.xml", qsNorma.getExistingFulltextXML());
-		Assert.assertNotNull("fulltext.html", qsNorma.getExisitingFulltextHTML());
-		Assert.assertNotNull("fulltext.pdf", qsNorma.getExisitingFulltextPDF());
-		Assert.assertNotNull("results.json", qsNorma.getExistingResultsJSON());
+		Assert.assertEquals("reserved files", 4, cmDir.getReservedFileList().size());
+		Assert.assertNotNull("fulltext.xml", cmDir.getExistingFulltextXML());
+		Assert.assertNotNull("fulltext.html", cmDir.getExistingFulltextHTML());
+		Assert.assertNotNull("fulltext.pdf", cmDir.getExistingFulltextPDF());
+		Assert.assertNotNull("results.json", cmDir.getExistingResultsJSON());
 		// these files don't exist yet
-		Assert.assertNull("scholarly.html", qsNorma.getExistingScholarlyHTML());
-		Assert.assertNull("results.xml", qsNorma.getExistingResultsXML());
+		Assert.assertNull("scholarly.html", cmDir.getExistingScholarlyHTML());
+		Assert.assertNull("results.xml", cmDir.getExistingResultsDir());
 		// make a copy for the tests
-		File qsNormaDir = new File("target/bmc/15_1_511");
+		File cmDir1 = new File("target/bmc/15_1_511");
 		// clean any existing files
-		if (qsNormaDir.exists()) FileUtils.forceDelete(qsNormaDir);
-		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, qsNormaDir);
+		if (cmDir1.exists()) FileUtils.forceDelete(cmDir1);
+		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, cmDir1);
 		// now run the transformation
 		String[] args = {
-				// the qsNorma directory
-				"--quickscrapeNorma", qsNormaDir.toString(),
+				// the cmDir directory
+				"--quickscrapeNorma", cmDir1.toString(),
 				// we will transform the fulltext.xml into ...
 				"--input", "fulltext.xml",
 				// a new scholarly.html
@@ -186,14 +185,14 @@ public class BMCTest {
 		// the primary entry point
 		Norma norma = new Norma();
 		// run() calls parseArgs() which:
-		// parses all arguments and checks for consistency of qsNorma
+		// parses all arguments and checks for consistency of cmDir
 		// then run() executes all arguments with runMethod. In this case it's transform() (for XSL)
 		norma.run(args);
 		// this will have created a new scholarlyHtml . The remaing commands are just to verify its content
 		// this makes a new object but doesn't affect the filestore
-		QuickscrapeNorma qsNormaNew = new QuickscrapeNorma(qsNormaDir);
+		CMDir cmDirNew = new CMDir(cmDir1);
 		// there should be a new scholarly.html
-		File scholarlyHtml = qsNormaNew.getExistingScholarlyHTML();
+		File scholarlyHtml = cmDirNew.getExistingScholarlyHTML();
 		Assert.assertNotNull("scholarly.html", scholarlyHtml);
 		// parse it into an HtmlElement we can query
 		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
@@ -213,21 +212,21 @@ public class BMCTest {
 	 */
 	@Test 
 	public void testTransformSeveralXMLToHtml() throws Exception {
-		File[] qsnFiles = {
-				 Fixtures.TEST_ELIFE_QSN0,
-				 Fixtures.TEST_F1000_QSN0,
-				 Fixtures.TEST_FRONTIERS_QSN0,
-				 Fixtures.TEST_MDPI_QSN0,
-				 Fixtures.TEST_PEERJ_QSN0,
-				 Fixtures.TEST_PENSOFT_QSN0,
-				 Fixtures.TEST_PLOSONE_QSN0
+		File[] cmFiles = {
+				 Fixtures.TEST_ELIFE_CMDIR0,
+				 Fixtures.TEST_F1000_CMDIR0,
+				 Fixtures.TEST_FRONTIERS_CMDIR0,
+				 Fixtures.TEST_MDPI_CMDIR0,
+				 Fixtures.TEST_PEERJ_CMDIR0,
+				 Fixtures.TEST_PENSOFT_CMDIR0,
+				 Fixtures.TEST_PLOSONE_CMDIR0
 		};
-		int nqs = qsnFiles.length;
+		int nqs = cmFiles.length;
 		File[] targetFiles = new File[nqs];
 		for (int i = 0; i < nqs; i++) {
-			QuickscrapeNorma qsNorma = new QuickscrapeNorma(qsnFiles[i]);
+			CMDir cmDir = new CMDir(cmFiles[i]);
 			targetFiles[i] = new File("target/test/file"+i);
-			qsNorma.copyTo(targetFiles[i], true);
+			cmDir.copyTo(targetFiles[i], true);
 		}
 		String[] args = {
 				"--quickscrapeNorma", 
@@ -244,15 +243,6 @@ public class BMCTest {
 		};
 		Norma norma = new Norma();
 		norma.run(args);
-//		QuickscrapeNorma qsNormaNew = new QuickscrapeNorma(qsNormaDir);
-//		Assert.assertNotNull("scholarly.html", scholarlyHtml);
-//		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
-//		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-//		Assert.assertEquals("div elements "+divElements.size(), 219, divElements.size()); 
-//		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");
-//		Assert.assertEquals("span elements "+spanElements.size(), 1054, spanElements.size()); 
-//		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
-//		Assert.assertEquals("p elements "+pElements.size(), 147, pElements.size()); 
 	}
 
 }

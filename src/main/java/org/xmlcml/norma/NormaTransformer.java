@@ -2,7 +2,6 @@ package org.xmlcml.norma;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,14 +14,11 @@ import javax.xml.transform.TransformerException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
-import org.xmlcml.args.ArgumentOption;
-import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.cmine.args.ArgumentOption;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
-import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
-import org.xmlcml.xml.XMLUtil;
 
 public class NormaTransformer {
 	
@@ -36,7 +32,7 @@ public class NormaTransformer {
 	private static final String TXT2HTML = "txt2html";
 	
 	private NormaArgProcessor normaArgProcessor;
-	private QuickscrapeNorma currentQuickscrapeNorma;
+	private CMDir currentCMDir;
 	private File inputFile;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	String outputTxt;
@@ -45,10 +41,10 @@ public class NormaTransformer {
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
-		this.currentQuickscrapeNorma = argProcessor.getCurrentQuickscrapeNorma();
+		this.currentCMDir = argProcessor.getCurrentCMDir();
 	}
 
-	/** transforms currentQuickscrapeNorma.
+	/** transforms currentCMDir.
 	 * 
 	 * output is either:
 	 *   outputTxt (from PDF2TXT)
@@ -58,8 +54,7 @@ public class NormaTransformer {
 	 * @param option
 	 */
 	void transform(ArgumentOption option) {
-		inputFile = normaArgProcessor.checkAndGetInputFile(currentQuickscrapeNorma);
-//		outputFile = normaArgProcessor.checkAndGetOutputFile(currentQuickscrapeNorma);
+		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
 		LOG.trace("TRANSFORM "+option.getVerbose());
 		outputTxt = null;
 		htmlElement = null;
@@ -113,7 +108,7 @@ public class NormaTransformer {
 				String xmlString = transform(xslDocument);
 				xmlStringList.add(xmlString);
 			} catch (IOException e) {
-				LOG.error("Cannot transform "+currentQuickscrapeNorma+"; "+e);
+				LOG.error("Cannot transform "+currentCMDir+"; "+e);
 			}
 		}
 		return xmlStringList;

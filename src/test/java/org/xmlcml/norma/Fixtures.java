@@ -55,23 +55,24 @@ public class Fixtures {
 	public final static File TEST_NUMBERED_DIR = new File(Fixtures.TEST_MISC_DIR, "numbered/");
 	
 	public final static File TEST_ELIFE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "elife");
-	public final static File TEST_ELIFE_QSN0 = new File(Fixtures.TEST_ELIFE_DIR, "e04407");
+	public final static File TEST_ELIFE_CMDIR0 = new File(Fixtures.TEST_ELIFE_DIR, "e04407");
 	
 	public final static File TEST_F1000_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "f1000research");
-	public final static File TEST_F1000_QSN0 = new File(Fixtures.TEST_F1000_DIR, "3-190");
+	public final static File TEST_F1000_CMDIR0 = new File(Fixtures.TEST_F1000_DIR, "3-190");
 	
 	public final static File TEST_FRONTIERS_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "frontiers");
-	public final static File TEST_FRONTIERS_QSN0 = new File(Fixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
+	public final static File TEST_FRONTIERS_CMDIR0 = new File(Fixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
 	
 	public final static File TEST_MDPI_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "mdpi");
-	public final static File TEST_MDPI_QSN0 = new File(Fixtures.TEST_MDPI_DIR, "04-00932");
+	public final static File TEST_MDPI_CMDIR0 = new File(Fixtures.TEST_MDPI_DIR, "04-00932");
 	
 	public final static File TEST_PEERJ_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "peerj");
-	public final static File TEST_PEERJ_QSN0 = new File(Fixtures.TEST_PEERJ_DIR, "727");
+	public final static File TEST_PEERJ_CMDIR0 = new File(Fixtures.TEST_PEERJ_DIR, "727");
 	
 	public final static File TEST_PENSOFT_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "pensoft");
-	public final static File TEST_PENSOFT_QSN0 = new File(Fixtures.TEST_PENSOFT_DIR, "4478");
+	public final static File TEST_PENSOFT_CMDIR0 = new File(Fixtures.TEST_PENSOFT_DIR, "4478");
 	
-	public final static File TEST_PLOSONE_QSN0 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
+	public final static File TEST_PLOSONE_CMDIR0 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
+	
 	
 }

@@ -22,7 +22,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.files.QuickscrapeNorma;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.xml.XMLUtil;
@@ -168,7 +168,7 @@ nu.xom.Document doc = builder.build(fXmlFile);
 		return baos.toString();
 	}
 
-	public HtmlElement transform(QuickscrapeNorma qd, Document xslDocument) throws Exception {
+	public HtmlElement transform(CMDir qd, Document xslDocument) throws Exception {
 		HtmlElement htmlElement = null;
 		if (qd == null) {
 			throw new RuntimeException("null QD");

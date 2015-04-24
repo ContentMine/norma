@@ -23,12 +23,11 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
-import org.xmlcml.args.ArgIterator;
-import org.xmlcml.args.ArgumentOption;
-import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.args.StringPair;
-import org.xmlcml.files.QuickscrapeNorma;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.cmine.args.ArgIterator;
+import org.xmlcml.cmine.args.ArgumentOption;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.args.StringPair;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.xml.XMLUtil;
 
 /** 
@@ -54,7 +53,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	
 	public final static String DOCTYPE = "!DOCTYPE";
-	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html"});
+	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html", "pdf2txt"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -191,12 +190,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	private void outputSpecifiedFormat() {
 		getOrCreateNormaTransformer();
-		currentQuickscrapeNorma.writeFile(normaTransformer.outputTxt, QuickscrapeNorma.FULLTEXT_PDF_TXT);
+		currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
 		if (normaTransformer.htmlElement != null) {
-			currentQuickscrapeNorma.writeFile(normaTransformer.htmlElement.toXML(), QuickscrapeNorma.FULLTEXT_HTML);
+			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), CMDir.FULLTEXT_HTML);
 		}
 		if (normaTransformer.xmlStringList != null && normaTransformer.xmlStringList.size() > 0) {
-			currentQuickscrapeNorma.writeFile(normaTransformer.xmlStringList.get(0), QuickscrapeNorma.SCHOLARLY_HTML);
+			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), CMDir.SCHOLARLY_HTML);
 		}
 	}
 
@@ -208,71 +207,71 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	File checkAndGetInputFile(QuickscrapeNorma quickscrapeNorma) {
+	File checkAndGetInputFile(CMDir cmDir) {
 		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!QuickscrapeNorma.isReservedFilename(inputName)) {
+		if (!CMDir.isReservedFilename(inputName)) {
 			throw new RuntimeException("Input must be reserved file; found: "+inputName);
 		}
-		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
+		File inputFile = cmDir.getExistingReservedFile(inputName);
 		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file "+inputName+" in directory "+quickscrapeNorma.getDirectory());
+			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cmDir.getDirectory());
 		}
 		return inputFile;
 	}
 
-	private void createQNListFromInputList() {
+	private void createCMDirListFromInputList() {
 		// proceed unless there is a single reserved file for input
-		if (QuickscrapeNorma.isNonEmptyNonReservedInputList(inputList)) {
+		if (CMDir.isNonEmptyNonReservedInputList(inputList)) {
 //			if (output != null) {
-				LOG.debug("CREATING QN FROM INPUT:"+inputList);
+				LOG.debug("CREATING CMDir FROM INPUT:"+inputList);
 				getOrCreateOutputDirectory();
-				ensureQuickscrapeNormaList();
-				createNewQNsAndAddToList();
+				ensureCMDirList();
+				createNewCMDirsAndAddToList();
 //			}
 		}
 	}
 
-	private void createNewQNsAndAddToList() {
-		ensureQuickscrapeNormaList();
+	private void createNewCMDirsAndAddToList() {
+		ensureCMDirList();
 		for (String filename : inputList) {
 			try {
-				QuickscrapeNorma qn = createQuickscrapeNorma(filename);
-				if (qn != null) {
-					quickscrapeNormaList.add(qn);
+				CMDir cmDir = createCMDir(filename);
+				if (cmDir != null) {
+					cmDirList.add(cmDir);
 				}
 			} catch (IOException e) {
-				LOG.error("Failed to create QN: "+filename+"; "+e);
+				LOG.error("Failed to create CMDir: "+filename+"; "+e);
 			}
 		}
 	}
 
-	private QuickscrapeNorma createQuickscrapeNorma(String filename) throws IOException {
-		QuickscrapeNorma quickscrapeNorma = null;
+	private CMDir createCMDir(String filename) throws IOException {
+		CMDir cmDir = null;
 		File file = new File(filename);
 		if (file.isDirectory()) {
 			LOG.error("should not have any directories in inputList: "+file);
 		} else {
 			if (output != null) {
 				String name = FilenameUtils.getName(filename);
-				if (QuickscrapeNorma.isReservedFilename(name)) {
-					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
+				if (CMDir.isReservedFilename(name)) {
+					LOG.error(name+" is reserved for CMDir: (check that inputs are not already in a CMDir) "+file.getAbsolutePath());
 				}
-				String qnFilename = QuickscrapeNorma.getQNReservedFilenameForExtension(name);
+				String cmFilename = CMDir.getCMDirReservedFilenameForExtension(name);
 				String dirName = FilenameUtils.removeExtension(name);
-				File qnDir = new File(output, dirName);
-				quickscrapeNorma = new QuickscrapeNorma(qnDir);
-				quickscrapeNorma.createDirectory(qnDir, false);
-				File destFile = quickscrapeNorma.getReservedFile(qnFilename);
+				File cmDirFile = new File(output, dirName);
+				cmDir = new CMDir(cmDirFile);
+				cmDir.createDirectory(cmDirFile, false);
+				File destFile = cmDir.getReservedFile(cmFilename);
 				if (destFile != null) {
 					FileUtils.copyFile(file, destFile);
-					LOG.debug("QNF "+qnFilename+"; "+qnDir);
+					LOG.trace("CMD "+cmFilename+"; "+cmDirFile);
 				}
 			}
 		}
-		return quickscrapeNorma;
+		return cmDir;
 	}
 
 	private void getOrCreateOutputDirectory() {
@@ -280,19 +279,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			File outputDir = new File(output);
 			if (outputDir.exists()) {
 				if (!outputDir.isDirectory()) {
-					throw new RuntimeException("quickscrapeNormaRoot "+outputDir+" must be a directory");
+					throw new RuntimeException("cmDirRoot "+outputDir+" must be a directory");
 				}
 			} else {
 				outputDir.mkdirs();
 			}
 		}
-	}
-
-	private File checkAndGetOutputFile(QuickscrapeNorma quickscrapeNorma) {
-		if (!QuickscrapeNorma.isReservedFilename(output)) {
-			throw new RuntimeException("output must be reserved file; found: "+output);
-		}
-		return quickscrapeNorma.getReservedFile(output);
 	}
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
@@ -306,7 +298,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			} catch (FileNotFoundException e) { /* hide exception*/}
 		}
 		if (stylesheetDocument == null) {
-			LOG.debug("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
+			// this could happen when we use "pdf2txt" , etc
+			LOG.trace("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
 		}
 		return stylesheetDocument;
 	}
@@ -350,7 +343,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			for (Element stylesheet : stylesheetList) {
 				stylesheetByNameMap.put(stylesheet.getAttributeValue(NAME), stylesheet.getValue());
 			}
-			LOG.debug(stylesheetByNameMap);
+			LOG.trace(stylesheetByNameMap);
 		} catch (Exception e) {
 			LOG.error("Cannot read "+STYLESHEET_BY_NAME_XML+"; "+e);
 		}
@@ -400,11 +393,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	 */
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
-		createQNListFromInputList();
+		createCMDirListFromInputList();
 	}
 
-	public QuickscrapeNorma getCurrentQuickscrapeNorma() {
-		return currentQuickscrapeNorma;
+	public CMDir getCurrentCMDir() {
+		return currentCMDir;
 	}
 
 	public List<Document> getXslDocumentList() {

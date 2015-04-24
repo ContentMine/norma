@@ -2,6 +2,16 @@
 
 _edited 20150326_
 _edited 20150412_
+_ediedt 201504016_
+
+================================
+NOTE: Norma does not do all transformations. The current position is:
+- main branch does XML to scholarly HTML only
+- petermr / dev fork/branch does PDF 2 TXT based on PDFBox.
+
+
+The PDF2HTML code is in there but it's messy. I'd guess a week or two to get the logic working, but the results will be very variable depending on the type of PDF.
+================================
 
 A tool to convert a variety of inputs into normalized, tagged, XHTML (with embedded/linked SVG and PNG where
 appropriate). The initial emphasis is on scholarly publications but much of the technology is general.  
