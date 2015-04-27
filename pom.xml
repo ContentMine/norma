@@ -3,12 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-
+<!-- 
 	<parent>
 		<groupId>uk.ac.cam.ch.wwmm</groupId>
 		<artifactId>wwmm-parent</artifactId>
 		<version>4</version>
 	</parent>
+-->
 
 	<groupId>org.xml-cml</groupId>
 	<artifactId>norma</artifactId>
@@ -225,11 +226,13 @@
 			<artifactId>svg2xml</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>org.xml-cml</groupId>
 			<artifactId>svgbuilder</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
+		-->
 		
 		<!--  to avoid Xerces Hell? 
 		http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
