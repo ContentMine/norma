@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-note">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="pmc">F1000Research</journal-id>
+            <journal-title-group>
+                <journal-title>F1000Research</journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">2046-1402</issn>
+            <publisher>
+                <publisher-name>F1000Research</publisher-name>
+                <publisher-loc>London, UK</publisher-loc>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.12688/f1000research.4767.2</article-id>
+            <article-categories>
+                <subj-group subj-group-type="heading">
+                    <subject>Research Note</subject>
+                </subj-group>
+                <subj-group>
+                    <subject>Articles</subject>
+                    <subj-group>
+                        <subject>Evolutionary Ecology</subject>
+                    </subj-group>
+                    <subj-group>
+                        <subject>Marine &amp; Freshwater Ecology</subject>
+                    </subj-group>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Longevity of Atlantic Sharpnose Sharks 
+                    <italic>Rhizoprionodon terraenovae</italic> and Blacknose Sharks 
+                    <italic>Carcharhinus acronotus</italic> in the western North Atlantic Ocean based on tag-recapture data and direct age estimates</article-title>
+                <fn-group content-type="pub-status">
+                    <fn>
+                        <p>v2; ref status: indexed, 
+                            <ext-link ext-link-type="uri" xlink:href="http://f1000r.es/4fj">http://f1000r.es/4fj</ext-link>
+                        </p>
+                    </fn>
+                </fn-group>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" corresp="yes">
+                    <name>
+                        <surname>Frazier</surname>
+                        <given-names>Bryan S.</given-names>
+                    </name>
+                    <xref ref-type="corresp" rid="c1">a</xref>
+                    <xref ref-type="aff" rid="a1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" corresp="no">
+                    <name>
+                        <surname>Driggers III</surname>
+                        <given-names>William B.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="a2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" corresp="no">
+                    <name>
+                        <surname>Ulrich</surname>
+                        <given-names>Glenn F.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="a1">1</xref>
+                </contrib>
+                <aff id="a1">
+                    <label>1</label>South Carolina Department of Natural Resources, Marine Resources Research Institute, Charleston, SC, 29412, USA</aff>
+                <aff id="a2">
+                    <label>2</label>National Marine Fisheries Service, Southeast Fisheries Science Center, Mississippi Laboratories, Pascagoula, MS, 39567, USA</aff>
+            </contrib-group>
+            <author-notes>
+                <corresp id="c1">
+                    <label>a</label>
+                    <email xlink:href="mailto:frazierb@dnr.sc.gov">frazierb@dnr.sc.gov</email>
+                </corresp>
+                <fn fn-type="con">
+                    <p>BF, WD and GU were involved with longline survey operations as well as tagging and recapturing the sharks. BF and WD aged specimens. BF and WD prepared manuscript for publication, and all authors were involved in revising the draft manuscript and agree to the final content.</p>
+                </fn>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>27</day>
+                <month>1</month><year>2015</year>
+            </pub-date>
+            <pub-date pub-type="collection"><year>2014</year>
+            </pub-date><volume>3</volume>
+            <elocation-id>190</elocation-id>
+            <history>
+                <date date-type="accepted">
+                    <day>26</day>
+                    <month>1</month><year>2015</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Copyright: © 2015 Frazier BS et al.</copyright-statement>
+                <copyright-year>2015</copyright-year>
+                <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                </license>
+                <license license-type="open-access" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">
+                    <license-p>Data associated with the article are available under the terms of the Creative Commons Zero "No rights reserved" data waiver (CC0 1.0 Public domain dedication).</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="pdf" xlink:href="f1000research-3-5743.pdf"/>
+            <abstract>
+                <p>Longevity of 
+                    <italic>Rhizoprionodon terraenovae</italic> and 
+                    <italic>Carcharhinus acronotus</italic> in the western North Atlantic Ocean was examined using direct age estimates from vertebral sections and tag-recapture data. Time-at-liberty ranged from 7.7-14.0 years (mean =10.1) for 
+                    <italic>R. terraenovae</italic> and 10.9-12.8 years (mean =11.9) for 
+                    <italic>C. acronotus</italic>. Maximum estimated longevity was determined to be 19.8 years through tag-recapture data and 18.5 years from direct age estimates for 
+                    <italic>R. terraenovae</italic> and 22.8 years through tag-recapture data and 20.5 years through direct age estimates for 
+                    <italic>C. acronotus</italic>. These longevity estimates represent a large increase over previous estimates and may have significant effects on analyses that depend on longevity including lifetime fecundity, mortality rates, demographic analyses and stock assessments.</p>
+            </abstract>
+            <kwd-group kwd-group-type="author">
+                <kwd>Rhizoprionodon</kwd>
+                <kwd>Carcharhinus</kwd>
+                <kwd>shark</kwd>
+                <kwd>longevity</kwd>
+            </kwd-group>
+            <funding-group>
+                <award-group id="fund-1">
+                    <funding-source>Federal Aid in Sport fish Restoration Act</funding-source>
+                </award-group>
+                <award-group id="fund-2">
+                    <funding-source>Southeast Area Monitoring and Assessment Program</funding-source>
+                </award-group>
+                <award-group id="fund-3">
+                    <funding-source>Atlantic States Marine Fisheries Commission</funding-source>
+                </award-group>
+                <award-group id="fund-4">
+                    <funding-source>National Marine Fisheries Federal Assistance Program</funding-source>
+                </award-group>
+                <award-group id="fund-5">
+                    <funding-source>South Carolina State Recreational Fisheries Advisory Committee</funding-source>
+                </award-group>
+                <funding-statement>These data were based on a 20 year longline survey and numerous grants have funded the survey over the years. Funding for the longline survey was provided by the Federal Aid in Sport fish Restoration Act, the Southeast Area Monitoring and Assessment Program, the Atlantic States Marine Fisheries Commission, the National Marine Fisheries Federal Assistance Program, and the South Carolina State Recreational Fisheries Advisory Committee.</funding-statement>
+                <funding-statement>
+					
+                    <italic>The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</italic>
+				</funding-statement>
+            </funding-group>
+        </article-meta>
+        <notes notes-type="version-changes">
+            <sec>
+                <label>Revised</label>
+                <title>Amendments from Version 1</title>
+                <p>This research note has been updated to incorporate suggestions by the reviewers. Figures have been added of the oldest aged vertebra section for each species. All mention of Faben's theoretical maximum age have also been removed from the note. An additional Rhizoprionodon terraenovae recapture was encountered and those data were added to the research note (Shark L2881). Also background information about the number of each species tagged and recaptured was added.</p>
+            </sec>
+        </notes>
+    </front>
+    <body>
+        <sec sec-type="intro">
+            <title>Introduction</title>
+            <p>Tag-recapture data grant researchers the opportunity to synthesize a vast array of information for species they are studying. Sharks, in particular, are well suited for tagging studies due to their migratory behavior, longevity, and relatively large size, which allows tagging at all life stages (
+                <xref ref-type="bibr" rid="ref-2">Bonham 
+                    <italic>et al.</italic>, 1949</xref>). Valuable information gained from recapture data includes greater understanding of species-specific migratory patterns, stock structure, spatial and temporal distribution, site fidelity/residence times, and life histories (
+                <xref ref-type="bibr" rid="ref-13">Kohler &amp; Turner, 2001</xref>).</p>
+            <p>Among life history parameters needed to best manage populations of fishes, robust longevity estimates are of paramount importance, particularly for iteroparous species, such as sharks. For example, assuming age at maturity, reproductive periodicity, and brood size are constant, the lifetime fecundity of a given species is directly linked to its lifespan. Longevity estimates for sharks are generally derived from von Bertalanffy Growth Function (VBGF) parameter estimates (i.e. growth constant); however, VBGF parameter estimates can be heavily affected by low sample sizes, incomplete sampling among size classes and/or difficulties associated with age estimation of large individuals (
+                <xref ref-type="bibr" rid="ref-11">Goldman, 2004</xref>; 
+                <xref ref-type="bibr" rid="ref-9">Francis 
+                    <italic>et al.</italic>, 2007</xref>). Obtaining accurate longevity estimates can be hampered by the low probability of catching older individuals as they represent a small portion of the entire population, difficulty associated with capturing large specimens that are more capable of escaping gear than smaller conspecifics, and the reduction of older individuals in the population due to fishing pressure (
+                <xref ref-type="bibr" rid="ref-1">Bishop 
+                    <italic>et al.</italic>, 2006</xref>). Additionally, age underestimation has been documented in multiple shark species including long-lived species such as the Porbeagle, 
+                <italic>Lamna nasus</italic> (Bonnaterre, 1788) (
+                <xref ref-type="bibr" rid="ref-9">Francis 
+                    <italic>et al.</italic>, 2007</xref>) and the Australian School Shark, 
+                <italic>Galeorhinus galeus</italic> (L. 1758) (
+                <xref ref-type="bibr" rid="ref-12">Kalish &amp; Johnston, 2001</xref>), and species with intermediate life histories such as the Bonnethead, 
+                <italic>Sphyrna tiburo</italic> (L. 1758) (
+                <xref ref-type="bibr" rid="ref-10">Frazier 
+                    <italic>et al.</italic>, 2014</xref>). Due to the above factors, tag-recapture records, when available, are the most reliable source of longevity data as maximum time-at-liberty for any individual within the population would represent the highest directly known longevity. Based on tag-recapture data and direct age estimates, herein we report on the longevity of Atlantic Sharpnose Sharks 
+                <italic>Rhizoprionodon terraenovae</italic> (Richardson, 1836) and Blacknose Sharks 
+                <italic>Carcharhinus acronotus</italic> (Poey, 1860), both of which are common in the coastal waters off the southeastern United States.</p>
+        </sec>
+        <sec sec-type="methods">
+            <title>Methods</title>
+            <p>Sharks were captured and tagged during survey operations conducted by the South Carolina Department of Natural Resources Adult Red Drum and Coastal Shark Longline Program (SCDNR) (see 
+                <xref ref-type="bibr" rid="ref-15">Ulrich 
+                    <italic>et al.</italic>, 2007</xref> for longline protocol). Collection, handling and tagging of specimens was authorized and controlled under the SCDNR scientific permit issued to employees of SCDNR.</p>
+            <p>Upon capture, the fork length (FL) and sex of each shark was recorded. For those sharks deemed to be in good health, a Hallprint
+                <sup>©</sup> nylon dart tag, labeled with unique identifying numbers, was inserted into the dorsal musculature at the base of the first dorsal fin prior to release. As tagged sharks were at liberty in the wild, recaptured specimens were reported by a number of sources, including recreational anglers, commercial fishermen and SCDNR. Estimated measurements at recapture were obtained from recreational and commercial fishermen and direct measurements were recorded from specimens recaptured by SCDNR. When possible, a sample of 8–10 vertebrae were removed from the cervical region of the vertebral column from recaptured sharks.</p>
+            <p>In the case of recaptured specimens from commercial fishermen, sharks were already deceased and vertebrae were removed. In the case of recaptured specimens from SCDNR, a IACUC protocol approved for graduate students who had previously worked with SCDNR on elasmobranch studies was followed; the vertebral column was severed by serrated knife in two cervical locations.</p>
+            <p>To estimate age at recapture, vertebrae were prepared for analyses following the protocol of 
+                <xref ref-type="bibr" rid="ref-10">Frazier 
+                    <italic>et al.</italic>, 2014</xref>. Initial vertebral growth band counts were conducted by three unbiased readers with no knowledge of specimen length or time-at-liberty. If band counts differed among readers, sections were independently re-read until agreement was reached. Age at recapture was estimated under the assumptions: (1) the birthmark was formed prior or shortly after parturition, (2) the second band was formed 6 months later during the first winter, and (3) the third band was formed 1 year later. Therefore, we subtracted 1.5 from each total band count to calculate age in years (e.g. 
+                <xref ref-type="bibr" rid="ref-14">Loefer &amp; Sedberry, 2003</xref>; 
+                <xref ref-type="bibr" rid="ref-6">Driggers 
+                    <italic>et al.</italic>, 2004</xref>).</p>
+            <p>Age estimates at recapture were also determined by adding time-at-liberty to backtransformed ages at tagging. Species and sex-specific von Bertalanffy growth function parameters from 
+                <xref ref-type="bibr" rid="ref-14">Loefer &amp; Sedberry, 2003</xref> (
+                <italic>R. terraenovae</italic>) and 
+                <xref ref-type="bibr" rid="ref-6">Driggers 
+                    <italic>et al.</italic>, 2004</xref> (
+                <italic>C. acronotus</italic>) were used to backtransform age at tagging using the following equation:</p>
+            <p>
+                <disp-formula>
+                    <mml:math display="block" id="math1">
+                        <mml:mrow>
+                            <mml:mtext>Age=</mml:mtext>
+                            <mml:mrow>
+                                <mml:mo>(</mml:mo>
+                                <mml:mrow>
+                                    <mml:mfrac>
+                                        <mml:mrow>
+                                            <mml:mtext>1n</mml:mtext>
+                                            <mml:mrow>
+                                                <mml:mo>(</mml:mo>
+                                                <mml:mrow>
+                                                    <mml:mtext>1-</mml:mtext>
+                                                    <mml:mfrac>
+                                                        <mml:mrow>
+                                                            <mml:msub>
+                                                                <mml:mi>L</mml:mi>
+                                                                <mml:mi>t</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mrow>
+                                                        <mml:mrow>
+                                                            <mml:msub>
+                                                                <mml:mi>L</mml:mi>
+                                                                <mml:mi>∞</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mrow>
+                                                    </mml:mfrac>
+                                                </mml:mrow>
+                                                <mml:mo>)</mml:mo>
+                                            </mml:mrow>
+                                        </mml:mrow>
+                                        <mml:mrow>
+                                            <mml:mtext>-k</mml:mtext>
+                                        </mml:mrow>
+                                    </mml:mfrac>
+                                </mml:mrow>
+                                <mml:mo>)</mml:mo>
+                            </mml:mrow>
+                            <mml:msub>
+                                <mml:mrow>
+                                    <mml:mtext>+t</mml:mtext>
+                                </mml:mrow>
+                                <mml:mtext>o</mml:mtext>
+                            </mml:msub>
+                        </mml:mrow>
+                    </mml:math>
+                </disp-formula>
+            </p>
+            <p>    Where:</p>
+            <p>    
+                <italic>L
+                    <sub>t</sub>
+                </italic> = length at age t,</p>
+            <p>    
+                <italic>L
+                    <sub>∞</sub>
+                </italic> = theoretical maximum length,</p>
+            <p>    
+                <italic>k</italic> = coefficient of growth,</p>
+            <p>    
+                <italic>t
+                    <sub>o</sub>
+                </italic> = theoretical age at which length equals zero.</p>
+            <p>A paired t-test was used to determine if age estimates from vertebral sections were significantly different than backtransformed age estimates. Statistical results were considered significant at α &lt; 0.05.</p>
+        </sec>
+        <sec sec-type="results">
+            <title>Results</title>
+            <sec>
+                <title>
+                    <inline-formula>
+                        <italic>Rhizoprionodon terraenovae</italic>
+                    </inline-formula>
+                </title>
+                <p>From 1993 to 1998 a total of 3,419 
+                    <italic>R. terraenovae</italic> were tagged and released, of these 155 were recaptured. Five 
+                    <italic>R. terraenovae</italic> (four male and one female) were recaptured with times at liberty ranging from 7.7 to 14.0 years (mean ± S.D. = 10.1 ± 2.7). Length at initial tagging, and when available, length at recapture are listed in 
+                    <xref ref-type="table" rid="T1">Table 1</xref>. Backtransformed age at tagging and recapture ranged from 3.8–10.3 years and from 11.8 to 19.8 years, respectively (
+                    <xref ref-type="table" rid="T1">Table 1</xref>). Vertebrae were sampled from Shark L5242 and the direct age estimate from the vertebral section was 18.5 years old (
+                    <xref ref-type="fig" rid="f1">Figure 1</xref>). Precise measurements were taken for L5242 at tagging and recapture; over 12.1 years-at-liberty this shark grew 28 mm (2.3 mm/year). All five sharks were recaptured within 15 km of initial tagging.</p>
+                <fig fig-type="figure" id="f1" position="float">
+                    <label>Figure 1. </label>
+                    <caption>
+                        <title>Sectioned vertebra from Atlantic Sharpnose Shark 
+                            <italic>Rhizoprionodon terraenovae</italic> L5242.</title>
+                        <p>Consensus band count was 20 band pairs (age = 18.5 years).</p>
+                    </caption>
+                    <graphic xlink:href="f1000research-3-5743-g0000.gif"/>
+                </fig>
+                <table-wrap id="T1" position="anchor">
+                    <label>Table 1. </label>
+                    <caption>
+                        <title>Initial tagging and recapture information for Atlantic Sharpnose Sharks 
+                            <italic>Rhizoprionodon terraenovae</italic> and Blacknose Sharks 
+                            <italic>Carcharhinus acronotus</italic> long-term recaptures from the South Carolina Department of Natural Resources Adult Red Drum and Coastal Shark Longline Program.</title>
+                        <p>Fork length (FL) at initial tagging, length at recapture, growth, days and years at liberty, backtransformed age at initial tagging and recapture and direct age estimates are provided.</p>
+                    </caption>
+                    <table content-type="article-table" frame="hsides">
+                        <thead>
+                            <tr>
+                                <th align="center">Species</th>
+                                <th align="center">Tag #</th>
+                                <th align="center">Initial
+                                    <break/>FL (mm)</th>
+                                <th align="center">Recapture
+                                    <break/>FL (mm)</th>
+                                <th align="center">Growth
+                                    <break/>(mm)</th>
+                                <th align="center">Days
+                                    <break/>at
+                                    <break/>Liberty</th>
+                                <th align="center">Years
+                                    <break/>at
+                                    <break/>Liberty</th>
+                                <th align="center">Sex</th>
+                                <th align="center">Backtransformed
+                                    <break/>Age at Initial
+                                    <break/>Tagging</th>
+                                <th align="center">Backtransformed
+                                    <break/>Age at Recapture</th>
+                                <th align="center">Direct
+                                    <break/>Age
+                                    <break/>Estimate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="left">
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center">L2881</td>
+                                <td align="center">776</td>
+                                <td align="center">828*</td>
+                                <td align="center">52</td>
+                                <td align="center">5098</td>
+                                <td align="center">14.0</td>
+                                <td align="center">Male</td>
+                                <td align="center">5.2</td>
+                                <td align="center">19.2</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center">L4774</td>
+                                <td align="center">815</td>
+                                <td align="center">883*</td>
+                                <td align="center">68</td>
+                                <td align="center">3237</td>
+                                <td align="center">8.9</td>
+                                <td align="center">Female</td>
+                                <td align="center">10.1</td>
+                                <td align="center">19.0</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center">L5173</td>
+                                <td align="center">737</td>
+                                <td align="center">-</td>
+                                <td align="center">-</td>
+                                <td align="center">2937</td>
+                                <td align="center">8.0</td>
+                                <td align="center">Male</td>
+                                <td align="center">3.8</td>
+                                <td align="center">11.8</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center">L5242</td>
+                                <td align="center">802</td>
+                                <td align="center">830</td>
+                                <td align="center">28</td>
+                                <td align="center">4438</td>
+                                <td align="center">12.1</td>
+                                <td align="center">Male</td>
+                                <td align="center">7.7</td>
+                                <td align="center">19.8</td>
+                                <td align="center">18.5</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center">L7250</td>
+                                <td align="center">810</td>
+                                <td align="center">838*</td>
+                                <td align="center">28</td>
+                                <td align="center">2806</td>
+                                <td align="center">7.7</td>
+                                <td align="center">Male</td>
+                                <td align="center">10.3</td>
+                                <td align="center">18.0</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>C. acronotus</italic>
+								</td>
+                                <td align="center">L2910</td>
+                                <td align="center">876</td>
+                                <td align="center">960</td>
+                                <td align="center">84</td>
+                                <td align="center">4352</td>
+                                <td align="center">11.9</td>
+                                <td align="center">Male</td>
+                                <td align="center">4.5</td>
+                                <td align="center">16.4</td>
+                                <td align="center">15.5</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>C. acronotus</italic>
+								</td>
+                                <td align="center">L1515</td>
+                                <td align="center">878</td>
+                                <td align="center">1055</td>
+                                <td align="center">177</td>
+                                <td align="center">4678</td>
+                                <td align="center">12.8</td>
+                                <td align="center">Female</td>
+                                <td align="center">4.2</td>
+                                <td align="center">17.0</td>
+                                <td align="center">14.5</td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+									
+                                    <italic>C. acronotus</italic>
+								</td>
+                                <td align="center">L3384</td>
+                                <td align="center">1020</td>
+                                <td align="center">-</td>
+                                <td align="center">-</td>
+                                <td align="center">3986</td>
+                                <td align="center">10.9</td>
+                                <td align="center">Male</td>
+                                <td align="center">11.9</td>
+                                <td align="center">22.8</td>
+                                <td align="center">20.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table-wrap-foot>
+                        <fn>
+                            <p>*Denotes approximate measurements as provided by recreational anglers.</p>
+                        </fn>
+                    </table-wrap-foot>
+                </table-wrap>
+            </sec>
+            <sec>
+                <title>
+                    <inline-formula>
+                        <italic>Carcharhinus acronotus</italic>
+                    </inline-formula>
+                </title>
+                <p>From 1993 to 2013 a total of 1,537 
+                    <italic>C. acronotus</italic> were tagged and released, of these 24 were recaptured. Three 
+                    <italic>C. acronotus</italic> were recaptured (two males and one female) with times at liberty ranging from 10.9 to 12.8 years (mean ± S.D. = 11.9 ± 1.0). Backtransformed age at tagging and recapture ranged from 4.2 to 11.9 years and 16.4 to 22.8 years, respectively (
+                    <xref ref-type="table" rid="T1">Table 1</xref>). Vertebrae were obtained from all recaptured 
+                    <italic>C. acronotus</italic>. Age estimates from vertebral sections ranged from 14.5 to 20.5 years (
+                    <xref ref-type="fig" rid="f2">Figure 2</xref>). Precise measurements were taken at capture and recapture for sharks L2910 and L1515. L2910 was at liberty for 12.0 years and grew 84 mm (7.0 mm/year). L1515 was at liberty for 12.8 years and grew 177 mm (13.8 mm/year). All recaptured 
+                    <italic>C. acronotus</italic> were recovered within 15 km of initial tagging.</p>
+                <fig fig-type="figure" id="f2" position="float">
+                    <label>Figure 2. </label>
+                    <caption>
+                        <title>Sectioned vertebra from Blacknose Shark 
+                            <italic>Carcharhinus acronotus</italic> L3384.</title>
+                        <p>Consensus band count was 22 band pairs (age = 20.5 years).</p>
+                    </caption>
+                    <graphic xlink:href="f1000research-3-5743-g0001.gif"/>
+                </fig>
+            </sec>
+            <sec>
+                <title>Age estimates and comparisons</title>
+                <p>In recaptures with both direct and backtransformed age estimates, backtransformed age estimates were significantly larger (paired t-test, 
+                    <italic>t</italic> = 4.82, 
+                    <italic>P</italic> = 0.02) (
+                    <xref ref-type="table" rid="T1">Table 1</xref>). From direct age estimates, 
+                    <italic>R. terraenovae</italic> observed maximum longevity increased by 9.5 years for males (previously 9+ years [
+                    <xref ref-type="bibr" rid="ref-14">Loefer &amp; Sedberry, 2003</xref>]), and no vertebrae were available from female recaptures (
+                    <xref ref-type="table" rid="T2">Table 2</xref>).</p>
+                <table-wrap id="T2" position="anchor">
+                    <label>Table 2. </label>
+                    <caption>
+                        <title>Observed maximum longevity from sectioned age estimates, and backtransformed maximum longevity from tag and recapture data for Atlantic Sharpnose Sharks 
+                            <italic>Rhizoprionodon terraenovae</italic> and Blacknose Sharks 
+                            <italic>Carcharhinus acronotus</italic>.</title>
+                    </caption>
+                    <table content-type="article-table" frame="hsides">
+                        <thead>
+                            <tr>
+                                <th align="center">Species</th>
+                                <th align="center">Study</th>
+                                <th align="center">Sex</th>
+                                <th align="center">Observed Maximum
+                                    <break/>Longevity (years)</th>
+                                <th align="center">Backtransformed
+                                    <break/>Maximum
+                                    <break/>Longevity (years)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="left" rowspan="2">
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center" rowspan="2">western North Atlantic
+                                    <break/>
+                                    <xref ref-type="bibr" rid="ref-14">Loefer &amp; Sedberry, 2003</xref>
+                                </td>
+                                <td align="center">Female</td>
+                                <td align="center">11+</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="center">Male</td>
+                                <td align="center">9+</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left" rowspan="2">
+                                    <italic>R. terraenovae</italic>
+								</td>
+                                <td align="center" rowspan="2">Current</td>
+                                <td align="center">Female</td>
+                                <td align="center">-</td>
+                                <td align="center">22.9</td>
+                            </tr>
+                            <tr>
+                                <td align="center">Male</td>
+                                <td align="center">18.0</td>
+                                <td align="center">19.8</td>
+                            </tr>
+                            <tr>
+                                <td align="left" rowspan="2">
+                                    <italic>C. acronotus</italic>
+                                </td>
+                                <td align="center" rowspan="2">western North Atlantic
+                                    <break/>
+                                    <xref ref-type="bibr" rid="ref-6">Driggers 
+                                        <italic>et al.</italic>, 2004</xref>
+                                </td>
+                                <td align="center">Female</td>
+                                <td align="center">12.5</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="center">Male</td>
+                                <td align="center">10.5</td>
+                                <td align="center">-</td>
+                            </tr>
+                            <tr>
+                                <td align="left" rowspan="2">
+                                    <italic>C. acronotus</italic>
+                                </td>
+                                <td align="center" rowspan="2">Current</td>
+                                <td align="center">Female</td>
+                                <td align="center">14.5</td>
+                                <td align="center">17.0</td>
+                            </tr>
+                            <tr>
+                                <td align="center">Male</td>
+                                <td align="center">20.5</td>
+                                <td align="center">22.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table-wrap>
+                <p>
+					
+                    <italic>C. acronotus</italic> observed maximum longevity from sectioned age estimates increased by 2 years for females and 8 years for males (12.5 and 10.5 years for females and males respectively [Driggers 
+                    <italic>et al.</italic>, 2001]). Backtransformed maximum longevity was 4.5 years older than published estimates for females and 12.3 years older for males.</p>
+            </sec>
+        </sec>
+        <sec sec-type="discussion">
+            <title>Discussion</title>
+            <p>The backtransformed and direct age estimates documented herein greatly increase the known longevity for 
+                <italic>R. terraenovae</italic> and 
+                <italic>C. acronotus</italic>, which could significantly affect population dynamics models that include longevity as a parameter. Interestingly, the maximum directly estimated ages for both species were associated with male sharks. A review of published shark age and growth studies shows that, in most studies, females have a greater or equal longevity than males (e.g. 
+                <xref ref-type="bibr" rid="ref-3">Carlson &amp; Baremore, 2003</xref>; 
+                <xref ref-type="bibr" rid="ref-4">Carlson &amp; Parsons, 1997</xref>; 
+                <xref ref-type="bibr" rid="ref-5">Carlson 
+                    <italic>et al.</italic>, 1999</xref>; 
+                <xref ref-type="bibr" rid="ref-6">Driggers 
+                    <italic>et al.</italic>, 2004</xref>; 
+                <xref ref-type="bibr" rid="ref-7">Drymon 
+                    <italic>et al.</italic>, 2006</xref>; 
+                <xref ref-type="bibr" rid="ref-10">Frazier 
+                    <italic>et al.</italic>, 2014</xref>). Therefore, we believe that we did not sample older females and suggest that the longevity estimates we observed for each species be applied to males and females.</p>
+            <p>Backtransformed age estimates from recaptures were in all cases larger than direct age estimates. This could be evidence that direct ages were underestimated, however direct age estimates only differed by an average of 1.8 years (range 1.0–2.5 years). Observed differences could be due to low sample size or individual variability in growth. The rearranged VBGF gives an estimate of average age-at-length based on parameter estimates. Therefore, specimens could have been younger or older than the average estimated age at time of tagging thus accounting for the discrepancy. Conversely, if the species-specific VBGF do not adequately describe the growth of 
+                <italic>R. terraenovae</italic> and 
+                <italic>C. acronotus</italic> then the observed differences would be expected. However, the growth models utilized were from studies with robust sample sizes that included all size classes (
+                <xref ref-type="bibr" rid="ref-14">Loefer &amp; Sedberry, 2003</xref>; 
+                <xref ref-type="bibr" rid="ref-6">Driggers 
+                    <italic>et al.</italic>, 2004</xref>).</p>
+            <p>The age estimates from this study greatly increase longevity for both species; however, actual life spans could be even longer. The specimens recaptured from this study were tagged in the first few years of the SCDNR longline program (1994–1996). Given project species-specific recapture rates of less than 3% and reported tag shedding rates for nylon dart tags as high as 41% to 63% (
+                <xref ref-type="bibr" rid="ref-16">Xiao 
+                    <italic>et al.</italic>, 1999</xref>), the chances of recapturing a shark at liberty for 10+ years are small. The fact that eight were encountered and all exceeded published longevity estimates lends support to this assertion. The data gathered from these recaptures also highlights the importance of continuing long term surveys and tagging efforts. While return rates of tagged sharks are notoriously low, our data demonstrate that continued tagging efforts are essential to provide the most up to date and reliable estimates of maximum longevity. Ideally, to obtain the best possible longevity estimates for a given species, future efforts should focus on tagging neonate sharks with the hope of recapturing them as they approach the end of their lifespans.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title>Acknowledgements</title>
+            <p>We are grateful to the many folks that have helped the longline program over the years, especially Doug Oakley, Catherine Riley, Josh Loefer, Christian Jones, Carrie Hendrix, Jonathan Richardson, Erin Levesque, Henry Davega, Rob Dunlap and Ashley Shaw. We thank reviewers Marcus Drymon and Alastair Harry for their constructive comments on drafts of this note. This is contribution 727 of the South Carolina Marine Resource Center.</p>
+        </ack>
+        <ref-list>
+            <ref id="ref-1">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Bishop</surname>
+                            <given-names>SDH</given-names>
+                        </name>
+                        <name>
+                            <surname>Francis</surname>
+                            <given-names>MP</given-names>
+                        </name>
+                        <name>
+                            <surname>Duffy</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Age, growth, maturity, longevity and natural mortality of the shortfin mako shark (Isurus oxyrinchus) in New Zealand Waters.</article-title>
+                    <source>
+						
+                        <italic>Mar Freshwater Res.</italic>
+					</source><year>2006</year>;<volume>57</volume>(<issue>2</issue>):<fpage>143</fpage>–<lpage>154</lpage>.
+                    <pub-id pub-id-type="doi">10.1071/MF05077</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-2">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Bonham</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Sanford</surname>
+                            <given-names>FB</given-names>
+                        </name>
+                        <name>
+                            <surname>Clegg</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Biological and vitamin A studies of dogfish (
+                        <italic>Squalus suckleye</italic>) in the State of Washington. Washington State Department of Fisheries.</article-title>
+                    <source>
+						
+                        <italic>Biological Report.</italic>
+					</source><year>1949</year>;<volume>49A</volume>:<fpage>83</fpage>–<lpage>114</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.abebooks.com/BIOLOGICAL-VITAMIN-STUDIES-DOGFISH-LANDED-STATE/1236997353/bd">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-3">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Carlson</surname>
+                            <given-names>JK</given-names>
+                        </name>
+                        <name>
+                            <surname>Baremore</surname>
+                            <given-names>IE</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Changes in biological parameters of Atlantic sharpnose shark 
+                        <italic>Rhizoprionodon terraenovae</italic> in the Gulf of Mexico: evidence for density-dependent growth and maturity?</article-title>
+                    <source>
+						
+                        <italic>Mar Freshwater Res.</italic>
+					</source><year>2003</year>;<volume>54</volume>(<issue>3</issue>):<fpage>227</fpage>–<lpage>234</lpage>.
+                    <pub-id pub-id-type="doi">10.1071/MF02153</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-4">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Carlson</surname>
+                            <given-names>JK</given-names>
+                        </name>
+                        <name>
+                            <surname>Parsons</surname>
+                            <given-names>GR</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Age and growth of the bonnethead shark, 
+                        <italic>Sphyrna tiburo</italic>, from northwest Florida, with comments on clinal variation.</article-title>
+                    <source>
+						
+                        <italic>Environ Biol Fish.</italic>
+					</source><year>1997</year>;<volume>50</volume>(<issue>3</issue>):<fpage>331</fpage>–<lpage>341</lpage>.
+                    <pub-id pub-id-type="doi">10.1023/A:1007342203214</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-5">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Carlson</surname>
+                            <given-names>JK</given-names>
+                        </name>
+                        <name>
+                            <surname>Cortes</surname>
+                            <given-names>E</given-names>
+                        </name>
+                        <name>
+                            <surname>Johnson</surname>
+                            <given-names>AG</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Age and growth of the blacknose shark, 
+                        <italic>Carcharhinus acronotus</italic>, in the eastern Gulf of Mexico.</article-title>
+                    <source>
+						
+                        <italic>Copeia.</italic>
+					</source><year>1999</year>;<volume>1999</volume>(<issue>3</issue>):<fpage>684</fpage>–<lpage>691</lpage>.
+                    <pub-id pub-id-type="doi">10.2307/1447600</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-6">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Driggers</surname>
+                            <given-names>WB</given-names>
+                            <suffix>III</suffix>
+                        </name>
+                        <name>
+                            <surname>Carlson</surname>
+                            <given-names>JK</given-names>
+                        </name>
+                        <name>
+                            <surname>Cullum</surname>
+                            <given-names>BJ</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Age and growth of the blacknose shark, 
+                        <italic>Carcharhinus acronotus</italic>, in the western North Atlantic Ocean with comments on regional variation in growth rates.</article-title>
+                    <source>
+						
+                        <italic>Environ Biol Fish.</italic>
+					</source><year>2004</year>;<volume>71</volume>(<issue>2</issue>):<fpage>171</fpage>–<lpage>178</lpage>.
+                    <pub-id pub-id-type="doi">10.1007/s10641-004-0105-z</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-7">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Drymon</surname>
+                            <given-names>JM</given-names>
+                        </name>
+                        <name>
+                            <surname>Driggers</surname>
+                            <given-names>WB</given-names>
+                            <suffix>III</suffix>
+                        </name>
+                        <name>
+                            <surname>Oakley</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Investigating life history difference between finetooth sharks, 
+                        <italic>Carcharhinus isodon</italic>, in the northern Gulf of Mexico and the western North Atlantic Ocean.</article-title>
+                    <source>
+						
+                        <italic>Gulf Mexico Sci.</italic>
+					</source><year>2006</year>;<volume>24</volume>(<issue>1–2</issue>):<fpage>2</fpage>–<lpage>10</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://fisherieslab.disl.org/Pubs/Drymonetal2006.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-8">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Fabens</surname>
+                            <given-names>AJ</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Properties and fitting of the Von Bertalanffy growth curve.</article-title>
+                    <source>
+						
+                        <italic>Growth.</italic>
+					</source><year>1965</year>;<volume>29</volume>(<issue>3</issue>):<fpage>265</fpage>–<lpage>89</lpage>.
+                    <pub-id pub-id-type="pmid">5865688</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-9">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Francis</surname>
+                            <given-names>MP</given-names>
+                        </name>
+                        <name>
+                            <surname>Campana</surname>
+                            <given-names>SE</given-names>
+                        </name>
+                        <name>
+                            <surname>Jones</surname>
+                            <given-names>CM</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Age under-estimation in New Zealand porbeagle sharks (
+                        <italic>Lamna nasus</italic>): is there an upper limit to ages that can be determined from shark vertebrae?</article-title>
+                    <source>
+						
+                        <italic>Mar Freshwater Res.</italic>
+					</source><year>2007</year>;<volume>58</volume>(<issue>1</issue>):<fpage>10</fpage>–<lpage>23</lpage>.
+                    <pub-id pub-id-type="doi">10.1071/MF06069</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-10">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Frazier</surname>
+                            <given-names>BS</given-names>
+                        </name>
+                        <name>
+                            <surname>Driggers</surname>
+                            <given-names>WB</given-names>
+                            <suffix>III</suffix>
+                        </name>
+                        <name>
+                            <surname>Adams</surname>
+                            <given-names>DH</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Validated age, growth and maturity of the bonnethead 
+                        <italic>Sphyrna tiburo</italic> in the western North Atlantic Ocean.</article-title>
+                    <source>
+						
+                        <italic>J Fish Biol.</italic>
+					</source><year>2014</year>. in press.
+                    <pub-id pub-id-type="doi">10.1111/jfb.12450</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-11">
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Goldman</surname>
+                            <given-names>KJ</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Age and growth of elasmobranch fishes. In 
+                        <italic>Elasmobranch fisheries management techniques</italic> (Musick, JA and R Bonfil editors), Asia Pacific Economic Cooperation, Singapore</article-title>.<year>2004</year>;<fpage>97</fpage>–<lpage>132</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://publications.apec.org/file-download.php?filename=04_fwg_elasmobranch.pdf&amp;id=445">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-12">
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Kalish</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Johnston</surname>
+                            <given-names>J</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Determination of school shark age based on analysis of radiocarbon in vertebral collagen</article-title>. In
+                    <italic>Use of the Bomb Radiocarbon Chronometer to Validate Fish Age</italic>(Kalish, JM Editor), Final Report FRDC Project 93/109. Fisheries Research and Development Corporation, Canberra.<year>2001</year>;<fpage>116</fpage>–<lpage>129</lpage>.</mixed-citation>
+            </ref>
+            <ref id="ref-13">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Kohler</surname>
+                            <given-names>NE</given-names>
+                        </name>
+                        <name>
+                            <surname>Turner</surname>
+                            <given-names>PA</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Shark tagging: a review of conventional methods and studies.</article-title>
+                    <source>
+						
+                        <italic>Environ Biol Fish.</italic>
+					</source><year>2001</year>;<volume>60</volume>(<issue>1–3</issue>):<fpage>191</fpage>–<lpage>223</lpage>.
+                    <pub-id pub-id-type="doi">10.1023/A:1007679303082</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-14">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Loefer</surname>
+                            <given-names>JK</given-names>
+                        </name>
+                        <name>
+                            <surname>Sedberry</surname>
+                            <given-names>GR</given-names>
+                        </name>
+                    </person-group>:
+                    <article-title>Life history of the Atlantic sharpnose shark (
+                        <italic>Rhizoprionodon terraenovae</italic>) (Richardson, 1836) off the Southeastern United States.</article-title>
+                    <source>
+						
+                        <italic>Fish Bull.</italic>
+					</source><year>2003</year>;<volume>101</volume>:<fpage>75</fpage>–<lpage>88</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://dc.statelibrary.sc.gov/bitstream/handle/10827/10559/DNR_Fishery_Bulletin_Life_History_Atlantic_2003.pdf?sequence=1">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-15">
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Ulrich</surname>
+                            <given-names>GF</given-names>
+                        </name>
+                        <name>
+                            <surname>Jones</surname>
+                            <given-names>CM</given-names>
+                        </name>
+                        <name>
+                            <surname>Driggers</surname>
+                            <given-names>WB</given-names>
+                            <suffix>II</suffix>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Habitat utilization, relative abundance, and seasonality of sharks in the estuarine and nearshore waters of South Carolina</article-title>. In
+                    <italic>Shark nursery grounds of the Gulf of Mexico and East Coast waters of the United States</italic>(McCandless, CT NE Kohler, and HL Pratt Jr. editors), American Fisheries Society. Symposium 50, Bethesda, Maryland.<year>2007</year>;<fpage>125</fpage>–<lpage>139</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.google.co.in/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CCQQFjAA&amp;url=http://www.researchgate.net/publication/236122212_Habitat_Utilization_Relative_Abundance_and_Seasonality_of_Sharks_in_the_Estuarine_and_Nearshore_Waters_of_South_Carolina/links/0deec5162f0db69600000000.pdf&amp;ei=IHbHVOU3kN7wBaPugsAK&amp;usg=AFQjCNHH_dj9f-Pp50lmtqVg2SSUuWil3g&amp;bvm=bv.84607526,d.dGc">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-16">
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Xiao</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Brown</surname>
+                            <given-names>LP</given-names>
+                        </name>
+                        <name>
+                            <surname>Walker</surname>
+                            <given-names>TI</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>:
+                    <article-title>Estimation of instantaneous rates of tag shedding for school shark, 
+                        <italic>Galeorhinus galeus</italic>, and gummy shark, 
+                        <italic>Mustelus antarcticus</italic>, by conditional likelihood.</article-title>
+                    <source>
+						
+                        <italic>Fish Bull.</italic>
+					</source><year>1999</year>;<volume>97</volume>(<issue>1</issue>):<fpage>170</fpage>–<lpage>184</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://fishbull.noaa.gov/16xiaofi.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <sub-article article-type="ref-report" id="report7492">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.5743.r7492</article-id>
+            <title-group>
+                <article-title>Referee response for version 2</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Harry</surname>
+                        <given-names>Alastair</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r7492a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r7492a1">
+                    <label>1</label>Centre for Sustainable Tropical Fisheries and Aquaculture, James Cook University, Townsville, Australia</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>29</day>
+                <month>1</month><year>2015</year>
+            </pub-date>
+            <related-article ext-link-type="doi" id="relatedArticleReport7492" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.4767.2"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>approve</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>I think the changes made have strengthened the manuscript and have no further comments.</p>
+            <p>I have read this submission. I believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p>
+        </body>
+    </sub-article>
+    <sub-article article-type="ref-report" id="report5801">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.5090.r5801</article-id>
+            <title-group>
+                <article-title>Referee response for version 1</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Drymon</surname>
+                        <given-names>Marcus</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r5801a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r5801a1">
+                    <label>1</label>Department of Marine Sciences, University of South Alabama, Mobile, AL, USA</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>2</day>
+                <month>9</month><year>2014</year>
+            </pub-date>
+            <related-article ext-link-type="doi" id="relatedArticleReport5801" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.4767.1"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>approve</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>This manuscript reports increased longevity for two common species of small coastal sharks (Atlantic Sharpnose Shark 
+                <italic>Rhizoprionodon terraenovae</italic> and Blacknose Shark 
+                <italic>Carcharhinus acronotus</italic>) based on tag recapture data. These findings are particularly interesting given the previously assumed longevity of these species, and are clearly relevant to population models that include longevity as a parameter for these species. This note is clearly written, and conclusions from this work are appropriately presented; moreover, these data illustrate the benefit of long-term fisheries-independent monitoring and tagging programs for long-lived species such as sharks.</p>
+            <p>These data are clear, concise, and important to the continued successful management of these two species; as such, they are worthy of publication. The two tables presented are sufficient to convey the data discussed. Given the straightforward nature of these data and their appropriate interpretation by the Authors, I have no major comments. There are two typos in the first paragraph of the Discussion (detailed below) which should be addressed.    
+                <list list-type="order">
+                    <list-item>
+                        <p>In the sentence “A review of published shark age and growth studies shows that, in most studies, 
+                            <bold>
+                                <italic>that</italic>
+                            </bold> females have a greater…,” remove 
+                            <bold>
+                                <italic>that.</italic>
+                            </bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>In the sentence “Therefore, we believe that we did not sample older females and suggest that the 
+                            <bold>
+                                <italic>longevity estimates maximum observed longevity</italic>
+                            </bold> we observed for each species…,” revise “
+                            <bold>
+                                <italic>longevity estimates maximum observed longevity” </italic>
+                            </bold>as desired.</p>
+                    </list-item>
+                </list>
+            </p>
+            <p>I have read this submission. I believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p>
+        </body>
+        <sub-article article-type="response" id="comment1190">
+            <front-stub>
+                <contrib-group>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Frazier</surname>
+                            <given-names>Bryan </given-names>
+                        </name>
+                        <aff>South Carolina Department of Natural Resources, USA</aff>
+                    </contrib>
+                </contrib-group>
+                <author-notes>
+                    <fn fn-type="conflict">
+                        <p>
+                            <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>21</day>
+                    <month>1</month><year>2015</year>
+                </pub-date>
+            </front-stub>
+            <body>
+                <p>The authors thank the reviewer for the suggested edits, all have been incorporated.</p>
+            </body>
+        </sub-article>
+    </sub-article>
+    <sub-article article-type="ref-report" id="report5802">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.5090.r5802</article-id>
+            <title-group>
+                <article-title>Referee response for version 1</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Harry</surname>
+                        <given-names>Alastair</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r5802a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r5802a1">
+                    <label>1</label>Centre for Sustainable Tropical Fisheries and Aquaculture, James Cook University, Townsville, Australia</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>26</day>
+                <month>8</month><year>2014</year>
+            </pub-date>
+            <related-article ext-link-type="doi" id="relatedArticleReport5802" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.4767.1"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>approve-with-reservations</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>This research note presents data on the long-term recapture of seven individuals of two species of coastal sharks from the Northwest Atlantic; 
+                <italic>Rhizoprionodon terranovae</italic>, and the 
+                <italic>Carcharhinus acronotus</italic>. Based on their length at tagging, all individuals appeared to be either mature or close to maturity, but were recaptured between 7.7 and 12.8 years later. As neither species was reported to be particularly long-lived these results are interesting, and provide evidence that both species live longer than currently thought.  Age was also estimated and compared in four of the samples by reading sectioned vertebrae. These data contribute to growing evidence that longevity of sharks is often underestimated when based on vertebral ageing methods, and that some aspects of elasmobranch demography that have been inferred from these studies (e.g. survival) may be biased. I’m glad the authors have taken the time and effort to document these observations, as there are relatively few long-terms studies of this kind.</p>
+            <p>While I think the data themselves are worthy of publication, I don’t think any of the subsequent analysis contributed hugely to the paper. Published growth curves are used to estimate the age at tagging, which is then added to the time at liberty to get a ‘backtransformed age at recapture’. Unfortunately, neither of these original growth studies presented the model variance, a detailed description of the data, or even any plots of the size at age data! Without this information, it is hard to get an idea of how variable size-at-age is for these species (and it is clearly quite variable), or the representativeness of the original sampling, etc.  Personally, I think other information could be more useful, like photographs of the two oldest vertebrae sections for reference.</p>
+            <p>I recommend two revisions to the research note. Firstly, some more background information is required on the tagging study itself. It is not stated how many sharks were tagged and recaptured over the duration of the whole study, nor is it clear why these seven were chosen specifically (presumably they weren't the only recaptures). Secondly, I disagree that Fabens’ theoretical method for estimating longevity is the usual method of estimating longevity. I don’t see the value with making comparisons to theoretical longevity later on in the paper and find this confusing. For example, the ‘theoretical maximum longevities’ of 
+                <italic>R. terranovae </italic>are stated to be 7.1 and 6.9 years for females and males respectively, but
+                <ext-link ext-link-type="uri" xlink:href="http://dc.statelibrary.sc.gov/handle/10827/10559"> Loefer and Sedberry (2003)</ext-link> reported actual longevities of 10 and 9 years.</p>
+            <p>I have read this submission. I believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard, however I have significant reservations, as outlined above.</p>
+        </body>
+        <sub-article article-type="response" id="comment1197">
+            <front-stub>
+                <contrib-group>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Frazier</surname>
+                            <given-names>Bryan </given-names>
+                        </name>
+                        <aff>South Carolina Department of Natural Resources, USA</aff>
+                    </contrib>
+                </contrib-group>
+                <author-notes>
+                    <fn fn-type="conflict">
+                        <p>
+                            <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>27</day>
+                    <month>1</month><year>2015</year>
+                </pub-date>
+            </front-stub>
+            <body>
+                <p>The authors appreciate the suggested revisions offered by the reviewer. We agree that it is unfortunate that the original age and growth studies did not present individual length at age data with their published growth curves. While we felt it most appropriate to cite the peer reviewed publications, it should be noted that these data are available for 
+                    <italic>Carcharhinus acronotus</italic> (SEDAR 21 DW-36, http://www.sefsc.noaa.gov/sedar/download/S21_DW_36.pdf?id=DOCUMENT) as a working paper for United States SouthEast Data, Assessment and Review 
+                    <italic>C. acronotus</italic> stock assessment. Unfortunately, there are no publicly accessible documents showing variation in length-at-age for 
+                    <italic>Rhizoprionodon terraenovae</italic>. The authors agree with the reviewer that images of the oldest aged vertebra for each species are appropriate, and we have added those figures. </p>
+                <p>As requested, the authors have added minimal background information detailing the total tagged and recaptured of each species. The authors feel adding additional background information beyond this would not be of value to readers. </p>
+                <p>The recaptures that were used for this note were chosen due to their lengthy times-at-liberty. Recaptures with shorter times-at-liberty were not used as they would be less informative given variability in length-at-age. </p>
+                <p>The authors agree with the reviewer that including Faben's theoretical maximum longevities were confusing and we have removed these data from the note.</p>
+            </body>
+        </sub-article>
+    </sub-article>
+</article>

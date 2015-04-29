@@ -2,9 +2,15 @@ package org.xmlcml.norma;
 
 import java.io.File;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 
 public class PDFTest {
 
@@ -102,6 +108,26 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	
 	}
 	
+	@Test
+	public void testPDF2TXT() throws FileNotFoundException, IOException {
+		PDF2TXTConverter converter = new PDF2TXTConverter();
+		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+		String text = converter.readPDF(new FileInputStream(file0115884), true);
+		FileUtils.write(new File("target/pdf/file0115884.txt"), text);
+	}
 	
-	
+	@Test
+	public void testPDF2TXT1() throws FileNotFoundException, IOException {
+		FileUtils.copyDirectory(
+				new File("src/test/resources/org/xmlcml/norma/regressiondemos/quickscrapeDirs/bmc/1471-2148-14-70"), 
+				new File("target/pdftest"));
+//		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdfbox";
+		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt";
+		Norma norma = new Norma();
+		norma.run(args);
+		
+//		PDF2TXTConverter converter = new PDF2TXTConverter();
+//		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+//		String text = converter.readPDF(new FileInputStream(file0115884), true);
+	}
 }

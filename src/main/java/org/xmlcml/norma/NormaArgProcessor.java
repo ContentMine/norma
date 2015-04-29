@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,8 +14,6 @@ import java.util.Map;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
 
 import nu.xom.Builder;
 import nu.xom.Element;
@@ -24,12 +23,11 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
-import org.xmlcml.args.ArgIterator;
-import org.xmlcml.args.ArgumentOption;
-import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.args.StringPair;
-import org.xmlcml.files.QuickscrapeNorma;
-import org.xmlcml.norma.util.TransformerWrapper;
+import org.xmlcml.cmine.args.ArgIterator;
+import org.xmlcml.cmine.args.ArgumentOption;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.args.StringPair;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.xml.XMLUtil;
 
 /** 
@@ -55,7 +53,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	
 	public final static String DOCTYPE = "!DOCTYPE";
-		
+	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html", "pdf2txt"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -65,9 +63,10 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private String tidyName;
 	private List<String> xslNameList;
 	private Map<String, String> stylesheetByNameMap;
-	private List<org.w3c.dom.Document> xslDocumentList;
-	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	private boolean standalone;
+	private List<String> transformList;
+	private List<org.w3c.dom.Document> xslDocumentList;
+	private NormaTransformer normaTransformer;
 
 	public NormaArgProcessor() {
 		super();
@@ -129,13 +128,26 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
 
+	/** supersedes parseXsl.
+	 * 
+	 * @param option
+	 * @param argIterator
+	 */
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		xslNameList = option.processArgs(tokens).getStringValues();
+		List<String> tokenList = option.processArgs(tokens).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
-		for (String xslName : xslNameList) {
-			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(xslName);
-			xslDocumentList.add(xslDocument);
+		transformList = new ArrayList<String>();
+		// at present we allow only one option
+		for (String token : tokenList) {
+			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
+			if (xslDocument != null) {
+				xslDocumentList.add(xslDocument);
+			} else if (TRANSFORM_OPTIONS.contains(token)) {
+				transformList.add(token);
+			} else {
+				LOG.error("Cannot process transform token: "+token);
+			}
 		}
 	}
 
@@ -155,180 +167,127 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	// ===========run===============
 	
 	public void transform(ArgumentOption option) {
-		LOG.trace("TRANSFORM "+option.getVerbose());
-		if (option.getVerbose().equals("--xsl")) {
-			applyXSLDocumentListToQNList();
-		}
+		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
+		normaTransformer.transform(option);
 	}
-		
+
+	private NormaTransformer getOrCreateNormaTransformer() {
+		if (normaTransformer == null) {
+			normaTransformer = new NormaTransformer(this);
+		}
+		return normaTransformer;
+	}
+
 	public void runTest(ArgumentOption option) {
 		LOG.debug("RUN_TEST "+"is a dummy");
 	}
 		
 
+	// =============output=============
+	public void outputMethod(ArgumentOption option) {
+		outputSpecifiedFormat();
+	}
+
+	private void outputSpecifiedFormat() {
+		getOrCreateNormaTransformer();
+		currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
+		if (normaTransformer.htmlElement != null) {
+			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), CMDir.FULLTEXT_HTML);
+		}
+		if (normaTransformer.xmlStringList != null && normaTransformer.xmlStringList.size() > 0) {
+			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), CMDir.SCHOLARLY_HTML);
+		}
+	}
+
 	// ==========================
 	
-
-	void applyXSLDocumentListToQNList() {
-		ensureXslDocumentList();
-		ensureQuickscrapeNormaList();
-		for (QuickscrapeNorma quickscrapeNorma : quickscrapeNormaList) {
-			try {
-				applyXSLDocumentListToQN(quickscrapeNorma);
-			} catch (Exception e) {
-				LOG.error("Cannot transform file", e);
-			}
-		}
-	}
-
-	private void applyXSLDocumentListToQN(QuickscrapeNorma quickscrapeNorma) {
-		for (org.w3c.dom.Document xslDocument : xslDocumentList) {
-			try {
-				transform(quickscrapeNorma, xslDocument);
-			} catch (IOException e) {
-				LOG.error("Cannot transform "+quickscrapeNorma+"; "+e);
-			}
-		}
-	}
-
-	void createQNListFromInputList() {
-		// proceed unless there is a single reserved file for input
-		if (QuickscrapeNorma.isNonEmptyNonReservedInputList(inputList)) {
-			if (output != null) {
-				LOG.debug("CREATING QN FROM INPUT:"+inputList);
-				getOrCreateOutputDirectory();
-				ensureQuickscrapeNormaList();
-				createNewQNsAndAddToList();
-			}
-		}
-	}
-
-	private void createNewQNsAndAddToList() {
-		ensureQuickscrapeNormaList();
-		for (String filename : inputList) {
-			try {
-				QuickscrapeNorma qn = createQuickscrapeNorma(filename);
-				if (qn != null) {
-					quickscrapeNormaList.add(qn);
-				}
-			} catch (IOException e) {
-				LOG.error("Failed to create QN: "+filename+"; "+e);
-			}
-		}
-	}
-
-	private QuickscrapeNorma createQuickscrapeNorma(String filename) throws IOException {
-		QuickscrapeNorma quickscrapeNorma = null;
-		File file = new File(filename);
-		if (file.isDirectory()) {
-			LOG.error("should not have any directories in inputList: "+file);
-		} else {
-			if (output != null) {
-				String name = FilenameUtils.getName(filename);
-				if (QuickscrapeNorma.isReservedFilename(name)) {
-					LOG.error(name+" is reserved for QuickscrapeNorma: (check that inputs are not already in a QN) "+file.getAbsolutePath());
-				}
-				String qnFilename = QuickscrapeNorma.getQNReservedFilenameForExtension(name);
-				String dirName = FilenameUtils.removeExtension(name);
-				File qnDir = new File(output, dirName);
-				quickscrapeNorma = new QuickscrapeNorma(qnDir);
-				quickscrapeNorma.createDirectory(qnDir, false);
-				File destFile = quickscrapeNorma.getReservedFile(qnFilename);
-				if (destFile != null) {
-					FileUtils.copyFile(file, destFile);
-					LOG.debug("QNF "+qnFilename+"; "+qnDir);
-				}
-			}
-		}
-		return quickscrapeNorma;
-	}
-
-	private void getOrCreateOutputDirectory() {
-		File outputDir = new File(output);
-		if (outputDir.exists()) {
-			if (!outputDir.isDirectory()) {
-				throw new RuntimeException("quickscrapeNormaRoot "+outputDir+" must be a directory");
-			}
-		} else {
-			outputDir.mkdirs();
-		}
-	}
-
-	private void transformInputList() {
-		for (String filename : inputList) {
-			try {
-				String xmlString = transform(new File(filename), xslDocumentList.get(0));
-				LOG.debug("XML "+xmlString );
-			} catch (IOException e) {
-				LOG.error("Cannot transform "+filename+"; "+e);
-			}
-		}
-	}
-
-	private String transform(File file, org.w3c.dom.Document xslDocument) throws IOException {
-		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
-		String xmlString = null;
-		try {
-//			TransformerWrapper transformerWrapper = new TransformerWrapper();
-			xmlString = transformerWrapper.transformToXML(file);
-			LOG.error("output not bound in transform // FIXME");
-		} catch (TransformerException e) {
-			throw new RuntimeException("cannot transform: ", e);
-		}
-		return xmlString;
-	}
-
-	private void transform(QuickscrapeNorma quickscrapeNorma, org.w3c.dom.Document xslDocument) throws IOException {
-		String inputName = getString();
-		if (inputName == null) {
-			throw new RuntimeException("Must have single input option");
-		}
-		if (!QuickscrapeNorma.isReservedFilename(inputName)) {
-			throw new RuntimeException("Input must be reserved file; found: "+inputName);
-		}
-		File inputFile = quickscrapeNorma.getExistingReservedFile(inputName);
-		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file "+inputName+" in directory "+quickscrapeNorma.getDirectory());
-		}
-		if (!QuickscrapeNorma.isReservedFilename(output)) {
-			throw new RuntimeException("output must be reserved file; found: "+output);
-		}
-		File outputFile = quickscrapeNorma.getReservedFile(output);
-		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
-		try {
-			LOG.debug("Writing : "+outputFile);
-			String xmlString = transformerWrapper.transformToXML(inputFile);
-			quickscrapeNorma.writeFile(xmlString, output);
-		} catch (TransformerException e) {
-			throw new RuntimeException("cannot transform: ", e);
-		}
-	}
-
-	private TransformerWrapper getOrCreateTransformerWrapperForStylesheet(org.w3c.dom.Document xslDocument) {
-		if (transformerWrapperByStylesheetMap == null) {
-			transformerWrapperByStylesheetMap = new HashMap<org.w3c.dom.Document, TransformerWrapper>();
-		}
-		TransformerWrapper transformerWrapper = transformerWrapperByStylesheetMap.get(xslDocument);
-//		Transformer javaxTransformer = transformerWrapperByStylesheetMap.get(xslDocument);
-		if (transformerWrapper == null) {
-			try {
-				transformerWrapper = new TransformerWrapper(standalone);
-				Transformer javaxTransformer = transformerWrapper.createTransformer(xslDocument);
-				transformerWrapperByStylesheetMap.put(xslDocument,  transformerWrapper);
-			} catch (Exception e) {
-				throw new RuntimeException("Cannot create transformer from xslDocument", e);
-			}
-		}
-		return transformerWrapper;
-	}
-
 	private void ensureXslDocumentList() {
 		if (xslDocumentList == null) {
 			xslDocumentList = new ArrayList<org.w3c.dom.Document>();
 		}
 	}
 
-	org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
+	File checkAndGetInputFile(CMDir cmDir) {
+		String inputName = getString();
+		if (inputName == null) {
+			throw new RuntimeException("Must have single input option");
+		}
+		if (!CMDir.isReservedFilename(inputName)) {
+			throw new RuntimeException("Input must be reserved file; found: "+inputName);
+		}
+		File inputFile = cmDir.getExistingReservedFile(inputName);
+		if (inputFile == null) {
+			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cmDir.getDirectory());
+		}
+		return inputFile;
+	}
+
+	private void createCMDirListFromInputList() {
+		// proceed unless there is a single reserved file for input
+		if (CMDir.isNonEmptyNonReservedInputList(inputList)) {
+//			if (output != null) {
+				LOG.debug("CREATING CMDir FROM INPUT:"+inputList);
+				getOrCreateOutputDirectory();
+				ensureCMDirList();
+				createNewCMDirsAndAddToList();
+//			}
+		}
+	}
+
+	private void createNewCMDirsAndAddToList() {
+		ensureCMDirList();
+		for (String filename : inputList) {
+			try {
+				CMDir cmDir = createCMDir(filename);
+				if (cmDir != null) {
+					cmDirList.add(cmDir);
+				}
+			} catch (IOException e) {
+				LOG.error("Failed to create CMDir: "+filename+"; "+e);
+			}
+		}
+	}
+
+	private CMDir createCMDir(String filename) throws IOException {
+		CMDir cmDir = null;
+		File file = new File(filename);
+		if (file.isDirectory()) {
+			LOG.error("should not have any directories in inputList: "+file);
+		} else {
+			if (output != null) {
+				String name = FilenameUtils.getName(filename);
+				if (CMDir.isReservedFilename(name)) {
+					LOG.error(name+" is reserved for CMDir: (check that inputs are not already in a CMDir) "+file.getAbsolutePath());
+				}
+				String cmFilename = CMDir.getCMDirReservedFilenameForExtension(name);
+				String dirName = FilenameUtils.removeExtension(name);
+				File cmDirFile = new File(output, dirName);
+				cmDir = new CMDir(cmDirFile);
+				cmDir.createDirectory(cmDirFile, false);
+				File destFile = cmDir.getReservedFile(cmFilename);
+				if (destFile != null) {
+					FileUtils.copyFile(file, destFile);
+					LOG.trace("CMD "+cmFilename+"; "+cmDirFile);
+				}
+			}
+		}
+		return cmDir;
+	}
+
+	private void getOrCreateOutputDirectory() {
+		if (output != null) {
+			File outputDir = new File(output);
+			if (outputDir.exists()) {
+				if (!outputDir.isDirectory()) {
+					throw new RuntimeException("cmDirRoot "+outputDir+" must be a directory");
+				}
+			} else {
+				outputDir.mkdirs();
+			}
+		}
+	}
+
+	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
 		DocumentBuilder db = createDocumentBuilder(); 
 		String stylesheetResourceName = replaceCodeIfPossible(xslName);
 		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
@@ -339,7 +298,8 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			} catch (FileNotFoundException e) { /* hide exception*/}
 		}
 		if (stylesheetDocument == null) {
-			LOG.debug("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
+			// this could happen when we use "pdf2txt" , etc
+			LOG.trace("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
 		}
 		return stylesheetDocument;
 	}
@@ -433,7 +393,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	 */
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
-		createQNListFromInputList();
+		createCMDirListFromInputList();
+	}
+
+	public CMDir getCurrentCMDir() {
+		return currentCMDir;
+	}
+
+	public List<Document> getXslDocumentList() {
+		ensureXslDocumentList();
+		return xslDocumentList;
 	}
 
 

@@ -12,10 +12,10 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.args.ArgumentOption;
-import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.files.QuickscrapeNorma;
-import org.xmlcml.files.QuickscrapeNormaList;
+import org.xmlcml.cmine.args.ArgumentOption;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CMDirList;
 
 public class NormaArgProcessorTest {
 
@@ -105,29 +105,25 @@ public class NormaArgProcessorTest {
 	@Test
 	/** normalizes an XML file and writes out shtml.
 	 * 
+	 *  // SHOWCASE
 	 * Not fully tagged. this is to test directory mechanism.
 	 * 
 	 * @throws IOException
 	 */
-	public void testQuickscrapeNorma() throws IOException {
+	public void testCreateScholarlyHtml() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String[] args = {
-			"-q", container0115884.toString(), // output from quickscrape
-			"-x", "nlm2html",                  // stylesheet to use (code)
-			"--input", "fulltext.xml",          // type of file to transform
-			"--output", "scholarly.html"       // output
-		};
-		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
-		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertNotNull(quickscrapeNormaList);
-		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
-		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
-		LOG.debug("QN "+quickscrapeNorma.toString());
-		List<File> files = quickscrapeNorma.listFiles(true);
+		String args = "-q "+container0115884.toString()+" --xsl nlm2html --input fulltext.xml --output scholarly.html";
+		Norma norma = new Norma();
+		norma.run(args);
+		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
+		CMDir cmDir = cmDirList.get(0);
+		List<File> files = cmDir.listFiles(true);
 		LOG.debug(files);
-		Assert.assertEquals(4, files.size());
+		Assert.assertEquals(5, files.size());
 	}
 	
 	/** normalizes an XML file and writes out shtml.
@@ -138,7 +134,7 @@ public class NormaArgProcessorTest {
 	 */
 	@Test
 	@Ignore // FIXME 
-	public void testQuickscrapeNormaWithDTD() throws IOException {
+	public void testCMDirWithDTD() throws IOException {
 		File container0115884 = new File("target/plosone/0115884withdtd/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
@@ -148,7 +144,7 @@ public class NormaArgProcessorTest {
 			"--standalone", "false",           // force use of DTD. May fail
 			"-e", "xml"                       // type of file to transform
 		};
-		if (1==1) throw new RuntimeException("Recast as QN");
+		if (1==1) throw new RuntimeException("Recast as CMDir");
 
 		int expectedFileCount = 5; // because of the output file
 		
@@ -162,19 +158,41 @@ public class NormaArgProcessorTest {
 			Assert.assertEquals("UnknownHostException: dtd.nlm.nih.gov", errorMessage.trim());
 			expectedFileCount = 4; // no output file
 		}
-		QuickscrapeNormaList quickscrapeNormaList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertNotNull(quickscrapeNormaList);
-		Assert.assertEquals("QuickscrapeNorma/s",  1,  quickscrapeNormaList.size());
-		QuickscrapeNorma quickscrapeNorma = quickscrapeNormaList.get(0);
-		List<File> files = quickscrapeNorma.listFiles(true);
+		CMDirList cmDirList = argProcessor.getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
+		CMDir cmDir = cmDirList.get(0);
+		List<File> files = cmDir.listFiles(true);
 		Assert.assertEquals(expectedFileCount, files.size());
 	}
 	
 	@Test
+	/** transforms PDF to text
+	 * 
+	 *  // SHOWCASE
+	 * 
+	 * @throws IOException
+	 */
+	public void testPDF2TXT() throws IOException {
+		File container0115884 = new File("target/plosone/0115884/");
+		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
+		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		String args = "-q "+container0115884.toString()+" -x pdf2txt --input fulltext.pdf --output fulltext.pdf.txt";
+		LOG.debug(args);
+		Norma norma = new Norma();
+		norma.run(args);
+		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
+		CMDir cmDir = cmDirList.get(0);
+		List<File> files = cmDir.listFiles(true);
+		LOG.debug(files);
+		Assert.assertEquals(5, files.size());
+	}
+	
+	@Test
 	public void testPubstyle() throws Exception {
-		String[] args = new String[] {
-				"--pubstyle", "bmc"
-		};
+		String args = "--pubstyle bmc";
 		Norma norma = new Norma();
 		norma.run(args);
 		DefaultArgProcessor argProcessor = (DefaultArgProcessor) norma.getArgProcessor();

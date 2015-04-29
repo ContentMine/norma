@@ -7,14 +7,13 @@ import java.util.List;
 import junit.framework.Assert;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
+import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.args.DefaultArgProcessor;
-import org.xmlcml.files.QuickscrapeNorma;
-import org.xmlcml.files.QuickscrapeNormaList;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CMDirList;
 
 /** tests the various uses of the -i/--input argument.
  * 
@@ -104,39 +103,39 @@ public class InputTest {
 		Assert.assertEquals("inputList", 5, inputList.size());
 		// files are not sorted
 		Assert.assertTrue("input file", inputList.contains("src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm1.xml"));
-		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertNotNull(qnList);
-		Assert.assertEquals("qnlist", 0, qnList.size());
+		CMDirList cmDirList = argProcessor.getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("cmDirlist", 0, cmDirList.size());
 	}
 	
-	/** creates single `QSNorma` directory
+	/** creates single `CMDir` directory
 	 * 
 	 */
 	@Test
 	public void testMakeSingleQuickscrape() {
-		File quickscrapeDir = new File("target/quickscrape/single/");
-		FileUtils.deleteQuietly(quickscrapeDir);
+		File cmDir = new File("target/quickscrape/single/");
+		FileUtils.deleteQuietly(cmDir);
 		String[] args = {
 				"-i", 
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
-				"-o", quickscrapeDir.toString()
+				"-o", cmDir.toString()
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
-		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertNotNull(qnList);
-		Assert.assertEquals("qnlist", 1, qnList.size());
+		CMDirList cmDirList = argProcessor.getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("cmDirlist", 1, cmDirList.size());
 		argProcessor.runAndOutput();
-		qnList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertEquals("qnlist", 1, qnList.size());
-		QuickscrapeNorma qn = qnList.get(0);
-		Assert.assertTrue("fulltext.xml", qn.hasFulltextXML());
-		Assert.assertFalse("fulltext.html", qn.hasFulltextHTML());
-		File fulltextXML = qn.getExistingFulltextXML();
+		cmDirList = argProcessor.getCMDirList();
+		Assert.assertEquals("cmDirlist", 1, cmDirList.size());
+		CMDir cmDir1 = cmDirList.get(0);
+		Assert.assertTrue("fulltext.xml", cmDir1.hasExistingFulltextXML());
+		Assert.assertFalse("fulltext.html", cmDir1.hasFulltextHTML());
+		File fulltextXML = cmDir1.getExistingFulltextXML();
 		Assert.assertTrue("fulltextXML", fulltextXML.exists());
-		File fulltextHTML = qn.getExisitingFulltextHTML();
+		File fulltextHTML = cmDir1.getExistingFulltextHTML();
 		Assert.assertNull("fulltextXML", fulltextHTML);
 	}
 
@@ -146,15 +145,15 @@ public class InputTest {
 	 * SHOWCASE
 	 */
 	@Test
-	public void testMakeMultipleQuickscrape() {
-		File quickscrapeDir = new File("target/quickscrape/multiple/");
-		FileUtils.deleteQuietly(quickscrapeDir);
+	public void testMakeMultipleCMDir() {
+		File cmDir = new File("target/quickscrape/multiple/");
+		FileUtils.deleteQuietly(cmDir);
 		String[] args = {
 				"-i", 
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
 				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
 				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
-				"-o", quickscrapeDir.toString()
+				"-o", cmDir.toString()
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -163,17 +162,17 @@ public class InputTest {
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/peerj-727.xml", inputList.get(1));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
 		argProcessor.runAndOutput();
-		QuickscrapeNormaList qnList = argProcessor.getQuickscrapeNormaList();
-		Assert.assertEquals("qnlist", 3, qnList.size());
-		Assert.assertEquals("qsNorma dir", "target/quickscrape/multiple/mdpi-04-00932", qnList.get(0).getDirectory().toString());
-		Assert.assertEquals("qsNorma dir", "target/quickscrape/multiple/peerj-727", qnList.get(1).getDirectory().toString());
-		Assert.assertEquals("qnNorma dir", "target/quickscrape/multiple/pensoft-4478", qnList.get(2).getDirectory().toString());
-		Assert.assertEquals("filecount0", 1, qnList.get(0).listFiles(false).size());
-		Assert.assertEquals("filecount1", 1, qnList.get(1).listFiles(false).size());
-		Assert.assertEquals("filecount2", 1, qnList.get(2).listFiles(false).size());
-		Assert.assertTrue("fulltext.xml", qnList.get(0).hasFulltextXML());
-		Assert.assertTrue("fulltext.xml", qnList.get(1).hasFulltextXML());
-		Assert.assertTrue("fulltext.xml", qnList.get(2).hasFulltextXML());
+		CMDirList cmDirList = argProcessor.getCMDirList();
+		Assert.assertEquals("cmDirlist", 3, cmDirList.size());
+		Assert.assertEquals("cmDir", "target/quickscrape/multiple/mdpi-04-00932", cmDirList.get(0).getDirectory().toString());
+		Assert.assertEquals("cmDir", "target/quickscrape/multiple/peerj-727", cmDirList.get(1).getDirectory().toString());
+		Assert.assertEquals("cmDir", "target/quickscrape/multiple/pensoft-4478", cmDirList.get(2).getDirectory().toString());
+		Assert.assertEquals("filecount0", 1, cmDirList.get(0).listFiles(false).size());
+		Assert.assertEquals("filecount1", 1, cmDirList.get(1).listFiles(false).size());
+		Assert.assertEquals("filecount2", 1, cmDirList.get(2).listFiles(false).size());
+		Assert.assertTrue("fulltext.xml", cmDirList.get(0).hasExistingFulltextXML());
+		Assert.assertTrue("fulltext.xml", cmDirList.get(1).hasExistingFulltextXML());
+		Assert.assertTrue("fulltext.xml", cmDirList.get(2).hasExistingFulltextXML());
 	}
 	
 
@@ -245,4 +244,95 @@ public class InputTest {
 		}
 	}
 	
+	@Test
+	public void testXMLSuffix() {
+		String args = 
+			"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0119090.xml"+
+			" -o target/plos10/";
+		Norma norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testXMLSuffixAndTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0119090.xml"+
+				" -o target/plos10/";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q target/plos10/e0119090/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testSeveralXMLTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0116215.xml"
+				+" -o target/plos10/";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q"
+				+ " target/plos100/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testRecursiveTransform() {
+		String args;
+		Norma norma;
+		args = 
+				"-i"
+				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/"
+				+" -o target/plos10/"
+				+ " -r true"
+				+ " -e xml"
+				+ ""
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+		args = 
+				"-q"
+				+ " target/plos10/"
+				+ " -i fulltext.xml"
+				+ " -o scholarly.html"
+				+ " --xsl nlm2html"
+				+ "";
+		norma = new Norma();
+		norma.run(args);
+	}
+	
+	@Test
+	public void testOutputWorks() {
+		
+	}
+	
+	
+	@Test
+	// FIXME
+	@Ignore // cannot deal with nonconventional suffixes yet
+	public void testNXMLSuffixAndScholarlyHTML() {
+		String args = 
+			"-i src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/PLoS_One_2015_Mar_6_10(3)_e0119090.nxml"+
+			" -o target/plos10/";
+		Norma norma = new Norma();
+		norma.run(args);
+	}
 }

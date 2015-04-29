@@ -23,7 +23,6 @@ public class ClinicalTrialsDemo {
 		FileUtils.copyDirectory(
 				new File("trialsdata/http_www.trialsjournal.com_content_16_1_1"), 
 				new File("trialstemp/http_www.trialsjournal.com_content_16_1_1"));
-		LOG.debug("copied file");
 		String args0[] = {
 			"-q", "trialstemp/http_www.trialsjournal.com_content_16_1_1", // output from quickscrape
 			"-i", "fulltext.xml",
@@ -36,7 +35,6 @@ public class ClinicalTrialsDemo {
 
 	private static void runManyFiles() throws IOException {
 //		FileUtils.copyDirectory(new File("trialsdata/"), new File("trialstemp/"));
-		LOG.debug("copied files");
 		String args0[] = {
 			"-q", // output from quickscrape
     "trialstemp/http_www.trialsjournal.com_content_16_1_1/",
