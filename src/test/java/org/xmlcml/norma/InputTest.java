@@ -110,6 +110,11 @@ public class InputTest {
 	
 	/** creates single `CMDir` directory
 	 * 
+	 * // SHOWCASE
+	 * Reads isolated XML file, creates a CMDir from the name and copies XML file to
+	 * fulltext.xml
+	 * 
+	 * 
 	 */
 	@Test
 	public void testMakeSingleQuickscrape() {
@@ -120,6 +125,7 @@ public class InputTest {
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
 				"-o", cmDir.toString()
 		};
+		// THIS MAKES THE CMDIR and copies files and renames
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());

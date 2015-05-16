@@ -1,0 +1,98 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Prevotella jejuni sp. nov., isolated from the small intestine of a child with coeliac disease"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Maria E. Hedberg",
+      "Anne Israelsson",
+      "Edward R. B. Moore",
+      "Liselott Svensson-Stadler",
+      "Sun Nyunt Wai",
+      "Grzegorz Pietz",
+      "Olof Sandström",
+      "Olle Hernell",
+      "Marie-Louise Hammarström",
+      "Sten Hammarström"
+    ]
+  },
+  "date": {
+    "value": [
+      "11/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.052647-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 11"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4218"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  Five obligately anaerobic, Gram-stain-negative, saccharolytic and proteolytic, non-spore-forming bacilli (strains CD3 : 27,\n                     CD3 : 28T, CD3 : 33, CD3 : 32 and CD3 : 34) are described. All five strains were isolated from the small intestine of a female child\n                     with coeliac disease. Cells of the five strains were short rods or coccoid cells with longer filamentous forms seen sporadically.\n                     The organisms produced acetic acid and succinic acid as major metabolic end products. Phylogenetic analysis based on comparative\n                     16S rRNA gene sequence analysis revealed close relationships between CD3 : 27, CD3 : 28T and CD3 : 33, between CD3 : 32 and Prevotella histicola CCUG 55407T, and between CD3 : 34 and Prevotella melaninogenica CCUG 4944BT. Strains CD3 : 27, CD3 : 28T and CD3 : 33 were clearly different from all recognized species within the genus Prevotella and related most closely to but distinct from P. melaninogenica. Based on 16S rRNA, RNA polymerase β-subunit (rpoB) and 60 kDa chaperonin protein subunit (cpn60) gene sequencing, and phenotypic, chemical and biochemical properties, strains CD3 : 27, CD3 : 28T and CD3 : 33 are considered to represent a novel species within the genus Prevotella, for which the name Prevotella jejuni sp. nov. is proposed. Strain CD3 : 28T ( = CCUG 60371T = DSM 26989T) is the type strain of the proposed novel species. All five strains were able to form homologous aggregates, in which tube-like\n                     structures were connecting individual bacteria cells. The five strains were able to bind to human intestinal carcinoma cell\n                     lines at 37 °C.\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4218.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4218.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4218/suppl/DC1"
+    ]
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4218/F1.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4218/F2.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                     \n                     Scanning electron micrographs showing surface structures of cells of P. jejuni, strains CD3 : 27 (a) and CD3 : 28T (b) and P. histicola strain CD3 : 32 (c). (d) Transmission electron micrograph of a cell of strain P. jejuni CD3 : 33; arrows indicate cross-section of the tube-like structures shown in (a)–(c) and arrowheads indicate outer membrane\n                        vesicles. Bars, 0.2 µm (a, b, d); 1 µm (c).\n                     \n                     \n                     \n                  ",
+      "Fig. 2.  \n                     \n                     Phylogenetic tree based on 16S rRNA gene sequences showing the relationships between strains CD3 : 27, CD3 : 28T and CD3 : 33 and related species. The 16S rRNA gene sequence of Porphyromonas gingivalis ATCC 33277T served as an outgroup. Bar, 0.02 substitutions per nucleotide position.\n                     \n                     \n                     \n                  "
+    ]
+  },
+  "license": {
+    "value": [
+      "\n                  This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted\n                     use, distribution, and reproduction in any medium, provided the original work is properly cited.\n                  \n               "
+    ]
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}

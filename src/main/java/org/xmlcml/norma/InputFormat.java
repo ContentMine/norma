@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 public enum InputFormat {
 	DOC,
 	DOCX,
+	HOCR,
 	HTML,
 	LATEX,
 	PDF,
@@ -44,6 +45,9 @@ public enum InputFormat {
 		}
 		if (is(InputFormat.HTML, inputName) || inputName.endsWith(".htm")) {
 			return InputFormat.HTML;
+		}
+		if (is(InputFormat.HOCR, inputName) || inputName.endsWith(".hocr.html")) {
+			return InputFormat.HOCR;
 		}
 		if (is(InputFormat.SVG, inputName)) {
 			return InputFormat.SVG;

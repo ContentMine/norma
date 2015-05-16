@@ -1,0 +1,89 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Arthrobacter siccitolerans sp. nov., a highly desiccation-tolerant, xeroprotectant-producing strain isolated from dry soil"
+    ]
+  },
+  "authors": {
+    "value": [
+      "L. SantaCruz-Calvo",
+      "J. González-López",
+      "M. Manzanera"
+    ]
+  },
+  "date": {
+    "value": [
+      "11/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.052902-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 11"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4174"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  A novel desiccation-tolerant, xeroprotectant-producing bacterium, designated strain 4J27T, was isolated from a Nerium oleander rhizosphere subjected to seasonal drought in Granada, Spain. Phylogenetic analysis based on 16S rRNA gene sequencing placed\n                     the isolate within the genus Arthrobacter, its closest relative being Arthrobacter phenanthrenivorans Shep3 DSM 18606T, with which it showed 99.23 % 16S rRNA gene sequence similarity. DNA–DNA hybridization measurements showed less than 25 %\n                     relatedness between strain 4J27T and Arthrobacter phenanthrenivorans DSM 18606T. The DNA base composition of strain 4J27T was 65.3 mol%. The main fatty acids were anteiso C15 : 0, anteiso C17 : 0, C16 : 0 and iso C16 : 0 and the major menaquinone was MK-9 (H2). The peptidoglycan type was A3α with an l-Lys–l-Ser–l-Thr–l-Ala interpeptide bridge. The bacterium tested positive for catalase activity and negative for oxidase activity. Phylogenetic,\n                     chemotaxonomic and phenotypic analyses indicated that the desiccation-tolerant strain 4J27T represents a novel species within the genus Arthrobacter, for which the name Arthrobacter siccitolerans is proposed. The type strain is 4J27T ( = CECT 8257T = LMG 27359T).\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4174.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4174.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4174/suppl/DC1"
+    ]
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4174/F1.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                     \n                     Neighbour-joining phylogenetic tree based on 16S rRNA sequence comparisons of strain 4J27T and its 24 closest relatives. Streptomyces albus AS 4.164T was used as the outgroup. The numbers at bifurcations indicate how many times each species coincided in this position as\n                        percentages and only values > 50% are shown. Bar, 0.01 changes per nucleotide position.\n                     \n                     \n                     \n                  "
+    ]
+  },
+  "license": {
+    "value": [
+      "\n                  This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted\n                     use, distribution, and reproduction in any medium, provided the original work is properly cited.\n                  \n               "
+    ]
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}

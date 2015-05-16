@@ -1,0 +1,90 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Spirosoma endophyticum sp. nov., isolated from Zn- and Cd-accumulating Salix caprea"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Julia Fries",
+      "Stefan Pfeiffer",
+      "Melanie Kuffner",
+      "Angela Sessitsch"
+    ]
+  },
+  "date": {
+    "value": [
+      "12/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.052654-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 12"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4586"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  A Gram-reaction-negative, yellow-pigmented strain, designated EX36T, was characterized using a polyphasic approach comprising phylogenetic, morphological and genotypic analyses. The endophytic\n                     strain was isolated from Zn/Cd-accumulating Salix caprea in Arnoldstein, Austria. Analysis of the 16S rRNA gene demonstrated that the novel strain is most closely related to members\n                     of the genus Spirosoma (95 % sequence similarity with Spirosoma linguale). The genomic DNA G+C content was 47.2 mol%. The predominant quinone was and the major cellular fatty acids were summed feature\n                     3 (iso-C15 : 0 2-OH and/or C16 : 1ω7c), C16 : 1ω5c, iso-C17 : 0 3-OH and iso-C15 : 0. On the basis of its phenotypic and genotypic properties, strain EX36T should be classified as a novel species of the genus Spirosoma, for which the name Spirosoma endophyticum sp. nov. is proposed. The type strain is EX36T ( = DSM 26130T = LMG 27272T).\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_12/4586.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_12/4586.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_12/4586/suppl/DC1"
+    ]
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_12/4586/F1.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                     \n                     Maximum-likelihood tree (bootstrap: 100 replicates) based on 16S rRNA gene sequence data (sequence length 1296 bp) showing\n                        the phylogenetic position of strain EX36T among related species selected from the phylum Bacteroidetes. Cardiobacterium hominis ATCC 15826T (M35014) was used as an outgroup.\n                     \n                     \n                     \n                  "
+    ]
+  },
+  "license": {
+    "value": [
+      "\n                  This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted\n                     use, distribution, and reproduction in any medium, provided the original work is properly cited.\n                  \n               "
+    ]
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}

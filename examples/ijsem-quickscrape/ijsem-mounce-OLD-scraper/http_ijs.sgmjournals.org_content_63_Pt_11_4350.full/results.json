@@ -1,0 +1,89 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Reclassification of Bifidobacterium stercoris Kim et al. 2010 as a later heterotypic synonym of Bifidobacterium adolescentis"
+    ]
+  },
+  "authors": {
+    "value": [
+      "J. Killer",
+      "I. Sedláček",
+      "V. Rada",
+      "J. Havlík",
+      "J. Kopečný"
+    ]
+  },
+  "date": {
+    "value": [
+      "11/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.054957-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 11"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4350"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  The taxonomic position of Bifidobacterium stercoris Eg1T ( = JCM 15918T) based on comparative 16S rRNA gene and hsp60 sequence analyses was found to be controversial, as the strain showed high similarity to the type strain of Bifidobacterium adolescentis, CCUG 18363T. Therefore, the relationship between the two species was investigated by a taxonomic study that included, in addition to\n                     re-evaluation of the 16S rRNA gene sequence, determination of DNA–DNA binding and multilocus sequence analysis (MLSA) of housekeeping\n                     genes encoding the DNA-directed RNA polymerase B subunit (rpoC), putative xylulose-5-phosphate/fructose-6-phosphate phosphoketolase (xfp), elongation factor EF-G (fusA), 50S ribosomal protein L2 (rplB) and DNA gyrase B subunit (gyrB). Comparative 16S rRNA gene sequence analysis showed relatively high similarity (98.9 %) between B. stercoris KCTC 5756T and B. adolescentis ATCC 15703T. MLSA revealed close relatedness between B. stercoris KCTC 5756T and B. adolescentis CCUG 18363T, with 99.3–100 % similarity between the rpoC, xfp, fusA, rplB and gyrB gene sequences. In addition, relatively high dnaJ1 gene sequence similarity of 97.7 % was found between the strains. Similar phenotypes and a high DNA–DNA binding value (78.9 %)\n                     confirmed that B. stercoris and B. adolescentis are synonymous. Based on these results, it is proposed that the species Bifidobacterium stercoris Kim et al. 2010 should be reclassified as a later heterotypic synonym of Bifidobacterium adolescentis Reuter 1963 (Approved Lists 1980).\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4350.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4350.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4350/suppl/DC1"
+    ]
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4350/F1.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                     \n                     Phylogenetic tree of the family Bifidobacteriaceae showing the very close relationship of B. adolescentis CCUG 18363T and B. stercoris KCTC 5756T, reconstructed by the maximum-likelihood method based on concatenated partial sequences of the hsp60 (539 nt) and xfp (418 nt) genes using mega version 5.05 software after removing hypervariable positions by using the program Gblocks. Sequence data were aligned using\n                        the clustal w algorithm. The Tamura–Nei model was used for reconstruction of the phylogenetic tree. Bootstrap values, expressed as percentages\n                        of 1000 datasets, are given at nodes. GenBank accession numbers of partial gene sequences derived from type strains are presented\n                        in Table S1. The tree was rooted by Gardnerella vaginalis ATCC 14018T. Bar, 0.04 substitutions per nucleotide position.\n                     \n                     \n                     \n                  "
+    ]
+  },
+  "license": {
+    "value": []
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}

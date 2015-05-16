@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.input.html.HtmlReader;
+import org.xmlcml.norma.input.ocr.HOCRReader;
 
 public class InputReader {
 
@@ -19,6 +20,8 @@ public class InputReader {
 			LOG.debug("no input type");
 		} else if (type.equals(InputFormat.HTML)) {
 			reader = new HtmlReader();
+		} else if (type.equals(InputFormat.HOCR)) {
+			reader = new HOCRReader();
 		} else {
 			throw new RuntimeException("Unknown/unsupported input type: "+type);
 		}

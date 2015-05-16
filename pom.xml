@@ -214,25 +214,11 @@
 			<artifactId>gson</artifactId>
 			<version>2.3.1</version>
 		</dependency>
-<!--
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>${guava.version}</version>
-		</dependency>
--->
 		<dependency>
 			<groupId>org.xml-cml</groupId>
 			<artifactId>svg2xml</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>org.xml-cml</groupId>
-			<artifactId>svgbuilder</artifactId>
-			<version>0.1-SNAPSHOT</version>
-		</dependency>
-		-->
 		
 		<!--  to avoid Xerces Hell? 
 		http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal

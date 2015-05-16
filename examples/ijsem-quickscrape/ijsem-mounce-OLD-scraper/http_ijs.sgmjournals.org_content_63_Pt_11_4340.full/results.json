@@ -1,0 +1,101 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Molecular and phenotypic analyses reveal the non-identity of the Phaeobacter gallaeciensis type strain deposits CIP 105210T and DSM 17395"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Nora Buddruhs",
+      "Silke Pradella",
+      "Markus Göker",
+      "Orsola Päuker",
+      "Rüdiger Pukall",
+      "Cathrin Spröer",
+      "Peter Schumann",
+      "Jörn Petersen",
+      "Thorsten Brinkhoff"
+    ]
+  },
+  "date": {
+    "value": [
+      "11/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.053900-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 11"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4340"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  The marine genus Phaeobacter currently comprises six species, some of which were intensively studied mainly due to their ability to produce secondary\n                     metabolites. The type strain of the type species, Phaeobacter gallaeciensis BS107T, has been deposited at several public culture collections worldwide. Based on differences in plasmid profiles, we detected\n                     that the alleged P. gallaeciensis type strains deposited at the Collection Institute Pasteur (CIP; Paris, France) as CIP 105210 and at the German Collection\n                     of Microorganisms and Cell Cultures (DSMZ; Braunschweig, Germany) as DSM 17395 are not identical. To determine the identity\n                     of these strains, we conducted DNA–DNA hybridization, matrix-assisted laser desorption/ionization time-of-flight mass spectrometry\n                     (MALDI-TOF), 16S rRNA gene and internal transcribed spacer (ITS) sequence analyses, as well as physiological experiments.\n                     Based on the detailed 16S rRNA gene reanalysis we showed that strain CIP 105210 most likely corresponds to the original P. gallaeciensis type strain BS107T. In contrast, the Phaeobacter strain DSM 17395 exhibits a much closer affiliation to Phaeobacter inhibens DSM 16374T ( = T5T) and should thus be allocated to this species. The detection of the dissimilarity of strains CIP 105210T and DSM 17395 will influence future comparative studies within the genus Phaeobacter.\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/suppl/DC1"
+    ]
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/F1.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/F2.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/F3.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/F4.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4340/F5.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                           \n                           (a) PFGE plasmid profiles of the Phaeobacter strains CIP 105210T, DSM 17395, DSM 24588 and DSM 16374T based on uncut high-molecular-mass genomic DNA. (b) Calculated plasmid sizes as mean values taken from at least two different\n                              gel runs. The PFGE conditions were: 1 % (w/v) agarose gel with pulse times of 1 to 48 s for 24 h at 200 V (6 V cm−1). Chr, chromosomal DNA; λ, lambda phage concatemers as molecular-mass PFGE markers (New England Biolabs); li, linear. (*), The two largest plasmids (linearized forms) of Phaeobacter strains CIP 105210T and DSM 17395 migrated about the same distance in the gel and thus seemed to have an identical size. In contrast, both bands\n                              could be clearly distinguished by their size in other PFGE runs (data not shown) using different DNA sample preparations.\n                              DNA mobility is largely influenced by the DNA concentration of the sample. The observed discrepancy can thus be explained\n                              by the relatively high DNA concentration in CIP 105210T (compared to DSM 17395T), which retards band migration (Römling et al., 1996). (†) (‡), The PFGE-based plasmid size estimations of 75 and 63 kb of DSM 17395 correspond to the plasmid sizes of 78 and 65 kb, respectively,\n                              determined by genome sequencing (Thole et al., 2012; NC_018287.1, NC_018288.1). (§), The 36 kb plasmid of P. gallaeciensis CIP 105210T had a very low fluorescence intensity and is thus hardly visible on the gel image. ++, The 77 kb band of strain CIP 105210T showed increased fluorescence intensity and presumably represents a double band (plasmid duplet).\n                           \n                           \n                           \n                        ",
+      "Fig. 2.  \n                              \n                              Midpoint-rooted MP phylogeny inferred from 16S rRNA gene sequences of Phaeobacter strains closely related to P. inhibens and P. gallaeciensis. Branches are scaled in terms of the minimum number of substitutions (using deltran optimization; Stamatakis et al., 2008). Numbers above branches are support values from MP (left) and ML (right) bootstrapping. Original designation of strains\n                                 that are deposited at culture collections is indicated in parentheses; square brackets give the respective accession number.\n                              \n                              \n                              \n                           ",
+      "Fig. 3.  \n                              \n                              Secondary structure of the 16S rRNA variable region V4 of P. gallaeciensis CIP 105210T (a) and P. inhibens DSM 17395 (b) demonstrating transition of bases 614 and 626 (E. coli numbering; bases 529 and 541 according to the CIP 105210T numbering). RNA folding was simulated using the Mfold web server for nucleic acid folding and hybridization prediction (Zuker, 2003; http://mfold.rna.albany.edu/?q=mfold/RNA-Folding-Form).\n                              \n                              \n                              \n                           ",
+      "Fig. 4.  \n                              \n                              Score-oriented dendrogram showing the similarity of MALDI-TOF mass spectra from cell extracts of selected Phaeobacter strains. The dendrogram was generated by the BioTyper software (version 3.0; Bruker Daltonics).\n                              \n                              \n                              \n                           ",
+      "Fig. 5.  \n                              \n                              Midpoint-rooted ML phylogeny inferred from ITS sequences of Phaeobacter strains closely related to P. inhibens and P. gallaeciensis. Branches are scaled in terms of the expected number of substitutions per site. Numbers above branches are support values\n                                 from ML (left) and MP (right) bootstrapping. Original designation of strains that are deposited at culture collections is\n                                 indicated in parentheses; square brackets give the respective accession number.\n                              \n                              \n                              \n                           "
+    ]
+  },
+  "license": {
+    "value": []
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}
