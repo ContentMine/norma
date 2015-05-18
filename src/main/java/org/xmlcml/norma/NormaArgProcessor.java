@@ -190,7 +190,9 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	private void outputSpecifiedFormat() {
 		getOrCreateNormaTransformer();
-		currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
+		if (normaTransformer.outputTxt != null) {
+			currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
+		}
 		if (normaTransformer.htmlElement != null) {
 			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), CMDir.FULLTEXT_HTML);
 		}
@@ -225,20 +227,19 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private void createCMDirListFromInputList() {
 		// proceed unless there is a single reserved file for input
 		if (CMDir.isNonEmptyNonReservedInputList(inputList)) {
-//			if (output != null) {
-				LOG.debug("CREATING CMDir FROM INPUT:"+inputList);
-				getOrCreateOutputDirectory();
-				ensureCMDirList();
-				createNewCMDirsAndAddToList();
-//			}
+			LOG.trace("CREATING CMDir FROM INPUT:"+inputList);
+			// this actually creates directory
+			getOrCreateOutputDirectory();
+			ensureCMDirList();
+			createNewCMDirsAndCopyOriginalFilesAndAddToList();
 		}
 	}
 
-	private void createNewCMDirsAndAddToList() {
+	private void createNewCMDirsAndCopyOriginalFilesAndAddToList() {
 		ensureCMDirList();
 		for (String filename : inputList) {
 			try {
-				CMDir cmDir = createCMDir(filename);
+				CMDir cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
 				if (cmDir != null) {
 					cmDirList.add(cmDir);
 				}
@@ -248,7 +249,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	private CMDir createCMDir(String filename) throws IOException {
+	private CMDir createCMDirAndCopyFileOrMakeSubDirectory(String filename) throws IOException {
 		CMDir cmDir = null;
 		File file = new File(filename);
 		if (file.isDirectory()) {
@@ -260,17 +261,58 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 					LOG.error(name+" is reserved for CMDir: (check that inputs are not already in a CMDir) "+file.getAbsolutePath());
 				}
 				String cmFilename = CMDir.getCMDirReservedFilenameForExtension(name);
-				String dirName = FilenameUtils.removeExtension(name);
-				File cmDirFile = new File(output, dirName);
-				cmDir = new CMDir(cmDirFile);
-				cmDir.createDirectory(cmDirFile, false);
-				File destFile = cmDir.getReservedFile(cmFilename);
-				if (destFile != null) {
-					FileUtils.copyFile(file, destFile);
-					LOG.trace("CMD "+cmFilename+"; "+cmDirFile);
+				if (cmFilename == null) {
+					LOG.error("Cannot create CMDir from this type of file: "+name);
+					return null;
+				}
+				LOG.trace("Reserved filename: "+cmFilename);
+				if (CMDir.isReservedDirectory(cmFilename)) {
+					cmDir = makeCMDir(name);
+					ensureReservedDirectoryAndCopyFile(cmDir, cmFilename, filename);
+				} else {
+					cmDir = makeCMDir(name);
+					File destFile = cmDir.getReservedFile(cmFilename);
+					if (destFile != null) {
+						FileUtils.copyFile(file, destFile);
+					}
 				}
 			}
 		}
+		return cmDir;
+	}
+
+	private CMDir makeCMDir(String name) {
+		CMDir cmDir;
+		String dirName = FilenameUtils.removeExtension(name);
+		cmDir = createCMDir(dirName);
+		return cmDir;
+	}
+
+	private void ensureReservedDirectoryAndCopyFile(CMDir cmDir, String reservedFilename, String filename) {
+		File reservedDir = new File(cmDir.getDirectory(), reservedFilename);
+		LOG.trace("Res "+reservedDir.getAbsolutePath());
+		File orig = new File(filename);
+		LOG.trace("Orig: "+orig.getAbsolutePath());
+		try {
+			FileUtils.forceMkdir(reservedDir);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot make directory: "+reservedFilename+" "+e);
+		}  
+		String name = FilenameUtils.getName(filename);
+		try {
+			File outFile = new File(reservedDir, name);
+			FileUtils.copyFile(new File(filename), outFile);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot copy file: "+filename+" to "+reservedDir+" / "+e);
+		}  
+		LOG.debug("created "+name+" in "+reservedDir);
+		
+	}
+
+	private CMDir createCMDir(String dirName) {
+		File cmDirFile = new File(output, dirName);
+		CMDir cmDir = new CMDir(cmDirFile);
+		cmDir.createDirectory(cmDirFile, false);
 		return cmDir;
 	}
 

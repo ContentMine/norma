@@ -1,0 +1,96 @@
+{
+  "publisher": {
+    "value": [
+      "Society for General Microbiology"
+    ]
+  },
+  "journal": {
+    "value": [
+      "International Journal of Systematic and Evolutionary\n                Microbiology"
+    ]
+  },
+  "title": {
+    "value": [
+      "Sulfurimonas gotlandica sp. nov., a chemoautotrophic and psychrotolerant epsilonproteobacterium isolated from a pelagic redoxcline, and an emended description of the genus Sulfurimonas"
+    ]
+  },
+  "authors": {
+    "value": [
+      "Matthias Labrenz",
+      "Jana Grote",
+      "Kerstin Mammitzsch",
+      "Henricus T. S. Boschker",
+      "Michael Laue",
+      "Günter Jost",
+      "Sabine Glaubitz",
+      "Klaus Jürgens"
+    ]
+  },
+  "date": {
+    "value": [
+      "11/01/2013"
+    ]
+  },
+  "doi": {
+    "value": [
+      "10.1099/ijs.0.048827-0"
+    ]
+  },
+  "volume": {
+    "value": [
+      "63"
+    ]
+  },
+  "issue": {
+    "value": [
+      "Pt 11"
+    ]
+  },
+  "firstpage": {
+    "value": [
+      "4141"
+    ]
+  },
+  "abstract": {
+    "value": [
+      "\n                  \n                      Next Section\n                  Abstract\n                  \n                  A psychro- and aerotolerant bacterium was isolated from the sulfidic water of a pelagic redox zone of the central Baltic Sea.\n                     The slightly curved rod- or spiral-shaped cells were motile by one polar flagellum or two bipolar flagella. Growth was chemolithoautotrophic,\n                     with nitrate or nitrite as electron acceptor and either a variety of sulfur species of different oxidation states or hydrogen\n                     as electron donor. Although the bacterium was able to utilize organic substances such as acetate, pyruvate, peptone and yeast\n                     extract for growth, these compounds yielded considerably lower cell numbers than obtained with reduced sulfur or hydrogen;\n                     in addition, bicarbonate supplementation was necessary. The cells also had an absolute requirement for NaCl. Optimal growth\n                     occurred at 15 °C and at pH 6.6–8.0. The predominant fatty acid of this organism was 16 : 1ω7c, with 3-OH 14 : 0, 16 : 0, 16 : 1ω5c+t and 18 : 1ω7c present in smaller amounts. The DNA G+C content was 33.6 mol%. As determined in 16S rRNA gene sequence phylogeny analysis,\n                     the isolate belongs to the genus Sulfurimonas, within the class Epsilonproteobacteria, with 93.7 to 94.2 % similarity to the other species of the genus Sulfurimonas, Sulfurimonas autotrophica, Sulfurimonas paralvinellae and Sulfurimonas denitrificans. However, the distinct physiological and genotypic differences from these previously described taxa support the description\n                     of a novel species, Sulfurimonas gotlandica sp. nov. The type strain is GD1T ( = DSM 19862T = JCM 16533T). Our results also justify an emended description of the genus Sulfurimonas.\n                  \n                  \n               "
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4141.full"
+    ]
+  },
+  "fulltext_pdf": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4141.full.pdf"
+    ]
+  },
+  "supplementary_material": {
+    "value": []
+  },
+  "figure": {
+    "value": [
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4141/F1.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4141/F2.small.gif",
+      "http://ijs.sgmjournals.org/content/63/Pt_11/4141/F3.small.gif"
+    ]
+  },
+  "figure_caption": {
+    "value": [
+      "Fig. 1.  \n                     \n                     Cell morphology of spirilla-shaped cells of strain GD1T cultivated on ABW+NS medium. (a) Fluorescence microscopy of 4′,6′-diamidino-2-phenylindol (DAPI) stained cells. (b) Transmission\n                        electron microscopy of a bacterium with one flagellum and (c) of a bacterium with two flagella (indicated by arrows), both\n                        negatively stained with phosphotungstic acid.\n                     \n                     \n                     \n                  ",
+      "Fig. 2.  \n                     \n                     Impact of pyruvate on the growth of isolate GD1T. Error bars indicate the standard deviation of three independent replicates for each assay. (a) Growth on media with different\n                        substrate combinations: 1, NaHCO3, S2O32-, NO3−; 2, NaHCO3, S2O32-, NO3−, pyruvate; 3, NaHCO3, pyruvate; 4, pyruvate; 5, ABW without further supplements. The relative enrichment factor describes the increase of cell\n                        numbers after 7 days of incubation compared to the initial cell numbers after inoculation at day 0 (6.1×105 ml−1). (b) 14CO2 production and [14C]pyruvate incorporation after 24 h and 72 h of incubation. Media: 1, NaHCO3, S2O32-, NO3−, [14C]pyruvate; 2, NaHCO3, NO3−, [14C]pyruvate. P, pyruvate incorporation; CO2, CO2 production.\n                     \n                     \n                     \n                  ",
+      "Fig. 3.  \n                     \n                     Unrooted tree showing phylogenetic relationships of isolate GD1T and closely related members of the class Epsilonproteobacteria. The tree was reconstructed using the neighbour-joining method and was based on a comparison of approximately 1400 nt. Solid\n                        squares indicate that the corresponding nodes (or groups) were recovered in neighbour-joining, maximum-parsimony and maximum-likelihood\n                        methods. Branching points supported by two algorithms are marked by an open square. The following strains were used as an\n                        outgroup (not shown): Antarctobacter heliothermus EL-219T, Sagittula stellata E-37T, Roseovarius tolerans EL-172T, Roseovarius nubinhibens ISMT and Roseovarius mucosus DFL-24T. Bar, 1 substitution per 10 nt.\n                     \n                     \n                     \n                  "
+    ]
+  },
+  "license": {
+    "value": [
+      "\n                  This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted\n                     use, distribution, and reproduction in any medium, provided the original work is properly cited.\n                  \n               "
+    ]
+  },
+  "copyright": {
+    "value": [
+      "Copyright ©\n                     \t\t2015 International Union of Microbiological Societies\n                     \t\n                  "
+    ]
+  }
+}
