@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +17,10 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
 
@@ -26,7 +30,9 @@ public class NormaTransformer {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	private static final String TRANSFORM = "--transform";
 	private static final String XSL = "--xsl";
+	private static final String HOCR2SVG = "hocr2svg";
 	private static final String PDF2HTML = "pdf2html";
 	private static final String PDF2TXT = "pdf2txt";
 	private static final String TXT2HTML = "txt2html";
@@ -38,6 +44,7 @@ public class NormaTransformer {
 	String outputTxt;
 	List<String> xmlStringList;
 	HtmlElement htmlElement;
+	SVGElement svgElement;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
@@ -55,12 +62,16 @@ public class NormaTransformer {
 	 */
 	void transform(ArgumentOption option) {
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.trace("TRANSFORM "+option.getVerbose());
+		LOG.debug("TRANSFORM "+option.getVerbose());
 		outputTxt = null;
 		htmlElement = null;
+		svgElement = null;
 		xmlStringList = null;
-		if (option.getVerbose().equals(XSL)) {
-			if (PDF2TXT.equals(option.getStringValue())) {
+		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
+			if (false) {				
+			} else if (HOCR2SVG.equals(option.getStringValue())) {
+				svgElement = applyHOCR2SVGToInputFile(inputFile);
+			} else if (PDF2TXT.equals(option.getStringValue())) {
 				outputTxt = applyPDF2TXTToCMLDir();
 			} else if (TXT2HTML.equals(option.getStringValue())) {
 				htmlElement = applyTXT2HTMLToCMDir();
@@ -71,6 +82,17 @@ public class NormaTransformer {
 				xmlStringList = applyXSLDocumentListToCurrentCMDir();
 			}
 		}
+	}
+
+	private SVGElement applyHOCR2SVGToInputFile(File inputFile) {
+		HOCRReader hocrReader = new HOCRReader();
+		try {
+			hocrReader.readHOCR(new FileInputStream(inputFile));
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform HOCR "+inputFile, e);
+		}
+		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
+		return svgSvg;
 	}
 
 	private String applyPDF2TXTToCMLDir() {

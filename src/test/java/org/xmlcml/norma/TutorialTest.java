@@ -212,7 +212,7 @@ public class TutorialTest {
 		File cmdirTop = new File(destName);
 		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
 		FileUtils.copyDirectory(new File(sourceName), cmdirTop);
-		Assert.assertNotNull("pdf", CMDir.getExistingFulltextXML(cmdirTop));
+		Assert.assertNotNull("xml", CMDir.getExistingFulltextXML(cmdirTop));
 		FileUtils.forceDelete(CMDir.getExistingFulltextHTML(cmdirTop));
 		String args = "-q "+destName
 				+ " --xsl " + dtdName

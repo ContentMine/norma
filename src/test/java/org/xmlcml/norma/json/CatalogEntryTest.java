@@ -20,6 +20,9 @@ import com.google.gson.JsonParser;
 public class CatalogEntryTest {
 
 	
+	/** NOTE: this contains &uuml; (\u00fc) . If this file is kept as UTF-8 there should
+	 * be no problem. But if it is copied to some other encoding it will fail.
+	 */
 	private static final Logger LOG = Logger.getLogger(CatalogEntryTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);

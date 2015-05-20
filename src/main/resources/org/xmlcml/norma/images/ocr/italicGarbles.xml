@@ -1,0 +1,35 @@
+<garbles title="italicGarbles" characters="I/">
+  <!-- italic "l" -->
+  <garble original="a/" edited="al"/>
+  <garble original="e/" edited="el"/>
+  <garble original="i/" edited="il"/>
+  <garble original="I/" edited="ll"/>
+  <garble original="l/" edited="ll"/>
+  <garble original="o/" edited="ol"/>
+  <garble original="u/" edited="ul"/>
+  <garble original="y/" edited="yl"/>
+  <garble original="r/o" edited="rio"/>
+  <garble original="s/c" edited="sic"/>
+  <garble original="g/uc" edited="gluc"/>
+  <garble original="g/yc" edited="glyc"/>
+  <garble original="d/\[" edited="cili"/>
+  <garble original="f/uo" edited="fluo"/>
+  <garble original="d/\[" edited="cili"/>
+  <garble original="/\[" edited="il"/>
+  <garble original="t/G" edited="tic"/>
+  <garble original="k/n" edited="kin"/>
+
+  <garble original="lI" edited="ll"/>
+   
+  <!-- these may be ambiguous -->
+  <garble original="C/" edited="cl"/>
+  <garble original="c/" edited="ci"/>
+  <garble original="/Us" edited="ius"/>
+  
+  <!-- very ambiguous -->
+   <garble original="n'x" edited="rix"/>
+   
+  <!-- ligatures -->
+  <garble original="ﬁ" edited="fi"/>
+ﬁ  
+</garbles>

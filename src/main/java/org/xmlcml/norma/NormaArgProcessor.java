@@ -53,7 +53,9 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	
 	public final static String DOCTYPE = "!DOCTYPE";
-	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html", "pdf2txt"});
+	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
+			"pdfbox", "pdf2html", "pdf2txt",
+			"hocr2svg"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -128,12 +130,36 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
 
-	/** supersedes parseXsl.
+	/** deprecated // use transform instead
 	 * 
 	 * @param option
 	 * @param argIterator
 	 */
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
+		LOG.warn("option --xsl is deprecated); use --transform instead");
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokenList = option.processArgs(tokens).getStringValues();
+		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
+		transformList = new ArrayList<String>();
+		// at present we allow only one option
+		for (String token : tokenList) {
+			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
+			if (xslDocument != null) {
+				xslDocumentList.add(xslDocument);
+			} else if (TRANSFORM_OPTIONS.contains(token)) {
+				transformList.add(token);
+			} else {
+				LOG.error("Cannot process transform token: "+token);
+			}
+		}
+	}
+
+	/** deprecated
+	 * 
+	 * @param option
+	 * @param argIterator
+	 */
+	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		List<String> tokenList = option.processArgs(tokens).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
@@ -167,6 +193,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	// ===========run===============
 	
 	public void transform(ArgumentOption option) {
+		// deprecated so
+		runTransform(option);
+	}
+
+	public void runTransform(ArgumentOption option) {
 		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
 		normaTransformer.transform(option);
 	}
@@ -191,13 +222,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private void outputSpecifiedFormat() {
 		getOrCreateNormaTransformer();
 		if (normaTransformer.outputTxt != null) {
-			currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
+			currentCMDir.writeFile(normaTransformer.outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
 		}
 		if (normaTransformer.htmlElement != null) {
-			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), CMDir.FULLTEXT_HTML);
+			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
 		}
 		if (normaTransformer.xmlStringList != null && normaTransformer.xmlStringList.size() > 0) {
-			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), CMDir.SCHOLARLY_HTML);
+			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
+		}
+		if (normaTransformer.svgElement != null && output != null) {
+			currentCMDir.writeFile(normaTransformer.svgElement.toXML(), output);
 		}
 	}
 
@@ -214,10 +248,13 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CMDir.isReservedFilename(inputName)) {
+		if (!CMDir.isReservedFilename(inputName) && !CMDir.hasReservedParentDirectory(inputName) ) {
 			throw new RuntimeException("Input must be reserved file; found: "+inputName);
 		}
 		File inputFile = cmDir.getExistingReservedFile(inputName);
+		if (inputFile == null) {
+			inputFile = cmDir.getExistingFileWithReservedParentDirectory(inputName);
+		}
 		if (inputFile == null) {
 			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cmDir.getDirectory());
 		}
