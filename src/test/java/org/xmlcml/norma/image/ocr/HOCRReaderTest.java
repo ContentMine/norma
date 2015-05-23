@@ -63,6 +63,7 @@ public class HOCRReaderTest {
 		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
 		Assert.assertNotNull("SVG not null", svgSvg);
 		HtmlBody htmlBody = hocrReader.getOrCreateHtmlBody();
+		new File("target/hocr/").mkdirs();
 		XMLUtil.debug(htmlBody, new FileOutputStream("target/hocr/ijs.0.003566-0-000.pbm.png.hocr.html"),1);
 		List<HtmlSpan> lines = hocrReader.getNonEmptyLines();
 		matchSpecies(hocrReader, IJSEM);
