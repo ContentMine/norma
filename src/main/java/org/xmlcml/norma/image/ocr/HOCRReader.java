@@ -1,6 +1,5 @@
 package org.xmlcml.norma.image.ocr;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -24,10 +23,12 @@ import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
-import org.xmlcml.graphics.svg.text.SVGPara;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.graphics.svg.text.SVGWordBlock;
+import org.xmlcml.graphics.svg.text.SVGWordLine;
 import org.xmlcml.graphics.svg.text.SVGWordPage;
+import org.xmlcml.graphics.svg.text.SVGWordPageList;
+import org.xmlcml.graphics.svg.text.SVGWordPara;
 import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlElement;
@@ -199,19 +200,23 @@ public class HOCRReader extends InputReader {
 		String tVersion = getTesseractVersion();
 		svgSvg.addAttribute(new Attribute("tesseractVersion", tVersion));
 		Elements childs = rawBody.getChildElements();
-		for (int i = 0; i < childs.size(); i++) {
-			Element child = childs.get(i);
-			if (child instanceof HtmlDiv) {
-				HtmlDiv htmlDiv = (HtmlDiv) child;
-				if (OCR_PAGE.equals(htmlDiv.getClassAttribute())) {
-					HtmlSVG page = this.createPageFromTesseract(htmlDiv);
-					svgSvg.appendChild(page.svg);
-					newBody.appendChild(page.html); 
+		if (childs.size() > 0) {
+			SVGWordPageList wordPageList = new SVGWordPageList();
+			svgSvg.appendChild(wordPageList);
+			for (int i = 0; i < childs.size(); i++) {
+				Element child = childs.get(i);
+				if (child instanceof HtmlDiv) {
+					HtmlDiv htmlDiv = (HtmlDiv) child;
+					if (OCR_PAGE.equals(htmlDiv.getClassAttribute())) {
+						HtmlSVG page = this.createPageFromTesseract(htmlDiv);
+						wordPageList.appendChild(page.svg);
+						newBody.appendChild(page.html); 
+					} else {
+						throw new RuntimeException("unknown div "+htmlDiv.toXML());
+					}
 				} else {
-					throw new RuntimeException("unknown div "+htmlDiv.toXML());
+					throw new RuntimeException("unknown element "+child.toXML());
 				}
-			} else {
-				throw new RuntimeException("unknown element "+child.toXML());
 			}
 		}
 	}
@@ -219,6 +224,7 @@ public class HOCRReader extends InputReader {
 	private HtmlSVG createPageFromTesseract(HtmlDiv wordPageDiv) {
 		SVGWordPage svgPage = wordPageDiv == null ? null : new SVGWordPage();
 		HtmlDiv htmlPage = new HtmlDiv();
+		HOCRReader.copyAttributes(wordPageDiv, svgPage);
 		XMLUtil.copyAttributes(wordPageDiv, htmlPage);
 		HtmlSVG htmlSVG = new HtmlSVG(htmlPage, svgPage);
 		Elements childs = wordPageDiv.getChildElements();
@@ -245,6 +251,7 @@ public class HOCRReader extends InputReader {
 		XMLUtil.copyAttributes(wordBlockDiv, htmlBlock);
 		htmlBlock.setClassAttribute("block");
 		SVGWordBlock svgBlock = wordBlockDiv == null ? null : new SVGWordBlock();
+		HOCRReader.copyAttributes(wordBlockDiv, svgBlock);
 		HtmlSVG htmlSVG = new HtmlSVG(htmlBlock, svgBlock);
 		Elements childs = wordBlockDiv.getChildElements();
 		for (int i = 0; i < childs.size(); i++) {
@@ -266,7 +273,8 @@ public class HOCRReader extends InputReader {
 	}
 
 	private HtmlSVG createParFromTesseract(HtmlP p) {
-		SVGPara svgPara = p == null ? null : new SVGPara();
+		SVGWordPara svgPara = p == null ? null : new SVGWordPara();
+		HOCRReader.copyAttributes(p, svgPara);
 		HtmlP htmlP = new HtmlP();
 		XMLUtil.copyAttributes(p, htmlP);
 		HtmlSVG htmlSVG = new HtmlSVG(htmlP, svgPara);
@@ -290,14 +298,14 @@ public class HOCRReader extends InputReader {
 	}
 
 	private HtmlSVG createLineFromTesseract(HtmlSpan lineSpan) {
-		SVGG svgLine = new SVGG();
+		SVGWordLine svgLine = new SVGWordLine();
+		HOCRReader.copyAttributes(lineSpan, svgLine);
 		HtmlSpan htmlLineSpan = new HtmlSpan();
 		XMLUtil.copyAttributes(lineSpan, htmlLineSpan);
 		HtmlSVG htmlSVG = new HtmlSVG(htmlLineSpan, svgLine);
 		HOCRTitle hocrTitle = new HOCRTitle(lineSpan.getTitle());
 		Real2Range bbox = hocrTitle.getBoundingBox();
 		if (bbox.getXRange().getRange() > MIN_WIDTH && bbox.getYRange().getRange() > MIN_WIDTH) {
-
 			hocrTitle.addAttributes(svgLine);
 			SVGRect rect = SVGRect.createFromReal2Range(bbox);
 			rect.setFill(LINE_COL);
@@ -321,8 +329,20 @@ public class HOCRReader extends InputReader {
 		return htmlSVG;
 	}
 
+	private static void copyAttributes(HtmlElement from, SVGG to) {
+		copyAttribute("id", from, to);
+	}
+
+	private static void copyAttribute(String attname, HtmlElement from, SVGG to) {
+		String attval = from.getAttributeValue(attname);
+		if (attval != null) {
+			to.addAttribute(new Attribute(attname, attval));
+		}
+	}
+
 	private HtmlSVG createWordFromTesseract(HtmlSpan htmlSpan0) {
 		SVGWord svgWord = new SVGWord();
+		HOCRReader.copyAttributes(htmlSpan0, svgWord);
 		HtmlSpan htmlSpan = new HtmlSpan(); 
 		HtmlSVG htmlSVG = new HtmlSVG(htmlSpan, svgWord);
 		HOCRTitle hocrTitle = new HOCRTitle(htmlSpan0.getTitle());
@@ -346,7 +366,7 @@ public class HOCRReader extends InputReader {
 				SVGText text = createTextElement(bbox, wordValue, height);
 				htmlSpan.setValue(wordValue);
 				svgWord.appendChild(text);
-				if (hocrTitle.getWConf() < 50) {
+				if (hocrTitle.getWConf() != null && hocrTitle.getWConf() < 50) {
 //					text.setOpacity(hocrTitle.getWConf() * 0.007);
 //					text.setFill(LOW_CONF_COL);
 					rect.setStrokeWidth(LOW_CONF_WIDTH);
