@@ -12,18 +12,18 @@ public class Fixtures {
 	public final static File GROUP_MAJOR_SECTIONS_XSL = new File(Fixtures.MAIN_HINDAWI_DIR, "groupMajorSections.xsl");
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
-	public final static File TEST_DOCUMENT_DIR = new File(Fixtures.TEST_NORMA_DIR, "pubstyle");
+	public final static File TEST_PUBSTYLE_DIR = new File(Fixtures.TEST_NORMA_DIR, "pubstyle");
 	
-	public final static File TEST_HINDAWI_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "hindawi");
+	public final static File TEST_HINDAWI_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "hindawi");
 	
-	public final static File TEST_BMC_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "bmc/");
+	public final static File TEST_BMC_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "bmc/");
 	public final static File BMC_MISC_DIR = new File(Fixtures.TEST_BMC_DIR, "misc/");
 	public static final File BMC_0277_PDF = new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf");
 	public final static File BMC_15_1_511_DIR = new File(Fixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_15_1_511");
 
-	public final static File TEST_SEDAR_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "sedar/");
+	public final static File TEST_SEDAR_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "sedar/");
 	
-	public final static File TEST_ASTROPHYS_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "astrophysj/");
+	public final static File TEST_ASTROPHYS_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "astrophysj/");
 	
 	
 	public final static File F507405_DIR = new File(Fixtures.TEST_HINDAWI_DIR, "507405/");
@@ -34,7 +34,7 @@ public class Fixtures {
 	public final static File F247835_GROUPED_XHTML = new File(Fixtures.F247835_DIR, "grouped.html");
 	public final static File F247835_TAGGED_XHTML = new File(Fixtures.F247835_DIR, "tagged.xhtml");
 
-	public final static File TEST_PLOSONE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "plosone/");
+	public final static File TEST_PLOSONE_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "plosone/");
 	public final static File F0113556_DIR = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0113556");
 	public final static File F0113556_XML = new File(Fixtures.F0113556_DIR, "fulltext.xml");
 	public final static File F0113556_TAGGED_XML = new File(Fixtures.F0113556_DIR, "fulltext.tagged.xml");
@@ -54,22 +54,22 @@ public class Fixtures {
 	// edited copies of NLM-compliant XML files, numbered "nlm1.xml, etc"
 	public final static File TEST_NUMBERED_DIR = new File(Fixtures.TEST_MISC_DIR, "numbered/");
 	
-	public final static File TEST_ELIFE_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "elife");
+	public final static File TEST_ELIFE_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "elife");
 	public final static File TEST_ELIFE_CMDIR0 = new File(Fixtures.TEST_ELIFE_DIR, "e04407");
 	
-	public final static File TEST_F1000_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "f1000research");
+	public final static File TEST_F1000_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "f1000research");
 	public final static File TEST_F1000_CMDIR0 = new File(Fixtures.TEST_F1000_DIR, "3-190");
 	
-	public final static File TEST_FRONTIERS_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "frontiers");
+	public final static File TEST_FRONTIERS_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "frontiers");
 	public final static File TEST_FRONTIERS_CMDIR0 = new File(Fixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
 	
-	public final static File TEST_MDPI_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "mdpi");
+	public final static File TEST_MDPI_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "mdpi");
 	public final static File TEST_MDPI_CMDIR0 = new File(Fixtures.TEST_MDPI_DIR, "04-00932");
 	
-	public final static File TEST_PEERJ_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "peerj");
+	public final static File TEST_PEERJ_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "peerj");
 	public final static File TEST_PEERJ_CMDIR0 = new File(Fixtures.TEST_PEERJ_DIR, "727");
 	
-	public final static File TEST_PENSOFT_DIR = new File(Fixtures.TEST_DOCUMENT_DIR, "pensoft");
+	public final static File TEST_PENSOFT_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "pensoft");
 	public final static File TEST_PENSOFT_CMDIR0 = new File(Fixtures.TEST_PENSOFT_DIR, "4478");
 	
 	public final static File TEST_PLOSONE_CMDIR0 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");

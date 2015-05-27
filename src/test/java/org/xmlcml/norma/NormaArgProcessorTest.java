@@ -198,5 +198,15 @@ public class NormaArgProcessorTest {
 		DefaultArgProcessor argProcessor = (DefaultArgProcessor) norma.getArgProcessor();
 		List<ArgumentOption> chosenOptions = argProcessor.getChosenArgumentList();
 	}
-	
+
+	@Test
+	public void testMultipleCMDirs() throws IOException {
+		File containerPLOSONE = new File("target/plosone/multiple/");
+		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
+		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
+		String args = "-q "+containerPLOSONE.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
+		LOG.debug("args> "+args);
+		Norma norma = new Norma();
+		norma.run(args);
+	}
 }

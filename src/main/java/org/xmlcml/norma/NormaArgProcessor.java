@@ -54,7 +54,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	
 	public final static String DOCTYPE = "!DOCTYPE";
 	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
-			"pdfbox", "pdf2html", "pdf2txt",
+			"pdfbox", "pdf2html", "pdf2txt", "pdf2images",
 			"hocr2svg"});
 	// options
 	private List<StringPair> charPairList;
@@ -198,6 +198,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void runTransform(ArgumentOption option) {
+		LOG.trace("***run transform "+currentCMDir);
 		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
 		normaTransformer.transform(option);
 	}

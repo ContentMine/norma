@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article"
+	dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+			<journal-id journal-id-type="publisher-id">plos</journal-id>
+			<journal-id journal-id-type="pmc">plosone</journal-id>
+			<journal-title-group>
+				<journal-title>PLoS ONE</journal-title>
+			</journal-title-group>
+			<issn pub-type="epub">1932-6203</issn>
+			<publisher>
+				<publisher-name>Public Library of Science</publisher-name>
+				<publisher-loc>San Francisco, USA</publisher-loc>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-14-20725</article-id>
+			<article-id pub-id-type="doi">10.1371/journal.pone.0115884</article-id>
+			<article-categories>
+				<subj-group subj-group-type="heading">
+					<subject>Research Article</subject>
+				</subj-group>
+				<subj-group subj-group-type="Discipline-v2">
+					<subject>Biology and life sciences</subject>
+					<subj-group>
+						<subject>Evolutionary biology</subject>
+						<subj-group>
+							<subject>Organismal evolution</subject>
+						</subj-group>
+					</subj-group>
+					<subj-group>
+						<subject>Taxonomy</subject>
+						<subj-group>
+							<subject>Animal taxonomy</subject>
+						</subj-group>
+					</subj-group>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>A Novel Reproductive Mode in Frogs: A New Species of
+					Fanged Frog with Internal Fertilization and Birth of Tadpoles
+				</article-title>
+				<alt-title alt-title-type="running-head">A New Tadpole-Bearing Frog
+				</alt-title>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author" xlink:type="simple">
+					<name name-style="western">
+						<surname>Iskandar</surname>
+						<given-names>Djoko T.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author" xlink:type="simple">
+					<name name-style="western">
+						<surname>Evans</surname>
+						<given-names>Ben J.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2">
+						<sup>2</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author" xlink:type="simple">
+					<name name-style="western">
+						<surname>McGuire</surname>
+						<given-names>Jimmy A.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff3">
+						<sup>3</sup>
+					</xref>
+					<xref ref-type="corresp" rid="cor1">
+						<sup>*</sup>
+					</xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1">
+				<label>1</label>
+				<addr-line>School of Life Sciences and Technology, Institut
+					Teknologi Bandung, Bandung, Indonesia</addr-line>
+			</aff>
+			<aff id="aff2">
+				<label>2</label>
+				<addr-line>Center for Environmental Genomics, Department of Biology,
+					McMaster University, Hamilton, Ontario, Canada</addr-line>
+			</aff>
+			<aff id="aff3">
+				<label>3</label>
+				<addr-line>Museum of Vertebrate Zoology and Department of
+					Integrative Biology, University of California, Berkeley,
+					California, United States of America</addr-line>
+			</aff>
+			<contrib-group>
+				<contrib contrib-type="editor" xlink:type="simple">
+					<name name-style="western">
+						<surname>Stöck</surname>
+						<given-names>Matthias</given-names>
+					</name>
+					<role>Editor</role>
+					<xref ref-type="aff" rid="edit1" />
+				</contrib>
+			</contrib-group>
+			<aff id="edit1">
+				<addr-line>Leibniz-Institute of Freshwater Ecology and Inland
+					Fisheries, Germany</addr-line>
+			</aff>
+			<author-notes>
+				<corresp id="cor1">
+					* E-mail:
+					<email xlink:type="simple">mcguirej@berkeley.edu</email>
+				</corresp>
+				<fn fn-type="conflict">
+					<p>The authors have declared that no competing interests exist.</p>
+				</fn>
+				<fn fn-type="con">
+					<p>Conceived and designed the experiments: DTI BJE JAM. Performed
+						the experiments: DTI BJE JAM. Analyzed the data: DTI BJE JAM.
+						Contributed reagents/materials/analysis tools: DTI BJE JAM. Wrote
+						the paper: DTI BJE JAM.</p>
+				</fn>
+			</author-notes>
+			<pub-date pub-type="collection">
+				<year>2014</year>
+			</pub-date>
+			<pub-date pub-type="epub">
+				<day>31</day>
+				<month>12</month>
+				<year>2014</year>
+			</pub-date>
+			<volume>9</volume>
+			<issue>12</issue>
+			<elocation-id>e115884</elocation-id>
+			<history>
+				<date date-type="received">
+					<day>17</day>
+					<month>5</month>
+					<year>2014</year>
+				</date>
+				<date date-type="accepted">
+					<day>23</day>
+					<month>11</month>
+					<year>2014</year>
+				</date>
+			</history>
+			<permissions>
+				<copyright-year>2014</copyright-year>
+				<copyright-holder>Iskandar et al</copyright-holder>
+				<license xlink:type="simple">
+					<license-p>
+						This is an open-access article distributed under the terms of the
+						<ext-link ext-link-type="uri"
+							xlink:href="http://creativecommons.org/licenses/by/4.0/"
+							xlink:type="simple">Creative Commons Attribution License</ext-link>
+						, which permits unrestricted use, distribution, and reproduction
+						in any medium, provided the original author and source are
+						credited.
+					</license-p>
+				</license>
+			</permissions>
+			<abstract>
+				<p>
+					We describe a new species of fanged frog (
+					<italic>Limnonectes larvaepartus</italic>
+					) that is unique among anurans in having both internal
+					fertilization and birth of tadpoles. The new species is endemic to
+					Sulawesi Island, Indonesia. This is the fourth valid species of
+					<italic>Limnonectes</italic>
+					described from Sulawesi despite that the radiation includes at
+					least 15 species and possibly many more. Fewer than a dozen of the
+					6455 species of frogs in the world are known to have internal
+					fertilization, and of these, all but the new species either deposit
+					fertilized eggs or give birth to froglets.
+				</p>
+			</abstract>
+			<funding-group>
+				<funding-statement>This research was funded by the United States
+					National Science Foundation Division of Environmental Biology (DEB
+					0328700, DEB 0640967) to JAM, the Natural Science and Engineering
+					Research Council of Canada (RGPIN/283102-2012) to BJE, and the
+					Indonesian Directorate General of Higher Education, Ministry of
+					Education and Culture (Basic Science Grant No.
+					60/P4M/DPPM/L-3311/MS/1993) to DTI. The funders had no role in
+					study design, data collection and analysis, decision to publish, or
+					preparation of the manuscript.</funding-statement>
+			</funding-group>
+			<counts>
+				<page-count count="14" />
+			</counts>
+			<custom-meta-group>
+				<custom-meta id="data-availability" xlink:type="simple">
+					<meta-name>Data Availability</meta-name>
+					<meta-value>The authors confirm that all data underlying the
+						findings are fully available without restriction. All relevant
+						data are within the paper and its Supporting Information files.
+					</meta-value>
+				</custom-meta>
+			</custom-meta-group>
+		</article-meta>
+	</front>
+	<body>
+		<sec id="s1">
+			<title>Introduction</title>
+			<p>
+				The Indonesian island of Sulawesi in central Indonesia is home to a
+				largely unstudied radiation of fanged frogs in the genus
+				<italic>Limnonectes</italic>
+				Fitzinger, 1843 (Anura: Dicroglossidae Anderson, 1871). To date,
+				only three species are recognized from Sulawesi, but at least 15
+				species occur on the island
+				<xref ref-type="bibr" rid="pone.0115884-Emerson1">[1]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Evans1">[2]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+				. It was recently proposed that Sulawesi fanged frogs represent an
+				adaptive radiation based on patterns of morphological
+				diversification among co-distributed species, and correspondence of
+				morphological features (body size, webbing) with habitat utilization
+				<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+				. Adult body size ranges from ∼2 g to more than 900 g in members of
+				the Sulawesi assemblage, with large-bodied species found in close
+				association with fast moving rivers, and small-bodied species
+				occupying more terrestrial niches in forest leaf-litter and on the
+				banks of slow moving streams. Iskandar and Tjan
+				<xref ref-type="bibr" rid="pone.0115884-Iskandar1">[4]</xref>
+				first documented that there are multiple undescribed species of
+				<italic>Limnonectes</italic>
+				on Sulawesi, and indicated that one of the constituent species
+				utilizes an unusual ovoviviparous reproductive strategy. Here we
+				describe that species, and provide additional details on its
+				reproductive mode.
+			</p>
+			<p>
+				Anurans exhibit tremendous diversity in mode of reproduction. Not
+				only have there been many independent origins of direct development,
+				the condition in which a free-living tadpole stage is bypassed and
+				froglets emerge from the egg capsules
+				<xref ref-type="bibr" rid="pone.0115884-Wake1">[5]</xref>
+				, but a bewildering array of mechanisms has evolved wherein parents
+				care for their developing offspring. Examples of parental care
+				include guarding of terrestrial eggs, transport of tadpoles on the
+				back following hatching, carrying developing eggs in pouches or
+				depressions on the back and flanks, males carrying developing
+				tadpoles in the vocal sac, and even the now-extinct species of
+				gastric brooding frogs in which the female carried her developing
+				tadpoles in her stomach (see
+				<xref ref-type="bibr" rid="pone.0115884-Haddad1">[6]</xref>
+				for a summary). Despite this extreme reproductive diversity,
+				internal fertilization has evolved only a few times among the 6455
+				known species of anurans
+				<xref ref-type="bibr" rid="pone.0115884-AmphibiaWeb1">[7]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-McDiarmid1">[8]</xref>
+				. Only the African bufonid genera
+				<italic>Nectophrynoides</italic>
+				and
+				<italic>Nimbaphrynoides</italic>
+				and the now extinct Puerto Rican species,
+				<italic>Eleutherodactylus jasperi</italic>
+				, are documented to combine internal fertilization with egg
+				retention and subsequent birth of froglets
+				<xref ref-type="bibr" rid="pone.0115884-Wells1">[9]</xref>
+				. To this group, we can now add a species of Sulawesi fanged frog in
+				the genus
+				<italic>Limnonectes</italic>
+				with internal fertilization and live birth of tadpoles, a
+				reproductive mode that is unique among anurans.
+			</p>
+		</sec>
+		<sec id="s2" sec-type="materials|methods">
+			<title>Materials and Methods</title>
+			<p>
+				We analyzed more than 100 specimens representing the new species
+				from 23 localities on the island of Sulawesi. This study was
+				conducted under an approved Institutional Animal Care and Use
+				Committee protocol issued to JAM by the University of California at
+				Berkeley (Protocol #R279). Fieldwork conducted in Indonesia was
+				undertaken under research permits issued by LIPI and RISTEK, with
+				specimen exportation authorized under permits or loans issued by
+				LIPI, the Museum Zoologicum Bogoriense, and Pusat Studi Biologi.
+				Specimens were captured by hand in the field, sacrificed via
+				emersion in an aqueous solution of MS-222 (tricaine methane
+				sulfonate) buffered to neutral pH, and prepared as formalin-fixed
+				specimens deposited primarily in the Museum Zoologicum Bogoriense
+				(the national museum of Indonesia) or Museum of Vertebrate Zoology
+				at UC Berkeley. As part of a comprehensive study of Sulawesi
+				<italic>Limnonectes</italic>
+				diversification, we obtained morphometric data for the full Sulawesi
+				assemblage. Sex was determined by inspection of gonads. The
+				following measurements were made to the nearest 0.1 mm using digital
+				calipers: snout-vent length (SVL) – from cloaca to tip of snout;
+				head width (HW) – widest distance between posterior end of lower
+				jaw; head length (HL) – from posterior end of lower jaw to tip of
+				snout; femur length (FE) – from cloaca to distal end of femur; tibia
+				length (TI) – from knee to distal end of tibia; foot length (FL) –
+				from distal end of tibia-fibula to tip of 4th toe; inner metatarsal
+				tubercle (IM); humerus length (UA) – from proximal end of upper arm
+				to elbow; lower arm length (LA) – from elbow joint to base of middle
+				palmar tubercle; hand length (HA) – from lower border of middle
+				tubercle to distal tip of third finger; snout length (SL) – from
+				bony border of eye socket to tip of snout; snout width at eye level
+				(SWE); snout width at nostril level (SWN); eye diameter (EY) – outer
+				diameter, measured from bones bordering eye; interorbital distance
+				(IO) – distance between orbits ( = width of frontoparietal bones);
+				eye-tympanum distance (ET); eye-narial distance (EN) – eye socket
+				border to posterior border of nostril; Internarial distance (IN) –
+				shortest distance between nostrils; nostril to tip of snout (NT);
+				tympanum diameter (TY); odontoid process length (OP) –length of
+				fang-like odontoid process of lower jaw; tibia diameter measured at
+				its widest point (TD). Digital webbing formulae from
+				<xref ref-type="bibr" rid="pone.0115884-Guayasamin1">[10]</xref>
+				.
+			</p>
+			<sec id="s2a">
+				<title>Nomenclatural acts</title>
+				<p>
+					The electronic edition of this article conforms to the requirements
+					of the amended International Code of Zoological Nomenclature, and
+					hence the new names contained herein are available under that Code
+					from the electronic edition of this article. This published work
+					and the nomenclatural acts it contains have been registered in
+					ZooBank, the online registration system for the ICZN. The ZooBank
+					LSID (Life Science Identifier) can be resolved and the associated
+					information viewed through any standard web browser by appending
+					the LSID to the prefix “
+					<ext-link ext-link-type="uri" xlink:href="http://zoobank.org/"
+						xlink:type="simple">http://zoobank.org/</ext-link>
+					”. The LSID for this publication is: urn:lsid:zoobank.org:pub:
+					A758E03A–C054–4193–9768–D0C4AD588AEA. The electronic edition of
+					this work was published in a journal with an ISSN, and has been
+					archived and is available from the following digital repositories:
+					PubMed Central, LOCKSS.
+				</p>
+			</sec>
+		</sec>
+		<sec id="s3">
+			<title>Results</title>
+			<sec id="s3a">
+				<title>Taxonomy</title>
+				<p>
+					<italic>Limnonectes </italic>
+					<bold>
+						<italic>larvaepartus</italic>
+					</bold>
+					new species (
+					<xref ref-type="fig" rid="pone-0115884-g001">Figs. 1</xref>
+					,
+					<xref ref-type="fig" rid="pone-0115884-g002">2</xref>
+					)
+				</p>
+				<fig id="pone-0115884-g001" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0115884.g001</object-id>
+					<label>Figure 1</label>
+					<caption>
+						<title>
+							Images of the holotype of
+							<italic>Limnonectes larvaepartus</italic>
+							(MZB.Amph.23755) in (
+							<italic>a</italic>
+							) lateral, (
+							<italic>b</italic>
+							) dorsal, and (
+							<italic>c</italic>
+							) ventral view.
+						</title>
+						<p>
+							Ventral views of the right foot (
+							<italic>d</italic>
+							) and right hand (
+							<italic>e</italic>
+							) are also presented.
+						</p>
+					</caption>
+					<graphic mimetype="image"
+						xlink:href="info:doi/10.1371/journal.pone.0115884.g001" position="float"
+						xlink:type="simple" />
+				</fig>
+				<fig id="pone-0115884-g002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0115884.g002</object-id>
+					<label>Figure 2</label>
+					<caption>
+						<title>
+							Images of
+							<italic>Limnonectes larvaepartus</italic>
+							.
+						</title>
+						<p>
+							(
+							<italic>a</italic>
+							) MVZ 268323 (
+							<bold>male, left</bold>
+							) and MVZ 268307 (
+							<bold>female, right</bold>
+							) collected from Desa Uaemate along the Tasio-Tibo Road,
+							Kabupatan Mamuju, Provinsi Sulawesi Barat, Sulawesi Island
+							(02.61287S, 119.14238 E, 89 m elev.); (
+							<italic>b</italic>
+							)
+							<italic>Limnonectes larvaepartus</italic>
+							female (MVZ 268426) with tadpoles removed from the oviduct. Note
+							the large yolk reserves available to the tadpoles; (
+							<italic>c</italic>
+							) An
+							<italic>in situ</italic>
+							adult male
+							<italic>L. larvaepartus</italic>
+							(JAM 14234) observed calling while perched on the edge of a small
+							pool 2 m away from a 2 m wide stream; several
+							<italic>L. larvaepartus</italic>
+							tadpoles were present in the pool including the two visible
+							within the yellow circle; (
+							<italic>d</italic>
+							) dorsal and ventral views of ∼stage 25
+							<italic>L. larvaepartus</italic>
+							tadpoles (JAM 14271) released by a pregnant female (JAM 14237) at
+							the moment of capture.
+						</p>
+					</caption>
+					<graphic mimetype="image"
+						xlink:href="info:doi/10.1371/journal.pone.0115884.g002" position="float"
+						xlink:type="simple" />
+				</fig>
+				<p>Urn:lsid:zoobank.org:act: 60AA7136-89A0-4DBB-9FBC-BD0FAF8A214C
+				</p>
+				<p>
+					This species has been referred to in the literature under the names
+					<italic>Limnonectes larviparus</italic>
+					<xref ref-type="bibr" rid="pone.0115884-Inger1">[11]</xref>
+					and
+					<italic>Limnonectes</italic>
+					“ovovivipar”
+					<xref ref-type="bibr" rid="pone.0115884-Iskandar1">[4]</xref>
+					, both of which created nomina nuda. This species also corresponds
+					to
+					<italic>Limnonectes</italic>
+					sp. V in
+					<xref ref-type="bibr" rid="pone.0115884-Evans1">[2]</xref>
+					,
+					<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+					.
+				</p>
+			</sec>
+			<sec id="s3b">
+				<title>Etymology</title>
+				<p>
+					The species name
+					<italic>larvaepartus</italic>
+					(from ‘larvae’, plural of larva, the early form of an animal, and
+					‘partus’, to give birth to) reflects the unique reproductive mode
+					of this tadpole-bearing species.
+				</p>
+			</sec>
+			<sec id="s3c">
+				<title>Holotype</title>
+				<p>
+					MZB.Amph.23755 (Field Number: BSI 0605, see
+					<xref ref-type="fig" rid="pone-0115884-g001">Fig. 1</xref>
+					), an adult male, collected from Dunu Village, (0.92353
+					<sup>o</sup>
+					N; 122.64386
+					<sup>o</sup>E)
+					at 189 m elevation, Kecamatan Anggrek, Kabupaten Gorontalo,
+					Provinsi Gorontalo, Sulawesi, Indonesia by J.A. McGuire &amp; team,
+					18 October 2004.
+				</p>
+			</sec>
+			<sec id="s3d">
+				<title>Paratypes</title>
+				<p>
+					Paratypes (n = 30) are from Sulawesi Utara, Gorontalo, Sulawesi
+					Tengah, and Sulawesi Barat Provinces: MZB 2834, a gravid female
+					with 33 translucent tadpoles (Gosner stage 23) from the left
+					oviduct and 2 from outside the body, from Toraut (00′33.72
+					<sup>o</sup>
+					N, 123′54.23
+					<sup>o</sup>E),
+					Bogani Nani Wartabone National Park, Kabupaten Bolaang Mongondow,
+					Sulawesi Utara at 370 m elevation, by D. T. Iskandar, 15 August
+					1991; FMNH 252453, a female, from Toraut, Bogani Nani Wartabone
+					National Park, Kabupaten Bolaang Mongondow, Sulawesi Utara by D. T.
+					Iskandar, August 1991. MVZ 255545, 256009-11, 256013 from Desa
+					Lombongo (−1.43346, 120.30800), Kecamatan Suwawa, Kabupaten Bone
+					Bolango, Bogani Nani Warta Bone National Park, Provinsi Gorontalo
+					at 75 m elevation by J. A McGuire and team, 20 October 2004. ZRC
+					1.3258 (left femur removed) from Toraut, Bogani Nani Wartabone
+					National Park, Kabupaten Bolaang Mongondow, Sulawesi Utara at 370 m
+					elevation, by D. T. Iskandar, 15 August 1991. MZB 2835–2841 from
+					Toraut, Bogani Nani Wartabone National Park, Kabupaten Bolaang
+					Mongondow, Sulawesi Utara at 370 m elevation, by D. T. Iskandar, 15
+					August 1991 &amp; 12 July 1992. MVZ 255548–49 from Desa Pontak
+					(−2.62910, 118.99300), Kecamatan Motoling, Kabupaten Minahasa
+					Selatan, Provinsi Sulawesi Utara at 285 m elevation by J. A.
+					McGuire and team, 13 October 2004. MZB 3117, near Potolok river,
+					Lolak, Bogani Nani Wartabone National Park at 350 m elevation,
+					Kabupaten Bolaang Mongondow, Sulawesi Utara; MZB 3118, male from
+					seashore forest near Bungbungan River, Lolak, Bogani Nani Wartabone
+					National Park, Kabupaten Bolaang Mongondow, Sulawesi Utara. MZB
+					3120 from Tangkorak River, Desa Pindol, Kecamatan Lolak, Bolaang
+					Mongondow, Sulawesi Utara, by Mumpuni, 26 June 1995; MZB 3121 from
+					Tangaga Forest, Dudepo, Bolaang Mongondow, Sulawesi Utara, by I.
+					Maryanto, 20 October 1995; MZB 3122 from Potolok River, Bogani Nani
+					National Park, Lolak, Sulawesi Utara by Mumpuni, 19 June 1995; MZB
+					3124 from Bungbungan River, Bogani Nani National Park, Lolak,
+					Sulawesi Utara by Mumpuni, 19 June 1995; MZB Amph.8108 from Toraut,
+					near Bogani Nani Wartabone National Park, Sulawesi Utara. LSUMZ
+					84209, 84214, 84221, 84224 from Desa Torout, Bogani Nani Wartabone
+					National Park, Kabupaten Bolaang Mongondow, Provinsi Sulawesi Utara
+					at 267 m elevation by J. A. McGuire on 6 and 11 September 2001.
+				</p>
+			</sec>
+			<sec id="s3e">
+				<title>Other referred specimens</title>
+				<p>
+					LSUMZ 84218, 84219 from Desa Torout, Bogani Nani Wartabone National
+					Park, Kabupaten Bolaang Mongondow, Provinsi Sulawesi Utara by J.A.
+					McGuire. FMNH 130991, 106930 from Buang-buang Island, Sulawesi
+					Utara. MZB 3119, juvenile from Seashore forest near Bungbungan
+					River, Lolak, Bogani Nani Wartabone National Park, Kabupaten
+					Bolaang Mongondow, Provinsi Sulawesi Utara. AMNH 167199 from
+					Tangkoko National Park (1.570083
+					<sup>o</sup>
+					N, 125.156933
+					<sup>o</sup>
+					E), Kabupaten Minahasa, Provinsi Sulawesi Utara. MVZ 255546 from
+					Desa Salumpaku (−1.60757, 119.29900), Kecamatan Banawa, Kabupaten
+					Donggala, Provinsi Sulawesi Tengah. MVZ 255547 from Desa Kelapa Dua
+					(−1.60757, 119.29900), Kecamatan Anreapi, Kabupaten Polewali
+					Mandar, Provinsi Sulawesi Barat. MVZ 268426, 268428–30, 268432 from
+					Polewali-Masawa Road (River 1) (−2.65490, 118.93300), Kecamatan
+					Polewali, Kabupaten Polewali Mandar, Provinsi Sulawesi Barat. MVZ
+					268309–10, 268313, 268317–19, 268322, 268325, MZB.Amph. 20675,
+					20677–80 from Desa Uaemate (Tasiu-Tibo Road; S02.61550,
+					E119.14417), Kecamatan Kaluku, Kabupaten Mamuju, Provinsi Sulawesi
+					Barat. MZB.Amph.20663 from Desa Kabiraan (−2.62460, 119.14700),
+					Kecamatan Ulumunda, Kabupaten Majene, Provinsi Sulawesi Barat.
+				</p>
+			</sec>
+			<sec id="s3f">
+				<title>Distribution</title>
+				<p>
+					<italic>Limnonectes larvaepartus</italic>
+					occurs across the Northern Peninsula, as well as on the western
+					margin of Sulawesi's Central Core (
+					<xref ref-type="fig" rid="pone-0115884-g003">Fig. 3</xref>
+					). We do not know the full extent of the species' range in the
+					Central Core because the central highlands of Sulawesi remain
+					poorly explored herpetologically. Several genera have species range
+					boundaries in this same general region (e.g. the flying lizards
+					<italic>Draco spilonotus</italic>
+					and
+					<italic>D. walker</italic>
+					<xref ref-type="bibr" rid="pone.0115884-McGuire1">[12]</xref>
+					, the fanged frogs
+					<italic>Limnonectes</italic>
+					sp.
+					<italic>I</italic>
+					and
+					<italic>L.</italic>
+					sp.
+					<italic>D</italic>
+					<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+					, and the tarsiers
+					<italic>Tarsius lariang</italic>
+					and
+					<italic>T. dentatus</italic>
+					<xref ref-type="bibr" rid="pone.0115884-Merker1">[13]</xref>
+					.
+				</p>
+				<fig id="pone-0115884-g003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0115884.g003</object-id>
+					<label>Figure 3</label>
+					<caption>
+						<title>
+							Distribution map (left panel) depicting the range of
+							<italic>Limnonectes larvaepartus</italic>
+							.
+						</title>
+						<p>
+							The right panel shows the phylogenetic position of
+							<italic>L. larvaepartus</italic>
+							, with different symbol shapes denoting regional genetic
+							structure in the species.
+						</p>
+					</caption>
+					<graphic mimetype="image"
+						xlink:href="info:doi/10.1371/journal.pone.0115884.g003" position="float"
+						xlink:type="simple" />
+				</fig>
+			</sec>
+			<sec id="s3g">
+				<title>Diagnosis</title>
+				<p>
+					Prior workers have recognized substantial species diversity in the
+					genus
+					<italic>Limnonectes</italic>
+					on Sulawesi. However, diagnosing many of these lineages on the
+					basis of morphology is challenging, and several authors have
+					instead opted to apply names to Sulawesi specimens representing
+					species from outside Sulawesi. Consequently, the following names
+					have all been incorrectly applied to Sulawesi populations: the
+					Lesser Sundas species (type locality: Flores Island)
+					<italic>L. dammermani</italic>
+					(Mertens, 1927), the Bornean species
+					<italic>L. finchii</italic>
+					(Inger, 1966), the Mollucan species (type locality: Ambon)
+					<italic>L. grunniens</italic>
+					(Daudin, 1801), and the Philippine taxa
+					<italic>L. leytensis</italic>
+					(Boettger, 1893),
+					<italic>L. magnus</italic>
+					(Stejneger, 1909), and
+					<italic>L. palavanensis</italic>
+					(Boulenger, 1894). These names should not be applied to Sulawesi
+					populations, as was verified phylogenetically for several of these
+					taxa
+					<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+					. Only four Sulawesi species have been described:
+					<italic>L. arathooni</italic>
+					(Smith, 1927),
+					<italic>L. heinrichi</italic>
+					(Ahl, 1933),
+					<italic>L. modestus</italic>
+					(Boulenger, 1882), and
+					<italic>L. microtympanum</italic>
+					(van Kampen, 1909). However, we will show elsewhere that
+					<italic>L. heinrichi</italic>
+					is a junior synonym of
+					<italic>L. modestus</italic>
+					and the species complex that we have referred to previously
+					<xref ref-type="bibr" rid="pone.0115884-Evans1">[2]</xref>
+					,
+					<xref ref-type="bibr" rid="pone.0115884-Setiadi1">[3]</xref>
+					as
+					<italic>L. modestus</italic>
+					remains undescribed – thus, at present there are but three valid
+					described species of Sulawesi
+					<italic>Limnonectes</italic>
+					.
+				</p>
+				<p>
+					<italic>Limnonectes larvaepartus</italic>
+					can be distinguished from all other described species of
+					<italic>Limnonectes</italic>
+					by its reproductive mode (
+					<xref ref-type="fig" rid="pone-0115884-g002">Fig. 2</xref>
+					). It can be further differentiated from all described Sulawesi
+					species by its combination of body size (mean male SVL = 37.4;
+					female SVL = 40.2 mm), coloration, tympanum size, and degree of
+					hind foot webbing, as well as on the basis of phylogenetic
+					placement (
+					<xref ref-type="fig" rid="pone-0115884-g003">Fig. 3</xref>
+					).
+					<italic>Limnonectes arathooni</italic>
+					is endemic to Sulawesi's Southwestern (SW) Peninsula south of the
+					Tempe Depression, and thus does not occur within the range of
+					<italic>L. larvaepartus</italic>
+					. It is similar in size to the new species (male SVL = 36.6 mm,
+					females = 39.6 mm), but differs in having substantially reduced
+					webbing (extending to penultimate phalange of fourth toe vs. to toe
+					disc), in lacking fine granular dorsal tubercles, and in having
+					melanic spots above the forelimb insertion, a fine ridge extending
+					posteriorly behind each eye, and an alternative derived
+					reproductive mode in which males guard clutches of terrestrial eggs
+					that hatch into tadpoles that then make their own way to an
+					adjacent stream by sliding down steep stream-side embankments
+					<xref ref-type="bibr" rid="pone.0115884-Brown1">[14]</xref>
+					.
+					<italic>Limnonectes microtympanum</italic>
+					, like
+					<italic>L. arathooni</italic>
+					, is restricted to the SW Peninsula south of the Tempe Depression,
+					and thus does not overlap in geographical range with
+					<italic>L. larvaepartus</italic>
+					.
+					<italic>Limnonectes microtympanum</italic>
+					is moderately large (male SVL = 78.4; female SVL = 72.4 mm), and
+					thus much larger than the new species.
+					<italic>Limnonectes microtympanum</italic>
+					also differs from the new species in having proportionally smaller
+					tympana (TY/SVL = 0.05
+					<underline>+</underline>
+					0.01 in males, 0.06
+					<underline>+</underline>
+					0.01 in females versus 0.08
+					<underline>+</underline>
+					0.01 in both sexes in
+					<italic>L. larvaepartus</italic>
+					). The new species occurs in broad sympatry with
+					<italic>L. modestus</italic>
+					, which is a moderate sized (male SVL = 70.2 mm; female SVL = 64.0
+					mm) inhabitant of fast-moving streams and substantially larger than
+					<italic>L. larvaepartus</italic>
+					. Like
+					<italic>L. larvaepartus</italic>
+					,
+					<italic>L. modestus</italic>
+					has nearly complete hindfoot webbing (slightly more extensive in
+					<italic>L. modestus</italic>
+					than in
+					<italic>L. larvaepartus</italic>
+					but reaching the toe disc in both species), a dusky throat with
+					melanic pigments extending onto the pectoral region (in a clear
+					wedge shape in
+					<italic>L. modestus</italic>
+					, more randomly distributed in
+					<italic>L. larvaepartus</italic>
+					), and skin with extensive fine granular tubercles.
+					<italic>Limnonectes modestus</italic>
+					also exhibits a derived reproductive mode involving production of a
+					relatively small number of large (10 mm diameter) eggs that are
+					deposited along the edge of fast moving streams.
+				</p>
+			</sec>
+			<sec id="s3h">
+				<title>Description of the holotype</title>
+				<p>
+					An adult male (
+					<xref ref-type="fig" rid="pone-0115884-g001">Fig. 1</xref>
+					) 48 mm SVL, body moderately robust, head not broader than body,
+					head about 65% longer than wide, length 45% of snout-vent length,
+					snout 17% of snout-vent length, moderately pointed, projecting
+					above lower jaw, nostril lateral, closer to tip of snout than to
+					eye, lore essentially straight, canthus rostralis distinct, eye
+					about equal to snout length, pupil diamond-shaped, upper eyelid
+					with tubercles; interorbital region smooth, width 69% of
+					internarial distance, tympanum moderate, slightly wider than
+					interorbital distance, supratympanic fold distinct, extending from
+					posterior corner of eye to supra-axillary region, in contact with
+					tympanic annulus, temporal muscle slightly enlarged; odontoid
+					process 2.1 mm. Dentigerous process of vomer distinct, angled
+					anterolaterally, approximately at 45
+					<sup>o</sup>
+					angle, posterior ends separated by distance approximately equal to
+					one-third diameter of choanae. Limbs relatively slender, tibia
+					width at thickest part 7.5 mm; femur length 52% of snout-vent
+					length, heels moderately overlapping when placed perpendicular to
+					body axis; tibia length 64.9% of foot length, 48.9% of snout-vent
+					length; foot length 71% of snout-vent length; tarsal fold
+					indistinct, only evident as a ridge; toe discs moderately expanded,
+					circum-marginal groove horseshoe-shaped, pointed anteriorly.
+					Plantar surface of foot smooth, subarticular tubercle rounded,
+					relative length of toes 4&gt;3&gt;5&gt;2&gt;1. Inner metatarsal
+					tubercle prominent, elongate, ovoid with a sharp spade like ventral
+					edge; outer metatarsal tubercle absent; hind foot webbing full,
+					extending to toe discs, slightly emarginated. Manus length 51.3% of
+					foot length, fingers slender, terminal discs slightly expanded,
+					length formula 3&gt;1≥4≥2, with slight differences in length,
+					subarticular tubercle rounded, convex; supernumerary tubercles
+					absent; inner and outer metacarpal tubercles enlarged, nuptial pads
+					and webbing absent, forearm muscle not enlarged. See
+					<xref ref-type="table" rid="pone-0115884-t001">Table 1</xref>
+					for measurements and variation.
+				</p>
+				<table-wrap id="pone-0115884-t001" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0115884.t001</object-id>
+					<label>Table 1</label>
+					<caption>
+						<title>
+							Summary of univariate morphological variation among mensural
+							characters in
+							<italic>Limnonectes larvaepartus</italic>
+							.
+						</title>
+					</caption>
+					<alternatives>
+						<graphic id="pone-0115884-t001-1" position="float"
+							mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0115884.t001"
+							xlink:type="simple" />
+						<table>
+							<colgroup span="1">
+								<col align="left" span="1" />
+								<col align="center" span="1" />
+								<col align="center" span="1" />
+								<col align="center" span="1" />
+							</colgroup>
+							<thead>
+								<tr>
+									<td align="left" rowspan="1" colspan="1" />
+									<td colspan="3" align="left" rowspan="1">
+										<italic>Limnonectes larvaepartus</italic>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1" />
+									<td align="left" rowspan="1" colspan="1">Males (31)</td>
+									<td align="left" rowspan="1" colspan="1">Females (30)</td>
+									<td align="left" rowspan="1" colspan="1">Holotype</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Snout-Vent Length (SVL)
+									</td>
+									<td align="left" rowspan="1" colspan="1">39.8+4.7</td>
+									<td align="left" rowspan="1" colspan="1">41.2+3.1</td>
+									<td align="left" rowspan="1" colspan="1">48.0</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Range</td>
+									<td align="left" rowspan="1" colspan="1">31.3−48.3</td>
+									<td align="left" rowspan="1" colspan="1">35.7−47.5</td>
+									<td align="left" rowspan="1" colspan="1">-</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Head Length (HL)</td>
+									<td align="left" rowspan="1" colspan="1">17.6+2.0</td>
+									<td align="left" rowspan="1" colspan="1">17.9+1.3</td>
+									<td align="left" rowspan="1" colspan="1">21.5</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Head Width (HW)</td>
+									<td align="left" rowspan="1" colspan="1">15.4+2.1</td>
+									<td align="left" rowspan="1" colspan="1">15.1+1.5</td>
+									<td align="left" rowspan="1" colspan="1">18.9</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Snout Length (SL)</td>
+									<td align="left" rowspan="1" colspan="1">7.0+0.9</td>
+									<td align="left" rowspan="1" colspan="1">7.2+0.5</td>
+									<td align="left" rowspan="1" colspan="1">8.2</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Eye-Narial Distance
+										(EN)</td>
+									<td align="left" rowspan="1" colspan="1">3.6+0.5</td>
+									<td align="left" rowspan="1" colspan="1">3.9+0.4</td>
+									<td align="left" rowspan="1" colspan="1">4.0</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Nostril-Tip of Snout
+										(NT)</td>
+									<td align="left" rowspan="1" colspan="1">3.6+0.4</td>
+									<td align="left" rowspan="1" colspan="1">3.8+0.4</td>
+									<td align="left" rowspan="1" colspan="1">4.3</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Internarial Distance
+										(IN)</td>
+									<td align="left" rowspan="1" colspan="1">4.5+0.6</td>
+									<td align="left" rowspan="1" colspan="1">4.4+0.4</td>
+									<td align="left" rowspan="1" colspan="1">4.9</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Snout Width at Eye
+										(SWE)</td>
+									<td align="left" rowspan="1" colspan="1">10.5+1.2</td>
+									<td align="left" rowspan="1" colspan="1">10.6+1.0</td>
+									<td align="left" rowspan="1" colspan="1">12.2</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Snout Width at Nostril
+										(SWN)</td>
+									<td align="left" rowspan="1" colspan="1">6.0+0.8</td>
+									<td align="left" rowspan="1" colspan="1">5.8+0.7</td>
+									<td align="left" rowspan="1" colspan="1">7.5</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Eye-Tympanum Distance
+										(ET)</td>
+									<td align="left" rowspan="1" colspan="1">1.8+0.5</td>
+									<td align="left" rowspan="1" colspan="1">1.6+0.4</td>
+									<td align="left" rowspan="1" colspan="1">1.7</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Odontoid Process Length
+										(OP)</td>
+									<td align="left" rowspan="1" colspan="1">2.0+0.3</td>
+									<td align="left" rowspan="1" colspan="1">1.6+0.2</td>
+									<td align="left" rowspan="1" colspan="1">2.1</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Tympanum Diameter (TY)
+									</td>
+									<td align="left" rowspan="1" colspan="1">3.1+0.5</td>
+									<td align="left" rowspan="1" colspan="1">3.3+0.4</td>
+									<td align="left" rowspan="1" colspan="1">3.6</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Interorbital Distance
+										(IO)</td>
+									<td align="left" rowspan="1" colspan="1">3.0+0.5</td>
+									<td align="left" rowspan="1" colspan="1">3.0+0.4</td>
+									<td align="left" rowspan="1" colspan="1">3.9</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Eye Diameter (EY)</td>
+									<td align="left" rowspan="1" colspan="1">7.2+0.8</td>
+									<td align="left" rowspan="1" colspan="1">7.4+0.5</td>
+									<td align="left" rowspan="1" colspan="1">8.7</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Femoral Length (FE)
+									</td>
+									<td align="left" rowspan="1" colspan="1">21.1+2.6</td>
+									<td align="left" rowspan="1" colspan="1">22.0+2.4</td>
+									<td align="left" rowspan="1" colspan="1">23.7</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Tibial Length (TI)</td>
+									<td align="left" rowspan="1" colspan="1">22.7+2.8</td>
+									<td align="left" rowspan="1" colspan="1">24.1+2.3</td>
+									<td align="left" rowspan="1" colspan="1">23.5</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Foot Length (FL)</td>
+									<td align="left" rowspan="1" colspan="1">32.1+3.6</td>
+									<td align="left" rowspan="1" colspan="1">33.5+3.0</td>
+									<td align="left" rowspan="1" colspan="1">36.2</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Humeral Length (UA)
+									</td>
+									<td align="left" rowspan="1" colspan="1">11.5+1.0</td>
+									<td align="left" rowspan="1" colspan="1">11.4+1.1</td>
+									<td align="left" rowspan="1" colspan="1">13.5</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Lower Arm Length (LA)
+									</td>
+									<td align="left" rowspan="1" colspan="1">8.4+1.0</td>
+									<td align="left" rowspan="1" colspan="1">9.1+1.0</td>
+									<td align="left" rowspan="1" colspan="1">9.5</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">Hand Length (HA)</td>
+									<td align="left" rowspan="1" colspan="1">9.7+1.2</td>
+									<td align="left" rowspan="1" colspan="1">9.9+1.0</td>
+									<td align="left" rowspan="1" colspan="1">11.8</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">HL/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.44+0.02</td>
+									<td align="left" rowspan="1" colspan="1">0.44+0.03</td>
+									<td align="left" rowspan="1" colspan="1">0.45</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">HW/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.39+0.02</td>
+									<td align="left" rowspan="1" colspan="1">0.37+0.02</td>
+									<td align="left" rowspan="1" colspan="1">0.39</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">SL/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.18+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.18+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.17</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">EN/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.09+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.09+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.08</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">IN/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.11+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.11+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.10</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">SWE/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.26+0.02</td>
+									<td align="left" rowspan="1" colspan="1">0.26+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.25</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">SWN/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.15+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.14+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.16</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">ET/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.04+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.04+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.04</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">OP/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.05+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.04+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.04</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">TY/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.08+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.08+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.08</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">IO/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.08+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.07+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.08</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">EY/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.18+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.18+0.01</td>
+									<td align="left" rowspan="1" colspan="1">0.18</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">FE/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.53+0.03</td>
+									<td align="left" rowspan="1" colspan="1">0.53+0.03</td>
+									<td align="left" rowspan="1" colspan="1">0.49</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">TI/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.57+0.04</td>
+									<td align="left" rowspan="1" colspan="1">0.59+0.04</td>
+									<td align="left" rowspan="1" colspan="1">0.49</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">PL/SVL</td>
+									<td align="left" rowspan="1" colspan="1">0.81+0.03</td>
+									<td align="left" rowspan="1" colspan="1">0.81+0.04</td>
+									<td align="left" rowspan="1" colspan="1">0.75</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">SL/SWE</td>
+									<td align="left" rowspan="1" colspan="1">0.67+0.07</td>
+									<td align="left" rowspan="1" colspan="1">0.69+0.07</td>
+									<td align="left" rowspan="1" colspan="1">0.67</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">IN/SWN</td>
+									<td align="left" rowspan="1" colspan="1">0.74+0.08</td>
+									<td align="left" rowspan="1" colspan="1">0.76+0.08</td>
+									<td align="left" rowspan="1" colspan="1">0.65</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">HW/HL</td>
+									<td align="left" rowspan="1" colspan="1">0.87+0.07</td>
+									<td align="left" rowspan="1" colspan="1">0.84+0.08</td>
+									<td align="left" rowspan="1" colspan="1">0.88</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">SL/HW</td>
+									<td align="left" rowspan="1" colspan="1">0.46+0.05</td>
+									<td align="left" rowspan="1" colspan="1">0.48+0.03</td>
+									<td align="left" rowspan="1" colspan="1">0.43</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">IO/IN</td>
+									<td align="left" rowspan="1" colspan="1">0.68+0.07</td>
+									<td align="left" rowspan="1" colspan="1">0.67+0.08</td>
+									<td align="left" rowspan="1" colspan="1">0.80</td>
+								</tr>
+								<tr>
+									<td align="left" rowspan="1" colspan="1">TI/TD</td>
+									<td align="left" rowspan="1" colspan="1">3.6+0.4</td>
+									<td align="left" rowspan="1" colspan="1">3.8+0.2</td>
+									<td align="left" rowspan="1" colspan="1">3.6</td>
+								</tr>
+							</tbody>
+						</table>
+					</alternatives>
+				</table-wrap>
+			</sec>
+			<sec id="s3i">
+				<title>Coloration</title>
+				<p>
+					The dorsal coloration is highly variable, typically brownish-grey,
+					but can be darker brown on the dorsolateral region, and some
+					individuals are reddish-brown or golden-tan (see
+					<xref ref-type="fig" rid="pone-0115884-g002">Fig. 2</xref>
+					). ∼23% of specimens have a bold mid-dorsal stripe. The venter is
+					either yellowish or cream colored, with the upper end of the tibia
+					usually bearing a prominent dark spot. A light bar is often present
+					in the interorbital region, and the coloration of the snout to
+					interorbital region may be lighter than the remainder of the
+					dorsum. The tympanum is often masked in black leaving only the
+					lower rim sharing the predominant body coloration. The gular region
+					is usually darker in males and may have a finely mottled
+					wedge-shaped melanic patch. The dorsal half of the iris is
+					golden-orange in coloration in at least some individuals (we do not
+					know of exceptions, but have not documented iris coloration for
+					most specimens).
+				</p>
+			</sec>
+			<sec id="s3j">
+				<title>Eggs and tadpoles</title>
+				<p>
+					Females produce ∼100 non-pigmented eggs (see
+					<xref ref-type="bibr" rid="pone.0115884-Kusrini1">[15]</xref>
+					), though the most we have observed is 55, which possibly
+					represents the contents of just one oviduct. The eggs lack a
+					jelly-coat and reach at least ∼3 mm in diameter. These eggs develop
+					within the oviducts into pigmented tadpoles that reach at least
+					Gosner stage 35 prior to parturition (see
+					<xref ref-type="bibr" rid="pone.0115884-Gosner1">[16]</xref>
+					for staging). The gut is initially provisioned with substantial
+					yolk (
+					<xref ref-type="fig" rid="pone-0115884-g002">
+						Fig. 2
+						<italic>b</italic>
+					</xref>
+					), and developing tadpoles prematurely removed from the oviducts at
+					approximately stage 21 progressed to approximately stage 25 over
+					the course of two weeks in a water bottle without supplemental
+					food, suggesting plasticity in terms of the timing of parturition.
+					A detailed description of the tadpole is provided in the
+					accompanying paper by Kusrini et al.
+					<xref ref-type="bibr" rid="pone.0115884-Kusrini1">[15]</xref>
+					.
+				</p>
+			</sec>
+			<sec id="s3k">
+				<title>Natural history</title>
+				<p>
+					<italic>Limnonectes larvaepartus</italic>
+					occurs in natural and disturbed forest habitats of Sulawesi,
+					generally in sympatry with at least one, and sometimes as many as
+					five other
+					<italic>Limnonectes</italic>
+					species. In the western Central Core of Sulawesi, we have always
+					found
+					<italic>L. larvaepartus</italic>
+					living in sympatry with a much larger species that has been
+					referred to in the literature as
+					<italic>L.</italic>
+					sp.
+					<italic>D</italic>
+					(2,3). Whereas
+					<italic>L.</italic>
+					sp.
+					<italic>D</italic>
+					is generally found on rocks in fast-moving streams or within a
+					meter of water on the banks of fast-flowing streams,
+					<italic>L. larvaepartus</italic>
+					is usually found further from the stream (2–10 meters from water)
+					on rocky substrates, in leaf-litter, or secluded in grassy
+					vegetation. Because we have observed that
+					<italic>L.</italic>
+					sp.
+					<italic>D</italic>
+					predates other frogs, including other
+					<italic>Limonectes</italic>
+					, it is possible that
+					<italic>L. larvaepartus</italic>
+					avoids large streams in response to predation pressure from larger
+					<italic>Limnonectes</italic>
+					species. Male
+					<italic>L. larvaepartus</italic>
+					typically call from the margins of seeps, puddles, or small pools
+					away from the main stream. Notably, we have found many males
+					calling from small pools that were already inhabited by
+					<italic>L. larvaepartus</italic>
+					tadpoles (
+					<xref ref-type="fig" rid="pone-0115884-g002">
+						Fig. 2
+						<italic>c</italic>
+					</xref>
+					), with as many as three size-classes of tadpoles represented. It
+					is unclear whether some or all of the observed tadpoles were sired
+					by the accompanying male. We have furthermore collected at least
+					one pregnant female from a small stream-side puddle already
+					inhabited by tadpoles of two size classes, again suggesting the
+					possibility that individual pools may be visited repeatedly by the
+					same adult males and females during the reproductive season.
+				</p>
+			</sec>
+		</sec>
+		<sec id="s4">
+			<title>Discussion</title>
+			<p>
+				We first became aware of the unusual reproductive mode of
+				<italic>Limnonectes larvaepartus</italic>
+				while conducting fieldwork on Sulawesi. In several instances, we
+				discovered tadpoles in the oviducts while preparing specimens. In
+				each case, having sacrificed frogs for preparation, the abdominal
+				wall was observed to quiver, and incision resulted in living
+				tadpoles emerging from the opening (see
+				<xref ref-type="supplementary-material" rid="pone.0115884.s001">S1 Movie</xref>
+				). On one occasion, a gravid female gave birth to tadpoles in-hand
+				at the moment of capture. On four other occasions, field-collected
+				<italic>L. larvaepartus</italic>
+				in our possession gave birth to tadpoles while being held
+				individually in collecting bags. In total, we have either observed
+				tadpoles in the oviducts or direct-birth of tadpoles on 19
+				occasions.
+			</p>
+			<p>
+				Because we have not witnessed natural birth of tadpoles in
+				free-living frogs, two possible alternative reproductive modes are
+				possible for this species.
+				<italic>Limnonectes larvaepartus</italic>
+				reproduction may simply reflect what we have observed in the hand –
+				direct birth of tadpoles. Alternatively, this species may be capable
+				of retaining developing young in the oviducts through metamorphosis
+				with subsequent birth of froglets, as is the case for
+				<italic>Eleutherodactylus jasperi</italic>
+				and members of the African bufonid genera
+				<italic>Nectophrynoides</italic>
+				and
+				<italic>Nimbaphrynoides</italic>
+				<xref ref-type="bibr" rid="pone.0115884-Wells1">[9]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Wake2">[17]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Wake3">[18]</xref>
+				. The latter mode seems unlikely for several reasons. First, we have
+				collected 19 pregnant individuals carrying tadpoles in the oviducts
+				but none carrying froglets. These 19 females were collected across
+				different months, years, and localities. Second, we have observed
+				and collected at least four clutches of free-living
+				<italic>L. larvaepartus</italic>
+				tadpoles in small pools of water on the margins of streams, with
+				each of these samples exhibiting two or three size classes and thus
+				possibly representing multiple clutches. Three of these clutches
+				were accompanied by males, some of which were calling, and one was
+				found in association with the gravid female that gave birth to 55
+				tadpoles (some in the hand of JAM, others subsequently deposited in
+				a collecting bag). Finally, although adaptive plasticity has been
+				demonstrated for many frog species, whereby tadpoles or froglets are
+				capable of hatching from their eggs prematurely when attacked by
+				predators
+				<xref ref-type="bibr" rid="pone.0115884-Warkentin1">[19]</xref>
+				, this has only been documented for a single direct-developer,
+				<italic>Eleutherodactylus coqui</italic>
+				<xref ref-type="bibr" rid="pone.0115884-Buckley1">[20]</xref>
+				. In the case of
+				<italic>E. coqui</italic>
+				, the capacity for early hatching commenced at stages 13 or 14,
+				whereas normal hatching occurred at stage 15 (see
+				<xref ref-type="bibr" rid="pone.0115884-Townsend1">[21]</xref>
+				for staging). Thus,
+				<italic>E. coqui</italic>
+				were capable of premature hatching only as froglets, with toe pads
+				and eyelids present but before the tail was completely resorbed, a
+				stage much later than would be required by
+				<italic>L. larvaepartus</italic>
+				if it were simultaneously capable of hatching as either a tadpole or
+				full-term froglet. Most direct-developers, as well as the few frog
+				species that give birth to froglets, pass through the tadpole stage
+				in a form poorly suited for free-living. In many such species, the
+				tadpole has a broad, highly vascularized ‘respiratory tail’
+				specialized for intra-egg or intra-oviductal gas exchange rather
+				than for swimming, as is the case for
+				<italic>Eleutherodactylus jasperi</italic>
+				<xref ref-type="bibr" rid="pone.0115884-Wake2">[17]</xref>
+				, and may lack mouthparts and functional gills
+				<xref ref-type="bibr" rid="pone.0115884-Lutz1">[22]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Lynn1">[23]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Thibaudeau1">[24]</xref>
+				. In others, the tail remains rudimentary and limb buds appear early
+				in development such that a typical tadpole phenotype never occurs
+				<xref ref-type="bibr" rid="pone.0115884-Lutz1">[22]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Lynn1">[23]</xref>
+				. Given these observations, it appears unlikely that any one species
+				would be characterized by the combination of (1) internal
+				fertilization, (2) complete metamorphosis within the oviducts and
+				live-birth in the form of froglets, as well as (3) an oviductal
+				tadpole stage that is capable of premature birth and free-living.
+				Although we think that
+				<italic>L. larvaepartus</italic>
+				is much more likely to give birth to tadpoles as its sole mode of
+				reproduction as opposed to exhibiting adaptive plasticity allowing
+				for birth of either tadpoles or froglets depending on the
+				circumstances confronting the frog, we note that either condition
+				would be unique among Anura. In either case,
+				<italic>L. larvaepartus</italic>
+				requires internal fertilization, which is, itself, extremely rare
+				among anurans
+				<xref ref-type="bibr" rid="pone.0115884-McDiarmid1">[8]</xref>
+				,
+				<xref ref-type="bibr" rid="pone.0115884-Duellman1">[25]</xref>
+				. The mechanism by which internal fertilization takes place is
+				unknown, and there is no obvious intromittent organ present to
+				facilitate sperm transfer. If
+				<italic>L. larvaepartus</italic>
+				reproduction always involves birth of tadpoles, it is likely that
+				they are ovoviparous given that the tadpoles are well provisioned
+				with yolk and appear fully capable of developing without nutrient
+				transfer from the mother. Prior to parturition, the tadpoles have
+				well-developed tails and pigmentation, and well developed
+				mouthparts. Given this morphology, it is unlikely that these
+				tadpoles are endotrophic (never feed before metamorphosing into
+				froglets). It is more likely that the tadpoles are born after
+				exhausting their yolk supply, and are subsequently self-feeding
+				prior to metamorphosis. Nevertheless, it is clear that much remains
+				to be learned about this unusual frog, the discovery of which brings
+				to light yet another axis of diversity characterizing the remarkable
+				Sulawesi fanged frog adaptive radiation.
+			</p>
+		</sec>
+		<sec id="s5">
+			<title>Supporting Information</title>
+			<supplementary-material id="pone.0115884.s001"
+				mimetype="video/quicktime" xlink:href="info:doi/10.1371/journal.pone.0115884.s001"
+				position="float" xlink:type="simple">
+				<label>S1 Movie</label>
+				<caption>
+					<p>
+						<bold>Video showing the characteristic quivering abdomen caused by
+							movement of tadpoles within a pregnant female </bold>
+						<bold>
+							<italic>Limnonectes larvaepartus.</italic>
+						</bold>
+					</p>
+					<p>(MOV)</p>
+				</caption>
+			</supplementary-material>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>We thank K. N. Tjan, U. Arifin, K. Laras, Suwatio, A. Rachmansah,
+				R. M. Brown, and C. J. Hayden for assistance in the field. Boeadi
+				and Mumpuni for MZB specimens; R. F. Inger for discussion and access
+				to comparative materials from FMNH, USNM and MCZ; D. N. Cannatella,
+				M. H. Wake, and members of the McGuire Lab for helpful discussion.
+			</p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="pone.0115884-Emerson1">
+				<label>1</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Emerson</surname>
+						<given-names>SB</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Inger</surname>
+						<given-names>RF</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Iskandar</surname>
+						<given-names>DT</given-names>
+					</name>
+					(
+					<year>2000</year>
+					)
+					<article-title>Molecular phylogenetics and Evolution of fanged
+						Frogs</article-title>
+					.
+					<source>Mol Phylogenet Evol</source>
+					<volume>16</volume>
+					:
+					<fpage>131</fpage>
+					–
+					<lpage>142</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Evans1">
+				<label>2</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Evans</surname>
+						<given-names>BJ</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Brown</surname>
+						<given-names>RM</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>McGuire</surname>
+						<given-names>JA</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Supriatna</surname>
+						<given-names>J</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Andayani</surname>
+						<given-names>N</given-names>
+					</name>
+					,
+					<etal>et al</etal>
+					. (
+					<year>2003</year>
+					)
+					<article-title>Phylogenetics of fanged frogs; testing
+						biogeographical hypotheses at the interface of the Asian and
+						Australian faunal zones</article-title>
+					.
+					<source>Syst Biol</source>
+					<volume>526</volume>
+					:
+					<fpage>794</fpage>
+					–
+					<lpage>819</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Setiadi1">
+				<label>3</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Setiadi</surname>
+						<given-names>MI</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>McGuire</surname>
+						<given-names>JA</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Brown</surname>
+						<given-names>RM</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Zubairi</surname>
+						<given-names>M</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Iskandar</surname>
+						<given-names>DT</given-names>
+					</name>
+					,
+					<etal>et al</etal>
+					. (
+					<year>2011</year>
+					)
+					<article-title>
+						Adaptive radiation and ecological opportunity in Sulawesi and
+						Philippine fanged frogs (
+						<italic>Limnonectes</italic>
+						) Communities
+					</article-title>
+					.
+					<source>Amer Nat</source>
+					<volume>178</volume>
+					:
+					<fpage>221</fpage>
+					–
+					<lpage>240</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Iskandar1">
+				<label>4</label>
+				<mixed-citation publication-type="other" xlink:type="simple">
+					Iskandar DT, Tjan KN (1996) The Amphibians and Reptiles of
+					Sulawesi: with notes on the distribution and chromosomal number of
+					frogs. Proc. 1
+					<sup>st</sup>
+					Intl. Conf. Eastern Indonesian-Australian Vertebrates. Manado pp.
+					39–46.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Wake1">
+				<label>5</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Wake</surname>
+						<given-names>MH</given-names>
+					</name>
+					(
+					<year>2003</year>
+					)
+					<article-title>Reproductive modes, ontogenies, and the evolution of
+						body form</article-title>
+					.
+					<source>Anim Biol</source>
+					<volume>53</volume>
+					:
+					<fpage>209</fpage>
+					–
+					<lpage>223</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Haddad1">
+				<label>6</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Haddad</surname>
+						<given-names>CFB</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Prado</surname>
+						<given-names>CPA</given-names>
+					</name>
+					(
+					<year>2005</year>
+					)
+					<article-title>Reproductive modes in frogs and their unexpected
+						diversity in the Atlantic Forest of Brazil</article-title>
+					.
+					<source>BioScience</source>
+					<volume>55</volume>
+					:
+					<fpage>207</fpage>
+					–
+					<lpage>217</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-AmphibiaWeb1">
+				<label>7</label>
+				<mixed-citation publication-type="other" xlink:type="simple">
+					AmphibiaWeb: Information on amphibian biology and conservation
+					<bold>.</bold>
+					Available:
+					<ext-link ext-link-type="uri" xlink:href="http://amphibiaweb.org/"
+						xlink:type="simple">http://amphibiaweb.org/</ext-link>
+					. Accessed: October 13, 2014.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-McDiarmid1">
+				<label>8</label>
+				<mixed-citation publication-type="book" xlink:type="simple">McDiarmid
+					RW, Altig R (1999) Tadpoles: the biology of anuran larvae. Chicago:
+					University of Chicago Press. 444 p.</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Wells1">
+				<label>9</label>
+				<mixed-citation publication-type="book" xlink:type="simple">Wells
+					KD (2008) The Ecology and Behavior of Amphibians. Chicago: The
+					University of Chicago Press. 1148 p.</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Guayasamin1">
+				<label>10</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Guayasamin</surname>
+						<given-names>JM</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Bustamante</surname>
+						<given-names>MR</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Almeida-Reinoso</surname>
+						<given-names>D</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Funk</surname>
+						<given-names>WC</given-names>
+					</name>
+					(
+					<year>2006</year>
+					)
+					<article-title>Glass frogs (Centrolenidae) of Yanayacu Biological
+						Station, Ecuador, with the description of a new species and
+						comments on centrolenid systematics</article-title>
+					.
+					<source>Zool J Linn Soc</source>
+					<volume>147</volume>
+					:
+					<fpage>489</fpage>
+					–
+					<lpage>513</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Inger1">
+				<label>11</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Inger</surname>
+						<given-names>RF</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Voris</surname>
+						<given-names>HK</given-names>
+					</name>
+					(
+					<year>2001</year>
+					)
+					<article-title>The biogeographical relations of the frogs and
+						snakes of Sundaland</article-title>
+					.
+					<source>J Biogeogr</source>
+					<volume>28</volume>
+					:
+					<fpage>863</fpage>
+					–
+					<lpage>891</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-McGuire1">
+				<label>12</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>McGuire</surname>
+						<given-names>JA</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Brown</surname>
+						<given-names>RM</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Mumpuni, Riyanto</surname>
+						<given-names>A</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Andayani</surname>
+						<given-names>N</given-names>
+					</name>
+					(
+					<year>2007</year>
+					)
+					<article-title>
+						The flying lizards of the
+						<italic>Draco lineatus</italic>
+						group (Squamata: Iguania: Agamidae): A taxonomic revision with
+						descriptions of two new species
+					</article-title>
+					.
+					<source>Herp Monog</source>
+					<volume>21</volume>
+					:
+					<fpage>179</fpage>
+					–
+					<lpage>212</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Merker1">
+				<label>13</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Merker</surname>
+						<given-names>S</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Driller</surname>
+						<given-names>C</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Dahruddin</surname>
+						<given-names>H</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Wirdateti, Sinaga</surname>
+						<given-names>W</given-names>
+					</name>
+					,
+					<etal>et al</etal>
+					. (
+					<year>2010</year>
+					)
+					<article-title>
+						<italic>Tarsius wallacei</italic>
+						: A new tarsier species from Central Sulawesi occupies a
+						discontinuous range
+					</article-title>
+					.
+					<source>Int J Primatol</source>
+					<volume>31</volume>
+					:
+					<fpage>1107</fpage>
+					–
+					<lpage>1122</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Brown1">
+				<label>14</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Brown</surname>
+						<given-names>RM</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Iskandar</surname>
+						<given-names>DT</given-names>
+					</name>
+					(
+					<year>2000</year>
+					)
+					<article-title>
+						Nest site Selection, larval hatching and advertisement calls of
+						<italic>Rana arathooni</italic>
+						from southwestern Sulawesi (Celebes) Island, Indonesia
+					</article-title>
+					.
+					<source>J Herp</source>
+					<volume>34</volume>
+					:
+					<fpage>404</fpage>
+					–
+					<lpage>413</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Kusrini1">
+				<label>15</label>
+				<mixed-citation publication-type="other" xlink:type="simple">
+					Kusrini MD, Rowley JJL, Khairunnisa LR, Shea GM, Altig R (2014) A
+					new breeding mode for anurans: reproductive biology and larvae of
+					the Indonesian frog
+					<italic>Limnonectes larvaepartus</italic>
+					. PLOS ONE. In press Vol. 10, Issue 1.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Gosner1">
+				<label>16</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Gosner</surname>
+						<given-names>KL</given-names>
+					</name>
+					(
+					<year>1960</year>
+					)
+					<article-title>A simplified table for staging anuran embryos and
+						larvae with notes on identification</article-title>
+					.
+					<source>Herpetologica</source>
+					<volume>16</volume>
+					:
+					<fpage>183</fpage>
+					–
+					<lpage>190</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Wake2">
+				<label>17</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Wake</surname>
+						<given-names>MH</given-names>
+					</name>
+					(
+					<year>1978</year>
+					)
+					<article-title>
+						The reproductive biology of
+						<italic>Eleutherodactylus jasperi</italic>
+						(Amphibia, Anura, Leptodactylidae), with comments on the evolution
+						of live-bearing systems
+					</article-title>
+					.
+					<source>J Herpetol</source>
+					<volume>12</volume>
+					:
+					<fpage>121</fpage>
+					–
+					<lpage>133</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Wake3">
+				<label>18</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Wake</surname>
+						<given-names>MH</given-names>
+					</name>
+					(
+					<year>1980</year>
+					)
+					<article-title>
+						The reproductive biology of
+						<italic>Nectophrynoides malcolmi</italic>
+						(Amphibia: Bufonidae) with comments on the evolution of
+						reproductive modes in the genus
+						<italic>Nectophrynoides</italic>
+					</article-title>
+					.
+					<source>Copeia</source>
+					<volume>1980</volume>
+					:
+					<fpage>193</fpage>
+					–
+					<lpage>209</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Warkentin1">
+				<label>19</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Warkentin</surname>
+						<given-names>KM</given-names>
+					</name>
+					(
+					<year>2011</year>
+					)
+					<article-title>Plasticity of hatching in amphibians: Evolution,
+						trade-offs, cues and mechanisms</article-title>
+					.
+					<source>Integr Comp Biol</source>
+					<volume>51</volume>
+					:
+					<fpage>111</fpage>
+					–
+					<lpage>127</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Buckley1">
+				<label>20</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Buckley</surname>
+						<given-names>CR</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Michael</surname>
+						<given-names>SF</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Irschick</surname>
+						<given-names>DJ</given-names>
+					</name>
+					(
+					<year>2005</year>
+					)
+					<article-title>
+						Early hatching decreases jumping performance in a
+						direct-developing frog,
+						<italic>Eleutherodactylus coqui</italic>
+					</article-title>
+					.
+					<source>Funct Ecol</source>
+					<volume>19</volume>
+					:
+					<fpage>67</fpage>
+					–
+					<lpage>72</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Townsend1">
+				<label>21</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Townsend</surname>
+						<given-names>DS</given-names>
+					</name>
+					,
+					<name name-style="western">
+						<surname>Stewart</surname>
+						<given-names>MM</given-names>
+					</name>
+					(
+					<year>1985</year>
+					)
+					<article-title>
+						Direct development in
+						<italic>Eleutherodactylus coqui</italic>
+						(Anura: Leptodactylidae): a staging table
+					</article-title>
+					.
+					<source>Copeia</source>
+					<volume>1985</volume>
+					:
+					<fpage>423</fpage>
+					–
+					<lpage>436</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Lutz1">
+				<label>22</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Lutz</surname>
+						<given-names>B</given-names>
+					</name>
+					(
+					<year>1948</year>
+					)
+					<article-title>Ontogenetic evolution in frogs</article-title>
+					.
+					<source>Evolution</source>
+					<volume>2</volume>
+					:
+					<fpage>29</fpage>
+					–
+					<lpage>39</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Lynn1">
+				<label>23</label>
+				<mixed-citation publication-type="journal"
+					xlink:type="simple">
+					<name name-style="western">
+						<surname>Lynn</surname>
+						<given-names>WG</given-names>
+					</name>
+					(
+					<year>1942</year>
+					)
+					<article-title>
+						The embryology of
+						<italic>Eleutherodactylus nubicola</italic>
+						, an anuran which has no tadpole stage
+					</article-title>
+					.
+					<source>Carn Inst Wash Publ</source>
+					<volume>541</volume>
+					:
+					<fpage>27</fpage>
+					–
+					<lpage>62</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Thibaudeau1">
+				<label>24</label>
+				<mixed-citation publication-type="book" xlink:type="simple">Thibaudeau
+					G, Altig R (1999) Endotrophic anurans – development and evolution.
+					In: McDiarmid RW, R Altigeditors.Tadpoles. The biology of anuran
+					larvae, Chicago: The University of Chicago Press pp. 170–188.
+				</mixed-citation>
+			</ref>
+			<ref id="pone.0115884-Duellman1">
+				<label>25</label>
+				<mixed-citation publication-type="book" xlink:type="simple">Duellman
+					WE, Trueb L (1986) Biology of Amphibians. New York: McGraw-Hill
+					Publishing Company. 670 p.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

@@ -1,7 +1,7 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,6 +21,7 @@ import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.HOCRReader;
+import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
 
@@ -35,20 +36,20 @@ public class NormaTransformer {
 	private static final String HOCR2SVG = "hocr2svg";
 	private static final String PDF2HTML = "pdf2html";
 	private static final String PDF2TXT = "pdf2txt";
+	private static final String PDF2IMAGES = "pdf2images";
 	private static final String TXT2HTML = "txt2html";
 	
 	private NormaArgProcessor normaArgProcessor;
-	private CMDir currentCMDir;
 	private File inputFile;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	String outputTxt;
 	List<String> xmlStringList;
+	List<BufferedImage> imageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
-		this.currentCMDir = argProcessor.getCurrentCMDir();
 	}
 
 	/** transforms currentCMDir.
@@ -61,18 +62,23 @@ public class NormaTransformer {
 	 * @param option
 	 */
 	void transform(ArgumentOption option) {
+		CMDir currentCMDir = normaArgProcessor.getCurrentCMDir();
+		LOG.trace("CM "+currentCMDir);
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.debug("TRANSFORM "+option.getVerbose());
+		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
 		xmlStringList = null;
+		imageList = null;
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
 			if (false) {				
 			} else if (HOCR2SVG.equals(option.getStringValue())) {
 				svgElement = applyHOCR2SVGToInputFile(inputFile);
 			} else if (PDF2TXT.equals(option.getStringValue())) {
 				outputTxt = applyPDF2TXTToCMLDir();
+			} else if (PDF2IMAGES.equals(option.getStringValue())) {
+				imageList = applyPDF2IMAGESToCMLDir();
 			} else if (TXT2HTML.equals(option.getStringValue())) {
 				htmlElement = applyTXT2HTMLToCMDir();
 			} else if (PDF2HTML.equals(option.getStringValue())) {
@@ -106,6 +112,17 @@ public class NormaTransformer {
 		return txt;
 	}
 
+	private List<BufferedImage> applyPDF2IMAGESToCMLDir() {
+		PDF2ImagesConverter converter = new PDF2ImagesConverter();
+		List<BufferedImage> images = null;
+		try {
+			images = converter.readPDF(new FileInputStream(inputFile), true);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return images;
+	}
+
 	private HtmlElement applyTXT2HTMLToCMDir() {
 		HtmlElement htmlElement = null;
 		try {
@@ -130,7 +147,7 @@ public class NormaTransformer {
 				String xmlString = transform(xslDocument);
 				xmlStringList.add(xmlString);
 			} catch (IOException e) {
-				LOG.error("Cannot transform "+currentCMDir+"; "+e);
+				LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMDir()+"; "+e);
 			}
 		}
 		return xmlStringList;
