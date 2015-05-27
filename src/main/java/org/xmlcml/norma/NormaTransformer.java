@@ -65,7 +65,7 @@ public class NormaTransformer {
 		CMDir currentCMDir = normaArgProcessor.getCurrentCMDir();
 		LOG.trace("CM "+currentCMDir);
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
+		LOG.debug("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
