@@ -86,7 +86,7 @@ public class HOCRReaderTest {
 		List<HtmlSpan> lines = hocrReader.getNonEmptyLines();
 		for (HtmlSpan line : lines) {
 			List<String> matchList = HOCRReader.matchPattern(line, IJSEM);
-			LOG.debug((matchList.size() == 0 ? "?? "+HOCRReader.getSpacedValue(line).toString() : matchList));
+			LOG.trace((matchList.size() == 0 ? "?? "+HOCRReader.getSpacedValue(line).toString() : matchList));
 		}
 		System.out.println();
 	}
