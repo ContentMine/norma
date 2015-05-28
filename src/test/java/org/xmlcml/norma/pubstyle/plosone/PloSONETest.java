@@ -180,7 +180,7 @@ public class PloSONETest {
 		String[] args = {
 				"-i", new File(Fixtures.F0115884A_DIR, "fulltext.nodtd.xml").toString(),
 				"--pubstyle", "nlm",
-				"--xsl", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
+				"--transform", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
 				"-o", outputFile.toString(),
 		};
 		if (1==1) throw new RuntimeException("Recast as CMDir");

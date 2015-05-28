@@ -21,16 +21,16 @@ public class Prototypes {
 
 	private static void runHalThesis1() {
 		new Norma().run("-i examples/theses/HalThesis1.pdf -o examples/theses/");
-		new Norma().run("-q examples/theses/HalThesis1 -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt");
+		new Norma().run("-q examples/theses/HalThesis1 -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 
 	private static void runHalThesis2() {
 		new Norma().run("-i examples/theses/HalThesis2.pdf -o examples/theses/");
-		new Norma().run("-q examples/theses/HalThesis2 -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt");
+		new Norma().run("-q examples/theses/HalThesis2 -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 	private static void runHalThesis3() {
 		new Norma().run("-i examples/theses/These_Nathalie_Mitton.pdf -o examples/theses/");
-		new Norma().run("-q examples/theses/These_Nathalie_Mitton -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt");
+		new Norma().run("-q examples/theses/These_Nathalie_Mitton -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 	
 	private static void runHalManyThesis() {
@@ -54,7 +54,7 @@ public class Prototypes {
 		String cmd = "-i "+imagedir+xString+" -o "+cmdir;
 		LOG.debug(cmd);
 		new Norma().run(cmd);
-//			new Norma().run("-q "+imagedir+root+" -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt");
+//			new Norma().run("-q "+imagedir+root+" -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 
 	private static void createPDFTXT(String name) {
@@ -62,6 +62,6 @@ public class Prototypes {
 		 * 
 		 */
 		new Norma().run("-i examples/theses/"+name+".pdf -o examples/theses/");
-		new Norma().run("-q examples/theses/"+name+" -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt");
+		new Norma().run("-q examples/theses/"+name+" -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 }

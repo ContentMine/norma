@@ -43,7 +43,6 @@ public class HOCRReaderTest {
 	@Test
 	public void testReadHOCR() throws IOException {
 		String resource = OCR_RESOURCE+"ijs.0.003566-0-000.pbm.png.hocr";
-//		LOG.debug(resource);
 		InputStream is = this.getClass().getResourceAsStream(resource);
 		Assert.assertNotNull("input stream must not be null: "+resource, is);
 		HOCRReader hocrReader = new HOCRReader();
@@ -88,7 +87,7 @@ public class HOCRReaderTest {
 			List<String> matchList = HOCRReader.matchPattern(line, IJSEM);
 			LOG.trace((matchList.size() == 0 ? "?? "+HOCRReader.getSpacedValue(line).toString() : matchList));
 		}
-		System.out.println();
+//		System.out.println();
 	}
 	
 	@Test
@@ -108,7 +107,7 @@ public class HOCRReaderTest {
 		};
 
 		for (String root : roots) {
-			LOG.debug(root);
+			LOG.trace(root);
 			HOCRReader hocrReader = new HOCRReader();
 			hocrReader.readHOCR(this.getClass().getResourceAsStream(OCR_RESOURCE+"/"+root+".pbm.png.hocr"));
 			SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
