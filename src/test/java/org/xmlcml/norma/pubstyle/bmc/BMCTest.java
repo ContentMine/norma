@@ -174,7 +174,7 @@ public class BMCTest {
 		// now run the transformation
 		String[] args = {
 				// the cmDir directory
-				"--quickscrapeNorma", cmDir1.toString(),
+				"--cmdir", cmDir1.toString(),
 				// we will transform the fulltext.xml into ...
 				"--input", "fulltext.xml",
 				// a new scholarly.html
@@ -229,7 +229,7 @@ public class BMCTest {
 			cmDir.copyTo(targetFiles[i], true);
 		}
 		String[] args = {
-				"--quickscrapeNorma", 
+				"--cmdir", 
 				targetFiles[0].toString(),
 				targetFiles[1].toString(),
 				targetFiles[2].toString(),
