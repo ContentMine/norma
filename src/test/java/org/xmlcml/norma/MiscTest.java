@@ -219,7 +219,7 @@ I'd consider this answer an argument against the Java way of doing things.
 	@Test
 	public void testRecursiveGrouping() throws Exception {
 		File flatFile = new File("src/test/resources/org/xmlcml/norma/style/flatFile.xml");
-		LOG.debug("flatfile "+FileUtils.sizeOf(flatFile));
+		LOG.trace("flatfile "+FileUtils.sizeOf(flatFile));
 		File styleFile = new File("src/test/resources/org/xmlcml/norma/style/recursivegrouper.xsl");
 		File groupedFile = new File("target/testgroup/recursiveGroup.xml");
 		TransformerWrapper transformerWrapper = new TransformerWrapper();
@@ -270,10 +270,10 @@ I'd consider this answer an argument against the Java way of doing things.
 		String methodName = "stringLength";
 		Method method = this.getClass().getDeclaredMethod(methodName, String.class);
 		method.setAccessible(true);
-		LOG.debug(method);
+		LOG.trace(method);
 		Class<?>[] parameterTypes = method.getParameterTypes();
 		for (Class<?> parameterType : parameterTypes) {
-			LOG.debug(parameterType);
+			LOG.trace(parameterType);
 		}
 		String ss = "Hello World!";
 		try {

@@ -1,5 +1,6 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,9 +9,12 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -20,6 +24,7 @@ import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
@@ -38,6 +43,9 @@ import org.xmlcml.xml.XMLUtil;
  */
 public class NormaArgProcessor extends DefaultArgProcessor{
 	
+	private static final String DOT_PNG = ".png";
+	private static final String IMAGE = "image";
+	private static final String PNG = "png";
 	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -233,6 +241,29 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 		if (normaTransformer.svgElement != null && output != null) {
 			currentCMDir.writeFile(normaTransformer.svgElement.toXML(), output);
+		}
+		if (normaTransformer.serialImageList != null) {
+			writeImages();
+		}
+	}
+
+	private void writeImages() {
+		File imageDir = currentCMDir.getOrCreateExistingImageDir();
+		Set<String> imageSerialSet = new HashSet<String>();
+		StringBuilder sb = new StringBuilder();
+		for (Pair<String, BufferedImage> serialImage : normaTransformer.serialImageList) {
+			try {
+				String serialString = serialImage.getLeft();
+				String imageSerial = serialString.split("\\.")[3];
+				sb.append(serialString);
+				if (!imageSerialSet.contains(imageSerial)) {
+					File imageFile = new File(imageDir, serialString+DOT_PNG);
+					ImageIO.write(serialImage.getRight(), PNG, imageFile);
+					imageSerialSet.add(imageSerial);
+				}
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot write image ", e);
+			}
 		}
 	}
 

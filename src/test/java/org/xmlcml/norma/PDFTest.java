@@ -121,13 +121,9 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		FileUtils.copyDirectory(
 				new File("src/test/resources/org/xmlcml/norma/regressiondemos/quickscrapeDirs/bmc/1471-2148-14-70"), 
 				new File("target/pdftest"));
-//		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdfbox";
-		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --xsl pdf2txt";
+		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt";
 		Norma norma = new Norma();
 		norma.run(args);
 		
-//		PDF2TXTConverter converter = new PDF2TXTConverter();
-//		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
-//		String text = converter.readPDF(new FileInputStream(file0115884), true);
 	}
 }

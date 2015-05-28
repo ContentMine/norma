@@ -27,20 +27,21 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	@Ignore // as this just prints help
 	public void testNoArgs() {
 		String[] args = {
 		};
 		new NormaArgProcessor(args);
 	}
 	
-	@Test
+	@Test // outputs help
 	@Ignore // to cut down output
 	public void testNoArgsMain() {
 		String[] args = {
 		};
 		Norma.main(args);
 		Assert.assertTrue("finished", true);
-		LOG.debug("finished");
+		LOG.trace("finished");
 	}
 	
 
@@ -114,7 +115,7 @@ public class NormaArgProcessorTest {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String args = "-q "+container0115884.toString()+" --xsl nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+container0115884.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
 		Norma norma = new Norma();
 		norma.run(args);
 		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
@@ -122,7 +123,7 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
 		CMDir cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
-		LOG.debug(files);
+		LOG.trace(files);
 		Assert.assertEquals(5, files.size());
 	}
 	
@@ -140,7 +141,7 @@ public class NormaArgProcessorTest {
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
 		String[] args = {
 			"-q", container0115884.toString(), // output from quickscrape
-			"-x", "nlm2html",                  // stylesheet to use (code)
+			"--transform", "nlm2html",                  // stylesheet to use (code)
 			"--standalone", "false",           // force use of DTD. May fail
 			"-e", "xml"                       // type of file to transform
 		};
@@ -177,8 +178,8 @@ public class NormaArgProcessorTest {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String args = "-q "+container0115884.toString()+" -x pdf2txt --input fulltext.pdf --output fulltext.pdf.txt";
-		LOG.debug(args);
+		String args = "-q "+container0115884.toString()+" --transform pdf2txt --input fulltext.pdf --output fulltext.pdf.txt";
+		LOG.trace(args);
 		Norma norma = new Norma();
 		norma.run(args);
 		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
@@ -186,7 +187,7 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
 		CMDir cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
-		LOG.debug(files);
+		LOG.trace(files);
 		Assert.assertEquals(5, files.size());
 	}
 	
@@ -205,7 +206,7 @@ public class NormaArgProcessorTest {
 		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
 		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
 		String args = "-q "+containerPLOSONE.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
-		LOG.debug("args> "+args);
+		LOG.trace("args> "+args);
 		Norma norma = new Norma();
 		norma.run(args);
 	}

@@ -13,6 +13,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.ArgumentOption;
@@ -44,7 +45,7 @@ public class NormaTransformer {
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	String outputTxt;
 	List<String> xmlStringList;
-	List<BufferedImage> imageList;
+	List<Pair<String, BufferedImage>> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
 
@@ -65,12 +66,12 @@ public class NormaTransformer {
 		CMDir currentCMDir = normaArgProcessor.getCurrentCMDir();
 		LOG.trace("CM "+currentCMDir);
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.debug("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
+		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
 		xmlStringList = null;
-		imageList = null;
+		serialImageList = null;
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
 			if (false) {				
 			} else if (HOCR2SVG.equals(option.getStringValue())) {
@@ -78,7 +79,7 @@ public class NormaTransformer {
 			} else if (PDF2TXT.equals(option.getStringValue())) {
 				outputTxt = applyPDF2TXTToCMLDir();
 			} else if (PDF2IMAGES.equals(option.getStringValue())) {
-				imageList = applyPDF2IMAGESToCMLDir();
+				serialImageList = applyPDF2ImagesToCMLDir();
 			} else if (TXT2HTML.equals(option.getStringValue())) {
 				htmlElement = applyTXT2HTMLToCMDir();
 			} else if (PDF2HTML.equals(option.getStringValue())) {
@@ -112,15 +113,15 @@ public class NormaTransformer {
 		return txt;
 	}
 
-	private List<BufferedImage> applyPDF2IMAGESToCMLDir() {
+	private List<Pair<String, BufferedImage>> applyPDF2ImagesToCMLDir() {
 		PDF2ImagesConverter converter = new PDF2ImagesConverter();
-		List<BufferedImage> images = null;
+		List<Pair<String, BufferedImage>> serialAndImageList = null;
 		try {
-			images = converter.readPDF(new FileInputStream(inputFile), true);
+			serialAndImageList = converter.readPDF(new FileInputStream(inputFile), true);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
 		}
-		return images;
+		return serialAndImageList;
 	}
 
 	private HtmlElement applyTXT2HTMLToCMDir() {
@@ -277,6 +278,19 @@ public class NormaTransformer {
 
 	public List<String> getXmlStringList() {
 		return xmlStringList;
+	}
+
+	/** ordered list of title+image.
+	 * 
+	 * title are of form "image<page>.<serial>.Img<img>"
+	 * page is PD page number (base 1)
+	 * serial is serial index of image (includes duplication)
+	 * img is unique image serial
+	 * 
+	 * @return
+	 */
+	public List<Pair<String, BufferedImage>> getImageList() {
+		return serialImageList;
 	}
 
 	public HtmlElement getHtmlElement() {
