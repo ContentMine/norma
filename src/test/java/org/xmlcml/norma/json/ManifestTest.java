@@ -51,7 +51,7 @@ public class ManifestTest {
 	    JsonElement jsonElement0 = jsonArray.get(0);
 	    LOG.trace(jsonElement0.toString());
 	    int l = jsonElement.toString().length();
-	    Assert.assertTrue("manifest0",  524966 < l && l < 526000);
+	    Assert.assertTrue("manifest0 "+l,  524000 < l && l < 526000);
 	    Assert.assertEquals("manifest0 start",  "{\"id\":[\"26000862\"]", jsonElement0.toString().substring(0,18));
 	}
 	

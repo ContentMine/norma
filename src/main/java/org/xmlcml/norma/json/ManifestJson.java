@@ -11,7 +11,6 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.norma.Fixtures;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -61,7 +60,7 @@ public class ManifestJson {
 		ManifestJson manifestJson = null;
 		if (file != null && file.exists()) {
 			try {
-				String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "results0.json"));
+				String resultsJsonString = FileUtils.readFileToString(file);
 			    JsonParser parser = new JsonParser();
 			    JsonElement jsonElement = parser.parse(resultsJsonString);
 			    manifestJson = new ManifestJson(jsonElement);
