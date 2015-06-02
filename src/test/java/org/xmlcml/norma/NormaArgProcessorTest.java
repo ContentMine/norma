@@ -210,4 +210,15 @@ public class NormaArgProcessorTest {
 		Norma norma = new Norma();
 		norma.run(args);
 	}
+	
+	@Test
+	/** creates new CMDirs for list of PDF and then transforms
+	 * 
+	 */
+	public void testNormalizeIEEEPDFs() throws IOException {
+		String args;
+		args = "-i fulltext.pdf --cmdir ../cmine/target/ieee/musti/Henniger -o fulltext.txt --transform pdf2txt";
+		new Norma().run(args);
+	}
+
 }

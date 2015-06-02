@@ -12,6 +12,7 @@ public class Fixtures {
 	public final static File GROUP_MAJOR_SECTIONS_XSL = new File(Fixtures.MAIN_HINDAWI_DIR, "groupMajorSections.xsl");
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
+	public final static File TEST_JSON_DIR = new File(Fixtures.TEST_NORMA_DIR, "json");
 	public final static File TEST_PUBSTYLE_DIR = new File(Fixtures.TEST_NORMA_DIR, "pubstyle");
 	
 	public final static File TEST_HINDAWI_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "hindawi");
