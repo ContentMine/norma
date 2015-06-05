@@ -24,10 +24,11 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
+import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
 
 public class NormaTransformer {
-	
+
 	private static final Logger LOG = Logger.getLogger(NormaTransformer.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -39,10 +40,12 @@ public class NormaTransformer {
 	private static final String PDF2TXT = "pdf2txt";
 	private static final String PDF2IMAGES = "pdf2images";
 	private static final String TXT2HTML = "txt2html";
-	
+	private static final String TEX2HTML = "tex2html";
+
 	private NormaArgProcessor normaArgProcessor;
 	private File inputFile;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
+
 	String outputTxt;
 	List<String> xmlStringList;
 	List<Pair<String, BufferedImage>> serialImageList;
@@ -54,12 +57,12 @@ public class NormaTransformer {
 	}
 
 	/** transforms currentCMDir.
-	 * 
+	 *
 	 * output is either:
 	 *   outputTxt (from PDF2TXT)
 	 *   htmlElement (from PDF/TXT2HTML)
 	 *   xmlStringList (from XSL transformation(s))
-	 *   
+	 *
 	 * @param option
 	 */
 	void transform(ArgumentOption option) {
@@ -73,8 +76,7 @@ public class NormaTransformer {
 		xmlStringList = null;
 		serialImageList = null;
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
-			if (false) {				
-			} else if (HOCR2SVG.equals(option.getStringValue())) {
+			if (HOCR2SVG.equals(option.getStringValue())) {
 				svgElement = applyHOCR2SVGToInputFile(inputFile);
 			} else if (PDF2TXT.equals(option.getStringValue())) {
 				outputTxt = applyPDF2TXTToCMLDir();
@@ -85,6 +87,8 @@ public class NormaTransformer {
 			} else if (PDF2HTML.equals(option.getStringValue())) {
 				applyPDF2TXTToCMLDir();
 				htmlElement = convertToHTML(outputTxt);
+			} else if (TEX2HTML.equals(option.getStringValue())) {
+				xmlStringList = convertTeXToHTML(inputFile);
 			} else {
 				xmlStringList = applyXSLDocumentListToCurrentCMDir();
 			}
@@ -135,6 +139,19 @@ public class NormaTransformer {
 		return htmlElement;
 	}
 
+	private List<String> convertTeXToHTML(File inputFile) {
+		TEX2HTMLConverter converter = new TEX2HTMLConverter();
+		try {
+			List<String> result = new ArrayList<String>();
+			result.add(converter.convertTeXToHTML(inputFile));
+			return result;
+		} catch (InterruptedException e) {
+			throw new RuntimeException("Failed to convert TeX to HTML", e);
+		} catch (IOException e) {
+			throw new RuntimeException("Failed to convert TeX to HTML", e);
+		}
+	}
+
 	private HtmlElement convertToHTML(String txt) {
 		HtmlElement element = null;
 		return element;
@@ -153,7 +170,7 @@ public class NormaTransformer {
 		}
 		return xmlStringList;
 	}
-	
+
 	private String transform(org.w3c.dom.Document xslDocument) throws IOException {
 		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
 		String xmlString = null;
@@ -182,9 +199,9 @@ public class NormaTransformer {
 		}
 		return transformerWrapper;
 	}
-	
+
 	// from Input wrapper, maybe obsolete
-	
+
 	// FIXME
 	/** this is not called and probably should be*/
 	private HtmlElement transform(NormaArgProcessor argProcessor) throws Exception {
@@ -212,7 +229,7 @@ public class NormaTransformer {
 
 
 //	/** maybe move to Pubstyle later.
-//	 * 
+//	 *
 //	 * @param pubstyle
 //	 */
 //	private void normalizeToXHTML() throws Exception {
@@ -237,7 +254,7 @@ public class NormaTransformer {
 //			throw new RuntimeException("cannot convert "+getInputFormat()+" "+inputName, e);
 //		}
 //	}
-	
+
 
 	private void transformXmlToHTML() throws Exception {
 //		ensureXslDocumentList();
@@ -248,7 +265,7 @@ public class NormaTransformer {
 //			throw new RuntimeException("No stylesheet file/s given");
 //		} else if (outputFile == null) {
 //			throw new RuntimeException("No output file given");
-//		} 
+//		}
 //		if (stylesheetDocumentList.size() >1) {
 //			throw new RuntimeException("Only one stylesheet allowed at present");
 //		}
@@ -266,10 +283,10 @@ public class NormaTransformer {
 //			}
 //		}
 //	}
-	
+
 	// ============
-	
-	
+
+
 
 
 	public String getOutputTxt() {
@@ -281,12 +298,12 @@ public class NormaTransformer {
 	}
 
 	/** ordered list of title+image.
-	 * 
+	 *
 	 * title are of form "image<page>.<serial>.Img<img>"
 	 * page is PD page number (base 1)
 	 * serial is serial index of image (includes duplication)
 	 * img is unique image serial
-	 * 
+	 *
 	 * @return
 	 */
 	public List<Pair<String, BufferedImage>> getImageList() {

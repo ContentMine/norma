@@ -35,14 +35,14 @@ import org.xmlcml.cmine.args.StringPair;
 import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.xml.XMLUtil;
 
-/** 
+/**
  * Processes commandline arguments.
  * for Norma
- * 
+ *
  * @author pm286
  */
-public class NormaArgProcessor extends DefaultArgProcessor{
-	
+public class NormaArgProcessor extends DefaultArgProcessor {
+
 	private static final String DOT_PNG = ".png";
 	private static final String IMAGE = "image";
 	private static final String PNG = "png";
@@ -50,20 +50,20 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	
+
 	private static final String STYLESHEET_BY_NAME_XML = "/org/xmlcml/norma/pubstyle/stylesheetByName.xml";
 	private static final String NAME = "name";
 	private static final String XML = "xml";
-	
+
 	public final static String HELP_NORMA = "Norma help";
-	
+
 	private static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
-	
+
 	public final static String DOCTYPE = "!DOCTYPE";
 	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
 			"pdfbox", "pdf2html", "pdf2txt", "pdf2images",
-			"hocr2svg"});
+			"hocr2svg", "tex2html"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -89,7 +89,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	// ============= METHODS =============
-	
+
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
@@ -103,7 +103,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
-	
+
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		if (tokens.size() == 0) {
@@ -139,7 +139,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	/** deprecated // use transform instead
-	 * 
+	 *
 	 * @param option
 	 * @param argIterator
 	 */
@@ -162,11 +162,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	/** deprecated
-	 * 
-	 * @param option
-	 * @param argIterator
-	 */
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		List<String> tokenList = option.processArgs(tokens).getStringValues();
@@ -180,7 +175,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			} else if (TRANSFORM_OPTIONS.contains(token)) {
 				transformList.add(token);
 			} else {
-				LOG.error("Cannot process transform token: "+token);
+				throw new RuntimeException("Unknown --transform option: " + token);
 			}
 		}
 	}
@@ -197,9 +192,9 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 				);
 		super.printHelp();
 	}
-	
+
 	// ===========run===============
-	
+
 	public void transform(ArgumentOption option) {
 		// deprecated so
 		runTransform(option);
@@ -221,7 +216,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public void runTest(ArgumentOption option) {
 		LOG.debug("RUN_TEST "+"is a dummy");
 	}
-		
+
 
 	// =============output=============
 	public void outputMethod(ArgumentOption option) {
@@ -268,7 +263,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	// ==========================
-	
+
 	private void ensureXslDocumentList() {
 		if (xslDocumentList == null) {
 			xslDocumentList = new ArrayList<org.w3c.dom.Document>();
@@ -366,16 +361,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			FileUtils.forceMkdir(reservedDir);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot make directory: "+reservedFilename+" "+e);
-		}  
+		}
 		String name = FilenameUtils.getName(filename);
 		try {
 			File outFile = new File(reservedDir, name);
 			FileUtils.copyFile(new File(filename), outFile);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot copy file: "+filename+" to "+reservedDir+" / "+e);
-		}  
+		}
 		LOG.debug("created "+name+" in "+reservedDir);
-		
+
 	}
 
 	private CMDir createCMDir(String dirName) {
@@ -399,7 +394,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
-		DocumentBuilder db = createDocumentBuilder(); 
+		DocumentBuilder db = createDocumentBuilder();
 		String stylesheetResourceName = replaceCodeIfPossible(xslName);
 		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
 		// if fails, try as file
@@ -495,12 +490,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public boolean isStandalone() {
 		return standalone;
 	}
-	
+
 	@Override
 	/** parse args and resolve their dependencies.
-	 * 
+	 *
 	 * (don't run any argument actions)
-	 * 
+	 *
 	 */
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
