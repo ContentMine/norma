@@ -115,7 +115,8 @@ public class NormaArgProcessorTest {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String args = "-q "+container0115884.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+container0115884.toString()+
+				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		Norma norma = new Norma();
 		norma.run(args);
 		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
@@ -192,6 +193,28 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	/** transforms raw Html to Html
+	 * 
+	 * @throws IOException
+	 */
+	public void testHTML2HTML() throws IOException {
+		File container1196402 = new File("target/ieee/1196402/");
+		if (container1196402.exists()) FileUtils.forceDelete(container1196402);
+		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container1196402);
+		String args = "-q "+container1196402.toString()+" --html jsoup --input fulltext.html --output fulltext.xhtml";
+		LOG.debug(args);
+		Norma norma = new Norma();
+		norma.run(args);
+		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
+		CMDir cmDir = cmDirList.get(0);
+		List<File> files = cmDir.listFiles(true);
+		LOG.trace(files);
+		Assert.assertEquals(5, files.size());
+	}
+	
+	@Test
 	public void testPubstyle() throws Exception {
 		String args = "--pubstyle bmc";
 		Norma norma = new Norma();
@@ -205,7 +228,8 @@ public class NormaArgProcessorTest {
 		File containerPLOSONE = new File("target/plosone/multiple/");
 		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
 		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
-		String args = "-q "+containerPLOSONE.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+containerPLOSONE.toString()+
+				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		LOG.trace("args> "+args);
 		Norma norma = new Norma();
 		norma.run(args);
@@ -221,4 +245,32 @@ public class NormaArgProcessorTest {
 		new Norma().run(args);
 	}
 
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 */
+	public void testCreateCMDirsForIEEEHtml() throws IOException {
+		new Norma().run("");
+		String args;
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
+		new Norma().run(args);
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
+		new Norma().run(args);
+	}
+
+
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 */
+	public void testTransformRawHtmlToScholarly() throws IOException {
+		new Norma().run("");
+		String args;
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
+//		new Norma().run(args);
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
+//		new Norma().run(args);
+		args = "-i fulltext.xhtml -o scholarly.xhtml --cmdir target/ieee --transform ieee2html";
+		new Norma().run(args);
+	}
 }

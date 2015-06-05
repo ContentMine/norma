@@ -219,6 +219,7 @@ public class TutorialTest {
 		FileUtils.forceDelete(CMDir.getExistingFulltextHTML(cmdirTop));
 		String args = "-q "+destName
 				+ " --transform " + dtdName
+				+ " --standalone true"
 				+ " -i " + infile
 				+ " -o " + outfile;
 		Norma norma = new Norma();

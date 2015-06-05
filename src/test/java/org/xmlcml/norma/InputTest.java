@@ -275,6 +275,7 @@ public class InputTest {
 				+ " -i fulltext.xml"
 				+ " -o scholarly.html"
 				+ " --transform nlm2html"
+				+ " --standalone true"
 				+ "";
 		norma = new Norma();
 		norma.run(args);
@@ -322,6 +323,7 @@ public class InputTest {
 				+ " -i fulltext.xml"
 				+ " -o scholarly.html"
 				+ " --transform nlm2html"
+				+ " --standalone true"
 				+ "";
 		norma = new Norma();
 		norma.run(args);

@@ -52,36 +52,37 @@
 		brief="-p"
 		long="--pubstyle"
 		args="pub_code"
-		default="Pubstyle.PLOSONE"
-		countRange="{0,1}"
+		countRange="{1,1}"
 		parseMethod="parsePubstyle"
 		>
 		<help>
 			PUBSTYLE:
 			Code or mnemomic to identifier the publisher or journal style. 
-			this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument 
-			is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and
-			soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
+			this is a list of journal/publisher styles so Norma knows how to interpret the 
+			input. At present only one argument is allowed. The pubstyle determines the format
+			of the XML or HTML, the metadata, and soon how to parse the PDF. At present we'll use 
+			mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
 			
-			To get a list of these use "+"--pubstyle"+" without arguments. Note: under early development and note also that 
-			publisher styles change and can be transferred between publishers and journals
+			To get a list of these use "+"--pubstyle"+" without arguments. Note: under early 
+			development and note also that  publisher styles change and can be transferred
+			between publishers and journals
 			
 			NOTE: Does not trigger any actions
 		</help>
 	</arg>	
 
 	<arg name="standalone"
-		brief="-z"
 		long="--standalone"
 		args="boolean"
 		class="java.lang.Boolean"
-		default="true"
 		countRange="{0,1}"
 		parseMethod="parseStandalone"
 		>
+		<!-- default ="true" -->
 		<help>
 			STANDALONE:
-			Treats XML document as standalone. Very useful as some parsers will take ages resolving the DTD and often fail
+			Treats XML document as standalone. Very useful as some parsers 
+			will take ages resolving the DTD and often fail
 			if not connected to the net. 
 		</help>
 	</arg>	
@@ -96,9 +97,10 @@
 		<help>
 			STRIP:
 			List of XML components to strip from the raw well-formed HTML;
-			if a list is given, then use that; if this argument is missing (or the single
-			string '#pubstyle' then the Pubstyle defaults are used. If there are no arguments
-			then no stripping is done. a single '?' will list the Pubstyle defaults
+			if a list is given, then use that; if this argument is missing 
+			(or the single string '#pubstyle' then the Pubstyle defaults are 
+			used. If there are no arguments	then no stripping is done. a 
+			single '?' will list the Pubstyle defaults
 			The following are allowed:
 			  an element local name (e.g. input)
 			  an XPath expression (e.g. //*[@class='foobar'])
@@ -120,15 +122,42 @@
 		brief="-t"
 		long="--tidy"
 		args="[HTML tidy option]"
-		default="JSoup"
 		countRange="{1,1}"
 		parseMethod="parseTidy"
 		>
+<!-- add default ="JSoup" -->
 		<help>
+		OBSOLETE - use --html
 			TIDY:
 			Choose an HTML tidy tool. At present we have:
 			  JTidy JSoup and HtmlUnit 
 			(NYI) This is very experimental at present.
+		</help>
+	</arg>
+
+	<arg name="html"
+		long="--html"
+		args="[HTML tidy option, jsoup, jtidy, htmlunit]"
+		countRange="{1,1}"
+		parseMethod="parseHtml"
+		runMethod="runHtml"
+		>
+		<!-- default ="jsoup" -->
+		<help>
+			HTML
+			Clean raw HTML and produce XHTML. Requires heuristics:
+			(a) quickscrape and getpapers create a JS DOM which has
+			normalised some, but not all, elements
+			(b) remove &lt;script> and other elements which are likely 
+			to be non-XML-compliant. Adjustable through &lt;value>
+			(c) remove other artefacts (e.g. attributes like "=""")
+			(d) run through html-tidy (jsoup, jtidy, htmlunit). They all try
+			to sort out mess - the last is probably the best but I haven't
+			bolted it in yet.
+			(e) remove empty divs, ps, etc.
+			
+			This is NOT scholarly.heml and will need a publisher-specific
+			stylesheet for further processing.
 		</help>
 	</arg>
 
@@ -149,8 +178,8 @@
 			the codes are checked first and then the document reference.
 			The code pdf2txt will transform pdf to fulltext.pdf.txt
 			
-			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in qsNorma and
-			determine the type of files to convert.
+			Requires input and output files (--input and --output). These must be reserved names 
+			(e.g. fulltext.xml) in qsNorma and determine the type of files to convert.
 		</help>
 	</arg>
 
@@ -165,11 +194,11 @@
 		<help>
 		Relacement for --xsl
 			Transform XML or HTML or PDF or ... Argument may be a file/URL reference to a stylesheet,
-			or a code from one of {nlm, jats, pdfbox, hocr2svg}
+			or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup, [jtidy, htmlunit NYI]}
 			the codes are checked first and then the document reference.
 			
-			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in cmDir OR files
-			in reserved directories and
+			Requires input and output files (--input and --output). These must be reserved names 
+			(e.g. fulltext.xml) in cmDir OR files in reserved directories and
 			determine the type of files to convert.
 		</help>
 	</arg>

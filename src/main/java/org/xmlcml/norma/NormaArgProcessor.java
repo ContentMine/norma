@@ -33,6 +33,7 @@ import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.args.StringPair;
 import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.norma.input.html.HtmlCleaner;
 import org.xmlcml.xml.XMLUtil;
 
 /** 
@@ -63,7 +64,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public final static String DOCTYPE = "!DOCTYPE";
 	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
 			"pdfbox", "pdf2html", "pdf2txt", "pdf2images",
-			"hocr2svg"});
+			"hocr2svg", "jsoup", "jtidy", "htmlunit"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -77,6 +78,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private List<String> transformList;
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private NormaTransformer normaTransformer;
+	private HtmlCleaner htmlCleaner;
 
 	public NormaArgProcessor() {
 		super();
@@ -134,6 +136,11 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseTidy(ArgumentOption option, ArgIterator argIterator) {
+		LOG.warn("DEPRECATED: use --html");
+		parseHtml(option, argIterator);
+	}
+
+	public void parseHtml(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
@@ -205,6 +212,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		runTransform(option);
 	}
 
+	public void runHtml(ArgumentOption option) {
+		LOG.trace("***run transform "+currentCMDir);
+		getOrCreateHtmlCleaner();
+		htmlCleaner.cleanHTML2XHTML(option.getStringValue());
+	}
+
 	public void runTransform(ArgumentOption option) {
 		LOG.trace("***run transform "+currentCMDir);
 		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
@@ -216,6 +229,13 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			normaTransformer = new NormaTransformer(this);
 		}
 		return normaTransformer;
+	}
+
+	private HtmlCleaner getOrCreateHtmlCleaner() {
+		if (htmlCleaner == null) {
+			htmlCleaner = new HtmlCleaner(this);
+		}
+		return htmlCleaner;
 	}
 
 	public void runTest(ArgumentOption option) {
@@ -230,8 +250,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 
 	private void outputSpecifiedFormat() {
 		getOrCreateNormaTransformer();
+		getOrCreateHtmlCleaner();
 		if (normaTransformer.outputTxt != null) {
 			currentCMDir.writeFile(normaTransformer.outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
+		}
+		if (htmlCleaner.getHtmlElement() != null) {
+			currentCMDir.writeFile(htmlCleaner.getHtmlElement().toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
 		}
 		if (normaTransformer.htmlElement != null) {
 			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
@@ -275,7 +299,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	File checkAndGetInputFile(CMDir cmDir) {
+	public File checkAndGetInputFile(CMDir cmDir) {
 		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");

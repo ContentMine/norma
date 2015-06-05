@@ -125,5 +125,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		Norma norma = new Norma();
 		norma.run(args);
 		
+	
 	}
+	
 }

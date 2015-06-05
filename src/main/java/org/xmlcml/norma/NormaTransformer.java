@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +22,7 @@ import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
@@ -73,16 +75,17 @@ public class NormaTransformer {
 		xmlStringList = null;
 		serialImageList = null;
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
+			String optionValue = option.getStringValue();
 			if (false) {				
-			} else if (HOCR2SVG.equals(option.getStringValue())) {
+			} else if (HOCR2SVG.equals(optionValue)) {
 				svgElement = applyHOCR2SVGToInputFile(inputFile);
-			} else if (PDF2TXT.equals(option.getStringValue())) {
+			} else if (PDF2TXT.equals(optionValue)) {
 				outputTxt = applyPDF2TXTToCMLDir();
-			} else if (PDF2IMAGES.equals(option.getStringValue())) {
+			} else if (PDF2IMAGES.equals(optionValue)) {
 				serialImageList = applyPDF2ImagesToCMLDir();
-			} else if (TXT2HTML.equals(option.getStringValue())) {
+			} else if (TXT2HTML.equals(optionValue)) {
 				htmlElement = applyTXT2HTMLToCMDir();
-			} else if (PDF2HTML.equals(option.getStringValue())) {
+			} else if (PDF2HTML.equals(optionValue)) {
 				applyPDF2TXTToCMLDir();
 				htmlElement = convertToHTML(outputTxt);
 			} else {
