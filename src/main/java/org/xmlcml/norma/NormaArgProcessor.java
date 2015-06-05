@@ -41,7 +41,7 @@ import org.xmlcml.xml.XMLUtil;
  *
  * @author pm286
  */
-public class NormaArgProcessor extends DefaultArgProcessor{
+public class NormaArgProcessor extends DefaultArgProcessor {
 
 	private static final String DOT_PNG = ".png";
 	private static final String IMAGE = "image";
@@ -162,11 +162,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
-	/** deprecated
-	 *
-	 * @param option
-	 * @param argIterator
-	 */
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		List<String> tokenList = option.processArgs(tokens).getStringValues();
@@ -180,7 +175,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			} else if (TRANSFORM_OPTIONS.contains(token)) {
 				transformList.add(token);
 			} else {
-				LOG.error("Unknown --transform option: "+token);
+				throw new RuntimeException("Unknown --transform option: " + token);
 			}
 		}
 	}
