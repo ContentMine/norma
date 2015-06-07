@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,10 @@ public class InputTest {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+//	private String testFilePath(String path) {
+//		return Fixtures.TEST_NORMA_DIR + "/" + path;
+//	}
 	
 	@Test
 	public void testFilesAndDirectoriesInMiscDirectory() {
@@ -328,12 +333,25 @@ public class InputTest {
 		norma = new Norma();
 		norma.run(args);
 	}
-	
+
 	@Test
-	public void testOutputWorks() {
-		
+	public void testTeX2HTMLTransform() throws IOException {
+		File tempDir = new File("target/tex2html/sample");
+		tempDir.mkdirs();
+		File inputTex = new File(Fixtures.TEST_TEX_DIR, "sample.tex");
+		Assert.assertTrue(inputTex.exists());
+		// make a CMDir 
+		FileUtils.copyFile(inputTex, new File(tempDir, "fulltext.tex"));
+		CMDir cmDir = new CMDir(tempDir);
+
+		String args;
+		Norma norma = new Norma();
+		args = "-q " + tempDir.toString()
+				+ " -i fulltext.tex"
+				+ " -o scholarly.html"
+				+ " --transform tex2html";
+		norma.run(args);
 	}
-	
 	
 	@Test
 	// FIXME

@@ -27,14 +27,14 @@ public class JsonPathTest {
 		ReadContext ctx = JsonPath.parse(json);
 		List<String> authorsOfBooksWithISBN = ctx.read("$.store.book[?(@.isbn)].author");
 		for (String author : authorsOfBooksWithISBN) {
-			LOG.debug("auth >"+author);
+			LOG.trace("auth >"+author);
 		}
 		List<Map<String, Object>> expensiveBooks = (List<Map<String, Object>>) JsonPath
 //		                            .using(configuration)
 		                            .parse(json)
 		                            .read("$.store.book[?(@.price > 10)]", List.class);
 		for (Map<String, Object> book : expensiveBooks) {
-			LOG.debug("book "+book);
+			LOG.trace("book "+book);
 		}
 	}
 }

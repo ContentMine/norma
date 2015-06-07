@@ -34,8 +34,9 @@ public class HtmlCleaner {
 	private void createHtmlFactory() {
 		htmlFactory = new HtmlFactory();
 		// change these to take input from args.xml
-		htmlFactory.setContentList(Arrays.asList(new String[]{"noscript", "script", "style", "iframe", "button"}));
-		htmlFactory.setNoContentList(Arrays.asList(new String[]{"input", "link"}));
+		htmlFactory.setContentList(Arrays.asList(new String[]{
+				"noscript", "script", "style", "iframe", "button", "fieldset", "label"}));
+		htmlFactory.setNoContentList(Arrays.asList(new String[]{"input", "link", "form"}));
 		htmlFactory.setBalanceList(Arrays.asList(new String[]{"meta"}));
 		htmlFactory.setUseJsoup(true);
 	}

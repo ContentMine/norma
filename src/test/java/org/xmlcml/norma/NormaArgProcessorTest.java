@@ -262,15 +262,15 @@ public class NormaArgProcessorTest {
 	@Test
 	/** creates new CMDirs for list of HTML and then transforms
 	 * 
+	 * SHOWCASE
 	 */
 	public void testTransformRawHtmlToScholarly() throws IOException {
-		new Norma().run("");
 		String args;
 		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
-//		new Norma().run(args);
+		new Norma().run(args);
 		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
-//		new Norma().run(args);
-		args = "-i fulltext.xhtml -o scholarly.xhtml --cmdir target/ieee --transform ieee2html";
+		new Norma().run(args);
+		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/ieee --transform ieee2html";
 		new Norma().run(args);
 	}
 }

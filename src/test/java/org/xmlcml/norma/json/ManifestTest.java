@@ -23,6 +23,8 @@ import com.jayway.jsonpath.ReadContext;
  * 
  * @author pm286
  *
+ * Much of this is obsoleted by JSONPath
+ * 
  */
 public class ManifestTest {
 
@@ -38,7 +40,7 @@ public class ManifestTest {
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray jsonArray = jsonElement.getAsJsonArray();
-		LOG.debug(jsonArray);
+		LOG.trace(jsonArray);
 		Assert.assertEquals("results",  100, jsonArray.size());
 	}
 	
@@ -113,22 +115,22 @@ public class ManifestTest {
 			if (jsonObject != null) {
 //				LOG.debug(jsonObject);
 				if (jsonObject.isJsonArray()) {
-					LOG.debug(key+" A "+jsonObject+" / "+jsonObject.getAsJsonArray());
+					LOG.trace(key+" A "+jsonObject+" / "+jsonObject.getAsJsonArray());
 				} else if (jsonObject.entrySet().size() == 1) {
-					LOG.debug("jo> "+jsonObject);
+					LOG.trace("jo> "+jsonObject);
 					if (jsonObject.isJsonArray()) {
 						JsonArray jsonArray = jsonObject.getAsJsonArray();
-						LOG.debug("array >"+jsonArray);
+						LOG.trace("array >"+jsonArray);
 					} else {
 						ManifestJson manifestJson0 = new ManifestJson(jsonObject);
 						ManifestElement manifestElement1 = manifestJson0.getSingleElement();
-						LOG.debug(" "+key+":"+manifestElement1);
+						LOG.trace(" "+key+":"+manifestElement1);
 					}
 				} else if (jsonObject.entrySet().size() > 1) {
 					ManifestJson manifestJson0 = new ManifestJson(jsonObject);
 					for (String key0 : manifestJson0.getKeys()) {
 						ManifestElement manifestElement0 = manifestJson0.getManifestElement(key0);
-						LOG.debug(">> "+manifestElement0);
+						LOG.trace(">> "+manifestElement0);
 					}
 //					ManifestMap manifestMap = new ManifestMap(jsonObject);
 //					if (manifestMap.getSingleElement() != null) {
@@ -147,7 +149,7 @@ public class ManifestTest {
 //						LOG.debug("----");
 //					}
 				} else {
-					LOG.debug(key+" ?? "+jsonObject);
+					LOG.trace(key+" ?? "+jsonObject);
 				}
 			} else {
 				if (manifestElement.getBool() != null) {
