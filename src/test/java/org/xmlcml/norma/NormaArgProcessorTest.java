@@ -213,7 +213,24 @@ public class NormaArgProcessorTest {
 		LOG.trace(files);
 		Assert.assertEquals(5, files.size());
 	}
+
+	@Test
+	/** transforms raw Html to Html
+	 * 
+	 * @throws IOException
+	 */
+	public void testHTML2HTMLNature() throws IOException {
+		FileUtils.copyDirectory(new File("../miningtests/nature/doi_10_1038_nnano_2014_93"),  new File("target/nature/nnano/"));
+		String args = "-q target/nature/nnano/"
+				+ " --html jsoup"
+				+ " --input fulltext.html"
+				+ " --output fulltext.xhtml";
+		Norma norma = new Norma();
+		norma.run(args);
+
+	}
 	
+
 	@Test
 	public void testPubstyle() throws Exception {
 		String args = "--pubstyle bmc";
