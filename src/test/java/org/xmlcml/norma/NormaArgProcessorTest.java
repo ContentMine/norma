@@ -297,13 +297,15 @@ public class NormaArgProcessorTest {
 	 * 
 	 * SHOWCASE
 	 */
-	@Ignore // closed access document
+	//@Ignore // closed access document
 	public void testTransformRawHtmlToScholarlyNature() throws IOException {
-		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/pubstyle/nature/doi_10_1038_nnano_2014_93/"), new File("target/nature/"));
+		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/pubstyle/nature/doi_10_1038_nnano_2011_101/"),
+				new File("target/nature/"));
 		String args;
 		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/nature --html jsoup";
 		new Norma().run(args);
 		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/nature --transform nature2html";
 		new Norma().run(args);
+//		FileUtils.copyFile(new File("target/nature/fulltext.xhtml"), new File("target/nature/junk.xml")); //for display
 	}
 }
