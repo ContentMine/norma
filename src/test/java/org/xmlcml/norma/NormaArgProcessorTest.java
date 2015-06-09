@@ -219,6 +219,7 @@ public class NormaArgProcessorTest {
 	 * 
 	 * @throws IOException
 	 */
+	@Ignore // not open access
 	public void testHTML2HTMLNature() throws IOException {
 		FileUtils.copyDirectory(new File("../miningtests/nature/doi_10_1038_nnano_2014_93"),  new File("target/nature/nnano/"));
 		String args = "-q target/nature/nnano/"
@@ -288,6 +289,20 @@ public class NormaArgProcessorTest {
 		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
 		new Norma().run(args);
 		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/ieee --transform ieee2html";
+		new Norma().run(args);
+	}
+
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 * SHOWCASE
+	 */
+	public void testTransformRawHtmlToScholarlyNature() throws IOException {
+		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/pubstyle/nature/doi_10_1038_nnano_2014_93/"), new File("target/nature/"));
+		String args;
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/nature --html jsoup";
+		new Norma().run(args);
+		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/nature --transform nature2html";
 		new Norma().run(args);
 	}
 }

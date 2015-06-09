@@ -2,5 +2,6 @@
   <stylesheet name="bmc2html">/org/xmlcml/norma/pubstyle/bmc/xml2html.xsl</stylesheet>
   <stylesheet name="ieee2html">/org/xmlcml/norma/pubstyle/ieee/toHtml.xsl</stylesheet>
   <stylesheet name="nlm2html">/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl</stylesheet>
+  <stylesheet name="nature2html">/org/xmlcml/norma/pubstyle/nature/toHtml.xsl</stylesheet>
   <stylesheet name="hind2xml">/org/xmlcml/norma/pubstyle/hindawi/groupMajorSections.xsl</stylesheet>
 </stylesheetList>

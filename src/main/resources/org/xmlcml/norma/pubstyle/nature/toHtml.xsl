@@ -19,9 +19,12 @@
 	<xsl:template match="comment()" priority="1.0"/>
 
 <!-- navigation -->
-  	<xsl:template match="h:div[@id='text-sizer']"/> 
+  	<xsl:template match="h:div[@id='foreword']"/> 
+  	<xsl:template match="h:div[@id='top-ads']"/> 
+  	<xsl:template match="h:div[@id='header']"/> 
+  	<xsl:template match="h:div[@class='header-bottom']"/> 
+  	<xsl:template match="h:div[@class='comm-tool-box']"/> 
+  	
 	
-<!-- publisher added value; maybe their IP -->
-	<xsl:template match="h:div[@id='related-articles']"/>
 
 </xsl:stylesheet>
