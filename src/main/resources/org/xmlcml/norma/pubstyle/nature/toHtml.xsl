@@ -33,7 +33,7 @@
   	<xsl:template match="h:div[@id='foreword']"><xsl:message>FOREWORD</xsl:message></xsl:template> 
   	<xsl:template match="h:div[@id='top-ads']"/> 
   	<xsl:template match="h:div[@id='header']"/> 
-  	<xsl:template match="h:div[@id='constrain-header']"/> 
+  	<xsl:template match="h:div[@id='constrain-header']"></xsl:template> 
   	<xsl:template match="h:div[@class='header-bottom']"/> 
   	<xsl:template match="h:div[@class='footer-main']"/> 
   	<xsl:template match="h:div[@class='comm-tool-box']"/> 
