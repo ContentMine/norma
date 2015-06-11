@@ -301,12 +301,11 @@ I'd consider this answer an argument against the Java way of doing things.
 	}
 
 	@Test
-	@Ignore
+	@Ignore // files deleted - really just a reminder of how to do it
 	public void testRunStylesheet() throws TransformerFactoryConfigurationError, TransformerException {
 		File mzDir = new File(Fixtures.TEST_PUBSTYLE_DIR, "metabolomics/");
 		File mzFile = new File(mzDir, "small.pwiz.1.1.mzML.xml");
 		Source mzSource = new StreamSource(mzFile);
-		Element mzElement = XMLUtil.parseQuietlyToDocument(mzFile).getRootElement();
 		File xslFile = new File(mzDir, "mz2tom.xsl");
 		Source xslSource = new StreamSource(xslFile);
 		Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);
