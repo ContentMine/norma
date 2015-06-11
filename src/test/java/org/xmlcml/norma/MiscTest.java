@@ -6,14 +6,20 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
 import javax.xml.transform.Templates;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.sax.SAXTransformerFactory;
 import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
+
+import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
@@ -22,6 +28,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.util.TransformerWrapper;
+import org.xmlcml.xml.XMLUtil;
 
 public class MiscTest {
 
@@ -292,5 +299,23 @@ I'd consider this answer an argument against the Java way of doing things.
 	public void debugObject(Object o) {
 		LOG.debug(o);
 	}
+
+	@Test
+	@Ignore
+	public void testRunStylesheet() throws TransformerFactoryConfigurationError, TransformerException {
+		File mzDir = new File(Fixtures.TEST_PUBSTYLE_DIR, "metabolomics/");
+		File mzFile = new File(mzDir, "small.pwiz.1.1.mzML.xml");
+		Source mzSource = new StreamSource(mzFile);
+		Element mzElement = XMLUtil.parseQuietlyToDocument(mzFile).getRootElement();
+		File xslFile = new File(mzDir, "mz2tom.xsl");
+		Source xslSource = new StreamSource(xslFile);
+		Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);
+		File mzOutFile = new File("target/mz/small.xml");
+		mzOutFile.getParentFile().mkdirs();
+		Result mzResultSource = new StreamResult(mzOutFile);
+		transformer.transform(mzSource, mzResultSource);
+		
+	}
+	
 	
 }
