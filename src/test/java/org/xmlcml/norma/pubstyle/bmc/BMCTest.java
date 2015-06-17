@@ -54,13 +54,24 @@ public class BMCTest {
 	
 
 	@Test
-	@Ignore // too long - creates the SVG
+	@Ignore // too long - creates the SVG // file missing
 	public void readBMCTrialsProvisional() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-6215-15-486.pdf"));
 		new File("target/bmc/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/486.html"), 1);
 	}
+	
+	@Test
+//	@Ignore // too long - creates the SVG // file missing
+	public void readBMCLions() throws Exception {
+		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-2148-14-70.pdf"));
+		new File("target/bmc/").mkdirs();
+		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/14-170.html"), 1);
+	}
+	
+
 	
 	@Test
 	// this one has outline glyphs... :-( // all papers in this journal do :-(

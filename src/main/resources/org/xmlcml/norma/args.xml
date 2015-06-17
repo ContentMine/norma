@@ -9,6 +9,7 @@
     >
     <help>
       CHARS:
+      NOT YET IMPLEMENTED
       Replaces one character by another. There are many cases where original characters are unsuitable 
       for science and can be replaced (often by low codepoints).
       Smart (balanced) quotes can usually be replaced by \" or '
@@ -26,6 +27,7 @@
     >
     <help>
       DIVS:
+      NOT YET IMPLEMENTED
       List of expressions identifying XML element to wrap as divs/sections
       Examples might be h1, h2, h3, or numbers sections
       Still under development.
@@ -42,6 +44,7 @@
     >
     <help>
       NAME:
+      NOT YET IMPLEMENTED
       List of comma-separated pairs of tags; the first is replaced by the second. Example might be:
         em,i strong,b
       i.e. replace all &lt;em>...&lt;/em> by &lt;i>...&lt;/i>
@@ -115,6 +118,7 @@
         !DOCTYPE (removes &lt;!DOCTYPE ...> before parsing))
         !DOCTYPE input script object //*[contains(@class,'sidebar')] (removes all the above)
       
+      NOTE - some of this is hardcoded in HTMLCleaner and should be refactored
     </help>
   </arg>
 
@@ -202,6 +206,7 @@
       determine the type of files to convert.
     </help>
   </arg>
+  
   
 </argList>
       

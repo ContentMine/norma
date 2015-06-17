@@ -1,16 +1,25 @@
 package org.xmlcml.norma.input.pdf;
 
 import java.io.File;
-
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
+import nu.xom.Element;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.util.HtmlUtil;
 import org.xmlcml.pdf2svg.PDF2SVGConverter;
+import org.xmlcml.svg2xml.page.PageIO;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
+import org.xmlcml.xml.XMLUtil;
 
 /** 
  * Convert PDF to XHTML, SVG and PNG.
@@ -20,13 +29,24 @@ import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 public class PDF2XHTMLConverter {
 
 	private final static Logger LOG = Logger.getLogger(PDF2XHTMLConverter.class);
-	
+	static {LOG.setLevel(Level.DEBUG);}
+
+	private static final String SVG = "svg";
+	private List<SVGSVG> svgList;
+	private File svgDirectory;
+
+	private CMDir cmDir;
+	private PDFAnalyzer pdfAnalyzer;
 	public PDF2XHTMLConverter() {
 		
 	}
 
+	public PDF2XHTMLConverter(CMDir cmDir) {
+		this.cmDir = cmDir;
+	}
+
 	public HtmlElement readAndConvertToXHTML(File infile) throws Exception {
-	     List<SVGSVG> svgList = readAndConvertToSVGList(infile);
+	     svgList = readAndConvertToSVGList(infile);
 	 	 HtmlElement htmlElement = readAndConvertToXHTML(svgList);
 	 	 return htmlElement;
 	}
@@ -73,9 +93,80 @@ public class PDF2XHTMLConverter {
 
 	public HtmlElement readAndConvertToXHTML(List<SVGSVG> svgList) throws Exception {
 		HtmlElement element = null;
-		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
+		ensurePDFAnalyzer();
+		LOG.debug("svg "+svgDirectory);
+		pdfAnalyzer.getPDFIO().setRawSVGDirectory(svgDirectory);
 		pdfAnalyzer.createAndFillPageAnalyzers(svgList);
 		element = pdfAnalyzer.forceCreateRunningHtml();
+		element = normalizeEmptyParagraphs(element);
 		return element;
+	}
+
+	private HtmlElement normalizeEmptyParagraphs(HtmlElement element) {
+		List<HtmlElement> divEmptyPList = HtmlUtil.getQueryHtmlElements(element, 
+				"//*[local-name()='div' and *[local-name()='p' and normalize-space(.)='']]");
+		LOG.debug("emptyPList "+divEmptyPList.size());
+		for (HtmlElement div : divEmptyPList) {
+			List<Element> pList = XMLUtil.getQueryElements(div, "//*[local-name()='p' and normalize-space(.)='']");
+			LOG.debug("p "+pList.size()+" "+pList.get(0)+" "+pList.get(0).getClass());
+		}
+		return element;
+	}
+
+//	private void writeSVGList() {
+//		if (svgDirectory != null) {
+//			svgDirectory.mkdirs();
+//			int i = 1;
+//			for (SVGSVG svg : svgList) {
+//				File svgFile = new File(svgDirectory, getPageString()+(i++)+"."+SVG);
+//				try {
+//					FileUtils.write(svgFile, svg.toXML());
+//				} catch (IOException e) {
+//					throw new RuntimeException("Cannot write svg file", e);
+//				}
+//			}
+//		}
+//	}
+
+	private String getPageString() {
+		return "page_";
+	}
+
+	public File getSvgDirectory() {
+		return svgDirectory;
+	}
+
+	public void setSvgDirectory(File svgDirectory) {
+		this.svgDirectory = svgDirectory;
+	}
+
+	public HtmlElement readAndConvertToXHTML() {
+		HtmlElement htmlElement = null;
+		if (cmDir != null) {
+			File fulltextHtmlFile = cmDir.getReservedFile(cmDir.FULLTEXT_XHTML);
+			File fulltextPDF = cmDir.getExistingFulltextPDF();
+			svgDirectory = cmDir.getReservedDirectory(SVG);
+			LOG.debug("svg dir "+svgDirectory);			
+			if (fulltextPDF != null) {
+				try {
+					ensurePDFAnalyzer();
+					pdfAnalyzer.getPDFIO().setRawSVGDirectory(svgDirectory);
+					htmlElement = this.readAndConvertToXHTML(fulltextPDF);
+					if (htmlElement != null) {
+						XMLUtil.debug(htmlElement, new FileOutputStream(fulltextHtmlFile), 1);
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+					throw new RuntimeException("Cannot convert PDF", e);
+				}
+			}
+		}
+		return htmlElement;
+	}
+
+	private void ensurePDFAnalyzer() {
+		if (this.pdfAnalyzer == null) {
+			this.pdfAnalyzer = new PDFAnalyzer();
+		}
 	}
 }

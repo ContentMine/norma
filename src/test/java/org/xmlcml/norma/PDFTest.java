@@ -1,7 +1,6 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,7 +9,10 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
+import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 
 public class PDFTest {
 
@@ -124,8 +126,33 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt";
 		Norma norma = new Norma();
 		norma.run(args);
-		
+	}
 	
+	@Test
+	public void testPDF2XHTML() throws Exception {
+		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
+		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
+		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(file0115884);
+		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML());
+	}
+	
+	@Test
+	public void testPDF2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/0115884/"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
+		// convert to XHTML using converter
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		// will write SVG to svgDirectory
+		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+	public void testBMCPDF2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/bmc/1471-2148-14-70"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
 }
