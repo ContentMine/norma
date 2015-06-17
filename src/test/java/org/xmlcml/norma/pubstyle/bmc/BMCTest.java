@@ -63,7 +63,7 @@ public class BMCTest {
 	}
 	
 	@Test
-//	@Ignore // too long - creates the SVG // file missing
+	@Ignore // too long - creates the SVG // file missing
 	public void readBMCLions() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-2148-14-70.pdf"));
