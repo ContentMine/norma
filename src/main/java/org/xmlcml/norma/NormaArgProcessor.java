@@ -48,6 +48,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private static final String DOT_PNG = ".png";
 	private static final String IMAGE = "image";
 	private static final String PNG = "png";
+
 	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
