@@ -1,21 +1,33 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.image.ImageProcessor;
+import org.xmlcml.norma.image.ocr.NamedImage;
+import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 
 public class PDFTest {
 
+	private static Logger LOG = Logger.getLogger(PDFTest.class);
+	static {LOG.setLevel(Level.DEBUG);}
+	
 	@Test
 	// 16 pp
 	@Ignore // too long
@@ -148,11 +160,40 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	}
 	
 	@Test
+	@Ignore
 	public void testBMCPDF2CMDir() throws Exception {
 		CMDir cmDir = new CMDir(new File("target/cmdir/bmc/1471-2148-14-70"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
 		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+	public void testCGIAR2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/cgiar/345"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+//	@Ignore // closed PDF
+	public void testNeuroFigures() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/neuro/Chen"));
+		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
+		cmDir.readFulltextPDF(pdfFile);
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+//		pdf2HtmlConverter.readAndConvertToXHTML();
+		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
+		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
+		File imageDir = cmDir.getOrCreateExistingImageDir();
+		for (NamedImage labelledImage : labelledImages) {
+			BufferedImage image = labelledImage.getImage();
+			ImageProcessor imageProcessor = ImageProcessor.createDefaultProcessorAndProcess(image);
+			image = imageProcessor.getImage();
+			String imageName = labelledImage.getKey();
+			ImageIO.write(image, "png", new File(imageDir, imageName+".png"));
+		}
 	}
 	
 }

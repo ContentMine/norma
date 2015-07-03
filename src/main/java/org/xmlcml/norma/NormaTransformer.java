@@ -1,12 +1,9 @@
 package org.xmlcml.norma;
 
-import java.awt.image.BufferedImage;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +12,6 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.ArgumentOption;
@@ -23,8 +19,8 @@ import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.image.ocr.HOCRReader;
+import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
@@ -51,7 +47,7 @@ public class NormaTransformer {
 
 	String outputTxt;
 	List<String> xmlStringList;
-	List<Pair<String, BufferedImage>> serialImageList;
+	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
 
@@ -122,15 +118,15 @@ public class NormaTransformer {
 		return txt;
 	}
 
-	private List<Pair<String, BufferedImage>> applyPDF2ImagesToCMLDir() {
+	private List<NamedImage> applyPDF2ImagesToCMLDir() {
 		PDF2ImagesConverter converter = new PDF2ImagesConverter();
-		List<Pair<String, BufferedImage>> serialAndImageList = null;
+		List<NamedImage> namedImageList = null;
 		try {
-			serialAndImageList = converter.readPDF(new FileInputStream(inputFile), true);
+			namedImageList = converter.readPDF(new FileInputStream(inputFile), true);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
 		}
-		return serialAndImageList;
+		return namedImageList;
 	}
 
 	private HtmlElement applyTXT2HTMLToCMDir() {
@@ -321,7 +317,7 @@ public class NormaTransformer {
 	 *
 	 * @return
 	 */
-	public List<Pair<String, BufferedImage>> getImageList() {
+	public List<NamedImage> getImageList() {
 		return serialImageList;
 	}
 

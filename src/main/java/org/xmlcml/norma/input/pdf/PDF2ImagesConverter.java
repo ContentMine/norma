@@ -9,13 +9,13 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.graphics.xobject.PDXObjectImage;
+import org.xmlcml.norma.image.ocr.NamedImage;
 
 public class PDF2ImagesConverter {
 
@@ -28,10 +28,15 @@ public class PDF2ImagesConverter {
 	
 	public PDF2ImagesConverter() {
 	}
+
+	@Deprecated // sort does nothing
+	public List<NamedImage> readPDF(InputStream filesInputStream, boolean sortByPosition) throws IOException {
+		return readPDF(filesInputStream);
+	}
 	
-	public List<Pair<String, BufferedImage>> readPDF(InputStream filesInputStream, boolean sortByPosition) throws IOException {
+	public List<NamedImage> readPDF(InputStream filesInputStream) throws IOException {
 		PDDocument doc=PDDocument.load(filesInputStream);
-		List<Pair<String, BufferedImage>> pageSerialAndImageList = new ArrayList<Pair<String, BufferedImage>>();
+		List<NamedImage> namedImageList = new ArrayList<NamedImage>();
 	    List<PDPage> pages =  (List<PDPage>) doc.getDocumentCatalog().getAllPages();
 	    int serial = 1;
 	    for (int pageNumber = 0; pageNumber< pages.size(); pageNumber++) {
@@ -45,15 +50,27 @@ public class PDF2ImagesConverter {
 	                String key = (String) imageIter.next();
 	                LOG.debug("key "+key+"; "+(pageNumber+1));
 //	                PDXObject object = (PDXObject) pageImages.get(key); // and this, when we know how to extract images
-	                PDXObjectImage image = (PDXObjectImage) pageImages.get(key);
+	                PDXObjectImage objectImage = (PDXObjectImage) pageImages.get(key);
 	                String id = "image."+pageNumber+"."+serial+"."+key;
-	                pageSerialAndImageList.add(new ImmutablePair<String, BufferedImage>(id, image.getRGBImage()));
+	                // There seems to be a problem with alpha channel...
+	                BufferedImage bufferedImage = objectImage.getRGBImage();
+	                int width = bufferedImage.getWidth();
+	                int height = bufferedImage.getHeight();
+	                BufferedImage bufferedImage1 = new BufferedImage(
+	                		width, height, BufferedImage.TYPE_INT_RGB);
+	                for (int i = 0; i < width; i++) {
+		                for (int j = 0; j < height; j++) {
+		                	bufferedImage1.setRGB(i,  j,  bufferedImage.getRGB(i, j));
+		                }
+	                }
+	                NamedImage namedImage = new NamedImage(new ImmutablePair<String, BufferedImage>(id, bufferedImage1));
+	                namedImageList.add(namedImage);
 	                serial++;
 	            }
 	        }
 	    }
 		doc.close();
-		return pageSerialAndImageList;
+		return namedImageList;
 	}
 		 
 }

@@ -1,6 +1,5 @@
 package org.xmlcml.norma;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -24,7 +23,6 @@ import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
@@ -34,6 +32,7 @@ import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.args.StringPair;
 import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
 import org.xmlcml.xml.XMLUtil;
 
@@ -268,14 +267,14 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		File imageDir = currentCMDir.getOrCreateExistingImageDir();
 		Set<String> imageSerialSet = new HashSet<String>();
 		StringBuilder sb = new StringBuilder();
-		for (Pair<String, BufferedImage> serialImage : normaTransformer.serialImageList) {
+		for (NamedImage serialImage : normaTransformer.serialImageList) {
 			try {
-				String serialString = serialImage.getLeft();
+				String serialString = serialImage.getKey();
 				String imageSerial = serialString.split("\\.")[3];
 				sb.append(serialString);
 				if (!imageSerialSet.contains(imageSerial)) {
 					File imageFile = new File(imageDir, serialString+DOT_PNG);
-					ImageIO.write(serialImage.getRight(), PNG, imageFile);
+					ImageIO.write(serialImage.getImage(), PNG, imageFile);
 					imageSerialSet.add(imageSerial);
 				}
 			} catch (IOException e) {

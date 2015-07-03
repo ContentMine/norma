@@ -1,5 +1,9 @@
 package org.xmlcml.norma.image.ocr;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -8,6 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.imageio.ImageIO;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -23,6 +29,7 @@ import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
+import org.xmlcml.graphics.svg.SVGUtil;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.graphics.svg.text.SVGWordBlock;
 import org.xmlcml.graphics.svg.text.SVGWordLine;
@@ -39,6 +46,7 @@ import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
+import org.xmlcml.image.ImageUtil;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
 
@@ -50,17 +58,22 @@ import org.xmlcml.xml.XMLUtil;
 public class HOCRReader extends InputReader {
 
 
+	private static final Logger LOG = Logger.getLogger(HOCRReader.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
+
+	private static final String POTENTIAL_LABEL = "potential_label";
+
+	private static final int TESSERACT_SLEEP = 200;
+	private static final int TESSERACT_TRIES = 10;
+	
 	private static final String SEPARATOR = "~";
 	private static final String HELVETICA = "helvetica";
 	private static final String LOW_CONF_COL = "red";
 	private static final String UNEDITED_COL = "green";
 	private static final String EDITED_COL = "pink";
 	private static final String LINE_COL = "yellow";
-	
-	private static final Logger LOG = Logger.getLogger(HOCRReader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
 	
 	private static final double DEFAULT_FONT_SIZE = 10.0;
 	private static final String EDITED = "edited";
@@ -77,10 +90,17 @@ public class HOCRReader extends InputReader {
 	private static final String OCR_PAGE = "ocr_page";
 	private static final String OCR_PAR = "ocr_par";
 	private static final String OCRX_WORD = "ocrx_word";
+	private static final String CLASS = "class";
+
+	public static final String HOCR = ".hocr";
+	public static final String HOCR_HTML = ".hocr.html";
+	public static final String HOCR_SVG = ".hocr.svg";
 
 	private static final double MIN_WIDTH = 4.5;
 	private static final double RECT_OPACITY = 0.2;
 	private static final Double LOW_CONF_WIDTH = 3.0;
+	private static final double MAX_FONT_SIZE = 30;
+	private static final String LABEL_COLOR = "blue";
 
 	String ITALIC_GARBLES_XML = "/org/xmlcml/norma/images/ocr/italicGarbles.xml";
 
@@ -96,13 +116,67 @@ public class HOCRReader extends InputReader {
 	private Map<String, String> garbleMap;
 	private String garbleCharacters;
 	private HtmlHtml htmlHtml;
+	private long tesseractSleep;
+	private int tesseractTries;
+	private double maxFontSize;
+	private Pattern labelPattern;
+	private int imageMarginX = 0;
+	private int imageMarginY = 0;
+	private int marginColor = 0xffffffff;
+	private List<HOCRLabel> potentialLabelList;
+	private List<HOCRText> potentialTextList;
+	private List<HOCRPhrase> potentialPhraseList;
+
+	public int getImageMarginX() {
+		return imageMarginX;
+	}
+
+	public void setImageMarginX(int imageMarginX) {
+		this.imageMarginX = imageMarginX;
+	}
+
+	public int getImageMarginY() {
+		return imageMarginY;
+	}
+
+	public void setImageMarginY(int imageMarginY) {
+		this.imageMarginY = imageMarginY;
+	}
+
+	public int getMarginColor() {
+		return marginColor;
+	}
+
+	public void setMarginColor(int marginColor) {
+		this.marginColor = marginColor;
+	}
 
 	public HOCRReader() {
 		setup();
 	}
 	
 	private void setup() {
+		clearVariables();
 		this.readGarbleEdits(this.getClass().getResourceAsStream(ITALIC_GARBLES_XML));
+		setDefaults();
+	}
+	
+	private void setDefaults() {
+		tesseractSleep = TESSERACT_SLEEP;
+		tesseractTries = TESSERACT_TRIES;
+		maxFontSize = MAX_FONT_SIZE;
+	}
+
+	public void clearVariables() {
+		hocrElement = null;
+		svgSvg = null;
+		newBody = null;
+		rawHtml = null;
+		rawHead = null;
+		rawBody = null;
+		title = null;
+		metaList = null;
+		potentialLabelList = null;
 	}
 	
 	public void readHOCR(InputStream is) throws IOException {
@@ -123,6 +197,9 @@ public class HOCRReader extends InputReader {
 	public SVGElement getOrCreateSVG() {
 		if (svgSvg == null && hocrElement != null) {
 			processHTML();
+		}
+		if (labelPattern != null) {
+			getOrCreatePotentialLabelElements(svgSvg);
 		}
 		return svgSvg;
 	}
@@ -306,27 +383,83 @@ public class HOCRReader extends InputReader {
 		HOCRTitle hocrTitle = new HOCRTitle(lineSpan.getTitle());
 		Real2Range bbox = hocrTitle.getBoundingBox();
 		if (bbox.getXRange().getRange() > MIN_WIDTH && bbox.getYRange().getRange() > MIN_WIDTH) {
+			boolean largeText = false;
 			hocrTitle.addAttributes(svgLine);
 			SVGRect rect = SVGRect.createFromReal2Range(bbox);
 			rect.setFill(LINE_COL);
 			rect.setOpacity(RECT_OPACITY);
 			svgLine.appendChild(rect);
-			svgLine.setFontSize(svgLine.getHeight());
+			Double fontSize = svgLine.getBoundingBox().getYRange().getRange();
+			if (fontSize > getMaxFontSize()) {
+				LOG.trace("largeText "+fontSize);
+				fontSize = getMaxFontSize();
+				largeText = true;
+			}
+			svgLine.setFontSize(fontSize);
 			svgLine.setClassName(LINE);
 			Elements childs = lineSpan.getChildElements();
 			for (int i = 0; i < childs.size(); i++) {
 				Element child = childs.get(i);
 				if (child instanceof HtmlSpan) {
 					HtmlSpan htmlSpan1 = (HtmlSpan) child;
-					if (OCRX_WORD.equals(htmlSpan1.getClassAttribute())) {
-						HtmlSVG word = createWordFromTesseract(htmlSpan1);
-						svgLine.appendChild(word.svg);
-						htmlLineSpan.appendChild(word.html);
+					String classAttribute = htmlSpan1.getClassAttribute();
+					if (OCRX_WORD.equals(classAttribute)) {
+						addWord(svgLine, htmlLineSpan, largeText, htmlSpan1);
+					} else {
+						LOG.debug("omitted attribute: "+classAttribute);
 					}
 				}
 			}
 		}
 		return htmlSVG;
+	}
+
+	private void addWord(SVGWordLine svgLine, HtmlSpan htmlLineSpan,
+			boolean largeText, HtmlSpan htmlSpan1) {
+		HtmlSVG word = createWordFromTesseract(htmlSpan1);
+		word.setLargeText(largeText);
+		svgLine.appendChild(word.svg);
+		String htmlValue0 = htmlSpan1.getValue();
+		if (htmlValue0.trim().length() == 0 && htmlValue0.length() > 0) {
+			addSpaceMarker(svgLine, htmlSpan1, word);
+		}
+		String htmlValue = htmlValue0.trim();
+		if (fitsRegex(htmlValue)) {
+			String clazz = word.svg.getAttributeValue(CLASS);
+			clazz = clazz == null ? POTENTIAL_LABEL : clazz+" "+POTENTIAL_LABEL;
+			word.svg.addAttribute(new Attribute(CLASS, clazz));
+		}
+		htmlLineSpan.appendChild(word.html);
+	}
+
+	/** don't think this does anything useful.
+	 * empty spaces have huge bounding boxes.
+	 * 
+	 * @param svgLine
+	 * @param htmlSpan1
+	 * @param word
+	 */
+	private void addSpaceMarker(SVGWordLine svgLine, HtmlSpan htmlSpan1, HtmlSVG word) {
+		LOG.trace("SPACE...");
+		LOG.trace("span "+htmlSpan1.toXML());
+		LOG.trace(svgLine.toXML());
+		Real2Range bbox1 = word.svg.getBoundingBox();
+		if (bbox1 != null) {
+			Real2 xy = bbox1.getCorners()[0];
+			SVGText text = new SVGText(xy, "SPACE");
+			text.setFontSize(15.);
+			word.svg.appendChild(text);
+			LOG.debug(word.svg.toXML());
+		}
+	}
+
+	private boolean fitsRegex(String value) {
+		boolean fitsRegex = (value == null || labelPattern == null) ? false :
+			labelPattern.matcher(value).matches();
+		if (fitsRegex) {
+			LOG.trace("matches: "+value);
+		}
+		return fitsRegex;
 	}
 
 	private static void copyAttributes(HtmlElement from, SVGG to) {
@@ -363,12 +496,22 @@ public class HOCRReader extends InputReader {
 					throw new RuntimeException("multiple styles in word");
 				}
 				wordValue = editGarbles(wordValue, rect);
+				boolean lowConf = false;
+				if (height > getMaxFontSize()) {
+					height = getMaxFontSize();
+					lowConf = true;
+				}
 				SVGText text = createTextElement(bbox, wordValue, height);
 				htmlSpan.setValue(wordValue);
 				svgWord.appendChild(text);
 				if (hocrTitle.getWConf() != null && hocrTitle.getWConf() < 50) {
-//					text.setOpacity(hocrTitle.getWConf() * 0.007);
-//					text.setFill(LOW_CONF_COL);
+					lowConf = true;
+				}
+				if (lowConf) {
+					Integer wConf = hocrTitle.getWConf();
+					if (wConf == null) wConf = 100;
+					text.setOpacity(wConf * 0.007);
+					text.setFill(LOW_CONF_COL);
 					rect.setStrokeWidth(LOW_CONF_WIDTH);
 				}
 				hocrTitle.addAttributes(svgWord);
@@ -484,6 +627,186 @@ public class HOCRReader extends InputReader {
 		return htmlLines;
 	}
 
+	public void createHTMLandSVG(File imageDir, String imageSuffix, BufferedImage image, String id) throws Exception {
+		File pngFile = new File(imageDir, id+"."+imageSuffix);
+		this.clearVariables();
+		createHTMLandSVG(imageDir, imageSuffix, image, id, pngFile);
+	}
+
+	public void createHTMLandSVG(File imageDir, String imageSuffix, NamedImage namedImage) throws Exception {
+		String id = namedImage.getKey();
+		File pngFile = new File(imageDir, id+"."+imageSuffix);
+		this.clearVariables();
+		createHTMLandSVG(imageDir, imageSuffix, namedImage.getImage(), id, pngFile);
+	}
+
+	private void createHTMLandSVG(File imageDir, String imageSuffix, BufferedImage rawImage0, String id, File pngFile) throws Exception {
+		BufferedImage expandedImage = addMargins(rawImage0);
+		ImageIO.write(expandedImage, imageSuffix, new FileOutputStream(pngFile));
+		ImageToHOCRConverter converter = new ImageToHOCRConverter();
+		File outfileRoot = new File(imageDir, id+HOCRReader.HOCR);
+		converter.convertImageToHOCR(pngFile, outfileRoot);
+		File outfile = new File(imageDir, id+HOCRReader.HOCR_HTML);
+		// WAIT TILL PROCESS COMPLETES
+		int count = getTesseractTries();
+		while (!outfile.exists() && count-- > 0) {
+			Thread.sleep(getTesseractSleep());
+		}
+		if (!outfile.exists()) {
+			LOG.error("Cannot create HOCR after waiting");
+			return;
+		}
+		readHOCR(new FileInputStream(outfile));
+		SVGElement svgg = getOrCreateSVG();
+		List<HOCRText> potentialTexts = this.getOrCreatePotentialTextElements(svgg);
+		List<HOCRLabel> potentialLabels = this.getOrCreatePotentialLabelElements(svgg);
+		List<HOCRPhrase> potentialPhrases = this.getOrCreatePotentialPhraseElements(svgg);
+		
+		GridExtractor gridExtractor = new GridExtractor(new Real2(8., 8.));
+		gridExtractor.deduceGrid(potentialLabels);
+
+		SVGSVG.wrapAndWriteAsSVG(svgg, new File(imageDir, id+HOCRReader.HOCR_SVG));
+	}
+
+	private BufferedImage addMargins(BufferedImage rawImage) {
+		BufferedImage newImage = imageMarginX > 0 || imageMarginY > 0 ? 
+				ImageUtil.addBorders(rawImage, imageMarginX, imageMarginY, marginColor) : rawImage;
+		return newImage;
+	}
+
+	public List<HOCRLabel> getOrCreatePotentialLabelElements(SVGElement svgElement) {
+		if (potentialLabelList == null) {
+			List <SVGElement> labelledGs = SVGUtil.getQuerySVGElements(
+					svgElement, "//*[local-name()='g' and contains(@class, '"+POTENTIAL_LABEL+"')]");
+			potentialLabelList = new ArrayList<HOCRLabel>();
+			for (SVGElement labelledG : labelledGs) {
+				addDecorativeBoxToPotentialLabel(labelledG);
+				if (!(labelledG instanceof SVGG)) {
+					LOG.error("expected text, found: "+labelledG.toXML());
+				}
+				potentialLabelList.add(new HOCRLabel((SVGG)labelledG));
+			}
+		}
+		return potentialLabelList;
+	}
+
+	
+	public List<HOCRPhrase> getOrCreatePotentialPhraseElements(SVGElement svgElement) {
+//		if (potentialPhraseList == null) {
+			List <SVGElement> lineGs = SVGUtil.getQuerySVGElements(
+					svgElement, "//*[local-name()='g' and contains(@class, '"+LINE+"')]");
+			potentialPhraseList = new ArrayList<HOCRPhrase>();
+			for (SVGElement lineG : lineGs) {
+				List<SVGElement> words = SVGUtil.getQuerySVGElements(
+						lineG, "*[local-name()='g' and contains(@class,'"+WORD+"')]");
+				List<HOCRPhrase> linePhraseList = new ArrayList<HOCRPhrase>();
+				HOCRPhrase previous = null;
+				HOCRPhrase currentPhrase = null;
+				for (int i = 0; i < words.size(); i++) {
+					SVGG word = (SVGG) words.get(i);
+					String clazz = word.getAttributeValue(CLASS);
+					if (clazz != null && clazz.contains(POTENTIAL_LABEL)) {
+						continue;
+					}
+					HOCRText text = new HOCRText((SVGG)word);
+					if (previous != null) {
+						Double boxEnd = previous.getBoxEnd();
+						LOG.trace(">>"+((previous.getBboxRect() == null) ? null : previous.getBboxRect().toXML()));
+						if (boxEnd == null) continue;
+						LOG.trace(">>"+text.getBboxRect().toXML());
+						double textStart = text.getBoxStart();
+						Double separation = textStart - boxEnd;
+						LOG.trace(textStart+" - "+boxEnd);
+						if (separation < 0) {
+							throw new RuntimeException("previous overlaps this");
+						}
+						Double previousSize = previous.getFontSize();
+						Double textSize = text.getFontSize();
+						Double meanTextSize = HOCRChunk.getMeanSize(previousSize, textSize);
+						boolean joinWords = HOCRText.isWordInPhrase(separation, meanTextSize, 0,2);
+						if (joinWords) {
+							currentPhrase.add(word);
+							LOG.trace("added "+text.getText().getText()+" :"+currentPhrase.getText().getText()+":");
+							
+						} else {
+							LOG.trace("didn't add: "+text.getText().getText()+" to "+currentPhrase.getText().getText());
+						}
+					} else {
+						currentPhrase = new HOCRPhrase(word);
+						LOG.trace("new: "+((text == null) ? null : ((text.getText() == null) ? null : (text.getText().getText()))));
+						linePhraseList.add(currentPhrase);
+						previous = currentPhrase;
+						
+					}
+				}
+//				makePhrases(words);
+				for (HOCRPhrase phrase : linePhraseList) {
+					LOG.debug(">phrase>"+phrase.toString());
+				}
+				potentialPhraseList.addAll(linePhraseList);
+			}
+//		}
+		return potentialPhraseList;
+	}
+
+	
+//	private void checkWordOrderAndIntertextDifferences(List<SVGElement> words) {
+//		for (int i = 0; i < words.size(); i++) {
+//			SVGElement previous = (i < 1) ? null : words.get(i-1);
+//			SVGElement next = (i >= words.size() - 1) ? null : words.get(i+1);
+//			if (previous != null) {
+//			}
+//		}
+//	}
+//
+//	private void makePhrases(List<SVGElement> words) {
+//	}
+
+//	private void markFollowingNeighbours(List<SVGElement> words, int serial) {
+//		if (serial > 0) {
+//			
+//		}
+//	}
+
+	public List<HOCRText> getOrCreatePotentialTextElements(SVGElement svgElement) {
+		if (potentialTextList == null) {
+			List <SVGElement> textGs = SVGUtil.getQuerySVGElements(
+					svgElement, "//*[local-name()='g' and not(contains(@class, '"+POTENTIAL_LABEL+"')) and *[local-name()='text']]");
+			potentialTextList = new ArrayList<HOCRText>();
+			for (SVGElement textG : textGs) {
+				SVGText text = SVGText.extractSelfAndDescendantTexts(textG).get(0);
+				potentialTextList.add(new HOCRText((SVGG)textG));
+			}
+		}
+		return potentialTextList;
+	}
+
+	private void addDecorativeBoxToPotentialLabel(SVGElement svgElement) {
+		Real2Range bbox = svgElement.getBoundingBox();
+		SVGRect rect = SVGRect.createFromReal2Range(bbox);
+		if (rect != null) {
+			rect.setFill("magenta");
+			rect.setOpacity(0.2);
+			svgElement.appendChild(rect);
+		}
+	}
+
+	public void setTesseractSleep(long tesseractSleep) {
+		this.tesseractSleep = tesseractSleep;
+	}
+
+	public void setTesseractTries(int tesseractTries) {
+		this.tesseractTries = tesseractTries;
+	}
+
+	private long getTesseractSleep() {
+		return tesseractSleep;
+	}
+
+	private int getTesseractTries() {
+		return tesseractTries;
+	}
+
 	public static List<HtmlSpan> getWords(HtmlSpan line) {
 		List<HtmlSpan> wordList = new ArrayList<HtmlSpan>();
 		List<Element> words = XMLUtil.getQueryElements(line, "*[local-name()='span' and not(normalize-space(.)='')]");
@@ -520,15 +843,43 @@ public class HOCRReader extends InputReader {
 		}
 		return sb.toString().trim();
 	}
-	
+
+	public void setMaxFontSize(double size) {
+		this.maxFontSize = size;
+	}
+
+	public double getMaxFontSize() {
+		return maxFontSize;
+	}
+
+	/** attempts to find subimages through labelling.
+	 * 
+	 * @param regex of form "[A-Za-z0-9]|ii|iii|iv|v|vi|vii|"
+	 * still experimental
+	 * 
+	 */
+	public void labelSubImages(String regex) {
+		this.labelPattern = Pattern.compile(regex);
+	}
+
 }
 class HtmlSVG {
 
 	public HtmlElement html;
 	public SVGElement svg;
+	private boolean isLargeText;
 	
+	public boolean isLargeText() {
+		return isLargeText;
+	}
+
+	public void setLargeText(boolean isLargeText) {
+		this.isLargeText = isLargeText;
+	}
+
 	public HtmlSVG(HtmlElement html, SVGElement svg) {
 		this.html = html;
 		this.svg = svg;
 	}
+
 }
