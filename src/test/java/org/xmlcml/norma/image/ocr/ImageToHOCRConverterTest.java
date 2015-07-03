@@ -12,6 +12,7 @@ import junit.framework.Assert;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.codehaus.plexus.util.FileUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
@@ -48,6 +49,7 @@ public class ImageToHOCRConverterTest {
 	}
 	
 	@Test
+	@Ignore // not fully tested for overlap
 	public void testConvertPDFToSVG() throws Exception {
 		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
 //		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Maggio2009.pdf");

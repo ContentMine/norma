@@ -169,6 +169,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	}
 	
 	@Test
+	@Ignore // too long
 	public void testCGIAR2CMDir() throws Exception {
 		CMDir cmDir = new CMDir(new File("target/cmdir/cgiar/345"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));

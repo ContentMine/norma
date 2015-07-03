@@ -718,7 +718,8 @@ public class HOCRReader extends InputReader {
 						Double separation = textStart - boxEnd;
 						LOG.trace(textStart+" - "+boxEnd);
 						if (separation < 0) {
-							throw new RuntimeException("previous overlaps this");
+							LOG.error("previous overlaps this");
+							continue;
 						}
 						Double previousSize = previous.getFontSize();
 						Double textSize = text.getFontSize();
