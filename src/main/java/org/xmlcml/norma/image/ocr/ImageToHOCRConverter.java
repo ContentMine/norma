@@ -42,13 +42,21 @@ public class ImageToHOCRConverter {
      * @throws IOException // if Tesseract not present
      * @throws InterruptedException
      */
-    public void convertImageToHOCR(File input, File output) throws IOException, InterruptedException {
+    public boolean convertImageToHOCR(File input, File output) throws IOException, InterruptedException {
+    	
         // tesseract performs the initial Image => HOCR conversion,
+    	
         output.getParentFile().mkdirs();
         ProcessBuilder tesseractBuilder = new ProcessBuilder(
         		USR_LOCAL_BIN_TESSERACT, input.getAbsolutePath(), output.getAbsolutePath(), HOCR);
         tesseractBuilder.redirectError(ProcessBuilder.Redirect.INHERIT);
-        Process tesseractProc = tesseractBuilder.start();
+    	Process tesseractProc = null;
+        try {
+        	tesseractProc = tesseractBuilder.start();
+        } catch(Throwable t) {
+        	LOG.debug("cannot run: "+USR_LOCAL_BIN_TESSERACT);
+        	return false;
+        }
         tesseractProc.getOutputStream().close();
         int exitValue = -1;
 		for (int itry = 0; itry < tryCount; itry++) {
@@ -66,7 +74,9 @@ public class ImageToHOCRConverter {
 		if (exitValue != 0) {
 			tesseractProc.destroy();
 			LOG.error("Process failed to terminate after :"+tryCount);
+			return false;
 		}
+		return true;
     }
 
     

@@ -645,9 +645,11 @@ public class HOCRReader extends InputReader {
 		ImageIO.write(expandedImage, imageSuffix, new FileOutputStream(pngFile));
 		ImageToHOCRConverter converter = new ImageToHOCRConverter();
 		File outfileRoot = new File(imageDir, id+HOCRReader.HOCR);
-		converter.convertImageToHOCR(pngFile, outfileRoot);
+		if (!converter.convertImageToHOCR(pngFile, outfileRoot)) return;
 		File outfile = new File(imageDir, id+HOCRReader.HOCR_HTML);
+		
 		// WAIT TILL PROCESS COMPLETES
+		
 		int count = getTesseractTries();
 		while (!outfile.exists() && count-- > 0) {
 			Thread.sleep(getTesseractSleep());
