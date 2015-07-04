@@ -141,6 +141,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	}
 	
 	@Test
+	@Ignore // LONG
 	public void testPDF2XHTML() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
@@ -150,6 +151,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	}
 	
 	@Test
+	@Ignore // LONG
 	public void testPDF2CMDir() throws Exception {
 		CMDir cmDir = new CMDir(new File("target/cmdir/0115884/"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
@@ -178,7 +180,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	}
 	
 	@Test
-//	@Ignore // closed PDF
+	@Ignore // closed PDF // LONG
 	public void testNeuroFigures() throws Exception {
 		CMDir cmDir = new CMDir(new File("target/cmdir/neuro/Chen"));
 		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");

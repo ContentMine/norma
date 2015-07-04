@@ -5,6 +5,8 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cmine.misc.CMineUtil;
+import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 
 public class ImageToHOCRConverter {
 
@@ -53,8 +55,8 @@ public class ImageToHOCRConverter {
     	Process tesseractProc = null;
         try {
         	tesseractProc = tesseractBuilder.start();
-        } catch(Throwable t) {
-        	LOG.debug("cannot run: "+USR_LOCAL_BIN_TESSERACT);
+        } catch (IOException e) {
+        	CMineUtil.catchUninstalledProgram(e, USR_LOCAL_BIN_TESSERACT);
         	return false;
         }
         tesseractProc.getOutputStream().close();

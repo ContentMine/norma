@@ -15,6 +15,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xml.sax.SAXException;
+import org.xmlcml.cmine.misc.CMineUtil;
 import org.xmlcml.norma.Fixtures;
 
 public class TEX2HTMLConverterTest extends XMLTestCase {
@@ -38,16 +39,7 @@ public class TEX2HTMLConverterTest extends XMLTestCase {
         File expectedXMLFile = new File(Fixtures.TEST_NORMA_DIR + "/tex/sample.tex.xhtml");
         String actualXML = null;
         Assert.assertTrue("text exists", texFile.exists());
-        try {
-        	actualXML = converter.convertTeXToHTML(texFile);
-        } catch (IOException e) {
-        	String error = e.getMessage();
-        	if (error.startsWith("Cannot run program \"latexml\": error=2")) {
-        		LOG.error("******** LatexML must be installed *************");
-        	} else {
-        		throw new RuntimeException("cannot convert file, ", e);
-        	}
-        }
+    	actualXML = converter.convertTeXToHTML(texFile);
         if (actualXML != null) {
 	        String expectedXML = new String(IOUtils.toByteArray(new FileInputStream(expectedXMLFile)));
 	        Diff diff = new Diff(expectedXML, actualXML);
@@ -59,4 +51,5 @@ public class TEX2HTMLConverterTest extends XMLTestCase {
 	        assertXMLEqual(diff, true);
         }
     }
+
 }

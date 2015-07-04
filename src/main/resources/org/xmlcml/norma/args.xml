@@ -3,7 +3,7 @@
     brief="-c"
     long="--chars"
     args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
-    class="org.xmlcml.args.StringPair"
+    class="org.xmlcml.cmine.args.StringPair"
     countRange="{1,*}"
     parseMethod="parseChars"
     >
@@ -38,7 +38,7 @@
     brief="-n"
     long="--name"
     args=" tag1,tag2 [tag1,tag2 ....]"
-    class="org.xmlcml.args.StringPair"
+    class="org.xmlcml.cmine.args.StringPair"
     countRange="{1,*}"
     parseMethod="parseNames"
     >

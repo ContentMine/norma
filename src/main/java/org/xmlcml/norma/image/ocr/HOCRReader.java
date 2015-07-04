@@ -744,7 +744,7 @@ public class HOCRReader extends InputReader {
 				}
 //				makePhrases(words);
 				for (HOCRPhrase phrase : linePhraseList) {
-					LOG.debug(">phrase>"+phrase.toString());
+					LOG.trace(">phrase>"+phrase.toString());
 				}
 				potentialPhraseList.addAll(linePhraseList);
 			}
