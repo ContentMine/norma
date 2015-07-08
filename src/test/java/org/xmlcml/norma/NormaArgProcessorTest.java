@@ -310,9 +310,9 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
-	public void testArgs2Html() {
-		String args = "--args2html";
-		DefaultArgProcessor argProcessor = new DefaultArgProcessor();
+	public void testMakeDocs() {
+		String args = "--makedocs";
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
 		argProcessor.parseArgs(args);
 		argProcessor.runAndOutput();
 	}
