@@ -75,21 +75,33 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private String tidyName;
 	private List<String> xslNameList;
 	private Map<String, String> stylesheetByNameMap;
-	private boolean standalone;
+	private boolean removeDTD;
 	private List<String> transformList;
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private NormaTransformer normaTransformer;
+	private static String name;
+	private static String version;
 
 	public NormaArgProcessor() {
 		super();
-		this.readArgumentOptions(ARGS_RESOURCE);
+//		super.readArgumentOptions(super.getArgsResource());
+		this.readArgumentOptions(this.getArgsResource());
 	}
 
 	public NormaArgProcessor(String[] args) {
 		this();
+		setDefaults();
 		parseArgs(args);
 	}
 
+	private void setDefaults() {
+		this.removeDTD = true;
+	}
+
+	private String getArgsResource() {
+		return ARGS_RESOURCE;
+	}
+	
 	// ============= METHODS =============
 
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
@@ -120,7 +132,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		try {
-			standalone = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
+			removeDTD = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
 		} catch (Exception e) {
 			throw new RuntimeException("bad boolean: "+tokens.get(0));
 		}
@@ -203,15 +215,24 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	// ===========run===============
 
+	protected void printVersion() {
+		System.err.println(this.name+":: "+this.version);
+		super.printVersion();
+	}
+
 	public void transform(ArgumentOption option) {
 		// deprecated so
 		runTransform(option);
 	}
 
 	public void runTransform(ArgumentOption option) {
-		LOG.trace("***run transform "+currentCMDir);
-		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
-		normaTransformer.transform(option);
+		if (currentCMDir == null) {
+			LOG.warn("No current CMDir");
+		} else {
+			LOG.trace("***run transform "+currentCMDir);
+			NormaTransformer normaTransformer = getOrCreateNormaTransformer();
+			normaTransformer.transform(option);
+		}
 	}
 
 	public void runHtml(ArgumentOption option) {
@@ -292,6 +313,9 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public File checkAndGetInputFile(CMDir cmDir) {
+		if (cmDir == null) {
+			throw new RuntimeException("null cmDir");
+		}
 		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
@@ -509,7 +533,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public boolean isStandalone() {
-		return standalone;
+		return removeDTD;
 	}
 
 	@Override
@@ -532,5 +556,11 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		return xslDocumentList;
 	}
 
+	public String getName() {return name;	}
+	@Override
+	protected void setName(String name) {NormaArgProcessor.name = name;}
+	public String getVersion() {return version;}
+	@Override
+	protected void setVersion(String version) {NormaArgProcessor.version = version;}
 
 }

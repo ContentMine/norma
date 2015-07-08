@@ -290,6 +290,7 @@ public class InputTest {
 	public void testSeveralXMLTransform() {
 		String args;
 		Norma norma;
+		File plos100 = new File("target/plos10/");
 		args = 
 				"-i"
 				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml"
@@ -297,9 +298,10 @@ public class InputTest {
 				+" -o target/plos10/";
 		norma = new Norma();
 		norma.run(args);
+		Assert.assertTrue(plos100.exists());
 		args = 
 				"-q"
-				+ " target/plos100/"
+				+ " target/plos10/"
 				+ " -i fulltext.xml"
 				+ " -o scholarly.html"
 				+ " --transform nlm2html"

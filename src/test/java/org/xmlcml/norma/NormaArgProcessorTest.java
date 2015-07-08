@@ -257,6 +257,7 @@ public class NormaArgProcessorTest {
 	/** creates new CMDirs for list of PDF and then transforms
 	 * 
 	 */
+	@Ignore // uses non-local files
 	public void testNormalizeIEEEPDFs() throws IOException {
 		String args;
 		args = "-i fulltext.pdf --cmdir ../cmine/target/ieee/musti/Henniger -o fulltext.txt --transform pdf2txt";
@@ -307,4 +308,20 @@ public class NormaArgProcessorTest {
 		new Norma().run(args);
 //		FileUtils.copyFile(new File("target/nature/fulltext.xhtml"), new File("target/nature/junk.xml")); //for display
 	}
+	
+	@Test
+	public void testArgs2Html() {
+		String args = "--args2html";
+		DefaultArgProcessor argProcessor = new DefaultArgProcessor();
+		argProcessor.parseArgs(args);
+		argProcessor.runAndOutput();
+	}
+	
+	@Test
+	public void testVersion() {
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		argProcessor.parseArgs("--version");
+	}
+
+
 }
