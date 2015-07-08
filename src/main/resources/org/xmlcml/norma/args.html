@@ -1,0 +1,156 @@
+<html>
+<div>
+<h1>arguments for <tt>norma ()</tt>
+</h1>
+<h2>argument <tt>char</tt>
+</h2>
+<code>--chars[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21({1,*})</code><code>b: -c h:   c: </code>
+<h2>Description</h2>
+<help>
+      CHARS:
+      NOT YET IMPLEMENTED
+      Replaces one character by another. There are many cases where original characters are unsuitable 
+      for science and can be replaced (often by low codepoints).
+      Smart (balanced) quotes can usually be replaced by \" or '
+      mdash is often used where minus is better
+      Format, strings of form u1234 
+    </help>
+<h2>argument <tt>div</tt>
+</h2>
+<code>--divsexpression [expression] ...({1,*})</code><code>b: -d h:   c: </code>
+<h2>Description</h2>
+<help>
+      DIVS:
+      NOT YET IMPLEMENTED
+      List of expressions identifying XML element to wrap as divs/sections
+      Examples might be h1, h2, h3, or numbers sections
+      Still under development.
+    </help>
+<h2>argument <tt>name</tt>
+</h2>
+<code>--name tag1,tag2 [tag1,tag2 ....]({1,*})</code><code>b: -n h:   c: </code>
+<h2>Description</h2>
+<help>
+      NAME:
+      NOT YET IMPLEMENTED
+      List of comma-separated pairs of tags; the first is replaced by the second. Example might be:
+        em,i strong,b
+      i.e. replace all &lt;em&gt;...&lt;/em&gt; by &lt;i&gt;...&lt;/i&gt;
+    </help>
+<h2>argument <tt>pubstyle</tt>
+</h2>
+<code>--pubstylepub_code({1,1})</code><code>b: -p h:   c: </code>
+<h2>Description</h2>
+<help>
+      PUBSTYLE:
+      Code or mnemomic to identifier the publisher or journal style. 
+      this is a list of journal/publisher styles so Norma knows how to interpret the 
+      input. At present only one argument is allowed. The pubstyle determines the format
+      of the XML or HTML, the metadata, and soon how to parse the PDF. At present we'll use 
+      mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
+      
+      To get a list of these use "+"--pubstyle"+" without arguments. Note: under early 
+      development and note also that  publisher styles change and can be transferred
+      between publishers and journals
+      
+      NOTE: Does not trigger any actions
+    </help>
+<h2>argument <tt>standalone</tt>
+</h2>
+<code>--standaloneboolean({0,1})</code><code>b:  h:   c: </code>
+<h2>Description</h2>
+<help>
+      STANDALONE:
+      Treats XML document as standalone. Very useful as some parsers 
+      will take ages resolving the DTD and often fail
+      if not connected to the net. 
+    </help>
+<h2>argument <tt>strip</tt>
+</h2>
+<code>--strip[options to strip]({0,*})</code><code>b: -s h:   c: </code>
+<h2>Description</h2>
+<help>
+      STRIP:
+      List of XML components to strip from the raw well-formed HTML;
+      if a list is given, then use that; if this argument is missing 
+      (or the single string '#pubstyle' then the Pubstyle defaults are 
+      used. If there are no arguments  then no stripping is done. a 
+      single '?' will list the Pubstyle defaults
+      The following are allowed:
+        an element local name (e.g. input)
+        an XPath expression (e.g. //*[@class='foobar'])
+        !DOCTYPE (strips &lt;!DOCTYPE ...&gt; which speeds up reading)
+        an attribute (e.g. @class) (NotYetImplemented)
+      
+      Note that tokens are whitespace-separated (sorry if this interacts with XPath)
+      
+      Examples: 
+        input script object (removes these three element
+        //*[contains(@class,'sidebar')]  (removes &lt;div class='sidebar'&gt; ... &lt;/div&gt;
+        !DOCTYPE (removes &lt;!DOCTYPE ...&gt; before parsing))
+        !DOCTYPE input script object //*[contains(@class,'sidebar')] (removes all the above)
+      
+      NOTE - some of this is hardcoded in HTMLCleaner and should be refactored
+    </help>
+<h2>argument <tt>tidy</tt>
+</h2>
+<code>--tidy[HTML tidy option]({1,1})</code><code>b: -t h:   c: </code>
+<h2>Description</h2>
+<help>
+    OBSOLETE - use --html
+      TIDY:
+      Choose an HTML tidy tool. At present we have:
+        JTidy JSoup and HtmlUnit 
+      (NYI) This is very experimental at present.
+    </help>
+<h2>argument <tt>html</tt>
+</h2>
+<code>--html[HTML tidy option, jsoup, jtidy, htmlunit]({1,1})</code><code>b:  h:   c: </code>
+<h2>Description</h2>
+<help>
+      HTML
+      Clean raw HTML and produce XHTML. Requires heuristics:
+      (a) quickscrape and getpapers create a JS DOM which has
+      normalised some, but not all, elements
+      (b) remove &lt;script&gt; and other elements which are likely 
+      to be non-XML-compliant. Adjustable through &lt;value&gt;
+      (c) remove other artefacts (e.g. attributes like "=""")
+      (d) run through html-tidy (jsoup, jtidy, htmlunit). They all try
+      to sort out mess - the last is probably the best but I haven't
+      bolted it in yet.
+      (e) remove empty divs, ps, etc.
+      
+      This is NOT scholarly.html and will need a publisher-specific
+      stylesheet for further processing.
+    </help>
+<h2>argument <tt>xsl</tt>
+</h2>
+<code>--xslstylesheet({1,5})</code><code>b: -x h:   c: </code>
+<h2>Description</h2>
+<help>
+    DEPRECATED (use transform)
+      XSL:
+      Transform XML or HTML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
+      or a code from one of {nlm, jats ...}
+      the codes are checked first and then the document reference.
+      The code pdf2txt will transform pdf to fulltext.pdf.txt
+      
+      Requires input and output files (--input and --output). These must be reserved names 
+      (e.g. fulltext.xml) in qsNorma and determine the type of files to convert.
+    </help>
+<h2>argument <tt>transform</tt>
+</h2>
+<code>--transformstylesheet({1,*})</code><code>b:  h:   c: </code>
+<h2>Description</h2>
+<help>
+    Relacement for --xsl
+      Transform XML or HTML or PDF or ... Argument may be a file/URL reference to a stylesheet,
+      or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup, [jtidy, htmlunit NYI]}
+      the codes are checked first and then the document reference.
+      
+      Requires input and output files (--input and --output). These must be reserved names 
+      (e.g. fulltext.xml) in cmDir OR files in reserved directories and
+      determine the type of files to convert.
+    </help>
+</div>
+</html>
