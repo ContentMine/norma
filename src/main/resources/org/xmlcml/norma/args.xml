@@ -1,4 +1,4 @@
-<argList name="norma" version="0.1.2">
+<argList name="norma" version="0.1.3">
   <arg name="char" 
     brief="-c"
     long="--chars"
