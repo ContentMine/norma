@@ -1,0 +1,31 @@
+digraph norma {
+"getp" [label="getpapers", style="filled", color="yellow"]
+"qs" [label="quickscrape", style="filled", color="yellow"]
+
+"f.xml" [label="fulltext.xml"];
+"f.html" [label="fulltext.html"];
+"f.pdf" [label="fulltext.pdf"];
+"f.pdf.txt" [label="fulltext.pdf.txt"];
+"f.pdf.html" [label="fulltext.pdf.html"];
+
+"png" [label="image", color="red"];
+"png.hocr.html" [label="OCR'ed image", color="red"]
+"png.hocr.svg" [label="OCR'ed image (SVG)", color="red"]
+
+"svg" [label="svg"];
+"sdata" [label="suppdata"];
+"s.html" [label="scholarly.html"];
+
+"getp" -> {"f.xml" "f.pdf" "f.html" "png"} 
+"qs" -> {"f.xml" "f.pdf" "f.html" "png" "sdata"} 
+
+"f.xml" -> "f.html" [label="[stylesheets]"];
+"f.html" -> "s.html" [label="[tagger]"];
+"f.pdf" -> "f.pdf.txt" [label="pdf2txt"];
+"f.pdf" -> {"f.pdf.html" "png" "svg"} [label="pdf2svg"];
+"f.pdf.html" -> "s.html" [label="tagger"];
+
+"png" -> "png.hocr.html" [label="OCR"];
+"png.hocr.html" -> "png.hocr.svg" [label="OCR-SVG"]
+
+}
