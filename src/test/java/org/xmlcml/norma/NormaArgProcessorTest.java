@@ -323,5 +323,11 @@ public class NormaArgProcessorTest {
 		argProcessor.parseArgs("--version");
 	}
 
+	
+	@Test
+	public void testTag() {
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		argProcessor.parseArgs("--chars a,b");
+	}
 
 }
