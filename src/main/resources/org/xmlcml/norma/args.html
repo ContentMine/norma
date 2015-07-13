@@ -15,7 +15,7 @@
       <div>
          <h1><tt>norma
                					(
-               					0.1.4
+               					0.1.5
                					)
                				</tt></h1>
          <h2>Arguments</h2>
@@ -239,16 +239,6 @@
                   <h3>Description</h3>
                   <help>
                      			DEPRECATED (use transform)
-                     			XSL:
-                     			Transform XML or HTML input with stylesheet. Argument may be a file/URL
-                     			reference to a stylesheet,
-                     			or a code from one of {nlm, jats ...}
-                     			the codes are checked first and then the document reference.
-                     			The code pdf2txt will transform pdf to fulltext.pdf.txt
-                     
-                     			Requires input and output files (--input and --output). These must be
-                     			reserved names
-                     			(e.g. fulltext.xml) in qsNorma and determine the type of files to convert.
                      		
                   </help>
                </p>
@@ -277,6 +267,20 @@
                         			
                      </p>
                      		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>tag</tt></h2><code>--tag  {0,*}</code><br><code>
+                  					Default:
+                  					 src/main/resources/org/xmlcml/norma/pubstyle/sectionTagger.xml</code><em>Methods: </em> parse: parseTag<br><br><em>  b: </em><code></code><em>  c: </em><code>java.lang.String</code><p>
+                  <h3>Description</h3>
+                  <help>
+                     
+                     <p class="brief">Adds section tags to scholarly.html</p>
+                     
+                     <p>Not yet implemented</p>
+                     
                   </help>
                </p>
             </li>

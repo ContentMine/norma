@@ -94,7 +94,6 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// ============= METHODS =============
 
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
- 		LOG.debug("parseChars");
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
@@ -126,7 +125,6 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
- 		LOG.debug("parseTag");
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		// FIXME - there is a bug here - parseTag is called twice
 		if (tagFilenameList == null) {
@@ -135,7 +133,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 				tagFilenameList = new ArrayList<String>();
 				tagFilenameList.add(option.getDefaultString());
 			}
-			LOG.debug("TagFiles: "+tagFilenameList);
+			LOG.trace("TagFiles: "+tagFilenameList);
 		}
 	}
 
@@ -168,7 +166,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		getOrCreateNormaTransformer();
 		List<ValueElement> valueElements = option.getValueElements();
 		for (ValueElement valueElement : valueElements) {
-			LOG.debug("value "+valueElement.getName());
+			LOG.trace("value "+valueElement.getName());
 		}
 		normaTransformer.parseTransform(this, tokenList);
 	}
@@ -368,7 +366,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot copy file: "+filename+" to "+reservedDir, e);
 		}
-		LOG.debug("created "+name+" in "+reservedDir);
+		LOG.trace("created "+name+" in "+reservedDir);
 
 	}
 
