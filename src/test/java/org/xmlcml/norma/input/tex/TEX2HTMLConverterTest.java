@@ -28,7 +28,7 @@ public class TEX2HTMLConverterTest extends XMLTestCase {
 	}
 	
     @Test
-    @Ignore // till we install LatexML
+//    @Ignore // till we install LatexML
     public void testConvertTex() throws InterruptedException, IOException, SAXException {
         // LaTeXML includes comments about the generator which vary on each run.
         // Ignore these.

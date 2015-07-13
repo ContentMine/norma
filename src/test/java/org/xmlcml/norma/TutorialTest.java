@@ -86,7 +86,7 @@ public class TutorialTest {
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_xml_1471-2148-14-70.xml "
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_pdf_1471-2148-14-70.pdf "
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/plosone_0115884.xml "
-				+ "-o target/cmdirs_xml --cmdir";
+				+ "--project target/cmdirs_xml --cmdir";
 		Norma norma = new Norma();
 		norma.run(args);
 		Assert.assertTrue(cmdirTop.exists());
