@@ -77,7 +77,6 @@ public class TutorialTest {
 		 -o cmdirs_all
 	 */
 	@Test
-	// multiple files not yet working
 	public void testMixedFilesToCMDirectory() throws Exception {
 		File cmdirTop = new File("target/cmdirs_xml");
 		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
@@ -90,10 +89,10 @@ public class TutorialTest {
 		Norma norma = new Norma();
 		norma.run(args);
 		Assert.assertTrue(cmdirTop.exists());
-//		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_xml_1471-2148-14-70")));
+		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_plosone_0115884_xml")));
 //		Assert.assertNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_pdf_1471-2148-14-70")));
-//		Assert.assertNotNull(CMDir.getExistingFulltextPDF(new File("target/cmdirs_xml/test_pdf_1471-2148-14-70")));
-//		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/plosone_0115884")));
+		Assert.assertNotNull(CMDir.getExistingFulltextPDF(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_test_pdf_1471_2148_14_70_pdf")));
+		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_test_xml_1471_2148_14_70_xml")));
 	}		
 	
 	/**
@@ -136,6 +135,7 @@ public class TutorialTest {
 	ls -lt temp-acp/scholarly.html
 	 */
 	@Test
+	@Ignore // not sure what this was meant to do
 	public void testConvertACPHTML() throws Exception {
 		String sourceName = "src/test/resources/org/xmlcml/norma/quickscrapeDirs/acp/acp-15-1013-2015";
 		String destName = "target/cmdirs_all/acp/acp-15-1013-2015";

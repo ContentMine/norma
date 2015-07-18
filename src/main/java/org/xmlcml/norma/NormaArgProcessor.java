@@ -23,6 +23,7 @@ import org.xmlcml.cmine.files.CMDir;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
+import org.xmlcml.norma.tagger.SectionTagger;
 
 /**
  * Processes commandline arguments.
@@ -61,7 +62,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private List<String> xslNameList;
 	private boolean removeDTD;
 	private NormaTransformer normaTransformer;
-	private List<String> tagFilenameList;
+	private List<SectionTagger> sectionTaggerNameList;
 
 	public NormaArgProcessor() {
 		super();
@@ -126,15 +127,16 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		// FIXME - there is a bug here - parseTag is called twice
-		if (tagFilenameList == null) {
-			tagFilenameList = option.processArgs(tokens).getStringValues();
-			if (tagFilenameList == null) {
-				tagFilenameList = new ArrayList<String>();
-				tagFilenameList.add(option.getDefaultString());
+		sectionTaggerNameList = new ArrayList<SectionTagger>();
+		if (tokens.size() == 0) {
+			LOG.warn("parseTag requires list of taggers");
+		} else {
+			for (String token : tokens) {
+				SectionTagger sectionTagger = new SectionTagger(token);
+				sectionTaggerNameList.add(sectionTagger);
 			}
-			LOG.trace("TagFiles: "+tagFilenameList);
 		}
+		
 	}
 
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
@@ -423,6 +425,10 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public boolean isStandalone() {
 		return removeDTD;
+	}
+
+	public List<SectionTagger> getSectionTaggers() {
+		return sectionTaggerNameList;
 	}
 
 	@Override

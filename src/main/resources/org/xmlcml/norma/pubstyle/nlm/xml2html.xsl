@@ -4,7 +4,7 @@
     <xsl:output method="xhtml"/>
     
 	<xsl:template match="/">
-	  <html xmlns="http://www.w3.org/1999/xhtml">
+	  <html xmlns="xmlns="http://www.w3.org/1999/xhtml">
 		<xsl:apply-templates />
 	  </html>
 	</xsl:template>
@@ -77,18 +77,17 @@
 	  <meta name="citation_publisher" content="{*[local-name()='publisher']/*[local-name()='publisher-name']}"></meta>
 	</xsl:template>
 	
-	<xsl:template match="*[local-name()='front']/*[local-name()='article-meta']">
+	<xsl:template match="[local-name()='front']/*[local-name()='article-meta']">
 	  <meta name="citation_doi" content="{*[local-name()='article-id' and @pub-id-type='doi']}"></meta>
 	  <meta name="citation_title" content="{*[local-name()='title-group']/*[local-name()='article-title']}"></meta>
 	  <title><xsl:value-of select="*[local-name()='title-group']/*[local-name()='article-title']"/></title>
 	  <xsl:apply-templates select="*[local-name()='contrib-group']"/>
 	  <meta name="email" content="{*[local-name()='author-notes']/*[local-name()='corresp']/*[local-name()='email']}"/>
-	  <meta name="conflict" content="{*[local-name()='author-notes']/*[local-name()='fn' and @fn-type='conflict']}"/>
-	  <meta name="contribs" content="{*[local-name()='author-notes']/*[local-name()='fn' and @fn-type='con']}"/>
-	  <meta name="citation_pubdate" content="{concat(pub-date[@pub-type='epub']']/
-	      *[local-name()='year'],'-',[local-name()='pub-date' and @pub-type='epub']/*[local-name()='month','-',pub-date[@pub-type='epub']']/*[local-name()='day'])}"/>
-	  <meta name="citation_copyright" content="{concat('Copyright',' ',permissions']/*[local-name()='copyright-year,': ',permissions']/*[local-name()='copyright-holder)}"/>
-	  <meta name="citation_licence" content="{concat('Licence',' ',*[local-name()='permissions']/*[local-name()='license'])}"/>
+	  <meta name="conflict" content="{*[local-name()='author-notes']/*[local-name()='fn[@fn-type='conflict']}"/>
+	  <meta name="contribs" content="{*[local-name()='author-notes']/*[local-name()='fn[@fn-type='con']}"/>
+	  <meta name="citation_pubdate" content="{*[local-name()='concat(pub-date[@pub-type='epub']']/*[local-name()='year'],'-',[local-name()='pub-date' and *[@pub-type='epub']]']/*[local-name()='month,'-',pub-date[@pub-type='epub']']/*[local-name()='day'])}"/>
+	  <meta name="citation_copyright" content="{*[local-name()='concat('Copyright',' ',permissions']/*[local-name()='copyright-year,': ',permissions']/*[local-name()='copyright-holder)}"/>
+	  <meta name="citation_licence" content="{*[local-name()='concat('Licence',' ',*[local-name()='permissions']/*[local-name()='license'])}"/>
 	  <meta name="citation_funding" content="{*[local-name()='funding-group']}"/>
 	  <meta name="citation_pagecount" content="{*[local-name()='counts']/*[local-name()='page-count']/*[local-name()='@count']}"/>
 	  <meta name="citation_data" content="{*[local-name()='custom-meta-group']/*[local-name()='custom-meta' and @id='data-availability']}"/>

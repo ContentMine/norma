@@ -34,7 +34,9 @@ import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
+import org.xmlcml.norma.tagger.SectionTagger;
 import org.xmlcml.norma.util.TransformerWrapper;
+import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
 
 public class NormaTransformer {
@@ -50,6 +52,7 @@ public class NormaTransformer {
 
 	public static final String HOCR2SVG = "hocr2svg";
 	public static final String PDF2HTML = "pdf2html";
+	public static final String PDF2SVG = "pdf2svg";
 	public static final String PDF2TXT = "pdf2txt";
 	public static final String PDF2IMAGES = "pdf2images";
 	public static final String TXT2HTML = "txt2html";
@@ -58,6 +61,7 @@ public class NormaTransformer {
 	public static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
 			HOCR2SVG,
 			PDF2HTML,
+			PDF2SVG,
 			PDF2TXT,
 			PDF2IMAGES,
 			TXT2HTML,
@@ -99,7 +103,7 @@ public class NormaTransformer {
 		currentCMDir = normaArgProcessor.getCurrentCMDir();
 		LOG.trace("CM "+currentCMDir);
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
+		LOG.debug("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
@@ -116,14 +120,19 @@ public class NormaTransformer {
 				serialImageList = applyPDF2ImagesToCMLDir();
 			} else if (TXT2HTML.equals(optionValue)) {
 				htmlElement = applyTXT2HTMLToCMDir();
+			} else if (PDF2SVG.equals(optionValue)) {
+				applyPDF2SVGToCMLDir();
 			} else if (PDF2HTML.equals(optionValue)) {
-				applyPDF2TXTToCMLDir();
-				htmlElement = convertToHTML();
+				applyPDF2SVGToCMLDir();
+//				htmlElement = convertToHTML();
 			} else if (TEX2HTML.equals(option.getStringValue())) {
 				xmlStringList = convertTeXToHTML();
 			} else {
 				xmlStringList = applyXSLDocumentListToCurrentCMDir();
 			}
+			// http://grepcode.com/file/repo1.maven.org/maven2/org.apache.pdfbox/pdfbox/1.6.0/org/apache/pdfbox/util/PDFTextStripper.java#PDFTextStripper.getSortByPosition%28%29
+			// GitHub, ASPERA, Galaxy, Asana
+			
 		}
 	}
 
@@ -144,6 +153,17 @@ public class NormaTransformer {
 		}
 		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
 		return svgSvg;
+	}
+
+	private String applyPDF2SVGToCMLDir() {
+		String txt = "NYI";
+		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
+		try {
+			pdfAnalyzer.analyzePDFFile(inputFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return txt;
 	}
 
 	private String applyPDF2TXTToCMLDir() {
@@ -373,6 +393,7 @@ public class NormaTransformer {
 			currentCMDir.writeFile(htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
 		}
 		if (xmlStringList != null && xmlStringList.size() > 0) {
+			tagSections();
 			currentCMDir.writeFile(xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
 		}
 		if (svgElement != null && output != null) {
@@ -402,6 +423,9 @@ public class NormaTransformer {
 				NormaArgProcessor.LOG.error("Cannot process transform token: "+token+"; allowed values: ");
 				NormaTransformer.listTransformOptions();
 			}
+		}
+		if (transformList.size() == 0) {
+			LOG.error("no transforms given/parsed");
 		}
 	}
 
@@ -478,4 +502,15 @@ public class NormaTransformer {
 		ensureXslDocumentList();
 		return xslDocumentList;
 	}
+	
+	private void tagSections() {
+		List<SectionTagger> sectionTaggers = normaArgProcessor.getSectionTaggers();
+		for (SectionTagger sectionTagger : sectionTaggers) {
+			LOG.trace("section tagger:" + sectionTagger);
+			for (String xmlString : xmlStringList) {
+				Element xmlElement = XMLUtil.parseXML(xmlString);
+			}
+		}
+	}
+
 }

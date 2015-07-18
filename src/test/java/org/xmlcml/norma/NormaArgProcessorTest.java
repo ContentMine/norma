@@ -20,8 +20,7 @@ import org.xmlcml.cmine.files.CMDirList;
 public class NormaArgProcessorTest {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(NormaArgProcessorTest.class);
+	private static final Logger LOG = Logger.getLogger(NormaArgProcessorTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -124,7 +123,7 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
 		CMDir cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
-		LOG.trace(files);
+		LOG.debug(cmDir+"; "+files);
 		Assert.assertEquals(5, files.size());
 	}
 	
