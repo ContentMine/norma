@@ -159,6 +159,7 @@ public class NormaTransformer {
 		String txt = "NYI";
 		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
 		try {
+			pdfAnalyzer.setSkipOutput(false);
 			pdfAnalyzer.analyzePDFFile(inputFile);
 		} catch (Exception e) {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);

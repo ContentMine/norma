@@ -1,0 +1,2878 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	article-type="research-article"><?DTDIdentifier.IdentifierValue archivearticle.dtd?><?DTDIdentifier.IdentifierType system?><?SourceDTD.DTDName archivearticle.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?>
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="nlm-ta">Emerg Infect Dis</journal-id>
+			<journal-id journal-id-type="iso-abbrev">Emerging Infect. Dis</journal-id>
+			<journal-id journal-id-type="publisher-id">EID</journal-id>
+			<journal-title-group>
+				<journal-title>Emerging Infectious Diseases</journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">1080-6040</issn>
+			<issn pub-type="epub">1080-6059</issn>
+			<publisher>
+				<publisher-name>Centers for Disease Control and Prevention</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="pmcid">4036788</article-id>
+			<article-id pub-id-type="pmid">24856348</article-id>
+			<article-id pub-id-type="publisher-id">13-1204</article-id>
+			<article-id pub-id-type="doi">10.3201/eid2006.131204</article-id>
+			<article-categories>
+				<subj-group subj-group-type="heading">
+					<subject>Research</subject>
+				</subj-group>
+				<subj-group subj-group-type="article-type">
+					<subject>Research</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>
+					Genetic Evidence of Importation of Drug-Resistant
+					<italic>Plasmodium falciparum</italic>
+					to Guatemala from the Democratic Republic of the Congo
+				</article-title>
+				<alt-title alt-title-type="running-head">Importation of Drug-Resistant
+					Malarial Strain </alt-title>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author" corresp="yes">
+					<name>
+						<surname>Patel</surname>
+						<given-names>Jaymin C.</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Taylor</surname>
+						<given-names>Steve M.</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Juliao</surname>
+						<given-names>Patricia C.</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Parobek</surname>
+						<given-names>Christian M.</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Janko</surname>
+						<given-names>Mark</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Gonzalez</surname>
+						<given-names>Luis Demetrio</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Ortiz</surname>
+						<given-names>Lucia</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Padilla</surname>
+						<given-names>Norma</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Tshefu</surname>
+						<given-names>Antoinette K.</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Emch</surname>
+						<given-names>Michael</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Udhayakumar</surname>
+						<given-names>Venkatachalam</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Lindblade</surname>
+						<given-names>Kim</given-names>
+					</name>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Meshnick</surname>
+						<given-names>Steven R.</given-names>
+					</name>
+				</contrib>
+				<aff id="aff1">University of North Carolina, Chapel Hill, North
+					Carolina, USA (J.C. Patel, S.M. Taylor, C.M. Parobek, M. Janko, M.
+					Emch, S.R. Meshnick); </aff>
+				<aff id="aff2">Centers for Disease Control and Prevention, Atlanta,
+					Georgia, USA (P.C. Juliao, V. Udhayakumar, K. Lindblade); </aff>
+				<aff id="aff3">Military Medical Center, Guatemala City, Guatemala (L.D.
+					Gonzalez); </aff>
+				<aff id="aff4">Universidad de Valle de Guatemala, Guatemala City (L.
+					Ortiz, N. Padilla); </aff>
+				<aff id="aff5">University of Kinshasa, Kinshasa, Democratic Republic of
+					the Congo (A.K. Tshefu)</aff>
+			</contrib-group>
+			<author-notes>
+				<corresp id="cor1">
+					Address for correspondence: Jaymin C. Patel, 135 Dauer Drive, 3206
+					Michael Hooker Research Building, UNC&#x02013;Chapel Hill, Chapel
+					Hill, NC 27599, USA; email:
+					<email xlink:href="jaymin86@email.unc.edu">jaymin86@email.unc.edu</email>
+				</corresp>
+			</author-notes>
+			<pub-date pub-type="ppub">
+				<month>6</month>
+				<year>2014</year>
+			</pub-date>
+			<volume>20</volume>
+			<issue>6</issue>
+			<fpage>932</fpage>
+			<lpage>940</lpage>
+			<abstract abstract-type="toc">
+				<p>Molecular markers and population genetics were effective tracking
+					tools.</p>
+			</abstract>
+			<abstract>
+				<p>
+					Imported malaria threatens control and elimination efforts in
+					countries that have low rates of transmission. In 2010, an outbreak
+					of
+					<italic>Plasmodium falciparum</italic>
+					malaria was reported among United Nations peacekeeping soldiers
+					from Guatemala who had recently returned from the Democratic
+					Republic of the Congo (DRC). Epidemiologic evidence suggested that
+					the soldiers were infected in the DRC, but local transmission could
+					not be ruled out in all cases. We used population genetic analyses
+					of neutral microsatellites to determine the outbreak source.
+					Genetic relatedness was compared among parasites found in samples
+					from the soldiers and parasite populations collected in the DRC and
+					Guatemala; parasites identified in the soldiers were more closely
+					related to those from the DRC. A phylogenetic clustering analysis
+					confirms this identification with &#x0003e;99.9% confidence. Thus,
+					results support the hypothesis that the soldiers likely imported
+					malaria from the DRC. This study demonstrates the utility of
+					molecular genotyping in outbreak investigations.
+				</p>
+			</abstract>
+			<kwd-group kwd-group-type="author">
+				<title>Keywords: </title>
+				<kwd>Malaria</kwd>
+				<kwd>
+					<italic>Plasmodium falciparum</italic>
+				</kwd>
+				<kwd>protozoan</kwd>
+				<kwd>parasite</kwd>
+				<kwd>Anopheles mosquito</kwd>
+				<kwd>microsatellites</kwd>
+				<kwd>molecular genotyping</kwd>
+				<kwd>drug-resistant</kwd>
+				<kwd>chloroquine phosphate</kwd>
+				<kwd>antimalarial</kwd>
+				<kwd>Guatemala</kwd>
+				<kwd>Democratic Republic of the Congo</kwd>
+			</kwd-group>
+		</article-meta>
+	</front>
+	<body>
+		<p>
+			Imported malaria threatens control and elimination efforts in
+			countries that report low malaria transmission rates (
+			<xref rid="R1" ref-type="bibr">
+				<italic>1</italic>
+			</xref>
+			&#x02013;
+			<xref rid="R3" ref-type="bibr">
+				<italic>3</italic>
+			</xref>
+			). In Central America, malaria transmission decreased by &#x0003e;50%
+			during 2000&#x02013;2010 (
+			<xref rid="R4" ref-type="bibr">
+				<italic>4</italic>
+			</xref>
+			); in 2010, the Guatemala Ministerio de Salud P&#x000fa;blica y
+			Asistencia Social reported 31 confirmed cases of malaria, all caused
+			by the species
+			<italic>Plasmodium falciparum</italic>
+			(
+			<xref rid="R5" ref-type="bibr">
+				<italic>5</italic>
+			</xref>
+			). Central America is unusual compared with other areas in which
+			malaria is endemic because chloroquine remains an effective treatment
+			option for
+			<italic>P. falciparum</italic>
+			infection there, but not in other parts of the world (
+			<xref rid="R6" ref-type="bibr">
+				<italic>6</italic>
+			</xref>
+			&#x02013;
+			<xref rid="R8" ref-type="bibr">
+				<italic>8</italic>
+			</xref>
+			); the introduction of parasites harboring chloroquine-resistant
+			genotypes could fuel a resurgence of clinical illness and
+			transmission.
+		</p>
+		<p>
+			In 2010, an outbreak of malaria was reported among 12 soldiers from
+			Guatemala shortly after they returned from a United Nations (UN)
+			peacekeeping mission in the Democratic Republic of the Congo (DRC).
+			Of the 12, 8 also reported visiting
+			<underline>&#x0003e;</underline>
+			1 area in Guatemala in which malaria is endemic when they returned
+			but before the outbreak was identified. An outbreak investigation was
+			undertaken after 1 of the infected soldiers died; laboratory tests of
+			blood from this patient identified choroquine-resistant and
+			-sensitive strains of
+			<italic>P. falciparum</italic>
+			.
+		</p>
+		<p>
+			The epidemiologic evidence suggested that the soldiers were infected
+			while stationed in the DRC (
+			<xref rid="R9" ref-type="bibr">
+				<italic>9</italic>
+			</xref>
+			). Because the local acquisition of chloroquine-resistant parasites
+			in Guatemala could necessitate a change in local treatment practices,
+			it was vital to determine the origin of the soldiers&#x02019;
+			infections.
+		</p>
+		<p>
+			Molecular markers have been used to assess the genetic relatedness of
+			malarial parasites from different geographic regions (
+			<xref rid="R10" ref-type="bibr">
+				<italic>10</italic>
+			</xref>
+			,
+			<xref rid="R11" ref-type="bibr">
+				<italic>11</italic>
+			</xref>
+			). Accordingly, if the soldiers acquired
+			<italic>P. falciparum</italic>
+			in the DRC during their stay, the genotypes of the parasites isolated
+			from the soldiers&#x02019; samples would be more closely related to
+			parasites from the DRC than to parasites from Guatemala. To test this
+			hypothesis, we used molecular methods from the field of population
+			genetics to determine the source of the malaria outbreak among the
+			soldiers who returned to Guatemala after being stationed in the DRC.
+		</p>
+		<sec sec-type="methods">
+			<title>Methods</title>
+			<sec>
+				<title>Study Participants</title>
+				<p>
+					We included
+					<italic>P. falciparum</italic>
+					parasites from 3 distinct populations: 1) soldiers from Guatemala
+					returning from the DRC with malaria; 2) adult residents of the DRC;
+					and 3) residents of Guatemala (adults and children). The initial
+					outbreak investigation in Guatemala received appropriate human
+					subject review by the Universidad del Valle de Guatemala (Guatemala
+					City, Guatemala) and the US Centers for Disease Control and
+					Prevention (Atlanta, GA, USA) and was qualified as public health
+					practice because its purpose was to identify and treat malaria
+					cases among military personnel returning from the DRC. Samples from
+					these soldiers were anonymized, and the investigations reported in
+					this publication were reviewed and approved by the same
+					institutions. Samples from the DRC were obtained during the 2007
+					Demographic Health Survey (DHS), which was approved by the review
+					boards of Macro International (Calverton, MD, USA), the University
+					of Kinshasa School of Public Health (Kinshasa, DRC), and the
+					University of North Carolina (Chapel Hill, NC, USA). Samples
+					collected from a previous malaria surveillance study (conducted
+					during 1998&#x02013;2000) that was originally approved by the
+					Universidad del Valle de Guatemala human subjects review board were
+					used to determine population structure of the parasite population
+					of Guatemala.
+				</p>
+				<p>
+					In August of 2013, Guatemala sent its 13th mission to the DRC since
+					it began sending troops in 2000 (
+					<xref rid="R12" ref-type="bibr">
+						<italic>12</italic>
+					</xref>
+					). In January 2010, 144 soldiers from Guatemala and 6 civilian
+					support staff were deployed to the DRC as part of a United Nations
+					peacekeeping mission. Upon return to Guatemala in October 2010, 12
+					soldiers were found to be infected with
+					<italic>P. falciparum</italic>
+					by using active and passive case detection; the infections were
+					confirmed by using nested PCR. Of the 12 soldiers, 5 reported
+					clinical symptoms and the other 7 were asymptomatic; date of onset
+					of symptoms for the 5 soldiers ranged from October 12, 2010 (5 days
+					before leaving the DRC) to November 7, 2010 (3 weeks after their
+					arrival in Guatemala) (
+					<xref rid="R9" ref-type="bibr">
+						<italic>9</italic>
+					</xref>
+					). The first soldier in whom malaria was diagnosed died and was
+					found to have been infected with parasites that had
+					chloroquine-sensitive and chloroquine-resistant genotypes (
+					<xref rid="R9" ref-type="bibr">
+						<italic>9</italic>
+					</xref>
+					). Samples from all 12 soldiers were included in the analysis
+					reported here.
+				</p>
+				<p>
+					To compare the parasites found in the DRC with those that infected
+					the returning soldiers, we analyzed
+					<italic>P. falciparum</italic>
+					parasites from 74 participants in the national 2007 DRC DHS. The
+					parent study and ancillary studies have been described in detail (
+					<xref rid="R13" ref-type="bibr">
+						<italic>13</italic>
+					</xref>
+					&#x02013;
+					<xref rid="R16" ref-type="bibr">
+						<italic>16</italic>
+					</xref>
+					). For the analysis reported here, we selected 7 clusters, all of
+					which included &#x0003e;10
+					<italic>P. falciparum</italic>
+					&#x02013;positive persons, as part of a study to quantify gene flow
+					in
+					<italic>P. falciparum</italic>
+					strains within the DRC. Three outbreak clusters (81, 88, and 183)
+					were chosen because they were located on or near the Congo River, a
+					principal route of human transportation (
+					<xref rid="R17" ref-type="bibr">
+						<italic>17</italic>
+					</xref>
+					); 2 clusters (164 and 211) were chosen because they were not on
+					the river but were approximately the same distance apart from the 3
+					river sites as the river sites were from each other; and 2 clusters
+					(29 and 203) were chosen because they were far away from the other
+					clusters (Patel et al., unpub data) (
+					<xref ref-type="fig" rid="F1">Figure 1</xref>
+					). We also included 40
+					<italic>P. falciparum</italic>
+					specimens collected from previous surveillance studies conducted in
+					Guatemala during 1998&#x02013;2000 for comparison of genetic
+					profiles of the local parasite population.
+				</p>
+				<fig id="F1" fig-type="figure" position="float">
+					<label>Figure 1</label>
+					<caption>
+						<p>Location of the major cities, rivers, and the 7 Demographic
+							Health Survey clusters (203, 81, 88, 183, 211, 164, and 29)
+							within the Democratic Republic of the Congo (DRC) included in
+							study of malaria outbreak among soldiers from Guatemala who had
+							been stationed in DRC. </p>
+					</caption>
+					<graphic xlink:href="13-1204-F1" />
+				</fig>
+			</sec>
+			<sec>
+				<title>Microsatellite Analysis </title>
+				<p>
+					Genomic DNA (gDNA) from the DRC samples was isolated from dried
+					blood spots as described (
+					<xref rid="R13" ref-type="bibr">
+						<italic>13</italic>
+					</xref>
+					). We used the QIAamp DNA Mini Kit (QIAGEN, Valencia, CA, USA)
+					according to the manufacturer&#x02019;s recommendations to extract
+					gDNA from the soldiers and from samples from persons who were
+					indigenous to Guatemala. All samples were sealed securely and
+					stored at &#x02212;20&#x000b0;C.
+				</p>
+				<p>
+					Eight neutral microsatellites were selected on chromosomes 2
+					(C2M33, C2M34, C2M29, C2M27) and 3 (C3M40, C3M88, C3M39, and C3M69)
+					to assess whether the parasites identified in the soldiers were
+					related to those found in the DRC. PCR primer sequences and cycling
+					conditions for samples from the soldiers and other persons in
+					Guatemala were adapted from earlier studies (
+					<xref rid="R18" ref-type="bibr">
+						<italic>18</italic>
+					</xref>
+					). For the samples from the DRC, a slightly different PCR technique
+					was used. Specimens were initially amplified in single-round PCR
+					protocols similar to those for samples from the soldiers and from
+					persons in Guatemala; for those that failed to return PCR products,
+					we used a heminested strategy wherein a newly designed additional
+					external primer was used in a primary amplification, and then
+					performed the standard round of amplification (
+					<xref rid="R19" ref-type="bibr">
+						<italic>19</italic>
+					</xref>
+					,
+					<xref rid="R20" ref-type="bibr">
+						<italic>20</italic>
+					</xref>
+					). Primer sequences are provided in the
+					<xref ref-type="table" rid="T1">Table</xref>
+					; their PCR cycling parameters have been described elsewhere (
+					<xref rid="R18" ref-type="bibr">
+						<italic>18</italic>
+					</xref>
+					,
+					<xref rid="R21" ref-type="bibr">
+						<italic>21</italic>
+					</xref>
+					). All PCR products were separated by capillary electrophoresis by
+					using an Applied Biosystems 3130xl genetic analyzer (Applied
+					Biosystems, Foster City, CA). The alleles were scored by using
+					GeneMapper software, version 3.7 (Applied Biosystems). Alleles were
+					binned to the nearest 2 or 3 nucleotides in length depending on the
+					size of the repeat unit. To distinguish alleles from background
+					noise in multiple infections, we recorded peaks if they were
+					&#x0003e;1/3 of the maximum peak level and exceeded 100
+					fluorescence units.
+				</p>
+				<table-wrap id="T1" position="float">
+					<label>Table</label>
+					<caption>
+						<title>
+							Neutral microsatellite loci and primer sequences used for PCR
+							amplification of
+							<italic>Plasmodium</italic>
+							f
+							<italic>alciparum</italic>
+							malaria genes to identify origin of drug-resistant genotype,
+							Guatemala
+						</title>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<col width="43" span="1" />
+						<col width="73" span="1" />
+						<col width="74" span="1" />
+						<col width="166" span="1" />
+						<col width="33" span="1" />
+						<col width="91" span="1" />
+						<tbody>
+							<tr>
+								<td valign="bottom" align="left" scope="row" rowspan="1"
+									colspan="1">
+									Locus name
+									<hr />
+								</td>
+								<td valign="bottom" align="center" rowspan="1" colspan="1">
+									Chromosome
+									<hr />
+								</td>
+								<td valign="bottom" align="center" rowspan="1" colspan="1">
+									Primer
+									<hr />
+								</td>
+								<td valign="bottom" align="center" rowspan="1" colspan="1">
+									Primer sequence (5&#x02032;&#x02192;3&#x02032;)
+									<hr />
+								</td>
+								<td valign="bottom" align="center" rowspan="1" colspan="1">
+									Tag
+									<hr />
+								</td>
+								<td valign="bottom" align="center" rowspan="1" colspan="1">
+									Expected product size, bp
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C2M33</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">2</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">CATTGCAAAATATATATTCTCC</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">FAM</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">193</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">GTGATTTGTACAATGTACATA</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									ATTGCGTAAATAACACATCTGCA
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C3M88*</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">3</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">CAAAAATGAAAAATGAAAAGG</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">HEX</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">150</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">TAAAGGGTGCGCATATCAAT</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									GTTATTCAAAAAGGACGAAACAAG
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C3M69</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">3</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">AATAGGAACAAATCATATTG</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">HEX</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">173</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">AGATATCCAGGTAATAAAAAG</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									TTTATGAACACCCTCATGTCACT
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C2M29</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">2</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">GTGAATAACGGAAAAGGATA</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">FAM</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">141</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">AAGATCAAATACCAGGTGA</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									TTAAGAAACAATCAGAAGCGATG
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C2M27</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">2</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">CTTTTAATCACTACCATGTTG</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">HEX</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">117</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">ATAATTTAATTGAGGATACCT</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									TTGTATGTATCACTTTTTCATTAC
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C3M40</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">3</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">GGGTAAAGAAAAACACACAAA</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">FAM</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">128</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">AATGTGTATATTACTAGAAGC</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									TCCGAATATGGAATGTCGAAAG
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C3M39</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">3</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">CAAGAAGATAGGGATGATAAC</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">FAM</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">159</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">TATTAATTGGTCTTCACCCG</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									Heminested
+									<hr />
+								</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">
+									GGAGGAACGTAAAGAAGATATTG
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+								<td valign="top" align="left" rowspan="1" colspan="1">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1">C2M34</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">2</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">Forward</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">TCCCTTTTAAAATAGAAGAAA</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">FAM</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">260</td>
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Reverse</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">GATTATATGAAAGGATACATG</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+							<tr>
+								<td valign="top" align="left" scope="row" rowspan="1"
+									colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="center" rowspan="1" colspan="1">Heminested</td>
+								<td valign="top" align="center" rowspan="1" colspan="1">TTCACTTTGTAAATTAGAACATATC</td>
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+								<td valign="top" align="left" rowspan="1" colspan="1" />
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<p>
+							<bold>*</bold>
+							Censored locus caused by poor amplification success.
+						</p>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec>
+				<title>Data Analyses </title>
+				<p>
+					To determine the source of the parasites found in the soldiers, we
+					treated them as a discrete population and calculated the
+					relatedness (&#x003b2;-diversity) between this parasite population
+					and those identified in persons in the DRC and Guatemala. Genetic
+					relatedness between the 3 populations was calculated by using the
+					Nei standard genetic distance (
+					<italic>
+						G
+						<sub>ST</sub>
+					</italic>
+					) and the Slatkin
+					<italic>
+						R
+						<sub>ST</sub>
+					</italic>
+					(
+					<xref rid="R22" ref-type="bibr">
+						<italic>22</italic>
+					</xref>
+					).
+					<italic>
+						G
+						<sub>ST</sub>
+					</italic>
+					is based on the infinite alleles model, which assumes that genetic
+					differences arise through mutations and genetic drift, and was
+					calculated in GenAlEx v6.4 (
+					<xref rid="R23" ref-type="bibr">
+						<italic>23</italic>
+					</xref>
+					) by using the following formula
+				</p>
+				<p>
+					in which
+					<italic>
+						p
+						<sub>ix</sub>
+					</italic>
+					and
+					<italic>
+						p
+						<sub>iy</sub>
+					</italic>
+					are the frequencies of the
+					<italic>i</italic>
+					th allele in populations x and y. Slatkin
+					<italic>
+						R
+						<sub>ST</sub>
+					</italic>
+					assumes that microsatellites evolve according to the stepwise
+					mutation model in which novel alleles are created either by
+					deletion or addition of a single repeated unit of microsatellite
+					that has equal probability &#x000b5;/2 in both directions (
+					<xref rid="R22" ref-type="bibr">
+						<italic>22</italic>
+					</xref>
+					).
+					<italic>
+						R
+						<sub>ST</sub>
+					</italic>
+					was calculated in SPAGeDi v1.3 (
+					<xref rid="R24" ref-type="bibr">
+						<italic>24</italic>
+					</xref>
+					) by using the following formula
+				</p>
+				<p>
+					in which
+					<italic>S</italic>
+					is the average squared difference in allele size between all pairs
+					of alleles and
+					<italic>Sw</italic>
+					is the average sum of squares of the differences in allele size
+					within each subpopulation. Pairwise
+					<italic>
+						R
+						<sub>ST</sub>
+					</italic>
+					comparisons were calculated by using ANOVA (a nested analysis of
+					variance approach). Principal coordinate analysis was performed to
+					quantify the variation between the parasite populations from the
+					soldiers and persons in the DRC and Guatemala by using results of
+					the pairwise
+					<italic>
+						R
+						<sub>ST</sub>
+					</italic>
+					comparisons. Principal coordinate analysis plots were generated by
+					using GenAlEx v6.4 (
+					<xref rid="R23" ref-type="bibr">
+						<italic>23</italic>
+					</xref>
+					). We tested for associations between the neutral microsatellite
+					markers on chromosomes 2 and 3 by using an exact test of linkage
+					disequilibrium that had 10,000 Monte Carlo steps in Arlequin
+					version 3.1 (
+					<xref rid="R25" ref-type="bibr">
+						<italic>25</italic>
+					</xref>
+					). After applying Bonferroni correction for multiple comparisons,
+					we examined p values for significance.
+				</p>
+				<p>
+					Because we were studying parasite populations and not hosts, each
+					individual host could contribute
+					<underline>&#x0003e;</underline>
+					1 parasite variant to the population. Since the indices above are
+					calculated locus by locus, haplotype construction was unnecessary.
+					However, because haplotypes are required for entering data into
+					GenAlEx and SPAGeDi, we created &#x0201c;virtual&#x0201d;
+					haplotypes for mixed genotypes. If
+					<underline>&#x0003e;</underline>
+					2 alleles were detected on 1 locus, distinct haplotypes were
+					created that differed from each other only at the locus with
+					multiple alleles. If multiple loci contained 2 alleles, 2 distinct
+					haplotypes were created; alleles were randomly assorted for each
+					locus. The same was done if multiple loci contained 3 alleles. If
+					<underline>&#x0003e;</underline>
+					1 loci had 2 alleles and
+					<underline>&#x0003e;</underline>
+					1 loci had 3 alleles, we created 2 full haplotypes using random
+					assortment as above and a third haplotype that was missing data on
+					loci that had 2 alleles. To assess whether the arrangement of these
+					virtual haplotypes affected the analyses, we recalculated all
+					indices of genetic relatedness using a different assortment of
+					virtual haplotypes.
+				</p>
+				<p>
+					In addition to these analyses, to investigate the geographic
+					clustering of the parasite populations, we calculated genetic
+					distances and created a neighbor-joining phylogenetic tree (
+					<xref rid="R26" ref-type="bibr">
+						<italic>26</italic>
+					</xref>
+					) based on the Cavalli-Sforza and Edwards chord distance model (
+					<xref rid="R27" ref-type="bibr">
+						<italic>27</italic>
+					</xref>
+					) in Populations v.1.2.31 (
+					<xref rid="R28" ref-type="bibr">
+						<italic>28</italic>
+					</xref>
+					) and visualized it in the
+					<italic>ape</italic>
+					package for R (
+					<xref rid="R29" ref-type="bibr">
+						<italic>29</italic>
+					</xref>
+					). Further, we used Fast UniFrac, which is a frequently used
+					measure of genetic differentiation between pathogen populations, to
+					group the parasite populations with precision derived from
+					permutation (
+					<xref rid="R30" ref-type="bibr">
+						<italic>30</italic>
+					</xref>
+					). To determine whether the observed population splits were caused
+					by chance alone, we used 1,000 permutations. For these analyses, we
+					used isolates for which the majority (&#x0003e;50%) of the
+					microsatellite markers were characterized.
+				</p>
+			</sec>
+		</sec>
+		<sec sec-type="results">
+			<title>Results</title>
+			<p>Initially, 8 microsatellite loci were characterized by capillary
+				electrophoresis. One locus was censored in all analyses because of
+				poor amplification success (&#x0003c;50%). For the remaining 7 loci,
+				71%&#x02013;85% of the samples were successfully amplified. Seven
+				infected soldiers and 8 infected persons from the DRC were excluded
+				from further analyses because we were unable to amplify the majority
+				of the microsatellites in specimens collected from them. Final
+				analysis was conducted on samples from 5 infected soldiers, 74
+				infected persons from the DRC, and 40 infected persons from
+				Guatemala.</p>
+			<p>
+				Similar to the organisms causing infections documented in persons in
+				the DRC, most of the organisms associated with the soldiers&#x02019;
+				infections contained polyclonal antibodies. Of the remaining 5
+				infected soldiers, samples from 3 (60%) contained
+				<underline>&#x0003e;</underline>
+				1 locus that had 3 genetically distinct alleles. This is similar to
+				the distribution in the DRC, where strains from 47.3% (n = 35) of
+				the subjects had
+				<underline>&#x0003e;</underline>
+				2 alleles in
+				<underline>&#x0003e;</underline>
+				1 locus. All the samples from persons living in Guatemala contained
+				a single genotype. No significant linkage disequilibrium was
+				observed between the neutral microsatellite markers used in all 3
+				study populations (data not shown).
+			</p>
+			<p>
+				To identify the source of the infections, we measured the genetic
+				relatedness between parasite populations obtained from the soldiers,
+				from the DRC residents, and from residents of Guatemala. Pairwise
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				/(1&#x02013;
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				) and
+				<italic>
+					G
+					<sub>ST</sub>
+				</italic>
+				comparisons were calculated; values of &#x02264;0 signify virtual
+				identity whereas increasing values signify increasing divergence.
+				Overall, parasites in samples from the soldiers were much more
+				closely related to the parasites from the DRC ((
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				/(1 &#x02013;
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				) = 0.204 and
+				<italic>
+					G
+					<sub>ST</sub>
+				</italic>
+				= 0.278) than to parasites from Guatemala ((
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				/(1 &#x02013;
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				) = 2.138 and
+				<italic>
+					G
+					<sub>ST</sub>
+				</italic>
+				= 2.028) (
+				<xref ref-type="fig" rid="F2">Figure 2</xref>
+				). Both metrics (
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				and
+				<italic>
+					G
+					<sub>ST</sub>
+				</italic>
+				) indicated that parasites identified in the soldiers were more
+				closely related to those found in the DRC than in those from
+				Guatemala. However, pairwise
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				may be more appropriate because of the high mutation rates in
+				microsatellites (
+				<xref rid="R19" ref-type="bibr">
+					<italic>19</italic>
+				</xref>
+				,
+				<xref rid="R22" ref-type="bibr">
+					<italic>22</italic>
+				</xref>
+				). When we used a different assortment of virtual haplotypes,
+				genetic relatedness between the different parasite populations
+				remained the same (data not shown).
+			</p>
+			<fig id="F2" fig-type="figure" position="float">
+				<label>Figure 2</label>
+				<caption>
+					<p>
+						Genetic relatedness (pairwise
+						<italic>
+							R
+							<sub>ST</sub>
+						</italic>
+						comparisons) among
+						<italic>Plasmodium falciparum</italic>
+						identified in samples from the soldiers from Guatemala, persons in
+						the Democratic Republic of the Congo, and persons in Guatemala.
+					</p>
+				</caption>
+				<graphic xlink:href="13-1204-F2" />
+			</fig>
+			<p>
+				The phylogenetic analyses also revealed a stark clustering effect
+				between the 3 parasite populations. Visual inspection of the
+				neighbor-joining tree (
+				<xref ref-type="fig" rid="F3">Figure 3</xref>
+				) showed that the parasites found in the soldiers were part of the
+				parasite population from the DRC and the parasites found in
+				Guatemala were distinct from the other 2 populations. The ecologic
+				clustering algorithm, after 1,000 jackknife permutations, also
+				clustered the parasites from the soldiers with the parasite
+				population in the DRC while they remained distinct from the
+				parasites from Guatemala (
+				<xref ref-type="fig" rid="F4">Figure 4</xref>
+				). The predicted differences between the parasites from Guatemala
+				and those from the DRC and soldiers returning to Guatemala were
+				statistically significant (&#x0003e;99.9% confidence).
+			</p>
+			<fig id="F3" fig-type="figure" position="float">
+				<label>Figure 3</label>
+				<caption>
+					<p>
+						Neighbor-joining tree of 3
+						<italic>Plasmodium falciparum</italic>
+						populations. Prefixes of genomes indicate parasite origins: Green
+						text indicates parasite populations from the Democratic Republic
+						of the Congo (DRC); orange indicates parasite populations detected
+						in soldiers who were returning from the DRC to Guatemala; red
+						indicates parasite populations from Guatemala.
+					</p>
+				</caption>
+				<graphic xlink:href="13-1204-F3" />
+			</fig>
+			<fig id="F4" fig-type="figure" position="float">
+				<label>Figure 4</label>
+				<caption>
+					<p>
+						Phylogenetic tree showing predicted clustering between
+						<italic>Plasmodium falciparum</italic>
+						populations from the Democratic Republic of Congo (DRC), soldiers
+						returning to Guatemala from the DRC, and Guatemala. The predicted
+						split between parasites identified in samples taken in Guatemala
+						and parasites from DRC among soldiers was significant (95% CI
+						&#x0003e;99.9%) (black bar); the predicted split between parasites
+						from DRC and returning soldiers was not significant (95% CI
+						50%&#x02013;70%) (white bar). Computed by using Fast UniFrac (
+						<xref rid="R30" ref-type="bibr">
+							<italic>30</italic>
+						</xref>
+						) with jacknifing and 1,000 permutations.
+					</p>
+				</caption>
+				<graphic xlink:href="13-1204-F4" />
+			</fig>
+			<p>
+				We further attempted to examine the genetic relatedness of
+				parasites, comparing those from each DRC cluster, the soldiers, and
+				Guatemala. We observed that the parasites identified in samples from
+				soldiers were more closely related to every selected DHS cluster
+				within the DRC than to parasites from the samples from persons
+				living in Guatemala (
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				/(1 &#x02013;
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				) range = 0.065&#x02013;0.202) (data not shown).
+			</p>
+		</sec>
+		<sec sec-type="discussion">
+			<title>Discussion</title>
+			<p>
+				Molecular tools have become valuable in tracking the source of
+				infectious agents in outbreak investigations (
+				<xref rid="R31" ref-type="bibr">
+					<italic>31</italic>
+				</xref>
+				,
+				<xref rid="R32" ref-type="bibr">
+					<italic>32</italic>
+				</xref>
+				). This study, which was based on the use of population genetic
+				analyses of microsatellite data, supports previous epidemiologic
+				findings that an outbreak of
+				<italic>P. falciparum</italic>
+				malaria in soldiers from Guatemala, who returned after their
+				peacekeeping mission in the DRC in 2010, was caused by an imported
+				parasite population from the DRC (
+				<xref rid="R9" ref-type="bibr">
+					<italic>9</italic>
+				</xref>
+				). This study further validates the use of molecular epidemiologic
+				tools in malaria outbreak investigations.
+			</p>
+			<p>
+				Genetic relatedness among 3 parasite populations was first assessed
+				by pairwise
+				<italic>
+					R
+					<sub>ST</sub>
+				</italic>
+				and G
+				<sub>ST</sub>
+				. Parasites from the soldiers were more closely related to those
+				from the DRC than those from Guatemala (
+				<xref ref-type="fig" rid="F2">Figure 2</xref>
+				). These results were corroborated by neighbor-joining phylogenetic
+				analyses and by Fast UniFrac, which showed with &#x0003e;99.9%
+				confidence that the parasites from the soldiers were part of the
+				parasite population from the DRC and distinct from the native
+				parasites from Guatemala (
+				<xref ref-type="fig" rid="F3">Figures 3</xref>
+				,
+				<xref ref-type="fig" rid="F4">4</xref>
+				). An alternate hypothesis is that there was a prior introduction of
+				DRC parasites into Guatemala; support for this hypothesis is provide
+				by our neighbor-joining phylogenetic tree, which includes a subset
+				of DRC isolates that clustered with the parasites from Guatemala (
+				<xref ref-type="fig" rid="F3">Figure 3</xref>
+				), and that finding suggests that the soldiers were infected after
+				returning to Guatemala. However, this subset of DRC parasites was
+				substantially different from the dominant clones in circulation in
+				Guatemala, and the ecologic clustering algorithm consistently
+				clustered parasites separately (
+				<xref ref-type="fig" rid="F3">Figures 3</xref>
+				,
+				<xref ref-type="fig" rid="F4">4</xref>
+				). Additionally, given the high degree of heterogeneity within DRC
+				parasites, it is reasonable to expect some overlap between a subset
+				of parasites from the DRC and other parasite populations. Overall,
+				the results from the molecular analyses, as well as the
+				epidemiologic investigation (
+				<xref rid="R9" ref-type="bibr">
+					<italic>9</italic>
+				</xref>
+				) indicate that the source of the parasites among the soldiers from
+				Guatemala was most likely the DRC. The results support the clinical
+				information obtained from the soldiers. None of the soldiers adhered
+				to malaria prophylaxis or used insecticide-treated bed nets as
+				recommended during their time in the DRC. Lack of adherence to
+				preventive measures has been identified as a risk factor for malaria
+				infection among travelers to malaria-endemic countries (
+				<xref rid="R33" ref-type="bibr">
+					<italic>33</italic>
+				</xref>
+				). Further, the results are consistent with the travel history of
+				the soldiers and the hypothesis from the epidemiologic investigation
+				that the soldiers acquired malaria while traveling through the
+				northern DRC and that the source of the outbreak was in the DRC and
+				not in Guatemala (
+				<xref rid="R9" ref-type="bibr">
+					<italic>9</italic>
+				</xref>
+				).
+			</p>
+			<p>
+				Countries in Central America are experiencing low levels of malaria
+				incidence, and several of them are taking steps toward its
+				elimination (
+				<xref rid="R4" ref-type="bibr">
+					<italic>4</italic>
+				</xref>
+				,
+				<xref rid="R34" ref-type="bibr">
+					<italic>34</italic>
+				</xref>
+				). In June 2013, the Council of Health Ministers from Central
+				America and the Dominican Republic called for malaria elimination in
+				the region by 2020 (
+				<xref rid="R35" ref-type="bibr">
+					<italic>35</italic>
+				</xref>
+				). Although chloroquine-resistant
+				<italic>P. falciparum</italic>
+				strains are widespread, Central America is one of the few regions in
+				the world where chloroquine remains an effective treatment option
+				for locally acquired malaria (
+				<xref rid="R6" ref-type="bibr">
+					<italic>6</italic>
+				</xref>
+				&#x02013;
+				<xref rid="R8" ref-type="bibr">
+					<italic>8</italic>
+				</xref>
+				). Importation of chloroquine-resistant strains could lead to
+				increased malaria-related illness and deaths, even though the local
+				<italic>Anopheles</italic>
+				spp. vector population may be refractory to foreign
+				<italic>Plasmodium</italic>
+				strains (
+				<xref rid="R36" ref-type="bibr">
+					<italic>36</italic>
+				</xref>
+				,
+				<xref rid="R37" ref-type="bibr">
+					<italic>37</italic>
+				</xref>
+				). Of the 12 soldiers who died after returning from the peacekeeping
+				mission, 1 was found to have been infected with parasites of the
+				<italic>P. falciparum</italic>
+				chloroquine-resistance transporter (
+				<italic>pfcrt</italic>
+				) genotype CVIET, but it was not clear whether this patient acquired
+				resistant parasites from the DRC or locally (
+				<xref rid="R9" ref-type="bibr">
+					<italic>9</italic>
+				</xref>
+				). It is unlikely that the patient acquired chloroquine-resistant
+				parasites locally because these parasites are absent in Central
+				America (
+				<xref rid="R7" ref-type="bibr">
+					<italic>7</italic>
+				</xref>
+				,
+				<xref rid="R8" ref-type="bibr">
+					<italic>8</italic>
+				</xref>
+				).
+			</p>
+			<p>
+				If chloroquine-resistant strains circulated in Guatemala,
+				chloroquine drug pressure would positively select them and
+				ultimately render chloroquine ineffective. Conversely, chloroquine
+				resistance has been widespread in the DRC since at least 2002, which
+				is supported by the report that the hallmark K76T mutation has been
+				found in 93% of Congolese specimens (
+				<xref rid="R38" ref-type="bibr">
+					<italic>38</italic>
+				</xref>
+				). The current data provide evidence that this soldier acquired
+				chloroquine-resistant
+				<italic>P. falciparum</italic>
+				in the DRC. Indeed, the microsatellite data suggested that this
+				soldier had multiple strains. Given increasing globalization,
+				international travel, and high frequency of military peacekeeping
+				missions from Central America to Africa, persons returning from a
+				malaria-endemic country who have malarial symptoms should be
+				suspected of harboring chloroquine-resistant strains. These
+				circumstances also provide impetus for countries such as Guatemala
+				to make artemisinin-based combination therapies and other
+				appropriate treatment available to treat imported
+				multidrug-resistant malaria cases.
+			</p>
+			<p>
+				This study had several limitations. First, we included samples from
+				only 7 DHS clusters. Including more clusters, especially those near
+				Bunia, Isiro, and Dungo, which the soldiers reported having traveled
+				through, would have helped in triangulating the source of infection
+				with a higher resolution. Also, the local samples collected in
+				Guatemala included in the study were collected during different
+				years (1998&#x02013;2000) from the outbreak. Because of the low
+				number of malaria cases reported annually in Guatemala (31 total
+				cases reported in 2010), it was not feasible to include samples from
+				persons in Guatemala that were collected closer to the time of the
+				outbreak. Further, of the 12 patients identified during the outbreak
+				investigation, we were able to successfully characterize
+				microsatellite profiles for
+				<italic>P. falciparum</italic>
+				parasites in only 5 patients who had microscopically detectable
+				parasitemia levels. Microsatellites could not be amplified in
+				samples obtained from any of the 7 patients who had asymptomatic
+				<italic>P. falciparum</italic>
+				infection. A possible explanation for this failure could be the
+				potential degradation of gDNA between the time of extraction and
+				time at which the microsatellite markers were characterized.
+				However, the results of the study were likely unaffected as shown by
+				the stark similarity between parasites from the soldiers and persons
+				in the DRC and substantial divergence between parasites from the
+				soldiers and persons in Guatemala.
+			</p>
+			<p>
+				Molecular epidemiology and population genetic tools have been used
+				successfully to identify geographic areas where outbreaks of
+				poliomyelitis originate, leading to focused intensification of
+				public health efforts to reduce polio-related illness and future
+				outbreaks (
+				<xref rid="R39" ref-type="bibr">
+					<italic>39</italic>
+				</xref>
+				,
+				<xref rid="R40" ref-type="bibr">
+					<italic>40</italic>
+				</xref>
+				). Here we have demonstrated the use of molecular tools to
+				conclusively identify the source of a parasite population during an
+				outbreak investigation. Because of the extreme minimal diversity of
+				the parasites from Guatemala, we were able to triangulate the source
+				of the outbreak with high statistical significance. However, if each
+				of the 3 parasite populations were as highly diverse as those in the
+				DRC, we would require a greater number of samples and would use
+				other genotyping methods which characterize parasite subpopulations
+				on a finer scale, such as next-generation deep-sequencing methods to
+				sequence polymorphic targets or whole genomes. There is also a clear
+				need for capacity strengthening of sample collection, storage, and
+				extraction techniques to support genotyping in countries that report
+				low malaria transmission rates. These molecular tools could help
+				strengthen existing surveillance efforts to prevent future outbreaks
+				and the reintroduction of malaria in countries working toward
+				malaria elimination.
+			</p>
+		</sec>
+	</body>
+	<back>
+		<fn-group>
+			<fn fn-type="citation">
+				<p>
+					<italic>Suggested citation for this article</italic>
+					: Patel JC, Taylor SM, Juliao PC, Parobek CM, Janko M, Gonzalez LD,
+					et al. Genetic evidence of importation of drug-resistant
+					<italic>Plasmodium falciparum</italic>
+					to Guatemala from the Democratic Republic of the Congo. Emerg
+					Infect Dis. 2014 Jun [
+					<italic>date cited</italic>
+					].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3201/eid2006.131204">http://dx.doi.org/10.3201/eid2006.131204</ext-link>
+				</p>
+			</fn>
+		</fn-group>
+		<ack>
+			<title>Acknowledgments</title>
+			<p>We thank Silvia Sosa for help in obtaining samples from Guatemala.
+				We also thank Fabiola Enriquez, Mario Roberto Perez Franco, Harold
+				Garcia Sergio Fernando, Nitsch Montiel, and Mario Luis Ovalle
+				Figuero for their help in obtaining samples from the soldiers.</p>
+			<p>This work was supported by a Gillings Innovation Laboratory award
+				from the UNC Gillings School of Global Public Health and by grants
+				from the National Institutes of Health (NIH) (NIAID 1R56AI097609-01)
+				and National Science Foundation (NSF) (BSC-13339949). </p>
+		</ack>
+		<bio id="d35e1129">
+			<p>Mr Patel is a doctoral student in epidemiology at the University
+				of North Carolina at Chapel Hill. His primary research interests
+				include the use of molecular markers to study the geographic and
+				temporal spread of malaria and the development of field appropriate
+				molecular diagnostic tools for malaria.</p>
+		</bio>
+		<ref-list>
+			<title>References:</title>
+			<ref id="R1">
+				<label>1. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Feachem</surname>
+						<given-names>RG</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Phillips</surname>
+						<given-names>AA</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Hwang</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Cotter</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Wielgosz</surname>
+						<given-names>B</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Greenwood</surname>
+						<given-names>BM</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Shrinking the malaria map: progress and prospects.</article-title>
+					<source>Lancet</source>
+					.
+					<year>2010</year>
+					;
+					<volume>376</volume>
+					:
+					<fpage>1566</fpage>
+					&#x02013;
+					<lpage>78</lpage>
+					<pub-id pub-id-type="doi">10.1016/S0140-6736(10)61270-6</pub-id><?supplied-pmid 21035842?>
+					<pub-id pub-id-type="pmid">21035842</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R2">
+				<label>2. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Martens</surname>
+						<given-names>P</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Hall</surname>
+						<given-names>L</given-names>
+					</string-name>
+					.
+					<article-title>Malaria on the move: human population movement and
+						malaria transmission.</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2000</year>
+					;
+					<volume>6</volume>
+					:
+					<fpage>103</fpage>
+					&#x02013;
+					<lpage>9</lpage>
+					<pub-id pub-id-type="doi">10.3201/eid0602.000202</pub-id><?supplied-pmid 10756143?>
+					<pub-id pub-id-type="pmid">10756143</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R3">
+				<label>3. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Tatem</surname>
+						<given-names>AJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Smith</surname>
+						<given-names>DL</given-names>
+					</string-name>
+					.
+					<article-title>
+						International population movements and regional
+						<italic>Plasmodium falciparum</italic>
+						malaria elimination strategies.
+					</article-title>
+					<source>Proc Natl Acad Sci U S A</source>
+					.
+					<year>2010</year>
+					;
+					<volume>107</volume>
+					:
+					<fpage>12222</fpage>
+					&#x02013;
+					<lpage>7</lpage>
+					<pub-id pub-id-type="doi">10.1073/pnas.1002971107</pub-id><?supplied-pmid 20566870?>
+					<pub-id pub-id-type="pmid">20566870</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R4">
+				<label>4. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>World Health Organization</collab>
+					. World malaria report 2011. Geneva: The Organization;
+					<year>2011</year>
+					[cited 2014 Mar 28].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.who.int/malaria/world_malaria_report_2011/en/">http://www.who.int/malaria/world_malaria_report_2011/en/</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R5">
+				<label>5. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>National Center for Epidemiology, Ministry of Public Health
+						and Social Assistance</collab>
+					. 2010 Vital statistics, Guatemala [in Spanish]
+					<year>2010</year>
+					[cited 2014 Mar 27]. Ciudad de Guatemala: The Ministry.
+					<ext-link ext-link-type="uri"
+						xlink:href="http://epidemiologia.mspas.gob.gt/vigepi/2010/MEMORIA%20REPUBLICA%20DE%20GUATEMALA%202010.pdf">http://epidemiologia.mspas.gob.gt/vigepi/2010/MEMORIA%20REPUBLICA%20DE%20GUATEMALA%202010.pdf</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R6">
+				<label>6. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>World Health Organization</collab>
+					. Guidelines for the treatment of malaria, 2nd ed. Geneva: The
+					Organization;
+					<year>2010</year>
+					[modified 2011 June 8, cited 2014 Mar 28].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://whqlibdoc.who.int/publications/2010/9789241547925_eng.pdf?ua=1">http://whqlibdoc.who.int/publications/2010/9789241547925_eng.pdf?ua=1</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R7">
+				<label>7. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>World Health Organization</collab>
+					. Global report on antimalarial efficacy and drug resistance:
+					2000&#x02013;2010. Geneva: The Organization;
+					<year>2010</year>
+					[cited 2014 Mar 28].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://whqlibdoc.who.int/publications/2010/9789241500470_eng.pdf">http://whqlibdoc.who.int/publications/2010/9789241500470_eng.pdf</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R8">
+				<label>8. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Mejia Torres</surname>
+						<given-names>RE</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Banegas</surname>
+						<given-names>EI</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mendoza</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Diaz</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Bucheli</surname>
+						<given-names>STM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Fontecha</surname>
+						<given-names>GA</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>
+						Efficacy of chloroquine for the treatment of uncomplicated
+						<italic>Plasmodium falciparum</italic>
+						malaria in Honduras.
+					</article-title>
+					<source>Am J Trop Med Hyg</source>
+					.
+					<year>2013</year>
+					;
+					<volume>88</volume>
+					:
+					<fpage>850</fpage>
+					&#x02013;
+					<lpage>4</lpage>
+					<pub-id pub-id-type="doi">10.4269/ajtmh.12-0671</pub-id><?supplied-pmid 23458957?>
+					<pub-id pub-id-type="pmid">23458957</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R9">
+				<label>9. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Juliao</surname>
+						<given-names>PC</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Sosa</surname>
+						<given-names>S</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Gonzalez</surname>
+						<given-names>LD</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Padilla</surname>
+						<given-names>N</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Ortiz</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Goldman</surname>
+						<given-names>I</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>
+						Importation of chloroquine-resistant
+						<italic>Plasmodium falciparum</italic>
+						by Guatemalan peacekeepers returning from the Democratic Republic
+						of the Congo.
+					</article-title>
+					<source>Malar J</source>
+					.
+					<year>2013</year>
+					;
+					<volume>12</volume>
+					:
+					<fpage>344</fpage>
+					<pub-id pub-id-type="doi">10.1186/1475-2875-12-344</pub-id><?supplied-pmid 24060234?>
+					<pub-id pub-id-type="pmid">24060234</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R10">
+				<label>10. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Rebaudet</surname>
+						<given-names>S</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Bogreau</surname>
+						<given-names>H</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Silai</surname>
+						<given-names>R</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Lepere</surname>
+						<given-names>JF</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Bertaux</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Pradines</surname>
+						<given-names>B</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>
+						Genetic structure of
+						<italic>Plasmodium falciparum</italic>
+						and elimination of malaria, Comoros archipelago.
+					</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2010</year>
+					;
+					<volume>16</volume>
+					:
+					<fpage>1686</fpage>
+					&#x02013;
+					<lpage>94</lpage>
+					<pub-id pub-id-type="doi">10.3201/eid1611.100694</pub-id><?supplied-pmid 21029525?>
+					<pub-id pub-id-type="pmid">21029525</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R11">
+				<label>11. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Schultz</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Wapling</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mueller</surname>
+						<given-names>I</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Ntsuke</surname>
+						<given-names>PO</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Senn</surname>
+						<given-names>N</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Nale</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>
+						Multilocus haplotypes reveal variable levels of diversity and
+						population structure of
+						<italic>Plasmodium falciparum</italic>
+						in Papua New Guinea, a region of intense perennial transmission.
+					</article-title>
+					<source>Malar J</source>
+					.
+					<year>2010</year>
+					;
+					<volume>9</volume>
+					:
+					<fpage>336</fpage>
+					<pub-id pub-id-type="doi">10.1186/1475-2875-9-336</pub-id><?supplied-pmid 21092231?>
+					<pub-id pub-id-type="pmid">21092231</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R12">
+				<label>12. </label>
+				<mixed-citation publication-type="webpage">
+					<string-name>
+						<surname>Chwalisz</surname>
+						<given-names>N</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Kinosian</surname>
+						<given-names>S</given-names>
+					</string-name>
+					. Guatemala sends Special Forces to D. R. Congo for UN peacekeeping
+					mission.
+					<year>2013</year>
+					[cited 2013 July 15].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://justf.org/blog/2013/08/29/guatemala-sends-special-forces-dr-congo-un-peacekeeping-mission">http://justf.org/blog/2013/08/29/guatemala-sends-special-forces-dr-congo-un-peacekeeping-mission</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R13">
+				<label>13. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Taylor</surname>
+						<given-names>SM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Messina</surname>
+						<given-names>JP</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Hand</surname>
+						<given-names>CC</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Juliano</surname>
+						<given-names>JJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Muwonga</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Tshefu</surname>
+						<given-names>AK</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Molecular malaria epidemiology: mapping and burden
+						estimates for the Democratic Republic of the Congo, 2007.</article-title>
+					<source>PLoS ONE</source>
+					.
+					<year>2011</year>
+					;
+					<volume>6</volume>
+					:
+					<fpage>e16420</fpage>
+					<pub-id pub-id-type="doi">10.1371/journal.pone.0016420</pub-id><?supplied-pmid 21305011?>
+					<pub-id pub-id-type="pmid">21305011</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R14">
+				<label>14. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Messina</surname>
+						<given-names>JP</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Taylor</surname>
+						<given-names>SM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Meshnick</surname>
+						<given-names>SR</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Linke</surname>
+						<given-names>AM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Tshefu</surname>
+						<given-names>AK</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Atua</surname>
+						<given-names>B</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Population, behavioural and environmental drivers of
+						malaria prevalence in the Democratic Republic of Congo.</article-title>
+					<source>Malar J</source>
+					.
+					<year>2011</year>
+					;
+					<volume>10</volume>
+					:
+					<fpage>161</fpage>
+					<pub-id pub-id-type="doi">10.1186/1475-2875-10-161</pub-id><?supplied-pmid 21658268?>
+					<pub-id pub-id-type="pmid">21658268</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R15">
+				<label>15. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Taylor</surname>
+						<given-names>SM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>van Eijk</surname>
+						<given-names>AM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Hand</surname>
+						<given-names>CC</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mwandagalirwa</surname>
+						<given-names>K</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Messina</surname>
+						<given-names>JP</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Tshefu</surname>
+						<given-names>AK</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Quantification of the burden and consequences of
+						pregnancy-associated malaria in the Democratic Republic of the
+						Congo.</article-title>
+					<source>J Infect Dis</source>
+					.
+					<year>2011</year>
+					;
+					<volume>204</volume>
+					:
+					<fpage>1762</fpage>
+					&#x02013;
+					<lpage>71</lpage>
+					<pub-id pub-id-type="doi">10.1093/infdis/jir625</pub-id><?supplied-pmid 21990422?>
+					<pub-id pub-id-type="pmid">21990422</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R16">
+				<label>16. </label>
+				<mixed-citation publication-type="webpage">
+					<string-name>
+						<surname>Taylor</surname>
+						<given-names>SM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Antonia</surname>
+						<given-names>AL</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Parobek</surname>
+						<given-names>CM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Juliano</surname>
+						<given-names>JJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Janko</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Emch</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<etal />
+					Plasmodium falciparum sulfadoxine resistance is geographically and
+					genetically clustered within the DR Congo. Scientific reports.
+					<year>2013</year>
+					;3:1165.
+				</mixed-citation>
+			</ref>
+			<ref id="R17">
+				<label>17. </label>
+				<mixed-citation publication-type="webpage">
+					<string-name>
+						<surname>Herderschee</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Kaiser</surname>
+						<given-names>KA</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Samba</surname>
+						<given-names>DM</given-names>
+					</string-name>
+					. Resilience of an African giant: boosting growth and development
+					in the Democratic Republic of Congo. Washington, (DC),The World
+					Bank;
+					<year>2012</year>
+					116 p.
+				</mixed-citation>
+			</ref>
+			<ref id="R18">
+				<label>18. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Nair</surname>
+						<given-names>S</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Williams</surname>
+						<given-names>JT</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Brockman</surname>
+						<given-names>A</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Paiphun</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mayxay</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Newton</surname>
+						<given-names>PN</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>A selective sweep driven by pyrimethamine treatment
+						in southeast asian malaria parasites.</article-title>
+					<source>Mol Biol Evol</source>
+					.
+					<year>2003</year>
+					;
+					<volume>20</volume>
+					:
+					<fpage>1526</fpage>
+					&#x02013;
+					<lpage>36</lpage>
+					<pub-id pub-id-type="doi">10.1093/molbev/msg162</pub-id><?supplied-pmid 12832643?>
+					<pub-id pub-id-type="pmid">12832643</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R19">
+				<label>19. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Anderson</surname>
+						<given-names>TJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Haubold</surname>
+						<given-names>B</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Williams</surname>
+						<given-names>JT</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Estrada-Franco</surname>
+						<given-names>JG</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Richardson</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mollinedo</surname>
+						<given-names>R</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>
+						Microsatellite markers reveal a spectrum of population structures
+						in the malaria parasite
+						<italic>Plasmodium falciparum.</italic>
+					</article-title>
+					<source>Mol Biol Evol</source>
+					.
+					<year>2000</year>
+					;
+					<volume>17</volume>
+					:
+					<fpage>1467</fpage>
+					&#x02013;
+					<lpage>82</lpage>
+					<pub-id pub-id-type="doi">10.1093/oxfordjournals.molbev.a026247</pub-id><?supplied-pmid 11018154?>
+					<pub-id pub-id-type="pmid">11018154</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R20">
+				<label>20. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Anderson</surname>
+						<given-names>TJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Su</surname>
+						<given-names>XZ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Bockarie</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Lagog</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Day</surname>
+						<given-names>KP</given-names>
+					</string-name>
+					.
+					<article-title>
+						Twelve microsatellite markers for characterization of
+						<italic>Plasmodium falciparum</italic>
+						from finger-prick blood samples.
+					</article-title>
+					<source>Parasitology</source>
+					.
+					<year>1999</year>
+					;
+					<volume>119</volume>
+					:
+					<fpage>113</fpage>
+					&#x02013;
+					<lpage>25</lpage>
+					<pub-id pub-id-type="doi">10.1017/S0031182099004552</pub-id><?supplied-pmid 10466118?>
+					<pub-id pub-id-type="pmid">10466118</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R21">
+				<label>21. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Roper</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Pearce</surname>
+						<given-names>R</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Bredenkamp</surname>
+						<given-names>B</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Gumede</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Drakeley</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mosha</surname>
+						<given-names>F</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Antifolate antimalarial resistance in southeast
+						Africa: a population-based analysis.</article-title>
+					<source>Lancet</source>
+					.
+					<year>2003</year>
+					;
+					<volume>361</volume>
+					:
+					<fpage>1174</fpage>
+					&#x02013;
+					<lpage>81</lpage>
+					<pub-id pub-id-type="doi">10.1016/S0140-6736(03)12951-0</pub-id><?supplied-pmid 12686039?>
+					<pub-id pub-id-type="pmid">12686039</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R22">
+				<label>22. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Balloux</surname>
+						<given-names>F</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Lugon-Moulin</surname>
+						<given-names>N</given-names>
+					</string-name>
+					.
+					<article-title>The estimation of population differentiation with
+						microsatellite markers.</article-title>
+					<source>Mol Ecol</source>
+					.
+					<year>2002</year>
+					;
+					<volume>11</volume>
+					:
+					<fpage>155</fpage>
+					&#x02013;
+					<lpage>65</lpage>
+					<pub-id pub-id-type="doi">10.1046/j.0962-1083.2001.01436.x</pub-id><?supplied-pmid 11856418?>
+					<pub-id pub-id-type="pmid">11856418</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R23">
+				<label>23. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Peakall</surname>
+						<given-names>ROD</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Smouse</surname>
+						<given-names>PE</given-names>
+					</string-name>
+					.
+					<article-title>GENALEX 6: genetic analysis in Excel. Population
+						genetic software for teaching and research.</article-title>
+					<source>Mol Ecol Notes</source>
+					.
+					<year>2006</year>
+					;
+					<volume>6</volume>
+					:
+					<fpage>288</fpage>
+					&#x02013;
+					<lpage>95</lpage>
+					<pub-id pub-id-type="doi">10.1111/j.1471-8286.2005.01155.x</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R24">
+				<label>24. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Hardy</surname>
+						<given-names>OJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Vekemans</surname>
+						<given-names>X</given-names>
+					</string-name>
+					.
+					<article-title>SPAGeDi: a versatile computer program to analyse
+						spatial genetic structure at the individual or population levels.</article-title>
+					<source>Mol Ecol Notes</source>
+					.
+					<year>2002</year>
+					;
+					<volume>2</volume>
+					:
+					<fpage>618</fpage>
+					&#x02013;
+					<lpage>20</lpage>
+					<pub-id pub-id-type="doi">10.1046/j.1471-8286.2002.00305.x</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R25">
+				<label>25. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Excoffier</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Laval</surname>
+						<given-names>G</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Schneider</surname>
+						<given-names>S</given-names>
+					</string-name>
+					.
+					<article-title>Arlequin (version 3.0): an integrated software
+						package for population genetics data analysis.</article-title>
+					<source>Evol Bioinform Online</source>
+					.
+					<year>2005</year>
+					;
+					<volume>1</volume>
+					:
+					<fpage>47</fpage>
+					&#x02013;
+					<lpage>50</lpage>
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2658868/">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2658868/</ext-link><?supplied-pmid 19325852?>
+					<pub-id pub-id-type="pmid">19325852</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R26">
+				<label>26. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Saitou</surname>
+						<given-names>N</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Nei</surname>
+						<given-names>M</given-names>
+					</string-name>
+					.
+					<article-title>The neighbor-joining method: a new method for
+						reconstructing phylogenetic trees.</article-title>
+					<source>Mol Biol Evol</source>
+					.
+					<year>1987</year>
+					;
+					<volume>4</volume>
+					:
+					<fpage>406</fpage>
+					&#x02013;
+					<lpage>25</lpage>
+					<ext-link ext-link-type="uri"
+						xlink:href="http://mbe.oxfordjournals.org/content/4/4/406.long">http://mbe.oxfordjournals.org/content/4/4/406.long</ext-link><?supplied-pmid 3447015?>
+					<pub-id pub-id-type="pmid">3447015</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R27">
+				<label>27. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Cavalli-Sforza</surname>
+						<given-names>LL</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Edwards</surname>
+						<given-names>AW</given-names>
+					</string-name>
+					.
+					<article-title>Phylogenetic analysis. Models and estimation
+						procedures.</article-title>
+					<source>Am J Hum Genet</source>
+					.
+					<year>1967</year>
+					;
+					<volume>19</volume>
+					:
+					<fpage>233</fpage>
+					&#x02013;
+					<lpage>57</lpage>
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1706274/">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1706274/</ext-link><?supplied-pmid 6026583?>
+					<pub-id pub-id-type="pmid">6026583</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R28">
+				<label>28. </label>
+				<mixed-citation publication-type="webpage">
+					Populations v. 1.2.31 [Internet]. Hudson (MA): Bioinformatics
+					Organization [updated 2010 Oct 20; cited 2013 June 9].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://bioinformatics.org/~tryphon/populations/">http://bioinformatics.org/~tryphon/populations/</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R29">
+				<label>29. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Paradis</surname>
+						<given-names>E</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Claude</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Strimmer</surname>
+						<given-names>K</given-names>
+					</string-name>
+					.
+					<article-title>APE: analyses of phylogenetics and evolution in R
+						language.</article-title>
+					<source>Bioinformatics</source>
+					.
+					<year>2004</year>
+					;
+					<volume>20</volume>
+					:
+					<fpage>289</fpage>
+					&#x02013;
+					<lpage>90</lpage>
+					<pub-id pub-id-type="doi">10.1093/bioinformatics/btg412</pub-id><?supplied-pmid 14734327?>
+					<pub-id pub-id-type="pmid">14734327</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R30">
+				<label>30. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Hamady</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Lozupone</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Knight</surname>
+						<given-names>R</given-names>
+					</string-name>
+					.
+					<article-title>Fast UniFrac: facilitating high-throughput
+						phylogenetic analyses of microbial communities including analysis
+						of pyrosequencing and PhyloChip data.</article-title>
+					<source>ISME J</source>
+					.
+					<year>2010</year>
+					;
+					<volume>4</volume>
+					:
+					<fpage>17</fpage>
+					&#x02013;
+					<lpage>27</lpage>
+					<pub-id pub-id-type="doi">10.1038/ismej.2009.97</pub-id><?supplied-pmid 19710709?>
+					<pub-id pub-id-type="pmid">19710709</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R31">
+				<label>31. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Verhoef</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Vennema</surname>
+						<given-names>H</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>van Pelt</surname>
+						<given-names>W</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Lees</surname>
+						<given-names>D</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Boshuizen</surname>
+						<given-names>H</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Henshilwood</surname>
+						<given-names>K</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Use of norovirus genotype profiles to differentiate
+						origins of foodborne outbreaks.</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2010</year>
+					;
+					<volume>16</volume>
+					:
+					<fpage>617</fpage>
+					&#x02013;
+					<lpage>24</lpage>
+					.
+					<pub-id pub-id-type="doi">10.3201/eid1604.090723</pub-id><?supplied-pmid 20350375?>
+					<pub-id pub-id-type="pmid">20350375</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R32">
+				<label>32. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Barry</surname>
+						<given-names>PM</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Gardner</surname>
+						<given-names>TJ</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Funk</surname>
+						<given-names>E</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Oren</surname>
+						<given-names>E</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Field</surname>
+						<given-names>K</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Shaw</surname>
+						<given-names>T</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Multistate outbreak of MDR TB identified by genotype
+						cluster investigation.</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2012</year>
+					;
+					<volume>18</volume>
+					:
+					<fpage>113</fpage>
+					&#x02013;
+					<lpage>6</lpage>
+					<pub-id pub-id-type="doi">10.3201/eid1801.110671</pub-id><?supplied-pmid 22260877?>
+					<pub-id pub-id-type="pmid">22260877</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R33">
+				<label>33. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Krause</surname>
+						<given-names>G</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Schoneberg</surname>
+						<given-names>I</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Altmann</surname>
+						<given-names>D</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Stark</surname>
+						<given-names>K</given-names>
+					</string-name>
+					.
+					<article-title>Chemoprophylaxis and malaria death rates.</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2006</year>
+					;
+					<volume>12</volume>
+					:
+					<fpage>447</fpage>
+					&#x02013;
+					<lpage>51</lpage>
+					<pub-id pub-id-type="doi">10.3201/eid1203.050736</pub-id><?supplied-pmid 16704783?>
+					<pub-id pub-id-type="pmid">16704783</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R34">
+				<label>34. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>The Global Health Group and the Malaria Atlas Project</collab>
+					. Atlas of Malaria-eliminating countries. San Francisco: The Global
+					Health Group, Global Health Sciences, University of California, San
+					Francisco;
+					<year>2011</year>
+					[cited 2014 Mar 28].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.malariaeliminationgroup.org/publications/atlas-of-malaria-eliminating-countries-2011">http://www.malariaeliminationgroup.org/publications/atlas-of-malaria-eliminating-countries-2011</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R35">
+				<label>35. </label>
+				<mixed-citation publication-type="webpage">
+					<collab>The Global Fund to Fight AIDS</collab>
+					. Tuberculosis and Malaria News Releases [Internet]. Ten countries
+					rally to eliminate malaria in Central America and the Caribbean.
+					San Jose, Costa Rica: The Global Fund to Fight AIDS, Tuberculosis
+					and Malaria;
+					<year>2013</year>
+					Jun 28 [cited 2014 Mar 28].
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.theglobalfund.org/en/mediacenter/newsreleases/2013-06-28_Ten_Countries_Rally_to_Eliminate_Malaria_in_Central_America_and_the_Caribbean/">http://www.theglobalfund.org/en/mediacenter/newsreleases/2013-06-28_Ten_Countries_Rally_to_Eliminate_Malaria_in_Central_America_and_the_Caribbean/</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="R36">
+				<label>36. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Warren</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Collins</surname>
+						<given-names>WE</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Richardson</surname>
+						<given-names>BB</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Skinner</surname>
+						<given-names>JC</given-names>
+					</string-name>
+					.
+					<article-title>
+						Morphologic variants of
+						<italic>Anopheles albimanus</italic>
+						and susceptibility to
+						<italic>Plasmodium vivax</italic>
+						and
+						<italic>P. falciparum.</italic>
+					</article-title>
+					<source>Am J Trop Med Hyg</source>
+					.
+					<year>1977</year>
+					;
+					<volume>26</volume>
+					:
+					<fpage>607</fpage>
+					&#x02013;
+					<lpage>11</lpage>
+					<ext-link ext-link-type="uri"
+						xlink:href="http://www.ajtmh.org/content/26/4/607.long">http://www.ajtmh.org/content/26/4/607.long</ext-link><?supplied-pmid 329696?>
+					<pub-id pub-id-type="pmid">329696</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R37">
+				<label>37. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Baton</surname>
+						<given-names>LA</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Ranford-Cartwright</surname>
+						<given-names>LC</given-names>
+					</string-name>
+					.
+					<article-title>
+						Ookinete destruction within the mosquito midgut lumen explains
+						<italic>Anopheles albimanus</italic>
+						refractoriness to
+						<italic>Plasmodium falciparum</italic>
+						(3D7A) oocyst infection.
+					</article-title>
+					<source>Int J Parasitol</source>
+					.
+					<year>2012</year>
+					;
+					<volume>42</volume>
+					:
+					<fpage>249</fpage>
+					&#x02013;
+					<lpage>58</lpage>
+					<pub-id pub-id-type="doi">10.1016/j.ijpara.2011.12.005</pub-id><?supplied-pmid 22366731?>
+					<pub-id pub-id-type="pmid">22366731</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R38">
+				<label>38. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Wilson</surname>
+						<given-names>PE</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Kazadi</surname>
+						<given-names>W</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Kamwendo</surname>
+						<given-names>DD</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mwapasa</surname>
+						<given-names>V</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Purfield</surname>
+						<given-names>A</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Meshnick</surname>
+						<given-names>SR</given-names>
+					</string-name>
+					.
+					<article-title>
+						Prevalence of pfcrt mutations in Congolese and Malawian
+						<italic>Plasmodium falciparum</italic>
+						isolates as determined by a new Taqman assay.
+					</article-title>
+					<source>Acta Trop</source>
+					.
+					<year>2005</year>
+					;
+					<volume>93</volume>
+					:
+					<fpage>97</fpage>
+					&#x02013;
+					<lpage>106</lpage>
+					<pub-id pub-id-type="doi">10.1016/j.actatropica.2004.09.010</pub-id><?supplied-pmid 15589802?>
+					<pub-id pub-id-type="pmid">15589802</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R39">
+				<label>39. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Gouandjika-Vasilache</surname>
+						<given-names>I</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Mazitchi</surname>
+						<given-names>A</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Gumede</surname>
+						<given-names>N</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Manirakiza</surname>
+						<given-names>A</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Manenegu</surname>
+						<given-names>C</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Koyazegbe</surname>
+						<given-names>TD</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Wild poliovirus importation, Central African
+						Republic.</article-title>
+					<source>Emerg Infect Dis</source>
+					.
+					<year>2013</year>
+					;
+					<volume>19</volume>
+					:
+					<fpage>1012</fpage>
+					&#x02013;
+					<lpage>3</lpage>
+					<pub-id pub-id-type="doi">10.3201/eid1906.121821</pub-id><?supplied-pmid 23735864?>
+					<pub-id pub-id-type="pmid">23735864</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="R40">
+				<label>40. </label>
+				<mixed-citation publication-type="journal">
+					<string-name>
+						<surname>Odoom</surname>
+						<given-names>JK</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Forrest</surname>
+						<given-names>L</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Dunn</surname>
+						<given-names>G</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Osei-Kwasi</surname>
+						<given-names>M</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Obodai</surname>
+						<given-names>E</given-names>
+					</string-name>
+					,
+					<string-name>
+						<surname>Arthur-Quarm</surname>
+						<given-names>J</given-names>
+					</string-name>
+					,
+					<etal />
+					<article-title>Interruption of poliovirus transmission in Ghana:
+						molecular epidemiology of wild-type 1 poliovirus isolated from
+						1995 to 2008.</article-title>
+					<source>J Infect Dis</source>
+					.
+					<year>2012</year>
+					;
+					<volume>206</volume>
+					:
+					<fpage>1111</fpage>
+					&#x02013;
+					<lpage>20</lpage>
+					<pub-id pub-id-type="doi">10.1093/infdis/jis474</pub-id><?supplied-pmid 22829642?>
+					<pub-id pub-id-type="pmid">22829642</pub-id>
+				</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

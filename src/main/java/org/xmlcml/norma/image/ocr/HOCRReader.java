@@ -3,6 +3,7 @@ package org.xmlcml.norma.image.ocr;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,6 +31,7 @@ import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.SVGUtil;
+import org.xmlcml.graphics.svg.text.SVGPhrase;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.graphics.svg.text.SVGWordBlock;
 import org.xmlcml.graphics.svg.text.SVGWordLine;
@@ -104,7 +106,7 @@ public class HOCRReader extends InputReader {
 
 	String ITALIC_GARBLES_XML = "/org/xmlcml/norma/images/ocr/italicGarbles.xml";
 
-	private HtmlElement hocrElement;
+	private HtmlElement hocrHtmlElement;
 	private SVGSVG svgSvg;
 	private HtmlBody newBody;
 	private HtmlHtml rawHtml;
@@ -126,6 +128,12 @@ public class HOCRReader extends InputReader {
 	private List<HOCRLabel> potentialLabelList;
 	private List<HOCRText> potentialTextList;
 	private List<HOCRPhrase> potentialPhraseList;
+
+	private Real2Range wordJoiningBox;
+
+	private List<SVGWordLine> wordLineList;
+
+	private List<SVGPhrase> allPhraseList;
 
 	public int getImageMarginX() {
 		return imageMarginX;
@@ -168,7 +176,7 @@ public class HOCRReader extends InputReader {
 	}
 
 	public void clearVariables() {
-		hocrElement = null;
+		hocrHtmlElement = null;
 		svgSvg = null;
 		newBody = null;
 		rawHtml = null;
@@ -182,21 +190,21 @@ public class HOCRReader extends InputReader {
 	public void readHOCR(InputStream is) throws IOException {
 		String s = IOUtils.toString(is);
 		readHOCR(HtmlElement.create(XMLUtil.stripDTDAndParse(s)));
-		processHTML();
+		processHTMLAndCreateSVG();
 	}
 	
 	public void readHOCR(HtmlElement hocrElement) {
-		this.hocrElement = hocrElement;
+		this.hocrHtmlElement = hocrElement;
 		rawHtml = (hocrElement instanceof HtmlHtml) ? (HtmlHtml) hocrElement : null;
 	}
 	
 	public HtmlElement getHocrElement() {
-		return hocrElement;
+		return hocrHtmlElement;
 	}
 
 	public SVGElement getOrCreateSVG() {
-		if (svgSvg == null && hocrElement != null) {
-			processHTML();
+		if (svgSvg == null && hocrHtmlElement != null) {
+			processHTMLAndCreateSVG();
 		}
 		if (labelPattern != null) {
 			getOrCreatePotentialLabelElements(svgSvg);
@@ -209,7 +217,7 @@ public class HOCRReader extends InputReader {
 		return newBody;
 	}
 
-	private void processHTML() {
+	private void processHTMLAndCreateSVG() {
 		processHead();
 		processBody();
 		createSVGAndHTML();
@@ -645,20 +653,23 @@ public class HOCRReader extends InputReader {
 		ImageIO.write(expandedImage, imageSuffix, new FileOutputStream(pngFile));
 		ImageToHOCRConverter converter = new ImageToHOCRConverter();
 		File outfileRoot = new File(imageDir, id+HOCRReader.HOCR);
-		if (!converter.convertImageToHOCR(pngFile, outfileRoot)) return;
-		File outfile = new File(imageDir, id+HOCRReader.HOCR_HTML);
+		File outputHtml = converter.convertImageToHOCR(pngFile, outfileRoot);
+		if (outputHtml == null) {
+			return;
+		}
+//		File outfile = new File(imageDir, id+HOCRReader.HOCR_HTML);
 		
 		// WAIT TILL PROCESS COMPLETES
 		
-		int count = getTesseractTries();
-		while (!outfile.exists() && count-- > 0) {
-			Thread.sleep(getTesseractSleep());
-		}
-		if (!outfile.exists()) {
-			LOG.error("Cannot create HOCR after waiting");
-			return;
-		}
-		readHOCR(new FileInputStream(outfile));
+//		int count = getTesseractTries();
+//		while (!outfile.exists() && count-- > 0) {
+//			Thread.sleep(getTesseractSleep());
+//		}
+//		if (!outfile.exists()) {
+//			LOG.error("Cannot create HOCR after waiting");
+//			return;
+//		}
+		readHOCR(new FileInputStream(outputHtml));
 		SVGElement svgg = getOrCreateSVG();
 		List<HOCRText> potentialTexts = this.getOrCreatePotentialTextElements(svgg);
 		List<HOCRLabel> potentialLabels = this.getOrCreatePotentialLabelElements(svgg);
@@ -863,6 +874,63 @@ public class HOCRReader extends InputReader {
 	 */
 	public void labelSubImages(String regex) {
 		this.labelPattern = Pattern.compile(regex);
+	}
+
+	public void setJoiningBox(Real2Range joiningBox) {
+		this.setWordJoiningBox(joiningBox);
+	}
+
+	public List<SVGWordLine> createWordLineList(File hocrFile) throws IOException, FileNotFoundException {
+		readHOCR(new FileInputStream(hocrFile));
+		SVGSVG svgSvg = (SVGSVG) getOrCreateSVG();
+		return getOrCreateWordLineList(svgSvg);
+	}
+
+	public List<SVGPhrase> createPhraseList(File hocrFile) throws IOException, FileNotFoundException {
+		createWordLineList(hocrFile);
+		return createPhraseList(wordLineList);
+	}
+
+	public List<SVGWordLine> getOrCreateWordLineList() {
+		SVGSVG svgSvg = (SVGSVG) getOrCreateSVG();
+		return getOrCreateWordLineList(svgSvg);
+	}
+
+	private List<SVGWordLine> getOrCreateWordLineList(SVGSVG svgSvg) {
+		wordLineList = svgSvg.getSingleSVGPage().getSVGLineList();
+		for (SVGWordLine wordLine : wordLineList) {
+			wordLine.makePhrasesFromWords();
+		}
+		return wordLineList;
+	}
+	
+//	public List<SVGWordLine> getWordLineList() {
+//		return wordLineList;
+//	}
+
+	public Real2Range getWordJoiningBox() {
+		return wordJoiningBox;
+	}
+
+	public void setWordJoiningBox(Real2Range wordJoiningBox) {
+		this.wordJoiningBox = wordJoiningBox;
+	}
+
+	public List<SVGPhrase> getOrCreatePhraseList() {
+		if (allPhraseList == null) {
+			this.getOrCreateWordLineList();
+			allPhraseList = HOCRReader.createPhraseList(wordLineList);
+		}
+		return allPhraseList;
+	}
+
+	public static List<SVGPhrase> createPhraseList(List<SVGWordLine> wordLineList) {
+		List<SVGPhrase> allPhraseList = new ArrayList<SVGPhrase>();
+		for (SVGWordLine wordLine : wordLineList) {
+			List<SVGPhrase> phrases = wordLine.getOrCreateSVGPhraseList();
+			allPhraseList.addAll(phrases);
+		}
+		return allPhraseList;
 	}
 
 }

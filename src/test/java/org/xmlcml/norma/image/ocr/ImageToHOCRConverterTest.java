@@ -37,18 +37,18 @@ public class ImageToHOCRConverterTest {
 		ImageToHOCRConverter converter = new ImageToHOCRConverter();
 		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");
 		File outfileRoot = new File("target/neuro/image.2.1.hocr");
-		if (!converter.convertImageToHOCR(infile, outfileRoot)) {
+		File outfile = converter.convertImageToHOCR(infile, outfileRoot);
+		if (outfile == null) {
 			LOG.debug("cannot run tesseract");
-			return;
+		} else {
+			Assert.assertTrue("outfile exists", outfile.exists());
+			Assert.assertEquals("filename", "image.2.1.hocr.html", outfile.getName());
+			HOCRReader hocrReader = new HOCRReader();
+			hocrReader.readHOCR(new FileInputStream(outfile));
+			SVGElement svgg = hocrReader.getOrCreateSVG();
+			Assert.assertNotNull("svgg not null", svgg);
+			SVGSVG.wrapAndWriteAsSVG(svgg, new File("target/neuro/image.2.1.hocr.svg"));
 		}
-		File outfile = new File("target/neuro/image.2.1.hocr.html");
-		Assert.assertNotNull(outfile);
-		Assert.assertTrue("outfile exists", outfile.exists());
-		HOCRReader hocrReader = new HOCRReader();
-		hocrReader.readHOCR(new FileInputStream(outfile));
-		SVGElement svgg = hocrReader.getOrCreateSVG();
-		Assert.assertNotNull("svgg not null", svgg);
-		SVGSVG.wrapAndWriteAsSVG(svgg, new File("target/neuro/image.2.1.hocr.svg"));
 	}
 	
 	@Test

@@ -1,4 +1,4 @@
-<argList name="norma" version="0.1.8">
+<argList name="norma" version="0.1.9">
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
 		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"

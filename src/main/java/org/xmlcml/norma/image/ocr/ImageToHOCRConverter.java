@@ -3,10 +3,10 @@ package org.xmlcml.norma.image.ocr;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.misc.CMineUtil;
-import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 
 public class ImageToHOCRConverter {
 
@@ -19,6 +19,7 @@ public class ImageToHOCRConverter {
 	private static final String USR_LOCAL_BIN_TESSERACT = "/usr/local/bin/tesseract";
 	
 	private int tryCount;
+	private File outputHtml;
 	
 	public ImageToHOCRConverter() {
 		setDefaults();
@@ -39,47 +40,65 @@ public class ImageToHOCRConverter {
 	/** converts Image to HOCR.
      * relies on Tesseract.
      * 
-     * @param input
-     * @return
+     * Note - creates a *.hocr.html file from output root.
+     * 
+     * @param inputImageFile
+     * @return HOCR.HTML file created (null if failed to create)
      * @throws IOException // if Tesseract not present
-     * @throws InterruptedException
+     * @throws InterruptedException ??
      */
-    public boolean convertImageToHOCR(File input, File output) throws IOException, InterruptedException {
-    	
+    public File convertImageToHOCR(File inputImageFile, File output) throws IOException, InterruptedException {
+
+    	outputHtml = null;
         // tesseract performs the initial Image => HOCR conversion,
     	
         output.getParentFile().mkdirs();
         ProcessBuilder tesseractBuilder = new ProcessBuilder(
-        		USR_LOCAL_BIN_TESSERACT, input.getAbsolutePath(), output.getAbsolutePath(), HOCR);
+        		USR_LOCAL_BIN_TESSERACT, inputImageFile.getAbsolutePath(), output.getAbsolutePath(), HOCR);
         tesseractBuilder.redirectError(ProcessBuilder.Redirect.INHERIT);
     	Process tesseractProc = null;
         try {
         	tesseractProc = tesseractBuilder.start();
         } catch (IOException e) {
         	CMineUtil.catchUninstalledProgram(e, USR_LOCAL_BIN_TESSERACT);
-        	return false;
+        	return null;
         }
         tesseractProc.getOutputStream().close();
         int exitValue = -1;
-		for (int itry = 0; itry < tryCount; itry++) {
+        int itry = 0;
+        for (; itry < tryCount; itry++) {
 			Thread.sleep(100);
 		    try {
 		    	exitValue = tesseractProc.exitValue();
 		    	if (exitValue == 0) {
-		    		LOG.trace("terminated");
+		    		LOG.trace("tesseract terminated OK");
 		    		break;
 		    	}
 			} catch (IllegalThreadStateException e) {
-				LOG.trace("not terminated: "+itry);
+				LOG.trace("still not terminated after: "+itry+"; keep going");
 			}
 		}
+		LOG.trace("tries: "+itry);
+
 		if (exitValue != 0) {
 			tesseractProc.destroy();
 			LOG.error("Process failed to terminate after :"+tryCount);
-			return false;
 		}
-		return true;
+    	outputHtml = createOutputHtmlFileDescriptor(output);
+    	LOG.trace("creating output "+outputHtml);
+		if (!outputHtml.exists()) {
+			LOG.debug("failed to create: "+outputHtml);
+			outputHtml = null;
+		} else {
+			LOG.debug("created "+outputHtml.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtml));
+		}
+		return outputHtml;
+
     }
+
+	private File createOutputHtmlFileDescriptor(File output) {
+		return new File(output.getAbsolutePath()+".html");
+	}
 
     
 //    public class ProcMon implements Runnable {
