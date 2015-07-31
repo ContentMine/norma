@@ -10,6 +10,8 @@ import org.xmlcml.cmine.misc.CMineUtil;
 
 public class ImageToHOCRConverter {
 
+	private static final int TESSERACT_TIMEOUT_STEP = 100;
+
 	private static final int NTRIES = 20;
 
 	private final static Logger LOG = Logger.getLogger(ImageToHOCRConverter.class);
@@ -67,7 +69,7 @@ public class ImageToHOCRConverter {
         int exitValue = -1;
         int itry = 0;
         for (; itry < tryCount; itry++) {
-			Thread.sleep(100);
+			Thread.sleep(TESSERACT_TIMEOUT_STEP);
 		    try {
 		    	exitValue = tesseractProc.exitValue();
 		    	if (exitValue == 0) {
@@ -84,11 +86,17 @@ public class ImageToHOCRConverter {
 			tesseractProc.destroy();
 			LOG.error("Process failed to terminate after :"+tryCount);
 		}
-    	outputHtml = createOutputHtmlFileDescriptor(output);
+    	outputHtml = createOutputHtmlFileDescriptorForHOCR_HTML(output);
     	LOG.trace("creating output "+outputHtml);
 		if (!outputHtml.exists()) {
-			LOG.debug("failed to create: "+outputHtml);
-			outputHtml = null;
+			File outputHocr = createOutputHtmlFileDescriptorForHOCR_HOCR(output);
+			if (!outputHocr.exists()) {	
+				LOG.debug("failed to create: "+outputHtml+" or "+outputHocr);
+				outputHtml = null;
+			} else {
+				LOG.debug("copying "+outputHocr+" to "+outputHtml);
+				FileUtils.copyFile(outputHocr, outputHtml);
+			}
 		} else {
 			LOG.debug("created "+outputHtml.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtml));
 		}
@@ -96,8 +104,16 @@ public class ImageToHOCRConverter {
 
     }
 
-	private File createOutputHtmlFileDescriptor(File output) {
-		return new File(output.getAbsolutePath()+".html");
+	private File createOutputHtmlFileDescriptorForHOCR_HTML(File output) {
+		String filename = output.getAbsolutePath()+".html";
+		LOG.debug("creating HTML output: "+filename);
+		return new File(filename);
+	}
+
+	private File createOutputHtmlFileDescriptorForHOCR_HOCR(File output) {
+		String filename = output.getAbsolutePath()+".hocr";
+		LOG.debug("creating hocr.hocr name: "+filename);
+		return new File(filename);
 	}
 
     
