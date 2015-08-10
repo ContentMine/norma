@@ -328,5 +328,15 @@ public class NormaArgProcessorTest {
 		NormaArgProcessor argProcessor = new NormaArgProcessor();
 		argProcessor.parseArgs("--chars a,b");
 	}
+	
+	@Test
+	public void testLog() throws IOException {
+		DefaultArgProcessor argProcessor = new NormaArgProcessor();
+		File targetFile = new File("target/test/log/");
+		targetFile.mkdirs();
+		// dummy file
+		FileUtils.write(new File(targetFile, "fulltext.txt"), "fulltext");
+		argProcessor.parseArgs("-q "+targetFile+" -i fulltext.txt  --c.test --log");
+	}
 
 }
