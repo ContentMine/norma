@@ -8,9 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,6 +47,8 @@ import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
 import org.xmlcml.image.ImageUtil;
+import org.xmlcml.norma.editor.SubstitutionManager;
+import org.xmlcml.norma.editor.SubstitutionManagerTest;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
 
@@ -60,7 +60,7 @@ import org.xmlcml.xml.XMLUtil;
 public class HOCRReader extends InputReader {
 
 
-	private static final Logger LOG = Logger.getLogger(HOCRReader.class);
+	public static final Logger LOG = Logger.getLogger(HOCRReader.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -74,13 +74,9 @@ public class HOCRReader extends InputReader {
 	private static final String HELVETICA = "helvetica";
 	private static final String LOW_CONF_COL = "red";
 	private static final String UNEDITED_COL = "green";
-	private static final String EDITED_COL = "pink";
 	private static final String LINE_COL = "yellow";
 	
 	private static final double DEFAULT_FONT_SIZE = 10.0;
-	private static final String EDITED = "edited";
-	private static final String GARBLE = "garble";
-	private static final String ORIGINAL = "original";
 	
 	private static final String WORD = "word";
 	private static final String LINE = "line";
@@ -102,9 +98,6 @@ public class HOCRReader extends InputReader {
 	private static final double RECT_OPACITY = 0.2;
 	private static final Double LOW_CONF_WIDTH = 3.0;
 	private static final double MAX_FONT_SIZE = 30;
-	private static final String LABEL_COLOR = "blue";
-
-	String ITALIC_GARBLES_XML = "/org/xmlcml/norma/images/ocr/italicGarbles.xml";
 
 	private HtmlElement hocrHtmlElement;
 	private SVGSVG svgSvg;
@@ -115,9 +108,6 @@ public class HOCRReader extends InputReader {
 	private String title;
 	private List<HtmlMeta> metaList;
 
-	private Map<String, String> garbleMap;
-	private String garbleCharacters;
-	private HtmlHtml htmlHtml;
 	private long tesseractSleep;
 	private int tesseractTries;
 	private double maxFontSize;
@@ -130,10 +120,11 @@ public class HOCRReader extends InputReader {
 	private List<HOCRPhrase> potentialPhraseList;
 
 	private Real2Range wordJoiningBox;
-
+	
 	private List<SVGWordLine> wordLineList;
-
 	private List<SVGPhrase> allPhraseList;
+
+	private SubstitutionManager substitutionManager;
 
 	public int getImageMarginX() {
 		return imageMarginX;
@@ -165,7 +156,6 @@ public class HOCRReader extends InputReader {
 	
 	private void setup() {
 		clearVariables();
-		this.readGarbleEdits(this.getClass().getResourceAsStream(ITALIC_GARBLES_XML));
 		setDefaults();
 	}
 	
@@ -188,11 +178,20 @@ public class HOCRReader extends InputReader {
 	}
 	
 	public void readHOCR(InputStream is) throws IOException {
-		String s = IOUtils.toString(is);
+		String s = IOUtils.toString(is, "UTF-8");
 		readHOCR(HtmlElement.create(XMLUtil.stripDTDAndParse(s)));
+		applyUniversalSubstitutions();
 		processHTMLAndCreateSVG();
 	}
 	
+	private void applyUniversalSubstitutions() {
+		ensureUniversalSubstitutions();
+	}
+
+	private void ensureUniversalSubstitutions() {
+//		if ()
+	}
+
 	public void readHOCR(HtmlElement hocrElement) {
 		this.hocrHtmlElement = hocrElement;
 		rawHtml = (hocrElement instanceof HtmlHtml) ? (HtmlHtml) hocrElement : null;
@@ -487,6 +486,7 @@ public class HOCRReader extends InputReader {
 		HtmlSpan htmlSpan = new HtmlSpan(); 
 		HtmlSVG htmlSVG = new HtmlSVG(htmlSpan, svgWord);
 		HOCRTitle hocrTitle = new HOCRTitle(htmlSpan0.getTitle());
+		ensureSubstitutionManager();
 		Real2Range bbox = hocrTitle.getBoundingBox();
 		if (bbox.getXRange().getRange() > MIN_WIDTH && bbox.getYRange().getRange() > MIN_WIDTH) {
 			String wordValue = htmlSpan0.getValue();
@@ -503,7 +503,7 @@ public class HOCRReader extends InputReader {
 				if (nchild > 1) {
 					throw new RuntimeException("multiple styles in word");
 				}
-				wordValue = editGarbles(wordValue, rect);
+				wordValue = substitutionManager.applySubstitutions(svgWord, wordValue, rect);
 				boolean lowConf = false;
 				if (height > getMaxFontSize()) {
 					height = getMaxFontSize();
@@ -529,34 +529,10 @@ public class HOCRReader extends InputReader {
 		return htmlSVG;
 	}
 
-	private String editGarbles(String wordValue, SVGRect rect) {
-		ensureGarbleMap();
-		if (containsPotentialGarble(wordValue)) {
-			String newWordValue = wordValue;
-			for (String original : garbleMap.keySet()) {
-				String edited = garbleMap.get(original);
-				newWordValue = newWordValue.replaceAll(original, edited);
-			}
-			if (!newWordValue.equals(wordValue)) {
-				LOG.trace("edited "+wordValue+"=>"+newWordValue);
-				wordValue = newWordValue;
-				rect.setFill(EDITED_COL);
-			}
+	private void ensureSubstitutionManager() {
+		if (substitutionManager == null) {
+			substitutionManager = new SubstitutionManager();
 		}
-		return wordValue;
-	}
-
-	/** does wordValue contain potential garble characters?
-	 * to speed up searching
-	 * 
-	 * @param wordValue
-	 * @return
-	 */
-	private boolean containsPotentialGarble(String wordValue) {
-		for (int i = 0; i < wordValue.length(); i++) {
-			if (wordValue.contains(String.valueOf(wordValue.charAt(i)))) return true;
-		}
-		return false;
 	}
 
 	private static SVGText createTextElement(Real2Range bbox, String word, double height) {
@@ -595,29 +571,6 @@ public class HOCRReader extends InputReader {
 		}
 	}
 	
-	public void readGarbleEdits(InputStream garblesStream) {
-		ensureGarbleMap();
-		try {
-			Element garblesElement = XMLUtil.parseQuietlyToDocument(garblesStream).getRootElement();
-			garbleCharacters = garblesElement.getAttributeValue("characters");
-			Elements garbles = garblesElement.getChildElements(GARBLE);
-			for (int i = 0; i < garbles.size(); i++) {
-				Element garble = garbles.get(i);
-				String original = garble.getAttributeValue(ORIGINAL);
-				String edited = garble.getAttributeValue(EDITED);
-				garbleMap.put(original, edited);
-			}
-		} catch (Exception e) {
-			throw new RuntimeException("Cannot parse garblesStream", e);
-		}
-	}
-
-	private void ensureGarbleMap() {
-		if (garbleMap == null) {
-			garbleMap = new HashMap<String, String>();
-		}
-	}
-
 	public List<HtmlSpan> getNonEmptyLines() {
 		HtmlBody body = getOrCreateHtmlBody();
 //		try {
@@ -657,18 +610,6 @@ public class HOCRReader extends InputReader {
 		if (outputHtml == null) {
 			return;
 		}
-//		File outfile = new File(imageDir, id+HOCRReader.HOCR_HTML);
-		
-		// WAIT TILL PROCESS COMPLETES
-		
-//		int count = getTesseractTries();
-//		while (!outfile.exists() && count-- > 0) {
-//			Thread.sleep(getTesseractSleep());
-//		}
-//		if (!outfile.exists()) {
-//			LOG.error("Cannot create HOCR after waiting");
-//			return;
-//		}
 		readHOCR(new FileInputStream(outputHtml));
 		SVGElement svgg = getOrCreateSVG();
 		List<HOCRText> potentialTexts = this.getOrCreatePotentialTextElements(svgg);
@@ -705,83 +646,68 @@ public class HOCRReader extends InputReader {
 
 	
 	public List<HOCRPhrase> getOrCreatePotentialPhraseElements(SVGElement svgElement) {
-//		if (potentialPhraseList == null) {
-			List <SVGElement> lineGs = SVGUtil.getQuerySVGElements(
-					svgElement, "//*[local-name()='g' and contains(@class, '"+LINE+"')]");
-			potentialPhraseList = new ArrayList<HOCRPhrase>();
-			for (SVGElement lineG : lineGs) {
-				List<SVGElement> words = SVGUtil.getQuerySVGElements(
-						lineG, "*[local-name()='g' and contains(@class,'"+WORD+"')]");
-				List<HOCRPhrase> linePhraseList = new ArrayList<HOCRPhrase>();
-				HOCRPhrase previous = null;
-				HOCRPhrase currentPhrase = null;
-				for (int i = 0; i < words.size(); i++) {
-					SVGG word = (SVGG) words.get(i);
-					String clazz = word.getAttributeValue(CLASS);
-					if (clazz != null && clazz.contains(POTENTIAL_LABEL)) {
-						continue;
-					}
-					HOCRText text = new HOCRText((SVGG)word);
-					if (previous != null) {
-						Double boxEnd = previous.getBoxEnd();
-						LOG.trace(">>"+((previous.getBboxRect() == null) ? null : previous.getBboxRect().toXML()));
-						if (boxEnd == null) continue;
-						LOG.trace(">>"+text.getBboxRect().toXML());
-						double textStart = text.getBoxStart();
-						Double separation = textStart - boxEnd;
-						LOG.trace(textStart+" - "+boxEnd);
-						if (separation < 0) {
-							LOG.error("previous overlaps this");
-							continue;
-						}
-						Double previousSize = previous.getFontSize();
-						Double textSize = text.getFontSize();
-						Double meanTextSize = HOCRChunk.getMeanSize(previousSize, textSize);
-						boolean joinWords = HOCRText.isWordInPhrase(separation, meanTextSize, 0,2);
-						if (joinWords) {
-							currentPhrase.add(word);
-							LOG.trace("added "+text.getText().getText()+" :"+currentPhrase.getText().getText()+":");
-							
-						} else {
-							LOG.trace("didn't add: "+text.getText().getText()+" to "+currentPhrase.getText().getText());
-						}
-					} else {
-						currentPhrase = new HOCRPhrase(word);
-						LOG.trace("new: "+((text == null) ? null : ((text.getText() == null) ? null : (text.getText().getText()))));
-						linePhraseList.add(currentPhrase);
-						previous = currentPhrase;
-						
-					}
+		List <SVGElement> lineGs = SVGUtil.getQuerySVGElements(
+				svgElement, "//*[local-name()='g' and contains(@class, '"+LINE+"')]");
+		potentialPhraseList = new ArrayList<HOCRPhrase>();
+		for (SVGElement lineG : lineGs) {
+			List<SVGElement> words = SVGUtil.getQuerySVGElements(
+					lineG, "*[local-name()='g' and contains(@class,'"+WORD+"')]");
+			List<HOCRPhrase> linePhraseList = new ArrayList<HOCRPhrase>();
+			HOCRPhrase previous = null;
+			HOCRPhrase currentPhrase = null;
+			for (int i = 0; i < words.size(); i++) {
+				SVGG word = (SVGG) words.get(i);
+				String clazz = word.getAttributeValue(CLASS);
+				if (clazz != null && clazz.contains(POTENTIAL_LABEL)) {
+					continue;
 				}
-//				makePhrases(words);
-				for (HOCRPhrase phrase : linePhraseList) {
-					LOG.trace(">phrase>"+phrase.toString());
+				HOCRText text = new HOCRText((SVGG)word);
+				if (previous != null) {
+					joinWords(previous, currentPhrase, word, text);
+				} else {
+					currentPhrase = new HOCRPhrase(word);
+					LOG.trace("new: "+((text == null) ? null : ((text.getText() == null) ? null : (text.getText().getText()))));
+					linePhraseList.add(currentPhrase);
+					previous = currentPhrase;
+					
 				}
-				potentialPhraseList.addAll(linePhraseList);
 			}
-//		}
+			for (HOCRPhrase phrase : linePhraseList) {
+				LOG.trace(">phrase>"+phrase.toString());
+			}
+			potentialPhraseList.addAll(linePhraseList);
+		}
 		return potentialPhraseList;
 	}
 
+	private void joinWords(HOCRPhrase previous, HOCRPhrase currentPhrase,
+			SVGG word, HOCRText text) {
+		Double boxEnd = previous.getBoxEnd();
+		LOG.trace(">>"+((previous.getBboxRect() == null) ? null : previous.getBboxRect().toXML()));
+		if (boxEnd != null) {
+			LOG.trace(">>"+text.getBboxRect().toXML());
+			double textStart = text.getBoxStart();
+			Double separation = textStart - boxEnd;
+			LOG.trace(textStart+" - "+boxEnd);
+			if (separation < 0) {
+				LOG.error("previous overlaps this");
+			} else {
+				Double previousSize = previous.getFontSize();
+				Double textSize = text.getFontSize();
+				Double meanTextSize = HOCRChunk.getMeanSize(previousSize, textSize);
+				boolean joinWords = HOCRText.isWordInPhrase(separation, meanTextSize, 0,2);
+				if (joinWords) {
+					currentPhrase.add(word);
+					LOG.trace("added "+text.getText().getText()+" :"+currentPhrase.getText().getText()+":");
+					
+				} else {
+					LOG.trace("didn't add: "+text.getText().getText()+" to "+currentPhrase.getText().getText());
+				}
+			}
+		}
+	}
+
 	
-//	private void checkWordOrderAndIntertextDifferences(List<SVGElement> words) {
-//		for (int i = 0; i < words.size(); i++) {
-//			SVGElement previous = (i < 1) ? null : words.get(i-1);
-//			SVGElement next = (i >= words.size() - 1) ? null : words.get(i+1);
-//			if (previous != null) {
-//			}
-//		}
-//	}
-//
-//	private void makePhrases(List<SVGElement> words) {
-//	}
-
-//	private void markFollowingNeighbours(List<SVGElement> words, int serial) {
-//		if (serial > 0) {
-//			
-//		}
-//	}
-
 	public List<HOCRText> getOrCreatePotentialTextElements(SVGElement svgElement) {
 		if (potentialTextList == null) {
 			List <SVGElement> textGs = SVGUtil.getQuerySVGElements(
@@ -805,21 +731,21 @@ public class HOCRReader extends InputReader {
 		}
 	}
 
-	public void setTesseractSleep(long tesseractSleep) {
-		this.tesseractSleep = tesseractSleep;
-	}
-
-	public void setTesseractTries(int tesseractTries) {
-		this.tesseractTries = tesseractTries;
-	}
-
-	private long getTesseractSleep() {
-		return tesseractSleep;
-	}
-
-	private int getTesseractTries() {
-		return tesseractTries;
-	}
+//	private void setTesseractSleep(long tesseractSleep) {
+//		this.tesseractSleep = tesseractSleep;
+//	}
+//
+//	private void setTesseractTries(int tesseractTries) {
+//		this.tesseractTries = tesseractTries;
+//	}
+//
+//	private long getTesseractSleep() {
+//		return tesseractSleep;
+//	}
+//
+//	private int getTesseractTries() {
+//		return tesseractTries;
+//	}
 
 	public static List<HtmlSpan> getWords(HtmlSpan line) {
 		List<HtmlSpan> wordList = new ArrayList<HtmlSpan>();
@@ -904,10 +830,6 @@ public class HOCRReader extends InputReader {
 		return wordLineList;
 	}
 	
-//	public List<SVGWordLine> getWordLineList() {
-//		return wordLineList;
-//	}
-
 	public Real2Range getWordJoiningBox() {
 		return wordJoiningBox;
 	}

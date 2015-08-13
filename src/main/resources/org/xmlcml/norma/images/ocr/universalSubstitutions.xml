@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<substitutions title="substitutions">
+  <substitution original="&#64256;" edited="ff"/>
+  <substitution original="&#64257;" edited="fi"/>
+  <substitution original="&#64258;" edited="fl"/>
+  <substitution original="&#64259;" edited="ffi"/>
+  <substitution original="&#64260;" edited="ffl"/>
+</substitutions>

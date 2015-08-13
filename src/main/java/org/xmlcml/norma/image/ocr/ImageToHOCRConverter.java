@@ -19,9 +19,11 @@ public class ImageToHOCRConverter {
 
 	private static final String HOCR = "hocr";
 	private static final String USR_LOCAL_BIN_TESSERACT = "/usr/local/bin/tesseract";
+//	private static final String ENCODING = "-Dfile.encoding=UTF8";
+	private static final String ENCODING = "";
 	
 	private int tryCount;
-	private File outputHtml;
+	private File outputHtmlFile;
 	
 	public ImageToHOCRConverter() {
 		setDefaults();
@@ -51,12 +53,12 @@ public class ImageToHOCRConverter {
      */
     public File convertImageToHOCR(File inputImageFile, File output) throws IOException, InterruptedException {
 
-    	outputHtml = null;
+    	outputHtmlFile = null;
         // tesseract performs the initial Image => HOCR conversion,
     	
         output.getParentFile().mkdirs();
         ProcessBuilder tesseractBuilder = new ProcessBuilder(
-        		USR_LOCAL_BIN_TESSERACT, inputImageFile.getAbsolutePath(), output.getAbsolutePath(), HOCR);
+        		USR_LOCAL_BIN_TESSERACT, inputImageFile.getAbsolutePath(), output.getAbsolutePath(), HOCR, ENCODING );
         tesseractBuilder.redirectError(ProcessBuilder.Redirect.INHERIT);
     	Process tesseractProc = null;
         try {
@@ -86,21 +88,21 @@ public class ImageToHOCRConverter {
 			tesseractProc.destroy();
 			LOG.error("Process failed to terminate after :"+tryCount);
 		}
-    	outputHtml = createOutputHtmlFileDescriptorForHOCR_HTML(output);
-    	LOG.trace("creating output "+outputHtml);
-		if (!outputHtml.exists()) {
+    	outputHtmlFile = createOutputHtmlFileDescriptorForHOCR_HTML(output);
+    	LOG.trace("creating output "+outputHtmlFile);
+		if (!outputHtmlFile.exists()) {
 			File outputHocr = createOutputHtmlFileDescriptorForHOCR_HOCR(output);
 			if (!outputHocr.exists()) {	
-				LOG.debug("failed to create: "+outputHtml+" or "+outputHocr);
-				outputHtml = null;
+				LOG.debug("failed to create: "+outputHtmlFile+" or "+outputHocr);
+				outputHtmlFile = null;
 			} else {
-				LOG.debug("copying "+outputHocr+" to "+outputHtml);
-				FileUtils.copyFile(outputHocr, outputHtml);
+				LOG.debug("copying "+outputHocr+" to "+outputHtmlFile);
+				FileUtils.copyFile(outputHocr, outputHtmlFile);
 			}
 		} else {
-			LOG.debug("created "+outputHtml.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtml));
+			LOG.debug("created "+outputHtmlFile.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtmlFile));
 		}
-		return outputHtml;
+		return outputHtmlFile;
 
     }
 
