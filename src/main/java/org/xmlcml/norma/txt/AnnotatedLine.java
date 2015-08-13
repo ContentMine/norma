@@ -169,7 +169,7 @@ public class AnnotatedLine {
 				return badIncrement(lineNumber, lastSection, section);
 			}
 			if (lastSection.elementAt(thisSize - 1) != section.elementAt(thisSize - 1) - 1) {
-				LOG.debug("xxx "+lastSize+"; "+thisSize);
+				LOG.trace("xxx "+lastSize+"; "+thisSize);
 				return badIncrement(lineNumber, lastSection, section);
 			}
 		} else if (lastSize == thisSize - 1) {
@@ -190,14 +190,14 @@ public class AnnotatedLine {
 
 	static boolean badIncrement(int lineNumber, IntArray lastSection,
 			IntArray section) {
-		LOG.warn("bad section increment ["+lineNumber+"] "+lastSection+" -> "+section);
+//		LOG.warn("bad section increment ["+lineNumber+"] "+lastSection+" -> "+section);
 		return false;
 	}
 
 	static boolean checkEquals(IntArray lastSection, IntArray section, int toCheck) {
 		for (int i = 0; i < toCheck; i++) {
 			if (lastSection.elementAt(i) != section.elementAt(i)) {
-				LOG.debug("bad section increment "+lastSection+" -> "+section);
+				LOG.trace("bad section increment "+lastSection+" -> "+section);
 				return false;
 			}
 		}

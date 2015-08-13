@@ -48,15 +48,15 @@ public class TxtReaderTest {
 				lineNumbers.addElement(i);
 				currentPattern = (currentPattern.equals(ODD) ? EVEN : ODD);
 				int page = Integer.parseInt(matcher.group(1));
-				LOG.debug(page);
+				LOG.trace(page);
 				currentNumber = i;
 				if (currentPage == page-1) {
-					LOG.debug("PAGE");
+					LOG.trace("PAGE");
 				}
 				currentPage = page;
 			}
 		}
-		LOG.debug(lineNumbers);
+		LOG.trace(lineNumbers);
 		return null;
 	}
 	
@@ -65,7 +65,7 @@ public class TxtReaderTest {
 		AnnotatedLineContainer pageHeadingContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		AnnotatedLineContainer pages = pageHeadingContainer.extractPageHeadings();
 		for (AnnotatedLine page : pages) {
-			LOG.debug(">p>"+page);
+			LOG.trace(">p>"+page);
 		}
 	}
 
@@ -73,15 +73,15 @@ public class TxtReaderTest {
 	public void testReadHal2Chapter() throws Exception {
 		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		AnnotatedLineContainer chapterHeadings = annotatedLineContainer.extractChapterHeadings(0, annotatedLineContainer.size());
-		LOG.debug("=======================");
+		LOG.trace("=======================");
 		for (AnnotatedLine chapterHeading : chapterHeadings) {
-			LOG.debug(chapterHeading);
+			LOG.trace(chapterHeading);
 		}
 		List<Chapter> chapterList = annotatedLineContainer.extractChapters(chapterHeadings);
 		Assert.assertEquals("chapters", 8, chapterList.size());
 		Assert.assertEquals("chapters", 707, chapterList.get(0).size());
 		Assert.assertEquals("chapters", 396, chapterList.get(7).size());
-		LOG.debug("-----------------------");
+		LOG.trace("-----------------------");
 	}
 
 	@Test
@@ -89,7 +89,7 @@ public class TxtReaderTest {
 		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		List<Chapter> chapterList = annotatedLineContainer.extractChapters();
 		for (Chapter chapter : chapterList) {
-			LOG.debug("-----------------------");
+			LOG.trace("-----------------------");
 			List<AnnotatedLine> sectionHeadings = chapter.getDecimalSectionHeadings();
 			Set<String> used = new HashSet<String>();
 			
@@ -107,13 +107,13 @@ public class TxtReaderTest {
 					continue;
 				}
 				used.add(section.toString());
-				LOG.debug("sec>"+section);
+				LOG.trace("sec>"+section);
 			}
 		}
 		Chapter chapter0 = chapterList.get(0);
 		HtmlElement element = chapter0.getOrCreateHtmlElement();
-		element.debug("html");
-		LOG.debug("-----------------------");
+//		element.debug("html");
+		LOG.trace("-----------------------");
 	}
 
 	@Test

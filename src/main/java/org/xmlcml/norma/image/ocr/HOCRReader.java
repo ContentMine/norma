@@ -1,6 +1,7 @@
 package org.xmlcml.norma.image.ocr;
 
 import java.awt.image.BufferedImage;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -48,7 +49,6 @@ import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
 import org.xmlcml.image.ImageUtil;
 import org.xmlcml.norma.editor.SubstitutionManager;
-import org.xmlcml.norma.editor.SubstitutionManagerTest;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
 

@@ -19,7 +19,7 @@ import org.xmlcml.xml.XMLUtil;
 
 public class DetectorCorrectorTest {
 	
-	public static final Logger LOG = Logger.getLogger(DetectorCorrector.class);
+	public static final Logger LOG = Logger.getLogger(DetectorCorrectorTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -45,12 +45,12 @@ public class DetectorCorrectorTest {
 		String regex = pattern0.createRegex();
 		Pattern.compile(regex);
 		Assert.assertEquals(
-				"\\s*((?:\\u2018?)[A-Z](?:[a-z]{2,}|[a-z]{1,2}\\.))\\s+([a-z]{2,}(?:\\u2019?))\\s+([^\\s\\(]+)\\s+((?:\\()[A-Z]{1,2}|NC_)([0-9]{5,6}(?:\\)))\\s*",
+				"\\s*((?:\\u2018?)[A-Z](?:[a-z]{2,}|[a-z]{1,2}\\.))\\s+([a-z]{2,}(?:\\u2019?))\\s+([^\\s\\(]+)\\s+((?:\\()(?:[A-Z]{1,2}|NC_))([0-9]{5,6}(?:\\)))\\s*",
 				regex);
 		PatternElement pattern1 = (PatternElement) patterns.get(1);
 		regex = pattern1.createRegex();
 		Pattern.compile(regex);
-		Assert.assertEquals("\\s*((?:\\u2018?)[A-Z](?:[a-z]{2,}|[a-z02S/]?\\.))\\s+([a-z/]+(?:\\u2019?))\\s+([^\\s\\(]+)\\s+((?:\\()[A-Z123580]{1,2}|NC_)([0-9BIOSZ]{5,6}(?:\\)))\\s*",  regex);
+		Assert.assertEquals("\\s*((?:\\u2018?)[A-Z](?:[a-z]{2,}|[a-z02S/]?\\.))\\s+([a-z/]+(?:\\u2019?))\\s+([^\\s\\(]+(?:\\s+[^\\s\\(]+)?)\\s+((?:\\()(?:[A-Z123580]{1,2}|NC_))([0-9BIOSZ]{5,6}(?:\\)))\\s*",  regex);
 	}
 	
 	
@@ -134,7 +134,7 @@ public class DetectorCorrectorTest {
 			String value = otu.getValue();
 			String newValue = patternElement1.createEditedValueAndRecord(value);
 			EditList editRecord = patternElement1.getEditRecord();
-			LOG.debug(value+" => "+newValue+((editRecord.size() == 0) ? "" :"; "+editRecord));
+			LOG.trace(value+" => "+newValue+((editRecord.size() == 0) ? "" :"; "+editRecord));
 		}
 	}
 	

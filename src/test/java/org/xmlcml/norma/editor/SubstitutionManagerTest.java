@@ -32,7 +32,7 @@ public class SubstitutionManagerTest {
 		substitutionManager.addSubstitution(new Substitution("f", "pqr"));
 		String wordValue = substitutionManager.applySubstitutions(target);
 		Assert.assertEquals("bcdbpqr", wordValue);
-		Assert.assertEquals("a=>b a=>b f=>pqr", substitutionManager.getEditRecord().toString());
+		Assert.assertEquals("[a=>b, a=>b, f=>pqr]", substitutionManager.getEditRecord().toString());
 	}
 	
 	@Test
@@ -44,7 +44,7 @@ public class SubstitutionManagerTest {
 		substitutionManager.addSubstitution(new Substitution("a", "b"));
 		wordValue = substitutionManager.applySubstitutions(svgWord, wordValue, rect);
 		Assert.assertEquals("bcdbf", wordValue);
-		Assert.assertEquals("a=>b a=>b", substitutionManager.getEditRecord().toString());
+		Assert.assertEquals("[a=>b, a=>b]", substitutionManager.getEditRecord().toString());
 	}
 
 }

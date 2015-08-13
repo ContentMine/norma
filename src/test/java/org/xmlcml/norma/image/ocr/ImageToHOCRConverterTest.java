@@ -60,6 +60,7 @@ public class ImageToHOCRConverterTest {
 	}
 
 	@Test
+	@Ignore("Tesseract")
 	public void testConvertPNGsToSVG() throws Exception {
 		File ERIN_PNG = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/erinPngs/");
 		File[] pngs = new File[] { 

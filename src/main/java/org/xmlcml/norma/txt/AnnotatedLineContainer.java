@@ -112,7 +112,7 @@ public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 		for (currentLine = start; currentLine < annotatedLinesList.size(); currentLine++) {
 			AnnotatedLine aLine = annotatedLinesList.get(currentLine);
 			if (aLine.containsKey(AnnotatedLine.L1_KEY) || aLine.containsKey(AnnotatedLine.R1_KEY)) {
-				LOG.debug(">toc>"+currentLine);
+				LOG.trace(">toc>"+currentLine);
 				return currentLine;
 			}
 		}
@@ -123,7 +123,7 @@ public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 		for (currentLine = start; currentLine < annotatedLinesList.size(); currentLine++) {
 			AnnotatedLine aLine = annotatedLinesList.get(currentLine);
 			if (aLine.containsKey(AnnotatedLine.CHAPTER_KEY)) {
-				LOG.debug(">chap>"+currentLine);
+				LOG.trace(">chap>"+currentLine);
 				return currentLine;
 			}
 		}
@@ -138,7 +138,7 @@ public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 			if (annotatedLine.containsLeftDecimalKeys()) {
 				LOG.trace(">tt>"+annotatedLine);
 			} else {
-				LOG.debug(">non-toc>"+annotatedLine);
+				LOG.trace(">non-toc>"+annotatedLine);
 			}
 		}
 		return toc;
@@ -153,7 +153,7 @@ public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 			if (annotatedLine.containsLeftDecimalKeys()) {
 				LOG.trace(">tt>"+annotatedLine);
 			} else {
-				LOG.debug(">non-chapter>"+annotatedLine);
+				LOG.trace(">non-chapter>"+annotatedLine);
 			}
 		}
 		return chapter;
