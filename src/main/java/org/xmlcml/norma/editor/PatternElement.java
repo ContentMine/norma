@@ -72,8 +72,16 @@ public class PatternElement extends AbstractEditorElement {
 		return Pattern.compile(createRegex());
 	}
 
+	/** matches string and applies edits
+	 * 
+	 * Also builds editRecord (use getEditRecord()) as record of edits
+	 * Also builds extractionList (use getExtractionList()) for matcher components after editing
+	 * 
+	 * @param value
+	 * @return edited string (null if fails match)
+	 */
 	public String createEditedValueAndRecord(String value) {
-		LOG.debug("analysing: "+value);
+		LOG.trace("analysing: "+value);
 		String newValue = null;
 		Pattern pattern1 = createPattern();
 		LOG.trace("pattern: "+pattern1);
@@ -81,6 +89,7 @@ public class PatternElement extends AbstractEditorElement {
 		editRecord = new EditList();
 		extractionList = new ArrayList<Extraction>();
 		if (matcher.matches()) {
+			LOG.trace("matches "+matcher.groupCount());
 			editedBuilder = new StringBuilder();
 			for (int i = 1; i <= matcher.groupCount(); i++) {
 				String group = matcher.group(i);
@@ -97,11 +106,12 @@ public class PatternElement extends AbstractEditorElement {
 				insertFollowingSpace(field);
 			}
 			newValue =  editedBuilder.toString();
+			LOG.trace("new "+newValue);
+			combineExtractionListComponents();
+			LOG.trace(this.getAttributeValue(LEVEL)+">new>"+extractionList);
 		} else {
-			LOG.debug("failed match");
+			LOG.trace("failed match");
 		}
-		combineExtractionListComponents();
-		LOG.trace(this.getAttributeValue(LEVEL)+">new>"+extractionList);
  		return newValue;
 	}
 

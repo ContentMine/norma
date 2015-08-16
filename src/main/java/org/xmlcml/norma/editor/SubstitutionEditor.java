@@ -66,7 +66,7 @@ public class SubstitutionEditor {
 	}
 
 	public void readSubstitutionEdits(InputStream substitutionsStream) {
-		LOG.debug("readSubstitutionEdits");
+		LOG.trace("readSubstitutionEdits");
 		ensureSubstitutionMap();
 		try {
 			Element substitutionsElement = XMLUtil.parseQuietlyToDocument(substitutionsStream).getRootElement();
@@ -152,7 +152,7 @@ public class SubstitutionEditor {
 	}
 
 	private String recordEditsInWord(SVGWord word, SVGRect rect) {
-		LOG.debug("recordEditsInWord");
+		LOG.trace("recordEditsInWord");
 		String editString = editRecord.toString().trim();
 		word.addAttribute(new Attribute(EDITS, editString));
 		if (rect != null) {
@@ -169,14 +169,14 @@ public class SubstitutionEditor {
 	}
 
 	public void addSubstitution(Substitution substitution) {
-		LOG.debug("addSubstitution");
+		LOG.trace("addSubstitution");
 		ensureSubstitutionMap();
 		substitutionMap.put(substitution.getOriginal(), substitution);
 		originalList.add(substitution.getOriginal());
 	}
 
 	public Substitution get(String key) {
-		LOG.debug("get key");
+		LOG.trace("get key");
 		ensureSubstitutionMap();
 		return substitutionMap.get(key);
 	}
@@ -193,8 +193,10 @@ public class SubstitutionEditor {
 	
 	public String createEditedValueAndRecord(String value) {
 		String newValue = null;
+		LOG.trace("editor>"+editorPattern);
 		if (editorPattern != null) {
 			newValue =  editorPattern.createEditedValueAndRecord(value);
+			LOG.trace("val "+newValue);
 			this.editRecord = editorPattern.getEditRecord();
 			this.extractionList = editorPattern.getExtractionList();
 		}

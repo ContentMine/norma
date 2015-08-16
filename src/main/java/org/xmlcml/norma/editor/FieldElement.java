@@ -50,7 +50,7 @@ public class FieldElement extends AbstractEditorElement implements IRegexCompone
 		for (SubstitutionElement substitution : substitutionList) {
 			group = substitution.apply(group);
 			EditList substitutionRecord = substitution.getEditRecord();
-			if (substitutionRecord.size() > 0) {
+			if (substitutionRecord != null && substitutionRecord.size() > 0) {
 				editRecord.add(substitutionRecord);
 				LOG.trace("fr "+editRecord);
 			}

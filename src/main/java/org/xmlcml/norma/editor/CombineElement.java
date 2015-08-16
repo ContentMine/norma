@@ -20,29 +20,32 @@ public class CombineElement extends AbstractEditorElement {
 		super(TAG);
 	}
 
-	public void combine(List<Extraction> extractionList) {
+	/** combines members of extraction list.
+	 * 
+	 * @param extractionList
+	 * @return 
+	 * 
+	 * @throws RuntimeException incorrect input (usually result of failed match)
+	 */
+	public void combine(List<Extraction> extractionList) throws RuntimeException {
 		String source = this.getAttributeValue(SOURCE);
 		String target = this.getAttributeValue(TARGET);
 		if (source == null || target == null) {
-			LOG.error("must give source and target");
-			return;
+			throw new RuntimeException("must give source and target");
 		}
 		String[] sources = source.trim().split("\\s+");
 		if (sources.length < 2) {
-			LOG.error("need at least 2 sources");
-			return;
+			throw new RuntimeException("need at least 2 sources");
 		}
 		if (target.trim().equals("")) {
-			LOG.error("need non empty target");
-			return;
+			throw new RuntimeException("need non empty target");
 		}
 		StringBuilder sb = new StringBuilder();
 		for (String id : sources) {
 			LOG.trace(">id>"+id);
 			Extraction extraction = Extraction.find(extractionList, id);
 			if (extraction == null) {
-				LOG.error("cannot find extraction for: "+id);
-				return;
+				throw new RuntimeException("cannot find extraction for: "+id);
 			}
 			extractionList.remove(extraction);
 			sb.append(extraction.getValue());
