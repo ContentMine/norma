@@ -27,9 +27,14 @@ public class SubstitutionElement extends AbstractEditorElement {
 			original = this.getAttributeValue(ORIGINAL);
 			edited = this.getAttributeValue(EDITED);
 		}
-		editRecord = new EditList();
-		group = SubstitutionManager.substituteAllAndRecordEdits(group, original, edited, editRecord);
-//		group = group.replaceAll(original, edited);
+		SubstitutionEditor substitutionEditor = this.getSubstitutionEditor();
+		if (substitutionEditor != null) {
+			group = substitutionEditor.substituteAllAndRecordEdits(group, original, edited);
+			editRecord = substitutionEditor.getEditRecord();
+			if (editRecord.size() > 0) {
+				LOG.trace("er "+editRecord);
+			}
+		}
 		return group;
 	}
 

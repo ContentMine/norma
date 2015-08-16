@@ -1,6 +1,7 @@
 package org.xmlcml.norma.editor;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -17,9 +18,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.xml.XMLUtil;
 
-public class DetectorCorrectorTest {
+public class AbstractEditorElementTest {
 	
-	public static final Logger LOG = Logger.getLogger(DetectorCorrectorTest.class);
+	public static final Logger LOG = Logger.getLogger(AbstractEditorElementTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -27,8 +28,7 @@ public class DetectorCorrectorTest {
 	@Test
 	public void testReadEditor() {
 		InputStream is = this.getClass().getResourceAsStream("/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
+		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);
 		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
 		Assert.assertEquals(2, patterns.size());
 		PatternElement pattern0 = (PatternElement) patterns.get(0);
@@ -38,8 +38,7 @@ public class DetectorCorrectorTest {
 	@Test
 	public void testCreateRegex() throws FileNotFoundException {
 		InputStream is = new FileInputStream("src/test/resources/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
+		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);
 		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
 		PatternElement pattern0 = (PatternElement) patterns.get(0);
 		String regex = pattern0.createRegex();
@@ -57,8 +56,7 @@ public class DetectorCorrectorTest {
 	@Test
 	public void testRegexAgainstMatchingStrings() throws FileNotFoundException {
 		InputStream is = new FileInputStream("src/test/resources/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
+		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);
 		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
 		Pattern pattern0 = Pattern.compile(((PatternElement) patterns.get(0)).createRegex());
 		Element level0 = XMLUtil.parseQuietlyToDocument(new File("src/test/resources/org/xmlcml/norma/editor/level0Test.xml")).getRootElement();
@@ -77,8 +75,7 @@ public class DetectorCorrectorTest {
 	@Test
 	public void testRegexAgainstNonMatchingStrings() throws FileNotFoundException {
 		InputStream is = new FileInputStream("src/test/resources/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
+		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);
 		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
 		Pattern pattern0 = Pattern.compile(((PatternElement) patterns.get(0)).createRegex());
 //		LOG.debug(pattern);
@@ -100,16 +97,13 @@ public class DetectorCorrectorTest {
 	@Test
 	public void testCorrectNonMatchingString() throws FileNotFoundException {
 		InputStream is = new FileInputStream("src/test/resources/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
+		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);
 		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
 		PatternElement patternElement1 = (PatternElement) patterns.get(1);
 		Pattern pattern1 = patternElement1.createPattern();
-		Element level1 = XMLUtil.parseQuietlyToDocument(new File("src/test/resources/org/xmlcml/norma/editor/level1Test.xml")).getRootElement();
 		String badTarget = "Streptococcus gordonii CH1 (NC_OO9785)";
 		Matcher matcher = pattern1.matcher(badTarget);
 		Assert.assertTrue("should match", matcher.matches());
-		StringBuilder corrected = new StringBuilder();
 		List<String> groups = new ArrayList<String>();
 		for (int i = 1; i <= matcher.groupCount(); i++) {
 			String group = matcher.group(i);
@@ -121,23 +115,5 @@ public class DetectorCorrectorTest {
 		}
 	}
 	
-	@Test
-	public void testCorrectNonMatchingStrings() throws FileNotFoundException {
-		InputStream is = new FileInputStream("src/test/resources/org/xmlcml/norma/editor/speciesEditor.xml");
-		DetectorCorrector detectorCorrector = new DetectorCorrector();
-		EditorElement editorElement = (EditorElement) detectorCorrector.createEditorElement(is);
-		List<Element> patterns = XMLUtil.getQueryElements(editorElement, "/editor/patternList/pattern");
-		PatternElement patternElement1 = (PatternElement) patterns.get(1);
-		Element mixedOtus = XMLUtil.parseQuietlyToDocument(new File("src/test/resources/org/xmlcml/norma/editor/mixedOtus.xml")).getRootElement();
-		List<Element> otuList = XMLUtil.getQueryElements(mixedOtus, "/otus/otu");
-		for (Element otu : otuList) {
-			String value = otu.getValue();
-			String newValue = patternElement1.createEditedValueAndRecord(value);
-			EditList editRecord = patternElement1.getEditRecord();
-			LOG.trace(value+" => "+newValue+((editRecord.size() == 0) ? "" :"; "+editRecord));
-		}
-	}
-	
-
 
 }

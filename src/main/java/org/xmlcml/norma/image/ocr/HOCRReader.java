@@ -48,7 +48,7 @@ import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
 import org.xmlcml.image.ImageUtil;
-import org.xmlcml.norma.editor.SubstitutionManager;
+import org.xmlcml.norma.editor.SubstitutionEditor;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
 
@@ -124,7 +124,7 @@ public class HOCRReader extends InputReader {
 	private List<SVGWordLine> wordLineList;
 	private List<SVGPhrase> allPhraseList;
 
-	private SubstitutionManager substitutionManager;
+	private SubstitutionEditor substitutionManager;
 
 	public int getImageMarginX() {
 		return imageMarginX;
@@ -456,7 +456,7 @@ public class HOCRReader extends InputReader {
 			SVGText text = new SVGText(xy, "SPACE");
 			text.setFontSize(15.);
 			word.svg.appendChild(text);
-			LOG.debug(word.svg.toXML());
+			LOG.trace(word.svg.toXML());
 		}
 	}
 
@@ -481,6 +481,7 @@ public class HOCRReader extends InputReader {
 	}
 
 	private HtmlSVG createWordFromTesseract(HtmlSpan htmlSpan0) {
+		LOG.trace("createWordFromTesseract");
 		SVGWord svgWord = new SVGWord();
 		HOCRReader.copyAttributes(htmlSpan0, svgWord);
 		HtmlSpan htmlSpan = new HtmlSpan(); 
@@ -531,7 +532,7 @@ public class HOCRReader extends InputReader {
 
 	private void ensureSubstitutionManager() {
 		if (substitutionManager == null) {
-			substitutionManager = new SubstitutionManager();
+			substitutionManager = new SubstitutionEditor();
 		}
 	}
 

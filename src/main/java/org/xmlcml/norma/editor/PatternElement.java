@@ -17,30 +17,39 @@ public class PatternElement extends AbstractEditorElement {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	
 	public static final String TAG = "pattern";
+	
+	public final static String LEVEL = "level";
+	
 	private List<FieldElement> fieldList;
 	private StringBuilder editedBuilder;
 	private EditList editRecord;
+	private StringBuilder regexStringBuilder;
+	private List<Extraction> extractionList;
 
 	public PatternElement() {
 		super(TAG);
 	}
 
 	public String createRegex() {
-		StringBuilder regexString = new StringBuilder();
-		for (int i = 0; i < this.getChildElements().size(); i++) {
-			AbstractEditorElement child = (AbstractEditorElement) this.getChildElements().get(i);
-			if (child instanceof RegexComponent) {
-				String s = ((RegexComponent) child).createRegex();
-				if (s != null) {
-					regexString.append(s);
+		if (regexStringBuilder == null) {
+			regexStringBuilder = new StringBuilder();
+			for (int i = 0; i < this.getChildElements().size(); i++) {
+				AbstractEditorElement child = (AbstractEditorElement) this.getChildElements().get(i);
+				if (child instanceof IRegexComponent) {
+					String s = ((IRegexComponent) child).createRegex();
+					LOG.trace(">icomp> "+s);
+					if (s != null) {
+						regexStringBuilder.append(s);
+					}
+				} else if (child instanceof CombineElement) {
+					// skip
+				} else {
+					LOG.error("unknown child of pattern: "+child.getLocalName());
 				}
-			} else {
-				throw new RuntimeException("unknown child of pattern: "+child.getLocalName());
 			}
 		}
-		return regexString.toString();
+		return regexStringBuilder.toString();
 	}
 
 	public FieldElement getField(int i) {
@@ -64,33 +73,69 @@ public class PatternElement extends AbstractEditorElement {
 	}
 
 	public String createEditedValueAndRecord(String value) {
+		LOG.debug("analysing: "+value);
 		String newValue = null;
 		Pattern pattern1 = createPattern();
+		LOG.trace("pattern: "+pattern1);
 		Matcher matcher = pattern1.matcher(value);
 		editRecord = new EditList();
+		extractionList = new ArrayList<Extraction>();
 		if (matcher.matches()) {
 			editedBuilder = new StringBuilder();
 			for (int i = 1; i <= matcher.groupCount(); i++) {
 				String group = matcher.group(i);
 				FieldElement field = getField(i - 1);
 				group = field.applySubstitutions(group);
-				EditList fieldEditRecord = field.getEditRecord();
-				this.editRecord.add(fieldEditRecord);
-				insertSpace(field);
+				Extraction extraction = new Extraction(field.getNameAttribute(), group);
+				getExtractionList().add(extraction);
+				EditList fieldRecord = field.getEditRecord();
+				if (fieldRecord.size() > 0) {
+					LOG.trace("fr1 "+fieldRecord);
+					this.editRecord.add(fieldRecord);
+				}
 				editedBuilder.append(group);
+				insertFollowingSpace(field);
 			}
 			newValue =  editedBuilder.toString();
+		} else {
+			LOG.debug("failed match");
 		}
-		return newValue;
+		combineExtractionListComponents();
+		LOG.trace(this.getAttributeValue(LEVEL)+">new>"+extractionList);
+ 		return newValue;
 	}
 
-	private void insertSpace(FieldElement field) {
+	private void combineExtractionListComponents() {
+		LOG.trace(this.getAttributeValue(LEVEL)+">orig>"+getExtractionList());
+		List<Element> combines = XMLUtil.getQueryElements(this, "*[local-name()='"+CombineElement.TAG+"']");
+		for (Element combine : combines) {
+			((CombineElement)combine).combine(extractionList);
+		}
+	}
+
+	public boolean validate(String value) {
+		boolean validate = false;
+		if (value != null) {
+			Pattern pattern1 = createPattern();
+			Matcher matcher = pattern1.matcher(value);
+			validate = matcher.matches();
+			if (!validate) {
+				LOG.debug(">failed to validate>\n"+pattern1+": \n"+value);
+			}
+		}
+		return validate;
+	}
+
+	private void insertFollowingSpace(FieldElement field) {
 		SpaceElement space = field.getFollowingSpace();
 		if (space != null) {
 			String count = space.getCount();
 			if (count != null && count.trim().length() > 0 && !(count.equals("*"))) {
 				editedBuilder.append(" ");
 			}
+			LOG.trace("sp> "+field.getNameAttribute()+" "+count);
+		} else {
+			LOG.trace("no following space: "+field.getNameAttribute());
 		}
 	}
 	
@@ -99,9 +144,13 @@ public class PatternElement extends AbstractEditorElement {
 	}
 
 	public EditList getEditRecord() {
+		LOG.trace("pe "+editRecord);
 		return editRecord;
 	}
 
+	public List<Extraction> getExtractionList() {
+		return extractionList;
+	}
 
 
 }

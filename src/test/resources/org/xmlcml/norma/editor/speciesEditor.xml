@@ -1,7 +1,7 @@
 
 <editor>
    <patternList>
-      <pattern level="0">
+      <pattern level="validator">
          <!-- this regex enforces the ID patterns strictly. It will only fail when 
             characters are garbled to the same type, e.g. M->N , i->l, 3->8 These are 
             undetectable at this stage -->
@@ -28,7 +28,7 @@
          <space count="*" />
       </pattern>
 
-      <pattern level="1">
+      <pattern level="editor">
          <!-- this regex allows for common garbles (detected as an error in 0) 
             and error correction by "safe" correction. The correction will generate a 
             conformant filed, but it may not be "correct". Each substitution has an error 

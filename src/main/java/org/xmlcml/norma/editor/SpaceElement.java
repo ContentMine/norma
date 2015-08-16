@@ -3,7 +3,7 @@ package org.xmlcml.norma.editor;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-public class SpaceElement extends AbstractEditorElement implements RegexComponent {
+public class SpaceElement extends AbstractEditorElement implements IRegexComponent {
 
 	private static final String COUNT = "count";
 	public static final Logger LOG = Logger.getLogger(SpaceElement.class);
