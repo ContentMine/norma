@@ -19,6 +19,7 @@ public class ImageToHOCRConverter {
 
 	private static final String HOCR = "hocr";
 	private static final String USR_LOCAL_BIN_TESSERACT = "/usr/local/bin/tesseract";
+	private final static String TESS_CONFIG = "phylo";
 //	private static final String ENCODING = "-Dfile.encoding=UTF8";
 	private static final String ENCODING = "";
 	
@@ -58,7 +59,7 @@ public class ImageToHOCRConverter {
     	
         output.getParentFile().mkdirs();
         ProcessBuilder tesseractBuilder = new ProcessBuilder(
-        		USR_LOCAL_BIN_TESSERACT, inputImageFile.getAbsolutePath(), output.getAbsolutePath(), HOCR, ENCODING );
+        		USR_LOCAL_BIN_TESSERACT, inputImageFile.getAbsolutePath(), output.getAbsolutePath(), TESS_CONFIG, HOCR, ENCODING );
         tesseractBuilder.redirectError(ProcessBuilder.Redirect.INHERIT);
     	Process tesseractProc = null;
         try {
