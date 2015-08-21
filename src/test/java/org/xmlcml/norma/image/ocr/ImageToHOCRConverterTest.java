@@ -21,7 +21,7 @@ import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 
 public class ImageToHOCRConverterTest {
 
-	public final static Logger LOG = Logger.getLogger(ImageToHOCRConverterTest.class);
+	private final static Logger LOG = Logger.getLogger(ImageToHOCRConverterTest.class);
 	static {LOG.setLevel(Level.DEBUG);}
 	
 	@Test
