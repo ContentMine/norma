@@ -109,7 +109,7 @@ public class ImageToHOCRConverter {
 
 	private File createOutputHtmlFileDescriptorForHOCR_HTML(File output) {
 		String filename = output.getAbsolutePath()+".html";
-		LOG.debug("creating HTML output: "+filename);
+		LOG.trace("creating HTML output: "+filename);
 		return new File(filename);
 	}
 

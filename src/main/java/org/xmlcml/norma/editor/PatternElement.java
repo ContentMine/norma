@@ -130,7 +130,7 @@ public class PatternElement extends AbstractEditorElement {
 			Matcher matcher = pattern1.matcher(value);
 			validate = matcher.matches();
 			if (!validate) {
-				LOG.debug(">failed to validate>\n"+pattern1+": \n"+value);
+				throw new RuntimeException(">failed to validate>\n"+pattern1+": \n"+value);
 			}
 		}
 		return validate;
