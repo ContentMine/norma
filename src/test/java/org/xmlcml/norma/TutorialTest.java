@@ -89,10 +89,10 @@ public class TutorialTest {
 		Norma norma = new Norma();
 		norma.run(args);
 		Assert.assertTrue(cmdirTop.exists());
-		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_plosone_0115884_xml")));
+		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/plosone_0115884_xml")));
 //		Assert.assertNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_pdf_1471-2148-14-70")));
-		Assert.assertNotNull(CMDir.getExistingFulltextPDF(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_test_pdf_1471_2148_14_70_pdf")));
-		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/src_test_resources_org_xmlcml_norma_regressiondemos_singleFiles_test_xml_1471_2148_14_70_xml")));
+		Assert.assertNotNull(CMDir.getExistingFulltextPDF(new File("target/cmdirs_xml/test_pdf_1471_2148_14_70_pdf")));
+		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_xml_1471_2148_14_70_xml")));
 	}		
 	
 	/**

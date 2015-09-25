@@ -193,17 +193,17 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void runTransform(ArgumentOption option) {
-		if (currentCMDir == null) {
+		if (currentCTree == null) {
 			LOG.warn("No current CMDir");
 		} else {
-			LOG.trace("***run transform "+currentCMDir);
+			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
 			normaTransformer.transform(option);
 		}
 	}
 
 	public void runHtml(ArgumentOption option) {
-		LOG.trace("***run html "+currentCMDir);
+		LOG.trace("***run html "+currentCTree);
 		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
 		HtmlElement htmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
 		if (htmlElement == null) {
@@ -211,7 +211,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			return;
 		}
 		if (output != null) {
-			currentCMDir.writeFile(htmlElement.toXML(), output);
+			currentCTree.writeFile(htmlElement.toXML(), output);
 		}
 	}
 
@@ -244,7 +244,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	void writeImages() {
-		File imageDir = currentCMDir.getOrCreateExistingImageDir();
+		File imageDir = currentCTree.getOrCreateExistingImageDir();
 		Set<String> imageSerialSet = new HashSet<String>();
 		StringBuilder sb = new StringBuilder();
 		for (NamedImage serialImage : normaTransformer.serialImageList) {
@@ -293,18 +293,18 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			LOG.trace("CREATING CMDir FROM INPUT:"+inputList);
 			// this actually creates directory
 			getOrCreateOutputDirectory();
-			ensureCMDirList();
+			ensureCTreeList();
 			createNewCMDirsAndCopyOriginalFilesAndAddToList();
 		}
 	}
 
 	private void createNewCMDirsAndCopyOriginalFilesAndAddToList() {
-		ensureCMDirList();
+		ensureCTreeList();
 		for (String filename : inputList) {
 			try {
 				CMDir cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
 				if (cmDir != null) {
-					cmDirList.add(cmDir);
+					cTreeList.add(cmDir);
 				}
 			} catch (IOException e) {
 				LOG.error("Failed to create CMDir: "+filename+"; "+e);
@@ -443,7 +443,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public CMDir getCurrentCMDir() {
-		return currentCMDir;
+		return currentCTree;
 	}
 
 }
