@@ -224,6 +224,20 @@ The current arguments  are:
 -x or --xsl  stylesheet
 ```
 			
-			Transform XML or HTML input with stylesheet. 
+			Transform XML or HTML input with stylesheet.   
+			This is DEPRECATED. Use --transform instead.
+			
+```
+--transform  stylesheet
+```
+
+		
+			Transform XML or HTML or PDF or other input.    
+			Relacement for --xsl
+			Argument may be a file/URL reference to a stylesheet, or a code from one of   
+			{nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup, [jtidy, htmlunit NYI]}
+			
+
+
 
 
