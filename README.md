@@ -177,6 +177,14 @@ The current arguments  are:
 ```
 
 				outputs help for all options, including superclass DefaultArgProcessor
+
+```				
+--makedocs 
+```
+
+	      Create HTML version of all args.xml file for inclusion in documentation    
+	      Iterates over src/main/resources directory to find all args.xml files    
+	      and creates a sister args.html file.    
 		
 ```
 -c or --chars  [pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21
@@ -218,12 +226,28 @@ The current arguments  are:
 -t or --tidy  [HTML tidy option]
 ```
 			
-			Choose an HTML tidy tool. 
+			Choose an HTML tidy tool. OBSOLETE - use --html
+			
+```
+--html  [HTML tidy option, jsoup, jtidy, htmlunit]
+```
+
+			Clean raw HTML and produce XHTML.   
+			Note: This is NOT scholarly.html and will need a publisher-specific    
+				stylesheet for further processing.    
 		
 ```
 -x or --xsl  stylesheet
 ```
 			
-			Transform XML or HTML input with stylesheet. 
+			Transform XML or HTML input with stylesheet.   
+			This is DEPRECATED. Use --transform instead.
+			
+```
+--transform  stylesheet
+```
 
-
+		
+			Transform XML or HTML or PDF or other input.    
+			Relacement for --xsl. TRANSFORMATION OPTIONS:   
+			hocr2svg, pdf2html, pdf2svg, pdf2txt, pdf2images, txt2html, tex2html
