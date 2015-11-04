@@ -6,3 +6,5 @@
 .project
 .settings/
 target/
+docs/
+src/test/resources/org/xmlcml/norma/pubstyle/getpapers/anopheles/

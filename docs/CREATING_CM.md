@@ -2,9 +2,11 @@
 
 *** BY FAR THE SAFEST WAY IS TO USE QUICKSCRAPE ***
 
-Any other method is likely to lead to fies out of sync unless you are acreful with what you are doing.
+Any other method is likely to lead to files out of sync unless you are careful with what you are doing.
 However it can be sometimes useful to create CMDirs from single files.
 This documentation may not have been thoroughly checked.
+
+See also docs/CREATING.md in `contentmine`
 
 ## Input
 
@@ -61,5 +63,4 @@ Analogous copies for:
 
 ```foo/bar.svg``` is copied to ```mydir/bar/svg/bar.svg```
 
- 
  

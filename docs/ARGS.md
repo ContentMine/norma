@@ -33,7 +33,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 					  
 		
 ```
--q or --quickscrapeNorma  director(ies)
+-q or --cmdir  director(ies)
 ```
 ### QUICKSCRAPE_NORMA:
 			
@@ -79,7 +79,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -r or --recursive 
 ```
 
-### RECURSIVE
+### RECURSIVE
 			
 			input directories
 			If the input is a directory then by default only the first level is searched
@@ -90,7 +90,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -e or --extensions  ext1 [ext2...]
 ```
 
-### EXTENSIONS
+### EXTENSIONS
 			
 				When a directory or directories are searched then all files are input by default
 				It is possible to limit the search by using only certain extensions
@@ -102,7 +102,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -h or --help 
 ```
 
-### HELP
+### HELP
 			
 				outputs help for all options, including superclass DefaultArgProcessor
 		
@@ -110,7 +110,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -c or --chars  [pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21
 ```
 
-### CHARS:
+### CHARS:
 			Replaces one character by another. There are many cases where original characters are unsuitable 
 			for science and can be replaced (often by low codepoints).
 			Smart (balanced) quotes can usually be replaced by \" or '
@@ -120,7 +120,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 ```
 -d or --divs  expression [expression] ...
 ```
-### DIVS:
+### DIVS:
 			
 			List of expressions identifying XML element to wrap as divs/sections
 			Examples might be h1, h2, h3, or numbers sections
@@ -129,7 +129,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 ```
 -n or --name   tag1,tag2 [tag1,tag2 ....]
 ```
-### NAME:
+### NAME:
 			
 			List of comma-separated pairs of tags; the first is replaced by the second. Example might be:
 			  em,i strong,b
@@ -139,7 +139,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -p or --pubstyle  pub_code
 ```
 
-### PUBSTYLE:
+### PUBSTYLE:
 			
 			Code or mnemomic to identifier the publisher or journal style. 
 			this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument 
@@ -154,7 +154,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 ```
 -z or --standalone  boolean
 ```
-### STANDALONE:
+### STANDALONE:
 			
 			Treats XML document as standalone. Very useful as some parsers will take ages resolving the DTD and often fail
 			if not connected to the net. 
@@ -162,7 +162,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 ```
 -s or --strip  [options to strip]
 ```
-### STRIP:
+### STRIP:
 			List of XML components to strip from the raw well-formed HTML;
 			if a list is given, then use that; if this argument is missing (or the single
 			string '#pubstyle' then the Pubstyle defaults are used. If there are no arguments
@@ -185,7 +185,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 ```
 -t or --tidy  [HTML tidy option]
 ```
-### TIDY:
+### TIDY:
 			
 			Choose an HTML tidy tool. At present we have:
 			  JTidy JSoup and HtmlUnit 
@@ -195,7 +195,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 -x or --xsl  stylesheet
 ```
 
-### XSL:
+### XSL:
 			
 			Transform XML or HTML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
 			or a code from one of {nlm, jats ...}

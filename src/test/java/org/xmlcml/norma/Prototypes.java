@@ -42,6 +42,8 @@ public class Prototypes {
 		createPDFTXT("TH2013PEST1177");
 	}
 	
+	// https://svn.apache.org/viewvc/pdfbox/branches/1.8/pdfbox/src/main/java/org/apache/pdfbox/ExtractImages.java?view=markup&sortby=date
+	
 	private static void runImages() {
 		createImageDir("peterijsem/sourceimages/small", "examples/ijsem/small", "png");
 	}

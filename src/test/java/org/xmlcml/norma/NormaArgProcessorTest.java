@@ -20,8 +20,7 @@ import org.xmlcml.cmine.files.CMDirList;
 public class NormaArgProcessorTest {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(NormaArgProcessorTest.class);
+	private static final Logger LOG = Logger.getLogger(NormaArgProcessorTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -115,7 +114,8 @@ public class NormaArgProcessorTest {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
-		String args = "-q "+container0115884.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+container0115884.toString()+
+				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		Norma norma = new Norma();
 		norma.run(args);
 		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
@@ -123,7 +123,7 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
 		CMDir cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
-		LOG.trace(files);
+		LOG.debug(cmDir+"; "+files);
 		Assert.assertEquals(5, files.size());
 	}
 	
@@ -192,6 +192,46 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
+	/** transforms raw Html to Html
+	 * 
+	 * @throws IOException
+	 */
+	public void testHTML2HTML() throws IOException {
+		File container1196402 = new File("target/ieee/1196402/");
+		if (container1196402.exists()) FileUtils.forceDelete(container1196402);
+		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container1196402);
+		String args = "-q "+container1196402.toString()+" --html jsoup --input fulltext.html --output fulltext.xhtml";
+		LOG.debug(args);
+		Norma norma = new Norma();
+		norma.run(args);
+		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		Assert.assertNotNull(cmDirList);
+		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
+		CMDir cmDir = cmDirList.get(0);
+		List<File> files = cmDir.listFiles(true);
+		LOG.trace(files);
+		Assert.assertEquals(5, files.size());
+	}
+
+	@Test
+	/** transforms raw Html to Html
+	 * 
+	 * @throws IOException
+	 */
+	@Ignore // not open access
+	public void testHTML2HTMLNature() throws IOException {
+		FileUtils.copyDirectory(new File("../miningtests/nature/doi_10_1038_nnano_2014_93"),  new File("target/nature/nnano/"));
+		String args = "-q target/nature/nnano/"
+				+ " --html jsoup"
+				+ " --input fulltext.html"
+				+ " --output fulltext.xhtml";
+		Norma norma = new Norma();
+		norma.run(args);
+
+	}
+	
+
+	@Test
 	public void testPubstyle() throws Exception {
 		String args = "--pubstyle bmc";
 		Norma norma = new Norma();
@@ -205,9 +245,98 @@ public class NormaArgProcessorTest {
 		File containerPLOSONE = new File("target/plosone/multiple/");
 		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
 		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
-		String args = "-q "+containerPLOSONE.toString()+" --transform nlm2html --input fulltext.xml --output scholarly.html";
+		String args = "-q "+containerPLOSONE.toString()+
+				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		LOG.trace("args> "+args);
 		Norma norma = new Norma();
 		norma.run(args);
 	}
+	
+	@Test
+	/** creates new CMDirs for list of PDF and then transforms
+	 * 
+	 */
+	@Ignore // uses non-local files
+	public void testNormalizeIEEEPDFs() throws IOException {
+		String args;
+		args = "-i fulltext.pdf --cmdir ../cmine/target/ieee/musti/Henniger -o fulltext.txt --transform pdf2txt";
+		new Norma().run(args);
+	}
+
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 */
+	public void testCreateCMDirsForIEEEHtml() throws IOException {
+		new Norma().run("");
+		String args;
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
+		new Norma().run(args);
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
+		new Norma().run(args);
+	}
+
+
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 * SHOWCASE
+	 */
+	public void testTransformRawHtmlToScholarly() throws IOException {
+		String args;
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
+		new Norma().run(args);
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/ieee --html jsoup";
+		new Norma().run(args);
+		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/ieee --transform ieee2html";
+		new Norma().run(args);
+	}
+
+	@Test
+	/** creates new CMDirs for list of HTML and then transforms
+	 * 
+	 * SHOWCASE
+	 */
+	public void testTransformRawHtmlToScholarlyNature() throws IOException {
+		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/pubstyle/nature/doi_10_1038_nnano_2011_101/"),
+				new File("target/nature/"));
+		String args;
+		args = "-i fulltext.html -o fulltext.xhtml --cmdir target/nature --html jsoup";
+		new Norma().run(args);
+		args = "-i fulltext.xhtml -o scholarly.html --cmdir target/nature --transform nature2html";
+		new Norma().run(args);
+//		FileUtils.copyFile(new File("target/nature/fulltext.xhtml"), new File("target/nature/junk.xml")); //for display
+	}
+	
+	@Test
+	public void testMakeDocs() {
+		String args = "--makedocs";
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		argProcessor.parseArgs(args);
+		argProcessor.runAndOutput();
+	}
+	
+	@Test
+	public void testVersion() {
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		argProcessor.parseArgs("--version");
+	}
+
+	
+	@Test
+	public void testTag() {
+		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		argProcessor.parseArgs("--chars a,b");
+	}
+	
+	@Test
+	public void testLog() throws IOException {
+		DefaultArgProcessor argProcessor = new NormaArgProcessor();
+		File targetFile = new File("target/test/log/");
+		targetFile.mkdirs();
+		// dummy file
+		FileUtils.write(new File(targetFile, "fulltext.txt"), "fulltext");
+		argProcessor.parseArgs("-q "+targetFile+" -i fulltext.txt  --c.test --log");
+	}
+
 }

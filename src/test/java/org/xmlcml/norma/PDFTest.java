@@ -1,19 +1,33 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.html.HtmlElement;
+import org.xmlcml.image.ImageProcessor;
+import org.xmlcml.norma.image.ocr.NamedImage;
+import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
+import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 
 public class PDFTest {
 
+	private static Logger LOG = Logger.getLogger(PDFTest.class);
+	static {LOG.setLevel(Level.DEBUG);}
+	
 	@Test
 	// 16 pp
 	@Ignore // too long
@@ -124,6 +138,65 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt";
 		Norma norma = new Norma();
 		norma.run(args);
-		
 	}
+	
+	@Test
+	@Ignore // LONG
+	public void testPDF2XHTML() throws Exception {
+		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
+		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
+		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(file0115884);
+		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML());
+	}
+	
+	@Test
+	@Ignore // LONG
+	public void testPDF2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/0115884/"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
+		// convert to XHTML using converter
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		// will write SVG to svgDirectory
+		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+	@Ignore
+	public void testBMCPDF2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/bmc/1471-2148-14-70"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+	@Ignore // too long
+	public void testCGIAR2CMDir() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/cgiar/345"));
+		cmDir.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		pdf2HtmlConverter.readAndConvertToXHTML();
+	}
+	
+	@Test
+	@Ignore // closed PDF // LONG
+	public void testNeuroFigures() throws Exception {
+		CMDir cmDir = new CMDir(new File("target/cmdir/neuro/Chen"));
+		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
+		cmDir.readFulltextPDF(pdfFile);
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+//		pdf2HtmlConverter.readAndConvertToXHTML();
+		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
+		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
+		File imageDir = cmDir.getOrCreateExistingImageDir();
+		for (NamedImage labelledImage : labelledImages) {
+			BufferedImage image = labelledImage.getImage();
+			ImageProcessor imageProcessor = ImageProcessor.createDefaultProcessorAndProcess(image);
+			image = imageProcessor.getImage();
+			String imageName = labelledImage.getKey();
+			ImageIO.write(image, "png", new File(imageDir, imageName+".png"));
+		}
+	}
+	
 }

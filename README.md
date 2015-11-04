@@ -20,7 +20,7 @@ appropriate). The initial emphasis is on scholarly publications but much of the 
 
 See https://github.com/petermr/norma .
 
-## History
+## History
 
 Originally AMI (http://bitbucket.org/petermr/ami-core) involved the conversion of legacy inputs (PDF, XML, HTML, etc.) into well-formed documents which were then searched by AMI-plugins. This required a Visitor pattern
 with _n_ inputs and _m_ visitors. The inputs could be PDF, SVG, HTML, XML, etc. and AMI often had to convert. This became unmanageable.
@@ -150,7 +150,7 @@ The current arguments  are:
 			
 			Input stream (Files, directories, URLs), 
 ```
--q or --quickscrapeNorma  director(ies)
+-q or --cmdir  director(ies)
 ```
 			
 			create or use CM directory 

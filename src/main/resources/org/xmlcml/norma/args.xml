@@ -1,178 +1,388 @@
-<argList>
-	<arg name="char" 
-		brief="-c"
-		long="--chars"
+<argList name="norma" version="0.1.12">
+    <!-- added automatic editing (editor) -->
+	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
-		class="org.xmlcml.args.StringPair"
-		countRange="{1,*}"
-		parseMethod="parseChars"
-		>
+		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"
+		parseMethod="parseChars">
 		<help>
 			CHARS:
-			Replaces one character by another. There are many cases where original characters are unsuitable 
+			NOT YET IMPLEMENTED
+			Replaces one character by another. There are many cases where original
+			characters are unsuitable
 			for science and can be replaced (often by low codepoints).
 			Smart (balanced) quotes can usually be replaced by \" or '
 			mdash is often used where minus is better
-			Format, strings of form u1234 
+			Format, strings of form u1234
 		</help>
 	</arg>
 
-	<arg name="div"
-		brief="-d"
-		long="--divs"
-		args="expression [expression] ..."
-		countRange="{1,*}"
-		parseMethod="parseDivs"
-		>
+	<arg name="div" brief="-d" long="--divs" args="expression [expression] ..."
+		countRange="{1,*}" parseMethod="parseDivs">
 		<help>
 			DIVS:
+			NOT YET IMPLEMENTED
 			List of expressions identifying XML element to wrap as divs/sections
 			Examples might be h1, h2, h3, or numbers sections
 			Still under development.
 		</help>
-	</arg>	
+	</arg>
 
-	<arg name="name"			
-		brief="-n"
-		long="--name"
-		args=" tag1,tag2 [tag1,tag2 ....]"
-		class="org.xmlcml.args.StringPair"
+	<arg 
+	    name="name" 
+	    brief="-n" 
+	    long="--name" 
+	    args=" tag1,tag2 [tag1,tag2 ....]"
+		class="org.xmlcml.cmine.args.StringPair" 
 		countRange="{1,*}"
-		parseMethod="parseNames"
-		>
+		parseMethod="parseNames">
 		<help>
 			NAME:
-			List of comma-separated pairs of tags; the first is replaced by the second. Example might be:
-			  em,i strong,b
+			NOT YET IMPLEMENTED
+			List of comma-separated pairs of tags; the first is replaced by the
+			second. Example might be:
+			em,i strong,b
 			i.e. replace all &lt;em>...&lt;/em> by &lt;i>...&lt;/i>
 		</help>
 	</arg>
-	
-	<arg name="pubstyle"
-		brief="-p"
-		long="--pubstyle"
-		args="pub_code"
-		default="Pubstyle.PLOSONE"
-		countRange="{0,1}"
-		parseMethod="parsePubstyle"
-		>
+
+	<arg 
+	    name="pubstyle" 
+	    brief="-p" 
+	    long="--pubstyle" 
+	    args="pub_code"
+		countRange="{1,1}" 
+		parseMethod="parsePubstyle">
 		<help>
 			PUBSTYLE:
-			Code or mnemomic to identifier the publisher or journal style. 
-			this is a list of journal/publisher styles so Norma knows how to interpret the input. At present only one argument 
-			is allowed. The pubstyle determines the format of the XML or HTML, the metadata, and
-			soon how to parse the PDF. At present we'll use mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
-			
-			To get a list of these use "+"--pubstyle"+" without arguments. Note: under early development and note also that 
-			publisher styles change and can be transferred between publishers and journals
-			
-			NOTE: Does not trigger any actions
-		</help>
-	</arg>	
+			Code or mnemomic to identifier the publisher or journal style.
+			this is a list of journal/publisher styles so Norma knows how to
+			interpret the
+			input. At present only one argument is allowed. The pubstyle determines the
+			format
+			of the XML or HTML, the metadata, and soon how to parse the PDF. At
+			present we'll use
+			mnemonics such as 'bmc' or 'biomedcentral.com' or 'cellpress'.
 
-	<arg name="standalone"
-		brief="-z"
-		long="--standalone"
-		args="boolean"
-		class="java.lang.Boolean"
-		default="true"
-		countRange="{0,1}"
-		parseMethod="parseStandalone"
-		>
-		<help>
-			STANDALONE:
-			Treats XML document as standalone. Very useful as some parsers will take ages resolving the DTD and often fail
-			if not connected to the net. 
-		</help>
-	</arg>	
-
-	<arg name="strip"
-		brief="-s"
-		long="--strip"
-		args="[options to strip]"
-		countRange="{0,*}"
-		parseMethod="parseStrip"
-		>
-		<help>
-			STRIP:
-			List of XML components to strip from the raw well-formed HTML;
-			if a list is given, then use that; if this argument is missing (or the single
-			string '#pubstyle' then the Pubstyle defaults are used. If there are no arguments
-			then no stripping is done. a single '?' will list the Pubstyle defaults
-			The following are allowed:
-			  an element local name (e.g. input)
-			  an XPath expression (e.g. //*[@class='foobar'])
-			  !DOCTYPE (strips &lt;!DOCTYPE ...> which speeds up reading)
-			  an attribute (e.g. @class) (NotYetImplemented)
-			
-			Note that tokens are whitespace-separated (sorry if this interacts with XPath)
-			
-			Examples: 
-			  input script object (removes these three element
-			  //*[contains(@class,'sidebar')]  (removes &lt;div class='sidebar'> ... &lt;/div>
-			  !DOCTYPE (removes &lt;!DOCTYPE ...> before parsing))
-			  !DOCTYPE input script object //*[contains(@class,'sidebar')] (removes all the above)
-			
+			To get a list of these use "+"--pubstyle"+" without arguments. 
+			<p class="note">
+			under early
+			development and note also that publisher styles change and can be transferred
+			between publishers and journals
+			</p>
+			<p class="note">Does not trigger any actions</p>
 		</help>
 	</arg>
 
-	<arg name="tidy"
-		brief="-t"
-		long="--tidy"
-		args="[HTML tidy option]"
-		default="JSoup"
-		countRange="{1,1}"
-		parseMethod="parseTidy"
-		>
+	<arg name="standalone" long="--standalone" args="boolean" class="java.lang.Boolean"
+		countRange="{0,1}" parseMethod="parseStandalone">
+		<!-- default ="true" -->
 		<help>
+			STANDALONE:
+			Treats XML document as standalone. Very useful as some parsers
+			will take ages resolving the DTD and often fail
+			if not connected to the net.
+		</help>
+	</arg>
+
+	<arg
+	  name="strip" 
+	  brief="-s" 
+	  long="--strip" 
+	  args="[options to strip]"
+	  countRange="{0,*}" 
+	  parseMethod="parseStrip">
+		<help>
+			List of XML components to strip from the raw well-formed HTML;
+			<ul>
+				<li>if a list is given, then use that; if this argument is missing
+					(or
+					the single string '#pubstyle' then the Pubstyle defaults are
+					used.
+				</li>
+				<li>If there are no arguments then no stripping is done. a
+					single '?'
+					will list the Pubstyle defaults
+				</li>
+			</ul>
+			The following are allowed:
+			<ul>
+				<li>
+					an element local name (e.g.
+					<tt>input</tt>
+					)
+				</li>
+				<li>
+					an XPath expression (e.g.
+					<tt>//*[@class='foobar']</tt>
+					)
+				</li>
+				<li>
+					<tt>!DOCTYPE</tt>
+					(strips
+					<tt>&lt;!DOCTYPE ...></tt>
+					which speeds up reading)
+				</li>
+				<li>an attribute (e.g. @class) (NotYetImplemented)</li>
+			</ul>
+			<p class="note">
+				tokens are whitespace-separated (sorry if this interacts with
+				XPath)
+				Examples:
+				<ul>
+					<li>
+						input script object (removes these three element
+						<tt>//*[contains(@class,'sidebar')] (removes &lt;div
+							class='sidebar'> ...
+							&lt;/div>
+						</tt>
+					</li>
+					<li>!DOCTYPE (removes &lt;!DOCTYPE ...> before parsing))</li>
+					<li>!DOCTYPE input script object //*[contains(@class,'sidebar')]
+						(removes all the
+						above)
+					</li>
+				</ul>
+			</p>
+			<p class="note">some of this is hardcoded in HTMLCleaner and should be refactored</p>
+		</help>
+	</arg>
+
+	<arg name="tidy" brief="-t" long="--tidy" args="[HTML tidy option]"
+		countRange="{1,1}" parseMethod="parseTidy">
+		<!-- add default ="JSoup" -->
+		<help>
+			OBSOLETE - use --html
 			TIDY:
 			Choose an HTML tidy tool. At present we have:
-			  JTidy JSoup and HtmlUnit 
+			JTidy JSoup and HtmlUnit
 			(NYI) This is very experimental at present.
 		</help>
 	</arg>
 
-	<arg name="xsl"
-		brief="-x"
-		long="--xsl"
-		args="stylesheet"
-		countRange="{1,5}"
-		parseMethod="parseXsl"
-		runMethod="transform"
-		required="--input --output"
-		>
+	<arg name="html" long="--html" args="[HTML tidy option, jsoup, jtidy, htmlunit]"
+		countRange="{1,1}" parseMethod="parseHtml" runMethod="runHtml">
+		<!-- default ="jsoup" -->
 		<help>
-		DEPRECATED (use transform)
-			XSL:
-			Transform XML or HTML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
-			or a code from one of {nlm, jats ...}
-			the codes are checked first and then the document reference.
-			The code pdf2txt will transform pdf to fulltext.pdf.txt
-			
-			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in qsNorma and
-			determine the type of files to convert.
+			Clean raw HTML and produce XHTML. Requires heuristics:
+			<ul>
+			<li>quickscrape and getpapers create a JS DOM which has
+			normalised some, but not all, elements</li>
+			<li>remove &lt;script> and other elements which are likely
+			to be non-XML-compliant. Adjustable through &lt;value></li>
+			<li>remove other artefacts (e.g. attributes like "=""")</li>
+			<li>run through html-tidy (jsoup, jtidy, htmlunit). They all try
+			to sort out mess - the last is probably the best but I haven't
+			bolted it in yet.</li>
+			<li>remove empty &lt;div>s, &lt;p>s, etc.</li>
+			</ul>
+			This is NOT scholarly.html and will need a publisher-specific
+			stylesheet for further processing.
 		</help>
 	</arg>
 
-	<arg name="transform"
-		long="--transform"
-		args="stylesheet"
-		countRange="{1,*}"
-		parseMethod="parseTransform"
-		runMethod="runTransform"
-		required="--input --output"
-		>
+	<arg 
+	    name="xsl" 
+	    brief="-x" 
+	    long="--xsl" 
+	    args="stylesheet"
+		countRange="{1,5}" 
+		parseMethod="parseXsl" 
+		runMethod="transform"
+		required="--input --output">
 		<help>
-		Relacement for --xsl
-			Transform XML or HTML or PDF or ... Argument may be a file/URL reference to a stylesheet,
-			or a code from one of {nlm, jats, pdfbox, hocr2svg}
-			the codes are checked first and then the document reference.
-			
-			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in cmDir OR files
-			in reserved directories and
-			determine the type of files to convert.
+			DEPRECATED (use transform)
 		</help>
 	</arg>
-	
+
+	<arg 
+	    name="transform" 
+	    long="--transform" 
+	    args="stylesheet"
+		countRange="{1,*}" 
+		parseMethod="parseTransform" 
+		runMethod="runTransform"
+		required="--input --output">
+		<help>
+		<p class="brief">
+			Transform XML or HTML or PDF or other input</p>
+			<p class="note">Relacement for --xsl</p>
+			<p>Argument may be a file/URL reference to a
+			stylesheet,
+			or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup,
+			[jtidy, htmlunit NYI]}
+			the codes are checked first and then the document reference.
+
+			Requires input and output files (--input and --output). These must be
+			reserved names
+			(e.g. fulltext.xml) in cmDir OR files in reserved directories and
+			determine the type of files to convert.
+			</p>
+		</help>
+		<value name="pdfbox"></value> 
+		<value name="pdf2html" input="fulltext.pdf" output="fulltext.html"></value> 
+		<value name="pdf2txt" input="fulltext.pdf" output="fulltext.txt"></value> 
+		<value name="pdf2images"></value> 
+		<value name="hocr2svg" input="image/*.png" output="image/*.svg"></value> 
+		<value name="tex2html" input="fulltext.tex" output="fulltext.html"></value> 
+		<value name="*.xsl" input="fulltext.tex" output="fulltext.html"></value> 
+    </arg>
+
+    <arg 
+        name="tag"
+        long="--tag"
+        args=" "
+        countRange="{0,*}"
+        parseMethod="parseTag"
+        class="java.lang.String"
+        default="src/main/resources/org/xmlcml/norma/pubstyle/sectionTagger.xml"
+        >
+        <help>
+          <p class="brief">Adds section tags to scholarly.html</p>
+          <p>Not yet implemented</p>
+        </help>
+    </arg>
+        
+	<examples>
+		<p class="note">
+			These examples contain some symbolic directory names.
+			<ul>
+				<li>
+					<code>$ctree</code>
+					represent the top of a ctree (e.g.
+					<code>PMC12345</code>
+					in
+					<code>PMC12345/fulltext.xml</code>
+					)
+				</li>
+				<li>
+					<code>$parent</code>
+					represents the parent of one or more <em><code>ctree</code></em>s, e.g.
+					(e.g.
+					<code>my/files/</code>
+					in
+					<code>my/files/PMC12345/fulltext.xml
+					, my/files/PMC12349/fulltext.xml
+				</code>
+					)
+				</li>
+				<li>
+					<code>*</code>
+					is implicit and represents one or more <em><code>ctree</code></em>s, e.g.
+					<code>my/files/*/fulltext.xml</code>
+					in
+					<code>my/files/PMC12345/fulltext.xml
+					, my/files/PMC12349/fulltext.xml
+				</code>
+					)
+				</li>
+				<li>
+					<code>wild*</code>
+					is explicit and represents one or more <em><code>ctree</code></em>s, e.g.
+					<code>my/files/PMC1234*/fulltext.xml</code>
+					in
+					<code>my/files/PMC12345/fulltext.xml
+					, my/files/PMC12349/fulltext.xml
+				</code>
+					)
+				</li>
+			</ul>
+		</p>
+		<example>
+			<input>$ctree/fulltext.xml</input>
+			<output>$ctree/scholarly.html</output>
+			<desc> Convert a single <em><code>ctree</code></em> containing NLM-XML to
+				scholarly HTML
+			</desc>
+			<command>norma -q $ctree -i fulltext.xml -o
+				scholarly.html --transform
+				nlm2html
+			</command>
+		</example>
+		<example>
+			<input>$parent/wildcard*/fulltext.xml</input>
+			<output>$parent/wildcard*/scholarly.pdf.txt</output>
+			<desc> Use wildcard to select many matching <em><code>ctree</code></em>s
+				containing NLM-XML and convert to scholarly HTML
+			</desc>
+			<command>norma -q ./plosone/PMC4382* -i fulltext.xml -o
+				scholarly.html --transform nlm2html
+			</command>
+		</example>
+		<example>
+			<input>$parent/*/fulltext.xml</input>
+			<output>$parent/*/scholarly.pdf.txt</output>
+			<desc> Converting NLM-XML in multiple <em><code>ctree</code></em>s to scholarly HTML </desc>
+			<command>norma -q ./plosone/ -i fulltext.xml -o scholarly.html
+				--transform nlm2html
+			</command>
+		</example>
+		<example>
+			<input>$ctree/fulltext.pdf</input>
+			<output>$ctree/scholarly.pdf.txt</output>
+			<desc>
+				Convert a single
+				<em><code>ctree</code></em>
+				containing
+				<code>fulltext.pdf</code>
+				to plain text
+			</desc>
+			<command>norma -q ./peerjpdf/PMC4389270/ --transform pdf2txt -i
+				fulltext.pdf
+				-o fulltext.pdf.txt
+			</command>
+		</example>
+		<example>
+			<input>$parent/*/fulltext.pdf</input>
+			<output>$parent/*/scholarly.pdf.txt</output>
+			<desc>
+				Convert multiple <em><code>ctree</code></em>s (children of
+				<code>$parent</code>
+				) containing
+				<code>fulltext.pdf</code>
+				to
+				plain text
+			</desc>
+			<command>norma -q ./peerjpdf/ --transform pdf2txt -i fulltext.pdf -o
+				fulltext.pdf.txt
+			</command>
+		</example>
+		<example>
+			<input>$ctree/fulltext.html</input>
+			<output>$ctree/tidied.html</output>
+			<desc> Tidy raw HTML in <code>$ctree</code> with <code>htmlunit</code> </desc>
+			<command>norma -q https_peerj.com_articles_384/ -i fulltext.html -o
+				tidied.html --html htmlunit
+			</command>
+		</example>
+		<example>
+			<input>$ctree/fulltext.html</input>
+			<output>$ctree/tidied.html</output>
+			<desc> Tidy raw HTML in <code>$ctree</code> with <code>jtidy</code> </desc>
+			<command>norma -q https_peerj.com_articles_384/ -i fulltext.html -o
+				tidied.html --html jtidy
+			</command>
+		</example>
+		<example>
+			<input>$ctree/fulltext.html</input>
+			<output>$ctree/tidied.html</output>
+			<desc> Tidy raw HTML in <code>$ctree</code> with <code>jsoup</code> </desc>
+			<command>norma -q https_peerj.com_articles_384/ -i fulltext.html -o
+				tidied.html --html jsoup
+			</command>
+		</example>
+		<example>
+			<input>$parent/*/fulltext.html</input>
+			<output>$parent/*/tidied.html</output>
+			<desc>
+				tidy multiple child <em><code>ctree</code></em>s of
+				<tt>$parent</tt>
+				using
+				<tt>jsoup</tt>
+			</desc>
+			<command>norma -q $parent -i fulltext.html -o tidied.html --html
+				jsoup</command>
+		</example>
+	</examples>
+
 </argList>
-			
+      

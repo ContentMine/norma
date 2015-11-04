@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,10 @@ public class InputTest {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+//	private String testFilePath(String path) {
+//		return Fixtures.TEST_NORMA_DIR + "/" + path;
+//	}
 	
 	@Test
 	public void testFilesAndDirectoriesInMiscDirectory() {
@@ -275,6 +280,7 @@ public class InputTest {
 				+ " -i fulltext.xml"
 				+ " -o scholarly.html"
 				+ " --transform nlm2html"
+				+ " --standalone true"
 				+ "";
 		norma = new Norma();
 		norma.run(args);
@@ -284,6 +290,7 @@ public class InputTest {
 	public void testSeveralXMLTransform() {
 		String args;
 		Norma norma;
+		File plos10 = new File("target/plos10x/");
 		args = 
 				"-i"
 				+ " src/test/resources/org/xmlcml/norma/pubstyle/plosone/plos10/e0115544.xml"
@@ -291,15 +298,16 @@ public class InputTest {
 				+" -o target/plos10/";
 		norma = new Norma();
 		norma.run(args);
-		args = 
-				"-q"
-				+ " target/plos100/"
-				+ " -i fulltext.xml"
-				+ " -o scholarly.html"
-				+ " --transform nlm2html"
-				+ "";
-		norma = new Norma();
-		norma.run(args);
+		Assert.assertFalse(plos10.exists());
+//		args = 
+//				"-q"
+//				+ " target/plos10/"
+//				+ " -i fulltext.xml"
+//				+ " -o scholarly.html"
+//				+ " --transform nlm2html"
+//				+ "";
+//		norma = new Norma();
+//		norma.run(args);
 	}
 	
 	@Test
@@ -322,16 +330,31 @@ public class InputTest {
 				+ " -i fulltext.xml"
 				+ " -o scholarly.html"
 				+ " --transform nlm2html"
+				+ " --standalone true"
 				+ "";
 		norma = new Norma();
 		norma.run(args);
 	}
-	
+
 	@Test
-	public void testOutputWorks() {
-		
+	@Ignore // FIXME, we need to restructure reserved files
+	public void testTeX2HTMLTransform() throws IOException {
+		File tempDir = new File("target/tex2html/sample");
+		tempDir.mkdirs();
+		File inputTex = new File(Fixtures.TEST_TEX_DIR, "sample.tex");
+		Assert.assertTrue(inputTex.exists());
+		// make a CMDir 
+		FileUtils.copyFile(inputTex, new File(tempDir, "fulltext.tex"));
+		CMDir cmDir = new CMDir(tempDir);
+
+		String args;
+		Norma norma = new Norma();
+		args = "-q " + tempDir.toString()
+				+ " -i fulltext.tex"
+				+ " -o scholarly.html"
+				+ " --transform tex2html";
+		norma.run(args);
 	}
-	
 	
 	@Test
 	// FIXME

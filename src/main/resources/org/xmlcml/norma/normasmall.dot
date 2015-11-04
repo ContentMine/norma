@@ -1,0 +1,86 @@
+digraph norma {
+graph [nodesep=0.4 ranksep=0.7] 
+
+"apiquery" [label="apiquery", style="filled", color="yellow"];
+"urllist" [label="urllist", style="filled", color="yellow"];
+
+"getp" [label="getpapers", style="filled", color="cyan", shape="box"]
+"qs" [label="quickscrape", style="filled", color="cyan", shape="box"]
+
+"apiquery" -> "getp";
+"urllist" -> "qs";
+
+"f.xml" [label="fulltext.xml", penwidth="2"];
+"f.html" [label="fulltext.html", penwidth="2"];
+"f.pdf" [label="fulltext.pdf", style="filled", color="pink"];
+
+/*"f.pdf.html" [label="fulltext.pdf.html"];
+"f.pdf.txt" [label="fulltext.pdf.txt", style="filled", color="pink"];
+*/
+"f.xhtml" [label="fulltext.xhtml"];
+
+"png" [label="png", style="filled" color="pink", penwidth="2"];
+/*
+"png.hocr.html" [label="HTML-OCR"]
+"png.hocr.svg" [label="OCR'ed image (SVG)", style="filled", color="pink"]
+*/
+//"svg" [label="svg", style="filled", color="pink", penwidth="2"];
+"sdata" [label="suppdata", style="filled", color="pink", penwidth="2"];
+"s.html" [label="scholarly.html", style="filled", color="red", penwidth="2"];
+
+"getp" -> {"f.xml" "f.pdf" "sdata" } [style="bold"];
+"qs" -> {"f.xml" "f.pdf" "f.html" "png" "sdata"} [style="bold"];
+
+"f.xml" -> "n.stylesheets" [style="bold"];
+
+"f.html" -> "n.tidy" [style="bold"];
+"n.tidy" ->  "f.xhtml" [style="bold"];
+
+"f.xhtml" -> "n.htmlstyle" [style="bold"];
+
+/*
+"f.pdf" -> "n.pdf2txt" ;
+"n.pdf2txt" -> "f.pdf.txt";
+*/
+/*
+"f.pdf" -> "n.pdf2svg";
+"n.pdf2svg" -> "png"
+"n.pdf2svg" -> "svg";
+*/
+
+/*
+"f.pdf" -> "n.pdf2html" ;
+"n.pdf2html" -> {"f.pdf.html"};
+*/
+/*
+"png" -> "n.ocr" ;
+"n.ocr" -> "png.hocr.html"
+*/
+/*
+"png.hocr.html" -> "n.ocr2";
+"n.ocr2" -> "png.hocr.svg"
+*/
+"tagger" [label="tagger", style="filled", color="cyan", shape="box"]
+{"n.stylesheets" "n.htmlstyle"} -> "tagger" [style="bold"];
+//{"f.pdf.html" } -> "tagger";
+"tagger" -> "s.html" [style="bold"];
+
+/*
+"sdata" -> "n.ctree";
+"n.ctree" -> {"doc" "csv"};
+*/
+subgraph cluster_norma {
+    label="norma" color="cyan" penwidth="3";
+    "n.stylesheets" [label="stylesheets", style="filled", color="cyan", shape="box"]
+    "n.tidy" [label="tidy", style="filled", color="cyan", shape="box"]
+    "n.htmlstyle" [label="htmlstyle", style="filled", color="cyan", shape="box"]
+//    "n.pdf2txt" [label="pdf2txt", style="filled", color="cyan", shape="box"]
+//    "n.pdf2html" [label="pdf2html", style="filled", color="cyan", shape="box"]
+//    "n.pdf2svg" [label="pdf2svg", style="filled", color="cyan", shape="box"]
+//    "n.ctree" [label="ctree", style="filled", color="cyan", shape="box"]
+//    "n.ocr" [label="tesseract", style="filled", color="cyan", shape="box"]
+//    "n.ocr2" [label="ocr", style="filled", color="cyan", shape="box"]
+}
+
+
+}

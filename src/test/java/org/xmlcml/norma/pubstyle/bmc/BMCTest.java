@@ -54,13 +54,24 @@ public class BMCTest {
 	
 
 	@Test
-	@Ignore // too long - creates the SVG
+	@Ignore // too long - creates the SVG // file missing
 	public void readBMCTrialsProvisional() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-6215-15-486.pdf"));
 		new File("target/bmc/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/486.html"), 1);
 	}
+	
+	@Test
+	@Ignore // too long - creates the SVG // file missing
+	public void readBMCLions() throws Exception {
+		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-2148-14-70.pdf"));
+		new File("target/bmc/").mkdirs();
+		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/14-170.html"), 1);
+	}
+	
+
 	
 	@Test
 	// this one has outline glyphs... :-( // all papers in this journal do :-(
@@ -174,12 +185,13 @@ public class BMCTest {
 		// now run the transformation
 		String[] args = {
 				// the cmDir directory
-				"--quickscrapeNorma", cmDir1.toString(),
+				"--cmdir", cmDir1.toString(),
 				// we will transform the fulltext.xml into ...
 				"--input", "fulltext.xml",
 				// a new scholarly.html
 				"--output", "scholarly.html",
 				// using a BMC-specifc stylesheet (BMC is not JATS-compliant)
+				"--standalone", "true",
 				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
 		};
 		// the primary entry point
@@ -197,7 +209,7 @@ public class BMCTest {
 		// parse it into an HtmlElement we can query
 		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
 		List<HtmlElement> divElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='div']");
-		Assert.assertEquals("div elements "+divElements.size(), 210, divElements.size()); 
+		Assert.assertEquals("div elements "+divElements.size(), 216, divElements.size()); 
 		List<HtmlElement> spanElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='span']");
 		Assert.assertEquals("span elements "+spanElements.size(), 1054, spanElements.size()); 
 		List<HtmlElement> pElements = HtmlUtil.getQueryHtmlElements(htmlElement, "//*[local-name()='p']");
@@ -229,7 +241,7 @@ public class BMCTest {
 			cmDir.copyTo(targetFiles[i], true);
 		}
 		String[] args = {
-				"--quickscrapeNorma", 
+				"--cmdir", 
 				targetFiles[0].toString(),
 				targetFiles[1].toString(),
 				targetFiles[2].toString(),
@@ -239,6 +251,7 @@ public class BMCTest {
 				targetFiles[6].toString(),
 				"--input", "fulltext.xml",
 				"--output", "scholarly.html",
+				"--standalone", "true",
 				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
 		};
 		Norma norma = new Norma();

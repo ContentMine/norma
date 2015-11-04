@@ -30,7 +30,7 @@ also be guided with the --extensions flag where the file/URL has no extension.
 					  
 		
 
--q or --quickscrapeNorma  director(ies)
+-q or --cmdir  director(ies)
 
 			FILE_CONTAINER:
 			create directory  contentmine/some/where/journal.pone.0115884/. It may contain

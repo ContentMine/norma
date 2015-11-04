@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <garbles title="italicGarbles" characters="I/">
   <!-- italic "l" -->
   <garble original="a/" edited="al"/>
@@ -14,7 +15,6 @@
   <garble original="g/yc" edited="glyc"/>
   <garble original="d/\[" edited="cili"/>
   <garble original="f/uo" edited="fluo"/>
-  <garble original="d/\[" edited="cili"/>
   <garble original="/\[" edited="il"/>
   <garble original="t/G" edited="tic"/>
   <garble original="k/n" edited="kin"/>
@@ -29,7 +29,4 @@
   <!-- very ambiguous -->
    <garble original="n'x" edited="rix"/>
    
-  <!-- ligatures -->
-  <garble original="ﬁ" edited="fi"/>
-ﬁ  
 </garbles>

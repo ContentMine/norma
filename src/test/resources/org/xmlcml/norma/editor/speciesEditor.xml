@@ -1,0 +1,77 @@
+
+<editor>
+  <!--  the following works in regexr
+  \s*([A-Z](?:[a-z]{2,})|(?:[a-z02S/]?\.))\s+([a-z])+\s+([^\s\(]+(?:\s+[^\s\(]+)?)\s+\(((?:[A-Z123580]{1,2}|NC_)([0-9BIOSZ]{5,6}))\)\s*
+   -->
+   <patternList>
+      <pattern level="validator">
+         <!-- this regex enforces the ID patterns strictly. It will only fail when 
+            characters are garbled to the same type, e.g. M->N , i->l, 3->8 These are 
+            undetectable at this stage.
+            This is the primary extraction tool, run after editing to a valid surface -->
+         <space count="*" />
+<!--          <constant pattern="\u2018?"/> -->
+         <field name="genus" pattern="([A-Z](?:[a-z]{2,}|[a-z]{1,2}\.))"/>
+         <space count="+"/>
+         <field name="species" pattern="([a-z]{2,})"/>
+<!--          <constant pattern="\u2019?"/> -->
+         <space count="+"/>        
+         <field name="strain" pattern="([^\s\(]+(?:\s+[^\s\(]+)?)"/>
+         <space count="+"/>
+<!--          <constant pattern="\("/> -->
+         <field name="id" pattern="((?:[A-Z]{1,2}|NC_)[0-9]{5,6})"/>
+<!--           <constant pattern="\)"/> -->
+         <space count="*" />
+      </pattern>
+
+      <pattern level="editor">
+         <!-- this regex allows for common garbles (detected as an error in 0) 
+            and error correction by "safe" correction. The correction will generate a 
+            conformant filed, but it may not be "correct". Each substitution has an error 
+            and can be logged. -->
+         <space count="*" />
+         <constant pattern="\u2018?"/>
+          <field name="genus" pattern="([A-Z](?:[a-z]{2,})|(?:[a-z02S/]?\.))">
+            <substitution original="0" edited="[oO]" />
+            <substitution original="2" edited="[zZ]" />
+            <substitution original="/" edited="[lI]" />
+            <!-- edit more as we find them -->
+         </field>
+         <space count="+"/>
+         <field name="species" pattern="([a-z/]+)">
+            <substitution original="s/c" edited="sic" />
+            <substitution original="d/" edited="cil" />
+            <substitution original="k/n" edited="kin" />
+            <substitution original="r/o" edited="rio" />
+            <substitution original="0" edited="o" />
+            <substitution original="S" edited="s" />
+            <substitution original="/" edited="l" />
+         </field>
+         <constant pattern="\u2019?"/>
+         <space count="+"/>
+         <field name="strain" pattern="([^\s\(]+(?:\s+[^\s\(]+)?)"/>
+         <space count="+"/>
+         <!-- ID has an alpha and numeric part EU840723 or AJ307974 or NC_002967 -->
+         <!-- require but strip left bracket -->
+         <constant pattern="\("/>
+          <field name="id0" pattern="([A-Z123580]{1,2}|NC_)">
+            <substitution original="0" edited="O" />
+            <substitution original="1" edited="I" />
+            <substitution original="2" edited="Z" />
+            <substitution original="3" edited="B" />
+            <substitution original="5" edited="S" />
+            <substitution original="8" edited="B" />
+         </field>
+         <field name="id1" pattern="([0-9BIOSZ]{5,6})">
+            <substitution original="O" edited="0" />
+            <substitution original="B" edited="8" />
+            <substitution original="I" edited="1" />
+            <substitution original="S" edited="5" />
+            <substitution original="Z" edited="2" />
+         </field>
+          <constant pattern="\)"/>
+          <space count="*" />
+          <combine source="id0 id1" target="id"/>
+      </pattern>
+   </patternList>
+</editor>

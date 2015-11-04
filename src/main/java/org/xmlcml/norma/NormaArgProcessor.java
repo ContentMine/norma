@@ -1,69 +1,57 @@
 package org.xmlcml.norma;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import javax.imageio.ImageIO;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import nu.xom.Builder;
-import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
 import org.xmlcml.cmine.args.ArgIterator;
 import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.args.StringPair;
+import org.xmlcml.cmine.args.ValueElement;
+import org.xmlcml.cmine.args.VersionManager;
 import org.xmlcml.cmine.files.CMDir;
-import org.xmlcml.xml.XMLUtil;
+import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.image.ocr.NamedImage;
+import org.xmlcml.norma.input.html.HtmlCleaner;
+import org.xmlcml.norma.tagger.SectionTagger;
 
-/** 
+/**
  * Processes commandline arguments.
  * for Norma
- * 
+ *
  * @author pm286
  */
-public class NormaArgProcessor extends DefaultArgProcessor{
-	
+public class NormaArgProcessor extends DefaultArgProcessor {
+
 	private static final String DOT_PNG = ".png";
 	private static final String IMAGE = "image";
 	private static final String PNG = "png";
+
 	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	
-	private static final String STYLESHEET_BY_NAME_XML = "/org/xmlcml/norma/pubstyle/stylesheetByName.xml";
-	private static final String NAME = "name";
+
 	private static final String XML = "xml";
-	
+
 	public final static String HELP_NORMA = "Norma help";
-	
+
 	private static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
+	private static final VersionManager NORMA_VERSION_MANAGER = new VersionManager();
 	
+
 	public final static String DOCTYPE = "!DOCTYPE";
-	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
-			"pdfbox", "pdf2html", "pdf2txt", "pdf2images",
-			"hocr2svg"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -72,24 +60,40 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private List<String> stripList;
 	private String tidyName;
 	private List<String> xslNameList;
-	private Map<String, String> stylesheetByNameMap;
-	private boolean standalone;
-	private List<String> transformList;
-	private List<org.w3c.dom.Document> xslDocumentList;
+	private boolean removeDTD;
 	private NormaTransformer normaTransformer;
+	private List<SectionTagger> sectionTaggerNameList;
 
 	public NormaArgProcessor() {
 		super();
-		this.readArgumentOptions(ARGS_RESOURCE);
+		this.readArgumentOptions(this.getArgsResource());
+	}
+	
+	public static VersionManager getVersionManager() {
+//		LOG.debug("VM Norma "+NORMA_VERSION_MANAGER.hashCode()+" "+NORMA_VERSION_MANAGER.getName()+";"+NORMA_VERSION_MANAGER.getVersion());
+		return NORMA_VERSION_MANAGER;
+	}
+	
+	public NormaArgProcessor(String args) {
+		this(args == null ? null : args.replaceAll("\\s+", " ").split(" "));
 	}
 
 	public NormaArgProcessor(String[] args) {
 		this();
+		setDefaults();
 		parseArgs(args);
 	}
 
-	// ============= METHODS =============
+	private void setDefaults() {
+		this.removeDTD = true;
+	}
+
+	private String getArgsResource() {
+		return ARGS_RESOURCE;
+	}
 	
+	// ============= METHODS =============
+
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
@@ -99,11 +103,17 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		divList = argIterator.createTokenListUpToNextNonDigitMinus(option);
 	}
 
+	public void parseHtml(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		tidyName = option.processArgs(tokens).getStringValue();
+		LOG.trace("HTML: "+tidyName);
+	}
+
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
-	
+
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		if (tokens.size() == 0) {
@@ -115,10 +125,24 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		}
 	}
 
+	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		sectionTaggerNameList = new ArrayList<SectionTagger>();
+		if (tokens.size() == 0) {
+			LOG.warn("parseTag requires list of taggers");
+		} else {
+			for (String token : tokens) {
+				SectionTagger sectionTagger = new SectionTagger(token);
+				sectionTaggerNameList.add(sectionTagger);
+			}
+		}
+		
+	}
+
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		try {
-			standalone = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
+			removeDTD = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
 		} catch (Exception e) {
 			throw new RuntimeException("bad boolean: "+tokens.get(0));
 		}
@@ -134,81 +158,61 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public void parseTidy(ArgumentOption option, ArgIterator argIterator) {
+		LOG.debug("parseTidy DEPRECATED; use parseHtml");
+		parseHtml(option, argIterator);
+	}
+
+	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		tidyName = option.processArgs(tokens).getStringValue();
+		List<String> tokenList = option.processArgs(tokens).getStringValues();
+		getOrCreateNormaTransformer();
+		List<ValueElement> valueElements = option.getValueElements();
+		for (ValueElement valueElement : valueElements) {
+			LOG.trace("value "+valueElement.getName());
+		}
+		normaTransformer.parseTransform(this, tokenList);
 	}
 
 	/** deprecated // use transform instead
-	 * 
+	 *
 	 * @param option
 	 * @param argIterator
 	 */
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
 		LOG.warn("option --xsl is deprecated); use --transform instead");
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		List<String> tokenList = option.processArgs(tokens).getStringValues();
-		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
-		transformList = new ArrayList<String>();
-		// at present we allow only one option
-		for (String token : tokenList) {
-			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
-			if (xslDocument != null) {
-				xslDocumentList.add(xslDocument);
-			} else if (TRANSFORM_OPTIONS.contains(token)) {
-				transformList.add(token);
-			} else {
-				LOG.error("Cannot process transform token: "+token);
-			}
-		}
-	}
-
-	/** deprecated
-	 * 
-	 * @param option
-	 * @param argIterator
-	 */
-	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		List<String> tokenList = option.processArgs(tokens).getStringValues();
-		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
-		transformList = new ArrayList<String>();
-		// at present we allow only one option
-		for (String token : tokenList) {
-			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
-			if (xslDocument != null) {
-				xslDocumentList.add(xslDocument);
-			} else if (TRANSFORM_OPTIONS.contains(token)) {
-				transformList.add(token);
-			} else {
-				LOG.error("Cannot process transform token: "+token);
-			}
-		}
-	}
-
-	public void printHelp() {
-		System.err.println(
-				"\n"
-				+ "====NORMA====\n"
-				+ "Norma converters raw files into scholarlyHTML, and adds tags to sections.\n"
-				+ "Some of the conversion is dependent on publication type (--pubstyle) while some\n"
-				+ "is constant for all documents. Where possible Norma guesses the input type, but can\n"
-				+ "also be guided with the --extensions flag where the file/URL has no extension. "
-				+ ""
-				);
-		super.printHelp();
+		parseTransform(option, argIterator);
 	}
 	
+	
+
 	// ===========run===============
-	
+
 	public void transform(ArgumentOption option) {
 		// deprecated so
 		runTransform(option);
 	}
 
 	public void runTransform(ArgumentOption option) {
-		LOG.trace("***run transform "+currentCMDir);
-		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
-		normaTransformer.transform(option);
+		if (currentCTree == null) {
+			LOG.warn("No current CMDir");
+		} else {
+			LOG.trace("***run transform "+currentCTree);
+			getOrCreateNormaTransformer();
+			normaTransformer.transform(option);
+		}
+	}
+
+	public void runHtml(ArgumentOption option) {
+		LOG.trace("***run html "+currentCTree);
+		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
+		HtmlElement htmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
+		if (htmlElement == null) {
+			LOG.error("Cannot parse HTML");
+			return;
+		}
+		if (output != null) {
+			currentCTree.writeFile(htmlElement.toXML(), output);
+		}
 	}
 
 	private NormaTransformer getOrCreateNormaTransformer() {
@@ -221,44 +225,36 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	public void runTest(ArgumentOption option) {
 		LOG.debug("RUN_TEST "+"is a dummy");
 	}
-		
+
 
 	// =============output=============
 	public void outputMethod(ArgumentOption option) {
 		outputSpecifiedFormat();
 	}
 
-	private void outputSpecifiedFormat() {
-		getOrCreateNormaTransformer();
-		if (normaTransformer.outputTxt != null) {
-			currentCMDir.writeFile(normaTransformer.outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
-		}
-		if (normaTransformer.htmlElement != null) {
-			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
-		}
-		if (normaTransformer.xmlStringList != null && normaTransformer.xmlStringList.size() > 0) {
-			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
-		}
-		if (normaTransformer.svgElement != null && output != null) {
-			currentCMDir.writeFile(normaTransformer.svgElement.toXML(), output);
-		}
-		if (normaTransformer.serialImageList != null) {
-			writeImages();
-		}
+	protected void printVersion() {
+		getVersionManager().printVersion();
+		DefaultArgProcessor.getVersionManager().printVersion();
 	}
 
-	private void writeImages() {
-		File imageDir = currentCMDir.getOrCreateExistingImageDir();
+
+	private void outputSpecifiedFormat() {
+		getOrCreateNormaTransformer();
+		normaTransformer.outputSpecifiedFormat();
+	}
+
+	void writeImages() {
+		File imageDir = currentCTree.getOrCreateExistingImageDir();
 		Set<String> imageSerialSet = new HashSet<String>();
 		StringBuilder sb = new StringBuilder();
-		for (Pair<String, BufferedImage> serialImage : normaTransformer.serialImageList) {
+		for (NamedImage serialImage : normaTransformer.serialImageList) {
 			try {
-				String serialString = serialImage.getLeft();
+				String serialString = serialImage.getKey();
 				String imageSerial = serialString.split("\\.")[3];
 				sb.append(serialString);
 				if (!imageSerialSet.contains(imageSerial)) {
 					File imageFile = new File(imageDir, serialString+DOT_PNG);
-					ImageIO.write(serialImage.getRight(), PNG, imageFile);
+					ImageIO.write(serialImage.getImage(), PNG, imageFile);
 					imageSerialSet.add(imageSerial);
 				}
 			} catch (IOException e) {
@@ -268,14 +264,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	// ==========================
-	
-	private void ensureXslDocumentList() {
-		if (xslDocumentList == null) {
-			xslDocumentList = new ArrayList<org.w3c.dom.Document>();
-		}
-	}
 
-	File checkAndGetInputFile(CMDir cmDir) {
+
+	public File checkAndGetInputFile(CMDir cmDir) {
+		if (cmDir == null) {
+			throw new RuntimeException("null cmDir");
+		}
 		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
@@ -299,18 +293,18 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			LOG.trace("CREATING CMDir FROM INPUT:"+inputList);
 			// this actually creates directory
 			getOrCreateOutputDirectory();
-			ensureCMDirList();
+			ensureCTreeList();
 			createNewCMDirsAndCopyOriginalFilesAndAddToList();
 		}
 	}
 
 	private void createNewCMDirsAndCopyOriginalFilesAndAddToList() {
-		ensureCMDirList();
+		ensureCTreeList();
 		for (String filename : inputList) {
 			try {
 				CMDir cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
 				if (cmDir != null) {
-					cmDirList.add(cmDir);
+					cTreeList.add(cmDir);
 				}
 			} catch (IOException e) {
 				LOG.error("Failed to create CMDir: "+filename+"; "+e);
@@ -366,16 +360,16 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			FileUtils.forceMkdir(reservedDir);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot make directory: "+reservedFilename+" "+e);
-		}  
+		}
 		String name = FilenameUtils.getName(filename);
 		try {
 			File outFile = new File(reservedDir, name);
 			FileUtils.copyFile(new File(filename), outFile);
 		} catch (IOException e) {
-			throw new RuntimeException("Cannot copy file: "+filename+" to "+reservedDir+" / "+e);
-		}  
-		LOG.debug("created "+name+" in "+reservedDir);
-		
+			throw new RuntimeException("Cannot copy file: "+filename+" to "+reservedDir, e);
+		}
+		LOG.trace("created "+name+" in "+reservedDir);
+
 	}
 
 	private CMDir createCMDir(String dirName) {
@@ -397,69 +391,6 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 			}
 		}
 	}
-
-	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
-		DocumentBuilder db = createDocumentBuilder(); 
-		String stylesheetResourceName = replaceCodeIfPossible(xslName);
-		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
-		// if fails, try as file
-		if (stylesheetDocument == null) {
-			try {
-				stylesheetDocument = readAsStream(db, xslName, new FileInputStream(xslName));
-			} catch (FileNotFoundException e) { /* hide exception*/}
-		}
-		if (stylesheetDocument == null) {
-			// this could happen when we use "pdf2txt" , etc
-			LOG.trace("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
-		}
-		return stylesheetDocument;
-	}
-
-	private DocumentBuilder createDocumentBuilder() {
-		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-		DocumentBuilder db = null;
-		try {
-			db = dbf.newDocumentBuilder();
-		} catch (ParserConfigurationException e) {
-			throw new RuntimeException("Serious BUG in JavaXML:", e);
-		}
-		return db;
-	}
-
-	private org.w3c.dom.Document readAsResource(DocumentBuilder db, String stylesheetResourceName) {
-		InputStream is = this.getClass().getResourceAsStream(stylesheetResourceName);
-		return readAsStream(db, stylesheetResourceName, is);
-	}
-
-	private org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
-		org.w3c.dom.Document stylesheetDocument = null;
-		try {
-			stylesheetDocument = db.parse(is);
-		} catch (Exception e) { /* hide error */ }
-		return stylesheetDocument;
-	}
-
-	private String replaceCodeIfPossible(String xslName) {
-		createStylesheetByNameMap();
-		String stylesheetResourceName = stylesheetByNameMap.get(xslName);
-		stylesheetResourceName = (stylesheetResourceName == null) ? xslName : stylesheetResourceName;
-		return stylesheetResourceName;
-	}
-
-	private void createStylesheetByNameMap() {
-		stylesheetByNameMap = new HashMap<String, String>();
-		try {
-			nu.xom.Document stylesheetByNameDocument = new Builder().build(this.getClass().getResourceAsStream(STYLESHEET_BY_NAME_XML));
-			List<Element> stylesheetList = XMLUtil.getQueryElements(stylesheetByNameDocument, "/stylesheetList/stylesheet");
-			for (Element stylesheet : stylesheetList) {
-				stylesheetByNameMap.put(stylesheet.getAttributeValue(NAME), stylesheet.getValue());
-			}
-			LOG.trace(stylesheetByNameMap);
-		} catch (Exception e) {
-			LOG.error("Cannot read "+STYLESHEET_BY_NAME_XML+"; "+e);
-		}
-	}
-
 
 
 	// ==========================
@@ -493,14 +424,18 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public boolean isStandalone() {
-		return standalone;
+		return removeDTD;
 	}
-	
+
+	public List<SectionTagger> getSectionTaggers() {
+		return sectionTaggerNameList;
+	}
+
 	@Override
 	/** parse args and resolve their dependencies.
-	 * 
+	 *
 	 * (don't run any argument actions)
-	 * 
+	 *
 	 */
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
@@ -508,13 +443,7 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	}
 
 	public CMDir getCurrentCMDir() {
-		return currentCMDir;
+		return currentCTree;
 	}
-
-	public List<Document> getXslDocumentList() {
-		ensureXslDocumentList();
-		return xslDocumentList;
-	}
-
 
 }
