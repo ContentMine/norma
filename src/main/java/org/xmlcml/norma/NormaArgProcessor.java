@@ -1,5 +1,6 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,9 +9,12 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -20,6 +24,7 @@ import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
@@ -38,6 +43,9 @@ import org.xmlcml.xml.XMLUtil;
  */
 public class NormaArgProcessor extends DefaultArgProcessor{
 	
+	private static final String DOT_PNG = ".png";
+	private static final String IMAGE = "image";
+	private static final String PNG = "png";
 	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -53,7 +61,9 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	
 	public final static String DOCTYPE = "!DOCTYPE";
-	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{"pdfbox", "pdf2html", "pdf2txt"});
+	private static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
+			"pdfbox", "pdf2html", "pdf2txt", "pdf2images",
+			"hocr2svg"});
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
@@ -128,12 +138,36 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		tidyName = option.processArgs(tokens).getStringValue();
 	}
 
-	/** supersedes parseXsl.
+	/** deprecated // use transform instead
 	 * 
 	 * @param option
 	 * @param argIterator
 	 */
 	public void parseXsl(ArgumentOption option, ArgIterator argIterator) {
+		LOG.warn("option --xsl is deprecated); use --transform instead");
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokenList = option.processArgs(tokens).getStringValues();
+		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
+		transformList = new ArrayList<String>();
+		// at present we allow only one option
+		for (String token : tokenList) {
+			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
+			if (xslDocument != null) {
+				xslDocumentList.add(xslDocument);
+			} else if (TRANSFORM_OPTIONS.contains(token)) {
+				transformList.add(token);
+			} else {
+				LOG.error("Cannot process transform token: "+token);
+			}
+		}
+	}
+
+	/** deprecated
+	 * 
+	 * @param option
+	 * @param argIterator
+	 */
+	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		List<String> tokenList = option.processArgs(tokens).getStringValues();
 		xslDocumentList = new ArrayList<org.w3c.dom.Document>();
@@ -167,6 +201,12 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	// ===========run===============
 	
 	public void transform(ArgumentOption option) {
+		// deprecated so
+		runTransform(option);
+	}
+
+	public void runTransform(ArgumentOption option) {
+		LOG.trace("***run transform "+currentCMDir);
 		NormaTransformer normaTransformer = getOrCreateNormaTransformer();
 		normaTransformer.transform(option);
 	}
@@ -191,13 +231,39 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 	private void outputSpecifiedFormat() {
 		getOrCreateNormaTransformer();
 		if (normaTransformer.outputTxt != null) {
-			currentCMDir.writeFile(normaTransformer.outputTxt, CMDir.FULLTEXT_PDF_TXT);
+			currentCMDir.writeFile(normaTransformer.outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
 		}
 		if (normaTransformer.htmlElement != null) {
-			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), CMDir.FULLTEXT_HTML);
+			currentCMDir.writeFile(normaTransformer.htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
 		}
 		if (normaTransformer.xmlStringList != null && normaTransformer.xmlStringList.size() > 0) {
-			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), CMDir.SCHOLARLY_HTML);
+			currentCMDir.writeFile(normaTransformer.xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
+		}
+		if (normaTransformer.svgElement != null && output != null) {
+			currentCMDir.writeFile(normaTransformer.svgElement.toXML(), output);
+		}
+		if (normaTransformer.serialImageList != null) {
+			writeImages();
+		}
+	}
+
+	private void writeImages() {
+		File imageDir = currentCMDir.getOrCreateExistingImageDir();
+		Set<String> imageSerialSet = new HashSet<String>();
+		StringBuilder sb = new StringBuilder();
+		for (Pair<String, BufferedImage> serialImage : normaTransformer.serialImageList) {
+			try {
+				String serialString = serialImage.getLeft();
+				String imageSerial = serialString.split("\\.")[3];
+				sb.append(serialString);
+				if (!imageSerialSet.contains(imageSerial)) {
+					File imageFile = new File(imageDir, serialString+DOT_PNG);
+					ImageIO.write(serialImage.getRight(), PNG, imageFile);
+					imageSerialSet.add(imageSerial);
+				}
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot write image ", e);
+			}
 		}
 	}
 
@@ -214,10 +280,13 @@ public class NormaArgProcessor extends DefaultArgProcessor{
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CMDir.isReservedFilename(inputName)) {
+		if (!CMDir.isReservedFilename(inputName) && !CMDir.hasReservedParentDirectory(inputName) ) {
 			throw new RuntimeException("Input must be reserved file; found: "+inputName);
 		}
 		File inputFile = cmDir.getExistingReservedFile(inputName);
+		if (inputFile == null) {
+			inputFile = cmDir.getExistingFileWithReservedParentDirectory(inputName);
+		}
 		if (inputFile == null) {
 			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cmDir.getDirectory());
 		}

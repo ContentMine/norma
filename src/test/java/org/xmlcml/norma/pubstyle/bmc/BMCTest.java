@@ -180,7 +180,7 @@ public class BMCTest {
 				// a new scholarly.html
 				"--output", "scholarly.html",
 				// using a BMC-specifc stylesheet (BMC is not JATS-compliant)
-				"--xsl", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
+				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
 		};
 		// the primary entry point
 		Norma norma = new Norma();
@@ -239,7 +239,7 @@ public class BMCTest {
 				targetFiles[6].toString(),
 				"--input", "fulltext.xml",
 				"--output", "scholarly.html",
-				"--xsl", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
+				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
 		};
 		Norma norma = new Norma();
 		norma.run(args);

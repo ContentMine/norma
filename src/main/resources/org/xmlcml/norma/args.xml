@@ -142,6 +142,7 @@
 		required="--input --output"
 		>
 		<help>
+		DEPRECATED (use transform)
 			XSL:
 			Transform XML or HTML input with stylesheet. Argument may be a file/URL reference to a stylesheet,
 			or a code from one of {nlm, jats ...}
@@ -153,25 +154,25 @@
 		</help>
 	</arg>
 
-<!-- 
 	<arg name="transform"
-		long="- -transform"
+		long="--transform"
 		args="stylesheet"
 		countRange="{1,*}"
 		parseMethod="parseTransform"
 		runMethod="runTransform"
-		required="- -input - -output"
+		required="--input --output"
 		>
 		<help>
-		Relacement for - -xsl
+		Relacement for --xsl
 			Transform XML or HTML or PDF or ... Argument may be a file/URL reference to a stylesheet,
-			or a code from one of {nlm, jats pdfbox}
+			or a code from one of {nlm, jats, pdfbox, hocr2svg}
 			the codes are checked first and then the document reference.
 			
-			Requires input and output files (- -input and - -output). These must be reserved names (e.g. fulltext.xml) in qsNorma and
+			Requires input and output files (--input and --output). These must be reserved names (e.g. fulltext.xml) in cmDir OR files
+			in reserved directories and
 			determine the type of files to convert.
 		</help>
 	</arg>
- -->	
+	
 </argList>
 			

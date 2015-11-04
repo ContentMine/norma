@@ -1,5 +1,6 @@
 package org.xmlcml.norma;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,11 +13,16 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.norma.image.ocr.HOCRReader;
+import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.util.TransformerWrapper;
 
@@ -26,22 +32,25 @@ public class NormaTransformer {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	private static final String TRANSFORM = "--transform";
 	private static final String XSL = "--xsl";
+	private static final String HOCR2SVG = "hocr2svg";
 	private static final String PDF2HTML = "pdf2html";
 	private static final String PDF2TXT = "pdf2txt";
+	private static final String PDF2IMAGES = "pdf2images";
 	private static final String TXT2HTML = "txt2html";
 	
 	private NormaArgProcessor normaArgProcessor;
-	private CMDir currentCMDir;
 	private File inputFile;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 	String outputTxt;
 	List<String> xmlStringList;
+	List<Pair<String, BufferedImage>> serialImageList;
 	HtmlElement htmlElement;
+	SVGElement svgElement;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
-		this.currentCMDir = argProcessor.getCurrentCMDir();
 	}
 
 	/** transforms currentCMDir.
@@ -54,14 +63,23 @@ public class NormaTransformer {
 	 * @param option
 	 */
 	void transform(ArgumentOption option) {
+		CMDir currentCMDir = normaArgProcessor.getCurrentCMDir();
+		LOG.trace("CM "+currentCMDir);
 		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.trace("TRANSFORM "+option.getVerbose());
+		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
 		outputTxt = null;
 		htmlElement = null;
+		svgElement = null;
 		xmlStringList = null;
-		if (option.getVerbose().equals(XSL)) {
-			if (PDF2TXT.equals(option.getStringValue())) {
+		serialImageList = null;
+		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
+			if (false) {				
+			} else if (HOCR2SVG.equals(option.getStringValue())) {
+				svgElement = applyHOCR2SVGToInputFile(inputFile);
+			} else if (PDF2TXT.equals(option.getStringValue())) {
 				outputTxt = applyPDF2TXTToCMLDir();
+			} else if (PDF2IMAGES.equals(option.getStringValue())) {
+				serialImageList = applyPDF2ImagesToCMLDir();
 			} else if (TXT2HTML.equals(option.getStringValue())) {
 				htmlElement = applyTXT2HTMLToCMDir();
 			} else if (PDF2HTML.equals(option.getStringValue())) {
@@ -73,6 +91,17 @@ public class NormaTransformer {
 		}
 	}
 
+	private SVGElement applyHOCR2SVGToInputFile(File inputFile) {
+		HOCRReader hocrReader = new HOCRReader();
+		try {
+			hocrReader.readHOCR(new FileInputStream(inputFile));
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform HOCR "+inputFile, e);
+		}
+		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
+		return svgSvg;
+	}
+
 	private String applyPDF2TXTToCMLDir() {
 		PDF2TXTConverter converter = new PDF2TXTConverter();
 		String txt = null;
@@ -82,6 +111,17 @@ public class NormaTransformer {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
 		}
 		return txt;
+	}
+
+	private List<Pair<String, BufferedImage>> applyPDF2ImagesToCMLDir() {
+		PDF2ImagesConverter converter = new PDF2ImagesConverter();
+		List<Pair<String, BufferedImage>> serialAndImageList = null;
+		try {
+			serialAndImageList = converter.readPDF(new FileInputStream(inputFile), true);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return serialAndImageList;
 	}
 
 	private HtmlElement applyTXT2HTMLToCMDir() {
@@ -108,7 +148,7 @@ public class NormaTransformer {
 				String xmlString = transform(xslDocument);
 				xmlStringList.add(xmlString);
 			} catch (IOException e) {
-				LOG.error("Cannot transform "+currentCMDir+"; "+e);
+				LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMDir()+"; "+e);
 			}
 		}
 		return xmlStringList;
@@ -238,6 +278,19 @@ public class NormaTransformer {
 
 	public List<String> getXmlStringList() {
 		return xmlStringList;
+	}
+
+	/** ordered list of title+image.
+	 * 
+	 * title are of form "image<page>.<serial>.Img<img>"
+	 * page is PD page number (base 1)
+	 * serial is serial index of image (includes duplication)
+	 * img is unique image serial
+	 * 
+	 * @return
+	 */
+	public List<Pair<String, BufferedImage>> getImageList() {
+		return serialImageList;
 	}
 
 	public HtmlElement getHtmlElement() {

@@ -1,14 +1,15 @@
 package org.xmlcml.norma.input;
 
 import java.io.IOException;
+
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
+import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.input.html.HtmlReader;
-import org.xmlcml.norma.input.ocr.HOCRReader;
 
 public class InputReader {
 
