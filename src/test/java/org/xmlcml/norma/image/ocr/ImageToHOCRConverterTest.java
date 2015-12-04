@@ -60,19 +60,19 @@ public class ImageToHOCRConverterTest {
 	}
 
 	@Test
-	@Ignore("Tesseract")
+//	@Ignore("Tesseract")
 	public void testConvertPNGsToSVG() throws Exception {
 		File ERIN_PNG = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/erinPngs/");
 		File[] pngs = new File[] { 
 				
-				new File(ERIN_PNG, "chen2006.png"),
-				new File(ERIN_PNG, "Gant.png"),
-				new File(ERIN_PNG, "MaggioSegal_PC1_DH.png"),
-				new File(ERIN_PNG, "pedarzani.png"),
-				new File(ERIN_PNG, "pedarzani2001.png"),
-				new File(ERIN_PNG, "podlogar.png"),
-				new File(ERIN_PNG, "Staff1.png"),
-				new File(ERIN_PNG, "White.png"),
+				new File(new File(ERIN_PNG, "chen2006"), "raw.png"),
+				new File(new File(ERIN_PNG, "Gant"), "raw.png"),
+				new File(new File(ERIN_PNG, "MaggioSegal_PC1_DH"), "raw.png"),
+				new File(new File(ERIN_PNG, "pedarzani"), "raw.png"),
+				new File(new File(ERIN_PNG, "pedarzani2001"), "raw.png"),
+				new File(new File(ERIN_PNG, "podlogar"), "raw.png"),
+				new File(new File(ERIN_PNG, "Staff1"), "raw.png"),
+				new File(new File(ERIN_PNG, "White"), "raw.png"),
 		};
 		analyzePNG(new File("target/neuro/erinpngs"), pngs);
 	}
@@ -81,13 +81,16 @@ public class ImageToHOCRConverterTest {
 		outputDir.mkdirs();
 		String imageSuffix = "png";
 		for (File file : infiles) {
-			String root = FileUtils.basename(file.getName());
+			System.out.println(file);
+			String root = FileUtils.basename(file.getParentFile().getName());
 			System.out.println("-------"+root+"--------");
 			BufferedImage image = ImageIO.read(file);
 			HOCRReader hocrReader = new HOCRReader();
 			hocrReader.setMaxFontSize(50.);
 			hocrReader.labelSubImages("[A-Za-z]");
-			hocrReader.createHTMLandSVG(outputDir, imageSuffix, image, root);
+			File outputDir1 = new File(outputDir, root);
+			outputDir1.mkdirs();
+			hocrReader.createHTMLandSVG(outputDir1, imageSuffix, image, root);
 		}
 	}
 

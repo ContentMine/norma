@@ -13,6 +13,7 @@ public class Fixtures {
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
 	public final static File TEST_JSON_DIR = new File(Fixtures.TEST_NORMA_DIR, "json");
+	public final static File TEST_BIBLIO_DIR = new File(Fixtures.TEST_NORMA_DIR, "biblio");
 	public final static File TEST_PUBSTYLE_DIR = new File(Fixtures.TEST_NORMA_DIR, "pubstyle");
 	public final static File TEST_TEX_DIR = new File(Fixtures.TEST_NORMA_DIR, "tex");
 	

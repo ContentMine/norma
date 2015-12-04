@@ -133,7 +133,8 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Test
 	public void testPDF2TXT1() throws FileNotFoundException, IOException {
 		FileUtils.copyDirectory(
-				new File("src/test/resources/org/xmlcml/norma/regressiondemos/quickscrapeDirs/bmc/1471-2148-14-70"), 
+//				new File("src/test/resources/org/xmlcml/norma/regressiondemos/quickscrapeDirs/bmc/1471-2148-14-70"), 
+				new File("src/test/resources/org/xmlcml/norma/quickscrapeDirs/bmc/1471-2148-14-70"), 
 				new File("target/pdftest"));
 		String args = "-q target/pdftest/ -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt";
 		Norma norma = new Norma();

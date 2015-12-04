@@ -123,7 +123,7 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
 		CMDir cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
-		LOG.debug(cmDir+"; "+files);
+		LOG.trace(cmDir+"; "+files);
 		Assert.assertEquals(5, files.size());
 	}
 	
