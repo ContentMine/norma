@@ -1,0 +1,387 @@
+﻿
+TY  - JOUR
+AU  - Schwochau, Klaus
+TI  - Technetium Radiopharmaceuticals—Fundamentals, Synthesis, Structure, and Development
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 33
+IS  - 22
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199422581
+DO  - 10.1002/anie.199422581
+SP  - 2258
+EP  - 2267
+KW  - Technetium
+KW  - Radiopharmaceuticals
+PY  - 1994
+ER  - 
+
+TY  - JOUR
+AU  - Bronger, Welf
+AU  - Kanert, Martin
+AU  - Loevenich, Markus
+AU  - Schmitz, Dieter
+AU  - Schwochau, Klaus
+TI  - [Tc6X8] Clusters in ternary Technetium Chalcogenides
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 32
+IS  - 4
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199305761
+DO  - 10.1002/anie.199305761
+SP  - 576
+EP  - 578
+PY  - 1993
+ER  - 
+
+TY  - JOUR
+AU  - Dehnicke, Kurt
+AU  - Strähle, Joachim
+TI  - Nitrido Complexes of Transition Metals
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 31
+IS  - 8
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199209551
+DO  - 10.1002/anie.199209551
+SP  - 955
+EP  - 978
+KW  - Transition metals
+KW  - Nitrido ligand
+PY  - 1992
+ER  - 
+
+TY  - JOUR
+AU  - Hahn, F. Ekkehardt
+TI  - The Coordination Chemistry of Multidentate Isocyanide Ligands
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 32
+IS  - 5
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199306501
+DO  - 10.1002/anie.199306501
+SP  - 650
+EP  - 665
+KW  - Isocyanide ligands
+KW  - Multidentate ligands
+KW  - Coordination modes
+PY  - 1993
+ER  - 
+
+TY  - JOUR
+AU  - Mullen, Gregory E. D.
+AU  - Went, Michael J.
+AU  - Wocadlo, Sigrid
+AU  - Powell, Anne K.
+AU  - Blower, Philip J.
+TI  - Electron Transfer Induced CS Bond Cleavage in Rhenium and Technetium Thioether Complexes: Structural and Chemical Evidence for π Back-Donation to CS σ* Orbitals
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 36
+IS  - 11
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199712051
+DO  - 10.1002/anie.199712051
+SP  - 1205
+EP  - 1207
+KW  - bond theory
+KW  - rhenium
+KW  - technetium
+KW  - S ligands
+PY  - 1997
+ER  - 
+
+TY  - JOUR
+AU  - Spies, Hartmut
+AU  - Glaser, Matthias
+AU  - Pietzsch, Hans-Jürgen
+AU  - Hahn, F. Ekkehardt
+AU  - Kintzel, Oliver
+AU  - Lügger, Thomas
+TI  - Trigonal-Bipyramidal Technetium and Rhenium Complexes with Tetradentate NS3 Tripod Ligands
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 33
+IS  - 13
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199413541
+DO  - 10.1002/anie.199413541
+SP  - 1354
+EP  - 1356
+PY  - 1994
+ER  - 
+
+TY  - JOUR
+AU  - Vlaar, Cornelis P.
+AU  - Klumpp, Gerhard W.
+TI  - Reduction of Geminal Dihalocyclopropanes with Lithium 4,4′-Di-tert-butylbiphenyl; Cyclopropyl Derivatives of Dilithiomethane and 1,2-Dilithioethane; Inferences Regarding the Intermediate Carbenoids
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 32
+IS  - 4
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199305741
+DO  - 10.1002/anie.199305741
+SP  - 574
+EP  - 576
+PY  - 1993
+ER  - 
+
+TY  - JOUR
+AU  - Szyperski, Thomas
+AU  - Schwerdtfeger, Peter
+TI  - On the Stability of Trioxo(η5 -Cyclopentadienyl) Compounds of Manganese, Technetium, and Rhenium : An ab initio SCF Study
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 28
+IS  - 9
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.198912281
+DO  - 10.1002/anie.198912281
+SP  - 1228
+EP  - 1231
+PY  - 1989
+ER  - 
+
+TY  - JOUR
+TI  - Subject Index [Angew. Chem. Int. Ed. Engl. 1994, 33]
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 33
+IS  - 23-24
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199425151
+DO  - 10.1002/anie.199425151
+SP  - 2515
+EP  - 2543
+PY  - 1995
+ER  - 
+
+TY  - JOUR
+AU  - Schwochau, K.
+TI  - Book Review: The Chemistry of Technetium and Rhenium. By R. D. Peacock. Topics in Inorganic and General Chemistry, Monograph 6. Edited by P. L. Robinson
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 7
+IS  - 1
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.196800841
+DO  - 10.1002/anie.196800841
+SP  - 84
+EP  - 84
+PY  - 1968
+ER  - 
+
+TY  - JOUR
+AU  - Yu, Ping
+AU  - Wang, Shuao
+AU  - Alekseev, Evgeny V.
+AU  - Depmeier, Wulf
+AU  - Hobbs, David T.
+AU  - Albrecht-Schmitt, Thomas E.
+AU  - Phillips, Brian L.
+AU  - Casey, William H.
+TI  - Technetium-99 MAS NMR Spectroscopy of a Cationic Framework Material that Traps TcO4− Ions
+JO  - Angewandte Chemie International Edition
+JA  - Angewandte Chemie International Edition
+VL  - 49
+IS  - 34
+PB  - WILEY-VCH Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.201002646
+DO  - 10.1002/anie.201002646
+SP  - 5975
+EP  - 5977
+KW  - cationic frameworks
+KW  - host–guest systems
+KW  - magic-angle spinning
+KW  - NMR spectroscopy
+KW  - technetium
+PY  - 2010
+ER  - 
+
+TY  - JOUR
+AU  - Grünewald, H.
+TI  - Book Review: Nobel Lectures Chemistry 1901–1921 and 1922–1941
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 7
+IS  - 1
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.196800843
+DO  - 10.1002/anie.196800843
+SP  - 84
+EP  - 84
+PY  - 1968
+ER  - 
+
+TY  - JOUR
+AU  - Krebs, B.
+TI  - Technetium(VII) Oxide: A Transition Metal Oxide with a Molecular Structure in the Solid State
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 8
+IS  - 5
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.196903812
+DO  - 10.1002/anie.196903812
+SP  - 381
+EP  - 382
+PY  - 1969
+ER  - 
+
+TY  - JOUR
+TI  - Subject Index [Angew. Chem. Int. Ed. Engl. 1993, 32]
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 32
+IS  - 12
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.199317971
+DO  - 10.1002/anie.199317971
+SP  - 1797
+EP  - 1817
+PY  - 1993
+ER  - 
+
+TY  - JOUR
+AU  - Keller, C.
+TI  - Book Review: Introduction to Nuclear Chemistry. By D. J. Carswell
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 7
+IS  - 1
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.196800842
+DO  - 10.1002/anie.196800842
+SP  - 84
+EP  - 84
+PY  - 1968
+ER  - 
+
+TY  - JOUR
+AU  - Götte, Hans
+AU  - Kloss, Gerhard
+TI  - Nuclear Medicine and Radiochemistry
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 12
+IS  - 9
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.197307121
+DO  - 10.1002/anie.197307121
+SP  - 712
+EP  - 721
+KW  - Nuclear medicine
+KW  - Medicinal chemistry
+KW  - Radiochemistry
+PY  - 1973
+ER  - 
+
+TY  - JOUR
+AU  - von Ragué Schlever, Paul
+AU  - Bremer, Matthias
+TI  - Very Short CC Single Bonds and Their Origin. The Central Bond Length in Bitetrahedryl
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 28
+IS  - 9
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.198912261
+DO  - 10.1002/anie.198912261
+SP  - 1226
+EP  - 1228
+PY  - 1989
+ER  - 
+
+TY  - JOUR
+AU  - Arterburn, Jeffrey B.
+AU  - Rao, Kalla Venkateswara
+AU  - Perry, Marc C.
+TI  - Solid-Supported Hydrazine Substrate For Labeling Estradiol Ligands with Rhenium
+
+
+JO  - Angewandte Chemie International Edition
+JA  - Angewandte Chemie International Edition
+VL  - 39
+IS  - 4
+PB  - WILEY-VCH Verlag GmbH
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/(SICI)1521-3773(20000218)39:4<771::AID-ANIE771>3.0.CO;2-E
+DO  - 10.1002/(SICI)1521-3773(20000218)39:4<771::AID-ANIE771>3.0.CO;2-E
+SP  - 771
+EP  - 772
+KW  - N ligands
+KW  - radiopharmaceuticals
+KW  - rhenium
+KW  - solid-phase synthesis
+KW  - steroids
+PY  - 2000
+ER  - 
+
+TY  - JOUR
+AU  - Pohl, L.
+AU  - Eckle, M.
+TI  - Sodium 3-Trimethylsilyltetradeuteriopropionate, a New Water-Soluble Standard for 1H-NMR
+JO  - Angewandte Chemie International Edition in English
+JA  - Angew. Chem. Int. Ed. Engl.
+VL  - 8
+IS  - 5
+PB  - Hüthig & Wepf Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.196903811
+DO  - 10.1002/anie.196903811
+SP  - 381
+EP  - 381
+PY  - 1969
+ER  - 
+
+TY  - JOUR
+AU  - Can, Daniel
+AU  - Spingler, Bernhard
+AU  - Schmutz, Paul
+AU  - Mendes, Filipa
+AU  - Raposinho, Paula
+AU  - Fernandes, Célia
+AU  - Carta, Fabrizio
+AU  - Innocenti, Alessio
+AU  - Santos, Isabel
+AU  - Supuran, Claudiu T.
+AU  - Alberto, Roger
+TI  - [(Cp-R)M(CO)3] (M=Re or 99mTc) Arylsulfonamide, Arylsulfamide, and Arylsulfamate Conjugates for Selective Targeting of Human Carbonic Anhydrase IX
+JO  - Angewandte Chemie International Edition
+JA  - Angew. Chem. Int. Ed.
+VL  - 51
+IS  - 14
+PB  - WILEY-VCH Verlag
+SN  - 1521-3773
+UR  - http://dx.doi.org/10.1002/anie.201107333
+DO  - 10.1002/anie.201107333
+SP  - 3354
+EP  - 3357
+KW  - bio-organometallic chemistry
+KW  - carbonic anhydrase inhibitors
+KW  - radiopharmaceuticals
+KW  - sulfonamides
+KW  - technetium
+PY  - 2012
+ER  - 
