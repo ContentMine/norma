@@ -166,26 +166,26 @@ public class BMCTest {
 	 */
 	@Test 
 	public void testTransformBMCXMLToHtml() throws Exception {
-		// this is a valid CMDir directory
-		CTree cmDir = new CTree(Fixtures.BMC_15_1_511_DIR);
+		// this is a valid CTree
+		CTree cTree = new CTree(Fixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
-		Assert.assertEquals("reserved files", 4, cmDir.getReservedFileList().size());
-		Assert.assertNotNull("fulltext.xml", cmDir.getExistingFulltextXML());
-		Assert.assertNotNull("fulltext.html", cmDir.getExistingFulltextHTML());
-		Assert.assertNotNull("fulltext.pdf", cmDir.getExistingFulltextPDF());
-		Assert.assertNotNull("results.json", cmDir.getExistingResultsJSON());
+		Assert.assertEquals("reserved files", 4, cTree.getReservedFileList().size());
+		Assert.assertNotNull("fulltext.xml", cTree.getExistingFulltextXML());
+		Assert.assertNotNull("fulltext.html", cTree.getExistingFulltextHTML());
+		Assert.assertNotNull("fulltext.pdf", cTree.getExistingFulltextPDF());
+		Assert.assertNotNull("results.json", cTree.getExistingResultsJSON());
 		// these files don't exist yet
-		Assert.assertNull("scholarly.html", cmDir.getExistingScholarlyHTML());
-		Assert.assertNull("results.xml", cmDir.getExistingResultsDir());
+		Assert.assertNull("scholarly.html", cTree.getExistingScholarlyHTML());
+		Assert.assertNull("results.xml", cTree.getExistingResultsDir());
 		// make a copy for the tests
-		File cmDir1 = new File("target/bmc/15_1_511");
+		File cTree1 = new File("target/bmc/15_1_511");
 		// clean any existing files
-		if (cmDir1.exists()) FileUtils.forceDelete(cmDir1);
-		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, cmDir1);
+		if (cTree1.exists()) FileUtils.forceDelete(cTree1);
+		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, cTree1);
 		// now run the transformation
 		String[] args = {
-				// the cmDir directory
-				"--cmdir", cmDir1.toString(),
+				// the cTree directory
+				"--ctree", cTree1.toString(),
 				// we will transform the fulltext.xml into ...
 				"--input", "fulltext.xml",
 				// a new scholarly.html
@@ -197,14 +197,14 @@ public class BMCTest {
 		// the primary entry point
 		Norma norma = new Norma();
 		// run() calls parseArgs() which:
-		// parses all arguments and checks for consistency of cmDir
+		// parses all arguments and checks for consistency of cTree
 		// then run() executes all arguments with runMethod. In this case it's transform() (for XSL)
 		norma.run(args);
 		// this will have created a new scholarlyHtml . The remaing commands are just to verify its content
 		// this makes a new object but doesn't affect the filestore
-		CTree cmDirNew = new CTree(cmDir1);
+		CTree cTreeNew = new CTree(cTree1);
 		// there should be a new scholarly.html
-		File scholarlyHtml = cmDirNew.getExistingScholarlyHTML();
+		File scholarlyHtml = cTreeNew.getExistingScholarlyHTML();
 		Assert.assertNotNull("scholarly.html", scholarlyHtml);
 		// parse it into an HtmlElement we can query
 		HtmlElement htmlElement = new HtmlFactory().parse(scholarlyHtml);
@@ -225,23 +225,23 @@ public class BMCTest {
 	@Test 
 	public void testTransformSeveralXMLToHtml() throws Exception {
 		File[] cmFiles = {
-				 Fixtures.TEST_ELIFE_CMDIR0,
-				 Fixtures.TEST_F1000_CMDIR0,
-				 Fixtures.TEST_FRONTIERS_CMDIR0,
-				 Fixtures.TEST_MDPI_CMDIR0,
-				 Fixtures.TEST_PEERJ_CMDIR0,
-				 Fixtures.TEST_PENSOFT_CMDIR0,
-				 Fixtures.TEST_PLOSONE_CMDIR0
+				 Fixtures.TEST_ELIFE_CTREE0,
+				 Fixtures.TEST_F1000_CTREE0,
+				 Fixtures.TEST_FRONTIERS_CTREE0,
+				 Fixtures.TEST_MDPI_CTREE0,
+				 Fixtures.TEST_PEERJ_CTREE0,
+				 Fixtures.TEST_PENSOFT_CTREE0,
+				 Fixtures.TEST_PLOSONE_CTREE0
 		};
 		int nqs = cmFiles.length;
 		File[] targetFiles = new File[nqs];
 		for (int i = 0; i < nqs; i++) {
-			CTree cmDir = new CTree(cmFiles[i]);
+			CTree cTree = new CTree(cmFiles[i]);
 			targetFiles[i] = new File("target/test/file"+i);
-			cmDir.copyTo(targetFiles[i], true);
+			cTree.copyTo(targetFiles[i], true);
 		}
 		String[] args = {
-				"--cmdir", 
+				"--ctree", 
 				targetFiles[0].toString(),
 				targetFiles[1].toString(),
 				targetFiles[2].toString(),

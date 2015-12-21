@@ -138,18 +138,18 @@ public class HOCRReaderTest {
 	@Test
 	public void testCommandLine() throws IOException {
 		
-		File cmdirTop = new File("target/hocr/ijsem_003566");
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cmdirTop);
-		CTree cmDir = new CTree(cmdirTop);
-		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
-		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
-		String args = "-q "+cmdirTop
+		File cTreeTop = new File("target/hocr/ijsem_003566");
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cTreeTop);
+		CTree cTree = new CTree(cTreeTop);
+		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
+		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
+		String args = "-q "+cTreeTop
 				+ " --transform hocr2svg"
 				+ " -i " + "image/ijs.0.003566-0-000.pbm.png.hocr"
 				+ " -o " + "image/ijs.0.003566-0-000.pbm.png.hocr.svg";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("svg", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
+		Assert.assertNotNull("svg", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
 	}
 }

@@ -47,8 +47,8 @@ public class GetPapers {
 	    		String name = file.getName();
 	    		JsonElement element = resultsByPmcid.get(name);
 	    		if (element != null) {
-		    		CTree cmDir = new CTree(file);
-		    		File resultsJson = cmDir.getReservedFile(CTree.RESULTS_JSON);
+		    		CTree cTree = new CTree(file);
+		    		File resultsJson = cTree.getReservedFile(CTree.RESULTS_JSON);
 		    		FileUtils.write(resultsJson, element.toString(), Charset.forName("UTF-8"));
 	    		}
 	    	}

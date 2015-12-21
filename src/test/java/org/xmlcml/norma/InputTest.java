@@ -108,9 +108,9 @@ public class InputTest {
 		Assert.assertEquals("inputList", 5, inputList.size());
 		// files are not sorted
 		Assert.assertTrue("input file", inputList.contains("src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm1.xml"));
-		CTreeList cmDirList = argProcessor.getCTreeList();
-		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("cmDirlist", 0, cmDirList.size());
+		CTreeList cTreeList = argProcessor.getCTreeList();
+		Assert.assertNotNull(cTreeList);
+		Assert.assertEquals("cTreelist", 0, cTreeList.size());
 	}
 	
 	/** creates single `CTree` directory
@@ -123,30 +123,30 @@ public class InputTest {
 	 */
 	@Test
 	public void testMakeSingleQuickscrape() {
-		File cmDir = new File("target/quickscrape/single/");
-		FileUtils.deleteQuietly(cmDir);
+		File cTree = new File("target/quickscrape/single/");
+		FileUtils.deleteQuietly(cTree);
 		String[] args = {
 				"-i", 
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
-				"-o", cmDir.toString()
+				"-o", cTree.toString()
 		};
-		// THIS MAKES THE CMDIR and copies files and renames
+		// THIS MAKES THE CTREE and copies files and renames
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
 		Assert.assertEquals("inputList", 1, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/mdpi-04-00932.xml", inputList.get(0));
-		CTreeList cmDirList = argProcessor.getCTreeList();
-		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("cmDirlist", 1, cmDirList.size());
+		CTreeList cTreeList = argProcessor.getCTreeList();
+		Assert.assertNotNull(cTreeList);
+		Assert.assertEquals("cTreelist", 1, cTreeList.size());
 		argProcessor.runAndOutput();
-		cmDirList = argProcessor.getCTreeList();
-		Assert.assertEquals("cmDirlist", 1, cmDirList.size());
-		CTree cmDir1 = cmDirList.get(0);
-		Assert.assertTrue("fulltext.xml", cmDir1.hasExistingFulltextXML());
-		Assert.assertFalse("fulltext.html", cmDir1.hasFulltextHTML());
-		File fulltextXML = cmDir1.getExistingFulltextXML();
+		cTreeList = argProcessor.getCTreeList();
+		Assert.assertEquals("cTreelist", 1, cTreeList.size());
+		CTree cTree1 = cTreeList.get(0);
+		Assert.assertTrue("fulltext.xml", cTree1.hasExistingFulltextXML());
+		Assert.assertFalse("fulltext.html", cTree1.hasFulltextHTML());
+		File fulltextXML = cTree1.getExistingFulltextXML();
 		Assert.assertTrue("fulltextXML", fulltextXML.exists());
-		File fulltextHTML = cmDir1.getExistingFulltextHTML();
+		File fulltextHTML = cTree1.getExistingFulltextHTML();
 		Assert.assertNull("fulltextXML", fulltextHTML);
 	}
 
@@ -159,14 +159,14 @@ public class InputTest {
 	@Test
 	@Ignore
 	public void testMakeMultipleCTree() {
-		File cmDir = new File("target/quickscrape/multiple/");
-		FileUtils.deleteQuietly(cmDir);
+		File cTree = new File("target/quickscrape/multiple/");
+		FileUtils.deleteQuietly(cTree);
 		String[] args = {
 				"-i", 
 				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
 				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
 				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
-				"-o", cmDir.toString()
+				"-o", cTree.toString()
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -175,17 +175,17 @@ public class InputTest {
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/peerj-727.xml", inputList.get(1));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/pensoft-4478.xml", inputList.get(2));
 		argProcessor.runAndOutput();
-		CTreeList cmDirList = argProcessor.getCTreeList();
-		Assert.assertEquals("cmDirlist", 3, cmDirList.size());
-		Assert.assertEquals("cmDir", "target/quickscrape/multiple/mdpi-04-00932", cmDirList.get(0).getDirectory().toString());
-		Assert.assertEquals("cmDir", "target/quickscrape/multiple/peerj-727", cmDirList.get(1).getDirectory().toString());
-		Assert.assertEquals("cmDir", "target/quickscrape/multiple/pensoft-4478", cmDirList.get(2).getDirectory().toString());
-		Assert.assertEquals("filecount0", 1, cmDirList.get(0).listFiles(false).size());
-		Assert.assertEquals("filecount1", 1, cmDirList.get(1).listFiles(false).size());
-		Assert.assertEquals("filecount2", 1, cmDirList.get(2).listFiles(false).size());
-		Assert.assertTrue("fulltext.xml", cmDirList.get(0).hasExistingFulltextXML());
-		Assert.assertTrue("fulltext.xml", cmDirList.get(1).hasExistingFulltextXML());
-		Assert.assertTrue("fulltext.xml", cmDirList.get(2).hasExistingFulltextXML());
+		CTreeList cTreeList = argProcessor.getCTreeList();
+		Assert.assertEquals("cTreelist", 3, cTreeList.size());
+		Assert.assertEquals("cTree", "target/quickscrape/multiple/mdpi-04-00932", cTreeList.get(0).getDirectory().toString());
+		Assert.assertEquals("cTree", "target/quickscrape/multiple/peerj-727", cTreeList.get(1).getDirectory().toString());
+		Assert.assertEquals("cTree", "target/quickscrape/multiple/pensoft-4478", cTreeList.get(2).getDirectory().toString());
+		Assert.assertEquals("filecount0", 1, cTreeList.get(0).listFiles(false).size());
+		Assert.assertEquals("filecount1", 1, cTreeList.get(1).listFiles(false).size());
+		Assert.assertEquals("filecount2", 1, cTreeList.get(2).listFiles(false).size());
+		Assert.assertTrue("fulltext.xml", cTreeList.get(0).hasExistingFulltextXML());
+		Assert.assertTrue("fulltext.xml", cTreeList.get(1).hasExistingFulltextXML());
+		Assert.assertTrue("fulltext.xml", cTreeList.get(2).hasExistingFulltextXML());
 	}
 	
 
@@ -345,7 +345,7 @@ public class InputTest {
 		Assert.assertTrue(inputTex.exists());
 		// make a CTree 
 		FileUtils.copyFile(inputTex, new File(tempDir, "fulltext.tex"));
-		CTree cmDir = new CTree(tempDir);
+		CTree cTree = new CTree(tempDir);
 
 		String args;
 		Norma norma = new Norma();

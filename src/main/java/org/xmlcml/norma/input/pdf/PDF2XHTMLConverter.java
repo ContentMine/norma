@@ -34,14 +34,14 @@ public class PDF2XHTMLConverter {
 	private List<SVGSVG> svgList;
 	private File svgDirectory;
 
-	private CTree cmDir;
+	private CTree cmTree;
 	private PDFAnalyzer pdfAnalyzer;
 	public PDF2XHTMLConverter() {
 		
 	}
 
-	public PDF2XHTMLConverter(CTree cmDir) {
-		this.cmDir = cmDir;
+	public PDF2XHTMLConverter(CTree cmTree) {
+		this.cmTree = cmTree;
 	}
 
 	public HtmlElement readAndConvertToXHTML(File infile) throws Exception {
@@ -141,10 +141,10 @@ public class PDF2XHTMLConverter {
 
 	public HtmlElement readAndConvertToXHTML() {
 		HtmlElement htmlElement = null;
-		if (cmDir != null) {
-			File fulltextHtmlFile = cmDir.getReservedFile(cmDir.FULLTEXT_XHTML);
-			File fulltextPDF = cmDir.getExistingFulltextPDF();
-			svgDirectory = cmDir.getReservedDirectory(SVG);
+		if (cmTree != null) {
+			File fulltextHtmlFile = cmTree.getReservedFile(cmTree.FULLTEXT_XHTML);
+			File fulltextPDF = cmTree.getExistingFulltextPDF();
+			svgDirectory = cmTree.getReservedDirectory(SVG);
 			LOG.debug("svg dir "+svgDirectory);			
 			if (fulltextPDF != null) {
 				try {

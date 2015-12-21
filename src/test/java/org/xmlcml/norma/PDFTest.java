@@ -154,44 +154,44 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	
 	@Test
 	@Ignore // LONG
-	public void testPDF2CMDir() throws Exception {
-		CTree cmDir = new CTree(new File("target/cmdir/0115884/"));
-		cmDir.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
+	public void testPDF2CTree() throws Exception {
+		CTree cTree = new CTree(new File("target/cmdir/0115884/"));
+		cTree.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
 		// convert to XHTML using converter
-		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		// will write SVG to svgDirectory
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
 	@Test
 	@Ignore
-	public void testBMCPDF2CMDir() throws Exception {
-		CTree cmDir = new CTree(new File("target/cmdir/bmc/1471-2148-14-70"));
-		cmDir.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
-		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+	public void testBMCPDF2CTree() throws Exception {
+		CTree cTree = new CTree(new File("target/cmdir/bmc/1471-2148-14-70"));
+		cTree.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
 	@Test
 	@Ignore // too long
-	public void testCGIAR2CMDir() throws Exception {
-		CTree cmDir = new CTree(new File("target/cmdir/cgiar/345"));
-		cmDir.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
-		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+	public void testCGIAR2CTree() throws Exception {
+		CTree cTree = new CTree(new File("target/cmdir/cgiar/345"));
+		cTree.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
 	@Test
 	@Ignore // closed PDF // LONG
 	public void testNeuroFigures() throws Exception {
-		CTree cmDir = new CTree(new File("target/cmdir/neuro/Chen"));
+		CTree cTree = new CTree(new File("target/cmdir/neuro/Chen"));
 		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
-		cmDir.readFulltextPDF(pdfFile);
-		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
+		cTree.readFulltextPDF(pdfFile);
+		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 //		pdf2HtmlConverter.readAndConvertToXHTML();
 		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
 		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
-		File imageDir = cmDir.getOrCreateExistingImageDir();
+		File imageDir = cTree.getOrCreateExistingImageDir();
 		for (NamedImage labelledImage : labelledImages) {
 			BufferedImage image = labelledImage.getImage();
 			ImageProcessor imageProcessor = ImageProcessor.createDefaultProcessorAndProcess(image);

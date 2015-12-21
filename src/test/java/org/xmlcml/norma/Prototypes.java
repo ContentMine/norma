@@ -48,19 +48,19 @@ public class Prototypes {
 		createImageDir("peterijsem/sourceimages/small", "examples/ijsem/small", "png");
 	}
 
-	private static void createImageDir(String imagedir, String cmdir, String ... imageTypes) {
+	private static void createImageDir(String imagedir, String ctree, String ... imageTypes) {
 		String xString = " -e ";
 		for (String imageType : imageTypes) {
 			xString += " "+imageType+" ";
 		}
-		String cmd = "-i "+imagedir+xString+" -o "+cmdir;
+		String cmd = "-i "+imagedir+xString+" -o "+ctree;
 		LOG.debug(cmd);
 		new Norma().run(cmd);
 //			new Norma().run("-q "+imagedir+root+" -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
 
 	private static void createPDFTXT(String name) {
-		/** creates a new CMDIR and copies PDF to "fulltext.pdf"
+		/** creates a new CTree and copies PDF to "fulltext.pdf"
 		 * 
 		 */
 		new Norma().run("-i examples/theses/"+name+".pdf -o examples/theses/");

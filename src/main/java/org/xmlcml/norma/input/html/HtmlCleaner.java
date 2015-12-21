@@ -51,8 +51,8 @@ public class HtmlCleaner {
 		if (!JSOUP.equals(optionValue)) {
 			LOG.warn("tidying option not supported:"+optionValue);
 		}
-		CTree currentCMDir = normaArgProcessor.getCurrentCMDir();
-		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
+		CTree currentCMTree = normaArgProcessor.getCurrentCMTree();
+		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMTree);
 
 		htmlElement = null;
 		try {

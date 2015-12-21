@@ -34,14 +34,14 @@ public class TutorialTest {
 	norma -i singleFiles/test_xml_1471-2148-14-70.xml -o cmdir_xml
 	*/
 	@Test
-	public void testConvertSingleFileToCMDirectory() throws Exception {
-		File cmdir = new File("target/cmdir_xml/test_xml_1471-2148-14-70");
-		if (cmdir.exists()) FileUtils.forceDelete(cmdir);
-		Assert.assertFalse(cmdir.exists());
+	public void testConvertSingleFileToCTree() throws Exception {
+		File ctree = new File("target/cmdir_xml/test_xml_1471-2148-14-70");
+		if (ctree.exists()) FileUtils.forceDelete(ctree);
+		Assert.assertFalse(ctree.exists());
 		String args = "-i src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_xml_1471-2148-14-70.xml -o target/cmdir_xml";
 		Norma norma = new Norma();
 		norma.run(args);
-		File output = CTree.getExistingFulltextXML(cmdir);
+		File output = CTree.getExistingFulltextXML(ctree);
 		Assert.assertNotNull("fulltextXML", output);
 		
 	}
@@ -55,16 +55,16 @@ public class TutorialTest {
 		 -o cmdirs_xml
 	 */
 	@Test
-	public void testConvertTwoFilesToCMDirectory() throws Exception {
-		File cmdirTop = new File("target/cmdirs_xml");
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		Assert.assertFalse(cmdirTop.exists());
+	public void testConvertTwoFilesToCTree() throws Exception {
+		File cTreeTop = new File("target/cmdirs_xml");
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		Assert.assertFalse(cTreeTop.exists());
 		String args = "-i src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_xml_1471-2148-14-70.xml "
 				+        "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/plosone_0115884.xml "
-				+ "-o target/cmdirs_xml --cmdir";
+				+ "-o target/cmdirs_xml --ctree";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertTrue(cmdirTop.exists());
+		Assert.assertTrue(cTreeTop.exists());
 	}		
 	
 	/**
@@ -77,20 +77,20 @@ public class TutorialTest {
 		 -o cmdirs_all
 	 */
 	@Test
-	public void testMixedFilesToCMDirectory() throws Exception {
-		File cmdirTop = new File("target/cmdirs_xml");
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		Assert.assertFalse(cmdirTop.exists());
+	public void testMixedFilesToCTree() throws Exception {
+		File cTreeTop = new File("target/cmdirs_xml");
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		Assert.assertFalse(cTreeTop.exists());
 		String args = "-i "
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_xml_1471-2148-14-70.xml "
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_pdf_1471-2148-14-70.pdf "
 				+ "src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/plosone_0115884.xml "
-				+ "-o target/cmdirs_xml --cmdir";
+				+ "-o target/cmdirs_xml --ctree"
+				+ "";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertTrue(cmdirTop.exists());
+		Assert.assertTrue(cTreeTop.exists());
 		Assert.assertNotNull(CTree.getExistingFulltextXML(new File("target/cmdirs_xml/plosone_0115884_xml")));
-//		Assert.assertNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_pdf_1471-2148-14-70")));
 		Assert.assertNotNull(CTree.getExistingFulltextPDF(new File("target/cmdirs_xml/test_pdf_1471_2148_14_70_pdf")));
 		Assert.assertNotNull(CTree.getExistingFulltextXML(new File("target/cmdirs_xml/test_xml_1471_2148_14_70_xml")));
 	}		
@@ -108,19 +108,19 @@ public class TutorialTest {
 	 */
 	@Test
 	public void testConvertPDF2TXT() throws Exception {
-		File cmdirTop = new File("target/cmdirs_all/test_pdf_1471-2148-14-70");
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/regressiondemos/cmdirs_all/test_pdf_1471-2148-14-70"), cmdirTop);
-		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cmdirTop));
-		FileUtils.forceDelete(CTree.getExistingFulltextPDFTXT(cmdirTop));
+		File cTreeTop = new File("target/cmdirs_all/test_pdf_1471-2148-14-70");
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/regressiondemos/cmdirs_all/test_pdf_1471-2148-14-70"), cTreeTop);
+		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cTreeTop));
+		FileUtils.forceDelete(CTree.getExistingFulltextPDFTXT(cTreeTop));
 		String args = "-q target/cmdirs_all/test_pdf_1471-2148-14-70"
 				+ " --transform pdf2txt"
 				+ " -i fulltext.pdf"
 				+ " -o fulltext.pdf.txt";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cmdirTop));
-		Assert.assertNotNull("pdftxt", CTree.getExistingFulltextPDFTXT(cmdirTop));
+		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cTreeTop));
+		Assert.assertNotNull("pdftxt", CTree.getExistingFulltextPDFTXT(cTreeTop));
 	}		
 	
 	
@@ -207,11 +207,11 @@ public class TutorialTest {
 
 	private void testTransformXML2ScholarlyHTML(String sourceName, String destName, String infile,
 			String outfile, String dtdName) throws IOException {
-		File cmdirTop = new File(destName);
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		FileUtils.copyDirectory(new File(sourceName), cmdirTop);
-		Assert.assertNotNull("xml", CTree.getExistingFulltextXML(cmdirTop));
-		FileUtils.forceDelete(CTree.getExistingFulltextHTML(cmdirTop));
+		File cTreeTop = new File(destName);
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		FileUtils.copyDirectory(new File(sourceName), cTreeTop);
+		Assert.assertNotNull("xml", CTree.getExistingFulltextXML(cTreeTop));
+		FileUtils.forceDelete(CTree.getExistingFulltextHTML(cTreeTop));
 		String args = "-q "+destName
 				+ " --transform " + dtdName
 				+ " --standalone true"

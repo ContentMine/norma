@@ -54,7 +54,7 @@ public class PloSONETest {
 	/** this is a processed HTML
 	 * 
 	 */
-	@Ignore // recast as a CMDir
+	@Ignore // recast as a CTree
 	public void testPlosone() throws Exception {
 		File outputFile = new File("target/plosone/0113556/");
 		FileUtils.deleteQuietly(outputFile);
@@ -65,7 +65,7 @@ public class PloSONETest {
 		};
 		Norma norma = new Norma();
 		norma.run(args);
-		// FIXME this should create a CMDir 
+		// FIXME this should create a CTree 
 		Assert.assertTrue(outputFile.exists());
 		HtmlElement htmlElement = new HtmlFactory().parse(outputFile);
 		Assert.assertNotNull("htmlelement should not be null", htmlElement);
@@ -183,7 +183,7 @@ public class PloSONETest {
 				"--transform", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
 				"-o", outputFile.toString(),
 		};
-		if (1==1) throw new RuntimeException("Recast as CMDir");
+		if (1==1) throw new RuntimeException("Recast as CTree");
 		Norma norma = new Norma();
 		norma.run(args);
 		
