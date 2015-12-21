@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.euclid.Real2;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
@@ -167,7 +167,7 @@ public class BMCTest {
 	@Test 
 	public void testTransformBMCXMLToHtml() throws Exception {
 		// this is a valid CMDir directory
-		CMDir cmDir = new CMDir(Fixtures.BMC_15_1_511_DIR);
+		CTree cmDir = new CTree(Fixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
 		Assert.assertEquals("reserved files", 4, cmDir.getReservedFileList().size());
 		Assert.assertNotNull("fulltext.xml", cmDir.getExistingFulltextXML());
@@ -202,7 +202,7 @@ public class BMCTest {
 		norma.run(args);
 		// this will have created a new scholarlyHtml . The remaing commands are just to verify its content
 		// this makes a new object but doesn't affect the filestore
-		CMDir cmDirNew = new CMDir(cmDir1);
+		CTree cmDirNew = new CTree(cmDir1);
 		// there should be a new scholarly.html
 		File scholarlyHtml = cmDirNew.getExistingScholarlyHTML();
 		Assert.assertNotNull("scholarly.html", scholarlyHtml);
@@ -236,7 +236,7 @@ public class BMCTest {
 		int nqs = cmFiles.length;
 		File[] targetFiles = new File[nqs];
 		for (int i = 0; i < nqs; i++) {
-			CMDir cmDir = new CMDir(cmFiles[i]);
+			CTree cmDir = new CTree(cmFiles[i]);
 			targetFiles[i] = new File("target/test/file"+i);
 			cmDir.copyTo(targetFiles[i], true);
 		}

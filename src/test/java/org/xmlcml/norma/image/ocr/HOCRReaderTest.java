@@ -14,7 +14,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlHead;
@@ -141,7 +141,7 @@ public class HOCRReaderTest {
 		File cmdirTop = new File("target/hocr/ijsem_003566");
 		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
 		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cmdirTop);
-		CMDir cmDir = new CMDir(cmdirTop);
+		CTree cmDir = new CTree(cmdirTop);
 		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
 		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
 		String args = "-q "+cmdirTop

@@ -14,8 +14,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CMDir;
-import org.xmlcml.cmine.files.CMDirList;
+import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.files.CTreeList;
 
 public class NormaArgProcessorTest {
 
@@ -118,10 +118,10 @@ public class NormaArgProcessorTest {
 				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		Norma norma = new Norma();
 		norma.run(args);
-		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		CTreeList cmDirList = norma.getArgProcessor().getCTreeList();
 		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
-		CMDir cmDir = cmDirList.get(0);
+		Assert.assertEquals("CTree/s",  1,  cmDirList.size());
+		CTree cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
 		LOG.trace(cmDir+"; "+files);
 		Assert.assertEquals(5, files.size());
@@ -135,7 +135,7 @@ public class NormaArgProcessorTest {
 	 */
 	@Test
 	@Ignore // FIXME 
-	public void testCMDirWithDTD() throws IOException {
+	public void testCTreeWithDTD() throws IOException {
 		File container0115884 = new File("target/plosone/0115884withdtd/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
 		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
@@ -145,7 +145,7 @@ public class NormaArgProcessorTest {
 			"--standalone", "false",           // force use of DTD. May fail
 			"-e", "xml"                       // type of file to transform
 		};
-		if (1==1) throw new RuntimeException("Recast as CMDir");
+		if (1==1) throw new RuntimeException("Recast as CTree");
 
 		int expectedFileCount = 5; // because of the output file
 		
@@ -159,10 +159,10 @@ public class NormaArgProcessorTest {
 			Assert.assertEquals("UnknownHostException: dtd.nlm.nih.gov", errorMessage.trim());
 			expectedFileCount = 4; // no output file
 		}
-		CMDirList cmDirList = argProcessor.getCMDirList();
+		CTreeList cmDirList = argProcessor.getCTreeList();
 		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
-		CMDir cmDir = cmDirList.get(0);
+		Assert.assertEquals("CTree/s",  1,  cmDirList.size());
+		CTree cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
 		Assert.assertEquals(expectedFileCount, files.size());
 	}
@@ -182,10 +182,10 @@ public class NormaArgProcessorTest {
 		LOG.trace(args);
 		Norma norma = new Norma();
 		norma.run(args);
-		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		CTreeList cmDirList = norma.getArgProcessor().getCTreeList();
 		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
-		CMDir cmDir = cmDirList.get(0);
+		Assert.assertEquals("CTree/s",  1,  cmDirList.size());
+		CTree cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
 		LOG.trace(files);
 		Assert.assertEquals(5, files.size());
@@ -204,10 +204,10 @@ public class NormaArgProcessorTest {
 		LOG.debug(args);
 		Norma norma = new Norma();
 		norma.run(args);
-		CMDirList cmDirList = norma.getArgProcessor().getCMDirList();
+		CTreeList cmDirList = norma.getArgProcessor().getCTreeList();
 		Assert.assertNotNull(cmDirList);
-		Assert.assertEquals("CMDir/s",  1,  cmDirList.size());
-		CMDir cmDir = cmDirList.get(0);
+		Assert.assertEquals("CTree/s",  1,  cmDirList.size());
+		CTree cmDir = cmDirList.get(0);
 		List<File> files = cmDir.listFiles(true);
 		LOG.trace(files);
 		Assert.assertEquals(5, files.size());
@@ -241,7 +241,7 @@ public class NormaArgProcessorTest {
 	}
 
 	@Test
-	public void testMultipleCMDirs() throws IOException {
+	public void testMultipleCTrees() throws IOException {
 		File containerPLOSONE = new File("target/plosone/multiple/");
 		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
 		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
@@ -253,7 +253,7 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
-	/** creates new CMDirs for list of PDF and then transforms
+	/** creates new CTrees for list of PDF and then transforms
 	 * 
 	 */
 	@Ignore // uses non-local files
@@ -264,10 +264,10 @@ public class NormaArgProcessorTest {
 	}
 
 	@Test
-	/** creates new CMDirs for list of HTML and then transforms
+	/** creates new CTrees for list of HTML and then transforms
 	 * 
 	 */
-	public void testCreateCMDirsForIEEEHtml() throws IOException {
+	public void testCreateCTreesForIEEEHtml() throws IOException {
 		new Norma().run("");
 		String args;
 		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --cmdir ";
@@ -278,7 +278,7 @@ public class NormaArgProcessorTest {
 
 
 	@Test
-	/** creates new CMDirs for list of HTML and then transforms
+	/** creates new CTrees for list of HTML and then transforms
 	 * 
 	 * SHOWCASE
 	 */
@@ -293,7 +293,7 @@ public class NormaArgProcessorTest {
 	}
 
 	@Test
-	/** creates new CMDirs for list of HTML and then transforms
+	/** creates new CTrees for list of HTML and then transforms
 	 * 
 	 * SHOWCASE
 	 */

@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -15,7 +16,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.image.ImageProcessor;
 import org.xmlcml.norma.image.ocr.NamedImage;
@@ -127,7 +128,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		PDF2TXTConverter converter = new PDF2TXTConverter();
 		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		String text = converter.readPDF(new FileInputStream(file0115884), true);
-		FileUtils.write(new File("target/pdf/file0115884.txt"), text);
+		FileUtils.write(new File("target/pdf/file0115884.txt"), text, Charset.forName("UTF-8"));
 	}
 	
 	@Test
@@ -148,13 +149,13 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
 		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(file0115884);
-		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML());
+		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML(), Charset.forName("UTF-8"));
 	}
 	
 	@Test
 	@Ignore // LONG
 	public void testPDF2CMDir() throws Exception {
-		CMDir cmDir = new CMDir(new File("target/cmdir/0115884/"));
+		CTree cmDir = new CTree(new File("target/cmdir/0115884/"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
 		// convert to XHTML using converter
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
@@ -165,7 +166,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Test
 	@Ignore
 	public void testBMCPDF2CMDir() throws Exception {
-		CMDir cmDir = new CMDir(new File("target/cmdir/bmc/1471-2148-14-70"));
+		CTree cmDir = new CTree(new File("target/cmdir/bmc/1471-2148-14-70"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
 		pdf2HtmlConverter.readAndConvertToXHTML();
@@ -174,7 +175,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Test
 	@Ignore // too long
 	public void testCGIAR2CMDir() throws Exception {
-		CMDir cmDir = new CMDir(new File("target/cmdir/cgiar/345"));
+		CTree cmDir = new CTree(new File("target/cmdir/cgiar/345"));
 		cmDir.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);
 		pdf2HtmlConverter.readAndConvertToXHTML();
@@ -183,7 +184,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Test
 	@Ignore // closed PDF // LONG
 	public void testNeuroFigures() throws Exception {
-		CMDir cmDir = new CMDir(new File("target/cmdir/neuro/Chen"));
+		CTree cmDir = new CTree(new File("target/cmdir/neuro/Chen"));
 		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
 		cmDir.readFulltextPDF(pdfFile);
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cmDir);

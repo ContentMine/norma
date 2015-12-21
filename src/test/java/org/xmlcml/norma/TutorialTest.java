@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 
 /** tests Norma.
  * from a set of commandlines
@@ -41,7 +41,7 @@ public class TutorialTest {
 		String args = "-i src/test/resources/org/xmlcml/norma/regressiondemos/singleFiles/test_xml_1471-2148-14-70.xml -o target/cmdir_xml";
 		Norma norma = new Norma();
 		norma.run(args);
-		File output = CMDir.getExistingFulltextXML(cmdir);
+		File output = CTree.getExistingFulltextXML(cmdir);
 		Assert.assertNotNull("fulltextXML", output);
 		
 	}
@@ -89,10 +89,10 @@ public class TutorialTest {
 		Norma norma = new Norma();
 		norma.run(args);
 		Assert.assertTrue(cmdirTop.exists());
-		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/plosone_0115884_xml")));
+		Assert.assertNotNull(CTree.getExistingFulltextXML(new File("target/cmdirs_xml/plosone_0115884_xml")));
 //		Assert.assertNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_pdf_1471-2148-14-70")));
-		Assert.assertNotNull(CMDir.getExistingFulltextPDF(new File("target/cmdirs_xml/test_pdf_1471_2148_14_70_pdf")));
-		Assert.assertNotNull(CMDir.getExistingFulltextXML(new File("target/cmdirs_xml/test_xml_1471_2148_14_70_xml")));
+		Assert.assertNotNull(CTree.getExistingFulltextPDF(new File("target/cmdirs_xml/test_pdf_1471_2148_14_70_pdf")));
+		Assert.assertNotNull(CTree.getExistingFulltextXML(new File("target/cmdirs_xml/test_xml_1471_2148_14_70_xml")));
 	}		
 	
 	/**
@@ -111,16 +111,16 @@ public class TutorialTest {
 		File cmdirTop = new File("target/cmdirs_all/test_pdf_1471-2148-14-70");
 		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
 		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/regressiondemos/cmdirs_all/test_pdf_1471-2148-14-70"), cmdirTop);
-		Assert.assertNotNull("pdf", CMDir.getExistingFulltextPDF(cmdirTop));
-		FileUtils.forceDelete(CMDir.getExistingFulltextPDFTXT(cmdirTop));
+		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cmdirTop));
+		FileUtils.forceDelete(CTree.getExistingFulltextPDFTXT(cmdirTop));
 		String args = "-q target/cmdirs_all/test_pdf_1471-2148-14-70"
 				+ " --transform pdf2txt"
 				+ " -i fulltext.pdf"
 				+ " -o fulltext.pdf.txt";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("pdf", CMDir.getExistingFulltextPDF(cmdirTop));
-		Assert.assertNotNull("pdftxt", CMDir.getExistingFulltextPDFTXT(cmdirTop));
+		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cmdirTop));
+		Assert.assertNotNull("pdftxt", CTree.getExistingFulltextPDFTXT(cmdirTop));
 	}		
 	
 	
@@ -210,8 +210,8 @@ public class TutorialTest {
 		File cmdirTop = new File(destName);
 		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
 		FileUtils.copyDirectory(new File(sourceName), cmdirTop);
-		Assert.assertNotNull("xml", CMDir.getExistingFulltextXML(cmdirTop));
-		FileUtils.forceDelete(CMDir.getExistingFulltextHTML(cmdirTop));
+		Assert.assertNotNull("xml", CTree.getExistingFulltextXML(cmdirTop));
+		FileUtils.forceDelete(CTree.getExistingFulltextHTML(cmdirTop));
 		String args = "-q "+destName
 				+ " --transform " + dtdName
 				+ " --standalone true"
@@ -219,7 +219,7 @@ public class TutorialTest {
 				+ " -o " + outfile;
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("html", CMDir.getExistingScholarlyHTML(new File(destName)));
+		Assert.assertNotNull("html", CTree.getExistingScholarlyHTML(new File(destName)));
 	}
 }
 

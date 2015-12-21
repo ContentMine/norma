@@ -135,6 +135,7 @@
 	    <h3><xsl:apply-templates select="*|text()"/></h3>
 	</xsl:template>
 	
+	
 	<xsl:template match="*[local-name()='sec']/*[local-name()='title']/*[local-name()='sec']/*[local-name()='title']/
 	*[local-name()='sec']/*[local-name()='title']">
 	    <h4><xsl:apply-templates select="*|text()"/></h4>

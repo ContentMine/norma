@@ -1,0 +1,52 @@
+{
+"id":["6780"],
+"source":["ETH"],
+"title":["Baylisascaris transfuga in captive and free-ranging populations of bears (Family: Ursidae)."],
+"authorString":["Schaul J."],
+"authorList":[
+	{"author":[
+		{"fullName":["Schaul J"],
+         "lastName":["Schaul"],
+         "initials":["J"]}
+		 ]
+	   }
+],
+
+"abstractText":["Baylisascaris transfuga, the bear roundworm is an ascaroid parasite that has been reported in all species of bears (giant panda, Ailuropoda melanoleuca; Maylayan sun bears, Helarctos malayanus; sloth bears, Melursus ursinus; American black bears, Ursus americanus; brown bear, Ursus arctos; polar bears, Ursus maritimus; Asiatic black bear, Selenarctos thibetanus; and Andean bears, Tremarctos ornatus). This ubiquitous nematode of bears is particularly problematic for captive populations. Baylisascaris species have been implicated in clinical and subclinical disease in natural hosts including bears, as well as lethal larval migrans syndromes in a number of domestic species, alternative livestock, and captive and free ranging incidental hosts, including humans. Eradication or improved control measures for addressing contaminated bear enclosures will heighten biosecurity for this infectious pathogen and reduce the risk of potential public health threats associated with Baylisascaris species. Impediments to control efforts include ineffective sanitation and disinfection of contaminated and re-contaminated exhibits, and concerns regarding the development of parasite resistance in helminth parasites of bears treated routinely with anti-helminthic pharmacological agents. The development of naturalistic exhibits and environmental enrichment programs in zoos and other captive wildlife facilities, enhances the educational mission of zoos and captive wildlife display facilities, but impedes husbandry practices and preventive medicine programs aimed at prevention, control and eradication of infectious pathogens in captive enclosures. The first objective of this study was to obtain information on husbandry and preventive health programs from captive bear-holding facilities for evaluating factors which influence parasite contamination, persistence, and transmission among individual bears, bears species, other collection animals and people. The second objective was to obtain data on coprodiagnostic tests used by institutions to detect parasite ova prevalence in captive collections and conduct baseline studies of current roundworm prevalence and intensity levels in bear holding collections. For this second objective, two coprodiagnostic techniques were employed to compare sensitivities of tests typically employed by captive facilities and more sophisticated tests known to yield higher recoveries of parasite ova. A final objective was to compare the prevalence and intensity levels of roundworms among wild populations of bears and between captive and free-ranging populations."],
+"language":["eng"],
+"pubTypeList":[
+	{"pubType":["Dissertation"]}
+],
+"brSummary":["Publ:Ohio State University 2006 (Pg.tot: 221)"],
+"bookOrReportDetails":[
+	{"publisher":["Ohio State University"],
+     "yearOfPublication":["2006"],
+     "numberOfPages":["221"]}],
+"keywordList":[
+	{"keyword":["Veterinary Preventive Medicine"]}
+    ],
+"fullTextUrlList":[
+	{"fullTextUrl":[
+		{"availability":["Free"],
+		 "availabilityCode":["F"],
+         "documentStyle":["html"],
+         "site":["rave.ohiolink.edu"],
+         "url":["http://rave.ohiolink.edu/etdc/view?acc_num=osu1163172292"]
+		 }
+	    ]
+	   }
+	 ],
+
+"inEPMC":["N"],
+"inPMC":["N"],
+"citedByCount":["0"],
+"hasReferences":["N"],
+"hasTextMinedTerms":["N"],
+"hasDbCrossReferences":["N"],
+"hasLabsLinks":["N"],
+"hasTMAccessionNumbers":["N"],
+"dateOfCreation":["2011-03-23"],
+"dateOfRevision":["2011-04-11"],
+"luceneScore":["25.919075"],
+"hasBook":["N"]
+}

@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -17,15 +18,12 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
-import nu.xom.Builder;
-import nu.xom.Element;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.xmlcml.cmine.args.ArgumentOption;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
@@ -38,6 +36,9 @@ import org.xmlcml.norma.tagger.SectionTagger;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Builder;
+import nu.xom.Element;
 
 public class NormaTransformer {
 
@@ -79,7 +80,7 @@ public class NormaTransformer {
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
-	private CMDir currentCMDir;
+	private CTree currentCMDir;
 	private List<String> transformList;
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private Map<String, String> stylesheetByNameMap;
@@ -234,6 +235,12 @@ public class NormaTransformer {
 		for (org.w3c.dom.Document xslDocument : xslDocumentList) {
 			try {
 				String xmlString = transform(xslDocument);
+//				try {
+//					FileUtils.write(new File("target/junk2.xml"), xmlString, Charset.forName("UTF-8"));
+//					System.exit(1);
+//				} catch (IOException e) {
+//					System.err.println(e);
+//				}
 				xmlStringList.add(xmlString);
 			} catch (IOException e) {
 				LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMDir()+"; "+e);
@@ -388,14 +395,14 @@ public class NormaTransformer {
 	void outputSpecifiedFormat() {
 		String output = normaArgProcessor.getOutput();
 		if (outputTxt != null) {
-			currentCMDir.writeFile(outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
+			currentCMDir.writeFile(outputTxt, (output != null ? output : CTree.FULLTEXT_PDF_TXT));
 		}
 		if (htmlElement != null) {
-			currentCMDir.writeFile(htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
+			currentCMDir.writeFile(htmlElement.toXML(), (output != null ? output : CTree.FULLTEXT_HTML));
 		}
 		if (xmlStringList != null && xmlStringList.size() > 0) {
 			tagSections();
-			currentCMDir.writeFile(xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
+			currentCMDir.writeFile(xmlStringList.get(0), (output != null ? output : CTree.SCHOLARLY_HTML));
 		}
 		if (svgElement != null && output != null) {
 			currentCMDir.writeFile(svgElement.toXML(), output);

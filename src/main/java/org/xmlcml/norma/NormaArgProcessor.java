@@ -19,7 +19,7 @@ import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.args.StringPair;
 import org.xmlcml.cmine.args.ValueElement;
 import org.xmlcml.cmine.args.VersionManager;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
@@ -266,7 +266,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// ==========================
 
 
-	public File checkAndGetInputFile(CMDir cmDir) {
+	public File checkAndGetInputFile(CTree cmDir) {
 		if (cmDir == null) {
 			throw new RuntimeException("null cmDir");
 		}
@@ -274,7 +274,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CMDir.isReservedFilename(inputName) && !CMDir.hasReservedParentDirectory(inputName) ) {
+		if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
 			throw new RuntimeException("Input must be reserved file; found: "+inputName);
 		}
 		File inputFile = cmDir.getExistingReservedFile(inputName);
@@ -289,7 +289,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	private void createCMDirListFromInputList() {
 		// proceed unless there is a single reserved file for input
-		if (CMDir.isNonEmptyNonReservedInputList(inputList)) {
+		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
 			LOG.trace("CREATING CMDir FROM INPUT:"+inputList);
 			// this actually creates directory
 			getOrCreateOutputDirectory();
@@ -302,7 +302,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		ensureCTreeList();
 		for (String filename : inputList) {
 			try {
-				CMDir cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
+				CTree cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
 				if (cmDir != null) {
 					cTreeList.add(cmDir);
 				}
@@ -312,24 +312,24 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		}
 	}
 
-	private CMDir createCMDirAndCopyFileOrMakeSubDirectory(String filename) throws IOException {
-		CMDir cmDir = null;
+	private CTree createCMDirAndCopyFileOrMakeSubDirectory(String filename) throws IOException {
+		CTree cmDir = null;
 		File file = new File(filename);
 		if (file.isDirectory()) {
 			LOG.error("should not have any directories in inputList: "+file);
 		} else {
 			if (output != null) {
 				String name = FilenameUtils.getName(filename);
-				if (CMDir.isReservedFilename(name)) {
+				if (CTree.isReservedFilename(name)) {
 					LOG.error(name+" is reserved for CMDir: (check that inputs are not already in a CMDir) "+file.getAbsolutePath());
 				}
-				String cmFilename = CMDir.getCMDirReservedFilenameForExtension(name);
+				String cmFilename = CTree.getCTreeReservedFilenameForExtension(name);
 				if (cmFilename == null) {
 					LOG.error("Cannot create CMDir from this type of file: "+name);
 					return null;
 				}
 				LOG.trace("Reserved filename: "+cmFilename);
-				if (CMDir.isReservedDirectory(cmFilename)) {
+				if (CTree.isReservedDirectory(cmFilename)) {
 					cmDir = makeCMDir(name);
 					ensureReservedDirectoryAndCopyFile(cmDir, cmFilename, filename);
 				} else {
@@ -344,14 +344,14 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		return cmDir;
 	}
 
-	private CMDir makeCMDir(String name) {
-		CMDir cmDir;
+	private CTree makeCMDir(String name) {
+		CTree cmDir;
 		String dirName = FilenameUtils.removeExtension(name);
 		cmDir = createCMDir(dirName);
 		return cmDir;
 	}
 
-	private void ensureReservedDirectoryAndCopyFile(CMDir cmDir, String reservedFilename, String filename) {
+	private void ensureReservedDirectoryAndCopyFile(CTree cmDir, String reservedFilename, String filename) {
 		File reservedDir = new File(cmDir.getDirectory(), reservedFilename);
 		LOG.trace("Res "+reservedDir.getAbsolutePath());
 		File orig = new File(filename);
@@ -372,9 +372,9 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	}
 
-	private CMDir createCMDir(String dirName) {
+	private CTree createCMDir(String dirName) {
 		File cmDirFile = new File(output, dirName);
-		CMDir cmDir = new CMDir(cmDirFile);
+		CTree cmDir = new CTree(cmDirFile);
 		cmDir.createDirectory(cmDirFile, false);
 		return cmDir;
 	}
@@ -442,7 +442,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		createCMDirListFromInputList();
 	}
 
-	public CMDir getCurrentCMDir() {
+	public CTree getCurrentCMDir() {
 		return currentCTree;
 	}
 

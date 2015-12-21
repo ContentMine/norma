@@ -1,0 +1,4665 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1d3 20150301//EN" "JATS-archivearticle1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName JATS-archivearticle1.dtd?><?SourceDTD.Version 1.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?>
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="nlm-ta">R Soc Open Sci</journal-id>
+			<journal-id journal-id-type="iso-abbrev">R Soc Open Sci</journal-id>
+			<journal-id journal-id-type="publisher-id">RSOS</journal-id>
+			<journal-id journal-id-type="hwp">royopensci</journal-id>
+			<journal-title-group>
+				<journal-title>Royal Society Open Science</journal-title>
+			</journal-title-group>
+			<issn pub-type="epub">2054-5703</issn>
+			<publisher>
+				<publisher-name>The Royal Society Publishing</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="pmcid">4632522</article-id>
+			<article-id pub-id-type="doi">10.1098/rsos.150395</article-id>
+			<article-id pub-id-type="publisher-id">rsos150395</article-id>
+			<article-categories>
+				<subj-group subj-group-type="hwp-journal-coll">
+					<subject>1001</subject>
+					<subject>15</subject>
+					<subject>58</subject>
+					<subject>199</subject>
+				</subj-group>
+				<subj-group subj-group-type="heading">
+					<subject>Biology (Whole Organism)</subject>
+				</subj-group>
+				<subj-group subj-group-type="leader">
+					<subject>Research Article</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>
+					Prolonged transition time between colostrum and mature milk in a
+					bear, the giant panda,
+					<italic>Ailuropoda melanoleuca</italic>
+				</article-title>
+				<alt-title alt-title-type="short">Giant panda colostrum to milk
+					transition</alt-title>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Griffiths</surname>
+						<given-names>Kate</given-names>
+					</name>
+					<xref ref-type="aff" rid="af1">1</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Hou</surname>
+						<given-names>Rong</given-names>
+					</name>
+					<xref ref-type="aff" rid="af2">2</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Wang</surname>
+						<given-names>Hairui</given-names>
+					</name>
+					<xref ref-type="aff" rid="af2">2</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Zhang</surname>
+						<given-names>Zhihe</given-names>
+					</name>
+					<xref ref-type="aff" rid="af2">2</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Zhang</surname>
+						<given-names>Liang</given-names>
+					</name>
+					<xref ref-type="aff" rid="af2">2</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Zhang</surname>
+						<given-names>Tong</given-names>
+					</name>
+					<xref ref-type="aff" rid="af3">3</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Watson</surname>
+						<given-names>David G.</given-names>
+					</name>
+					<xref ref-type="aff" rid="af3">3</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Burchmore</surname>
+						<given-names>Richard J. S.</given-names>
+					</name>
+					<xref ref-type="aff" rid="af4">4</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Loeffler</surname>
+						<given-names>I. Kati</given-names>
+					</name>
+					<xref ref-type="aff" rid="af2">2</xref>
+					<xref ref-type="author-notes" rid="AN1">&#x02020;</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Kennedy</surname>
+						<given-names>Malcolm W.</given-names>
+					</name>
+					<xref ref-type="aff" rid="af1">1</xref>
+					<xref ref-type="corresp" rid="cor1" />
+				</contrib>
+			</contrib-group>
+			<aff id="af1">
+				<label>1</label>
+				<addr-line>Institute of Biodiversity, Animal Health and Comparative
+					Medicine, College of Medical, Veterinary and Life Sciences</addr-line>
+				,
+				<institution>University of Glasgow</institution>
+				,
+				<addr-line>Graham err Building, Glasgow, G12 8QQ, UK</addr-line>
+			</aff>
+			<aff id="af2">
+				<label>2</label>
+				<addr-line>The Sichuan Key Laboratory for Conservation Biology on
+					Endangered Wildlife</addr-line>
+				,
+				<institution>Chengdu Research Base of Giant Panda Breeding</institution>
+				,
+				<addr-line>1375 Panda Road, Northern Suburb, Chengdu, Sichuan
+					Province 610081, People&#x02019;s Republic of China</addr-line>
+			</aff>
+			<aff id="af3">
+				<label>3</label>
+				<addr-line>Strathclyde Institute of Pharmacy and Biomedical Sciences</addr-line>
+				,
+				<institution>University of Strathclyde</institution>
+				,
+				<addr-line>161 Cathedral Street, Glasgow, G4 0RE, UK</addr-line>
+			</aff>
+			<aff id="af4">
+				<label>4</label>
+				<addr-line>Institute of Infection, Immunity and Inflammation and
+					Glasgow Polyomics, College of Medical, Veterinary and Life Sciences</addr-line>
+				,
+				<institution>University of Glasgow</institution>
+				,
+				<addr-line>Garscube Campus, Glasgow, G12 1QH, UK</addr-line>
+			</aff>
+			<author-notes>
+				<corresp id="cor1">
+					Author for correspondence: MalcolmW. Kennedy e-mail:
+					<email>malcolm.kennedy@glasgow.ac.uk</email>
+				</corresp>
+				<fn id="AN1" fn-type="present-address">
+					<label>&#x02020;</label>
+					<p>Present address: International Fund for Animal Welfare, 290
+						Summer Street, Yarmouth Port, MA 02675, USA.</p>
+				</fn>
+			</author-notes>
+			<pub-date pub-type="collection">
+				<month>10</month>
+				<year>2015</year>
+			</pub-date>
+			<pub-date pub-type="epub">
+				<day>21</day>
+				<month>10</month>
+				<year>2015</year>
+			</pub-date>
+			<pub-date pub-type="pmc-release">
+				<day>21</day>
+				<month>10</month>
+				<year>2015</year>
+			</pub-date><!-- PMC Release delay is 0 months and 0 days and was based 
+				on the <pub-date pub-type="epub"/>. -->
+			<volume>2</volume>
+			<issue>10</issue>
+			<elocation-id>150395</elocation-id>
+			<history>
+				<date date-type="received">
+					<day>7</day>
+					<month>8</month>
+					<year>2015</year>
+				</date>
+				<date date-type="accepted">
+					<day>21</day>
+					<month>9</month>
+					<year>2015</year>
+				</date>
+			</history>
+			<permissions>
+				<copyright-statement />
+				<copyright-year>2015</copyright-year>
+				<license license-type="open-access"
+					xlink:href="http://creativecommons.org/licenses/by/4.0/">
+					<license-p>
+						&#x000a9; 2015 The Authors. Published by the Royal Society under
+						the terms of the Creative Commons Attribution License
+						<ext-link ext-link-type="uri"
+							xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>
+						, which permits unrestricted use, provided the original author and
+						source are credited.
+					</license-p>
+				</license><?release-delay 0|0?>
+			</permissions>
+			<self-uri content-type="pdf" xlink:href="rsos150395.pdf" />
+			<self-uri content-type="reviewer_comments" xlink:href="rsos150395_review_history.pdf" />
+			<abstract>
+				<p>Bears produce the most altricial neonates of any placental
+					mammal. We hypothesized that the transition from colostrum to
+					mature milk in bears reflects a temporal and biochemical adaptation
+					for altricial development and immune protection. Comparison of bear
+					milks with milks of other eutherians yielded distinctive protein
+					profiles. Proteomic and metabolomic analysis of serial milk samples
+					collected from six giant pandas showed a prolonged transition from
+					colostrum to main-phase lactation over approximately 30 days.
+					Particularly striking are the persistence or sequential appearance
+					of adaptive and innate immune factors. The endurance of
+					immunoglobulin G suggests an unusual duration of trans-intestinal
+					absorption of maternal antibodies, and is potentially relevant to
+					the underdeveloped lymphoid system of giant panda neonates. Levels
+					of certain milk oligosaccharides known to exert anti-microbial
+					activities and/or that are conducive to the development of neonatal
+					gut microbiomes underwent an almost complete changeover around days
+					20&#x02013;30 postpartum, coincident with the maturation of the
+					protein profile. A potential metabolic marker of starvation was
+					detected, the prominence of which may reflect the natural
+					postpartum period of anorexia in giant panda mothers. Early
+					lactation in giant pandas, and possibly in other ursids, appears to
+					be adapted for the unique requirements of unusually altricial
+					eutherian neonates.</p>
+			</abstract>
+			<kwd-group>
+				<kwd>giant panda</kwd>
+				<kwd>
+					<italic>Ailuropoda melanoleuca</italic>
+				</kwd>
+				<kwd>milk</kwd>
+				<kwd>colostrum</kwd>
+				<kwd>proteins</kwd>
+				<kwd>oligosaccharides</kwd>
+			</kwd-group>
+			<funding-group>
+				<award-group id="funding-1">
+					<funding-source>
+						Wellcome Trust
+						<named-content content-type="funder-id">http://dx.doi.org/10.13039/100004440</named-content>
+					</funding-source>
+					<award-id>to SK</award-id>
+				</award-group>
+			</funding-group>
+			<funding-group>
+				<award-group id="funding-2">
+					<funding-source>International Science and Technology Cooperation
+						Program of China (ISTCP)
+					</funding-source>
+					<award-id>2011DFA33530</award-id>
+				</award-group>
+			</funding-group>
+			<funding-group>
+				<award-group id="funding-3">
+					<funding-source>International Science and Technology Cooperation
+						Program of Sichuan Province
+					</funding-source>
+					<award-id>2011HH0043</award-id>
+				</award-group>
+			</funding-group>
+			<funding-group>
+				<award-group id="funding-4">
+					<funding-source>Scottish Life Sciences Alliance
+					</funding-source>
+				</award-group>
+			</funding-group>
+			<custom-meta-group>
+				<custom-meta>
+					<meta-name>cover-date</meta-name>
+					<meta-value>October , 2015</meta-value>
+				</custom-meta>
+			</custom-meta-group>
+		</article-meta>
+	</front>
+	<body>
+		<sec id="s1">
+			<label>1.</label>
+			<title>Introduction</title>
+			<p>
+				The composition of mammalian milks and the duration of lactation
+				vary dramatically from species to species, influenced by the
+				ecology, evolutionary history, placental type and the developmental
+				state of the neonate at birth [
+				<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+				&#x02013;
+				<xref rid="RSOS150395C3" ref-type="bibr">3</xref>
+				]. Marsupials have extremely altricial neonates and much longer
+				lactation periods than do eutherians of similar body size and
+				ecology, indicative of an extended period of dependence on
+				maternally derived nutrition and immunological support after birth [
+				<xref rid="RSOS150395C4" ref-type="bibr">4</xref>
+				]. Even among eutherians that live in similar environments, there
+				are dramatic differences in lactation periods that reflect diverse
+				feeding and reproductive ecologies. Compare, for example, the short
+				lactation periods in Phocidae (4 days in hooded seals) to the
+				prolonged periods in Otariidae (4&#x02013;24 months in fur seals and
+				sea lions) and Odobenidae (1&#x02013;2 years in walruses) [
+				<xref rid="RSOS150395C5" ref-type="bibr">5</xref>
+				&#x02013;
+				<xref rid="RSOS150395C7" ref-type="bibr">7</xref>
+				].
+			</p>
+			<p>
+				Marsupials exhibit dramatic changes in milk composition with time
+				after birth to nurture what is essentially an extra-uterine
+				gestation [
+				<xref rid="RSOS150395C4" ref-type="bibr">4</xref>
+				,
+				<xref rid="RSOS150395C8" ref-type="bibr">8</xref>
+				]. For example, certain milk proteins are only present early in
+				lactation and then disappear, to be replaced by others that
+				disappear and are replaced in turn through the course of lactation [
+				<xref rid="RSOS150395C4" ref-type="bibr">4</xref>
+				,
+				<xref rid="RSOS150395C9" ref-type="bibr">9</xref>
+				,
+				<xref rid="RSOS150395C10" ref-type="bibr">10</xref>
+				]. Such dramatic and sustained changes in milk proteins do not occur
+				in eutherian mammals, presumably because their neonates are at a
+				significantly more advanced stage of development at birth. Eutherian
+				milks do, however, change radically in the immediate period after
+				birth. The composition of milk during this colostrum phase reflects
+				the type of placenta characteristic of the species [
+				<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+				].
+			</p>
+			<p>
+				Eutherians with haemochorial placentae (e.g. many primates and
+				rodents) commonly transfer immunoglobulins transplacentally such
+				that the neonate is born with a sample of maternal antibodies
+				equivalent to the mother&#x02019;s own plasma levels [
+				<xref rid="RSOS150395C11" ref-type="bibr">11</xref>
+				,
+				<xref rid="RSOS150395C12" ref-type="bibr">12</xref>
+				]. In species possessing endotheliochorial placentae,
+				trans-placental immunoglobulin transfer is rare, and the neonate
+				must obtain immunoglobulins via colostrum immediately after birth
+				for direct transfer into the circulation [
+				<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+				,
+				<xref rid="RSOS150395C13" ref-type="bibr">13</xref>
+				]. For this, junctions between intestinal cells are open for only
+				about 6&#x02013;24&#x02009;h postpartum [
+				<xref rid="RSOS150395C13" ref-type="bibr">13</xref>
+				]. Timing of the closure of intercellular junctions in the gut
+				(&#x02018;gut closure&#x02019;) has been examined in only a few
+				species. Whether a similar interval of trans-intestinal
+				immunoglobulin transfer also applies to ursids&#x02014;the subject
+				of this paper&#x02014;is not known.
+			</p>
+			<p>
+				Among eutherian mammals, the neonates of bears are altricial to an
+				unusual degree, with the lowest ratio of neonatal to maternal body
+				mass, despite small litter sizes [
+				<xref rid="RSOS150395C14" ref-type="bibr">14</xref>
+				]. Among bears, neonates of the giant panda,
+				<italic>Ailuropoda melanoleuca</italic>
+				, are the most altricial, with a neonatal to maternal body mass
+				ratio of about 1:1000. They are born deaf, blind and virtually naked
+				of hair (see electronic supplementary material, figure S1).
+				Moreover, their lymphoid system is particularly underdeveloped,
+				emphasizing a potentially unusual degree of dependency on maternal
+				immunity among eutherians [
+				<xref rid="RSOS150395C15" ref-type="bibr">15</xref>
+				]. We know of no published description of the type of placenta
+				exhibited by giant pandas, but those ursids for which there is
+				information have endotheliochorial discoidal zonary placentae [
+				<xref rid="RSOS150395C16" ref-type="bibr">16</xref>
+				]. If this is also true of giant pandas, then their cubs may be
+				particularly dependent on colostrum for immunity during the neonatal
+				period.
+			</p>
+			<p>
+				Colostrum, compared with mature milk, is generally richer in protein
+				than lipids and carbohydrates, particularly in species in which
+				immunoglobulin transfer is postnatal [
+				<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+				]. The change in concentrations of these nutrient classes between
+				colostrum and mature milk has been examined in a range of species [
+				<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+				], but seldom has the time taken for the transition from colostrum
+				to mature milk been examined in detail. Precise criteria with which
+				to define the end of the colostral period also have not been
+				developed. Nevertheless, species with similar body masses to bears
+				but which produce precocious neonates appear to have short colostral
+				periods (e.g. bovids and camels [
+				<xref rid="RSOS150395C17" ref-type="bibr">17</xref>
+				&#x02013;
+				<xref rid="RSOS150395C19" ref-type="bibr">19</xref>
+				]). We here take the colostrum period to end when all the major
+				components of milk reach an approximate steady state, although
+				slight modifications in composition may still occur during the main
+				phase. Given what is known about the reproductive physiology of the
+				species for which the transition period has been described, and
+				given the altriciality of neonatal ursids, we hypothesized that the
+				transition period would be comparatively long in bears. Once
+				information of the kind we present here for giant pandas becomes
+				available for a broad sample of eutherians, then this can be fully
+				tested in, for instance, a meta-analysis of the transition times
+				relative to total lactation durations for species that give birth to
+				either altricial or precocial young.
+			</p>
+			<p>
+				Previous investigations of giant panda milk have focused on basic
+				analysis of major nutrients or on oligosaccharide profiling from
+				single milk samples [
+				<xref rid="RSOS150395C20" ref-type="bibr">20</xref>
+				&#x02013;
+				<xref rid="RSOS150395C25" ref-type="bibr">25</xref>
+				]. Our study examined serial milk samples from six individuals,
+				beginning 12&#x02009;h after parturition until five months into
+				lactation, to explore how the relationship between the dynamics of
+				milk composition might meet the developmental needs of an altricial
+				neonate. We followed proteins and small molecules to elucidate how
+				the components of colostrum changed with time after birth, how long
+				the transition to a mature milk profile takes, and how such changes
+				may align with what might be expected for a species with highly
+				altricial young.
+			</p>
+			<p>
+				Our choice of the giant panda was because this bear represents an
+				extreme in altriciality within the Ursidae. Changes in proteins and
+				small anti-microbial defence molecules were followed with time after
+				birth, and a prolonged transition time between colostrum and mature
+				milk lasting about 30 days was apparent. Some of the most remarkable
+				changes during that period were in the dynamics of proteins and
+				oligosaccharides involved in antibacterial defence or in the
+				establishment of an appropriate neonatal gut microbiome
+				(&#x02018;probiotic&#x02019; [
+				<xref rid="RSOS150395C26" ref-type="bibr">26</xref>
+				,
+				<xref rid="RSOS150395C27" ref-type="bibr">27</xref>
+				]). The latter may be particularly relevant to giant pandas in their
+				progression from a milk-based to a predominantly vegetarian diet
+				despite an anatomically carnivorous digestive system [
+				<xref rid="RSOS150395C28" ref-type="bibr">28</xref>
+				,
+				<xref rid="RSOS150395C29" ref-type="bibr">29</xref>
+				].
+			</p>
+		</sec>
+		<sec sec-type="methods" id="s2">
+			<label>2.</label>
+			<title>Material and methods</title>
+			<sec id="s2a">
+				<label>2.1</label>
+				<title>Milk collection and processing</title>
+				<p>All giant panda samples were collected from captive-bred animals
+					at the Chengdu Research Base of Giant Panda Breeding, Chengdu,
+					Sichuan Province, People&#x02019;s Republic of China, during the
+					years 2006, 2007, 2011 and 2012. Six animals were sampled in all,
+					two of which were sampled over multiple lactations. In this
+					facility, cubs are routinely removed from their mothers at three to
+					six months of age to induce the females to enter oestrus again for
+					the next season. Lactation and nursing in giant pandas is usually
+					taken to last for about nine months, although the average duration
+					in the wild is not known and captive-reared cubs have been observed
+					to suckle for as long as two and a half years. A complete list of
+					sampling dates, individual animal names and studbook numbers is
+					given in the electronic supplementary material, table S1. The
+					health status of each animal was monitored regularly. While overt
+					disease was not observed in any donor, minor ailments and
+					suboptimal blood factor levels were observed in some. Mother pandas
+					normally enter a period of anorexia for 7&#x02013;14 days
+					postpartum, but the animals from whom samples were obtained were
+					given glucose before normal diet resumed.</p>
+				<p>
+					Sample times for other species were all from main-phase lactation
+					as follows: bottlenose dolphin,
+					<italic>Tursiops truncatus</italic>
+					, one animal sampled 9 months after birth (average lactation period
+					for the species 18&#x02013;20 months); Indian elephant,
+					<italic>Elephas maximus indicus</italic>
+					, one animal sampled 2 months after birth (average lactation period
+					2&#x02013;6 years); African bush elephant,
+					<italic>Loxodonta africana</italic>
+					, one animal sampled 15 months after birth (average lactation
+					period about 2 years); polar bear,
+					<italic>Ursus maritimus</italic>
+					, one animal sampled opportunistically after emergence from winter
+					den, estimated 3&#x02013;4 months after birth (average lactation
+					period 24&#x02013;28 months); grizzly bear
+					<italic>Ursus arctos horribilis</italic>
+					, one animal sampled at estimated 3&#x02013;4 months after birth
+					(average lactation period 1.5&#x02013;3 years). Human milk was from
+					an anonymous donor in Scotland, mid-lactation; cow,
+					<italic>Bos taurus</italic>
+					, pooled commercial milk sample (average lactation period
+					9&#x02013;10 months); dog,
+					<italic>Canis familiaris</italic>
+					, one animal sampled at mid-lactation (average lactation period 8
+					weeks).
+				</p>
+				<p>All non-domesticated species except the polar bear were
+					captive-bred, and milk samples were obtained by their keepers. Milk
+					samples from all these animals except the polar and grizzly bears
+					were obtained by hand from food-rewarded, conscious animals who
+					were not anaesthetized, sedated, drug-treated or physically
+					restrained. Milk from polar bears was obtained opportunistically
+					from anaesthetized, wild animals during fieldwork in Svalbard,
+					Norwegian Polar Institute. Grizzly bear milk was sampled
+					opportunistically from anaesthetized, captive bears treated with
+					oxytocin to facilitate milk let-down at the research facility of
+					Washington State University, Pullman, WA, USA. In all the cases,
+					samples were collected from a single mammary gland and were not
+					pooled between individuals or over time. Sample sizes ranged from
+					0.5 to 5&#x02009;ml, depending on the species and quality of milk
+					let-down. The mammary glands were never emptied, as sampling was
+					not to interfere with the nutrition available to the offspring.</p>
+				<p>
+					Giant panda milk samples were stored either in liquid nitrogen or
+					at &#x02212;80&#x000b0;C immediately after collection, transferred
+					to Glasgow frozen, and stored at &#x02212;20&#x000b0;C until use.
+					Samples from other species were frozen immediately after collection
+					and stored at &#x02212;20&#x000b0;C. Milks were centrifuged at
+					4&#x000b0;C for 10 minutes at 3000
+					<italic>g</italic>
+					in a bench-top centrifuge or at 12&#x02009;000
+					<italic>g</italic>
+					in a microfuge. The buoyant fat layer and pellet were removed, and
+					the intermediate, aqueous phase fluid layer collected and used
+					immediately or stored at &#x02212;20&#x000b0;C until use.
+				</p>
+			</sec>
+			<sec id="s2b">
+				<label>2.2</label>
+				<title>Protein electrophoresis</title>
+				<p>
+					One-dimensional (1D) vertical sodium dodecyl sulfate polyacrylamide
+					gel electrophoresis (SDS-PAGE) was carried out using the Invitrogen
+					(Thermo Scientific, Paisley, UK) NuPAGE SDS-PAGE system with
+					precast 4&#x02013;12% gradient gels, following the
+					manufacturer&#x02019;s instructions. Gels were stained for protein
+					using Coomassie Blue or InstantBlue (Expedion, Harston, UK).
+					<italic>&#x003b2;</italic>
+					2-Mercaptoethanol (25&#x02009;&#x003bc;l added to 1&#x02009;ml
+					sample buffer) was used as reducing agent for reducing conditions.
+					Images of gels were recorded using a Kodak imager. Electronic
+					images were not modified other than for contrast and brightness
+					adjustments. Pre-stained molecular mass/relative mobility (
+					<italic>M</italic>
+					<sub>r</sub>
+					) standard proteins were obtained from New England Biolabs,
+					Ipswich, MA, USA (cat. number P7708S). Preparative two-dimensional
+					(2D; isoelectric focusing on a pH 4&#x02013;7 immobilized pH
+					gradient in the first dimension, SDS-PAGE on a 10% homogeneous gel
+					in the second) gels were run using an Ettan DALT electrophoresis
+					system (GE Healthcare, Little Chalfont Buckinghamshire UK) as
+					previously described [
+					<xref rid="RSOS150395C30" ref-type="bibr">30</xref>
+					], except that gels were loaded with 30&#x02009;&#x003bc;l milk
+					sample processed as described above. Gels were stained with
+					Coomassie Blue. These gels provided sufficient protein from excised
+					gel spots for identification by proteomics procedures. 2D
+					difference gel electrophoresis (DIGE) was carried out as previously
+					described [
+					<xref rid="RSOS150395C30" ref-type="bibr">30</xref>
+					]. Five microlitres of milk sample from day 1 postpartum were
+					labelled with Cy3, and 5&#x02009;&#x003bc;l of milk sample from day
+					152 postpartum were labelled with Cy5, prior to mixing and
+					electrophoresis.
+				</p>
+			</sec>
+			<sec id="s2c">
+				<label>2.3</label>
+				<title>Proteomics</title>
+				<p>
+					Stained protein bands or spots were excised from preparative 1D or
+					2D gels, respectively, and analysed by liquid
+					chromatography&#x02013;mass spectrometry (LC-MS) as previously
+					described [
+					<xref rid="RSOS150395C31" ref-type="bibr">31</xref>
+					]. Protein identifications were assigned using the MASCOT search
+					engine to interrogate protein and gene sequences in the NCBI
+					databases. Searches were restricted to the giant panda resources
+					specifically, or to dog sequence databases where panda gene
+					annotations were still incomplete, and allowed a mass tolerance of
+					0.4 Da for both single and dual mass spectrometry analyses.
+				</p>
+			</sec>
+			<sec id="s2d">
+				<label>2.4</label>
+				<title>Metabolomics</title>
+				<p>
+					LC-MS was carried out by using an Orbitrap Exactive LC-MS system.
+					The electrospray ionization interface was operated in a
+					positive/negative polarity switching mode. The spray voltage was
+					4.5&#x02009;kV for positive mode and 4.0&#x02009;kV for negative
+					mode. The temperature of the ion transfer capillary was
+					275&#x000b0;C; sheath and auxiliary gas were 50 and 17 arb. units,
+					respectively. The full scan range was 75&#x02013;1200&#x02009;
+					<italic>m</italic>
+					/
+					<italic>z</italic>
+					for both positive and negative modes with settings of automatic
+					gain control target and resolution as Balanced and High
+					(1&#x000d7;10
+					<sup>6</sup>
+					and 50&#x02009;000), respectively. The data were recorded using X
+					<sc>calibur</sc>
+					v. 2.1.0 software package (Thermo Fisher Scientific). Mass
+					calibration was performed for both electrospray ionization
+					polarities before the analysis, using the standard Thermo Calmix
+					solution with inclusion of some additional compounds to cover the
+					low mass range. The signals of 83.0604&#x02009;
+					<italic>m</italic>
+					/
+					<italic>z</italic>
+					(2&#x000d7; acetonitrile-H) and 91.0037&#x02009;
+					<italic>m</italic>
+					/
+					<italic>z</italic>
+					(2&#x000d7; formate-H) were selected as lock masses for positive
+					and negative mode, respectively, during each analytical run. The
+					mobile phases used in hydrophilic interaction liquid chromatography
+					conditions were 20&#x02009;mM ammonium carbonate buffer (pH 9.2; A)
+					and acetonitrile (B) (ZIC-pHILIC column
+					(150&#x000d7;4.6&#x02009;mm, 5&#x02009;&#x003bc;m); Merck
+					Millipore, Darmstadt, Germany). The gradient programme was as
+					follows: B 80% (0&#x02009;min); B 20% (30&#x02009;min); B 8%
+					(31&#x02009;min); B 8% (36&#x02009;min); B 80% (37&#x02009;min); B
+					80% (46&#x02009;min). The flow rate was 0.3&#x02009;ml&#x02009;min
+					<sup>&#x02212;1</sup>
+					. Peaks were extracted by using S
+					<sc>ieve</sc>
+					software (Thermo Fisher Scientific) and, using a macro written in
+					Microsoft E
+					<sc>xcel</sc>
+					, matched against the human metabolome database. Putative
+					identification of compounds was based on elemental compositions
+					within 3&#x02009;ppm of the exact mass, which excludes alternative
+					compositions but does not exclude isomers. Semi-targeted profiling
+					for oligosaccharides was performed by manually searching accurate
+					masses (&#x000b1;3&#x02009;ppm) reported in the published bear milk
+					studies or predicted based on the combination of five basic
+					building blocks for mammalian milk oligosaccharides.
+				</p>
+			</sec>
+		</sec>
+		<sec id="s3">
+			<label>3.</label>
+			<title>Results</title>
+			<sec id="s3a">
+				<label>3.1</label>
+				<title>Comparison of giant panda milk protein profiles with milks of
+					other mammals</title>
+				<p>
+					We first investigated how similar or different ursid milks are to
+					milks of other species. Milks collected during mid-lactation from
+					several species were analysed by 1D protein gel electrophoresis (
+					<xref ref-type="fig" rid="RSOS150395F1">figure 1</xref>
+					<italic>a</italic>
+					), which highlighted the considerable differences in protein
+					profiles among species. Those from the same clade of the Carnivora
+					(dog and giant panda [
+					<xref rid="RSOS150395C32" ref-type="bibr">32</xref>
+					]) or of the Cetartiodactyla (cow and dolphin [
+					<xref rid="RSOS150395C33" ref-type="bibr">33</xref>
+					]) show some similarities in protein band presences and absences,
+					albeit with differences in the preponderance of various proteins.
+					All are distinct from elephants (both African and Indian). Within
+					the Ursidae (
+					<xref ref-type="fig" rid="RSOS150395F1">figure 1</xref>
+					<italic>b</italic>
+					), polar and grizzly bear milks are more similar to each other than
+					to giant pandas, which is consistent with the close phylogenetic
+					relationship of the former two [
+					<xref rid="RSOS150395C34" ref-type="bibr">34</xref>
+					&#x02013;
+					<xref rid="RSOS150395C36" ref-type="bibr">36</xref>
+					].
+					<fig id="RSOS150395F1" orientation="portrait" position="float">
+						<label>Figure 1.</label>
+						<caption>
+							<p>
+								Giant panda milk proteins compared with those of other mammals.
+								SDS-PAGE analysis of milks from several species of mammal (
+								<italic>a</italic>
+								). African elephant milk is closely similar in protein profile
+								to that of Indian elephants (not shown). A similar analysis of
+								the milks from three species of bear, and another member of the
+								Carnivora, the domestic dog, is given in (
+								<italic>b</italic>
+								). The giant panda sample was from Shu Qing, postpartum day 46.
+								All samples were collected during the main phase of lactation,
+								as described in Material and Methods. The gels were run under
+								reducing and non-reducing conditions as indicated. Relative
+								mobilities (
+								<italic>M</italic>
+								<sub>r</sub>
+								) of protein size standards are as indicated in kiloDaltons
+								(kDa).
+							</p>
+						</caption>
+						<graphic xlink:href="rsos150395-g1" />
+					</fig>
+				</p>
+			</sec>
+			<sec id="s3b">
+				<label>3.2</label>
+				<title>Transition from colostrum to mature milk: proteins</title>
+				<p>
+					Samples of milk taken serially from several giant pandas exhibited
+					progressive changes in protein profile between colostrum and mature
+					milk. 2D DIGE analysis shown in
+					<xref ref-type="fig" rid="RSOS150395F2">figure 2</xref>
+					compares samples collected on days 1 (
+					<italic>a</italic>
+					, green) and 152 (
+					<italic>b</italic>
+					, red) postpartum and analysed in the same gel. In the superimposed
+					image (
+					<italic>c</italic>
+					), yellow indicates where protein species are present in both
+					samples, revealing proteins disappearing or appearing, and those
+					persisting across the transition and into the main lactation
+					period. The loading of this type of analytical gel is inadequate
+					for protein identification, so preparative 2D gels of the same
+					samples were run (electronic supplementary material, figure S2),
+					leading to protein identifications given in the electronic
+					supplementary material, table S2.
+					<fig id="RSOS150395F2" orientation="portrait" position="float">
+						<label>Figure 2.</label>
+						<caption>
+							<p>
+								Transition of giant panda milk from colostrum to mature milk.
+								Two-dimensional fluorescent difference gel electrophoresis
+								(DIGE) of samples from day 1 (
+								<italic>a</italic>
+								, green) and day 152 (
+								<italic>b</italic>
+								, red) postpartum. A superimposition of the two images (
+								<italic>c</italic>
+								) indicates in yellow where the same species of protein appears
+								in both samples. Preparative 2D gels of the same samples are
+								shown in the electronic supplementary material, figure S2,
+								providing protein identifications given in the electronic
+								supplementary material, table S2.
+							</p>
+						</caption>
+						<graphic xlink:href="rsos150395-g2" />
+					</fig>
+				</p>
+				<p>
+					The time course of changes is best illustrated in 1D protein
+					electrophoresis gels (
+					<xref ref-type="fig" rid="RSOS150395F3">figure 3</xref>
+					), using samples taken periodically from 12&#x02009;h after birth
+					up to 158 days of lactation. Following the initial colostrum phase,
+					a slow acquisition of the full mature milk protein profile is
+					evident, along with the gradual disappearance of other protein
+					types. Similar protein electropohoresis analysis showed that the
+					transition in protein composition appears to be complete by 30 days
+					(not shown). Identification of the main proteins present was
+					carried out by combining information obtained by excision of
+					protein bands from 1D and 2D gels (including those in
+					<xref ref-type="fig" rid="RSOS150395F3">figures 3</xref>
+					and S2) and as visualized in
+					<xref ref-type="fig" rid="RSOS150395F2">figure 2</xref>
+					. The identifications from gel bands annotated in
+					<xref ref-type="fig" rid="RSOS150395F3">figure 3</xref>
+					are summarized in
+					<xref ref-type="table" rid="RSOS150395TB1">table 1</xref>
+					, with additional detail given in the electronic supplementary
+					material, table S3.
+					<fig id="RSOS150395F3" orientation="portrait" position="float">
+						<label>Figure 3.</label>
+						<caption>
+							<p>
+								Progressive changes in protein profiles of giant panda milk from
+								colostrum to mature milk. 1D protein electrophoresis gels loaded
+								with (
+								<italic>a</italic>
+								) non-reduced samples and (
+								<italic>b</italic>
+								) reduced samples. Samples from days 0.5 to 21 are from Li Li;
+								days 46 and 158, Shu Qing; day 152, Ya Ya; day 156, Qi Zhen. The
+								protein bands indicated by letters were excised from gels and
+								subjected to proteomic identification. These data, together with
+								data from additional 1D and 2D gels, provided consensus
+								identifications given in
+								<xref ref-type="table" rid="RSOS150395TB1">table 1</xref>
+								and electronic supplementary material, table S3. See also the
+								electronic supplementary material, figure S2, with table S2 used
+								for additional confirmation.
+							</p>
+						</caption>
+						<graphic xlink:href="rsos150395-g3" />
+					</fig>
+					<table-wrap id="RSOS150395TB1" orientation="portrait"
+						position="float">
+						<label>Table 1.</label>
+						<caption>
+							<p>
+								Proteins in giant panda milk. Identification of proteins
+								isolated from bands excised from the SDS-PAGE gels shown in
+								<xref ref-type="fig" rid="RSOS150395F3">figure 3</xref>
+								.
+							</p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<colgroup span="1">
+								<col align="left" span="1" />
+								<col align="left" span="1" />
+								<col align="left" span="1" />
+							</colgroup>
+							<thead valign="bottom">
+								<tr>
+									<th align="left" rowspan="1" colspan="1">
+										protein identification
+										<sup>a</sup>
+									</th>
+									<th align="left" rowspan="1" colspan="1">
+										found in gel band
+										<sup>b</sup>
+									</th>
+									<th align="left" rowspan="1" colspan="1">
+										putative function and comments
+										<sup>c</sup>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="1" colspan="1">
+										immunoglobulin
+										<italic>&#x003bc;</italic>
+										heavy chain
+									</td>
+									<td rowspan="1" colspan="1">A</td>
+									<td rowspan="1" colspan="1">IgM. Antibody. Abundant in serum and
+										colostra, less so in secretions</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										immunoglobulin
+										<italic>&#x003b1;</italic>
+										heavy chain
+									</td>
+									<td rowspan="1" colspan="1">B, C</td>
+									<td rowspan="1" colspan="1">IgA. Secretory antibody. Abundant in
+										secretions (e.g. tears, saliva, bile, milks)</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">immunoglobulin &#x003bb; light chain</td>
+									<td rowspan="1" colspan="1">A, T, S</td>
+									<td rowspan="1" colspan="1">light chain isoform associated with
+										all immunoglobulin subclasses</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">polymeric immunoglobulin receptor</td>
+									<td rowspan="1" colspan="1">C, P</td>
+									<td rowspan="1" colspan="1">receptor for IgA and IgM mediating
+										secretion, part of which (secretory component) remains bound
+										to IgA to protect it against proteolytic cleavage in intestine</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										immunoglobulin
+										<italic>&#x003b3;</italic>
+										heavy chain
+									</td>
+									<td rowspan="1" colspan="1">D, E, Q</td>
+									<td rowspan="1" colspan="1">IgG. Antibody. Most abundant class
+										in plasma, much less so in secretions</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">bile salt-activated lipase</td>
+									<td rowspan="1" colspan="1">F, O</td>
+									<td rowspan="1" colspan="1">also termed bile-stimulated or
+										-dependent lipase. Presumed to assist with digestion of
+										triglyceride lipids</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										<italic>&#x003ba;</italic>
+										-casein
+									</td>
+									<td rowspan="1" colspan="1">G</td>
+									<td rowspan="1" colspan="1">stabilizes micelle formation,
+										prevents casein precipitation</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										<italic>&#x003b2;</italic>
+										-casein
+									</td>
+									<td rowspan="1" colspan="1">H, R, S</td>
+									<td rowspan="1" colspan="1">source of amino acids, delivers
+										calcium, phosphate, lipids, structural component of casein
+										micelles</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										<italic>&#x003b2;</italic>
+										-lactoglobulin isoform 1
+									</td>
+									<td rowspan="1" colspan="1">G, J, K, U</td>
+									<td rowspan="1" colspan="1">binds and probably transports
+										retinol (vitamin A), vitamin D, and fatty acids including
+										polyunsaturated fatty acids</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">
+										<italic>&#x003b2;</italic>
+										-lactoglobulin isoform 2
+									</td>
+									<td rowspan="1" colspan="1">G</td>
+									<td rowspan="1" colspan="1">similar to isoform 1</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">lactotransferrin</td>
+									<td rowspan="1" colspan="1">I</td>
+									<td rowspan="1" colspan="1">iron binding transport protein with
+										antibacterial properties</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">anti-leukoproteinase</td>
+									<td rowspan="1" colspan="1">K</td>
+									<td rowspan="1" colspan="1">proteinase inhibitor</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">lysozyme C</td>
+									<td rowspan="1" colspan="1">L</td>
+									<td rowspan="1" colspan="1">antibacterial. Milk isoform</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">whey acidic protein</td>
+									<td rowspan="1" colspan="1">M</td>
+									<td rowspan="1" colspan="1">function unclear. Possibly
+										associated with innate immunity. Possibly plays role in
+										regulation of the proliferation of mammary epithelial cells</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">xanthine dehydrogenase</td>
+									<td rowspan="1" colspan="1">N</td>
+									<td rowspan="1" colspan="1">involved in milk fat globule
+										secretion and also innate immunity</td>
+								</tr>
+								<tr>
+									<td rowspan="1" colspan="1">apolipoprotein D isoform 2</td>
+									<td rowspan="1" colspan="1">S</td>
+									<td rowspan="1" colspan="1">lipid transporter</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn>
+								<p>
+									<sup>a</sup>
+									Gel bands as indicated in
+									<xref ref-type="fig" rid="RSOS150395F3">figure 3</xref>
+									.
+								</p>
+							</fn>
+							<fn>
+								<p>
+									<sup>b</sup>
+									See the electronic supplementary material, table S3 for
+									complete listing of identifications, NCBI GenBank accession
+									codes and MASCOT peptide search scores.
+								</p>
+							</fn>
+							<fn>
+								<p>
+									<sup>c</sup>
+									The putative functions and comments are drawn from a variety of
+									sources including NCBI and UniProtKB/Swiss-Prot databases.
+								</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+				</p>
+				<p>
+					Notable among the proteins present early in lactation are
+					immunoglobulins, accompanied by the polymeric immunoglobulin
+					receptor that is involved in secretion of IgA molecules (and IgM in
+					some but not all species [
+					<xref rid="RSOS150395C37" ref-type="bibr">37</xref>
+					]). The receptor appears in the milk as the secretory component
+					that protects IgA in particular from digestion in the intestine.
+					IgG is not similarly protected, but instead may be absorbed into
+					the circulation of the neonate. Among the proteins that accumulate
+					slowly in panda milk are the caseins, which are milk-specific
+					proteins that usually occur in high abundance in milks of other
+					species [
+					<xref rid="RSOS150395C38" ref-type="bibr">38</xref>
+					,
+					<xref rid="RSOS150395C39" ref-type="bibr">39</xref>
+					].
+				</p>
+			</sec>
+			<sec id="s3c">
+				<label>3.3</label>
+				<title>Transition from colostrum to mature milk: small molecules</title>
+				<p>Serially sampled milks from giant pandas were also analysed for
+					small organic compounds, revealing substantial relative changes
+					with time in several constituents of potential importance. The
+					compounds exhibiting the greatest peak heights and areas from mass
+					spectrometry at three different sampling times are given in the
+					electronic supplementary material, table S4, and are compared with
+					human and bovine milks. Notable changes in ranking are evident with
+					lactose (descending with time), sialyllactoses (descending) and
+					fucosyllactose (ascending), and, in contrast with human and bovine
+					milks, the persistence of taurine.</p>
+				<p>
+					In a more detailed analysis, we found dramatic changes with time
+					for oligosaccharides that may be present for their anti-microbial
+					or probiotic activities rather than as a source of energy [
+					<xref rid="RSOS150395C27" ref-type="bibr">27</xref>
+					,
+					<xref rid="RSOS150395C40" ref-type="bibr">40</xref>
+					&#x02013;
+					<xref rid="RSOS150395C43" ref-type="bibr">43</xref>
+					]. Three examples are illustrated in
+					<xref ref-type="fig" rid="RSOS150395F4">figure 4</xref>
+					. Fucosyllactose was initially close to zero in concentration and
+					then rose dramatically after 20 days (
+					<xref ref-type="fig" rid="RSOS150395F4">figure 4</xref>
+					<italic>a</italic>
+					), whereas 3&#x02032;-
+					<italic>N</italic>
+					-acetylneuraminyllactose fell steadily with time (
+					<xref ref-type="fig" rid="RSOS150395F4">figure 4</xref>
+					<italic>b</italic>
+					), changeover occurring between days 20 and 30. Curiously, the
+					6&#x02032;-
+					<italic>N</italic>
+					-acetylneuraminyllactose isomer of the latter oligosaccharide
+					exhibited the opposite time course (electronic supplementary
+					material, figure S3). Particularly dramatic were changes in those
+					oligosaccharides that were undetectable until about day 20 and then
+					rose dramatically (
+					<xref ref-type="fig" rid="RSOS150395F4">figure 4</xref>
+					<italic>c</italic>
+					and electronic supplementary material, figure S3). A list of these
+					and other oligosaccharides is given in the electronic supplementary
+					material, table S5, and their postpartum trends are illustrated in
+					the electronic supplementary material, figure S3, which also
+					illustrates the fall in lactose until about day 25.
+					<fig id="RSOS150395F4" orientation="portrait" position="float">
+						<label>Figure 4.</label>
+						<caption>
+							<p>
+								Changes in giant panda milk oligosaccharides and other small
+								molecules with time after birth. Selection of four compounds
+								illustrating distinctive patterns of change during the
+								transition period. (
+								<italic>a</italic>
+								,
+								<italic>b</italic>
+								) Two oligosaccharides that show opposite trends in relative
+								concentrations with time, the cross-over point being between 20
+								and 30 days postpartum. Both of these are known to have effects
+								on microbial colonization of the gut in some species (see text).
+								(
+								<italic>c</italic>
+								) Complete absence of an oligosaccharide that then appears
+								abruptly from day 20. This, C
+								<sub>26</sub>
+								H
+								<sub>45</sub>
+								NO
+								<sub>20</sub>
+								, is GalNAc(
+								<italic>&#x003b1;</italic>
+								1&#x02013;3)[Fuc(
+								<italic>&#x003b1;</italic>
+								1&#x02013;2)]Gal(
+								<italic>&#x003b2;</italic>
+								1&#x02013;4)Glc (a tetrasaccharide), which is the human blood
+								group A determinant or an isomer of it. (
+								<italic>d</italic>
+								) Extremely rapid post-parturient rise, then fall, in phenol
+								sulfate levels that may be due to the anorexic period that panda
+								mothers endure for 7&#x02013;10 days post-parturition. This
+								graph includes data for panda Li Li taken in an earlier year
+								(2011), as well as from an additional panda, Shu Qing, that was
+								sampled on day 158 and confirms the eventual disappearance of
+								phenol sulfate.
+							</p>
+						</caption>
+						<graphic xlink:href="rsos150395-g4" />
+					</fig>
+				</p>
+				<p>
+					Phenol sulfate was an unexpectedly abundant compound in the milk,
+					levels of which rose very rapidly postpartum and then fell steadily
+					to a plateau approaching zero after day 30 (
+					<xref ref-type="fig" rid="RSOS150395F4">figure 4</xref>
+					<italic>d</italic>
+					). Possible reasons for the unexpected presence and loss of this
+					molecule in milk are discussed below.
+				</p>
+			</sec>
+		</sec>
+		<sec id="s4">
+			<label>4.</label>
+			<title>Discussion</title>
+			<p>
+				The neonates of bears are remarkable among placental mammals for
+				their premature condition and uniquely low body mass relative to
+				that of their mothers. Exploiting giant pandas as representing an
+				extreme test case even among bears, we hypothesized that maturation
+				of colostrum to mature milk would be prolonged compared with other
+				eutherians. We indeed found a slow transition in the types of
+				proteins and micronutrients present in giant panda milk over time.
+				Comparative detail is available for few other species, but our
+				findings suggest that early lactation in bears may be modified to
+				support the development of unusually immature neonates, albeit not
+				to the extreme of marsupials to whom the term &#x02018;external
+				gestation&#x02019; has been applied [
+				<xref rid="RSOS150395C8" ref-type="bibr">8</xref>
+				].
+			</p>
+			<sec id="s4a">
+				<label>4.1</label>
+				<title>Proteins</title>
+				<p>
+					The proteins observed to be abundant initially and then to diminish
+					with time after parturition were the immunoglobulins. The rate at
+					which this occurred differed among classes, IgA being the most
+					persistent, which reflects its protective role in secretions in
+					general, and in milks continuously throughout lactation. IgA
+					presumably plays a protective role for both the infant and the
+					mammary gland itself, as well as to control the neonate&#x02019;s
+					gut microbiome [
+					<xref rid="RSOS150395C44" ref-type="bibr">44</xref>
+					,
+					<xref rid="RSOS150395C45" ref-type="bibr">45</xref>
+					]. IgA is protected against proteolytic cleavage by a secretory
+					component, which is a fragment of the polymeric immunoglobulin
+					receptor [
+					<xref rid="RSOS150395C37" ref-type="bibr">37</xref>
+					], hence the latter&#x02019;s persistence along with IgA. IgM and
+					IgG probably have lesser roles in the neonatal gut because they are
+					not as resilient as IgA to proteolytic cleavage. These two
+					immunoglobulins are particularly prominent components of the
+					colostra of mammals with placentae that do not permit transfer of
+					immunoglobulins, as they must cross the intestinal epithelial
+					barrier into the neonatal circulation before epithelial closure
+					within hours after birth [
+					<xref rid="RSOS150395C46" ref-type="bibr">46</xref>
+					,
+					<xref rid="RSOS150395C47" ref-type="bibr">47</xref>
+					]. The persistence of IgG in giant panda colostrum is unusual in
+					comparison to other species [
+					<xref rid="RSOS150395C17" ref-type="bibr">17</xref>
+					&#x02013;
+					<xref rid="RSOS150395C19" ref-type="bibr">19</xref>
+					]. This may indicate that trans-intestinal transfer of
+					immunoglobulins lasts for longer than the 24&#x02009;h usually
+					taken to be the maximum in other species groups [
+					<xref rid="RSOS150395C13" ref-type="bibr">13</xref>
+					]. Alternatively, giant panda neonates may have a mechanism for
+					transferring IgG across the intestinal epithelia continuously, such
+					as with the FcRn transporter which is active in IgG translocation
+					across the intestinal epithelia in neonatal rodents but not humans
+					[
+					<xref rid="RSOS150395C11" ref-type="bibr">11</xref>
+					]. The kinetics of this transition may be unique or at least highly
+					unusual among eutherian mammals, although there is currently
+					insufficient coverage of mammalian lineages to be sure.
+				</p>
+				<p>
+					Several protein types appear with time, including two isoforms of
+					<italic>&#x003b2;</italic>
+					-lactoglobulin. The biological functions of
+					<italic>&#x003b2;</italic>
+					-lactoglobulins are not entirely understood, though they are
+					presumed to transfer essential lipids such as retinol (vitamin A),
+					cholecalciferol (vitamin D) and (poly)unsaturated fatty acids [
+					<xref rid="RSOS150395C48" ref-type="bibr">48</xref>
+					,
+					<xref rid="RSOS150395C49" ref-type="bibr">49</xref>
+					].
+					<italic>&#x003b2;</italic>
+					-lactoglobulin is a major constituent of the milks of many mammals,
+					notable exceptions being rodents, elephants, lagomorphs and
+					primates [
+					<xref rid="RSOS150395C49" ref-type="bibr">49</xref>
+					]. Most prominent among the proteins that increase in concentration
+					are apolipoprotein D (also a lipid transporter) and the caseins.
+					Caseins appear in all mammalian milks and have a variety of
+					functions. In addition to their role as a source of amino acids,
+					they serve as carriers for otherwise poorly soluble calcium
+					phosphate to form a complex that prevents ectopic calcification of
+					the mammary gland [
+					<xref rid="RSOS150395C38" ref-type="bibr">38</xref>
+					,
+					<xref rid="RSOS150395C50" ref-type="bibr">50</xref>
+					&#x02013;
+					<xref rid="RSOS150395C52" ref-type="bibr">52</xref>
+					]. Furthermore, cleavage of caseins by gut proteinases induces
+					curdling of milk to a semi-solid form [
+					<xref rid="RSOS150395C38" ref-type="bibr">38</xref>
+					]. Disorders of curd formation cause critical gastrointestinal
+					disturbances in bear cubs fed unsuitable milk formulae [
+					<xref rid="RSOS150395C53" ref-type="bibr">53</xref>
+					,
+					<xref rid="RSOS150395C54" ref-type="bibr">54</xref>
+					].
+				</p>
+				<p>
+					Bile salt-activated lipase is persistent and seen gradually to
+					decrease late in our sampling period. This enzyme is commonly found
+					in milks and is thought to assist the neonate in digestion of milk
+					triglycerides [
+					<xref rid="RSOS150395C55" ref-type="bibr">55</xref>
+					,
+					<xref rid="RSOS150395C56" ref-type="bibr">56</xref>
+					]. It is also produced in the pancreas, but probably only at low
+					levels in neonates relative to the adult pancreas and mammary gland
+					[
+					<xref rid="RSOS150395C57" ref-type="bibr">57</xref>
+					]. Its role in giant panda milk could, therefore, be to supplement
+					a cub&#x02019;s digestive processes before its own pancreatic
+					production of the enzyme becomes adequate. It is a highly
+					<italic>O</italic>
+					-glycosylated enzyme, hence its slow mobility in protein gels (the
+					core polypeptide in humans is 77&#x02009;kDa in mass, yet its
+					effective mass can be considerably greater [
+					<xref rid="RSOS150395C55" ref-type="bibr">55</xref>
+					]).
+				</p>
+				<p>
+					Haptoglobin was found in samples taken very early in lactation
+					(electronic supplementary material, figure S2 and table S2). This
+					is a classic acute phase protein produced by the liver during acute
+					phase (fever) responses. Its protective functions include
+					bacteriostasis, scavenging free haemoglobin released into
+					circulation by tissue damage or haemolysis, and protecting against
+					lipid peroxidation [
+					<xref rid="RSOS150395C58" ref-type="bibr">58</xref>
+					&#x02013;
+					<xref rid="RSOS150395C60" ref-type="bibr">60</xref>
+					]. Acute phase proteins can be produced in the mammary gland during
+					weaning when the gland involutes and the re-structuring tissues may
+					then be open to infection [
+					<xref rid="RSOS150395C61" ref-type="bibr">61</xref>
+					]. Haptoglobin&#x02019;s appearance in panda milk at the onset of
+					lactation may, therefore, be protective against infection of the
+					restructuring mammary tissues.
+				</p>
+			</sec>
+			<sec id="s4b">
+				<label>4.2</label>
+				<title>Oligosaccharides</title>
+				<p>
+					We also observed dramatic changes in oligosaccharides that are
+					considered to be part of the innate immune system. Notable were the
+					trisaccharides sialyllactose (3&#x02032;-
+					<italic>N</italic>
+					-acetylneuraminyllactose), the concentration of which fell until
+					20&#x02013;30 days, and fucosyllactose, which began to increase at
+					that time. These, along with other milk oligosaccharides, appear
+					not to be digested by mammals but instead act to prevent bacterial
+					colonization of the gut by competing with sugar receptors on the
+					surface of pathogens [
+					<xref rid="RSOS150395C26" ref-type="bibr">26</xref>
+					,
+					<xref rid="RSOS150395C62" ref-type="bibr">62</xref>
+					]. Fucosylated oligosaccharides, for instance, are known to inhibit
+					adhesion of several bacterial pathogens to human cells [
+					<xref rid="RSOS150395C63" ref-type="bibr">63</xref>
+					], and sialylated forms have similar activities [
+					<xref rid="RSOS150395C64" ref-type="bibr">64</xref>
+					]. Complex oligosaccharides appear to be particularly important in
+					the milks of primates [
+					<xref rid="RSOS150395C65" ref-type="bibr">65</xref>
+					], as exemplified by the finding that the infants of breastfeeding
+					human mothers that have low levels of certain oligosaccharides in
+					their milk are susceptible to episodes of diarrhoea [
+					<xref rid="RSOS150395C66" ref-type="bibr">66</xref>
+					]. Moreover, fucosylated and other milk oligosaccharides stimulate
+					the growth of certain bifidobacteria which lend competitive
+					protection against pathogens and their toxins [
+					<xref rid="RSOS150395C26" ref-type="bibr">26</xref>
+					,
+					<xref rid="RSOS150395C62" ref-type="bibr">62</xref>
+					,
+					<xref rid="RSOS150395C67" ref-type="bibr">67</xref>
+					&#x02013;
+					<xref rid="RSOS150395C69" ref-type="bibr">69</xref>
+					]. It could, therefore, be that the sequential appearance and
+					disappearance of oligosaccharides in panda milk simultaneously
+					regulate the establishment of a microbiome appropriate for a given
+					stage of altricial development and provide protection against
+					pathogens while the cub&#x02019;s active immunity develops. It is
+					notable that the changeover period between those oligosaccharides
+					that rose and those that fell corresponded to the time after birth
+					when the protein profile approached maturity.
+				</p>
+			</sec>
+			<sec id="s4c">
+				<label>4.3</label>
+				<title>Other small molecules</title>
+				<p>
+					Lactose has been found previously in bear milks, albeit usually at
+					low levels [
+					<xref rid="RSOS150395C25" ref-type="bibr">25</xref>
+					,
+					<xref rid="RSOS150395C70" ref-type="bibr">70</xref>
+					]. Its concentration in giant panda milk fell rapidly after birth
+					(electronic supplementary material, table S4 and figure S3).
+					Lactose is commonly low or absent in milks of the Carnivora
+					(particularly in the suborder Caniformia to which bears belong [
+					<xref rid="RSOS150395C1" ref-type="bibr">1</xref>
+					,
+					<xref rid="RSOS150395C39" ref-type="bibr">39</xref>
+					,
+					<xref rid="RSOS150395C71" ref-type="bibr">71</xref>
+					]), which may mean that lactase synthesis is brief in giant pandas,
+					and that cubs may lose the ability to digest high-lactose milks
+					from about three weeks after birth. Supplementation with artificial
+					milk formulae that are made primarily of cow (or other
+					high-lactose) milk would, therefore, be deleterious to hand-reared
+					cubs.
+				</p>
+				<p>
+					We found taurine to be persistently elevated in giant panda milk
+					for at least five months, and at higher concentrations than in our
+					comparative bovine and human samples. Similar levels were found in
+					our polar bear milk samples (data not shown). Most mammals can
+					synthesize their own taurine, but taurine-dependency is a feature
+					of some hypercarnivores such as cats, and possibly also polar bears
+					[
+					<xref rid="RSOS150395C72" ref-type="bibr">72</xref>
+					], whose requirements are met though carnivory. It is, therefore,
+					conceivable that taurine-dependency occurs more widely in ursids,
+					which merits investigation to ensure adequate nutrition of captive
+					bears and hand-reared cubs. Taurine-dependency in giant pandas
+					would be interesting, given their predominantly vegetarian diet.
+					That said, the panda&#x02019;s carnivorous habits in the wild have
+					been well documented [
+					<xref rid="RSOS150395C73" ref-type="bibr">73</xref>
+					,
+					<xref rid="RSOS150395C74" ref-type="bibr">74</xref>
+					].
+				</p>
+				<p>
+					An unexpected constituent of giant panda milk was phenol sulfate.
+					Its presence corresponded to the 7&#x02013;14 days anorexic phase
+					during which time the females do not leave the den. One possible
+					explanation for the transience of this compound in the milk is that
+					during starvation gut bacteria begin to scavenge nitrogen from
+					their proteins, the consequence being the release of toxic phenols
+					which are neutralized by conversion into sulfates by gut cells [
+					<xref rid="RSOS150395C75" ref-type="bibr">75</xref>
+					], and hence percolate into the milk. It is, therefore, reasonable
+					to expect that, once normal nutritional conditions return, phenol
+					sulfate would disappear from the milk, as we found to be the case.
+				</p>
+			</sec>
+			<sec id="s4d">
+				<label>4.4</label>
+				<title>Evolutionary considerations</title>
+				<p>
+					One hypothesis with which to explain the production of altricial
+					neonates addresses the need for energy conservation during a period
+					of metabolic downregulation in the mother. The bear species that
+					hibernate give birth during this period, but mobilization of
+					maternal fat reserves needed to supply embryos with a predominantly
+					glucose-based trans-placental energy supply is energetically
+					wasteful and unsustainable during hibernation [
+					<xref rid="RSOS150395C14" ref-type="bibr">14</xref>
+					]. Milk, on the other hand, is an efficient means for delivery of
+					fats that does not carry such metabolic costs [
+					<xref rid="RSOS150395C2" ref-type="bibr">2</xref>
+					,
+					<xref rid="RSOS150395C3" ref-type="bibr">3</xref>
+					]. The confounding factor is that hibernation is thought to have
+					arisen only once in bears, and is found in polar, brown and black
+					bears [
+					<xref rid="RSOS150395C34" ref-type="bibr">34</xref>
+					,
+					<xref rid="RSOS150395C36" ref-type="bibr">36</xref>
+					]), while giant pandas and sloth, sun and Andean bears do not
+					hibernate. Assuming that none of the non-hibernating species had
+					hibernating ancestors, then there is still no answer as to why
+					bears have such altricial young, and why this characteristic is so
+					particularly pronounced in giant pandas. In other aspects of
+					reproduction, bears are not particularly unusual&#x02014;within the
+					Carnivora, for example, the duration of dependence by bear cubs on
+					milk is relatively long, but not remarkably so [
+					<xref rid="RSOS150395C2" ref-type="bibr">2</xref>
+					], and the type of placenta they have (endotheliochorial) is not
+					restricted to species with altricial neonates [
+					<xref rid="RSOS150395C16" ref-type="bibr">16</xref>
+					,
+					<xref rid="RSOS150395C76" ref-type="bibr">76</xref>
+					].
+				</p>
+				<p>
+					In this study, we turned to giant pandas as representatives of
+					extreme altriciality even among Ursidae, to test our hypothesis
+					that, compared with other eutherians, maturation of colostrum to
+					mature milk would be prolonged. We did indeed find a slow
+					transition in the types of proteins and micronutrients present in
+					giant panda milk over time. Comparative detail is, however,
+					available for few other species. Our findings suggest that early
+					lactation in bears may be modified to support the development of
+					unusually immature neonates, albeit not to the extreme of
+					marsupials [
+					<xref rid="RSOS150395C8" ref-type="bibr">8</xref>
+					,
+					<xref rid="RSOS150395C9" ref-type="bibr">9</xref>
+					]. We did not, for instance, observe in giant panda milk the marked
+					and sequential changeover of protein types that is observed in
+					marsupial milks [
+					<xref rid="RSOS150395C4" ref-type="bibr">4</xref>
+					,
+					<xref rid="RSOS150395C9" ref-type="bibr">9</xref>
+					,
+					<xref rid="RSOS150395C10" ref-type="bibr">10</xref>
+					]. The proteins we identified in panda milks were only those shared
+					among marsupials and eutherians; we did not identify any that were
+					similar to those unique to marsupials. So, the transition in giant
+					pandas is essentially a prolongation of the pattern in other
+					eutherians rather than a convergence to that of marsupials.
+				</p>
+				<p>
+					Whether giving birth to highly altricial young by bears is a
+					special adaptation or is the retention of a primitive or ancestral
+					reproductive strategy is unresolved, but the consequence may have
+					been the evolution of a slow transition from colostrum to mature
+					milk encompassing a prolonged and changing supply of innate and
+					adaptive immune protective factors. The kinetics of this transition
+					may be unique or at least highly unusual among eutherian mammals,
+					although there is currently insufficient coverage of mammalian
+					lineages to be sure. The analysis presented here is as yet
+					unprecedented in the literature for any other species of eutherian
+					mammal, though it is already clear that in well-studied species the
+					transition is considerably shorter than we find for giant pandas
+					(e.g. camels [
+					<xref rid="RSOS150395C18" ref-type="bibr">18</xref>
+					]; pigs [
+					<xref rid="RSOS150395C19" ref-type="bibr">19</xref>
+					]; cows [
+					<xref rid="RSOS150395C17" ref-type="bibr">17</xref>
+					]). It remains intriguing that even within one group of mammals,
+					the Carnivora, there are species possessing similar placentae and
+					maternal body masses yet giving birth to neonates representing
+					extremes of altriciality or precocity such that, for instance,
+					giant pandas take longer to achieve mature phase lactation than
+					some species of equivalent maternal body masses to bears have an
+					entire lactation cycle (e.g. the Phocidae). Our findings, and
+					similar studies on a broad range of eutherian groups, emphasize and
+					extend our appreciation of the remarkable diversity of eutherian
+					lactation strategies, and illuminate the selective forces involved.
+				</p>
+			</sec>
+		</sec>
+		<sec sec-type="supplementary-material">
+			<title>Supplementary Material</title>
+			<supplementary-material content-type="local-data"
+				id="SD1">
+				<caption>
+					<title>Giant panda milk transition electronic supplementary
+						material.pdf.</title>
+				</caption>
+				<media mimetype="application" mime-subtype="pdf"
+					xlink:href="rsos150395supp1.pdf" orientation="portrait" id="d35e1167"
+					position="anchor" />
+			</supplementary-material>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<title>Acknowledgements</title>
+			<p>We are greatly indebted to those who provided milk
+				samples&#x02014;Eveline Dungl and Mathias Otto, Tiergarten
+				Sch&#x000f6;nbrunn (African elephant); Charlie Robbins, Washington
+				State University (grizzly bear); Jon Aars, Norwegian Polar Institute
+				(polar bear); Lydia Kolter, K&#x000f6;lner Zoo (Indian elephant);
+				Yvonne Fox (dog); Eva Mart&#x000ed;nez and Jes&#x000fa;s
+				Fern&#x000e1;ndez Mor&#x000e1;n, Madrid Zoo (bottlenose dolphin);
+				anonymous donors (human); and also Dave Garshelis for bravely trying
+				to get us milk from American black bears, but the courier company
+				let us down. Eveline Dungl, Simone Haderthauer and Renate Haider
+				kindly provided us with information on their observations of giant
+				panda nursing. Many thanks are due to Alan Scott, Stefan Weidt and
+				Suzanne Eadie for helping with the 2D gels, mass spectrometry and
+				MASCOT analysis, Shazia Khan for metabolomics and Carl Holt for
+				valuable comments on a draft of the paper.</p>
+		</ack>
+		<sec id="s5">
+			<title>Ethics</title>
+			<p>Milk sampling from all animals and human subjects was carried out
+				under approval from the University of Glasgow&#x02019;s College of
+				Medicine, Veterinary Medicine and Life Sciences Ethics Committee,
+				and appropriate committees of the external suppliers. Samples from
+				humans were obtained with informed consent. International transport
+				of milks from species covered by the CITES convention was authorized
+				by respective permissions from both donor and recipient countries.</p>
+		</sec>
+		<sec id="s6">
+			<title>Data accessibility</title>
+			<p>All data analysed in this study are available online in the
+				electronic supplementary material.</p>
+		</sec>
+		<sec id="s7">
+			<title>Authors' contributions</title>
+			<p>K.G., T.Z., L.Z., D.G.W., R.J.S.B. and M.W.K. all carried out or
+				oversaw the experiments and analysed data. R.H., H.W., L.Z. and Z.Z.
+				organized collection and storage of the giant panda milk samples
+				which M.W.K. transported to the Glasgow laboratory. M.W.K. and
+				I.K.L. conceived, designed and organized the study. M.W.K. and
+				I.K.L. wrote the paper, and all authors contributed additions and
+				amendments. All authors gave final approval for publication.</p>
+		</sec>
+		<sec id="s8">
+			<title>Competing interests</title>
+			<p>We have no competing interests.</p>
+		</sec>
+		<sec id="s9">
+			<title>Funding</title>
+			<p>The work was funded in part by a grant from the International
+				Science and Technology Cooperation Program of China (grant no.
+				2011DFA33530) and the International Science and Technology
+				Cooperation Program of Sichuan Province (grant no. 2011HH0043). The
+				funding of mass spectrometry equipment for metabolomics was provided
+				by the Scottish Life Sciences Alliance. The Glasgow polyomics
+				facility is supported by the Wellcome Trust.</p>
+		</sec>
+		<ref-list>
+			<title>References</title>
+			<ref id="RSOS150395C1">
+				<label>1</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Langer</surname>
+							<given-names>P</given-names>
+						</name>
+					</person-group>
+					<year>2009</year>
+					<article-title>Differences in the composition of colostrum and milk
+						in eutherians reflect differences in immunoglobulin transfer</article-title>
+					.
+					<source>J. Mammal</source>
+					.
+					<volume>90</volume>
+					,
+					<fpage>332</fpage>
+					&#x02013;
+					<lpage>339</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1644/08-mamm-a-071.1">doi:10.1644/08-mamm-a-071.1</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C2">
+				<label>2</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Langer</surname>
+							<given-names>P</given-names>
+						</name>
+					</person-group>
+					<year>2008</year>
+					<article-title>The phases of maternal investment in eutherian
+						mammals</article-title>
+					.
+					<source>Zoology</source>
+					<volume>111</volume>
+					,
+					<fpage>148</fpage>
+					&#x02013;
+					<lpage>162</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.zool.2007.06.007">doi:10.1016/j.zool.2007.06.007</ext-link>
+					)
+					<pub-id pub-id-type="pmid">18222662</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C3">
+				<label>3</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Skibiel</surname>
+							<given-names>AL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Downing</surname>
+							<given-names>LM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Orr</surname>
+							<given-names>TJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hood</surname>
+							<given-names>WR</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>The evolution of the nutrient composition of
+						mammalian milks</article-title>
+					.
+					<source>J. Anim. Ecol</source>
+					.
+					<volume>82</volume>
+					,
+					<fpage>1254</fpage>
+					&#x02013;
+					<lpage>1264</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/1365-2656.12095">doi:10.1111/1365-2656.12095</ext-link>
+					)
+					<pub-id pub-id-type="pmid">23895187</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C4">
+				<label>4</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Brennan</surname>
+							<given-names>AJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Sharp</surname>
+							<given-names>JA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lefevre</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Topcic</surname>
+							<given-names>D</given-names>
+						</name>
+						,
+						<name>
+							<surname>Auguste</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Digby</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nicholas</surname>
+							<given-names>KR</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<article-title>The tammar wallaby and fur seal: models to examine
+						local control of lactation</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>90</volume>
+					,
+					<fpage>E66</fpage>
+					&#x02013;
+					<lpage>E75</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.2006-483">doi:10.3168/jds.2006-483</ext-link>
+					)
+					<pub-id pub-id-type="pmid">17517753</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C5">
+				<label>5</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Schulz</surname>
+							<given-names>TM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bowen</surname>
+							<given-names>WD</given-names>
+						</name>
+					</person-group>
+					<year>2004</year>
+					<article-title>Pinniped lactation strategies: evaluation of data on
+						maternal and offspring life history traits</article-title>
+					.
+					<source>Mar. Mamm. Sci</source>
+					.
+					<volume>20</volume>
+					,
+					<fpage>86</fpage>
+					&#x02013;
+					<lpage>114</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/j.1748-7692.2004.tb01142.x">doi:10.1111/j.1748-7692.2004.tb01142.x</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C6">
+				<label>6</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kovacs</surname>
+							<given-names>KM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lavigne</surname>
+							<given-names>DM</given-names>
+						</name>
+					</person-group>
+					<year>1992</year>
+					<article-title>Maternal investment in otariid seals and walruses</article-title>
+					.
+					<source>Can. J. Zool</source>
+					.
+					<volume>70</volume>
+					,
+					<fpage>1953</fpage>
+					&#x02013;
+					<lpage>1964</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1139/z92-265">doi:10.1139/z92-265</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C7">
+				<label>7</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Oftedal</surname>
+							<given-names>OT</given-names>
+						</name>
+						,
+						<name>
+							<surname>Boness</surname>
+							<given-names>DJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Tedman</surname>
+							<given-names>RA</given-names>
+						</name>
+					</person-group>
+					<year>1987</year>
+					<article-title>The behavior, physiology, and anatomy of lactation
+						in the Pinnipedia</article-title>
+					.
+					<source>Curr. Mammal</source>
+					.
+					<volume>1</volume>
+					,
+					<fpage>175</fpage>
+					&#x02013;
+					<lpage>245</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1007/978-1-4757-9909-5_6">doi:10.1007/978-1-4757-9909-5_6</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C8">
+				<label>8</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Adamski</surname>
+							<given-names>FM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Demmer</surname>
+							<given-names>J</given-names>
+						</name>
+					</person-group>
+					<year>2000</year>
+					<article-title>
+						Immunological protection of the vulnerable marsupial pouch young:
+						two periods of immune transfer during lactation in
+						<italic>Trichosurus vulpecula</italic>
+						(brushtail possum)
+					</article-title>
+					.
+					<source>Dev. Compar. Immunol</source>
+					.
+					<volume>24</volume>
+					,
+					<fpage>491</fpage>
+					&#x02013;
+					<lpage>502</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/s0145-305x(00)00012-4">doi:10.1016/s0145-305x(00)00012-4</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C9">
+				<label>9</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Simpson</surname>
+							<given-names>KJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nicholas</surname>
+							<given-names>KR</given-names>
+						</name>
+					</person-group>
+					<year>2002</year>
+					<article-title>The comparative biology of whey proteins</article-title>
+					.
+					<source>J. Mammary Gland Biol. Neoplasia</source>
+					<volume>7</volume>
+					,
+					<fpage>313</fpage>
+					&#x02013;
+					<lpage>326</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1023/a:1022856801175">doi:10.1023/a:1022856801175</ext-link>
+					)
+					<pub-id pub-id-type="pmid">12751894</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C10">
+				<label>10</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Trott</surname>
+							<given-names>JF</given-names>
+						</name>
+						,
+						<name>
+							<surname>Simpson</surname>
+							<given-names>KJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Moyle</surname>
+							<given-names>RLC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hearn</surname>
+							<given-names>CM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Shaw</surname>
+							<given-names>G</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nicholas</surname>
+							<given-names>KR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Renfree</surname>
+							<given-names>MB</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>
+						Maternal regulation of milk composition, milk production, and
+						pouch young development during lactation in the tammar wallaby (
+						<italic>Macropus eugenii</italic>
+						)
+					</article-title>
+					.
+					<source>Biol. Reprod</source>
+					.
+					<volume>68</volume>
+					,
+					<fpage>929</fpage>
+					&#x02013;
+					<lpage>936</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1095/biolreprod.102.005934">doi:10.1095/biolreprod.102.005934</ext-link>
+					)
+					<pub-id pub-id-type="pmid">12604644</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C11">
+				<label>11</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Roopenian</surname>
+							<given-names>DC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Akilesh</surname>
+							<given-names>S</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<article-title>FcRn: the neonatal Fc receptor comes of age</article-title>
+					.
+					<source>Nat. Rev. Immunol</source>
+					.
+					<volume>7</volume>
+					,
+					<fpage>715</fpage>
+					&#x02013;
+					<lpage>725</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1038/nri2155">doi:10.1038/nri2155</ext-link>
+					)
+					<pub-id pub-id-type="pmid">17703228</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C12">
+				<label>12</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Simister</surname>
+							<given-names>NE</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>Placental transport of immunoglobulin G</article-title>
+					.
+					<source>Vaccine</source>
+					<volume>21</volume>
+					,
+					<fpage>3365</fpage>
+					&#x02013;
+					<lpage>3369</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/s0264-410x(03)00334-7">doi:10.1016/s0264-410x(03)00334-7</ext-link>
+					)
+					<pub-id pub-id-type="pmid">12850341</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C13">
+				<label>13</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Baumrucker</surname>
+							<given-names>CR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bruckmaier</surname>
+							<given-names>RM</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>
+						Colostrogenesis: IgG
+						<sub>1</sub>
+						transcytosis mechanisms
+					</article-title>
+					.
+					<source>J. Mammary Gland Biol. Neoplasia</source>
+					<volume>19</volume>
+					,
+					<fpage>103</fpage>
+					&#x02013;
+					<lpage>117</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1007/s10911-013-9313-5">doi:10.1007/s10911-013-9313-5</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24474529</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C14">
+				<label>14</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Ramsay</surname>
+							<given-names>MA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Dunbrack</surname>
+							<given-names>RL</given-names>
+						</name>
+					</person-group>
+					<year>1986</year>
+					<article-title>Physiological constraints on life-history
+						phenomena&#x02014;the example of small bear cubs at birth</article-title>
+					.
+					<source>Am. Nat</source>
+					.
+					<volume>127</volume>
+					,
+					<fpage>735</fpage>
+					&#x02013;
+					<lpage>743</lpage>
+					. (
+					<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1086/284522">doi:10.1086/284522</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C15">
+				<label>15</label>
+				<mixed-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Loeffler</surname>
+							<given-names>IK</given-names>
+						</name>
+						,
+						<name>
+							<surname>Montali</surname>
+							<given-names>RJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Rideout</surname>
+							<given-names>BA</given-names>
+						</name>
+					</person-group>
+					<year>2006</year>
+					<article-title>Diseases and pathology of giant pandas</article-title>
+					. In
+					<source>Giant pandas in captivity: biology and medicine</source>
+					(eds
+					<person-group person-group-type="editor">
+						<name>
+							<surname>Wildt</surname>
+							<given-names>DE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Janssen</surname>
+							<given-names>DL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ellis</surname>
+							<given-names>S</given-names>
+						</name>
+					</person-group>
+					), pp.
+					<fpage>377</fpage>
+					&#x02013;
+					<lpage>409</lpage>
+					.
+					<publisher-loc>Cambridge, UK</publisher-loc>
+					:
+					<publisher-name>Cambridge University Press</publisher-name>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C16">
+				<label>16</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Gundling</surname>
+							<given-names>WE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wildman</surname>
+							<given-names>DE</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>A review of inter- and intraspecific variation in
+						the eutherian placenta</article-title>
+					.
+					<source>Phil. Trans. R. Soc. B</source>
+					<volume>370</volume>
+					,
+					<fpage>20140072</fpage>
+					(
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1098/rstb.2014.0072">doi:10.1098/rstb.2014.0072</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25602076</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C17">
+				<label>17</label>
+				<mixed-citation publication-type="other">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Thomas</surname>
+							<given-names>FC</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<comment>Acute phase proteins, proteomics and metabolomics in the
+						diagnosis of bovine mastitis. PhD thesis. University of Glasgow,
+						Glasgow, UK</comment>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C18">
+				<label>18</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Zhang</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yao</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhao</surname>
+							<given-names>D</given-names>
+						</name>
+						,
+						<name>
+							<surname>Liu</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Guo</surname>
+							<given-names>M</given-names>
+						</name>
+					</person-group>
+					<year>2005</year>
+					<article-title>Changes in chemical composition of Alxa bactrian
+						camel milk during lactation</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>88</volume>
+					,
+					<fpage>3402</fpage>
+					&#x02013;
+					<lpage>3410</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.S0022-0302(05)73024-1">doi:10.3168/jds.S0022-0302(05)73024-1</ext-link>
+					)
+					<pub-id pub-id-type="pmid">16162513</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C19">
+				<label>19</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Ogawa</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Tsukahara</surname>
+							<given-names>T</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nishibayashi</surname>
+							<given-names>R</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nakatani</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Okutani</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nakanishi</surname>
+							<given-names>N</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ushida</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Inoue</surname>
+							<given-names>R</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Shotgun proteomic analysis of porcine colostrum and
+						mature milk</article-title>
+					.
+					<source>Anim. Sci. J</source>
+					.
+					<volume>85</volume>
+					,
+					<fpage>440</fpage>
+					&#x02013;
+					<lpage>448</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/asj.12165">doi:10.1111/asj.12165</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24450292</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C20">
+				<label>20</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Liu</surname>
+							<given-names>XZ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>MX</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yu</surname>
+							<given-names>JQ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>ZH</given-names>
+						</name>
+						,
+						<name>
+							<surname>Huang</surname>
+							<given-names>XM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lan</surname>
+							<given-names>JC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yang</surname>
+							<given-names>Z</given-names>
+						</name>
+					</person-group>
+					<year>2005</year>
+					<article-title>Composition of captive giant panda milk</article-title>
+					.
+					<source>Zoo Biol</source>
+					.
+					<volume>24</volume>
+					,
+					<fpage>393</fpage>
+					&#x02013;
+					<lpage>398</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1002/zoo.20056">doi:10.1002/zoo.20056</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C21">
+				<label>21</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Liu</surname>
+							<given-names>XZ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yu</surname>
+							<given-names>JQ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>MX</given-names>
+						</name>
+						,
+						<name>
+							<surname>Huang</surname>
+							<given-names>XM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>GH</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>Nutrient content of the milk of captive giant pandas</article-title>
+					.
+					<source>Acta Zool. Sin</source>
+					.
+					<volume>49</volume>
+					,
+					<fpage>494</fpage>
+					&#x02013;
+					<lpage>500</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C22">
+				<label>22</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Liu</surname>
+							<given-names>X</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yu</surname>
+							<given-names>J</given-names>
+						</name>
+					</person-group>
+					<year>2008</year>
+					<article-title>Nutrient composition and changes in the milk of
+						captive giant pandas</article-title>
+					.
+					<source>Chin. J. Appl. Environ. Biol</source>
+					.
+					<volume>14</volume>
+					,
+					<fpage>220</fpage>
+					&#x02013;
+					<lpage>224</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C23">
+				<label>23</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Nakamura</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2003</year>
+					<article-title>
+						Composition and oligosaccharides of a milk sample of the giant
+						panda,
+						<italic>Ailuropoda melanoleuca</italic>
+					</article-title>
+					.
+					<source>Compar. Biochem. Physiol. B</source>
+					<volume>135</volume>
+					,
+					<fpage>439</fpage>
+					&#x02013;
+					<lpage>448</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/s1096-4959(03)00093-9">doi:10.1016/s1096-4959(03)00093-9</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C24">
+				<label>24</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Liu</surname>
+							<given-names>X</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yu</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>X</given-names>
+						</name>
+						,
+						<name>
+							<surname>Li</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhong</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>W</given-names>
+						</name>
+						,
+						<name>
+							<surname>Shi</surname>
+							<given-names>S</given-names>
+						</name>
+					</person-group>
+					<year>1996</year>
+					<article-title>Nutrient analysis of the milk from captive giant
+						panda and discussion on the nutrient requirement for its baby</article-title>
+					.
+					<source>Chin. J. Appl. Environ. Biol</source>
+					.
+					<volume>2</volume>
+					,
+					<fpage>382</fpage>
+					&#x02013;
+					<lpage>386</lpage>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C25">
+				<label>25</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hudson</surname>
+							<given-names>GJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bailey</surname>
+							<given-names>PA</given-names>
+						</name>
+						,
+						<name>
+							<surname>John</surname>
+							<given-names>PMV</given-names>
+						</name>
+						,
+						<name>
+							<surname>Monsalve</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Delcampo</surname>
+							<given-names>ALG</given-names>
+						</name>
+						,
+						<name>
+							<surname>Taylor</surname>
+							<given-names>DC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kay</surname>
+							<given-names>JDS</given-names>
+						</name>
+					</person-group>
+					<year>1984</year>
+					<article-title>
+						Composition of milk from
+						<italic>Ailuropoda melanoleuca</italic>
+						, the giant panda
+					</article-title>
+					.
+					<source>Vet. Rec</source>
+					.
+					<volume>115</volume>
+					,
+					<fpage>252</fpage>
+					(
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1136/vr.115.10.252">doi:10.1136/vr.115.10.252</ext-link>
+					)
+					<pub-id pub-id-type="pmid">6495573</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C26">
+				<label>26</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Zivkovic</surname>
+							<given-names>AM</given-names>
+						</name>
+						,
+						<name>
+							<surname>German</surname>
+							<given-names>JB</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lebrilla</surname>
+							<given-names>CB</given-names>
+						</name>
+						,
+						<name>
+							<surname>Mills</surname>
+							<given-names>DA</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>Human milk glycobiome and its impact on the infant
+						gastrointestinal microbiota</article-title>
+					.
+					<source>Proc. Natl Acad. Sci. USA</source>
+					<volume>108</volume>
+					,
+					<fpage>4653</fpage>
+					&#x02013;
+					<lpage>4658</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1073/pnas.1000083107">doi:10.1073/pnas.1000083107</ext-link>
+					)
+					<pub-id pub-id-type="pmid">20679197</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C27">
+				<label>27</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Musilova</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Rada</surname>
+							<given-names>V</given-names>
+						</name>
+						,
+						<name>
+							<surname>Vlkova</surname>
+							<given-names>E</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bunesova</surname>
+							<given-names>V</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Beneficial effects of human milk oligosaccharides on
+						gut microbiota</article-title>
+					.
+					<source>Beneficial Microbes</source>
+					<volume>5</volume>
+					,
+					<fpage>273</fpage>
+					&#x02013;
+					<lpage>283</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3920/bm2013.0080">doi:10.3920/bm2013.0080</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24913838</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C28">
+				<label>28</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Zhu</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wu</surname>
+							<given-names>Q</given-names>
+						</name>
+						,
+						<name>
+							<surname>Dai</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wei</surname>
+							<given-names>F</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>Evidence of cellulose metabolism by the giant panda
+						gut microbiome</article-title>
+					.
+					<source>Proc. Natl Acad. Sci. USA</source>
+					<volume>108</volume>
+					,
+					<fpage>17&#x02009;714</fpage>
+					&#x02013;
+					<lpage>17&#x02009;719</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1073/pnas.1017956108">doi:10.1073/pnas.1017956108</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C29">
+				<label>29</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Fang</surname>
+							<given-names>W</given-names>
+						</name>
+						,
+						<name>
+							<surname>Fang</surname>
+							<given-names>ZM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhou</surname>
+							<given-names>P</given-names>
+						</name>
+						,
+						<name>
+							<surname>Chang</surname>
+							<given-names>F</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hong</surname>
+							<given-names>YZ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhang</surname>
+							<given-names>XC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Peng</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Xiao</surname>
+							<given-names>YZ</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Evidence for lignin oxidation by the giant panda
+						fecal microbiome</article-title>
+					.
+					<source>PLoS ONE</source>
+					<volume>7</volume>
+					,
+					<fpage>e50312</fpage>
+					(
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1371/journal.pone.0050312">doi:10.1371/journal.pone.0050312</ext-link>
+					)
+					<pub-id pub-id-type="pmid">23209704</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C30">
+				<label>30</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Daneshvar</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wyllie</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Phillips</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hagan</surname>
+							<given-names>P</given-names>
+						</name>
+						,
+						<name>
+							<surname>Burchmore</surname>
+							<given-names>R</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>
+						Comparative proteomics profiling of a gentamicin-attenuated
+						<italic>Leishmania infantum</italic>
+						cell line identifies key changes in parasite thiol-redox
+						metabolism
+					</article-title>
+					.
+					<source>J. Proteomics</source>
+					<volume>75</volume>
+					,
+					<fpage>1463</fpage>
+					&#x02013;
+					<lpage>1471</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.jprot.2011.11.018">doi:10.1016/j.jprot.2011.11.018</ext-link>
+					)
+					<pub-id pub-id-type="pmid">22154982</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C31">
+				<label>31</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Braceland</surname>
+							<given-names>M</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2013</year>
+					<article-title>
+						The serum proteome of Atlantic salmon,
+						<italic>Salmo salar</italic>
+						, during pancreas disease (PD) following infection with salmonid
+						alphavirus subtype 3 (SAV3)
+					</article-title>
+					.
+					<source>J. Proteomics</source>
+					<volume>94</volume>
+					,
+					<fpage>423</fpage>
+					&#x02013;
+					<lpage>436</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.jprot.2013.10.016">doi:10.1016/j.jprot.2013.10.016</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24145143</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C32">
+				<label>32</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Eizirik</surname>
+							<given-names>E</given-names>
+						</name>
+						,
+						<name>
+							<surname>Murphy</surname>
+							<given-names>WJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Koepfli</surname>
+							<given-names>KP</given-names>
+						</name>
+						,
+						<name>
+							<surname>Johnson</surname>
+							<given-names>WE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Dragoo</surname>
+							<given-names>JW</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wayne</surname>
+							<given-names>RK</given-names>
+						</name>
+						,
+						<name>
+							<surname>O&#x02019;Brien</surname>
+							<given-names>SJ</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<article-title>Pattern and timing of diversification of the
+						mammalian order Carnivora inferred from multiple nuclear gene
+						sequences</article-title>
+					.
+					<source>Mol. Phylogenet. Evol</source>
+					.
+					<volume>56</volume>
+					,
+					<fpage>49</fpage>
+					&#x02013;
+					<lpage>63</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.ympev.2010.01.033">doi:10.1016/j.ympev.2010.01.033</ext-link>
+					)
+					<pub-id pub-id-type="pmid">20138220</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C33">
+				<label>33</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Vislobokova</surname>
+							<given-names>IA</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>On the origin of Cetartiodactyla: comparison of data
+						on evolutionary morphology and molecular biology</article-title>
+					.
+					<source>Paleontol. J</source>
+					.
+					<volume>47</volume>
+					,
+					<fpage>321</fpage>
+					&#x02013;
+					<lpage>334</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1134/s003103011303012x">doi:10.1134/s003103011303012x</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C34">
+				<label>34</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kutschera</surname>
+							<given-names>VE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bidon</surname>
+							<given-names>T</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hailer</surname>
+							<given-names>F</given-names>
+						</name>
+						,
+						<name>
+							<surname>Rodi</surname>
+							<given-names>JL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Fain</surname>
+							<given-names>SR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Janke</surname>
+							<given-names>A</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Bears in a forest of gene trees: phylogenetic
+						inference is complicated by incomplete lineage sorting and gene
+						flow</article-title>
+					.
+					<source>Mol. Biol. Evol</source>
+					.
+					<volume>31</volume>
+					,
+					<fpage>2004</fpage>
+					&#x02013;
+					<lpage>2017</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1093/molbev/msu186">doi:10.1093/molbev/msu186</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24903145</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C35">
+				<label>35</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Cahill</surname>
+							<given-names>JA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Stirling</surname>
+							<given-names>I</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kistler</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Salamzade</surname>
+							<given-names>R</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ersmark</surname>
+							<given-names>E</given-names>
+						</name>
+						,
+						<name>
+							<surname>Fulton</surname>
+							<given-names>TL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Stiller</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Green</surname>
+							<given-names>RE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Shapiro</surname>
+							<given-names>B</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>Genomic evidence of geographically widespread effect
+						of gene flow from polar bears into brown bears</article-title>
+					.
+					<source>Mol. Ecol</source>
+					.
+					<volume>24</volume>
+					,
+					<fpage>1205</fpage>
+					&#x02013;
+					<lpage>1217</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/mec.13038">doi:10.1111/mec.13038</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25490862</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C36">
+				<label>36</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Pages</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Calvignac</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Klein</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Paris</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hughes</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hanni</surname>
+							<given-names>C</given-names>
+						</name>
+					</person-group>
+					<year>2008</year>
+					<article-title>Combined analysis of fourteen nuclear genes refines
+						the Ursidae phylogeny</article-title>
+					.
+					<source>Mol. Phylogenet. Evol</source>
+					.
+					<volume>47</volume>
+					,
+					<fpage>73</fpage>
+					&#x02013;
+					<lpage>83</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.ympev.2007.10.019">doi:10.1016/j.ympev.2007.10.019</ext-link>
+					)
+					<pub-id pub-id-type="pmid">18328735</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C37">
+				<label>37</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kaetzel</surname>
+							<given-names>CS</given-names>
+						</name>
+					</person-group>
+					<year>2005</year>
+					<article-title>The polymeric immunoglobulin receptor: bridging
+						innate and adaptive immune responses at mucosal surfaces</article-title>
+					.
+					<source>Immunol. Rev</source>
+					.
+					<volume>206</volume>
+					,
+					<fpage>83</fpage>
+					&#x02013;
+					<lpage>99</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/j.0105-2896.2005.00278.x">doi:10.1111/j.0105-2896.2005.00278.x</ext-link>
+					)
+					<pub-id pub-id-type="pmid">16048543</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C38">
+				<label>38</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Carver</surname>
+							<given-names>JA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ecroyd</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Thorn</surname>
+							<given-names>DC</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Invited review: caseins and the casein micelle:
+						their biological functions, structures, and behavior in foods</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>96</volume>
+					,
+					<fpage>6127</fpage>
+					&#x02013;
+					<lpage>6146</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.2013-6831">doi:10.3168/jds.2013-6831</ext-link>
+					)
+					<pub-id pub-id-type="pmid">23958008</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C39">
+				<label>39</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Jenness</surname>
+							<given-names>R</given-names>
+						</name>
+						,
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+					</person-group>
+					<year>1987</year>
+					<article-title>Casein and lactose concentrations in milk of 31
+						species are negatively correlated</article-title>
+					.
+					<source>Experientia</source>
+					<volume>43</volume>
+					,
+					<fpage>1015</fpage>
+					&#x02013;
+					<lpage>1018</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1007/bf01952224">doi:10.1007/bf01952224</ext-link>
+					)
+					<pub-id pub-id-type="pmid">3653340</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C40">
+				<label>40</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Dotz</surname>
+							<given-names>V</given-names>
+						</name>
+						,
+						<name>
+							<surname>Rudloff</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Meyer</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lochnit</surname>
+							<given-names>G</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kunz</surname>
+							<given-names>C</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>Metabolic fate of neutral human milk
+						oligosaccharides in exclusively breast-fed infants</article-title>
+					.
+					<source>Mol. Nutr. Food Res</source>
+					.
+					<volume>59</volume>
+					,
+					<fpage>355</fpage>
+					&#x02013;
+					<lpage>364</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1002/mnfr.201400160">doi:10.1002/mnfr.201400160</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25330044</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C41">
+				<label>41</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Pacheco</surname>
+							<given-names>AR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Barile</surname>
+							<given-names>D</given-names>
+						</name>
+						,
+						<name>
+							<surname>Underwood</surname>
+							<given-names>MA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Mills</surname>
+							<given-names>DA</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>The impact of the milk glycobiome on the neonate gut
+						microbiota</article-title>
+					.
+					<source>Annu. Rev. Anim. Biosci</source>
+					.
+					<volume>3</volume>
+					,
+					<fpage>419</fpage>
+					&#x02013;
+					<lpage>445</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1146/annurev-animal-022114-111112">doi:10.1146/annurev-animal-022114-111112</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25387230</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C42">
+				<label>42</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>ten Bruggencate</surname>
+							<given-names>SJM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bovee-Oudenhoven</surname>
+							<given-names>IMJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Feitsma</surname>
+							<given-names>AL</given-names>
+						</name>
+						,
+						<name>
+							<surname>van Hoffen</surname>
+							<given-names>E</given-names>
+						</name>
+						,
+						<name>
+							<surname>Schoterman</surname>
+							<given-names>MHC</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Functional role and mechanisms of sialyllactose and
+						other sialylated milk oligosaccharides</article-title>
+					.
+					<source>Nutr. Rev</source>
+					.
+					<volume>72</volume>
+					,
+					<fpage>377</fpage>
+					&#x02013;
+					<lpage>389</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/Nure.12106">doi:10.1111/Nure.12106</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24828428</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C43">
+				<label>43</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Yu</surname>
+							<given-names>Y</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2014</year>
+					<article-title>Human milk contains novel glycans that are potential
+						decoy receptors for neonatal rotaviruses</article-title>
+					.
+					<source>Mol. Cell. Proteomics</source>
+					<volume>13</volume>
+					,
+					<fpage>2944</fpage>
+					&#x02013;
+					<lpage>2960</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1074/mcp.M114.039875">doi:10.1074/mcp.M114.039875</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25048705</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C44">
+				<label>44</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Brandtzaeg</surname>
+							<given-names>P</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Secretory IgA: designed for anti-microbial defense</article-title>
+					.
+					<source>Front. Immunol</source>
+					.
+					<volume>4</volume>
+					,
+					<fpage>222</fpage>
+					(
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3389/fimmu.2013.00222">doi:10.3389/fimmu.2013.00222</ext-link>
+					)
+					<pub-id pub-id-type="pmid">23964273</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C45">
+				<label>45</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Rogier</surname>
+							<given-names>EW</given-names>
+						</name>
+						,
+						<name>
+							<surname>Frantz</surname>
+							<given-names>AL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bruno</surname>
+							<given-names>MEC</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wedlund</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Cohen</surname>
+							<given-names>DA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Stromberg</surname>
+							<given-names>AJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kaetzel</surname>
+							<given-names>CS</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Secretory antibodies in breast milk promote
+						long-term intestinal homeostasis by regulating the gut microbiota
+						and host gene expression</article-title>
+					.
+					<source>Proc. Natl Acad. Sci. USA</source>
+					<volume>111</volume>
+					,
+					<fpage>3074</fpage>
+					&#x02013;
+					<lpage>3079</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1073/pnas.1315792111">doi:10.1073/pnas.1315792111</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24569806</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C46">
+				<label>46</label>
+				<mixed-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Butler</surname>
+							<given-names>JE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kehrli</surname>
+							<given-names>ME</given-names>
+						</name>
+					</person-group>
+					<year>2005</year>
+					<article-title>Immunoglobulins and immunocytes in the mammary gland
+						and its secretions</article-title>
+					. In
+					<source>Mucosal immunology</source>
+					,
+					<edition>3rd edn</edition>
+					<comment>(eds J Mestecky, ME Lamm, W Strober, J Bienenstock, JR
+						McGhee, L Mayer)</comment>
+					, pp.
+					<fpage>1763</fpage>
+					&#x02013;
+					<lpage>1793</lpage>
+					.
+					<comment>San Diego, CA: Elsevier Academic Press Inc</comment>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C47">
+				<label>47</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Farrell</surname>
+							<given-names>HM</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2004</year>
+					<article-title>Nomenclature of the proteins of cows&#x02019;
+						milk&#x02014;sixth revision</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>87</volume>
+					,
+					<fpage>1641</fpage>
+					&#x02013;
+					<lpage>1674</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.S0022-0302(04)73319-6">doi:10.3168/jds.S0022-0302(04)73319-6</ext-link>
+					)
+					<pub-id pub-id-type="pmid">15453478</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C48">
+				<label>48</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Le Maux</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bouhallab</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Giblin</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Brodkorb</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Croguennec</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Bovine &#x003b2;-lactoglobulin/fatty acid complexes:
+						binding, structural, and biological properties</article-title>
+					.
+					<source>Dairy Sci. Technol</source>
+					.
+					<volume>94</volume>
+					,
+					<fpage>409</fpage>
+					&#x02013;
+					<lpage>426</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1007/s13594-014-0160-y">doi:10.1007/s13594-014-0160-y</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25110551</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C49">
+				<label>49</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kontopidis</surname>
+							<given-names>G</given-names>
+						</name>
+						,
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Sawyer</surname>
+							<given-names>L</given-names>
+						</name>
+					</person-group>
+					<year>2004</year>
+					<article-title>Invited review: &#x003b2;-lactoglobulin: binding
+						properties, structure, and function</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>87</volume>
+					,
+					<fpage>785</fpage>
+					&#x02013;
+					<lpage>796</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.S0022-0302(04)73222-1">doi:10.3168/jds.S0022-0302(04)73222-1</ext-link>
+					)
+					<pub-id pub-id-type="pmid">15259212</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C50">
+				<label>50</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Carver</surname>
+							<given-names>JA</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Darwinian transformation of a &#x02018;scarcely
+						nutritious fluid&#x02019; into milk</article-title>
+					.
+					<source>J. Evol. Biol</source>
+					.
+					<volume>25</volume>
+					,
+					<fpage>1253</fpage>
+					&#x02013;
+					<lpage>1263</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/j.1420-9101.2012.02509.x">doi:10.1111/j.1420-9101.2012.02509.x</ext-link>
+					)
+					<pub-id pub-id-type="pmid">22524460</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C51">
+				<label>51</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Lenton</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nylander</surname>
+							<given-names>T</given-names>
+						</name>
+						,
+						<name>
+							<surname>Teixeira</surname>
+							<given-names>SCM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>A review of the biology of calcium phosphate
+						sequestration with special reference to milk</article-title>
+					.
+					<source>Dairy Sci. Technol</source>
+					.
+					<volume>95</volume>
+					,
+					<fpage>3</fpage>
+					&#x02013;
+					<lpage>14</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1007/s13594-014-0177-2">doi:10.1007/s13594-014-0177-2</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25632319</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C52">
+				<label>52</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Holt</surname>
+							<given-names>C</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Unfolded phosphopolypeptides enable soft and hard
+						tissues to coexist in the same organism with relative ease</article-title>
+					.
+					<source>Curr. Opin. Struct. Biol</source>
+					.
+					<volume>23</volume>
+					,
+					<fpage>420</fpage>
+					&#x02013;
+					<lpage>425</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.sbi.2013.02.010">doi:10.1016/j.sbi.2013.02.010</ext-link>
+					)
+					<pub-id pub-id-type="pmid">23622834</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C53">
+				<label>53</label>
+				<mixed-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Loeffler</surname>
+							<given-names>IK</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<article-title>Veterinary considerations for rehabilitation and
+						release of bear cubs</article-title>
+					. In
+					<source>Proc. of the Int. Workshop on the Rehabilitation, Release
+						and Monitoring of Orphaned Bear Cubs</source>
+					.
+					<publisher-loc>Bubonitsy, Russia</publisher-loc>
+					:
+					<publisher-name>International Fund for Animal Welfare</publisher-name>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C54">
+				<label>54</label>
+				<mixed-citation publication-type="other">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Lintzenich</surname>
+							<given-names>BA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ward</surname>
+							<given-names>AM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Edwards</surname>
+							<given-names>MS</given-names>
+						</name>
+						,
+						<name>
+							<surname>Griffin</surname>
+							<given-names>ME</given-names>
+						</name>
+						,
+						<name>
+							<surname>Robbins</surname>
+							<given-names>CT</given-names>
+						</name>
+					</person-group>
+					<year>2006</year>
+					<comment>Polar bear nutrition guidelines. American Zoological
+						Association Bear Taxon Advisory Group</comment>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C55">
+				<label>55</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Landberg</surname>
+							<given-names>E</given-names>
+						</name>
+						,
+						<name>
+							<surname>Huang</surname>
+							<given-names>YP</given-names>
+						</name>
+						,
+						<name>
+							<surname>Stromqvist</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Mechref</surname>
+							<given-names>Y</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hansson</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lundblad</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Novotny</surname>
+							<given-names>MV</given-names>
+						</name>
+						,
+						<name>
+							<surname>Pahlsson</surname>
+							<given-names>P</given-names>
+						</name>
+					</person-group>
+					<year>2000</year>
+					<article-title>Changes in glycosylation of human
+						bile-salt-stimulated lipase during lactation</article-title>
+					.
+					<source>Arch. Biochem. Biophys</source>
+					.
+					<volume>377</volume>
+					,
+					<fpage>246</fpage>
+					&#x02013;
+					<lpage>254</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1006/abbi.2000.1778">doi:10.1006/abbi.2000.1778</ext-link>
+					)
+					<pub-id pub-id-type="pmid">10845701</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C56">
+				<label>56</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Andersson</surname>
+							<given-names>E-L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hernell</surname>
+							<given-names>O</given-names>
+						</name>
+						,
+						<name>
+							<surname>Bl&#x000e4;ckberg</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>F&#x000e4;lt</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lindquist</surname>
+							<given-names>S</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>BSSL and PLRP2: key enzymes for lipid digestion in
+						the newborn examined using the Caco-2 cell line</article-title>
+					.
+					<source>J. Lipid Res</source>
+					.
+					<volume>52</volume>
+					,
+					<fpage>1949</fpage>
+					&#x02013;
+					<lpage>1956</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1194/jlr.M015685">doi:10.1194/jlr.M015685</ext-link>
+					)
+					<pub-id pub-id-type="pmid">21865348</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C57">
+				<label>57</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Lombardo</surname>
+							<given-names>D</given-names>
+						</name>
+					</person-group>
+					<year>2001</year>
+					<article-title>Bile salt-dependent lipase: its pathophysiological
+						implications</article-title>
+					.
+					<source>Biochim. Biophys. Acta</source>
+					<volume>1533</volume>
+					,
+					<fpage>1</fpage>
+					&#x02013;
+					<lpage>28</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/s1388-1981(01)00130-5">doi:10.1016/s1388-1981(01)00130-5</ext-link>
+					)
+					<pub-id pub-id-type="pmid">11514232</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C58">
+				<label>58</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Andersen</surname>
+							<given-names>CBF</given-names>
+						</name>
+						,
+						<name>
+							<surname>Torvund-Jensen</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nielsen</surname>
+							<given-names>MJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Pinto de Oliveira</surname>
+							<given-names>CL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hersleth</surname>
+							<given-names>H-P</given-names>
+						</name>
+						,
+						<name>
+							<surname>Andersen</surname>
+							<given-names>NH</given-names>
+						</name>
+						,
+						<name>
+							<surname>Pedersen</surname>
+							<given-names>JS</given-names>
+						</name>
+						,
+						<name>
+							<surname>Andersen</surname>
+							<given-names>GR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Moestrup</surname>
+							<given-names>SK</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Structure of the haptoglobin&#x02013;haemoglobin
+						complex</article-title>
+					.
+					<source>Nature</source>
+					<volume>489</volume>
+					,
+					<fpage>456</fpage>
+					&#x02013;
+					<lpage>459</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1038/nature11369">doi:10.1038/nature11369</ext-link>
+					)
+					<pub-id pub-id-type="pmid">22922649</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C59">
+				<label>59</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Ceron</surname>
+							<given-names>JJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Eckersall</surname>
+							<given-names>PD</given-names>
+						</name>
+						,
+						<name>
+							<surname>Martinez-Subiela</surname>
+							<given-names>S</given-names>
+						</name>
+					</person-group>
+					<year>2005</year>
+					<article-title>Acute phase proteins in dogs and cats: current
+						knowledge and future perspectives</article-title>
+					.
+					<source>Vet. Clin. Pathol</source>
+					.
+					<volume>34</volume>
+					,
+					<fpage>85</fpage>
+					&#x02013;
+					<lpage>99</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1111/j.1939-165X.2005.tb00019.x">doi:10.1111/j.1939-165X.2005.tb00019.x</ext-link>
+					)
+					<pub-id pub-id-type="pmid">15902658</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C60">
+				<label>60</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Eaton</surname>
+							<given-names>JW</given-names>
+						</name>
+						,
+						<name>
+							<surname>Brandt</surname>
+							<given-names>P</given-names>
+						</name>
+						,
+						<name>
+							<surname>Mahoney</surname>
+							<given-names>JR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lee</surname>
+							<given-names>JT</given-names>
+						</name>
+					</person-group>
+					<year>1982</year>
+					<article-title>Haptoglobin&#x02014;a natural bacteriostat</article-title>
+					.
+					<source>Science</source>
+					<volume>215</volume>
+					,
+					<fpage>691</fpage>
+					&#x02013;
+					<lpage>693</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1126/science.7036344">doi:10.1126/science.7036344</ext-link>
+					)
+					<pub-id pub-id-type="pmid">7036344</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C61">
+				<label>61</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Stein</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2004</year>
+					<article-title>Involution of the mouse mammary gland is associated
+						with an immune cascade and an acute-phase response, involving LBP,
+						CD14 and STAT3</article-title>
+					.
+					<source>Breast Cancer Res</source>
+					.
+					<volume>6</volume>
+					,
+					<fpage>R75</fpage>
+					&#x02013;
+					<lpage>R91</lpage>
+					. (
+					<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/bcr753">doi:10.1186/bcr753</ext-link>
+					)
+					<pub-id pub-id-type="pmid">14979920</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C62">
+				<label>62</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hinde</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lewis</surname>
+							<given-names>ZT</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>Mother&#x02019;s littlest helpers</article-title>
+					.
+					<source>Science</source>
+					<volume>348</volume>
+					,
+					<fpage>1427</fpage>
+					&#x02013;
+					<lpage>1428</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1126/science.aac7436">doi:10.1126/science.aac7436</ext-link>
+					)
+					<pub-id pub-id-type="pmid">26113704</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C63">
+				<label>63</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Ruiz-Palacios</surname>
+							<given-names>GM</given-names>
+						</name>
+						,
+						<name>
+							<surname>Cervantes</surname>
+							<given-names>LE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ramos</surname>
+							<given-names>P</given-names>
+						</name>
+						,
+						<name>
+							<surname>Chavez-Munguia</surname>
+							<given-names>B</given-names>
+						</name>
+						,
+						<name>
+							<surname>Newburg</surname>
+							<given-names>DS</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>
+						<italic>Campylobacter jejuni</italic>
+						binds intestinal H(O) antigen (Fuc &#x003b1;1, 2Gal &#x003b2;1,
+						4GlcNAc), and fucosyloligosaccharides of human milk inhibit its
+						binding and infection
+					</article-title>
+					.
+					<source>J. Biol. Chem</source>
+					.
+					<volume>278</volume>
+					,
+					<fpage>14&#x02009;112</fpage>
+					&#x02013;
+					<lpage>14&#x02009;120</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1074/jbc.M207744200">doi:10.1074/jbc.M207744200</ext-link>
+					)
+					<pub-id pub-id-type="pmid">12435741</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C64">
+				<label>64</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Murakami</surname>
+							<given-names>Y</given-names>
+						</name>
+						,
+						<name>
+							<surname>Higuchi</surname>
+							<given-names>N</given-names>
+						</name>
+						,
+						<name>
+							<surname>Nakamura</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Yoshimura</surname>
+							<given-names>F</given-names>
+						</name>
+						,
+						<name>
+							<surname>Oppenheim</surname>
+							<given-names>FG</given-names>
+						</name>
+					</person-group>
+					<year>2002</year>
+					<article-title>
+						<italic>Bacteroides forsythus</italic>
+						hemagglutinin is inhibited by
+						<italic>N</italic>
+						-acetylneuraminyllactose
+					</article-title>
+					.
+					<source>Oral Microbiol. Immunol</source>
+					.
+					<volume>17</volume>
+					,
+					<fpage>125</fpage>
+					&#x02013;
+					<lpage>128</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1046/j.0902-0055.2001.00093.x">doi:10.1046/j.0902-0055.2001.00093.x</ext-link>
+					)
+					<pub-id pub-id-type="pmid">11929561</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C65">
+				<label>65</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Tao</surname>
+							<given-names>NA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Wu</surname>
+							<given-names>SA</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kim</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>An</surname>
+							<given-names>HJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hinde</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Power</surname>
+							<given-names>ML</given-names>
+						</name>
+						,
+						<name>
+							<surname>Gagneux</surname>
+							<given-names>P</given-names>
+						</name>
+						,
+						<name>
+							<surname>German</surname>
+							<given-names>JB</given-names>
+						</name>
+						,
+						<name>
+							<surname>Lebrilla</surname>
+							<given-names>CB</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>Evolutionary glycomics: characterization of milk
+						oligosaccharides in primates</article-title>
+					.
+					<source>J. Proteome Res</source>
+					.
+					<volume>10</volume>
+					,
+					<fpage>1548</fpage>
+					&#x02013;
+					<lpage>1557</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1021/pr1009367">doi:10.1021/pr1009367</ext-link>
+					)
+					<pub-id pub-id-type="pmid">21214271</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C66">
+				<label>66</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Morrow</surname>
+							<given-names>AL</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2004</year>
+					<article-title>Human milk oligosaccharides are associated with
+						protection against diarrhea in breast-fed infants</article-title>
+					.
+					<source>J. Pediatr</source>
+					.
+					<volume>145</volume>
+					,
+					<fpage>297</fpage>
+					&#x02013;
+					<lpage>303</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.jpeds.2004.04.054">doi:10.1016/j.jpeds.2004.04.054</ext-link>
+					)
+					<pub-id pub-id-type="pmid">15343178</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C67">
+				<label>67</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Yu</surname>
+							<given-names>ZT</given-names>
+						</name>
+						,
+						<name>
+							<surname>Chen</surname>
+							<given-names>C</given-names>
+						</name>
+						,
+						<name>
+							<surname>Newburg</surname>
+							<given-names>DS</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Utilization of major fucosylated and sialylated
+						human milk oligosaccharides by isolated human gut microbes</article-title>
+					.
+					<source>Glycobiology</source>
+					<volume>23</volume>
+					,
+					<fpage>1281</fpage>
+					&#x02013;
+					<lpage>1292</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1093/glycob/cwt065">doi:10.1093/glycob/cwt065</ext-link>
+					)
+					<pub-id pub-id-type="pmid">24013960</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C68">
+				<label>68</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hoeflinger</surname>
+							<given-names>JL</given-names>
+						</name>
+						,
+						<name>
+							<surname>Davis</surname>
+							<given-names>SR</given-names>
+						</name>
+						,
+						<name>
+							<surname>Chow</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Miller</surname>
+							<given-names>MJ</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>
+						<italic>In vitro</italic>
+						impact of human milk oligosaccharides on Enterobacteriaceae growth
+					</article-title>
+					.
+					<source>J. Agric. Food Chem</source>
+					.
+					<volume>63</volume>
+					,
+					<fpage>3295</fpage>
+					&#x02013;
+					<lpage>3302</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1021/jf505721p">doi:10.1021/jf505721p</ext-link>
+					)
+					<pub-id pub-id-type="pmid">25748944</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C69">
+				<label>69</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Sela</surname>
+							<given-names>DA</given-names>
+						</name>
+					</person-group>
+					<italic>et al.</italic>
+					<year>2008</year>
+					<article-title>
+						The genome sequence of
+						<italic>Bifidobacterium longum</italic>
+						subsp.
+						<italic>infantis</italic>
+						reveals adaptations for milk utilization within the infant
+						microbiome
+					</article-title>
+					.
+					<source>Proc. Natl Acad. Sci. USA</source>
+					<volume>105</volume>
+					,
+					<fpage>18&#x02009;964</fpage>
+					&#x02013;
+					<lpage>18&#x02009;969</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1073/pnas.0809584105">doi:10.1073/pnas.0809584105</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C70">
+				<label>70</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Nakamura</surname>
+							<given-names>T</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kawase</surname>
+							<given-names>H</given-names>
+						</name>
+						,
+						<name>
+							<surname>Kimura</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Watanabe</surname>
+							<given-names>Y</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ohtani</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Arai</surname>
+							<given-names>I</given-names>
+						</name>
+						,
+						<name>
+							<surname>Urashima</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>Concentrations of sialyloligosaccharides in bovine
+						colostrum and milk during the prepartum and early lactation</article-title>
+					.
+					<source>J. Dairy Sci</source>
+					.
+					<volume>86</volume>
+					,
+					<fpage>1315</fpage>
+					&#x02013;
+					<lpage>1320</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.3168/jds.S0022-0302(03)73715-1">doi:10.3168/jds.S0022-0302(03)73715-1</ext-link>
+					)
+					<pub-id pub-id-type="pmid">12741556</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C71">
+				<label>71</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Uemura</surname>
+							<given-names>Y</given-names>
+						</name>
+						,
+						<name>
+							<surname>Takahashi</surname>
+							<given-names>S</given-names>
+						</name>
+						,
+						<name>
+							<surname>Senda</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Fukuda</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Saito</surname>
+							<given-names>T</given-names>
+						</name>
+						,
+						<name>
+							<surname>Oftedal</surname>
+							<given-names>OT</given-names>
+						</name>
+						,
+						<name>
+							<surname>Urashima</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<year>2009</year>
+					<article-title>
+						Chemical characterization of milk oligosaccharides of a spotted
+						hyena (
+						<italic>Crocuta crocuta</italic>
+						)
+					</article-title>
+					.
+					<source>Comp. Biochem. Physiol. A</source>
+					<volume>152</volume>
+					,
+					<fpage>158</fpage>
+					&#x02013;
+					<lpage>161</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.cbpa.2008.09.013">doi:10.1016/j.cbpa.2008.09.013</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C72">
+				<label>72</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hedberg</surname>
+							<given-names>GE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Derocher</surname>
+							<given-names>AE</given-names>
+						</name>
+						,
+						<name>
+							<surname>Andersen</surname>
+							<given-names>M</given-names>
+						</name>
+						,
+						<name>
+							<surname>Rogers</surname>
+							<given-names>QR</given-names>
+						</name>
+						,
+						<name>
+							<surname>DePeters</surname>
+							<given-names>EJ</given-names>
+						</name>
+						,
+						<name>
+							<surname>Loennerdal</surname>
+							<given-names>B</given-names>
+						</name>
+						,
+						<name>
+							<surname>Mazzaro</surname>
+							<given-names>L</given-names>
+						</name>
+						,
+						<name>
+							<surname>Chesney</surname>
+							<given-names>RW</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hollis</surname>
+							<given-names>B</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>
+						Milk composition in free-ranging polar bears (
+						<italic>Ursus maritimus</italic>
+						) as a model for captive rearing milk formula
+					</article-title>
+					.
+					<source>Zoo Biol</source>
+					.
+					<volume>30</volume>
+					,
+					<fpage>550</fpage>
+					&#x02013;
+					<lpage>565</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1002/zoo.20375">doi:10.1002/zoo.20375</ext-link>
+					)
+					<pub-id pub-id-type="pmid">21246608</pub-id>
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C73">
+				<label>73</label>
+				<mixed-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Schaller</surname>
+							<given-names>GB</given-names>
+						</name>
+						,
+						<name>
+							<surname>Hu</surname>
+							<given-names>J</given-names>
+						</name>
+						,
+						<name>
+							<surname>Pan</surname>
+							<given-names>W</given-names>
+						</name>
+						,
+						<name>
+							<surname>Zhu</surname>
+							<given-names>J</given-names>
+						</name>
+					</person-group>
+					<year>1985</year>
+					<source>The giant pandas of Wolong</source>
+					.
+					<publisher-loc>Chicago, IL</publisher-loc>
+					:
+					<publisher-name>University of Chicago Press</publisher-name>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C74">
+				<label>74</label>
+				<mixed-citation publication-type="book">
+					<person-group person-group-type="editor">
+						<name>
+							<surname>Lindburg</surname>
+							<given-names>D</given-names>
+						</name>
+						,
+						<name>
+							<surname>Baragona</surname>
+							<given-names>K</given-names>
+						</name>
+						(eds)
+					</person-group>
+					<year>2004</year>
+					<source>Giant pandas: biology and conservation</source>
+					.
+					<publisher-loc>Berkeley, CA</publisher-loc>
+					:
+					<publisher-name>University of California Press</publisher-name>
+					.
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C75">
+				<label>75</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kikuchi</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Itoh</surname>
+							<given-names>Y</given-names>
+						</name>
+						,
+						<name>
+							<surname>Tateoka</surname>
+							<given-names>R</given-names>
+						</name>
+						,
+						<name>
+							<surname>Ezawa</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Murakami</surname>
+							<given-names>K</given-names>
+						</name>
+						,
+						<name>
+							<surname>Niwa</surname>
+							<given-names>T</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<article-title>Metabolomic search for uremic toxins as indicators
+						of the effect of an oral sorbent AST-120 by liquid
+						chromatography/tandem mass spectrometry</article-title>
+					.
+					<source>J. Chromatogr. B</source>
+					<volume>878</volume>
+					,
+					<fpage>2997</fpage>
+					&#x02013;
+					<lpage>3002</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.jchromb.2010.09.006">doi:10.1016/j.jchromb.2010.09.006</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+			<ref id="RSOS150395C76">
+				<label>76</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Mess</surname>
+							<given-names>A</given-names>
+						</name>
+						,
+						<name>
+							<surname>Carter</surname>
+							<given-names>AM</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<article-title>Evolution of the placenta during the early radiation
+						of placental mammals</article-title>
+					.
+					<source>Comp. Biochem. Physiol. A</source>
+					<volume>148</volume>
+					,
+					<fpage>769</fpage>
+					&#x02013;
+					<lpage>779</lpage>
+					. (
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/10.1016/j.cbpa.2007.01.029">doi:10.1016/j.cbpa.2007.01.029</ext-link>
+					)
+				</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

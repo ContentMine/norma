@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.List;
 
@@ -72,7 +73,7 @@ public class PMIDParserTest {
 		}
 		HtmlDiv abstractList = abstractAnalyzer.createAbstractList(parser);
 		File risFile = new File("target/ris/");
-		FileUtils.write(new File(risFile, "pubmed6.html"), abstractList.toXML());
+		FileUtils.write(new File(risFile, "pubmed6.html"), abstractList.toXML(), Charset.forName("UTF-8"));
 		Multiset<String> countedSet = abstractAnalyzer.getSectionMultiset();
 		LOG.trace("abstract terms: "+countedSet.size());
 		Iterable<Multiset.Entry<String>> sectionByCount = CMineUtil.getEntriesSortedByCount(countedSet);

@@ -9,7 +9,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.norma.ClinicalTrialsDemo;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.norma.Fixtures;
 import org.xmlcml.norma.biblio.json.EPMCConverter;
 
@@ -57,12 +57,23 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testCreateCTreesFromEPMCResultsJSON() throws IOException {
-		File jsonFile = new File(Fixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json");
-		File cProjectDir = new File("target/json/cproject/");
+		File jsonFile = new File(Fixtures.TEST_BIBLIO_DIR, "json/ursus1.json");
+		File cProjectDir = new File("target/json/cproject/ursus1/");
 		EPMCConverter epmcConverter = new EPMCConverter();
 		epmcConverter.setCProjectDir(cProjectDir);
 		epmcConverter.readInputStream(new FileInputStream(jsonFile));
 		epmcConverter.convertEPMCJsonFileToCProject();
 	}
 
+	
+	@Test
+	public void testCreateCTreeFromEPMCResults6780JSON() throws IOException {
+		File jsonFile = new File(Fixtures.TEST_BIBLIO_DIR, "json/6780_eupmc_results.json");
+		File cProjectDir = new File("target/json/cproject/ursus1/");
+		EPMCConverter epmcConverter = new EPMCConverter();
+		epmcConverter.setCProjectDir(cProjectDir);
+		epmcConverter.readInputStream(new FileInputStream(jsonFile));
+		CTree cTree = epmcConverter.convertEPMCEntryToCTree();
+		LOG.debug("CT "+cTree);
+	}
 }

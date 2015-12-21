@@ -1,0 +1,958 @@
+[
+  {
+    "id": [
+      "26587250"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "26587250"
+    ],
+    "pmcid": [
+      "PMC4632522"
+    ],
+    "title": [
+      "Prolonged transition time between colostrum and mature milk in a bear, the giant panda, Ailuropoda melanoleuca."
+    ],
+    "authorString": [
+      "Griffiths K, Hou R, Wang H, Zhang Z, Zhang L, Zhang T, Watson DG, Burchmore RJ, Loeffler IK, Kennedy MW."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Griffiths K"
+            ],
+            "firstName": [
+              "Kate"
+            ],
+            "lastName": [
+              "Griffiths"
+            ],
+            "initials": [
+              "K"
+            ],
+            "affiliation": [
+              "Institute of Biodiversity, Animal Health and Comparative Medicine, College of Medical, Veterinary and Life Sciences , University of Glasgow , Graham err Building, Glasgow, G12 8QQ, UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Hou R"
+            ],
+            "firstName": [
+              "Rong"
+            ],
+            "lastName": [
+              "Hou"
+            ],
+            "initials": [
+              "R"
+            ],
+            "affiliation": [
+              "The Sichuan Key Laboratory for Conservation Biology on Endangered Wildlife , Chengdu Research Base of Giant Panda Breeding , 1375 Panda Road, Northern Suburb, Chengdu, Sichuan Province 610081, People's Republic of China."
+            ]
+          },
+          {
+            "fullName": [
+              "Wang H"
+            ],
+            "firstName": [
+              "Hairui"
+            ],
+            "lastName": [
+              "Wang"
+            ],
+            "initials": [
+              "H"
+            ],
+            "affiliation": [
+              "The Sichuan Key Laboratory for Conservation Biology on Endangered Wildlife , Chengdu Research Base of Giant Panda Breeding , 1375 Panda Road, Northern Suburb, Chengdu, Sichuan Province 610081, People's Republic of China."
+            ]
+          },
+          {
+            "fullName": [
+              "Zhang Z"
+            ],
+            "firstName": [
+              "Zhihe"
+            ],
+            "lastName": [
+              "Zhang"
+            ],
+            "initials": [
+              "Z"
+            ],
+            "affiliation": [
+              "The Sichuan Key Laboratory for Conservation Biology on Endangered Wildlife , Chengdu Research Base of Giant Panda Breeding , 1375 Panda Road, Northern Suburb, Chengdu, Sichuan Province 610081, People's Republic of China."
+            ]
+          },
+          {
+            "fullName": [
+              "Zhang L"
+            ],
+            "firstName": [
+              "Liang"
+            ],
+            "lastName": [
+              "Zhang"
+            ],
+            "initials": [
+              "L"
+            ],
+            "affiliation": [
+              "The Sichuan Key Laboratory for Conservation Biology on Endangered Wildlife , Chengdu Research Base of Giant Panda Breeding , 1375 Panda Road, Northern Suburb, Chengdu, Sichuan Province 610081, People's Republic of China."
+            ]
+          },
+          {
+            "fullName": [
+              "Zhang T"
+            ],
+            "firstName": [
+              "Tong"
+            ],
+            "lastName": [
+              "Zhang"
+            ],
+            "initials": [
+              "T"
+            ],
+            "affiliation": [
+              "Strathclyde Institute of Pharmacy and Biomedical Sciences , University of Strathclyde , 161 Cathedral Street, Glasgow, G4 0RE, UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Watson DG"
+            ],
+            "firstName": [
+              "David G"
+            ],
+            "lastName": [
+              "Watson"
+            ],
+            "initials": [
+              "DG"
+            ],
+            "affiliation": [
+              "Strathclyde Institute of Pharmacy and Biomedical Sciences , University of Strathclyde , 161 Cathedral Street, Glasgow, G4 0RE, UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Burchmore RJ"
+            ],
+            "firstName": [
+              "Richard J S"
+            ],
+            "lastName": [
+              "Burchmore"
+            ],
+            "initials": [
+              "RJ"
+            ],
+            "affiliation": [
+              "Institute of Infection, Immunity and Inflammation and Glasgow Polyomics, College of Medical, Veterinary and Life Sciences , University of Glasgow , Garscube Campus, Glasgow, G12 1QH, UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Loeffler IK"
+            ],
+            "firstName": [
+              "I Kati"
+            ],
+            "lastName": [
+              "Loeffler"
+            ],
+            "initials": [
+              "IK"
+            ],
+            "affiliation": [
+              "The Sichuan Key Laboratory for Conservation Biology on Endangered Wildlife , Chengdu Research Base of Giant Panda Breeding , 1375 Panda Road, Northern Suburb, Chengdu, Sichuan Province 610081, People's Republic of China."
+            ]
+          },
+          {
+            "fullName": [
+              "Kennedy MW"
+            ],
+            "firstName": [
+              "Malcolm W"
+            ],
+            "lastName": [
+              "Kennedy"
+            ],
+            "initials": [
+              "MW"
+            ],
+            "affiliation": [
+              "Institute of Biodiversity, Animal Health and Comparative Medicine, College of Medical, Veterinary and Life Sciences , University of Glasgow , Graham err Building, Glasgow, G12 8QQ, UK."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "10"
+        ],
+        "volume": [
+          "2"
+        ],
+        "journalIssueId": [
+          "2344600"
+        ],
+        "dateOfPublication": [
+          "2015 Oct"
+        ],
+        "monthOfPublication": [
+          "10"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-10-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Royal Society open science"
+            ],
+            "ISOAbbreviation": [
+              "R Soc Open Sci"
+            ],
+            "medlineAbbreviation": [
+              "R Soc Open Sci"
+            ],
+            "NLMid": [
+              "101647528"
+            ],
+            "ESSN": [
+              "2054-5703"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "150395"
+    ],
+    "abstractText": [
+      "Bears produce the most altricial neonates of any placental mammal. We hypothesized that the transition from colostrum to mature milk in bears reflects a temporal and biochemical adaptation for altricial development and immune protection. Comparison of bear milks with milks of other eutherians yielded distinctive protein profiles. Proteomic and metabolomic analysis of serial milk samples collected from six giant pandas showed a prolonged transition from colostrum to main-phase lactation over approximately 30 days. Particularly striking are the persistence or sequential appearance of adaptive and innate immune factors. The endurance of immunoglobulin G suggests an unusual duration of trans-intestinal absorption of maternal antibodies, and is potentially relevant to the underdeveloped lymphoid system of giant panda neonates. Levels of certain milk oligosaccharides known to exert anti-microbial activities and/or that are conducive to the development of neonatal gut microbiomes underwent an almost complete changeover around days 20-30 postpartum, coincident with the maturation of the protein profile. A potential metabolic marker of starvation was detected, the prominence of which may reflect the natural postpartum period of anorexia in giant panda mothers. Early lactation in giant pandas, and possibly in other ursids, appears to be adapted for the unique requirements of unusually altricial eutherian neonates."
+    ],
+    "affiliation": [
+      "Institute of Biodiversity, Animal Health and Comparative Medicine, College of Medical, Veterinary and Life Sciences , University of Glasgow , Graham err Building, Glasgow, G12 8QQ, UK."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Electronic-eCollection"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Proteins",
+          "Milk",
+          "Oligosaccharides",
+          "Giant panda",
+          "Ailuropoda melanoleuca",
+          "colostrum"
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4632522?pdf=render"
+            ]
+          },
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4632522"
+            ]
+          }
+        ]
+      }
+    ],
+    "isOpenAccess": [
+      "Y"
+    ],
+    "inEPMC": [
+      "Y"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "hasPDF": [
+      "Y"
+    ],
+    "hasBook": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "Y"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2015-11-20"
+    ],
+    "dateOfRevision": [
+      "2015-11-22"
+    ],
+    "electronicPublicationDate": [
+      "2015-10-21"
+    ],
+    "firstPublicationDate": [
+      "2015-10-21"
+    ],
+    "luceneScore": [
+      "NaN"
+    ]
+  },
+  {
+    "id": [
+      "26246656"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "26246656"
+    ],
+    "pmcid": [
+      "PMC4521097"
+    ],
+    "DOI": [
+      "10.1007/s00265-015-1952-7"
+    ],
+    "title": [
+      "Conspecific recognition and aggression reduction to familiars in newly weaned, socially plastic mammals."
+    ],
+    "authorString": [
+      "Robinson KJ, Twiss SD, Hazon N, Moss S, Lonergan M, Pomeroy PP."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Robinson KJ"
+            ],
+            "firstName": [
+              "Kelly J"
+            ],
+            "lastName": [
+              "Robinson"
+            ],
+            "initials": [
+              "KJ"
+            ],
+            "affiliation": [
+              "Sea Mammal Research Unit, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Twiss SD"
+            ],
+            "firstName": [
+              "Sean D"
+            ],
+            "lastName": [
+              "Twiss"
+            ],
+            "initials": [
+              "SD"
+            ],
+            "affiliation": [
+              "School of Biological and Biomedical Sciences, Durham University, South Road, Durham, DH1 3LE UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Hazon N"
+            ],
+            "firstName": [
+              "Neil"
+            ],
+            "lastName": [
+              "Hazon"
+            ],
+            "initials": [
+              "N"
+            ],
+            "affiliation": [
+              "Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Moss S"
+            ],
+            "firstName": [
+              "Simon"
+            ],
+            "lastName": [
+              "Moss"
+            ],
+            "initials": [
+              "S"
+            ],
+            "affiliation": [
+              "Sea Mammal Research Unit, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Lonergan M"
+            ],
+            "firstName": [
+              "Mike"
+            ],
+            "lastName": [
+              "Lonergan"
+            ],
+            "initials": [
+              "M"
+            ],
+            "affiliation": [
+              "Sea Mammal Research Unit, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK ; Divison of Cardiovascular & Diabetes Medicine, University of Dundee, Ninewells Hospital & Medical School, Mailbox 2, Dundee, DD1 9SY UK."
+            ]
+          },
+          {
+            "fullName": [
+              "Pomeroy PP"
+            ],
+            "firstName": [
+              "Patrick P"
+            ],
+            "lastName": [
+              "Pomeroy"
+            ],
+            "initials": [
+              "PP"
+            ],
+            "affiliation": [
+              "Sea Mammal Research Unit, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "8"
+        ],
+        "volume": [
+          "69"
+        ],
+        "journalIssueId": [
+          "2311549"
+        ],
+        "dateOfPublication": [
+          "2015"
+        ],
+        "monthOfPublication": [
+          "0"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-01-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Behavioral ecology and sociobiology"
+            ],
+            "ISOAbbreviation": [
+              "Behav. Ecol. Sociobiol. (Print)"
+            ],
+            "medlineAbbreviation": [
+              "Behav Ecol Sociobiol"
+            ],
+            "NLMid": [
+              "7608456"
+            ],
+            "ISSN": [
+              "0340-5443"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "1383-1394"
+    ],
+    "abstractText": [
+      "Recognising conspecifics and behaving appropriately towards them is a crucial ability for many species. Grey seals (Halichoerus grypus) show varying capabilities in this regard: mother-pup recognition has been demonstrated in some geographical populations but is absent in others, yet there is evidence that individuals aggregate with prior associates. The recognition capabilities of newly weaned grey seal pups were investigated using class recognition trials within the habituation/dishabituation paradigm. Trials took place in pens, using pairs of individuals that either had previously cohabited (familiar) or that had never met before (stranger). Frequencies of olfactory and visual investigative behaviours ('checks') and aggressive interactions were recorded during trials. Familiar individuals recognised each other: paired strangers showed significantly more checks and aggressive interactions than were seen in trials pairing familiars. Oxytocin concentrations in post-trial plasma samples were analysed to investigate the underlying physiology modulating recognition abilities; however, no significant differences were detected between familiar or stranger trials. This study demonstrates that at a young age, grey seals can recognise individuals they have previously encountered. Recognition abilities in this species have adaptive value by allowing the reduction of costly aggressive interactions between familiar conspecifics, which is often cited as the first step towards the evolution of sociality in a species. This study is the first with wild subjects to find conspecific recognition abilities in a pinniped species outside of reproductive contexts. It demonstrates that even largely solitary species can be capable of recognition and pro-social behaviours that benefit them during times when they must aggregate."
+    ],
+    "affiliation": [
+      "Sea Mammal Research Unit, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife, KY16 8LB UK."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Print-Electronic"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Recognition",
+          "Oxytocin",
+          "Mammal",
+          "Aggression",
+          "Pinniped",
+          "Grey Seal"
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4521097?pdf=render"
+            ]
+          },
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4521097"
+            ]
+          },
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.1007/s00265-015-1952-7"
+            ]
+          }
+        ]
+      }
+    ],
+    "isOpenAccess": [
+      "Y"
+    ],
+    "inEPMC": [
+      "Y"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "hasPDF": [
+      "Y"
+    ],
+    "hasBook": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "Y"
+    ],
+    "hasTextMinedTerms": [
+      "Y"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2015-08-06"
+    ],
+    "dateOfRevision": [
+      "2015-08-09"
+    ],
+    "electronicPublicationDate": [
+      "2015-06-20"
+    ],
+    "firstPublicationDate": [
+      "2015-06-20"
+    ],
+    "luceneScore": [
+      "NaN"
+    ]
+  },
+  {
+    "id": [
+      "25567233"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "25567233"
+    ],
+    "pmcid": [
+      "PMC4417228"
+    ],
+    "DOI": [
+      "10.1186/1746-4269-11-3"
+    ],
+    "title": [
+      "Landscape ethnoecological knowledge base and management of ecosystem services in a Szekely-Hungarian pre-capitalistic village system (Transylvania, Romania)."
+    ],
+    "authorString": [
+      "Molnár Z, Gellény K, Margóczi K, Biró M."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Molnár Z"
+            ],
+            "firstName": [
+              "Zsolt"
+            ],
+            "lastName": [
+              "Molnár"
+            ],
+            "initials": [
+              "Z"
+            ],
+            "affiliation": [
+              "Institute of Ecology and Botany, MTA Centre for Ecological Research, Hungarian Academy of Sciences, Alkotmány u. 2-4, H-2163, Vácrátót, Hungary. molnar.zsolt@okologia.mta.hu."
+            ]
+          },
+          {
+            "fullName": [
+              "Gellény K"
+            ],
+            "firstName": [
+              "Krisztina"
+            ],
+            "lastName": [
+              "Gellény"
+            ],
+            "initials": [
+              "K"
+            ],
+            "affiliation": [
+              "University of Szeged Department of Ecology, Közép fasor 52, H-6726, Szeged, Hungary. gelleny.kriszta@gmail.com."
+            ]
+          },
+          {
+            "fullName": [
+              "Margóczi K"
+            ],
+            "firstName": [
+              "Katalin"
+            ],
+            "lastName": [
+              "Margóczi"
+            ],
+            "initials": [
+              "K"
+            ],
+            "affiliation": [
+              "University of Szeged Department of Ecology, Közép fasor 52, H-6726, Szeged, Hungary. margoczi@bio.u-szeged.hu."
+            ]
+          },
+          {
+            "fullName": [
+              "Biró M"
+            ],
+            "firstName": [
+              "Marianna"
+            ],
+            "lastName": [
+              "Biró"
+            ],
+            "initials": [
+              "M"
+            ],
+            "affiliation": [
+              "Institute of Ecology and Botany, MTA Centre for Ecological Research, Hungarian Academy of Sciences, Alkotmány u. 2-4, H-2163, Vácrátót, Hungary. biro.marianna@okologia.mta.hu."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "volume": [
+          "11"
+        ],
+        "journalIssueId": [
+          "2262614"
+        ],
+        "dateOfPublication": [
+          "2015 "
+        ],
+        "monthOfPublication": [
+          "0"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-01-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Journal of ethnobiology and ethnomedicine"
+            ],
+            "ISOAbbreviation": [
+              "J Ethnobiol Ethnomed"
+            ],
+            "medlineAbbreviation": [
+              "J Ethnobiol Ethnomed"
+            ],
+            "NLMid": [
+              "101245794"
+            ],
+            "ESSN": [
+              "1746-4269"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "3"
+    ],
+    "abstractText": [
+      "BACKGROUND: Previous studies showed an in-depth ecological understanding by traditional people of managing natural resources. We studied the landscape ethnoecological knowledge (LEEK) of Székelys on the basis of 16-19(th) century village laws. We analyzed the habitat types, ecosystem services and sustainable management types on which village laws had focused. METHODS: Székelys had self-governed communities formed mostly of \"noble peasants\". Land-use was dominated by commons and regulated by village laws framed by the whole community. Seventy-two archival laws from 52 villages, resulting in 898 regulations, were analyzed using the DPSIR framework. Explicit and implicit information about the contemporary ecological knowledge of Székelys was extracted. We distinguished between responses that limited use and supported regeneration and those that protected produced/available ecosystem services and ensured their fair distribution. RESULTS: Most regulations referred to forests (674), arable lands (562), meadows (448) and pastures (134). Székelys regulated the proportion of arable land, pasture and forest areas consciously in order to maximize long-term exploitation of ecosystem services. The inner territory was protected against overuse by relocating certain uses to the outer territory. Competition for ecosystem services was demonstrated by conflicts of pressure-related (mostly personal) and response-related (mostly communal) driving forces. Felling of trees (oaks), grazing of forests, meadows and fallows, masting, use of wild apple/pear trees and fishing were strictly regulated. Cutting of leaf-fodder, grazing of green crops, burning of forest litter and the polluting of streams were prohibited. Marketing by villagers and inviting outsiders to use the ecosystem services were strictly regulated, and mostly prohibited. Székelys recognized at least 71 folk habitat types, understood ecological regeneration and degradation processes, the history of their landscape and the management possibilities of ecosystem services. Some aspects of LEEK were so well known within Székely communities that they were not made explicit in village laws, others remained implicit because they were not related to regulations. CONCLUSIONS: Based on explicit and implicit information, we argue that Székelys possessed detailed knowledge of the local ecological system. Moreover the world's first known explicit mention of ecosystem services (\"Benefits that are provided by Nature for free\") originated from this region from 1786."
+    ],
+    "affiliation": [
+      "Institute of Ecology and Botany, MTA Centre for Ecological Research, Hungarian Academy of Sciences, Alkotmány u. 2-4, H-2163, Vácrátót, Hungary. molnar.zsolt@okologia.mta.hu."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Electronic"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't"
+        ]
+      }
+    ],
+    "subsetList": [
+      {
+        "subset": [
+          {
+            "code": [
+              "IM"
+            ],
+            "name": [
+              "Index Medicus"
+            ]
+          }
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4417228?pdf=render"
+            ]
+          },
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4417228"
+            ]
+          },
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.1186/1746-4269-11-3"
+            ]
+          }
+        ]
+      }
+    ],
+    "isOpenAccess": [
+      "Y"
+    ],
+    "inEPMC": [
+      "Y"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "hasPDF": [
+      "Y"
+    ],
+    "hasBook": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "Y"
+    ],
+    "hasTextMinedTerms": [
+      "Y"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2015-07-16"
+    ],
+    "dateOfRevision": [
+      "2015-07-18"
+    ],
+    "electronicPublicationDate": [
+      "2015-01-07"
+    ],
+    "firstPublicationDate": [
+      "2015-01-07"
+    ],
+    "luceneScore": [
+      "NaN"
+    ]
+  }
+]
