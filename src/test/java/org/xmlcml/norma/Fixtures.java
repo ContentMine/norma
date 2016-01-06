@@ -15,6 +15,7 @@ public class Fixtures {
 	public final static File TEST_JSON_DIR = new File(Fixtures.TEST_NORMA_DIR, "json");
 	public final static File TEST_BIBLIO_DIR = new File(Fixtures.TEST_NORMA_DIR, "biblio");
 	public final static File TEST_PUBSTYLE_DIR = new File(Fixtures.TEST_NORMA_DIR, "pubstyle");
+	public final static File TEST_PATENTS_DIR = new File(Fixtures.TEST_NORMA_DIR, "patents");
 	public final static File TEST_TEX_DIR = new File(Fixtures.TEST_NORMA_DIR, "tex");
 	
 	public final static File TEST_HINDAWI_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "hindawi");
@@ -27,7 +28,10 @@ public class Fixtures {
 	public final static File TEST_SEDAR_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "sedar/");
 	
 	public final static File TEST_ASTROPHYS_DIR = new File(Fixtures.TEST_PUBSTYLE_DIR, "astrophysj/");
-	
+
+	public final static File TEST_USPTO_DIR = new File(Fixtures.TEST_PATENTS_DIR, "uspto");
+	public final static File TEST_USPTO08978_DIR = new File(Fixtures.TEST_USPTO_DIR, "UTIL08978");
+
 	
 	public final static File F507405_DIR = new File(Fixtures.TEST_HINDAWI_DIR, "507405/");
 	public final static File F507405_HTML = new File(Fixtures.F507405_DIR, "fulltext.html");

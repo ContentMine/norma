@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978164-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978164</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13541816</doc-number>
+<date>20120705</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>368</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>012</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classification-national>
+<country>US</country>
+<main-classification>  2 82</main-classification>
+<further-classification>  2227</further-classification>
+<further-classification>441 91</further-classification>
+<further-classification> 36 29</further-classification>
+<further-classification> 36 89</further-classification>
+<further-classification> 36109</further-classification>
+<further-classification> 361176</further-classification>
+</classification-national>
+<invention-title id="d2e53">Wader pants system with inflatable membranes</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>3888242</doc-number>
+<kind>A</kind>
+<name>Harris et al.</name>
+<date>19750600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>601152</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>4039039</doc-number>
+<kind>A</kind>
+<name>Gottfried</name>
+<date>19770800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>602 13</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4242769</doc-number>
+<kind>A</kind>
+<name>Rayfield et al.</name>
+<date>19810100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>441 91</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6317893</doc-number>
+<kind>B1</kind>
+<name>Walton</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2227</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7721352</doc-number>
+<kind>B1</kind>
+<name>Swift</name>
+<date>20100500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 82</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>20</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification> 36  4</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36  73</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36109</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36 93</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36136</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 361176</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36 89</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36 29</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 69</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2227</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  22431</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 82</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 46</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 79</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2  211</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2901</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2DIG 3</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2DIG 5</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2  214</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>441 90</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>441 91</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>441102</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>441109</main-classification>
+</classification-national>
+<classification-cpc-text>A41D 13/012</classification-cpc-text>
+<classification-cpc-text>A41D 13/0125</classification-cpc-text>
+<classification-cpc-text>B63C 9/105</classification-cpc-text>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>3</number-of-drawing-sheets>
+<number-of-figures>6</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20140007318</doc-number>
+<kind>A1</kind>
+<date>20140109</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Jones</last-name>
+<first-name>Seth Thomas</first-name>
+<address>
+<city>Russellville</city>
+<state>AR</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Cooper</last-name>
+<first-name>Christopher Michael</first-name>
+<address>
+<city>Conway</city>
+<state>AR</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Jones</last-name>
+<first-name>Seth Thomas</first-name>
+<address>
+<city>Russellville</city>
+<state>AR</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Cooper</last-name>
+<first-name>Christopher Michael</first-name>
+<address>
+<city>Conway</city>
+<state>AR</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Butscher</last-name>
+<first-name>Joseph M.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<orgname>The Small Patent Law Group, LLC</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<examiners>
+<primary-examiner>
+<last-name>Worrell</last-name>
+<first-name>Danny</first-name>
+<department>3765</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Annis</last-name>
+<first-name>Khaled</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A system for providing a secure fit between feet and/or ankles of an individual and boot sections of wader pants may include wader pants including boot sections, and wader support pants configured to be positioned underneath or over the wader pants. The wader support pants may include inflatable membranes configured to be disposed within or on the boot sections of the wader pants, and a pump in fluid communication with the inflatable membranes. The pump is operable to inflate the membranes to provide a secure fit between the boot sections of the wader pants and the feet and/or ankles of the individual.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="124.21mm" wi="221.32mm" file="US08978164-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="224.37mm" wi="179.58mm" file="US08978164-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="218.52mm" wi="168.99mm" file="US08978164-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="164.00mm" wi="186.01mm" file="US08978164-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">Embodiments generally relate to wader pants, and, more particularly, to a system and method for securely fitting wader pants to feet and/or ankles of an individual.</p>
+<p id="p-0003" num="0002">The sport and pastime of fishing may be practiced at various locations. Indeed, fishing may be much more than a sport or pastime, as many individuals are employed as commercial fishermen, for example. Some individuals fish at sea, while others fish within freshwater lakes, rivers, streams, or the like. In both environments, fishermen may fish off a dry platform, such off a dock or pier, or aboard a boat. Some fishermen prefer to directly wade into a stream and fish within the stream. For example, many fly-fishing enthusiasts prefer to fish within rivers and streams.</p>
+<p id="p-0004" num="0003">In order to maintain a dry lower body while fishing within a stream, river, or lake, many individuals wear wader pants. Hunters often also wear wader pants while hunting in wet areas. For example, duck hunters may lie in wait within duck blinds proximate lakes, streams, or the like where ducks congregate. Thus, wader pants may be used by fishermen, hunters, hikers, or anyone else that desires to wade through wet, muddy, or other such terrain.</p>
+<p id="p-0005" num="0004">Wader pants are generally formed of a water-impermeable substance, for example, rubber, and include boot portions integrally formed and connected with respective pant sections. Typical wader pants include suspenders connected to the waist of the wader pants. The suspenders ensure that the wader pants do not slide off an individual.</p>
+<p id="p-0006" num="0005">An individual wearing wader pants typically wades into a body of water to a depth that does not exceed the height of the wader pants on the wearer. For example, an individual wades into a stream such that the water level is below the waist of the individual. As such, the wader pants prevent water from infiltrating into the wader pants.</p>
+<p id="p-0007" num="0006">As can be appreciated, rivers, streams, swamps, lakes, wetlands, and the like may have muddy, sandy or otherwise sloppy beds or bases that may prove difficult to walk or otherwise traverse. Often, as an individual wades through a river, for example, the river bed moves around the individual's wader pant boot sections. The interaction of the river bed with the wader pant boot sections may produce a suction effect that tends to retain the boot sections within the river bed. As the individual continues to wade through the river bed, the suction effect may exert a retaining force into the boot sections, thereby making continued movement difficult. As the individual continues to attempt to walk over the river bed, the suction effect of the river bed may cause the individual's foot to slip within the wader pants, such that the individual's foot or feet retreat into pant sections of the wader pants. When an individual's feet retreat out of the boot sections of the wader pants, the individual may trip, or otherwise find walking difficult.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0008" num="0007">Certain embodiments provide a system for providing a secure fit between feet and/or ankles of an individual and boot sections of wader pants. The system may include wader pants including boot sections, and wader support pants configured to be positioned underneath or over the wader pants.</p>
+<p id="p-0009" num="0008">The wader support pants may include inflatable membranes integrally formed with the wader support pants and configured to be disposed within or on the boot sections of the wader pants, and a pump in fluid communication with the inflatable membranes.</p>
+<p id="p-0010" num="0009">The pump is operable to inflate the membranes to provide a secure fit between the boot sections of the wader pants and the feet and/or ankles of the individual.</p>
+<p id="p-0011" num="0010">The wader support pants may also include an air delivery system that fluidly connects the inflatable membranes to the pump. The air delivery system may include an inlet hose fluidly connected to leg hoses that fluidly connect to the inflatable membranes. The air delivery system may also include an extension hose fluidly coupling the leg hoses to the inlet hose.</p>
+<p id="p-0012" num="0011">The pump may be removably connected to the air delivery system. The pump may include an inflation bulb configured to be engaged to inflate the inflatable membranes and a deflation valve configured to be engaged to deflate the inflatable membranes.</p>
+<p id="p-0013" num="0012">The wader support pants may include a waist section connected to leg sections having ankle sections at distal ends. The inflatable membranes may be proximate the ankle sections. The inflatable membranes may include annular cuffs configured to surround one or both of the ankles or feet. Optionally, the inflatable membranes may include inflatable pouches configured to be positioned proximate heels of the individual.</p>
+<p id="p-0014" num="0013">The wader support pants may be wader lining pants configured to be positioned underneath the wader pants. Alternatively, the wader support pants may be wader cover pants configured to be positioned over the wader pants.</p>
+<p id="p-0015" num="0014">Certain embodiments provide support pants configured to provide a secure fit between feet and/or ankles of an individual and separate and distinct boot sections. The support pants may include a waist section integrally connected to leg sections, wherein ankle sections are located at distal ends of the leg sections. The support pants may also include inflatable membranes proximate the ankle sections, and a pump in fluid communication with the inflatable membranes through an air delivery system. The pump is operable to inflate the membranes to provide a secure fit between the boot sections and the feet and/or ankles of the individual.</p>
+<p id="p-0016" num="0015">Certain embodiments provide wader support pants configured to provide a secure fit between feet and/or ankles of an individual and boot sections of wader pants. The wader support pants may include a waist section integrally connected to leg sections. The ankle sections may be located at distal ends of the leg sections. The waist section and the leg sections may be configured to be positioned underneath the wader pants. The wader support pants may also include inflatable membranes proximate the ankle sections. The inflatable membranes may include inflatable pouches configured to be proximate heels of the individual, or annular cuffs configured to surround one or both of the ankles or feet. The wader support pants may also include a pump removably connected to an air delivery system secured in or on the wader support pants. The air delivery system may include an inlet hose fluidly connected to an extension hose fluidly connected to leg hoses that fluidly connect to the inflatable membranes. The pump is operable to inflate the membranes to provide a secure fit between the boot sections of the wader pants and the feet and/or ankles of the individual.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF SEVERAL VIEWS OF THE DRAWINGS</heading>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a front view of wader support pants, according to an embodiment.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a simplified internal view of wader support pants, according to an embodiment.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a simplified view of a pump, according to an embodiment.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a transverse cross-sectional view of a wader support pant leg section with a deflated membrane within a boot section of wader pants, according to an embodiment.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a transverse cross-sectional view of a wader support pant section with an inflated membrane within a boot section of wader pants, according to an embodiment.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a flow chart of operating wader support pants, according to an embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<p id="p-0023" num="0022">The foregoing summary, as well as the following detailed description of certain embodiments of the present invention, will be better understood when read in conjunction with the appended drawings. For the purpose of illustrating the invention, there are shown in the drawings, certain embodiments. It should be understood, however, that the present invention is not limited to the arrangements and instrumentalities shown in the attached drawings.</p>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE INVENTION</heading>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 1</figref> illustrates a front view of wader support pants <b>10</b>, according to an embodiment. The wader support pants <b>10</b> may be wader lining pants that are configured to be worn underneath a pair of wader pants, in order to provide a secure fit between an individual's feet, and boot sections of the water pants. Alternatively, the wader support pants <b>10</b> may be wader cover pants configured to be worn over a pair of wader pants, in order to provide a secure fit between an individual's feet, and boot sections of the wader pants. The wader support pants <b>10</b> may be formed of various materials, such as cloth, rubber, or the like.</p>
+<p id="p-0025" num="0024">The wader support pants <b>10</b> include leg sections <b>12</b> integrally connected to a waist section <b>14</b>. Each leg section <b>12</b> includes an internal passage (not shown in <figref idref="DRAWINGS">FIG. 1</figref>) configured to allow an individual's leg to pass therein. An individual's foot passes out of an opening proximate an ankle section <b>16</b> of the leg section <b>12</b>. A stirrup <b>18</b> may extend downwardly from each ankle section <b>16</b>. Each stirrup <b>18</b> may be formed of a flexible piece of material, such as rubber, cloth, or the like. Distal portions <b>20</b> of the stirrups <b>18</b> are configured to be positioned underneath the feet of an individual to ensure that the leg sections <b>12</b> remain fully extended over the legs.</p>
+<p id="p-0026" num="0025">A pump <b>22</b> extends from the wader support pants <b>10</b> proximate the waist section <b>14</b>. The pump <b>22</b> includes an inflation bulb <b>24</b> connected to a valve <b>26</b>, which is, in turn, connected to a hose <b>28</b>. The hose <b>28</b> is, in turn, removably connected to a connection port (not shown in <figref idref="DRAWINGS">FIG. 1</figref>) within or extending from the wader support pants <b>10</b>. The connection port is, in turn, connected to an air delivery system within the wader support pants <b>10</b> that fluidly connects the pump <b>22</b> to inflatable membranes (not shown in <figref idref="DRAWINGS">FIG. 1</figref>) proximate the ankle sections <b>16</b> of the wader support pants <b>10</b>.</p>
+<p id="p-0027" num="0026">In operation, an individual puts on the wader support pants <b>10</b> by inserting his/her legs through the waist section <b>14</b> and into the individual leg sections <b>12</b> until his/her feet engage the stirrups <b>18</b>. Once the wader support pants <b>10</b> are on the individual, he/she puts wader pants over the wader support pants <b>10</b>. In order to provide a secure fit between boot sections of the wader pants and the feet and/or ankles, an individual operates the pump <b>22</b> to inflate the inflatable membranes. After a desired fit is achieved, the individual may tuck the pump <b>22</b> into the wader support pants <b>10</b>, or between the wader support pants <b>10</b> and the wader pants. Alternatively, the individual may remove the pump <b>22</b> at the connection port. For example, the pump <b>22</b> may threadably connect to the connection port. The individual may rotate the pump <b>22</b> relative to the connection port to remove the pump <b>22</b> from the connection port, which may include a valve, such as a check valve, that prevents air from escaping out of the connection port when the pump <b>22</b> is removed therefrom.</p>
+<p id="p-0028" num="0027">While the pump <b>22</b> is shown as a manual pump, the pump <b>22</b> may alternatively be an automatic air pump. For example, the pump <b>22</b> may include an air compressor and an actuator that may be automatically operated to deliver air to the inflatable membranes.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a simplified internal view of the wader support pants <b>10</b>, according to an embodiment. As noted above, the wader support pants <b>10</b> include a connection port <b>30</b> that connects to an air delivery system <b>32</b>. The connection port <b>30</b> may be a coupling member, such as a threaded, latching, snapping, or other such coupling device that is configured to mate with a reciprocal member of the pump <b>22</b> (not shown in <figref idref="DRAWINGS">FIG. 2</figref>). The connection portion <b>30</b> includes an internal air passage that connects to the air delivery system <b>32</b>. A valve, such as a check valve, may be disposed within the internal air passage, and configured to prevent air from escaping through the connection port <b>30</b> when the pump <b>22</b> is removed therefrom.</p>
+<p id="p-0030" num="0029">The air delivery system <b>32</b> may be formed of an air-tight material defining internal air passages. For example, the air delivery system <b>32</b> may be formed of rubber hoses. The air delivery system <b>32</b> includes an inlet hose <b>34</b> that connects to the connection port <b>30</b>. The inlet hose <b>34</b> may be securely attached to interior portions of the wader support pants <b>10</b>. For example, the inlet hose <b>34</b> may be integrally attached to interior portions of the wader support pants <b>10</b> through bonding, adhesives, fasteners, or the like. The inlet hose <b>34</b> may extend from the connection port <b>30</b>, which may be proximate to the waist section <b>14</b>, to a central internal area <b>36</b> of the wader support pants <b>10</b>. Alternatively, the inlet hose <b>34</b> may extend from the connection port <b>30</b> down one of the leg sections <b>12</b>. The inlet hose <b>34</b> integrally connects to an extension hose <b>38</b> that extends from the waist section <b>14</b> towards a crotch section <b>40</b> of the wader support pants <b>10</b>. Proximate the crotch section <b>40</b>, the extension hose <b>38</b> branches off into leg hoses <b>42</b> that extend over interior portions of the leg sections <b>12</b> and into inflatable membranes <b>44</b>. Thus, the pump <b>22</b> and the air delivery system <b>32</b> are in fluid communication with the membranes <b>44</b>.</p>
+<p id="p-0031" num="0030">The inflatable membranes <b>44</b> may be configured to be located behind an individual's feet, such as behind heels. In this manner, the inflatable membranes <b>44</b> may be inflatable pouches on or within the leg sections. Optionally, the inflatable membranes <b>44</b> may be configured to be positioned proximate toes, on top of feet, below feet, or at various other positions. Additionally, the inflatable membranes <b>44</b> may be annular cuffs that are configured to surround ankles of an individual. Optionally, the inflatable membranes <b>44</b> may be inflatable strips proximate the ankle sections <b>16</b> of the wader support pants <b>10</b>. The inflatable membranes <b>44</b> may be formed of an air-tight material, such as an elastomeric material, rubber, or the like. Each inflatable membrane <b>44</b> is an air-tight, flexible membrane defining an internal air chamber. The air delivery system <b>32</b> allows air to be pumped into the inflatable membranes <b>44</b> in order to expand the membranes <b>44</b>. Additionally, the air delivery system <b>32</b> is configured to allow the membranes <b>44</b> to be deflated.</p>
+<p id="p-0032" num="0031">As shown in <figref idref="DRAWINGS">FIG. 2</figref>, the air delivery system <b>32</b> may be positioned within the wader support pants <b>10</b>. Alternatively, the air delivery system <b>32</b> and/or the inflatable membranes <b>44</b> may be positioned outside of the wader support pants <b>10</b>. Additionally, the air delivery system <b>32</b> may be positioned at various other portions of the wader support pants <b>10</b>. For example, the connection port <b>30</b> may be positioned along the leg sections <b>12</b>. Also, the leg hoses <b>42</b> may branch from the inlet hose <b>34</b> proximate the waist section <b>14</b>, instead of the crotch section <b>40</b>. The air delivery system <b>32</b> may be positioned at the back or front of the wader support pants <b>10</b>.</p>
+<p id="p-0033" num="0032">Further, while the inflatable membranes <b>44</b> are shown proximate the ankle sections <b>16</b> of the wader support pants <b>10</b>, the inflatable membranes <b>44</b> may extend over greater lengths of the leg sections <b>12</b>. For example, the inflatable membranes <b>44</b> may extend over an entire length of each leg section <b>12</b>. Additionally, the wader support pants <b>10</b> may include integral foot sections, instead of the stirrups <b>18</b>, connected to distal ends of the leg sections <b>12</b>. The foot sections may be open- or closed-toed sections. The inflatable membranes <b>44</b> may extend into the foot sections. For example, the inflatable membranes <b>44</b> may extend through an entire length of the foot sections.</p>
+<p id="p-0034" num="0033"><figref idref="DRAWINGS">FIG. 3</figref> illustrates a simplified view of the pump <b>22</b>, according to an embodiment. The pump <b>22</b> includes the inflation bulb <b>24</b> connected to the valve <b>26</b>, which is, in turn, connected to the hose <b>28</b>. A reciprocal port <b>50</b> extends from a distal end of the hose <b>28</b>. The reciprocal port <b>50</b> is configured to removably connect to the connection port <b>30</b> (shown in <figref idref="DRAWINGS">FIG. 2</figref>). The connection port <b>30</b> and the reciprocal port <b>50</b> may be configured to threadably, latchably, snapably, or otherwise removably engage one another. Alternatively, the hose <b>28</b> may integrally connect to the air delivery system <b>32</b> (shown in <figref idref="DRAWINGS">FIG. 2</figref>) without a removable connection. That is, the pump <b>22</b> may be permanently secured to the air delivery system <b>32</b>.</p>
+<p id="p-0035" num="0034"><figref idref="DRAWINGS">FIG. 4</figref> illustrates a transverse cross-sectional view of a wader support pant leg section <b>12</b> with a deflated membrane <b>44</b> within a boot section <b>60</b> of wader pants <b>62</b>, according to an embodiment. As shown, an individual's foot <b>70</b> extends through the ankle section <b>16</b> of the wader support pants <b>10</b>. The distal portion <b>20</b> of the stirrup <b>18</b> is underneath the foot <b>70</b>. As shown in <figref idref="DRAWINGS">FIG. 4</figref>, the ankle <b>72</b> may not be securely and snugly fit within the boot section <b>60</b> of the wader pants <b>62</b>. Referring to <figref idref="DRAWINGS">FIGS. 1-4</figref>, in order to provide a secure, snug fit, the individual may operate the pump <b>22</b> in order to inflate the membranes <b>44</b>, which include air chambers <b>45</b> configured to receive and retain air delivered from the air delivery system <b>32</b> by operation of the pump <b>22</b>. For example, the individual may intermittently squeeze the pump <b>22</b> until a desired snug fit is achieved.</p>
+<p id="p-0036" num="0035">As shown in <figref idref="DRAWINGS">FIG. 4</figref>, the wader pants <b>62</b> may be separate and distinct from the wader support pants <b>10</b>. Alternatively, the wader support pants <b>10</b> may be integrally formed with the wader pants <b>62</b>. That is, the wader pants <b>62</b> may include inflatable membranes proximate ankle areas of the boot sections, and the inflatable membranes of the wader pants <b>62</b> may be operatively connected to an air delivery system, such as shown in <figref idref="DRAWINGS">FIG. 2</figref>. However, separate and distinct wader support pants <b>10</b> allow for use with any type of wader pant. That is, conventional wader pants may be retrofit with the wader support pants <b>10</b>.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 5</figref> illustrates a transverse cross-sectional view of the wader support pant section <b>12</b> with an inflated membrane <b>44</b> within the boot section <b>60</b> of the wader pants <b>62</b>, according to an embodiment. As shown, the membranes <b>44</b> have been inflated, thereby providing a secure snug fit between the ankle <b>72</b> and the boot section <b>60</b> of the wader pants <b>62</b>. The inflated membrane <b>44</b> is compressively sandwiched between an outer surface of the ankle <b>72</b> and an inner surface of the boot section <b>60</b> of the wader pants <b>62</b>. As such, the ankle <b>72</b> and foot <b>70</b> are secured within the boot section <b>60</b>. Therefore, the ankle <b>72</b> and foot <b>70</b> are prevented from retreating out of the boot section <b>60</b>. The pump <b>22</b> may be engaged to inflate the membranes <b>44</b> of the wader support pants <b>10</b> when an individual enters wet, muddy, or otherwise sloppy terrain, such as within a river bed, swamp, marsh, or the like. By inflating the membranes <b>44</b>, the boot sections <b>60</b> of the wader pants <b>62</b> securely and snugly engage the ankles <b>72</b> and/or feet <b>70</b>, thereby ensuring that any suction effect of the terrain will not cause the feet to retreat out of the boot sections <b>60</b>.</p>
+<p id="p-0038" num="0037">In order to deflate the membranes <b>44</b>, the wearer may engage the valve <b>26</b> on the pump <b>22</b>. For example, the valve <b>26</b> may be configured to be rotated into a deflation position that allows air within the membranes <b>44</b> and the air delivery system <b>32</b> to be released into the atmosphere.</p>
+<p id="p-0039" num="0038">As described above, the wader support pants <b>10</b> may be positioned inside or outside of the wader pants. For example, instead of expanding within the boot sections, the membranes <b>44</b> may ring around the boot sections and, during inflation, squeeze the boot sections into the ankle and/or feet. In this manner, the wader support pants may not line the wader pants, but may cover the wader pants.</p>
+<p id="p-0040" num="0039">Additionally, as noted above, the inflatable membranes <b>44</b> may cover and/or surround more portions of the individual's anatomy than shown in <figref idref="DRAWINGS">FIGS. 4 and 5</figref>. For example, the inflatable membranes <b>44</b> may surround the feet and ankles. Optionally, the inflatable membranes <b>44</b> may extend up to and past the knees, for example.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a flow chart of operating wader support pants, according to an embodiment. At <b>80</b>, an individual puts wader support pants on underneath wader pants. For example, the individual may first put on the wader support pants, and then the wader pants. Optionally, if the wader support pants are wader cover pants, the individual would put on the wader pants before the wader cover pants.</p>
+<p id="p-0042" num="0041">Next, at <b>82</b>, the individual determines whether the terrain is susceptible to a suction effect. If yes, the process continues to <b>84</b>, in which the individual inflates the membranes of the wader support pants. For example, the individual may intermittently squeeze a bulb of a pump that is in fluid connection with the membranes. Next, at <b>86</b>, the individual's ankle and/or foot, for example, are snugly and securely fit to the wader pants through the inflation operation. The process then returns to <b>82</b>.</p>
+<p id="p-0043" num="0042">If the terrain is not susceptible to a suction effect, at <b>88</b>, the individual may deflate the membranes, or not deflate the membranes, depending on whether the individual prefers a tighter fit around his/her ankles. As explained above, the individual may deflate the membranes around his/her ankles by engaging a valve of the pump. Optionally, the deflation valve may be located anywhere on or within the air delivery system.</p>
+<p id="p-0044" num="0043">Referring to <figref idref="DRAWINGS">FIGS. 1-6</figref>, the wader lining pants have been described as being used with wader pants. However, the wader lining pants may also be used with boots, such as much-type boots worn by hunters, shoes, and various other forms of footwear in order to maintain a secure and snug fit between an individual's feet and the footwear. While the pants have been described as wader lining or cover pants, the pants may be used with any type of footwear, pants, or the like that are worn by hunters, fishermen, hikers, and the like. Thus, embodiments provide a system and method of ensuring that an individual's feet remain securely and snugly positioned within wader pants. Embodiments provide a system and method of inflating membranes of wader lining or cover pants to securely fit ankles and/or feet to boot sections of wader pants. Embodiments provide wader lining or cover pants that ensure that an individual's feet do not retreat out of boot sections of wader pants.</p>
+<p id="p-0045" num="0044">While various spatial and directional terms, such as top, bottom, lower, mid, lateral, horizontal, vertical, front and the like may be used to describe embodiments of the present invention, it is understood that such terms are merely used with respect to the orientations shown in the drawings. The orientations may be inverted, rotated, or otherwise changed, such that an upper portion is a lower portion, and vice versa, horizontal becomes vertical, and the like.</p>
+<p id="p-0046" num="0045">While the invention has been described with reference to certain embodiments, it will be understood by those skilled in the art that various changes may be made and equivalents may be substituted without departing from the scope of the invention. In addition, many modifications may be made to adapt a particular situation or material to the teachings of the invention without departing from its scope. Therefore, it is intended that the invention not be limited to the particular embodiments disclosed, but that the invention will include all embodiments falling within the scope of the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A system adapted to provide a secure fit between feet or ankles of an individual and boot sections of wader pants, the system comprising:
+<claim-text>wader pants including a waist section integrally connected to leg sections and boot sections positioned at ankle sections, wherein the ankle sections are located at distal ends of the leg sections; and</claim-text>
+<claim-text>wader support pants coextensive and be positioned underneath or over the wader pants, wherein the wader support pants comprise:
+<claim-text>inflatable membranes integrally formed with the wader support pants, wherein the inflatable membranes are disposed within or on the boot sections of the wader pants; and</claim-text>
+<claim-text>a pump in fluid communication with the inflatable membranes, wherein the pump is adapted and operable to inflate the membranes to provide a secure fit between the boot sections of the wader pants and the feet or ankles of the individual.</claim-text>
+</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the wader support pants further comprise an air delivery system that fluidly connects the inflatable membranes to the pump.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The system of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the air delivery system comprises an inlet hose fluidly connected to leg hoses that fluidly connect to the inflatable membranes.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The system of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the air delivery system further comprises an extension hose fluidly coupling the leg hoses to the inlet hose.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The system of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the pump is removably connected to the air delivery system.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the wader support pants comprise a waist section connected to leg sections having ankle sections at distal ends, and wherein the inflatable membranes are proximate the ankle sections.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the inflatable membranes comprise annular cuffs configured to surround one or both of the ankles or feet.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the wader support pants are wader lining pants configured to be positioned underneath the wader pants.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The system of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the pump comprises an inflation bulb configured to be engaged to inflate the inflatable membranes and a deflation valve configured to be engaged to deflate the inflatable membranes.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. Support pants configured to provide a secure fit between feet or ankles of an individual and separate and distinct boot sections, the support pants comprising:
+<claim-text>wader pants coextensive with the support pants and positioned underneath or over the support pants</claim-text>
+<claim-text>a waist section integrally connected to leg sections, wherein ankle sections are located at distal ends of the leg sections;</claim-text>
+<claim-text>inflatable membranes integrally formed with the ankle sections; and</claim-text>
+<claim-text>a pump in fluid communication with the inflatable membranes through an air delivery system, wherein the pump is adapted and operable to inflate the membranes to provide a secure fit between the boot sections and the feet or ankles of the individual.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the air delivery system comprises an inlet hose fluidly connected to leg hoses that fluidly connect to the inflatable membranes.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The support pants of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the air delivery system further comprises an extension hose fluidly coupling the leg hoses to the inlet hose.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the pump is removably connected to the air delivery system.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the pump extends from the waist section.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the inflatable membranes comprise annular cuffs configured to surround one or both of the ankles or feet.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the inflatable membranes comprise inflatable pouches configured to be positioned proximate heels of the individual.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the support pants are wader lining pants configured to be positioned underneath wader pants.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the pump comprises an inflation bulb configured to be engaged to inflate the inflatable membranes and a deflation valve configured to be engaged to deflate the inflatable membranes.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. Wader support pants configured to provide a secure fit between feet or ankles of an individual and boot sections of wader pants, the wader support pants comprising:
+<claim-text>wader pants coextensive with the wader support pants and positioned underneath or over the wader support pants</claim-text>
+<claim-text>a waist section integrally connected to leg sections, wherein ankle sections are located at distal ends of the leg sections, wherein the waist section and the leg sections are positioned underneath the wader pants;</claim-text>
+<claim-text>inflatable membranes integrally formed with the ankle sections; and</claim-text>
+<claim-text>a pump removably connected to an air delivery system secured in or on the wader support pants, wherein the air delivery system comprises an inlet hose fluidly connected to an extension hose fluidly connected to leg hoses that fluidly connect to the inflatable membranes, wherein the pump is adapted and operable to inflate the membranes to provide a secure fit between the boot sections of the wader pants and the feet or ankles of the individual.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The wader support pants of <claim-ref idref="CLM-00010">claim 10</claim-ref>, wherein the inflatable membranes comprise one or both of inflatable pouches configured to be positioned proximate heels of the individual or annular cuffs configured to surround one or both of the ankles or feet. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

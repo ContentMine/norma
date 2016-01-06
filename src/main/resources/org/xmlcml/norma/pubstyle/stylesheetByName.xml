@@ -6,4 +6,6 @@
   <stylesheet name="jats2shtml">/org/xmlcml/norma/pubstyle/nlm/jats/jats2shtml.xsl</stylesheet>
   <stylesheet name="nature2html">/org/xmlcml/norma/pubstyle/nature/toHtml.xsl</stylesheet>
   <stylesheet name="hind2xml">/org/xmlcml/norma/pubstyle/hindawi/groupMajorSections.xsl</stylesheet>
+  <!--  patents  -->
+  <stylesheet name="uspto2html">/org/xmlcml/norma/patents/uspto/toHtml.xsl</stylesheet>
 </stylesheetList>
