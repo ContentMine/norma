@@ -33,15 +33,15 @@
 
 <!--  COPY (must relearn <xs:copy> ) -->
 	<xsl:template match="
-		*[local=name()='p'] | 
-		*[local=name()='sup'] | 
-		*[local=name()='tr'] | 
-		*[local=name()='td'] | 
-		*[local=name()='table'] | 
-		*[local=name()='thead'] | 
-		*[local=name()='caption'] | 
-		*[local=name()='col'] | 
-		*[local=name()='colgroup'] " >
+		*[local-name()='p'] | 
+		*[local-name()='sup'] | 
+		*[local-name()='tr'] | 
+		*[local-name()='td'] | 
+		*[local-name()='table'] | 
+		*[local-name()='thead'] | 
+		*[local-name()='caption'] | 
+		*[local-name()='col'] | 
+		*[local-name()='colgroup'] " >
 		<xsl:element name="{local-name()}">
 			<xsl:for-each select="@*"><xsl:attribute name="{local-name()}"><xsl:value-of select="."/></xsl:attribute></xsl:for-each>
 			<xsl:apply-templates select="*|text()" />

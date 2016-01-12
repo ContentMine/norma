@@ -26,30 +26,30 @@
 <!--  unmatched tags -->
 	<xsl:template match="*" >
 	    <div>
-	        <xsl:attribute name="tagx"><xsl:value-of select="local-name()"/></xsl:attribute>
+	        <xsl:attribute name="tagxxx"><xsl:value-of select="local-name()"/></xsl:attribute>
 			<xsl:apply-templates />
 	    </div>
 	</xsl:template>
 
-<!--  COPY (must relearn <xs:copy> ) -->
 	<xsl:template match="
-		*[local=name()='p'] | 
-		*[local=name()='sup'] | 
-		*[local=name()='tr'] | 
-		*[local=name()='td'] | 
-		*[local=name()='table'] | 
-		*[local=name()='thead'] | 
-		*[local=name()='caption'] | 
-		*[local=name()='col'] | 
-		*[local=name()='colgroup'] " >
-		<xsl:element name="{local-name()}">
-			<xsl:for-each select="@*"><xsl:attribute name="{local-name()}"><xsl:value-of select="."/></xsl:attribute></xsl:for-each>
-			<xsl:apply-templates select="*|text()" />
-		</xsl:element>
-	</xsl:template>
+		*[local-name()='p'] | 
+		*[local-name()='sup'] | 
+		*[local-name()='tr'] | 
+		*[local-name()='td'] | 
+		*[local-name()='table'] | 
+		*[local-name()='thead'] | 
+		*[local-name()='caption'] | 
+		*[local-name()='col'] | 
+		*[local-name()='colgroup'] " >
+        <xsl:copy>
+           <xsl:apply-templates select="@* | node()" />
+        </xsl:copy>
+        </xsl:template>
+
 
 <!--  SPANS, mainly in references -->
-	<xsl:template match="*[local-name()='given-names'] |
+	<xsl:template match="
+	    *[local-name()='given-names'] |
 	 	*[local-name()='surname'] |
 	 	*[local-name()='year'] |
 	 	*[local-name()='article-title'] |
