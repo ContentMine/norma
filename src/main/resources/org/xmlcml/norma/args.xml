@@ -1,4 +1,5 @@
-<argList name="norma" version="0.1.12">
+<argList name="norma" version="0.2.0">
+  <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
