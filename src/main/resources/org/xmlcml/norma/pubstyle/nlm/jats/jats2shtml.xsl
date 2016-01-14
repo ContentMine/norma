@@ -102,11 +102,13 @@
 	</xsl:template>
 	
 	<xsl:template name='summary'>
+	<!-- 
 	<xsl:message/>
 	    <xsl:message>TITLE-GROUP: <xsl:value-of select="$titleGroup"/></xsl:message>
 	    <xsl:for-each select="$secType"><xsl:message>TYPE: <xsl:value-of select="."/></xsl:message></xsl:for-each>
 	    <xsl:for-each select="$secTitle"><xsl:message>TITLE: <xsl:value-of select="."/></xsl:message></xsl:for-each>
 		<xsl:message>INTRO: <xsl:value-of select="$secIntro/*[local-name()='title']"/></xsl:message>
+		-->
 <!-- 		<xsl:message>INTRO1: <xsl:value-of select="$secIntro"/></xsl:message> -->
 	
 	</xsl:template>

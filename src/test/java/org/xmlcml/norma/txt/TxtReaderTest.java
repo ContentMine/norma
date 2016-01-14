@@ -15,7 +15,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.euclid.IntArray;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 
 public class TxtReaderTest {
 	
@@ -27,7 +27,7 @@ public class TxtReaderTest {
 
 	@Test
 	public void testReadHal2() throws Exception {
-		File file = new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt");
+		File file = new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt");
 		List<String> lines = FileUtils.readLines(file);
 		Assert.assertEquals("lines", 3548, lines.size());
 		IntArray pageLines = readPages(lines, "EVEN_ODD");
@@ -62,7 +62,7 @@ public class TxtReaderTest {
 	
 	@Test
 	public void testReadHal2Pages() throws Exception {
-		AnnotatedLineContainer pageHeadingContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
+		AnnotatedLineContainer pageHeadingContainer = createAnnotatedLineContainer(new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		AnnotatedLineContainer pages = pageHeadingContainer.extractPageHeadings();
 		for (AnnotatedLine page : pages) {
 			LOG.trace(">p>"+page);
@@ -71,7 +71,7 @@ public class TxtReaderTest {
 
 	@Test
 	public void testReadHal2Chapter() throws Exception {
-		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
+		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		AnnotatedLineContainer chapterHeadings = annotatedLineContainer.extractChapterHeadings(0, annotatedLineContainer.size());
 		LOG.trace("=======================");
 		for (AnnotatedLine chapterHeading : chapterHeadings) {
@@ -86,7 +86,7 @@ public class TxtReaderTest {
 
 	@Test
 	public void testReadHal2ChapterSections() throws Exception {
-		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
+		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		List<Chapter> chapterList = annotatedLineContainer.extractChapters();
 		for (Chapter chapter : chapterList) {
 			LOG.trace("-----------------------");
@@ -119,7 +119,7 @@ public class TxtReaderTest {
 	@Test
 	public void testReadHal2Toc() throws Exception {
 		AnnotatedLineContainer annotatedLineContainer = createAnnotatedLineContainer(
-				new File(Fixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
+				new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt"));
 		int startToc = annotatedLineContainer.readToL1R1(0);
 		int startChapter = annotatedLineContainer.readToChapter(startToc);
 		Toc toc = annotatedLineContainer.readToc(startToc, startChapter);

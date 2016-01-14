@@ -7,10 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
-import net.minidev.json.JSONArray;
-import net.minidev.json.JSONObject;
-import net.minidev.json.JSONValue;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
@@ -24,6 +20,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.ReadContext;
+
+import net.minidev.json.JSONArray;
 
 public class EPMCConverter {
 
@@ -101,7 +99,6 @@ public class EPMCConverter {
 		Object result = ctx.read(jsonPath);
 		
 		JSONArray jsonArray = (JSONArray) result;
-		LOG.debug(">>Array>>"+jsonArray);
 		
 		for (int i = 0; i < jsonArray.size(); i++) {
 			Object object = jsonArray.get(i);
@@ -109,16 +106,14 @@ public class EPMCConverter {
 				JSONArray jsonArray1 = (JSONArray) object;
 				if (jsonArray1.size() == 1) {
 					Object object1 = jsonArray1.get(0);
-					LOG.debug(">> "+object1.getClass());
 					if (object1 instanceof String) {
 						String s = object1.toString();
-						LOG.debug("STR: "+s);
 					} else {
-						LOG.debug(">CL>"+object1.getClass());
+						LOG.debug("unexpected object >CL>"+object1.getClass());
 					}
 				}
 			}
-			LOG.debug(">>?"+object.getClass()+": "+object);
+//			LOG.debug(">>?"+object.getClass()+": "+object);
 		}
 		return entry;
 //		return (JSONArray) result;

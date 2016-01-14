@@ -1,4 +1,6 @@
-<argList name="norma" version="0.2.0">
+<argList name="norma" version="0.2.2">
+  <p>20160114: tested after cmine</p>
+  <p>20160114: moved classes to NormaFixtures</p>
   <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
 	<arg name="char" brief="-c" long="--chars"

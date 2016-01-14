@@ -70,7 +70,7 @@ public class RISEntry {
 					System.err.println("Cannot add "+line);
 				}
 			} else {
-				System.out.println("Cannot add: "+line);
+				System.err.println("Cannot add: "+line);
 			}
 		}
 		return field;

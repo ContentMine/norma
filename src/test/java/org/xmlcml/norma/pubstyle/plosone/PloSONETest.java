@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
 
 public class PloSONETest {
@@ -31,7 +31,7 @@ public class PloSONETest {
 	public void testPlosonePDF() throws Exception {
 		File outputFile = new File("target/plosone/0115884.html");
 		String[] args = {
-				"-i", new File(Fixtures.F0115884_DIR, "fulltext.pdf").toString(),
+				"-i", new File(NormaFixtures.F0115884_DIR, "fulltext.pdf").toString(),
 				"-o", outputFile.toString(),
 		};
 		Norma norma = new Norma();
@@ -59,7 +59,7 @@ public class PloSONETest {
 		File outputFile = new File("target/plosone/0113556/");
 		FileUtils.deleteQuietly(outputFile);
 		String[] args = {
-				"-i", Fixtures.F0113556_HTML.toString(),
+				"-i", NormaFixtures.F0113556_HTML.toString(),
 				"--pubstyle", "src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml",
 				"-o", outputFile.toString(),
 		};
@@ -82,7 +82,7 @@ public class PloSONETest {
 	public void testPlosoneRawHTML() throws Exception {
 		File outputFile = new File("target/plosone/0115884.html");
 		String[] args = {
-				"-i", Fixtures.F0115884_HTML.toString(),
+				"-i", NormaFixtures.F0115884_HTML.toString(),
 				"--pubstyle", "src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml",
 				"-o", outputFile.toString(),
 		};
@@ -106,7 +106,7 @@ public class PloSONETest {
 	public void testPlosoneRawHTMLNoPubstyle() throws Exception {
 		File outputFile = new File("target/plosone/0115884.nopubstyle.html");
 		String[] args = {
-				"-i", Fixtures.F0115884_HTML.toString(),
+				"-i", NormaFixtures.F0115884_HTML.toString(),
 				"-o", outputFile.toString(),
 		};
 		Norma norma = new Norma();
@@ -129,7 +129,7 @@ public class PloSONETest {
 	public void testPlosoneRawHTMLNoDefaults() throws Exception {
 		File outputFile = new File("target/plosone/0115884.defaults.html");
 		String[] args = {
-				"-i", Fixtures.F0115884_HTML.toString(),
+				"-i", NormaFixtures.F0115884_HTML.toString(),
 				"-d", // don't delete any tags
 				"-o", outputFile.toString(),
 		};
@@ -155,7 +155,7 @@ public class PloSONETest {
 	public void testPlosoneRawHTMLPubstyle() throws Exception {
 		File outputFile = new File("target/plosone/0115884.pubstyle.html");
 		String[] args = {
-				"-i", Fixtures.F0115884_HTML.toString(),
+				"-i", NormaFixtures.F0115884_HTML.toString(),
 				"-p", "plosone",
 				"-o", outputFile.toString(),
 		};
@@ -178,7 +178,7 @@ public class PloSONETest {
 	public void testPlosoneXMLNoPubstyle() throws Exception {
 		File outputFile = new File("target/plosone/0115884/");
 		String[] args = {
-				"-i", new File(Fixtures.F0115884A_DIR, "fulltext.nodtd.xml").toString(),
+				"-i", new File(NormaFixtures.F0115884A_DIR, "fulltext.nodtd.xml").toString(),
 				"--pubstyle", "nlm",
 				"--transform", "src/main/resources/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl",
 				"-o", outputFile.toString(),

@@ -13,7 +13,7 @@ import org.xmlcml.graphics.svg.SVGPolyline;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.objects.SVGPlot;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
 
@@ -23,14 +23,14 @@ public class AstrophysTest {
 	@Ignore // too long
 	public void testReadPDF() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
-		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_ASTROPHYS_DIR, "0004-637X_754_2_85.pdf"));
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(NormaFixtures.TEST_ASTROPHYS_DIR, "0004-637X_754_2_85.pdf"));
 		new File("target/astrophys/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/astrophys/285.html"), 1);
 	}
 	
 	@Test
 	public void testExtractPlot() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
+		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
 		SVGPlot plot = new SVGPlot(rawChart);
 		plot.createPlot();
 		List<SVGText> textList = plot.getSVGTextList();

@@ -223,7 +223,6 @@ public class NormaTransformer {
 	}
 
 	private HtmlElement convertToHTML() {
-//		System.out.println(inputTxt);
 		LOG.debug("convertToHTML NYI");
 		HtmlElement element = null;
 		return element;

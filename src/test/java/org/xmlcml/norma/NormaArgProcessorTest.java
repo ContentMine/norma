@@ -62,7 +62,7 @@ public class NormaArgProcessorTest {
 	@Test
 	public void testPDF() {
 		String[] args = {
-			"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
+			"-i", new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
 			"-o", "plugh",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
@@ -73,7 +73,7 @@ public class NormaArgProcessorTest {
 	@Test
 	public void testAutoDetect() {
 		String[] args = {
-			"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
+			"-i", new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
 			"-o", "plugh",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
@@ -83,7 +83,7 @@ public class NormaArgProcessorTest {
 	
 	@Test
 	public void testMethod() {
-		String inputFilename =  new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString();
+		String inputFilename =  new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString();
 		String[] args = {
 			"-i", inputFilename,
 			"-o", "plugh",
@@ -113,7 +113,7 @@ public class NormaArgProcessorTest {
 	public void testCreateScholarlyHtml() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
-		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		FileUtils.copyDirectory(NormaFixtures.F0115884_DIR, container0115884);
 		String args = "-q "+container0115884.toString()+
 				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		Norma norma = new Norma();
@@ -138,7 +138,7 @@ public class NormaArgProcessorTest {
 	public void testCTreeWithDTD() throws IOException {
 		File container0115884 = new File("target/plosone/0115884withdtd/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
-		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		FileUtils.copyDirectory(NormaFixtures.F0115884_DIR, container0115884);
 		String[] args = {
 			"-q", container0115884.toString(), // output from quickscrape
 			"--transform", "nlm2html",                  // stylesheet to use (code)
@@ -177,7 +177,7 @@ public class NormaArgProcessorTest {
 	public void testPDF2TXT() throws IOException {
 		File container0115884 = new File("target/plosone/0115884/");
 		if (container0115884.exists()) FileUtils.forceDelete(container0115884);
-		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container0115884);
+		FileUtils.copyDirectory(NormaFixtures.F0115884_DIR, container0115884);
 		String args = "-q "+container0115884.toString()+" --transform pdf2txt --input fulltext.pdf --output fulltext.pdf.txt";
 		LOG.trace(args);
 		Norma norma = new Norma();
@@ -199,7 +199,7 @@ public class NormaArgProcessorTest {
 	public void testHTML2HTML() throws IOException {
 		File container1196402 = new File("target/ieee/1196402/");
 		if (container1196402.exists()) FileUtils.forceDelete(container1196402);
-		FileUtils.copyDirectory(Fixtures.F0115884_DIR, container1196402);
+		FileUtils.copyDirectory(NormaFixtures.F0115884_DIR, container1196402);
 		String args = "-q "+container1196402.toString()+" --html jsoup --input fulltext.html --output fulltext.xhtml";
 		LOG.debug(args);
 		Norma norma = new Norma();
@@ -244,7 +244,7 @@ public class NormaArgProcessorTest {
 	public void testMultipleCTrees() throws IOException {
 		File containerPLOSONE = new File("target/plosone/multiple/");
 		if (containerPLOSONE.exists()) FileUtils.forceDelete(containerPLOSONE);
-		FileUtils.copyDirectory(new File(Fixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
+		FileUtils.copyDirectory(new File(NormaFixtures.TEST_PUBSTYLE_DIR, "plosoneMultiple"), containerPLOSONE);
 		String args = "-q "+containerPLOSONE.toString()+
 				" --transform nlm2html --input fulltext.xml --output scholarly.html --standalone true";
 		LOG.trace("args> "+args);

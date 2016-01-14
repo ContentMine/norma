@@ -7,7 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
 
 public class NCBIHtmlTest {
@@ -19,7 +19,7 @@ public class NCBIHtmlTest {
 
 	@Test
 	public void testNCBIProject() throws IOException {
-		File ursus = new File(Fixtures.TEST_NORMA_DIR, "shtml/ursus");
+		File ursus = new File(NormaFixtures.TEST_NORMA_DIR, "shtml/ursus");
 		File shtml = new File("target/ursus1/");
 		FileUtils.copyDirectory(ursus, shtml);
 		NormaArgProcessor normaArgProcessor = new NormaArgProcessor();

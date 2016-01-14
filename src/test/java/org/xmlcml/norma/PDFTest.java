@@ -34,7 +34,7 @@ public class PDFTest {
 	@Ignore // too long
 	public void testReadPDFNoTag() {
 		String[] args = {
-				"-i", new File(Fixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
+				"-i", new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
 				"-o", new File("target/BMC/s12862-014-0277-x/").toString(),
 		};
 		Norma norma = new Norma();
@@ -46,7 +46,7 @@ public class PDFTest {
 	@Ignore // too long
 	public void testReadPDF13054() {
 		String[] args = {
-				"-i", new File(Fixtures.TEST_BMC_DIR, "s13054-014-0721-8.pdf").toString(),
+				"-i", new File(NormaFixtures.TEST_BMC_DIR, "s13054-014-0721-8.pdf").toString(),
 				"-o", new File("target/BMC/s13054-014-0721-8/").toString(),
 		};
 		Norma norma = new Norma();
@@ -57,7 +57,7 @@ public class PDFTest {
 	@Test
 	@Ignore // SVG input not yet written
 	public void testReadSedarSVG() {
-		File inputFile = new File(Fixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg");
+		File inputFile = new File(NormaFixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg");
 		Assert.assertTrue(inputFile.exists());
 		String[] args = {
 				"-i", inputFile.toString(),
@@ -72,7 +72,7 @@ public class PDFTest {
 	@Ignore // too long
 	public void testReadSedarBlackbirdPDF() {
 		String[] args = {
-				"-i", new File(Fixtures.TEST_SEDAR_DIR, "blackbird.pdf").toString(),
+				"-i", new File(NormaFixtures.TEST_SEDAR_DIR, "blackbird.pdf").toString(),
 				"-o", new File("target/sedar/image.g.11.7/").toString(),
 		};
 		Norma norma = new Norma();
@@ -85,11 +85,11 @@ public class PDFTest {
 	public void testReadSedarSeveralPDF() {
 		String[] args = {
 				"-i", 
-			       new File(Fixtures.TEST_SEDAR_DIR, "chelsea.pdf").toString(),
- 			       new File(Fixtures.TEST_SEDAR_DIR, "enbridge.pdf").toString(),
- 			       new File(Fixtures.TEST_SEDAR_DIR, "pennwest.pdf").toString(),
-		       new File(Fixtures.TEST_SEDAR_DIR, "rooster.pdf").toString(),
-			       new File(Fixtures.TEST_SEDAR_DIR, "solimar.pdf").toString(),
+			       new File(NormaFixtures.TEST_SEDAR_DIR, "chelsea.pdf").toString(),
+ 			       new File(NormaFixtures.TEST_SEDAR_DIR, "enbridge.pdf").toString(),
+ 			       new File(NormaFixtures.TEST_SEDAR_DIR, "pennwest.pdf").toString(),
+		       new File(NormaFixtures.TEST_SEDAR_DIR, "rooster.pdf").toString(),
+			       new File(NormaFixtures.TEST_SEDAR_DIR, "solimar.pdf").toString(),
 				"-o", new File("target/sedar/image.g.11.7/").toString(),
 		};
 		Norma norma = new Norma();
@@ -114,8 +114,8 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	public void testBadPDF() {
 		String[] args = {
 				"-i", 
-			       new File(Fixtures.TEST_SEDAR_DIR, "madagascar.pdf").toString(),
-				       new File(Fixtures.TEST_SEDAR_DIR, "roxi.pdf").toString(),
+			       new File(NormaFixtures.TEST_SEDAR_DIR, "madagascar.pdf").toString(),
+				       new File(NormaFixtures.TEST_SEDAR_DIR, "roxi.pdf").toString(),
 				"-o", new File("target/sedar/image.g.11.7/").toString(),
 		};
 		Norma norma = new Norma();
@@ -126,7 +126,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Test
 	public void testPDF2TXT() throws FileNotFoundException, IOException {
 		PDF2TXTConverter converter = new PDF2TXTConverter();
-		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+		File file0115884 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		String text = converter.readPDF(new FileInputStream(file0115884), true);
 		FileUtils.write(new File("target/pdf/file0115884.txt"), text, Charset.forName("UTF-8"));
 	}
@@ -147,7 +147,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	public void testPDF2XHTML() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
 		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
-		File file0115884 = new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
+		File file0115884 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(file0115884);
 		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML(), Charset.forName("UTF-8"));
 	}
@@ -156,7 +156,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Ignore // LONG
 	public void testPDF2CTree() throws Exception {
 		CTree cTree = new CTree(new File("target/cmdir/0115884/"));
-		cTree.readFulltextPDF(new File(Fixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
+		cTree.readFulltextPDF(new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf"));
 		// convert to XHTML using converter
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		// will write SVG to svgDirectory
@@ -167,7 +167,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Ignore
 	public void testBMCPDF2CTree() throws Exception {
 		CTree cTree = new CTree(new File("target/cmdir/bmc/1471-2148-14-70"));
-		cTree.readFulltextPDF(new File(Fixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
+		cTree.readFulltextPDF(new File(NormaFixtures.TEST_BMC_DIR, "1471-2148-14-70/fulltext.pdf"));
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
@@ -176,7 +176,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Ignore // too long
 	public void testCGIAR2CTree() throws Exception {
 		CTree cTree = new CTree(new File("target/cmdir/cgiar/345"));
-		cTree.readFulltextPDF(new File(Fixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
+		cTree.readFulltextPDF(new File(NormaFixtures.TEST_PUBSTYLE_DIR, "cgiar/345.pdf"));
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
@@ -185,7 +185,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 	@Ignore // closed PDF // LONG
 	public void testNeuroFigures() throws Exception {
 		CTree cTree = new CTree(new File("target/cmdir/neuro/Chen"));
-		File pdfFile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
+		File pdfFile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
 		cTree.readFulltextPDF(pdfFile);
 		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
 //		pdf2HtmlConverter.readAndConvertToXHTML();

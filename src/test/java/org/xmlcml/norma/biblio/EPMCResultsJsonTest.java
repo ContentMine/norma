@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.biblio.json.EPMCConverter;
 
 import com.google.gson.JsonArray;
@@ -28,7 +28,7 @@ public class EPMCResultsJsonTest {
 
 	@Test
 	public void testReadResultsJSON() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray entryArray = jsonElement.getAsJsonArray();
@@ -42,7 +42,7 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testReadResultsJSON1() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray entryArray = jsonElement.getAsJsonArray();
@@ -57,7 +57,7 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testCreateCTreesFromEPMCResultsJSON() throws IOException {
-		File jsonFile = new File(Fixtures.TEST_BIBLIO_DIR, "json/ursus1.json");
+		File jsonFile = new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursus1.json");
 		File cProjectDir = new File("target/json/cproject/ursus1/");
 		EPMCConverter epmcConverter = new EPMCConverter();
 		epmcConverter.setCProjectDir(cProjectDir);
@@ -68,7 +68,7 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testCreateCTreeFromEPMCResults6780JSON() throws IOException {
-		File jsonFile = new File(Fixtures.TEST_BIBLIO_DIR, "json/6780_eupmc_results.json");
+		File jsonFile = new File(NormaFixtures.TEST_BIBLIO_DIR, "json/6780_eupmc_results.json");
 		File cProjectDir = new File("target/json/cproject/ursus1/");
 		EPMCConverter epmcConverter = new EPMCConverter();
 		epmcConverter.setCProjectDir(cProjectDir);

@@ -16,7 +16,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 
 public class ImageToHOCRConverterTest {
@@ -27,7 +27,7 @@ public class ImageToHOCRConverterTest {
 	@Test
 	public void testConvert() throws Exception {
 		ImageToHOCRConverter converter = new ImageToHOCRConverter();
-		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");
+		File infile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");
 		File outfile = new File("target/neuro/image.2.1.hocr");
 		converter.convertImageToHOCR(infile, outfile);
 	}
@@ -35,7 +35,7 @@ public class ImageToHOCRConverterTest {
 	@Test
 	public void testConvertToSVG() throws Exception {
 		ImageToHOCRConverter converter = new ImageToHOCRConverter();
-		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");
+		File infile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");
 		File outfileRoot = new File("target/neuro/image.2.1.hocr");
 		File outfile = converter.convertImageToHOCR(infile, outfileRoot);
 		if (outfile == null) {
@@ -54,7 +54,7 @@ public class ImageToHOCRConverterTest {
 	@Test
 	@Ignore // not fully tested for overlap
 	public void testConvertPDFToSVG() throws Exception {
-		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
+		File infile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
 //		File infile = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/Maggio2009.pdf");
 		analyzePDF(infile);
 	}
@@ -62,7 +62,7 @@ public class ImageToHOCRConverterTest {
 	@Test
 //	@Ignore("Tesseract")
 	public void testConvertPNGsToSVG() throws Exception {
-		File ERIN_PNG = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/erinPngs/");
+		File ERIN_PNG = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/erinPngs/");
 		File[] pngs = new File[] { 
 				
 				new File(new File(ERIN_PNG, "chen2006"), "raw.png"),

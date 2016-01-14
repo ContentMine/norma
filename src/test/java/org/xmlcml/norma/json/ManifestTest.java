@@ -10,7 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -36,7 +36,7 @@ public class ManifestTest {
 	
 	@Test
 	public void testReadManifestArray() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "all_results.json"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "all_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray jsonArray = jsonElement.getAsJsonArray();
@@ -46,7 +46,7 @@ public class ManifestTest {
 	
 	@Test
 	public void testReadFirstManifestFromArray() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "all_results.json"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "all_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray jsonArray = jsonElement.getAsJsonArray();
@@ -59,7 +59,7 @@ public class ManifestTest {
 	
 	@Test
 	public void testReadFirstManifestFromFile() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "results0.json"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonObject jsonObject = jsonElement.getAsJsonObject();
@@ -104,7 +104,7 @@ public class ManifestTest {
 
 	@Test
 	public void testReadObjectFromFirstManifest() throws IOException {
-		ManifestJson manifestJson = ManifestJson.readManifest(new File(Fixtures.TEST_JSON_DIR, "results0.json"));
+		ManifestJson manifestJson = ManifestJson.readManifest(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"));
 		Assert.assertEquals("manifest", 30, manifestJson.size());
 		Set<String> keySet = manifestJson.getKeys();
 		Assert.assertTrue("inPMC", keySet.contains("inPMC"));
@@ -175,7 +175,7 @@ public class ManifestTest {
 	 * @throws IOException
 	 */
 	public void testJSONPath() throws IOException {
-		String json = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "results0.json"));
+		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"));
 		ReadContext ctx = JsonPath.parse(json);
 		net.minidev.json.JSONArray authorList = ctx.read("$.authorList[0].author");
 		for (int i = 0; i < authorList.size(); i++) { 

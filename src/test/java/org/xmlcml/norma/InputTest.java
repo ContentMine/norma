@@ -38,43 +38,43 @@ public class InputTest {
 	@Test
 	public void testFilesAndDirectoriesInMiscDirectory() {
 		// non-recursive; all includes 3 XML and 1 HTML
-		List<File> topLevelFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, null, false));
+		List<File> topLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, null, false));
 		Assert.assertEquals("toplevel", 4, topLevelFiles.size());
 		// xml suffix
-		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"xml"}, false));
+		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"xml"}, false));
 		Assert.assertEquals("toplevel", 3, topLevelFiles.size());
 		// html suffix
-		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"html"}, false));
+		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"html"}, false));
 		Assert.assertEquals("toplevel", 1, topLevelFiles.size());
 		// html and xml suffix
-		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"html", "xml"}, false));
+		topLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"html", "xml"}, false));
 		Assert.assertEquals("toplevel", 4, topLevelFiles.size());
 
 		// all files
-		List<File> allLevelFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, null, true));
+		List<File> allLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, null, true));
 		Assert.assertTrue("alllevel", allLevelFiles.size() >= 25);
 		// most use XML
-		List<File> xmlFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"xml"}, true));
+		List<File> xmlFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"xml"}, true));
 		Assert.assertTrue("allxml", xmlFiles.size() >= 16);
 		// Hindawi uses html
-		List<File> htmlFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"html"}, true));
+		List<File> htmlFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"html"}, true));
 		Assert.assertEquals("allhtml", 5, htmlFiles.size());
 		// and some from quickscrape
-		List<File> jsonFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"json"}, true));
+		List<File> jsonFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"json"}, true));
 		Assert.assertTrue("json", jsonFiles.size() >= 2);
-		List<File> pdfFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"pdf"}, true));
+		List<File> pdfFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"pdf"}, true));
 		Assert.assertTrue("pdf", pdfFiles.size() >= 5);
-		List<File> epubFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_MISC_DIR, new String[]{"epub"}, true));
+		List<File> epubFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, new String[]{"epub"}, true));
 		Assert.assertEquals("epub", 1, epubFiles.size());
 		// special directory of numbered files
-		List<File> numberedFiles = new ArrayList<File>(FileUtils.listFiles(Fixtures.TEST_NUMBERED_DIR, new String[]{"xml"}, true));
+		List<File> numberedFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_NUMBERED_DIR, new String[]{"xml"}, true));
 		Assert.assertEquals("numbered", 5, numberedFiles.size());
 	}
 	
 	@Test
 	public void testInputSingleFile() {
 		String[] args = {
-				"-i", new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString()
+				"-i", new File(NormaFixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString()
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -86,9 +86,9 @@ public class InputTest {
 	public void testInputSeveralFiles() {
 		String[] args = {
 				"-i", 
-				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
-				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
-				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -100,7 +100,7 @@ public class InputTest {
 	public void testInputDirectory() {
 		String[] args = {
 				"-i", 
-				Fixtures.TEST_NUMBERED_DIR.toString(),
+				NormaFixtures.TEST_NUMBERED_DIR.toString(),
 				"-e", "xml"
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
@@ -127,7 +127,7 @@ public class InputTest {
 		FileUtils.deleteQuietly(cTree);
 		String[] args = {
 				"-i", 
-				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
 				"-o", cTree.toString()
 		};
 		// THIS MAKES THE CTREE and copies files and renames
@@ -163,9 +163,9 @@ public class InputTest {
 		FileUtils.deleteQuietly(cTree);
 		String[] args = {
 				"-i", 
-				new File(Fixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
-				new File(Fixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
-				new File(Fixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "mdpi-04-00932.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "peerj-727.xml").toString(),
+				new File(NormaFixtures.TEST_MISC_DIR, "pensoft-4478.xml").toString(),
 				"-o", cTree.toString()
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
@@ -193,7 +193,7 @@ public class InputTest {
 	public void testWildcards() {
 		String[] args = {
 				"-i", 
-				Fixtures.TEST_NUMBERED_DIR+"/nlm{2,4}.xml"
+				NormaFixtures.TEST_NUMBERED_DIR+"/nlm{2,4}.xml"
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -208,7 +208,7 @@ public class InputTest {
 		// this doesn't fit the scheme so returns the same
 		String[] args = {
 				"-i", 
-				Fixtures.TEST_NUMBERED_DIR+"/nlm{2:4}.xml"
+				NormaFixtures.TEST_NUMBERED_DIR+"/nlm{2:4}.xml"
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
@@ -341,7 +341,7 @@ public class InputTest {
 	public void testTeX2HTMLTransform() throws IOException {
 		File tempDir = new File("target/tex2html/sample");
 		tempDir.mkdirs();
-		File inputTex = new File(Fixtures.TEST_TEX_DIR, "sample.tex");
+		File inputTex = new File(NormaFixtures.TEST_TEX_DIR, "sample.tex");
 		Assert.assertTrue(inputTex.exists());
 		// make a CTree 
 		FileUtils.copyFile(inputTex, new File(tempDir, "fulltext.tex"));

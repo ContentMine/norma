@@ -24,7 +24,7 @@ import org.xmlcml.graphics.svg.objects.SVGBoxChart;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
@@ -46,7 +46,7 @@ public class BMCTest {
 	@Ignore // too long
 	public void readProvisionalPDFTest() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
-		HtmlElement htmlElement = converter.readAndConvertToXHTML(Fixtures.BMC_0277_PDF);
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(NormaFixtures.BMC_0277_PDF);
 		new File("target/bmc/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/0277.html"), 1);
 		
@@ -57,7 +57,7 @@ public class BMCTest {
 	@Ignore // too long - creates the SVG // file missing
 	public void readBMCTrialsProvisional() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
-		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-6215-15-486.pdf"));
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(NormaFixtures.TEST_BMC_DIR, "1745-6215-15-486.pdf"));
 		new File("target/bmc/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/486.html"), 1);
 	}
@@ -66,7 +66,7 @@ public class BMCTest {
 	@Ignore // too long - creates the SVG // file missing
 	public void readBMCLions() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();
-		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(Fixtures.TEST_BMC_DIR, "1745-2148-14-70.pdf"));
+		HtmlElement htmlElement = converter.readAndConvertToXHTML(new File(NormaFixtures.TEST_BMC_DIR, "1745-2148-14-70.pdf"));
 		new File("target/bmc/").mkdirs();
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/bmc/14-170.html"), 1);
 	}
@@ -77,7 +77,7 @@ public class BMCTest {
 	// this one has outline glyphs... :-( // all papers in this journal do :-(
 	// 4 boxes and three lines
 	public void testExtractFlowChart() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(Fixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
+		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
 		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		List<SVGPath> pathList = boxChart.getSVGPathList();
@@ -167,7 +167,7 @@ public class BMCTest {
 	@Test 
 	public void testTransformBMCXMLToHtml() throws Exception {
 		// this is a valid CTree
-		CTree cTree = new CTree(Fixtures.BMC_15_1_511_DIR);
+		CTree cTree = new CTree(NormaFixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
 		Assert.assertEquals("reserved files", 4, cTree.getReservedFileList().size());
 		Assert.assertNotNull("fulltext.xml", cTree.getExistingFulltextXML());
@@ -181,7 +181,7 @@ public class BMCTest {
 		File cTree1 = new File("target/bmc/15_1_511");
 		// clean any existing files
 		if (cTree1.exists()) FileUtils.forceDelete(cTree1);
-		FileUtils.copyDirectory(Fixtures.BMC_15_1_511_DIR, cTree1);
+		FileUtils.copyDirectory(NormaFixtures.BMC_15_1_511_DIR, cTree1);
 		// now run the transformation
 		String[] args = {
 				// the cTree directory
@@ -225,13 +225,13 @@ public class BMCTest {
 	@Test 
 	public void testTransformSeveralXMLToHtml() throws Exception {
 		File[] cmFiles = {
-				 Fixtures.TEST_ELIFE_CTREE0,
-				 Fixtures.TEST_F1000_CTREE0,
-				 Fixtures.TEST_FRONTIERS_CTREE0,
-				 Fixtures.TEST_MDPI_CTREE0,
-				 Fixtures.TEST_PEERJ_CTREE0,
-				 Fixtures.TEST_PENSOFT_CTREE0,
-				 Fixtures.TEST_PLOSONE_CTREE0
+				 NormaFixtures.TEST_ELIFE_CTREE0,
+				 NormaFixtures.TEST_F1000_CTREE0,
+				 NormaFixtures.TEST_FRONTIERS_CTREE0,
+				 NormaFixtures.TEST_MDPI_CTREE0,
+				 NormaFixtures.TEST_PEERJ_CTREE0,
+				 NormaFixtures.TEST_PENSOFT_CTREE0,
+				 NormaFixtures.TEST_PLOSONE_CTREE0
 		};
 		int nqs = cmFiles.length;
 		File[] targetFiles = new File[nqs];
