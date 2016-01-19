@@ -1,4 +1,6 @@
-<argList name="norma" version="0.2.4">
+<argList name="norma" version="0.2.5">
+
+  <p>20160119: Ignored CommandLineTest</p>
   <p>20160114: removed OpenNLP because too large</p>
   <p>20160114: tested after cmine</p>
   <p>20160114: moved classes to NormaFixtures</p>

@@ -6,6 +6,7 @@ import org.junit.Test;
 public class RunCommandTest {
 	
 	@Test
+	@Ignore
 	public void testRunSimple() throws Exception {
 		String command = "pwd";
 		String output = RunCommand.runCommand(command);
