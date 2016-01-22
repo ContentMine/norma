@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.util.NormaTestFixtures;
@@ -40,7 +41,7 @@ public class USPTOTest {
 	@Test
 	public void testReadCProject() throws IOException {
 		File target = new File("target/us08978/");
-		NormaTestFixtures.cleanAndCopyDir(NormaFixtures.TEST_USPTO08978_DIR, target);
+		CMineTestFixtures.cleanAndCopyDir(NormaFixtures.TEST_USPTO08978_DIR, target);
 		String args = "-i fulltext.xml --transform uspto2html -o scholarly.html --project "+target; 
 		NormaArgProcessor norma = new NormaArgProcessor(args);
 		norma.runAndOutput();

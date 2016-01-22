@@ -2,13 +2,13 @@ package org.xmlcml.norma.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.files.CTreeList;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 
@@ -42,11 +42,6 @@ public class NormaTestFixtures {
 		}
 	}
 
-	public static void cleanAndCopyDir(File sourceDir, File targetDir) throws IOException {
-		if (targetDir.exists()) FileUtils.forceDelete(targetDir);
-		FileUtils.copyDirectory(sourceDir, targetDir);
-	}
-
 	/**
 	 * 
 	 * @param dir
@@ -59,7 +54,7 @@ public class NormaTestFixtures {
 		String args = null;
 		if (type.equals("project")) {
 			CProject project = new CProject(dir);
-			List<CTree> cTreeList = project.getCTreeList();
+			CTreeList cTreeList = project.getCTreeList();
 			for (CTree cTree : cTreeList) {
 				if (!cTree.hasScholarlyHTML()) {
 					// mising SHTML, normalize all
