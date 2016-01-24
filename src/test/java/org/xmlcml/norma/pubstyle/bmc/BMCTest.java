@@ -220,12 +220,15 @@ public class BMCTest {
 	 * 
 	 * SHOWCASE
 	 * 
+	 * This throws an exception with ONE of the papers - "Missing scheme in absolute URI reference"
+	 * not yet dignosed 
+	 * 
 	 * @throws Exception
 	 */
 	@Test 
 	public void testTransformSeveralXMLToHtml() throws Exception {
 		File[] cmFiles = {
-				 NormaFixtures.TEST_ELIFE_CTREE0,
+				 NormaFixtures.TEST_ELIFE_CTREE0, // this one has bad URI?
 				 NormaFixtures.TEST_F1000_CTREE0,
 				 NormaFixtures.TEST_FRONTIERS_CTREE0,
 				 NormaFixtures.TEST_MDPI_CTREE0,
@@ -242,6 +245,7 @@ public class BMCTest {
 		}
 		String[] args = {
 				"--ctree", 
+				// this one fails to parse - raw version has xmlns:hw="org.highwire.hpp" which lacks a protocol
 				targetFiles[0].toString(),
 				targetFiles[1].toString(),
 				targetFiles[2].toString(),

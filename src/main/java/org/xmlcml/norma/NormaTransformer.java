@@ -515,7 +515,11 @@ public class NormaTransformer {
 		for (SectionTagger sectionTagger : sectionTaggers) {
 			LOG.trace("section tagger:" + sectionTagger);
 			for (String xmlString : xmlStringList) {
-				Element xmlElement = XMLUtil.parseXML(xmlString);
+				try {
+					Element xmlElement = XMLUtil.parseXML(xmlString);
+				} catch (RuntimeException e) {
+					throw new RuntimeException("failed to parse: "+xmlString.substring(0, Math.min(200, xmlString.length())), e);
+				}
 			}
 		}
 	}
