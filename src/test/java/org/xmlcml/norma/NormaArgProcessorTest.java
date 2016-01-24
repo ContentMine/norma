@@ -55,8 +55,9 @@ public class NormaArgProcessorTest {
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
 		Assert.assertEquals("input", 2, argProcessor.getInputList().size());
-		Assert.assertEquals("input", "foo", argProcessor.getInputList().get(0));
-		Assert.assertEquals("input", "bar", argProcessor.getInputList().get(1));
+		//args get sorted
+		Assert.assertEquals("input", "foo", argProcessor.getInputList().get(1));
+		Assert.assertEquals("input", "bar", argProcessor.getInputList().get(0));
 	}
 	
 	@Test
