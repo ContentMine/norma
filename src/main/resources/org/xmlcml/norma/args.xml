@@ -1,4 +1,5 @@
-<argList name="norma" version="0.2.6">
+<argList name="norma" version="0.2.8">
+  <p>20160204: small changes responding to cmine</p>
   <p>20160122: moved cleanAndCopy to CMine</p>
   <p>20160119: Ignored CommandLineTest</p>
   <p>20160114: removed OpenNLP because too large</p>
