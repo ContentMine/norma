@@ -77,7 +77,9 @@ public class NormaFixtures {
 	
 	public final static File TEST_FRONTIERS_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "frontiers");
 	public final static File TEST_FRONTIERS_CTREE0 = new File(NormaFixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
-	
+
+	public final static File TEST_GETPAPERS_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers");
+
 	public final static File TEST_MDPI_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "mdpi");
 	public final static File TEST_MDPI_CTREE0 = new File(NormaFixtures.TEST_MDPI_DIR, "04-00932");
 	

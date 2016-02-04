@@ -10,6 +10,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.util.CMineTestFixtures;
 
 /** tests Norma.
  * from a set of commandlines
@@ -123,7 +124,15 @@ public class TutorialTest {
 		Assert.assertNotNull("pdftxt", CTree.getExistingFulltextPDFTXT(cTreeTop));
 	}		
 	
-	
+	@Test
+	public void testConvertXML2HTML() throws Exception {
+		File targetDir = new File("target/zika");
+		CMineTestFixtures.cleanAndCopyDir(new File("../advert/zika"), targetDir);
+		String args = "--project "+targetDir+" -i fulltext.xml -o scholarly.html --transform nlm2html";
+		Norma norma = new Norma();
+		norma.run(args);
+	}
+		
 	/**
 
 	# create scholarly.html for 9 publishers
