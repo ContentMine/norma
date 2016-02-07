@@ -193,12 +193,16 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void runTransform(ArgumentOption option) {
+		boolean ok = false;
 		if (currentCTree == null) {
 			LOG.warn("No current CTree");
 		} else {
 			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
-			normaTransformer.transform(option);
+			ok = normaTransformer.transform(option);
+			if (!ok) {
+				currentCTree = null;
+			}
 		}
 	}
 
@@ -282,7 +286,10 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
 		}
 		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cTree.getDirectory());
+			String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
+			TREE_LOG().error(msg);
+			System.err.print("!");
+//			throw new RuntimeException(msg);
 		}
 		return inputFile;
 	}

@@ -100,17 +100,24 @@ public class NormaTransformer {
 	 *
 	 * @param option
 	 */
-	void transform(ArgumentOption option) {
-		currentCTree = normaArgProcessor.getCurrentCMTree();
-		LOG.trace("CM "+currentCTree);
-		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
-		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCTree);
+	boolean transform(ArgumentOption option) {
+		boolean ok = false;
+		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
 		xmlStringList = null;
 		serialImageList = null;
+		
+		currentCTree = normaArgProcessor.getCurrentCMTree();
+		LOG.trace("CM "+currentCTree);
+		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
+		if (inputFile == null) {
+			return ok;
+		}
+		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCTree);
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
+			ok = true;
 			String optionValue = option.getStringValue();
 			if (false) {				
 			} else if (HOCR2SVG.equals(optionValue)) {
@@ -135,6 +142,7 @@ public class NormaTransformer {
 			// GitHub, ASPERA, Galaxy, Asana
 			
 		}
+		return ok;
 	}
 
 	public static void listTransformOptions() {

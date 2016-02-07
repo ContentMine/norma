@@ -212,10 +212,10 @@ public class TutorialTest {
 
 	private void transformNLM(String sourceName, String destName) throws IOException {
 		String dtdName = "nlm2html";
-		testTransformXML2ScholarlyHTML(sourceName, destName, "fulltext.xml", "scholarly.html", dtdName);
+		transformXML2ScholarlyHTML(sourceName, destName, "fulltext.xml", "scholarly.html", dtdName);
 	}
 
-	private void testTransformXML2ScholarlyHTML(String sourceName, String destName, String infile,
+	private void transformXML2ScholarlyHTML(String sourceName, String destName, String infile,
 			String outfile, String dtdName) throws IOException {
 		File cTreeTop = new File(destName);
 		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);

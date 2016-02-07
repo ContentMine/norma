@@ -55,10 +55,12 @@ public class HtmlCleaner {
 		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMTree);
 
 		htmlElement = null;
-		try {
-			htmlElement = htmlFactory.parse(inputFile);
-		} catch (Exception e) {
-			throw new RuntimeException("Cannot transform HTML "+inputFile, e);
+		if (inputFile != null) {
+			try {
+				htmlElement = htmlFactory.parse(inputFile);
+			} catch (Exception e) {
+				throw new RuntimeException("Cannot transform HTML "+inputFile, e);
+			}
 		}
 		return htmlElement;
 	}
