@@ -17,7 +17,7 @@ import org.junit.Test;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlBody;
-import org.xmlcml.html.HtmlHead;
+import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.norma.Norma;
@@ -49,7 +49,7 @@ public class HOCRReaderTest {
 		HOCRReader hocrReader = new HOCRReader();
 		hocrReader.readHOCR(is);
 		Assert.assertNotNull(hocrReader.getHocrElement());
-		HtmlHead htmlHead = hocrReader.getHead();
+		HtmlElement htmlHead = hocrReader.getHead();
 		Assert.assertNotNull("head",  htmlHead);
 		List<HtmlMeta> metaElements = hocrReader.getMetaElements();
 		Assert.assertNotNull("meta",  metaElements);

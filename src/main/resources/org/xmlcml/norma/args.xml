@@ -1,5 +1,6 @@
-<argList name="norma" version="0.2.10">
+<argList name="norma" version="0.2.11">
 
+  <p>20160211: tracking cmine</p>
   <p>20160211: fixed nlm2html</p>
   <p>20160207: tracking new commandline</p>
   <p>20160204: small changes responding to cmine</p>
