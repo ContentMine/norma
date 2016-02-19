@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -13,6 +15,13 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.util.CellCalculator;
+import org.xmlcml.cmine.util.DataTablesTool;
+import org.xmlcml.cmine.util.CellRenderer;
+import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlHtml;
+import org.xmlcml.html.HtmlTd;
+import org.xmlcml.html.HtmlTr;
 import org.xmlcml.norma.biblio.EPMCResultsJsonEntry;
 
 import com.google.gson.JsonArray;
@@ -23,7 +32,7 @@ import com.jayway.jsonpath.ReadContext;
 
 import net.minidev.json.JSONArray;
 
-public class EPMCConverter {
+public class EPMCConverter implements CellCalculator {
 
 	private static final Logger LOG = Logger.getLogger(EPMCConverter.class);
 	static {
@@ -32,23 +41,53 @@ public class EPMCConverter {
 	
 	private InputStream jsonInputStream;
 	private File cProjectDir;
+	private JsonArray entryArray;
+	private JsonElement rootJsonElement;
+	private String currentId;
+	private EPMCResultsJsonEntry currentResultJsonEntry;
+	private CTree currentCTree;
+	private List<EPMCResultsJsonEntry> jsonEntryList;
+	public DataTablesTool dataTablesTool;
 	
 	public EPMCConverter() {
-		
 	}
-	public void convertEPMCJsonFileToCProject() throws IOException {
-		JsonElement jsonElement = readJsonElementFromStream();
-		if (cProjectDir == null) {
-			throw new RuntimeException("No cProjectDir given");
+	
+	public EPMCConverter(File cProjectDir) {
+		this();
+		this.cProjectDir = cProjectDir;
+	}
+
+	public void createJsonEntryListAndPossiblyCProject() throws IOException {
+		if (cProjectDir != null) {
+			cProjectDir.mkdirs();
 		}
-		cProjectDir.mkdirs();
-	    JsonArray entryArray = jsonElement.getAsJsonArray();
-		for (int i = 0; i < entryArray.size(); i++) {
-			JsonElement entry = entryArray.get(i);
-			CTree cTree = convertEPMCEntryToCTree(entry);
+		rootJsonElement = readJsonElementFromStream();
+		if (rootJsonElement instanceof JsonArray) {
+		    entryArray = rootJsonElement.getAsJsonArray();
+		    getOrCreateJsonEntryList();
+			for (int i = 0; i < entryArray.size(); i++) {
+				JsonElement entry = entryArray.get(i);
+				currentResultJsonEntry = new EPMCResultsJsonEntry(entry);
+				currentId = createCurrentId(entry, currentResultJsonEntry);
+				if (currentId != null) {
+					createCurrentCTree();
+					writeCurrentCTree(entry);
+					getOrCreateDataTablesTool().getOrCreateRowHeadingList().add(currentId);
+				}
+				jsonEntryList.add(currentResultJsonEntry);
+			}
+		} else {
+			LOG.debug("rootJsonElement is "+rootJsonElement.getClass());
 		}
 	}
 	
+	public List<EPMCResultsJsonEntry> getOrCreateJsonEntryList() {
+		if (jsonEntryList == null) {
+			jsonEntryList = new ArrayList<EPMCResultsJsonEntry>();
+		}
+		return jsonEntryList;
+	}
+
 	private JsonElement readJsonElementFromStream() throws IOException {
 		if (jsonInputStream == null) {
 			throw new RuntimeException("No EMPCJson file to convert");
@@ -60,35 +99,51 @@ public class EPMCConverter {
 		return jsonElement;
 	}
 
-	public CTree convertEPMCEntryToCTree() throws IOException {
+	public void readAndProcessEntry() throws IOException {
 		JsonElement entry = readJsonElementFromStream();
-		CTree cTree = convertEPMCEntryToCTree(entry);
-		return cTree;
+		currentResultJsonEntry = new EPMCResultsJsonEntry(entry);
+		currentId = createCurrentId(entry, currentResultJsonEntry);
+		if (currentId != null) {
+			createCurrentCTree();
+			writeCurrentCTree(entry);
+		}
 	}
 
-	public CTree convertEPMCEntryToCTree(JsonElement entry) {
-		EPMCResultsJsonEntry resultJson = new EPMCResultsJsonEntry(entry);
-		String id = resultJson.getIdText();
-		if (id == null) {
-			id = resultJson.getPmidText();
+	private void writeCurrentCTree(JsonElement entry) {
+		if (currentCTree != null && currentCTree.getDirectory() != null) {
+			File entryFile = new File(currentCTree.getDirectory(), CProject.EUPMC_RESULTS_JSON);
+			entry = stripOneElementArrays(entry);
+			try {
+				LOG.debug("wrote: "+entryFile);
+				FileUtils.writeStringToFile(entryFile, entry.toString(), Charset.forName("UTF-8"));
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot write "+entryFile);
+			}
 		}
-		if (id == null) {
-			System.err.println("entry without ID: "+entry);
-			return null;
+	}
+
+	private CTree createCurrentCTree() {
+		if (cProjectDir != null) {
+			File cTreeDir = new File(cProjectDir, currentId);
+			cTreeDir.mkdirs();
+			currentCTree = new CTree(cTreeDir);
 		}
-		File cTreeDir = new File(cProjectDir, id);
-		cTreeDir.mkdirs();
-		CTree cTree = new CTree(cTreeDir);
-		File entryFile = new File(cTreeDir, CProject.EUPMC_RESULTS_JSON);
-		entry = stripOneElementArrays(entry);
-		try {
-			FileUtils.writeStringToFile(entryFile, entry.toString(), Charset.forName("UTF-8"));
-		} catch (IOException e) {
-			throw new RuntimeException("Cannot write "+entryFile);
+		return currentCTree;
+	}
+
+	private String createCurrentId(JsonElement entry, EPMCResultsJsonEntry resultJson) {
+		String id = null;
+		{
+			id = resultJson.getPmcidText();
+			if (id == null) {
+				id = resultJson.getIdText();
+			}
+			if (id == null) {
+				System.err.println("entry without ID: "+entry);
+//				return null;
+			}
 		}
-		
-		return cTree;
-		
+		return id;
 	}
 	
 	private JsonElement stripOneElementArrays(JsonElement entry) {
@@ -135,6 +190,89 @@ public class EPMCConverter {
 	}
 	public void readInputStream(FileInputStream fileInputStream) {
 		jsonInputStream = fileInputStream;
+	}
+	
+	public JsonArray getOrCreateEntryArray() {
+		if (entryArray == null) {
+			entryArray = new JsonArray();
+		}
+		return entryArray;
+	}
+	
+	public JsonElement getJsonElement() {
+		return rootJsonElement;
+	}
+
+	public CTree getCurrentCTree() {
+		return currentCTree;
+	}
+
+	public void setDataTablesTool(DataTablesTool dataTablesTool) {
+		this.dataTablesTool = dataTablesTool;
+	}
+	
+	public DataTablesTool getOrCreateDataTablesTool() {
+		if (dataTablesTool == null) {
+			dataTablesTool = new DataTablesTool();
+		}
+		return dataTablesTool;
+	}
+	
+	public HtmlHtml createHtml() {
+		getOrCreateDataTablesTool();
+		dataTablesTool.setTitle("METADATA");
+		dataTablesTool.setCellCalculator(this);
+		this.setLink0("../../src/test/resources/org/xmlcml/ami2/zika/");
+		this.setLink1("/scholarly.html");
+		this.setRowHeadingName("EPMCID");
+		HtmlHtml html = dataTablesTool.createHtml(this);
+		return html;
+	}
+
+	public void addCellValues(List<CellRenderer> columnHeadingList, HtmlTr htmlTr, int iRow) {
+		LOG.trace("cellValues");
+		EPMCResultsJsonEntry entry = jsonEntryList.get(iRow);
+		List<HtmlElement> htmlElements = entry.createHtmlElements(columnHeadingList);
+		for (int i = 0; i < htmlElements.size(); i++) {
+			HtmlTd td = new HtmlTd();
+			htmlTr.appendChild(td);
+			HtmlElement s = htmlElements.get(i);
+			td.appendChild(s);
+			LOG.trace("requiredField: "+columnHeadingList.get(i)+" = "+s);
+		}
+		
+	}
+
+	public String createCellContents(int iRow, int iCol) {
+		LOG.debug("createCellContents NYI");
+		return null;
+	}
+
+	public CellCalculator setLink0(String link0) {
+		getOrCreateDataTablesTool().setLink0(link0);
+		return this;
+	}
+
+	public String getLink0() {
+		return getOrCreateDataTablesTool().getLink0();
+	}
+
+	public CellCalculator setLink1(String link1) {
+		getOrCreateDataTablesTool().setLink1(link1);
+		return this;
+	}
+
+	public String getLink1() {
+		return getOrCreateDataTablesTool().getLink1();
+	}
+
+	public CellCalculator setRowHeadingName(String rowHeading) {
+		this.getOrCreateDataTablesTool().setRowHeadingName(rowHeading);
+		return this;
+	}
+
+	public void setColumnHeadingList(List<CellRenderer> columnHeadingList) {
+		this.getOrCreateDataTablesTool().setColumnHeadingList(columnHeadingList);
 	}
 	
 

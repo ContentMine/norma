@@ -270,7 +270,6 @@
 	</xsl:template>
 	
 	<xsl:template match="*[local-name()='xref']" priority="-0.45">
-	  XREF************
  	    <span rid="{@rid}" ref-type="{@ref-type}"><xsl:apply-templates select="* | text()"/></span>
 	</xsl:template>
 	
