@@ -168,10 +168,8 @@ public class EPMCConverter implements CellCalculator {
 					}
 				}
 			}
-//			LOG.debug(">>?"+object.getClass()+": "+object);
 		}
 		return entry;
-//		return (JSONArray) result;
 	}
 	public void setCProjectDir(File cProjectDir) {
 		this.cProjectDir = cProjectDir;
@@ -230,15 +228,13 @@ public class EPMCConverter implements CellCalculator {
 	}
 
 	public void addCellValues(List<CellRenderer> columnHeadingList, HtmlTr htmlTr, int iRow) {
-		LOG.trace("cellValues");
 		EPMCResultsJsonEntry entry = jsonEntryList.get(iRow);
 		List<HtmlElement> htmlElements = entry.createHtmlElements(columnHeadingList);
 		for (int i = 0; i < htmlElements.size(); i++) {
-			HtmlTd td = new HtmlTd();
+			HtmlElement td = new HtmlTd();
 			htmlTr.appendChild(td);
 			HtmlElement s = htmlElements.get(i);
 			td.appendChild(s);
-			LOG.trace("requiredField: "+columnHeadingList.get(i)+" = "+s);
 		}
 		
 	}

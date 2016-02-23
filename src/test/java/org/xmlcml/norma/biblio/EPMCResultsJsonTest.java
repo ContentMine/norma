@@ -182,15 +182,6 @@ public class EPMCResultsJsonTest {
 		EPMCConverter epmcConverter = new EPMCConverter();
 		epmcConverter.readInputStream(new FileInputStream(resultsJson));
 		epmcConverter.createJsonEntryListAndPossiblyCProject();
-//		List<EPMCResultsJsonEntry> jsonEntryList = epmcConverter.getOrCreateJsonEntryList();
-		
-//		List<String> columnHeadingList = Arrays.asList(new String[] {
-//				EPMCResultsJsonEntry.DOI,
-//				EPMCResultsJsonEntry.AFFILIATION,
-//				EPMCResultsJsonEntry.TITLE,
-//		});
-//		epmcConverter.setColumnHeadingList(columnHeadingList);
-		
 		epmcConverter.setColumnHeadingList(Arrays.asList(EPMCResultsJsonEntry.FLAGS));
 		HtmlHtml html = epmcConverter.createHtml();
 		XMLUtil.debug(html, new File("target/empc/metadata.html"), 1);
