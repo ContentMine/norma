@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978169-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978169</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13782132</doc-number>
+<date>20130301</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<disclaimer>
+<text>This patent is subject to a terminal disclaimer.</text>
+</disclaimer>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>62</class>
+<subclass>B</subclass>
+<main-group>17</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>005</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>21</class>
+<subclass>F</subclass>
+<main-group>3</main-group>
+<subgroup>025</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>62</class>
+<subclass>B</subclass>
+<main-group>17</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>13</main-group>
+<subgroup>0053</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>62</class>
+<subclass>B</subclass>
+<main-group>17</main-group>
+<subgroup>005</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>2400</main-group>
+<subgroup>60</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>62</class>
+<subclass>B</subclass>
+<main-group>17</main-group>
+<subgroup>006</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>G</section>
+<class>21</class>
+<subclass>F</subclass>
+<main-group>3</main-group>
+<subgroup>025</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>Y</section>
+<class>10</class>
+<subclass>S</subclass>
+<main-group>2</main-group>
+<subgroup>01</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>Y</section>
+<class>10</class>
+<subclass>S</subclass>
+<main-group>2</main-group>
+<subgroup>05</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2457</main-classification>
+<further-classification>  2458</further-classification>
+<further-classification>  2 69</further-classification>
+<further-classification>  2 84</further-classification>
+<further-classification>  2DIG 1</further-classification>
+<further-classification>  2DIG 5</further-classification>
+<further-classification>12820212</further-classification>
+<further-classification>12820219</further-classification>
+<further-classification> 36 43</further-classification>
+<further-classification> 36147</further-classification>
+<further-classification> 622593</further-classification>
+<further-classification> 62390</further-classification>
+<further-classification> 62391</further-classification>
+</classification-national>
+<invention-title id="d2e51">Protective clothing ensemble with two-stage evaporative cooling</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4706672</doc-number>
+<kind>A</kind>
+<name>Jones</name>
+<date>19871100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5111668</doc-number>
+<kind>A</kind>
+<name>Parrish et al.</name>
+<date>19920500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5113666</doc-number>
+<kind>A</kind>
+<name>Parrish et al.</name>
+<date>19920500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>6125645</doc-number>
+<kind>A</kind>
+<name>Hom</name>
+<date>20001000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>6257011</doc-number>
+<kind>B1</kind>
+<name>Siman-Tov et al.</name>
+<date>20010700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>6263511</doc-number>
+<kind>B1</kind>
+<name>Moretti</name>
+<date>20010700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>6276155</doc-number>
+<kind>B2</kind>
+<name>Siman-Tov et al.</name>
+<date>20010800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>6295648</doc-number>
+<kind>B2</kind>
+<name>Siman-Tov et al.</name>
+<date>20011000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>7043766</doc-number>
+<kind>B1</kind>
+<name>Foreman et al.</name>
+<date>20060500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>7120938</doc-number>
+<kind>B2</kind>
+<name>Ichigaya</name>
+<date>20061000</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>7730557</doc-number>
+<kind>B1</kind>
+<name>Courtney et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>7866177</doc-number>
+<kind>B2</kind>
+<name>Selm et al.</name>
+<date>20110100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2004/0237178</doc-number>
+<kind>A1</kind>
+<name>Landeros</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2005/0010996</doc-number>
+<kind>A1</kind>
+<name>Steinert</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2005/0011517</doc-number>
+<kind>A1</kind>
+<name>Steinert</name>
+<date>20050100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2005/0246826</doc-number>
+<kind>A1</kind>
+<name>McCarter et al.</name>
+<date>20051100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2010/0011491</doc-number>
+<kind>A1</kind>
+<name>Goldmann et al.</name>
+<date>20100100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2010/0031428</doc-number>
+<kind>A1</kind>
+<name>Paull</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>JP</country>
+<doc-number>07-003508</doc-number>
+<date>19950100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>31</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2458</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 69</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2115</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2456</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2457</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2102</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 81</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 93</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 97</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2272</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2275</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>12820219</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>12820211</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36 43</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 36147</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 622593</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 62390</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 62391</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>9</number-of-drawing-sheets>
+<number-of-figures>16</number-of-figures>
+</figures>
+<us-related-documents>
+<continuation>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>13481292</doc-number>
+<date>20120525</date>
+</document-id>
+<parent-grant-document>
+<document-id>
+<country>US</country>
+<doc-number>8495767</doc-number>
+</document-id>
+</parent-grant-document>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13782132</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation>
+<continuation-in-part>
+<relation>
+<parent-doc>
+<document-id>
+<country>US</country>
+<doc-number>PCT/US2011/030478</doc-number>
+<date>20110330</date>
+</document-id>
+<parent-status>PENDING</parent-status>
+</parent-doc>
+<child-doc>
+<document-id>
+<country>US</country>
+<doc-number>13481292</doc-number>
+</document-id>
+</child-doc>
+</relation>
+</continuation-in-part>
+<us-provisional-application>
+<document-id>
+<country>US</country>
+<doc-number>61319070</doc-number>
+<date>20100330</date>
+</document-id>
+</us-provisional-application>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20130174335</doc-number>
+<kind>A1</kind>
+<date>20130711</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Berglund</last-name>
+<first-name>Larry</first-name>
+<address>
+<city>Lebanon</city>
+<state>CT</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Hoyt</last-name>
+<first-name>Reed</first-name>
+<address>
+<city>Framingham</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Berglund</last-name>
+<first-name>Larry</first-name>
+<address>
+<city>Lebanon</city>
+<state>CT</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Hoyt</last-name>
+<first-name>Reed</first-name>
+<address>
+<city>Framingham</city>
+<state>MA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Arwine</last-name>
+<first-name>Elizabeth</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Eshelman</last-name>
+<first-name>William</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<examiners>
+<primary-examiner>
+<last-name>Worrell</last-name>
+<first-name>Danny</first-name>
+<department>3765</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Annis</last-name>
+<first-name>Khaled</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A hazardous materials protective garment may use a two-stage evaporative cooling process to ease heat strain on the wearer of the garment. The garment may include an impermeable inner layer and a wicking outer layer. One or more reservoirs may be disposed interior to the inner layer for collecting condensed and/or unevaporated sweat. One or more pumps may move the sweat to the exterior of the impermeable layer for distribution in the wicking layer and evaporation from the garment.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="181.36mm" wi="226.06mm" file="US08978169-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="197.70mm" wi="99.91mm" file="US08978169-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="209.30mm" wi="127.59mm" file="US08978169-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="222.84mm" wi="124.46mm" file="US08978169-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="242.32mm" wi="140.46mm" file="US08978169-20150317-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="112.86mm" wi="118.87mm" file="US08978169-20150317-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="192.02mm" wi="158.07mm" file="US08978169-20150317-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="186.69mm" wi="157.48mm" file="US08978169-20150317-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="187.03mm" wi="159.68mm" file="US08978169-20150317-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="99.65mm" wi="112.52mm" file="US08978169-20150317-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?RELAPP description="Other Patent Relations" end="lead"?>
+<heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">The present application is a continuation of and claims the benefit of priority under 35 U.S.C. 120 to U.S. patent application Ser. No. 13/481,292 filed on May 25, 2012, which is a continuation-in-part of and claims the benefit of priority under 35 U.S.C. 120 to International Application Number PCT/US11/30478 filed on Mar. 30, 2011, which claims priority to U.S. provisional patent application Ser. No. 61/319,070 filed on Mar. 30, 2010, all of which are expressly incorporated by reference herein.</p>
+<?RELAPP description="Other Patent Relations" end="tail"?>
+<?GOVINT description="Government Interest" end="lead"?>
+<heading id="h-0002" level="1">STATEMENT OF GOVERNMENT INTEREST</heading>
+<p id="p-0003" num="0002">The invention described herein may be manufactured, used and licensed by or for the United States Government.</p>
+<?GOVINT description="Government Interest" end="tail"?>
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Warriors, first-responders, and industrial workers are examples of personnel who may perform physically-demanding tasks with high rates of metabolic energy expenditures and metabolic heat production. These personnel may be equipped with protective clothing, for example, chemical, biological, radiological, nuclear, and explosive protective clothing, combat clothing, or other individual protective clothing ensembles. Normal mechanisms of dissipating excess metabolic heat, for example, through evaporative cooling in warm and hot environments, may be compromised by the insulation and resistance to water vapor permeation of known protective ensembles. Known protective clothing may increase metabolic heat production due to the metabolic cost of carrying and using the ensemble, and compromise metabolic heat loss by impeding evaporative cooling and dry heat dissipation through conduction, convection, and radiative heat loss. Reducing the thermal burden imposed by protective ensembles has long been, and continues to be, an important need for designers, manufacturers, and users of protective clothing.</p>
+<p id="p-0005" num="0004">Active cooling systems for protective ensembles are known. Active microclimate cooling systems may be thermoelectric systems, or compressor-based systems with a coolant that is circulated in tight-fitting vests, or, perhaps, blower systems that pass filtered outside air over the body and exhaust the air outside the protective suit. Compressor-based or thermoelectric systems may be power hungry, may be expensive, and may be heavy in weight. Air blower systems may be lighter in weight and more comfortable than compressor-based systems, but may be noisy, may have relatively high heat signatures (i.e., may be detected by infrared sensors), may require intake filtering of the air, and may have variable performance, depending on air inlet temperature and humidity. Air blower systems may be impractical in a chemically, biologically, and/or radiologically contaminated environment where filtering a large volume of inlet air may require a large filter capacity.</p>
+<p id="p-0006" num="0005">A long-felt but unsolved need has existed, and continues to exist, for lighter weight, more energy-efficient methods and apparatus to help reduce the thermal load of personnel equipped with protective clothing ensembles.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">One aspect of the invention is a protective garment for an animate being. The protective garment may include an impermeable inner layer. A reservoir may be disposed interior to the inner layer, for collecting sweat from the animate being. The garment may include a pump for moving the sweat from the reservoir to a location external to the inner layer. The animate being may be a human.</p>
+<p id="p-0008" num="0007">The sweat collected in the reservoir may be unevaporated liquid sweat, and/or liquid sweat that has exuded or been excreted from the animate being, evaporated, and condensed on the inner layer. The pump may be disposed interior to the inner layer.</p>
+<p id="p-0009" num="0008">The garment may include a distribution system located external to the inner layer, for distributing the sweat on an exterior of the garment. Inlet tubing may have one end in fluid communication with the reservoir and another end connected to an inlet of the pump. Outlet tubing may have one end connected to an outlet of the pump and another end that passes through the inner layer. The outlet tubing may be operatively connected to the distribution system.</p>
+<p id="p-0010" num="0009">The garment may include an external reservoir disposed exterior to the inner layer and fluidly connected to the internal reservoir. The external reservoir may supply water to the internal reservoir for distribution inside or outside of the inner layer.</p>
+<p id="p-0011" num="0010">The distribution system may include wicking material and/or at least one fluid conduit. The distribution system may include at least one fluid conduit in fluid communication with the outlet tubing, and wicking material adjacent to at least one fluid conduit. The wicking material may be an external layer of the garment.</p>
+<p id="p-0012" num="0011">Another aspect of the invention is a method. The method may include providing an animate being with a protective garment and collecting sweat from the animate being in a reservoir. The method may include pumping the sweat to an exterior of the garment. The collected sweat may include sweat that has condensed on an inner layer of the garment. The collected sweat may include unevaporated sweat.</p>
+<p id="p-0013" num="0012">The method may include, after pumping, distributing the sweat on an exterior of the garment. The method may include, after distributing, evaporating the sweat from the exterior of the garment.</p>
+<p id="p-0014" num="0013">Water from a reservoir that is external to the inner layer of the garment may also be collected in the reservoir that collects sweat. One or both of water and sweat may be pumped to the exterior of the garment or distributed between the inner layer and the animate being.</p>
+<p id="p-0015" num="0014">The invention will be better understood, and further objects, features and advantages of the invention will become more apparent from the following description, taken in conjunction with the accompanying drawings.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0016" num="0015">In the drawings, which are not necessarily to scale, like or corresponding parts are denoted by like or corresponding reference numerals.</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 1</figref> is a schematic side view of one embodiment of a protective garment.</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 2</figref> is an enlarged, schematic, sectional view of portion &#x201c;A&#x201d; of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic, cutaway, side view of one embodiment of a boot or shoe having a pump.</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 4</figref> is a schematic, cutaway, side view of one embodiment of a pump located near an elbow of a human.</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 5</figref> is a schematic front view of one embodiment of a pump located on a torso of a human.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIGS. 6A and 6B</figref> are schematic fluid flow diagrams of a protective garment.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are side and ends views, respectively, of one embodiment of tubing for a distribution system.</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIGS. 8A-B</figref>, <b>9</b>A-B, and <b>10</b>A-B are graphs of core temperature (<figref idref="DRAWINGS">FIGS. 8A</figref>, <b>9</b>A, <b>10</b>A) and physiological strain index (<figref idref="DRAWINGS">FIGS. 8B</figref>, <b>9</b>B, <b>10</b>B) versus time for varying temperature and humidity conditions, with (ACP2E) and without (MOPP-4) two-stage evaporative cooling. The physiological strain index (PSI) is a measure of thermal/work strain expressed on a scale of 1 to 10. Increases in heart rate and body temperature result in increased PSI levels. <figref idref="DRAWINGS">FIGS. 8A-B</figref>, <b>9</b>A-B, and <b>10</b>A-B were generated using thermal-physiological modeling based on principles of physics and physiology.</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 11</figref> is a schematic fluid flow diagram of a protective garment that includes an external reservoir.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0026" num="0025">A two-stage evaporative cooling process and protective overgarment may reduce overheating and heat illness experienced by those who wear protective garments such as hazardous material suits. The cooling process and overgarment may be suitable for animate beings, in particular, humans. A first stage of evaporative cooling may include evaporation of sweat from the skin of a human, or evaporating sweat from an undergarment that is worn next to the skin. The undergarment may have multiple layers. The sweat vapor may condense on an interior surface of an inner, impermeable layer of the loose-fitting protective garment.</p>
+<p id="p-0027" num="0026">As used herein, &#x201c;impermeable layer&#x201d; means a layer of a garment that is at least impermeable to water vapor and water. Preferably, the impermeable layer may also be impermeable to a range of chemical, biological, and other types of hazards. Different chemical, biological, or other types of hazards may require the selection of varying materials for the impermeable layer. Examples of materials for impermeable layers of protective garments are well-known in the field of hazardous materials protection. Such materials may include PTFE (polytetrafluoroethylene, e.g., TEFLON&#xae;), Dupont&#x2122; Tychem&#xae; TK, impermeable Dupont&#x2122; Nomex&#xae;, Gore&#xae; CHEMPACK&#xae; Ultra Barrier, or other impermeable materials, such as cotton or nylon fabric coated with polyvinyl chloride (PVC), polyurethane (PU), or rubber.</p>
+<p id="p-0028" num="0027">A second stage of evaporative cooling may occur on the exterior surface of the protective garment, exterior of the impermeable layer. The second stage of evaporative cooling may help dissipate the heat of condensation generated on the interior surface of the impermeable layer. The second stage of evaporative cooling may include pumping condensed sweat from inside the garment to the exterior of the garment and then distributing the condensed sweat on the exterior surface of the garment for re-evaporation. The second stage of evaporative cooling may include pumping unevaporated sweat from inside the garment to the exterior of the garment and then distributing the unevaporated sweat on the exterior surface of the garment for evaporation. In some embodiments, the second stage may include pumping water from inside the garment to the exterior of the garment and then distributing the water on the exterior surface of the garment for re-evaporation.</p>
+<p id="p-0029" num="0028"><figref idref="DRAWINGS">FIG. 1</figref> is a side view of one embodiment of a protective garment <b>10</b>. Protective garment <b>10</b> may be a unitary garment, or may have separate top (jacket) and bottom (pants) portions. Protective garment <b>10</b> may include removable gloves <b>12</b>. Or, gloves <b>12</b> may be integral with garment <b>10</b>. Protective garment <b>10</b> may include removable shoes or boots <b>14</b>. Or, shoes or boots <b>14</b> may be integral with garment <b>10</b>. Apparatus and methods for seals <b>22</b> around removable boots <b>14</b> and removable gloves <b>12</b> are known in the art. The degree of integrity of the sealing method that is required for boots <b>14</b> and/or gloves <b>12</b> depends on the nature or level of the chemical, biological, or other threat. As is known in the art, the composition of garment <b>10</b> may be different for different areas of garment <b>10</b>. For example, the composition of boots <b>14</b> and/or gloves <b>12</b> may differ from the composition of the remainder of garment <b>10</b>, particularly if boots <b>14</b> and/or gloves <b>12</b> are separately removable from the remainder of garment <b>10</b>.</p>
+<p id="p-0030" num="0029">In the embodiment of <figref idref="DRAWINGS">FIG. 1</figref>, garment <b>10</b> includes an integral head covering <b>16</b>. Head covering <b>16</b> may include a transparent viewing portion <b>18</b>. Respiration may be variously accomplished via a backpack re-breather, a self-contained breathing apparatus, or a tethered system where air is supplied via a hose (not shown), as in the U.S. Army's Self-Contained Toxic Environment Protective Outfit (STEPO). Excess pressure may be released via one or more one-way exhaust vents <b>20</b>. Or, in lieu of integral head covering <b>16</b>, a gas mask with or without other head covering may be used. In some embodiments, water in expired breath may be condensed, captured and re-evaporated.</p>
+<p id="p-0031" num="0030">Garment <b>10</b> may be an overgarment, that is, the outermost component of a clothing ensemble. As such, garment <b>10</b> may be sized to be generally loose-fitting on the wearer of the garment, for example, to allow freedom of movement or to provide ample space for undergarments. Undergarments are not required with garment <b>10</b>, but may be used. For example, a T-shirt and shorts may be worn under garment <b>10</b>. For military use, an Army Combat Uniform (ACU) worn with undershirt and underpants may be worn with or without armor under garment <b>10</b>. Other types of garments may be worn under garment <b>10</b>. In general, garment <b>10</b> may not be pre-tensioned against the wearer, in contrast to elasticized, tight-fitting garments. But, in some embodiments of garment <b>10</b>, selected pre-tensioning may be used for protective purposes, for example, elastic sleeve cuffs, leg cuffs, neck band, etc.</p>
+<p id="p-0032" num="0031"><figref idref="DRAWINGS">FIG. 2</figref> is an enlarged, schematic, sectional view of portion &#x201c;A&#x201d; of <figref idref="DRAWINGS">FIG. 1</figref>. In <figref idref="DRAWINGS">FIG. 2</figref>, a human <b>24</b> has an outer skin <b>26</b>. Optionally, an undergarment <b>28</b> may be juxtaposed with skin <b>26</b>. An air gap or space <b>30</b> may be adjacent undergarment <b>28</b>, or, if undergarment <b>28</b> is not present, air gap <b>30</b> may be adjacent skin <b>26</b>. Garment <b>10</b> may be disposed adjacent air gap <b>30</b>. The width of air gap <b>30</b> may vary on different areas of human <b>24</b> as human <b>24</b> moves around and/or changes position. At some times, in some areas of the human's body that are flexed (e.g., elbows, knees) or are supporting the weight of garment <b>10</b> (for example, shoulders), the width of air gap <b>30</b> may approach or become zero.</p>
+<p id="p-0033" num="0032">Garment <b>10</b> may include an impermeable, inner layer <b>32</b> having an inner surface <b>34</b> contiguous with air gap <b>30</b>. Garment <b>10</b> may include a moisture wicking, outer layer <b>36</b> disposed opposite impermeable inner layer <b>32</b>. Garment <b>10</b> may have an exterior surface <b>38</b>. Wicking outer layer <b>36</b> may be a wicking fabric, such as polyester, for example. Wicking fabrics may be non-absorbent. Wicking fabrics may include a system of fibers that work like capillaries to carry water. Wicking fabrics may have surface texture, for example, puckers in the fabric may increase the surface area and enhance evaporation. Wicking outer layer <b>36</b> may also be a surface treatment, for example, a liquid or spray that may be applied to an outer surface of impermeable inner layer <b>32</b>. The surface treatment may be a surfactant (e.g., Woolite&#xae;) that decreases water surface tension and promotes wetting of fabric.</p>
+<p id="p-0034" num="0033">In some embodiments of the invention, a semi-impermeable layer may be substituted for impermeable layer <b>32</b>. The semi-impermeable layer may be at least impermeable to liquid water, but semi-impermeable to water vapor, such as a GORE-TEX&#xae; type of material.</p>
+<p id="p-0035" num="0034">Human <b>24</b> may excrete or exude liquid sweat <b>40</b> from skin <b>26</b>. If no undergarment <b>28</b> is present, liquid sweat <b>40</b> may evaporate directly from skin <b>26</b>, pass through air space <b>30</b> as sweat vapor, and condense on inner surface <b>34</b> as condensed sweat <b>42</b>. If undergarment <b>28</b> is present, liquid sweat <b>40</b> may pass through undergarment <b>28</b>, evaporate from undergarment <b>28</b>, pass through air space <b>30</b> as sweat vapor, and condense on inner surface <b>34</b> as re-condensed liquid sweat <b>42</b>. In either case, skin <b>26</b> may be directly or indirectly cooled by evaporation of liquid sweat <b>40</b>.</p>
+<p id="p-0036" num="0035">As will be described in more detail below, condensed sweat <b>42</b> may be collected and transported to wicking outer layer <b>36</b>. In addition or alternatively, liquid sweat <b>40</b> that may not have evaporated may be collected and transported through impermeable inner layer <b>32</b> to wicking outer layer <b>36</b>. On or in wicking outer layer <b>36</b>, the transported sweat <b>44</b> may evaporate from external surface <b>38</b> of garment <b>10</b>. Evaporation of transported sweat <b>44</b> from external surface <b>38</b> may cool wicking outer layer <b>36</b>, thereby indirectly cooling impermeable inner layer <b>32</b>, air space <b>30</b>, and human <b>24</b>. It should be noted that, in some embodiments of garment <b>10</b>, wicking outer layer <b>36</b> may be included only in selected areas of garment <b>10</b>. For example, wicking outer layer <b>36</b> may be included on areas of garment <b>10</b> that are near to areas of human <b>24</b> which exhibit the greatest increases in sweat rate when the core temperature of human <b>24</b> increases. Such areas of higher sweat rates in human <b>24</b> may be, for example, the head, torso, arms, and upper legs.</p>
+<p id="p-0037" num="0036"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic, cutaway, side view of one embodiment of a boot <b>14</b>. Boot <b>14</b> may be made integral with garment <b>10</b> or may be removable separately from the remainder of garment <b>10</b>. Boot <b>14</b> may include a pump <b>50</b>, a forward insole <b>52</b>, and a rear insole <b>54</b>. Forward insole <b>52</b> and rear insole <b>54</b> may include pores <b>56</b>. Condensed sweat <b>42</b> from inner surface <b>34</b> of garment <b>10</b> and/or unevaporated sweat <b>40</b> may accumulate in boot <b>14</b> and pass through pores <b>56</b> into a bottom area <b>58</b> of boot <b>14</b>. From bottom area <b>58</b>, the accumulated sweat may enter inlet tubing <b>60</b> and thence reservoir <b>62</b>. A check or one-way valve <b>64</b> may be disposed in inlet tubing <b>60</b> to prevent flow from reservoir <b>62</b> into bottom area <b>58</b>. Reservoir <b>62</b> may be, for example, an elastic or flexible bladder. Rear insole <b>54</b> may be, for example, an elastic membrane.</p>
+<p id="p-0038" num="0037">The intermittent force of the heel of human <b>24</b> on rear insole <b>54</b> and reservoir <b>62</b> may pump collected sweat from reservoir <b>62</b> through an outlet tubing <b>66</b> and, ultimately, through impermeable inner layer <b>32</b> to wicking outer layer <b>36</b>. A check valve or one-way valve <b>64</b> may be disposed in outlet tubing <b>66</b> to prevent backflow into reservoir <b>62</b>. A quick-disconnect coupling <b>68</b> may be included in outlet tubing <b>66</b>, particularly if boot <b>14</b> is a removable type boot.</p>
+<p id="p-0039" num="0038"><figref idref="DRAWINGS">FIG. 4</figref> is a schematic, cutaway, side view of one embodiment of a pump <b>70</b> located near an elbow <b>72</b> of human <b>24</b>. Pump <b>70</b> may include an elastic or flexible bladder <b>74</b> for containing unevaporated and/or condensed sweat. Bladder <b>74</b> may be connected to inlet tubing <b>76</b> and outlet tubing <b>78</b>. A flexible shaft <b>80</b> may have one end fixed to upper arm <b>82</b> with adjustable strap <b>84</b> and another end that extends toward lower arm <b>86</b> and bears on bladder <b>74</b>. Inner surface <b>34</b> of impermeable layer <b>32</b> may include a reservoir <b>88</b> for collecting unevaporated sweat and/or sweat that has condensed on inner surface <b>34</b>. Reservoir <b>88</b> may be in the form of, for example, a flexible, semi-rigid, or rigid gutter <b>87</b> with one end <b>89</b> fixed to surface <b>34</b>. Gutter <b>87</b> may extend circumferentially (partially or completely) around the inner surface <b>34</b> of a sleeve <b>90</b> of garment <b>10</b>. Gutter <b>87</b> may be made of, for example, a plastic material covered with a waterproof fabric.</p>
+<p id="p-0040" num="0039">Movement of elbow joint <b>72</b> may cause pump <b>70</b> to transport accumulated sweat from reservoir <b>88</b> via inlet tubing <b>76</b> to outlet tubing <b>78</b> and, ultimately, through impermeable inner layer <b>32</b> to wicking outer layer <b>36</b>. Check valves <b>64</b> may be disposed in inlet tubing <b>76</b> and outlet tubing <b>78</b>. A quick-disconnect coupling <b>68</b> may be included in outlet tubing <b>78</b> to facilitate set-up of garment <b>10</b> and to provide an option to use or not use pump <b>70</b>.</p>
+<p id="p-0041" num="0040"><figref idref="DRAWINGS">FIG. 5</figref> is a schematic front view of one embodiment of a pump <b>92</b> located on a torso <b>94</b> of human <b>24</b>. Pump <b>92</b> may be located on the lower chest so that inspiration movements of human <b>24</b> may cause elastic bladder <b>96</b> to decrease in volume. Bladder <b>96</b> may be attached to human <b>24</b> using, for example, an adjustable strap <b>98</b> that may extend around torso <b>94</b>. A reservoir <b>100</b> may be disposed on an inner surface <b>34</b> of impermeable layer <b>32</b>. Reservoir <b>100</b> may be in the form of, for example, a flexible, semi-rigid, or rigid gutter <b>101</b> with one end <b>102</b> fixed to surface <b>34</b>. Gutter <b>101</b> may extend circumferentially (partially or completely) around the inner surface <b>34</b> of a torso portion <b>104</b> of garment <b>10</b>. Gutter <b>101</b> may be made of, for example, a plastic material covered with a waterproof fabric. Inlet tubing <b>106</b> may extend from pump <b>92</b> to an opening <b>103</b> in gutter <b>101</b>.</p>
+<p id="p-0042" num="0041">Breathing movements of human <b>24</b> may cause pump <b>92</b> to transport sweat from reservoir <b>100</b> through opening <b>103</b> and inlet tubing <b>106</b> and then to outlet tubing <b>108</b> and, ultimately, through impermeable inner layer <b>32</b> to wicking outer layer <b>36</b>. Check valves <b>64</b> may be disposed in inlet tubing <b>106</b> and outlet tubing <b>108</b>. A quick-disconnect coupling <b>68</b> may be included in outlet tubing <b>108</b> to facilitate set-up of garment <b>10</b> and to provide an option to use or not use pump <b>92</b>. In lieu of pump <b>92</b>, one or more downspouts in the form of tubing <b>105</b> (internal to torso portion <b>104</b> of garment <b>10</b>) may carry contents of reservoir <b>100</b> to bottom area <b>58</b> of boot <b>14</b> or to reservoir <b>62</b> in boot <b>14</b>.</p>
+<p id="p-0043" num="0042">As discussed above, pumps <b>50</b>, <b>70</b>, and <b>92</b> may be powered by the natural movements of human <b>24</b> that may occur while performing a task. &#x201c;Natural body movements&#x201d; are not movements of human <b>24</b> that are consciously and specifically directed to only actuating a pump. One or more of pumps <b>50</b>, <b>70</b>, <b>92</b> may be used in various combination and numbers. For example, a multiplicity of pumps may be arrayed circumferentially around elbows, knees, waist, shoulder, underarm, hip and other areas such that the action of bending at these locations may result in bladder compression and fluid output, and straightening at these locations may result in bladder re-expansion and fluid intake. Other pumps, such as battery-powered pumps or hand pumps may be used. The sweat may be pumped by the pump or pumps through the outlet tubing and through impermeable inner layer <b>32</b> to wicking outer layer <b>36</b>. From wicking outer layer <b>36</b>, the sweat may be distributed on external surface <b>38</b> of garment <b>10</b> and evaporated to thereby cool garment <b>10</b>.</p>
+<p id="p-0044" num="0043">Outlet tubing from each pump, for example, outlet tubing <b>66</b>, <b>78</b> and <b>108</b>, may be joined together before piercing impermeable layer <b>32</b>. Or, each outlet tubing may independently pierce impermeable layer <b>32</b>. <figref idref="DRAWINGS">FIG. 6A</figref> is a schematic flow diagram of a garment <b>10</b> having two pumps <b>50</b>, two pumps <b>70</b> and one pump <b>92</b>. Outlet tubing <b>66</b>, <b>66</b>, <b>78</b>, <b>78</b>, and <b>108</b> from each of the respective pumps may join an outlet header or manifold <b>110</b>. Header <b>110</b> may pierce or pass through impermeable layer <b>32</b> at an opening <b>112</b>. Opening <b>112</b> may be sealed around header <b>110</b>. Check valves <b>64</b> may be used to prevent backflow. <figref idref="DRAWINGS">FIG. 6B</figref> is a schematic flow diagram of a garment <b>10</b> having two pumps <b>50</b>, two pumps <b>70</b> and one pump <b>92</b>. Outlet tubing <b>66</b>, <b>66</b>, <b>78</b>, <b>78</b>, and <b>108</b> from each of the respective pumps may independently pass through impermeable layer <b>32</b> at multiple openings <b>112</b>. Openings <b>112</b> may be sealed around each outlet tubing. Check valves <b>64</b> may be used to prevent backflow. Outlet tubing from the pumps and/or outlet header <b>110</b> may be fastened to inner surface <b>34</b> of impermeable layer <b>32</b>. <figref idref="DRAWINGS">FIGS. 6A and 6B</figref> are exemplary only. The number of pumps used may be one or more.</p>
+<p id="p-0045" num="0044">At opening <b>112</b> or openings <b>112</b>, sweat flowing in the outlet tubing or outlet header may flow into a distribution system for distributing the sweat on or in the outer wicking layer <b>36</b>. <figref idref="DRAWINGS">FIG. 1</figref> shows a distribution system <b>114</b> that may include a plurality of tubes with holes or perforations. The holes may allow the sweat to flow into wicking layer <b>36</b>. The cross-section of the tubing that forms distribution system <b>114</b> may be circular, semi-circular or some other cross-section.</p>
+<p id="p-0046" num="0045"><figref idref="DRAWINGS">FIGS. 7A and 7B</figref> are side and ends views, respectively, of one embodiment of tubing <b>116</b> for distribution system <b>114</b>. Tubing <b>116</b> may have a semi-circular cross-section. Tubing <b>116</b> may include openings <b>118</b> for the passage of liquid sweat from tubing <b>116</b> to wicking layer <b>36</b>. A flat side <b>120</b> of tubing <b>116</b> may face inward toward human <b>24</b>. Tubing <b>116</b> may be disposed so as to lie on top of wicking layer <b>36</b>, or be partially or completely embedded in wicking layer <b>36</b>. Wicking outer layer <b>36</b> may also be a surface treatment, for example, a liquid or spray that may be applied to an outer surface of impermeable inner layer <b>32</b> thereby enabling the outer surface to wick, spread, and/or distribute water over regions of the outer surface.</p>
+<p id="p-0047" num="0046">In <figref idref="DRAWINGS">FIG. 1</figref>, outlet header <b>110</b> (<figref idref="DRAWINGS">FIG. 6A</figref>) may exit layer <b>32</b> at opening <b>112</b> (shown in dashed line) in the neck area and may fluidly communicate with tubing <b>116</b><i>a </i>disposed around the bottom of head covering <b>16</b>. A vertical tubing <b>116</b><i>b </i>may lead to a tubing <b>116</b><i>c </i>that may be arranged circularly or circumferentially (partially or completely) around the top of head covering <b>16</b>. A check valve (not shown) may be included in vertical tubing <b>116</b><i>b </i>to prevent backflow. A tubing <b>116</b><i>d </i>may extend from tubing <b>116</b><i>a </i>down sleeve <b>90</b> of garment <b>10</b>. A tubing <b>116</b><i>e </i>may extend from tubing <b>116</b><i>a </i>down torso portion <b>104</b> of garment <b>10</b> to a waist tubing <b>116</b><i>f</i>. Waist tubing <b>116</b><i>f </i>may be arranged circumferentially (partially or completely) around garment <b>10</b>. Vertical leg tubing <b>116</b><i>g </i>may extend from waist tubing <b>116</b><i>f </i>to a circumferential thigh tubing <b>116</b><i>h</i>. Of course, tubing <b>116</b> may be arranged in many different ways on the exterior of garment <b>10</b>. In addition, garment <b>10</b> may include plumbing and valves configured to distribute harvested sweat to hotter surfaces where sweat evaporation may occur most effectively. Toxic environments of microbes, viruses and tiny insects, etc., may require check valves with enhanced sealing features. Such check valves may require higher opening pressures. Higher opening pressures may be supplied by, for example, a piston or pump driven by a battery-operated, electric motor or solenoid.</p>
+<p id="p-0048" num="0047">Wicking layer <b>36</b> may receive liquid sweat that may exit openings <b>118</b> in the network of tubing <b>116</b> that forms distribution system <b>114</b>. Wicking layer <b>36</b> may be present wherever impermeable layer <b>34</b> is present, or may be selectively used. In <figref idref="DRAWINGS">FIG. 1</figref>, wicking layer <b>36</b> is shown with Xs and may be present in areas near tubing <b>116</b><i>a</i>-<i>h. </i></p>
+<p id="p-0049" num="0048">In some embodiments, garment <b>10</b> may include one or more external reservoirs <b>122</b> (<figref idref="DRAWINGS">FIG. 1</figref>). In <figref idref="DRAWINGS">FIG. 1</figref>, the locations and sizes of external reservoirs <b>122</b> on garment <b>10</b> are exemplary only. External reservoir(s) <b>122</b> may be of varying capacity. An example of a capacity for external reservoir <b>122</b> is 2 liters. External reservoir <b>122</b> may be made of any material capable of holding water, for example, plastic or rubber. Reservoir <b>122</b> may be flexible or rigid. Reservoir <b>122</b> may be attached to the outer surface of garment <b>10</b> using, for example, straps or hooks. Reservoir <b>122</b> may contain water <b>124</b> and may include a fill opening for adding water therein. External reservoir <b>122</b> may be disposed exterior to impermeable layer <b>32</b> (<figref idref="DRAWINGS">FIG. 2</figref>). External reservoir <b>122</b> may be fluidly connected to one or more reservoirs located interior to layer <b>32</b>, for example, internal reservoirs <b>62</b> (<figref idref="DRAWINGS">FIG. 3</figref>), <b>88</b> (<figref idref="DRAWINGS">FIG. 4</figref>), or <b>100</b> (<figref idref="DRAWINGS">FIG. 5</figref>). <figref idref="DRAWINGS">FIG. 11</figref> is a schematic fluid flow diagram of garment <b>10</b> showing external reservoir <b>122</b> connected by tubing <b>126</b> to, for example, interior reservoir <b>62</b>. Flow of water <b>124</b> from reservoir <b>122</b> may be controlled by, for example, a valve <b>128</b>.</p>
+<p id="p-0050" num="0049">Thus, one or more of liquid sweat <b>40</b> (<figref idref="DRAWINGS">FIG. 2</figref>), condensed sweat <b>42</b> (<figref idref="DRAWINGS">FIG. 2</figref>) and water <b>124</b> (from reservoir <b>122</b>) may be pumped from reservoirs internal to layer <b>32</b> to outlet tubing. As an example, in <figref idref="DRAWINGS">FIG. 11</figref>, the contents (which may be one or more of liquid sweat <b>40</b>, condensed sweat <b>42</b>, and water <b>124</b>) of interior reservoir <b>62</b> may be pumped through outlet tubing <b>66</b>. In addition to pumping the contents of reservoirs internal to layer <b>32</b> to external distribution system <b>114</b> (<figref idref="DRAWINGS">FIG. 1</figref>), some or all of the contents of the internal reservoirs may be redistributed in space <b>30</b> or on undergarment <b>28</b> (<figref idref="DRAWINGS">FIG. 2</figref>) for re-evaporation, which may enhance cooling. Distribution in space <b>30</b> or on undergarment <b>28</b> may be helpful, for example, when garment <b>10</b> is initially donned, when the user is under-hydrated, or when the user is not sweating adequately. Inadequate sweating may result from, for example, medications taken by the user of garment <b>10</b> to resist the neurotoxic effects of chemical agents.</p>
+<p id="p-0051" num="0050">Redistribution in space <b>30</b> or on undergarment <b>28</b> may be accomplished by providing one or more fluid exit ports <b>130</b> (<figref idref="DRAWINGS">FIGS. 6A and 6B</figref>) in one or more outlet tubes or headers, such as outlet tubes <b>66</b>, <b>78</b>, <b>108</b> and header <b>110</b>. Fluid exit ports <b>130</b> may include mini or micro nozzles for spraying one or more of liquid sweat <b>40</b> (<figref idref="DRAWINGS">FIG. 2</figref>), condensed sweat <b>42</b> (<figref idref="DRAWINGS">FIG. 2</figref>) and water <b>124</b> onto undergarment <b>28</b> and/or in space <b>30</b>. Ports <b>130</b> may be sized such that a portion of the flow through the outlet tubes or headers is redistributed on skin <b>26</b> and a portion of the flow is transported to external distribution system <b>114</b>. Alternatively, separate outlet tubings may be provided from the internal reservoirs for each of: (1) flow to the external distribution system <b>114</b>; and (2) flow to be redistributed on undergarment <b>28</b> and/or in space <b>30</b>.</p>
+<p id="p-0052" num="0051">The maximum perspiration rate for a human may be about 1.5 liters per hour. The size and capacity of the reservoirs, pumps, bladders, inlet tubing, outlet tubing, outlet headers, and distribution system tubing may be determined, for example, from the maximum perspiration rate and the number and location of pumps used.</p>
+<p id="p-0053" num="0052">Two-stage evaporative cooling garment <b>10</b> may be more efficient under certain temperature conditions. For example, garment <b>10</b> may be particularly effective for cooling when the ambient (external to garment <b>10</b>) wet bulb temperature is less than the temperature of impermeable barrier <b>32</b>, and the temperature of impermeable barrier <b>32</b> is less than the temperature of skin <b>26</b> (<figref idref="DRAWINGS">FIG. 2</figref>). Even when temperature and humidity conditions may be less than optimal for functioning of garment <b>10</b>, garment <b>10</b> may, nevertheless, provide important advantages. For example, removal of sweat condensate <b>42</b> and/or unevaporated sweat <b>40</b> from the interior of garment <b>10</b> reduces humidity in air space <b>30</b>, thereby enhancing first-stage evaporation (from skin <b>26</b> or undergarment <b>28</b>). Also, condensed sweat <b>42</b> and/or unevaporated sweat <b>40</b> that may accumulate inside a garment may cause skin <b>26</b> of human <b>24</b> to become very soft and perishable. Removal of the sweat helps reduce damage to skin <b>26</b>.</p>
+<p id="p-0054" num="0053">Thermal physiological modeling of two-stage evaporative cooling indicates that physiological heat strain may be reduced. <figref idref="DRAWINGS">FIGS. 8A-B</figref>, <b>9</b>A-B, and <b>10</b>A-B are graphs of core temperature (<figref idref="DRAWINGS">FIGS. 8A</figref>, <b>9</b>A, <b>10</b>A) and physiological strain index (PSI) (<figref idref="DRAWINGS">FIGS. 8B</figref>, <b>9</b>B, <b>10</b>B) versus time, with and without two-stage evaporative cooling. PSI reflects thermal-work strain (i.e., increases in both body temperature and heart rate). The graphs were created from a computer simulation of a human walking while clad in two different ensembles and breathing filtered outside air. One ensemble is a MOPP-4 (Mission Oriented Protective Posture-Level 4) suit without two-stage evaporative cooling. A second ensemble (labeled as ACP2E) is a two-stage evaporative cooling garment <b>10</b> with a standard U.S. Army Combat Uniform (ACU) as undergarment <b>28</b>. In <figref idref="DRAWINGS">FIGS. 8B</figref>, <b>9</b>B, and <b>10</b>B, a physiological strain index (PSI) of <b>10</b> corresponds to maximum permissible core temperature (T<sub>C</sub>) and heart rate (HR). In practice, a maximum PSI of 8 is more desirable.</p>
+<p id="p-0055" num="0054"><figref idref="DRAWINGS">FIGS. 8A-B</figref> assume no direct sunlight, ambient temperature of 20 degrees C., relative humidity (RH) of 50%, and a dew point of 9.5 degrees C. <figref idref="DRAWINGS">FIGS. 9A-B</figref> assume no direct sunlight, ambient temperature of 25 degrees C., relative humidity of 38%, and a dew point of 9.5 degrees C. <figref idref="DRAWINGS">FIGS. 10A-B</figref> assume no direct sunlight, ambient temperature of 30 degrees C., relative humidity of 28%, and a dew point of 9.5 degrees C. Compared to the MOPP-4 ensemble, the ACP2E ensemble shows substantially extended safe exposure times and a reduction in PSI (i.e., thermal-work strain) of about 40% (<figref idref="DRAWINGS">FIG. 8B</figref>), 35% (<figref idref="DRAWINGS">FIG. 9B</figref>), and 25% (<figref idref="DRAWINGS">FIG. 10B</figref>), respectively.</p>
+<p id="p-0056" num="0055">Tests were conducted with a stationary sweating thermal manikin wearing a commercially available chemical protection suit (Blauer Multi-threat Ensemble, Blauer Manufacturing Company, Boston, Mass. 02215). The chemical protection suit was modified for water distribution on its outer surface. The modification included a thin wicking fabric bib and related tubing to distribute water over chest, abdomen and groin areas. The wicking bib system provided an evaporating water surface over about 27% of the suit area. In a climate chamber environment of 95&#xb0; F. and 40% RH, the wicking bib system increased cooling by 119 watts, compared to cooling without the bib. With 80% of the suit wet, the potential cooling increase is estimated to be about 340 watts. The manikin tests further demonstrate the cooling capability of the two-stage evaporative cooling apparatus and method.</p>
+<p id="p-0057" num="0056">The simulation results of <figref idref="DRAWINGS">FIGS. 8B</figref>, <b>9</b>B, and <b>10</b>B and the manikin test results indicate that, at least for the test conditions, the ACP2E garment enables unlimited safe exposure times, compared to safe exposure times of about 180 minutes (<figref idref="DRAWINGS">FIG. 8A</figref>), 130 minutes (<figref idref="DRAWINGS">FIG. 9A</figref>), and 110 minutes (<figref idref="DRAWINGS">FIG. 10A</figref>) for the MOPP-4 ensemble.</p>
+<p id="p-0058" num="0057">It will be understood that many additional changes in the details, materials, steps and arrangement of parts, which have been herein described and illustrated in order to explain the nature of the invention, may be made by those skilled in the art within the principle and scope of the invention, as expressed in the appended claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A protective garment for an animate being, comprising:
+<claim-text>an impermeable inner layer;</claim-text>
+<claim-text>a reservoir disposed interior to the inner layer, for collecting sweat from the animate being;</claim-text>
+<claim-text>an external reservoir disposed exterior to the inner layer for containing water, the external reservoir being fluidly connecter to the reservoir; and</claim-text>
+<claim-text>a pump for moving the sweat from the reservoir to a location external to the inner layer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the animate being is a human.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The garment of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the reservoir comprises a gutter connected to the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The garment of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the pump is adapted to be disposed on a torso of the human.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The garment of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the gutter is disposed circumferentially on the inner layer of a torso portion of the garment.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The garment of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the pump is adapted to be disposed at an elbow joint of the human.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The garment of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the gutter is disposed circumferentially on an inner layer of a sleeve portion of the garment.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The garment of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein the gutter is flexible.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The garment of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the pump and reservoir are disposed in a boot of the garment.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the sweat collected in the reservoir comprises at least one of 1) unevaporated liquid sweat, and 2) liquid sweat that has exuded from the animate being, evaporated, and condensed on the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the pump is disposed interior to the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a plurality of reservoirs disposed inside the inner layer, for collecting sweat from the animate being; and a plurality of pumps for moving the sweat from the reservoirs to locations external to the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a distribution system located external to the inner layer, for distributing the sweat on an exterior of the garment.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The garment of <claim-ref idref="CLM-00006">claim 6</claim-ref>, further comprising an inlet tubing having one end in fluid communication with the reservoir and another end connected to an inlet of the pump.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The garment of <claim-ref idref="CLM-00007">claim 7</claim-ref>, further comprising an outlet tubing having one end connected to an outlet of the pump and another end that passes through the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. The garment of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the distribution system comprises at least one fluid conduit in fluid communication with the outlet tubing, and wicking material adjacent to the at least one fluid conduit.</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The garment of <claim-ref idref="CLM-00015">claim 15</claim-ref>, wherein the outlet tubing is operatively connected to the distribution system.</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The garment of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the distribution system comprises wicking material.</claim-text>
+</claim>
+<claim id="CLM-00019" num="00019">
+<claim-text>19. The garment of <claim-ref idref="CLM-00018">claim 18</claim-ref>, wherein the wicking material is an external layer of the garment.</claim-text>
+</claim>
+<claim id="CLM-00020" num="00020">
+<claim-text>20. The garment of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein the distribution system comprises at least one fluid conduit.</claim-text>
+</claim>
+<claim id="CLM-00021" num="00021">
+<claim-text>21. The garment of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising a) tubing that connects the external reservoir to the reservoir and b) water disposed in the external reservoir for transfer to the reservoir wherein the pump pumps the sweat and the water.</claim-text>
+</claim>
+<claim id="CLM-00022" num="00022">
+<claim-text>22. The garment of <claim-ref idref="CLM-00021">claim 21</claim-ref>, further comprising outlet tubing having one end connected to the pump, the outlet tubing including at least one fluid exit port disposed interior to the inner layer for distributing at least one of sweat and water interior of the garment between the inner layer and the animate being.</claim-text>
+</claim>
+<claim id="CLM-00023" num="00023">
+<claim-text>23. A method, comprising:
+<claim-text>placing the garment of <claim-ref idref="CLM-00001">claim 1</claim-ref> on an animate being;</claim-text>
+<claim-text>collecting sweat from the animate being in the reservoir; and</claim-text>
+<claim-text>pumping the sweat to an exterior of the inner layer.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00024" num="00024">
+<claim-text>24. The method of <claim-ref idref="CLM-00023">claim 23</claim-ref>, wherein the sweat comprises sweat that has condensed on the inner layer.</claim-text>
+</claim>
+<claim id="CLM-00025" num="00025">
+<claim-text>25. The method of <claim-ref idref="CLM-00023">claim 23</claim-ref>, wherein the sweat comprises unevaporated sweat.</claim-text>
+</claim>
+<claim id="CLM-00026" num="00026">
+<claim-text>26. The method of <claim-ref idref="CLM-00023">claim 23</claim-ref>, further comprising, after pumping, distributing the sweat on an exterior of the garment.</claim-text>
+</claim>
+<claim id="CLM-00027" num="00027">
+<claim-text>27. The method of <claim-ref idref="CLM-00026">claim 26</claim-ref>, further comprising, after distributing, evaporating the sweat from the exterior of the garment.</claim-text>
+</claim>
+<claim id="CLM-00028" num="00028">
+<claim-text>28. A method, comprising:
+<claim-text>placing the garment of <claim-ref idref="CLM-00002">claim 2</claim-ref> on a human;</claim-text>
+<claim-text>collecting sweat from the human in the reservoir, the sweat comprising at least one of 1) sweat that has condensed on the inner layer, and 2) unevaporated sweat;</claim-text>
+<claim-text>pumping the sweat to an exterior of the inner layer; and</claim-text>
+<claim-text>after pumping, distributing the sweat on an exterior of the garment.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00029" num="00029">
+<claim-text>29. The method of <claim-ref idref="CLM-00028">claim 28</claim-ref>, further comprising, after distributing, evaporating the sweat from the exterior of the garment.</claim-text>
+</claim>
+<claim id="CLM-00030" num="00030">
+<claim-text>30. A method, comprising:
+<claim-text>placing the garment of <claim-ref idref="CLM-00021">claim 21</claim-ref> on an animated being;</claim-text>
+<claim-text>collecting in the reservoir at least one of (a) the sweat from the animate being and (b) the water from the external reservoir; and</claim-text>
+<claim-text>pumping at least one of the sweat and the water to at least one of (a) an exterior of the inner layer and (b) an interior of the inner layer between the garment and the animate being.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00031" num="00031">
+<claim-text>31. The method of <claim-ref idref="CLM-00030">claim 30</claim-ref>, wherein pumping to the interior of the inner layer includes distributing at least one of the sweat and the water between the inner layer and the animate being.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

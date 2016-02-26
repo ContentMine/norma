@@ -10,7 +10,7 @@ import nu.xom.Element;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.tagger.AbstractTElement;
 import org.xmlcml.norma.tagger.MetadataElement;
 import org.xmlcml.norma.tagger.PubstyleTagger;
@@ -50,8 +50,8 @@ public class HindawiTaggerTest {
 	public void testGrouping() throws Exception {
 		File outfile = new File("target/hindawi/507405.grouped.xml");
 		TransformerWrapper transformerWrapper = new TransformerWrapper();
-	    transformerWrapper.transform(Fixtures.F507405_XML, Fixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
-	    XMLUtil.equalsCanonically(Fixtures.F507405_GROUPED_XHTML, outfile, true);
+	    transformerWrapper.transform(NormaFixtures.F507405_XML, NormaFixtures.GROUP_MAJOR_SECTIONS_XSL, outfile);
+	    XMLUtil.equalsCanonically(NormaFixtures.F507405_GROUPED_XHTML, outfile, true);
 
 	}
 
@@ -91,7 +91,7 @@ public class HindawiTaggerTest {
 	@Test
 	public void testMetadataExtraction() throws Exception {
 		PubstyleTagger hindawiTagger = new HTMLHindawiTagger();
-		AbstractTElement metadataElementList = hindawiTagger.extractMetadataElements(Fixtures.F507405_XML);
+		AbstractTElement metadataElementList = hindawiTagger.extractMetadataElements(NormaFixtures.F507405_XML);
 		new File("target/hindawi/").mkdirs();
 		XMLUtil.debug(metadataElementList, new FileOutputStream("target/hindawi/metadata.xml"), 0);
 		Assert.assertEquals("metadata", 16, metadataElementList.size());
@@ -100,7 +100,7 @@ public class HindawiTaggerTest {
 	@Test
 	public void testSectionTagging() throws Exception {
 		PubstyleTagger hindawiTagger = new HTMLHindawiTagger();
-		Element taggedElement = hindawiTagger.addTagsToSections(Fixtures.F507405_GROUPED_XHTML);
+		Element taggedElement = hindawiTagger.addTagsToSections(NormaFixtures.F507405_GROUPED_XHTML);
 		new File("target/hindawi/").mkdirs();
 		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged507405.xml"), 0);
 //		Assert.assertEquals("metadata", 16, taggedElement.size());
@@ -115,10 +115,10 @@ public class HindawiTaggerTest {
 	 */
 	@Ignore // Jenkins fails with NoSuchMethod (no idea why)
 	public void test247835() throws Exception {
-		ensureGroupedFile(Fixtures.F247835_GROUPED_XHTML, new File(Fixtures.F247835_DIR, "fulltext.xml"));
+		ensureGroupedFile(NormaFixtures.F247835_GROUPED_XHTML, new File(NormaFixtures.F247835_DIR, "fulltext.xml"));
 		PubstyleTagger hindawiTagger = new HTMLHindawiTagger();
-		Element taggedElement = hindawiTagger.addTagsToSections(Fixtures.F247835_GROUPED_XHTML);
-		String message = XMLUtil.equalsCanonically(Fixtures.F247835_TAGGED_XHTML, taggedElement, true);
+		Element taggedElement = hindawiTagger.addTagsToSections(NormaFixtures.F247835_GROUPED_XHTML);
+		String message = XMLUtil.equalsCanonically(NormaFixtures.F247835_TAGGED_XHTML, taggedElement, true);
 		Assert.assertNull("message: "+message, message);
 		new File("target/hindawi/").mkdirs();
 		XMLUtil.debug(taggedElement, new FileOutputStream("target/hindawi/tagged247835.xml"), 0);
@@ -144,7 +144,7 @@ public class HindawiTaggerTest {
 		if (XMLUtil.isXMLFile(groupedFile) != null || true) {
 			LOG.debug("FORCE TRANSFORM");
 			TransformerWrapper transformerWrapper = new TransformerWrapper();
-		    transformerWrapper.transform(rawFile, Fixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
+		    transformerWrapper.transform(rawFile, NormaFixtures.GROUP_MAJOR_SECTIONS_XSL, groupedFile);
 		}
 	}
 }

@@ -3,6 +3,7 @@ package org.xmlcml.norma.pubstyle.getpapers;
 import java.io.File;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +12,7 @@ import net.minidev.json.JSONArray;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -46,9 +47,9 @@ public class GetPapers {
 	    		String name = file.getName();
 	    		JsonElement element = resultsByPmcid.get(name);
 	    		if (element != null) {
-		    		CMDir cmDir = new CMDir(file);
-		    		File resultsJson = cmDir.getReservedFile(CMDir.RESULTS_JSON);
-		    		FileUtils.write(resultsJson, element.toString());
+		    		CTree cTree = new CTree(file);
+		    		File resultsJson = cTree.getReservedFile(CTree.RESULTS_JSON);
+		    		FileUtils.write(resultsJson, element.toString(), Charset.forName("UTF-8"));
 	    		}
 	    	}
 	    }

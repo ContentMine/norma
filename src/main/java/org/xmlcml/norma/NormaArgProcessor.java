@@ -19,7 +19,7 @@ import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.args.StringPair;
 import org.xmlcml.cmine.args.ValueElement;
 import org.xmlcml.cmine.args.VersionManager;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
@@ -193,12 +193,16 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void runTransform(ArgumentOption option) {
+		boolean ok = false;
 		if (currentCTree == null) {
-			LOG.warn("No current CMDir");
+			LOG.warn("No current CTree");
 		} else {
 			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
-			normaTransformer.transform(option);
+			ok = normaTransformer.transform(option);
+			if (!ok) {
+				currentCTree = null;
+			}
 		}
 	}
 
@@ -266,93 +270,96 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// ==========================
 
 
-	public File checkAndGetInputFile(CMDir cmDir) {
-		if (cmDir == null) {
-			throw new RuntimeException("null cmDir");
+	public File checkAndGetInputFile(CTree cTree) {
+		if (cTree == null) {
+			throw new RuntimeException("null cTree");
 		}
 		String inputName = getString();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CMDir.isReservedFilename(inputName) && !CMDir.hasReservedParentDirectory(inputName) ) {
+		if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
 			throw new RuntimeException("Input must be reserved file; found: "+inputName);
 		}
-		File inputFile = cmDir.getExistingReservedFile(inputName);
+		File inputFile = cTree.getExistingReservedFile(inputName);
 		if (inputFile == null) {
-			inputFile = cmDir.getExistingFileWithReservedParentDirectory(inputName);
+			inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
 		}
 		if (inputFile == null) {
-			throw new RuntimeException("Could not find input file "+inputName+" in directory "+cmDir.getDirectory());
+			String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
+			TREE_LOG().error(msg);
+			System.err.print("!");
+//			throw new RuntimeException(msg);
 		}
 		return inputFile;
 	}
 
-	private void createCMDirListFromInputList() {
+	private void createCTreeListFromInputList() {
 		// proceed unless there is a single reserved file for input
-		if (CMDir.isNonEmptyNonReservedInputList(inputList)) {
-			LOG.trace("CREATING CMDir FROM INPUT:"+inputList);
+		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
+			LOG.trace("CREATING CTree FROM INPUT:"+inputList);
 			// this actually creates directory
 			getOrCreateOutputDirectory();
 			ensureCTreeList();
-			createNewCMDirsAndCopyOriginalFilesAndAddToList();
+			createNewCTreesAndCopyOriginalFilesAndAddToList();
 		}
 	}
 
-	private void createNewCMDirsAndCopyOriginalFilesAndAddToList() {
+	private void createNewCTreesAndCopyOriginalFilesAndAddToList() {
 		ensureCTreeList();
 		for (String filename : inputList) {
 			try {
-				CMDir cmDir = createCMDirAndCopyFileOrMakeSubDirectory(filename);
-				if (cmDir != null) {
-					cTreeList.add(cmDir);
+				CTree cTree = createCTreeAndCopyFileOrMakeSubDirectory(filename);
+				if (cTree != null) {
+					cTreeList.add(cTree);
 				}
 			} catch (IOException e) {
-				LOG.error("Failed to create CMDir: "+filename+"; "+e);
+				LOG.error("Failed to create CTree: "+filename+"; "+e);
 			}
 		}
 	}
 
-	private CMDir createCMDirAndCopyFileOrMakeSubDirectory(String filename) throws IOException {
-		CMDir cmDir = null;
+	private CTree createCTreeAndCopyFileOrMakeSubDirectory(String filename) throws IOException {
+		CTree cTree = null;
 		File file = new File(filename);
 		if (file.isDirectory()) {
 			LOG.error("should not have any directories in inputList: "+file);
 		} else {
 			if (output != null) {
 				String name = FilenameUtils.getName(filename);
-				if (CMDir.isReservedFilename(name)) {
-					LOG.error(name+" is reserved for CMDir: (check that inputs are not already in a CMDir) "+file.getAbsolutePath());
+				if (CTree.isReservedFilename(name)) {
+					LOG.error(name+" is reserved for CTree: (check that inputs are not already in a CTree) "+file.getAbsolutePath());
 				}
-				String cmFilename = CMDir.getCMDirReservedFilenameForExtension(name);
+				String cmFilename = CTree.getCTreeReservedFilenameForExtension(name);
 				if (cmFilename == null) {
-					LOG.error("Cannot create CMDir from this type of file: "+name);
+					LOG.error("Cannot create CTree from this type of file: "+name);
 					return null;
 				}
 				LOG.trace("Reserved filename: "+cmFilename);
-				if (CMDir.isReservedDirectory(cmFilename)) {
-					cmDir = makeCMDir(name);
-					ensureReservedDirectoryAndCopyFile(cmDir, cmFilename, filename);
+				if (CTree.isReservedDirectory(cmFilename)) {
+					cTree = makeCTree(name);
+					ensureReservedDirectoryAndCopyFile(cTree, cmFilename, filename);
 				} else {
-					cmDir = makeCMDir(name);
-					File destFile = cmDir.getReservedFile(cmFilename);
+					cTree = makeCTree(name);
+					File destFile = cTree.getReservedFile(cmFilename);
 					if (destFile != null) {
 						FileUtils.copyFile(file, destFile);
 					}
 				}
 			}
 		}
-		return cmDir;
+		return cTree;
 	}
 
-	private CMDir makeCMDir(String name) {
-		CMDir cmDir;
+	private CTree makeCTree(String name) {
+		CTree cTree;
 		String dirName = FilenameUtils.removeExtension(name);
-		cmDir = createCMDir(dirName);
-		return cmDir;
+		cTree = createCTree(dirName);
+		return cTree;
 	}
 
-	private void ensureReservedDirectoryAndCopyFile(CMDir cmDir, String reservedFilename, String filename) {
-		File reservedDir = new File(cmDir.getDirectory(), reservedFilename);
+	private void ensureReservedDirectoryAndCopyFile(CTree cTree, String reservedFilename, String filename) {
+		File reservedDir = new File(cTree.getDirectory(), reservedFilename);
 		LOG.trace("Res "+reservedDir.getAbsolutePath());
 		File orig = new File(filename);
 		LOG.trace("Orig: "+orig.getAbsolutePath());
@@ -372,11 +379,11 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	}
 
-	private CMDir createCMDir(String dirName) {
-		File cmDirFile = new File(output, dirName);
-		CMDir cmDir = new CMDir(cmDirFile);
-		cmDir.createDirectory(cmDirFile, false);
-		return cmDir;
+	private CTree createCTree(String dirName) {
+		File cTreeFile = new File(output, dirName);
+		CTree cTree = new CTree(cTreeFile);
+		cTree.createDirectory(cTreeFile, false);
+		return cTree;
 	}
 
 	private void getOrCreateOutputDirectory() {
@@ -384,7 +391,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			File outputDir = new File(output);
 			if (outputDir.exists()) {
 				if (!outputDir.isDirectory()) {
-					throw new RuntimeException("cmDirRoot "+outputDir+" must be a directory");
+					throw new RuntimeException("cTreeRoot "+outputDir+" must be a directory");
 				}
 			} else {
 				outputDir.mkdirs();
@@ -439,10 +446,10 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	 */
 	public void parseArgs(String[] args) {
 		super.parseArgs(args);
-		createCMDirListFromInputList();
+		createCTreeListFromInputList();
 	}
 
-	public CMDir getCurrentCMDir() {
+	public CTree getCurrentCMTree() {
 		return currentCTree;
 	}
 

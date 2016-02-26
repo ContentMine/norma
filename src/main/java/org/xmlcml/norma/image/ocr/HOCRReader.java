@@ -243,7 +243,7 @@ public class HOCRReader extends InputReader {
 		rawBody = rawHtml.getBody();
 	}
 
-	public HtmlHead getHead() {
+	public HtmlElement getHead() {
 		return rawHead;
 	}
 	public List<HtmlMeta> getMetaElements() {

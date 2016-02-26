@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978166-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978166</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13595006</doc-number>
+<date>20120827</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>344</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>27</main-group>
+<subgroup>20</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>3</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>27</main-group>
+<subgroup>02</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>15</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>3</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>15</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>41</class>
+<subclass>D</subclass>
+<main-group>2400</main-group>
+<subgroup>422</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2250</main-classification>
+<further-classification>  2 94</further-classification>
+<further-classification>  2108</further-classification>
+<further-classification>  2247</further-classification>
+</classification-national>
+<invention-title id="d2e53">Multi-function garment</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2292347</doc-number>
+<kind>A</kind>
+<name>Bailey</name>
+<date>19420800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 93</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2825902</doc-number>
+<kind>A</kind>
+<name>Breier</name>
+<date>19580300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 93</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>4404687</doc-number>
+<kind>A</kind>
+<name>Hager</name>
+<date>19830900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 94</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>4404689</doc-number>
+<kind>A</kind>
+<name>DeWan</name>
+<date>19830900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2247</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>4700409</doc-number>
+<kind>A</kind>
+<name>De Lott</name>
+<date>19871000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 94</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>5787504</doc-number>
+<kind>A</kind>
+<name>Wu</name>
+<date>19980800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 93</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5794264</doc-number>
+<kind>A</kind>
+<name>Yuen</name>
+<date>19980800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 93</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5850634</doc-number>
+<kind>A</kind>
+<name>Toombs</name>
+<date>19981200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 93</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>D414013</doc-number>
+<kind>S</kind>
+<name>Group</name>
+<date>19990900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> D2828</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>6405377</doc-number>
+<kind>B1</kind>
+<name>Davis</name>
+<date>20020600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 94</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>6532611</doc-number>
+<kind>B1</kind>
+<name>Day</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  5636</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>6598248</doc-number>
+<kind>B1</kind>
+<name>Ong</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  5636</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>7559902</doc-number>
+<kind>B2</kind>
+<name>Ting et al.</name>
+<date>20090700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600529</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>7657954</doc-number>
+<kind>B1</kind>
+<name>Bunkers</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  5644</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>D626725</doc-number>
+<kind>S</kind>
+<name>Snyder et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> D2831</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>8424114</doc-number>
+<kind>B2</kind>
+<name>Snyder et al.</name>
+<date>20130400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 86</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>8801577</doc-number>
+<kind>B2</kind>
+<name>Dibenedetto et al.</name>
+<date>20140800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>482  8</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>8818478</doc-number>
+<kind>B2</kind>
+<name>Scheffler et al.</name>
+<date>20140800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600388</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2005/0054941</doc-number>
+<kind>A1</kind>
+<name>Ting et al.</name>
+<date>20050300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600529</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2006/0000004</doc-number>
+<kind>A1</kind>
+<name>Elen</name>
+<date>20060100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2108</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>2008/0294019</doc-number>
+<kind>A1</kind>
+<name>Tran</name>
+<date>20081100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600301</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>2009/0205096</doc-number>
+<kind>A1</kind>
+<name>Seemann</name>
+<date>20090800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2  4</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>2009/0241235</doc-number>
+<kind>A1</kind>
+<name>Weinreb</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 84</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2010/0041974</doc-number>
+<kind>A1</kind>
+<name>Ting et al.</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600388</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2010/0043117</doc-number>
+<kind>A1</kind>
+<name>Hildebrandt</name>
+<date>20100200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 84</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2010/0095356</doc-number>
+<kind>A1</kind>
+<name>Han et al.</name>
+<date>20100400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>726  4</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>US</country>
+<doc-number>2010/0255099</doc-number>
+<kind>A1</kind>
+<name>Kim et al.</name>
+<date>20101000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>424487</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00028">
+<document-id>
+<country>US</country>
+<doc-number>2010/0292599</doc-number>
+<kind>A1</kind>
+<name>Oleson et al.</name>
+<date>20101100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600519</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00029">
+<document-id>
+<country>US</country>
+<doc-number>2010/0313328</doc-number>
+<kind>A1</kind>
+<name>Shelton et al.</name>
+<date>20101200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2102</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00030">
+<document-id>
+<country>US</country>
+<doc-number>2011/0235311</doc-number>
+<kind>A1</kind>
+<name>Stone</name>
+<date>20110900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>362106</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00031">
+<document-id>
+<country>US</country>
+<doc-number>2012/0099299</doc-number>
+<kind>A1</kind>
+<name>Gorson</name>
+<date>20120400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>362103</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00032">
+<document-id>
+<country>US</country>
+<doc-number>2012/0246795</doc-number>
+<kind>A1</kind>
+<name>Scheffler et al.</name>
+<date>20121000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 69</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00033">
+<document-id>
+<country>US</country>
+<doc-number>2012/0330109</doc-number>
+<kind>A1</kind>
+<name>Tran</name>
+<date>20121200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600301</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00034">
+<document-id>
+<country>US</country>
+<doc-number>2013/0067631</doc-number>
+<kind>A1</kind>
+<name>Crye</name>
+<date>20130300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2 85</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00035">
+<document-id>
+<country>US</country>
+<doc-number>2013/0077289</doc-number>
+<kind>A1</kind>
+<name>Gridley</name>
+<date>20130300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>362103</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00036">
+<document-id>
+<country>US</country>
+<doc-number>2013/0125312</doc-number>
+<kind>A1</kind>
+<name>Harooni</name>
+<date>20130500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  5639</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00037">
+<document-id>
+<country>US</country>
+<doc-number>2013/0162427</doc-number>
+<kind>A1</kind>
+<name>Dibenedetto et al.</name>
+<date>20130600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34053912</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00038">
+<document-id>
+<country>US</country>
+<doc-number>2013/0219624</doc-number>
+<kind>A1</kind>
+<name>Soffer et al.</name>
+<date>20130800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  5636</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00039">
+<document-id>
+<country>US</country>
+<doc-number>2013/0228185</doc-number>
+<kind>A1</kind>
+<name>Middlehurst et al.</name>
+<date>20130900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>128871</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00040">
+<document-id>
+<country>US</country>
+<doc-number>2014/0151416</doc-number>
+<kind>A1</kind>
+<name>Ishihara et al.</name>
+<date>20140600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>224182</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00041">
+<document-id>
+<country>US</country>
+<doc-number>2014/0249429</doc-number>
+<kind>A1</kind>
+<name>Tran</name>
+<date>20140900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>600483</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00042">
+<document-id>
+<country>US</country>
+<doc-number>2014/0285355</doc-number>
+<kind>A1</kind>
+<name>Matte et al.</name>
+<date>20140900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>34081545</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>9</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2 69</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 93</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 94</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2 85</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2102</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2108</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2247</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2250</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  5636</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  5639</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  5652</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>600388</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>600300</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>600389</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>10</number-of-drawing-sheets>
+<number-of-figures>10</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20140053310</doc-number>
+<kind>A1</kind>
+<date>20140227</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Huang</last-name>
+<first-name>Deng-Shan</first-name>
+<address>
+<city>Kaohsiung</city>
+<country>TW</country>
+</address>
+</addressbook>
+<residence>
+<country>TW</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Huang</last-name>
+<first-name>Deng-Shan</first-name>
+<address>
+<city>Kaohsiung</city>
+<country>TW</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Kamrath</last-name>
+<first-name>Alan D.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<orgname>Kamrath IP Lawfirm, P.A.</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Well &#x26; David Corp.</orgname>
+<role>03</role>
+<address>
+<city>Kaohsiung</city>
+<country>TW</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Hale</last-name>
+<first-name>Gloria</first-name>
+<department>3765</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A multi-function garment includes an article of clothing and pockets disposed thereon. Each pocket includes an opening, a lining, and a two-sided engaging unit. The lining of one pocket includes a storage body of a ring-like configuration. The storage body has an open external vacancy interrupting the ring-like configuration of the storage body and an inner vacancy having one end closed and the other end communicating with the external vacancy. A dimension of the external vacancy is smaller than a dimension of the inner vacancy, and a protecting layer is disposed on an inner surface of the lining. Besides a wearing function of sheltering users' skin, the interior of the lining can be reversed outward to allow the article of clothing to be stuffed into the storage body, which is then converted into a neck pillow configuration for achieving the multiple function of using. The structure of the garment is also compact and easy to carry.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="130.22mm" wi="430.95mm" file="US08978166-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="229.36mm" wi="154.26mm" file="US08978166-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="222.93mm" wi="150.79mm" file="US08978166-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="215.39mm" wi="169.42mm" file="US08978166-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="232.83mm" wi="179.83mm" orientation="landscape" file="US08978166-20150317-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="235.71mm" wi="158.33mm" orientation="landscape" file="US08978166-20150317-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="214.80mm" wi="168.23mm" orientation="landscape" file="US08978166-20150317-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="232.24mm" wi="154.26mm" orientation="landscape" file="US08978166-20150317-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="215.98mm" wi="165.27mm" orientation="landscape" file="US08978166-20150317-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="225.89mm" wi="162.39mm" orientation="landscape" file="US08978166-20150317-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="210.74mm" wi="175.18mm" file="US08978166-20150317-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to a garment and, particularly, to a multi-function garment.</p>
+<p id="p-0004" num="0003">2. Description of the Related Art</p>
+<p id="p-0005" num="0004">Referring to <figref idref="DRAWINGS">FIGS. 1 and 2</figref>, a conventional convertible jacket <b>1</b> is commonly seen in the market. The convertible jacket <b>1</b> comprises an article of clothing <b>11</b>, and a pocket <b>12</b> disposed on the article of clothing <b>11</b>. The pocket <b>12</b> includes an opening <b>121</b> defined on the clothing <b>11</b>, and a zipper <b>122</b> is disposed around the opening <b>121</b>. In using, users can wear the jacket <b>1</b> as a garment. In another purpose, users can reverse the jacket <b>1</b> via the opening <b>121</b> to store the clothing <b>11</b> in the pocket <b>12</b>. After zipping, a bag of a packed article of clothing <b>11</b> is presented (not shown).</p>
+<p id="p-0006" num="0005">In practice, the article of clothing <b>11</b> of the convertible jacket <b>1</b> is simply packed in the pocket <b>12</b>. Namely, although it is convenient that the jacket <b>1</b> can be packed closely, the appearance of the packed jacket <b>1</b> is limited to a rectangle formation. Therefore, except for being packed, the convertible jacket <b>1</b> lacks a multi-function purpose.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">It is therefore the purpose of this invention to provide a multi-function garment that is reconfigurable for a wearing function, a packing function, a neck pillow function, and other suitable functionalities.</p>
+<p id="p-0008" num="0007">The multi-function garment in accordance with the present invention comprises an article of clothing and a plurality of pockets disposed on the clothing. Each pocket includes an opening, a lining extended from a periphery of the opening, and a two-sided engaging unit at the opening and capable of being closed and opened. The lining is composed of an inner surface and an external surface opposite the inner surface. The inner surface is disposed inside the pocket to define a receptacle therein. The lining of one of the pockets includes a storage body of a ring-like configuration enclosed by the inner surface and the external surface. The storage body includes an external vacancy defined to be open to interrupt the ring-like configuration of the storage body, and an inner vacancy enclosed by the ring-like configuration of the storage body. One end of the inner vacancy is closed, and the other end of the inner vacancy communicates with the external vacancy. The inner surface of the lining is provided with a protecting layer. The inner vacancy is disposed near the opening of the pocket, and a dimension of the external vacancy is smaller than a dimension of the inner vacancy. A receiving room is formed by reversing the inner surface of the lining outward in order to accommodate the article of clothing so that the two-sided engaging unit is closed to wrap the article of clothing when the receiving room is stuffed with the article of clothing.</p>
+<p id="p-0009" num="0008">Preferably, a hanging rope is disposed on the lining.</p>
+<p id="p-0010" num="0009">Preferably, the protecting layer is disposed on the inner surface, corresponding to the external vacancy.</p>
+<p id="p-0011" num="0010">Preferably, a sensing unit is disposed on the article of clothing for detecting temperature, moisture, or other environmental data.</p>
+<p id="p-0012" num="0011">Preferably, an LED unit is disposed on the article of clothing.</p>
+<p id="p-0013" num="0012">Preferably, the protecting layer is formed by coating.</p>
+<p id="p-0014" num="0013">Preferably, the protecting layer is a waterproof and wear-resisting cloth attached to the inner surface.</p>
+<p id="p-0015" num="0014">Accordingly, the garment can be concisely packed and conveniently carried. Moreover, the appearance of the stuffed storage body can serve as a neck pillow that allows usage during traveling. As a result, the garment is multi-function.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 1</figref> is a front view showing a conventional convertible jacket;</p>
+<p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. 2</figref> is a back view showing the conventional convertible jacket;</p>
+<p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic view of a first preferred embodiment of the present invention;</p>
+<p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 4</figref> is a partial, enlarged view of <figref idref="DRAWINGS">FIG. 3</figref>;</p>
+<p id="p-0020" num="0019"><figref idref="DRAWINGS">FIG. 5</figref> is a further schematic view showing the first preferred embodiment of the present invention;</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 6</figref> is a schematic view showing that the first preferred embodiment of the present invention is received;</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 7</figref> is a schematic view showing a second preferred embodiment of the present invention;</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 8</figref> is a schematic view showing that the second preferred embodiment of the present invention is received;</p>
+<p id="p-0024" num="0023"><figref idref="DRAWINGS">FIG. 9</figref> is a schematic view showing that a third preferred embodiment of the present invention is received; and</p>
+<p id="p-0025" num="0024"><figref idref="DRAWINGS">FIG. 10</figref> is a schematic view showing a fourth preferred embodiment.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0026" num="0025">Wherever possible, the same reference numbers are used in the drawings and the description to refer to the same or like parts.</p>
+<p id="p-0027" num="0026">Referring to <figref idref="DRAWINGS">FIGS. 3 to 5</figref>, a first preferred embodiment of the present invention is shown. A multi-function garment <b>2</b> comprises an article of clothing <b>21</b> and a plurality of pockets <b>22</b> disposed on the article of clothing <b>21</b>. Each pocket <b>22</b> includes an opening <b>221</b>, a lining <b>222</b> extended from a periphery of the opening <b>221</b>, and a two-sided engaging unit <b>223</b> at the opening <b>221</b> and capable of being closed and opened. The lining <b>222</b> is composed of an inner surface <b>222</b>A and an external surface <b>222</b>B disposed in accordance with the inner surface <b>222</b>A. The inner surface <b>222</b>A is disposed inside the pocket <b>22</b> to define a receptacle <b>222</b>C therein. The pockets <b>22</b> on the article of clothing <b>21</b> are defined at a proper position for users to comfortably place their hands. Moreover, the two-sided engaging unit <b>223</b> can be a two-sided zipper, two-sided buckles, or two-sided hook and loop fasteners. In this embodiment, the two-sided engaging unit <b>223</b> is directed to the two-sided zipper.</p>
+<p id="p-0028" num="0027">Specifically, the lining <b>222</b> of one of the pockets <b>22</b> includes a storage body <b>222</b>D of a ring-like configuration enclosed by the inner surface <b>222</b>A and the external surface <b>222</b>B. The storage body <b>222</b>D includes an external vacancy <b>222</b>E defined to be open to interrupt the ring-like configuration of the storage body <b>222</b>D, and an inner vacancy <b>222</b>F enclosed by the ring-like configuration of the storage body <b>222</b>D. One end of the inner vacancy <b>222</b>F is closed, and the other end thereof communicates with the external vacancy <b>222</b>E. The inner surface <b>222</b>A of the lining <b>222</b> is provided with a protecting layer P. The inner vacancy <b>222</b>F is disposed near the opening <b>221</b> of the pocket <b>22</b>, and a dimension of the external vacancy <b>222</b>E is smaller than a dimension of the inner vacancy <b>222</b>F. A receiving room R is formed by reversing the inner surface <b>222</b>A of the lining <b>222</b> outward in order to accommodate the article of clothing <b>21</b> (as shown in <figref idref="DRAWINGS">FIG. 6</figref>), so that the two-sided engaging unit <b>223</b> is closed to wrap the article of clothing <b>21</b> when the receiving room R is stuffed with the article of clothing <b>21</b>. Thereby, a neck pillow is provided.</p>
+<p id="p-0029" num="0028">Referring to <figref idref="DRAWINGS">FIGS. 3 to 6</figref>, in using, users wear the article of clothing <b>21</b> for protecting their skin or keeping their body temperature. In addition, when the two-sided engaging unit <b>223</b> (zipper) around the periphery of the opening <b>221</b> is closed, articles placed in the receptacle <b>222</b>C of each pocket <b>22</b> can be safely stored. Namely, the articles do not fall from the pocket <b>22</b>. Alternatively, when the multi-function garment <b>2</b> is to be received, carried, or used for other purposes, the inner surface <b>222</b>A is reversed via the opening <b>221</b>, so that the receiving room R is contributed and the article of clothing <b>21</b> can be wrapped therein. Accordingly, when the article of clothing <b>21</b> is received in the receiving room R, a compact formation is provided for carrying. In fact, the storage body <b>222</b>D of the lining <b>222</b> is structured as a ringlike configuration, and the dimension of the external vacancy <b>222</b>E is smaller than the dimension of the inner vacancy <b>222</b>F. Subsequently, the article of clothing <b>21</b> that is folded and the receiving room R that is stuffed with the article of clothing <b>21</b> contribute to a formation of the neck pillow including the larger inner vacancy <b>222</b>F and the smaller external vacancy <b>222</b>E. Thereby, users may put the neck pillow around their necks to support their necks while taking transportation during traveling. Consequently, it is not uncomfortable anymore during traveling, since users can take a nice rest. As a result, the compact structure of the present invention is advantageous to be carried, the formation of the stuffed storage body <b>222</b>D can serve as a neck pillow, and the application of the multi-function garment is increased, which further promotes life quality.</p>
+<p id="p-0030" num="0029">Referring to <figref idref="DRAWINGS">FIGS. 7 to 9</figref>, a further preferred embodiment of the present invention is shown. The multi-function garment <b>2</b> similarly comprises an article of clothing <b>21</b> and a plurality of pockets <b>22</b> disposed on the article of clothing <b>21</b>. Differently, a hanging rope <b>222</b>G is disposed on the lining <b>222</b>. With the hanging rope <b>222</b>G, the multi-function garment <b>2</b> that is received in the storage body <b>222</b>D can be easily carried or hung. The protecting layer P is formed by coating<sub>s </sub>and the coating is thoroughly applied to the entire protecting layer P (as shown in <figref idref="DRAWINGS">FIG. 8</figref>). Namely, after the inner surface <b>222</b>A of the lining <b>222</b> is turned over and stuffed with the article of clothing <b>21</b> for serving as a neck pillow, the users' worn garment (not shown) does not contact the inner surface <b>222</b>A directly. Thereby, the users' worn garment is protected appropriately. Also, the protecting layer P is a waterproof and wear-resisting cloth attached to the inner surface <b>222</b>A, corresponding to the external vacancy <b>222</b>E (as shown in <figref idref="DRAWINGS">FIG. 9</figref>). In this figure, the protecting layer P adopts a visco-elastic material that is sensitive to the users' body temperature. Such material preferably memorizes users' necks to provide the necks optimum support. In fact, the protecting layer P can also adopt a material that can keep a cooler temperature or a warmer temperature. With this temperature keeping material, the neck pillow is able to assist users in adjusting body temperature or adapting to the environment. Accordingly, by the hanging rope <b>222</b>G and the protecting layer P, users can use the garment of the present invention in accordance with their practical purposes. Therefore, the present invention is convenient for carrying and multi-function.</p>
+<p id="p-0031" num="0030">Accompanying with <figref idref="DRAWINGS">FIG. 10</figref>, a further preferred embodiment of the present invention is shown. The multi-function garment <b>2</b> similarly comprises an article of clothing <b>21</b> and a plurality of pockets <b>22</b> disposed on the article of clothing <b>21</b>. Differently, a sensing unit <b>211</b> (shown by a sketch) is disposed on the article of clothing <b>21</b> for detecting temperature, moisture, or other environmental data. Also, an LED unit <b>212</b> (shown by a sketch) is concurrently disposed on the article of clothing <b>21</b>. The LED unit <b>212</b> adapts users to any dark environment easily. Obviously, the structure of the present invention is more compact and convenient to be carried when the article of clothing <b>21</b> is received in the receiving room R. Favorably, the present invention achieves objects of multipurpose.</p>
+<p id="p-0032" num="0031">To sum up, the multi-function garment of the present invention can be worn as a jacket Moreover, when the article of clothing is reversed via the opening of one pocket and encircled in the receiving room of the storage body, the stuffed storage body is not only compact but also convenient to be carried. Additionally, a neck pillow is provided. Consequently, the present invention achieves multiple purposes and expands the usage of the multi-function garment.</p>
+<p id="p-0033" num="0032">While embodiments in accordance with the present invention have been shown and described, it should be clear to those skilled in the art that further embodiments may be made without departing from the scope of the present invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>I claim:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A multi-function garment comprising an article of clothing and a plurality of pockets disposed on said article of clothing; with each pocket including an opening, a lining extended from a periphery of said opening, and a two-sided engaging unit at the opening and capable of being closed and opened; with said lining composed of an inner surface and an external surface opposite said inner surface; with said inner surface disposed inside said pocket to define a receptacle therein;
+<claim-text>wherein said lining of one of said plurality of pockets includes a storage body of a ring-like configuration enclosed by said inner surface and said external surface, with said storage body including an external vacancy defined to be open to interrupt said ring-like configuration of said storage body and an inner vacancy enclosed by said ring-like configuration of said storage body, with one end of said inner vacancy closed and another end of the inner vacancy communicating with said external vacancy; with said inner surface of said lining provided with a protecting layer; with said inner vacancy disposed near said opening of said pocket, with a dimension of said external vacancy being smaller than a dimension of said inner vacancy; with a receiving room formed by reversing said inner surface of said lining outward in order to accommodate said article of clothing with said two-sided engaging unit closed to wrap said clothing when said receiving room is stuffed with said article of clothing.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein a hanging rope is disposed on said lining adjacent said opening.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said protecting layer is disposed on said inner surface corresponding to said external vacancy.</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein a sensing unit is disposed on said article of clothing for detecting temperature, moisture, or other environmental data.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein an LED unit is disposed on said article of clothing.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said protecting layer is formed by coating.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The multi-function garment as claimed in <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein said protecting layer is formed by coating.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The multi-function garment as claimed in <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said protecting layer is a waterproof and wear-resisting cloth attached to said inner surface.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The multi-function garment as claimed in <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein said protecting layer is a waterproof and wear-resisting cloth attached to said inner surface. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

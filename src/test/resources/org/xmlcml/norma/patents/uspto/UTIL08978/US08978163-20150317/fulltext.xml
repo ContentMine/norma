@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978163-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978163</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12995672</doc-number>
+<date>20090420</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>JP</country>
+<doc-number>2008-146312</doc-number>
+<date>20080603</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>864</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>15</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>49</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>496</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>56</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>N</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>49011</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>15593</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>49014</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>4963</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>15707</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>5655</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>2013</main-group>
+<subgroup>49036</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>13</main-group>
+<subgroup>15756</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>A</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2 69</main-classification>
+<further-classification>60438525</further-classification>
+</classification-national>
+<invention-title id="d2e71">Pant-type wearing article and method for making the same</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>5032122</doc-number>
+<kind>A</kind>
+<name>Noel et al.</name>
+<date>19910700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604391</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5370634</doc-number>
+<kind>A</kind>
+<name>Ando et al.</name>
+<date>19941200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>60438521</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>7255688</doc-number>
+<kind>B2</kind>
+<name>Sasaki et al.</name>
+<date>20070800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604396</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>7727215</doc-number>
+<kind>B2</kind>
+<name>Kenmochi et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604387</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>7727216</doc-number>
+<kind>B2</kind>
+<name>Kenmochi et al.</name>
+<date>20100600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604389</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>8206365</doc-number>
+<kind>B2</kind>
+<name>Norrby</name>
+<date>20120600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>60438522</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>8337479</doc-number>
+<kind>B2</kind>
+<name>Nilsson et al.</name>
+<date>20121200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604387</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>8545473</doc-number>
+<kind>B2</kind>
+<name>Ichikawa et al.</name>
+<date>20131000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604386</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>2003/0036739</doc-number>
+<kind>A1</kind>
+<name>Christoffel et al.</name>
+<date>20030200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>6043853</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>2003/0055394</doc-number>
+<kind>A1</kind>
+<name>Gibbs</name>
+<date>20030300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604389</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>2003/0135184</doc-number>
+<kind>A1</kind>
+<name>Van Gompel et al.</name>
+<date>20030700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>60438501</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>2004/0230171</doc-number>
+<kind>A1</kind>
+<name>Ando et al.</name>
+<date>20041100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>2004/0261230</doc-number>
+<kind>A1</kind>
+<name>Neeb et al.</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 24451</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>2005/0043698</doc-number>
+<kind>A1</kind>
+<name>Otsubo et al.</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>60438525</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>2005/0043701</doc-number>
+<kind>A1</kind>
+<name>Otsubo et al.</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604391</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>2005/0080394</doc-number>
+<kind>A1</kind>
+<name>Otsubo et al.</name>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>60438527</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>2005/0132543</doc-number>
+<kind>A1</kind>
+<name>Lindsay et al.</name>
+<date>20050600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification> 24442</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>2005/0267431</doc-number>
+<kind>A1</kind>
+<name>Sasaki et al.</name>
+<date>20051200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>2008/0009820</doc-number>
+<kind>A1</kind>
+<name>Kenmochi et al.</name>
+<date>20080100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604389</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>2008/0249493</doc-number>
+<kind>A1</kind>
+<name>Kobayashi et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>604378</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>EP</country>
+<doc-number>1 795 163</doc-number>
+<kind>A1</kind>
+<date>20070600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>JP</country>
+<doc-number>6-52818</doc-number>
+<date>19940700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>JP</country>
+<doc-number>2002-253605</doc-number>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>JP</country>
+<doc-number>2005-095574</doc-number>
+<date>20050400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>JP</country>
+<doc-number>2005-261958</doc-number>
+<date>20050900</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>JP</country>
+<doc-number>2006-087564</doc-number>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>JP</country>
+<doc-number>2006-087568</doc-number>
+<date>20060400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00028">
+<othercit>International Search Report from corresponding PCT application No. PCT/JP2009/057869 dated Jul. 21, 2009, 4 pgs.</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<nplcit num="00029">
+<othercit>European Supplementary Search Report from corresponding European application No. 09758173.0 dated Jan. 9, 2014 (7 pgs).</othercit>
+</nplcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>2</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>604387</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>604391</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>6043851</main-classification>
+</classification-national>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>6</number-of-drawing-sheets>
+<number-of-figures>6</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110072561</doc-number>
+<kind>A1</kind>
+<date>20110331</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kinoshita</last-name>
+<first-name>Akiyoshi</first-name>
+<address>
+<city>Kagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Kenmochi</last-name>
+<first-name>Yasuhiko</first-name>
+<address>
+<city>Kagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+<residence>
+<country>JP</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Kinoshita</last-name>
+<first-name>Akiyoshi</first-name>
+<address>
+<city>Kagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Kenmochi</last-name>
+<first-name>Yasuhiko</first-name>
+<address>
+<city>Kagawa</city>
+<country>JP</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Brinks Gilson &#x26; Lione</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Uni-Charm Corporation</orgname>
+<role>03</role>
+<address>
+<city>Ehime</city>
+<country>JP</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Quinn</last-name>
+<first-name>Richale</first-name>
+<department>3765</department>
+</primary-examiner>
+</examiners>
+<pct-or-regional-filing-data>
+<document-id>
+<country>WO</country>
+<doc-number>PCT/JP2009/057869</doc-number>
+<kind>00</kind>
+<date>20090420</date>
+</document-id>
+<us-371c124-date>
+<date>20101202</date>
+</us-371c124-date>
+</pct-or-regional-filing-data>
+<pct-or-regional-publishing-data>
+<document-id>
+<country>WO</country>
+<doc-number>WO2009/147906</doc-number>
+<kind>A </kind>
+<date>20091210</date>
+</document-id>
+</pct-or-regional-publishing-data>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A pant-type wearing article configured so as to facilitate fastener members attached to inelastic regions defined in lateral zones of the wearing article to be handled. The pant-type wearing article includes front fastener members attached to transversely opposite lateral zones of a front waist region that are detachably engaged with rear fastener members attached to transversely opposite lateral zones of a rear waist region so as to form a pant-shaped wearing article. In the lateral zones, elastic members extending under tension in a circumferential direction across the waist regions are cut at a plurality of locations so as to form first front inelastic regions and first rear inelastic regions. The front fastener members and the rear fastener members are respectively attached to the first front inelastic regions and the first rear inelastic regions, respectively.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="202.95mm" wi="145.97mm" file="US08978163-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="219.96mm" wi="144.86mm" file="US08978163-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="225.89mm" wi="148.51mm" file="US08978163-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="229.02mm" wi="177.88mm" file="US08978163-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="221.74mm" wi="160.95mm" file="US08978163-20150317-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="214.12mm" wi="178.31mm" orientation="landscape" file="US08978163-20150317-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="150.96mm" wi="167.39mm" orientation="landscape" file="US08978163-20150317-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">RELATED APPLICATION</heading>
+<p id="p-0002" num="0001">This application is a 35 U.S.C. &#xa7;371 national phase filing of International Patent Application No. PCT/JP2009/057869, filed Apr. 20, 2009, through which and to which priority is claimed under 35 U.S.C. &#xa7;119 to Japanese Patent Application No. 2008-146312, filed Jun. 3, 2008.</p>
+<heading id="h-0002" level="1">TECHNICAL FIELD</heading>
+<p id="p-0003" num="0002">The present invention relates to pant-type wearing articles suitable to be used as disposable diapers or disposable toilet-training pants and also to methods for making the same.</p>
+<heading id="h-0003" level="1">RELATED ART</heading>
+<p id="p-0004" num="0003">Various designs have already been proposed for pant-type wearing articles having front and rear waist regions adapted to be connected with each other along respective pairs of transversely opposite lateral zones thereof via a fastener in a manner that these lateral zones may be unfastened and, if desired, refastened. For example, a disposable absorbent article disclosed in JP 2005-95574 A (PATENT DOCUMENT 1) is provided along the respective pairs of transversely opposite lateral zones of front and rear waist regions with fastener members each extending from a peripheral edge of a waist opening to respective peripheral edges of leg-openings. The fastener members provided along the lateral zones of the front waist region are engaged with the associated fastener members provided along the lateral zones of the rear waist region to achieve a desired function as the fastener. During a production process for this absorbent article, the respective lateral zones of the front and rear waist regions along which these fastener members are attached are pretreated to become inelastic. To obtain such inelastic lateral zones, respective elastic members extending under tension across the front and rear waist regions in initial several steps are left contract only along the lateral zones in the subsequent step using a known snap-back technique.
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0004">[PATENT DOCUMENT 1] JP 2005-95574 A</li>
+</ul>
+</p>
+<heading id="h-0004" level="1">DISCLOSURE OF THE INVENTION</heading>
+<heading id="h-0005" level="1">Problem to be Solved by the Invention</heading>
+<p id="p-0005" num="0005">In the case of the absorbent article disclosed in PATENT DOCUMENT 1, the elastic members sandwiched between the inner sheet and the outer sheet must be left contract only in the lateral zones in order to make these lateral zones inelastic. To assure that these elastic members can be easily and reliably left contract, it is impermissible to bond the inner and outer sheets to each other integrally over a large area. In other words, respective regions of the inner and outer sheets defining these lateral zones are incompletely bonded to each other and, in consequence, may freely move with respect to each other. These relatively movable lateral zones bearing the fastener members are inconvenient when it is tried to hold these lateral zones with the fingers and thereby to handle the fastener members. In addition, during the production process for this wearing article, a schedule control inevitably becomes complex in view of the restriction that the regions of the inner and outer sheets defining the lateral zones should not be coated with adhesive when the inner and outer sheets are bonded to each other.</p>
+<p id="p-0006" num="0006">In view of the problems as have been described above, it is an object of the present invention to improve such conventional wearing article and a method for making the same.</p>
+<heading id="h-0006" level="1">Measure to Solve the Problem</heading>
+<p id="p-0007" num="0007">The object set forth above is achieved by an improvement in the pant-type wearing article according to the present invention on a first aspect thereof and by an improvement in a method for making the same according to the present invention on a second aspect thereof.</p>
+<p id="p-0008" num="0008">On the first aspect of the present invention, the present invention relates to the pant-type wearing article comprising a first waist region defined by one of front and rear waist regions, a second waist region defined by the other of front and rear waist regions and a crotch region extending between these first and second waist regions wherein respective inner surfaces of second fastener members provided along transversely opposite lateral zones of the second waist region are detachably engaged with respective outer surfaces of first fastener members provided along transversely opposite lateral zones of the first waist region to obtain the pant-type wearing article having a waist-opening and a pair of leg-openings formed upon the engagement.</p>
+<p id="p-0009" num="0009">The improvement in the wearing article according to the present invention on the first aspect thereof is characterized in that at least one waist region of the first waist region and the second waist region includes a plurality of elastic members extending under tension across the one waist region and, in the transversely opposite lateral zones, each of the elastic members is cut off at a plurality of locations along its length to form an inelastic regions being neither elastically stretchable nor elastically contractible and the first fastener member or the second fastener members provided in the one waist region are formed in the inelastic regions.</p>
+<p id="p-0010" num="0010">According to one preferred embodiment of the present invention on this first aspect, the respective elastic members are cut off also in regions spaced inward from the inelastic regions formed in the transversely opposite lateral zones as viewed in a waistline direction of the one waist region.</p>
+<p id="p-0011" num="0011">On the second aspect of the present invention, the object set forth above is achieved by an improvement in a method for making the wearing article according to the present invention on the first aspect thereof, the method being improved so as to comprise the steps to form inelastic regions in a web initially being stretchable and contractible in a machine direction as follow:</p>
+<p id="p-0012" num="0012">a. continuously feeding, in the machine direction, a composite web comprising first and second webs put flat and bonded together so as to extending in the machine direction and a plurality of elastic members sandwiched between the first and second webs so as to extend in the machine direction and bonded to at least one of the first and second webs;</p>
+<p id="p-0013" num="0013">b. cyclically and locally subjecting the composite web fed in the machine direction to action of a cutter and thereby cutting off the elastic members in predetermined regions of the composite web to convert the predetermined ranges to inelastic regions; and</p>
+<p id="p-0014" num="0014">c. bonding a female or male component of a mechanical fastener to one of the first and second webs in each of the inelastic regions.</p>
+<p id="p-0015" num="0015">According to one preferred embodiment of the present invention on the second aspect thereof, the method further includes a step of cutting off respective the elastic members also in second predetermined regions spaced from the predetermined regions.</p>
+<p id="p-0016" num="0016">According to another preferred embodiment of the present invention on the second aspect thereof, the first and second webs and the elastic members are bonded together by adhesive in the predetermined regions.</p>
+<heading id="h-0007" level="1">Effect of the Invention</heading>
+<p id="p-0017" num="0017">In the pant-type wearing article and the method for making the same according to the present invention, the inelastic regions in at least one of the first waist region and the second waist region provided with the first fastener members or the second fastener members are formed by cutting off the respective elastic members at a plurality of locations in the longitudinal direction thereof. This means that the sheet members put flat together may be bonded to each other in the lateral zones in which the inelastic regions are to be formed before the elastic members are cut off. Therefore the first fastener members or the second fastener members attached to the associated lateral zones would not be prevented from being smoothly handled because of the sheet members put flat together in these lateral zones which are freely movable with respect to each other. On the aspect relating to the method for making this wearing article, adhesive by which the sheet members put flat together are bonded to each other can be applied also to the regions allocated to define the lateral zones of the first and second waist regions just as to the remaining regions. In this way, the process control for the wearing article is correspondingly facilitated.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0008" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0018" num="0018"><figref idref="DRAWINGS">FIG. 1</figref> is a side view showing the diaper as partially broken away.</p>
+<p id="p-0019" num="0019"><figref idref="DRAWINGS">FIG. 2</figref> is a view similar to <figref idref="DRAWINGS">FIG. 1</figref>, showing the diaper having one of lateral zones thereof opened.</p>
+<p id="p-0020" num="0020"><figref idref="DRAWINGS">FIG. 3</figref> is a partially cutaway plan view showing the diaper as the front waist region and the rear waist region thereof have been disconnected from each other and flatly developed.</p>
+<p id="p-0021" num="0021"><figref idref="DRAWINGS">FIG. 4</figref> is a view similar to <figref idref="DRAWINGS">FIG. 3</figref>, showing one preferred embodiment of the invention.</p>
+<p id="p-0022" num="0022"><figref idref="DRAWINGS">FIG. 5</figref> is a diagram schematically illustrating a production process for the diaper.</p>
+<p id="p-0023" num="0023"><figref idref="DRAWINGS">FIG. 6</figref> is a partial view of the first roll.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0009" level="1">IDENTIFICATION OF REFERENCE NUMERALS USED IN THE DRAWINGS</heading>
+<p id="p-0024" num="0000">
+<ul id="ul0002" list-style="none">
+    <li id="ul0002-0001" num="0024"><b>1</b> absorbent article (diaper)</li>
+    <li id="ul0002-0002" num="0025"><b>6</b> front waist region</li>
+    <li id="ul0002-0003" num="0026"><b>7</b> rear waist region</li>
+    <li id="ul0002-0004" num="0027"><b>8</b> crotch region</li>
+    <li id="ul0002-0005" num="0028"><b>11</b> lateral zone (front lateral zone)</li>
+    <li id="ul0002-0006" num="0029"><b>12</b> first fastener member (front fastener member)</li>
+    <li id="ul0002-0007" num="0030"><b>13</b> lateral zone (rear lateral zone)</li>
+    <li id="ul0002-0008" num="0031"><b>14</b> second fastener member (rear fastener member)</li>
+    <li id="ul0002-0009" num="0032"><b>16</b> elastic member</li>
+    <li id="ul0002-0010" num="0033"><b>17</b> elastic member</li>
+    <li id="ul0002-0011" num="0034"><b>18</b> elastic member</li>
+    <li id="ul0002-0012" num="0035"><b>36</b> elastic member</li>
+    <li id="ul0002-0013" num="0036"><b>37</b> elastic member</li>
+    <li id="ul0002-0014" num="0037"><b>51</b> inelastic region</li>
+    <li id="ul0002-0015" num="0038"><b>52</b> second inelastic region</li>
+    <li id="ul0002-0016" num="0039"><b>61</b> inelastic region</li>
+    <li id="ul0002-0017" num="0040"><b>62</b> second inelastic region</li>
+    <li id="ul0002-0018" num="0041"><b>116</b> elastic member</li>
+    <li id="ul0002-0019" num="0042"><b>117</b> elastic member</li>
+    <li id="ul0002-0020" num="0043"><b>118</b> elastic member</li>
+    <li id="ul0002-0021" num="0044"><b>136</b> elastic member</li>
+    <li id="ul0002-0022" num="0045"><b>137</b> elastic member</li>
+    <li id="ul0002-0023" num="0046"><b>160</b> cutter</li>
+    <li id="ul0002-0024" num="0047"><b>171</b> web (first composite web)</li>
+    <li id="ul0002-0025" num="0048">MD machine direction</li>
+</ul>
+</p>
+<heading id="h-0010" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0025" num="0049">A pant-type wearing article and a method for making the same will be described hereunder in more details with reference to the accompanying drawings.</p>
+<p id="p-0026" num="0050"><figref idref="DRAWINGS">FIG. 1</figref> is a partially cutaway side view showing a diaper <b>1</b> as an example of a pant-type wearing article according to the present invention and <figref idref="DRAWINGS">FIG. 2</figref> is a partially cutaway side view showing the diaper <b>1</b> having one of lateral zones thereof opened. A front-back direction, a vertical direction and a circumferential direction are indicated by double-headed arrows A, B and R, respectively. The diaper <b>1</b> has a front waist region <b>6</b>, a rear waist region <b>7</b> and a crotch region <b>8</b> extending between these two waist regions <b>6</b>, <b>7</b>. These regions <b>6</b>, <b>7</b> and <b>8</b> respectively comprise a liquid-pervious inner sheet <b>2</b>, a liquid-impervious outer sheet <b>3</b> and a body fluid absorbent core <b>4</b> (See <figref idref="DRAWINGS">FIG. 3</figref>) sandwiched between these two sheets <b>2</b>, <b>3</b>. In the front waist region <b>6</b>, front lateral zones <b>11</b> opposite in the waistline direction R and extending in the vertical direction B are provided on respective outer surfaces thereof with front fastener members <b>12</b> attached thereto (See <figref idref="DRAWINGS">FIG. 2</figref>). In the rear waist region <b>7</b>, rear lateral zones <b>13</b> opposite in the waistline direction R and extending in the vertical direction B are provided with rear fastener members <b>14</b> attached thereto. The inner sheet <b>2</b> is formed, for example, of a nonwoven fabric made of thermoplastic synthetic fibers and the outer sheet <b>3</b> is formed, for example, of a thermoplastic synthetic resin film, a nonwoven fabric made of thermoplastic fibers or a composite sheet comprising these film and nonwoven fabric.</p>
+<p id="p-0027" num="0051">The front fastener members <b>12</b> are associated with the rear fastener members <b>14</b> to form fasteners <b>20</b> for connecting the front and rear waist regions <b>6</b>, <b>7</b> in a manner that these waist regions are able to be unfastened and refastened, respectively, wherein the hook members constituting the mechanical fastener widely known in the trade name of Magic Tape are used here as the front fastener members <b>12</b> and the loop members constituting this mechanical fastener are used here as the rear fastener members <b>14</b>. <figref idref="DRAWINGS">FIG. 1</figref> shows the diaper <b>1</b> wherein a pair of front lateral zones <b>11</b> is connected with a pair of the associated rear lateral zones <b>13</b> via the fasteners <b>20</b> and <figref idref="DRAWINGS">FIG. 2</figref> shows the diaper <b>1</b> wherein a pair of front lateral zones <b>11</b> is connected with a pair of the associated rear lateral zones <b>13</b> via the fasteners <b>20</b> on the remote side and a pair of front lateral zones <b>11</b> has been disengaged from the associated rear lateral zones <b>13</b> on the near side. Obviously, the pant-type disposable diaper according to the invention can be put on and taken off from the wearer in the same manner as the diaper of prior art. The diaper according to the invention is distinguished from the diaper of prior art in that it is easy for the inventive diaper to open one of the lateral zones and thereby to check whether urination and/or defecation has occurred or not even when the wearer is in upright posture. This advantage can be effectively utilized by the user particularly when the diaper is delivered to the user in the pants-shape.</p>
+<p id="p-0028" num="0052">Referring to <figref idref="DRAWINGS">FIG. 1</figref>, the front and rear waist regions <b>6</b>, <b>7</b> are detachably connected to each other and thereupon a waist-opening <b>31</b> and a pair of leg-openings <b>32</b> are formed, in other words, the diaper <b>1</b> is shaped into a pant. The front fastener members <b>12</b> and the rear fastener members <b>14</b> which consist fastener <b>20</b> respectively extend from the waist-opening <b>31</b> to the leg-openings <b>32</b>. It should be noted that, in the illustrated embodiment, the front fastener members <b>12</b> are respectively divided into upper and lower portions.</p>
+<p id="p-0029" num="0053"><figref idref="DRAWINGS">FIG. 3</figref> is a partially cutaway plan view of the diaper <b>1</b> with the front waist region <b>6</b> and the rear waist region <b>7</b> having been connected together via the fasteners <b>20</b> in the phase of <figref idref="DRAWINGS">FIG. 1</figref> being disengaged from each other and flatly developed wherein a transverse direction of the front and rear waist regions <b>6</b>, <b>7</b> is indicated by a double-headed arrow C. In the diaper <b>1</b> shown in <figref idref="DRAWINGS">FIG. 3</figref>, the core <b>4</b> illustrated herein as partially broken away has a concave shape curved inwardly. The inner and outer sheets <b>2</b>, <b>3</b> sandwich the core <b>4</b> therebetween extend outward beyond a peripheral edge of the core <b>4</b> and bonded to each other in these portions extending outward by hot melt adhesive (not shown) coated intermittently and evenly on these portions. These portions of the inner and outer sheets <b>2</b>, <b>3</b> extending outward include the front lateral zones <b>11</b> and the rear lateral zones <b>13</b>. The inner and outer sheets <b>2</b>, <b>3</b> are bonded also to upper and lower surfaces of the core <b>4</b> by hot melt adhesive (not shown).</p>
+<p id="p-0030" num="0054">Various elastic members are sandwiched between the inner and outer sheets <b>2</b>, <b>3</b>. Specifically, the front waist region <b>6</b> is provided with waist elastic members <b>16</b> extend under tension in the transverse direction C, the rear waist region <b>7</b> is provided with waist elastic members <b>17</b> extending under tension in the transverse direction C and the crotch region <b>8</b> is provided with leg elastic members <b>18</b> extending under tension so as to describe curves along respective peripheral edges of the leg-openings <b>32</b>. In addition to these elastic members, front intermediate elastic members <b>36</b> are provided between the front waist elastic members <b>16</b> and the leg elastic members <b>18</b> so as to extend under tension in the transverse direction C and rear intermediate elastic members <b>37</b> provided between the rear waist elastic members <b>17</b> and the leg elastic members <b>18</b> so as to extend under tension in the transverse direction C. These elastic members <b>16</b>, <b>17</b>, <b>18</b>, <b>36</b>, <b>37</b> are intermittently bonded over full lengths thereof to the inner sheet <b>2</b> and/or the outer sheet <b>3</b> by hot melt adhesive wherein the elastic members <b>16</b>, <b>36</b> extend across the front waist region <b>6</b> and the elastic members <b>17</b>, <b>37</b> extend across the rear waist region <b>7</b>. The front and rear waist regions <b>6</b>, <b>7</b> are stretched and contracted in the transverse direction C, in other words, in the waistline direction R in <figref idref="DRAWINGS">FIG. 1</figref> as these elastic members <b>16</b>, <b>17</b>, <b>36</b>, <b>37</b> are stretched and contracted, respectively. It should be noted here that the front lateral zones <b>11</b> of the front waist region <b>6</b> are respectively formed with first front inelastic regions <b>51</b> and second front inelastic regions <b>52</b>. Similarly, the rear lateral zones <b>13</b> of the rear waist region <b>7</b> are respectively formed with first rear inelastic regions <b>61</b> and second rear inelastic regions <b>62</b>.</p>
+<p id="p-0031" num="0055">The first front inelastic regions <b>51</b> include the front waist elastic members <b>16</b> extending across the front waist region <b>6</b>, the front intermediate elastic members <b>36</b> extending also across the front waist region <b>6</b> and the leg elastic members <b>18</b>. Of these elastic members <b>16</b>, <b>36</b>, <b>18</b>, at least the elastic members <b>16</b>, <b>36</b> may be cut at a plurality of points <b>55</b> along length thereof to form the first front inelastic regions <b>51</b>. In consequence, these first front inelastic regions <b>51</b> are neither elastically stretched nor elastically contract. To cut these elastic members <b>16</b>, <b>18</b>, <b>36</b>, cutter blades may be pressed against one of the inner sheet <b>2</b> and the outer sheet <b>3</b> from the outer side to form a plurality of cuts <b>56</b>. Pieces of the elastic members <b>16</b>, <b>18</b>, <b>36</b> created by this cutting operation remain in the first front inelastic regions <b>51</b>. Each of these first inelastic regions <b>51</b> is preferably dimensioned to be the same as or slightly larger than a size of the front fastener member <b>12</b> attached to the first inelastic region <b>51</b>. In this way, the front fastener members can be prevented from gathering under contraction of the elastic members <b>16</b>, <b>18</b>, <b>36</b> and, in consequence, an engagement area between the front fastener members <b>12</b> and the associated rear fastener members <b>14</b> might be substantially reduced.</p>
+<p id="p-0032" num="0056">The second front inelastic regions <b>52</b> are formed aside inward from the associated first front inelastic regions <b>51</b> as viewed in the transverse direction C and preferably spaced from the associated first front inelastic regions <b>51</b> by a distance in a range of 5 to 15 mm. The second front inelastic regions <b>52</b> are formed by cutting at least the elastic members <b>16</b>, <b>36</b> of these elastic members <b>16</b>, <b>18</b>, <b>36</b> each at a single point <b>56</b> along with cuts <b>58</b>. The presence of these second front inelastic regions <b>52</b> effectively eliminate a possibility that the front fastener members <b>12</b> might be directly pulled by at least the elastic members <b>16</b>, <b>36</b> of these elastic members <b>16</b>, <b>18</b>, <b>36</b> in the waistline direction R when the front waist region <b>6</b> and the rear waist region <b>7</b> are repetitively connected with and disconnected from each other. It should be understood here that the present invention may be exploited without forming the second front inelastic regions <b>52</b> unless such effective function of the second front inelastic regions <b>52</b> is required.</p>
+<p id="p-0033" num="0057">The first rear inelastic regions <b>61</b> include the rear waist elastic members <b>17</b> extending across the rear waist region <b>7</b>, the rear intermediate elastic members <b>37</b> extending also across the rear waist region <b>7</b> and the leg elastic members <b>18</b>. Of these elastic members <b>17</b>, <b>37</b>, <b>18</b>, at least the elastic members <b>17</b>, <b>37</b> may be cut at a plurality of points <b>65</b> along length thereof to form the first rear inelastic regions <b>61</b>. In consequence, these first rear inelastic regions <b>61</b> can be neither elastically stretched nor elastically contracted. These elastic members <b>17</b>, <b>18</b>, <b>37</b> may be cut by the cutter blade in the same manner as in the case of the elastic members <b>16</b>, <b>18</b>, <b>36</b>. Each of these first rear inelastic regions <b>61</b> is preferably dimensioned to be same as or slightly larger than a size of the rear fastener member <b>14</b> attached to the first inelastic region <b>61</b>. In this way, the rear fastener members <b>14</b> can be prevented from being formed with gathers undulating in the waistline direction R. The second rear inelastic regions <b>62</b> are formed aside inward from the associated first rear inelastic regions <b>61</b> and preferably spaced from the associated first rear inelastic regions <b>61</b> by a distance in a range of 5 to 15 mm. The second rear inelastic regions <b>62</b> are formed by cutting at least the elastic members <b>17</b>, <b>37</b> of these elastic members <b>17</b>, <b>18</b>, <b>37</b> each at least a single point <b>66</b> along with cuts <b>68</b>. The presence of these second rear inelastic regions <b>62</b> effectively eliminate a possibility that the rear fastener members <b>14</b> might be directly pulled by the elastic members <b>17</b>, <b>18</b>, and <b>37</b> in the waistline direction R when the front waist region <b>6</b> and the rear waist region <b>7</b> are repetitively connected with and disconnected from each other. It should be understood here that the present invention may be exploited without forming the second rear inelastic regions <b>62</b> unless such effective function of the second rear inelastic regions <b>62</b> is required.</p>
+<p id="p-0034" num="0058">While the front fastener member <b>12</b> is divided into upper and lower halves according to the particular embodiment of the invention shown by <figref idref="DRAWINGS">FIG. 1</figref> so that the front lateral zones <b>11</b> may be easily deformed between the upper and lower halves of the respective front fastener members <b>12</b> and thereby may provide a good fit to the wearer's body, the front fastener members <b>12</b> each divided into the upper and lower halves may be replaced by the not divided but continuous front fastener members <b>12</b> unless such effect is required. While the rear fastener members <b>14</b> is implemented in the form of the loop members adapted to be engaged with the associated front fastener members <b>12</b> in the illustrated embodiment, the inner sheet <b>2</b> to which these rear fastener members <b>14</b> are attached may replace the rear fastener members <b>14</b> so far as the inner sheet <b>2</b> can be repetitively engaged with and disengaged from the associated front fastener members. Regarding the fasteners <b>20</b> in the illustrated embodiment, it is possible to use the loop members of the mechanical fastener as the front fastener members <b>12</b> and to use the hook members adapted to be engaged with the associated loop members as the rear fastener members <b>14</b>. Furthermore, it is also possible to attach the front fastener members <b>12</b> to the inner surface of the front lateral zones <b>11</b> and to attach the rear fastener member <b>14</b> to the inner surface of the rear lateral zones <b>13</b>.</p>
+<p id="p-0035" num="0059"><figref idref="DRAWINGS">FIG. 4</figref> is a view similar to <figref idref="DRAWINGS">FIG. 3</figref>, showing one preferred embodiment. In the diaper <b>1</b> shown in <figref idref="DRAWINGS">FIG. 4</figref> as has been flatly developed diaper <b>1</b>, the core <b>4</b> in <figref idref="DRAWINGS">FIG. 3</figref> is replaced by a body fluid absorbent panel <b>80</b> attached to the inner surface of the inner sheet <b>2</b>. The panel <b>80</b> comprises a body fluid absorbent core <b>81</b>, a liquid-pervious sheet <b>82</b> covering the upper surface of the core <b>81</b> and a liquid-impervious thermoplastic synthetic resin film is sandwiched between the core <b>81</b> and the inner sheet <b>2</b>. The panel <b>80</b> is provided along transversely opposite side edges thereof with leak-barriers <b>84</b> themselves well known art, respectively. With the diaper <b>1</b> put on the wearer's body these leak-barriers <b>84</b> raise themselves from the panel <b>80</b> toward the wearer's skin so that these leak-barriers <b>84</b> would be held in contact with the wearer's thighs with fitness required to prevent body fluids from leaking sideways. Each of the leak-barriers <b>84</b> includes an elastic member <b>85</b> extending under tension in the longitudinal direction of the leak-barrier <b>84</b>. In this diaper <b>1</b>, the inner sheet <b>2</b> and the outer sheet <b>3</b> are bonded to each other by adhesive (not shown) coated on these sheets <b>2</b>, <b>3</b> so as to be uniformly distributed thereon. According to this embodiment also, the elastic members <b>16</b>, <b>17</b>, <b>18</b>, <b>36</b>, <b>37</b> are attached under tension so as be sandwiched between these sheets <b>2</b>, <b>3</b> and, similarly to the embodiment shown in <figref idref="DRAWINGS">FIG. 3</figref>, the front lateral zones <b>11</b> and the rear lateral zones <b>13</b> are formed with the first and second front inelastic regions <b>51</b>, <b>52</b> and the first and second rear inelastic regions <b>61</b>, <b>62</b>, respectively. The front fastener members <b>12</b> are attached to the first front inelastic regions <b>51</b> and the rear fastener members <b>14</b> are attached to the first rear inelastic regions <b>61</b>. To make such diaper <b>1</b>, a composite sheet consisting of the inner and outer sheets <b>2</b>, <b>3</b> put flat and bonded together may be previously prepared and then the panel <b>80</b> may be attached to such composite sheet by adhesive. The embodiment shown in <figref idref="DRAWINGS">FIG. 4</figref> is distinguished from the embodiment shown in <figref idref="DRAWINGS">FIG. 3</figref> in that it is possible to use a liquid-impervious plastic film as the inner sheet <b>2</b>.</p>
+<p id="p-0036" num="0060"><figref idref="DRAWINGS">FIG. 5</figref> is a schematic diagram partially illustrating a production process for the diaper <b>1</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> wherein a machine direction is indicated by an arrow MD and a direction orthogonal to the machine direction MD is indicated by a double-headed arrow CD.</p>
+<p id="p-0037" num="0061">Referring to <figref idref="DRAWINGS">FIG. 5</figref>, in a step I, respective continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b> and <b>137</b> for the front waist elastic members <b>16</b>, the rear waist elastic members <b>17</b>, the leg elastic members <b>18</b>, the front intermediate elastic members <b>36</b> and the rear intermediate elastic members <b>37</b> are attached to a web <b>103</b> which is continuous material for the outer sheet <b>3</b> being fed in the machine direction MD by hot melt adhesive (not shown). The continuous material <b>118</b> for the leg elastic members <b>18</b> comprises continuous material <b>118</b><i>a </i>and continuous material <b>118</b><i>b </i>describing sine curves intersecting with each other.</p>
+<p id="p-0038" num="0062">In a step II, the panel-like body fluid absorbent cores <b>4</b> are at intervals attached to the web <b>103</b> at predetermined locations thereon as viewed in the machine direction MD by hot melt adhesive (not shown).</p>
+<p id="p-0039" num="0063">In a step III, web <b>102</b> which is continuous material for the inner sheet <b>2</b> is fed in the machine direction MD so as to cooperate with the web <b>103</b> to sandwich the continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b>, <b>137</b> of the respective elastic members and the individual cores <b>4</b>. Specifically, the web <b>103</b> and the web <b>102</b> are put flat and bonded together by hot melt adhesive (not shown) intermittently and uniformly coated on one of these two webs <b>102</b>, <b>103</b> to form first composite web <b>171</b>. This first composite web <b>171</b> is elastically stretchable and contractible in the machine direction MD.</p>
+<p id="p-0040" num="0064">In a step IV, the first composite a web <b>171</b> is fed into a roll nip defined between a first roll <b>161</b> and a second roll <b>162</b> cooperating together to form a cutter <b>160</b> and thereby the continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b> and <b>137</b> for the respective elastic members are locally cut in a region defined between each pair of the adjacent cores <b>4</b>, <b>4</b>. In this way, the step IV results in formation of second composite web <b>172</b> having a plurality of cuts <b>55</b>, <b>56</b>, <b>65</b>, <b>66</b> as seen in <figref idref="DRAWINGS">FIG. 3</figref>, the first and second front inelastic regions <b>51</b>, <b>52</b> cyclically arranged in the machine direction MD and the first and second rear inelastic regions <b>61</b>, <b>62</b> cyclically arranged in the machine direction MD in a manner similar to the first and second front inelastic regions <b>51</b>, <b>52</b>.</p>
+<p id="p-0041" num="0065">In a step V, the front fastener members <b>12</b> shown by <figref idref="DRAWINGS">FIG. 1</figref> are attached to the web <b>102</b> constituting the second composite web <b>172</b> in the first front inelastic regions <b>51</b> while the rear fastener members <b>14</b> are attached to the web <b>103</b> constituting the second composite web <b>172</b> in the first rear inelastic regions <b>61</b>. The step V further includes a sub-step of cutting out disc-like laminate <b>184</b> consisting of the webs <b>102</b>, <b>103</b> put flat and bonded together from the second composite web <b>172</b> between each pair of the adjacent cores <b>4</b> to obtain third composite web <b>173</b> formed with openings <b>132</b>.</p>
+<p id="p-0042" num="0066">In a step VI, the third composite web <b>173</b> is cut along respective center lines T (See the step V) extending in the cross direction CD between each pair of the adjacent cores <b>4</b>, <b>4</b> and the rear fastener members <b>14</b> are engaged with the associated front fastener members <b>12</b> to obtain the individual pant-like diapers <b>1</b>. By cutting the third composite web <b>173</b> in this manner, the first and second front inelastic regions <b>51</b>, <b>52</b> and the first and second rear inelastic regions <b>61</b>, <b>62</b> are obtained on both sides of the respective center lines T. At the same time, the openings <b>132</b> are respectively bisected so as to form the respective peripheral edges of the leg-openings <b>32</b>.</p>
+<p id="p-0043" num="0067"><figref idref="DRAWINGS">FIG. 6</figref> illustrates a portion of the first roll <b>161</b> constituting the cutter <b>160</b> used in the production process illustrated in <figref idref="DRAWINGS">FIG. 5</figref> as has been flatly developed. The first roll <b>161</b> is used with a second roll <b>162</b> having a smooth peripheral surface (not shown) wherein some (<b>117</b>, <b>137</b>) of the elastic members to be cut by the cutter <b>160</b> are indicated by imaginary lines. The first roll <b>161</b> is formed on the peripheral surface <b>164</b> thereof with a plurality of blade segments <b>180</b>. These blade segments <b>180</b> radially project from the peripheral surface <b>164</b> and to serve to cut the respective continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b> and <b>137</b> lying between these blade segments <b>180</b> and a peripheral surface of the second roll <b>162</b> under a pressure with or without heating. Such blade segments <b>180</b> are arranged intermittently in an axial direction X of the first roll <b>161</b> to form a blade array <b>181</b>. The first roll <b>161</b> has a plurality of the blade arrays <b>181</b> and, in <figref idref="DRAWINGS">FIG. 6</figref>, first through fifth pairs of blade arrays <b>181</b><i>a </i>through <b>181</b><i>e </i>are arranged so as to be symmetric one with another about an imaginary line S extending in the axial direction X. It should be noted that the individual blade segments <b>180</b> included in each of the blade arrays on the first roll <b>161</b> are spaced one from another substantially at regular intervals and oblique in a common direction and at a common angle with respect to the axial direction X. Furthermore, the individual blade segments <b>180</b> in each of the blade arrays <b>181</b> are uniquely arranged. Specifically, assumed that these individual blade segments <b>180</b> are moved in a circumferential direction, each pair of the blade segments adjacent in the axial direction X will partially overlap and provide the same effect as a single blade continuously extending in the axial direction X will provide. Consequentially, it is assured that the respective continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b> and <b>137</b> for the respective elastic members extending in the machine direction MD are cut by these blade arrays.</p>
+<p id="p-0044" num="0068">On the peripheral surface of the first roll <b>161</b>, the first, second and third blade arrays <b>181</b><i>a</i>, <b>181</b><i>b </i>and <b>181</b><i>c </i>successively adjacent in the circumferential direction are used to form the diaper <b>1</b> with the first front inelastic regions <b>51</b> and the first rear inelastic regions <b>61</b>. The fourth and fifth blade arrays <b>181</b><i>d </i>and <b>181</b><i>e </i>are used to form the diaper <b>1</b> with the second front inelastic regions <b>52</b> and the second rear inelastic regions <b>62</b>.</p>
+<p id="p-0045" num="0069">The blade segments <b>180</b> may be heated at a desired temperature to facilitate the continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b> and <b>137</b> for the respective elastic members to be cut, on one hand, and to melt-solidify regions of nonwoven fabric or film forming the web <b>102</b> and the web <b>103</b> in contact with the blade segments <b>180</b>, on the other hand. The second roll <b>162</b> also is adapted to be adjustably heated at a desired temperature. A distance by which the first roll <b>161</b> and the second roll <b>162</b> are spaced from each other is adjustable. Even under such conditions, the web <b>102</b> and/or the web <b>103</b> might be damaged when the continuous materials <b>116</b>, <b>117</b>, <b>118</b>, <b>136</b>, <b>137</b> for the respective elastic members are cut by the blade segments <b>180</b>. In such a case, the component fibers forming the nonwoven fabric might be drawn apart and/or break or tear of the film-like sheet might propagate in the course of the cutting operation. However, the regions of the nonwoven fabric or the film-like sheet being in contact with the blade segments <b>180</b> and/or the pins <b>190</b> may be melt-solidified to prevent such damage from propagating.</p>
+<p id="p-0046" num="0070">The method according to the invention designed to form the first front inelastic regions <b>51</b> and the first rear inelastic regions <b>61</b> as has been described just above advantageously allows to coat the web <b>102</b> and/or the web <b>103</b> with hot melt adhesive intermittently and uniformly to bond these webs <b>102</b>, <b>103</b> to each other. In other words, it is unnecessary to provide adhesive-free regions as the inelastic regions.</p>
+<p id="p-0047" num="0071">The method exemplarily illustrated in <figref idref="DRAWINGS">FIG. 5</figref> as well as the first roll <b>161</b> exemplarily illustrated in <figref idref="DRAWINGS">FIG. 6</figref> may be appropriately varied depending on the particular shape and/or construction of the diaper <b>1</b>. For example, it is possible to change the step V so that the front fastener members <b>12</b> and the rear fastener members <b>14</b> maybe folded back onto each other along a center line W (See <figref idref="DRAWINGS">FIG. 5</figref>) bisecting the width thereof to obtain the diaper <b>1</b> flatly folded having the first and second fastener members in engaged state. Furthermore, it is also possible to change the number of the blade arrays <b>181</b>, the distance between each pair of the blade arrays <b>181</b> adjacent in the circumferential direction, the length of the individual blade segments <b>180</b> in the blade array <b>181</b>, the inclination angle of the individual blade segments <b>180</b> with respect to the axial direction X, and the distance between each pair of the adjacent blade segments <b>180</b>. In addition, according to the invention, the order in which the first composite web is formed with the first and second front inelastic regions <b>51</b>, <b>52</b> and the first and second rear inelastic regions <b>61</b>, <b>62</b> is not specified. For example, after the first composite web <b>171</b> has been formed with the front inelastic regions <b>51</b> and the first rear inelastic regions <b>61</b> by using the first and second rolls <b>161</b>, <b>162</b>, it is possible to form the second front inelastic regions <b>52</b> and the second rear inelastic regions <b>62</b> by using a pair of rolls independent from the first and second rolls <b>161</b>, <b>162</b>.</p>
+<p id="p-0048" num="0072">The present invention as has been described on the basis of the disposable diaper as the typical example may be implemented also, for example, in the form of toilet-training pants, incontinent briefs or disposable pants.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>The invention claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A pant-type wearing article comprising:
+<claim-text>a first waist region defined by one of front and rear waist regions;</claim-text>
+<claim-text>a second waist region defined by the other of said front and rear waist regions;</claim-text>
+<claim-text>a crotch region extending between said first and second waist regions;</claim-text>
+<claim-text>each said first waist region, second waist region and crotch region including an inner sheet and an outer sheet,</claim-text>
+<claim-text>second fastener members provided along transversely opposite lateral zones of said second waist region which have inner surfaces;</claim-text>
+<claim-text>first fastener members provided along transversely opposite lateral zones of said first waist region which have outer surfaces;</claim-text>
+<claim-text>said inner surfaces of said second fasteners members being detachably engaged with the outer surfaces of said first fasteners members so as to form the pant-type wearing article having a waist-opening and a pair of leg-openings formed upon the engagement;</claim-text>
+<claim-text>at least one waist region of said first waist region and said second waist region includes a plurality of elastic members extending under tension across said one waist region which are sandwiched between said inner sheet and said outer sheet and, in said transversely opposite lateral zones, each of said elastic members together with adjacent portions of said inner sheet and said outer sheet are cut through at a plurality of locations along its length obliquely at predetermined intervals in a longitudinal direction of the pant-type article to form an inelastic regions being neither elastically stretchable nor elastically contractible; and</claim-text>
+<claim-text>said first fastener members or said second fastener members provided in said one waist region are formed in said inelastic regions.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The wearing article as defined by <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said respective elastic members are cut off also in regions spaced inward from said inelastic regions formed in said transversely opposite lateral zones as viewed in a waistline direction of said one waist region. </claim-text>
+</claim>
+</claims>
+</us-patent-grant>

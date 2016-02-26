@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978168-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978168</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>12789994</doc-number>
+<date>20100528</date>
+</document-id>
+</application-reference>
+<us-application-series-code>12</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>TW</country>
+<doc-number>99208420 U</doc-number>
+<date>20100506</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>1187</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>63</class>
+<subclass>B</subclass>
+<main-group>33</main-group>
+<subgroup>00</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>G</section>
+<class>02</class>
+<subclass>C</subclass>
+<main-group>11</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>9</main-group>
+<subgroup>02</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>63</class>
+<subclass>B</subclass>
+<main-group>33</main-group>
+<subgroup>002</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>G</section>
+<class>02</class>
+<subclass>C</subclass>
+<main-group>11</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>61</class>
+<subclass>F</subclass>
+<main-group>9</main-group>
+<subgroup>025</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2438</main-classification>
+<further-classification>  2426</further-classification>
+<further-classification>  2428</further-classification>
+<further-classification>  2429</further-classification>
+<further-classification>  2434</further-classification>
+<further-classification>  2440</further-classification>
+<further-classification>351 43</further-classification>
+</classification-national>
+<invention-title id="d2e71">Swim goggles</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4689838</doc-number>
+<kind>A</kind>
+<name>Angermann et al.</name>
+<date>19870900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2441</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>5363512</doc-number>
+<kind>A</kind>
+<name>Grabos et al.</name>
+<date>19941100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>5542130</doc-number>
+<kind>A</kind>
+<name>Grabos et al.</name>
+<date>19960800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2436</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>5628072</doc-number>
+<kind>A</kind>
+<name>Haslbeck et al.</name>
+<date>19970500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2428</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>5857221</doc-number>
+<kind>A</kind>
+<name>Geneve et al.</name>
+<date>19990100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2428</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>7604346</doc-number>
+<kind>B2</kind>
+<name>Wang</name>
+<date>20091000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>351 43</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>2001/0034896</doc-number>
+<kind>A1</kind>
+<name>Chiang</name>
+<date>20011100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>2002/0170108</doc-number>
+<kind>A1</kind>
+<name>Chiang</name>
+<date>20021100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>EP</country>
+<doc-number>0525238</doc-number>
+<kind>A1</kind>
+<date>19930200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>EP</country>
+<doc-number>1008369</doc-number>
+<kind>A1</kind>
+<date>20000600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>EP</country>
+<doc-number>1382370</doc-number>
+<kind>A1</kind>
+<date>20040100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>GB</country>
+<doc-number>2428812</doc-number>
+<kind>A</kind>
+<date>20070200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>9</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2438</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2440</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2426</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2429</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2441</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2443</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2448</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2428</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2434</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>351 43</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 12438</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification> 12440</main-classification>
+</classification-national>
+<classification-cpc-text>A61F 9/02</classification-cpc-text>
+<classification-cpc-text>A61F 9/025</classification-cpc-text>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>5</number-of-drawing-sheets>
+<number-of-figures>8</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110271432</doc-number>
+<kind>A1</kind>
+<date>20111110</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Chiang</last-name>
+<first-name>Herman</first-name>
+<address>
+<city>Taipei Hsien</city>
+<country>TW</country>
+</address>
+</addressbook>
+<residence>
+<country>TW</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Chiang</last-name>
+<first-name>Herman</first-name>
+<address>
+<city>Taipei Hsien</city>
+<country>TW</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<last-name>Chiang</last-name>
+<first-name>Cheng-Ju</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Global Esprit Inc.</orgname>
+<role>03</role>
+<address>
+<city>Chung-Ho, Taipei Hsien</city>
+<country>TW</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Worrell</last-name>
+<first-name>Danny</first-name>
+<department>3765</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Annis</last-name>
+<first-name>Khaled</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A pair of swim goggles include a connecting frame being assembled with a left lens frame and a right lens frame and a head strap, characterized in that the left and the right lens frames respectively have a lens and a frame body, an upper side and a lower side of the frame body respectively provided with a track thereon, the connecting frame including a first rib and a second rib spaced apart from each other and respectively defining a connection part thereon for being detachably coupled with the respective track, whereby the left and the right lens frames are detachably and separately assembled with the respective first rib and second rib and therefore are slidable with respect to the first and the second ribs though the track.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="135.30mm" wi="186.77mm" file="US08978168-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="192.53mm" wi="139.28mm" orientation="landscape" file="US08978168-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="163.66mm" wi="127.42mm" orientation="landscape" file="US08978168-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="162.56mm" wi="129.88mm" orientation="landscape" file="US08978168-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="71.80mm" wi="127.00mm" orientation="landscape" file="US08978168-20150317-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="147.57mm" wi="74.59mm" orientation="landscape" file="US08978168-20150317-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0002" num="0001">1. Field of the Invention</p>
+<p id="p-0003" num="0002">The present invention relates to a pair of swim goggles, and particularly to a pair of swim goggles for the use in a swimming pool, wherein a left lens frame and a right lens frame of the swim goggles are detachably and separately assembled with a connecting frame and adjustable in transverse with respect to the connecting frame.</p>
+<p id="p-0004" num="0003">2. Related Art</p>
+<p id="p-0005" num="0004">Conventional swim goggles for the use in a swimming pool are generally of a left and a right lens frames, which are varied in structure by functions or purposes of such as comfort of wearing, adjustment of head strap, or leak-proof and so on, wherein the left and right lens frames are generally connected by a connecting element, which is able to be used for adjusting a span between the left and right lens frames, however, such adjustment acted by the connecting element is easily to affect positions of both the left and right lens frames and therefore either the left lens frame or right lens frame cannot be well fitted to the eye sockets.</p>
+<p id="p-0006" num="0005">Accordingly, another type of swim goggles is improved by using two head straps respectively set along upper and lower sides of the left and right lens frames so as to adjust positions of the left and right lens frames individually and respectively. As a result, while adjusting one of the lens frames, the other one will not be affected. However, aforementioned conventional swim goggles are still used inconveniently or incapability when one of the lenses is needed to be replaced, such us the lens is broken or scratched or of different shortsighted degrees. Hence it is imperative to develop novel swim goggles of which lenses can be replaced separately, quickly and effectively and thereby overcome the foregoing drawbacks.</p>
+<heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0007" num="0006">Accordingly, an object of the present invention is to provide novel swim goggles of which a left lens frame and a right lens frame are detachably and separately assembled and adjustable.</p>
+<p id="p-0008" num="0007">To achieve the above-mentioned objects, a pair of swim goggles includes a connecting frame being assembled with a left lens frame and a right lens frame and a head strap, characterized in that the left and the right lens frames respectively having a lens and a frame body formed integrally with and around a periphery of the lens, an upper side and a lower side of the frame body respectively provided with a track thereon, the connecting frame including a middle portion, a first rib and a second rib being spaced apart from each other, and a pair of joint members for allowing the head strap being drawn therethrough, the first and the second ribs respectively defining a connection part thereon for being detachably coupled with the respective track, whereby the left and the right lens frames are detachably and separately assembled with the respective first rib and second rib and therefore are slidable with respect to the first and the second ribs though the track.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0009" num="0008"><figref idref="DRAWINGS">FIG. 1</figref> is a perspective exploded view of a pair of swim goggles of the present invention;</p>
+<p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. 2</figref> is a perspective assembly view of <figref idref="DRAWINGS">FIG. 1</figref>;</p>
+<p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. 3</figref> is a schematic view of <figref idref="DRAWINGS">FIG. 2</figref> viewed from a different angle;</p>
+<p id="p-0012" num="0011"><figref idref="DRAWINGS">FIG. 4</figref> is a front elevation view of <figref idref="DRAWINGS">FIG. 2</figref>;</p>
+<p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. 5</figref> is a cross-sectional view taken along a line <b>5</b>-<b>5</b> in <figref idref="DRAWINGS">FIG. 4</figref>;</p>
+<p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. 6</figref> is a cross-sectional view taken along a line <b>6</b>-<b>6</b> in <figref idref="DRAWINGS">FIG. 4</figref>;</p>
+<p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. 7</figref> is a cross-sectional view taken along a line <b>7</b>-<b>7</b> in <figref idref="DRAWINGS">FIG. 4</figref>;</p>
+<p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. 8</figref> is a schematic view showing how a head strap is released.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0004" level="1">DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+<p id="p-0017" num="0016">Referring to <figref idref="DRAWINGS">FIGS. 1 and 7</figref>, the swim goggles <b>1</b> comprise a connecting frame <b>2</b> being assembled with a left lens frame <b>3</b>, a right lens frame <b>4</b>, a covering frame <b>5</b>, and a buckling apparatus <b>6</b> and a head strap <b>7</b> of a plurality of retaining slots <b>70</b> (referring to <figref idref="DRAWINGS">FIG. 8</figref>), wherein the connecting frame <b>2</b> made of NYLON includes a middle portion <b>20</b>, a first rib <b>21</b> and a second rib <b>22</b> both extending longitudinally outwardly from opposite sides of the middle portion <b>20</b> and being spaced apart from each other, and a pair of joint members <b>23</b> for joining the first rib <b>21</b> and the second ribs <b>22</b> at one end thereof opposite to the middle portion <b>20</b>, respectively, and for allowing the head strap <b>7</b> being drawn through, wherein the middle portion <b>20</b> protrudes outwardly from the first and the second ribs, <b>21</b>, <b>22</b> and has a plurality of grooves <b>201</b> at the opposite sides thereof for providing better flexibility in order to fit various sizes of wearers' nose bridges. In addition, the middle portion <b>20</b> has a soft pad <b>24</b> which is made of Thermal Plastic Rubber (TPR) and formed integrally with the middle portion <b>20</b> (referring to <figref idref="DRAWINGS">FIG. 6</figref>). The first rib <b>21</b> and the second rib <b>22</b> respectively define a connection part <b>210</b>, <b>220</b> thereon which are in substantially parallel with each other (coplanar) and are straight and able to be detachably coupled with respective track <b>32</b>, <b>42</b> (described below). Each of the joint members <b>23</b> has a base <b>231</b> and an opening <b>232</b> defined in the base <b>231</b>, wherein the opening <b>232</b> is provided for the head strap <b>7</b> drawn therethrough.</p>
+<p id="p-0018" num="0017">The left lens frame <b>3</b> and the right lens frame <b>4</b> are of the same structure and preferably made of Polycarbonate (PC), respectively having a lens <b>31</b>, <b>41</b> and a frame body <b>30</b>, <b>40</b> formed integrally with and around a periphery of the lens <b>31</b>, <b>41</b>, an upper side and a lower side of the frame body <b>30</b>, <b>40</b> is respectively provided with the track <b>32</b>, <b>42</b> thereon, and the track <b>32</b>, <b>42</b> is substantially centrally provided with a notch <b>33</b>, <b>43</b> protruding inwardly of the frame body <b>30</b>, <b>40</b>, and a holding plate <b>34</b>, <b>44</b> protrudes from one side of the track <b>32</b>, <b>42</b> respective to the notch <b>33</b>, <b>43</b> so as to form a gap T between the notch <b>33</b>, <b>43</b> and the holding plate <b>34</b>, <b>44</b> (referring to <figref idref="DRAWINGS">FIGS. 1 and 7</figref>); in addition, a width of the holding plate <b>34</b>, <b>44</b> is less than a width of the notch <b>33</b>, <b>43</b> so as to form a clipping slit <b>35</b>, <b>45</b> between the track <b>32</b>, <b>42</b> and the holding plate <b>34</b>, <b>44</b> in cross-section, the clipping slit <b>35</b>, <b>45</b> communicating with the notch <b>33</b>, <b>43</b> and the gap T; through the gap T and the clipping slit <b>35</b>, <b>45</b>, the connection part <b>210</b> of the first rib <b>21</b> and the connection part <b>220</b> of the second rib <b>22</b> are detachably coupled with the respective track <b>32</b>, <b>42</b>, namely, the gap T facilitates assembly of the connection part <b>210</b>, <b>220</b> of the first and the second ribs <b>21</b>, <b>22</b> and the track <b>32</b>, <b>42</b>, and the connection part <b>210</b>, <b>220</b> is effectively positioned in the track <b>32</b>, <b>42</b> by the clipping slit <b>35</b>, <b>45</b>.</p>
+<p id="p-0019" num="0018">The covering frame <b>5</b> with a hollow portion (not labeled) corresponding to the track <b>32</b>, <b>42</b> is preferably made of TPR and sealingly covers the upper and bottom sides of the frame body <b>30</b>, <b>40</b> and the holding plate <b>34</b>, <b>44</b>. A plurality of ridges <b>50</b> are formed on the covering frame <b>5</b> with respect to the holding plate <b>34</b>, <b>44</b> for increasing a frictional area in the interest of the wearers' manipulation. Furthermore, a contact skirt <b>51</b> integrally extends rearward from the covering frame <b>5</b> for being fitted to an area around wearers' eye sockets.</p>
+<p id="p-0020" num="0019">The buckling apparatus <b>6</b> is adjustably coupled with the joint member <b>23</b> of the connecting frame <b>2</b> for selectively engaging the head strap <b>7</b>, the buckling apparatus <b>6</b> having a flexible engaged board <b>60</b> and a released board <b>61</b>, one end of the flexible engaged board <b>60</b> integrally formed with the joint member <b>23</b>, another end of the flexible engaged board <b>60</b> extending obliquely to form a guiding wall <b>601</b> in the opening <b>232</b>, the released board <b>61</b> having an outside surface <b>610</b> and an inside surface <b>611</b> opposite to the outside surface <b>610</b>, wherein the outside surface <b>610</b> is being rough and has a symbol of released direction (not labeled); two opposite sides of the inside surface <b>611</b> are provided with a leading wall <b>612</b>, respectively, corresponding to two opposite sides of the opening <b>232</b>, a biasing wall <b>613</b> is disposed between the leading walls <b>612</b> with respect to the guiding wall <b>601</b> and is spaced away from the inside surface <b>611</b>, and each of the leading walls <b>612</b> has a flange <b>614</b> on one edge thereof. In assembly, the leading walls <b>612</b> of the released board <b>61</b> are installed into the opening <b>232</b> with the flanges <b>614</b> being against the respect side of the opening <b>232</b> where the guiding wall <b>601</b> is disposed between the biasing wall <b>613</b> and the inside surface <b>611</b> of the released board <b>61</b>.</p>
+<p id="p-0021" num="0020">Referring to <figref idref="DRAWINGS">FIG. 8</figref>, after assembly of the swim goggles <b>1</b>, one of the retaining slots <b>70</b> of the head strap <b>7</b> is selectively engaged against the guiding wall <b>601</b> of the flexible engaged board <b>60</b> so that the head strap <b>7</b> is allowed to move only in one-way direction, and once the head strap <b>7</b> is intended to be released, the released board <b>61</b> is being pushed in a reverse direction with respect to the one-way direction as pointed by an arrow shown in <figref idref="DRAWINGS">FIG. 8</figref>, simultaneously, the biasing wall <b>613</b> moves against the guiding wall <b>601</b> (as shown as broken lines) so that the guiding wall <b>601</b> is disengaged from the one of the retaining slots <b>70</b> and the head strap <b>7</b> is therefore able to be drawn freely from any direction. Once the released board <b>61</b> is not being pushed, the guiding wall <b>601</b> will bounce back to its previous position to be against one of the retaining slots <b>70</b> due to flexibility of the flexible engaged board <b>60</b>.</p>
+<p id="p-0022" num="0021">Accordingly, the left lens frame <b>3</b> and the right lens frame <b>4</b> of the swim goggles <b>1</b> can be replaced separately, quickly and effectively when the lenses <b>31</b>, <b>41</b> are broken or scratched or required for different shortsighted degrees. Furthermore, the left and the right lens frames <b>3</b>, <b>4</b> can be adjusted easily by moving along the first and the second ribs <b>21</b>, <b>22</b>.</p>
+<p id="p-0023" num="0022">It is understood that the invention may be embodied in other forms within the scope of the claims. Thus the present examples and embodiments are to be considered in all respects as illustrative, and not restrictive, of the invention defined by the claims.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A pair of swim goggles, comprising a connecting frame being separately assembled with a left lens frame and a right lens frame and a head strap, wherein the left and the right lens frames respectively comprise a lens and a frame body formed integrally with and around a periphery of the lens, an upper side and a lower side of the frame body being respectively provided with a track thereon; and
+<claim-text>the connecting frame including a middle portion, a first rib and a second rib respectively extending longitudinally outwardly from opposite sides of the middle portion and being spaced apart from each other, and a pair of joint members for joining the first and the second ribs at one end thereof opposite to the middle portion, respectively, and for the head strap being drawn therethrough, each of the first and the second ribs defining a connection part thereon for being detachably coupled with the track;</claim-text>
+<claim-text>wherein the track is substantially centrally provided with a notch protruding inwardly of the frame body, and a holding plate protrudes from one side of the track with respect to the notch so as to form a gap between the notch and the holding plate, wherein a width of the holding plate is less than a width of the notch so as to form a clipping slit between the track and the holding plate in cross-section, the clipping slit communicating with the notch and the gap; and wherein the connection part of the first rib and the connection part of the second rib are designed to be coplanar with each other wherein the first rib and the second rib are detachably disposed on the respective track through the gap; the swim goggles further comprises a covering frame made of thermal plastic rubber (TPR) for covering at least the upper side and the lower side of the frame body and the holding plate of the left and the right lens frames; a contact skirt integrally extends rearward from the covering frame and adapted to fit a wearer's eye socket;</claim-text>
+<claim-text>wherein the left lens frame and the right lens frame are detachably and separately assembled with the connection part defined by each of the first rib and the second rib and therefore the left and the right lens frames are slidable with respect to the first and the second ribs through the track.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The swim goggles of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein a plurality of ridges are formed on the covering frame with respect to the holding plate for increasing a frictional area in the interest of a wearer's manipulation.</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. The swim goggles of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the left lens frame and the right lens frame are made of polycarbonate (PC).</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The swim goggles of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the connecting frame is made of nylon, the middle portion having a plurality of grooves at the opposite sides thereof for providing better flexibility.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The swim goggles of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the middle portion of the connecting frame further has a soft pad made of thermal plastic rubber (TPR), the soft pad being formed integrally with the middle portion.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The swim goggles of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the joint member of the connecting frame includes a base and an opening defined in the base, the opening being provided for the head strap drawn therethrough.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The swim goggles of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein two opposite ends of the head strap have a plurality of retaining slots.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The swim goggles of <claim-ref idref="CLM-00007">claim 7</claim-ref>, further comprising a buckling apparatus adjustably coupled with the joint member of the connecting frame for selectively engaging the head strap, the buckling apparatus having a flexible engaged board and a released board, one end of the flexible engaged board integrally formed with the joint member, another end of the flexible engaged board extending obliquely to form a guiding wall in an opening, the released board having an outside surface and inside surface opposite to the outside surface, two opposite sides of the inside surface being provided with a leading wall, respectively, corresponding to two opposite sides of the opening, a biasing wall being disposed between the leading walls with respect to the guiding wall, each of the leading walls having a flange on one edge thereof, whereby one of the retaining slots of the head strap is selectively engaged against the guiding wall of the flexible engaged board so that the head strap is allowed to move only in one-way direction, and while the released board is pushed in a reverse direction with respect to the one-way direction, the biasing wall moves against the guiding wall so that the guiding wall is disengaged from one of the retaining slots and the head strap is therefore able to be drawn freely.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The swim goggles of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein the outside surface of the released board has a symbol of released direction.</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

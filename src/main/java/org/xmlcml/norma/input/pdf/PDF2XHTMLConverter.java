@@ -5,13 +5,14 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import nu.xom.Element;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.util.HtmlUtil;
@@ -33,14 +34,14 @@ public class PDF2XHTMLConverter {
 	private List<SVGSVG> svgList;
 	private File svgDirectory;
 
-	private CMDir cmDir;
+	private CTree cmTree;
 	private PDFAnalyzer pdfAnalyzer;
 	public PDF2XHTMLConverter() {
 		
 	}
 
-	public PDF2XHTMLConverter(CMDir cmDir) {
-		this.cmDir = cmDir;
+	public PDF2XHTMLConverter(CTree cmTree) {
+		this.cmTree = cmTree;
 	}
 
 	public HtmlElement readAndConvertToXHTML(File infile) throws Exception {
@@ -118,7 +119,7 @@ public class PDF2XHTMLConverter {
 //			for (SVGSVG svg : svgList) {
 //				File svgFile = new File(svgDirectory, getPageString()+(i++)+"."+SVG);
 //				try {
-//					FileUtils.write(svgFile, svg.toXML());
+//					FileUtils.write(svgFile, svg.toXML(), , Charset.forName("UTF-8"));
 //				} catch (IOException e) {
 //					throw new RuntimeException("Cannot write svg file", e);
 //				}
@@ -140,10 +141,10 @@ public class PDF2XHTMLConverter {
 
 	public HtmlElement readAndConvertToXHTML() {
 		HtmlElement htmlElement = null;
-		if (cmDir != null) {
-			File fulltextHtmlFile = cmDir.getReservedFile(cmDir.FULLTEXT_XHTML);
-			File fulltextPDF = cmDir.getExistingFulltextPDF();
-			svgDirectory = cmDir.getReservedDirectory(SVG);
+		if (cmTree != null) {
+			File fulltextHtmlFile = cmTree.getReservedFile(cmTree.FULLTEXT_XHTML);
+			File fulltextPDF = cmTree.getExistingFulltextPDF();
+			svgDirectory = cmTree.getReservedDirectory(SVG);
 			LOG.debug("svg dir "+svgDirectory);			
 			if (fulltextPDF != null) {
 				try {

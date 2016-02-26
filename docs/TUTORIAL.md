@@ -82,7 +82,7 @@ This means
 
 This should create the 11 XML files in `target/plos10/`.
 
-Then we convert them. Now the topr directory is `target/plos10/`. It's not a CM directory but it has many child CM directories and converts each. We use the same command as before:
+Then we convert them. Now the top directory is `target/plos10/`. It's not a CM directory but it has many child CM directories and converts each. We use the same command as before:
 ```
 norma -q target/plos10/ -i fulltext.xml -o scholarly.html --xsl nlm2html
 ```

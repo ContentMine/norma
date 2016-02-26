@@ -10,7 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.norma.tagger.Tags;
@@ -176,10 +176,10 @@ public class PlosoneTaggerTest {
 	 */
 	public void test0113556XML() throws Exception {
 		PubstyleTagger plosoneTagger = new XMLPlosoneTagger();
-		Element taggedElement = plosoneTagger.addTagsToSections(Fixtures.F0113556_XML);
+		Element taggedElement = plosoneTagger.addTagsToSections(NormaFixtures.F0113556_XML);
 		new File("target/plosone/").mkdirs();
 		XMLUtil.debug(taggedElement, new FileOutputStream("target/plosone/tagged0113556.xml"), 0);
-		String message = XMLUtil.equalsCanonically(Fixtures.F0113556_TAGGED_XML, taggedElement, true);
+		String message = XMLUtil.equalsCanonically(NormaFixtures.F0113556_TAGGED_XML, taggedElement, true);
 		Assert.assertNull("message: "+message, message);
 		
 		Assert.assertEquals("journaltitle", 1, XMLUtil.getQueryElements(taggedElement, "//*[@tag='journaltitle']").size());
@@ -213,7 +213,7 @@ public class PlosoneTaggerTest {
 	@Test
 	public void test0113556HTML() throws Exception {
 		PubstyleTagger plosoneTagger = new HTMLPlosoneTagger();
-		Element taggedElement = plosoneTagger.addTagsToSections(Fixtures.F0113556_HTML);
+		Element taggedElement = plosoneTagger.addTagsToSections(NormaFixtures.F0113556_HTML);
 		new File("target/plosone/").mkdirs();
 		File outputFile = new File("target/plosone/tagged0113556.html");
 		XMLUtil.debug(taggedElement, new FileOutputStream(outputFile), 0);
@@ -253,7 +253,7 @@ public class PlosoneTaggerTest {
 		File outputFile = new File("target/plosone/0113556.html");
 		outputFile.getParentFile().mkdirs();
 		String[] args = {
-				"-i", Fixtures.F0113556_HTML.toString(),
+				"-i", NormaFixtures.F0113556_HTML.toString(),
 				"-o", outputFile.toString(),
 			};
 			Norma.main(args);
@@ -266,7 +266,7 @@ public class PlosoneTaggerTest {
 		File outputFile = new File("target/plosone/0113556.tagged.html");
 		outputFile.getParentFile().mkdirs();
 		String[] args = {
-				"-i", Fixtures.F0113556_HTML.toString(),
+				"-i", NormaFixtures.F0113556_HTML.toString(),
 				"-p", // gives list of pubstyles to sysout
 				"-o", outputFile.toString(),
 			};
@@ -280,7 +280,7 @@ public class PlosoneTaggerTest {
 		File outputFile = new File("target/plosone/0113556.tagged.html");
 		outputFile.getParentFile().mkdirs();
 		String[] args = {
-				"-i", Fixtures.F0113556_HTML.toString(),
+				"-i", NormaFixtures.F0113556_HTML.toString(),
 				"-p", "plosone",
 				"-o", outputFile.toString(),
 			};

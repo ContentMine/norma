@@ -16,7 +16,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-/** manages manifest.json in CMDir
+/** manages manifest.json in CTree
  * 
  * @author pm286
  *

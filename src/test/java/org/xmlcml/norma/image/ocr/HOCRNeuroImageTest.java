@@ -7,7 +7,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 
 public class HOCRNeuroImageTest {
 
@@ -19,7 +19,7 @@ public class HOCRNeuroImageTest {
 	 */
 	@Test
 	public void testReadImage() throws IOException {
-		File image21 = new File(Fixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png");
+		File image21 = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png");
 		BufferedImage image = ImageIO.read(image21);
 		int w = image.getWidth();
 		int h = image.getHeight();

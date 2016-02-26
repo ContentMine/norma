@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.NormaArgProcessor;
@@ -51,14 +51,16 @@ public class HtmlCleaner {
 		if (!JSOUP.equals(optionValue)) {
 			LOG.warn("tidying option not supported:"+optionValue);
 		}
-		CMDir currentCMDir = normaArgProcessor.getCurrentCMDir();
-		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
+		CTree currentCMTree = normaArgProcessor.getCurrentCMTree();
+		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMTree);
 
 		htmlElement = null;
-		try {
-			htmlElement = htmlFactory.parse(inputFile);
-		} catch (Exception e) {
-			throw new RuntimeException("Cannot transform HTML "+inputFile, e);
+		if (inputFile != null) {
+			try {
+				htmlElement = htmlFactory.parse(inputFile);
+			} catch (Exception e) {
+				throw new RuntimeException("Cannot transform HTML "+inputFile, e);
+			}
 		}
 		return htmlElement;
 	}

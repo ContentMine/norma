@@ -14,10 +14,10 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlBody;
-import org.xmlcml.html.HtmlHead;
+import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.norma.Norma;
@@ -49,7 +49,7 @@ public class HOCRReaderTest {
 		HOCRReader hocrReader = new HOCRReader();
 		hocrReader.readHOCR(is);
 		Assert.assertNotNull(hocrReader.getHocrElement());
-		HtmlHead htmlHead = hocrReader.getHead();
+		HtmlElement htmlHead = hocrReader.getHead();
 		Assert.assertNotNull("head",  htmlHead);
 		List<HtmlMeta> metaElements = hocrReader.getMetaElements();
 		Assert.assertNotNull("meta",  metaElements);
@@ -138,18 +138,18 @@ public class HOCRReaderTest {
 	@Test
 	public void testCommandLine() throws IOException {
 		
-		File cmdirTop = new File("target/hocr/ijsem_003566");
-		if (cmdirTop.exists())FileUtils.forceDelete(cmdirTop);
-		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cmdirTop);
-		CMDir cmDir = new CMDir(cmdirTop);
-		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
-		Assert.assertNotNull("image", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
-		String args = "-q "+cmdirTop
+		File cTreeTop = new File("target/hocr/ijsem_003566");
+		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
+		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cTreeTop);
+		CTree cTree = new CTree(cTreeTop);
+		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
+		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
+		String args = "-q "+cTreeTop
 				+ " --transform hocr2svg"
 				+ " -i " + "image/ijs.0.003566-0-000.pbm.png.hocr"
 				+ " -o " + "image/ijs.0.003566-0-000.pbm.png.hocr.svg";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("svg", cmDir.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
+		Assert.assertNotNull("svg", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
 	}
 }

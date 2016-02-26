@@ -18,6 +18,9 @@
 	<name>norma</name>
 	<description>A Java library for processing multiple legacy formats into normalized HTML5</description>
 
+	<properties>
+			<opennlp.version>1.6.0</opennlp.version>		
+	</properties>
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -185,7 +188,15 @@
 					</dataSet>
 				</configuration>
 			</plugin>
-			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -214,6 +225,12 @@
 			<artifactId>svg2xml</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.opennlp</groupId>
+			<artifactId>opennlp-tools</artifactId>
+			<version>${opennlp.version}</version>
+		</dependency>
+		
 		<!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
 		<dependency>
 		    <groupId>com.jayway.jsonpath</groupId>
