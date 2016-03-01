@@ -25,16 +25,31 @@
 	</xsl:template>
 
 	<xsl:template match="
+		*[local-name()='alternatives'] | 
+		*[local-name()='article'] | 
+		*[local-name()='back'] | 
 		*[local-name()='caption'] | 
 		*[local-name()='col'] | 
 		*[local-name()='colgroup'] |
-		*[local-name()='p'] | 
+		*[local-name()='etal'] | 
+		*[local-name()='fig'] | 
+		*[local-name()='fn'] | 
+		*[local-name()='graphic'] | 
 		*[local-name()='hr'] | 
+		*[local-name()='label'] | 
+		*[local-name()='name'] | 
+		*[local-name()='p'] | 
+		*[local-name()='sc'] | 
+		*[local-name()='sub'] | 
 		*[local-name()='sup'] | 
 		*[local-name()='table'] | 
+		*[local-name()='table-wrap'] | 
 		*[local-name()='table-wrap-foot'] | 
+		*[local-name()='tbody'] | 
 		*[local-name()='td'] | 
 		*[local-name()='tfoot'] | 
+		*[local-name()='th'] | 
+		*[local-name()='title'] | 
 		*[local-name()='th'] | 
 		*[local-name()='thead'] | 
 		*[local-name()='tr'] 
@@ -156,8 +171,7 @@
  -->
  	
 	<xsl:template match="*[local-name()='body']">
-	  <xsl:apply-templates select="/*[local-name()='article']/*[local-name()='front']/
-	      *[local-name()='article-meta']/*[local-name()='abstract']"/>
+	  <xsl:apply-templates select="/article/front/article-meta/abstract"/>
 	  <xsl:apply-templates/>
 	</xsl:template>
 	
@@ -168,13 +182,8 @@
 	    </div>
 	</xsl:template>
 	
-	<xsl:template match="*[local-name()='article']">
-	    <div tagx="article">
-			<xsl:apply-templates select="*|text()"/>
-	    </div>
-	</xsl:template>
 	
-	<xsl:template match="*[local-name()='strong'] | *[local-name()='bold']">
+	<xsl:template match="strong | bold">
 	    <b><xsl:apply-templates  select="*|text()"/></b>
 	</xsl:template>
 	
@@ -182,7 +191,7 @@
 	    <i><xsl:apply-templates select="*|text()"/></i>
 	</xsl:template>
 	
-	<xsl:template match="*[not(self::*[local-name()='sec'])]/*[local-name()='sec']/*[local-name()='title']">
+	<xsl:template match="*[not(self::sec)]/sec/title" priority="-0.5">
 	    <h2><xsl:apply-templates /></h2>
 	</xsl:template>
 	
@@ -191,8 +200,7 @@
 	</xsl:template>
 	
 	
-	<xsl:template match="*[local-name()='sec']/*[local-name()='title']/*[local-name()='sec']/*[local-name()='title']/
-	*[local-name()='sec']/*[local-name()='title']">
+	<xsl:template match="sec/title/sec/title/sec/title">
 	    <h4><xsl:apply-templates select="*|text()"/></h4>
 	</xsl:template>
 	
@@ -212,10 +220,6 @@
 	    <li tag="ref"><a name="{@id}"/><xsl:apply-templates  select="*|text()"/></li>
 	</xsl:template>
 	
-	<xsl:template match="*[local-name()='label']">
-	    <span class="label"><xsl:value-of select="."/></span>
-	</xsl:template>
-	
 	<xsl:template match="*[local-name()='element-citation']">
 	    <span class="element-citation'"><xsl:apply-templates/></span>
 	</xsl:template>
@@ -224,9 +228,11 @@
 	    <span class="person-group'"><xsl:apply-templates/></span>
 	</xsl:template>
 	
+	<!-- 
 	<xsl:template match="*[local-name()='name']">
 	    <span class="name'"><xsl:apply-templates/>,</span>
 	</xsl:template>
+	-->
 		
 	<xsl:template match="*[local-name()='pub-id']">
 	    <span class="pub-id'">[<xsl:apply-templates/>]</span>
@@ -244,13 +250,17 @@
 	    <span class="publisher-name'">[<xsl:apply-templates/>]</span>
 	</xsl:template>
 		
+		<!-- 
 	<xsl:template match="*[local-name()='etal']">
 	    <i>et al.</i>
 	</xsl:template>
+	-->
 		
+<!-- 	
 	<xsl:template match="*[local-name()='sec']">
 	    <div id="{@id}"><xsl:apply-templates select="* | text()"/></div>
 	</xsl:template>
+-->
 	
 	<xsl:template match="*[local-name()='table-wrap']">
 	    <div id="{@id}"><xsl:apply-templates select="* | text()"/></div>
@@ -265,9 +275,11 @@
  	    <span rid="{@rid}" ref-type="{@ref-type}"><sup><a href="#{@rid}"><xsl:value-of select="."/></a></sup></span>
 	</xsl:template>
 	
+	<!-- 
 	<xsl:template match="*[local-name()='fn']" >
  	    <div id="{@id}" class="fn"><xsl:apply-templates/></div>
 	</xsl:template>
+	-->
 	
 	<xsl:template match="*[local-name()='xref']" priority="-0.45">
  	    <span rid="{@rid}" ref-type="{@ref-type}"><xsl:apply-templates select="* | text()"/></span>

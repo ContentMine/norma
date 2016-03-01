@@ -38,7 +38,9 @@ public class EPMCConverter implements CellCalculator {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	
+
+	public static final String HTTP_EUROPEPMC_ORG_ARTICLES = "http://europepmc.org/articles/";
+
 	private InputStream jsonInputStream;
 	private File cProjectDir;
 	private JsonArray entryArray;
@@ -220,8 +222,8 @@ public class EPMCConverter implements CellCalculator {
 		getOrCreateDataTablesTool();
 		dataTablesTool.setTitle("METADATA");
 		dataTablesTool.setCellCalculator(this);
-		this.setLink0("../../src/test/resources/org/xmlcml/ami2/zika/");
-		this.setLink1("/scholarly.html");
+		this.setRemoteLink0("../../src/test/resources/org/xmlcml/ami2/zika/");
+		this.setRemoteLink1("/scholarly.html");
 		this.setRowHeadingName("EPMCID");
 		HtmlHtml html = dataTablesTool.createHtml(this);
 		return html;
@@ -239,27 +241,45 @@ public class EPMCConverter implements CellCalculator {
 		
 	}
 
-	public String createCellContents(int iRow, int iCol) {
+	public HtmlElement createCellContents(int iRow, int iCol) {
 		LOG.debug("createCellContents NYI");
 		return null;
 	}
 
-	public CellCalculator setLink0(String link0) {
-		getOrCreateDataTablesTool().setLink0(link0);
+	public CellCalculator setRemoteLink0(String link0) {
+		getOrCreateDataTablesTool().setRemoteLink0(link0);
 		return this;
 	}
 
-	public String getLink0() {
-		return getOrCreateDataTablesTool().getLink0();
+	public String getRemoteLink0() {
+		return getOrCreateDataTablesTool().getRemoteLink0();
 	}
 
-	public CellCalculator setLink1(String link1) {
-		getOrCreateDataTablesTool().setLink1(link1);
+	public CellCalculator setRemoteLink1(String link1) {
+		getOrCreateDataTablesTool().setRemoteLink1(link1);
 		return this;
 	}
 
-	public String getLink1() {
-		return getOrCreateDataTablesTool().getLink1();
+	public String getRemoteLink1() {
+		return getOrCreateDataTablesTool().getRemoteLink1();
+	}
+
+	public CellCalculator setLocalLink0(String link0) {
+		getOrCreateDataTablesTool().setLocalLink0(link0);
+		return this;
+	}
+
+	public String getLocalLink0() {
+		return getOrCreateDataTablesTool().getLocalLink0();
+	}
+
+	public CellCalculator setLocalLink1(String link1) {
+		getOrCreateDataTablesTool().setLocalLink1(link1);
+		return this;
+	}
+
+	public String getLocalLink1() {
+		return getOrCreateDataTablesTool().getLocalLink1();
 	}
 
 	public CellCalculator setRowHeadingName(String rowHeading) {
