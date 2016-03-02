@@ -90,7 +90,10 @@
 	
 	<xsl:template match="*[local-name()='front']">
 	    <head>
-      	    <style type="text/css"> table, tr, td {border : thin;}</style>
+      	    <style type="text/css"> 		 
+      	    table {background : #ffffdd;}
+		 	tr {background : #ddddff; padding : 1px;}
+			</style>
 			<xsl:apply-templates />
 	    </head>
 	</xsl:template>
