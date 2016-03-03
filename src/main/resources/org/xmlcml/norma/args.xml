@@ -1,5 +1,7 @@
-<argList name="norma" version="0.2.12">
+<argList name="norma" version="0.2.15">
 
+  <p>20160302: tidied NLM XSL</p>
+  <p>20160223: tidied NLM XSL</p>
   <p>20160223:  tracking cmine</p>
   <p>20160211: testing Cell Rendering</p>
   <p>20160211: tracking cmine</p>

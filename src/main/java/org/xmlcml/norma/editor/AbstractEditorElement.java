@@ -2,19 +2,15 @@ package org.xmlcml.norma.editor;
 
 import java.io.InputStream;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.xmlcml.xml.XMLUtil;
+
 import nu.xom.Comment;
-import nu.xom.Document;
 import nu.xom.Element;
 import nu.xom.Node;
 import nu.xom.ProcessingInstruction;
 import nu.xom.Text;
-
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.xmlcml.graphics.svg.SVGCircle;
-import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.graphics.svg.SVGG;
-import org.xmlcml.xml.XMLUtil;
 
 /**
  * error detectors and corrector for potentially garbled strings
