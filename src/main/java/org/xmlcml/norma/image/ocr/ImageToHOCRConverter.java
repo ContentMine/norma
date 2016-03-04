@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.misc.CMineUtil;
 
 public class ImageToHOCRConverter {
@@ -94,14 +95,14 @@ public class ImageToHOCRConverter {
 		if (!outputHtmlFile.exists()) {
 			File outputHocr = createOutputHtmlFileDescriptorForHOCR_HOCR(output);
 			if (!outputHocr.exists()) {	
-				LOG.debug("failed to create: "+outputHtmlFile+" or "+outputHocr);
+				DefaultArgProcessor.CM_LOG.debug("failed to create: "+outputHtmlFile+" or "+outputHocr);
 				outputHtmlFile = null;
 			} else {
-				LOG.debug("copying "+outputHocr+" to "+outputHtmlFile);
+				LOG.trace("copying "+outputHocr+" to "+outputHtmlFile);
 				FileUtils.copyFile(outputHocr, outputHtmlFile);
 			}
 		} else {
-			LOG.debug("created "+outputHtmlFile.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtmlFile));
+			LOG.trace("created "+outputHtmlFile.getAbsolutePath()+"; size: "+ FileUtils.sizeOf(outputHtmlFile));
 		}
 		return outputHtmlFile;
 

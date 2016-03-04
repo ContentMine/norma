@@ -1,5 +1,6 @@
-<argList name="norma" version="0.2.15">
+<argList name="norma" version="0.2.16">
 
+  <p>20160304: major output tidy</p>
   <p>20160302: tidied NLM XSL</p>
   <p>20160223: tidied NLM XSL</p>
   <p>20160223:  tracking cmine</p>

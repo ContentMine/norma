@@ -25,7 +25,7 @@ public class NCBIHtmlTest {
 		NormaArgProcessor normaArgProcessor = new NormaArgProcessor();
 //		String args = "--project "+shtml.toString()+ " -i fulltext.xml  --transform ncbi-jats2html -o scholarly.html";
 		String args = "--project "+shtml.toString()+ " -i fulltext.xml  --transform jats2shtml -o scholarly.html";
-		LOG.debug(args);
+		LOG.trace(args);
 		normaArgProcessor.parseArgs(args);
 		normaArgProcessor.runAndOutput();
 	}

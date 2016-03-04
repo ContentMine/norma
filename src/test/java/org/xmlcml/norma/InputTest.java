@@ -31,10 +31,6 @@ public class InputTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-//	private String testFilePath(String path) {
-//		return Fixtures.TEST_NORMA_DIR + "/" + path;
-//	}
-	
 	@Test
 	public void testFilesAndDirectoriesInMiscDirectory() {
 		// non-recursive; all includes 3 XML and 1 HTML
@@ -197,7 +193,7 @@ public class InputTest {
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 		List<String> inputList = argProcessor.getInputList();
-		LOG.debug(inputList);
+		LOG.trace(inputList);
 		Assert.assertEquals("inputList", 3, inputList.size());
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm2.xml", inputList.get(0));
 		Assert.assertEquals("input file", "src/test/resources/org/xmlcml/norma/miscfiles/numbered/nlm4.xml", inputList.get(2));

@@ -16,6 +16,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
+import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 
@@ -81,9 +82,9 @@ public class ImageToHOCRConverterTest {
 		outputDir.mkdirs();
 		String imageSuffix = "png";
 		for (File file : infiles) {
-			System.out.println(file);
+			NormaArgProcessor.CM_LOG.debug(file.toString());
 			String root = FileUtils.basename(file.getParentFile().getName());
-			System.out.println("-------"+root+"--------");
+			NormaArgProcessor.CM_LOG.debug(root);
 			BufferedImage image = ImageIO.read(file);
 			HOCRReader hocrReader = new HOCRReader();
 			hocrReader.setMaxFontSize(50.);

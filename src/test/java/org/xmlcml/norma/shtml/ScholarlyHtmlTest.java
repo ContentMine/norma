@@ -24,7 +24,7 @@ public class ScholarlyHtmlTest {
 		FileUtils.copyDirectory(ursus, shtml);
 		NormaArgProcessor normaArgProcessor = new NormaArgProcessor();
 		String args = "--project "+shtml.toString()+ " -i fulltext.xml  --transform nlm2html -o scholarly.html";
-		LOG.debug(args);
+		LOG.trace(args);
 		normaArgProcessor.parseArgs(args);
 		normaArgProcessor.runAndOutput();
 	}

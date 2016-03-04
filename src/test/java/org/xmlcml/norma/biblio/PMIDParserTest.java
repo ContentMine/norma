@@ -58,11 +58,9 @@ public class PMIDParserTest {
 	public void testPubMedResult6() throws FileNotFoundException, IOException {
 		RISParser parser = new RISParser();
 		parser.read(new FileInputStream("src/test/resources/org/xmlcml/norma/biblio/pmid/pubmed_result6.txt"));
-		LOG.debug("start0");
 		List<RISEntry> bibEntries = parser.getEntries();
 		Assert.assertEquals(9507,  bibEntries.size());
 		int i = 0;
-		LOG.debug("start");
 		BiblioAbstractAnalyzer abstractAnalyzer = new BiblioAbstractAnalyzer();
 		for (RISEntry entry : bibEntries) {
 			abstractAnalyzer.analyze(entry);
