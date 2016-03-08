@@ -100,8 +100,10 @@
 	 	*[local-name()='email'] |
 	 	*[local-name()='fax'] |
 	 	*[local-name()='phone'] |
+	 	*[local-name()='abbrev-journal-title'] |
 	 	*[local-name()='journal-title'] |
 	 	*[local-name()='mixed-citation'] |
+	 	*[local-name()='access-date'] |
 	 	*[local-name()='publisher-loc'] |
 	 	*[local-name()='related-article'] |
 	 	*[local-name()='related-object'] |
@@ -117,6 +119,8 @@
 	 	*[local-name()='subtitle'] |
 	 	*[local-name()='trans-source'] |
 	 	*[local-name()='volume'] |
+	 	*[local-name()='volume-id'] |
+	 	*[local-name()='supplement'] |
 	 	*[local-name()='issue'] |
 	 	*[local-name()='issue-id'] |
 	 	*[local-name()='issue-title'] |
@@ -586,8 +590,21 @@
 	    <!--  don't know what else to do -->
 	      <xsl:apply-templates/>
 	    </xsl:when>
+	    <xsl:when test="@pub-id-type='pmid'">
+	      <xsl:call-template name="makeurl">
+	        <xsl:with-param name="urlroot" select="$nlmroot"></xsl:with-param>
+	      </xsl:call-template>
+	    </xsl:when>
+	    <xsl:when test="@pub-id-type='publisher-id'">
+	      <!--  not much we can do here -->
+	      <xsl:apply-templates/>
+	    </xsl:when>
+	    <xsl:when test="@pub-id-type='other'">
+	      <!--  not much we can do here -->
+	      <xsl:apply-templates/>
+	    </xsl:when>
 	    <xsl:otherwise>
-	      <xsl:message>UNKNOWN OBJECT-ID TYPE: <xsl:value-of select="@pub-id-type"/></xsl:message>
+	      <xsl:message>UNKNOWN OBJECT-ID TYPE: <xsl:value-of select="@pub-id-type"/> : <xsl:value-of select="."/></xsl:message>
 	    </xsl:otherwise>
 	  </xsl:choose>
 	</xsl:template>
@@ -697,13 +714,17 @@
 -->
 
 	<xsl:template match="*[local-name()='custom-meta-group']">
-  	  <xsl:apply-templates/>
+	  <xsl:call-template name="addClassTitleChildrenDiv"/>
 	</xsl:template>
 	
 	<xsl:template match="*[local-name()='custom-meta']">
   	  <meta name="{*[local-name()='meta-name']}" value="{*[local-name()='meta-value']}"/>
 	</xsl:template>
 	
+	<xsl:template match="*[local-name()='custom-meta-wrap']">
+	  <xsl:call-template name="addClassTitleChildrenDiv"/>
+	</xsl:template>
+
 
 <!-- 
 	<notes>
@@ -755,6 +776,10 @@
 	  <caption class="caption" title="caption"><xsl:apply-templates select="*[local-name()='caption']"/></caption>
 	  <!--  the <graphic> links to files we don't have -->
       </div>
+	</xsl:template>
+
+	<xsl:template match="*[local-name()='fig-group']">
+	  <xsl:call-template name="addClassTitleChildrenDiv"/>
 	</xsl:template>
 
 <!-- 
@@ -1121,6 +1146,7 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 	<!-- MATH -->
 	
 	<xsl:template match="
+		mml:malignmark |
 		mml:maligngroup |
 		mml:math |
 		mml:meta-name |
@@ -1155,6 +1181,21 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 	    <xsl:copy-of select="."/>
 	  </div>
 	</xsl:template>
+	
+	<!-- TAXONOMY -->
+	
+	<xsl:template match="
+	*[local-name()='nomenclature'] |
+	*[local-name()='taxon-name'] |
+	*[local-name()='taxon-name-part'] |
+	*[local-name()='taxon-status'] |
+	*[local-name()='taxon-treatment'] |
+	*[local-name()='treatment-meta'] |
+	*[local-name()='treatment-sec']
+	">
+	  <xsl:call-template name="addClassTitleChildrenDiv"/>
+	</xsl:template>
+	
 
 	<!--  FOREIGN, DISPLAY or UNPROCESSABLE -->	
 
