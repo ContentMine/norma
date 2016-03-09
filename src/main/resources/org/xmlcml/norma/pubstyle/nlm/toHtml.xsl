@@ -1,7 +1,8 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	xmlns:h="http://www.w3.org/1999/xhtml">
 
     <xsl:output method="xhtml"/>
     
@@ -14,7 +15,7 @@
     <xsl:variable name="under">_</xsl:variable>
     
 	<xsl:template match="/">
-	  <html xmlns="http://www.w3.org/1999/xhtml">
+	  <html>
 		<xsl:apply-templates />
 	  </html>
 	</xsl:template>
@@ -35,7 +36,6 @@
 
 <!--  HTML5 -->
 	<xsl:template match="
-		*[local-name()='article'] | 
 		*[local-name()='caption'] | 
 		*[local-name()='col'] | 
 		*[local-name()='colgroup'] |
@@ -145,7 +145,7 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
-	<xsl:template match="*[local-name()='front']">
+	<xsl:template match="*[local-name()='article']">
 	    <head>
       	    <style type="text/css">
       	     		 
@@ -234,8 +234,12 @@
 		 	span.volume                {font-family : courier; font-weight : bold;}
 		 	span.year                  {font-family : courier ; font-style : italic;}
 			</style>
-			<xsl:apply-templates />
 	    </head>
+	    <body>
+			<xsl:apply-templates select="*[local-name()='front']"/>
+			<xsl:apply-templates select="*[local-name()='body']"/>
+			<xsl:apply-templates select="*[local-name()='back']"/>
+	    </body>
 	</xsl:template>
 
 <!-- 
@@ -255,6 +259,11 @@
 </publisher>
 </journal-meta>
 -->
+
+<!--  FRONT -->
+	<xsl:template match="*[local-name()='front']">
+	  <xsl:call-template name="addClassTitleChildrenDiv"/>
+	</xsl:template>
 
 <!--  JOURNAL-meta -->
 	<xsl:template match="*[local-name()='journal-id']">
@@ -302,6 +311,7 @@
 			</xsl:call-template>
 		</span>
 	</xsl:template>
+	
 	<xsl:template match="*[local-name()='article-id' and @pub-id-type='pmcid']"
 		priority="0.6">
 		<span class="{@pub-id-type}" title="{@pub-id-type}">
@@ -311,6 +321,7 @@
 			</xsl:call-template>
 		</span>
 	</xsl:template>
+	
 	<xsl:template match="*[local-name()='article-id' and @pub-id-type='pmid']"
 		priority="0.6">
 		<span class="{@pub-id-type}" title="{@pub-id-type}">
@@ -1232,6 +1243,7 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 	
 	<!--  OTHERS  -->
 
+<!-- 
 	<xsl:template match="*[not(self::sec)]/sec/title" priority="-0.5">
 	<xsl:message>TITLE1</xsl:message>
 	    <h2><xsl:apply-templates /></h2>
@@ -1243,6 +1255,7 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 	    <h3><xsl:apply-templates select="*|text()"/></h3>
 	</xsl:template>
 	
+	-->
 
 <!--  		
 	<xsl:template match="*[local-name()='etal']">
