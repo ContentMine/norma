@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="target/tutorial/zika10/PMC3321795/results/species/genus/results.xml">
+  <result pre="phi), bacteria ( Borrelia burgdorferi, Francisella tularensis), protozoa (genera " exact="Plasmodium" xpath="/html[1]/body[1]/div[2]/p[4]" match="Plasmodium" post=" and Leishmania), and helminths ( Onchocerca volvulus, Wuchereria bancrofti). " name="genus"/>
+  <result pre="ue bacillus, Yersinia pestis, to the elaborately intricate, as with parasites in the genera " exact="Plasmodium" match="Plasmodium" post=" and Leishmania. In these examples, the pathogen replicates in some fashion, which makes it " name="genus"/>
+ </snippets>
+</snippetsTree>

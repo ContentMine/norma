@@ -137,6 +137,14 @@
 	 	*[local-name()='season'] |
 	 	*[local-name()='year'] |
 	 	
+	 	*[local-name()='inline-supplementary-material'] |
+	 	*[local-name()='note'] |
+	 	*[local-name()='trans-abstract'] |
+	 	*[local-name()='trans-title'] |
+	 	*[local-name()='trans-title-group'] |
+	 	*[local-name()='patent'] |
+	 	*[local-name()='target'] |
+	 	
 	 	*[local-name()='lpage']" >
 		<span tagx="{local-name()}" class="{local-name()}" title="{local-name()}"><xsl:apply-templates select="*|text()" /></span>
 	</xsl:template>

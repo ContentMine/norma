@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="frequencies">
+ <result title="frequency" count="2">Borrelia burgdorferi</result>
+ <result title="frequency" count="1">P. knowlesi</result>
+ <result title="frequency" count="1">Aedes albopictus</result>
+ <result title="frequency" count="1">P. falciparum</result>
+ <result title="frequency" count="1">Onchocerca volvulus</result>
+ <result title="frequency" count="1">Rickettsia rickettsii</result>
+ <result title="frequency" count="1">Wuchereria bancrofti</result>
+ <result title="frequency" count="1">Rickettsia typhi</result>
+ <result title="frequency" count="1">Francisella tularensis</result>
+ <result title="frequency" count="1">Yersinia pestis</result>
+ <result title="frequency" count="1">Ae. aegypti</result>
+</results>

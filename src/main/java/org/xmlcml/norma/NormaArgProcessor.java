@@ -46,7 +46,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public final static String HELP_NORMA = "Norma help";
 
-	private static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
+	public static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	private static final VersionManager NORMA_VERSION_MANAGER = new VersionManager();
 	

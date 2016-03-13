@@ -15,8 +15,8 @@ public class NormaFixtures {
 	public final static File MAIN_NORMA_DIR = new File("src/main/resources/org/xmlcml/norma/");
 	public final static File MAIN_STYLE_DIR = new File(NormaFixtures.MAIN_NORMA_DIR, "style");
 	public final static File MINI_XSL = new File(NormaFixtures.MAIN_STYLE_DIR, "miniTest.xsl");
-	public final static File MAIN_DOCUMENT_DIR = new File(NormaFixtures.MAIN_NORMA_DIR, "pubstyle");
-	public final static File MAIN_HINDAWI_DIR = new File(NormaFixtures.MAIN_DOCUMENT_DIR, "hindawi");
+	public final static File MAIN_PUBSTYLE_DIR = new File(NormaFixtures.MAIN_NORMA_DIR, "pubstyle");
+	public final static File MAIN_HINDAWI_DIR = new File(NormaFixtures.MAIN_PUBSTYLE_DIR, "hindawi");
 	public final static File GROUP_MAJOR_SECTIONS_XSL = new File(NormaFixtures.MAIN_HINDAWI_DIR, "groupMajorSections.xsl");
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
@@ -24,6 +24,7 @@ public class NormaFixtures {
 	public final static File TEST_BIBLIO_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "biblio");
 	public final static File TEST_PUBSTYLE_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "pubstyle");
 	public final static File TEST_PATENTS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "patents");
+	public final static File TEST_SECTIONS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "sections");
 	public final static File TEST_TEX_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "tex");
 	
 	public final static File TEST_HINDAWI_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "hindawi");

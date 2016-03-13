@@ -1,5 +1,6 @@
-<argList name="norma" version="0.2.18">
+<argList name="norma" version="0.2.19">
 
+  <p>20160313: more sections </p>
   <p>20160305: analysing sections in NLM</p>
   <p>20160305: finished nlm2html stylesheet</p>
   <p>20160304: major output tidy</p>

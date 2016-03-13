@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="target/tutorial/zika10/PMC3167654/results/word/frequencies/results.xml">
+  <result title="frequency" word="DNA" count="69"/>
+  <result title="frequency" word="methylation" count="49"/>
+  <result title="frequency" word="rabbit" count="48"/>
+  <result title="frequency" word="zygotes" count="44"/>
+  <result title="frequency" word="embryos" count="40"/>
+  <result title="frequency" word="paternal" count="38"/>
+  <result title="frequency" word="demethylation" count="35"/>
+  <result title="frequency" word="mouse" count="35"/>
+  <result title="frequency" word="{background" count="29"/>
+  <result title="frequency" word="α-meC" count="25"/>
+  <result title="frequency" word="bovine" count="24"/>
+  <result title="frequency" word="signal" count="24"/>
+  <result title="frequency" word="early" count="23"/>
+  <result title="frequency" word="maternal" count="23"/>
+  <result title="frequency" word="margin" count="21"/>
+  <result title="frequency" word="pronuclei" count="21"/>
+ </snippets>
+</snippetsTree>
