@@ -10,6 +10,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlElement;
@@ -307,6 +308,7 @@ public class SectionTest {
 	}
 
 	@Test
+	@Ignore // uses PMR files
 	public void testCreateManyJATSElement() throws IOException {
 		SectionTagger tagger = new SectionTagger();
 		File root = new File("/Users/pm286/workspace/projects/std");
