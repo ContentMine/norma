@@ -68,6 +68,7 @@
 		*[local-name()='boxed-text'] | 
 		*[local-name()='citation'] | 
 		*[local-name()='bio'] | 
+		*[local-name()='conference'] | 
 		*[local-name()='title'] | 
 		*[local-name()='floats-wrap'] | 
 	 	*[local-name()='journal-meta'] |
@@ -113,6 +114,11 @@
 	 	*[local-name()='month'] |
 	 	*[local-name()='year'] |
 	 	
+	 	*[local-name()='conf-name'] |
+	 	*[local-name()='conf-loc'] |
+	 	*[local-name()='conf-date'] |
+	 	*[local-name()='on-behalf-of'] |
+	 	*[local-name()='on-behalf-of'] |
 	 	*[local-name()='publisher-name'] |
 	 	*[local-name()='source'] |
 	 	*[local-name()='series-title'] |
@@ -1085,6 +1091,10 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 	    <u><xsl:apply-templates select="* | text()"/></u>
 	</xsl:template>
 	
+	<xsl:template match="*[local-name()='strike']">
+	    <s><xsl:apply-templates select="* | text()"/></s>
+	</xsl:template>
+	
 	
 	<!--  LIST -->
 	<xsl:template match="*[local-name()='list']">
@@ -1170,6 +1180,7 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 		mml:math |
 		mml:meta-name |
 		mml:meta-value |
+		mml:menclose |
 		mml:mfenced |
 		mml:mfrac |
 		mml:mi |
@@ -1189,6 +1200,17 @@ xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Att
 		mml:mtr |
 		mml:munder |
 		mml:munderover
+		">
+		<xsl:copy>
+		  <xsl:apply-templates/>
+		</xsl:copy>
+	</xsl:template>
+	
+	
+	<!--  MATH-LIKE ?? -->
+	<xsl:template match="
+	*[local-name()='annotation'] |
+	*[local-name()='semantics']
 		">
 		<xsl:copy>
 		  <xsl:apply-templates/>

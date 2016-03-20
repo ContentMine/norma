@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.norma.sections.SectionTagger.SectionTag;
 
 import nu.xom.Element;
 
@@ -24,14 +25,14 @@ public class TagElementX {
 	private String id;
 	private ArrayList<String> regexList;
 	private String xpath;
-	private String tag;
+	private SectionTag sectionTag;
 	private String title;
 	
 	public TagElementX(Element rawElement) {
 		this.regexList = new ArrayList<String>();
 		this.title = rawElement.getAttributeValue(TITLE);
 		this.id = rawElement.getAttributeValue(ID);
-		this.tag = id.split(":")[1];
+		this.sectionTag = SectionTag.getSectionTag(id.split(":")[1]);
 		for (int i = 0; i < rawElement.getChildElements().size(); i++) {
 			Element child = rawElement.getChildElements().get(i);
 			if (child.getLocalName().equals(REGEX)) {
@@ -44,8 +45,8 @@ public class TagElementX {
 		}
 	}
 
-	public String getTag() {
-		return tag;
+	public SectionTag getTag() {
+		return sectionTag;
 	}
 
 	public String getId() {
