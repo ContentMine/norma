@@ -432,6 +432,7 @@ public class SectionTest {
 	public void testGetSections() throws IOException {
 		SectionTagger tagger = new SectionTagger();
 		tagger.readJATS(PMC3289602XML);
+		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
 		LOG.debug(PMC3113902XML);
 		String xml = FileUtils.readFileToString(PMC3113902XML);
