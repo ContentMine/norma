@@ -1,5 +1,6 @@
-<argList name="norma" version="0.2.20">
+<argList name="norma" version="0.2.21">
 
+  <p>20160322: major work on JATS </p>
   <p>20160320: "finished" sections </p>
   <p>20160313: more sections </p>
   <p>20160305: analysing sections in NLM</p>
