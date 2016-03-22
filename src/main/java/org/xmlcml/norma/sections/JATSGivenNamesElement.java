@@ -12,20 +12,11 @@ public class JATSGivenNamesElement extends JATSElement {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static final String GIVEN = "given-names";
+	static final String TAG = "given-names";
 
 	public JATSGivenNamesElement(Element element) {
 		super(element);
 	}
 
-	public static boolean matches(Element element) {
-		if (element.getLocalName().equals(GIVEN)) {
-			LOG.trace("GIVEN "+element.toXML());
-			return true;
-		}
-		return false;
-	}
-	
-	
 
 }

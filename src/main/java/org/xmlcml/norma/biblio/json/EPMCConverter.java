@@ -289,7 +289,7 @@ public class EPMCConverter implements CellCalculator {
 	}
 
 	public void setColumnHeadingList(List<CellRenderer> columnHeadingList) {
-		this.getOrCreateDataTablesTool().setColumnHeadingList(columnHeadingList);
+		this.getOrCreateDataTablesTool().setCellRendererList(columnHeadingList);
 	}
 	
 

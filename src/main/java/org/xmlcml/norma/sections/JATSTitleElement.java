@@ -12,20 +12,12 @@ public class JATSTitleElement extends JATSElement {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static final String TITLE = "article-title";
+	private static final String TAG = "title";
 
 	public JATSTitleElement(Element element) {
 		super(element);
 	}
 
-	public static boolean matches(Element element) {
-		if (element.getLocalName().equals(TITLE)) {
-			LOG.trace("TIT "+element.toXML());
-			return true;
-		}
-		return false;
-	}
-	
 	
 
 }

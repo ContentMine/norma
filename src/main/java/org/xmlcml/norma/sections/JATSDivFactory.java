@@ -140,7 +140,7 @@ public class JATSDivFactory {
 					ACK,
 					ADDRESS,
 					ADDR_LINE,
-					AFF,
+//					AFF,
 					AFF_ALTERNATIVES,
 					ALTERNATIVES,
 					ALT_TITLE,

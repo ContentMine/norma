@@ -124,18 +124,65 @@ public class JATSFactory {
 		String namespaceURI = element.getNamespaceURI();
 		if (false) {
 			
+		} else if(JATSDateElement.TAG.equals(tag)) {
+			sectionElement = new JATSDateElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSHistoryElement.TAG.equals(tag)) {
+			sectionElement = new JATSHistoryElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSPersonGroupElement.TAG.equals(tag)) {
+			sectionElement = new JATSPersonGroupElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSElementCitationElement.TAG.equals(tag)) {
+			sectionElement = new JATSElementCitationElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSRefElement.TAG.equals(tag)) {
+			sectionElement = new JATSRefElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSArticleIdElement.TAG.equals(tag)) {
+			sectionElement = new JATSArticleIdElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSArticleMetaElement.TAG.equals(tag)) {
+			sectionElement = new JATSArticleMetaElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSAffElement.TAG.equals(tag)) {
+			sectionElement = new JATSAffElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSNameElement.TAG.equals(tag)) {
+			sectionElement = new JATSNameElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			
+		} else if(JATSRefElement.TAG.equals(tag)) {
+			sectionElement = new JATSRefElement(element);
+			((JATSElement)sectionElement).recurse(element, this);
+			LOG.trace(((JATSRefElement)sectionElement).getPMID());
+			
 		} else if(JATSSpanFactory.isSpan(tag)) {
 			sectionElement = spanFactory.setElement(element).createAndRecurse();
+			
 		} else if(JATSDivFactory.isDiv(tag)) {
 			sectionElement = divFactory.setElement(element).createAndRecurse();
+			
 		} else if(isXref(tag)) {
 			sectionElement = createXref(tag, element);
+			
 		} else if(isStructure(tag)) {
 			sectionElement = createHtml(tag, element);
+			
 		} else if(isStyle(tag)) {
 			sectionElement = createHtml(tag, element);
+			
 		} else if(isTable(tag)) {
 			sectionElement = createTable(tag, element);
+			
 		} else if(isHtml(tag)) {
 			sectionElement = createHtml(tag, element);
 			
