@@ -12,7 +12,7 @@ public class JATSTitleElement extends JATSElement {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static final String TAG = "title";
+	static final String TAG = "title";
 
 	public JATSTitleElement(Element element) {
 		super(element);

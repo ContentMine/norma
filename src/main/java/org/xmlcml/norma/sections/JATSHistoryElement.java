@@ -56,6 +56,4 @@ public class JATSHistoryElement extends JATSElement {
 	}
 
 
-	
-
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.html.HtmlElement;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -43,13 +44,17 @@ public class JATSElement extends Element {
 			String tag = childElement.getLocalName();
 			List<String> allowedChildNames = getAllowedChildNames();
 			if (allowedChildNames.size() > 0 && !allowedChildNames.contains(tag)) {
-				LOG.debug(this.getClass().getName()+" unprocessed child: "+tag+" "+childElement.toXML());
+				String xml = childElement.toXML();
+				LOG.debug(this.getClass().getName()+" unprocessed child: "+tag+" "+xml.substring(0, Math.min(80, xml.length())));
 			}
 			this.appendChild(jatsFactory.create(childElement));
 		}
 		applyNonXMLSemantics();
 	}
-	
+	/** overridden by anything that wants to check children
+	 * 
+	 * @return
+	 */
 	protected List<String> getAllowedChildNames() {
 		return new ArrayList<String>();
 	}
@@ -62,4 +67,14 @@ public class JATSElement extends Element {
 		return (JATSElement) XMLUtil.getSingleElement(this,"*[local-name()='"+tag+"']");
 	}
 	
+	protected String getSingleValueByClassAttributeValue(String attName) {
+		Element element = XMLUtil.getSingleElement(this,"*[@class='"+attName+"']");
+		return element == null ? null : element.getValue();
+	}
+
+	protected String getSingleChildValueByAttribute(String attName) {
+		return XMLUtil.getSingleValue(this,"*[@"+attName+"]");
+	}
+
+
 }

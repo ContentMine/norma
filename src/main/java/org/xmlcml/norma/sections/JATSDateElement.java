@@ -30,15 +30,16 @@ public class JATSDateElement extends JATSElement {
 			JATSSpanFactory.YEAR,
 	});
 	
-	private String day;
-	private String month;
-	private String year;
-	private JodaDate date; // created from day, month, year
-
 	@Override
 	protected List<String> getAllowedChildNames() {
 		return ALLOWED_CHILD_NAMES;
 	}
+
+	private String day;
+	private String month;
+	private String year;
+	private JodaDate date; // created from day, month, year
+	protected String pubType;
 
 	public JATSDateElement(Element element) {
 		super(element);

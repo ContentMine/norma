@@ -86,6 +86,7 @@ public class JATSSpanFactory {
 	public final static String ON_BEHALF_OF = "on-behalf-of";
 	public final static String PAGE_COUNT = "page-count";
 	public final static String PAGE_RANGE = "page-range";
+	public final static String P = "p";
 	public final static String PATENT = "patent";
 	public final static String PHONE = "phone";
 	public final static String PREFIX = "prefix";
@@ -263,7 +264,11 @@ public class JATSSpanFactory {
 	public HtmlSpan createAndRecurse() {
 		HtmlSpan spanElement = new HtmlSpan();
 		XMLUtil.copyAttributes(jatsElement, spanElement);
-		spanElement.setClassAttribute(jatsElement.getLocalName());
+		String tag = jatsElement.getLocalName();
+		spanElement.setClassAttribute(tag);
+//		if (JATSSpanFactory.PUB_ID.equals(tag)) {
+//			LOG.info("+++"+tag+" "+spanElement.toXML());
+//		}
 		mainFactory.processChildren(jatsElement, spanElement);
 		return spanElement;
 	}

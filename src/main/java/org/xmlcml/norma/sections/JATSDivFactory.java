@@ -112,6 +112,7 @@ public class JATSDivFactory {
 	public final static String REF_LIST = "ref-list";
 	public final static String RELATED_ARTICLE = "related-article";
 	public final static String RELATED_OBJECT = "related-object";
+	public final static String SEC = "sec";
 	public final static String SEC_META = "sec-meta";
 	public final static String SEMANTICS = "semantics";
 	public final static String SOURCE = "source";
@@ -229,6 +230,7 @@ public class JATSDivFactory {
 					REF_LIST,
 					RELATED_ARTICLE,
 					RELATED_OBJECT,
+					SEC,
 					SEC_META,
 					SEMANTICS,
 					SOURCE,

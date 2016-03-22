@@ -20,6 +20,10 @@ import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.sections.SectionTagger.SectionTag;
 import org.xmlcml.xml.XMLUtil;
 
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multiset;
+import com.google.common.collect.Multisets;
+
 import nu.xom.Element;
 
 public class SectionTest {
@@ -303,13 +307,82 @@ public class SectionTest {
 		SectionTagger tagger = new SectionTagger();
 		tagger.readJATS(PMC3289602XML);
 		Element jatsElement = tagger.getJATSHtmlElement();
-		LOG.debug(jatsElement.toXML().length());
+//		LOG.debug(jatsElement.toXML().length());
 		XMLUtil.debug(jatsElement, new File("target/jats/PMC3289602.html"), 1);
 	}
 
 	@Test
+	public void testCreateArticle() throws IOException {
+		SectionTagger tagger = new SectionTagger();
+		tagger.readJATS(PMC3289602XML);
+		JATSArticleElement jatsArticleElement = tagger.getJATSArticleElement();
+		JATSReflistElement reflist = jatsArticleElement.getReflistElement();
+		Assert.assertNotNull("reflist not null", reflist);
+		List<JATSRefElement> referenceList = reflist.getRefList();
+		Assert.assertEquals(57,  referenceList.size());
+		List<String> pmidList = reflist.getNonNullPMIDList();
+		Assert.assertEquals(45,  pmidList.size());
+		Assert.assertEquals("pmids", 
+				"[12995440, 14230895, 13337908, 413216, 6304948, 19516034, 6314612, 14175744, 4799154, 6275577,"
+				+ " 21529401, 17195954, 18680646, 4833603, 9420202, 19741066, 4395332, 9780042, 4976739, 13138582,"
+				+ " 11463123, 18674965, 6274526, 11681215, 13114587, 743766, 6809352, 13163397, 6309104, 5313066,"
+				+ " 5302299, 14062273, 6306872, 4538037, 4403105, 489960, 1124969, 13533740, 8099299, 1243735,"
+				+ " 14946416, 12995441, 5311064, 2559514, 13556872]", pmidList.toString());
+		LOG.debug(pmidList);
+		List<String> pmcidList = reflist.getNonNullPMCIDList();
+		Assert.assertEquals(0,  pmcidList.size());
+		
+	}
+
+		
+	
+	
+	@Test
 	@Ignore // uses PMR files
-	public void testCreateManyJATSElement() throws IOException {
+	public void testCreateManyIDs() throws IOException {
+		SectionTagger tagger = new SectionTagger();
+//		File root = new File("/Users/pm286/workspace/projects/std");
+		File root = new File("/Users/pm286/workspace/projects/trastuzumab");
+		// has a broken file
+//		File root = new File("/Users/pm286/workspace/projects/trials/trialsjournal");
+//		File root = new File("/Users/pm286/workspace/projects/zika");
+//		File root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
+//		File root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
+		LOG.debug(root+" || "+root.exists());
+		Multiset<String> multiset = HashMultiset.create();
+		for (File file : root.listFiles()) {
+			if (!file.isDirectory()) continue;
+			for (File file1 : file.listFiles()) {
+				if (file1.toString().endsWith("fulltext.xml")) {
+					try {
+						tagger.readJATS(file1);
+					} catch (Exception e) {
+						LOG.debug("skipped "+file1+"  ||  "+e);
+						continue;
+//						throw new RuntimeException();
+					}
+					JATSArticleElement jatsArticleElement = tagger.getJATSArticleElement();
+					JATSReflistElement reflist = jatsArticleElement.getReflistElement();
+					if (reflist != null) {
+						List<String> pmidList = reflist.getNonNullPMIDList();
+						LOG.debug(">>>"+pmidList);
+						multiset.addAll(pmidList);
+					}
+				}
+			}
+		}
+		
+		LOG.debug(multiset.size());
+		Iterable<Multiset.Entry<String>> entries = Multisets.copyHighestCountFirst(multiset).entrySet();
+		for (Multiset.Entry<String> entry : entries) {
+//			System.out.println(entry);
+		}
+	}
+
+	
+	@Test
+	@Ignore // uses PMR files
+	public void testCreateManyArticles() throws IOException {
 		SectionTagger tagger = new SectionTagger();
 		File root = new File("/Users/pm286/workspace/projects/std");
 //		File root = new File("/Users/pm286/workspace/projects/trastuzumab");
@@ -362,10 +435,7 @@ public class SectionTest {
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
 		LOG.debug(PMC3113902XML);
 		String xml = FileUtils.readFileToString(PMC3113902XML);
-		List<Element> sections = tagger.getSections(SectionTag.INTRO);
-		Assert.assertEquals("intro", 1, sections.size()); 
-		sections = tagger.getSections(SectionTag.DISCUSS);
-		Assert.assertEquals("intro", 1, sections.size()); 
+		List<Element> sections;
 		sections = tagger.getSections(SectionTag.SUBTITLE);
 		Assert.assertEquals("intro", 25, sections.size()); 
 		sections = tagger.getSections(SectionTag.ARTICLE_TITLE);

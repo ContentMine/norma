@@ -138,10 +138,12 @@ public class SectionTagger {
 	public static final String HELP = "help";
 	
 	private HtmlElement htmlElement;
-	private Element jatsElement;
+	private Element jatsHtmlElement;
 	static final String DEFAULT_SECTION_TAGGER_FILE = NormaArgProcessor.RESOURCE_NAME_TOP+"/pubstyle/sectionTagger.xml";
 	private Element tagsElement;
 	private Map<SectionTag, TagElementX> tagElementsByTag;
+
+	private JATSArticleElement jatsArticleElement;
 
 
 	
@@ -359,11 +361,17 @@ public class SectionTagger {
 	public void readJATS(File jatsXml) {
 		Element rawElement = XMLUtil.parseQuietlyToDocumentWithoutDTD(jatsXml).getRootElement();
 		JATSFactory jatsFactory = new JATSFactory();
-		jatsElement = jatsFactory.createHtml(rawElement);
+		jatsHtmlElement = jatsFactory.createHtml(rawElement);
+		HtmlElement bodyHtmlElement = (HtmlElement) jatsHtmlElement.getChild(1);
+		jatsArticleElement = (JATSArticleElement) bodyHtmlElement.getChild(0);
 	}
 
 	public Element getJATSHtmlElement() {
-		return jatsElement;
+		return jatsHtmlElement;
+	}
+
+	public JATSArticleElement getJATSArticleElement() {
+		return jatsArticleElement;
 	}
 
 	public Element readSectionTags(String resource) {

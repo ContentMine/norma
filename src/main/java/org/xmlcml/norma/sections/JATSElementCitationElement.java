@@ -73,8 +73,8 @@ public class JATSElementCitationElement extends JATSElement {
 	static final String TAG = "element-citation";
 
 	JATSElement personGroup;
-	JATSElement articleTitle;
-	JATSElement source;
+	private String articleTitle;
+	private String source;
 	private String year;
 	private String volume;
 	private String fpage;
@@ -94,7 +94,7 @@ public class JATSElementCitationElement extends JATSElement {
 	public JATSElement getPersonGroup() {
 		return personGroup;
 	}
-	public JATSElement getArticleTitle() {
+	public String getArticleTitle() {
 		return articleTitle;
 	}
 	public String getYear() {
@@ -130,8 +130,8 @@ public class JATSElementCitationElement extends JATSElement {
 	public String getSize() {
 		return size;
 	}
-	public void setSource(JATSElement source) {
-		this.source = source;
+	public String getSource() {
+		return source;
 	}
 	String getPMID() {
 		return pmid;
@@ -141,20 +141,21 @@ public class JATSElementCitationElement extends JATSElement {
 	}
 	
 	protected void applyNonXMLSemantics() {
+//		LOG.debug(this.toXML());
 		this.personGroup = this.getSingleChild(JATSDivFactory.PERSON_GROUP);
-		this.articleTitle =  this.getSingleChild(JATSDivFactory.ARTICLE_TITLE);
-		this.source =  this.getSingleChild(JATSDivFactory.SOURCE);
-		this.year = this.getSingleChildValue(JATSSpanFactory.YEAR);
-		this.volume = this.getSingleChildValue(JATSSpanFactory.VOLUME);
-		this.fpage = this.getSingleChildValue(JATSSpanFactory.FPAGE);
-		this.lpage = this.getSingleChildValue(JATSSpanFactory.LPAGE);
-		this.pmid = XMLUtil.getSingleValue(this, "*[local-name()='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMCID+"']");
-		this.pmcid = XMLUtil.getSingleValue(this, "*[local-name()='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMCID+"']");
-		this.publisherLoc = this.getSingleChildValue(JATSSpanFactory.PUBLISHER_LOC);
-		this.publisherName = this.getSingleChildValue(JATSSpanFactory.PUBLISHER_NAME);
-		this.issue = this.getSingleChildValue(JATSSpanFactory.ISSUE);
-		this.collab = this.getSingleChildValue(JATSSpanFactory.COLLAB);
-		this.size = this.getSingleChildValue(JATSSpanFactory.SIZE);
+		this.articleTitle =  this.getSingleValueByClassAttributeValue(JATSDivFactory.ARTICLE_TITLE);
+		this.source =  this.getSingleValueByClassAttributeValue(JATSDivFactory.SOURCE);
+		this.year = this.getSingleValueByClassAttributeValue(JATSSpanFactory.YEAR);
+		this.volume = this.getSingleValueByClassAttributeValue(JATSSpanFactory.VOLUME);
+		this.fpage = this.getSingleValueByClassAttributeValue(JATSSpanFactory.FPAGE);
+		this.lpage = this.getSingleValueByClassAttributeValue(JATSSpanFactory.LPAGE);
+		this.pmid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMID+"']");
+		this.pmcid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMCID+"']");
+		this.publisherLoc = this.getSingleValueByClassAttributeValue(JATSSpanFactory.PUBLISHER_LOC);
+		this.publisherName = this.getSingleValueByClassAttributeValue(JATSSpanFactory.PUBLISHER_NAME);
+		this.issue = this.getSingleValueByClassAttributeValue(JATSSpanFactory.ISSUE);
+		this.collab = this.getSingleValueByClassAttributeValue(JATSSpanFactory.COLLAB);
+		this.size = this.getSingleValueByClassAttributeValue(JATSSpanFactory.SIZE);
 	}
 
 
