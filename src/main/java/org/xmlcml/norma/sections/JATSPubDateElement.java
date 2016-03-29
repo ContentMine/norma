@@ -1,5 +1,8 @@
 package org.xmlcml.norma.sections;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -21,7 +24,19 @@ public class JATSPubDateElement extends JATSDateElement {
 	}
 	
 	static final String TAG = "pub-date";
-
+	
+	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
+			JATSSpanFactory.SEASON,
+			JATSSpanFactory.YEAR,
+			JATSSpanFactory.DAY,
+			JATSSpanFactory.MONTH,
+			JATSSpanFactory.STRING_DATE,
+	});
+	
+	@Override
+	protected List<String> getAllowedChildNames() {
+		return ALLOWED_CHILD_NAMES;
+	}
 	public JATSPubDateElement(Element element) {
 		super(element);
 		this.pubType = element.getAttributeValue(PUB_TYPE);

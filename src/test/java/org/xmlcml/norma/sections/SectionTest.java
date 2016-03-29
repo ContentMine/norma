@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -18,9 +19,11 @@ import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.sections.SectionTagger.SectionTag;
+import org.xmlcml.norma.util.DottyPlotter;
 import org.xmlcml.xml.XMLUtil;
 
-import com.google.common.collect.HashMultiset;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multisets;
 
@@ -328,7 +331,7 @@ public class SectionTest {
 				+ " 11463123, 18674965, 6274526, 11681215, 13114587, 743766, 6809352, 13163397, 6309104, 5313066,"
 				+ " 5302299, 14062273, 6306872, 4538037, 4403105, 489960, 1124969, 13533740, 8099299, 1243735,"
 				+ " 14946416, 12995441, 5311064, 2559514, 13556872]", pmidList.toString());
-		LOG.debug(pmidList);
+		LOG.trace(pmidList);
 		List<String> pmcidList = reflist.getNonNullPMCIDList();
 		Assert.assertEquals(0,  pmcidList.size());
 		
@@ -338,18 +341,19 @@ public class SectionTest {
 	
 	
 	@Test
-	@Ignore // uses PMR files
+//	@Ignore // uses PMR files
 	public void testCreateManyIDs() throws IOException {
 		SectionTagger tagger = new SectionTagger();
-//		File root = new File("/Users/pm286/workspace/projects/std");
-		File root = new File("/Users/pm286/workspace/projects/trastuzumab");
+		File root;
+//		root = new File("/Users/pm286/workspace/projects/std");
+//		root = new File("/Users/pm286/workspace/projects/trastuzumab");
 		// has a broken file
-//		File root = new File("/Users/pm286/workspace/projects/trials/trialsjournal");
-//		File root = new File("/Users/pm286/workspace/projects/zika");
-//		File root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
-//		File root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
-		LOG.debug(root+" || "+root.exists());
-		Multiset<String> multiset = HashMultiset.create();
+//		root = new File("/Users/pm286/workspace/projects/trials/trialsjournal");
+		root = new File("/Users/pm286/workspace/projects/zika");
+//		root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
+//		root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
+		LOG.debug("root is: "+root+" and exists = "+root.exists());
+		JATSPMCitations citations = new JATSPMCitations();
 		for (File file : root.listFiles()) {
 			if (!file.isDirectory()) continue;
 			for (File file1 : file.listFiles()) {
@@ -359,27 +363,36 @@ public class SectionTest {
 					} catch (Exception e) {
 						LOG.debug("skipped "+file1+"  ||  "+e);
 						continue;
-//						throw new RuntimeException();
 					}
 					JATSArticleElement jatsArticleElement = tagger.getJATSArticleElement();
-					JATSReflistElement reflist = jatsArticleElement.getReflistElement();
-					if (reflist != null) {
-						List<String> pmidList = reflist.getNonNullPMIDList();
-						LOG.debug(">>>"+pmidList);
-						multiset.addAll(pmidList);
-					}
+					citations.extractCitations(jatsArticleElement);
 				}
 			}
 		}
-		
-		LOG.debug(multiset.size());
-		Iterable<Multiset.Entry<String>> entries = Multisets.copyHighestCountFirst(multiset).entrySet();
-		for (Multiset.Entry<String> entry : entries) {
+		int minCitationCount = 4;
+		List<JATSPMCitation> citationList = citations.getCitations(minCitationCount);
+		List<Multiset.Entry<String>> citationList1 = citations.listCitationEntries(3);
+		/**
+23563266 x 7
+9420202 x 6
+19516034 x 5
+
+		 */
+		Assert.assertEquals(33, citationList1.size());
+		Assert.assertEquals("23563266", citationList1.get(0).getElement());
+		Assert.assertEquals(7, citationList1.get(0).getCount());
+		for (Multiset.Entry<String> entry : citationList1) {
 //			System.out.println(entry);
 		}
+		DottyPlotter plotter = new DottyPlotter();
+		plotter.setNodesep(0.4);
+		plotter.setRanksep(3.7);
+		plotter.setTitle("jatsref");
+		plotter.setOutputFile(new File("target/jats/all1.dot"));
+		plotter.setLinkList(citationList);
+		plotter.createLinkGraph();
 	}
 
-	
 	@Test
 	@Ignore // uses PMR files
 	public void testCreateManyArticles() throws IOException {
@@ -391,7 +404,7 @@ public class SectionTest {
 //		File root = new File("/Users/pm286/workspace/projects/zika");
 //		File root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
 //		File root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
-		LOG.debug(root+" || "+root.exists());
+		LOG.debug("root is: "+root+" and exists = "+root.exists());
 		for (File file : root.listFiles()) {
 			if (!file.isDirectory()) continue;
 			for (File file1 : file.listFiles()) {
@@ -416,11 +429,11 @@ public class SectionTest {
 	public void testSectionJATS() throws IOException {
 		SectionTagger tagger = new SectionTagger();
 		tagger.readJATS(PMC3289602XML);
-		LOG.debug(PMC3113902XML);
+		LOG.trace(PMC3113902XML);
 		TagElementX tagElement = tagger.getTagElement(SectionTag.ABSTRACT);
 		List<String> regexList = tagElement.getRegexList();
 		String xpath = tagElement.getXpath();
-		LOG.debug(xpath);
+		LOG.trace(xpath);
 		Element jatsElement = tagger.getJATSHtmlElement();
 		List<Element> sections = XMLUtil.getQueryElements(jatsElement, xpath);
 		Assert.assertEquals("abstracts", 2, sections.size()); // yes there are 2
@@ -434,7 +447,7 @@ public class SectionTest {
 		tagger.readJATS(PMC3289602XML);
 		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
-		LOG.debug(PMC3113902XML);
+		LOG.trace(PMC3113902XML);
 		String xml = FileUtils.readFileToString(PMC3113902XML);
 		List<Element> sections;
 		sections = tagger.getSections(SectionTag.SUBTITLE);

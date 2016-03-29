@@ -19,6 +19,7 @@ public class JATSFnGroupElement extends JATSElement {
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.FN,
+			JATSDivFactory.TITLE,
 	});
 	
 	@Override

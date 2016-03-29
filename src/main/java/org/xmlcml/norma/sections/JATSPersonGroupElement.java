@@ -22,6 +22,8 @@ public class JATSPersonGroupElement extends JATSElement {
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.NAME,
 			JATSSpanFactory.ETAL,
+			JATSSpanFactory.ROLE,
+			JATSSpanFactory.COLLAB,
 	});
 
 	@Override

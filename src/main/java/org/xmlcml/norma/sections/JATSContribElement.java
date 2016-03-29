@@ -29,6 +29,16 @@ public class JATSContribElement extends JATSElement {
 			JATSDivFactory.NAME,
 			JATSDivFactory.XREF,
 			JATSSpanFactory.ROLE,
+			JATSSpanFactory.EMAIL,
+			JATSSpanFactory.URI,
+			JATSSpanFactory.CONTRIB_ID,
+			JATSSpanFactory.DEGREES,
+			JATSSpanFactory.CONF_DATE,
+			JATSDivFactory.AFF,
+			JATSDivFactory.BIO,
+			JATSSpanFactory.COLLAB,
+			JATSSpanFactory.EDITION,
+			JATSDivFactory.ADDRESS,
 	});
 
 	@Override

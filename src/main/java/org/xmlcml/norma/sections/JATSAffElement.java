@@ -26,7 +26,15 @@ public class JATSAffElement extends JATSElement {
 	public final static String TAG = "aff";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.LABEL,
+			JATSSpanFactory.SUP,
 			JATSDivFactory.ADDR_LINE,
+			JATSDivFactory.NAMED_CONTENT,
+			JATSSpanFactory.EXT_LINK,
+			JATSSpanFactory.INSTITUTION,
+			JATSSpanFactory.COUNTRY,
+			JATSSpanFactory.EMAIL,
+			JATSSpanFactory.ITALIC,
+			JATSSpanFactory.BOLD,
 	});
 
 	@Override

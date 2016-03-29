@@ -29,6 +29,8 @@ public class JATSJournalMetaElement extends JATSElement {
 			JATSSpanFactory.JOURNAL_ID,
 			JATSDivFactory.JOURNAL_TITLE_GROUP,
 			JATSDivFactory.PUBLISHER,
+			JATSSpanFactory.JOURNAL_TITLE,
+			JATSSpanFactory.ISSN_L,
 	});
 
 

@@ -21,6 +21,7 @@ public class JATSNameElement extends JATSElement {
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.SURNAME,
 			JATSSpanFactory.GIVEN_NAMES,
+			JATSSpanFactory.PREFIX,
 			JATSSpanFactory.SUFFIX,
 	});
 

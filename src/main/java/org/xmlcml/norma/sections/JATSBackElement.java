@@ -12,6 +12,13 @@ public class JATSBackElement extends JATSElement {
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.FN_GROUP,
 			JATSDivFactory.REF_LIST,
+			JATSDivFactory.ACK,
+			JATSDivFactory.SEC,
+			JATSDivFactory.BIO,
+			JATSDivFactory.APP_GROUP,
+			JATSDivFactory.GLOSSARY,
+			JATSDivFactory.NOTES,
+			
 	});
 	
 	@Override

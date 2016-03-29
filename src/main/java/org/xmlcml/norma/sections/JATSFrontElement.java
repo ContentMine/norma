@@ -20,6 +20,7 @@ public class JATSFrontElement extends JATSElement {
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.JOURNAL_META,
 			JATSDivFactory.ARTICLE_META,
+			JATSDivFactory.NOTES,
 	});
 	
 	@Override
@@ -37,5 +38,9 @@ public class JATSFrontElement extends JATSElement {
 	protected void applyNonXMLSemantics() {
 		journalMeta = (JATSJournalMetaElement) this.getSingleChild(JATSJournalMetaElement.TAG);
 		articleMeta = (JATSArticleMetaElement) this.getSingleChild(JATSArticleMetaElement.TAG);
+	}
+	
+	public String getPMCID() {
+		return articleMeta == null ? null : articleMeta.getPMCID();
 	}
 }

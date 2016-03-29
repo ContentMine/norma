@@ -165,18 +165,37 @@ public class JATSArticleMetaElement extends JATSElement {
 		JATSDivFactory.CONTRIB,
 		JATSDivFactory.CONTRIB_GROUP,
 		JATSDivFactory.COUNTS,
+		JATSDivFactory.CUSTOM_META_GROUP,
+		JATSDivFactory.FUNDING_GROUP,
 		JATSDivFactory.HISTORY,
+		JATSDivFactory.KWD_GROUP,
 		JATSDivFactory.PERMISSIONS,
 		JATSDivFactory.PUB_DATE,
 		JATSDivFactory.TITLE_GROUP,
-		
+		JATSSpanFactory.EXT_LINK,
+		JATSSpanFactory.SELF_URI,
+		JATSDivFactory.RELATED_ARTICLE,
+			
 		JATSSpanFactory.ARTICLE_ID,
 		JATSSpanFactory.VOLUME,
+		JATSSpanFactory.FPAGE,
+		JATSSpanFactory.LPAGE,
 		JATSSpanFactory.ISSUE,
+		JATSSpanFactory.ISSUE_TITLE,
 		JATSSpanFactory.ELOCATION_ID,
+		JATSSpanFactory.COPYRIGHT_YEAR,
+		JATSSpanFactory.COPYRIGHT_STATEMENT,
+		JATSSpanFactory.ISSUE_ID,
+		JATSDivFactory.LICENSE,
+		JATSDivFactory.TRANS_ABSTRACT,
+		JATSDivFactory.CUSTOM_META_WRAP,
+		JATSDivFactory.SUPPLEMENT,
+		JATSDivFactory.CONFERENCE,
 	});
 
 	private List<JATSAffElement> affList;
+
+	private JATSHistoryElement history;
 	
 	public JATSArticleMetaElement(Element element) {
 		super(element);
@@ -186,19 +205,23 @@ public class JATSArticleMetaElement extends JATSElement {
 		return ALLOWED_CHILD_NAMES;
 	}
 
+	public String getPMCID() {
+		String xpath = "*[local-name()='"+JATSArticleIdElement.TAG+"' and @"+JATSArticleIdElement.PUB_ID_TYPE+"='"+JATSArticleIdElement.PMCID+"']";
+		String val = XMLUtil.getSingleValue(this, xpath);
+		return val;
+	}
 	protected void applyNonXMLSemantics() {
-		resolveAffReferences();
-		JATSHistoryElement history = (JATSHistoryElement) this.getSingleChild(JATSHistoryElement.TAG);
+		makeAffListAndResolve();
+		history = (JATSHistoryElement) this.getSingleChild(JATSHistoryElement.TAG);
 	}
 
-	private void resolveAffReferences() {
+	private void makeAffListAndResolve() {
 		affList = new ArrayList<JATSAffElement>();
 		String tag = JATSAffElement.TAG;
 		List<Element> elements = XMLUtil.getQueryElements(this, "*[local-name()='"+tag+"']");
 		for (Element element : elements) {
 			affList.add((JATSAffElement)element);
 		}
-		LOG.debug("affList: "+affList.size());
 		
 	}
 }

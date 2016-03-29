@@ -10,6 +10,7 @@ import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import nu.xom.Node;
 
 public class JATSElement extends Element {
 
@@ -39,15 +40,20 @@ public class JATSElement extends Element {
 	public void recurse(Element element, JATSFactory jatsFactory) {
 		XMLUtil.copyAttributes(element, this);
 		this.setClassAttribute(element.getLocalName());
-		for (int i = 0; i < element.getChildElements().size(); i++) {
-			Element childElement = element.getChildElements().get(i);
-			String tag = childElement.getLocalName();
-			List<String> allowedChildNames = getAllowedChildNames();
-			if (allowedChildNames.size() > 0 && !allowedChildNames.contains(tag)) {
-				String xml = childElement.toXML();
-				LOG.debug(this.getClass().getName()+" unprocessed child: "+tag+" "+xml.substring(0, Math.min(80, xml.length())));
+		for (int i = 0; i < element.getChildCount(); i++) {
+			Node childNode = element.getChild(i);
+			if (childNode instanceof Element) {
+				Element childElement = (Element) childNode;
+				String tag = childElement.getLocalName();
+				List<String> allowedChildNames = getAllowedChildNames();
+				if (allowedChildNames.size() > 0 && !allowedChildNames.contains(tag)) {
+					String xml = childElement.toXML();
+					LOG.debug(this.getClass().getName()+" unprocessed child: "+tag+" "+xml.substring(0, Math.min(80, xml.length())));
+				}
+				this.appendChild(jatsFactory.create(childElement));
+			} else {
+				this.appendChild(childNode.copy());
 			}
-			this.appendChild(jatsFactory.create(childElement));
 		}
 		applyNonXMLSemantics();
 	}

@@ -38,6 +38,8 @@ public class JATSArticleElement extends JATSElement {
 		JATSDivFactory.FRONT,
 		JATSDivFactory.BODY,
 		JATSDivFactory.BACK,
+		JATSDivFactory.FLOATS_GROUP,
+		JATSDivFactory.FLOATS_WRAP,
 	});
 
 	protected List<String> getAllowedChildNames() {
@@ -75,5 +77,8 @@ public class JATSArticleElement extends JATSElement {
 		return back;
 	}
 
+	public String getPMCID() {
+		return front == null ? null : front.getPMCID();
+	}
 
 }

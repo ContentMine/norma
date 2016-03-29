@@ -38,9 +38,6 @@ public class JATSElementCitationElement extends JATSElement {
 		<pub-id pub-id-type="pmid">13533740</pub-id>
 	 */
 	
-	private static final String PMID = "pmid";
-	private static final String PMCID = "pmcid";
-	private static final String PUB_ID_TYPE = "pub-id-type";
 	
 	private static final Logger LOG = Logger.getLogger(JATSElementCitationElement.class);
 	static {
@@ -51,6 +48,17 @@ public class JATSElementCitationElement extends JATSElement {
 			JATSDivFactory.PERSON_GROUP,
 			JATSDivFactory.ARTICLE_TITLE,
 			JATSDivFactory.SOURCE,
+			JATSDivFactory.DATE_IN_CITATION,
+			JATSSpanFactory.CHAPTER_TITLE,
+			JATSSpanFactory.EDITION,
+			JATSSpanFactory.CONF_LOC,
+			JATSSpanFactory.CONF_DATE,
+			JATSSpanFactory.CONF_NAME,
+			JATSSpanFactory.EMAIL,
+			JATSSpanFactory.ISSUE_ID,
+			JATSSpanFactory.ELOCATION_ID,
+			JATSSpanFactory.MONTH,
+			JATSSpanFactory.DAY,
 			JATSSpanFactory.YEAR,
 			JATSSpanFactory.VOLUME,
 			JATSSpanFactory.FPAGE,
@@ -58,10 +66,18 @@ public class JATSElementCitationElement extends JATSElement {
 			JATSSpanFactory.PUB_ID,
 			JATSSpanFactory.PUBLISHER_LOC,
 			JATSSpanFactory.PUBLISHER_NAME,
+			JATSSpanFactory.EXT_LINK,
+			JATSSpanFactory.PAGE_RANGE,
+			JATSSpanFactory.SERIES,
+			JATSSpanFactory.SEASON,
 			JATSDivFactory.COMMENT,
+			JATSDivFactory.NAME,
+			JATSSpanFactory.OBJECT_ID,
 			JATSSpanFactory.ISSUE,
+			JATSSpanFactory.ETAL,
 			JATSSpanFactory.COLLAB,
 			JATSSpanFactory.SIZE,
+			JATSSpanFactory.TRANS_SOURCE,
 	});
 	
 	@Override
@@ -149,8 +165,8 @@ public class JATSElementCitationElement extends JATSElement {
 		this.volume = this.getSingleValueByClassAttributeValue(JATSSpanFactory.VOLUME);
 		this.fpage = this.getSingleValueByClassAttributeValue(JATSSpanFactory.FPAGE);
 		this.lpage = this.getSingleValueByClassAttributeValue(JATSSpanFactory.LPAGE);
-		this.pmid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMID+"']");
-		this.pmcid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+PUB_ID_TYPE+"='"+PMCID+"']");
+		this.pmid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+JATSArticleIdElement.PUB_ID_TYPE+"='"+JATSArticleIdElement.PMID+"']");
+		this.pmcid = XMLUtil.getSingleValue(this, "*[@class='"+JATSSpanFactory.PUB_ID+"' and @"+JATSArticleIdElement.PUB_ID_TYPE+"='"+JATSArticleIdElement.PMCID+"']");
 		this.publisherLoc = this.getSingleValueByClassAttributeValue(JATSSpanFactory.PUBLISHER_LOC);
 		this.publisherName = this.getSingleValueByClassAttributeValue(JATSSpanFactory.PUBLISHER_NAME);
 		this.issue = this.getSingleValueByClassAttributeValue(JATSSpanFactory.ISSUE);

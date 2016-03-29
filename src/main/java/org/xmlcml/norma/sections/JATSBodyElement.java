@@ -10,6 +10,11 @@ public class JATSBodyElement extends JATSElement {
 	static String TAG = "body";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.SEC,
+			JATSDivFactory.FIG,
+			JATSDivFactory.TABLE_WRAP,
+			JATSDivFactory.BOXED_TEXT,
+			JATSSpanFactory.P,
+			JATSDivFactory.SUPPLEMENTARY_MATERIAL,
 	});
 	
 	@Override

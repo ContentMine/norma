@@ -24,6 +24,7 @@ public class JATSSpanFactory {
 	public final static String ARTICLE_ID = "article-id";
 	public final static String ATTRIB = "attrib";
 	public final static String AWARD_ID = "award-id";
+	public final static String BOLD = "bold";
 	public final static String BREAK = "break";
 	public final static String CHAPTER_TITLE = "chapter-title";
 	public final static String COLLAB = "collab";
@@ -63,6 +64,7 @@ public class JATSSpanFactory {
 	public final static String ISSUE = "issue";
 	public final static String ISSUE_ID = "issue-id";
 	public final static String ISSUE_TITLE = "issue-title";
+	public final static String ITALIC = "italic";
 	public final static String JOURNAL_ID = "journal-id";
 	public final static String JOURNAL_TITLE = "journal-title";
 	public final static String KWD = "kwd";
@@ -104,9 +106,10 @@ public class JATSSpanFactory {
 	public final static String SERIES_TITLE = "series-title";
 	public final static String SIZE = "size";
 	public final static String STRIKE = "strike";
-	public final static String STRING_DATA = "string-date";
+	public final static String STRING_DATE = "string-date";
 	public final static String STYLED_CONTENT = "styled-content";
 	public final static String SUBJECT = "subject";
+	public final static String SUP = "sup";
 	public final static String SUFFIX = "suffix";
 	public final static String SURNAME = "surname";
 	public final static String TABLE_COUNT = "table-count";
@@ -131,6 +134,7 @@ public class JATSSpanFactory {
 //					ARTICLE_ID,
 					ATTRIB,
 					AWARD_ID,
+					BOLD,
 					BREAK,
 					CHAPTER_TITLE,
 					COLLAB,
@@ -170,6 +174,7 @@ public class JATSSpanFactory {
 					ISSUE,
 					ISSUE_ID,
 					ISSUE_TITLE,
+					ITALIC,
 					JOURNAL_ID,
 					JOURNAL_TITLE,
 					KWD,
@@ -209,9 +214,10 @@ public class JATSSpanFactory {
 					SERIES_TITLE,
 					SIZE,
 					STRIKE,
-					STRING_DATA,
+					STRING_DATE,
 					STYLED_CONTENT,
 					SUBJECT,
+					SUP,
 					SUFFIX,
 					SURNAME,
 					TABLE_COUNT,
@@ -251,7 +257,7 @@ public class JATSSpanFactory {
 		if (SPAN_SPAN_LIST.contains(tag)) {
 			// OK
 		} else if (element.getChildElements().size() > 0 ) {
-			LOG.warn("SPAN element "+element.getLocalName()+" has children "+element.toXML());
+			LOG.trace("SPAN element "+element.getLocalName()+" has children "+element.toXML());
 		}
 
 		return this;
