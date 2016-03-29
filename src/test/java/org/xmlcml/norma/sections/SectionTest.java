@@ -353,6 +353,7 @@ public class SectionTest {
 //		root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
 //		root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
 		LOG.debug("root is: "+root+" and exists = "+root.exists());
+		if (!root.exists()) return;
 		JATSPMCitations citations = new JATSPMCitations();
 		for (File file : root.listFiles()) {
 			if (!file.isDirectory()) continue;
@@ -405,6 +406,7 @@ public class SectionTest {
 //		File root = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers/anopheles");
 //		File root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
 		LOG.debug("root is: "+root+" and exists = "+root.exists());
+		if (!root.exists()) return;
 		for (File file : root.listFiles()) {
 			if (!file.isDirectory()) continue;
 			for (File file1 : file.listFiles()) {
