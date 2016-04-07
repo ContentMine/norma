@@ -50,10 +50,10 @@ public class NormaArgProcessorTest {
 		FileUtils.deleteQuietly(new File("bar"));
 		String[] args = {
 			"-i", "foo", "bar", 
-			"-o", "plugh",
+			"-o", "target/plugh",
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
-		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
+		Assert.assertEquals("output", "target/plugh", argProcessor.getOutput());
 		Assert.assertEquals("input", 2, argProcessor.getInputList().size());
 		//args get sorted
 		Assert.assertEquals("input", "foo", argProcessor.getInputList().get(1));
@@ -62,38 +62,41 @@ public class NormaArgProcessorTest {
 	
 	@Test
 	public void testPDF() {
+		String dir = "target/plugh/plugh0";
 		String[] args = {
-			"-i", new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
-			"-o", "plugh",
+			"-i", new File(NormaFixtures.TEST_BMC_DIR, "misc/s12862-014-0277-x.pdf").toString(),
+			"-o", dir,
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
-		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
+		Assert.assertEquals("output", dir, argProcessor.getOutput());
 		Assert.assertEquals("input", 1, argProcessor.getInputList().size());
 	}
 	
 	@Test
 	public void testAutoDetect() {
+		String dir = "target/plugh/plugh1";
 		String[] args = {
-			"-i", new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString(),
-			"-o", "plugh",
+			"-i", new File(NormaFixtures.TEST_BMC_DIR, "misc/s12862-014-0277-x.pdf").toString(),
+			"-o", dir,
 		};
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
-		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
+		Assert.assertEquals("output", dir, argProcessor.getOutput());
 		Assert.assertEquals("input", 1, argProcessor.getInputList().size());
 	}
 	
 	@Test
 	public void testMethod() {
-		String inputFilename =  new File(NormaFixtures.TEST_BMC_DIR, "s12862-014-0277-x.pdf").toString();
+		String dir = "target/plugh/plugh2";
+		String inputFilename =  new File(NormaFixtures.TEST_BMC_DIR, "misc/s12862-014-0277-x.pdf").toString();
 		String[] args = {
 			"-i", inputFilename,
-			"-o", "plugh",
+			"-o", dir,
 			"-p", "bmc",
 		};
 		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
 		Assert.assertEquals("input", 1, argProcessor.getInputList().size());
 		Assert.assertEquals("input",  inputFilename, argProcessor.getInputList().get(0));
-		Assert.assertEquals("output", "plugh", argProcessor.getOutput());
+		Assert.assertEquals("output", dir, argProcessor.getOutput());
 		Assert.assertEquals("pubstyle", "bmc", argProcessor.getPubstyle().toString());
 	}
 	
@@ -202,7 +205,7 @@ public class NormaArgProcessorTest {
 		if (container1196402.exists()) FileUtils.forceDelete(container1196402);
 		FileUtils.copyDirectory(NormaFixtures.F0115884_DIR, container1196402);
 		String args = "-q "+container1196402.toString()+" --html jsoup --input fulltext.html --output fulltext.xhtml";
-		LOG.debug(args);
+		LOG.trace(args);
 		Norma norma = new Norma();
 		norma.run(args);
 		CTreeList cTreeList = norma.getArgProcessor().getCTreeList();

@@ -28,7 +28,7 @@ public class SentenceSplitterTest {
 		sentenceSplitter.read(test);
 		sentenceSplitter.split();
 		List<String> sentences = sentenceSplitter.getSentenceList();
-		LOG.debug(sentences);
+		LOG.trace(sentences);
 		Assert.assertEquals(4, sentences.size());
 	}
 }

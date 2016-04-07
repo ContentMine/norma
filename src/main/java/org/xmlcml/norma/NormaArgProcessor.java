@@ -46,7 +46,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public final static String HELP_NORMA = "Norma help";
 
-	private static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
+	public static String RESOURCE_NAME_TOP = "/org/xmlcml/norma";
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	private static final VersionManager NORMA_VERSION_MANAGER = new VersionManager();
 	
@@ -323,16 +323,16 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		CTree cTree = null;
 		File file = new File(filename);
 		if (file.isDirectory()) {
-			LOG.error("should not have any directories in inputList: "+file);
+			this.PROJECT_LOG().error("should not have any directories in inputList: "+file);
 		} else {
 			if (output != null) {
 				String name = FilenameUtils.getName(filename);
 				if (CTree.isReservedFilename(name)) {
-					LOG.error(name+" is reserved for CTree: (check that inputs are not already in a CTree) "+file.getAbsolutePath());
+					this.PROJECT_LOG().info(name+" is reserved for CTree: (check that inputs are not already in a CTree) "+file.getAbsolutePath());
 				}
 				String cmFilename = CTree.getCTreeReservedFilenameForExtension(name);
 				if (cmFilename == null) {
-					LOG.error("Cannot create CTree from this type of file: "+name);
+					this.PROJECT_LOG().error("Cannot create CTree from this type of file: "+name);
 					return null;
 				}
 				LOG.trace("Reserved filename: "+cmFilename);

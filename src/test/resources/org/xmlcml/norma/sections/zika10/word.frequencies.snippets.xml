@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectSnippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3113902/results/word/frequencies/results.xml">
+   <result title="frequency" word="class" count="85"/>
+   <result title="frequency" word="CIITA" count="80"/>
+   <result title="frequency" word="expression" count="73"/>
+   <result title="frequency" word="MHC-II" count="56"/>
+   <result title="frequency" word="cells" count="50"/>
+   <result title="frequency" word="Van" count="49"/>
+   <result title="frequency" word="MHC" count="47"/>
+   <result title="frequency" word="Immunol." count="40"/>
+   <result title="frequency" word="transcriptional" count="40"/>
+   <result title="frequency" word="histone" count="36"/>
+   <result title="frequency" word="promoter" count="36"/>
+   <result title="frequency" word="transactivator" count="34"/>
+   <result title="frequency" word="transcription" count="34"/>
+   <result title="frequency" word="gene" count="32"/>
+   <result title="frequency" word="genes" count="32"/>
+   <result title="frequency" word="den" count="30"/>
+   <result title="frequency" word="regulatory" count="30"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="Elsen" count="28"/>
+   <result title="frequency" word="complex" count="28"/>
+   <result title="frequency" word="MHC-I" count="27"/>
+   <result title="frequency" word="cell" count="26"/>
+   <result title="frequency" word="chromatin" count="26"/>
+   <result title="frequency" word="promoters" count="26"/>
+   <result title="frequency" word="factor" count="25"/>
+   <result title="frequency" word="MHCTA" count="23"/>
+   <result title="frequency" word="activation" count="23"/>
+   <result title="frequency" word="Biol." count="22"/>
+   <result title="frequency" word="margin" count="21"/>
+   <result title="frequency" word="role" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3167654/results/word/frequencies/results.xml">
+   <result title="frequency" word="DNA" count="69"/>
+   <result title="frequency" word="methylation" count="49"/>
+   <result title="frequency" word="rabbit" count="48"/>
+   <result title="frequency" word="zygotes" count="44"/>
+   <result title="frequency" word="embryos" count="40"/>
+   <result title="frequency" word="paternal" count="38"/>
+   <result title="frequency" word="demethylation" count="35"/>
+   <result title="frequency" word="mouse" count="35"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="α-meC" count="25"/>
+   <result title="frequency" word="bovine" count="24"/>
+   <result title="frequency" word="signal" count="24"/>
+   <result title="frequency" word="early" count="23"/>
+   <result title="frequency" word="maternal" count="23"/>
+   <result title="frequency" word="margin" count="21"/>
+   <result title="frequency" word="pronuclei" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC320490/results/word/frequencies/results.xml">
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="TPBIA" count="28"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3289602/results/word/frequencies/results.xml">
+   <result title="frequency" word="[]," count="62"/>
+   <result title="frequency" word="ZIKV" count="47"/>
+   <result title="frequency" word="virus" count="44"/>
+   <result title="frequency" word="Zika" count="39"/>
+   <result title="frequency" word="strains" count="29"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="Ae." count="28"/>
+   <result title="frequency" word="strain" count="26"/>
+   <result title="frequency" word="Med" count="21"/>
+   <result title="frequency" word="[]." count="21"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3310194/results/word/frequencies/results.xml">
+   <result title="frequency" word="Spartina" count="582"/>
+   <result title="frequency" word="(CAN" count="147"/>
+   <result title="frequency" word="British" count="117"/>
+   <result title="frequency" word="×townsendii" count="92"/>
+   <result title="frequency" word="Aug" count="91"/>
+   <result title="frequency" word="s.n." count="86"/>
+   <result title="frequency" word="anglica" count="84"/>
+   <result title="frequency" word="alterniflora" count="81"/>
+   <result title="frequency" word="Fig." count="79"/>
+   <result title="frequency" word="&amp;amp;" count="78"/>
+   <result title="frequency" word="species" count="67"/>
+   <result title="frequency" word="Co.:" count="63"/>
+   <result title="frequency" word="°'N," count="63"/>
+   <result title="frequency" word="doi:" count="61"/>
+   <result title="frequency" word="°'W," count="59"/>
+   <result title="frequency" word="[CAN])." count="58"/>
+   <result title="frequency" word="Columbia" count="57"/>
+   <result title="frequency" word="[CAN]);" count="57"/>
+   <result title="frequency" word="°'&quot;N," count="57"/>
+   <result title="frequency" word="Suppl." count="54"/>
+   <result title="frequency" word="°'&quot;W," count="54"/>
+   <result title="frequency" word="figure" count="53"/>
+   <result title="frequency" word="University" count="52"/>
+   <result title="frequency" word="Supplementary" count="51"/>
+   <result title="frequency" word="permission" count="44"/>
+   <result title="frequency" word="Herbarium," count="43"/>
+   <result title="frequency" word="Marchant" count="43"/>
+   <result title="frequency" word="long" count="43"/>
+   <result title="frequency" word="published" count="43"/>
+   <result title="frequency" word="Museum." count="42"/>
+   <result title="frequency" word="[vs." count="42"/>
+   <result title="frequency" word="Image" count="41"/>
+   <result title="frequency" word="Washington" count="41"/>
+   <result title="frequency" word="glumes" count="41"/>
+   <result title="frequency" word="Sep" count="40"/>
+   <result title="frequency" word="patens" count="40"/>
+   <result title="frequency" word="densiflora" count="39"/>
+   <result title="frequency" word="pectinata" count="35"/>
+   <result title="frequency" word="United" count="34"/>
+   <result title="frequency" word="North" count="32"/>
+   <result title="frequency" word="specimens" count="32"/>
+   <result title="frequency" word="Bay," count="31"/>
+   <result title="frequency" word="taxon" count="31"/>
+   <result title="frequency" word="Bay" count="30"/>
+   <result title="frequency" word="introduced" count="30"/>
+   <result title="frequency" word="plants" count="30"/>
+   <result title="frequency" word="Jul" count="29"/>
+   <result title="frequency" word="upper" count="29"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="Biodiversity" count="28"/>
+   <result title="frequency" word="States" count="28"/>
+   <result title="frequency" word="Barkworth" count="27"/>
+   <result title="frequency" word="Beaty" count="27"/>
+   <result title="frequency" word="New" count="27"/>
+   <result title="frequency" word="Pacific" count="27"/>
+   <result title="frequency" word="branches" count="27"/>
+   <result title="frequency" word="collected" count="27"/>
+   <result title="frequency" word="pollen" count="27"/>
+   <result title="frequency" word="specimen" count="27"/>
+   <result title="frequency" word="Island," count="26"/>
+   <result title="frequency" word="reported" count="26"/>
+   <result title="frequency" word="Columbia," count="25"/>
+   <result title="frequency" word="hairs" count="25"/>
+   <result title="frequency" word="long," count="25"/>
+   <result title="frequency" word="Type." count="24"/>
+   <result title="frequency" word="long;" count="24"/>
+   <result title="frequency" word="invasive" count="23"/>
+   <result title="frequency" word="margins" count="23"/>
+   <result title="frequency" word="native" count="23"/>
+   <result title="frequency" word="Hitchcock" count="22"/>
+   <result title="frequency" word="hybrid" count="22"/>
+   <result title="frequency" word="maritima" count="22"/>
+   <result title="frequency" word="present" count="22"/>
+   <result title="frequency" word="taxa" count="22"/>
+   <result title="frequency" word=".°N," count="21"/>
+   <result title="frequency" word="Mobberley" count="21"/>
+   <result title="frequency" word="gracilis" count="21"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3310457/results/word/frequencies/results.xml">
+   <result title="frequency" word="ZIKV" count="58"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="Zika" count="27"/>
+   <result title="frequency" word="virus" count="26"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3310660/results/word/frequencies/results.xml">
+   <result title="frequency" word="IgM" count="61"/>
+   <result title="frequency" word="gene" count="46"/>
+   <result title="frequency" word="ZFN" count="38"/>
+   <result title="frequency" word="rabbit" count="35"/>
+   <result title="frequency" word="[]," count="33"/>
+   <result title="frequency" word="rabbits" count="31"/>
+   <result title="frequency" word="targeted" count="30"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="human" count="28"/>
+   <result title="frequency" word="DNA" count="27"/>
+   <result title="frequency" word="Figure" count="27"/>
+   <result title="frequency" word="targeting" count="24"/>
+   <result title="frequency" word="PCR" count="22"/>
+   <result title="frequency" word="[]." count="22"/>
+   <result title="frequency" word="exon" count="22"/>
+   <result title="frequency" word="used" count="22"/>
+   <result title="frequency" word="mRNA" count="21"/>
+   <result title="frequency" word="margin" count="21"/>
+   <result title="frequency" word="sequence" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3321795/results/word/frequencies/results.xml">
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="target/tutorial/zika10/PMC3321797/results/word/frequencies/results.xml">
+   <result title="frequency" word="virus" count="85"/>
+   <result title="frequency" word="AF," count="47"/>
+   <result title="frequency" word="{background" count="29"/>
+   <result title="frequency" word="margin" count="21"/>
+  </snippets>
+ </snippetsTree>
+</projectSnippetsTree>

@@ -33,7 +33,7 @@ public class SentenceSplitter {
 			
 			ensureSentenceList();
 			StringBuilder sb = new StringBuilder(rawText);
-			LOG.debug(sb.toString());
+			LOG.trace(sb.toString());
 			Matcher matcher = SPLIT.matcher(rawText);
 			int start = 0;
 			List<Integer> splitPositions = new ArrayList<Integer>();

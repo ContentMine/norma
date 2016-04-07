@@ -13,11 +13,12 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.util.CellCalculator;
-import org.xmlcml.cmine.util.DataTablesTool;
 import org.xmlcml.cmine.util.CellRenderer;
+import org.xmlcml.cmine.util.DataTablesTool;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlTd;
@@ -79,7 +80,7 @@ public class EPMCConverter implements CellCalculator {
 				jsonEntryList.add(currentResultJsonEntry);
 			}
 		} else {
-			LOG.debug("rootJsonElement is "+rootJsonElement.getClass());
+			LOG.trace("rootJsonElement is "+rootJsonElement.getClass());
 		}
 	}
 	
@@ -116,7 +117,7 @@ public class EPMCConverter implements CellCalculator {
 			File entryFile = new File(currentCTree.getDirectory(), CProject.EUPMC_RESULTS_JSON);
 			entry = stripOneElementArrays(entry);
 			try {
-				LOG.debug("wrote: "+entryFile);
+				DefaultArgProcessor.CM_LOG.debug("wrote: "+entryFile);
 				FileUtils.writeStringToFile(entryFile, entry.toString(), Charset.forName("UTF-8"));
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+entryFile);
@@ -149,7 +150,7 @@ public class EPMCConverter implements CellCalculator {
 	}
 	
 	private JsonElement stripOneElementArrays(JsonElement entry) {
-		LOG.debug("strip one element arrays does not yet work");
+		LOG.trace("strip one element arrays does not yet work");
 		String json = entry.toString();
 		String jsonPath = "$..source";//,$..id]";
 		ReadContext ctx = JsonPath.parse(json);
@@ -166,7 +167,7 @@ public class EPMCConverter implements CellCalculator {
 					if (object1 instanceof String) {
 						String s = object1.toString();
 					} else {
-						LOG.debug("unexpected object >CL>"+object1.getClass());
+						LOG.trace("unexpected object >CL>"+object1.getClass());
 					}
 				}
 			}
@@ -288,7 +289,7 @@ public class EPMCConverter implements CellCalculator {
 	}
 
 	public void setColumnHeadingList(List<CellRenderer> columnHeadingList) {
-		this.getOrCreateDataTablesTool().setColumnHeadingList(columnHeadingList);
+		this.getOrCreateDataTablesTool().setCellRendererList(columnHeadingList);
 	}
 	
 

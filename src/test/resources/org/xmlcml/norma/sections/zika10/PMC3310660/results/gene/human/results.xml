@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="human">
+ <result pre="however, technically difficult, and more than ten years since our first demonstration of targeting " exact="COL1A1" post=" in sheep [3], there are still few other examples: PRNP in" xpath="/html[1]/body[1]/div[2]/div[1]/p[3]" name="human"/>
+ <result pre=" COL1A1 in sheep [3], there are still few other examples: " exact="PRNP" post=" in sheep, cattle and goats [4]– [6], " xpath="/html[1]/body[1]/div[2]/div[1]/p[3]" name="human"/>
+ <result pre=" in sheep, cattle and goats [4]– [6], " exact="GGTA1" post=" in pigs [7], [8], IGH in cattle a" xpath="/html[1]/body[1]/div[2]/div[1]/p[3]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ <result pre="Yu1&quot;&gt;[6], GGTA1 in pigs [7], [8], " exact="IGH" post=" in cattle and pigs [5], [9], &lt;a " xpath="/html[1]/body[1]/div[2]/div[1]/p[3]" name="human"/>
+ <result pre="1045-Kuroiwa1&quot;&gt;[5], [9], [10], " exact="IGKC" post=" in pigs [11] and CFTR in pigs &lt;a href=&quot;#pone.0021045-Ro" xpath="/html[1]/body[1]/div[2]/div[1]/p[3]" name="human"/>
+ <result pre="=&quot;#pone.0021045-Mendicino1&quot;&gt;[10], IGKC in pigs [11] and " exact="CFTR" post=" in pigs [12]. " name="human"/>
+</results>

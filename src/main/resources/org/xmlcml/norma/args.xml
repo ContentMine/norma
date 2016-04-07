@@ -1,5 +1,13 @@
-<argList name="norma" version="0.2.15">
+<argList name="norma" version="0.2.26">
 
+  <p>20160329: citation extraction and plotting</p>
+  <p>20160322: more JATS including PM(C)ID extraction</p>
+  <p>20160322: major work on JATS </p>
+  <p>20160320: "finished" sections </p>
+  <p>20160313: more sections </p>
+  <p>20160305: analysing sections in NLM</p>
+  <p>20160305: finished nlm2html stylesheet</p>
+  <p>20160304: major output tidy</p>
   <p>20160302: tidied NLM XSL</p>
   <p>20160223: tidied NLM XSL</p>
   <p>20160223:  tracking cmine</p>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="target/tutorial/zika10/PMC3310660/results/word/frequencies/results.xml">
+  <result title="frequency" word="IgM" count="61"/>
+  <result title="frequency" word="gene" count="46"/>
+  <result title="frequency" word="ZFN" count="38"/>
+  <result title="frequency" word="rabbit" count="35"/>
+  <result title="frequency" word="[]," count="33"/>
+  <result title="frequency" word="rabbits" count="31"/>
+  <result title="frequency" word="targeted" count="30"/>
+  <result title="frequency" word="{background" count="29"/>
+  <result title="frequency" word="human" count="28"/>
+  <result title="frequency" word="DNA" count="27"/>
+  <result title="frequency" word="Figure" count="27"/>
+  <result title="frequency" word="targeting" count="24"/>
+  <result title="frequency" word="PCR" count="22"/>
+  <result title="frequency" word="[]." count="22"/>
+  <result title="frequency" word="exon" count="22"/>
+  <result title="frequency" word="used" count="22"/>
+  <result title="frequency" word="mRNA" count="21"/>
+  <result title="frequency" word="margin" count="21"/>
+  <result title="frequency" word="sequence" count="21"/>
+ </snippets>
+</snippetsTree>

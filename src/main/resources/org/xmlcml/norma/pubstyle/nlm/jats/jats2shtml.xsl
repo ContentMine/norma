@@ -1,4 +1,4 @@
-<xsl:stylesheet version="1.0"
+ <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:include href="src/main/resources/org/xmlcml/norma/pubstyle/nlm/jats/front/front.xsl"/>

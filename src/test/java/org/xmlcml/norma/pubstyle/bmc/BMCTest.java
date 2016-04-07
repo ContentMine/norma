@@ -151,10 +151,10 @@ public class BMCTest {
 		
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/bmc/boxChart.svg"));
 		
-		LOG.debug(signatureSet);
-		for (Entry entry : signatureSet.entrySet()) {
-			LOG.debug(entry);
-		}
+//		LOG.debug(signatureSet);
+//		for (Entry entry : signatureSet.entrySet()) {
+//			LOG.debug(entry);
+//		}
 		
 	}
 

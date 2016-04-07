@@ -119,6 +119,7 @@ public class NormaTransformer {
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
 			ok = true;
 			String optionValue = option.getStringValue();
+			// check for NON-XSL transformation types
 			if (false) {				
 			} else if (HOCR2SVG.equals(optionValue)) {
 				svgElement = applyHOCR2SVGToInputFile();
@@ -136,6 +137,7 @@ public class NormaTransformer {
 			} else if (TEX2HTML.equals(option.getStringValue())) {
 				xmlStringList = convertTeXToHTML();
 			} else {
+				// treat as XSL transform
 				xmlStringList = applyXSLDocumentListToCurrentCTree();
 			}
 			// http://grepcode.com/file/repo1.maven.org/maven2/org.apache.pdfbox/pdfbox/1.6.0/org/apache/pdfbox/util/PDFTextStripper.java#PDFTextStripper.getSortByPosition%28%29
@@ -435,11 +437,10 @@ public class NormaTransformer {
 			} else if (NormaTransformer.TRANSFORM_OPTIONS.contains(token)) {
 				transformList.add(token);
 			} else {
-				NormaArgProcessor.LOG.error("Cannot process transform token: "+token+"; allowed values: ");
-				NormaTransformer.listTransformOptions();
+				normaArgProcessor.TREE_LOG().warn("Cannot process transform token: "+token+" as symbol or stylesheet");
 			}
 		}
-		if (transformList.size() == 0) {
+		if (transformList.size() == 0 && xslDocumentList.size() == 0) {
 			LOG.error("no transforms given/parsed");
 		}
 	}
@@ -453,7 +454,7 @@ public class NormaTransformer {
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
 		DocumentBuilder db = createDocumentBuilder();
-		String stylesheetResourceName = replaceCodeIfPossible(xslName);
+		String stylesheetResourceName = lookupStylesheetByName(xslName);
 		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
 		// if fails, try as file
 		if (stylesheetDocument == null) {
@@ -492,7 +493,7 @@ public class NormaTransformer {
 		return stylesheetDocument;
 	}
 
-	private String replaceCodeIfPossible(String xslName) {
+	private String lookupStylesheetByName(String xslName) {
 		createStylesheetByNameMap();
 		String stylesheetResourceName = stylesheetByNameMap.get(xslName);
 		stylesheetResourceName = (stylesheetResourceName == null) ? xslName : stylesheetResourceName;

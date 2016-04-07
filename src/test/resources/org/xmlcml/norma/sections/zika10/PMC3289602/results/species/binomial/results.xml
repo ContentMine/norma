@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="binomial">
+ <result pre=" in the Zika Forest near Lake Victoria, Uganda in April 1947; a second isolation from the mosquito " exact="Aedes africanus" xpath="/html[1]/body[1]/div[2]/div[4]/div[5]/p[1]" match="Aedes africanus" post=" followed at the same site in January 1948 [2]. Since that time, spor" name="binomial"/>
+ <result pre="AP61 =  " exact="Aedes pseudoscutellaris" xpath="/html[1]/body[1]/div[2]/div[4]/div[5]/p[1]" match="Aedes pseudoscutellaris" post=" cells, BHK = baby hamster kidney epithelial cells, C6/36 =  Aedes albopictus cells, SM = su" name="binomial"/>
+ <result pre="AP61 =  Aedes pseudoscutellaris cells, BHK = baby hamster kidney epithelial cells, C6/36 =  " exact="Aedes albopictus" xpath="/html[1]/body[1]/div[2]/div[4]/div[5]/p[1]" match="Aedes albopictus" post=" cells, SM = suckling mouse, Vero = African green monkey kidney cells. " name="binomial"/>
+ <result pre="lution, ecology and epidemiology. In Asia, evidence suggests that the primary mosquito vectors are " exact="Ae. aegypti" xpath="/html[1]/body[1]/div[2]/div[4]/div[5]/p[1]" match="Ae. aegypti" post=" and/or Ae. albopictus [13], &lt;a href=&quot;#pntd.0001477-Marchette" name="binomial"/>
+ <result pre="iology. In Asia, evidence suggests that the primary mosquito vectors are Ae. aegypti and/or " exact="Ae. albopictus" match="Ae. albopictus" post=" [13], [28], though several ecolo" name="binomial"/>
+</results>

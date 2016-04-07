@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="frequencies">
+ <result title="frequency" count="69">DNA</result>
+ <result title="frequency" count="49">methylation</result>
+ <result title="frequency" count="48">rabbit</result>
+ <result title="frequency" count="44">zygotes</result>
+ <result title="frequency" count="40">embryos</result>
+ <result title="frequency" count="38">paternal</result>
+ <result title="frequency" count="35">demethylation</result>
+ <result title="frequency" count="35">mouse</result>
+ <result title="frequency" count="29">{background</result>
+ <result title="frequency" count="25">α-meC</result>
+ <result title="frequency" count="24">bovine</result>
+ <result title="frequency" count="24">signal</result>
+ <result title="frequency" count="23">early</result>
+ <result title="frequency" count="23">maternal</result>
+ <result title="frequency" count="21">margin</result>
+ <result title="frequency" count="21">pronuclei</result>
+</results>

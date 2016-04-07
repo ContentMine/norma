@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.Test;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.args.log.AbstractLogElement;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.biblio.json.EPMCConverter;
@@ -29,8 +31,6 @@ public class EPMCResultsJsonTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-
-
 	@Test
 	public void testReadResultsJSON() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
@@ -200,8 +200,7 @@ public class EPMCResultsJsonTest {
 		for (int i = 0; i < entryArray.size(); i++) {
 			JsonElement entry = entryArray.get(i);
 			EPMCResultsJsonEntry resultJson = new EPMCResultsJsonEntry(entry);
-//			System.out.println(resultJson.toString()+"\n===========================================\n");
-			LOG.debug(">>"+resultJson.getDoiText()+": "+resultJson.getFullTextURLArray());
+			DefaultArgProcessor.CM_LOG.debug(">>"+resultJson.getDoiText()+": "+resultJson.getFullTextURLArray());
 		}
 	}
 	
@@ -235,7 +234,6 @@ public class EPMCResultsJsonTest {
 		Assert.assertEquals("entries: ", 0, epmcConverter.getOrCreateEntryArray().size());
 		JsonElement jsonElement = epmcConverter.getJsonElement();
 		Assert.assertTrue("jsonObject ", jsonElement instanceof JsonObject);
-		LOG.debug("jsonElement "+jsonElement.getClass()+" "+jsonElement);
 		JsonObject jsonObject = (JsonObject) jsonElement;
 		Assert.assertEquals("set: ", 24, jsonObject.entrySet().size());
 	}
@@ -252,6 +250,5 @@ public class EPMCResultsJsonTest {
 		EPMCConverter epmcConverter = new EPMCConverter(cProjectDir);
 		epmcConverter.readInputStream(new FileInputStream(jsonFile));
 		epmcConverter.readAndProcessEntry();
-		LOG.debug("CT "+epmcConverter.getCurrentCTree());
 	}
 }
