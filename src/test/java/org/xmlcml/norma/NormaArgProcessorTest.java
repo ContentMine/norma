@@ -85,22 +85,6 @@ public class NormaArgProcessorTest {
 	}
 	
 	@Test
-	public void testMethod() {
-		String dir = "target/plugh/plugh2";
-		String inputFilename =  new File(NormaFixtures.TEST_BMC_DIR, "misc/s12862-014-0277-x.pdf").toString();
-		String[] args = {
-			"-i", inputFilename,
-			"-o", dir,
-			"-p", "bmc",
-		};
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args);
-		Assert.assertEquals("input", 1, argProcessor.getInputList().size());
-		Assert.assertEquals("input",  inputFilename, argProcessor.getInputList().get(0));
-		Assert.assertEquals("output", dir, argProcessor.getOutput());
-		Assert.assertEquals("pubstyle", "bmc", argProcessor.getPubstyle().toString());
-	}
-	
-	@Test
 	@Ignore // because it is voluminous
 	public void testHelp() {
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(new String[]{"-h"});

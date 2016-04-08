@@ -1,5 +1,8 @@
-<argList name="norma" version="0.2.26">
+<argList name="norma" version="0.3.0">
 
+
+  <p>20160407: no changes, except version</p>
+  
   <p>20160329: citation extraction and plotting</p>
   <p>20160322: more JATS including PM(C)ID extraction</p>
   <p>20160322: major work on JATS </p>
@@ -23,7 +26,7 @@
   <p>20160114: moved classes to NormaFixtures</p>
   <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
-	<arg name="char" brief="-c" long="--chars"
+	<arg name="char" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
 		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"
 		parseMethod="parseChars">
@@ -39,7 +42,7 @@
 		</help>
 	</arg>
 
-	<arg name="div" brief="-d" long="--divs" args="expression [expression] ..."
+	<arg name="div" long="--divs" args="expression [expression] ..."
 		countRange="{1,*}" parseMethod="parseDivs">
 		<help>
 			DIVS:
@@ -52,7 +55,6 @@
 
 	<arg 
 	    name="name" 
-	    brief="-n" 
 	    long="--name" 
 	    args=" tag1,tag2 [tag1,tag2 ....]"
 		class="org.xmlcml.cmine.args.StringPair" 
@@ -70,7 +72,6 @@
 
 	<arg 
 	    name="pubstyle" 
-	    brief="-p" 
 	    long="--pubstyle" 
 	    args="pub_code"
 		countRange="{1,1}" 
@@ -109,7 +110,6 @@
 
 	<arg
 	  name="strip" 
-	  brief="-s" 
 	  long="--strip" 
 	  args="[options to strip]"
 	  countRange="{0,*}" 
@@ -170,7 +170,7 @@
 		</help>
 	</arg>
 
-	<arg name="tidy" brief="-t" long="--tidy" args="[HTML tidy option]"
+	<arg name="tidy" long="--tidy" args="[HTML tidy option]"
 		countRange="{1,1}" parseMethod="parseTidy">
 		<!-- add default ="JSoup" -->
 		<help>
@@ -205,7 +205,6 @@
 
 	<arg 
 	    name="xsl" 
-	    brief="-x" 
 	    long="--xsl" 
 	    args="stylesheet"
 		countRange="{1,5}" 
