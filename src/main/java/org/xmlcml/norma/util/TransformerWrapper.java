@@ -16,6 +16,9 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import net.sf.saxon.TransformerFactoryImpl;
+import net.sf.saxon.Configuration;
+import net.sf.saxon.lib.FeatureKeys;
 import nu.xom.Document;
 import nu.xom.Element;
 
@@ -61,9 +64,9 @@ public class TransformerWrapper {
 	}
 
 	public Transformer createTransformer(org.w3c.dom.Document xslStylesheet) throws Exception {
-		System.setProperty(JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY,
-	            NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL);
-	    TransformerFactory tfactory = TransformerFactory.newInstance();
+		Configuration config = new Configuration();
+		config.setConfigurationProperty(FeatureKeys.SUPPRESS_XSLT_NAMESPACE_CHECK, "true");
+	    TransformerFactory tfactory = new TransformerFactoryImpl(config);
 	    DOMSource domSource = new DOMSource(xslStylesheet);
 	    javaxTransformer = tfactory.newTransformer(domSource);
 		return javaxTransformer;
