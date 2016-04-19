@@ -1,0 +1,1112 @@
+
+PMID- 26093812
+OWN - NLM
+STAT- Publisher
+DA  - 20150621
+LR  - 20150622
+IS  - 1879-0852 (Electronic)
+IS  - 0959-8049 (Linking)
+DP  - 2015 Jun 17
+TI  - Ten-year outcomes of a randomised trial for locoregionally advanced
+      nasopharyngeal carcinoma: A single-institution experience from an endemic area.
+LID - S0959-8049(15)00493-1 [pii]
+LID - 10.1016/j.ejca.2015.05.025 [doi]
+AB  - OBJECTIVE: We previously reported the five-year results of a randomised trial
+      that compared induction chemotherapy plus concurrent chemoradiotherapy (IC+CCRT) 
+      with induction chemotherapy plus radiotherapy (IC+RT) in patients with
+      locoregionally advanced nasopharyngeal carcinoma (NPC). The aim of this study was
+      to report the ten-year results and to explore potential prognostic factors.
+      METHODS: From August 2002 to April 2005, 408 patients with locoregionally
+      advanced NPC were randomly assigned to receive either IC (carboplatin and
+      floxuridine)+CCRT (carboplatin) or IC+RT. The survival rates were analysed using 
+      the Kaplan-Meier method and compared using the log-rank test. Multivariable
+      analysis was performed to identify valuable prognostic factors. RESULTS: The
+      ten-year overall survival, failure-free survival, locoregional failure-free
+      survival and distant failure-free survival rates for the entire patient cohort
+      were 49.5%, 48.0%, 80.8% and 66.9%, respectively. No significant survival
+      differences were found between the IC+CCRT and IC+RT arms. By 3years from the
+      date of randomisation, 62.5% of the relapses had been detected; no recurrence
+      occurred after 8years. Within 3years after randomisation, 77.0% of the metastases
+      were detected; 0.8% was identified after 8years. Age, Union for International
+      Cancer Control (UICC) N-stage, serum lactate dehydrogenase (LDH) and body mass
+      index (BMI) were independent prognostic factors that predicted death. Smoking
+      status and total radiotherapy dose were independent prognostic factors that
+      predicted locoregional recurrence. UICC N-stage, LDH and BMI were independent
+      prognostic factors that predicted distant metastasis. CONCLUSIONS: Concurrent
+      carboplatin chemotherapy did not significantly improve the long-term survival
+      after inductive carboplatin and floxuridine chemotherapy in locoregionally
+      advanced nasopharyngeal carcinoma. In addition to patient and tumour
+      characteristics, LDH, BMI and smoking status were important baseline prognostic
+      factors for tumour recurrence or distant metastasis; these are worthy of further 
+      prognostic investigation in future studies.
+CI  - Copyright (c) 2015 Elsevier Ltd. All rights reserved.
+FAU - Huang, Pei-Yu
+AU  - Huang PY
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Zeng, Qi
+AU  - Zeng Q
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Medical Imaging
+      and Image-Guided Therapy, Sun Yat-sen University Cancer Center, Guangzhou, PR
+      China.
+FAU - Cao, Ka-Jia
+AU  - Cao KJ
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Guo, Xiang
+AU  - Guo X
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Guo, Ling
+AU  - Guo L
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Mo, Hao-Yuan
+AU  - Mo HY
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Wu, Pei-Hong
+AU  - Wu PH
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Medical Imaging
+      and Image-Guided Therapy, Sun Yat-sen University Cancer Center, Guangzhou, PR
+      China.
+FAU - Qian, Chao-Nan
+AU  - Qian CN
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China.
+FAU - Mai, Hai-Qiang
+AU  - Mai HQ
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Nasopharyngeal
+      Carcinoma, Sun Yat-sen University Cancer Center, Guangzhou, PR China. Electronic 
+      address: maihq@sysucc.org.cn.
+FAU - Hong, Ming-Huang
+AU  - Hong MH
+AD  - State Key Laboratory of Oncology in South China, Collaborative Innovation Center 
+      for Cancer Medicine, Guangzhou 510060, PR China; Department of Clinical Study,
+      Sun Yat-sen University Cancer Center, Guangzhou, PR China. Electronic address:
+      hongminghuang_zlyy@163.com.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150617
+TA  - Eur J Cancer
+JT  - European journal of cancer (Oxford, England : 1990)
+JID - 9005373
+OTO - NOTNLM
+OT  - Chemoradiotherapy
+OT  - Nasopharyngeal carcinoma
+OT  - Randomised trial
+OT  - Survival
+EDAT- 2015/06/22 06:00
+MHDA- 2015/06/22 06:00
+CRDT- 2015/06/22 06:00
+PHST- 2015/05/14 [received]
+PHST- 2015/05/19 [accepted]
+AID - S0959-8049(15)00493-1 [pii]
+AID - 10.1016/j.ejca.2015.05.025 [doi]
+PST - aheadofprint
+SO  - Eur J Cancer. 2015 Jun 17. pii: S0959-8049(15)00493-1. doi:
+      10.1016/j.ejca.2015.05.025.
+
+PMID- 26093770
+OWN - NLM
+STAT- Publisher
+DA  - 20150621
+LR  - 20150622
+IS  - 1878-7533 (Electronic)
+IS  - 1550-7289 (Linking)
+VI  - 11
+IP  - 3
+DP  - 2015 May-Jun
+TI  - Bariatric surgery in the cognitively impaired.
+PG  - 711-714
+LID - S1550-7289(15)00047-7 [pii]
+LID - 10.1016/j.soard.2015.02.014 [doi]
+AB  - BACKGROUND: Obesity is prevalent in patients with cognitive impairment, but the
+      risks and benefits in this complex group are unknown. OBJECTIVES: The aim of this
+      study was to assess outcomes in a small cohort of patients with lifelong
+      cognitive impairment who underwent bariatric surgery and to introduce important
+      concepts when considering surgery in this complex group. SETTING: Academic
+      institution, United States. METHODS: We retrospectively analyzed all patients
+      with an objective psychological and/or neuropsychological diagnosis of lifelong, 
+      nonacquired cognitive impairment who had bariatric surgery at our center.
+      RESULTS: We identified 6 patients with a diagnosis of nonacquired cognitive
+      impairment who underwent a bariatric procedure. The cohort (3 male, 3 female) had
+      a mean age of 33.3 years and a mean body mass index (BMI) of 49.4 kg/m2. Two of
+      the patients had a diagnosis of trisomy 21, and the other 4 patients had lifelong
+      cognitive impairment from unknown causes. The distribution of surgical approaches
+      was 2 laparoscopic Roux-en-Y gastric bypasses (LRYGBs), 3 laparoscopic sleeve
+      gastrectomies (SGs), and 1 laparoscopic adjustable gastric band (LAGB). There
+      were no complications and no mortality. At a mean follow-up of 33.7 months, the
+      cohort had a mean percent excess weight loss (%EWL) of 31.1% (range -1.8%-72.2%).
+      Two patients achieved a %EWL>50%. CONCLUSIONS: This case series suggests that
+      bariatric surgery can be performed with minimal morbidity in patients with
+      nonacquired cognitive impairment after intensive multidisciplinary management.
+      However, it appears this population may lose less weight than what is reported
+      for patients without cognitive delay.
+CI  - Copyright (c) 2015 American Society for Bariatric Surgery. Published by Elsevier 
+      Inc. All rights reserved.
+FAU - Daigle, Christopher R
+AU  - Daigle CR
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio. Electronic 
+      address: daiglec2@ccf.org.
+FAU - Schauer, Philip R
+AU  - Schauer PR
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Heinberg, Leslie J
+AU  - Heinberg LJ
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+LA  - ENG
+PT  - REVIEW
+DEP - 20150220
+TA  - Surg Obes Relat Dis
+JT  - Surgery for obesity and related diseases : official journal of the American
+      Society for Bariatric Surgery
+JID - 101233161
+OTO - NOTNLM
+OT  - Bariatric
+OT  - Cognitive
+OT  - Controversial
+OT  - Gastric bypass
+OT  - Intellectual disability
+OT  - Multidisciplinary
+OT  - Obesity
+OT  - Sleeve gastrectomy
+OT  - Trisomy 21
+EDAT- 2015/06/22 06:00
+MHDA- 2015/06/22 06:00
+CRDT- 2015/06/22 06:00
+PHST- 2014/12/03 [received]
+PHST- 2015/02/13 [revised]
+PHST- 2015/02/17 [accepted]
+PHST- 2015/02/20 [aheadofprint]
+AID - S1550-7289(15)00047-7 [pii]
+AID - 10.1016/j.soard.2015.02.014 [doi]
+PST - ppublish
+SO  - Surg Obes Relat Dis. 2015 May-Jun;11(3):711-714. doi:
+      10.1016/j.soard.2015.02.014. Epub 2015 Feb 20.
+
+PMID- 26093334
+OWN - NLM
+STAT- Publisher
+DA  - 20150620
+LR  - 20150621
+IS  - 1532-8414 (Electronic)
+IS  - 1071-9164 (Linking)
+DP  - 2015 Jun 17
+TI  - Obesity as a Risk Factor For Consideration For Left Ventricular Assist Devices.
+LID - S1071-9164(15)00182-7 [pii]
+LID - 10.1016/j.cardfail.2015.06.006 [doi]
+AB  - INTRODUCTION: Obesity is a major risk factor for cardiovascular outcomes and is
+      prevalent in patients with advanced heart failure requiring left ventricular
+      assist devices (LVADs).The understanding of high body mass index (BMI) and
+      outcomes after LVAD implantation continues to evolve. In this study we
+      investigated the effects of obesity on post-LVAD outcomes. METHOD: In this
+      retrospective study, 288 patients with both HeartMate II and HeartWare HVAD,
+      implanted as bridge to transplantation (BTT) and destination therapy (DT), were
+      enrolled. Patients were stratified based BMI >/= 30. Baseline demographics were
+      obtained. Post-LVAD incidence of readmissions and major adverse effects were
+      tabulated. RESULTS: The cohort is comprised of 95 (33%) obese and 193 (67%)
+      non-obese patients, 63 (25%) female and 225 (75%) male. 48 (20%) were implanted
+      as BTT while 240 (80%) were implanted as DT. The mean BMI in the obese group was 
+      35.2 kg/m2 compared to 24.3 kg/m2 (p<0.001) in the control group. Incidence of
+      post-LVAD heart failure (29% vs 16%, p=0.009). Multivariate analysis confirmed
+      that BMI was an independent predictor for only post-LVAD heart failure (OR: 2.47 
+      95% CI: 1.15 - 5.32, p=0.02) Obese patients had a higher mean total number of
+      hospitalizations compared to non-obese patients (4.2 vs. 3.4, p=0.03) as well as 
+      higher median total length of stay post-LVAD (28 vs. 14 days p=0.05), however
+      these were not significant when adjusted for covariates. CONCLUSION: Obese
+      patients had higher incidence of post-LVAD heart failure readmissions. There was 
+      no difference in overall survival or outcomes between the two groups. There was
+      no difference in total re-hospitalizations or length of stay between obese and
+      non-obese patients. Our analysis suggests that obesity should not preclude LVAD
+      candidacy.
+CI  - Copyright (c) 2015 Elsevier Inc. All rights reserved.
+FAU - Mohamedali, Burhan
+AU  - Mohamedali B
+AD  - Division of Cardiology and Cardiothoracic Surgery, Rush University, Advocate
+      Christ Medical Center, Chicago, IL; Division of Cardiology and Cardiothoracic
+      Surgery, Rush University, Advocate Christ Medical Center, Oak Lawn, IL.
+      Electronic address: burhan_mohamedali@rush.edu.
+FAU - Yost, Gardner
+AU  - Yost G
+AD  - Division of Cardiology and Cardiothoracic Surgery, Rush University, Advocate
+      Christ Medical Center, Chicago, IL; Division of Cardiology and Cardiothoracic
+      Surgery, Rush University, Advocate Christ Medical Center, Oak Lawn, IL.
+FAU - Bhat, Geetha
+AU  - Bhat G
+AD  - Division of Cardiology and Cardiothoracic Surgery, Rush University, Advocate
+      Christ Medical Center, Chicago, IL; Division of Cardiology and Cardiothoracic
+      Surgery, Rush University, Advocate Christ Medical Center, Oak Lawn, IL.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150617
+TA  - J Card Fail
+JT  - Journal of cardiac failure
+JID - 9442138
+OTO - NOTNLM
+OT  - BMI Left ventricular assist device
+OT  - Hospitalizations
+OT  - LVAD
+OT  - Obesity
+OT  - Outcomes
+OT  - mortality
+EDAT- 2015/06/21 06:00
+MHDA- 2015/06/21 06:00
+CRDT- 2015/06/21 06:00
+PHST- 2015/01/22 [received]
+PHST- 2015/05/15 [revised]
+PHST- 2015/06/09 [accepted]
+AID - S1071-9164(15)00182-7 [pii]
+AID - 10.1016/j.cardfail.2015.06.006 [doi]
+PST - aheadofprint
+SO  - J Card Fail. 2015 Jun 17. pii: S1071-9164(15)00182-7. doi:
+      10.1016/j.cardfail.2015.06.006.
+
+PMID- 26089115
+OWN - NLM
+STAT- Publisher
+DA  - 20150619
+LR  - 20150620
+IS  - 1538-9375 (Electronic)
+IS  - 1525-8610 (Linking)
+DP  - 2015 Jun 15
+TI  - The Association Between the Probability of Sarcopenia and Functional Outcomes in 
+      Older Patients Undergoing In-Hospital Rehabilitation.
+LID - S1525-8610(15)00348-5 [pii]
+LID - 10.1016/j.jamda.2015.05.010 [doi]
+AB  - OBJECTIVE: Sarcopenia is a geriatric syndrome with a prevalence ranging from 5%
+      to 50% in community-dwelling adults. It is associated with adverse outcomes
+      including worse functional status, falls, and mortality. A paucity of studies
+      have included an assessment of sarcopenia among older adults receiving
+      in-hospital rehabilitation. This is, at least partially, due to the lack of
+      simple assessment methods to reliably measure muscle mass. The objective of this 
+      study was to evaluate the probability of sarcopenia using a validated simple
+      method and examine the association between sarcopenia and functional outcomes at 
+      discharge. SETTING: One in-hospital rehabilitation setting. DESIGN: Prospective
+      cohort study. PARTICIPANTS: A total of 280 patients 65 years and older who were
+      admitted to in-hospital rehabilitation. MEASUREMENTS: The probability of
+      sarcopenia was determined using a validated method that includes 3 variables:
+      age, grip strength, and calf circumference. Two multivariable linear regression
+      models were used to analyze the association between the probability of sarcopenia
+      and the following functional outcome measures: (1) total Barthel index (BI)
+      score; and (2) BI walking mobility subitem. Each analysis adjusted for the
+      following covariates: age, gender, admission diagnoses, body mass index,
+      comorbidity, C-reactive protein, number of medications on admission, Mini- Mental
+      State Examination total score, and change in the functional outcome measure from 
+      admission to discharge. RESULTS: Patients were mainly female (66%) with a mean
+      age of 82 +/- 7 years. The mean probability of sarcopenia overall was 60%. About 
+      one-half of the patients had a probability of sarcopenia >/=75% (N = 140). The
+      remaining patients were distributed as follows: probability of sarcopenia <25% (N
+      = 79); 25%-49% (N = 26); and 50%-74% (N = 34). The probability of sarcopenia was 
+      significantly associated with an overall worse functional status at discharge
+      based on total BI score (point estimate -8.5; standard error 17.1; P < .0001) and
+      ability to walk at discharge as measured with the BI walking mobility subitem
+      (point estimate -1.3; standard error 0.5; P = .02) after adjusting for relevant
+      covariates. CONCLUSIONS: These findings support the use of a simple screening
+      tool for probable sarcopenia among older adults receiving in-hospital
+      rehabilitation to increase the ability of clinicians to initiate early
+      interventions to improve functional outcomes at discharge.
+CI  - Copyright (c) 2015 AMDA - The Society for Post-Acute and Long-Term Care Medicine.
+      Published by Elsevier Inc. All rights reserved.
+FAU - Morandi, Alessandro
+AU  - Morandi A
+AD  - Department of Rehabilitation and Aged Care of the Ancelle Hospital, Cremona,
+      Italy; Geriatric Research Group, Brescia, Italy. Electronic address:
+      morandi.alessandro@gmail.com.
+FAU - Onder, Graziano
+AU  - Onder G
+AD  - Department of Gerontology, Neuroscience and Orthopedics, Catholic University of
+      Sacred Heart, Rome, Italy.
+FAU - Fodri, Luciano
+AU  - Fodri L
+AD  - Department of Rehabilitation and Aged Care of the Ancelle Hospital, Cremona,
+      Italy.
+FAU - Sanniti, Antonella
+AU  - Sanniti A
+AD  - Department of Rehabilitation and Aged Care of the Ancelle Hospital, Cremona,
+      Italy.
+FAU - Schnelle, John
+AU  - Schnelle J
+AD  - Center for Quality of Aging, Vanderbilt University, Nashville, TN; Division of
+      Geriatrics, School of Medicine, Center for Quality Aging, Vanderbilt University, 
+      Nashville, TN; Veterans Administration Medical Center, Geriatric Research
+      Education and Clinical Center, Nashville, TN.
+FAU - Simmons, Sandra
+AU  - Simmons S
+AD  - Center for Quality of Aging, Vanderbilt University, Nashville, TN; Division of
+      Geriatrics, School of Medicine, Center for Quality Aging, Vanderbilt University, 
+      Nashville, TN; Veterans Administration Medical Center, Geriatric Research
+      Education and Clinical Center, Nashville, TN.
+FAU - Landi, Francesco
+AU  - Landi F
+AD  - Department of Gerontology, Neuroscience and Orthopedics, Catholic University of
+      Sacred Heart, Rome, Italy.
+FAU - Gentile, Simona
+AU  - Gentile S
+AD  - Department of Rehabilitation and Aged Care of the Ancelle Hospital, Cremona,
+      Italy; Geriatric Research Group, Brescia, Italy.
+FAU - Trabucchi, Marco
+AU  - Trabucchi M
+AD  - Geriatric Research Group, Brescia, Italy; Department of Medicina dei Sistemi,
+      University of Tor Vergata, Rome, Italy.
+FAU - Bellelli, Giuseppe
+AU  - Bellelli G
+AD  - Geriatric Research Group, Brescia, Italy; Department of Health Sciences,
+      University of Milano-Bicocca and Geriatric Medicine, San Gerardo Hospital, Monza,
+      Italy; Milan Center for Neuroscience (Neuro-Mi), Milan, Italy.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150615
+TA  - J Am Med Dir Assoc
+JT  - Journal of the American Medical Directors Association
+JID - 100893243
+OTO - NOTNLM
+OT  - Sarcopenia
+OT  - in-hospital rehabilitation
+OT  - older adults
+EDAT- 2015/06/20 06:00
+MHDA- 2015/06/20 06:00
+CRDT- 2015/06/20 06:00
+PHST- 2015/02/26 [received]
+PHST- 2015/05/12 [revised]
+PHST- 2015/05/13 [accepted]
+AID - S1525-8610(15)00348-5 [pii]
+AID - 10.1016/j.jamda.2015.05.010 [doi]
+PST - aheadofprint
+SO  - J Am Med Dir Assoc. 2015 Jun 15. pii: S1525-8610(15)00348-5. doi:
+      10.1016/j.jamda.2015.05.010.
+
+PMID- 26078026
+OWN - NLM
+STAT- In-Data-Review
+DA  - 20150616
+LR  - 20150618
+IS  - 1938-8993 (Electronic)
+IS  - 1540-4153 (Linking)
+VI  - 13
+IP  - 2
+DP  - 2015
+TI  - The Impact of Neighborhood Socioeconomic Position on Prevalence of Diabetes and
+      Prediabetes in Older Latinos: The Sacramento Area Latino Study on Aging.
+PG  - 77-85
+LID - 10.1891/1540-4153.13.2.77 [doi]
+AB  - Diabetes is a leading cause of morbidity and mortality in Latinos, but few
+      studies of disease risk in this subpopulation examine both area-level
+      socioeconomic position (SEP) and its association with individual-level risk
+      factors. This study sought to examine the cross-sectional relationship between
+      neighborhood socioeconomic position (NSEP) and prevalent diabetes and prediabetes
+      status among older Latinos. Longitudinal health data were collected from 1,789
+      participants in the Sacramento Area Latino Study on Aging (SALSA). Among SALSA
+      participants, higher NSEP was associated with lower diabetes prevalence (p =
+      .001). Adjustment for body mass index and other individual-level factors did not 
+      affect this relationship. No association was observed between NSEP and
+      prediabetes in both unadjusted and adjusted models. Neighborhoods with higher SEP
+      had a lower prevalence of diabetes. This study highlights the importance of
+      considering neighborhood factors that may place older Latinos at high risk for
+      this disease.
+FAU - Garcia, Lorena
+AU  - Garcia L
+AD  - University of California, Davis, USA.
+FAU - Lee, Anne
+AU  - Lee A
+FAU - Zeki Al Hazzouri, Adina
+AU  - Zeki Al Hazzouri A
+FAU - Neuhaus, John
+AU  - Neuhaus J
+FAU - Epstein, Mollie
+AU  - Epstein M
+FAU - Haan, Mary
+AU  - Haan M
+LA  - eng
+GR  - P30 AG010129/AG/NIA NIH HHS/United States
+GR  - R01 AG012975/AG/NIA NIH HHS/United States
+GR  - R01 DK060753/DK/NIDDK NIH HHS/United States
+GR  - R03 AG033751/AG/NIA NIH HHS/United States
+PT  - Journal Article
+PL  - United States
+TA  - Hisp Health Care Int
+JT  - Hispanic health care international : the official journal of the National
+      Association of Hispanic Nurses
+JID - 101150304
+SB  - IM
+PMC - PMC4470296
+MID - NIHMS599415
+OID - NLM: NIHMS599415 [Available on 07/01/15]
+OID - NLM: PMC4470296 [Available on 07/01/15]
+EDAT- 2015/06/17 06:00
+MHDA- 2015/06/17 06:00
+CRDT- 2015/06/17 06:00
+PMCR- 2015/07/01 00:00
+AID - 10.1891/1540-4153.13.2.77 [doi]
+PST - ppublish
+SO  - Hisp Health Care Int. 2015;13(2):77-85. doi: 10.1891/1540-4153.13.2.77.
+
+PMID- 26077700
+OWN - NLM
+STAT- Publisher
+DA  - 20150616
+LR  - 20150617
+IS  - 1878-7533 (Electronic)
+IS  - 1550-7289 (Linking)
+DP  - 2015 Apr 20
+TI  - Laparoscopic Roux-en-Y gastric bypass for failed gastric banding: outcomes in 642
+      patients.
+LID - S1550-7289(15)00105-7 [pii]
+LID - 10.1016/j.soard.2015.04.007 [doi]
+AB  - BACKGROUND: Laparoscopic adjustable gastric banding (LAGB) is a well-tolerated
+      procedure but has high long-term complication and failure rates. Laparoscopic
+      conversion to Roux-en-Y gastric bypass (LRYGB) is one of the rescue strategies.
+      OBJECTIVES: To analyze short- and long-term results of reoperative LRYGB after
+      failed LAGB. SETTING: Three European expert bariatric center (2 university
+      hospitals and 1 regional hospital). METHODS: A retrospective review of
+      prospectively collected data, including all consecutive patients submitted to
+      revisional LRYGB for failed LAGB between 1999 and 2013, was performed.
+      Complications were classified according to the Dindo-Clavien system. Long-term
+      results in terms of weight loss were analyzed in a subgroup of patients. RESULTS:
+      A total of 642 patients (569 women and 73 men) were included. Mean+/-standard
+      deviation operating time was 188+/-43 minutes. There was no mortality and an
+      overall complication rate of 9.7%, including 3.6% major complications, with no
+      difference between the 1- or 2-step approaches. Follow-up rate was 88% at 10
+      years for the Swiss patient cohort. The mean excess body mass index loss was
+      between 65% and 70% throughout the study period, and the mean total weight loss
+      was between 28% and 30% based on the maximum weight. The mean body mass index
+      decreased from 44.7 kg/m2 before LAGB to 31.6, 32.2, and 32.5 kg/m2 at 1, 5, and 
+      10 years after revision. CONCLUSIONS: Revisional LRYGB is well tolerated and
+      feasible after failed LAGB. A 1-step approach, in cases without erosion, does not
+      increase operative morbidity. Results up to 10 years after revision are
+      comparable to those reported after primary LRYGB.
+CI  - Copyright (c) 2015 American Society for Bariatric Surgery. Published by Elsevier 
+      Inc. All rights reserved.
+FAU - Fournier, Pierre
+AU  - Fournier P
+AD  - Department of Visceral Surgery, Centre Hospitalier Universitaire Vaudois (CHUV), 
+      Lausanne, Switzerland.
+FAU - Gero, Daniel
+AU  - Gero D
+AD  - Department of Digestive Surgery, Bichat-Claude-Bernard University Hospital,
+      Paris, France.
+FAU - Dayer-Jankechova, Anna
+AU  - Dayer-Jankechova A
+AD  - Department of Visceral Surgery, Centre Hospitalier Universitaire Vaudois (CHUV), 
+      Lausanne, Switzerland; Department of Surgery, Riviera-Chablais Hospital,
+      Aigle-Monthey, Switzerland.
+FAU - Allemann, Pierre
+AU  - Allemann P
+AD  - Department of Visceral Surgery, Centre Hospitalier Universitaire Vaudois (CHUV), 
+      Lausanne, Switzerland.
+FAU - Demartines, Nicolas
+AU  - Demartines N
+AD  - Department of Visceral Surgery, Centre Hospitalier Universitaire Vaudois (CHUV), 
+      Lausanne, Switzerland.
+FAU - Marmuse, Jean-Pierre
+AU  - Marmuse JP
+AD  - Department of Digestive Surgery, Bichat-Claude-Bernard University Hospital,
+      Paris, France.
+FAU - Suter, Michel
+AU  - Suter M
+AD  - Department of Visceral Surgery, Centre Hospitalier Universitaire Vaudois (CHUV), 
+      Lausanne, Switzerland; Department of Surgery, Riviera-Chablais Hospital,
+      Aigle-Monthey, Switzerland. Electronic address: michelsuter@netplus.ch.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150420
+TA  - Surg Obes Relat Dis
+JT  - Surgery for obesity and related diseases : official journal of the American
+      Society for Bariatric Surgery
+JID - 101233161
+OTO - NOTNLM
+OT  - Complications
+OT  - Gastric banding
+OT  - Long-term
+OT  - Revisional surgery
+OT  - Roux-en-Y gastric bypass
+EDAT- 2015/06/17 06:00
+MHDA- 2015/06/17 06:00
+CRDT- 2015/06/17 06:00
+PHST- 2015/03/16 [received]
+PHST- 2015/03/17 [revised]
+PHST- 2015/04/14 [accepted]
+AID - S1550-7289(15)00105-7 [pii]
+AID - 10.1016/j.soard.2015.04.007 [doi]
+PST - aheadofprint
+SO  - Surg Obes Relat Dis. 2015 Apr 20. pii: S1550-7289(15)00105-7. doi:
+      10.1016/j.soard.2015.04.007.
+
+PMID- 26077696
+OWN - NLM
+STAT- Publisher
+DA  - 20150616
+LR  - 20150617
+IS  - 1878-7533 (Electronic)
+IS  - 1550-7289 (Linking)
+DP  - 2015 Apr 15
+TI  - Bariatric and metabolic outcomes in the super-obese elderly.
+LID - S1550-7289(15)00104-5 [pii]
+LID - 10.1016/j.soard.2015.04.006 [doi]
+AB  - BACKGROUND: Numerous reports address bariatric outcomes in super-obese or elderly
+      patients, but data addressing this high-risk combination is lacking. OBJECTIVE:
+      The objective of this study was to assess outcomes of bariatric surgery in the
+      super-obese elderly. SETTING: Academic institution, United States. METHODS: All
+      primary bariatric cases performed on patients aged 65 years or older with a body 
+      mass index (BMI)>/=50 kg/m2 were retrospectively analyzed. Surgical approaches
+      included laparoscopic Roux-en-Y gastric bypass (LRYGB), laparoscopic sleeve
+      gastrectomy (LSG), and laparoscopic adjustable gastric banding (LAGB). RESULTS:
+      Thirty patients (26 female, 4 male) with a mean age of 67.1+/-2.7 years and BMI
+      of 55.9+/-3.9 kg/m2, who had LRYGB (n = 16), LSG (n = 6), or LAGB (n = 8), were
+      identified. There were no deaths, conversions, or intraoperative complications.
+      Three patients were lost to follow-up after the 3-month visit. The early (<30 d) 
+      major morbidity rate was 10.0%. At a median follow-up of 37 (range, 6-95) months,
+      the cohort had a mean BMI of 42.3+/-6.7 kg/m2, which corresponded to a mean
+      percent excess weight loss of 44.5%+/-20.5% and mean percent total weight loss of
+      24.4%+/-12.2%. The most percent excess weight loss was achieved after LRYGB
+      (54.1%+/-19.4%), followed by LSG (48.3%+/-10.2%) and then LAGB (26.2%+/-14.4%).
+      Diabetic medication reduction in number and/or dosage was observed in 40% (6/15) 
+      patients, and 33% (5/15) of patients were completely off antidiabetic agents.
+      CONCLUSIONS: Although further research is needed, the present data suggest that
+      successful weight loss and metabolic improvement can be achieved safely in the
+      high-risk population of super-obese elderly.
+CI  - Copyright (c) 2015 American Society for Metabolic and Bariatric Surgery.
+      Published by Elsevier Inc. All rights reserved.
+FAU - Daigle, Christopher R
+AU  - Daigle CR
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Andalib, Amin
+AU  - Andalib A
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Corcelles, Ricard
+AU  - Corcelles R
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Cetin, Derrick
+AU  - Cetin D
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Schauer, Philip R
+AU  - Schauer PR
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio.
+FAU - Brethauer, Stacy A
+AU  - Brethauer SA
+AD  - Bariatric and Metabolic Institute, Cleveland Clinic, Cleveland, Ohio. Electronic 
+      address: brethas@ccf.org.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150415
+TA  - Surg Obes Relat Dis
+JT  - Surgery for obesity and related diseases : official journal of the American
+      Society for Bariatric Surgery
+JID - 101233161
+OTO - NOTNLM
+OT  - Bariatric surgery
+OT  - Diabetes
+OT  - Elderly
+OT  - Metabolic syndrome
+OT  - Obesity
+OT  - Super-obese
+EDAT- 2015/06/17 06:00
+MHDA- 2015/06/17 06:00
+CRDT- 2015/06/17 06:00
+PHST- 2015/02/02 [received]
+PHST- 2015/03/29 [revised]
+PHST- 2015/04/08 [accepted]
+AID - S1550-7289(15)00104-5 [pii]
+AID - 10.1016/j.soard.2015.04.006 [doi]
+PST - aheadofprint
+SO  - Surg Obes Relat Dis. 2015 Apr 15. pii: S1550-7289(15)00104-5. doi:
+      10.1016/j.soard.2015.04.006.
+
+PMID- 26064071
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DA  - 20150611
+DCOM- 20150611
+LR  - 20150614
+IS  - 1179-1373 (Electronic)
+IS  - 1179-1373 (Linking)
+VI  - 7
+DP  - 2015
+TI  - Do loss to follow-up and death rates from ART care vary across primary health
+      care facilities and hospitals in south Ethiopia? A retrospective follow-up study.
+PG  - 167-74
+LID - 10.2147/HIV.S85440 [doi]
+AB  - BACKGROUND: Decentralization and task shifting has significantly improved access 
+      to antiretroviral therapy (ART). Many studies conducted to determine the
+      attrition rate in Ethiopia have not compared attrition rates between hospitals
+      and health centers in a relatively recent cohort of patients. This study compared
+      death and loss to follow-up (LTFU) rates among ART patients in hospitals and
+      health centers in south Ethiopia. METHODS: Data routinely collected from patients
+      aged older than 15 years who started ART between July 2011 and August 2012 in 20 
+      selected health facilities (12 being hospitals) were analyzed. The outcomes of
+      interest were LTFU and death. The data were entered, cleaned, and analyzed using 
+      Statistical Package for the Social Sciences version 20.0 and Stata version 12.0. 
+      Competing-risk regression models were used. RESULTS: The service years of the
+      facilities were similar (median 8 and 7.5 for hospitals and health centers,
+      respectively). The mean patient age was 33.7+/-9.6 years. The median baseline CD4
+      count was 179 (interquartile range 93-263) cells/mm(3). A total of 2,356
+      person-years of observation were made with a median follow-up duration of 28
+      (interquartile range 22-31) months; 24.6% were either dead or LTFU, resulting in 
+      a retention rate of 75.4%. The death rates were 3.0 and 1.5 and the LTFU rate
+      were 9.0 and 10.9 per 100 person-years of observation in health centers and
+      hospitals, respectively. The competing-risk regression model showed that the gap 
+      between testing and initiation of ART, body mass index, World Health Organization
+      clinical stage, isoniazid prophylaxis, age, facility type, and educational status
+      were independently associated with LTFU. Moreover, baseline tuberculous disease, 
+      poor functional status, and follow-up at a health center were associated with an 
+      elevated probability of death. CONCLUSION: We observed a higher death rate and a 
+      lower LTFU rate in health centers than in hospitals. Most of the associated
+      variables were also previously documented. Higher LTFU was noticed for patients
+      with a smaller gap between testing and initiation of treatment.
+FAU - Teshome, Wondu
+AU  - Teshome W
+AD  - School of Public and Environmental Health, Hawassa University, Hawassa, Ethiopia.
+FAU - Belayneh, Mehretu
+AU  - Belayneh M
+AD  - School of Public and Environmental Health, Hawassa University, Hawassa, Ethiopia.
+FAU - Moges, Mathewos
+AU  - Moges M
+AD  - School of Public and Environmental Health, Hawassa University, Hawassa, Ethiopia.
+FAU - Mekonnen, Emebet
+AU  - Mekonnen E
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+FAU - Endrias, Misganu
+AU  - Endrias M
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+FAU - Ayele, Sinafiksh
+AU  - Ayele S
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+FAU - Misganaw, Tebeje
+AU  - Misganaw T
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+FAU - Shiferaw, Mekonnen
+AU  - Shiferaw M
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+FAU - Tesema, Tigist
+AU  - Tesema T
+AD  - Health Research and Technology Transfer Support Process, Southern Nations
+      Nationalities and Peoples' Regional Health Bureau, Hawassa, Ethiopia.
+LA  - eng
+PT  - Journal Article
+DEP - 20150528
+PL  - New Zealand
+TA  - HIV AIDS (Auckl)
+JT  - HIV/AIDS (Auckland, N.Z.)
+JID - 101515943
+PMC - PMC4455856
+OID - NLM: PMC4455856
+OTO - NOTNLM
+OT  - Ethiopia
+OT  - antiretroviral therapy
+OT  - death rates
+OT  - loss to follow-up
+OT  - primary care
+EDAT- 2015/06/13 06:00
+MHDA- 2015/06/13 06:01
+CRDT- 2015/06/12 06:00
+PHST- 2015 [ecollection]
+PHST- 2015/05/28 [epublish]
+AID - 10.2147/HIV.S85440 [doi]
+AID - hiv-7-167 [pii]
+PST - epublish
+SO  - HIV AIDS (Auckl). 2015 May 28;7:167-74. doi: 10.2147/HIV.S85440. eCollection
+      2015.
+
+PMID- 26063477
+OWN - NLM
+STAT- Publisher
+DA  - 20150611
+LR  - 20150613
+IS  - 1538-7755 (Electronic)
+IS  - 1055-9965 (Linking)
+DP  - 2015 Jun 10
+TI  - Contribution of the Neighborhood Environment and Obesity to Breast Cancer
+      Survival: The California Breast Cancer Survivorship Consortium.
+LID - cebp.0055.2015 [pii]
+AB  - Little is known about neighborhood attributes that may influence opportunities
+      for healthy eating and physical activity in relation to breast cancer mortality. 
+      We used data from the California Breast Cancer Survivorship Consortium and the
+      California Neighborhoods Data System to examine the neighborhood environment,
+      body mass index, and mortality after breast cancer. We studied 8,995 African
+      American, Asian American, Latina, and non-Latina White women with breast cancer. 
+      Residential addresses were linked to the CNDS to characterize neighborhoods. We
+      used multinomial logistic regression to evaluate the associations between
+      neighborhood factors and obesity, and Cox proportional hazards regression to
+      examine associations between neighborhood factors and mortality. For Latinas,
+      obesity was associated with more neighborhood crowding (Quartile 4 (Q4) vs. Q1:
+      Odds Ratio (OR)=3.24; 95% Confidence Interval (CI): 1.50-7.00); breast
+      cancer-specific mortality was inversely associated with neighborhood businesses
+      (Q4 vs. Q1: Hazard Ratio (HR)=0.46; 95% CI: 0.25-0.85) and positively associated 
+      with multi-family housing (Q3 vs. Q1: HR=1.98; 95% CI: 1.20-3.26). For non-Latina
+      Whites, lower neighborhood socioeconomic status (SES) was associated with obesity
+      (Quintile 1 (Q1) vs. Q5: OR=2.52; 95% CI: 1.31-4.84), breast cancer-specific (Q1 
+      vs. Q5: HR=2.75; 95% CI: 1.47-5.12), and all-cause (Q1 vs. Q5: HR=1.75; 95% CI:
+      1.17-2.62) mortality. For Asian Americans, no associations were seen. For African
+      Americans, lower neighborhood SES was associated with lower mortality in a
+      nonlinear fashion. Attributes of the neighborhood environment were associated
+      with obesity and mortality following breast cancer diagnosis, but these
+      associations differed across racial/ethnic groups.
+CI  - Copyright (c) 2015, American Association for Cancer Research.
+FAU - Cheng, Iona
+AU  - Cheng I
+AD  - Surveillance Research, Cancer Prevention Institute of California
+      iona.cheng@cpic.org.
+FAU - Shariff-Marco, Salma
+AU  - Shariff-Marco S
+AD  - Cancer Prevention Institute of California.
+FAU - Koo, Jocelyn
+AU  - Koo J
+AD  - Epidemiology, Cancer Prevention Institute of California.
+FAU - Monroe, Kristine R
+AU  - Monroe KR
+AD  - Preventive Medicine, University of Southern California.
+FAU - Yang, Juan
+AU  - Yang J
+AD  - Cancer Prevention Institute of California.
+FAU - John, Esther M
+AU  - John EM
+AD  - Department of Epidemiology, Cancer Prevention Institute of California.
+FAU - Kurian, Allison W
+AU  - Kurian AW
+AD  - Oncology and Health Research & Policy, Stanford University School of Medicine.
+FAU - Kwan, Marilyn L
+AU  - Kwan ML
+AD  - Division of Research, Kaiser Permanente Northern California.
+FAU - Henderson, Brian E
+AU  - Henderson BE
+AD  - Keck School of Medicine.
+FAU - Bernstein, Leslie
+AU  - Bernstein L
+AD  - Population Sciences/Cancer Etiology, City of Hope.
+FAU - Lu, Yani
+AU  - Lu Y
+AD  - Population Sciences, Beckman Research Institute, City of Hope.
+FAU - Sposto, Richard
+AU  - Sposto R
+AD  - Divisions of Hematology, Oncology and Blood and Marrow Transplantation,
+      Children's Hospital Los Angeles.
+FAU - Vigen, Cheryl
+AU  - Vigen C
+AD  - Division of Biostatistics, University of Southern California.
+FAU - Wu, Anna
+AU  - Wu A
+AD  - Department of Preventive Medicine, Keck School of Medicine.
+FAU - Gomez, Scarlett Lin
+AU  - Gomez SL
+AD  - Surveillance Research, Cancer Prevention Institute of California.
+FAU - Keegan, Theresa H M
+AU  - Keegan TH
+AD  - Surveillance Research, Cancer Prevention Institute of California.
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150610
+TA  - Cancer Epidemiol Biomarkers Prev
+JT  - Cancer epidemiology, biomarkers & prevention : a publication of the American
+      Association for Cancer Research, cosponsored by the American Society of
+      Preventive Oncology
+JID - 9200608
+EDAT- 2015/06/13 06:00
+MHDA- 2015/06/13 06:00
+CRDT- 2015/06/12 06:00
+AID - 1055-9965.EPI-15-0055 [pii]
+AID - 10.1158/1055-9965.EPI-15-0055 [doi]
+PST - aheadofprint
+SO  - Cancer Epidemiol Biomarkers Prev. 2015 Jun 10. pii: cebp.0055.2015.
+
+PMID- 26062622
+OWN - NLM
+STAT- In-Data-Review
+DA  - 20150611
+IS  - 0862-495X (Print)
+IS  - 0862-495X (Linking)
+VI  - 28
+IP  - 3
+DP  - 2015
+TI  - [Long Term Monitoring of Nutritional, Clinical Status and Quality of Life in Head
+      and Neck Cancer Patients].
+PG  - 200-14
+AB  - BACKGROUND: Malnutrition in head and neck cancer (HNC) patients decreases
+      survival, quality of life (QOL) and oncological outcomes. The aim of the
+      prospective three-year study was to compare QOL, clinical symptoms and variables 
+      (complications, survival and mortality rates in HNC patients). PATIENTS AND
+      METHODS: A total of 726 patients aged 55 to 72 years with treatable HNC were
+      included from January 2004 to December 2009; these patients were randomized to
+      either group with PEG and enteral nutrition and nonPEG group with nutritional
+      counselling according to nutritional care. We used EORTC questionnaires QOL C-30 
+      and Head and neck module (HN-35) for measuring of QOL. The following variables
+      due to expectable influence on QOL (demographic data, oncological data,
+      nutritional screening, Clinical symptom score, Karnofsky performance status
+      score, Charlson comorbidity index) were included. Monitoring was done five times 
+      in three years. RESULTS: In the first six months, we found decrease of weight and
+      body mass index (BMI). After this critical time point and finish of oncological
+      treatment, a marked difference in the development of patients treated with PEG.
+      Negative factors influencing patients survival, QOL, clinical status were males
+      aged > 63 years, hypopharyngeal cancer (stage III- IV), smoking, weight loss >
+      10%, BMI < 21 and disallowance of PEG. CONCLUSIONS: QOL is an essential factor
+      for cancer patients. Our study showed that nutritional intervention with early
+      enteral nutrition may improve QOL and survival in HNC patients. The PEG group
+      better tolerated oncological treatment, had lower incidence of complications,
+      shorter time to re-entry of permanent increase in weight, lower rate of
+      rehospitalization and its shorter length. We found QOL questionnaires to be very 
+      important for better understanding and communication and a key instrument for
+      improving solution of patients difficulties during their therapy in
+      multidisciplinary approach.Key words: head and neck cancer - quality of life -
+      EORTC - C-30 - HN-35 - PEG - malnutrition The authors declare they have no
+      potential conflicts of interest concerning drugs, products, orservices used in
+      the study. The Editorial Board declares that the manuscript met the ICMJE
+      "uniform requirements" for biomedical papers.Submitted: 16. 4. 2015Accepted: 4.
+      5. 2015.
+FAU - Mala, E
+AU  - Mala E
+FAU - Vejrazkova, E
+AU  - Vejrazkova E
+FAU - Bielmeierova, J
+AU  - Bielmeierova J
+FAU - Jindra, M
+AU  - Jindra M
+FAU - Vosmik, M
+AU  - Vosmik M
+FAU - Novosad, J
+AU  - Novosad J
+FAU - Sobotka, L
+AU  - Sobotka L
+LA  - cze
+PT  - English Abstract
+PT  - Journal Article
+TT  - Dlouhodobe sledovani nutricniho, klinickeho stavu a kvality zivota u nemocnych s 
+      rakovinou hlavy a krku.
+PL  - Czech Republic
+TA  - Klin Onkol
+JT  - Klinicka onkologie : casopis Ceske a Slovenske onkologicke spolecnosti
+JID - 9425213
+SB  - IM
+EDAT- 2015/06/13 06:00
+MHDA- 2015/06/13 06:00
+CRDT- 2015/06/12 06:00
+AID - 52326 [pii]
+PST - ppublish
+SO  - Klin Onkol. 2015;28(3):200-14.
+
+PMID- 26060381
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+DA  - 20150610
+DCOM- 20150610
+LR  - 20150613
+IS  - 1061-1711 (Print)
+IS  - 1061-1711 (Linking)
+VI  - 24
+IP  - 2
+DP  - 2015 Jun
+TI  - Survival Benefit of Statins in Hemodialysis Patients Awaiting Renal
+      Transplantation.
+PG  - 105-12
+LID - 10.1055/s-0035-1547373 [doi]
+AB  - End-stage renal disease (ESRD) patients have extraordinarily high cardiovascular 
+      risk and mortality, yet the benefit of statins in this population remains unclear
+      based on the randomized trials. We investigated the prognostic value of statins
+      in a large, pure cohort of prospectively recruited patients with ESRD awaiting
+      renal transplantation, and being followed up in a dedicated cardiac clinic. We
+      prospectively collected demographic, clinical, laboratory, and pharmacological
+      data on 423 consecutive ESRD patients on hemodialysis awaiting renal
+      transplantation. Survival analysis was performed as a function of statin therapy.
+      The baseline characteristics were as follows: age 57 +/- 11 years, males 64%,
+      diabetes mellitus in 68%, known coronary artery disease in 30%, left ventricular 
+      (LV) ejection fraction 61 +/- 11%. Over a mean follow-up of 2 years, there were
+      43 deaths. Adjusted for age, gender, hypertension, body mass index, diabetes
+      mellitus, coronary artery disease, smoking, and treatment with angiotensin
+      converting enzyme inhibitor, beta blocker, and antiplatelet medications, statin
+      use was a predictor of lower mortality (hazard ratio 0.30, 95% confidence
+      interval 0.11-0.79, p = 0.01). This beneficial effect of statin was supported by 
+      propensity score analysis (p = 0.02) and was consistent across all clinical
+      subgroups. The benefit of statins seemed to be greater in those with LV
+      hypertrophy and smoking. Statin therapy in hemodialysis patients awaiting renal
+      transplant is independently associated with better survival supporting its use in
+      this high-risk population.
+FAU - Aftab, Waqas
+AU  - Aftab W
+AD  - Division of Cardiovascular Medicine, Loma Linda University Medical Center, Loma
+      Linda, California.
+FAU - Gazallo, Juliana
+AU  - Gazallo J
+AD  - Division of Cardiovascular Medicine, Loma Linda University Medical Center, Loma
+      Linda, California.
+FAU - Motabar, Ali
+AU  - Motabar A
+AD  - Division of Cardiovascular Medicine, Loma Linda University Medical Center, Loma
+      Linda, California.
+FAU - Varadrajan, Padmini
+AU  - Varadrajan P
+AD  - Division of Cardiovascular Medicine, Loma Linda University Medical Center, Loma
+      Linda, California.
+FAU - Deedwania, Prakash C
+AU  - Deedwania PC
+AD  - UCSF Fresno Medical Education and Research, Fresno, California.
+FAU - Pai, Ramdas G
+AU  - Pai RG
+AD  - Division of Cardiovascular Medicine, Loma Linda University Medical Center, Loma
+      Linda, California.
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Int J Angiol
+JT  - The International journal of angiology : official publication of the
+      International College of Angiology, Inc
+JID - 9504821
+PMC - PMC4452604
+OID - NLM: PMC4452604 [Available on 06/01/16]
+OTO - NOTNLM
+OT  - diabetes
+OT  - end-stage renal disease
+OT  - hemodialysis
+OT  - statin
+OT  - survival
+EDAT- 2015/06/11 06:00
+MHDA- 2015/06/11 06:01
+CRDT- 2015/06/11 06:00
+PMCR- 2016/06/01 00:00
+AID - 10.1055/s-0035-1547373 [doi]
+AID - 140112 [pii]
+PST - ppublish
+SO  - Int J Angiol. 2015 Jun;24(2):105-12. doi: 10.1055/s-0035-1547373.
+
+PMID- 26058753
+OWN - NLM
+STAT- Publisher
+DA  - 20150610
+LR  - 20150611
+IS  - 1708-0428 (Electronic)
+IS  - 0960-8923 (Linking)
+DP  - 2015 Jun 11
+TI  - Primordial Influence of Post-operative Compliance on Weight Loss After Adolescent
+      Laparoscopic Adjustable Gastric Banding.
+AB  - BACKGROUND: Accumulating evidence suggests that the benefits seen in adult
+      bariatric surgery can be reproduced in adolescents. In contrast with North
+      America, bariatric surgery in adolescents is still not well accepted in Europe
+      and indications and protocols have still to be formulated. METHODS: This
+      prospective study tested the gastric banding procedure in 49 patients operated in
+      a single French institution since 2008. The mean age at surgery was 16.2 +/- 0.9 
+      years with a weight of 118.8 +/- 22.3 kg and body mass index of 42.5 +/- 5.9
+      kg/m2. RESULTS: At 6, 12 and 24 months after surgery, weight was 103.7 +/- 20.8
+      kg, 98.7 +/- 21 kg and 93.6 +/- 19.3 kg, respectively (p < 0.001), corresponding 
+      to excess weight loss (EWL) of 31.6 +/- 17.2 %, 41.8 +/- 21.4 % and 59.1 +/- 24.9
+      % (p < 0.001), respectively. Multivariate analysis showed that the number of
+      consultations per year was the only variable significantly associated to weight
+      loss. Metabolic disorders were corrected, with a decreased prevalence of insulin 
+      resistance from 100 to 17 % and normalisation of homeostasis model
+      assessment-insulin resistance (HOMA-IR) at 24 months (2.09 +/- 0.95).
+      Band-related complications were five slippages, one psychological intolerance and
+      two ports repositioning. Six patients (12 %) had the device explanted. The death 
+      of a patient was an exceptionally severe adverse event. CONCLUSION: Given
+      frequent follow-up support by a multidisciplinary team, laparoscopic adjustable
+      gastric banding (LAGB) surgery in adolescent results in sustained weight loss.
+      However, even exceptional, potentially serious complications are possible and
+      long-term follow-up is needed to evaluate the risk/benefit ratio at 5 or 10 years
+      after LAGB surgery.
+FAU - Khen-Dunlop, Naziha
+AU  - Khen-Dunlop N
+AD  - AP-HP, Hopital Necker-Enfants Malades, Service de Chirurgie Pediatrique
+      Viscerale, 149 rue de Sevres, 75015, Paris, France,
+      naziha.khen-dunlop@nck.aphp.fr.
+FAU - Dabbas, Myriam
+AU  - Dabbas M
+FAU - De Filippo, Gianpaolo
+AU  - De Filippo G
+FAU - Jais, Jean-Philippe
+AU  - Jais JP
+FAU - Hervieux, Erik
+AU  - Hervieux E
+FAU - Telion, Caroline
+AU  - Telion C
+FAU - Chevallier, Jean-Marc
+AU  - Chevallier JM
+FAU - Michel, Jean-Luc
+AU  - Michel JL
+FAU - Aigrain, Yves
+AU  - Aigrain Y
+FAU - Bougneres, Pierre
+AU  - Bougneres P
+FAU - Goulet, Olivier
+AU  - Goulet O
+FAU - Revillon, Yann
+AU  - Revillon Y
+LA  - ENG
+PT  - JOURNAL ARTICLE
+DEP - 20150611
+TA  - Obes Surg
+JT  - Obesity surgery
+JID - 9106714
+EDAT- 2015/06/11 06:00
+MHDA- 2015/06/11 06:00
+CRDT- 2015/06/11 06:00
+AID - 10.1007/s11695-015-1725-4 [doi]
+PST - aheadofprint
+SO  - Obes Surg. 2015 Jun 11.
+
+PMID- 26058244
+OWN - NLM
+STAT- In-Process
+DA  - 20150610
+IS  - 0353-9466 (Print)
+IS  - 0353-9466 (Linking)
+VI  - 54
+IP  - 1
+DP  - 2015 Mar
+TI  - Risk factors for surgical site infection in laryngeal cancer surgery.
+PG  - 57-64
+AB  - Surgical site infection (SSI) is a significant factor of morbidity and mortality 
+      in patients surgically treated for laryngeal carcinoma. The aim of this
+      prospective study in 277 patients was to determine the incidence of SSI in
+      patients surgically treated for laryngeal squamous cell carcinoma and to identify
+      risk factors for development of SSI. Patients with previous chemotherapy and/or
+      radiotherapy were excluded. All patients had tracheostomy postoperatively and
+      received antibiotic prophylaxis with cephalosporin, aminoglycoside and
+      metronidazole. The overall incidence of SSIs in our cohort was 6.5% (18
+      patients): 4 (22.22%) patients with superficial infections, 11 (61.11%) with deep
+      infections and 3 (16.66%) with organ-space infections. The remaining infections
+      included pneumonia (1 case) and Clostridium difficile colitis (2 cases). The
+      median hospital stay in patients having developed SSIs was longer than in those
+      without SSIs (33.5 vs. 16 days, p < 0.001). By using univariate analysis American
+      Society of Anesthesiologists score > 3, duration of surgery longer than 120
+      minutes and National Nosocomial Infections Surveillance risk index > 1 were found
+      to be significantly associated with the occurrence of SSI. Age, sex, body mass
+      index, history of smoking, underlying diabetes and preoperative length of stay
+      were found not to be associated with SSI. The most frequently isolated
+      microorganism was Klebsiella spp.
+FAU - Sotirovic, Jelena
+AU  - Sotirovic J
+FAU - Suljagic, Vesna
+AU  - Suljagic V
+FAU - Baletic, Nenad
+AU  - Baletic N
+FAU - Pavicevic, Ljubomir
+AU  - Pavicevic L
+FAU - Bijelic, Dusan
+AU  - Bijelic D
+FAU - Erdoglija, Milan
+AU  - Erdoglija M
+FAU - Peric, Aleksandar
+AU  - Peric A
+FAU - Soldatovic, Ivan
+AU  - Soldatovic I
+LA  - eng
+PT  - Journal Article
+PL  - Croatia
+TA  - Acta Clin Croat
+JT  - Acta clinica Croatica
+JID - 9425483
+SB  - IM
+EDAT- 2015/06/11 06:00
+MHDA- 2015/06/11 06:00
+CRDT- 2015/06/11 06:00
+PST - ppublish
+SO  - Acta Clin Croat. 2015 Mar;54(1):57-64.

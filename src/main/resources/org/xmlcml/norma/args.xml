@@ -1,4 +1,27 @@
-<argList name="norma" version="0.1.12">
+<argList name="norma" version="0.2.26">
+
+  <p>20160329: citation extraction and plotting</p>
+  <p>20160322: more JATS including PM(C)ID extraction</p>
+  <p>20160322: major work on JATS </p>
+  <p>20160320: "finished" sections </p>
+  <p>20160313: more sections </p>
+  <p>20160305: analysing sections in NLM</p>
+  <p>20160305: finished nlm2html stylesheet</p>
+  <p>20160304: major output tidy</p>
+  <p>20160302: tidied NLM XSL</p>
+  <p>20160223: tidied NLM XSL</p>
+  <p>20160223:  tracking cmine</p>
+  <p>20160211: testing Cell Rendering</p>
+  <p>20160211: tracking cmine</p>
+  <p>20160211: fixed nlm2html</p>
+  <p>20160207: tracking new commandline</p>
+  <p>20160204: small changes responding to cmine</p>
+  <p>20160122: moved cleanAndCopy to CMine</p>
+  <p>20160119: Ignored CommandLineTest</p>
+  <p>20160114: removed OpenNLP because too large</p>
+  <p>20160114: tested after cmine</p>
+  <p>20160114: moved classes to NormaFixtures</p>
+  <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"

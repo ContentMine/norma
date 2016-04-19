@@ -249,7 +249,7 @@ public class PubstyleTagger {
 				count++;
 			}
 		}
-		LOG.debug("tagged "+count+" sections");
+		LOG.trace("tagged "+count+" sections");
 		return elementToTag;
 	}
 

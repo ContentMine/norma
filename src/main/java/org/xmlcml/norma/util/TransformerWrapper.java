@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -15,6 +16,9 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import net.sf.saxon.TransformerFactoryImpl;
+import net.sf.saxon.Configuration;
+import net.sf.saxon.lib.FeatureKeys;
 import nu.xom.Document;
 import nu.xom.Element;
 
@@ -22,7 +26,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.xml.XMLUtil;
@@ -60,9 +64,9 @@ public class TransformerWrapper {
 	}
 
 	public Transformer createTransformer(org.w3c.dom.Document xslStylesheet) throws Exception {
-		System.setProperty(JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY,
-	            NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL);
-	    TransformerFactory tfactory = TransformerFactory.newInstance();
+		Configuration config = new Configuration();
+		config.setConfigurationProperty(FeatureKeys.SUPPRESS_XSLT_NAMESPACE_CHECK, "true");
+	    TransformerFactory tfactory = new TransformerFactoryImpl(config);
 	    DOMSource domSource = new DOMSource(xslStylesheet);
 	    javaxTransformer = tfactory.newTransformer(domSource);
 		return javaxTransformer;
@@ -92,7 +96,7 @@ public class TransformerWrapper {
 		
 	    String xmlString = transformToXML(infile);
 	    // debug output
-		FileUtils.write(new File("target/debug/transform.xml"), xmlString);
+		FileUtils.write(new File("target/debug/transform.xml"), xmlString, Charset.forName("UTF-8"));
 		Element xmlElement = XMLUtil.parseXML(xmlString);
 		htmlElement = new HtmlFactory().parse(xmlElement);
 		XMLUtil.debug(xmlElement, new FileOutputStream("target/firstpass.html"), 1);
@@ -101,7 +105,9 @@ public class TransformerWrapper {
 	}
 
 	public String transformToXML(File infile) throws IOException, TransformerException {
-		return transformToXML(new FileInputStream(infile));
+		FileInputStream fis = new FileInputStream(infile);
+		String ss = transformToXML(fis);
+		return ss;
 	}
 
 	public String transformToXML(InputStream inputStream) throws TransformerException {
@@ -114,7 +120,9 @@ public class TransformerWrapper {
 				throw new RuntimeException("Unepected Exception while removing "+DOCTYPE+" ... >");
 			}
 		}
-		return transformToXML(new StreamSource(inputStream));
+		String ss = transformToXML(new StreamSource(inputStream));
+		return ss;
+
 	}
 
 	/** removes <!DOCTYPE ... > from inputStream.
@@ -165,10 +173,11 @@ nu.xom.Document doc = builder.build(fXmlFile);
 		 */
 		OutputStream baos = new ByteArrayOutputStream();
 		javaxTransformer.transform(streamSource,  new StreamResult(baos));
-		return baos.toString();
+		String ss = baos.toString();
+		return ss;
 	}
 
-	public HtmlElement transform(CMDir qd, Document xslDocument) throws Exception {
+	public HtmlElement transform(CTree qd, Document xslDocument) throws Exception {
 		HtmlElement htmlElement = null;
 		if (qd == null) {
 			throw new RuntimeException("null QD");
@@ -181,7 +190,7 @@ nu.xom.Document doc = builder.build(fXmlFile);
 //	    OutputStream baos = new ByteArrayOutputStream();
 //		transformer.transform(new StreamSource(infile),  new StreamResult(baos));
 //		String xmlString = baos.toString();
-//		FileUtils.write(new File("target/debug/transform.xml"), xmlString);
+//		FileUtils.write(new File("target/debug/transform.xml"), xmlString, Charset.forName("UTF-8"));
 //		Element xmlElement = XMLUtil.parseXML(xmlString);
 //		htmlElement = new HtmlFactory().parse(xmlElement);
 //		XMLUtil.debug(xmlElement, new FileOutputStream("target/firstpass.html"), 1);

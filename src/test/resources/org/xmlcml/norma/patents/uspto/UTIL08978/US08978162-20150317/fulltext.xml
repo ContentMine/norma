@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03"
+	file="US08978162-20150317.XML" status="PRODUCTION" id="us-patent-grant"
+	country="US" date-produced="20150302" date-publ="20150317">
+	<us-bibliographic-data-grant>
+		<publication-reference>
+			<document-id>
+				<country>US</country>
+				<doc-number>08978162</doc-number>
+				<kind>B2</kind>
+				<date>20150317</date>
+			</document-id>
+		</publication-reference>
+		<application-reference appl-type="utility">
+			<document-id>
+				<country>US</country>
+				<doc-number>12896385</doc-number>
+				<date>20101001</date>
+			</document-id>
+		</application-reference>
+		<us-application-series-code>12</us-application-series-code>
+		<us-term-of-grant>
+			<us-term-extension>139</us-term-extension>
+		</us-term-of-grant>
+		<classifications-ipcr>
+			<classification-ipcr>
+				<ipc-version-indicator>
+					<date>20060101</date>
+				</ipc-version-indicator>
+				<classification-level>A</classification-level>
+				<section>F</section>
+				<class>41</class>
+				<subclass>H</subclass>
+				<main-group>1</main-group>
+				<subgroup>02</subgroup>
+				<symbol-position>F</symbol-position>
+				<classification-value>I</classification-value>
+				<action-date>
+					<date>20150317</date>
+				</action-date>
+				<generating-office>
+					<country>US</country>
+				</generating-office>
+				<classification-status>B</classification-status>
+				<classification-data-source>H</classification-data-source>
+			</classification-ipcr>
+			<classification-ipcr>
+				<ipc-version-indicator>
+					<date>20060101</date>
+				</ipc-version-indicator>
+				<classification-level>A</classification-level>
+				<section>A</section>
+				<class>41</class>
+				<subclass>D</subclass>
+				<main-group>13</main-group>
+				<subgroup>04</subgroup>
+				<symbol-position>L</symbol-position>
+				<classification-value>I</classification-value>
+				<action-date>
+					<date>20150317</date>
+				</action-date>
+				<generating-office>
+					<country>US</country>
+				</generating-office>
+				<classification-status>B</classification-status>
+				<classification-data-source>H</classification-data-source>
+			</classification-ipcr>
+			<classification-ipcr>
+				<ipc-version-indicator>
+					<date>20060101</date>
+				</ipc-version-indicator>
+				<classification-level>A</classification-level>
+				<section>A</section>
+				<class>41</class>
+				<subclass>D</subclass>
+				<main-group>31</main-group>
+				<subgroup>00</subgroup>
+				<symbol-position>L</symbol-position>
+				<classification-value>I</classification-value>
+				<action-date>
+					<date>20150317</date>
+				</action-date>
+				<generating-office>
+					<country>US</country>
+				</generating-office>
+				<classification-status>B</classification-status>
+				<classification-data-source>H</classification-data-source>
+			</classification-ipcr>
+			<classification-ipcr>
+				<ipc-version-indicator>
+					<date>20060101</date>
+				</ipc-version-indicator>
+				<classification-level>A</classification-level>
+				<section>A</section>
+				<class>41</class>
+				<subclass>D</subclass>
+				<main-group>15</main-group>
+				<subgroup>00</subgroup>
+				<symbol-position>L</symbol-position>
+				<classification-value>I</classification-value>
+				<action-date>
+					<date>20150317</date>
+				</action-date>
+				<generating-office>
+					<country>US</country>
+				</generating-office>
+				<classification-status>B</classification-status>
+				<classification-data-source>H</classification-data-source>
+			</classification-ipcr>
+		</classifications-ipcr>
+		<classifications-cpc>
+			<main-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>A</section>
+					<class>41</class>
+					<subclass>D</subclass>
+					<main-group>13</main-group>
+					<subgroup>043</subgroup>
+					<symbol-position>F</symbol-position>
+					<classification-value>I</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+			</main-cpc>
+			<further-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>A</section>
+					<class>41</class>
+					<subclass>D</subclass>
+					<main-group>13</main-group>
+					<subgroup>04</subgroup>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>A</section>
+					<class>41</class>
+					<subclass>D</subclass>
+					<main-group>31</main-group>
+					<subgroup>0055</subgroup>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>F</section>
+					<class>41</class>
+					<subclass>H</subclass>
+					<main-group>1</main-group>
+					<subgroup>02</subgroup>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>A</section>
+					<class>41</class>
+					<subclass>D</subclass>
+					<main-group>15</main-group>
+					<subgroup>002</subgroup>
+					<symbol-position>L</symbol-position>
+					<classification-value>I</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+				<classification-cpc>
+					<cpc-version-indicator>
+						<date>20130101</date>
+					</cpc-version-indicator>
+					<section>A</section>
+					<class>41</class>
+					<subclass>D</subclass>
+					<main-group>2300</main-group>
+					<subgroup>32</subgroup>
+					<symbol-position>L</symbol-position>
+					<classification-value>A</classification-value>
+					<action-date>
+						<date>20150317</date>
+					</action-date>
+					<generating-office>
+						<country>US</country>
+					</generating-office>
+					<classification-status>B</classification-status>
+					<classification-data-source>H</classification-data-source>
+					<scheme-origination-code>C</scheme-origination-code>
+				</classification-cpc>
+			</further-cpc>
+		</classifications-cpc>
+		<classification-national>
+			<country>US</country>
+			<main-classification> 2 25</main-classification>
+			<further-classification> 2 48</further-classification>
+			<further-classification> 2 51</further-classification>
+			<further-classification> 2 90</further-classification>
+			<further-classification> 2 92</further-classification>
+			<further-classification> 66175</further-classification>
+			<further-classification> 66176</further-classification>
+		</classification-national>
+		<invention-title id="d2e53">Cut resistant garment</invention-title>
+		<us-references-cited>
+			<us-citation>
+				<patcit num="00001">
+					<document-id>
+						<country>US</country>
+						<doc-number>187405</doc-number>
+						<kind>A</kind>
+						<name>Moulton</name>
+						<date>18770200</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2108</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00002">
+					<document-id>
+						<country>US</country>
+						<doc-number>380576</doc-number>
+						<kind>A</kind>
+						<name>Ives</name>
+						<date>18880400</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 51</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00003">
+					<document-id>
+						<country>US</country>
+						<doc-number>415837</doc-number>
+						<kind>A</kind>
+						<name>Frisbee</name>
+						<date>18891100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 51</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00004">
+					<document-id>
+						<country>US</country>
+						<doc-number>1037206</doc-number>
+						<kind>A</kind>
+						<name>Clifford</name>
+						<date>19120900</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 51</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00005">
+					<document-id>
+						<country>US</country>
+						<doc-number>2320783</doc-number>
+						<kind>A</kind>
+						<name>Lee</name>
+						<date>19430600</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 94</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00006">
+					<document-id>
+						<country>US</country>
+						<doc-number>2388234</doc-number>
+						<kind>A</kind>
+						<name>Abel</name>
+						<date>19451100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 51</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00007">
+					<document-id>
+						<country>US</country>
+						<doc-number>2389152</doc-number>
+						<kind>A</kind>
+						<name>Keeler et al.</name>
+						<date>19451100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2458</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00008">
+					<document-id>
+						<country>US</country>
+						<doc-number>3024466</doc-number>
+						<kind>A</kind>
+						<name>Agostini</name>
+						<date>19620300</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 48</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00009">
+					<document-id>
+						<country>US</country>
+						<doc-number>3057178</doc-number>
+						<kind>A</kind>
+						<name>Konklin</name>
+						<date>19621000</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 66176</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00010">
+					<document-id>
+						<country>US</country>
+						<doc-number>3191186</doc-number>
+						<kind>A</kind>
+						<name>Robertson</name>
+						<date>19650600</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 51</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00011">
+					<document-id>
+						<country>US</country>
+						<doc-number>3601815</doc-number>
+						<kind>A</kind>
+						<name>Strehlan</name>
+						<date>19710800</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 48</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00012">
+					<document-id>
+						<country>US</country>
+						<doc-number>3602914</doc-number>
+						<kind>A</kind>
+						<name>Castello</name>
+						<date>19710900</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 90</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00013">
+					<document-id>
+						<country>US</country>
+						<doc-number>3691564</doc-number>
+						<kind>A</kind>
+						<name>La Marre et al.</name>
+						<date>19720900</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2458</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00014">
+					<document-id>
+						<country>US</country>
+						<doc-number>3997982</doc-number>
+						<kind>A</kind>
+						<name>Holland</name>
+						<date>19761200</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification>434260</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00015">
+					<document-id>
+						<country>US</country>
+						<doc-number>4467476</doc-number>
+						<kind>A</kind>
+						<name>Herbert</name>
+						<date>19840800</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 25</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00016">
+					<document-id>
+						<country>US</country>
+						<doc-number>5015251</doc-number>
+						<kind>A</kind>
+						<name>Cherubini</name>
+						<date>19910500</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00017">
+					<document-id>
+						<country>US</country>
+						<doc-number>5023953</doc-number>
+						<kind>A</kind>
+						<name>Bettcher</name>
+						<date>19910600</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00018">
+					<document-id>
+						<country>US</country>
+						<doc-number>5062159</doc-number>
+						<kind>A</kind>
+						<name>Jakub</name>
+						<date>19911100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2114</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00019">
+					<document-id>
+						<country>US</country>
+						<doc-number>5088116</doc-number>
+						<kind>A</kind>
+						<name>Gould</name>
+						<date>19920200</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 82</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00020">
+					<document-id>
+						<country>US</country>
+						<doc-number>5153941</doc-number>
+						<kind>A</kind>
+						<name>Grilliot et al.</name>
+						<date>19921000</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 98</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00021">
+					<document-id>
+						<country>US</country>
+						<doc-number>5157792</doc-number>
+						<kind>A</kind>
+						<name>Allen et al.</name>
+						<date>19921000</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 25</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00022">
+					<document-id>
+						<country>US</country>
+						<doc-number>5210877</doc-number>
+						<kind>A</kind>
+						<name>Newman</name>
+						<date>19930500</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00023">
+					<document-id>
+						<country>US</country>
+						<doc-number>5210878</doc-number>
+						<kind>A</kind>
+						<name>Triche</name>
+						<date>19930500</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 16</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00024">
+					<document-id>
+						<country>US</country>
+						<doc-number>5343565</doc-number>
+						<kind>A</kind>
+						<name>Berni</name>
+						<date>19940900</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00025">
+					<document-id>
+						<country>US</country>
+						<doc-number>5454119</doc-number>
+						<kind>A</kind>
+						<name>Thomm</name>
+						<date>19951000</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2114</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00026">
+					<document-id>
+						<country>US</country>
+						<doc-number>5625899</doc-number>
+						<kind>A</kind>
+						<name>Snedeker</name>
+						<date>19970500</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 81</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00027">
+					<document-id>
+						<country>US</country>
+						<doc-number>5887451</doc-number>
+						<kind>A</kind>
+						<name>Suzuki</name>
+						<date>19990300</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00028">
+					<document-id>
+						<country>US</country>
+						<doc-number>5924133</doc-number>
+						<kind>A</kind>
+						<name>Zapiti</name>
+						<date>19990700</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 77</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00029">
+					<document-id>
+						<country>US</country>
+						<doc-number>5956975</doc-number>
+						<kind>A</kind>
+						<name>Kawashima</name>
+						<date>19990900</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00030">
+					<document-id>
+						<country>US</country>
+						<doc-number>6044498</doc-number>
+						<kind>A</kind>
+						<name>Schumann et al.</name>
+						<date>20000400</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00031">
+					<document-id>
+						<country>US</country>
+						<doc-number>6170378</doc-number>
+						<kind>B1</kind>
+						<name>Neal et al.</name>
+						<date>20010100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 89 3605</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00032">
+					<document-id>
+						<country>US</country>
+						<doc-number>6766666</doc-number>
+						<kind>B2</kind>
+						<name>Okamoto</name>
+						<date>20040700</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00033">
+					<document-id>
+						<country>US</country>
+						<doc-number>6934970</doc-number>
+						<kind>B1</kind>
+						<name>Watkins et al.</name>
+						<date>20050800</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 96</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00034">
+					<document-id>
+						<country>US</country>
+						<doc-number>7043766</doc-number>
+						<kind>B1</kind>
+						<name>Foreman et al.</name>
+						<date>20060500</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00035">
+					<document-id>
+						<country>US</country>
+						<doc-number>7748053</doc-number>
+						<kind>B1</kind>
+						<name>Hancock</name>
+						<date>20100700</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2 25</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00036">
+					<document-id>
+						<country>US</country>
+						<doc-number>2004/0011088</doc-number>
+						<kind>A1</kind>
+						<name>Rebouillat et al.</name>
+						<date>20040100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 66174</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00037">
+					<document-id>
+						<country>US</country>
+						<doc-number>2007/0271965</doc-number>
+						<kind>A1</kind>
+						<name>Kolmes et al.</name>
+						<date>20071100</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 66170</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00038">
+					<document-id>
+						<country>US</country>
+						<doc-number>2008/0098503</doc-number>
+						<kind>A1</kind>
+						<name>Swartz</name>
+						<date>20080500</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2458</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00039">
+					<document-id>
+						<country>US</country>
+						<doc-number>2008/0134419</doc-number>
+						<kind>A1</kind>
+						<name>Kalaam et al.</name>
+						<date>20080600</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification> 2463</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00040">
+					<document-id>
+						<country>US</country>
+						<doc-number>2009/0019612</doc-number>
+						<kind>A1</kind>
+						<name>Schulein et al.</name>
+						<date>20090100</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00041">
+					<document-id>
+						<country>US</country>
+						<doc-number>2009/0061131</doc-number>
+						<kind>A1</kind>
+						<name>Monfalcone et al.</name>
+						<date>20090300</date>
+					</document-id>
+				</patcit>
+				<category>cited by examiner</category>
+				<classification-national>
+					<country>US</country>
+					<main-classification>428 356</main-classification>
+				</classification-national>
+			</us-citation>
+			<us-citation>
+				<patcit num="00042">
+					<document-id>
+						<country>US</country>
+						<doc-number>2009/0235426</doc-number>
+						<kind>A1</kind>
+						<name>Johnston et al.</name>
+						<date>20090900</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00043">
+					<document-id>
+						<country>US</country>
+						<doc-number>2010/0186138</doc-number>
+						<kind>A1</kind>
+						<name>Hale</name>
+						<date>20100700</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00044">
+					<document-id>
+						<country>DE</country>
+						<doc-number>4408142</doc-number>
+						<date>19941000</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00045">
+					<document-id>
+						<country>EP</country>
+						<doc-number>1728442</doc-number>
+						<kind>B1</kind>
+						<date>20100400</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00046">
+					<document-id>
+						<country>FR</country>
+						<doc-number>2762483</doc-number>
+						<date>19981000</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00047">
+					<document-id>
+						<country>GB</country>
+						<doc-number>2297022</doc-number>
+						<date>19960700</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<patcit num="00048">
+					<document-id>
+						<country>WO</country>
+						<doc-number>2005116316</doc-number>
+						<kind>A1</kind>
+						<date>20051200</date>
+					</document-id>
+				</patcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<nplcit num="00049">
+					<othercit>Cut Resistant Gloves made with Dyneema,
+						www.dyneema.com/emea/applications/performance-textiles/protective-gloves/gloves-with-dyneema.aspx.</othercit>
+				</nplcit>
+				<category>cited by examiner</category>
+			</us-citation>
+			<us-citation>
+				<nplcit num="00050">
+					<othercit>Gaugliumi, &#x201c;Knitting Cuff to Cuff: A Dozen Designs
+						for Sideways Knit Garments,&#x201d; Creative Publishing
+						International, Inc., 2007.</othercit>
+				</nplcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<nplcit num="00051">
+					<othercit>International Search Report for corresponding PCT
+						Application No. PCT/US2011/52994, dated Feb. 23, 2012.</othercit>
+				</nplcit>
+				<category>cited by applicant</category>
+			</us-citation>
+			<us-citation>
+				<nplcit num="00052">
+					<othercit>Supplementary European Search Report for related European
+						Patent Application No. 11829767.0 dated Feb. 27, 2014.</othercit>
+				</nplcit>
+				<category>cited by applicant</category>
+			</us-citation>
+		</us-references-cited>
+		<number-of-claims>3</number-of-claims>
+		<us-exemplary-claim>1</us-exemplary-claim>
+		<us-field-of-classification-search>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 25</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2463</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 46</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 48</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 50</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 495</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 51</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 94</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2108</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 85</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 86</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 93</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 71</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 72</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 81</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2455</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 92</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2462</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2456</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2457</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 95</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 96</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2102</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2103</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 90</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 77</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2112-113</main-classification>
+				<additional-info>unstructured</additional-info>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2117</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2238</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 88</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2115-116</main-classification>
+				<additional-info>unstructured</additional-info>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2120</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2464</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 84</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2 89</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 2114</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 66169 R</main-classification>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 66170-171</main-classification>
+				<additional-info>unstructured</additional-info>
+			</classification-national>
+			<classification-national>
+				<country>US</country>
+				<main-classification> 66175-177</main-classification>
+				<additional-info>unstructured</additional-info>
+			</classification-national>
+		</us-field-of-classification-search>
+		<figures>
+			<number-of-drawing-sheets>4</number-of-drawing-sheets>
+			<number-of-figures>7</number-of-figures>
+		</figures>
+		<us-related-documents>
+			<related-publication>
+				<document-id>
+					<country>US</country>
+					<doc-number>20120079639</doc-number>
+					<kind>A1</kind>
+					<date>20120405</date>
+				</document-id>
+			</related-publication>
+		</us-related-documents>
+		<us-parties>
+			<us-applicants>
+				<us-applicant sequence="001" app-type="applicant"
+					designation="us-only">
+					<addressbook>
+						<last-name>Hughes</last-name>
+						<first-name>Griffith W.</first-name>
+						<address>
+							<city>Wayne</city>
+							<state>PA</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+					<residence>
+						<country>US</country>
+					</residence>
+				</us-applicant>
+				<us-applicant sequence="002" app-type="applicant"
+					designation="us-only">
+					<addressbook>
+						<last-name>Hughes</last-name>
+						<first-name>Jon C.</first-name>
+						<address>
+							<city>Wayne</city>
+							<state>PA</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+					<residence>
+						<country>US</country>
+					</residence>
+				</us-applicant>
+				<us-applicant sequence="003" app-type="applicant"
+					designation="us-only">
+					<addressbook>
+						<last-name>Morton</last-name>
+						<first-name>Rayvon A.</first-name>
+						<address>
+							<city>Oakboro</city>
+							<state>NC</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+					<residence>
+						<country>US</country>
+					</residence>
+				</us-applicant>
+			</us-applicants>
+			<inventors>
+				<inventor sequence="001" designation="us-only">
+					<addressbook>
+						<last-name>Hughes</last-name>
+						<first-name>Griffith W.</first-name>
+						<address>
+							<city>Wayne</city>
+							<state>PA</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+				</inventor>
+				<inventor sequence="002" designation="us-only">
+					<addressbook>
+						<last-name>Hughes</last-name>
+						<first-name>Jon C.</first-name>
+						<address>
+							<city>Wayne</city>
+							<state>PA</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+				</inventor>
+				<inventor sequence="003" designation="us-only">
+					<addressbook>
+						<last-name>Morton</last-name>
+						<first-name>Rayvon A.</first-name>
+						<address>
+							<city>Oakboro</city>
+							<state>NC</state>
+							<country>US</country>
+						</address>
+					</addressbook>
+				</inventor>
+			</inventors>
+			<agents>
+				<agent sequence="01" rep-type="attorney">
+					<addressbook>
+						<orgname>Caesar, Rivise, Bernstein, Cohen &#x26; Pokotilow, Ltd.</orgname>
+						<address>
+							<country>unknown</country>
+						</address>
+					</addressbook>
+				</agent>
+			</agents>
+		</us-parties>
+		<assignees>
+			<assignee>
+				<addressbook>
+					<orgname>Banom, Inc.</orgname>
+					<role>02</role>
+					<address>
+						<city>Malvern</city>
+						<state>PA</state>
+						<country>US</country>
+					</address>
+				</addressbook>
+			</assignee>
+			<assignee>
+				<addressbook>
+					<orgname>Ingle Protective Systems, Inc.</orgname>
+					<role>02</role>
+					<address>
+						<city>Concord</city>
+						<state>NC</state>
+						<country>US</country>
+					</address>
+				</addressbook>
+			</assignee>
+		</assignees>
+		<examiners>
+			<primary-examiner>
+				<last-name>Huynh</last-name>
+				<first-name>Khoa</first-name>
+				<department>3765</department>
+			</primary-examiner>
+			<assistant-examiner>
+				<last-name>Szafran</last-name>
+				<first-name>Brieanna</first-name>
+			</assistant-examiner>
+		</examiners>
+	</us-bibliographic-data-grant>
+	<abstract id="abstract">
+		<p id="p-0001" num="0000">A cut resistant sweater is provided including a
+			chest portion, sleeves, collar, and closure extending from the top
+			edge of the collar through at least part of the chest portion. The
+			closure includes an opening extending from the top of the collar
+			through at least part of the chest portion, and a strip having a
+			first part of a hook and loop fastener thereon. A second part of the
+			hook and loop fastener is disposed on the sweater in at least two
+			pieces, a piece adjacent to a first side of the opening and a piece
+			adjacent to a second side of the opening. The closure is stiff
+			relative to the collar to support the collar. A method for
+			manufacturing the sweater includes providing a cut resistant yarn,
+			and knitting it into a sweater in the order of cuff of first sleeve,
+			first sleeve, body and collar, second sleeve, and cuff of the second
+			sleeve.</p>
+	</abstract>
+	<drawings id="DRAWINGS">
+		<figure id="Fig-EMI-D00000" num="00000">
+			<img id="EMI-D00000" he="187.03mm" wi="310.47mm"
+				file="US08978162-20150317-D00000.TIF" alt="embedded image"
+				img-content="drawing" img-format="tif" />
+		</figure>
+		<figure id="Fig-EMI-D00001" num="00001">
+			<img id="EMI-D00001" he="188.55mm" wi="122.77mm"
+				file="US08978162-20150317-D00001.TIF" alt="embedded image"
+				img-content="drawing" img-format="tif" />
+		</figure>
+		<figure id="Fig-EMI-D00002" num="00002">
+			<img id="EMI-D00002" he="281.09mm" wi="194.06mm"
+				file="US08978162-20150317-D00002.TIF" alt="embedded image"
+				img-content="drawing" img-format="tif" />
+		</figure>
+		<figure id="Fig-EMI-D00003" num="00003">
+			<img id="EMI-D00003" he="248.92mm" wi="155.53mm"
+				file="US08978162-20150317-D00003.TIF" alt="embedded image"
+				img-content="drawing" img-format="tif" />
+		</figure>
+		<figure id="Fig-EMI-D00004" num="00004">
+			<img id="EMI-D00004" he="213.61mm" wi="210.57mm"
+				file="US08978162-20150317-D00004.TIF" alt="embedded image"
+				img-content="drawing" img-format="tif" />
+		</figure>
+	</drawings>
+	<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+		<heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+		<p id="p-0002" num="0001">This invention relates generally to a protective
+			garment. More particularly, the present invention is directed to a
+			protective garment worn by a person who requires protection from
+			injury by cutting or slashing by broken glass or with other sharp
+			edged articles such as blades, knives, and the like.</p>
+		<p id="p-0003" num="0002">Glass handlers, in particular, are often exposed
+			to potential injury and must wear suitable protective clothing. In
+			the past, sweaters were typically knit with two panels, i.e., a front
+			panel and a back panel. These two panels were joined together with an
+			attached sleeve. This type of design leaves an upper shoulder and
+			neck seam. Seams are the weakest part of a cut resistant product.</p>
+		<p id="p-0004" num="0003">Numerous patent documents have been directed to
+			cut resistant garments and have been various features thereof. For
+			example, U.S. Pat. No. 7,043,766 (Foreman et al.) is directed to a
+			garment that has indentations forming air channels next to the body
+			of the wearer. One of the yarns is formed from a material such as
+			Kevlar&#xae; brand para-aramid synthetic fber to provide cut
+			resistance.</p>
+		<p id="p-0005" num="0004">U.S. Pat. No. 6,044,498 (Schumann et al.) is
+			directed to a slash and cut-resistant garment for protecting a person
+			from injury by slashing or cutting with a blade, knife or other sharp
+			edged device. The garment comprises a neck protector attached to a
+			shoulder portion. The neck protector portion uses double knit fabrics
+			or multi-layer fabrics. Foam layers or other materials are disclosed
+			which are used to provide stiffening to keep protection in place on
+			the neck.</p>
+		<p id="p-0006" num="0005">U.S. Pat. No. 5,210,877 (Newman) is directed to
+			abrasion and cut-resistant protective clothing for bicycling. The
+			outerwear is constructed with protective fabric panels containing
+			abrasion and cut resistant high performance fibers. The protective
+			panels are structural components and are sewn or otherwise attached
+			to panels or sections of conventional textiles to complete the
+			garment.</p>
+		<p id="p-0007" num="0006">
+			U.S. Pat. No. 5,023,953 (Bettcher) is directed to a garment and
+			protective sleeve. A sleeveless sweater has a detachable
+			cut-resistant full length protective sleeve. Shoulder seams are shown
+			in
+			<figref idref="DRAWINGS">FIG. 1</figref>
+			.
+		</p>
+		<p id="p-0008" num="0007">International Patent Publication No. WO
+			2005/1116316, by Wells Lamont Industry Group, is directed to a
+			protective, cut-resistant sleeve and a method of making the sleeve.
+			The sleeve is a tubular sleeve of flexible-cut resistant material
+			made from cut-resistant fiber using a rib type knitting stitch. The
+			rib knit stitch allows greater flexibility in knitting.</p>
+		<p id="p-0009" num="0008">European Patent No. EP 1 728 442, by Eckhard Hotz
+			of Germany, is directed to a cut protection garment for preventing
+			injuries when using a chainsaw or saw and includes a first layer of a
+			cut-resistant material and a second layer arranged on the first
+			layer.</p>
+		<p id="p-0010" num="0009">All references cited herein are incorporated
+			herein by reference in their entireties.</p>
+		<heading id="h-0002" level="1">BRIEF SUMMARY OF THE INVENTION</heading>
+		<p id="p-0011" num="0010">The present invention is directed to a cut
+			resistant garment having a sweater portion made from a cut resistant
+			material and, optionally, an apron. The sweater portion includes a
+			chest portion, a pair of sleeves, and a collar having a top edge and
+			a bottom edge. The bottom edge of the collar is integral to the chest
+			portion. A closure is provided which extends from the top edge of the
+			collar through at least part of the chest portion. The closure
+			includes an opening extending from the top edge of the collar through
+			at least part of the chest portion, a hook and loop fastener having a
+			first part and a second part, the first part removably attachable to
+			the second part, and a strip having the first part of the hook and
+			loop fastener thereon. The strip preferably has a length generally
+			the same as a length of the opening. A second part of the hook and
+			loop fastener is disposed in at least two pieces, one piece adjacent
+			to a first side of the opening and a second piece adjacent to a
+			second side of the opening. Preferably, the closure is stiff relative
+			to the collar to support the collar.</p>
+		<p id="p-0012" num="0011">The apron may be provided that is made from a cut
+			resistant material and is removably attachable to a lower portion of
+			the sweater portion. It is preferably removably attachable utilizing
+			an apron fastener that includes a hook type fastener fabric. The hook
+			type fastener fabric attaches to the cut resistant material of the
+			apron. The apron may include a strip attached at one end of the apron
+			adjacent to an upper edge of the apron. The strip may include a hook
+			type fastener fabric to attach the apron to a user by being disposed
+			around a waist of the user and attaching to loop type fastener fabric
+			adjacent to the upper edge of the apron. The strip may be attached to
+			loop type fastener fabric disposed on the apron adjacent to the upper
+			edge of the apron when not in use by a user to secure the strip to
+			the apron for laundering.</p>
+		<p id="p-0013" num="0012">In an alternate embodiment of the cut resistant
+			garment of the present invention, a sweater portion includes a chest
+			portion, a pair of sleeves, and a collar having a top edge and a
+			bottom edge, where the bottom edge integral to the chest portion. A
+			closure extends from the top edge of the collar through at least part
+			of the chest portion. The closure includes an opening extending from
+			the top edge of the collar through at least part of the chest
+			portion. The closure includes a hook and loop fastener providing
+			stiffness relative to the collar to support the collar.</p>
+		<p id="p-0014" num="0013">A method for manufacturing a cut resistant
+			garment is also provided, where the cut resistant garment includes a
+			sweater portion having a chest portion, a first sleeve having a cuff,
+			a second sleeve having a cuff, and a collar. The method includes the
+			steps of providing a cut resistant yarn and knitting the cut
+			resistant yarn into a sweater without any exposed shoulder seams. The
+			knitting is accomplished in the order of (a) the cuff of the first
+			sleeve, (b) the first sleeve, (c) the body, (d) the second sleeve,
+			and (e) the cuff of the second sleeve. The order may include knitting
+			the collar at the same time as knitting the body. Alternatively, a
+			separately manufactured collar may be attached to the sweater after
+			the knitting step. Preferably, the knitting steps are performed using
+			a flatbed knitting machine.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+		<description-of-drawings>
+			<heading id="h-0003" level="1">BRIEF DESCRIPTION OF SEVERAL VIEWS
+				OF THE DRAWINGS</heading>
+			<p id="p-0015" num="0014">The invention will be described in conjunction
+				with the following drawings in which like reference numerals
+				designate like elements and wherein:</p>
+			<p id="p-0016" num="0015">
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				is a front view of a cut resistant garment in accordance with a
+				preferred embodiment of the present invention;
+			</p>
+			<p id="p-0017" num="0016">
+				<figref idref="DRAWINGS">FIG. 2</figref>
+				is a rear view of the cut resistant garment of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				;
+			</p>
+			<p id="p-0018" num="0017">
+				<figref idref="DRAWINGS">FIG. 3</figref>
+				is a side view of the cut resistant garment of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				;
+			</p>
+			<p id="p-0019" num="0018">
+				<figref idref="DRAWINGS">FIG. 4</figref>
+				is an exploded front view of the cut resistant garment of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				, showing a sweater portion and an apron portion;
+			</p>
+			<p id="p-0020" num="0019">
+				<figref idref="DRAWINGS">FIG. 5</figref>
+				is a partial rear view of the sweater portion of the cut resistant
+				garment of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				;
+			</p>
+			<p id="p-0021" num="0020">
+				<figref idref="DRAWINGS">FIG. 6</figref>
+				is a partial front view of the sweater portion of the cut resistant
+				garment of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				; and
+			</p>
+			<p id="p-0022" num="0021">
+				<figref idref="DRAWINGS">FIG. 7</figref>
+				is a partial rear view of the sweater portion, showing a rear
+				closure in a partially opened condition of the cut resistant garment
+				of
+				<figref idref="DRAWINGS">FIG. 1</figref>
+				.
+			</p>
+		</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+		<heading id="h-0004" level="1">DETAILED DESCRIPTION OF THE
+			INVENTION</heading>
+		<p id="p-0023" num="0022">The invention will be illustrated in more detail
+			with reference to the following embodiments, but it should be
+			understood that the present invention is not deemed to be limited
+			thereto.</p>
+		<p id="p-0024" num="0023">
+			Referring now to the drawings, wherein like reference numbers refer
+			to like elements throughout the several views, there is shown in
+			<figref idref="DRAWINGS">FIGS. 1-7</figref>
+			a cut resistant garment
+			<b>10</b>
+			in accordance with a preferred embodiment of the present invention.
+			The cut resistant garment
+			<b>10</b>
+			includes an sweater portion
+			<b>12</b>
+			and an apron
+			<b>14</b>
+			.
+		</p>
+		<p id="p-0025" num="0024">
+			The sweater portion
+			<b>12</b>
+			includes a chest portion
+			<b>16</b>
+			, a pair of sleeves
+			<b>18</b>
+			,
+			<b>20</b>
+			, a collar
+			<b>22</b>
+			and a closure
+			<b>24</b>
+			. The collar
+			<b>22</b>
+			has a top edge
+			<b>26</b>
+			and a bottom edge
+			<b>28</b>
+			. The bottom edge
+			<b>28</b>
+			of the collar
+			<b>22</b>
+			is integral to the top of the chest portion
+			<b>16</b>
+			.
+		</p>
+		<p id="p-0026" num="0025">
+			The closure
+			<b>24</b>
+			extends from the top edge
+			<b>26</b>
+			of the collar
+			<b>22</b>
+			through at least part of the chest portion
+			<b>16</b>
+			. The closure
+			<b>24</b>
+			includes an opening
+			<b>30</b>
+			extending from the top edge
+			<b>26</b>
+			of the collar
+			<b>22</b>
+			through at least part of the chest portion
+			<b>16</b>
+			. A hook and loop fastener
+			<b>32</b>
+			, such as a Velcro&#xae; brand fastener, has a first part
+			<b>34</b>
+			and a second part
+			<b>36</b>
+			, one of which includes hooks
+			<b>38</b>
+			and one of which includes loops
+			<b>40</b>
+			, as are well known. The first part
+			<b>34</b>
+			is removably and reusably attachable to the second part
+			<b>36</b>
+			.
+		</p>
+		<p id="p-0027" num="0026">
+			A strip
+			<b>42</b>
+			, preferably made from a fabric
+			<b>44</b>
+			, has a first part
+			<b>34</b>
+			of the hook and loop fastener
+			<b>32</b>
+			, for example, the hook portion, thereon. This first part
+			<b>34</b>
+			is not required to be a single piece of hook or loop fabric. For
+			example, as shown in
+			<figref idref="DRAWINGS">FIG. 7</figref>
+			, two strips
+			<b>34</b>
+			A and
+			<b>34</b>
+			B, are shown. The strip
+			<b>42</b>
+			preferably has a length that is generally the same as a length of the
+			opening
+			<b>30</b>
+			. The second part
+			<b>36</b>
+			of the two part hook and loop fastener
+			<b>32</b>
+			is disposed in two strips adjacent to each of a first side
+			<b>46</b>
+			of the opening
+			<b>30</b>
+			and a second side
+			<b>48</b>
+			of the opening
+			<b>30</b>
+			.
+		</p>
+		<p id="p-0028" num="0027">
+			This arrangement, advantageously, provides for a closure
+			<b>24</b>
+			which is ambidextrous. That is, the strip
+			<b>42</b>
+			can be pulled from either one of the strips adjacent to each of the
+			first side
+			<b>46</b>
+			of the opening
+			<b>30</b>
+			and the second side
+			<b>48</b>
+			of the opening, while remaining secured to the other. The strip
+			<b>42</b>
+			can be pulled from the left side or the right side of the sweater
+			portion
+			<b>12</b>
+			. Preferably, the closure
+			<b>24</b>
+			(including the opening
+			<b>30</b>
+			and the hook and loop fastener
+			<b>32</b>
+			) are stiff relative to the collar
+			<b>22</b>
+			to support the collar.
+		</p>
+		<p id="p-0029" num="0028">
+			The cut resistant garment
+			<b>10</b>
+			may further include an apron
+			<b>14</b>
+			made from a cut resistant material
+			<b>56</b>
+			. The apron
+			<b>14</b>
+			is attachable to a lower part
+			<b>50</b>
+			of the sweater portion
+			<b>12</b>
+			via a hook and loop fastener
+			<b>58</b>
+			. Preferably, only the hook portion is present on the apron
+			<b>14</b>
+			. The material of the apron
+			<b>14</b>
+			serves to function as the hook portion of the fastener. Additionally,
+			a strip
+			<b>52</b>
+			of a hook type fastener fabric
+			<b>54</b>
+			of a hook and loop type fastener may be used that assists in
+			attaching the apron
+			<b>14</b>
+			to a user. The strip
+			<b>52</b>
+			is attached to an upper corner
+			<b>60</b>
+			of the apron
+			<b>14</b>
+			, goes around the waist of the user, and attaches back to the apron
+			to loop material
+			<b>62</b>
+			on the apron
+			<b>14</b>
+			. Loop type fastener fabric may be present on the back side of the
+			apron to secure the strip
+			<b>52</b>
+			to the apron for laundering.
+		</p>
+		<p id="p-0030" num="0029">
+			Preferably, the apron
+			<b>14</b>
+			is a knit fabric. This allows the fabric of the apron
+			<b>14</b>
+			to stretch ahead of a cutting edge to increase cut resistance.
+			Previous aprons in the prior art used Kevlar&#xae; brand para-aramid
+			synthetic fiber twill or leather.
+		</p>
+		<p id="p-0031" num="0030">
+			Preferably, all hook and loop fasteners discussed above utilize the
+			loop portion of the fastener on the sweater portion
+			<b>12</b>
+			and the apron
+			<b>14</b>
+			such that the sweater portion
+			<b>12</b>
+			and the apron
+			<b>14</b>
+			can be laundered without the hook and loop fastener portions randomly
+			attaching to one another.
+		</p>
+		<p id="p-0032" num="0031">Preferably yarn deniers are between about 400 and
+			2000. The yarn may be, but is not limited to, any combination of high
+			pressure polyethylene (HPPE), fiberglass, polyester, polypropylene
+			and steel, nylon, high tenacity nylon, and the like. Preferably, the
+			knitting machine is a flatbed knitting machine.</p>
+		<p id="p-0033" num="0032">
+			Preferably, the apron
+			<b>14</b>
+			is made from a knit fabric that is cut resistant. Previous panel
+			designs have been woven fabrics. Knit fabrics stretch in order to add
+			cut resistance and allow individual fibers to twist and roll in the
+			knit fabric for additional cut resistance. Woven fabrics do not offer
+			these benefits.
+		</p>
+		<p id="p-0034" num="0033">
+			Importantly, the sweater portion
+			<b>12</b>
+			of the cut resistant garment
+			<b>10</b>
+			is preferably knit by providing a cut resistant yarn and knitting the
+			yarn into a sweater without any exposed shoulder seams. This is
+			accomplished by knitting in the following unique order. First, the
+			cuff of the first sleeve is knit. Second, the first sleeve is knit.
+			Third, the body is knit. Fourth, the second sleeve is knit. Finally,
+			the cuff of the second sleeve is knit. A step of knitting the collar
+			may occur during the step of knitting the body. Alternatively, a step
+			of attaching the collar, subsequent to the step of knitting the cut
+			resistant yarn into a sweater, may be included. Knit in this manner,
+			the sweater provides safety and strength in the shoulder area because
+			no exposed shoulder seams are present. Moreover, unlike cut resistant
+			garments in the past which utilized two panel construction (front and
+			back), joined with an attached sleeve, the present cut resistant
+			garment drapes properly due to its ability to utilize a tapered
+			design in the armpit area and the unique construction process
+			described here.
+		</p>
+		<p id="p-0035" num="0034">
+			The present invention, as shown in the figures, utilizes a closure
+			<b>24</b>
+			located on the back side of the sweater portion
+			<b>12</b>
+			. Use of such a rear closure
+			<b>24</b>
+			provides full frontal protection from cuts.
+		</p>
+		<p id="p-0036" num="0035">While the invention has been described in detail
+			and with reference to specific embodiments thereof, it will be
+			apparent to one skilled in the art that various changes and
+			modifications can be made therein without departing from the spirit
+			and scope thereof.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+	</description>
+	<us-claim-statement>What is claimed is:</us-claim-statement>
+	<claims id="claims">
+		<claim id="CLM-00001" num="00001">
+			<claim-text>
+				1. A cut resistant garment, comprising a sweater portion made from a
+				knit, stretchable cut resistant material, said sweater portion
+				comprising:
+				<claim-text>(a) a chest portion made from the knit, stretchable cut
+					resistant material; the chest portion comprising a front and back
+					section;</claim-text>
+				<claim-text>(b) a pair of sleeves made from the knit, stretchable
+					cut resistant material;</claim-text>
+				<claim-text>(c) a collar made from the knit, stretchable cut
+					resistant material, said collar having a top edge and a bottom
+					edge, said bottom edge of said collar integral to said chest
+					portion; and</claim-text>
+				<claim-text>
+					(d) a closure extending from said top edge of said collar through
+					at least part of said back section of said chest portion, said
+					closure comprising:
+					<claim-text>(i) an opening extending from the top edge of said
+						collar through at least part of said back section of said chest
+						portion;</claim-text>
+					<claim-text>(ii) a hook and loop fastener having a first part and a
+						second part, said first part removably attachable to said second
+						part;</claim-text>
+					<claim-text>(iii) a strip having the first part of said hook and
+						loop fastener thereon, said strip being independent to and
+						removable from said collar and said chest portion;</claim-text>
+					<claim-text>(iv) said second part of the hook and loop fastener
+						disposed in at least two pieces, one of said two pieces adjacent
+						to a first side of said opening when said second part of said
+						fastener is not fastened to said first part of said fastener and
+						one of said two pieces adjacent a second side of said opening when
+						said second part of said fastener is not fastened to said first
+						part of said fastener; and</claim-text>
+					<claim-text>(v) said closure being stiff relative to said collar to
+						support said collar in an upright position to protect the neck of
+						a wearer of the cut resistant garment; and</claim-text>
+				</claim-text>
+				<claim-text>(e) further comprising an apron, said apron made from a
+					cut resistant material and being removably attachable to a lower
+					portion of said chest portion utilizing an apron fastener that
+					utilizes a hook type fastener fabric of a hook and loop type
+					fastener, wherein the apron includes an apron strip attached at one
+					end of an upper edge corner of said apron whereby said apron and
+					said apron strip circumscribe the wearer such that the apron is
+					attached to the front section of the chest portion while the apron
+					strip is attached to back section of the chest portion, said apron
+					strip including the hook type fastener fabric to attach said apron
+					to the wearer by being disposed around the waist of the wearer and
+					attaching to loop type fastener fabric adjacent to an upper edge of
+					the apron, and wherein said apron strip is attachable to the loop
+					type fastener fabric adjacent the upper edge of the apron when not
+					in use by the wearer to secure the apron strip to the apron for
+					laundering.</claim-text>
+			</claim-text>
+		</claim>
+		<claim id="CLM-00002" num="00002">
+			<claim-text>
+				2. The cut resistant garment of
+				<claim-ref idref="CLM-00001">claim 1</claim-ref>
+				, wherein said apron strip is disposed horizontally from the upper
+				edge corner of said apron and is attached to the cut resistant
+				material of the apron.
+			</claim-text>
+		</claim>
+		<claim id="CLM-00003" num="00003">
+			<claim-text>
+				3. The cut resistant garment of
+				<claim-ref idref="CLM-00001">claim 1</claim-ref>
+				, wherein the garment has no exposed shoulder seams.
+			</claim-text>
+		</claim>
+	</claims>
+</us-patent-grant>

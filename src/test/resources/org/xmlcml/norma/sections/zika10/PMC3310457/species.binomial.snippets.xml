@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="target/tutorial/zika10/PMC3310457/results/species/binomial/results.xml">
+  <result pre="r named Zika virus, was isolated from the mouse brains. In early 1948, ZIKV was also isolated from " exact="Aedes africanus" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Aedes africanus" post=" mosquitoes trapped in the same forest ( 4 ). Serologic studies indicated tha" name="binomial"/>
+  <result pre="umans could also be infected ( 5 ). Transmission of ZIKV by artificially fed " exact="Ae. aegypti" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. aegypti" post=" mosquitoes to mice and a monkey in a laboratory was reported in 1956 ( 6 ). " name="binomial"/>
+  <result pre="&gt; – 14 ). In additional investigations, the virus was isolated from " exact="Ae. aegypti" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. aegypti" post=" mosquitoes in Malaysia, a human in Senegal, and mosquitoes in Côte d’Ivoire ( 1" name="binomial"/>
+  <result pre="ZIKV has been isolated from " exact="Ae. africanus" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. africanus" post=", Ae. apicoargenteus, Ae. luteocephalus, Ae. aegypti, Ae vitattus, and " name="binomial"/>
+  <result pre="ZIKV has been isolated from Ae. africanus, " exact="Ae. apicoargenteus" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. apicoargenteus" post=", Ae. luteocephalus, Ae. aegypti, Ae vitattus, and Ae. furcifer mosquit" name="binomial"/>
+  <result pre="ZIKV has been isolated from Ae. africanus, Ae. apicoargenteus, " exact="Ae. luteocephalus" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. luteocephalus" post=", Ae. aegypti, Ae vitattus, and Ae. furcifer mosquitoes ( 9&lt;" name="binomial"/>
+  <result pre=" has been isolated from Ae. africanus, Ae. apicoargenteus, Ae. luteocephalus, " exact="Ae. aegypti" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. aegypti" post=", Ae vitattus, and Ae. furcifer mosquitoes ( 9 , &lt;a hre" name="binomial"/>
+  <result pre=", Ae. apicoargenteus, Ae. luteocephalus, Ae. aegypti, Ae vitattus, and " exact="Ae. furcifer" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. furcifer" post=" mosquitoes ( 9 , 15 , " name="binomial"/>
+  <result pre=" href=&quot;#R15&quot;&gt; 15 , 17 , 19 ). " exact="Ae. hensilii" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. hensilii" post=" was the predominant mosquito species present on Yap during the ZIKV disease outbreak in 2007, but " name="binomial"/>
+  <result pre="V in any mosquitoes on the island during the outbreak ( 2 ). Dick noted that " exact="Ae. africanus" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. africanus" post=" mosquitoes, which were abundant and infected with ZIKV in the Zika Forest, were not likely to ente" name="binomial"/>
+  <result pre="Boorman and Porterfield subsequently demonstrated transmission of ZIKV to mice and monkeys by " exact="Ae. aegypti" xpath="/html[1]/body[1]/div[2]/div[2]/p[2]" match="Ae. aegypti" post=" in a laboratory ( 6 ). Virus content in the mosquitoes was high on the day o" name="binomial"/>
+  <result pre="uitoes is ≈10 days. The authors cautioned that their results did not conclusively demonstrate that " exact="Ae. aegypti" match="Ae. aegypti" post=" mosquitoes could transmit ZIKV at lower levels of viremia than what might occur among host animals" name="binomial"/>
+ </snippets>
+</snippetsTree>

@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-grant SYSTEM "us-patent-grant-v45-2014-04-03.dtd" [ ]>
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US08978167-20150317.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20150302" date-publ="20150317">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>08978167</doc-number>
+<kind>B2</kind>
+<date>20150317</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>13164704</doc-number>
+<date>20110620</date>
+</document-id>
+</application-reference>
+<us-application-series-code>13</us-application-series-code>
+<priority-claims>
+<priority-claim sequence="01" kind="national">
+<country>AU</country>
+<doc-number>2010902662</doc-number>
+<date>20100618</date>
+</priority-claim>
+</priority-claims>
+<us-term-of-grant>
+<us-term-extension>276</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>00</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>1</main-group>
+<subgroup>08</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>12</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>1</main-group>
+<subgroup>08</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>A</section>
+<class>42</class>
+<subclass>B</subclass>
+<main-group>3</main-group>
+<subgroup>128</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20150317</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<classification-national>
+<country>US</country>
+<main-classification>  2414</main-classification>
+<further-classification>  2410</further-classification>
+</classification-national>
+<invention-title id="d2e71">Protective headgear</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>2442052</doc-number>
+<kind>A</kind>
+<name>Mauro</name>
+<date>19480500</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2412</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>2698434</doc-number>
+<kind>A</kind>
+<name>Davia</name>
+<date>19550100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2415</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>3018210</doc-number>
+<kind>A</kind>
+<name>Frieder et al.</name>
+<date>19620100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2  25</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>3935044</doc-number>
+<kind>A</kind>
+<name>Daly</name>
+<date>19760100</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>4439871</doc-number>
+<kind>A</kind>
+<name>Plastino</name>
+<date>19840400</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00006">
+<document-id>
+<country>US</country>
+<doc-number>4575871</doc-number>
+<kind>A</kind>
+<name>Auerbach et al.</name>
+<date>19860300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00007">
+<document-id>
+<country>US</country>
+<doc-number>5226180</doc-number>
+<kind>A</kind>
+<name>Leach</name>
+<date>19930700</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00008">
+<document-id>
+<country>US</country>
+<doc-number>5269026</doc-number>
+<kind>A</kind>
+<name>McManus</name>
+<date>19931200</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00009">
+<document-id>
+<country>US</country>
+<doc-number>5289591</doc-number>
+<kind>A</kind>
+<name>Andersen</name>
+<date>19940300</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00010">
+<document-id>
+<country>US</country>
+<doc-number>5313668</doc-number>
+<kind>A</kind>
+<name>Bogan et al.</name>
+<date>19940500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00011">
+<document-id>
+<country>US</country>
+<doc-number>5437064</doc-number>
+<kind>A</kind>
+<name>Hamaguchi</name>
+<date>19950800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00012">
+<document-id>
+<country>US</country>
+<doc-number>5519895</doc-number>
+<kind>A</kind>
+<name>Barnes, Jr.</name>
+<date>19960500</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00013">
+<document-id>
+<country>US</country>
+<doc-number>5657492</doc-number>
+<kind>A</kind>
+<name>Esposito, Jr.</name>
+<date>19970800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00014">
+<document-id>
+<country>US</country>
+<doc-number>5829065</doc-number>
+<kind>A</kind>
+<name>Cahill</name>
+<date>19981100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2418</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00015">
+<document-id>
+<country>US</country>
+<doc-number>5887289</doc-number>
+<kind>A</kind>
+<name>Theoret</name>
+<date>19990300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2425</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00016">
+<document-id>
+<country>US</country>
+<doc-number>6240570</doc-number>
+<kind>B1</kind>
+<name>Wu</name>
+<date>20010600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2410</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00017">
+<document-id>
+<country>US</country>
+<doc-number>6256799</doc-number>
+<kind>B1</kind>
+<name>McGlasson et al.</name>
+<date>20010700</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2422</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00018">
+<document-id>
+<country>US</country>
+<doc-number>6453476</doc-number>
+<kind>B1</kind>
+<name>Moore, III</name>
+<date>20020900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2412</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00019">
+<document-id>
+<country>US</country>
+<doc-number>D479020</doc-number>
+<kind>S</kind>
+<name>Heinrich</name>
+<date>20030800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>D29122</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00020">
+<document-id>
+<country>US</country>
+<doc-number>6711752</doc-number>
+<kind>B2</kind>
+<name>Smith</name>
+<date>20040300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2422</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00021">
+<document-id>
+<country>US</country>
+<doc-number>6848122</doc-number>
+<kind>B1</kind>
+<name>Meeds</name>
+<date>20050200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2422</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00022">
+<document-id>
+<country>US</country>
+<doc-number>7010814</doc-number>
+<kind>B2</kind>
+<name>Benziger</name>
+<date>20060300</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  220913</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00023">
+<document-id>
+<country>US</country>
+<doc-number>7096512</doc-number>
+<kind>B2</kind>
+<name>Blair</name>
+<date>20060800</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+<us-citation>
+<patcit num="00024">
+<document-id>
+<country>US</country>
+<doc-number>2008/0222782</doc-number>
+<kind>A1</kind>
+<name>Stokes</name>
+<date>20080900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2422</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00025">
+<document-id>
+<country>US</country>
+<doc-number>2008/0250549</doc-number>
+<kind>A1</kind>
+<name>Summers et al.</name>
+<date>20081000</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2425</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00026">
+<document-id>
+<country>US</country>
+<doc-number>2009/0158507</doc-number>
+<kind>A1</kind>
+<name>Ping</name>
+<date>20090600</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-national><country>US</country><main-classification>  2412</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00027">
+<document-id>
+<country>WO</country>
+<doc-number>WO 90/06698</doc-number>
+<date>19900600</date>
+</document-id>
+</patcit>
+<category>cited by applicant</category>
+</us-citation>
+</us-references-cited>
+<number-of-claims>18</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>  2410</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2171</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2425</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2409</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2412</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2411</main-classification>
+</classification-national>
+<classification-national>
+<country>US</country>
+<main-classification>  2414</main-classification>
+</classification-national>
+<classification-cpc-text>A42B 1/08</classification-cpc-text>
+<classification-cpc-text>A42B 3/128</classification-cpc-text>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>14</number-of-drawing-sheets>
+<number-of-figures>17</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20110307997</doc-number>
+<kind>A1</kind>
+<date>20111222</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Blair</last-name>
+<first-name>Mary Lynne</first-name>
+<address>
+<city>Newport</city>
+<country>AU</country>
+</address>
+</addressbook>
+<residence>
+<country>AU</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Blair</last-name>
+<first-name>Mary Lynne</first-name>
+<address>
+<city>Newport</city>
+<country>AU</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+<agents>
+<agent sequence="01" rep-type="attorney">
+<addressbook>
+<orgname>Straub &#x26; Pokotylo</orgname>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="02" rep-type="attorney">
+<addressbook>
+<last-name>Straub</last-name>
+<first-name>Michael P.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+<agent sequence="03" rep-type="attorney">
+<addressbook>
+<last-name>Straub</last-name>
+<first-name>Stephen T.</first-name>
+<address>
+<country>unknown</country>
+</address>
+</addressbook>
+</agent>
+</agents>
+</us-parties>
+<examiners>
+<primary-examiner>
+<last-name>Huynh</last-name>
+<first-name>Khoa</first-name>
+<department>3765</department>
+</primary-examiner>
+<assistant-examiner>
+<last-name>Kinsaul</last-name>
+<first-name>Anna</first-name>
+</assistant-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A protective headgear device including a fabric cap (<b>102</b>) into which a hard shell (<b>120</b>) of reinforced fibers is inserted. A foam liner <b>140</b> or foam inserts (<b>1500</b>) are secured to the hard outer shell <b>120</b> and serve a shock absorbing function. The foam liner (<b>14</b>) and/or foam inserts (<b>120</b>) include or form grooves and/or channels used to direct hot air towards the top center of the headgear assembly where the hot air can be vented through holes which extend through the cap (<b>102</b>) and hard outer shell (<b>120</b>). The holes may pass through the foam liner <b>140</b> or meet up with holes on channels in or between the foam inserts through which air can pass. The hard outer shell maybe thinnest on top and thicker on the left and right sides. The center front and rear may be the same thickness as the top of the hard shell.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="223.69mm" wi="133.94mm" file="US08978167-20150317-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="237.41mm" wi="135.38mm" file="US08978167-20150317-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="215.56mm" wi="152.82mm" orientation="landscape" file="US08978167-20150317-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="138.60mm" wi="174.50mm" file="US08978167-20150317-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00004" num="00004">
+<img id="EMI-D00004" he="244.69mm" wi="144.19mm" file="US08978167-20150317-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00005" num="00005">
+<img id="EMI-D00005" he="131.32mm" wi="131.57mm" file="US08978167-20150317-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00006" num="00006">
+<img id="EMI-D00006" he="251.04mm" wi="132.59mm" file="US08978167-20150317-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00007" num="00007">
+<img id="EMI-D00007" he="242.57mm" wi="140.89mm" file="US08978167-20150317-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00008" num="00008">
+<img id="EMI-D00008" he="218.36mm" wi="145.46mm" orientation="landscape" file="US08978167-20150317-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00009" num="00009">
+<img id="EMI-D00009" he="242.15mm" wi="139.95mm" file="US08978167-20150317-D00009.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00010" num="00010">
+<img id="EMI-D00010" he="226.82mm" wi="131.74mm" orientation="landscape" file="US08978167-20150317-D00010.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00011" num="00011">
+<img id="EMI-D00011" he="154.01mm" wi="162.14mm" file="US08978167-20150317-D00011.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00012" num="00012">
+<img id="EMI-D00012" he="205.66mm" wi="161.37mm" file="US08978167-20150317-D00012.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00013" num="00013">
+<img id="EMI-D00013" he="187.20mm" wi="146.90mm" file="US08978167-20150317-D00013.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00014" num="00014">
+<img id="EMI-D00014" he="235.71mm" wi="131.66mm" orientation="landscape" file="US08978167-20150317-D00014.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">The present application is related to Australian provisional patent application 2010902662, filed Jun. 18, 2010 which is hereby expressly incorporated by reference in its entirety.</p>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The invention relates to protective headgear and, more particularly, protective headgear suitable for use as or with caps that may be worn at sporting or events.</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">As the medical understanding of the potential long lasting and sometimes permanent effects of head trauma can have on affected individuals has increased, there has been an appreciation of the fact that protective headgear can reduce such trauma significantly in many cases.</p>
+<p id="p-0005" num="0004">Various potential applications for protective headgear include baseball games, golf matches and/or other sporting events where participants and/or fans may be hit with a ball or other flying object. In addition to ball impacts, a person may fall or collide with another person or object while cycling, skating, skate boarding, or taking part in activities on the ski slopes. such impacts may also be of concern.</p>
+<p id="p-0006" num="0005">While balls are often the objects which first come to mind as a potential source of head trauma at a sporting event, bottles and/or other objects thrown by crowds are another potential source of head trauma. While players are often the victims of ball strikes, police and/or other security forces are often the individuals who suffer from thrown bottles and/or impacts to the head from unruly fans or crowds. Accordingly, in addition to a need for protective headgear for sports participants, there is also a need for protective headgear for security personal and/or fans.</p>
+<p id="p-0007" num="0006">While wearing protective headgear at sporting events such as baseball and golf games offer some protection from impacts, conventional headgear has many drawbacks which remain to be addressed.</p>
+<p id="p-0008" num="0007">In order to provide adequate protection from baseballs and/or other objects which may reach speeds of many miles an hour, conventional approaches to protective headgear may result in helmets which are heavy, unsightly and/or have a tendency to trap heat. The unsightly nature of conventional helmets designs results in people tending not to wear them because they may cause an individual to stand out in a crowd or appear unsightly. The problem of weight and trapping of heat relate to a helmet being uncomfortable to wear due to the heavy nature of a helmet and/or the helmet causing the wearer to overheat leading to a tendency for the user to frequently remove the helmet and/or discontinue use.</p>
+<p id="p-0009" num="0008">At present, baseball/golf caps offer little protection for the head from flying balls while heavy helmets are unsuitable for many applications. In addition, while there are protective helmets that some people wear whilst carrying out activities such as bicycling and skateboarding, as noted above, existing helmets can be hot and uncomfortable. Furthermore, the weight can put undue stress on the delicate neck muscles because they are heavy and cumbersome which may contribute to broken necks in some accidents where the wearer is involved in a collision. With many existing helmets the wearer's sense of hearing is impaired because the ears are partially or fully covered by the helmet. This can cause anxiety and a lack of communication, which can lead to danger. Aesthetically, many people also prefer to wear their favorite hats instead of a cumbersome helmet.</p>
+<p id="p-0010" num="0009">Previous inventions and designs have proposed rigid plastic and foam inserts for hats such as those described in U.S. Pat. Nos. 4,439,871, 5,289,591, 5,519,895, 5,437,064, 5,657,492, 7,096,512.</p>
+<p id="p-0011" num="0010">There have been many protective headgear suggestions in the past. For example, U.S. Pat. No. 4,439,871 (referred to above) to Plastino, discloses a single shell consisting of a rigid unreinforced plastic which is relatively heavy and discloses an inner circular foam piece for the op of the head. The sides, front and back of the head fail to provide comprehensive protection to the head and the rigid plastic may tend to transfer the impact force rather than absorb and distribute it.</p>
+<p id="p-0012" num="0011">U.S. Pat. No. 5,289,591 to Anderson discloses a rigid plastic shell with many ventilation holes and a cutout section to fit inside an adjustable exterior baseball cap. The shell is unlikely to provide any real protection with the many holes weakening the strength and impact protection of the shell and the lack of a foam liner.</p>
+<p id="p-0013" num="0012">U.S. Pat. No. 5,519,895 to Barnes discloses a baseball type cap for over a sports helmet. It fits over the helmet with a special elastic band. There is no means of identification that a helmet is under the hat and there is no specific helmet to accompany the cap.</p>
+<p id="p-0014" num="0013">U.S. Pat. No. 5,269,026 to McManus discloses a safety liner, which is adjustable and only partially encircles the head.</p>
+<p id="p-0015" num="0014">In the inventor's previous U.S. Pat. No. 7,096,512 and Australian No. 2001293515, a double layer protective insert provides impact protection to the general skull area. While the described protective devices offers many advantages over previous protective systems, the design left room for improvement with regard to impact protection, heat dissipation, wear ability and/or the ability to detect that insert was in use under a cap.</p>
+<p id="p-0016" num="0015">In view of the above discussion, it should be appreciated that there is a need for new and improved protective headgear. It is an object of the present invention to address one or more the problems of the existing protection devices as are described above, and provide a protective insert and/or hat assembly which provides suitable protection to the wearer. While not necessary it would be desirable if at least in some embodiments the protective headgear has a pleasing aesthetic appearance while still providing suitable impact protection.</p>
+<heading id="h-0004" level="1">SUMMARY OF THE INVENTION</heading>
+<p id="p-0017" num="0016">The sports hat appears to be that of an ordinary sports hat and the inventor has devised a system to show law enforcement officers or other interested parties that there is a protective insert under the hat. A hole cut out in the hat in a design shaped in a symbol associated with the sports use, shows the insert showing through the hole to prove that it is not an ordinary hat but that it contains a protective insert for a specific sports or spectator use.</p>
+<p id="p-0018" num="0017">The inserts may, and in some embodiments do use different colors to show the different sports and a symbol for each sport could be displayed as the hole with a matching symbol on the insert device. In this way, the sports hat is identified as having a protective insert device for the respective sport inside the sports hat.</p>
+<p id="p-0019" num="0018">The cloth liner has a pad that lines up with the ear cutout section of the outer shell for added comfort. The sports hat provides an inner comfort band to accommodate the cutout section for the ear.</p>
+<p id="p-0020" num="0019">This invention relates to a device for providing some protection to the head of the wearer of a hat, while the wearer is taking part in sporting activities or as a spectator. In one aspect, the device is particularly for protecting the wearer when a flying object, such as a golf ball or baseball, soccer ball or other flying object strikes the wearer's head (scenario <b>1</b>). Scenario <b>1</b> does not require the use of a retention strap. In a second aspect, the device is for protecting the wearer's head in collision with the ground or other object (scenario <b>2</b>), such as when the wearer is cycling, skate boarding, skating, snow boarding, or skiing. Scenario <b>2</b> requires the use of a permanent retention strap as required by helmet standards for the respective sports uses where the wearer is the possible flying object.</p>
+<p id="p-0021" num="0020">According to the present invention, there is provided a device for insertion into a sports hat or the like comprising:</p>
+<p id="p-0022" num="0021">a solid outer shell with a cutout for the ear allowing better coverage to the temporal area;</p>
+<p id="p-0023" num="0022">an inner layer of foam material, with a solid lower tapered edge with a cutout section for the ear, with the insert being sized and shaped for insertion into a typical sports cap such as a baseball cap or the like;</p>
+<p id="p-0024" num="0023">an outer shell without an ear piece covering the ear and a mating inner foam liner system covering the ear in cases where more protection to the complete temporal area is required;</p>
+<p id="p-0025" num="0024">a cutout section in the sports hat as identification to show that there is a protective insert contained within;</p>
+<p id="p-0026" num="0025">a stretchy wide inner band that covers the ear cutout modified to hold the insert in place inside the sports hat;
+<ul id="ul0001" list-style="none">
+    <li id="ul0001-0001" num="0000">
+    <ul id="ul0002" list-style="none">
+        <li id="ul0002-0001" num="0026">an optional cloth liner that attaches over the insert with a pad to cover the ear cutout section to provide comfort.</li>
+    </ul>
+    </li>
+</ul>
+</p>
+<p id="p-0027" num="0027">The outer shell of the present invention uses as the preferred embodiment the use of reinforced fibres such as polyethylene with the trade name INNEGRA&#x2122;S with alternating layers of glass which is lightweight and has natural shock absorbing properties or rigid unreinforced plastic could be substituted as a heavier and less expensive alternative. The polyethylene INNEGRA&#x2122;S is a new fabric that has similar shock absorbency properties to aramids such as KEVLAR&#xae; with the polyethylene INNEGRA&#x2122;S costing much less and providing similar shock absorption and weight. In cases where high ballistic impact protection is required, polyethylene can be used combined with aramids or carbons or other polyethylenes (trade names of SPECTRA&#xae; or DYNEEMA&#xae; or basalt to produce lightweight impact protection at reduced cost. The inner layer is composed of foamed plastic such as vinyl nitrile, Shox IV, expanded polystyrene (EPS) or any adaptive energy absorbing liner.</p>
+<p id="p-0028" num="0028">Thus the present invention provides a composite insert having a protective shell having a shock absorbing inner liner which together combine to provide sufficient protection for Scenario <b>1</b> or Scenario <b>2</b> and are relatively comfortable to wear and can also be fitted inside headwear such as baseball caps or toques or beanies which are more likely to be worn by e.g. the youth market or by golfers who do not wish to look out of the ordinary on a golf course by wearing a cumbersome protective helmet. The present invention is lightweight and absorbs sweat for comfort. Ventilation holes in the top also provide cooling. The cutout section for the ear allows the insert to sit lower on the head thus providing deeper impact protection to the delicate temporal area of the skull. Instead of vinyl nitrile, the inner layer might be HPDE (high density polyethylene), expanded polypropylene (EPP) or expanded polystyrene (EPS). Gaps (<b>7</b><i>a</i>) in the foam for certain activities provide ventilation and the strategic location of the gaps does not compromise the impact results. A cutout hole shaped as a symbol in the front and/or rear of the hat shows the protective insert underneath.</p>
+<p id="p-0029" num="0029">In one particular preferred form of the invention, the outer shell is a thin lining made from a moulded compound utilizing reinforced fibres such as any fiberglass or aramid combined with alternating layers of polyethylene INNEGRA&#x2122;S. The polyethylene INNEGRA&#x2122;S performs well when it is sandwiched on the inside layers of the shell. The sides of the shell maybe implemented with a hybrid extra layer of polyethylene INNEGRA&#x2122;S and glass or aramid to provide added impact protection as compared to other portions of the shell. Basalt can be used as a reinforced fiber that is less expensive than polyethylene and aramid and has good impact and lightweight properties. It can be used on its own or as a hybrid with glass. The sides have a flatter exposed area and require extra impact protection. This combination is lightweight yet provides additional protection from an impact.</p>
+<p id="p-0030" num="0030">In another form of the invention, the outer shell uses a rigid unreinforced plastic as a cheaper but heavier alternative as the outer shell.</p>
+<p id="p-0031" num="0031">In another form of the invention a solid foam liner with tapered edge and a cutout section for the ear of high density foam such as vinyl nitrile, EPP, EPS, HPDE or the like may be used to provide protection from an impact.</p>
+<p id="p-0032" num="0032">In another form of the invention a foam liner with gaps provides ventilation and provides impact protection in combination with the foam.</p>
+<p id="p-0033" num="0033">In another form of the invention, the cutout sections over the ear in both the outer shell and inner liner provide added protection to the temporal area of the skull in the case of an impact.</p>
+<p id="p-0034" num="0034">In another form of the invention the rear half of the insert device is lower than the front half of the insert device for better coverage for rear and complies with other standardized helmet tests such as for cycling or baseball batter's helmet.</p>
+<p id="p-0035" num="0035">In another form of the invention the outer sports cap can be manufactured to include a widened inner stretchy band with a section that provides a sleeve for the ear cutout section and lines up with the lower edge of the insert and holds the insert in place.</p>
+<p id="p-0036" num="0036">In another form of the invention the sports cap is deeper than the ordinary cap because it contains the insert device that adds space between the head and cap.</p>
+<p id="p-0037" num="0037">In another form of the invention the cloth liner has an ear cutout shape and thin padding along the lower edge of the ear cutout to provide comfort to the wearer.</p>
+<p id="p-0038" num="0038">In another form of the invention the cloth liner has a lower flap that slips into the sleeve opening of the outer cap at the ear cutout.</p>
+<p id="p-0039" num="0039">In another form of the invention slits or holes are punctured along the top of the outer shell and inner liner to provide ventilation.</p>
+<p id="p-0040" num="0040">In another form of the invention the outer shell and inner foam liners have an ear covering section for extra protection to the ear and full temporal area of the head.</p>
+<p id="p-0041" num="0041">In another form of the invention the cutout sections in the sports cap are made in the front and/or back of the cap to show that there is a protective insert underneath.</p>
+<p id="p-0042" num="0042">In another form of the invention the identification cutout sections are shaped in a symbol that pertains to the sporting use, such as a diamond shape for baseball, a golf flag for golf, a snowflake for the winter hat for general winter activities, a snowboard or ski and poles for snowboarding and a horse for equestrian use.</p>
+<p id="p-0043" num="0043">In another form of the invention the outer shell has a specific color for a specific use such as green for golf, white for baseball, red for winter sports, tan for equestrian sports uses.</p>
+<p id="p-0044" num="0044">In another form on the invention the colors of the outer shell could be made from glow-in-the dark pigment for better visibility.</p>
+<p id="p-0045" num="0045">In another form of the invention, a retention strap must be permanently attached to the device on at least one side of the outer shell and must be secured to the head in the second scenario in accordance with the standardized test requirements for the respective countries and sports. The prototype of the present invention passed the Australia/New Zealand Standardized retention strap requirements for pedal cycling when used according to the permanent rivet and mating snap attachment model embodying to the present invention described below.</p>
+<p id="p-0046" num="0046">The above described embodiments are only exemplary and are not intended to limit the scope of the invention. Numerous additional features and embodiments are described in the detailed description which follows.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0047" num="0047"><figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary protective device in the form of headgear comprising a cap, an outer shell composed of reinforced fibers and/or a plastic material, and a corresponding inner foam liner with front and rear tapered ventilation slots and differing thicknesses of foam for different regions of the foam liner.</p>
+<p id="p-0048" num="0048"><figref idref="DRAWINGS">FIG. 2</figref> illustrates a cross section of the assembled headgear shown in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0049" num="0049"><figref idref="DRAWINGS">FIG. 3</figref> is an angled bottom view of the assembled headgear shown in <figref idref="DRAWINGS">FIG. 2</figref>.</p>
+<p id="p-0050" num="0050"><figref idref="DRAWINGS">FIG. 4</figref> is a top view of the outer shell of the exemplary headgear shown in <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0051" num="0051"><figref idref="DRAWINGS">FIG. 5</figref> is a bottom view of the combined outer shell and foam liner of the headgear assembly of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+<p id="p-0052" num="0052"><figref idref="DRAWINGS">FIG. 6</figref> is a left side view of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIG. 4</figref>.</p>
+<p id="p-0053" num="0053"><figref idref="DRAWINGS">FIG. 7</figref> is a front view of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIG. 6</figref>.</p>
+<p id="p-0054" num="0054"><figref idref="DRAWINGS">FIG. 8</figref> is another bottom angled view of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIGS. 4-6</figref>.</p>
+<p id="p-0055" num="0055"><figref idref="DRAWINGS">FIG. 9</figref> illustrates exemplary headgear implemented in accordance with the invention that includes a chin strap.</p>
+<p id="p-0056" num="0056"><figref idref="DRAWINGS">FIG. 10</figref> is a side cross section view of the headgear shown in <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<p id="p-0057" num="0057"><figref idref="DRAWINGS">FIGS. 11 and 12</figref> illustrate exemplary caps which may be used in either of the <figref idref="DRAWINGS">FIG. 1</figref> or <figref idref="DRAWINGS">FIG. 9</figref> embodiments including a hole through which the presence or absence of the hard outer shell may be observed without removal of the cap from an individual wearing one of the exemplary caps.</p>
+<p id="p-0058" num="0058"><figref idref="DRAWINGS">FIGS. 13 and 14</figref> show a cap with an outer hard shell and foam liner inserted into a cap where the cap includes an elastic sweat band which covers the entire ear cut out portion of the foam liner and hard outer shell.</p>
+<p id="p-0059" num="0059"><figref idref="DRAWINGS">FIG. 15</figref> illustrates a set of foam cutouts which, in some embodiments, are secured to the inside of the hard outer shell and used in place of the foam liner shown in the <figref idref="DRAWINGS">FIG. 1</figref> embodiment.</p>
+<p id="p-0060" num="0060"><figref idref="DRAWINGS">FIG. 16</figref> is a bottom view of the headgear assembly of <figref idref="DRAWINGS">FIG. 15</figref> including the foam cutouts secured to a hard outer shell.</p>
+<p id="p-0061" num="0061"><figref idref="DRAWINGS">FIG. 17</figref> is a cross-section view of an exemplary headgear assembly implemented using the foam cutouts shown in <figref idref="DRAWINGS">FIGS. 15 and 16</figref>.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION</heading>
+<p id="p-0062" num="0062">Referring to the drawings, <figref idref="DRAWINGS">FIG. 1</figref> illustrates an exemplary protective device <b>100</b> in the form of headgear comprising a cap <b>102</b>, an outer shell <b>120</b>, and a corresponding inner foam liner <b>140</b>. As illustrated by arrow <b>126</b>, the foam liner is inserted into the hard outer shell <b>120</b>. The foam liner <b>140</b> is normally secured to the hard outer shell via an adhesive or by molding the foam liner directly into the shell so that it is adheres and conforms to the inside surface of the hard outer shell. While shown as separate components, during use the foam inner liner is secured to the hard outer shell and remains attached thereto as a combined outer shell and foam liner assembly, referred to herein as the combined assembly <b>120</b>, <b>140</b>. The combined assembly can be inserted into the cap <b>102</b> when protection from impacts is desired as shown by arrow <b>116</b>. Depending on the embodiment the thickness of the foam liner may vary. In some embodiments the thickness of the foam liner is between 4 mm and 32 mm. However, this range is only exemplary and other thicknesses are possible.</p>
+<p id="p-0063" num="0063">Advantageously, the combined assembly can be removed from the cap at times when impact protection is not required, e.g., during innings and/or when the wearer of the cap <b>102</b> is not concerned with the risk of an impact from an object or fall.</p>
+<p id="p-0064" num="0064">The cap <b>102</b> has the general appearance of a conventional baseball or golf cap and includes an outer fabric material <b>104</b>, a brim <b>106</b>, reinforcing fabric straps <b>112</b>, and a fabric covered rivet <b>115</b> at the top of the cap <b>102</b>. While from the outside the cap appears similar to conventional caps, in accordance with the present invention, the cap <b>102</b> includes an elastic band <b>114</b> around the inside rim of the cap <b>102</b> and a plurality of ventilation holes <b>108</b> positioned so that they will line up with corresponding ventilation holes of insert <b>120</b> and foam liner <b>140</b>. Elastic band <b>114</b>, in some embodiments, is relatively large in size, e.g., between 1&#xbc;&#x2033; and 2&#x2033;. In some embodiments the elastic band <b>114</b> is combined with fabric and implemented in the form of a fabric stretch band. While being capable of absorbing sweat, the band serves the useful function of acting as a flap which can be bent or turned down as while the combined assembly (<b>140</b>, <b>120</b>) is inserted or removed. The flap can be bent up into the position shown in <figref idref="DRAWINGS">FIG. 1</figref> and used to retain the combined assembly inside the cap <b>102</b> with the ventilation holes <b>128</b>, <b>159</b> in the combined assembly aligned with the holed <b>108</b> of the cap <b>102</b>. The elastic flap, in some embodiments, is made from a loosely woven material allowing air to easily pass through the elastic band, e.g., elastic sweat band, with little resistance to air flow.</p>
+<p id="p-0065" num="0065">In some but not necessarily all embodiments sticking is used to secure the bottom edge of the elastic sweat band <b>114</b> to the bottom lip of the cap <b>102</b>. Additional stitching <b>110</b> is used, in some embodiments, to form a reinforced area which conforms to the contour of an ear cutout <b>121</b> on the combined assembly. The stitching which may forms a raised area relative to the bottom of the cap which facilitates alignment of the combined assembly <b>120</b>, <b>140</b> when it is inserted into the cap and helps retain the combined assembly in the cap in a relatively secure manner.</p>
+<p id="p-0066" num="0066">While in various embodiments the caps <b>102</b> are matched in size to the combined assembly <b>120</b>, <b>140</b>, the cap <b>102</b> may, and in some embodiments does, include an adjustable band at the back of the cap which can be adjusted to different sizes. In this manner, a single cap <b>102</b> can be used with a variety of different size combined inserts <b>120</b>, <b>140</b>.</p>
+<p id="p-0067" num="0067">The hard outer shell <b>120</b> may, and in some embodiments is made of reinforced fibers and/or a plastic material. In some embodiments, the hard outer shell is a molded or layered compound material utilizing reinforced fibres such as the new polyolefin Innegra&#x2122;S, basalt, aramid (KEVLAR&#xae; or TWARON&#xae;) or polyethylene (SPECTRA&#xae;, DYNEEMA&#xae; and a resin. Glass fibers may also be used. The top outer surface <b>122</b> of the hard outer shell is smooth. In one particular embodiment the hard outer shell is made from alternating layers of several of the materials. One particularly desirable combination has been found to be a set of alternating layers of materials as follows: 300g2m Glass, INNEGRA, SORIC, INNEGRA, 300g2m Glass. Thus, in some embodiments, the hard outer shell is made of materials which change from layer to layer. In some embodiments the outer shell is made of at least 2 or more different fiber based materials. In some cases such as in the 5 layer example that is discussed above, at least 3 different reinforced fiber materials are used. Note that epoxy resin may be used in the making of the hard outer shell in addition to the fiber materials with the epoxy acting as a reinforcing agent. In some embodiments the hard outer shell has a thickness in the range of 1 mm to 2 mm in thickness. Different portions of the outer shell may include different numbers of material layers. In some embodiments left and right sidewalls include one or more additional layers of materials than the top of the hard outer shell.</p>
+<p id="p-0068" num="0068">In some embodiments the left and right sidewalls of the hard outer shell are constructed to have a thickness in the range of 0.12 to 0.16 inches in thickness at its thickest point, e.g., the left and right sidewall area above the ears. In some embodiments the maximum thickness of the hard outer shell is kept to between 0.13 to 0.15&#x2033;. In at least some such embodiments, the thinnest part of the shell may be in the range of 0.04 to 0.07&#x2033; in thickness. This may be at the top center of the hard outer shell.</p>
+<p id="p-0069" num="0069">In many but not all embodiments, the hard outer shell <b>120</b> is colored, e.g., by using a colored plastic or resin or by painting the outside surface <b>122</b>, a color which is intended to contrast with the outside color of the cap <b>102</b> or a design included thereon. Thus, the outer surface of the hard shell <b>120</b> is often colored a dark blue, black or some other color when the outside fabric of the cap <b>102</b> or symbol on the cap is a light color. Alternatively, the outside surface <b>122</b> of the outer shell <b>120</b> is colored a bright light color, e.g., when the hard shell <b>120</b> is to be used with a dark colored cap <b>102</b> or with a dark symbol on the cap.</p>
+<p id="p-0070" num="0070">The coloration of the outside surface <b>122</b> is not important in all embodiments but can be desirable in some embodiments, particularly embodiments such as those shown in <figref idref="DRAWINGS">FIGS. 11 and 12</figref>. In <figref idref="DRAWINGS">FIGS. 11 and 12</figref> the exemplary caps <b>1102</b>, <b>1202</b> are covered in fabric <b>1104</b>, <b>1204</b> and include one or more symbols <b>1106</b>, <b>1206</b> stitched or glued to the cap. The symbols <b>1106</b>, <b>1206</b> each include a hole <b>1108</b>, <b>1208</b> through which the surface of the hard outer shell is visible. By using different colors for the surface of the hard outer shell and/or symbols <b>1106</b>, <b>1206</b> and cap material <b>1104</b>, <b>1204</b> it is easy for a coach or other observer to determine whether or not the combined shell and liner assembly is being used without requiring removal of the cap <b>1102</b>, <b>1202</b> to make the determination. Thus, a coach can quickly determine if the team players are using the protective combined assembly with the cap at the appropriate times, e.g., when playing on the field.</p>
+<p id="p-0071" num="0071">In accordance with one feature of the invention, in some embodiments the left and right sidewalls of the hard outer shell are intentionally thicker than the other portions of the shell <b>120</b>. The added thickness may be achieved by using one or more layers of reinforced material on the sides of the outer shell <b>120</b> than are used on the top and front/rear center portions of the hard outer shell. The added thickness provides increased protection to the left and right sides of the head providing added protection over the ears. Such an embodiment is particularly well suited to baseball applications where side impacts from baseballs maybe of concern. In other embodiments, e.g., those intended for golf ball or use by security personal, the hard outer shell maybe of generally uniform thickness.</p>
+<p id="p-0072" num="0072">Referring once again to <figref idref="DRAWINGS">FIG. 1</figref>, the foam liner will now be described in more detail. The exemplary foam liner <b>140</b> shown in <figref idref="DRAWINGS">FIG. 1</figref> is particularly well suited for baseball application but is not limited to such applications. The thickness of the foam liner varies but can be considered as corresponding to three types of regions, i.e., front and rear regions <b>148</b>, side regions <b>147</b> and a center top region <b>149</b>. The thickness of the foam in each region takes into consideration impact concerns as well as heat dissipation concerns. As should be appreciated the thicker the foam the greater its insulating and heat retention effect.</p>
+<p id="p-0073" num="0073">In the <figref idref="DRAWINGS">FIG. 1</figref> example, the center top region includes multiple vent holes <b>159</b> and corresponding tapered air flow guides <b>158</b> which direct air from the central region <b>149</b> through the holes <b>159</b>. The center top region <b>149</b>, e.g., a recessed area in the top portion of the foam liner <b>140</b>, is oval in shape and the thinnest part of the foam liner. The oval shape serves as an air collection pocket for collecting and directing hot air out through the top of the liner. Left and right side areas <b>147</b> are the thickest part of the liner <b>140</b> providing a high degree of protection from impacts to the side of the head. Front and rear model sections <b>148</b> are of intermediate thickness providing more impact protection than the top portion but less than the side portions <b>147</b>.</p>
+<p id="p-0074" num="0074">As shown in <figref idref="DRAWINGS">FIG. 1</figref> the front and rear inside portions <b>148</b> of the liner <b>140</b> each include a series of ventilation grooves <b>156</b>, <b>146</b> and raised notches <b>154</b>, <b>144</b>. The raised notches keep the grooves from being blocked by the head when the liner is worn on the head and allow hot air to flow through the upwardly tapered grooves towards the top middle section <b>149</b> where the hot air is vented. The raised notches <b>154</b>, <b>144</b> and ventilation grooves <b>156</b>, <b>146</b> relieve pressure for the wearer providing more comfort and a better fit.</p>
+<p id="p-0075" num="0075">The bottom edges of the shell <b>120</b> can be flat, tapers or rounded hover because it is relatively thin compared to the liner <b>140</b>, the predominate shape at the bottom edge of the combined assembly <b>120</b>, <b>140</b> is that of the foam liner <b>140</b>. The edge of the foam liner is tapered and extends to or slightly beyond the edge of the hard outer shell <b>120</b>. The taper helps guide the combined assembly <b>120</b>, <b>140</b> into the groove created between the elastic band <b>114</b> and rim of the cap <b>102</b> and avoids a bulky edge which might be uncomfortable or unsightly.</p>
+<p id="p-0076" num="0076"><figref idref="DRAWINGS">FIG. 2</figref> shows a cross section <b>200</b> of an assembled protective device such as the piece of headgear shown in <figref idref="DRAWINGS">FIG. 1</figref>. Reference numbers used in <figref idref="DRAWINGS">FIG. 2</figref> and the other figures which are the same as those used in <figref idref="DRAWINGS">FIG. 1</figref> correspond to the same element as that discussed with regard to <figref idref="DRAWINGS">FIG. 1</figref> and thus will not be discussed in detail again.</p>
+<p id="p-0077" num="0077">Note that in <figref idref="DRAWINGS">FIG. 2</figref> the snug fit between the fabric cap material <b>104</b>, hard outer shell wall <b>124</b> and foam liner <b>140</b> can be seen. Area <b>147</b> corresponds to the thicker sidewall portions of the hard outer shell <b>120</b> and foam liner <b>140</b>. The section illustrated using reference number <b>125</b> represents a portion of the hard outer shell <b>120</b> at the top of the hard outer shell <b>120</b> while the section illustrated using reference number <b>127</b> represents a portion included in area <b>147</b> that corresponds to the thicker sidewall portions of the hard outer shell <b>120</b>. Legend <b>201</b> illustrates a comparison of the thickness of the two sections <b>125</b> and <b>127</b>. As indicated by the legend <b>201</b>, the thickness of section <b>127</b> which corresponds to the sidewall portion of the hard outer shell <b>120</b> is greater than the thickness of section <b>125</b> which corresponds to the top portion of the hard outer shell <b>120</b>. In the <figref idref="DRAWINGS">FIG. 2</figref> embodiment, the elastic band <b>114</b> does not extent to completely cover the cut out <b>121</b> for the ear. However, in other embodiments the elastic material <b>114</b> extends further and fully covers the cutout <b>121</b>. The stitched area <b>111</b> fits neatly into the ear cutout <b>121</b> as shown helping with the proper position and retention of inserted combined assembly.</p>
+<p id="p-0078" num="0078"><figref idref="DRAWINGS">FIG. 3</figref> is an angled bottom view <b>300</b> of the assembled headgear shown in <figref idref="DRAWINGS">FIG. 2</figref>. Note that in this embodiment the vent slots are not fully covered by the elastic material <b>114</b> allowing for air flow even if the elastic material <b>114</b> blocks the air flow to some extent.</p>
+<p id="p-0079" num="0079"><figref idref="DRAWINGS">FIG. 4</figref> is a top view <b>400</b> of the outer shell <b>120</b> of the exemplary headgear shown in <figref idref="DRAWINGS">FIG. 1</figref>. Note that the outside surface <b>122</b> of the outer shell is smooth and includes vent holes <b>128</b> through which hot air can escape.</p>
+<p id="p-0080" num="0080"><figref idref="DRAWINGS">FIG. 5</figref> is a bottom view <b>500</b> of the combined outer shell <b>120</b> and foam liner <b>140</b> of the headgear assembly of <figref idref="DRAWINGS">FIG. 1</figref>. Note the vent tapered vent slots <b>156</b> and <b>146</b>. also note the tapered regions <b>158</b> which direct air to the holes <b>159</b>.</p>
+<p id="p-0081" num="0081"><figref idref="DRAWINGS">FIG. 6</figref> is a left side view <b>600</b> of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIG. 4</figref>. Note how the front of the combined outer shell and foam liner <b>122</b> is higher than the rear portion. See also how each cutout <b>121</b> is more of a half oval in shape than circular in shape. The generally flat top portion of the ear cut out allows for good seating of the combined assembly in the cap. Vent holes <b>128</b> are variable at the top of the assembly shown in <figref idref="DRAWINGS">FIG. 6</figref>.</p>
+<p id="p-0082" num="0082"><figref idref="DRAWINGS">FIG. 7</figref> is a front view of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIG. 6</figref> and shown features which have already been described.</p>
+<p id="p-0083" num="0083"><figref idref="DRAWINGS">FIG. 8</figref> is another bottom angled view of the combined outer shell and foam liner of the headgear assembly shown in <figref idref="DRAWINGS">FIGS. 4-6</figref>.</p>
+<p id="p-0084" num="0084"><figref idref="DRAWINGS">FIG. 9</figref> illustrates exemplary headgear <b>900</b> implemented in accordance with the invention that includes a chin strap. The chin strap includes left and right portions <b>916</b>, <b>908</b> and a buckle comprising left and right buckle portions <b>917</b>, <b>918</b>. Hole <b>902</b> allows the chin strap to pass through the hard outer shell <b>120</b>&#x2032;. The end of the chin strap may be secured to the hard outer shell <b>124</b>&#x2032; though the use of a rivet or other securing device. The <figref idref="DRAWINGS">FIG. 9</figref> embodiment is well suited for security forces, riders and/or skateboarders where a chin strap may be useful for keeping the helmet on the wear's head.</p>
+<p id="p-0085" num="0085"><figref idref="DRAWINGS">FIG. 10</figref> is a side cross section view <b>1000</b> of the headgear shown in <figref idref="DRAWINGS">FIG. 9</figref>.</p>
+<p id="p-0086" num="0086"><figref idref="DRAWINGS">FIGS. 11 and 12</figref> illustrate exemplary caps which may be used in either of the <figref idref="DRAWINGS">FIG. 1</figref> or <figref idref="DRAWINGS">FIG. 9</figref> embodiments including a hole through which the presence or absence of the hard outer shell may be observed without removal of the cap from an individual wearing one of the exemplary caps. These figures have been described above and this will not be described further here.</p>
+<p id="p-0087" num="0087"><figref idref="DRAWINGS">FIGS. 13 and 14</figref> show a cap assembly <b>1300</b>, <b>1400</b> with an outer hard shell and foam liner inserted into a cap where the cap includes an elastic sweat band <b>114</b>&#x2032; which covers the entire ear cut out portion of the foam liner and hard outer shell.</p>
+<p id="p-0088" num="0088"><figref idref="DRAWINGS">FIG. 15</figref> illustrates a set of foam cutouts which, in some embodiments, are secured to the inside of the hard outer shell and used in place of the foam liner shown in the <figref idref="DRAWINGS">FIG. 1</figref> embodiment. The foam cutouts include front <b>1508</b>, rear <b>1510</b>, left <b>1504</b> and right <b>1506</b> foam cutouts which may be cut, stamped or otherwise formed from flat sheets of foam material. A center foam cutout <b>1502</b> corresponds to the top center portion of the helmet. The foam cutouts <b>1502</b>, <b>1508</b>, <b>1510</b>, <b>1504</b>, <b>1506</b> are secured using adhesive to the inside of a hard outer shell such as the shell <b>120</b> shown in <figref idref="DRAWINGS">FIG. 1</figref>. The foam cutouts can be inserted into the hard outer shell as shown in <figref idref="DRAWINGS">FIG. 16</figref> where the shell is identified using reference number <b>1602</b>.</p>
+<p id="p-0089" num="0089">The foam inserts shown in <figref idref="DRAWINGS">FIG. 15</figref> include various notches <b>1520</b>, <b>1532</b>, <b>1530</b> holes <b>1550</b>, slits <b>1521</b> and cutouts <b>1508</b>, <b>1531</b>. These allow the foam inserts to be flexed and secured to the inside of the hard outer shell without creating uncomfortable ridges or creases which might be felt by the wearer. They also facilitate ventilation with the holes <b>108</b> in the cap lining up with one or more of the holes, slits or notches in the foam liner. The left and right liner inserts <b>1504</b>, <b>1506</b> include an ear cutout <b>1508</b> and have the form of four tables <b>1507</b> which are joined together along the bottom portion of the individual inserts above the ear cutout <b>1508</b>.</p>
+<p id="p-0090" num="0090">Like the side foam inserts, the front and rear foam inserts <b>1508</b>, <b>1510</b> include a plurality of slits <b>1532</b>, <b>1520</b> which allow the inserts to conform to the contour of the hard outer shell when secured thereto without creating uncomfortable ridges and while allowing for adequate air flow from the bottom of the helmet up toward the top center portion where it can be vented.</p>
+<p id="p-0091" num="0091"><figref idref="DRAWINGS">FIG. 16</figref> is a bottom view of the headgear assembly of <figref idref="DRAWINGS">FIG. 15</figref> including the foam cutouts secured to a hard outer shell <b>1602</b>. As can be seen, while providing protection in each of the front, rear, top, left and right sides of the outer shell and thus to the corresponding portions of a wear's head, adequate gaps are left between the foam inserts to enable adequate ventilation and air flow particularly when the notches and other cutouts of the foam inserts are taken into consideration.</p>
+<p id="p-0092" num="0092"><figref idref="DRAWINGS">FIG. 17</figref> is a cross-section view <b>1700</b> of an exemplary headgear assembly implemented using the foam cutouts shown in <figref idref="DRAWINGS">FIGS. 15 and 16</figref>. The hard outer shell <b>120</b> with the foam liners <b>1508</b>, <b>1504</b>, <b>1510</b>, <b>1502</b> secured thereto fits snugly within the cap <b>102</b> from which it can be inserted and removed.</p>
+<p id="p-0093" num="0093">The <figref idref="DRAWINGS">FIG. 17</figref> embodiment is particularly well suited for golf applications where a heavy foam liner is not required but some amount of foam is desirable to dissipate energy from a ball impact.</p>
+<p id="p-0094" num="0094">In some embodiment the foam inserts are in the range of 3 mm to 9 mm in thickness with 8 mm working well in several embodiments. However, 4 and 6 mm thickness can, and are used in some embodiments.</p>
+<p id="p-0095" num="0095">As can be appreciated, depending on the embodiment, the thickness of the hard outer shell and foam may vary. In some embodiments the hard outer shell may be of uniform thickness. Similarly, the foam inserts and/or foam liner may be of uniform thickness. It is contemplated that in police cap embodiments and/or security embodiments where the direction and/or type of impact is less predictable, uniform hard outer shell and foam liner/insert thicknesses may be desirable. The headgear assemblies of the present invention can provide security officers with a surprisingly high level of protection from being hit in the head with bottles, sticks and/or other objects without giving the appearance of a large security helmet.</p>
+<p id="p-0096" num="0096">While illustrated in the context of a baseball or golf cap, it should be appreciated that the protective headgear may be configured to be used with a wide variety of caps where a cap is used in a manner intended to refer to any type of hat that may be placed over the hard outer shell of the present invention. A cap may include such hats such as toques or beanies.</p>
+<p id="p-0097" num="0097">However, it should be appreciated that the methods and apparatus of the present invention are particularly well suited to baseball cap, golf cap and other types of applications where caps are commonly worn.</p>
+<p id="p-0098" num="0098">While the caps are shown in most example included herein with a brim that provides shade, in one embodiment the brim is omitted and the protective headgear assembly is implemented as a cloth cap with a hard outer shell and a foam liner or foam inserts. Such an embodiment is well suited for base coaches who might want to place the protective headgear assembly over a regular baseball cap so that it can be removed easily from the head without having to remove a baseball cap that is being worn. In one such embodiment the fabric cap covering the hard outer shell is made of a material which matches the baseball cap in color and texture making the protective headgear less noticeable than if the cap was made out of a material that did not match the baseball cap being worn by the base coach. Thus the base couch embodiment could include a cap without a rim, hard shell and foam liner or foam inserts. In this way, the protective headgear (without a brim) could be placed on top of a regular baseball cap and the combined unit would have the appearance similar to that of a regular baseball cap but would provide protection. In cases where the wearer wishes to remove the protective assembly and wear the regular cap, it could easily be accomplished since the protective headgear goes over the regular cap rather than inside it. Baseball base coaches or umpires may wish to use this model in between innings.</p>
+<p id="p-0099" num="0099">Numerous additional variations on the above described embodiments are possible without departing from the scope of the invention.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A protective device to be worn on a head, the device comprising:
+<claim-text>a hard outer shell having an outside surface and an inner surface, the outside surface of the hard outer shell including front, rear, side and top portions; wherein the outer surface of the front, side and rear portions are solid and smooth and the top portion includes at least one vent hole allowing air to pass;</claim-text>
+<claim-text>a foam insert secured to the inner surface of said hard outer shell, said foam insert including left and right sidewall portions that are thicker than other portions of said foam insert, said foam insert further including at least one vent hole aligned and corresponding to the at least one vent hole in the hard outer shell; and</claim-text>
+<claim-text>a fabric cap, said fabric cap including:</claim-text>
+<claim-text>i) front, rear, side and top portions and at least one cap vent hole aligned and corresponding to the at least one vent hole in the hard outer shell and the at least one vent hole in the foam insert; and</claim-text>
+<claim-text>ii) a viewing hole positioned below the at least one cap vent hole in one of the front, rear, or side cap portions and positioned over one of the corresponding front, rear and side portions of the hard outer shell, said viewing hole being an area of said fabric cap through which the outside surface of the hard outer shell may be observed when the cap is being worn with the hard outer shell positioned inside the fabric cap.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. The protective device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said foam insert includes a plurality of raised notches for ventilation in at least one of a front bottom portion or a rear bottom portion of said foam insert, said foam insert further including tapering grooves between said raised notches, said grooves decreasing in depth as the groove extends upward in the direction of a recessed area included in said foam insert at the top of said foam insert; and
+<claim-text>wherein said tapering grooves terminate prior to reaching said recessed area, said foam insert including a smooth area between an upper end of said grooves and said recessed area included in said foam insert at the top of said foam insert.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00003" num="00003">
+<claim-text>3. A protective device to be worn on a head, the device comprising: a hard outer shell; and
+<claim-text>a foam insert secured to an inner surface of said hard outer shell, said foam insert including left and right sidewall portions that are thicker than other portions of said foam insert, said foam insert including a plurality of raised notches for ventilation in at least one of a front bottom portion or a rear bottom portion of said foam insert, said foam insert further including tapering grooves between said raised notches, said grooves decreasing in depth as the grooves extend upward in the direction of a recessed area included in said foam insert at a top of said foam insert, said foam insert further including at least one vent hole through which air can exit said recessed area, wherein said tapering grooves terminate prior to reaching said recessed area, said foam insert including a smooth area between an upper end of said grooves and said recessed area included in said foam insert at the top of said foam insert;</claim-text>
+<claim-text>a fabric cap including an outer fabric material and an elastic band extending around an inner portion of said fabric cap, a bottom portion of said foam insert being positioned between said elastic material and said outer fabric material of said fabric cap; and</claim-text>
+<claim-text>where said upper end of said grooves is located above said elastic band so that at least a portion of said grooves is not covered by said elastic band.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00004" num="00004">
+<claim-text>4. The protective device of <claim-ref idref="CLM-00003">claim 3</claim-ref>, wherein said recessed area includes ventilation holes aligned with ventilation holes in said hard outer shell.</claim-text>
+</claim>
+<claim id="CLM-00005" num="00005">
+<claim-text>5. The protective device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said hard outer shell is thicker on left and right sidewalls than on the top of said hard outer shell.</claim-text>
+</claim>
+<claim id="CLM-00006" num="00006">
+<claim-text>6. The protective device of <claim-ref idref="CLM-00005">claim 5</claim-ref>, wherein said hard outer shell includes layers of at least two different materials.</claim-text>
+</claim>
+<claim id="CLM-00007" num="00007">
+<claim-text>7. The protective device of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein said hard outer shell includes at least 5 layers, said 5 layers including alternating layers of at least two different materials.</claim-text>
+</claim>
+<claim id="CLM-00008" num="00008">
+<claim-text>8. The protective device of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein one of said two different materials is glass fiber.</claim-text>
+</claim>
+<claim id="CLM-00009" num="00009">
+<claim-text>9. The protective device of <claim-ref idref="CLM-00008">claim 8</claim-ref>, wherein another one of said at least two different materials is at least one of a reinforced fiber material or a plastic material.</claim-text>
+</claim>
+<claim id="CLM-00010" num="00010">
+<claim-text>10. The protective device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein said fabric cap is a first color and the hard outer shell is a second color which is different from said first color.</claim-text>
+</claim>
+<claim id="CLM-00011" num="00011">
+<claim-text>11. The protective device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the hard outer shell is thinner on top than on the left and right sides.</claim-text>
+</claim>
+<claim id="CLM-00012" num="00012">
+<claim-text>12. The protective device of <claim-ref idref="CLM-00011">claim 11</claim-ref>, wherein the shell is at least 0.05&#x2033; thick at its thinnest point.</claim-text>
+</claim>
+<claim id="CLM-00013" num="00013">
+<claim-text>13. The protective device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further comprising: a design surrounding a said viewing hole said design being a first color, said hard outer shell being a second color which contrasts with said first color through which the outside surface of the hard outer shell may be observed when the cap is being worn with the hard outer shell positioned inside the fabric cap.</claim-text>
+</claim>
+<claim id="CLM-00014" num="00014">
+<claim-text>14. The protective device of <claim-ref idref="CLM-00013">claim 13</claim-ref>, wherein said fabric cap includes an elastic material around the rim of said fabric cap.</claim-text>
+</claim>
+<claim id="CLM-00015" num="00015">
+<claim-text>15. The protective device of <claim-ref idref="CLM-00014">claim 14</claim-ref>, further comprising stitching in said elastic material forming a hump relative to the rim of said cap used to act as a placement guide for ear cutouts included in said hard outer shell.</claim-text>
+</claim>
+<claim id="CLM-00016" num="00016">
+<claim-text>16. A protective device to be worn on a head, the device comprising:
+<claim-text>a hard outer shell having an outside surface and an inner surface, the outside surface being solid and smooth;</claim-text>
+<claim-text>a foam insert secured to the inner surface of said hard outer shell, said foam insert including left and right sidewall portions that are thicker than other portions of said foam insert; and</claim-text>
+<claim-text>a fabric cap, said fabric cap including:</claim-text>
+<claim-text>i) a viewing hole positioned over the solid, smooth hard outer shell through which the outside surface of the hard outer shell may be observed when the cap is being worn with the hard outer shell positioned inside the fabric cap.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00017" num="00017">
+<claim-text>17. The protective device of <claim-ref idref="CLM-00016">claim 16</claim-ref>,
+<claim-text>wherein said fabric cap is a first color and said hard outer shell is a second color which contrasts with said first color;</claim-text>
+<claim-text>wherein said hole through which the outside surface of the hard outer shell may be observed is located on a front of said fabric cap.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00018" num="00018">
+<claim-text>18. The protective device of <claim-ref idref="CLM-00016">claim 16</claim-ref>, further comprising:
+<claim-text>a design surrounding the hole through which the outside surface of the hard outer shell may be observed said design being of a color which contrasts with a color of said hard outer shell. </claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant>

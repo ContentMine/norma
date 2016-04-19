@@ -16,7 +16,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 import org.xmlcml.cmine.misc.CMineUtil;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 
 public class TEX2HTMLConverterTest extends XMLTestCase {
 	
@@ -35,8 +35,8 @@ public class TEX2HTMLConverterTest extends XMLTestCase {
         XMLUnit.setIgnoreComments(true);
 
         TEX2HTMLConverter converter = new TEX2HTMLConverter();
-        File texFile = new File(Fixtures.TEST_NORMA_DIR + "/tex/sample.tex");
-        File expectedXMLFile = new File(Fixtures.TEST_NORMA_DIR + "/tex/sample.tex.xhtml");
+        File texFile = new File(NormaFixtures.TEST_NORMA_DIR + "/tex/sample.tex");
+        File expectedXMLFile = new File(NormaFixtures.TEST_NORMA_DIR + "/tex/sample.tex.xhtml");
         String actualXML = null;
         Assert.assertTrue("text exists", texFile.exists());
     	actualXML = converter.convertTeXToHTML(texFile);

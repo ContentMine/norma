@@ -28,11 +28,11 @@ public class GridExtractor {
 	public void deduceGrid(List<HOCRLabel> potentialLabels) {
 		List<LabelRow> xLabelRowList = findWithSame(potentialLabels, Coord.X);
 		for (LabelRow row : xLabelRowList) {
-			LOG.debug(">X> "+row);
+			LOG.trace(">X> "+row);
 		}
 		List<LabelRow> yLabelRowList = findWithSame(potentialLabels, Coord.Y);
 		for (LabelRow row : yLabelRowList) {
-			LOG.debug(">Y> "+row);
+			LOG.trace(">Y> "+row);
 		}
 	}
 

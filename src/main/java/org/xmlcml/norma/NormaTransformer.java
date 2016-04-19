@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -17,15 +18,12 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
-import nu.xom.Builder;
-import nu.xom.Element;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.xmlcml.cmine.args.ArgumentOption;
-import org.xmlcml.cmine.files.CMDir;
+import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
@@ -38,6 +36,9 @@ import org.xmlcml.norma.tagger.SectionTagger;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Builder;
+import nu.xom.Element;
 
 public class NormaTransformer {
 
@@ -79,7 +80,7 @@ public class NormaTransformer {
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
-	private CMDir currentCMDir;
+	private CTree currentCTree;
 	private List<String> transformList;
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private Map<String, String> stylesheetByNameMap;
@@ -87,10 +88,10 @@ public class NormaTransformer {
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
-		currentCMDir = normaArgProcessor.getCurrentCMDir();
+		currentCTree = normaArgProcessor.getCurrentCMTree();
 	}
 
-	/** transforms currentCMDir.
+	/** transforms currentCTree.
 	 *
 	 * output is either:
 	 *   outputTxt (from PDF2TXT)
@@ -99,27 +100,35 @@ public class NormaTransformer {
 	 *
 	 * @param option
 	 */
-	void transform(ArgumentOption option) {
-		currentCMDir = normaArgProcessor.getCurrentCMDir();
-		LOG.trace("CM "+currentCMDir);
-		inputFile = normaArgProcessor.checkAndGetInputFile(currentCMDir);
-		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCMDir);
+	boolean transform(ArgumentOption option) {
+		boolean ok = false;
+		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
 		svgElement = null;
 		xmlStringList = null;
 		serialImageList = null;
+		
+		currentCTree = normaArgProcessor.getCurrentCMTree();
+		LOG.trace("CM "+currentCTree);
+		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
+		if (inputFile == null) {
+			return ok;
+		}
+		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCTree);
 		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
+			ok = true;
 			String optionValue = option.getStringValue();
+			// check for NON-XSL transformation types
 			if (false) {				
 			} else if (HOCR2SVG.equals(optionValue)) {
 				svgElement = applyHOCR2SVGToInputFile();
 			} else if (PDF2TXT.equals(optionValue)) {
-				outputTxt = applyPDF2TXTToCMLDir();
+				outputTxt = applyPDF2TXTToCTree();
 			} else if (PDF2IMAGES.equals(optionValue)) {
-				serialImageList = applyPDF2ImagesToCMLDir();
+				serialImageList = applyPDF2ImagesToCTree();
 			} else if (TXT2HTML.equals(optionValue)) {
-				htmlElement = applyTXT2HTMLToCMDir();
+				htmlElement = applyTXT2HTMLToCTree();
 			} else if (PDF2SVG.equals(optionValue)) {
 				applyPDF2SVGToCMLDir();
 			} else if (PDF2HTML.equals(optionValue)) {
@@ -128,12 +137,14 @@ public class NormaTransformer {
 			} else if (TEX2HTML.equals(option.getStringValue())) {
 				xmlStringList = convertTeXToHTML();
 			} else {
-				xmlStringList = applyXSLDocumentListToCurrentCMDir();
+				// treat as XSL transform
+				xmlStringList = applyXSLDocumentListToCurrentCTree();
 			}
 			// http://grepcode.com/file/repo1.maven.org/maven2/org.apache.pdfbox/pdfbox/1.6.0/org/apache/pdfbox/util/PDFTextStripper.java#PDFTextStripper.getSortByPosition%28%29
 			// GitHub, ASPERA, Galaxy, Asana
 			
 		}
+		return ok;
 	}
 
 	public static void listTransformOptions() {
@@ -167,7 +178,7 @@ public class NormaTransformer {
 		return txt;
 	}
 
-	private String applyPDF2TXTToCMLDir() {
+	private String applyPDF2TXTToCTree() {
 		PDF2TXTConverter converter = new PDF2TXTConverter();
 		String txt = null;
 		try {
@@ -178,7 +189,7 @@ public class NormaTransformer {
 		return txt;
 	}
 
-	private List<NamedImage> applyPDF2ImagesToCMLDir() {
+	private List<NamedImage> applyPDF2ImagesToCTree() {
 		PDF2ImagesConverter converter = new PDF2ImagesConverter();
 		List<NamedImage> namedImageList = null;
 		try {
@@ -189,7 +200,7 @@ public class NormaTransformer {
 		return namedImageList;
 	}
 
-	private HtmlElement applyTXT2HTMLToCMDir() {
+	private HtmlElement applyTXT2HTMLToCTree() {
 		HtmlElement htmlElement = null;
 		try {
 			inputTxt = FileUtils.readFileToString(inputFile);
@@ -222,21 +233,26 @@ public class NormaTransformer {
 	}
 
 	private HtmlElement convertToHTML() {
-//		System.out.println(inputTxt);
 		LOG.debug("convertToHTML NYI");
 		HtmlElement element = null;
 		return element;
 	}
 
-	private List<String> applyXSLDocumentListToCurrentCMDir() {
+	private List<String> applyXSLDocumentListToCurrentCTree() {
 		List<org.w3c.dom.Document> xslDocumentList = this.getXslDocumentList();
 		xmlStringList = new ArrayList<String>();
 		for (org.w3c.dom.Document xslDocument : xslDocumentList) {
 			try {
 				String xmlString = transform(xslDocument);
+//				try {
+//					FileUtils.write(new File("target/junk2.xml"), xmlString, Charset.forName("UTF-8"));
+//					System.exit(1);
+//				} catch (IOException e) {
+//					System.err.println(e);
+//				}
 				xmlStringList.add(xmlString);
 			} catch (IOException e) {
-				LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMDir()+"; "+e);
+				LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMTree()+"; "+e);
 			}
 		}
 		return xmlStringList;
@@ -388,17 +404,17 @@ public class NormaTransformer {
 	void outputSpecifiedFormat() {
 		String output = normaArgProcessor.getOutput();
 		if (outputTxt != null) {
-			currentCMDir.writeFile(outputTxt, (output != null ? output : CMDir.FULLTEXT_PDF_TXT));
+			currentCTree.writeFile(outputTxt, (output != null ? output : CTree.FULLTEXT_PDF_TXT));
 		}
 		if (htmlElement != null) {
-			currentCMDir.writeFile(htmlElement.toXML(), (output != null ? output : CMDir.FULLTEXT_HTML));
+			currentCTree.writeFile(htmlElement.toXML(), (output != null ? output : CTree.FULLTEXT_HTML));
 		}
 		if (xmlStringList != null && xmlStringList.size() > 0) {
 			tagSections();
-			currentCMDir.writeFile(xmlStringList.get(0), (output != null ? output : CMDir.SCHOLARLY_HTML));
+			currentCTree.writeFile(xmlStringList.get(0), (output != null ? output : CTree.SCHOLARLY_HTML));
 		}
 		if (svgElement != null && output != null) {
-			currentCMDir.writeFile(svgElement.toXML(), output);
+			currentCTree.writeFile(svgElement.toXML(), output);
 		}
 		if (serialImageList != null) {
 			normaArgProcessor.writeImages();
@@ -421,11 +437,10 @@ public class NormaTransformer {
 			} else if (NormaTransformer.TRANSFORM_OPTIONS.contains(token)) {
 				transformList.add(token);
 			} else {
-				NormaArgProcessor.LOG.error("Cannot process transform token: "+token+"; allowed values: ");
-				NormaTransformer.listTransformOptions();
+				normaArgProcessor.TREE_LOG().warn("Cannot process transform token: "+token+" as symbol or stylesheet");
 			}
 		}
-		if (transformList.size() == 0) {
+		if (transformList.size() == 0 && xslDocumentList.size() == 0) {
 			LOG.error("no transforms given/parsed");
 		}
 	}
@@ -439,7 +454,7 @@ public class NormaTransformer {
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
 		DocumentBuilder db = createDocumentBuilder();
-		String stylesheetResourceName = replaceCodeIfPossible(xslName);
+		String stylesheetResourceName = lookupStylesheetByName(xslName);
 		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
 		// if fails, try as file
 		if (stylesheetDocument == null) {
@@ -478,7 +493,7 @@ public class NormaTransformer {
 		return stylesheetDocument;
 	}
 
-	private String replaceCodeIfPossible(String xslName) {
+	private String lookupStylesheetByName(String xslName) {
 		createStylesheetByNameMap();
 		String stylesheetResourceName = stylesheetByNameMap.get(xslName);
 		stylesheetResourceName = (stylesheetResourceName == null) ? xslName : stylesheetResourceName;
@@ -509,7 +524,11 @@ public class NormaTransformer {
 		for (SectionTagger sectionTagger : sectionTaggers) {
 			LOG.trace("section tagger:" + sectionTagger);
 			for (String xmlString : xmlStringList) {
-				Element xmlElement = XMLUtil.parseXML(xmlString);
+				try {
+					Element xmlElement = XMLUtil.parseXML(xmlString);
+				} catch (RuntimeException e) {
+					throw new RuntimeException("failed to parse: "+xmlString.substring(0, Math.min(200, xmlString.length())), e);
+				}
 			}
 		}
 	}

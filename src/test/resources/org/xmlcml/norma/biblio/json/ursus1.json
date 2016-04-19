@@ -1,0 +1,1545 @@
+[
+  {
+    "id": [
+      "25829853"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "25829853"
+    ],
+    "pmcid": [
+      "PMC4366689"
+    ],
+    "DOI": [
+      "10.3897/zookeys.487.9176"
+    ],
+    "title": [
+      "No need to replace an \"anomalous\" primate (Primates) with an \"anomalous\" bear (Carnivora, Ursidae)."
+    ],
+    "authorString": [
+      "Gutiérrez EE, Pine RH."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Gutiérrez EE"
+            ],
+            "firstName": [
+              "Eliécer E"
+            ],
+            "lastName": [
+              "Gutiérrez"
+            ],
+            "initials": [
+              "EE"
+            ],
+            "affiliation": [
+              "Division of Mammals, National Museum of Natural History, NHB 390, MRC 108, Smithsonian Institution, P.O. Box 37012, Washington DC 20013-7012, USA  ; Center for Conservation and Evolutionary Genetics, Smithsonian Conservation Biology Institute, National Zoological Park, Washington, DC 20008, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Pine RH"
+            ],
+            "firstName": [
+              "Ronald H"
+            ],
+            "lastName": [
+              "Pine"
+            ],
+            "initials": [
+              "RH"
+            ],
+            "affiliation": [
+              "Biodiversity Institute & Natural History Museum, University of Kansas, Lawrence, KS 66045 USA."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "487"
+        ],
+        "journalIssueId": [
+          "2269028"
+        ],
+        "dateOfPublication": [
+          "2015 "
+        ],
+        "monthOfPublication": [
+          "0"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-01-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "ZooKeys"
+            ],
+            "ISOAbbreviation": [
+              "Zookeys"
+            ],
+            "medlineAbbreviation": [
+              "Zookeys"
+            ],
+            "NLMid": [
+              "101497933"
+            ],
+            "ISSN": [
+              "1313-2989"
+            ],
+            "ESSN": [
+              "1313-2970"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "141-154"
+    ],
+    "abstractText": [
+      "By means of mitochondrial 12S rRNA sequencing of putative \"yeti\", \"bigfoot\", and other \"anomalous primate\" hair samples, a recent study concluded that two samples, presented as from the Himalayas, do not belong to an \"anomalous primate\", but to an unknown, anomalous type of ursid. That is, that they match 12S rRNA sequences of a fossil Polar Bear (Ursusmaritimus), but neither of modern Polar Bears, nor of Brown Bears (Ursusarctos), the closest relative of Polar Bears, and one that occurs today in the Himalayas. We have undertaken direct comparison of sequences; replication of the original comparative study; inference of phylogenetic relationships of the two samples with respect to those from all extant species of Ursidae (except for the Giant Panda, Ailuropodamelanoleuca) and two extinct Pleistocene species; and application of a non-tree-based population aggregation approach for species diagnosis and identification. Our results demonstrate that the very short fragment of the 12S rRNA gene sequenced by Sykes et al. is not sufficiently informative to support the hypotheses provided by these authors with respect to the taxonomic identity of the individuals from which these sequences were obtained. We have concluded that there is no reason to believe that the two samples came from anything other than Brown Bears. These analyses afforded an opportunity to test the monophyly of morphologically defined species and to comment on both their phylogenetic relationships and future efforts necessary to advance our understanding of ursid systematics."
+    ],
+    "affiliation": [
+      "Division of Mammals, National Museum of Natural History, NHB 390, MRC 108, Smithsonian Institution, P.O. Box 37012, Washington DC 20013-7012, USA  ; Center for Conservation and Evolutionary Genetics, Smithsonian Conservation Biology Institute, National Zoological Park, Washington, DC 20008, USA."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Electronic-eCollection"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Mitochondrial DNA",
+          "Himalayas",
+          "phylogenetics",
+          "Yeti",
+          "Ursusarctos",
+          "Ursusmaritimus",
+          "Cryptozoology"
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4366689?pdf=render"
+            ]
+          },
+          {
+            "availability": [
+              "Open access"
+            ],
+            "availabilityCode": [
+              "OA"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC4366689"
+            ]
+          },
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.3897/zookeys.487.9176"
+            ]
+          }
+        ]
+      }
+    ],
+    "isOpenAccess": [
+      "Y"
+    ],
+    "inEPMC": [
+      "Y"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "Y"
+    ],
+    "hasTextMinedTerms": [
+      "Y"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "Y"
+    ],
+    "tmAccessionTypeList": [
+      {
+        "accessionType": [
+          "gen"
+        ]
+      }
+    ],
+    "dateOfCompletion": [
+      "2015-04-01"
+    ],
+    "dateOfCreation": [
+      "2015-04-01"
+    ],
+    "dateOfRevision": [
+      "2015-04-04"
+    ],
+    "electronicPublicationDate": [
+      "2015-03-16"
+    ],
+    "firstPublicationDate": [
+      "2015-03-16"
+    ],
+    "luceneScore": [
+      "692.07275"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  },
+  {
+    "id": [
+      "25375943"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "25375943"
+    ],
+    "DOI": [
+      "10.7589/2013-11-301"
+    ],
+    "title": [
+      "Prevalence and spatio-temporal variation of an alopecia syndrome in polar bears (Ursus maritimus) of the southern Beaufort Sea."
+    ],
+    "authorString": [
+      "Atwood T, Peacock E, Burek-Huntington K, Shearn-Bochsler V, Bodenstein B, Beckmen K, Durner G."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Atwood T"
+            ],
+            "firstName": [
+              "Todd"
+            ],
+            "lastName": [
+              "Atwood"
+            ],
+            "initials": [
+              "T"
+            ],
+            "affiliation": [
+              "1 US Geological Survey, Alaska Science Center, 4210 University Dr., Anchorage, Alaska 99508, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Peacock E"
+            ],
+            "firstName": [
+              "Elizabeth"
+            ],
+            "lastName": [
+              "Peacock"
+            ],
+            "initials": [
+              "E"
+            ]
+          },
+          {
+            "fullName": [
+              "Burek-Huntington K"
+            ],
+            "firstName": [
+              "Kathy"
+            ],
+            "lastName": [
+              "Burek-Huntington"
+            ],
+            "initials": [
+              "K"
+            ]
+          },
+          {
+            "fullName": [
+              "Shearn-Bochsler V"
+            ],
+            "firstName": [
+              "Valerie"
+            ],
+            "lastName": [
+              "Shearn-Bochsler"
+            ],
+            "initials": [
+              "V"
+            ]
+          },
+          {
+            "fullName": [
+              "Bodenstein B"
+            ],
+            "firstName": [
+              "Barbara"
+            ],
+            "lastName": [
+              "Bodenstein"
+            ],
+            "initials": [
+              "B"
+            ]
+          },
+          {
+            "fullName": [
+              "Beckmen K"
+            ],
+            "firstName": [
+              "Kimberlee"
+            ],
+            "lastName": [
+              "Beckmen"
+            ],
+            "initials": [
+              "K"
+            ]
+          },
+          {
+            "fullName": [
+              "Durner G"
+            ],
+            "firstName": [
+              "George"
+            ],
+            "lastName": [
+              "Durner"
+            ],
+            "initials": [
+              "G"
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "1"
+        ],
+        "volume": [
+          "51"
+        ],
+        "journalIssueId": [
+          "2240051"
+        ],
+        "dateOfPublication": [
+          "2015 Jan"
+        ],
+        "monthOfPublication": [
+          "1"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-01-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Journal of wildlife diseases"
+            ],
+            "ISOAbbreviation": [
+              "J. Wildl. Dis."
+            ],
+            "medlineAbbreviation": [
+              "J Wildl Dis"
+            ],
+            "NLMid": [
+              "0244160"
+            ],
+            "ISSN": [
+              "0090-3558"
+            ],
+            "ESSN": [
+              "1943-3700"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "48-59"
+    ],
+    "abstractText": [
+      "Alopecia (hair loss) has been observed in several marine mammal species and has potential energetic consequences for sustaining a normal core body temperature, especially for Arctic marine mammals routinely exposed to harsh environmental conditions. Polar bears (Ursus maritimus) rely on a thick layer of adipose tissue and a dense pelage to ameliorate convective heat loss while moving between sea ice and open water. From 1998 to 2012, we observed an alopecia syndrome in polar bears from the southern Beaufort Sea of Alaska that presented as bilaterally asymmetrical loss of guard hairs and thinning of the undercoat around the head, neck, and shoulders, which, in severe cases, was accompanied by exudation and crusted skin lesions. Alopecia was observed in 49 (3.45%) of the bears sampled during 1,421 captures, and the apparent prevalence varied by years with peaks occurring in 1999 (16%) and 2012 (28%). The probability that a bear had alopecia was greatest for subadults and for bears captured in the Prudhoe Bay region, and alopecic individuals had a lower body condition score than unaffected individuals. The cause of the syndrome remains unknown and future work should focus on identifying the causative agent and potential effects on population vital rates."
+    ],
+    "affiliation": [
+      "1 US Geological Survey, Alaska Science Center, 4210 University Dr., Anchorage, Alaska 99508, USA."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Print"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article",
+          "Research Support, U.S. Gov't, Non-P.H.S."
+        ]
+      }
+    ],
+    "meshHeadingList": [
+      {
+        "meshHeading": [
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Animals"
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "Y"
+            ],
+            "descriptorName": [
+              "Ursidae"
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Alopecia"
+            ],
+            "meshQualifierList": [
+              {
+                "meshQualifier": [
+                  {
+                    "abbreviation": [
+                      "EP"
+                    ],
+                    "qualifierName": [
+                      "epidemiology"
+                    ],
+                    "majorTopic_YN": [
+                      "N"
+                    ]
+                  },
+                  {
+                    "abbreviation": [
+                      "VE"
+                    ],
+                    "qualifierName": [
+                      "veterinary"
+                    ],
+                    "majorTopic_YN": [
+                      "Y"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Time Factors"
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Alaska"
+            ],
+            "meshQualifierList": [
+              {
+                "meshQualifier": [
+                  {
+                    "abbreviation": [
+                      "EP"
+                    ],
+                    "qualifierName": [
+                      "epidemiology"
+                    ],
+                    "majorTopic_YN": [
+                      "N"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Arctic Regions"
+            ],
+            "meshQualifierList": [
+              {
+                "meshQualifier": [
+                  {
+                    "abbreviation": [
+                      "EP"
+                    ],
+                    "qualifierName": [
+                      "epidemiology"
+                    ],
+                    "majorTopic_YN": [
+                      "N"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Female"
+            ]
+          },
+          {
+            "majorTopic_YN": [
+              "N"
+            ],
+            "descriptorName": [
+              "Male"
+            ]
+          }
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Disease",
+          "Alopecia",
+          "Arctic",
+          "Skin Lesion",
+          "Ursus Maritimus",
+          "Polar Bears"
+        ]
+      }
+    ],
+    "subsetList": [
+      {
+        "subset": [
+          {
+            "code": [
+              "IM"
+            ],
+            "name": [
+              "Index Medicus"
+            ]
+          }
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.7589/2013-11-301"
+            ]
+          }
+        ]
+      }
+    ],
+    "inEPMC": [
+      "N"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "N"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCompletion": [
+      "2015-09-21"
+    ],
+    "dateOfCreation": [
+      "2015-01-07"
+    ],
+    "firstPublicationDate": [
+      "2015-01-01"
+    ],
+    "luceneScore": [
+      "676.6184"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  },
+  {
+    "id": [
+      "26026577"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "26026577"
+    ],
+    "DOI": [
+      "10.1016/j.crvi.2015.04.008"
+    ],
+    "title": [
+      "The role of Pleistocene glaciations in shaping the evolution of polar and brown bears. Evidence from a critical review of mitochondrial and nuclear genome analyses."
+    ],
+    "authorString": [
+      "Hassanin A."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Hassanin A"
+            ],
+            "firstName": [
+              "Alexandre"
+            ],
+            "lastName": [
+              "Hassanin"
+            ],
+            "initials": [
+              "A"
+            ],
+            "affiliation": [
+              "Institut de systématique, évolution, biodiversité, ISYEB-UMR 7205 CNRS, MNHN, Université Paris-6 (UPMC), Sorbonne Universités, 57, rue Cuvier, CP51, 75005 Paris, France. Electronic address: Hassanin@mnhn.fr."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "7"
+        ],
+        "volume": [
+          "338"
+        ],
+        "journalIssueId": [
+          "2294236"
+        ],
+        "dateOfPublication": [
+          "2015 Jul"
+        ],
+        "monthOfPublication": [
+          "7"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-07-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Comptes rendus biologies"
+            ],
+            "ISOAbbreviation": [
+              "C. R. Biol."
+            ],
+            "medlineAbbreviation": [
+              "C R Biol"
+            ],
+            "NLMid": [
+              "101140040"
+            ],
+            "ISSN": [
+              "1631-0691"
+            ],
+            "ESSN": [
+              "1768-3238"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "494-501"
+    ],
+    "abstractText": [
+      "In this report, I review recent molecular studies dealing with the origin and evolution of polar bears (Ursus maritimus), with special emphasis on their relationships with brown bears (U. arctos). On the basis of mitochondrial and nuclear data, different hypotheses have been proposed, including rapid morphological differentiation of U. maritimus, genetic introgression from U. arctos into U. maritimus, or inversely from U. maritimus into U. arctos, involving either male- or female-mediated gene flow. In the light of available molecular and eco-ethological data, I suggest, firstly, that all divergences among major clades of large bears can be linked to glacial periods, secondly, that polar bears diverged from brown bears before 530 thousand years ago (ka), during one of the three glacial marine isotope stages (MIS) 14, 15.2 or 16, and, thirdly, that genetic introgression had occurred from female polar bears into brown bear populations during at least two glacial periods, at 340 ± 10 ka (MIS 10) in western Europe, and at 155 ± 5 ka (MIS 6) on the ABC islands of southeastern Alaska, and probably also in Beringia and Ireland based on ancient DNA sequences."
+    ],
+    "affiliation": [
+      "Institut de systématique, évolution, biodiversité, ISYEB-UMR 7205 CNRS, MNHN, Université Paris-6 (UPMC), Sorbonne Universités, 57, rue Cuvier, CP51, 75005 Paris, France. Electronic address: Hassanin@mnhn.fr."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Print-Electronic"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Genome",
+          "Ursidae",
+          "mtDNA",
+          "Quaternary",
+          "Introgression",
+          "climatic changes",
+          "Molecular Dating",
+          "Nudna"
+        ]
+      }
+    ],
+    "subsetList": [
+      {
+        "subset": [
+          {
+            "code": [
+              "IM"
+            ],
+            "name": [
+              "Index Medicus"
+            ]
+          }
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.1016/j.crvi.2015.04.008"
+            ]
+          }
+        ]
+      }
+    ],
+    "inEPMC": [
+      "N"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "N"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2015-06-15"
+    ],
+    "electronicPublicationDate": [
+      "2015-05-27"
+    ],
+    "firstPublicationDate": [
+      "2015-05-27"
+    ],
+    "luceneScore": [
+      "669.19196"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  },
+  {
+    "id": [
+      "25791679"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "25791679"
+    ],
+    "DOI": [
+      "10.1007/s10393-015-1023-6"
+    ],
+    "title": [
+      "A Review of Infectious Agents in Polar Bears (Ursus maritimus) and Their Long-Term Ecological Relevance."
+    ],
+    "authorString": [
+      "C Fagre A, Patyk KA, Nol P, Atwood T, Hueffer K, Duncan C."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "C Fagre A"
+            ],
+            "firstName": [
+              "Anna"
+            ],
+            "lastName": [
+              "C Fagre"
+            ],
+            "initials": [
+              "A"
+            ],
+            "affiliation": [
+              "Veterinary Diagnostic Laboratory, College of Veterinary Medicine and Biomedical Sciences, Colorado State University, 300 West Drake Road, Fort Collins, CO, 80524, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Patyk KA"
+            ],
+            "firstName": [
+              "Kelly A"
+            ],
+            "lastName": [
+              "Patyk"
+            ],
+            "initials": [
+              "KA"
+            ],
+            "affiliation": [
+              "Center for Epidemiology and Animal Health, Science Technology and Analysis Services (STAS), Veterinary Services (VS), Animal and Plant Health Inspection Service (APHIS), United States Department of Agriculture (USDA), 2150 Centre Ave., Fort Collins, CO, 80526, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Nol P"
+            ],
+            "firstName": [
+              "Pauline"
+            ],
+            "lastName": [
+              "Nol"
+            ],
+            "initials": [
+              "P"
+            ],
+            "affiliation": [
+              "Wildlife-Livestock Disease Investigations Team, STAS, VS, APHIS, USDA, 4101 LaPorte Avenue, Fort Collins, CO, 80521, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Atwood T"
+            ],
+            "firstName": [
+              "Todd"
+            ],
+            "lastName": [
+              "Atwood"
+            ],
+            "initials": [
+              "T"
+            ],
+            "affiliation": [
+              "U.S. Geological Survey, Alaska Science Center, 4210 University Drive, Anchorage, AK, 99508, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Hueffer K"
+            ],
+            "firstName": [
+              "Karsten"
+            ],
+            "lastName": [
+              "Hueffer"
+            ],
+            "initials": [
+              "K"
+            ],
+            "affiliation": [
+              "Department of Veterinary Medicine, College of Natural Science and Mathematics, University of Alaska Fairbanks, Fairbanks, AK, 99775, USA."
+            ]
+          },
+          {
+            "fullName": [
+              "Duncan C"
+            ],
+            "firstName": [
+              "Colleen"
+            ],
+            "lastName": [
+              "Duncan"
+            ],
+            "initials": [
+              "C"
+            ],
+            "affiliation": [
+              "Veterinary Diagnostic Laboratory, College of Veterinary Medicine and Biomedical Sciences, Colorado State University, 300 West Drake Road, Fort Collins, CO, 80524, USA. colleen.duncan@colostate.edu."
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "3"
+        ],
+        "volume": [
+          "12"
+        ],
+        "journalIssueId": [
+          "2336915"
+        ],
+        "dateOfPublication": [
+          "2015 Sep"
+        ],
+        "monthOfPublication": [
+          "9"
+        ],
+        "yearOfPublication": [
+          "2015"
+        ],
+        "printPublicationDate": [
+          "2015-09-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "EcoHealth"
+            ],
+            "ISOAbbreviation": [
+              "Ecohealth"
+            ],
+            "medlineAbbreviation": [
+              "Ecohealth"
+            ],
+            "NLMid": [
+              "101222144"
+            ],
+            "ISSN": [
+              "1612-9202"
+            ],
+            "ESSN": [
+              "1612-9210"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "528-539"
+    ],
+    "abstractText": [
+      "Disease was a listing criterion for the polar bear (Ursus maritimus) as threatened under the Endangered Species Act in 2008; it is therefore important to evaluate the current state of knowledge and identify any information gaps pertaining to diseases in polar bears. We conducted a systematic literature review focused on infectious agents and associated health impacts identified in polar bears. Overall, the majority of reports in free-ranging bears concerned serosurveys or fecal examinations with little to no information on associated health effects. In contrast, most reports documenting illness or pathology referenced captive animals and diseases caused by etiologic agents not representative of exposure opportunities in wild bears. As such, most of the available infectious disease literature has limited utility as a basis for development of future health assessment and management plans. Given that ecological change is a considerable risk facing polar bear populations, future work should focus on cumulative effects of multiple stressors that could impact polar bear population dynamics."
+    ],
+    "affiliation": [
+      "Veterinary Diagnostic Laboratory, College of Veterinary Medicine and Biomedical Sciences, Colorado State University, 300 West Drake Road, Fort Collins, CO, 80524, USA."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Print-Electronic"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Fungi",
+          "Infection",
+          "Bacteria",
+          "Virus",
+          "Disease",
+          "parasites",
+          "Polar Bear",
+          "Ursus Maritimus",
+          "Vital Rates"
+        ]
+      }
+    ],
+    "subsetList": [
+      {
+        "subset": [
+          {
+            "code": [
+              "IM"
+            ],
+            "name": [
+              "Index Medicus"
+            ]
+          }
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.1007/s10393-015-1023-6"
+            ]
+          },
+          {
+            "availability": [
+              "Subscription required"
+            ],
+            "availabilityCode": [
+              "S"
+            ],
+            "documentStyle": [
+              "doi"
+            ],
+            "site": [
+              "DOI"
+            ],
+            "url": [
+              "http://dx.doi.org/10.1007/s10393-015-1023-6"
+            ]
+          }
+        ]
+      }
+    ],
+    "commentCorrectionList": [
+      {
+        "commentCorrection": [
+          {
+            "id": [
+              "26446003"
+            ],
+            "source": [
+              "MED"
+            ],
+            "reference": [
+              "Ecohealth. 2015 Sep;12(3):540"
+            ],
+            "type": [
+              "Erratum in"
+            ],
+            "orderIn": [
+              "1"
+            ]
+          }
+        ]
+      }
+    ],
+    "inEPMC": [
+      "N"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "N"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2015-10-28"
+    ],
+    "electronicPublicationDate": [
+      "2015-03-20"
+    ],
+    "firstPublicationDate": [
+      "2015-03-20"
+    ],
+    "luceneScore": [
+      "668.1438"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  },
+  {
+    "id": [
+      "17231763"
+    ],
+    "source": [
+      "MED"
+    ],
+    "pmid": [
+      "17231763"
+    ],
+    "pmcid": [
+      "PMC1288727"
+    ],
+    "title": [
+      "Comparison of the Convolutions of the Seals and Walrus with those of the Carnivora, and of Apes and Man."
+    ],
+    "authorString": [
+      "Turner W."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Turner W"
+            ],
+            "lastName": [
+              "Turner"
+            ],
+            "initials": [
+              "W"
+            ]
+          }
+        ]
+      }
+    ],
+    "journalInfo": [
+      {
+        "issue": [
+          "Pt 4"
+        ],
+        "volume": [
+          "22"
+        ],
+        "journalIssueId": [
+          "1373029"
+        ],
+        "dateOfPublication": [
+          "1888 Jul"
+        ],
+        "monthOfPublication": [
+          "7"
+        ],
+        "yearOfPublication": [
+          "1888"
+        ],
+        "printPublicationDate": [
+          "1888-07-01"
+        ],
+        "journal": [
+          {
+            "title": [
+              "Journal of anatomy and physiology"
+            ],
+            "ISOAbbreviation": [
+              "J Anat Physiol"
+            ],
+            "medlineAbbreviation": [
+              "J Anat Physiol"
+            ],
+            "NLMid": [
+              "7900125"
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": [
+      "554-581"
+    ],
+    "abstractText": [
+      " "
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubModel": [
+      "Print"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Journal Article"
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Free"
+            ],
+            "availabilityCode": [
+              "F"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC1288727?pdf=render"
+            ]
+          },
+          {
+            "availability": [
+              "Free"
+            ],
+            "availabilityCode": [
+              "F"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "Europe_PMC"
+            ],
+            "url": [
+              "http://europepmc.org/articles/PMC1288727"
+            ]
+          },
+          {
+            "availability": [
+              "Free"
+            ],
+            "availabilityCode": [
+              "F"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "PubMedCentral"
+            ],
+            "url": [
+              "http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=EBI&pubmedid=17231763"
+            ]
+          },
+          {
+            "availability": [
+              "Free"
+            ],
+            "availabilityCode": [
+              "F"
+            ],
+            "documentStyle": [
+              "pdf"
+            ],
+            "site": [
+              "PubMedCentral"
+            ],
+            "url": [
+              "http://www.pubmedcentral.nih.gov/picrender.fcgi?tool=EBI&pubmedid=17231763&action=stream&blobtype=pdf"
+            ]
+          }
+        ]
+      }
+    ],
+    "isOpenAccess": [
+      "N"
+    ],
+    "inEPMC": [
+      "Y"
+    ],
+    "inPMC": [
+      "Y"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "Y"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCompletion": [
+      "2007-02-07"
+    ],
+    "dateOfCreation": [
+      "2007-02-07"
+    ],
+    "dateOfRevision": [
+      "2008-11-20"
+    ],
+    "firstPublicationDate": [
+      "1888-07-01"
+    ],
+    "luceneScore": [
+      "44.594196"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  },
+  {
+    "id": [
+      "6780"
+    ],
+    "source": [
+      "ETH"
+    ],
+    "title": [
+      "Baylisascaris transfuga in captive and free-ranging populations of bears (Family: Ursidae)."
+    ],
+    "authorString": [
+      "Schaul J."
+    ],
+    "authorList": [
+      {
+        "author": [
+          {
+            "fullName": [
+              "Schaul J"
+            ],
+            "lastName": [
+              "Schaul"
+            ],
+            "initials": [
+              "J"
+            ]
+          }
+        ]
+      }
+    ],
+    "abstractText": [
+      "Baylisascaris transfuga, the bear roundworm is an ascaroid parasite that has been reported in all species of bears (giant panda, Ailuropoda melanoleuca; Maylayan sun bears, Helarctos malayanus; sloth bears, Melursus ursinus; American black bears, Ursus americanus; brown bear, Ursus arctos; polar bears, Ursus maritimus; Asiatic black bear, Selenarctos thibetanus; and Andean bears, Tremarctos ornatus). This ubiquitous nematode of bears is particularly problematic for captive populations. Baylisascaris species have been implicated in clinical and subclinical disease in natural hosts including bears, as well as lethal larval migrans syndromes in a number of domestic species, alternative livestock, and captive and free ranging incidental hosts, including humans. Eradication or improved control measures for addressing contaminated bear enclosures will heighten biosecurity for this infectious pathogen and reduce the risk of potential public health threats associated with Baylisascaris species. Impediments to control efforts include ineffective sanitation and disinfection of contaminated and re-contaminated exhibits, and concerns regarding the development of parasite resistance in helminth parasites of bears treated routinely with anti-helminthic pharmacological agents. The development of naturalistic exhibits and environmental enrichment programs in zoos and other captive wildlife facilities, enhances the educational mission of zoos and captive wildlife display facilities, but impedes husbandry practices and preventive medicine programs aimed at prevention, control and eradication of infectious pathogens in captive enclosures. The first objective of this study was to obtain information on husbandry and preventive health programs from captive bear-holding facilities for evaluating factors which influence parasite contamination, persistence, and transmission among individual bears, bears species, other collection animals and people. The second objective was to obtain data on coprodiagnostic tests used by institutions to detect parasite ova prevalence in captive collections and conduct baseline studies of current roundworm prevalence and intensity levels in bear holding collections. For this second objective, two coprodiagnostic techniques were employed to compare sensitivities of tests typically employed by captive facilities and more sophisticated tests known to yield higher recoveries of parasite ova. A final objective was to compare the prevalence and intensity levels of roundworms among wild populations of bears and between captive and free-ranging populations."
+    ],
+    "language": [
+      "eng"
+    ],
+    "pubTypeList": [
+      {
+        "pubType": [
+          "Dissertation"
+        ]
+      }
+    ],
+    "brSummary": [
+      "Publ:Ohio State University 2006 (Pg.tot: 221)"
+    ],
+    "bookOrReportDetails": [
+      {
+        "publisher": [
+          "Ohio State University"
+        ],
+        "yearOfPublication": [
+          "2006"
+        ],
+        "numberOfPages": [
+          "221"
+        ]
+      }
+    ],
+    "keywordList": [
+      {
+        "keyword": [
+          "Veterinary Preventive Medicine"
+        ]
+      }
+    ],
+    "fullTextUrlList": [
+      {
+        "fullTextUrl": [
+          {
+            "availability": [
+              "Free"
+            ],
+            "availabilityCode": [
+              "F"
+            ],
+            "documentStyle": [
+              "html"
+            ],
+            "site": [
+              "rave.ohiolink.edu"
+            ],
+            "url": [
+              "http://rave.ohiolink.edu/etdc/view?acc_num=osu1163172292"
+            ]
+          }
+        ]
+      }
+    ],
+    "inEPMC": [
+      "N"
+    ],
+    "inPMC": [
+      "N"
+    ],
+    "citedByCount": [
+      "0"
+    ],
+    "hasReferences": [
+      "N"
+    ],
+    "hasTextMinedTerms": [
+      "N"
+    ],
+    "hasDbCrossReferences": [
+      "N"
+    ],
+    "hasLabsLinks": [
+      "N"
+    ],
+    "hasTMAccessionNumbers": [
+      "N"
+    ],
+    "dateOfCreation": [
+      "2011-03-23"
+    ],
+    "dateOfRevision": [
+      "2011-04-11"
+    ],
+    "luceneScore": [
+      "25.919075"
+    ],
+    "hasBook": [
+      "N"
+    ]
+  }
+]

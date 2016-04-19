@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="target/tutorial/zika10/PMC3113902/results/word/frequencies/results.xml">
+  <result title="frequency" word="class" count="85"/>
+  <result title="frequency" word="CIITA" count="80"/>
+  <result title="frequency" word="expression" count="73"/>
+  <result title="frequency" word="MHC-II" count="56"/>
+  <result title="frequency" word="cells" count="50"/>
+  <result title="frequency" word="Van" count="49"/>
+  <result title="frequency" word="MHC" count="47"/>
+  <result title="frequency" word="Immunol." count="40"/>
+  <result title="frequency" word="transcriptional" count="40"/>
+  <result title="frequency" word="histone" count="36"/>
+  <result title="frequency" word="promoter" count="36"/>
+  <result title="frequency" word="transactivator" count="34"/>
+  <result title="frequency" word="transcription" count="34"/>
+  <result title="frequency" word="gene" count="32"/>
+  <result title="frequency" word="genes" count="32"/>
+  <result title="frequency" word="den" count="30"/>
+  <result title="frequency" word="regulatory" count="30"/>
+  <result title="frequency" word="{background" count="29"/>
+  <result title="frequency" word="Elsen" count="28"/>
+  <result title="frequency" word="complex" count="28"/>
+  <result title="frequency" word="MHC-I" count="27"/>
+  <result title="frequency" word="cell" count="26"/>
+  <result title="frequency" word="chromatin" count="26"/>
+  <result title="frequency" word="promoters" count="26"/>
+  <result title="frequency" word="factor" count="25"/>
+  <result title="frequency" word="MHCTA" count="23"/>
+  <result title="frequency" word="activation" count="23"/>
+  <result title="frequency" word="Biol." count="22"/>
+  <result title="frequency" word="margin" count="21"/>
+  <result title="frequency" word="role" count="21"/>
+ </snippets>
+</snippetsTree>

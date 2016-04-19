@@ -1,1 +1,20 @@
- @ClassList=("Introduction&Background", "Materials&Methods", "Results", "Discussion", "Conclusion&Future Work", "Case Study Report", "Acknowledgement&Funding", "Author Contribution", "Competing Interest", "Supplementary Data","Abbreviations", "Key words", "References", "Appendix", "Figures", "Tables", "Other", "Back_NoRef"); 
+ @ClassList=(
+"Introduction&Background",
+"Materials&Methods",
+"Results",
+"Discussion",
+"Conclusion&FutureWork",
+"CaseStudyReport",
+"Acknowledgement&Funding",
+"AuthorContribution",
+"CompetingInterest",
+"SupplementaryData",
+"Abbreviations",
+"Keywords",
+"References",
+"Appendix",
+"Figures",
+"Tables",
+"Other",
+"Back_NoRef"
+);

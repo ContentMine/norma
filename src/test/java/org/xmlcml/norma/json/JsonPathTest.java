@@ -9,7 +9,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.xmlcml.norma.Fixtures;
+import org.xmlcml.norma.NormaFixtures;
 
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.ReadContext;
@@ -23,7 +23,7 @@ public class JsonPathTest {
 	}
 	@Test
 	public void testExample0() throws IOException {
-		String json = FileUtils.readFileToString(new File(Fixtures.TEST_JSON_DIR, "jsonpathExample.json"));
+		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "jsonpathExample.json"));
 		ReadContext ctx = JsonPath.parse(json);
 		List<String> authorsOfBooksWithISBN = ctx.read("$.store.book[?(@.isbn)].author");
 		for (String author : authorsOfBooksWithISBN) {

@@ -152,8 +152,8 @@ I'd consider this answer an argument against the Java way of doing things.
 
 	    System.setProperty("javax.xml.transform.TransformerFactory",
 	            "net.sf.saxon.TransformerFactoryImpl");
-	    File xml_file = Fixtures.F507405_XML;
-	    File xsl_file = Fixtures.MINI_XSL;
+	    File xml_file = NormaFixtures.F507405_XML;
+	    File xsl_file = NormaFixtures.MINI_XSL;
 	    
 
 	    TransformerFactory tfactory = TransformerFactory.newInstance();
@@ -165,8 +165,8 @@ I'd consider this answer an argument against the Java way of doing things.
 	public void testSaxonXslt2GroupTest1() throws Exception {
 //		http://stackoverflow.com/questions/9925483/calling-java-from-xsl-saxon	
 
-	    File xml_file = Fixtures.XSLT2_TEST1_XML;
-	    File xsl_file = Fixtures.XSLT2_TEST1_XSL;
+	    File xml_file = NormaFixtures.XSLT2_TEST1_XML;
+	    File xsl_file = NormaFixtures.XSLT2_TEST1_XSL;
 	    
 
 	    System.setProperty("javax.xml.transform.TransformerFactory",
@@ -184,8 +184,8 @@ I'd consider this answer an argument against the Java way of doing things.
 	public void testSaxonGroup() throws Exception {
 //		http://stackoverflow.com/questions/9925483/calling-java-from-xsl-saxon	
 
-	    File xml_file = Fixtures.F507405_XML;
-	    File xsl_file = Fixtures.GROUP_MAJOR_SECTIONS_XSL;
+	    File xml_file = NormaFixtures.F507405_XML;
+	    File xsl_file = NormaFixtures.GROUP_MAJOR_SECTIONS_XSL;
 	    
 // this is wrong
 	    TransformerFactory tfactory = net.sf.saxon.TransformerFactoryImpl.newInstance();
@@ -300,7 +300,7 @@ I'd consider this answer an argument against the Java way of doing things.
 	@Test
 	@Ignore // files deleted - really just a reminder of how to do it
 	public void testRunStylesheet() throws TransformerFactoryConfigurationError, TransformerException {
-		File mzDir = new File(Fixtures.TEST_PUBSTYLE_DIR, "metabolomics/");
+		File mzDir = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "metabolomics/");
 		File mzFile = new File(mzDir, "small.pwiz.1.1.mzML.xml");
 		Source mzSource = new StreamSource(mzFile);
 		File xslFile = new File(mzDir, "mz2tom.xsl");
