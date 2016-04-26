@@ -35,6 +35,7 @@ import net.minidev.json.JSONArray;
 
 public class EPMCConverter implements CellCalculator {
 
+
 	private static final Logger LOG = Logger.getLogger(EPMCConverter.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -114,10 +115,13 @@ public class EPMCConverter implements CellCalculator {
 
 	private void writeCurrentCTree(JsonElement entry) {
 		if (currentCTree != null && currentCTree.getDirectory() != null) {
+			File metaSourceDir = currentCTree.ensureMetaChildDirectory(CTree.SOURCE_DIR_NAME);
 			File entryFile = new File(currentCTree.getDirectory(), CProject.EUPMC_RESULTS_JSON);
 			entry = stripOneElementArrays(entry);
 			try {
-				DefaultArgProcessor.CM_LOG.debug("wrote: "+entryFile);
+				LOG.debug("wrote: "+entryFile);
+				File metaSourceMetadataFile = new File(metaSourceDir, CTree.METADATA_JSON);
+				FileUtils.writeStringToFile(metaSourceMetadataFile, entry.toString(), Charset.forName("UTF-8"));
 				FileUtils.writeStringToFile(entryFile, entry.toString(), Charset.forName("UTF-8"));
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+entryFile);
@@ -212,6 +216,7 @@ public class EPMCConverter implements CellCalculator {
 		this.dataTablesTool = dataTablesTool;
 	}
 	
+	@Deprecated // move tyo separate class
 	public DataTablesTool getOrCreateDataTablesTool() {
 		if (dataTablesTool == null) {
 			dataTablesTool = new DataTablesTool();
@@ -223,6 +228,7 @@ public class EPMCConverter implements CellCalculator {
 		getOrCreateDataTablesTool();
 		dataTablesTool.setTitle("METADATA");
 		dataTablesTool.setCellCalculator(this);
+		LOG.warn("change link");
 		this.setRemoteLink0("../../src/test/resources/org/xmlcml/ami2/zika/");
 		this.setRemoteLink1("/scholarly.html");
 		this.setRowHeadingName("EPMCID");
