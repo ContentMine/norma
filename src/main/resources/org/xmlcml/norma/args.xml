@@ -1,5 +1,6 @@
-<argList name="norma" version="0.2.26">
+<argList name="norma" version="0.2.227p">
 
+  <p>20160501: added TaylorAndFrancis cleaner - nearly finished</p>
   <p>20160329: citation extraction and plotting</p>
   <p>20160322: more JATS including PM(C)ID extraction</p>
   <p>20160322: major work on JATS </p>
@@ -23,6 +24,7 @@
   <p>20160114: moved classes to NormaFixtures</p>
   <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
+    
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
 		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"

@@ -59,6 +59,10 @@ public class NormaTransformer {
 	public static final String TXT2HTML = "txt2html";
 	public static final String TEX2HTML = "tex2html";
 	
+	public static final String HTMLUNIT = "htmlunit";
+	public static final String JSOUP = "jsoup";
+	public static final String TIDY = "tidy";
+	
 	public static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
 			HOCR2SVG,
 			PDF2HTML,
@@ -121,21 +125,33 @@ public class NormaTransformer {
 			String optionValue = option.getStringValue();
 			// check for NON-XSL transformation types
 			if (false) {				
+				//
+			} else if (
+				// alternate syntax
+				HTMLUNIT.equals(optionValue) ||
+				JSOUP.equals(optionValue) ||
+				TIDY.equals(optionValue) 
+				) {
+				LOG.warn("Please use --html to clean HTML, and include *before* --transform");
+				normaArgProcessor.runHtml(option);
 			} else if (HOCR2SVG.equals(optionValue)) {
 				svgElement = applyHOCR2SVGToInputFile();
-			} else if (PDF2TXT.equals(optionValue)) {
-				outputTxt = applyPDF2TXTToCTree();
-			} else if (PDF2IMAGES.equals(optionValue)) {
-				serialImageList = applyPDF2ImagesToCTree();
-			} else if (TXT2HTML.equals(optionValue)) {
-				htmlElement = applyTXT2HTMLToCTree();
-			} else if (PDF2SVG.equals(optionValue)) {
-				applyPDF2SVGToCMLDir();
 			} else if (PDF2HTML.equals(optionValue)) {
 				applyPDF2SVGToCMLDir();
 //				htmlElement = convertToHTML();
+			} else if (PDF2IMAGES.equals(optionValue)) {
+				serialImageList = applyPDF2ImagesToCTree();
+			} else if (PDF2SVG.equals(optionValue)) {
+				applyPDF2SVGToCMLDir();
+			} else if (PDF2TXT.equals(optionValue)) {
+				outputTxt = applyPDF2TXTToCTree();
 			} else if (TEX2HTML.equals(option.getStringValue())) {
 				xmlStringList = convertTeXToHTML();
+			} else if (TXT2HTML.equals(optionValue)) {
+				htmlElement = applyTXT2HTMLToCTree();
+			} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
+				LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
+//				xmlStringList = applyXSLDocumentListToCurrentCTree();
 			} else {
 				// treat as XSL transform
 				xmlStringList = applyXSLDocumentListToCurrentCTree();
@@ -264,7 +280,7 @@ public class NormaTransformer {
 		try {
 			xmlString = transformerWrapper.transformToXML(inputFile);
 		} catch (TransformerException e) {
-			throw new RuntimeException("cannot transform: ", e);
+			throw new RuntimeException("cannot transform "+inputFile, e);
 		}
 		return xmlString;
 	}

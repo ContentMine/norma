@@ -18,6 +18,7 @@
 
 	<xsl:template match="comment()" priority="1.0"/>
 
+<!--  cleaning -->
 <!-- navigation -->
 	<xsl:template match="h:div[@id='global-notification']" priority="0.6"/>
  	<xsl:template match="h:div[@id='xplore-header']"/> 

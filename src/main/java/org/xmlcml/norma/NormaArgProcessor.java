@@ -63,6 +63,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private boolean removeDTD;
 	private NormaTransformer normaTransformer;
 	private List<SectionTagger> sectionTaggerNameList;
+	private HtmlElement cleanedHtmlElement;
 
 	public NormaArgProcessor() {
 		super();
@@ -209,13 +210,13 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	public void runHtml(ArgumentOption option) {
 		LOG.trace("***run html "+currentCTree);
 		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
-		HtmlElement htmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
-		if (htmlElement == null) {
+		cleanedHtmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
+		if (cleanedHtmlElement == null) {
 			LOG.error("Cannot parse HTML");
 			return;
 		}
 		if (output != null) {
-			currentCTree.writeFile(htmlElement.toXML(), output);
+			currentCTree.writeFile(cleanedHtmlElement.toXML(), output);
 		}
 	}
 
@@ -451,6 +452,14 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public CTree getCurrentCMTree() {
 		return currentCTree;
+	}
+
+	/** created by Tidy.
+	 * 
+	 * @return
+	 */
+	public HtmlElement getCleanedHtmlElement() {
+		return cleanedHtmlElement;
 	}
 
 }
