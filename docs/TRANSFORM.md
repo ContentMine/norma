@@ -11,7 +11,7 @@ for PDFBox See http://stackoverflow.com/questions/8705163/extract-images-from-pd
 we have implemented PDF2TXT which converts PDFs to (hopefully) UTF-8 text.
 
 ## HTML
-The HTML from publishers varies enormously. Some is well-formed, without publisher-specific additiona, without JS, with clear nested sections. At the other end of the spectrum is an awful mixtures of unbalanced tags, unquoted attributes, javascript and self-loading documents.
+The HTML from publishers varies enormously. Some is well-formed, without publisher-specific additions, without javascript, with clear nested sections. At the other end of the spectrum is an awful mixture of unbalanced tags, unquoted attributes, unknown tags, IF sections, javascript and self-loading documents.
 
 ### tidying
 Tidying is though Transform calling the HTML library. This has options to use `jtidy`, `htmlunit` or `jsoup`. The value of these changes with later releases of the programs , or falls when new features are added to the publisher HTML. The likelihood is that publishers will converge towards some undocumented HTML5-like version with occasional errors, non-standard tags.
