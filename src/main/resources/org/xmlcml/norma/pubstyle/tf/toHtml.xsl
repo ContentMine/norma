@@ -4,7 +4,6 @@
     <xsl:output method="xhtml"/>
 
 	<xsl:template match="/">
-<!--   	  <xsl:message>CLEAN TF</xsl:message> -->
 		<xsl:apply-templates />
 	</xsl:template>
 
@@ -76,6 +75,11 @@
   	<xsl:template match="h:div[contains(@class,'credits')]"/> 
   	<xsl:template match="h:a[starts-with(.,'[') and ends-with(.,']')]"/> 
   	<xsl:template match="h:a[.='View all references']"/> 
+  	<xsl:template match="h:a[.='figureViewerArticleInfo']"/> 
+  	<xsl:template match="h:div[@class='hidden']"/> 
+  	<xsl:template match="h:span[contains(@class,'dropDownAlt')]"/> 
+  	<xsl:template match="h:a[contains(@onclick,'showFigures')]"/> 
+  	<xsl:template match="h:div[@class='figureDownloadOptions']"/> 
   	<xsl:template match="h:div[normalize-space(.)='']" priority="0.51"/> 
 
 </xsl:stylesheet>
