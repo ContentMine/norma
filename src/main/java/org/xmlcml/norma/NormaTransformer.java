@@ -3,11 +3,10 @@ package org.xmlcml.norma;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +18,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
@@ -27,11 +27,13 @@ import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
+import org.xmlcml.norma.table.CSVTransformer;
 import org.xmlcml.norma.tagger.SectionTagger;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
@@ -42,6 +44,70 @@ import nu.xom.Element;
 
 public class NormaTransformer {
 
+	/** manages types of transform in Norma.
+	 * 
+	 * @author pm286
+	 *
+	 */
+	public enum Type {
+		HTMLUNIT("htmlunit", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		JSOUP("jsoup", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		TIDY("tidy", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		
+		HOCR2SVG("hocr2svg", "image/", CTree.PNG, "svg/", CTree.SVG),
+		CSV2HTML("csv2html", "table/", CTree.CSV, "table/", CTree.HTML),
+		PDF2HTML("pdf2html", null, CTree.PDF, null, CTree.HTML),
+		PDF2IMAGES("pdf2images", null, CTree.PDF, "image/", CTree.PNG),
+		PDF2SVG("pdf2svg", null, CTree.PDF, "svg/", CTree.SVG),
+		PDF2TXT("pdf2txt", null, CTree.PDF, null, CTree.TXT),
+		TEX2HTML("tex2html", null, CTree.TEX, null, CTree.HTML),
+		TXT2HTML("txt2html", null, CTree.TXT, null, CTree.HTML);
+	
+		public String inputFilename;
+		public String outputFilename;
+		public String transform;
+		public String inputDirName;
+		public String outputDirName;
+	
+		private Type(String transform, String inputDir, String inputFilename, String outputDir, String outputFilename) {
+			this.inputDirName = inputDir;
+			this.outputDirName = outputDir;
+			this.transform = transform;
+			this.inputFilename = inputFilename;
+			this.outputFilename = outputFilename;
+		}
+	
+		public boolean matches(String transformTypeString) {
+			return transform.equals(transformTypeString);
+		}
+	
+		public static boolean contains(String token) {
+			for (Type type : values()) {
+				if (type.matches(token)) {
+					return true;
+				}
+			}
+			return false;
+		}
+		
+		public File getDefaultInputFile(CTree cTree) {
+			return new File(cTree.getDirectory(), inputFilename);
+		}
+		
+		public File getDefaultOutputFile(CTree cTree) {
+			return new File(cTree.getDirectory(), outputFilename);
+		}
+		
+		public static Type createTransformType(String transformTypeString) {
+			for (Type type : values()) {
+				if (type.matches(transformTypeString)) {
+					return type;
+				}
+			}
+			return null;
+		}
+	}
+
 	private static final Logger LOG = Logger.getLogger(NormaTransformer.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -51,32 +117,7 @@ public class NormaTransformer {
 	private static final String STYLESHEET_BY_NAME_XML = "/org/xmlcml/norma/pubstyle/stylesheetByName.xml";
 	private static final String NAME = "name";
 
-	public static final String HOCR2SVG = "hocr2svg";
-	public static final String PDF2HTML = "pdf2html";
-	public static final String PDF2SVG = "pdf2svg";
-	public static final String PDF2TXT = "pdf2txt";
-	public static final String PDF2IMAGES = "pdf2images";
-	public static final String TXT2HTML = "txt2html";
-	public static final String TEX2HTML = "tex2html";
-	
-	public static final String HTMLUNIT = "htmlunit";
-	public static final String JSOUP = "jsoup";
-	public static final String TIDY = "tidy";
-	
-	public static final List<String> TRANSFORM_OPTIONS = Arrays.asList(new String[]{
-			HOCR2SVG,
-			PDF2HTML,
-			PDF2SVG,
-			PDF2TXT,
-			PDF2IMAGES,
-			TXT2HTML,
-			TEX2HTML,
-	});
-
-
-
 	private NormaArgProcessor normaArgProcessor;
-	private File inputFile;
 	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
 
 	String outputTxt;
@@ -88,7 +129,14 @@ public class NormaTransformer {
 	private List<String> transformList;
 	private List<org.w3c.dom.Document> xslDocumentList;
 	private Map<String, String> stylesheetByNameMap;
-	private String inputTxt;
+	
+	private File inputFile;
+	private String inputTxt; // text input // maybe move
+	private File outputFile;
+	private String transformTypeString;
+	private Type type;
+	private File outputDir;
+	private File inputDir;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
@@ -104,8 +152,97 @@ public class NormaTransformer {
 	 *
 	 * @param option
 	 */
-	boolean transform(ArgumentOption option) {
-		boolean ok = false;
+	void transform(ArgumentOption option) {
+		if (!option.getVerbose().equals(TRANSFORM)) {
+			throw new RuntimeException("Bad option for transform");
+		}
+		String transformTypeString = option.getStringValue();
+		type = Type.createTransformType(transformTypeString);
+		if (type == null) {
+			throw new RuntimeException("Cannot find transform: "+transformTypeString+"; allowed values: "+Type.values());
+		}
+		parseOptionsAndCheckInputOutput();
+		if (inputDir != null) {
+			transformDirectory();
+		} else if (inputFile != null) {
+			transformSingleInput();
+		}
+		
+	}
+
+	private void transformDirectory() {
+		if (type.inputDirName == null) {
+			throw new RuntimeException("must have input directory for: "+type);
+		}
+		File[] files = inputDir.listFiles(new FilenameFilter() {
+			public boolean accept(File dir, String name) {
+				return name != null && name.endsWith(CTree.DOT + type.inputFilename);
+			}
+		});
+		if (files != null) {
+			outputDir.mkdirs();
+			for (File file : files) {
+				String basename = FilenameUtils.getBaseName(file.toString());
+				inputFile = file;
+				outputFile = new File(outputDir, basename+CTree.DOT+type.outputFilename);
+				transformSingleInput();
+				outputSpecifiedFormat();
+			}
+		}
+		
+	}
+
+	private void parseOptionsAndCheckInputOutput() {
+		String inputDirName = normaArgProcessor.getInputDirName();
+		String outputDirName = normaArgProcessor.getOutputDirName();
+		currentCTree = normaArgProcessor.getCurrentCMTree();
+		outputFile = normaArgProcessor.getOutputFile();
+		
+		// create default directory name
+		inputDirName = (type.inputDirName != null) ? type.inputDirName : inputDirName;
+		outputDirName = (type.outputDirName != null) ? type.outputDirName : outputDirName;
+		if (inputDirName != null) {
+			parseInputDirectoryAndAddDefaults(inputDirName, outputDirName);
+		} else {
+			parseInputFile();
+		} 
+		if (inputFile == null && inputDir == null) {
+			throw new RuntimeException("for transform: "+type+": --input or --inputDir must be given");
+		}
+		LOG.debug("inputFile: "+inputFile+"; outputFile: "+outputFile + "; inputDir: "+inputDirName+"; outputDir: "+outputDirName);
+	}
+
+	private void parseInputFile() {
+		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
+		if (inputFile == null) {
+			inputFile = type.getDefaultInputFile(currentCTree);
+			if (inputFile == null) {
+				LOG.warn("cannot find defaultInputFile: "+currentCTree+" ? "+type);
+			}
+		}
+		if (!inputFile.exists()) {
+			throw new RuntimeException("Input file does not exist: "+inputFile);
+		}
+		if (outputFile == null) {
+			outputFile = type.getDefaultOutputFile(currentCTree);
+		}
+	}
+
+	private void parseInputDirectoryAndAddDefaults(String inputDirName, String outputDirName) {
+		if (outputDirName == null) {
+			throw new RuntimeException("Output Dir must be given");
+		} else if (inputFile != null) {
+			LOG.warn("inputFile must be not given with --inputDirName; found "+inputFile);
+		}
+		inputDir = new File(currentCTree.getDirectory(), inputDirName);
+		if (!inputDir.exists()) {
+			throw new RuntimeException("Input directory does not exist: "+inputDir);
+		}
+		outputDir = new File(currentCTree.getDirectory(), outputDirName);
+		outputDir.mkdirs();
+	}
+
+	private void transformSingleInput() {
 		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
@@ -113,64 +250,55 @@ public class NormaTransformer {
 		xmlStringList = null;
 		serialImageList = null;
 		
-		currentCTree = normaArgProcessor.getCurrentCMTree();
-		LOG.trace("CM "+currentCTree);
-		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
-		if (inputFile == null) {
-			return ok;
-		}
-		LOG.trace("TRANSFORM "+option.getVerbose()+"; "+currentCTree);
-		if (option.getVerbose().equals(XSL) || option.getVerbose().equals(TRANSFORM)) {
-			ok = true;
-			String optionValue = option.getStringValue();
-			// check for NON-XSL transformation types
-			if (false) {				
-				//
-			} else if (
-				// alternate syntax
-				HTMLUNIT.equals(optionValue) ||
-				JSOUP.equals(optionValue) ||
-				TIDY.equals(optionValue) 
-				) {
-				LOG.warn("Please use --html to clean HTML, and include *before* --transform");
-				normaArgProcessor.runHtml(option);
-			} else if (HOCR2SVG.equals(optionValue)) {
-				svgElement = applyHOCR2SVGToInputFile();
-			} else if (PDF2HTML.equals(optionValue)) {
-				applyPDF2SVGToCMLDir();
+		// check for NON-XSL transformation types
+		if (false) {				
+			//
+		} else if (
+			// alternate syntax
+			Type.HTMLUNIT.equals(type) ||
+			Type.JSOUP.equals(type) ||
+			Type.TIDY.equals(type) 
+			) {
+			LOG.warn("Please use --html to clean HTML, and include *before* --transform");
+			normaArgProcessor.runHtmlCleaner(transformTypeString);
+		} else if (Type.HOCR2SVG.equals(type)) {
+			svgElement = applyHOCR2SVGToInputFile();
+		} else if (Type.CSV2HTML.equals(type)) {
+			htmlElement = applyCSV2HtmlToInputFile();
+		} else if (Type.PDF2HTML.equals(type)) {
+			applyPDF2SVGToCurrentTree();
 //				htmlElement = convertToHTML();
-			} else if (PDF2IMAGES.equals(optionValue)) {
-				serialImageList = applyPDF2ImagesToCTree();
-			} else if (PDF2SVG.equals(optionValue)) {
-				applyPDF2SVGToCMLDir();
-			} else if (PDF2TXT.equals(optionValue)) {
-				outputTxt = applyPDF2TXTToCTree();
-			} else if (TEX2HTML.equals(option.getStringValue())) {
-				xmlStringList = convertTeXToHTML();
-			} else if (TXT2HTML.equals(optionValue)) {
-				htmlElement = applyTXT2HTMLToCTree();
-			} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
-				LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
+		} else if (Type.PDF2IMAGES.equals(type)) {
+			serialImageList = applyPDF2ImagesToCTree();
+		} else if (Type.PDF2SVG.equals(type)) {
+			applyPDF2SVGToCurrentTree();
+		} else if (Type.PDF2TXT.equals(type)) {
+			outputTxt = applyPDF2TXTToCTree();
+		} else if (Type.TEX2HTML.equals(type)) {
+			xmlStringList = convertTeXToHTML();
+		} else if (Type.TXT2HTML.equals(type)) {
+			htmlElement = applyTXT2HTMLToCTree();
+		} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
+			LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
 //				xmlStringList = applyXSLDocumentListToCurrentCTree();
-			} else {
-				// treat as XSL transform
-				xmlStringList = applyXSLDocumentListToCurrentCTree();
-			}
-			// http://grepcode.com/file/repo1.maven.org/maven2/org.apache.pdfbox/pdfbox/1.6.0/org/apache/pdfbox/util/PDFTextStripper.java#PDFTextStripper.getSortByPosition%28%29
-			// GitHub, ASPERA, Galaxy, Asana
-			
+		} else {
+			// treat as XSL transform
+			xmlStringList = applyXSLDocumentListToCurrentCTree();
 		}
-		return ok;
 	}
 
 	public static void listTransformOptions() {
 		System.err.println("TRANSFORMATION OPTIONS");
-		for (String transform : NormaTransformer.TRANSFORM_OPTIONS) {
-			System.err.println("  "+transform);
+		for (Type type : Type.values()) {
+			System.err.println("  "+type.transform);
 		}
 		System.err.println();
 	}
 	
+	private HtmlTable applyCSV2HtmlToInputFile() {
+		return CSVTransformer.createTable(inputFile);
+	}
+
 	private SVGElement applyHOCR2SVGToInputFile() {
 		HOCRReader hocrReader = new HOCRReader();
 		try {
@@ -182,7 +310,7 @@ public class NormaTransformer {
 		return svgSvg;
 	}
 
-	private String applyPDF2SVGToCMLDir() {
+	private String applyPDF2SVGToCurrentTree() {
 		String txt = "NYI";
 		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
 		try {
@@ -418,7 +546,18 @@ public class NormaTransformer {
 	}
 
 	void outputSpecifiedFormat() {
-		String output = normaArgProcessor.getOutput();
+		String output = null;
+		if (outputFile != null) {
+			String outname = outputFile.getAbsolutePath().toString();
+			String treename = currentCTree.getDirectory().getAbsolutePath().toString();
+			if (!outname.startsWith(treename)) {
+				throw new RuntimeException("outname is not child of Ctree "+outname+" ; "+treename);
+			}
+			output = outname.substring(treename.length());
+			// output is of form "table/table1.html"
+		} else {
+			output = normaArgProcessor.getOutput();
+		}
 		if (outputTxt != null) {
 			currentCTree.writeFile(outputTxt, (output != null ? output : CTree.FULLTEXT_PDF_TXT));
 		}
@@ -450,7 +589,7 @@ public class NormaTransformer {
 			org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(token);
 			if (xslDocument != null) {
 				xslDocumentList.add(xslDocument);
-			} else if (NormaTransformer.TRANSFORM_OPTIONS.contains(token)) {
+			} else if (Type.contains(token)) {
 				transformList.add(token);
 			} else {
 				normaArgProcessor.TREE_LOG().warn("Cannot process transform token: "+token+" as symbol or stylesheet");

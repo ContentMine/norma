@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
@@ -44,6 +45,43 @@ public class TFTest {
 		argProcessor.runAndOutput(); 
 		File shtml = ctree0.getExistingScholarlyHTML();
 		Assert.assertTrue("shtml: ", shtml.exists());
+	}
+	
+	@Test
+	@Ignore // data not in norma scope
+	public void testConvertJOER() {
+		File targetDir = new File("target/tutorial/joer");
+		CMineTestFixtures.cleanAndCopyDir(new File("../../../gita/joer"), targetDir);
+		String args = "--project "+targetDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+		CProject project = new CProject(targetDir);
+		CTree ctree0 = project.getCTreeList().get(0);
+		File xhtml = ctree0.getExistingFulltextXHTML();
+		if (xhtml != null) {
+			LOG.debug("OK ");
+			Assert.assertTrue("xhtml: ", xhtml != null);
+			args = "--project "+targetDir+" -i fulltext.xhtml -o scholarly.html --transform tf2html";
+			argProcessor = new NormaArgProcessor(args); 
+			argProcessor.runAndOutput(); 
+			File shtml = ctree0.getExistingScholarlyHTML();
+			Assert.assertTrue("shtml: ", shtml.exists());
+		} else {
+			LOG.debug("null XHTML");
+		}
+	}
+	
+	@Test
+	public void convertToc() {
+		File targetDir = new File("target/tutorial/tf");
+		CMineTestFixtures.cleanAndCopyDir(new File("src/test/resources/org/xmlcml/norma/pubstyle/tf/toc/"), targetDir);
+		String args = "--project "+targetDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+		args = "--project "+targetDir+" -i fulltext.xhtml -o scholarly.html --transform tf2html";
+		argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+			
 	}
 	
 }

@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -55,6 +56,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
+	private List<StringPair> movePairList;
+	private List<StringPair> renamePairList;
 	private List<StringPair> namePairList;
 	private Pubstyle pubstyle;
 	private List<String> stripList;
@@ -108,6 +111,16 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 		LOG.trace("HTML: "+tidyName);
+	}
+
+	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		movePairList = option.processArgs(tokens).getStringPairValues();
+	}
+
+	public void parseRename(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		renamePairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
@@ -200,23 +213,100 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		} else {
 			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
-			ok = normaTransformer.transform(option);
-			if (!ok) {
-				currentCTree = null;
-			}
+			normaTransformer.transform(option);
 		}
 	}
 
 	public void runHtml(ArgumentOption option) {
+		String cleanerType = option.getStringValue();
+		runHtmlCleaner(cleanerType);
+	}
+
+	void runHtmlCleaner(String cleanerType) {
 		LOG.trace("***run html "+currentCTree);
 		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
-		cleanedHtmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
+		cleanedHtmlElement = htmlCleaner.cleanHTML2XHTML(cleanerType);
 		if (cleanedHtmlElement == null) {
 			LOG.error("Cannot parse HTML");
 			return;
 		}
 		if (output != null) {
 			currentCTree.writeFile(cleanedHtmlElement.toXML(), output);
+		}
+	}
+
+	public void runCopy(ArgumentOption option) {
+		LOG.trace("***run copy "+currentCTree);
+		try {
+			copyFile();
+		} catch (IOException e) {
+			throw new RuntimeException("cannot copy file", e);
+		}
+	}
+
+	public void runMove(ArgumentOption option) {
+		LOG.debug("***run move "+currentCTree);
+		moveFiles();
+	}
+
+	public void runRename(ArgumentOption option) {
+		LOG.trace("***run rename "+currentCTree);
+		renameFiles();
+	}
+
+	private void moveFiles() {
+		if (movePairList == null) {
+			throw new RuntimeException("must give parseMove");
+		}
+		if (currentCTree == null) {
+			throw new RuntimeException("no current CTree");
+		}
+		for (StringPair movePair : movePairList) {
+			final String suffix = movePair.left;
+			String toDir = movePair.right;
+			File directory = currentCTree.getDirectory();
+			File to = new File(directory, toDir);
+			File[] files = directory.listFiles(new FilenameFilter() {
+				public boolean accept(File dir, String name) {
+					return suffix.equals(FilenameUtils.getExtension(name));
+				}
+			});
+			if (files != null) {
+				for (File file : files) {
+					try {
+						FileUtils.moveFileToDirectory(file, to, true);
+					} catch (IOException e) {
+						LOG.warn("cannot move file: "+file+"; "+e);
+					}
+				}
+			}
+		}
+	}
+
+	private void renameFiles() {
+		if (renamePairList == null) {
+			throw new RuntimeException("must give parseRename");
+		}
+		for (StringPair namePair : renamePairList) {
+			File from = new File(currentCTree.getDirectory(), namePair.left);
+			File to = new File(currentCTree.getDirectory(), namePair.right);
+			try {
+				FileUtils.copyFile(from, to, true);
+				FileUtils.forceDelete(from);
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot rename file: "+from+" => "+to, e);
+			}
+		}
+	}
+
+	private void copyFile() throws IOException {
+		if (namePairList == null) {
+			throw new RuntimeException("must give parseMove");
+		}
+		for (StringPair namePair : namePairList) {
+			File from = new File(currentCTree.getDirectory(), namePair.left);
+			File to = new File(currentCTree.getDirectory(), namePair.right);
+			FileUtils.copyFile(from, to);
 		}
 	}
 
@@ -275,7 +365,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (cTree == null) {
 			throw new RuntimeException("null cTree");
 		}
-		String inputName = getString();
+		String inputName = getSingleInputName();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
@@ -298,7 +388,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private void createCTreeListFromInputList() {
 		// proceed unless there is a single reserved file for input
 		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
-			LOG.trace("CREATING CTree FROM INPUT:"+inputList);
+			LOG.debug("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
 			// this actually creates directory
 			getOrCreateOutputDirectory();
 			ensureCTreeList();
@@ -361,9 +451,9 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	private void ensureReservedDirectoryAndCopyFile(CTree cTree, String reservedFilename, String filename) {
 		File reservedDir = new File(cTree.getDirectory(), reservedFilename);
-		LOG.trace("Res "+reservedDir.getAbsolutePath());
+		LOG.debug("Res "+reservedDir.getAbsolutePath());
 		File orig = new File(filename);
-		LOG.trace("Orig: "+orig.getAbsolutePath());
+		LOG.debug("Orig: "+orig.getAbsolutePath());
 		try {
 			FileUtils.forceMkdir(reservedDir);
 		} catch (IOException e) {

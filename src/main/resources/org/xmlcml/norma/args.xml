@@ -1,5 +1,6 @@
 <argList name="norma" version="0.2.227p">
 
+  <p>20160509: csv2html conversion and --inputDir</p>
   <p>20160501: added TaylorAndFrancis cleaner - nearly finished</p>
   <p>20160329: citation extraction and plotting</p>
   <p>20160322: more JATS including PM(C)ID extraction</p>
@@ -49,6 +50,46 @@
 			List of expressions identifying XML element to wrap as divs/sections
 			Examples might be h1, h2, h3, or numbers sections
 			Still under development.
+		</help>
+	</arg>
+
+	<arg 
+	    name="move" 
+	    long="--move" 
+	    args=" glob directory"
+		class="org.xmlcml.cmine.args.StringPair" 
+		countRange="{1,*}"
+		parseMethod="parseMove"
+		runMethod="runMove">
+		<help>
+			NOT YET IMPLEMENTED
+			moves files of type glob to directory (subdirectory of CTree), creating it if necessary
+			at the moment globbing only on file suffixes as we need to protect the metacharacters
+			from the shell.
+			
+			So if glob = "csv" and directory is table, files of type "*.csv" are moved to ctree/table/
+			
+		</help>
+	</arg>
+
+	<arg 
+	    name="rename" 
+	    long="--rename" 
+	    args=" file1,file2 [file1,file2 ....]"
+		class="org.xmlcml.cmine.args.StringPair" 
+		countRange="{1,*}"
+		parseMethod="parseRename"
+		runMethod="runRename">
+		<help>
+			NOT YET IMPLEMENTED
+			List of comma-separated pairs of filenames; the first is replaced by the
+			second. Supports simple regex
+			Example might be:
+			<tt>tab.htm table.html</tt>
+			i.e. rename tab.htm to table.html
+			<tt>table(\d+).html tables/table$1.html</tt>
+			i.e. rename table1.html, table2.html ... to tables/table1.html, tables/table2.html ...
+			
 		</help>
 	</arg>
 
@@ -226,11 +267,11 @@
 		countRange="{1,*}" 
 		parseMethod="parseTransform" 
 		runMethod="runTransform"
-		required="--input --output">
+		>
 		<help>
 		<p class="brief">
 			Transform XML or HTML or PDF or other input</p>
-			<p class="note">Relacement for --xsl</p>
+			<p class="note">Replacement for --xsl</p>
 			<p>Argument may be a file/URL reference to a
 			stylesheet,
 			or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup,
@@ -249,6 +290,7 @@
 		<value name="pdf2images"></value> 
 		<value name="hocr2svg" input="image/*.png" output="image/*.svg"></value> 
 		<value name="tex2html" input="fulltext.tex" output="fulltext.html"></value> 
+		<value name="csv2html" input="tables/*.csv" output="tables/*.html"></value> 
 		<value name="*.xsl" input="fulltext.tex" output="fulltext.html"></value> 
     </arg>
 

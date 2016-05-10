@@ -128,7 +128,7 @@ public class NormaArgProcessorTest {
 		CTree cTree = cTreeList.get(0);
 		List<File> files = cTree.listFiles(true);
 		LOG.trace(cTree+"; "+files);
-		Assert.assertEquals(5, files.size());
+		Assert.assertEquals(5, files.size()); // was 4
 	}
 	
 	/** normalizes an XML file and writes out shtml.
