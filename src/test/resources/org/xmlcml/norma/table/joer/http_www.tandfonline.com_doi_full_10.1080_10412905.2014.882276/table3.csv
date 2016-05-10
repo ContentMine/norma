@@ -1,0 +1,3 @@
+Species,lc50 (μg/mL) (95% CI),lc90 (μg/mL) (95% CI),Regression equation,Slope±SD,Intercept±SD
+Aedes aegypti,39.55 (35.82–43.75),64.17 (56.42–77.07),y=6.098x−9.740,6.098±0.447,−9.740±0.716
+Meloidogyne incognita,267.20 (250.48–282.68),482.03 (448.69–527.05),y=5.001x−12.137,5.001±0.374,−12.137±0.940

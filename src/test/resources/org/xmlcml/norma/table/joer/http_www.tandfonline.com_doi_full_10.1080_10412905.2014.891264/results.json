@@ -1,0 +1,57 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.891264"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.891264#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.891264&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": []
+  },
+  "csv3": {
+    "value": []
+  },
+  "title": {
+    "value": [
+      "Leaf essential oil composition of Inula cuspidata (Wall. ex DC.) C.B. Clarke from India"
+    ]
+  },
+  "author": {
+    "value": [
+      "Ram S. Verma",
+      "Rajendra C. Padalia",
+      "Amit Chauhan"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.891264"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

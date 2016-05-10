@@ -1,0 +1,59 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.882274"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.882274#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.882274&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.882274&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": []
+  },
+  "title": {
+    "value": [
+      "Influence of drying, storage and distillation times on essential oil yield and composition of anise hyssop [Agastache foeniculum (Pursh.) Kuntze]"
+    ]
+  },
+  "author": {
+    "value": [
+      "Mohammad Mahmoodi Sourestani",
+      "Mahmoud Malekzadeh",
+      "Aldo Tava"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.882274"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

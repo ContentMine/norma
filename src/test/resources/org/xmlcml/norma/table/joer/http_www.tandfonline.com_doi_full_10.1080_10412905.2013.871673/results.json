@@ -1,0 +1,64 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2013.871673"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2013.871673#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2013.871673&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2013.871673&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0003&doi=10.1080%2F10412905.2013.871673&downloadType=CSV"
+    ]
+  },
+  "title": {
+    "value": [
+      "Effect of Thymus vulgaris and Origanum compactum essential oils on the shelf life of fresh goat cheese"
+    ]
+  },
+  "author": {
+    "value": [
+      "Said Zantar",
+      "Faiza Yedri",
+      "Rachid Mrabet",
+      "Amin Laglaoui",
+      "Mohammed Bakkali",
+      "Mounir Hassani Zerrouk"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2013.871673"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

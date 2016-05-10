@@ -1,0 +1,13 @@
+Fragrance allergens,Characteristic frequencies range (cm−1),y=a+bx,R,Range of linearity (%)
+Citral,1193–1194,y=0.33+0.61x,0.9989,1.25–20.0
+Geraniol,1375–1378,y=0.23+0.046x,0.9923,1.25–20.0
+Cinnamyl alcohol,732–734,y=0.03+0.03x,0.9970,1.25–20.0
+α-Amylcinnamaldehyde,1623–1624,y=−0.14+0.13x,0.9976,5.00–30.0
+Estragole,1583–1584,y=0.20+0.02x,0.9982,5.00–30.0
+Eugenol,792–795,y=1.0+0.10x,0.9983,5.00–30.0
+Methyl eugenol,804–807,y=−0.21+0.16x,0.9979,1.25–20.0
+Acetyl eugenol,1603–1604,y=−0.02+0.12x,0.9992,5.00–30.0
+Isoeugenol,959–963,y=−2.6+0.44x,0.9957,5.00–30.0
+trans-Anethole,1282–1283,y=0.04+0.14x,0.9977,1.25–20.0
+α-Asarone,1401–1402,y=−0.0+0.10x,0.9998,1.25–20.0
+Safrole,1441–1443,y=0.84+0.25x,0.9966,5.00–30.0

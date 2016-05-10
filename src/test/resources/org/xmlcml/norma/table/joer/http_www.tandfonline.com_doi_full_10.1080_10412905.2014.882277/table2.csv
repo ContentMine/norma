@@ -1,0 +1,20 @@
+ ,Neutralization of hemolytic activity,Neutralization of coagulant activity,Neutralization of proteolytic activity
+Extract,VE,HA,VE,Recovery %,VE,PAI
+Autumn, , , , , , 
+ ,Aqueous,1:20,Inhibits (25%),1:50,6,1:120,No
+ ,Alcoholic,1:20,No,1:50,10,1:120,Yes (<100%)
+ ,Hexanic,1:20,No,1:50,26,1:120,Yes (<100%)
+ ,Essential oil,1:40,Inhibits (25%),1:150,26,1:220,Yes
+ ,Distillation water essence,1:40,No,1:150,74,1:220,No
+Spring, , , , , , 
+ ,Aqueous,1:20,No,1:50,2,1:120,No
+ ,Alcoholic,1:20,No,1:50,–,1:120,Yes (<100%)
+ ,Hexanic,1:20,No,1:50,40,1:120,Yes (only a little)
+ ,Essential oil,1:40,No,1:500,28,1:400,Yes
+ ,Distillation water essence,1:40,No,1:500,82,1:400,Yes
+Summer, , , , , , 
+ ,Aqueous,1:20,Inhibits (24%),1:50,22,1:120,No
+ ,Alcoholic,1:20,No,1:50,6,1:120,Yes
+ ,Hexanic,1:20,Inhibits (16%),1:50,7,1:120,Yes (<100%)
+ ,Essential oil,1:40,Inhibits (12%),1:500,14,1:400,Yes
+ ,Distillation water essence,1:40,No,1:500,–,1:400,Yes

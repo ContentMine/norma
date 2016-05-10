@@ -1,0 +1,70 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.1001527"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.1001527#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.1001527&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.1001527&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0003&doi=10.1080%2F10412905.2014.1001527&downloadType=CSV"
+    ]
+  },
+  "title": {
+    "value": [
+      "Agronomical evaluation of Sicilian biotypes of Lavandula stoechas L. spp. stoechas and analysis of the essential oils"
+    ]
+  },
+  "author": {
+    "value": [
+      "Teresa Tuttolomondo",
+      "Giacomo Dugo",
+      "Giuseppe Ruberto",
+      "Claudio Leto",
+      "Edoardo M.  Napoli",
+      "Angela Giorgia Potortì",
+      "Maria Rita Fede",
+      "Giuseppe Virga",
+      "Raffaele Leone",
+      "Eleonora D’ Anna",
+      "Mario Licata",
+      "Salvatore La Bella"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.1001527"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

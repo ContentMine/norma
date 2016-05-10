@@ -1,0 +1,30 @@
+ ,(A) Dry season (%),(B) Wet season (%), , 
+Substances,Point 1,Point 2,Point 3,Point 1,Point 2,Point 3,RI exp,RI lit
+alpha-Thujene (m),nc a,nc a,nc a,2.7 b,nc a,nc a,926,926
+o-cymene (m),nc a,nc a,nc a,1.5 b,nc a,nc a,1023,1026
+(Z)-beta-Ocimene (m),nc a,nc a,nc a,0.9 b,nc a,nc a,1036,1036
+(E)-beta-Ocimene (m),nc a,nc a,nc a,1.9 b,nc a,nc a,1046,1046
+gamma-Terpinene (m),nc a,nc a,nc a,2.4 b,nc a,nc a,1057,1057
+Terpinolene (m),nc a,nc a,nc a,1.6 b,nc a,nc a,1088,1088
+delta-Elemene (s),0.4 a,nc a,1.7 b,0.9 ab,nc a,1.8 b,1338,1338
+alpha-Copaene (s),0.9 a,1.7 b,1.8 b,1.7 a,1.8 a,1.3 b,1373,1373
+beta-Elemene (s),3.5 a,2.6 a,1.5 b,1.0 a,2.0 b,1.3 a,1390,1390
+trans-Caryophyllene (s),14.0 a,10.1 a,16.8 a,12.4 a,15.8 a,12.6 a,1417,1417
+gamma-Elemene (s),0.55 a,nc a,0.10a,3.0 a,nc a,nc a,1436,1436
+alpha-Humulene (s),1.7 a,1.6 a,2.1 a,1.5 a,2.0 b,1.5 a,1450,1450
+Seychellene (s),nc a,nc a,nc a,1.7 a,0.7 b,0.7 b,1458,1458
+gamma-Muurolene (s),1.3 a,0.4 a,1.5 a,2.6 a,1.2 b,1.5 b,1476,1476
+Germacrene D (s),20.3 a,9.1 a,39.6 a,20.9 a,24.1 a,45.2 b,1481,1481
+Bicyclogermacrene (s),8.2 a,5.3 a,6.0 a,21.1 a,9.1 ab,4.8 b,1495,1495
+alpha-Muurolene (s),0.3 a,nc a,1.0 b,nc a,1.1 b,0.9 b,1497,1497
+gamma-Cadinene (s),0.6 a,nc a,0.8 a,1.4 a,1.0 ab,0.8 a,1522,1522
+delta-Cadinene (s),2.7 a,3.2 a,3.5 a,4.4 a,4.0 ab,3.1 a,1522,1522
+Germacrene B (s),5.0 a,2.8 a,3.6 a,0.7 a,2.1 ab,3.5 a,1553,1553
+Spathulenol (os),14.2 a,29.4 b,5.4 a,6.0 a,15.1 a,4.9 a,1576,1576
+Caryophyllene oxide (os),16.9 a,18.8 a,7.7 a,3.8 a,7.5 a,6.4 a,1581,1581
+Cubenol (os),0.7 a,1.5 b,2.2 b,2.2 a,2.8 a,2.0 a,1642,1642
+alpha-Cadinol (os),0.9 a,0.8 a,1.5 b,2.3 a,3.4 b,3.1 b,1654,1654
+Total, , , , , , , , 
+ ,Monoterpenes,0,0,0,10.9,0,0, , 
+ ,Sesquiterpenes,59.3,36.8,79.8,73.4,65.0,79.4, , 
+ ,Oxygenated sesquiterpenes,32.8,50.4,16.7,14.3,28.8,16.4, , 
