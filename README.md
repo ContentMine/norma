@@ -5,7 +5,7 @@ appropriate). The initial emphasis is on scholarly publications but much of the 
 
 ## Installation
 
-For a simple introduction and a description of how to install binaries of the software please see: [contentmine.github.io]
+For a simple introduction and a description of how to install binaries of the software please see: [here](http://contentmine.github.io)
 
 ## Input
 
@@ -24,4 +24,4 @@ To convert a CTree full of NLM xml files such as those you might have downloaded
 Norma can be built with maven3 and requires java 1.7 or greater.
 
 ## Contributing to development
-If you're interested in contributing please take a look at: [CONTRIBUTING.md]
+If you're interested in contributing please take a look at: [CONTRIBUTING.md](CONTRIBUTING.md)
