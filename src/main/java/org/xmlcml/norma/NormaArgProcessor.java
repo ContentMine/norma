@@ -238,7 +238,6 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	protected void printVersion() {
 		getVersionManager().printVersion();
-		DefaultArgProcessor.getVersionManager().printVersion();
 	}
 
 
