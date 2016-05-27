@@ -1,20 +1,9 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://www.w3.org/1999/xhtml">
 
-    <xsl:output method="xhtml"/>
+	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
-	<xsl:template match="/">
-		<xsl:apply-templates />
-	</xsl:template>
-
-	<!--Identity template, strips PIs and comments -->
-	<xsl:template match="@*|node()">
-		<xsl:copy>
-			<xsl:apply-templates select="@*|node()" />
-		</xsl:copy>
-	</xsl:template>
-
-	<xsl:template match="comment()" priority="1.0"/>
+	<!--  Taylor and Francis / Informa -->
 
 	<!--  header -->
   	<xsl:template match="h:div[@id='hd']"/>
@@ -29,7 +18,7 @@
  -->
   	<xsl:template match="h:div[@class='gutter' and h:div[contains(@class,'accordianPanel')]]"/>
   	
-  	<xsl:template match="h:div/h:b/h:a[.='Publishing models and article dates explained']"/>
+  	<xsl:template match="h:div/h:b[h:a[.='Publishing models and article dates explained']]"/>
   	<!-- <div class="script_only alertDiv"> -->
   	<xsl:template match="h:div[contains(@class,'script_only')]"/>
   	<!-- <div class="access accessmodule access_free"/>  -->
@@ -81,5 +70,16 @@
   	<xsl:template match="h:a[contains(@onclick,'showFigures')]"/> 
   	<xsl:template match="h:div[@class='figureDownloadOptions']"/> 
   	<xsl:template match="h:div[normalize-space(.)='']" priority="0.51"/> 
+  	<xsl:template match="h:b[normalize-space(.)='']"/>
+  	<!-- remove all styles -->
+  	<xsl:template match="@style"/> 
+  	
+  	
+  	<!--  ========= TRANSFORMS ========= -->
+  	<xsl:template match="h:div[@class='paragraph']">
+  	  <p>
+  	    <xsl:apply-templates/>
+  	  </p>
+  	</xsl:template> 
 
 </xsl:stylesheet>

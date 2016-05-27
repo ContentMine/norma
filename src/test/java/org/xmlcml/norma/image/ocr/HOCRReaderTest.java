@@ -142,14 +142,15 @@ public class HOCRReaderTest {
 		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
 		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cTreeTop);
 		CTree cTree = new CTree(cTreeTop);
-		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
-		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
+//		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
+//		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
 		String args = "-q "+cTreeTop
 				+ " --transform hocr2svg"
 				+ " -i " + "image/ijs.0.003566-0-000.pbm.png.hocr"
 				+ " -o " + "image/ijs.0.003566-0-000.pbm.png.hocr.svg";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("svg", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
+		File hocrSvg = new File(cTreeTop, "svg/ijs.0.003566-0-000.pbm.png.hocr.svg");
+		Assert.assertTrue(hocrSvg.exists());
 	}
 }

@@ -67,6 +67,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private NormaTransformer normaTransformer;
 	private List<SectionTagger> sectionTaggerNameList;
 	private HtmlElement cleanedHtmlElement;
+	List<String> transformTokenList;
 
 	public NormaArgProcessor() {
 		super();
@@ -178,13 +179,13 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		List<String> tokenList = option.processArgs(tokens).getStringValues();
+		transformTokenList = option.processArgs(tokens).getStringValues();
 		getOrCreateNormaTransformer();
 		List<ValueElement> valueElements = option.getValueElements();
 		for (ValueElement valueElement : valueElements) {
 			LOG.trace("value "+valueElement.getName());
 		}
-		normaTransformer.parseTransform(this, tokenList);
+//		normaTransformer.parseTransform(transformTokenList.get(0));
 	}
 
 	/** deprecated // use transform instead
@@ -213,7 +214,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		} else {
 			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
-			normaTransformer.transform(option);
+			String transformTypeString = option.getStringValue();
+			normaTransformer.runTransform(transformTypeString);
 		}
 	}
 
@@ -227,7 +229,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
 		cleanedHtmlElement = htmlCleaner.cleanHTML2XHTML(cleanerType);
 		if (cleanedHtmlElement == null) {
-			LOG.error("Cannot parse HTML");
+			LOG.error("Cannot parse HTML in: "+currentCTree.getDirectory().getAbsolutePath());
 			return;
 		}
 		if (output != null) {
@@ -245,7 +247,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void runMove(ArgumentOption option) {
-		LOG.debug("***run move "+currentCTree);
+		LOG.trace("***run move "+currentCTree.getDirectory());
 		moveFiles();
 	}
 

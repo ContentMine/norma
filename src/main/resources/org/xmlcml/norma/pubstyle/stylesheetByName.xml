@@ -1,12 +1,20 @@
 <stylesheetList>
   <stylesheet name="bmc2html">/org/xmlcml/norma/pubstyle/bmc/xml2html.xsl</stylesheet>
-  <stylesheet name="ieee2html">/org/xmlcml/norma/pubstyle/ieee/toHtml.xsl</stylesheet>
   <stylesheet name="ncbi-jats2html">/org/xmlcml/norma/pubstyle/nlm/ncbi/jats-html.xsl</stylesheet>
-  <stylesheet name="nlm2html">/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl</stylesheet>
   <stylesheet name="jats2shtml">/org/xmlcml/norma/pubstyle/nlm/jats/jats2shtml.xsl</stylesheet>
   <stylesheet name="nature2html">/org/xmlcml/norma/pubstyle/nature/toHtml.xsl</stylesheet>
   <stylesheet name="hind2xml">/org/xmlcml/norma/pubstyle/hindawi/groupMajorSections.xsl</stylesheet>
+  
+  <stylesheet name="acs2html">/org/xmlcml/norma/pubstyle/acs/toHtml.xsl</stylesheet>
+  <stylesheet name="cup2html">/org/xmlcml/norma/pubstyle/cup/toHtml.xsl</stylesheet>
+  <stylesheet name="els2html">/org/xmlcml/norma/pubstyle/elsevier/toHtml.xsl</stylesheet>
+  <stylesheet name="ieee2html">/org/xmlcml/norma/pubstyle/ieee/toHtml.xsl</stylesheet>
+  <stylesheet name="nlm2html">/org/xmlcml/norma/pubstyle/nlm/toHtml.xsl</stylesheet>
+  <stylesheet name="oup2html">/org/xmlcml/norma/pubstyle/oup/toHtml.xsl</stylesheet>
+  <stylesheet name="rs2html">/org/xmlcml/norma/pubstyle/rs/toHtml.xsl</stylesheet> <!-- royal society -->
+  <stylesheet name="sp2html">/org/xmlcml/norma/pubstyle/springer/toHtml.xsl</stylesheet> 
   <stylesheet name="tf2html">/org/xmlcml/norma/pubstyle/tf/toHtml.xsl</stylesheet>
+  <stylesheet name="wiley2html">/org/xmlcml/norma/pubstyle/wiley/toHtml.xsl</stylesheet>
   <!--  patents  -->
   <stylesheet name="uspto2html">/org/xmlcml/norma/patents/uspto/toHtml.xsl</stylesheet>
 </stylesheetList>

@@ -1,9 +1,20 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlFactory;
+import org.xmlcml.norma.pubstyle.util.XMLCleaner;
+
+import junit.framework.Assert;
 
 public class NormaFixtures {
 	
@@ -93,5 +104,42 @@ public class NormaFixtures {
 	
 	public final static File TEST_PLOSONE_CTREE0 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
+	public final static File TARGET_PUBSTYLE_DIR = new File("target/pubstyle");
+	private static File shtmlFile;
+
+	
+	public static void htmlTidy(File from, File to) {
+		CMineTestFixtures.cleanAndCopyDir(from, to);
+		String args = "--project "+to+" -i fulltext.html -o scholarly.html --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput();
+	}
+
+	public static void tidyTransform(File from, File projectDir, String abb) {
+		CMineTestFixtures.cleanAndCopyDir(from, projectDir);
+		String args = "--project "+projectDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+		CProject project = new CProject(projectDir);
+		CTree ctree0 = project.getCTreeList().get(0);
+		File xhtmlFile = ctree0.getExistingFulltextXHTML();
+		Assert.assertTrue("xhtml: ", xhtmlFile.exists());
+		String symbol = abb+"2html";
+		args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
+		argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+		shtmlFile = ctree0.getExistingScholarlyHTML();
+		Assert.assertNotNull("failed convert using: "+symbol, shtmlFile);
+		Assert.assertTrue("shtml: ", shtmlFile.exists());
+	}
+
+	public static void tidyTransformAndClean(File from, File to, String abb) throws IOException {
+		tidyTransform(from, to, abb);
+		XMLCleaner cleaner = XMLCleaner.createCleaner(shtmlFile);
+		cleaner.remove("//*[local-name()='div' and normalize-space(.)='']");
+		String cleanedXml = cleaner.getElement().toXML();
+		cleanedXml = cleanedXml.replaceAll("xmlns=\"http://www.w3.org/1999/xhtml\"", "");
+		FileUtils.write(new File(to, "cleaned.xml"), cleanedXml);
+	}
 	
 }

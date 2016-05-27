@@ -14,11 +14,10 @@ import org.xmlcml.cmine.files.ResourceLocation;
 import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.HtmlHead;
+import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.NormaArgProcessor;
-import org.xmlcml.norma.sections.SectionTagger.SectionTag;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -362,7 +361,8 @@ public class SectionTagger {
 		Element rawElement = XMLUtil.parseQuietlyToDocumentWithoutDTD(jatsXml).getRootElement();
 		JATSFactory jatsFactory = new JATSFactory();
 		jatsHtmlElement = jatsFactory.createHtml(rawElement);
-		HtmlElement bodyHtmlElement = (HtmlElement) jatsHtmlElement.getChild(1);
+//		HtmlElement bodyHtmlElement = (HtmlElement) jatsHtmlElement.getChild(1);
+		HtmlElement bodyHtmlElement = (HtmlElement) ((HtmlHtml)jatsHtmlElement).getBody();
 		jatsArticleElement = (JATSArticleElement) bodyHtmlElement.getChild(0);
 	}
 
