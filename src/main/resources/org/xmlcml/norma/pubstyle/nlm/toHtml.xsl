@@ -943,7 +943,7 @@
 -->
 	<xsl:template match="*[local-name()='ref-list']">
 	  <div class="references">References</div>
-	    <div tag="ref-list"><ul><xsl:apply-templates  select="*|text()"/></ul></div>
+	    <div tag="ref-list"><ol><xsl:apply-templates  select="*|text()"/></ol></div>
 	</xsl:template>
 	
 	<xsl:template match="*[local-name()='ref']">
