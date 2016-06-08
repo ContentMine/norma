@@ -1,13 +1,9 @@
 package org.xmlcml.norma.util;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
-import org.xmlcml.cmine.misc.CMineUtil;
-import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
+import org.xmlcml.cmine.util.CMineUtil;
 
 public class RunCommand {
 
