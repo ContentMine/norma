@@ -1,6 +1,7 @@
 package org.xmlcml.norma.pubstyle.wiley;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -15,18 +16,27 @@ public class WileyTest {
 	}
 	static String PUB0 = "wiley";
 	static String PUB = "wiley";
+	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
+	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
 	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
-	static File WIL_TEST = new File(TEST, "test");
+	static File TEST1 = new File(TEST, "test");
 
 	@Test
 	public void testHtml2Scholarly() {
-		NormaFixtures.htmlTidy(WIL_TEST, TARGET); 
+		NormaFixtures.htmlTidy(TEST1, TARGET); 
 	}
 
 	@Test
 	public void testHtml2Scholarly2StepConversion() {
-		NormaFixtures.tidyTransform(WIL_TEST, TARGET, PUB0);
+		NormaFixtures.tidyTransform(TEST1, TARGET, PUB0);
 	}
+	
+	@Test
+	public void testHtml2Scholarly2StepConversionClean() throws IOException {
+		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
+	}
+	
+
 	
 }

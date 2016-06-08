@@ -32,8 +32,25 @@
   	        border: 1px solid purple;
   	        margin: 2 2 2 2;
   	        }
+  	    p {
+  	        background: #ffffdd;
+  	        margin: 2 2 2 2;
+  	        }
   	    span {
-  	        background: yellow;
+  	        background: #ddffff;
+  	        margin: 2 2 2 2;
+  	        }
+  	    table {
+  	        border: 1px solid blue;
+  	        background: #ddffdd;
+  	        margin: 2 2 2 2;
+  	        }
+  	    tr {
+  	        border: 2px solid yellow;
+  	        margin: 2 2 2 2;
+  	        }
+  	    td {
+  	        border: 2px solid cyan;
   	        margin: 2 2 2 2;
   	        }
   	    </style>

@@ -1,6 +1,7 @@
 package org.xmlcml.norma.pubstyle.ieee;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -15,7 +16,9 @@ public class IEEETest {
 	}
 	static String PUB0 = "ieee";
 	static String PUB = "ieee";
+	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
+	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
 	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
 	static File TEST1 = new File(TEST, "test");
 
@@ -28,5 +31,10 @@ public class IEEETest {
 	public void testHtml2Scholarly2StepConversion() {
 		NormaFixtures.tidyTransform(TEST1, TARGET, PUB0);
 	}
-	
+	@Test
+	public void testHtml2Scholarly2StepConversionClean() throws IOException {
+		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
+	}
+
+
 }

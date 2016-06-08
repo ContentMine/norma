@@ -29,4 +29,36 @@
 	<xsl:template match="h:a[@id='closeWindow']"/>
 	<xsl:template match="h:a[@href and normalize-space(.)='']"/>
 	
+	<!--  redundant divs -->
+<!-- 	
+<div id="page-area">
+<div id="centerPane" class="column">
+<div id="centerContent" class="centerContent">
+-->
+	<xsl:template match="h:div[@id='page-area'] | h:div[@id='centerPane'] | h:div[@id='centerContent']">
+	  <xsl:apply-templates/>
+	</xsl:template> 
+	
+	<xsl:template match="h:div[h:div[@class='publicationHead']]">
+	  <xsl:apply-templates/>
+	</xsl:template> 
+<!-- 
+<div class="figTblUpiOuter svArticle" id="figure_f0005">
+<div>	
+-->
+	<xsl:template match="h:div[starts-with(@id,'figure_')]/h:div[not(@*)]">
+	  <xsl:apply-templates/>
+	</xsl:template> 
+	<xsl:template match="h:div[starts-with(@id,'table_')]/h:div[not(@*)]">
+	  <xsl:apply-templates/>
+	</xsl:template> 
+	
+	<!-- 
+	<div class="articleText_indent">
+<h2 class="h2 secHeading" id="ack001">Acknowledgments</h2>
+-->
+	<xsl:template match="h:div[h:h2[.='Acknowledgments']]">
+	  <xsl:apply-templates/>
+	</xsl:template> 
+	
 </xsl:stylesheet>

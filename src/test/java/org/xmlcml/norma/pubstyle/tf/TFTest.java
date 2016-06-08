@@ -1,6 +1,7 @@
 package org.xmlcml.norma.pubstyle.tf;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -10,6 +11,7 @@ import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
+import org.xmlcml.norma.NormaFixtures;
 
 import junit.framework.Assert;
 
@@ -19,32 +21,29 @@ public class TFTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+	static String PUB0 = "tf";
+	static String PUB = "tf";
+	static String PUB1 = PUB+"/clean";
+	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
+	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
+	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
+	static File TEST1 = new File(TEST, "test");
+
 	@Test
 	public void testHtml2Scholarly() {
-		File targetDir = new File("target/tutorial/tf");
-		CMineTestFixtures.cleanAndCopyDir(new File("src/test/resources/org/xmlcml/norma/pubstyle/tf/TandF_OA_Test"), targetDir);
-		String args = "--project "+targetDir+" -i fulltext.html -o scholarly.html --html jsoup";
-		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
-		argProcessor.runAndOutput(); 
+		NormaFixtures.htmlTidy(TEST1, TARGET); 
+	}
+
+	@Test
+	public void testHtml2Scholarly2StepConversion() {
+		NormaFixtures.tidyTransform(TEST1, TARGET, PUB0);
 	}
 	
 	@Test
-	public void testHtml2Scholarly2StepConversion() {
-		File targetDir = new File("target/tutorial/tf");
-		CMineTestFixtures.cleanAndCopyDir(new File("src/test/resources/org/xmlcml/norma/pubstyle/tf/TandF_OA_Test"), targetDir);
-		String args = "--project "+targetDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
-		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
-		argProcessor.runAndOutput(); 
-		CProject project = new CProject(targetDir);
-		CTree ctree0 = project.getCTreeList().get(0);
-		File xhtml = ctree0.getExistingFulltextXHTML();
-		Assert.assertTrue("xhtml: ", xhtml.exists());
-		args = "--project "+targetDir+" -i fulltext.xhtml -o scholarly.html --transform tf2html";
-		argProcessor = new NormaArgProcessor(args); 
-		argProcessor.runAndOutput(); 
-		File shtml = ctree0.getExistingScholarlyHTML();
-		Assert.assertTrue("shtml: ", shtml.exists());
+	public void testHtml2Scholarly2StepConversionClean() throws IOException {
+		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
 	}
+	
 	
 	@Test
 	public void convertToc() {

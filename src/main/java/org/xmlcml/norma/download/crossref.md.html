@@ -1,0 +1,1394 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3514e6d8825ab9f55728f0030acba498e5da5b85ebc8abc35f0f466ac9d2bdda.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-92b560dee7dafd08f0965a6d49e5e4298b3d856899681b308fd7809d9c35367b.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-c2aeff568e26c813514b4d8e4befc924e3863ac2c0ad2aa52a2c4070f1793079.css" media="all" rel="stylesheet" />
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-ea5bbb2a837377ffde53e1099e5909c8df4d36cc5e90c05aeb3694b157df7e4d.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-391829145dbc07158dde112aa636b7ac8b58f7726527ce710bd56118ae1d2f57.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    
+    <title>rest-api-doc/rest_api.md at master · CrossRef/rest-api-doc · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars0.githubusercontent.com/u/330596?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="CrossRef/rest-api-doc" name="twitter:title" /><meta content="rest-api-doc - Documentation for CrossRef&#39;s REST API" name="twitter:description" />
+      <meta content="https://avatars0.githubusercontent.com/u/330596?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="CrossRef/rest-api-doc" property="og:title" /><meta content="https://github.com/CrossRef/rest-api-doc" property="og:url" /><meta content="rest-api-doc - Documentation for CrossRef&#39;s REST API" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="836F70E5:3A81:D3FFE57:574D8E2B" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="ODg1YmIzZDlhMjI0NjgwZTZmMjY3YmI2YjMyOGU0Y2MwZmRhM2FjNjgwNzkyYzg1NmVkY2EwMWE0MTViMzdkNnx7InJlbW90ZV9hZGRyZXNzIjoiMTMxLjExMS4xMTIuMjI5IiwicmVxdWVzdF9pZCI6IjgzNkY3MEU1OjNBODE6RDNGRkU1Nzo1NzREOEUyQiIsInRpbWVzdGFtcCI6MTQ2NDcwMDQ2MH0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="bd4e3b404ec187ff2cdd2f289bb61bc71044700b">
+    <meta content="fec0c79e997e9d2f299e358ff566c7070422a87f" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="e7cec84ad9772b41eb2a7820f7affce2">
+    
+
+      
+  <meta name="description" content="rest-api-doc - Documentation for CrossRef&#39;s REST API">
+  <meta name="go-import" content="github.com/CrossRef/rest-api-doc git https://github.com/CrossRef/rest-api-doc.git">
+
+  <meta content="330596" name="octolytics-dimension-user_id" /><meta content="CrossRef" name="octolytics-dimension-user_login" /><meta content="13147568" name="octolytics-dimension-repository_id" /><meta content="CrossRef/rest-api-doc" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="13147568" name="octolytics-dimension-repository_network_root_id" /><meta content="CrossRef/rest-api-doc" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/CrossRef/rest-api-doc/commits/master.atom" rel="alternate" title="Recent Commits to rest-api-doc:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out   env-production macintosh vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="/login?return_to=%2FCrossRef%2Frest-api-doc%2Fblob%2Fmaster%2Frest_api.md" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="/pricing">Pricing</a>
+          <a class="nav-item" href="/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/CrossRef/rest-api-doc/search" class="js-site-search-form" data-scoped-search-url="/CrossRef/rest-api-doc/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2FCrossRef%2Frest-api-doc"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/CrossRef/rest-api-doc/watchers">
+    30
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FCrossRef%2Frest-api-doc"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/CrossRef/rest-api-doc/stargazers">
+      94
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FCrossRef%2Frest-api-doc"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="/CrossRef/rest-api-doc/network" class="social-count">
+      32
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="/CrossRef" class="url fn" rel="author">CrossRef</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/CrossRef/rest-api-doc" data-pjax="#js-repo-pjax-container">rest-api-doc</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/CrossRef/rest-api-doc" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /CrossRef/rest-api-doc" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/CrossRef/rest-api-doc/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /CrossRef/rest-api-doc/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">49</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/CrossRef/rest-api-doc/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /CrossRef/rest-api-doc/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">1</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+  <a href="/CrossRef/rest-api-doc/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /CrossRef/rest-api-doc/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="/CrossRef/rest-api-doc/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /CrossRef/rest-api-doc/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/CrossRef/rest-api-doc/blob/59068bd3fd7d8c5348d9b69f40e069cbc8c355de/rest_api.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:08066d3d9c7668b107dc4c7caf545de7 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/CrossRef/rest-api-doc/blob/archive-arrangement/rest_api.md"
+               data-name="archive-arrangement"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="archive-arrangement">
+                archive-arrangement
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/CrossRef/rest-api-doc/blob/lagotto/rest_api.md"
+               data-name="lagotto"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="lagotto">
+                lagotto
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/CrossRef/rest-api-doc/blob/master/rest_api.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/CrossRef/rest-api-doc/find/master"
+          class="js-pjax-capture-input btn btn-sm"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/CrossRef/rest-api-doc"><span>rest-api-doc</span></a></span></span><span class="separator">/</span><strong class="final-path">rest_api.md</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="right">
+        <a class="commit-tease-sha" href="/CrossRef/rest-api-doc/commit/59068bd3fd7d8c5348d9b69f40e069cbc8c355de" data-pjax>
+          59068bd
+        </a>
+        <relative-time datetime="2016-05-26T09:18:19Z">May 26, 2016</relative-time>
+      </span>
+      <div>
+        <img alt="@kjw" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/21696?v=3&amp;s=40" width="20" />
+        <a href="/kjw" class="user-mention" rel="contributor">kjw</a>
+          <a href="/CrossRef/rest-api-doc/commit/59068bd3fd7d8c5348d9b69f40e069cbc8c355de" class="message" data-pjax="true" title="Put the right link in to old KPI document">Put the right link in to old KPI document</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>3</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="kjw" href="/CrossRef/rest-api-doc/commits/master/rest_api.md?author=kjw"><img alt="@kjw" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/21696?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="gbilder" href="/CrossRef/rest-api-doc/commits/master/rest_api.md?author=gbilder"><img alt="@gbilder" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/63948?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="callahanchris" href="/CrossRef/rest-api-doc/commits/master/rest_api.md?author=callahanchris"><img alt="@callahanchris" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/5064148?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@kjw" height="24" src="https://avatars2.githubusercontent.com/u/21696?v=3&amp;s=48" width="24" />
+            <a href="/kjw">kjw</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@gbilder" height="24" src="https://avatars3.githubusercontent.com/u/63948?v=3&amp;s=48" width="24" />
+            <a href="/gbilder">gbilder</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@callahanchris" height="24" src="https://avatars2.githubusercontent.com/u/5064148?v=3&amp;s=48" width="24" />
+            <a href="/callahanchris">callahanchris</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="btn-group">
+      <a href="/CrossRef/rest-api-doc/raw/master/rest_api.md" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/CrossRef/rest-api-doc/blame/master/rest_api.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/CrossRef/rest-api-doc/commits/master/rest_api.md" class="btn btn-sm " rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://mac.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15 2H1c-0.55 0-1 0.45-1 1v9c0 0.55 0.45 1 1 1h5.34c-0.25 0.61-0.86 1.39-2.34 2h8c-1.48-0.61-2.09-1.39-2.34-2h5.34c0.55 0 1-0.45 1-1V3c0-0.55-0.45-1-1-1z m0 9H1V3h14v8z"></path></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3L0 12z m3 2H1V12h1v1h1v1z m10.3-9.3l-1.3 1.3-3-3 1.3-1.3c0.39-0.39 1.02-0.39 1.41 0l1.59 1.59c0.39 0.39 0.39 1.02 0 1.41z"></path></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M10 2H8c0-0.55-0.45-1-1-1H4c-0.55 0-1 0.45-1 1H1c-0.55 0-1 0.45-1 1v1c0 0.55 0.45 1 1 1v9c0 0.55 0.45 1 1 1h7c0.55 0 1-0.45 1-1V5c0.55 0 1-0.45 1-1v-1c0-0.55-0.45-1-1-1z m-1 12H2V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9z m1-10H1v-1h9v1z"></path></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      467 lines (317 sloc)
+      <span class="file-info-divider"></span>
+    25.3 KB
+  </div>
+</div>
+
+  
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-crossref-rest-api" class="anchor" href="#crossref-rest-api" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>CrossRef REST API</h1>
+
+<h2><a id="user-content-version-history" class="anchor" href="#version-history" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Version History</h2>
+
+<ul>
+<li>V1: 2013-09-08, first draft.</li>
+<li>V2: 2013-09-24, reference platform deployed</li>
+<li>v3: 2013-09-25, reworked filters. Added API versioning doc </li>
+<li>v4: 2013-09-25, more filter changes.</li>
+<li>v5: 2013-09-27, doc mime-type and message-type relationship</li>
+<li>v6: 2013-10-01, updated <code>sample</code> &amp; added examples with filters</li>
+<li>v6: 2013-10-01, corrected warning date</li>
+<li>v7: 2013-10-02, fixed typos</li>
+<li>v8: 2013-10-17, updated warning. Added email address</li>
+<li>v9: 2013-12-13, update example urls</li>
+<li>v10: 2013-12-13, /types routes, type filter, issn filter</li>
+<li>v11: 2013-12-14, indexed timestamps, has-archive and archive implemented</li>
+<li>v12: 2014-01-06, directory filter</li>
+<li>v13: 2014-02-10, new <code>/members</code>, <code>/publishers</code> becomes <code>/prefixes</code>, new <code>member</code> filter, <code>publisher</code> filter becomes <code>prefix</code></li>
+<li>v14: 2014-02-14, new <code>has-funder</code> filter.</li>
+<li>v15: 2014-02-27, new <code>/licenses</code> route</li>
+<li>v16: 2014-05-19, new <code>/journals</code> route, new CrossMark (updates and update policy) filters, new <code>sort</code> and <code>order</code> parameters</li>
+<li>v17: 2014-05-19, new <code>facet</code> query parameter</li>
+<li>v18: 2014-05-29, new <code>/works/{doi}/agency</code> route</li>
+<li>v19: 2014-06-23, new textual filters - <code>container-title</code>, <code>publisher-name</code>, <code>category-name</code>.</li>
+<li>v20: 2014-06-24, OR filter queries, <code>type-name</code> filter.</li>
+<li>v21: 2014-07-01, new <code>award.number</code> and <code>award.funder</code> relational filters.</li>
+<li>v22: 2014-07-16, changed title to more accurately reflect scope of API. </li>
+<li>v23, 2014-09-01, semantics of mutliple filters, dot filters</li>
+<li>v24, 2014-10-15, Added info on license of CrossRef metadata itself. Doh.</li>
+<li>v25, 2015-05-06, Added link to issue tracker. Removed Warning section.</li>
+<li>v26, 2015-10-20, Added new filters - <code>from-created-date</code>, <code>until-created-date</code>, <code>affiliation</code>, <code>has-affiliation</code>, <code>assertion-group</code>, <code>assertion</code>, <code>article-number</code>, <code>alternative-id</code></li>
+<li>v27, 2015-10-30, Added <code>cursor</code> parameter to <code>/works</code> resources</li>
+<li>v28, 2016-05-09, Added link to source of category lables</li>
+<li>v29, 2016-05-24, Added field queries</li>
+</ul>
+
+<h2><a id="user-content-background" class="anchor" href="#background" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Background</h2>
+
+<p>See the document, <a href="https://github.com/CrossRef/rest-api-doc/blob/master/funder_kpi_metadata_best_practice.md">CrossRef metadata best practice to support key performance indicators (KPIs) for funding agencies</a>, for background.</p>
+
+<h2><a id="user-content-reporting-issues" class="anchor" href="#reporting-issues" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Reporting issues</h2>
+
+<p>If you have suggestions or encounter problems with the API or the documentation, please report them on our <a href="https://github.com/CrossRef/rest-api-doc/issues">issue tracker</a>.</p>
+
+<p>If you have other queries, please contact us at:</p>
+
+<p><a href="https://camo.githubusercontent.com/267741833e7854e4a3dddf92916195bd4c37be85/687474703a2f2f6c6162732e63726f73737265662e6f72672f77702d636f6e74656e742f75706c6f6164732f323031332f30312f6c6162735f656d61696c2e706e67" target="_blank"><img src="https://camo.githubusercontent.com/267741833e7854e4a3dddf92916195bd4c37be85/687474703a2f2f6c6162732e63726f73737265662e6f72672f77702d636f6e74656e742f75706c6f6164732f323031332f30312f6c6162735f656d61696c2e706e67" alt="" data-canonical-src="http://labs.crossref.org/wp-content/uploads/2013/01/labs_email.png" style="max-width:100%;"></a></p>
+
+<h2><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>License</h2>
+
+<p>CrossRef asserts no claims of ownership to individual items of bibliographic metadata and associated Digital Object Identifiers (DOIs) acquired through the use of the CrossRef Free Services. Individual items of bibliographic metadata and associated DOIs may be cached and incorporated into the user's content and systems. More information can be found <a href="http://www.crossref.org/requestaccount/">on our web site</a>.</p>
+
+<h2><a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Overview</h2>
+
+<p>The API is generally RESTFUL and returns results in JSON.</p>
+
+<p>The API will only work for CrossRef DOIs. You can test the registration agency for a DOI using the following route:</p>
+
+<p><code>http://api.crossref.org/works/{doi}/agency</code></p>
+
+<p>Testing the following CrossRef DOI:</p>
+
+<p><code>10.1037/0003-066X.59.1.29</code></p>
+
+<p>Using the URL:</p>
+
+<p><code>http://api.crossref.org/works/10.1037/0003-066X.59.1.29/agency</code></p>
+
+<p>Will return the following result:</p>
+
+<pre><code>{
+  status: "ok",
+  message-type: "work-agency",
+  message-version: "1.0.0",
+  message: {
+    DOI: "10.1037/0003-066x.59.1.29",
+    agency: {
+      id: "crossref",
+      label: "CrossRef"
+    }
+  }
+}
+</code></pre>
+
+<p>If you use any of the API calls listed below with a non-CrossRef DOI, you will get a <code>404</code> HTTP status response. Typical agency IDs include <code>crossref</code>, <code>datacite</code>, <code>medra</code> and also <code>public</code> for test DOIs.</p>
+
+<h2><a id="user-content-results-overview" class="anchor" href="#results-overview" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Results Overview</h2>
+
+<p>All results are returned in JSON. There are two general types of results:</p>
+
+<ul>
+<li>Singletons</li>
+<li>Lists</li>
+</ul>
+
+<p>The mime-type for API results is <code>application/vnd.crossref-api-message+json</code> </p>
+
+<h3><a id="user-content-singletons" class="anchor" href="#singletons" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Singletons</h3>
+
+<p>Singletons are single results. Retrieving metadata for a specific identifier (e.g. DOI, ISSN, funder_identifier) typically returns in a singleton result.</p>
+
+<h3><a id="user-content-lists" class="anchor" href="#lists" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Lists</h3>
+
+<p>Lists results can contain multiple entries. Searching or filtering typically returns a list result. A list has two parts:</p>
+
+<ul>
+<li>Summary, which include the following information:
+
+<ul>
+<li>status (e.g. "ok", error)</li>
+<li>message-type (e.g. "work-list" )</li>
+<li>message-version (e.g. 1.0.0 )</li>
+</ul></li>
+<li>Items, which will will contain the items matching the query or filter. </li>
+</ul>
+
+<p>Note that the "message-type" returned will differ from the mime-type:</p>
+
+<ul>
+<li>funder (singleton)</li>
+<li>prefix (singleton)</li>
+<li>member (singleton)</li>
+<li>work (singleton)</li>
+<li>work-list (list)</li>
+<li>funder-list (list)</li>
+<li>prefix-list (list)</li>
+<li>member-list (list)</li>
+</ul>
+
+<p>Normally, an API list result will return both the summary and the items. If you want to just retrieve the summary, you can do so by specifying that the number of rows returned should be zero. </p>
+
+<h3><a id="user-content-sort-order" class="anchor" href="#sort-order" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Sort order</h3>
+
+<p>If the API call includes a query, then the sort order will be by the relevance score. If no query is included, then the sort order will be by DOI update date.</p>
+
+<h2><a id="user-content-resource-components" class="anchor" href="#resource-components" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Resource Components</h2>
+
+<p>Major resource components supported by the CrossRef API are:</p>
+
+<ul>
+<li>works</li>
+<li>funders</li>
+<li>members</li>
+<li>prefixes</li>
+<li>types</li>
+<li>journals</li>
+</ul>
+
+<p>These can be used alone like this</p>
+
+<table><thead>
+<tr>
+<th align="left">resource</th>
+<th align="left">description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left"><code>/works</code></td>
+<td align="left">returns a list of all works (journal articles, conference proceedings, books, components, etc), 20 per page</td>
+</tr>
+<tr>
+<td align="left"><code>/funders</code></td>
+<td align="left">returns a list of all funders in the <a href="http://www.crossref.org/fundref/fundref_registry.html">FundRef Registry</a></td>
+</tr>
+<tr>
+<td align="left"><code>/members</code></td>
+<td align="left">returns a list of all CrossRef members (mostly publishers)</td>
+</tr>
+<tr>
+<td align="left"><code>/types</code></td>
+<td align="left">returns a list of valid work types</td>
+</tr>
+<tr>
+<td align="left"><code>/licenses</code></td>
+<td align="left">return a list of licenses applied to works in CrossRef metadata</td>
+</tr>
+<tr>
+<td align="left"><code>/journals</code></td>
+<td align="left">return a list of journals in the CrossRef database</td>
+</tr>
+</tbody></table>
+
+<h3><a id="user-content-resource-components-and-identifiers" class="anchor" href="#resource-components-and-identifiers" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Resource components and identifiers</h3>
+
+<p>Resource components can be used in conjunction with identifiers to retrieve the metadata for that identifier.</p>
+
+<table><thead>
+<tr>
+<th align="left">resource</th>
+<th align="left">description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left"><code>/works/{doi}</code></td>
+<td align="left">returns metadata for the specified CrossRef DOI.</td>
+</tr>
+<tr>
+<td align="left"><code>/funders/{funder_id}</code></td>
+<td align="left">returns metadata for specified funder <strong>and</strong> its suborganizations</td>
+</tr>
+<tr>
+<td align="left"><code>/prefixes/{owner_prefix}</code></td>
+<td align="left">returns metadata for the DOI owner prefix</td>
+</tr>
+<tr>
+<td align="left"><code>/members/{member_id}</code></td>
+<td align="left">returns metadata for a CrossRef member</td>
+</tr>
+<tr>
+<td align="left"><code>/types/{type_id}</code></td>
+<td align="left">returns information about a metadata work type</td>
+</tr>
+<tr>
+<td align="left"><code>/journals/{issn}</code></td>
+<td align="left">returns information about a journal with the given ISSN</td>
+</tr>
+</tbody></table>
+
+<h3><a id="user-content-combining-resource-components" class="anchor" href="#combining-resource-components" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Combining resource components</h3>
+
+<p>The works component can be appended to other resources.</p>
+
+<table><thead>
+<tr>
+<th align="left">resource</th>
+<th align="left">description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left"><code>/works/{doi}</code></td>
+<td align="left">returns information about the specified CrossRef <code>DOI</code></td>
+</tr>
+<tr>
+<td align="left"><code>/funders/{funder_id}/works</code></td>
+<td align="left">returns list of works associated with the specified <code>funder_id</code></td>
+</tr>
+<tr>
+<td align="left"><code>/types/{type_id}/works</code></td>
+<td align="left">returns list of works of type <code>type</code></td>
+</tr>
+<tr>
+<td align="left"><code>/prefixes/{owner_prefix}/works</code></td>
+<td align="left">returns list of works associated with specified <code>owner_prefix</code></td>
+</tr>
+<tr>
+<td align="left"><code>/members/{member_id}/works</code></td>
+<td align="left">returns list of works associated with a CrossRef member (deposited by a CrossRef member)</td>
+</tr>
+<tr>
+<td align="left"><code>/journals/{issn}/works</code></td>
+<td align="left">returns a list of works in the given journal</td>
+</tr>
+</tbody></table>
+
+<h2><a id="user-content-parameters" class="anchor" href="#parameters" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Parameters</h2>
+
+<p>Parameters can be used to query, filter and control the results returned by the CrossRef API. They can be passed as normal URI parameters or as JSON in the body of the request.</p>
+
+<table><thead>
+<tr>
+<th align="left">parameter</th>
+<th align="left">description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left"><code>query</code></td>
+<td align="left">limited <a href="https://wiki.apache.org/solr/DisMax">DisMax</a> query terms</td>
+</tr>
+<tr>
+<td align="left"><code>filter={filter_name}:{value}</code></td>
+<td align="left">filter results by specific fields</td>
+</tr>
+<tr>
+<td align="left"><code>rows={#}</code></td>
+<td align="left">results per per page</td>
+</tr>
+<tr>
+<td align="left"><code>offset={#}</code></td>
+<td align="left">result offset</td>
+</tr>
+<tr>
+<td align="left"><code>sample={#}</code></td>
+<td align="left">return random N results</td>
+</tr>
+<tr>
+<td align="left"><code>sort={#}</code></td>
+<td align="left">sort results by a certain field</td>
+</tr>
+<tr>
+<td align="left"><code>order={#}</code></td>
+<td align="left">set the sort order to <code>asc</code> or <code>desc</code></td>
+</tr>
+<tr>
+<td align="left"><code>facet=t</code></td>
+<td align="left">enable facet information in responses</td>
+</tr>
+</tbody></table>
+
+<p>Multiple filters can be specified by separating name:value pairs with a comma:</p>
+
+<pre><code>http://api.crossref.org/works?filter=has-orcid:true,from-pub-date:2004-04-04
+</code></pre>
+
+<h3><a id="user-content-example-query-using-uri-parameters" class="anchor" href="#example-query-using-uri-parameters" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Example query using URI parameters</h3>
+
+<pre><code>http://api.crossref.org/funders/100000015/works?query=global+state&amp;filter=has-orcid:true&amp;rows=1
+</code></pre>
+
+<h2><a id="user-content-queries" class="anchor" href="#queries" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Queries</h2>
+
+<p>Queries support a subset of <a href="https://wiki.apache.org/solr/DisMax">DisMax</a>, so, for example you 
+can refine queries as follows.</p>
+
+<p>Works that include "renear" but not "ontologies":</p>
+
+<pre><code>http://api.crossref.org/works?query=renear+-ontologies
+</code></pre>
+
+<h2><a id="user-content-field-queries" class="anchor" href="#field-queries" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Field Queries</h2>
+
+<p>Field queries are available on some routes and allow for queries that match only particular fields
+of metadata. For example, this query matches records that contain the tokens <code>richard</code> or <code>feynman</code> (or both)
+in any author field:</p>
+
+<pre><code>http://api.crossref.org/works?query.author=richard+feynman
+</code></pre>
+
+<p>Field queries can be combined with the general <code>query</code> paramter and each other. Each query parameter
+is ANDed with the others:</p>
+
+<pre><code>http://api.crossref.org/works?query.title=room+at+the+bottom&amp;query.author=richard+feynman
+</code></pre>
+
+<h3><a id="user-content-works-field-queries" class="anchor" href="#works-field-queries" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>/works</code> Field Queries</h3>
+
+<p>These field queries are available on the <code>/works</code> route:</p>
+
+<table><thead>
+<tr>
+<th>Field query parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>query.title</code></td>
+<td>Query <code>title</code> and <code>subtitle</code></td>
+</tr>
+<tr>
+<td><code>query.container-title</code></td>
+<td>Query <code>container-title</code> aka. publication name</td>
+</tr>
+<tr>
+<td><code>query.author</code></td>
+<td>Query author first and given names</td>
+</tr>
+<tr>
+<td><code>query.editor</code></td>
+<td>Query editor first and given names</td>
+</tr>
+<tr>
+<td><code>query.chair</code></td>
+<td>Query chair first and given names</td>
+</tr>
+<tr>
+<td><code>query.translator</code></td>
+<td>Query translator first and given names</td>
+</tr>
+<tr>
+<td><code>query.contributor</code></td>
+<td>Query author, editor, chair and translator first and given names</td>
+</tr>
+</tbody></table>
+
+<h2><a id="user-content-sorting" class="anchor" href="#sorting" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Sorting</h2>
+
+<p>Results from a listy response can be sorted by applying the <code>sort</code> and <code>order</code> parameters. Order
+sets the result ordering, either <code>asc</code> or <code>desc</code>. Sort sets the field by which results will be
+sorted. Possible values are:</p>
+
+<table><thead>
+<tr>
+<th>Sort value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>score</code> or <code>relevance</code></td>
+<td>Sort by relevance score</td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td>Sort by date of most recent change to metadata. Currently the same as <code>deposited</code>.</td>
+</tr>
+<tr>
+<td><code>deposited</code></td>
+<td>Sort by time of most recent deposit</td>
+</tr>
+<tr>
+<td><code>indexed</code></td>
+<td>Sort by time of most recent index</td>
+</tr>
+<tr>
+<td><code>published</code></td>
+<td>Sort by publication date</td>
+</tr>
+</tbody></table>
+
+<p>An example that sorts results in order of publication, beginning with the least recent:</p>
+
+<pre><code>http://api.crossref.org/works?query=josiah+carberry&amp;sort=published&amp;order=asc
+</code></pre>
+
+<h2><a id="user-content-facet-counts" class="anchor" href="#facet-counts" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Facet Counts</h2>
+
+<p>Facet counts can be retrieved by enabling faceting; <code>facet=t</code> (or <code>1</code>, <code>true</code>). Facet counts
+give counts per field value for an entire result set.</p>
+
+<h2><a id="user-content-filter-names" class="anchor" href="#filter-names" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Filter Names</h2>
+
+<p>Filters allow you to narrow queries. All filter results are lists.  The following filters are supported:</p>
+
+<table><thead>
+<tr>
+<th align="left">filter</th>
+<th align="left">possible values</th>
+<th align="left">description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left"><code>has-funder</code></td>
+<td align="left"></td>
+<td align="left">metadata which includes one or more funder entry</td>
+</tr>
+<tr>
+<td align="left"><code>funder</code></td>
+<td align="left"><code>{funder_id}</code></td>
+<td align="left">metadata which include the <code>{funder_id}</code> in FundRef data</td>
+</tr>
+<tr>
+<td align="left"><code>prefix</code></td>
+<td align="left"><code>{owner_prefix}</code></td>
+<td align="left">metadata belonging to a DOI owner prefix <code>{owner_prefix}</code> (e.g. <code>10.1016</code> )</td>
+</tr>
+<tr>
+<td align="left"><code>member</code></td>
+<td align="left"><code>{member_id}</code></td>
+<td align="left">metadata belonging to a CrossRef member</td>
+</tr>
+<tr>
+<td align="left"><code>from-index-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata indexed since (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>until-index-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata indexed before (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>from-deposit-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata last (re)deposited since (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>until-deposit-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata last (re)deposited before (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>from-update-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">Metadata updated since (inclusive) <code>{date}</code>. Currently the same as <code>from-deposit-date</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>until-update-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">Metadata updated before (inclusive) <code>{date}</code>. Currently the same as <code>until-deposit-date</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>from-created-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata first deposited since (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>until-created-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata first deposited before (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>from-pub-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata where published date is since (inclusive) <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>until-pub-date</code></td>
+<td align="left"><code>{date}</code></td>
+<td align="left">metadata where published date is before (inclusive)  <code>{date}</code></td>
+</tr>
+<tr>
+<td align="left"><code>has-license</code></td>
+<td align="left"></td>
+<td align="left">metadata that includes any <code>&lt;license_ref&gt;</code> elements.</td>
+</tr>
+<tr>
+<td align="left"><code>license.url</code></td>
+<td align="left"><code>{url}</code></td>
+<td align="left">metadata where <code>&lt;license_ref&gt;</code> value equals <code>{url}</code></td>
+</tr>
+<tr>
+<td align="left"><code>license.version</code></td>
+<td align="left"><code>{string}</code></td>
+<td align="left">metadata where the <code>&lt;license_ref&gt;</code>'s <code>applies_to</code> attribute  is <code>{string}</code></td>
+</tr>
+<tr>
+<td align="left"><code>license.delay</code></td>
+<td align="left"><code>{integer}</code></td>
+<td align="left">metadata where difference between publication date and the <code>&lt;license_ref&gt;</code>'s <code>start_date</code> attribute is &lt;= <code>{integer}</code> (in days)</td>
+</tr>
+<tr>
+<td align="left"><code>has-full-text</code></td>
+<td align="left"></td>
+<td align="left">metadata that includes any full text <code>&lt;resource&gt;</code> elements.</td>
+</tr>
+<tr>
+<td align="left"><code>full-text.version</code></td>
+<td align="left"><code>{string}</code></td>
+<td align="left">metadata where <code>&lt;resource&gt;</code> element's <code>content_version</code> attribute is <code>{string}</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>full-text.type</code></td>
+<td align="left"><code>{mime_type}</code></td>
+<td align="left">metadata where <code>&lt;resource&gt;</code> element's <code>content_type</code> attribute is <code>{mime_type}</code> (e.g. <code>application/pdf</code>).</td>
+</tr>
+<tr>
+<td align="left"><code>public-references</code></td>
+<td align="left"></td>
+<td align="left">metadata where publishers allow references to be distributed publically. [^*]</td>
+</tr>
+<tr>
+<td align="left"><code>has-references</code></td>
+<td align="left"></td>
+<td align="left">metadata for works that have a list of references</td>
+</tr>
+<tr>
+<td align="left"><code>has-archive</code></td>
+<td align="left"></td>
+<td align="left">metadata which include name of archive partner</td>
+</tr>
+<tr>
+<td align="left"><code>archive</code></td>
+<td align="left"><code>{string}</code></td>
+<td align="left">metadata which where value of archive partner is <code>{string}</code></td>
+</tr>
+<tr>
+<td align="left"><code>has-orcid</code></td>
+<td align="left"></td>
+<td align="left">metadata which includes one or more ORCIDs</td>
+</tr>
+<tr>
+<td align="left"><code>orcid</code></td>
+<td align="left"><code>{orcid}</code></td>
+<td align="left">metadata where <code>&lt;orcid&gt;</code> element's value = <code>{orcid}</code></td>
+</tr>
+<tr>
+<td align="left"><code>issn</code></td>
+<td align="left"><code>{issn}</code></td>
+<td align="left">metadata where record has an ISSN = <code>{issn}</code>. Format is <code>xxxx-xxxx</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>{type}</code></td>
+<td align="left">metadata records whose type = <code>{type}</code>. Type must be an ID value from the list of types returned by the <code>/types</code> resource</td>
+</tr>
+<tr>
+<td align="left"><code>directory</code></td>
+<td align="left"><code>{directory}</code></td>
+<td align="left">metadata records whose article or serial are mentioned in the given <code>{directory}</code>. Currently the only supported value is <code>doaj</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>doi</code></td>
+<td align="left"><code>{doi}</code></td>
+<td align="left">metadata describing the DOI <code>{doi}</code></td>
+</tr>
+<tr>
+<td align="left"><code>updates</code></td>
+<td align="left"><code>{doi}</code></td>
+<td align="left">metadata for records that represent editorial updates to the DOI <code>{doi}</code></td>
+</tr>
+<tr>
+<td align="left"><code>is-update</code></td>
+<td align="left"></td>
+<td align="left">metadata for records that represent editorial updates</td>
+</tr>
+<tr>
+<td align="left"><code>has-update-policy</code></td>
+<td align="left"></td>
+<td align="left">metadata for records that include a link to an editorial update policy</td>
+</tr>
+<tr>
+<td align="left"><code>container-title</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with a publication title exactly with an exact match</td>
+</tr>
+<tr>
+<td align="left"><code>publisher-name</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with an exact matching publisher name</td>
+</tr>
+<tr>
+<td align="left"><code>category-name</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with an exact matching category label. Category labels come from <a href="https://www.elsevier.com/solutions/scopus/content">this list</a> published by Scopus</td>
+</tr>
+<tr>
+<td align="left"><code>type-name</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with an exacty matching type label</td>
+</tr>
+<tr>
+<td align="left"><code>award.number</code></td>
+<td align="left"><code>{award_number}</code></td>
+<td align="left">metadata for records with a matching award nunber. Optionally combine with <code>award.funder</code></td>
+</tr>
+<tr>
+<td align="left"><code>award.funder</code></td>
+<td align="left"><code>{funder doi or id}</code></td>
+<td align="left">metadata for records with an award with matching funder. Optionally combine with <code>award.number</code></td>
+</tr>
+<tr>
+<td align="left"><code>assertion-group</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with an assertion in a particular group</td>
+</tr>
+<tr>
+<td align="left"><code>assertion</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with a particular named assertion</td>
+</tr>
+<tr>
+<td align="left"><code>affiliation</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with at least one contributor with the given affiliation</td>
+</tr>
+<tr>
+<td align="left"><code>has-affiliation</code></td>
+<td align="left"></td>
+<td align="left">metadata for records that have any affiliation information</td>
+</tr>
+<tr>
+<td align="left"><code>alternative-id</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with the given alternative ID, which may be a publisher-specific ID, or any other identifier a publisher may have provided</td>
+</tr>
+<tr>
+<td align="left"><code>article-number</code></td>
+<td align="left"></td>
+<td align="left">metadata for records with a given article number</td>
+</tr>
+</tbody></table>
+
+<h3><a id="user-content-multiple-filters" class="anchor" href="#multiple-filters" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Multiple filters</h3>
+
+<p>Multiple filters can be specified in a single query. In such a case, different filters will be applied with AND semantics, while specifying the same filter multiple times will result in OR semantics - that is, specifying the filters:</p>
+
+<ul>
+<li><code>is-update:true</code></li>
+<li><code>from-pub-date:2014-03-03</code></li>
+<li><code>funder:10.13039/100000001</code></li>
+<li><code>funder:10.13039/100000050</code></li>
+</ul>
+
+<p>would locate documents that are updates, were published on or after 3rd March 2014 and were funded by either the National Science Foundation (<code>10.13039/100000001</code>) or the National Heart, Lung, and Blood Institute (<code>10.13039/100000050</code>). These filters would be specified by joining each filter together with a comma:</p>
+
+<pre><code>/works?filter=is-update:true,from-pub-date:2014-03-03,funder:10.13039/100000001,funder:10.13039/100000050
+</code></pre>
+
+<h3><a id="user-content-dot-filters" class="anchor" href="#dot-filters" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Dot filters</h3>
+
+<p>A filter with a dot in its name is special. The dot signifies that the filter will be applied to some other record type that is related to primary resource record type. For example, with work queries, one can filter on works that have an award, where the same award has a particular award number and award-gving funding agency:</p>
+
+<pre><code>/works?filter=award.number:CBET-0756451,award.funder:10.13039/100000001
+</code></pre>
+
+<p>Here we filter on works that have an award by the National Science Foundation that also has the award number <code>CBET-0756451</code>.</p>
+
+<h3><a id="user-content-notes-on-owner-prefixes" class="anchor" href="#notes-on-owner-prefixes" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Notes on owner prefixes</h3>
+
+<p>The prefix of a CrossRef DOI does <strong>NOT</strong> indicate who currently owns the DOI. It only reflects who originally registered the DOI. CrossRef metadata has an <strong>owner_prefix</strong> element that records the current owner of the CrossRef DOI in question. </p>
+
+<p>CrossRef also has member IDs for depositing organisations. A single member may control multiple owner prefixes, which in turn may control a number of DOIs. When looking at works published by a certain organisaton, member IDs and the member routes should be used.</p>
+
+<h3><a id="user-content-notes-on-dates" class="anchor" href="#notes-on-dates" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Notes on dates</h3>
+
+<p>Note that dates in filters should always be of the form <code>YYYY-MM-DD</code>, <code>YYYY-MM</code> or <code>YYYY</code>. Also note that date information in CrossRef metadata can often be incomplete. So, for example, a publisher may only include the year and month of publication for a journal article. For a monograph they might just include the year. In these cases the API selects the earliest possible date given the information provided. So, for instance, if the publisher only provided 2013-02 as the published date, then the date would be treated as 2013-02-01. Similarly, if the publisher only provided the year 2013 as the date, it would be treated at 2013-01-01. </p>
+
+<h3><a id="user-content-notes-on-incremental-metadata-updates" class="anchor" href="#notes-on-incremental-metadata-updates" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Notes on incremental metadata updates</h3>
+
+<p>When using time filters to retrieve periodic, incremental metadata updates,
+the <code>from-index-date</code> filter should be used over <code>from-update-date</code>,
+<code>from-deposit-date</code>, <code>from-first-deposit-date</code> and <code>from-pub-date</code>. The
+timestamp that <code>from-index-date</code> filters on is guaranteed to be updated
+every time there is a change to metadata requiring a reindex.</p>
+
+<h2><a id="user-content-result-controls" class="anchor" href="#result-controls" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Result controls</h2>
+
+<p>You can control the delivery and selection  results using the <code>rows</code>, <code>offset</code> and <code>sample</code> parameters. </p>
+
+<h3><a id="user-content-rows" class="anchor" href="#rows" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Rows</h3>
+
+<p>Normally, results are returned 20 at a time. You can control the number of results returns by using the <code>rows</code> parameter. To limit results to 5, for example, you could do the following:</p>
+
+<pre><code>http://api.crossref.org/works?query=allen+renear&amp;rows=5
+</code></pre>
+
+<p>If you would just like to get the <code>summary</code> of the results, you can set the rows to 0 (zero).</p>
+
+<pre><code>http://api.crossref.org/works?query=allen+renear&amp;rows=0
+</code></pre>
+
+<p>The maximum number rows you can ask for in one query is <code>1000</code>.</p>
+
+<h3><a id="user-content-offset" class="anchor" href="#offset" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Offset</h3>
+
+<p>The number of returned items is controlled by the <code>rows</code> parameter, but you can select the offset into the result list by using the <code>offset</code> parameter.  So, for example, to select the second set of 5 results (i.e. results 6 through 10), you would do the following:</p>
+
+<pre><code>http://api.crossref.org/works?query=allen+renear&amp;rows=5&amp;offset=5
+</code></pre>
+
+<h3><a id="user-content-deep-paging-with-cursors" class="anchor" href="#deep-paging-with-cursors" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Deep Paging with Cursors</h3>
+
+<p>Using large <code>offset</code> values can result in extremely long response times. Offsets in the 100,000s and beyond will likely cause a timeout before the API is able to respond. An alternative to paging through very large result sets (like a corpus used for text and data mining) it to use the API's exposure of Solr's deep paging cursors. Any combination of query, filters and facets may be used with deep paging cursors. While <code>rows</code> may be specified along with <code>cursor</code>, <code>offset</code> and <code>sample</code> cannot be used. To use deep paging make a query as normal, but include the <code>cursor</code> parameter with a value of <code>*</code>. In this example we will page through all <code>journal-article</code> works from member <code>311</code>:</p>
+
+<pre><code>http://api.crossref.org/members/311/works?filter=type:journal-article&amp;cursor=*
+</code></pre>
+
+<p>A <code>next-cursor</code> field will be provided in the JSON response. To get the next page of results, pass the value of <code>next-cursor</code> as the <code>cursor</code> parameter:</p>
+
+<pre><code>http://api.crossref.org/members/311/works?filter=type:journal-article&amp;cursor=AoE/CGh0dHA6Ly9keC5kb2kub3JnLzEwLjEwMDIvdGRtX2xpY2Vuc2VfMQ==
+</code></pre>
+
+<p>Clients should check the number of returned items. If the number of returned items is fewer than the number of expected rows then the end of the result set has been reached. Using <code>next-cursor</code> beyond this point will result in responses with an empty items list.</p>
+
+<p>The <code>cursor</code> parameter is available on all <code>/works</code> resources.</p>
+
+<h3><a id="user-content-sample" class="anchor" href="#sample" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Sample</h3>
+
+<p>Being able to select random results is useful for both testing and sampling. You can use the <code>sample</code> parameter to retrieve random results. So, for example, the following select 10 random works:</p>
+
+<pre><code>http://api.crossref.org/works?sample=10
+</code></pre>
+
+<p>Note that when you use the <code>sample</code> parameter, the <code>rows</code> and <code>offset</code> parameters are ignored.</p>
+
+<h3><a id="user-content-example-queries" class="anchor" href="#example-queries" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Example Queries</h3>
+
+<p><strong>All works published by owner prefix <code>10.1016</code> in January 2010</strong></p>
+
+<pre><code>http://api.crossref.org/prefixes/10.1016/works?filter=from-pub-date:2010-01,until-pub-date:2010-01
+</code></pre>
+
+<p><strong>All works funded by <code>10.13039/100000001</code> that have a CC-BY license</strong></p>
+
+<pre><code>http://api.crossref.org/funders/10.13039/100000001/works?filter=license.url:http://creativecommons.org/licenses/by/3.0/deed.en_US
+</code></pre>
+
+<p><strong>All works published by owner prefix 10.5555 from February 2010 to February 2013 that have a CC-BY license</strong></p>
+
+<pre><code>http://api.crossref.org/prefixes/10.5555/works?filter=license.url:http://creativecommons.org/licenses/by/3.0/deed.en_US,from-pub-date:2010-02,until-pub-date:2013-02
+</code></pre>
+
+<p><strong>All works funded by <code>10.13039/100000015</code> where license = CC-BY and embargo &lt;= 365 days</strong></p>
+
+<pre><code>http://api.crossref.org/funders/10.13039/100000015/works?filter=license.url:http://creativecommons.org/licenses/by/3.0/deed.en_US,license.delay:365
+</code></pre>
+
+<p>Note that the filters for license URL and maximum license embargo period (license.url and license.delay) combine to filter each document's metadata for a license with both of these properties.</p>
+
+<p><strong>All works where the archive partner listed = 'CLOCKSS'</strong></p>
+
+<pre><code>http://api.crossref.org/works?filter=archive:CLOCKSS
+</code></pre>
+
+<p><strong>All members with <code>hind</code> in their name (e.g. Hindawi)</strong></p>
+
+<pre><code>http://api.crossref.org/members?query=hind
+</code></pre>
+
+<p><strong>All licenses linked to works published by Elsevier</strong></p>
+
+<pre><code>http://api.crossref.org/licenses?filter=member:78
+</code></pre>
+
+<p><strong>All licenses applied to works published in the journal <code>Pathology Research International</code></strong></p>
+
+<pre><code>http://api.crossref.org/licenses?filter=issn:2090-8091
+</code></pre>
+
+<p>**All works with an award numbered roughly <code>1 F31 MH11745</code> also awarded by funder with ID <code>10.13039/100000025</code>:</p>
+
+<pre><code>http://api.crossref.org/works?filter=award.number:1F31MH11745,award.funder:10.13039/100000025
+</code></pre>
+
+<h2><a id="user-content-versioning" class="anchor" href="#versioning" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Versioning</h2>
+
+<p>In theory, the syntax of the API can vary independently of the result representations. In practice, major version changes in either will require changes to API clients and so versioning of the API will apply to both the API syntax and the result representation.</p>
+
+<p>The API uses a semantic versioning scheme whereby the version number is divided into three parts delimited by periods. The first number represents the "major" release number. The second represents a "minor" release number and the third represents an "internal" release number.  </p>
+
+<pre><code>Version 1.20.31
+        ^  ^  ^
+        |  |  |
+    major  |  |
+       minor  |
+       internal
+</code></pre>
+
+<p><strong>Major</strong> version increments will are defined as releases that can break backwards compatibility. CrossRef will only commit to supporting the latest two major releases simultaneously and legacy major releases will be supported for no more than nine months. Exceptions to these rules may be made when major releases are required to ensure the security or stability of the system. </p>
+
+<p><strong>Minor</strong> version increments are defined as backwards compatible. There is no limit on the number of minor versions that can CrossRef can roll out. Note that client applications should not have dependencies on minor versions.</p>
+
+<p><strong>Internal</strong> version increments are simply used to keep track of development versions of the API. They should never have any effect on client applications.</p>
+
+<p>Adding syntax options or metadata to representations will normally be backwards compatible and will thus normally only trigger minor version changes. Renaming or restructuring syntax options of metadata tends not to be backward compatible and will thus typically trigger major version changes</p>
+
+<h3><a id="user-content-how-to-manage-api-versions" class="anchor" href="#how-to-manage-api-versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>How to manage API versions</h3>
+
+<p>If you need to tie your implementation to a specific major version of the API, you can do so by using content-negotiation and specifying the version of the API in the <code>ACCEPT</code> header as follows:</p>
+
+<pre><code> application/vnd.crossref-api-message+json; version=1.0
+</code></pre>
+
+<p>Minor version numbers will be ignored in <code>ACCEPT</code> headers as they are by definition backwards compatible.</p>
+
+<p>If you omit a specific version in your <code>ACCEPT</code> header, the system will default to using the latest version of the API. </p>
+
+<p>Note that requesting a version of the API via content type is not yet supported.</p>
+
+<h2><a id="user-content-error-messages" class="anchor" href="#error-messages" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Error messages</h2>
+
+<p>There will be no errors, and therefor error messages will be unnecessary. But seriously… coming soon.</p>
+</article>
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="hidden">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.04490s from github-fe156-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ea5bbb2a837377ffde53e1099e5909c8df4d36cc5e90c05aeb3694b157df7e4d.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-391829145dbc07158dde112aa636b7ac8b58f7726527ce710bd56118ae1d2f57.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+

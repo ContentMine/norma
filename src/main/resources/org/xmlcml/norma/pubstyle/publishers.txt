@@ -1,0 +1,20 @@
+Elsevier BV: 14489236, OK?
+Springer Science + Business Media: 9609252, OK?
+Wiley-Blackwell: 8024617, OK?
+Informa UK Limited: 3657671, OK?
+Institute of Electrical & Electronics Engineers (IEEE): 3480315, OK?
+Oxford University Press (OUP): 1961292, OK?
+Public Library of Science (PLoS): 1927396, JATS
+JSTOR: 1854654, NO EXAMPLE YET
+SAGE Publications: 1839465, OK?
+Ovid Technologies (Wolters Kluwer Health): 1706386, NO (Uses tables)
+Cambridge University Press (CUP): 1656190, OK?
+American Chemical Society (ACS): 1395589, OK? heavily nested
+Nature Publishing Group: 1171564, OK?
+Walter de Gruyter GmbH: 1041394, // mainly PDF, "xml" gives landing page; cannot find HTML
+BMJ: 788172, OK?
+Brill Academic Publishers: 721781, // mainly books??
+American Psychological Association (APA): 716952, OK?
+AIP Publishing: 683155, NO! doesn't yet load properly
+IOP Publishing: 662335, OK?
+Thieme Publishing Group: 646025 Monographs?

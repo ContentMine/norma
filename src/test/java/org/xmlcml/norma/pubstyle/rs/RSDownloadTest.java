@@ -14,11 +14,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.cproject.HtmlTidier;
+import org.xmlcml.norma.download.CrossRefDownloader;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+/** Royal Society */
 public class RSDownloadTest {
 	
 	private static final Logger LOG = Logger.getLogger(RSDownloadTest.class);
@@ -26,26 +28,20 @@ public class RSDownloadTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private static final String PRSB_1471_2954 = "1471-2954";
-	public JsonParser parser;
-	public JsonElement rootElement;
-	public JsonElement message;
-	public JsonArray items;
-
 	@Test
 	public void testCreateDownloadUrl() throws IOException {
-		RSDownloader rsDownLoader = new RSDownloader();
-		rsDownLoader.getOrCreateFilter().setISSN(PRSB_1471_2954);
+		CrossRefDownloader rsDownLoader = new RSDownloader();
+		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
-		Assert.assertEquals(url.toString(), "http://api.crossref.org/works?filter=issn:1471-2954,from-pub-date:2014-01-01&rows=250");
+		Assert.assertEquals(url.toString(), "http://api.crossref.org/works?filter=issn:"+RSDownloader.PRSB_1471_2954+",from-pub-date:2014-01-01&rows=250");
 	}
 	
 	@Test 
 	public void testDownloadJson() throws IOException {
-		RSDownloader rsDownLoader = new RSDownloader();
-		rsDownLoader.getOrCreateFilter().setISSN(PRSB_1471_2954);
+		CrossRefDownloader rsDownLoader = new RSDownloader();
+		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
@@ -57,8 +53,8 @@ public class RSDownloadTest {
 	
 	@Test 
 	public void testDownloadJson1() throws IOException {
-		RSDownloader rsDownLoader = new RSDownloader();
-		rsDownLoader.getOrCreateFilter().setISSN(PRSB_1471_2954);
+		CrossRefDownloader rsDownLoader = new RSDownloader();
+		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
@@ -73,10 +69,12 @@ public class RSDownloadTest {
 	}
 	@Test 
 	public void testDownloadJson2() throws IOException {
-		RSDownloader rsDownLoader = new RSDownloader();
-		rsDownLoader.getOrCreateFilter().setISSN(PRSB_1471_2954);
+		CrossRefDownloader rsDownLoader = new RSDownloader();
+		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
+		rsDownLoader.getOrCreateFilter().setUntilPubDate("2015-01-01");
 		rsDownLoader.setRows(250);
+		LOG.debug(rsDownLoader.getOrCreateFilter().getFilterString());
 //		JsonArray items = rsDownLoader.getItems();
 //		Assert.assertEquals(250, items.size());
 		List<String> urlList = rsDownLoader.getUrlList();
