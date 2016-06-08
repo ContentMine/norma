@@ -1,9 +1,15 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
@@ -12,6 +18,9 @@ import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
+import org.xmlcml.norma.download.CrossRefDownloader;
+import org.xmlcml.norma.download.CrossRefDownloader.Type;
+import org.xmlcml.norma.download.DOIResolver;
 import org.xmlcml.norma.pubstyle.util.XMLCleaner;
 
 import junit.framework.Assert;
@@ -133,13 +142,25 @@ public class NormaFixtures {
 		Assert.assertTrue("shtml: ", shtmlFile.exists());
 	}
 
-	public static void tidyTransformAndClean(File from, File to, String abb) throws IOException {
-		tidyTransform(from, to, abb);
+	public static void tidyTransformAndClean(File from, File projectDir, String abb) throws IOException {
+		tidyTransform(from, projectDir, abb);
 		XMLCleaner cleaner = XMLCleaner.createCleaner(shtmlFile);
-		cleaner.remove("//*[local-name()='div' and normalize-space(.)='']");
+		// remove empty elements
+		cleaner.remove("//*[(local-name()='div' "
+				+ "       or local-name()='i'"
+				+ "       or local-name()='b'"
+				+ "       or local-name()='p'"
+				+ "       or local-name()='span'"
+				+ "       or local-name()='em'"
+				+ " ) and normalize-space(text())='']");
 		String cleanedXml = cleaner.getElement().toXML();
+		File file = new File(projectDir, "cleaned.html");
+		FileUtils.write(file, cleanedXml);
+		// remove HTML namespace so it displays as XML in browser
 		cleanedXml = cleanedXml.replaceAll("xmlns=\"http://www.w3.org/1999/xhtml\"", "");
-		FileUtils.write(new File(to, "cleaned.xml"), cleanedXml);
+		FileUtils.write(new File(projectDir, "cleaned.xml"), cleanedXml);
 	}
 	
+	
+
 }
