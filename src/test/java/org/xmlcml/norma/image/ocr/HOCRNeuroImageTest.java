@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
 
@@ -17,6 +18,7 @@ public class HOCRNeuroImageTest {
 	 * to generate
 	 * @throws IOException 
 	 */
+	@Ignore // closed access
 	@Test
 	public void testReadImage() throws IOException {
 		File image21 = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png");

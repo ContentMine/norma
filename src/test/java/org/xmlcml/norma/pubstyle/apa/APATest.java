@@ -5,9 +5,11 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
 
+@Ignore // closed access
 public class APATest {
 	
 	private static final Logger LOG = Logger.getLogger(APATest.class);

@@ -5,9 +5,11 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
 
+@Ignore // no open -access papers
 public class RSTest {
 	private static final Logger LOG = Logger.getLogger(RSTest.class);
 	static {

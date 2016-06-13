@@ -6,6 +6,8 @@
 .project
 .settings/
 target/
+examples/
 docs/
 src/test/resources/org/xmlcml/norma/pubstyle/getpapers/anopheles/
+xref/
 /target/

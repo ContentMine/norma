@@ -301,6 +301,7 @@ public class NormaArgProcessorTest {
 	 * 
 	 * SHOWCASE
 	 */
+	@Ignore // closed access
 	public void testTransformRawHtmlToScholarlyNature() throws IOException {
 		FileUtils.copyDirectory(new File("src/test/resources/org/xmlcml/norma/pubstyle/nature/closed/doi_10_1038_nnano_2011_101/"),
 				new File("target/nature/"));
