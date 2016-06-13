@@ -20,7 +20,7 @@ public class RSTest {
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
 	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
 	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
-	static File TEST1 = new File(TEST, "test");
+	static File TEST1 = new File(TEST, "closed");
 
 	@Test
 	public void testHtml2Scholarly() {

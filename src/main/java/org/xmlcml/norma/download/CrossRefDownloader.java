@@ -25,6 +25,14 @@ import com.google.gson.JsonParser;
 
 public class CrossRefDownloader {
 
+	private static final int MAX_DAILY_LIMIT = 99999;
+	private static final String ITEMS = "items";
+	private static final String MESSAGE = "message";
+	private static final String AMP = "&";
+	private static final String UTF_8 = "UTF-8";
+	private static final String OFFSET = "&offset=";
+	private static final String ROWS = "&rows=";
+	
 	private static final Logger LOG = Logger.getLogger(CrossRefDownloader.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -44,13 +52,14 @@ public class CrossRefDownloader {
 
 	}
 	
-	static final String URLS_FILTER_TXT = "urls.filter.txt"; // suffix after conversion by doi.org
-	static final String FILTER_TXT = "filter.txt"; // suffix for file with filtered URLs
-	static final String URLS_TXT = "urls.txt";
+	static final String URLS_FILTER_CSV = "urls.filter.csv"; // suffix after conversion by doi.org
+	static final String FILTER_CSV = "filter.csv"; // suffix for file with filtered URLs
+	static final String URLS_CSV = "urls.csv";
+	private static String CROSSREF_URL = "http://api.crossref.org";
+	private static String WORKS_URL = CROSSREF_URL+ "/works";
 
 
 	private DownloadFilter downloadFilter;
-	private String baseUrl = "http://api.crossref.org/works";
 	protected JsonArray items;
 	private int rowsInChunk = 250;
 	private int offset = 0;
@@ -71,7 +80,7 @@ public class CrossRefDownloader {
 	}
 
 	protected String getBaseUrl() {
-		return baseUrl;
+		return WORKS_URL;
 	}
 
 	public void setRows(int rows) {
@@ -90,22 +99,22 @@ public class CrossRefDownloader {
 			urlString = getBaseUrl() + "?" + filterString ;
 		}
 		if (query != null) {
-			urlString += (urlString.equals("") ? "" : "&");
+			urlString += (urlString.equals("") ? "" : AMP);
 			urlString += "query="+query;
 		}
-		urlString += "&rows="+rowsInChunk;
-		urlString += "&offset="+offset;
+		urlString += ROWS+rowsInChunk;
+		urlString += OFFSET+offset;
 		return urlString == "" ? null : new URL(urlString);
 	}
 
 	public JsonArray getItems() throws IOException {
 		URL url = getURL();
 		InputStream stream = url.openStream();
-		String content = IOUtils.readLines(stream, "UTF-8").get(0);
+		String content = IOUtils.readLines(stream, UTF_8).get(0);
 		parser = new JsonParser();
 		rootElement = parser.parse(content);
-		message = rootElement.getAsJsonObject().get("message");
-		items = message.getAsJsonObject().get("items").getAsJsonArray();
+		message = rootElement.getAsJsonObject().get(MESSAGE);
+		items = message.getAsJsonObject().get(ITEMS).getAsJsonArray();
 		return items;
 	}
 
@@ -127,7 +136,7 @@ public class CrossRefDownloader {
 	 * 
 	 * @param fromDate yyyy-mm-dd
 	 * @param untilDate yyyy-mm-dd
-	 * @param query see CrossRef (can be as simple as "psychology") quries the title
+	 * @param query see CrossRef (can be as simple as "psychology") queries the title
 	 * @param resolveDois if true use dx.doi.org to resove URLs
 	 * @param rows max urls to download
 	 * @param outputDir
@@ -135,12 +144,14 @@ public class CrossRefDownloader {
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
-	public File simpleJournalDownloader(String fromDate, String untilDate, String query, boolean resolveDois, 
+	public File simpleJournalDownload(String fromDate, String untilDate, String query, boolean resolveDois, 
 			int rows, int offset, File outputDir) throws IOException, FileNotFoundException {
 		this.getOrCreateFilter().setFromPubDate(fromDate);
 		this.getOrCreateFilter().setUntilPubDate(untilDate);
 		this.getOrCreateFilter().setType(Type.JOURNAL_ARTICLE);
-		if (query != null) this.setQuery(query);
+		if (query != null) {
+			this.setQuery(query);
+		}
 		this.setRows(rows);
 		this.setOffset(offset);
 		List<String> urlList = this.getUrlList();
@@ -164,8 +175,10 @@ public class CrossRefDownloader {
 	}
 
 	/**
+	 * utility method to create and run downloader.
 	 * 
-	 * @param dailyDir top dicrectory
+	 * 
+	 * @param dailyDir top directory
 	 * @param fromDate start date as yyyy-mm-dd
 	 * @param untilDate until date exclusive
 	 * @param rowsInChunk 
@@ -177,9 +190,9 @@ public class CrossRefDownloader {
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
-	public static int createChunksAndWrite(File dailyDir, String fromDate, String untilDate, int rowsInChunk, int currentPos,
+	public static int runDailyDownload(File dailyDir, String fromDate, String untilDate, int rowsInChunk, int currentPos,
 			boolean resolveDois, BlackList blackList) throws IOException, FileNotFoundException {
-		for (int j = 0; j < 99999; j++) {
+		for (int j = 0; j < MAX_DAILY_LIMIT; j++) {
 			File urlFile = CrossRefDownloader.runCrossRefDate(fromDate, untilDate, resolveDois, rowsInChunk, currentPos, 
 					new File(dailyDir, fromDate+"/"));
 			List<String> lines = FileUtils.readLines(urlFile);
@@ -188,7 +201,7 @@ public class CrossRefDownloader {
 				break;
 			}
 			List<String> filteredLines = blackList.omitLines(lines);
-			File filterFile = new File(FilenameUtils.removeExtension(urlFile.getAbsolutePath())+"."+FILTER_TXT);
+			File filterFile = new File(FilenameUtils.removeExtension(urlFile.getAbsolutePath())+"."+FILTER_CSV);
 			FileUtils.writeLines(filterFile, filteredLines);
 			currentPos += rowsInChunk;
 		}
@@ -197,6 +210,7 @@ public class CrossRefDownloader {
 	
 	/**
 	 * takes list of URLs, filters with blacklist, and writes to files of filtered URLs
+	 * 
 	 * @param urlList list of URL
 	 * @param blackList to reject files
 	 * @return list of files of filtered URLs
@@ -207,7 +221,7 @@ public class CrossRefDownloader {
 		for (File urlFile : urlList) {
 			String urlFileName = urlFile.toString();
 			List<String> filterLines = blackList.omitLines(FileUtils.readLines(urlFile));
-			File filtered = new File(FilenameUtils.removeExtension(FilenameUtils.removeExtension(urlFileName))+"."+URLS_FILTER_TXT);
+			File filtered = new File(FilenameUtils.removeExtension(FilenameUtils.removeExtension(urlFileName))+"."+URLS_FILTER_CSV);
 			FileUtils.writeLines(filtered, filterLines);
 			filteredFileList.add(filtered);
 		}
@@ -215,6 +229,7 @@ public class CrossRefDownloader {
 	}
 
 	/**
+	 * analyses results of download. Maybe should be separate class
 	 * 
 	 * @param ctreeGlob glob for files inside a CTree (e.g. "glob:[star][star]/results.json"
 	 * @param urlsGlobber
@@ -226,7 +241,7 @@ public class CrossRefDownloader {
 		for (File urlFile : urlFileList) {
 			String urlFileName = urlFile.toString();
 			File cProjectDir = new File(FilenameUtils.removeExtension(FilenameUtils.removeExtension(urlFileName)).toString());
-			File filtered = new File(FilenameUtils.removeExtension(FilenameUtils.removeExtension(urlFileName))+"."+CrossRefDownloader.URLS_FILTER_TXT);
+			File filtered = new File(FilenameUtils.removeExtension(FilenameUtils.removeExtension(urlFileName))+"."+CrossRefDownloader.URLS_FILTER_CSV);
 			if (filtered.exists()) {
 				LOG.trace(">> "+FileUtils.readLines(filtered).size()+": "+filtered);
 			}
@@ -237,15 +252,39 @@ public class CrossRefDownloader {
 		}
 	}
 
+	/** utility method to create and run downloader
+	 * 
+	 * @param fromDate
+	 * @param untilDate
+	 * @param query
+	 * @param resolveDois
+	 * @param rows
+	 * @param outputDir
+	 * @return
+	 * @throws IOException
+	 * @throws FileNotFoundException
+	 */
 	public static File runCrossRefQuery(String fromDate, String untilDate, String query, boolean resolveDois, int rows, File outputDir) throws IOException, FileNotFoundException {
 		CrossRefDownloader downLoader = new CrossRefDownloader();
-		return downLoader.simpleJournalDownloader(fromDate, untilDate, query, resolveDois, rows, 0, outputDir);
+		return downLoader.simpleJournalDownload(fromDate, untilDate, query, resolveDois, rows, 0, outputDir);
 
 	}
 
+	/** utitlity method to create and run downloader.
+	 * 
+	 * @param fromDate
+	 * @param untilDate
+	 * @param resolveDois
+	 * @param rows
+	 * @param offset
+	 * @param outputDir
+	 * @return
+	 * @throws IOException
+	 * @throws FileNotFoundException
+	 */
 	public static File runCrossRefDate(String fromDate, String untilDate, boolean resolveDois, int rows, int offset, File outputDir) throws IOException, FileNotFoundException {
 		CrossRefDownloader downLoader = new CrossRefDownloader();
-		return downLoader.simpleJournalDownloader(fromDate, untilDate, null, resolveDois, rows, offset, outputDir);
+		return downLoader.simpleJournalDownload(fromDate, untilDate, null, resolveDois, rows, offset, outputDir);
 
 	}
 

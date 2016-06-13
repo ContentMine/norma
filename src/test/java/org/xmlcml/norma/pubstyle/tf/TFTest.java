@@ -5,16 +5,14 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.NormaFixtures;
 
-import junit.framework.Assert;
-
+@Ignore // have lost tf
 public class TFTest {
 	private static final Logger LOG = Logger.getLogger(TFTest.class);
 	static {

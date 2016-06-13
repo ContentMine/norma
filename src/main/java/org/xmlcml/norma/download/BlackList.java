@@ -53,7 +53,7 @@ public class BlackList {
 	private boolean omit(String line) {
 		for (Pattern omitRegex : omitRegexList) {
 			if (omitRegex.matcher(line).matches()) {
-				LOG.debug("omit: "+line);
+				LOG.trace("omit: "+line);
 				return true;
 			}
 		}

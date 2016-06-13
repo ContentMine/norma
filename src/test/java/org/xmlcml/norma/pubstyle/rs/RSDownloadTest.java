@@ -35,9 +35,9 @@ public class RSDownloadTest {
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
-		Assert.assertEquals(url.toString(), "http://api.crossref.org/works?filter=issn:"+RSDownloader.PRSB_1471_2954+",from-pub-date:2014-01-01&rows=250");
+		Assert.assertEquals("url", "http://api.crossref.org/works?filter=issn:"+RSDownloader.PRSB_1471_2954+",from-pub-date:2014-01-01&rows=250&offset=0", url.toString());
 	}
-	
+//	http://api.crossref.org/works?filter=issn:1471-2954,from-pub-date:2014-01-01&rows=250
 	@Test 
 	public void testDownloadJson() throws IOException {
 		CrossRefDownloader rsDownLoader = new RSDownloader();

@@ -4,17 +4,29 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.tuple.MutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cmine.files.CTreeList;
 import org.xmlcml.cmine.util.CMineGlobber;
 import org.xmlcml.cmine.util.CMineUtil;
+import org.xmlcml.cmine.util.CSVWriter;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.download.CrossRefDownloader.Type;
+
+import junit.framework.Assert;
 
 public class CrossRefTest {
 
@@ -27,7 +39,13 @@ public class CrossRefTest {
 
 
 	@Test
-	public void testCreateDownloadUrl() throws IOException {
+	// uses net to call CrossRef
+	/**
+	 * searches with query "psychology" and Type.JOURNAL_ARTICLE between dates 2016-05-02 and 2016-05-03
+	 * downloads as CSV file
+	 * 
+	 */
+	public void testQueryCrossRefAndDownloadResults() throws IOException {
 		CrossRefDownloader downLoader = new CrossRefDownloader();
 		downLoader.getOrCreateFilter().setFromPubDate("2016-05-02");
 		downLoader.getOrCreateFilter().setUntilPubDate("2016-05-03");
@@ -35,16 +53,17 @@ public class CrossRefTest {
 		downLoader.setQuery("psychology");
 		downLoader.setRows(1000);
 		URL url = downLoader.getURL();
-		LOG.debug(url);
+		LOG.debug("URL: "+url);
 		List<String> urlList = downLoader.getUrlList();
-		LOG.debug(urlList);
+		LOG.debug("downloaded: "+urlList.size());
 		File targetDir = new File("target/pubstyle/xref");
 		targetDir.mkdirs();
-		IOUtils.writeLines(urlList, "\n", new FileOutputStream(new File(targetDir, "psych20160502.txt")));
+		IOUtils.writeLines(urlList, "\n", new FileOutputStream(new File(targetDir, "psych20160502.csv")));
 
 	}
 
 	@Test
+	@Ignore // downloads many
 	public void testCreateDownloadAgro() throws IOException {
 		String fromDate = "2010-05-02";
 		String untilDate = "2016-05-03";
@@ -54,6 +73,7 @@ public class CrossRefTest {
 	
 
 	@Test
+	@Ignore // downloads many
 	public void testCreateDownloadTheoChem() throws IOException {
 		String fromDate = "2016-04-03";
 		String untilDate = "2016-05-03";
@@ -62,6 +82,7 @@ public class CrossRefTest {
 	}
 
 	@Test
+	@Ignore // downloads many
 	public void testCreateDownloadGlutamate() throws IOException {
 		String fromDate = "2016-04-03";
 		String untilDate = "2016-05-03";
@@ -79,7 +100,7 @@ public class CrossRefTest {
 	}
 
 	@Test
-	// @Ignore non-public content
+	 @Ignore //non-public content
 	public void testTransformDownloads() {
 		File targetDir = new File("xref/sage");
 		File sageXsl = new File("src/main/resources/org/xmlcml/norma/pubstyle/sage/toHtml.xsl");
@@ -101,6 +122,7 @@ public class CrossRefTest {
 	}
 
 	@Test
+	@Ignore //missing file
 	public void testResolveDOIs() throws Exception {
 		File doiFile = new File("/Users/pm286/workspace/cmdev/norma-dev/epmc/puccinia/Puccinia2010-05-02.txt");
 		File resolvedDois = new File("/Users/pm286/workspace/cmdev/norma-dev/epmc/puccinia/Puccinia2010-05-02.resolved.txt");
@@ -109,6 +131,7 @@ public class CrossRefTest {
 	}
 
 	@Test
+	@Ignore // downloads
 	public void testCreateDaily() throws IOException {
 		String fromDate = "2016-05-02";
 		String untilDate = "2016-05-03";
@@ -124,6 +147,7 @@ public class CrossRefTest {
 	}
 
 	@Test
+	@Ignore // downloads
 	public void testCreateDaily100Chunks() throws IOException {
 		String fromDate = "2016-05-01";
 		String untilDate = "2016-05-02";
@@ -132,7 +156,7 @@ public class CrossRefTest {
 		boolean resolveDois = true;
 		BlackList blackList = new BlackList(new File(XREF_DIR, "blacklist.txt"));
 		File dailyDir = new File(XREF_DIR, "daily/");
-		currentPos = CrossRefDownloader.createChunksAndWrite(dailyDir, fromDate, untilDate, rows, currentPos, resolveDois, blackList);
+		currentPos = CrossRefDownloader.runDailyDownload(dailyDir, fromDate, untilDate, rows, currentPos, resolveDois, blackList);
 	}
 
 
@@ -142,32 +166,162 @@ public class CrossRefTest {
 		int delta = 100;
 		File projectTop = new File(XREF_DIR, "daily/"+fromDate+"/");
 
-		CMineGlobber urlsGlobber = new CMineGlobber("glob:**/"+fromDate+"/"+fromDate.replaceAll("\\-", "")+"_*"+"."+CrossRefDownloader.URLS_TXT, projectTop);
+		CMineGlobber urlsGlobber = new CMineGlobber("glob:**/"+fromDate+"/"+fromDate.replaceAll("\\-", "")+"_*"+"."+CrossRefDownloader.URLS_CSV, projectTop);
 		CrossRefDownloader.analyzeFilesAndCProjects("glob:**/results.json", urlsGlobber);
 	}
 
 	@Test
-	public void testCreateFilter() throws IOException {
+	/** this creates a filter to remove blacklisted URLs.
+	 * 
+	 */
+	public void testCreateAndApplyFilter() throws IOException {
 		String fromDate = "2016-05-02";
 		int delta = 100;
 		File projectTop = new File(XREF_DIR, "daily/"+fromDate+"/");
 
-		CMineGlobber globber = new CMineGlobber("glob:**/"+fromDate+"/"+fromDate.replaceAll("\\-", "")+"*"+"."+CrossRefDownloader.URLS_TXT, projectTop);
+		CMineGlobber globber = new CMineGlobber("glob:**/"+fromDate+"/"+fromDate.replaceAll("\\-", "")+"*"+"."+CrossRefDownloader.URLS_CSV, projectTop);
 		List<File> urlList = globber.listFiles();
+		LOG.debug("before filter: "+urlList.size());
 		
 		BlackList blackList = new BlackList(new File(XREF_DIR, "blacklist.txt"));
 		
-		CrossRefDownloader.writeFilteredURLs(urlList, blackList);
+		List<File> filteredURLList = CrossRefDownloader.writeFilteredURLs(urlList, blackList);
+		LOG.debug("after filter: "+filteredURLList.size());
 	}
 	
+	
+	@Test 
+	public void testProjectSize() {
+		String fromDate = "2016-05-01";
+		String fromDate0 = fromDate.replaceAll("\\-", "");
+		int start = 0;
+		int delta = 100;
+		File projectTop = new File(XREF_DIR, "daily/"+fromDate+"/");
+		File cProjectDir = new File(projectTop, createSubPath0(fromDate, start, delta));
+		CProject cProject = new CProject(cProjectDir);
+		CTreeList cTreeList = cProject.getCTreeList();
+		Assert.assertEquals("ctrees",  95, cTreeList.size());
+		List<File> childDirs= cProject.getAllChildDirectoryList();
+		Assert.assertEquals("ctrees",  96, childDirs.size());
+	}
+	
+	@Test 
+	public void testProjectSizeAll() throws IOException {
+		int MAX = 99999;
+		String fromDate = "2016-05-01";
+		int start = 0;
+		int delta = 100;
+		File pubFilterFile = new File(XREF_DIR, "pubFilter.txt");
+		File projectTop = new File(XREF_DIR, "daily/"+fromDate+"/");
+		List<List<String>> rows = new ArrayList<List<String>>();
+		rows.add(Arrays.asList(new String[] {"trees", "child", "dois", "urls", "filter", "first"}));
+
+		List<String> doiPrefixList = new ArrayList<String>();
+		List<String> urlPrefixList = new ArrayList<String>();
+		List<String> pubPrefixList = new ArrayList<String>();
+		List<Pair<Pattern, String>> filterList = readFilter(pubFilterFile);
+		
+		for (; start < MAX; start+=delta) {
+			String subPath = createSubPath0(fromDate, start, delta);
+			File cProjectDir = new File(projectTop, subPath);
+			if (!cProjectDir.exists()) {
+				LOG.debug("break");
+				break;
+			}
+			CProject cProject = new CProject(cProjectDir);
+			List<String> row = new ArrayList<String>();
+			row.add(String.valueOf(cProject.getCTreeList().size()));
+			row.add(String.valueOf(cProject.getAllChildDirectoryList().size()));
+			
+			List<String> doiNames = FileUtils.readLines(new File(projectTop, subPath+".dois.txt"));
+			List<CMDOI> doiList = CMDOI.readDois(doiNames);
+			doiPrefixList.addAll(AbstractCM.getPrefixList(doiList));
+			row.add(String.valueOf(doiNames.size()));
+			
+			List<String> urlNames = FileUtils.readLines(new File(projectTop, subPath+".urls.txt"));
+			List<CMURL> urlList = CMURL.readUrls(urlNames);
+			for (String urlPrefix : AbstractCM.getPrefixList(urlList)) {
+				if (urlPrefix != null) {
+					urlPrefixList.add(urlPrefix);
+				}
+			}
+			row.add(String.valueOf(urlNames.size()));
+
+			for (String urlPrefix : AbstractCM.getPrefixList(urlList)) {
+				if (urlPrefix != null) {
+					pubPrefixList.add(normalizePub(urlPrefix, filterList));
+				}
+			}
+			row.add(String.valueOf(urlNames.size()));
+
+			try {
+				row.add(String.valueOf(FileUtils.readLines(new File(projectTop, subPath+".urls.filter.txt")).size()));
+			} catch (Exception e) {
+				LOG.warn(e);
+			}
+			row.add(doiNames.size() > 0 ? doiNames.get(0) : "-");
+			row.add(urlNames.size() > 0 ? urlNames.get(0) : "-");
+			rows.add(row);
+		}
+		File csvDir = new File("target/csvtest/");
+		csvDir.mkdirs();
+		CSVWriter csvWriter = new CSVWriter();
+		csvWriter.setFileName(new File(csvDir, "projects.csv").toString());
+		csvWriter.setRows(rows);
+		csvWriter.writeCsvFile();
+		
+		CSVWriter doiCounter = new CSVWriter();
+		doiCounter.createMultisetAndOutputRowsWithCounts(doiPrefixList, new File(csvDir, "doiCount.csv").toString());
+		CSVWriter urlCounter = new CSVWriter();
+		urlCounter.createMultisetAndOutputRowsWithCounts(urlPrefixList, new File(csvDir, "urlCount.csv").toString());
+		CSVWriter pubCounter = new CSVWriter();
+		pubCounter.createMultisetAndOutputRowsWithCounts(pubPrefixList, new File(csvDir, "pubCount.csv").toString());
+		
+	}
+
+	
+	private String normalizePub(String urlPrefix, List<Pair<Pattern, String>> filterList) {
+		for (Pair<Pattern, String> filter : filterList) {
+			Pattern pattern = filter.getLeft();
+			Matcher matcher = pattern.matcher(urlPrefix);
+			if (matcher.find()) {
+				urlPrefix = urlPrefix.replaceAll(pattern.toString(), filter.getRight());
+			}
+		}
+		return urlPrefix;
+	}
+
+	private List<Pair<Pattern, String>> readFilter(File pubFilterFile) throws IOException {
+		List<String> lines = FileUtils.readLines(pubFilterFile);
+		List<Pair<Pattern, String>> filterList = new ArrayList<Pair<Pattern, String>>();
+		for (String line : lines) {
+			String[] parts = line.split("\\s+");
+			if (parts.length == 0 || parts.length > 2) {
+				LOG.warn("filter requires 1/2 parts");
+				continue;
+			}
+			String replace = parts.length == 1 ? "" : parts[1];
+//			LOG.debug(">>"+replace);
+			Pattern pattern = Pattern.compile(parts[0]);
+			Pair<Pattern, String> filter = new MutablePair<Pattern, String>(pattern, replace);
+			filterList.add(filter);
+		}
+		return filterList;
+	}
+
 	// ==========================
 	
 
 	private String createSubPath(String fromDate, int count, int delta) {
-		String fromDateMin = fromDate.replaceAll("\\-", "");
-		return fromDate+"/"+fromDateMin+"_"+count+"_"+delta;
+		String s1 = createSubPath0(fromDate, count, delta);
+		String s2 = fromDate+"/"+s1;
+		LOG.debug(s1);
+		return s2;
 	}
 
-
-
+	private String createSubPath0(String fromDate, int count, int delta) {
+		String fromDateMin = fromDate.replaceAll("\\-", "");
+		String s1 = fromDateMin+"_"+count+"_"+delta;
+		return s1;
+	}
 }
