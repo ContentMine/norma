@@ -1,0 +1,98 @@
+article:published_time x 9
+article:section x 9
+article_references x 2
+article_thumbnail x 3
+author x 2
+category x 2
+citation_abstract x 2
+citation_abstract_html_url x 20
+citation_access x 3
+citation_author x 100
+citation_author_email x 10
+citation_author_institution x 94
+citation_author_orcid x 4
+citation_collection_id x 12
+citation_date x 5
+citation_doi x 20
+citation_firstpage x 18
+citation_fulltext_html_url x 9
+citation_fulltext_world_readable x 21
+citation_full_html_url x 9
+citation_funding_source x 8
+citation_id x 13
+citation_id_from_sass_path x 4
+citation_issn x 31
+citation_issue x 16
+citation_journal_abbrev x 15
+citation_journal_title x 22
+citation_keywords x 10
+citation_language x 4
+citation_mjid x 13
+citation_online_date x 6
+citation_pdf_url x 18
+citation_pmid x 11
+citation_publication_date x 15
+citation_public_url x 13
+citation_publisher x 14
+citation_reference x 433
+citation_section x 13
+citation_title x 20
+citation_volume x 20
+dc.accessrights x 9
+dc.contributor x 64
+dc.copyright
+dc.coverage x 4
+dc.creator x 40
+dc.date x 24
+dc.description x 11
+dc.format x 22
+dc.identifier x 28
+dc.language x 22
+dc.modified x 2
+dc.publisher x 22
+dc.relation x 6
+dc.rights x 9
+dc.rightsagent
+dc.source x 3
+dc.subject x 5
+dc.title x 22
+dc.type x 11
+description x 6
+format-detection x 4
+generator x 9
+googlebot x 8
+hw.ad-path x 4
+hw.identifier x 13
+hw.pisa x 9
+issue_cover_image x 11
+journal_id
+keywords x 2
+msapplication-tilecolor
+msapplication-tileimage
+mssmarttagspreventparsing x 2
+og:description x 2
+og:image x 9
+og:site_name x 9
+og:title x 9
+og:type x 9
+og:url x 9
+pbcontext x 2
+prism.copyright]
+prism.doi
+prism.issn
+prism.number
+prism.publicationdate
+prism.publicationname
+prism.rightsagent
+prism.section
+prism.startingpage
+prism.url
+prism.volume
+robots x 26
+session-marked-citation-count x 2
+session-marked-citations x 2
+session-search-history-count x 2
+title x 4
+type x 2
+verify-v1 x 2
+viewport x 14

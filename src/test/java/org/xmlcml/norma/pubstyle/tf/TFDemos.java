@@ -11,7 +11,6 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.files.CTreeList;
@@ -19,13 +18,11 @@ import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.cmine.util.CMineUtil;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.html.HtmlTd;
 import org.xmlcml.html.HtmlTh;
 import org.xmlcml.html.HtmlTr;
 import org.xmlcml.norma.Norma;
-import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.cproject.HtmlTidier;
 import org.xmlcml.xml.XMLUtil;
 

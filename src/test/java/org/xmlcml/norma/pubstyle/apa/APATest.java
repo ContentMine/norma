@@ -5,11 +5,9 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
 
-@Ignore // closed access
 public class APATest {
 	
 	private static final Logger LOG = Logger.getLogger(APATest.class);
@@ -22,7 +20,7 @@ public class APATest {
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
 	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
 	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
-	static File TEST1 = new File(TEST, "closed");
+	static File TEST1 = new File(TEST, "ccby");
 
 	@Test
 	public void testHtml2Scholarly() {

@@ -19,8 +19,8 @@ public class WileyTest {
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
 	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
-	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
-	static File TEST1 = new File(TEST, "ccby");
+	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB); // change back to this when open
+	static File TEST1 = new File(TEST, "ccby"); // change back to this when open
 
 	@Test
 	public void testHtml2Scholarly() {

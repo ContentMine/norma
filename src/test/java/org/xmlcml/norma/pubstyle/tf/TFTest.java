@@ -12,7 +12,6 @@ import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.NormaFixtures;
 
-@Ignore // have lost tf
 public class TFTest {
 	private static final Logger LOG = Logger.getLogger(TFTest.class);
 	static {
@@ -25,7 +24,7 @@ public class TFTest {
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);
 	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);
 	static File TEST = new File(NormaFixtures.TEST_PUBSTYLE_DIR, PUB);
-	static File TEST1 = new File(TEST, "test");
+	static File TEST1 = new File(TEST, "ccby");
 
 	@Test
 	public void testHtml2Scholarly() {
@@ -42,8 +41,10 @@ public class TFTest {
 		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
 	}
 	
+
 	
 	@Test
+	@Ignore
 	public void convertToc() {
 		File targetDir = new File("target/tutorial/tf");
 		CMineTestFixtures.cleanAndCopyDir(new File("src/test/resources/org/xmlcml/norma/pubstyle/tf/toc/"), targetDir);

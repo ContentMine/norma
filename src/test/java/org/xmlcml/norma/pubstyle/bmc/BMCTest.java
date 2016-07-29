@@ -24,14 +24,13 @@ import org.xmlcml.graphics.svg.objects.SVGBoxChart;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
-import com.google.common.collect.Multiset.Entry;
 
 public class BMCTest {
 

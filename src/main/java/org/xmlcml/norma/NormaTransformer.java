@@ -3,15 +3,14 @@ package org.xmlcml.norma;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletionService;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -23,7 +22,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
@@ -264,6 +262,7 @@ public class NormaTransformer {
 	}
 
 	private void transformSingleInput() {
+		LOG.debug("Norma.transformer: "+type);
 		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
@@ -313,10 +312,32 @@ public class NormaTransformer {
 			if (xmlString == null) {
 				LOG.trace("null content in: "+currentCTree.getDirectory());
 			} else {
+				debug0(xmlString);
 				createHtmlElement(xmlString);
+				debug1();
 			}
 		} else {
 			LOG.warn("Cannot interpret transform");
+		}
+	}
+
+	private void debug0(String xmlString) {
+		File file = new File("target/fulltext.xhtml.xml");
+		try {
+			FileUtils.writeStringToFile(file, xmlString);
+			LOG.debug("wrote: html "+file);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot write transformer output");
+		}
+	}
+
+	private void debug1() {
+		File file = new File("target/fulltext.xhtml");
+			try {
+			XMLUtil.debug(htmlElement, new FileOutputStream(file),  1);
+			LOG.debug("wrote: xhtml "+file);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot write transformer output");
 		}
 	}
 

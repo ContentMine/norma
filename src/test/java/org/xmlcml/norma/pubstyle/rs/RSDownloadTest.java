@@ -11,16 +11,18 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cmine.metadata.crossref.CrossrefDownloader;
 import org.xmlcml.cmine.util.CMineTestFixtures;
 import org.xmlcml.norma.cproject.HtmlTidier;
-import org.xmlcml.norma.download.CrossRefDownloader;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 /** Royal Society */
+@Ignore // uses net
 public class RSDownloadTest {
 	
 	private static final Logger LOG = Logger.getLogger(RSDownloadTest.class);
@@ -30,7 +32,7 @@ public class RSDownloadTest {
 
 	@Test
 	public void testCreateDownloadUrl() throws IOException {
-		CrossRefDownloader rsDownLoader = new RSDownloader();
+		CrossrefDownloader rsDownLoader = new RSDownloader();
 		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
@@ -40,7 +42,7 @@ public class RSDownloadTest {
 //	http://api.crossref.org/works?filter=issn:1471-2954,from-pub-date:2014-01-01&rows=250
 	@Test 
 	public void testDownloadJson() throws IOException {
-		CrossRefDownloader rsDownLoader = new RSDownloader();
+		CrossrefDownloader rsDownLoader = new RSDownloader();
 		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
@@ -53,7 +55,7 @@ public class RSDownloadTest {
 	
 	@Test 
 	public void testDownloadJson1() throws IOException {
-		CrossRefDownloader rsDownLoader = new RSDownloader();
+		CrossrefDownloader rsDownLoader = new RSDownloader();
 		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.setRows(250);
@@ -69,7 +71,7 @@ public class RSDownloadTest {
 	}
 	@Test 
 	public void testDownloadJson2() throws IOException {
-		CrossRefDownloader rsDownLoader = new RSDownloader();
+		CrossrefDownloader rsDownLoader = new RSDownloader();
 		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);
 		rsDownLoader.getOrCreateFilter().setFromPubDate("2014-01-01");
 		rsDownLoader.getOrCreateFilter().setUntilPubDate("2015-01-01");

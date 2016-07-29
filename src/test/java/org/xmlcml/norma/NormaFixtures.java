@@ -32,6 +32,8 @@ public class NormaFixtures {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	public final static File EXAMPLES_DIR = new File("examples");
+	
 	public final static File MAIN_NORMA_DIR = new File("src/main/resources/org/xmlcml/norma/");
 	public final static File MAIN_STYLE_DIR = new File(NormaFixtures.MAIN_NORMA_DIR, "style");
 	public final static File MINI_XSL = new File(NormaFixtures.MAIN_STYLE_DIR, "miniTest.xsl");
@@ -114,6 +116,7 @@ public class NormaFixtures {
 	public final static File TEST_PLOSONE_CTREE0 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
 	public final static File TARGET_PUBSTYLE_DIR = new File("target/pubstyle");
+
 	private static File shtmlFile;
 
 	
@@ -125,6 +128,7 @@ public class NormaFixtures {
 	}
 
 	public static void tidyTransform(File from, File projectDir, String abb) {
+		LOG.debug(projectDir+": tidy fulltext.html to fulltext.xhtml");
 		CMineTestFixtures.cleanAndCopyDir(from, projectDir);
 		String args = "--project "+projectDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
@@ -134,6 +138,7 @@ public class NormaFixtures {
 		File xhtmlFile = ctree0.getExistingFulltextXHTML();
 		Assert.assertTrue("xhtml: ", xhtmlFile.exists());
 		String symbol = abb+"2html";
+		LOG.debug("convert xhtml to html Symbol: "+symbol);
 		args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
 		argProcessor = new NormaArgProcessor(args); 
 		argProcessor.runAndOutput(); 

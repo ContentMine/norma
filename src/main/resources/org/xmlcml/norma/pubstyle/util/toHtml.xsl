@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://www.w3.org/1999/xhtml">
 
-<!--  IEEE -->
+<!--  parent -->
     <xsl:output method="xhtml"/>
     
     <xsl:template match="/">
@@ -9,16 +9,16 @@
     </xsl:template>
 
 	<!--Identity template, strips PIs and comments -->
-	<xsl:template match="@*|node()">
-		<xsl:copy>
-			<xsl:apply-templates select="@*|node()" />
-		</xsl:copy>
-	</xsl:template>
 	
+	<xsl:template match="@*|node()">
+	  <xsl:copy>
+	    <xsl:apply-templates select="@*|node()"/>
+	  </xsl:copy>
+	</xsl:template>
+
   	<xsl:template match="h:head">
-  	  <head>
+  	  <xsl:copy>
   	    <meta charset="UTF-8"/>
-  	    <!--  this might disappear -->
   	    <style>
   	    div {
   	        border: 1px solid red;
@@ -40,7 +40,7 @@
   	        background: #ddffff;
   	        margin: 2 2 2 2;
   	        }
-  	    table {
+  	    table {"target/pubstyle/rs/clean/277_1686_1309/fulltext.xhtml"
   	        border: 1px solid blue;
   	        background: #ddffdd;
   	        margin: 2 2 2 2;
@@ -54,8 +54,10 @@
   	        margin: 2 2 2 2;
   	        }
   	    </style>
-  	  </head>
+  	    <xsl:apply-templates select="h:meta"/>
+  	  </xsl:copy>
   	</xsl:template> 
+  	
 
 	<xsl:template match="comment()" priority="1.0"/>
 
