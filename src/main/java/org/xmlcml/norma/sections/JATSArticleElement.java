@@ -1,12 +1,10 @@
 package org.xmlcml.norma.sections;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
 

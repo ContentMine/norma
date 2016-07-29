@@ -1,26 +1,15 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.util.CMineTestFixtures;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.norma.download.CrossRefDownloader;
-import org.xmlcml.norma.download.CrossRefDownloader.Type;
-import org.xmlcml.norma.download.DOIResolver;
 import org.xmlcml.norma.pubstyle.util.XMLCleaner;
 
 import junit.framework.Assert;
@@ -92,7 +81,9 @@ public class NormaFixtures {
 	public final static File TEST_MISC_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "miscfiles/");
 	// edited copies of NLM-compliant XML files, numbered "nlm1.xml, etc"
 	public final static File TEST_NUMBERED_DIR = new File(NormaFixtures.TEST_MISC_DIR, "numbered/");
-	
+
+//	public static final File TEST_CROSSREF_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "crossref");
+
 	public final static File TEST_ELIFE_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "elife");
 	public final static File TEST_ELIFE_CTREE0 = new File(NormaFixtures.TEST_ELIFE_DIR, "e04407");
 	
@@ -116,6 +107,7 @@ public class NormaFixtures {
 	public final static File TEST_PLOSONE_CTREE0 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
 	public final static File TARGET_PUBSTYLE_DIR = new File("target/pubstyle");
+
 
 	private static File shtmlFile;
 

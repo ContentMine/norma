@@ -7,7 +7,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlA;
 import org.xmlcml.html.HtmlB;
-import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlCol;
 import org.xmlcml.html.HtmlColgroup;
 import org.xmlcml.html.HtmlDiv;

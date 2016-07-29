@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.xml.XMLUtil;
 

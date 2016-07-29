@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -22,10 +21,7 @@ import org.xmlcml.norma.sections.SectionTagger.SectionTag;
 import org.xmlcml.norma.util.DottyPlotter;
 import org.xmlcml.xml.XMLUtil;
 
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Multiset;
-import com.google.common.collect.Multisets;
 
 import nu.xom.Element;
 

@@ -13,6 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.metadata.quickscrape.QuickscrapeMD;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -48,7 +49,7 @@ public class GetPapers {
 	    		JsonElement element = resultsByPmcid.get(name);
 	    		if (element != null) {
 		    		CTree cTree = new CTree(file);
-		    		File resultsJson = cTree.getReservedFile(CTree.RESULTS_JSON);
+		    		File resultsJson = cTree.getReservedFile(QuickscrapeMD.RESULTS_JSON);
 		    		FileUtils.write(resultsJson, element.toString(), Charset.forName("UTF-8"));
 	    		}
 	    	}

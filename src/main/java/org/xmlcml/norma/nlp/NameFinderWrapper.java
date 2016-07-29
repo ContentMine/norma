@@ -1,13 +1,5 @@
 package org.xmlcml.norma.nlp;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import opennlp.tools.util.Span;
-
 /** this takes up too much space
  * 
  * @author pm286

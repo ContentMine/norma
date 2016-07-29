@@ -53,6 +53,7 @@ public class NormaTransformer {
 		HTMLUNIT("htmlunit", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
 		JSOUP("jsoup", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
 		TIDY("tidy", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		// HTMLCleaner
 
 		HOCR2SVG(    "hocr2svg",    "image/", CTree.HOCR,  "svg/",   CTree.HOCR_SVG),
 		CSV2HTML(    "csv2html",    "table/", CTree.CSV,  "table/", CTree.HTML),
@@ -262,7 +263,7 @@ public class NormaTransformer {
 	}
 
 	private void transformSingleInput() {
-		LOG.debug("Norma.transformer: "+type);
+		LOG.trace("Norma.transformer: "+type);
 		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
@@ -325,7 +326,7 @@ public class NormaTransformer {
 		File file = new File("target/fulltext.xhtml.xml");
 		try {
 			FileUtils.writeStringToFile(file, xmlString);
-			LOG.debug("wrote: html "+file);
+			LOG.trace("wrote: html "+file);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot write transformer output");
 		}
@@ -335,7 +336,7 @@ public class NormaTransformer {
 		File file = new File("target/fulltext.xhtml");
 			try {
 			XMLUtil.debug(htmlElement, new FileOutputStream(file),  1);
-			LOG.debug("wrote: xhtml "+file);
+			LOG.trace("wrote: xhtml "+file);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot write transformer output");
 		}

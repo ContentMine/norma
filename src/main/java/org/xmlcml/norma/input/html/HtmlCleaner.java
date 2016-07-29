@@ -9,6 +9,7 @@ import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.NormaArgProcessor;
+import org.xmlcml.xml.XMLUtil;
 
 public class HtmlCleaner {
 
@@ -26,9 +27,13 @@ public class HtmlCleaner {
 	private HtmlElement htmlElement;
 	private HtmlFactory htmlFactory;
 
-	public HtmlCleaner(NormaArgProcessor argProcessor) {
-		this.normaArgProcessor = argProcessor;
+	public HtmlCleaner() {
 		createHtmlFactory();
+	}
+
+	public HtmlCleaner(NormaArgProcessor argProcessor) {
+		this();
+		this.normaArgProcessor = argProcessor;
 	}
 
 	private void createHtmlFactory() {
@@ -54,8 +59,19 @@ public class HtmlCleaner {
 		CTree currentCMTree = normaArgProcessor.getCurrentCMTree();
 		File inputFile = normaArgProcessor.checkAndGetInputFile(currentCMTree);
 
+		return cleanHtmlFile(inputFile);
+	}
+
+	public HtmlElement cleanHtmlFile(File inputFile) {
 		htmlElement = null;
-		if (inputFile != null) {
+		// assume it's well formed already?
+		try {
+			htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(inputFile).getRootElement());
+		} catch (Exception e) {
+			
+		}
+		// only do this if not well formed
+		if (htmlElement == null && inputFile != null) {
 			try {
 				htmlElement = htmlFactory.parse(inputFile);
 			} catch (Exception e) {

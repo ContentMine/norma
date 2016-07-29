@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.HtmlElement;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;

@@ -1,8 +1,6 @@
 package org.xmlcml.norma.biblio;
 
-import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 
 public class Journal {
 

@@ -2,7 +2,6 @@ package org.xmlcml.norma.tagger;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.norma.InputFormat;
 
 /** tags sections based on regex for titles and content.
  * 

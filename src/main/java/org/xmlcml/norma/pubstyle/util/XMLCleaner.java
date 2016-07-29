@@ -3,7 +3,6 @@ package org.xmlcml.norma.pubstyle.util;
 import java.io.File;
 import java.util.List;
 
-import org.xmlcml.html.HtmlElement;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
