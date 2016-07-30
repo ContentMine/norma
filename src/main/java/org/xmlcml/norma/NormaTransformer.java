@@ -576,6 +576,9 @@ public class NormaTransformer {
 		DocumentBuilder db = createDocumentBuilder();
 		String stylesheetResourceName = lookupStylesheetByName(xslName);
 		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
+		if (stylesheetDocument == null) {
+			LOG.warn("cannout find resource: "+xslName+"; "+stylesheetResourceName);
+		}
 		// if fails, try as file
 		if (stylesheetDocument == null) {
 			try {
@@ -609,7 +612,7 @@ public class NormaTransformer {
 		try {
 			stylesheetDocument = db.parse(is);
 		} catch (Exception e) { 
-			LOG.error("cannot parse stylesheet stream "+e);
+			LOG.error("cannot parse stylesheet stream "+e+"; "+xslName);
 		}
 		return stylesheetDocument;
 	}

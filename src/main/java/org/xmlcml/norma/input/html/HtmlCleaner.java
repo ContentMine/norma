@@ -11,6 +11,8 @@ import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 
+import nu.xom.Element;
+
 public class HtmlCleaner {
 
 	
@@ -26,8 +28,10 @@ public class HtmlCleaner {
 	private NormaArgProcessor normaArgProcessor;
 	private HtmlElement htmlElement;
 	private HtmlFactory htmlFactory;
+	private boolean testWellFormed;
 
 	public HtmlCleaner() {
+		this.testWellFormed = false;
 		createHtmlFactory();
 	}
 
@@ -65,10 +69,14 @@ public class HtmlCleaner {
 	public HtmlElement cleanHtmlFile(File inputFile) {
 		htmlElement = null;
 		// assume it's well formed already?
-		try {
-			htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(inputFile).getRootElement());
-		} catch (Exception e) {
-			
+		// this may cause more problems than it solves
+		if (testWellFormed) {
+			try {
+				Element element = XMLUtil.parseQuietlyToDocumentWithoutDTD(inputFile).getRootElement();
+				htmlElement = HtmlElement.create(element);
+			} catch (Exception e) {
+				
+			}
 		}
 		// only do this if not well formed
 		if (htmlElement == null && inputFile != null) {
@@ -84,6 +92,20 @@ public class HtmlCleaner {
 	public HtmlElement getHtmlElement() {
 		return htmlElement;
 	}
+
+	public boolean isTestWellFormed() {
+		return testWellFormed;
+	}
+
+	/** initailly parse as well-formed and only tidy if not.
+	 * this may cause as many problems as it solves.
+	 * 
+	 * @param testWellFormed
+	 */
+	public void setTestWellFormed(boolean testWellFormed) {
+		this.testWellFormed = testWellFormed;
+	}
+
 
 
 }

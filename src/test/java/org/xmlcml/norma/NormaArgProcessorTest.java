@@ -270,13 +270,16 @@ public class NormaArgProcessorTest {
 	@Test
 	/** creates new CTrees for list of HTML and then transforms
 	 * 
+	 * was IEEE but removed fpr copyright reasons
 	 */
-	public void testCreateCTreesForIEEEHtml() throws IOException {
+	// it's 
+	public void testCreateCTreesForPublisherHtml() throws IOException {
+		String pub = "test1";
 		new Norma().run("");
 		String args;
-		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --ctree ";
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/"+pub+" -o target/"+pub+"/ -e html --ctree ";
 		new Norma().run(args);
-		args = "-i fulltext.html -o fulltext.xhtml --ctree target/ieee --html jsoup";
+		args = "-i fulltext.html -o fulltext.xhtml --ctree target/"+pub+" --html jsoup";
 		new Norma().run(args);
 	}
 
@@ -286,13 +289,15 @@ public class NormaArgProcessorTest {
 	 * 
 	 * SHOWCASE
 	 */
+	
 	public void testTransformRawHtmlToScholarly() throws IOException {
+		String pub = "test1";
 		String args;
-		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/ieee -o target/ieee/ -e html --ctree ";
+		args = "-i src/test/resources/org/xmlcml/norma/pubstyle/"+pub+" -o target/"+pub+"/ -e html --ctree ";
 		new Norma().run(args);
-		args = "-i fulltext.html -o fulltext.xhtml --ctree target/ieee --html jsoup";
+		args = "-i fulltext.html -o fulltext.xhtml --ctree target/"+pub+" --html jsoup";
 		new Norma().run(args);
-		args = "-i fulltext.xhtml -o scholarly.html --ctree target/ieee --transform ieee2html";
+		args = "-i fulltext.xhtml -o scholarly.html --ctree target/"+pub+" --transform ieee2html";
 		new Norma().run(args);
 	}
 

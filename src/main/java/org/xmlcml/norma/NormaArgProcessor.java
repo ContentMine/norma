@@ -390,7 +390,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private void createCTreeListFromInputList() {
 		// proceed unless there is a single reserved file for input
 		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
-			LOG.debug("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
+			LOG.trace("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
 			// this actually creates directory
 			getOrCreateOutputDirectory();
 			ensureCTreeList();

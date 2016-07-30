@@ -120,7 +120,7 @@ public class NormaFixtures {
 	}
 
 	public static void tidyTransform(File from, File projectDir, String abb) {
-		LOG.debug(projectDir+": tidy fulltext.html to fulltext.xhtml");
+		LOG.trace(projectDir+": tidy fulltext.html to fulltext.xhtml");
 		CMineTestFixtures.cleanAndCopyDir(from, projectDir);
 		String args = "--project "+projectDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
@@ -128,15 +128,17 @@ public class NormaFixtures {
 		CProject project = new CProject(projectDir);
 		CTree ctree0 = project.getCTreeList().get(0);
 		File xhtmlFile = ctree0.getExistingFulltextXHTML();
-		Assert.assertTrue("xhtml: ", xhtmlFile.exists());
-		String symbol = abb+"2html";
-		LOG.debug("convert xhtml to html Symbol: "+symbol);
-		args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
-		argProcessor = new NormaArgProcessor(args); 
-		argProcessor.runAndOutput(); 
-		shtmlFile = ctree0.getExistingScholarlyHTML();
-		Assert.assertNotNull("failed convert using: "+symbol, shtmlFile);
-		Assert.assertTrue("shtml: ", shtmlFile.exists());
+		if (xhtmlFile != null) {
+			Assert.assertTrue("xhtml: ", xhtmlFile.exists());
+			String symbol = abb+"2html";
+			LOG.trace("convert xhtml to html Symbol: "+symbol);
+			args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
+			argProcessor = new NormaArgProcessor(args); 
+			argProcessor.runAndOutput(); 
+			shtmlFile = ctree0.getExistingScholarlyHTML();
+			Assert.assertNotNull("failed convert using: "+symbol, shtmlFile);
+			Assert.assertTrue("shtml: ", shtmlFile.exists());
+		}
 	}
 
 	public static void tidyTransformAndClean(File from, File projectDir, String abb) throws IOException {
