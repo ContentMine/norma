@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.xmlcml.cmine.files.CContainer;
 import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cmine.metadata.AbstractMetadata;
 import org.xmlcml.norma.NormaFixtures;
 
 public class ResultsJSONTest {
@@ -19,7 +20,6 @@ public class ResultsJSONTest {
 	@Test
 	public void testSplitAndNormalize() {
 		CContainer cProject = new CProject(new File(NormaFixtures.TEST_MISC_DIR, "cproject"));
-		File file = cProject.getAllowedChildFile(CProject.EUPMC_RESULTS_JSON);
-		
+		File file = cProject.getAllowedChildFile(AbstractMetadata.Type.EPMC.getCProjectMDFilename());
 	}
 }

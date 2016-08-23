@@ -168,11 +168,12 @@ public class BMCTest {
 		// this is a valid CTree
 		CTree cTree = new CTree(NormaFixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
-		Assert.assertEquals("reserved files", 4, cTree.getReservedFileList().size());
+		Assert.assertEquals("reserved files", 5, cTree.getReservedFileList().size());
 		Assert.assertNotNull("fulltext.xml", cTree.getExistingFulltextXML());
 		Assert.assertNotNull("fulltext.html", cTree.getExistingFulltextHTML());
 		Assert.assertNotNull("fulltext.pdf", cTree.getExistingFulltextPDF());
-		Assert.assertNotNull("results.json", cTree.getExistingResultsJSON());
+//		Assert.assertNotNull("results.json", cTree.getExistingQuickscrapeMD());
+		Assert.assertNotNull("quickscrape_result.json", cTree.getExistingQuickscrapeMD());
 		// these files don't exist yet
 		Assert.assertNull("scholarly.html", cTree.getExistingScholarlyHTML());
 		Assert.assertNull("results.xml", cTree.getExistingResultsDir());

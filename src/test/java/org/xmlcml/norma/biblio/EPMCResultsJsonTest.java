@@ -31,7 +31,7 @@ public class EPMCResultsJsonTest {
 	}
 	
 	@Test
-	public void testReadResultsJSON() throws IOException {
+	public void testReadEpmcMD() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
@@ -46,7 +46,7 @@ public class EPMCResultsJsonTest {
 	}
 	
 	@Test
-	public void testReadResultsJSONFields() throws IOException {
+	public void testReadEpmcMDFields() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
@@ -208,7 +208,7 @@ public class EPMCResultsJsonTest {
 
 
 	@Test
-	public void testReadResultsJSON1() throws IOException {
+	public void testReadEpmcMD1() throws IOException {
 		// a 5 Mbyte file
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"));
 	    JsonParser parser = new JsonParser();
@@ -227,7 +227,7 @@ public class EPMCResultsJsonTest {
 	 * 
 	 * @throws IOException
 	 */
-	public void testCreateCTreesFromEPMCResultsJSON() throws IOException {
+	public void testCreateCTreesFromEPMCMD() throws IOException {
 		File jsonFile = new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursus1.json");
 		File cProjectDir = new File("target/json/cproject/ursus1/");
 		EPMCConverter epmcConverter = new EPMCConverter();

@@ -57,7 +57,7 @@ public class USPTOTest {
 		norma.runAndOutput();
 		File shtmlFile = new File(target, "US08978162-20150317");
 		CProject project = new CProject(target);
-		Assert.assertEquals("ctrees", 8, project.getCTreeList().size());
+		Assert.assertEquals("ctrees", 8, project.getResetCTreeList().size());
 		NormaTestFixtures.checkScholarlyHtml(shtmlFile, 
 //				"<?xml version=\"1.0\"?>"
 //				+ "<html xmlns=\"http://www.w3.org/1999/xhtml\">"

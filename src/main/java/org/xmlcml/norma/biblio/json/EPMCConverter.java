@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cmine.metadata.AbstractMetadata;
 import org.xmlcml.cmine.util.CellCalculator;
 import org.xmlcml.cmine.util.CellRenderer;
 import org.xmlcml.cmine.util.DataTablesTool;
@@ -114,7 +115,7 @@ public class EPMCConverter implements CellCalculator {
 
 	private void writeCurrentCTree(JsonElement entry) {
 		if (currentCTree != null && currentCTree.getDirectory() != null) {
-			File entryFile = new File(currentCTree.getDirectory(), CProject.EUPMC_RESULTS_JSON);
+			File entryFile = new File(currentCTree.getDirectory(), AbstractMetadata.Type.EPMC.getCProjectMDFilename());
 			entry = stripOneElementArrays(entry);
 			try {
 				DefaultArgProcessor.CM_LOG.debug("wrote: "+entryFile);
