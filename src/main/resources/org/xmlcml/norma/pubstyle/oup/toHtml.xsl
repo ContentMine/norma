@@ -5,6 +5,16 @@
 
 	<!--  OUP -->
 
+	<xsl:variable name="publisher">Oxford University Press</xsl:variable>
+    <xsl:variable name="prefix">10.1093</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='DC.Publisher' and @content='Oxford University Press') or 
+      (@name='DC.Identifier' and contains(@content,'10.1093/'))
+      )
+    ]</xsl:variable>
+
 	<xsl:template match="h:div[@id='secondary_nav']"/>
 	<xsl:template match="h:div[@id='primary_nav']"/>
 	<xsl:template match="h:div[@id='col-2']"/>

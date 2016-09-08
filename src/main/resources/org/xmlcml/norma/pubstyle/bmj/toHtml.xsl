@@ -4,6 +4,15 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  BMJ -->
+    <xsl:variable name="publisher">British Medical Journal Publishing Group</xsl:variable>
+    <xsl:variable name="prefix">10.1136</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='DC.Publisher' and @content='British Medical Journal Publishing Group') or 
+      (@name='DC.Identifier' and contains(@content,'10.1136/'))
+      )
+    ]</xsl:variable>
 	
 	<!--  FRONT -->
 	<!--  skip to content -->

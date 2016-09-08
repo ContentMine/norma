@@ -68,6 +68,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private List<SectionTagger> sectionTaggerNameList;
 	private HtmlElement cleanedHtmlElement;
 	List<String> transformTokenList;
+	private List<String> relabelStrings;
 
 	public NormaArgProcessor() {
 		super();
@@ -100,37 +101,32 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// ============= METHODS =============
 
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parseDivs(ArgumentOption option, ArgIterator argIterator) {
-		divList = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		divList = argIterator.getStrings(option);
 	}
 
 	public void parseHtml(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 		LOG.trace("HTML: "+tidyName);
 	}
 
 	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		movePairList = option.processArgs(tokens).getStringPairValues();
 	}
 
-	public void parseRename(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		renamePairList = option.processArgs(tokens).getStringPairValues();
-	}
-
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 			Pubstyle.help();
@@ -140,8 +136,17 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		}
 	}
 
+	public void parseRelabelContent(ArgumentOption option, ArgIterator argIterator) {
+		relabelStrings = argIterator.getStrings(option);
+	}
+
+	public void parseRename(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.getStrings(option);
+		renamePairList = option.processArgs(tokens).getStringPairValues();
+	}
+
 	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		sectionTaggerNameList = new ArrayList<SectionTagger>();
 		if (tokens.size() == 0) {
 			LOG.warn("parseTag requires list of taggers");
@@ -155,7 +160,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		try {
 			removeDTD = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
 		} catch (Exception e) {
@@ -164,7 +169,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseStrip(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 		} else {
@@ -178,7 +183,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+//		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		transformTokenList = option.processArgs(tokens).getStringValues();
 		getOrCreateNormaTransformer();
 		List<ValueElement> valueElements = option.getValueElements();
@@ -215,6 +221,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			LOG.trace("***run transform "+currentCTree);
 			getOrCreateNormaTransformer();
 			String transformTypeString = option.getStringValue();
+//			LOG.debug("transform type: "+transformTypeString);
 			normaTransformer.runTransform(transformTypeString);
 		}
 	}
@@ -251,6 +258,15 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		moveFiles();
 	}
 
+	public void runRelabelContent(ArgumentOption option) {
+		if (currentCTree == null) {
+			LOG.warn("No current CTree");
+		}
+
+		LOG.trace("***run relabel "+currentCTree);
+		relabelContent();
+	}
+
 	public void runRename(ArgumentOption option) {
 		LOG.trace("***run rename "+currentCTree);
 		renameFiles();
@@ -283,6 +299,41 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 				}
 			}
 		}
+	}
+
+	private void relabelContent() {
+		if (relabelStrings == null) {
+			throw new RuntimeException("must give parseRelabel");
+		}
+		for (String relabelFilename : relabelStrings) {
+			File relabelFile = new File(currentCTree.getDirectory(), relabelFilename);
+			if (relabelFile.exists()) {
+				String content = NormaUtil.getStringFromInputFile(relabelFile);
+				if (content != null) {
+					if (false) {
+					} else if (relabelFilename.equals(CTree.FULLTEXT_PDF) && !NormaUtil.isPDFContent(content)) {
+						if (NormaUtil.isHtmlContent(content)) {
+							relabelContent(relabelFile, content, CTree.FULLTEXT_HTML);
+						}
+					} else if (relabelFilename.equals(CTree.FULLTEXT_HTML) && !NormaUtil.isHtmlContent(content)) {
+						if (NormaUtil.isPDFContent(content)) {
+							relabelContent(relabelFile, content, CTree.FULLTEXT_PDF);
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	private boolean relabelContent(File oldFile, String content, String filenameType) {
+		File newFile = new File(oldFile.getParentFile(), filenameType);
+		try {
+			FileUtils.copyFile(oldFile, newFile, true);
+			FileUtils.forceDelete(oldFile);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot rename file: "+oldFile+" => "+newFile, e);
+		}
+		return false;
 	}
 
 	private void renameFiles() {

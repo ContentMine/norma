@@ -4,6 +4,17 @@
 <xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  Wolters Kluwer -->
+	<!--  -->edit me-->
+	<xsl:variable name="publisher">Wolters Kluwer</xsl:variable>
+    <xsl:variable name="prefix">10.????</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='citation_publisher' and contains(@content,'Wolters Kluwer')) or 
+      (@name='citation_doi' and contains(@content,'10.????/'))
+      )
+    ]</xsl:variable>
+
 	
 	<!-- this uses tables to do layout (oh, dear) -->
 	<!--  first table can be junked - this is fragile -->

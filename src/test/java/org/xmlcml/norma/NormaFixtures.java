@@ -112,14 +112,18 @@ public class NormaFixtures {
 	private static File shtmlFile;
 
 	
-	public static void htmlTidy(File from, File to) {
+	public static void copyToTargetRunHtmlTidy(File from, File to) {
 		CMineTestFixtures.cleanAndCopyDir(from, to);
 		String args = "--project "+to+" -i fulltext.html -o scholarly.html --html jsoup";
 		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
 		argProcessor.runAndOutput();
 	}
 
-	public static void tidyTransform(File from, File projectDir, String abb) {
+	public static void copyToTargetRunTidyTransformWithStylesheetSymbolRoot(File from, File projectDir, String abb) {
+		copyToTargetRunTidyTransformWithStylesheetSymbol(from, projectDir, abb+"2html");
+	}
+
+	public static void copyToTargetRunTidyTransformWithStylesheetSymbol(File from, File projectDir, String symbol) {
 		LOG.trace(projectDir+": tidy fulltext.html to fulltext.xhtml");
 		CMineTestFixtures.cleanAndCopyDir(from, projectDir);
 		String args = "--project "+projectDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
@@ -130,7 +134,6 @@ public class NormaFixtures {
 		File xhtmlFile = ctree0.getExistingFulltextXHTML();
 		if (xhtmlFile != null) {
 			Assert.assertTrue("xhtml: ", xhtmlFile.exists());
-			String symbol = abb+"2html";
 			LOG.trace("convert xhtml to html Symbol: "+symbol);
 			args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
 			argProcessor = new NormaArgProcessor(args); 
@@ -140,24 +143,16 @@ public class NormaFixtures {
 			Assert.assertTrue("shtml: ", shtmlFile.exists());
 		}
 	}
-
+	
 	public static void tidyTransformAndClean(File from, File projectDir, String abb) throws IOException {
-		tidyTransform(from, projectDir, abb);
+		copyToTargetRunTidyTransformWithStylesheetSymbolRoot(from, projectDir, abb);
 		XMLCleaner cleaner = XMLCleaner.createCleaner(shtmlFile);
-		// remove empty elements
-		cleaner.remove("//*[(local-name()='div' "
-				+ "       or local-name()='i'"
-				+ "       or local-name()='b'"
-				+ "       or local-name()='p'"
-				+ "       or local-name()='span'"
-				+ "       or local-name()='em'"
-				+ " ) and normalize-space(text())='']");
+		cleaner.removeCommonEmptyElements();
 		String cleanedXml = cleaner.getElement().toXML();
 		File file = new File(projectDir, "cleaned.html");
 		FileUtils.write(file, cleanedXml);
-		// remove HTML namespace so it displays as XML in browser
-		cleanedXml = cleanedXml.replaceAll("xmlns=\"http://www.w3.org/1999/xhtml\"", "");
-		FileUtils.write(new File(projectDir, "cleaned.xml"), cleanedXml);
+		cleaner.removeXMLNSNamespace();
+		FileUtils.write(new File(projectDir, "cleaned.xml"), cleaner.getElement().toXML());
 	}
 	
 	

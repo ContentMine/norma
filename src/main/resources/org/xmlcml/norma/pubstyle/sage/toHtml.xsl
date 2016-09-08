@@ -4,6 +4,16 @@
 <xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  Sage -->
+	<xsl:variable name="publisher">SAGE Publications</xsl:variable>
+    <xsl:variable name="prefix">10.1177</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='DC.Publisher' and @content='SAGE Publications') or 
+      (@name='DC.Identifier' and contains(@content,'10.1177/'))
+      )
+    ]</xsl:variable>
+
 
  	<xsl:template match="h:div[@id='header-initialNav']"/>
  	<xsl:template match="h:div[@id='header']"/>

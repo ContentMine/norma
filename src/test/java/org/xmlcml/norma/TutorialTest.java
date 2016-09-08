@@ -121,7 +121,7 @@ public class TutorialTest {
 		Norma norma = new Norma();
 		norma.run(args);
 		Assert.assertNotNull("pdf", CTree.getExistingFulltextPDF(cTreeTop));
-		Assert.assertNotNull("pdftxt", CTree.getExistingFulltextPDFTXT(cTreeTop));
+		Assert.assertNotNull("pdftxt should exist", CTree.getExistingFulltextPDFTXT(cTreeTop));
 	}		
 	
 	@Test

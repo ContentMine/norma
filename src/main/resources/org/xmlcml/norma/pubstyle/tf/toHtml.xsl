@@ -4,6 +4,17 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  Taylor and Francis / Informa -->
+	
+	<xsl:variable name="publisher">Taylor &amp; Francis</xsl:variable>
+    <xsl:variable name="prefix">10.1080</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='dc.Publisher' and @content='Taylor &amp; Francis') or 
+      (@name='dc.Identifier' and contains(@content,'10.1080/'))
+      )
+    ]</xsl:variable>
+
 
 	<!--  header -->
   	<xsl:template match="h:div[@id='hd']"/>

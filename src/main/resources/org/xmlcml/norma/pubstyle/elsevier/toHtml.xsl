@@ -5,6 +5,12 @@
 
 	<!--  Elsevier -->
 	
+	<xsl:variable name="publisher">Elsevier BV</xsl:variable>
+    <xsl:variable name="prefix">10.1016</xsl:variable>
+	<xsl:variable name="publisherSelector">
+//*[local-name()='img' and @id='logo' and contains(@src,'sciencedirect')]
+</xsl:variable>
+	
 	<xsl:template match="h:div[@id='header']"/> <!--  there are two of these - think these are both unwanted -->
 	<xsl:template match="h:div[@id='ieWarningMsg']"/>
 	<xsl:template match="h:div[@id='rightPane']"/>

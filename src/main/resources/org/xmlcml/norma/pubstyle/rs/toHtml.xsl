@@ -4,7 +4,18 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 <!--  Royal Society -->
+    <xsl:variable name="publisher">The Royal Society</xsl:variable>
+    <xsl:variable name="prefix">10.1098</xsl:variable>
+	<xsl:variable name="publisherSelector">//*[local-name()='meta' and
+	      (
+	      (@name='DC.Publisher' and @content='The Royal Society') or 
+	      (@name='DC.Identifier' and contains(@content,'10.1098/'))
+	      )
+	    ]</xsl:variable>
 
+	<xsl:variable name="DC.Identifier">10.1098/.*</xsl:variable>
+	<xsl:variable name="DC.Publisher">The Royal Society</xsl:variable>
+	
   	<xsl:template match="h:script"/>
   	<xsl:template match="h:link"/>
   	<xsl:template match="h:style"/>
@@ -37,7 +48,7 @@
   	<xsl:template match="h:div[contains(@class,'pane-highwire-share-link')]"/>
   	<xsl:template match="h:div[contains(@class,'pane-roysoc-art-email')]"/>
   	<xsl:template match="h:div[contains(@class,'sidebar-right-wrapper')]"/>
-  	
+  	<xsl:template match="h:a[normalize-space(.)='&#x21B5;']"/> <!-- left downwards arrow -->
   	
   	<!--  ========= TRANSFORMS ========= -->
   	<xsl:template match="h:div[@class='paragraph']">

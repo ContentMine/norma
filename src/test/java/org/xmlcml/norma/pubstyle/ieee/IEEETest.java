@@ -26,12 +26,12 @@ public class IEEETest {
 
 	@Test
 	public void testHtml2Scholarly() {
-		NormaFixtures.htmlTidy(TEST1, TARGET); 
+		NormaFixtures.copyToTargetRunHtmlTidy(TEST1, TARGET); 
 	}
 
 	@Test
 	public void testHtml2Scholarly2StepConversion() {
-		NormaFixtures.tidyTransform(TEST1, TARGET, PUB0);
+		NormaFixtures.copyToTargetRunTidyTransformWithStylesheetSymbolRoot(TEST1, TARGET, PUB0);
 	}
 	@Test
 	public void testHtml2Scholarly2StepConversionClean() throws IOException {

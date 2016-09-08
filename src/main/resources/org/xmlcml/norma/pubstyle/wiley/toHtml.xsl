@@ -4,7 +4,16 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  Wiley -->
-	
+	<xsl:variable name="publisher">Wiley</xsl:variable>
+    <xsl:variable name="prefix">10.1002</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='citation_publisher' and contains(@content,'Wiley')) or 
+      (@name='citation_doi' and contains(@content,'10.1002/'))
+      )
+    ]</xsl:variable>
+
 	<xsl:template match="h:div[@id='skip']"/> 
 	<xsl:template match="h:div[@id='header']"/> 
 	<xsl:template match="h:div[@id='banner']"/> 

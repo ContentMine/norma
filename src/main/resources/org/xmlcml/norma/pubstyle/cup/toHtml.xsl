@@ -4,7 +4,13 @@
 <xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  CUP -->
-
+    <xsl:variable name="publisher">Cambridge University Press</xsl:variable>
+    <xsl:variable name="prefix">10.1017</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='head' and
+      contains(@prefix,'cambridgejournals')
+    ]</xsl:variable>
+	
 	<xsl:template match="*[@display='none']"/>
 	<xsl:template match="h:div[@id='header-options']"/>
 <!-- 	<xsl:template match="h:div[@id='container']"/> -->

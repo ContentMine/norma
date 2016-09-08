@@ -4,6 +4,16 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  IOP -->
+	<xsl:variable name="publisher">IOP Publishing</xsl:variable>
+    <xsl:variable name="prefix">10.1088</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='citation_publisher' and @content='IOP Publishing') or 
+      (@name='citation_doi' and contains(@content,'10.1088/'))
+      )
+    ]</xsl:variable>
+	
 	
 	<!-- HEAD -->
 	<xsl:template match="h:header"/>

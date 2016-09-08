@@ -4,6 +4,16 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!-- Nature -->
+	<xsl:variable name="publisher">Nature Research</xsl:variable>
+    <xsl:variable name="prefix">10.1038</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='citation_publisher' and @content='Nature Research') or 
+      (@name='citation_doi' and contains(@content,'10.1038/'))
+      )
+    ]</xsl:variable>
+	
 
 <!-- navigation -->
   	<xsl:template match="h:div[@id='foreword']"><xsl:message>FOREWORD</xsl:message></xsl:template> 

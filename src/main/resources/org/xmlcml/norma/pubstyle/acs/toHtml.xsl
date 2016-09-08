@@ -4,8 +4,16 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  ACS -->
-	
-	
+    <xsl:variable name="publisher">American Chemical Society</xsl:variable>
+    <xsl:variable name="prefix">10.1021</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='dc.Publisher' and @content='American Chemical Society') or 
+      (@name='dc.Identifier' and contains(@content,'10.1021/'))
+      )
+    ]</xsl:variable>
+ 	
 	<xsl:template match="h:div[contains(@class,'pageHeader')]"/>
 	<xsl:template match="h:div[contains(@class,'pageFooter')]"/>
 	<xsl:template match="h:div[contains(@class,'publicationFormatLinks')]"/>

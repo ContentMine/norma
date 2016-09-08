@@ -4,6 +4,17 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  Springer -->
+	<xsl:variable name="publisher">Springer Berlin Heidelberg</xsl:variable>
+    <xsl:variable name="prefix">10.1186</xsl:variable>
+	<xsl:variable name="publisherSelector">
+    //*[local-name()='meta' and
+      (
+      (@name='dc.publisher' and @content='Springer Berlin Heidelberg') or 
+      (@name='dc.identifier' and contains(@content,'10.1186/'))
+      )
+    ]</xsl:variable>
+
+	
 
 	<xsl:template match="h:p[@class='SkipToMain']"/> 
 	<xsl:template match="h:header[@class='Header']"/> 
