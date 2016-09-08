@@ -1,5 +1,7 @@
-<argList name="norma" version="0.2.227p">
+<argList name="norma" version="0.3.1">
 
+  <p>20160908: major revision of autodetection of stylesheets</p>
+  
   <p>20160509: csv2html conversion and --inputDir</p>
   <p>20160501: added TaylorAndFrancis cleaner - nearly finished</p>
   <p>20160329: citation extraction and plotting</p>

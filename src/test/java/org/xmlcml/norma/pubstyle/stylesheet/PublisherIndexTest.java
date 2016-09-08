@@ -98,7 +98,7 @@ public class PublisherIndexTest {
 		PublisherIndex publisherIndex = new PublisherIndex(NormaFixtures.MAIN_PUBSTYLE_DIR);
 		PublisherSelector publisherSelector = publisherIndex.getPublisherSelectorForFile(fulltext);
 		Assert.assertNotNull(publisherSelector);
-		
+//		LOG
 //		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
 	}
 

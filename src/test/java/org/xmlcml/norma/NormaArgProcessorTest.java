@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -10,7 +11,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.CMineFixtures;
 import org.xmlcml.cmine.args.ArgumentOption;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
 import org.xmlcml.cmine.files.CProject;
