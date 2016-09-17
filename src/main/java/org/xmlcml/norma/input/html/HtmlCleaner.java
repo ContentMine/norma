@@ -57,7 +57,7 @@ public class HtmlCleaner {
 	 */
 	public HtmlElement cleanHTML2XHTML(String optionValue) {
 		
-		if (!JSOUP.equals(optionValue)) {
+		if (!JSOUP.equalsIgnoreCase(optionValue)) {
 			LOG.warn("tidying option not supported:"+optionValue);
 		}
 		CTree currentCMTree = normaArgProcessor.getCurrentCMTree();
