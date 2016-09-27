@@ -165,11 +165,11 @@ public class NormaTransformer {
 		type = Type.createTransformType(transformTypeString);
 //		LOG.debug("found type: "+type);
 		if (type == null) {
-			LOG.debug("trying : "+transformTypeString+" as stylesheet symbol");
+			LOG.trace("trying : "+transformTypeString+" as stylesheet symbol");
 			xslDocument = createW3CStylesheetDocument(transformTypeString);
 			if (xslDocument != null) {
 				type = Type.XML2HTML;
-				LOG.debug("FOUND xsl");
+				LOG.trace("FOUND xsl");
 			}
 		}
 		if (type == null) {
@@ -237,7 +237,7 @@ public class NormaTransformer {
 			try {
 				parseInputFile();
 			} catch (Exception e) {
-				LOG.warn("Cannot parse file: "+currentCTree.getDirectory());
+				LOG.warn("Cannot parse file: "+currentCTree.getDirectory()+"; "+e);
 			}
 		} 
 		if (inputFile == null && inputDir == null) {
@@ -255,12 +255,18 @@ public class NormaTransformer {
 			}
 		}
 		if (!inputFile.exists()) {
+			warnNoFile();
+			inputFile = null;
 //			throw new RuntimeException("Input file does not exist: "+inputFile);
 		} else {
 			if (outputFile == null) {
 				outputFile = type.getDefaultOutputFile(currentCTree);
 			}
 		}
+	}
+
+	private void warnNoFile() {
+		System.out.print("!");
 	}
 
 	private void parseInputDirectoryAndAddDefaults(String inputDirName, String outputDirName) {
@@ -516,12 +522,14 @@ public class NormaTransformer {
 	}
 
 	private String transform(org.w3c.dom.Document xslDocument) throws IOException {
-		TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
 		String xmlString = null;
-		try {
-			xmlString = transformerWrapper.transformToXML(inputFile);
-		} catch (TransformerException e) {
-			throw new RuntimeException("cannot transform "+inputFile, e);
+		if (inputFile != null) { 
+			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
+			try {
+				xmlString = transformerWrapper.transformToXML(inputFile);
+			} catch (TransformerException e) {
+				throw new RuntimeException("cannot transform "+inputFile, e);
+			}
 		}
 		return xmlString;
 	}

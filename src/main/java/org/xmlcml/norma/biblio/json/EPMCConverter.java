@@ -14,7 +14,6 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CProject;
 import org.xmlcml.cmine.files.CTree;
 import org.xmlcml.cmine.metadata.AbstractMetadata;
 import org.xmlcml.cmine.util.CellCalculator;
@@ -215,7 +214,7 @@ public class EPMCConverter implements CellCalculator {
 	
 	public DataTablesTool getOrCreateDataTablesTool() {
 		if (dataTablesTool == null) {
-			dataTablesTool = new DataTablesTool();
+			dataTablesTool = new DataTablesTool(DataTablesTool.ARTICLES);
 		}
 		return dataTablesTool;
 	}
