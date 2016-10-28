@@ -6,8 +6,8 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
-import org.xmlcml.cmine.util.CellRenderer;
-import org.xmlcml.cmine.util.DataTablesTool;
+import org.xmlcml.cproject.util.CellRenderer;
+import org.xmlcml.cproject.util.DataTablesTool;
 import org.xmlcml.euclid.JodaDate;
 import org.xmlcml.html.HtmlElement;
 

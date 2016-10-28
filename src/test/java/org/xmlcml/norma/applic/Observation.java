@@ -2,10 +2,8 @@ package org.xmlcml.norma.applic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
-import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 

@@ -3,10 +3,10 @@ package org.xmlcml.norma.tagger;
 import java.util.ArrayList;
 import java.util.List;
 
-import nu.xom.Element;
-
 import org.apache.log4j.Logger;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 public class TagListElement extends AbstractTElement {
 

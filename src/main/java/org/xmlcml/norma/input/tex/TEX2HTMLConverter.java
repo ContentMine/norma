@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Entities;
 import org.jsoup.parser.Parser;
-import org.xmlcml.cmine.util.CMineUtil;
+import org.xmlcml.cproject.util.CMineUtil;
 
 /**
  * Converts TeX input to HTML 5 using LaTeXML

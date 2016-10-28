@@ -1,6 +1,6 @@
 package org.xmlcml.norma.pubstyle.rs;
 
-import org.xmlcml.cmine.metadata.crossref.CrossrefDownloader;
+import org.xmlcml.cproject.metadata.crossref.CrossrefDownloader;
 
 public class RSDownloader extends CrossrefDownloader {
 

@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.biblio.json.EPMCConverter;

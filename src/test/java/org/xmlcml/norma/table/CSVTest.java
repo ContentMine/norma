@@ -7,7 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.Norma;

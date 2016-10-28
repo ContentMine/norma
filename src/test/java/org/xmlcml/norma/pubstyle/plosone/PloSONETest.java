@@ -13,8 +13,8 @@ import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
+import org.xmlcml.norma.NormaFixtures;
 
 public class PloSONETest {
 	

@@ -30,7 +30,7 @@
     
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
-		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"
+		class="org.xmlcml.cproject.args.StringPair" countRange="{1,*}"
 		parseMethod="parseChars">
 		<help>
 			CHARS:
@@ -80,7 +80,7 @@
 	    name="move" 
 	    long="--move" 
 	    args=" glob directory"
-		class="org.xmlcml.cmine.args.StringPair" 
+		class="org.xmlcml.cproject.args.StringPair" 
 		countRange="{1,*}"
 		parseMethod="parseMove"
 		runMethod="runMove">
@@ -100,7 +100,7 @@
 	    brief="-n" 
 	    long="--name" 
 	    args=" tag1,tag2 [tag1,tag2 ....]"
-		class="org.xmlcml.cmine.args.StringPair" 
+		class="org.xmlcml.cproject.args.StringPair" 
 		countRange="{1,*}"
 		parseMethod="parseNames">
 		<help>
@@ -158,7 +158,7 @@
 	    name="rename" 
 	    long="--rename" 
 	    args=" file1,file2 [file1,file2 ....]"
-		class="org.xmlcml.cmine.args.StringPair" 
+		class="org.xmlcml.cproject.args.StringPair" 
 		countRange="{1,*}"
 		parseMethod="parseRename"
 		runMethod="runRename">

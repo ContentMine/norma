@@ -16,13 +16,12 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
@@ -34,7 +33,7 @@ import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 import org.xmlcml.norma.table.CSVTransformer;
-import org.xmlcml.norma.tagger.SectionTagger;
+import org.xmlcml.norma.tagger.SectionTaggerX;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
@@ -707,8 +706,8 @@ public class NormaTransformer {
 
 	private void tagSections() {
 		LOG.debug("NYI");
-		List<SectionTagger> sectionTaggers = normaArgProcessor.getSectionTaggers();
-		for (SectionTagger sectionTagger : sectionTaggers) {
+		List<SectionTaggerX> sectionTaggers = normaArgProcessor.getSectionTaggers();
+		for (SectionTaggerX sectionTagger : sectionTaggers) {
 //			LOG.trace("section tagger:" + sectionTagger);
 //			try {
 //				Element xmlElement = XMLUtil.parseXML(xmlString);

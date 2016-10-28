@@ -17,8 +17,8 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.util.CMineUtil;
-import org.xmlcml.cmine.util.RectangularTable;
+import org.xmlcml.cproject.util.CMineUtil;
+import org.xmlcml.cproject.util.RectangularTable;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.HashMultiset;

@@ -14,17 +14,17 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.args.ArgIterator;
-import org.xmlcml.cmine.args.ArgumentOption;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.args.StringPair;
-import org.xmlcml.cmine.args.ValueElement;
-import org.xmlcml.cmine.args.VersionManager;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.args.ArgIterator;
+import org.xmlcml.cproject.args.ArgumentOption;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.args.StringPair;
+import org.xmlcml.cproject.args.ValueElement;
+import org.xmlcml.cproject.args.VersionManager;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
-import org.xmlcml.norma.tagger.SectionTagger;
+import org.xmlcml.norma.tagger.SectionTaggerX;
 
 /**
  * Processes commandline arguments.
@@ -65,7 +65,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private List<String> xslNameList;
 	private boolean removeDTD;
 	private NormaTransformer normaTransformer;
-	private List<SectionTagger> sectionTaggerNameList;
+	private List<SectionTaggerX> sectionTaggerNameList;
 	private HtmlElement cleanedHtmlElement;
 	List<String> transformTokenList;
 	private List<String> relabelStrings;
@@ -147,12 +147,12 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.getStrings(option);
-		sectionTaggerNameList = new ArrayList<SectionTagger>();
+		sectionTaggerNameList = new ArrayList<SectionTaggerX>();
 		if (tokens.size() == 0) {
 			LOG.warn("parseTag requires list of taggers");
 		} else {
 			for (String token : tokens) {
-				SectionTagger sectionTagger = new SectionTagger(token);
+				SectionTaggerX sectionTagger = new SectionTaggerX(token);
 				sectionTaggerNameList.add(sectionTagger);
 			}
 		}
@@ -580,7 +580,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		return removeDTD;
 	}
 
-	public List<SectionTagger> getSectionTaggers() {
+	public List<SectionTaggerX> getSectionTaggers() {
 		return sectionTaggerNameList;
 	}
 

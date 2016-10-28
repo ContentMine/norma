@@ -6,8 +6,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 

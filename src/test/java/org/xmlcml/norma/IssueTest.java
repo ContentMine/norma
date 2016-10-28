@@ -1,12 +1,10 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-import java.lang.reflect.InvocationTargetException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.junit.Assert;
 import org.junit.Test;
 
 /** tests issues on Github

@@ -9,8 +9,8 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 
 /** tests Norma.
  * from a set of commandlines

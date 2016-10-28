@@ -17,7 +17,7 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.NormaFixtures;
-import org.xmlcml.norma.sections.SectionTagger.SectionTag;
+import org.xmlcml.norma.sections.JASTSectionTagger.SectionTag;
 import org.xmlcml.norma.util.DottyPlotter;
 import org.xmlcml.xml.XMLUtil;
 
@@ -44,13 +44,13 @@ public class SectionTest {
 
 	@Test
 	public void testReadFile() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
 	}
 	
 	@Test
 	public void testAnalyzeRead() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
 		HtmlElement htmlElement = tagger.getHtmlElement();
 		Assert.assertNotNull(htmlElement);
@@ -58,7 +58,7 @@ public class SectionTest {
 	
 	@Test
 	public void testAnalyzeDivs() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
 		HtmlElement htmlElement = tagger.getHtmlElement();
 		List<HtmlDiv> divs = HtmlDiv.extractSelfAndDescendantDivs(htmlElement);
@@ -67,7 +67,7 @@ public class SectionTest {
 	
 	@Test
 	public void testAnalyzeSpans() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
 		List<HtmlSpan> spans = tagger.getSpans();
 		Assert.assertEquals("spans "+spans.size(), 1222, spans.size());
@@ -303,7 +303,7 @@ public class SectionTest {
 	
 	@Test
 	public void testCreateJATSElement() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readJATS(PMC3289602XML);
 		Element jatsElement = tagger.getJATSHtmlElement();
 //		LOG.debug(jatsElement.toXML().length());
@@ -312,7 +312,7 @@ public class SectionTest {
 
 	@Test
 	public void testCreateArticle() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readJATS(PMC3289602XML);
 		JATSArticleElement jatsArticleElement = tagger.getJATSArticleElement();
 		JATSReflistElement reflist = jatsArticleElement.getReflistElement();
@@ -339,7 +339,7 @@ public class SectionTest {
 	@Test
 //	@Ignore // uses PMR files
 	public void testCreateManyIDs() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		File root;
 //		root = new File("/Users/pm286/workspace/projects/std");
 //		root = new File("/Users/pm286/workspace/projects/trastuzumab");
@@ -393,7 +393,7 @@ public class SectionTest {
 	@Test
 	@Ignore // uses PMR files
 	public void testCreateManyArticles() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		File root = new File("/Users/pm286/workspace/projects/std");
 //		File root = new File("/Users/pm286/workspace/projects/trastuzumab");
 		// has a broken file
@@ -425,7 +425,7 @@ public class SectionTest {
 
 	@Test
 	public void testSectionJATS() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readJATS(PMC3289602XML);
 		LOG.trace(PMC3113902XML);
 		TagElementX tagElement = tagger.getTagElement(SectionTag.ABSTRACT);
@@ -441,7 +441,7 @@ public class SectionTest {
 
 	@Test
 	public void testGetSections() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readJATS(PMC3289602XML);
 		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
@@ -494,7 +494,7 @@ public class SectionTest {
 	
 	@Test
 	public void testTables() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
 		List<HtmlTable> tables = tagger.getTablesX();
 		Assert.assertEquals("tables "+tables.size(), 3, tables.size());
@@ -502,9 +502,9 @@ public class SectionTest {
 
 	@Test
 	public void testAnalyzeSpanPubId() {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		tagger.readScholarlyHtml(PMC3289602HTML);
-		List<HtmlSpan> spans = tagger.getSpansForCSSClass(SectionTagger.PUB_ID);
+		List<HtmlSpan> spans = tagger.getSpansForCSSClass(JASTSectionTagger.PUB_ID);
 		Assert.assertEquals("spans "+spans.size(), 45, spans.size());
 	}
 

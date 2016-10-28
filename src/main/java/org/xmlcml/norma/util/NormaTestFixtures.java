@@ -4,9 +4,9 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.files.CTreeList;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.CTreeList;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 

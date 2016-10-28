@@ -1,8 +1,8 @@
 package org.xmlcml.norma.tagger;
 
-import nu.xom.Attribute;
-
 import org.apache.log4j.Logger;
+
+import nu.xom.Attribute;
 
 public class MetadataElement extends AbstractTElement {
 	

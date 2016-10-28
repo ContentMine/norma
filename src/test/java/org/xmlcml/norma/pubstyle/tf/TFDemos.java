@@ -11,11 +11,11 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.files.CTreeList;
-import org.xmlcml.cmine.util.CMineTestFixtures;
-import org.xmlcml.cmine.util.CMineUtil;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.CTreeList;
+import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.cproject.util.CMineUtil;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.HtmlTable;

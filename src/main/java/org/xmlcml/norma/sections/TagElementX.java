@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.norma.sections.SectionTagger.SectionTag;
+import org.xmlcml.norma.sections.JASTSectionTagger.SectionTag;
 
 import nu.xom.Element;
 

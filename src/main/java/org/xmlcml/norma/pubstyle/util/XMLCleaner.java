@@ -3,8 +3,8 @@ package org.xmlcml.norma.pubstyle.util;
 import java.io.File;
 import java.util.List;
 
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 

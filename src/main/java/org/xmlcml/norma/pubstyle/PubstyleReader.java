@@ -10,10 +10,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import nu.xom.Element;
-import nu.xom.Node;
-import nu.xom.Nodes;
-
 import org.apache.commons.lang3.tuple.Pair;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
@@ -22,6 +18,10 @@ import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.norma.tagger.PubstyleTagger;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
+import nu.xom.Node;
+import nu.xom.Nodes;
 
 public abstract class PubstyleReader {
 

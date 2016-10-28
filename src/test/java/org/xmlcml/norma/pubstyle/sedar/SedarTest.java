@@ -3,8 +3,6 @@ package org.xmlcml.norma.pubstyle.sedar;
 import java.io.File;
 import java.io.FileOutputStream;
 
-import junit.framework.Assert;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
@@ -15,6 +13,8 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
+
+import junit.framework.Assert;
 
 public class SedarTest {
 

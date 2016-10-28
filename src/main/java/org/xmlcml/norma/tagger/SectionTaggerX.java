@@ -8,16 +8,16 @@ import org.apache.log4j.Logger;
  * @author pm286
  *
  */
-public class SectionTagger {
+public class SectionTaggerX {
 
-	private static final Logger LOG = Logger.getLogger(SectionTagger.class);
+	private static final Logger LOG = Logger.getLogger(SectionTaggerX.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
 	private String filename;
 
-	public SectionTagger(String filename) {
+	public SectionTaggerX(String filename) {
 		this.filename = filename;
 	}
 	

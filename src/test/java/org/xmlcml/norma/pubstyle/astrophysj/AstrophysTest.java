@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -16,6 +14,8 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
+
+import junit.framework.Assert;
 
 public class AstrophysTest {
 

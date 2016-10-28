@@ -6,15 +6,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import nu.xom.Attribute;
-import nu.xom.Element;
-import nu.xom.Elements;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Attribute;
+import nu.xom.Element;
+import nu.xom.Elements;
 
 /** manages and carries out edits.
  * 

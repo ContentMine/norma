@@ -1,7 +1,5 @@
 package org.xmlcml.norma.json;
 
-import junit.framework.Assert;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
@@ -9,6 +7,8 @@ import org.xmlcml.norma.util.JsonUtil;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+
+import junit.framework.Assert;
 
 public class JsonUtilTest {
 	

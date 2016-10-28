@@ -13,8 +13,8 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.metadata.crossref.CrossrefDownloader;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.metadata.crossref.CrossrefDownloader;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.norma.cproject.HtmlTidier;
 
 import com.google.gson.JsonArray;

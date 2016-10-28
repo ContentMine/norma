@@ -5,9 +5,9 @@ import java.io.File;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CContainer;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.metadata.AbstractMetadata;
+import org.xmlcml.cproject.files.CContainer;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.metadata.AbstractMetadata;
 import org.xmlcml.norma.NormaFixtures;
 
 public class ResultsJSONTest {

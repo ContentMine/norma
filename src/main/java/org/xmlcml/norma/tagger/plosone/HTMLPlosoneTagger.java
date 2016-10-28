@@ -1,7 +1,6 @@
 package org.xmlcml.norma.tagger.plosone;
 
 import org.apache.log4j.Logger;
-
 import org.xmlcml.norma.tagger.PubstyleTagger;
 
 public class HTMLPlosoneTagger extends PubstyleTagger {

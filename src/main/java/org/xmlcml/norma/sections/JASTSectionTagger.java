@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.ResourceLocation;
+import org.xmlcml.cproject.files.ResourceLocation;
 import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
@@ -22,9 +22,9 @@ import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class SectionTagger {
+public class JASTSectionTagger {
 
-	private static final Logger LOG = Logger.getLogger(SectionTagger.class);
+	private static final Logger LOG = Logger.getLogger(JASTSectionTagger.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -146,7 +146,7 @@ public class SectionTagger {
 
 
 	
-	public SectionTagger() {
+	public JASTSectionTagger() {
 		
 	}
 
@@ -391,7 +391,7 @@ public class SectionTagger {
 		for (int i = 0; i < root.getChildElements().size(); i++) {
 			Element child = root.getChildElements().get(i);
 			String localName = child.getLocalName();
-			if (localName.equals(SectionTagger.HELP)) {
+			if (localName.equals(JASTSectionTagger.HELP)) {
 				continue;
 			} else if (!localName.equals("tag")) {
 				LOG.error("Bad tag: "+localName);

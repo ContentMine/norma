@@ -3,7 +3,7 @@ package org.xmlcml.norma.util;
 import java.io.IOException;
 
 import org.apache.commons.io.IOUtils;
-import org.xmlcml.cmine.util.CMineUtil;
+import org.xmlcml.cproject.util.CMineUtil;
 
 public class RunCommand {
 

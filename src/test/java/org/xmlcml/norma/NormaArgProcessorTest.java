@@ -10,12 +10,12 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.args.ArgumentOption;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.files.CTreeList;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.args.ArgumentOption;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.CTreeList;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 
 import junit.framework.Assert;
 
@@ -292,7 +292,7 @@ public class NormaArgProcessorTest {
 	@Ignore // uses non-local files
 	public void testNormalizeIEEEPDFs() throws IOException {
 		String args;
-		args = "-i fulltext.pdf --ctree ../cmine/target/ieee/musti/Henniger -o fulltext.txt --transform pdf2txt";
+		args = "-i fulltext.pdf --ctree ../cproject/target/ieee/musti/Henniger -o fulltext.txt --transform pdf2txt";
 		new Norma().run(args);
 	}
 

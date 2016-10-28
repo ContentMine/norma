@@ -1,26 +1,24 @@
 package org.xmlcml.norma.pubstyle.getpapers;
 
 import java.io.File;
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.minidev.json.JSONArray;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.metadata.AbstractMetadata.Type;
-import org.xmlcml.cmine.metadata.quickscrape.QuickscrapeMD;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.metadata.AbstractMetadata.Type;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.ReadContext;
+
+import net.minidev.json.JSONArray;
 
 public class GetPapers {
 

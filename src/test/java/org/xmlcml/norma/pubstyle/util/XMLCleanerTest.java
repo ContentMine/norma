@@ -6,10 +6,9 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.files.CTreeList;
-import org.xmlcml.cmine.util.CMineTestFixtures;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
 
 public class XMLCleanerTest {

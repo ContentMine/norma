@@ -7,14 +7,12 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import junit.framework.Assert;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlElement;
@@ -22,6 +20,8 @@ import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.xml.XMLUtil;
+
+import junit.framework.Assert;
 
 public class HOCRReaderTest {
 	
