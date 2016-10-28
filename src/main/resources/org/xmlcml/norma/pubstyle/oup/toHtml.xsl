@@ -7,11 +7,10 @@
 
 	<xsl:variable name="publisher">Oxford University Press</xsl:variable>
     <xsl:variable name="prefix">10.1093</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
-      (@name='DC.Publisher' and @content='Oxford University Press') or 
-      (@name='DC.Identifier' and contains(@content,'10.1093/'))
+      (@name='dc.publisher' and @content='Oxford University Press') or 
+      (@name='citation_doi' and contains(@content,concat('10.1093','/')))
       )
     ]</xsl:variable>
 

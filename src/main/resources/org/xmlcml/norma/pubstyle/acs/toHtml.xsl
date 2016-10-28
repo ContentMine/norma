@@ -6,11 +6,10 @@
 	<!--  ACS -->
     <xsl:variable name="publisher">American Chemical Society</xsl:variable>
     <xsl:variable name="prefix">10.1021</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
       (@name='dc.Publisher' and @content='American Chemical Society') or 
-      (@name='dc.Identifier' and contains(@content,'10.1021/'))
+      (@name='citation_doi' and contains(@content,concat('10.1021','/')))
       )
     ]</xsl:variable>
  	

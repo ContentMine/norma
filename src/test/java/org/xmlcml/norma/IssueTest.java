@@ -1,8 +1,12 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Test;
 
 /** tests issues on Github
@@ -11,6 +15,12 @@ import org.junit.Test;
  *
  */
 public class IssueTest {
+	
+	private static final Logger LOG = Logger.getLogger(IssueTest.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
+
 
 	/**
 	 * #3
@@ -29,6 +39,14 @@ if --xsl <code> - where code = 'bmc2html', etc fails to resolve the error is not
 		args = "-q "+targetFile+" -i fulltext.xml -o fulltext.html --transform bmc2htmlbad";
 		// OK
 		argProcessor = new NormaArgProcessor(args);
-		argProcessor.runAndOutput();
+		try {
+			argProcessor.runAndOutput();
+//			Assert.fail("should throw exception");
+		} catch (RuntimeException re) {
+			LOG.debug("OK "+re);
+		} catch (Exception e) {
+			e.printStackTrace();
+			LOG.debug("BAD "+e);
+		}
 	}
 }

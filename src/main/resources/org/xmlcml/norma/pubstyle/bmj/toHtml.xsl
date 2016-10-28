@@ -6,11 +6,10 @@
 	<!--  BMJ -->
     <xsl:variable name="publisher">British Medical Journal Publishing Group</xsl:variable>
     <xsl:variable name="prefix">10.1136</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
-      (@name='DC.Publisher' and @content='British Medical Journal Publishing Group') or 
-      (@name='DC.Identifier' and contains(@content,'10.1136/'))
+      (@name='dc.publisher' and @content='British Medical Journal Publishing Group') or 
+      (@name='citation_doi' and contains(@content,concat('10.1136','/')))
       )
     ]</xsl:variable>
 	

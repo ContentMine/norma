@@ -64,6 +64,7 @@ public class PublisherSelector {
 	public String getOrCreateXslPath() {
 		if (xslPath == null) {
 			xslPath = XMLUtil.getSingleValue(xslElement, PublisherSelector.GET_XPATH);
+			LOG.trace(xslElement.toXML()+" ********** xsl:path: "+xslPath);
 		}
 		return xslPath;
 	}

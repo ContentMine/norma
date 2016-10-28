@@ -3,6 +3,9 @@
 
 <!--  parent -->
     <xsl:output method="xhtml"/>
+
+    <xsl:variable name="publisher">Dummy</xsl:variable>
+    <xsl:variable name="prefix">00.0000</xsl:variable>
     
     <xsl:template match="/">
       <xsl:apply-templates/>
@@ -57,9 +60,18 @@
   	    <xsl:apply-templates select="h:meta"/>
   	  </xsl:copy>
   	</xsl:template> 
-  	
 
 	<xsl:template match="comment()" priority="1.0"/>
 
+	<xsl:template name="makePublisherSelector">
+	  <xsl:param name="publisher"/>
+	  <xsl:param name="prefix"/>
+    //*[local-name()='meta' and
+      (
+      (@name='dc.publisher' and @content=$publisher) or 
+      (@name='citation_doi' and contains(@content,concat($prefix,'/')))
+      )
+    ]
+    </xsl:template>
 
 </xsl:stylesheet>

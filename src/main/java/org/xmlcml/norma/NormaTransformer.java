@@ -105,12 +105,12 @@ public class NormaTransformer {
 		public static Type createTransformType(String transformTypeString) {
 			for (Type type : values()) {
 				if (type.matches(transformTypeString)) {
-//ß					LOG.debug("transform type: "+type);
+//					LOG.debug("transform type: "+type);
 					return type;
 				}
 			}
 			if (transformTypeString.endsWith(CTree.DOT+CTree.XSL)) {
-				LOG.debug("transform type: "+Type.XML2HTML);
+				LOG.trace("transform type: "+Type.XML2HTML);
 				return Type.XML2HTML;
 			}
 			return null;
@@ -149,6 +149,20 @@ public class NormaTransformer {
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
 		currentCTree = normaArgProcessor.getCurrentCMTree();
+		LOG.trace("current CTREE "+currentCTree);
+	}
+
+	public void clearVariables() {
+		inputTxt = null;
+		inputFile = null;
+		inputDir = null;
+		outputTxt = null;
+		outputFile = null;
+		outputDir = null;
+		htmlElement = null;
+		svgElement = null;
+		transformTypeString = null;
+		xslDocument = null;
 	}
 
 	/** transforms currentCTree.
@@ -180,11 +194,12 @@ public class NormaTransformer {
 			parseOptionsAndCheckInputOutput();
 		} catch (Exception e) {
 			LOG.warn("Cannot create input/output "+e);
+			e.printStackTrace();
 			return;
 		}
 		if (inputDir != null) {
 			transformDirectory();
-		} else if (inputFile != null) {
+		} else if (inputFile != null && inputFile.exists()) {
 			try {
 				transformSingleInput();
 			} catch (RuntimeException e) {
@@ -193,6 +208,7 @@ public class NormaTransformer {
 				} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
 					System.out.print("?@?");
 				} else {
+					e.printStackTrace();
 					LOG.error("BAD TRANSFORM ("+e.toString()+") "+inputFile);
 				}
 			}
@@ -213,7 +229,7 @@ public class NormaTransformer {
 			outputDir.mkdirs();
 			for (File file : files) {
 				String basename = FilenameUtils.getBaseName(file.toString());
-				inputFile = file;
+				setInputFile(file);
 				outputFile = new File(outputDir, basename+CTree.DOT+type.outputSuffix);
 				transformSingleInput();
 				outputSpecifiedFormat();
@@ -241,22 +257,24 @@ public class NormaTransformer {
 			}
 		} 
 		if (inputFile == null && inputDir == null) {
-			throw new RuntimeException("for transform: "+type+": --input or --inputDir must be given");
+			// by this time a null input file means it does not exist
+//			throw new RuntimeException("for transform: "+type+": --input or --inputDir must be given");
 		}
 		LOG.trace("inputFile: "+inputFile+"; outputFile: "+outputFile + "; inputDir: "+inputDirName+"; outputDir: "+outputDirName);
 	}
 
 	private void parseInputFile() {
-		inputFile = normaArgProcessor.checkAndGetInputFile(currentCTree);
+		setInputFile(normaArgProcessor.checkAndGetInputFile(currentCTree));
 		if (inputFile == null) {
-			inputFile = type.getDefaultInputFile(currentCTree);
+			setInputFile(type.getDefaultInputFile(currentCTree));
 			if (inputFile == null) {
-				LOG.warn("cannot find defaultInputFile: "+currentCTree+" ? "+type);
+				LOG.warn("cannot find inputFile: "+currentCTree.getDirectory()+" ? "+type);
 			}
+			return;
 		}
 		if (!inputFile.exists()) {
 			warnNoFile();
-			inputFile = null;
+			setInputFile(null);
 //			throw new RuntimeException("Input file does not exist: "+inputFile);
 		} else {
 			if (outputFile == null) {
@@ -287,9 +305,10 @@ public class NormaTransformer {
 		try {
 			transformSingleInput0();
 		} catch (RuntimeException e) {
-			if (normaArgProcessor.getExceptionLevel().equals(Level.ERROR)) {
+			e.printStackTrace();
+			if (Level.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
 				throw e;
-			} else if (normaArgProcessor.getExceptionLevel().equals(Level.INFO)) {
+			} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
 				System.out.print("?@?");
 			} else {
 				LOG.error("BAD TRANSFORM ("+e.getMessage()+") "+inputFile);
@@ -346,7 +365,7 @@ public class NormaTransformer {
 		} else if (Type.XML2HTML.equals(type)) {
 			xslDocument = createW3CStylesheetDocument(transformTypeString);
 			if (xslDocument == null) {
-				throw new RuntimeException("null stylesheet for: "+transformTypeString);
+				throw new IllegalArgumentException("null stylesheet for: "+transformTypeString);
 			}
 			String xmlString = applyXSLDocumentToCurrentCTree(xslDocument);
 			if (xmlString == null) {
@@ -527,7 +546,9 @@ public class NormaTransformer {
 			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
 			try {
 				xmlString = transformerWrapper.transformToXML(inputFile);
-			} catch (TransformerException e) {
+			} catch (NullPointerException npe) {
+				throw new RuntimeException("cannot transform (NPE) "+inputFile, npe);
+			} catch (Exception e) {
 				throw new RuntimeException("cannot transform "+inputFile, e);
 			}
 		}
@@ -544,8 +565,9 @@ public class NormaTransformer {
 			try {
 				transformerWrapper = new TransformerWrapper(normaArgProcessor.isStandalone());
 				if (xslDocument == null) {
-					throw new RuntimeException("Null stylesheet");
+					throw new IllegalArgumentException("Null stylesheet");
 				}
+				// FIXME
 				Transformer javaxTransformer = transformerWrapper.createTransformer(xslDocument);
 				transformerWrapperByStylesheetMap.put(xslDocument,  transformerWrapper);
 			} catch (Exception e) {
@@ -650,6 +672,9 @@ public class NormaTransformer {
 	}
 
 	private org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
+		if (is == null) {
+			throw new IllegalArgumentException("Null stylesheet input");
+		}
 		org.w3c.dom.Document stylesheetDocument = null;
 		try {
 			stylesheetDocument = db.parse(is);
@@ -691,6 +716,18 @@ public class NormaTransformer {
 //				throw new RuntimeException("failed to parse: "+xmlString.substring(0, Math.min(200, xmlString.length())), e);
 //			}
 		}
+	}
+
+	public File getInputFile() {
+		return inputFile;
+	}
+
+	public void setInputFile(File inputFile) {
+		this.inputFile = inputFile;
+	}
+
+	public void setCurrentCTree(CTree currentCTree) {
+		this.currentCTree = currentCTree;
 	}
 
 }

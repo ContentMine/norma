@@ -11,9 +11,11 @@
 	</parent>
 -->
 
+<!--  MUST update norma version number in sync -->
 	<groupId>org.xml-cml</groupId>
 	<artifactId>norma</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<!-- to sync with new cmine-norma-ami versions -->
+	<version>0.3.0</version>
 	<packaging>jar</packaging>
 	<name>norma</name>
 	<description>A Java library for processing multiple legacy formats into normalized HTML5</description>
@@ -266,7 +268,7 @@
 		<dependency>
 			<groupId>org.xml-cml</groupId>
 			<artifactId>cmine</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<version>0.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.saxon</groupId>

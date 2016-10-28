@@ -3,7 +3,15 @@
 
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
-	<!--  BMC -->
+	<!--  Hindawi -->
+    <xsl:variable name="publisher">Hindawi Publishing Corporation</xsl:variable>
+    <xsl:variable name="prefix">10.1155</xsl:variable>
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
+      (
+      (@name='dc.publisher' and @content='Hindawi Publishing Corporation') or 
+      (@name='citation_doi' and contains(@content,concat('10.1155','/')))
+      )
+    ]</xsl:variable>
 	
 <!--  tags to omit -->
 		<!-- strip whitespace -->

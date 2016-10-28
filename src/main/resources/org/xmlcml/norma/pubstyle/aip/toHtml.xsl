@@ -6,11 +6,10 @@
 	<!--  AIP -->
     <xsl:variable name="publisher">AIP Publishing</xsl:variable>
     <xsl:variable name="prefix">10.1063</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
       (@name='dc.publisher' and @content='AIP Publishing') or 
-      (@name='citation_doi' and contains(@content,'10.1063/'))
+      (@name='citation_doi' and contains(@content,concat('10.1063','/')))
       )
     ]</xsl:variable>
 

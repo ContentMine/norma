@@ -4,12 +4,20 @@
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
 	<!--  BMC -->
-	
+    <xsl:variable name="publisher">BioMed Central Ltd</xsl:variable>
+    <xsl:variable name="prefix">10.1186</xsl:variable>
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
+      (
+      (@name='dc.publisher' and @content='BioMed Central Ltd') or 
+      (@name='citation_doi' and contains(@content,concat('10.1186','/')))
+      )
+    ]</xsl:variable>
+		
 <!--  tags to omit -->
         <xsl:template match="
         h:script
         | h:noscript
-        | h:styleß
+        | h:style
         | h:link
         | comment()
         | h:div[@id='oas-campaign']

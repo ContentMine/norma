@@ -7,6 +7,7 @@
 	<xsl:variable name="publisher">American Psychological Association</xsl:variable>
     <xsl:variable name="prefix">10.1037</xsl:variable>
 	<xsl:variable name="publisherSelector">//*[local-name()='a' and contains(.,'www.apa.org')]</xsl:variable>
+
 	<!-- <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.apa.org">APA</a>-->
 	
 	<!-- HEAD -->

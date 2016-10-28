@@ -218,10 +218,12 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (currentCTree == null) {
 			LOG.warn("No current CTree");
 		} else {
-			LOG.trace("***run transform "+currentCTree);
+			LOG.trace("***run transform on tree "+currentCTree);
 			getOrCreateNormaTransformer();
+			normaTransformer.setCurrentCTree(currentCTree);
 			String transformTypeString = option.getStringValue();
 //			LOG.debug("transform type: "+transformTypeString);
+			normaTransformer.clearVariables();
 			normaTransformer.runTransform(transformTypeString);
 		}
 	}

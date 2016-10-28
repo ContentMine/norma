@@ -3,8 +3,19 @@
 
 	<xsl:import href="../norma-dev/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
-<!--  IEEE -->
 
+<!--  IEEE -->
+	<!--  ACS -->
+    <xsl:variable name="publisher">IEEE</xsl:variable>
+    <xsl:variable name="prefix">10.000?</xsl:variable>
+    <!-- 
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
+      (
+      (@name='dc.Publisher' and @content='IEEE') or 
+      (@name='citation_doi' and contains(@content,concat('10.1021','/')))
+      )
+    ]</xsl:variable>
+	-->
 	<xsl:template match="h:div[@id='global-notification']" priority="0.6"/>
  	<xsl:template match="h:div[@id='xplore-header']"/> 
   	<xsl:template match="h:div[@id='browse-by-topic']"/> 

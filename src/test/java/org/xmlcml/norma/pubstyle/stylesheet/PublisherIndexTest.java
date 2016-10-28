@@ -3,6 +3,7 @@ package org.xmlcml.norma.pubstyle.stylesheet;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -87,10 +88,42 @@ public class PublisherIndexTest {
 				NormaFixtures.TEST_PUBSTYLE_DIR, new NameFileFilter("fulltext.xhtml"), new WildcardFileFilter("*")));
 		Assert.assertTrue("list files: "+fulltextXhtmlFiles.size(), fulltextXhtmlFiles.size() > 20);
 		PublisherIndex publisherIndex = new PublisherIndex(NormaFixtures.MAIN_PUBSTYLE_DIR);
+		
+		List<String> pubSelectList = new ArrayList<String>();
 		for (File fulltextXhtmlFile : fulltextXhtmlFiles) {
 			PublisherSelector publisherSelector = publisherIndex.getPublisherSelectorForFile(fulltextXhtmlFile);
-			LOG.debug(fulltextXhtmlFile.getParentFile().toString().replace("src/test/resources/org/xmlcml/norma/pubstyle/", "")+"; "+publisherSelector);
+			LOG.trace(fulltextXhtmlFile.getParentFile().toString().replace("src/test/resources/org/xmlcml/norma/pubstyle/", "")+"; "+publisherSelector);
+			pubSelectList.add(String.valueOf(publisherSelector));
 		}
+		Collections.sort(pubSelectList);
+		Assert.assertEquals("[10.1002: Wiley,"
+				+ " 10.1002: Wiley,"
+				+ " 10.1007: Springer Berlin Heidelberg,"
+				+ " 10.1016: Elsevier BV,"
+				+ " 10.1016: Elsevier BV,"
+				+ " 10.1016: Elsevier BV,"
+				+ " 10.1016: Elsevier BV,"
+				+ " 10.1017: Cambridge University Press,"
+				+ " 10.1017: Cambridge University Press,"
+				+ " 10.1021: American Chemical Society,"
+				+ " 10.1021: American Chemical Society,"
+				+ " 10.1037: American Psychological Association,"
+				+ " 10.1037: American Psychological Association,"
+				+ " 10.1063: AIP Publishing,"
+				+ " 10.1063: AIP Publishing,"
+				+ " 10.1088: IOP Publishing,"
+				+ " 10.1088: IOP Publishing,"
+				+ " 10.1093: Oxford University Press,"
+				+ " 10.1093: Oxford University Press,"
+				+ " 10.1098: The Royal Society,"
+				+ " 10.1098: The Royal Society,"
+				+ " 10.1098: The Royal Society,"
+				+ " 10.1136: British Medical Journal Publishing Group,"
+				+ " 10.1136: British Medical Journal Publishing Group,"
+				+ " 10.1177: SAGE Publications,"
+				+ " 10.1177: SAGE Publications,"
+				+ " null,"
+				+ " null]", pubSelectList.toString());
 	}
 	
 	public void testHtml2Scholarly2StepConversionClean() throws IOException {

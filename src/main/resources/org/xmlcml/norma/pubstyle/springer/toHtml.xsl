@@ -5,12 +5,11 @@
 
 	<!--  Springer -->
 	<xsl:variable name="publisher">Springer Berlin Heidelberg</xsl:variable>
-    <xsl:variable name="prefix">10.1186</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="prefix">10.1007</xsl:variable>
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
       (@name='dc.publisher' and @content='Springer Berlin Heidelberg') or 
-      (@name='dc.identifier' and contains(@content,'10.1186/'))
+      (@name='citation_doi' and contains(@content,concat('10.1007','/')))
       )
     ]</xsl:variable>
 

@@ -16,12 +16,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import net.sf.saxon.TransformerFactoryImpl;
-import net.sf.saxon.Configuration;
-import net.sf.saxon.lib.FeatureKeys;
-import nu.xom.Document;
-import nu.xom.Element;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
@@ -31,6 +25,12 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.xml.XMLUtil;
 
+import net.sf.saxon.Configuration;
+import net.sf.saxon.TransformerFactoryImpl;
+import net.sf.saxon.lib.FeatureKeys;
+import nu.xom.Document;
+import nu.xom.Element;
+
 public class TransformerWrapper {
 	
 	
@@ -39,9 +39,9 @@ public class TransformerWrapper {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private static final String NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL = "net.sf.saxon.TransformerFactoryImpl";
-	private static final String JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY = "javax.xml.transform.TransformerFactory";
-	private static final String DOCTYPE = "<!DOCTYPE";
+	public static final String NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL = "net.sf.saxon.TransformerFactoryImpl";
+	public static final String JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY = "javax.xml.transform.TransformerFactory";
+	public static final String DOCTYPE = "<!DOCTYPE";
 	
 	private boolean standalone;
 	private Transformer javaxTransformer;
@@ -64,24 +64,37 @@ public class TransformerWrapper {
 	}
 
 	public Transformer createTransformer(org.w3c.dom.Document xslStylesheet) throws Exception {
+	    if (xslStylesheet == null) {
+	    	throw new RuntimeException("NULL xslStylesheet");
+	    }
+		LOG.trace("DOC "+xslStylesheet.toString());
 		Configuration config = new Configuration();
 		config.setConfigurationProperty(FeatureKeys.SUPPRESS_XSLT_NAMESPACE_CHECK, "true");
 	    TransformerFactory tfactory = new TransformerFactoryImpl(config);
 	    DOMSource domSource = new DOMSource(xslStylesheet);
 	    javaxTransformer = tfactory.newTransformer(domSource);
+	    if (javaxTransformer == null) {
+	    	throw new RuntimeException("NULL transformer from Stylesheet: "+xslStylesheet);
+	    }
 		return javaxTransformer;
 	}
 
-	private Transformer createTransformer(InputStream is) throws Exception {
+	public Transformer createTransformer(InputStream is) throws Exception {
 		System.setProperty(JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY,
 	            NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL);
 	    TransformerFactory tfactory = TransformerFactory.newInstance();
 	    javaxTransformer = tfactory.newTransformer(new StreamSource(is));
+	    if (javaxTransformer == null) {
+	    	throw new RuntimeException("NULL transformer from InputStream: "+is);
+	    }
 		return javaxTransformer;
 	}
 
 	public HtmlElement transform(File infile, File stylesheet, File outfile) throws Exception {
 		javaxTransformer = this.createTransformer(new FileInputStream(stylesheet));
+	    if (javaxTransformer == null) {
+	    	throw new RuntimeException("NULL transformer from file: "+stylesheet);
+	    }
 		return this.transform(infile, outfile);
 	}
 	
@@ -110,7 +123,7 @@ public class TransformerWrapper {
 		return ss;
 	}
 
-	public String transformToXML(InputStream inputStream) throws TransformerException {
+	public String transformToXML(InputStream inputStream) throws TransformerException, IOException {
 		// remove doctype
 		if (standalone) {
 			try {
@@ -149,7 +162,7 @@ public class TransformerWrapper {
 		return IOUtils.toInputStream(inputString);
 	}
 
-	private String transformToXML(StreamSource streamSource) throws TransformerException {
+	private String transformToXML(StreamSource streamSource) throws TransformerException, IOException {
 // use this later		
 		/**
 SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -171,16 +184,23 @@ xmlReader.setFeature("http://apache.org/xml/features/nonvalidating/load-external
 Builder builder = new Builder(xmlReader);
 nu.xom.Document doc = builder.build(fXmlFile);
 		 */
+		if (streamSource == null) {
+			throw new RuntimeException("null StreamSource");
+		}
+		if (javaxTransformer == null) {
+			throw new RuntimeException("null javaxTransformer");
+		}
 		OutputStream baos = new ByteArrayOutputStream();
-		javaxTransformer.transform(streamSource,  new StreamResult(baos));
+		StreamResult streamResult = new StreamResult(baos);
+		javaxTransformer.transform(streamSource,  streamResult);
 		String ss = baos.toString();
 		return ss;
 	}
 
-	public HtmlElement transform(CTree qd, Document xslDocument) throws Exception {
+	public HtmlElement transform(CTree cTree, Document xslDocument) throws Exception {
 		HtmlElement htmlElement = null;
-		if (qd == null) {
-			throw new RuntimeException("null QD");
+		if (cTree == null) {
+			throw new RuntimeException("null CTree");
 		}
 		if (xslDocument == null) {
 			throw new RuntimeException("null stylesheet");

@@ -1,0 +1,735 @@
+{
+  "id": [
+    "24976886"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24976886"
+  ],
+  "pmcid": [
+    "PMC4062634"
+  ],
+  "doi": [
+    "10.4056/sigs.4538264"
+  ],
+  "title": [
+    "Complete genome sequence of Mesorhizobium opportunistum type strain WSM2075(T.)."
+  ],
+  "authorString": [
+    "Reeve W, Nandasena K, Yates R, Tiwari R, O'Hara G, Ninawi M, Chertkov O, Goodwin L, Bruce D, Detter C, Tapia R, Han S, Woyke T, Pitluck S, Nolan M, Land M, Copeland A, Liolios K, Pati A, Mavromatis K, Markowitz V, Kyrpides N, Ivanova N, Goodwin L, Meenakshi U, Howieson J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Reeve W"
+          ],
+          "firstName": [
+            "Wayne"
+          ],
+          "lastName": [
+            "Reeve"
+          ],
+          "initials": [
+            "W"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Nandasena K"
+          ],
+          "firstName": [
+            "Kemanthi"
+          ],
+          "lastName": [
+            "Nandasena"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Yates R"
+          ],
+          "firstName": [
+            "Ron"
+          ],
+          "lastName": [
+            "Yates"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia ; Department of Agriculture and Food, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Tiwari R"
+          ],
+          "firstName": [
+            "Ravi"
+          ],
+          "lastName": [
+            "Tiwari"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "O'Hara G"
+          ],
+          "firstName": [
+            "Graham"
+          ],
+          "lastName": [
+            "O'Hara"
+          ],
+          "initials": [
+            "G"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Ninawi M"
+          ],
+          "firstName": [
+            "Mohamed"
+          ],
+          "lastName": [
+            "Ninawi"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Chertkov O"
+          ],
+          "firstName": [
+            "Olga"
+          ],
+          "lastName": [
+            "Chertkov"
+          ],
+          "initials": [
+            "O"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Goodwin L"
+          ],
+          "firstName": [
+            "Lynne"
+          ],
+          "lastName": [
+            "Goodwin"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Bruce D"
+          ],
+          "firstName": [
+            "David"
+          ],
+          "lastName": [
+            "Bruce"
+          ],
+          "initials": [
+            "D"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Detter C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Detter"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Tapia R"
+          ],
+          "firstName": [
+            "Roxanne"
+          ],
+          "lastName": [
+            "Tapia"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Han S"
+          ],
+          "firstName": [
+            "Shunseng"
+          ],
+          "lastName": [
+            "Han"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Woyke T"
+          ],
+          "firstName": [
+            "Tanja"
+          ],
+          "lastName": [
+            "Woyke"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Pitluck S"
+          ],
+          "firstName": [
+            "Sam"
+          ],
+          "lastName": [
+            "Pitluck"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Nolan M"
+          ],
+          "firstName": [
+            "Matt"
+          ],
+          "lastName": [
+            "Nolan"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Land M"
+          ],
+          "firstName": [
+            "Miriam"
+          ],
+          "lastName": [
+            "Land"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7102-0031",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Oak Ridge National Laboratory, Oak Ridge, Tennessee, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Copeland A"
+          ],
+          "firstName": [
+            "Alex"
+          ],
+          "lastName": [
+            "Copeland"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Liolios K"
+          ],
+          "firstName": [
+            "Konstantinos"
+          ],
+          "lastName": [
+            "Liolios"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Pati A"
+          ],
+          "firstName": [
+            "Amrita"
+          ],
+          "lastName": [
+            "Pati"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Mavromatis K"
+          ],
+          "firstName": [
+            "Konstantinos"
+          ],
+          "lastName": [
+            "Mavromatis"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Markowitz V"
+          ],
+          "firstName": [
+            "Victor"
+          ],
+          "lastName": [
+            "Markowitz"
+          ],
+          "initials": [
+            "V"
+          ],
+          "affiliation": [
+            "Biological Data Management and Technology Center, Lawrence Berkeley National Laboratory, Berkeley, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Kyrpides N"
+          ],
+          "firstName": [
+            "Nikos"
+          ],
+          "lastName": [
+            "Kyrpides"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6131-0462",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Ivanova N"
+          ],
+          "firstName": [
+            "Natalia"
+          ],
+          "lastName": [
+            "Ivanova"
+          ],
+          "initials": [
+            "N"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Goodwin L"
+          ],
+          "firstName": [
+            "Lynne"
+          ],
+          "lastName": [
+            "Goodwin"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Meenakshi U"
+          ],
+          "firstName": [
+            "Uma"
+          ],
+          "lastName": [
+            "Meenakshi"
+          ],
+          "initials": [
+            "U"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Howieson J"
+          ],
+          "firstName": [
+            "John"
+          ],
+          "lastName": [
+            "Howieson"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7102-0031",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6131-0462",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "2"
+      ],
+      "volume": [
+        "9"
+      ],
+      "journalIssueId": [
+        "2175060"
+      ],
+      "dateOfPublication": [
+        "2013 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Standards in genomic sciences"
+          ],
+          "ISOAbbreviation": [
+            "Stand Genomic Sci"
+          ],
+          "medlineAbbreviation": [
+            "Stand Genomic Sci"
+          ],
+          "NLMid": [
+            "101530505"
+          ],
+          "ESSN": [
+            "1944-3277"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "294-303"
+  ],
+  "abstractText": [
+    "Mesorhizobium opportunistum strain WSM2075(T) was isolated in Western Australia in 2000 from root nodules of the pasture legume Biserrula pelecinus that had been inoculated with M. ciceri bv. biserrulae WSM1271. WSM2075(T) is an aerobic, motile, Gram negative, non-spore-forming rod that has gained the ability to nodulate B. pelecinus but is completely ineffective in N2 fixation with this host. This report reveals that the genome of M. opportunistum strain WSM2075(T) contains a chromosome of size 6,884,444 bp, encoding 6,685 protein-coding genes and 62 RNA-only encoding genes. The genome contains no plasmids, but does harbor a 455.7 kb genomic island from Mesorhizobium ciceri bv. biserrulae WSM1271 that has been integrated into a phenylalanine-tRNA gene."
+  ],
+  "affiliation": [
+    "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Nitrogen fixation",
+        "Evolution",
+        "Symbiosis",
+        "Lateral Gene Transfer",
+        "Alphaproteobacteria",
+        "Root-nodule Bacteria",
+        "Integrative And Conjugative Elements"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4062634?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4062634"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=EBI&pubmedid=24976886"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "http://www.pubmedcentral.nih.gov/picrender.fcgi?tool=EBI&pubmedid=24976886&action=stream&blobtype=pdf"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "http://dx.doi.org/10.4056/sigs.4538264"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "N"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2014-06-30"
+  ],
+  "dateOfCreation": [
+    "2014-06-30"
+  ],
+  "dateOfRevision": [
+    "2014-07-02"
+  ],
+  "electronicPublicationDate": [
+    "2013-12-15"
+  ],
+  "firstPublicationDate": [
+    "2013-12-15"
+  ]
+}

@@ -6,11 +6,10 @@
 	<!--  ELife -->
     <xsl:variable name="publisher">eLife Sciences Publications Limited</xsl:variable>
     <xsl:variable name="prefix">10.7554</xsl:variable>
-	<xsl:variable name="publisherSelector">
-    //*[local-name()='meta' and
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
       (
-      (@name='DC.Publisher' and @content='eLife Sciences Publications Limited') or 
-      (@name='DC.Identifier' and contains(@content,'10.7554/'))
+      (@name='dc.publisher' and @content='eLife Sciences Publications Limited') or 
+      (@name='citation_doi' and contains(@content,concat('10.7554','/')))
       )
     ]</xsl:variable>
 	

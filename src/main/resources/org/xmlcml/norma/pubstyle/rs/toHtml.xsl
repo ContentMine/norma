@@ -6,12 +6,12 @@
 <!--  Royal Society -->
     <xsl:variable name="publisher">The Royal Society</xsl:variable>
     <xsl:variable name="prefix">10.1098</xsl:variable>
-	<xsl:variable name="publisherSelector">//*[local-name()='meta' and
-	      (
-	      (@name='DC.Publisher' and @content='The Royal Society') or 
-	      (@name='DC.Identifier' and contains(@content,'10.1098/'))
-	      )
-	    ]</xsl:variable>
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
+      (
+      (@name='dc.publisher' and @content='The Royal Society') or 
+      (@name='citation_doi' and contains(@content,concat('10.1098','/')))
+      )
+    ]</xsl:variable>
 
 	<xsl:variable name="DC.Identifier">10.1098/.*</xsl:variable>
 	<xsl:variable name="DC.Publisher">The Royal Society</xsl:variable>
@@ -23,7 +23,7 @@
   	
   	<xsl:template match="h:i[normalize-space(.)='']"/>
   	<xsl:template match="@style[contains(normalize-space(.),'display:none') or (contains(.,'display') and contains(.,'none'))]">
-  	  <xsl:message>DISPNONE <xsl:value-of select="."/></xsl:message>
+<!--  	  <xsl:message>DISPNONE <xsl:value-of select="."/></xsl:message> -->
   	</xsl:template> 
   	
   	<xsl:template match="h:div[
@@ -38,7 +38,7 @@
   	<xsl:template match="h:ul[contains(@class,'panels-ajax-tab')]"/>
   	<xsl:template match="h:ul[contains(@class,'highwire-figure-links')]"/>
   	<xsl:template match="h:ul[contains(@class,'author-tooltip-find-more')]"/>
-  	<xsl:template match="h:a[@title='View reference in text']"/>
+  	<xsl:template match="h:a[@title='View reference in text' or normalize-space(.)='&#x21B5;']"/><!-- left downwards arrow -->
   	<xsl:template match="h:div[contains(@class,'cit-extra')]"/>
   	
   	<xsl:template match="h:div[contains(@class,'pane-highwire-article-crossmark')]"/>
@@ -48,7 +48,6 @@
   	<xsl:template match="h:div[contains(@class,'pane-highwire-share-link')]"/>
   	<xsl:template match="h:div[contains(@class,'pane-roysoc-art-email')]"/>
   	<xsl:template match="h:div[contains(@class,'sidebar-right-wrapper')]"/>
-  	<xsl:template match="h:a[normalize-space(.)='&#x21B5;']"/> <!-- left downwards arrow -->
   	
   	<!--  ========= TRANSFORMS ========= -->
   	<xsl:template match="h:div[@class='paragraph']">

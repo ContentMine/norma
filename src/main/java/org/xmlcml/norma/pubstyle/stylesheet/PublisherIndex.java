@@ -80,7 +80,7 @@ public class PublisherIndex {
 					LOG.warn("No prefix in XSL: "+publisherSelector);
 				}
 			} else {
-				LOG.warn("no publisher in XSL: "+htmlXsl);
+				LOG.debug("no publisher in XSL: "+htmlXsl+"; please add");
 			}
 		}
 	}

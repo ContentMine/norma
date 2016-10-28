@@ -1,0 +1,636 @@
+{
+  "id": [
+    "24976896"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "24976896"
+  ],
+  "pmcid": [
+    "PMC4062642"
+  ],
+  "doi": [
+    "10.4056/sigs.4568282"
+  ],
+  "title": [
+    "Complete genome sequence of Mesorhizobium australicum type strain (WSM2073(T))."
+  ],
+  "authorString": [
+    "Reeve W, Nandasena K, Yates R, Tiwari R, O'Hara G, Ninawi M, Gu W, Goodwin L, Detter C, Tapia R, Han C, Copeland A, Liolios K, Chen A, Markowitz V, Pati A, Mavromatis K, Woyke T, Kyrpides N, Ivanova N, Howieson J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Reeve W"
+          ],
+          "firstName": [
+            "Wayne"
+          ],
+          "lastName": [
+            "Reeve"
+          ],
+          "initials": [
+            "W"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Nandasena K"
+          ],
+          "firstName": [
+            "Kemanthi"
+          ],
+          "lastName": [
+            "Nandasena"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Yates R"
+          ],
+          "firstName": [
+            "Ron"
+          ],
+          "lastName": [
+            "Yates"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia ; Department of Agriculture and Food, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Tiwari R"
+          ],
+          "firstName": [
+            "Ravi"
+          ],
+          "lastName": [
+            "Tiwari"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "O'Hara G"
+          ],
+          "firstName": [
+            "Graham"
+          ],
+          "lastName": [
+            "O'Hara"
+          ],
+          "initials": [
+            "G"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Ninawi M"
+          ],
+          "firstName": [
+            "Mohamed"
+          ],
+          "lastName": [
+            "Ninawi"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        },
+        {
+          "fullName": [
+            "Gu W"
+          ],
+          "firstName": [
+            "Wei"
+          ],
+          "lastName": [
+            "Gu"
+          ],
+          "initials": [
+            "W"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Goodwin L"
+          ],
+          "firstName": [
+            "Lynne"
+          ],
+          "lastName": [
+            "Goodwin"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Detter C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Detter"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Tapia R"
+          ],
+          "firstName": [
+            "Roxanne"
+          ],
+          "lastName": [
+            "Tapia"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Han C"
+          ],
+          "firstName": [
+            "Cliff"
+          ],
+          "lastName": [
+            "Han"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Los Alamos National Laboratory, Bioscience Division, Los Alamos, New Mexico, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Copeland A"
+          ],
+          "firstName": [
+            "Alex"
+          ],
+          "lastName": [
+            "Copeland"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Liolios K"
+          ],
+          "firstName": [
+            "Konstantinos"
+          ],
+          "lastName": [
+            "Liolios"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Chen A"
+          ],
+          "firstName": [
+            "Amy"
+          ],
+          "lastName": [
+            "Chen"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Biological Data Management and Technology Center, Lawrence Berkeley National Laboratory, Berkeley, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Markowitz V"
+          ],
+          "firstName": [
+            "Victor"
+          ],
+          "lastName": [
+            "Markowitz"
+          ],
+          "initials": [
+            "V"
+          ],
+          "affiliation": [
+            "Biological Data Management and Technology Center, Lawrence Berkeley National Laboratory, Berkeley, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Pati A"
+          ],
+          "firstName": [
+            "Amrita"
+          ],
+          "lastName": [
+            "Pati"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Mavromatis K"
+          ],
+          "firstName": [
+            "Konstantinos"
+          ],
+          "lastName": [
+            "Mavromatis"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Woyke T"
+          ],
+          "firstName": [
+            "Tanja"
+          ],
+          "lastName": [
+            "Woyke"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Kyrpides N"
+          ],
+          "firstName": [
+            "Nikos"
+          ],
+          "lastName": [
+            "Kyrpides"
+          ],
+          "initials": [
+            "N"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6131-0462",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Ivanova N"
+          ],
+          "firstName": [
+            "Natalia"
+          ],
+          "lastName": [
+            "Ivanova"
+          ],
+          "initials": [
+            "N"
+          ],
+          "affiliation": [
+            "DOE Joint Genome Institute, Walnut Creek, California, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Howieson J"
+          ],
+          "firstName": [
+            "John"
+          ],
+          "lastName": [
+            "Howieson"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-6131-0462",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "2"
+      ],
+      "volume": [
+        "9"
+      ],
+      "journalIssueId": [
+        "2175060"
+      ],
+      "dateOfPublication": [
+        "2013 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Standards in genomic sciences"
+          ],
+          "ISOAbbreviation": [
+            "Stand Genomic Sci"
+          ],
+          "medlineAbbreviation": [
+            "Stand Genomic Sci"
+          ],
+          "NLMid": [
+            "101530505"
+          ],
+          "ESSN": [
+            "1944-3277"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "410-419"
+  ],
+  "abstractText": [
+    "Mesorhizobium australicum strain WSM2073(T) was isolated from root nodules on the pasture legume Biserrula pelecinus growing in Australia in 2000. This aerobic, motile, gram negative, non-spore-forming rod is poorly effective in N2 fixation on B. pelecinus and has gained the ability to nodulate B. pelecinus following in situ lateral transfer of a symbiosis island from the original inoculant strain for this legume, Mesorhizobium ciceri bv. biserrulae WSM1271. We describe that the genome size of M. australicum strain WSM2073(T) is 6,200,534 bp encoding 6,013 protein-coding genes and 67 RNA-only encoding genes. This genome does not contain any plasmids but has a 455.7 kb genomic island from Mesorhizobium ciceri bv. biserrulae WSM1271 that has been integrated into a phenylalanine-tRNA gene."
+  ],
+  "affiliation": [
+    "Centre for Rhizobium Studies, Murdoch University, Western Australia, Australia."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Nitrogen fixation",
+        "Evolution",
+        "Symbiosis",
+        "Alphaproteobacteria",
+        "Root-nodule Bacteria",
+        "Integrative And Conjugative Elements",
+        "Lateral Transfer Of Genes"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4062642?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC4062642"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=EBI&pubmedid=24976896"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "http://www.pubmedcentral.nih.gov/picrender.fcgi?tool=EBI&pubmedid=24976896&action=stream&blobtype=pdf"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "http://dx.doi.org/10.4056/sigs.4568282"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2014-06-30"
+  ],
+  "dateOfCreation": [
+    "2014-06-30"
+  ],
+  "dateOfRevision": [
+    "2014-07-02"
+  ],
+  "electronicPublicationDate": [
+    "2013-12-15"
+  ],
+  "firstPublicationDate": [
+    "2013-12-15"
+  ]
+}
