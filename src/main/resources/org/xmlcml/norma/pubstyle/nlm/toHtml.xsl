@@ -49,16 +49,28 @@
 		*[local-name()='table-wrap'] | 
 		*[local-name()='table-wrap-foot'] | 
 		*[local-name()='tbody'] | 
-		*[local-name()='td'] | 
 		*[local-name()='tfoot'] | 
-		*[local-name()='th'] | 
-		*[local-name()='th'] | 
 		*[local-name()='thead'] | 
 		*[local-name()='tr'] 
 		" >
         <xsl:copy>
            <xsl:apply-templates select=" * | text()" />
         </xsl:copy>
+        </xsl:template>
+
+        <xsl:template match="
+                *[local-name()='td'] | 
+                *[local-name()='th']
+                " >
+            <xsl:copy>
+               <xsl:if test="@colspan">
+                  <xsl:attribute name="colspan"><xsl:value-of select="./@colspan" /></xsl:attribute>
+               </xsl:if>
+               <xsl:if test="@rowspan">
+                  <xsl:attribute name="rowspan"><xsl:value-of select="./@rowspan" /></xsl:attribute>
+               </xsl:if>
+               <xsl:apply-templates select=" * | text()" />
+            </xsl:copy>
         </xsl:template>
 
 
