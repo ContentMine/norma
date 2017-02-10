@@ -33,6 +33,7 @@ public class SedarTest {
 	}
 	
 	@Test
+	//@Ignore // file 
 	public void testExtractOrgChart() {
 		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.TEST_SEDAR_DIR, "westernZagros.g.11.7.svg"));
 		Assert.assertNotNull(rawChart);

@@ -142,7 +142,7 @@ public class EPMCConverter implements CellCalculator {
 				id = resultJson.getIdText();
 			}
 			if (id == null) {
-				System.err.println("entry without ID: "+entry);
+				LOG.error("entry without ID: "+entry);
 //				return null;
 			}
 		}

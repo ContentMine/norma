@@ -35,16 +35,20 @@ public class RSTest {
 	static File TEST1 = new File(TEST, "closed");
 
 	@Test
+	@Ignore // closed access papers
 	public void testHtml2Scholarly() {
 		NormaFixtures.copyToTargetRunHtmlTidy(TEST1, TARGET); 
 	}
 
 	@Test
+	@Ignore // closed access papers
 	public void testHtml2Scholarly2StepConversion() {
 		NormaFixtures.copyToTargetRunTidyTransformWithStylesheetSymbolRoot(TEST1, TARGET, PUB0);
 	}
 	
 	@Test
+	@Ignore // closed access papers
+
 	public void testHtml2Scholarly2StepConversionClean() throws IOException {
 		NormaFixtures.tidyTransformAndClean(TEST1, TARGET1, PUB);
 	}
