@@ -1,248 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
 <!--  MUST update norma version number in sync -->
-	<groupId>org.xml-cml</groupId>
-	<artifactId>norma</artifactId>
-	<!-- to sync with new cproject-norma-ami versions -->
-	<version>0.3.4</version>
-	<packaging>jar</packaging>
-	<name>norma</name>
-	<description>A Java library for processing multiple legacy formats into normalized HTML5</description>
+    <groupId>org.xml-cml</groupId>
+    <artifactId>norma</artifactId>
+    <!-- to sync with new cproject-norma-ami versions -->
+    <version>0.3.4</version>
+    <packaging>jar</packaging>
+    <name>norma</name>
+    <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
 
-	<properties>
-		<opennlp.version>1.6.0</opennlp.version>		
-	</properties>
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+    <properties>
+        <opennlp.version>1.6.0</opennlp.version>        
+    </properties>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-	<inceptionYear>2014</inceptionYear>
+    <inceptionYear>2014</inceptionYear>
 
-	<build>
-		<plugins>
+    <build>
+        <plugins>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>appassembler-maven-plugin</artifactId>
-				<version>1.8.1</version>
-				<configuration>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.8.1</version>
+                <configuration>
 
-					<programs>
-						<program>
-							<mainClass>org.xmlcml.norma.Norma</mainClass>
-							<id>norma</id>
-						</program>
+                    <programs>
+                        <program>
+                            <mainClass>org.xmlcml.norma.Norma</mainClass>
+                            <id>norma</id>
+                        </program>
 
-					</programs>
+                    </programs>
 
-					<!-- Prevent long directories -->
-					<repositoryLayout>flat</repositoryLayout>
+                    <!-- Prevent long directories -->
+                    <repositoryLayout>flat</repositoryLayout>
 
-				</configuration>
+                </configuration>
 
-				<executions>
-					<execution>
-						<id>assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>assemble</goal>
-						</goals>
-					</execution>
-				</executions>
+                <executions>
+                    <execution>
+                        <id>assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assemble</goal>
+                        </goals>
+                    </execution>
+                </executions>
 
-			</plugin>
+            </plugin>
 
-			<plugin>
-				<!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
-					https://github.com/brndkfr/xmppbot/blob/master/xmppbot/pom.xml -->
-				<artifactId>jdeb</artifactId>
-				<groupId>org.vafer</groupId>
-				<version>1.3</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>jdeb</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<dataSet>
-						<data>
-							<src>${project.build.directory}/appassembler/</src>
-							<type>directory</type>
-							<mapper>
-								<type>perm</type>
-								<filemode>555</filemode>
-								<prefix>/usr/share/norma-repo</prefix>
-							</mapper>
-						</data>
-
-
-						<data>
-							<src>${basedir}/src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml</src>
-							<type>file</type>
-							<mapper>
-								<type>perm</type>
-								<filemode>555</filemode>
-								<prefix>/usr/share/norma-repo/exampleData/html</prefix>
-							</mapper>
-						</data>
-						<data>
-							<src>${basedir}/src/test/resources/org/xmlcml/norma/pubstyle/plosone/journal.pone.0111303/fulltext.html</src>
-							<type>file</type>
-							<mapper>
-								<type>perm</type>
-								<filemode>555</filemode>
-								<prefix>/usr/share/norma-repo/exampleData/html</prefix>
-							</mapper>
-						</data>
+            <plugin>
+                <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
+                    https://github.com/brndkfr/xmppbot/blob/master/xmppbot/pom.xml -->
+                <artifactId>jdeb</artifactId>
+                <groupId>org.vafer</groupId>
+                <version>1.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jdeb</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <dataSet>
+                        <data>
+                            <src>${project.build.directory}/appassembler/</src>
+                            <type>directory</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo</prefix>
+                            </mapper>
+                        </data>
 
 
-						<data>
-							<type>link</type>
-							<symlink>true</symlink>
-							<linkName>/usr/bin/norma</linkName>
-							<linkTarget>/usr/share/norma-repo/bin/norma</linkTarget>
-						</data>
+                        <data>
+                            <src>${basedir}/src/main/resources/org/xmlcml/norma/pubstyle/plosone/htmlTagger.xml</src>
+                            <type>file</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo/exampleData/html</prefix>
+                            </mapper>
+                        </data>
+                        <data>
+                            <src>${basedir}/src/test/resources/org/xmlcml/norma/pubstyle/plosone/journal.pone.0111303/fulltext.html</src>
+                            <type>file</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo/exampleData/html</prefix>
+                            </mapper>
+                        </data>
 
-					</dataSet>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5</version>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.4</version>
-				<configuration>
-					<forkCount>3</forkCount>
-					<reuseForks>true</reuseForks>
-					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-				</configuration>
+
+                        <data>
+                            <type>link</type>
+                            <symlink>true</symlink>
+                            <linkName>/usr/bin/norma</linkName>
+                            <linkTarget>/usr/share/norma-repo/bin/norma</linkTarget>
+                        </data>
+
+                    </dataSet>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                </configuration>
 </plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5</version>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-				</configuration>
-			</plugin>
-			<!-- giant jar -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <!-- giant jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
                                 <version>2.4</version>
-				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<mainClass>org.xmlcml.norma.Norma</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			
-		</plugins>
-	</build>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.xmlcml.norma.Norma</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.xml-cml</groupId>
-			<artifactId>cproject</artifactId>
-			<version>0.3.4</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.saxon</groupId>
-			<artifactId>Saxon-HE</artifactId>
- 			<version>9.6.0-3</version>
-		</dependency>		
-		<dependency>
-			<groupId>org.apache.opennlp</groupId>
-			<artifactId>opennlp-tools</artifactId>
-			<version>${opennlp.version}</version>
-		</dependency>
-		
-		<!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
-		<dependency>
-		    <groupId>com.jayway.jsonpath</groupId>
-		    <artifactId>json-path</artifactId>
-		    <version>2.0.0</version>
-		</dependency>
-		<!--  to avoid Xerces Hell? 
-		http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
-		 -->
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>1.8.2</version>
-		</dependency>
-		<dependency>
-			<groupId>xmlunit</groupId>
-			<artifactId>xmlunit</artifactId>
-			<version>1.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.vafer</groupId>
-			<artifactId>jdeb</artifactId>
-			<version>1.3</version>
-			<!-- Prevents jar bloat in final package -->
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>index</report>
-							<report>summary</report>
-							<report>dependencies</report>
-							<report>project-team</report>
-							<report>license</report>
-							<report>cim</report>
-							<report>scm</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-		</plugins>
-	</reporting>
+    <dependencies>
+        <dependency>
+            <groupId>org.xml-cml</groupId>
+            <artifactId>cproject</artifactId>
+            <version>0.3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+             <version>9.6.0-3</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.apache.opennlp</groupId>
+            <artifactId>opennlp-tools</artifactId>
+            <version>${opennlp.version}</version>
+        </dependency>
+        
+        <!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!--  to avoid Xerces Hell? 
+        http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
+         -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.vafer</groupId>
+            <artifactId>jdeb</artifactId>
+            <version>1.3</version>
+            <!-- Prevents jar bloat in final package -->
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>index</report>
+                            <report>summary</report>
+                            <report>dependencies</report>
+                            <report>project-team</report>
+                            <report>license</report>
+                            <report>cim</report>
+                            <report>scm</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
