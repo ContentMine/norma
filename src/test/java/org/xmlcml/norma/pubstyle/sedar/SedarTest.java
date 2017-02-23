@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -13,8 +14,6 @@ import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
-
-import junit.framework.Assert;
 
 public class SedarTest {
 

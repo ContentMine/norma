@@ -8,13 +8,12 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.CTreeList;
-
-import junit.framework.Assert;
 
 /** tests the various uses of the -i/--input argument.
  * 

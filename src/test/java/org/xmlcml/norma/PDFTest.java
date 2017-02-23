@@ -18,7 +18,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.image.ImageProcessor;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
@@ -181,24 +180,24 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
-	@Test
-	@Ignore // closed PDF // LONG
-	public void testNeuroFigures() throws Exception {
-		CTree cTree = new CTree(new File("target/cmdir/neuro/Chen"));
-		File pdfFile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
-		cTree.readFulltextPDF(pdfFile);
-		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
-//		pdf2HtmlConverter.readAndConvertToXHTML();
-		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
-		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
-		File imageDir = cTree.getOrCreateExistingImageDir();
-		for (NamedImage labelledImage : labelledImages) {
-			BufferedImage image = labelledImage.getImage();
-			ImageProcessor imageProcessor = ImageProcessor.createDefaultProcessorAndProcess(image);
-			image = imageProcessor.getImage();
-			String imageName = labelledImage.getKey();
-			ImageIO.write(image, "png", new File(imageDir, imageName+".png"));
-		}
-	}
+//	@Test
+//	@Ignore // closed PDF // LONG
+//	public void testNeuroFigures() throws Exception {
+//		CTree cTree = new CTree(new File("target/cmdir/neuro/Chen"));
+//		File pdfFile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
+//		cTree.readFulltextPDF(pdfFile);
+//		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
+////		pdf2HtmlConverter.readAndConvertToXHTML();
+//		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
+//		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
+//		File imageDir = cTree.getOrCreateExistingImageDir();
+//		for (NamedImage labelledImage : labelledImages) {
+//			BufferedImage image = labelledImage.getImage();
+//			org.xmlcml.image.ImageProcessor imageProcessor = org.xmlcml.image.ImageProcessor.createDefaultProcessorAndProcess(image);
+//			image = imageProcessor.getImage();
+//			String imageName = labelledImage.getKey();
+//			ImageIO.write(image, "png", new File(imageDir, imageName+".png"));
+//		}
+//	}
 	
 }

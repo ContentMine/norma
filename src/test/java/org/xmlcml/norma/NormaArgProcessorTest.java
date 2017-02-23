@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.args.ArgumentOption;
@@ -17,7 +18,6 @@ import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.CTreeList;
 import org.xmlcml.cproject.util.CMineTestFixtures;
 
-import junit.framework.Assert;
 
 public class NormaArgProcessorTest {
 

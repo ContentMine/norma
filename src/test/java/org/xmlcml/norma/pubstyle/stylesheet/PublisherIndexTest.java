@@ -11,11 +11,11 @@ import org.apache.commons.io.filefilter.NameFileFilter;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.xml.XMLUtil;
 
-import junit.framework.Assert;
 import nu.xom.Element;
 
 public class PublisherIndexTest {

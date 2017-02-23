@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CTree;
@@ -20,8 +21,6 @@ import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.xml.XMLUtil;
-
-import junit.framework.Assert;
 
 public class HOCRReaderTest {
 	

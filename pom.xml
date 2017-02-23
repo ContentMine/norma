@@ -4,18 +4,22 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-<!--  MUST update norma version number in sync -->
-    <groupId>org.xml-cml</groupId>
+    <properties>
+        <opennlp.version>1.6.0</opennlp.version>        
+	    <norma.version>0.3.5</norma.version>
+	    <!-- upstream -->
+	    <cproject.version>0.3.5</cproject.version>
+	    <imageanalysis.version>1.0.3</imageanalysis.version>
+    </properties>
+
+    <groupId>org.contentmine</groupId>
     <artifactId>norma</artifactId>
     <!-- to sync with new cproject-norma-ami versions -->
-    <version>0.3.4</version>
+    <version>${norma.version}</version>
     <packaging>jar</packaging>
     <name>norma</name>
     <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
 
-    <properties>
-        <opennlp.version>1.6.0</opennlp.version>        
-    </properties>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -135,7 +139,7 @@
                     <reuseForks>true</reuseForks>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                 </configuration>
-</plugin>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -182,9 +186,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.xml-cml</groupId>
+            <groupId>org.contentmine</groupId>
             <artifactId>cproject</artifactId>
-            <version>0.3.4</version>
+            <version>${cproject.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>imageanalysis</artifactId>
+            <version>${imageanalysis.version}</version>
         </dependency>
         <dependency>
             <groupId>net.sf.saxon</groupId>

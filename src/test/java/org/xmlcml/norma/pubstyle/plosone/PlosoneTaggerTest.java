@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.Norma;
@@ -15,7 +16,6 @@ import org.xmlcml.norma.tagger.plosone.HTMLPlosoneTagger;
 import org.xmlcml.norma.tagger.plosone.XMLPlosoneTagger;
 import org.xmlcml.xml.XMLUtil;
 
-import junit.framework.Assert;
 import nu.xom.Element;
 
 public class PlosoneTaggerTest {

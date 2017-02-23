@@ -10,6 +10,7 @@ import javax.imageio.ImageIO;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.codehaus.plexus.util.FileUtils;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -17,8 +18,6 @@ import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
-
-import junit.framework.Assert;
 
 public class ImageToHOCRConverterTest {
 

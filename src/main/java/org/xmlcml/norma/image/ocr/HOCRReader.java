@@ -42,7 +42,6 @@ import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
-import org.xmlcml.image.ImageUtil;
 import org.xmlcml.norma.editor.SubstitutionEditor;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
@@ -624,7 +623,7 @@ public class HOCRReader extends InputReader {
 
 	private BufferedImage addMargins(BufferedImage rawImage) {
 		BufferedImage newImage = imageMarginX > 0 || imageMarginY > 0 ? 
-				ImageUtil.addBorders(rawImage, imageMarginX, imageMarginY, marginColor) : rawImage;
+				org.xmlcml.image.ImageUtil.addBorders(rawImage, imageMarginX, imageMarginY, marginColor) : rawImage;
 		return newImage;
 	}
 

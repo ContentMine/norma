@@ -6,13 +6,12 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.norma.pubstyle.util.XMLCleaner;
-
-import junit.framework.Assert;
 
 public class NormaFixtures {
 	

@@ -35,7 +35,7 @@ public class SpringerTest {
 	
 	@Test
 	// FIXME
-	@Ignore // junit.framework.AssertionFailedError: failed convert using: springer2html
+	@Ignore // junit.org.AssertionFailedError: failed convert using: springer2html
 
 
 	public void testHtml2Scholarly2StepConversionClean() throws IOException {
