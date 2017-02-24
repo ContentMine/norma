@@ -1,4 +1,4 @@
-package org.xmlcml.normal.ncbi;
+package org.xmlcml.norma.ncbi;
 
 import java.io.File;
 import java.io.IOException;
