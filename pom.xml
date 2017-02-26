@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <opennlp.version>1.6.0</opennlp.version>        
-	    <norma.version>0.3.5</norma.version>
+	    <norma.version>0.3.6</norma.version>
 	    <!-- upstream -->
-	    <cproject.version>0.3.5</cproject.version>
-	    <imageanalysis.version>1.0.3</imageanalysis.version>
+	    <cproject.version>0.3.6</cproject.version>
+	    <imageanalysis.version>1.0.4</imageanalysis.version>
+	    <!-- other -->
+	    <opennlp.version>1.6.0</opennlp.version>        
     </properties>
 
     <groupId>org.contentmine</groupId>

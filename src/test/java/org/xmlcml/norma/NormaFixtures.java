@@ -105,6 +105,7 @@ public class NormaFixtures {
 	
 	public final static File TEST_PLOSONE_CTREE0 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
+	public final static File TEST_PDFTABLE0_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable0/");
 	public final static File TEST_PDFTABLE_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable/");
 
 	public final static File TARGET_PUBSTYLE_DIR = new File("target/pubstyle");

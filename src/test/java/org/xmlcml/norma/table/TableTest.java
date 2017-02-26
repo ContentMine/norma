@@ -1,7 +1,9 @@
 package org.xmlcml.norma.table;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
@@ -17,14 +19,33 @@ public class TableTest {
 	}
 
 	@Test
+	/** just to recap how iteration works
+	 * 
+	 */
 	@Ignore
-	public void testPDFTables() {
-		String root = "10.1016_j.pain.2014.08.023";
-		File sourceDir = new File(NormaFixtures.TEST_PDFTABLE_DIR, root);
-		File targetDir = new File("target/pdftable/"+root+"/");
+	public void testPDFTable0() throws IOException {
+		File sourceDir = NormaFixtures.TEST_PDFTABLE0_DIR;
+		File targetDir = new File("target/pdftable0/");
+		File oldSVG = new File("target/svg/"); // FIX this
+		FileUtils.deleteDirectory(oldSVG);
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		String cmd = "--project "+targetDir+" -i table%d.svg  -o table%d.html --transform pdfsvg2table";
+		// runs pdf2svg and svg2xml
+		String cmd = "--project "+targetDir+" -i fulltext.pdf -o zzzz.html --transform pdf2html";
 		new Norma().run(cmd);
 		
 	}
+	
+	@Test
+	/** file filter to iterate over all files of a type
+	 * 
+	 */
+	public void testFileFilter() {
+		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
+		File targetDir = new File("target/pdftable1/");
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		String cmd = "--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$ --outputDir target/pdftable01/ --transform svgtable2html";
+		new Norma().run(cmd);
+		
+	}
+	
 }

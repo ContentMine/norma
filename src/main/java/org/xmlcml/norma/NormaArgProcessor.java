@@ -222,7 +222,6 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 			getOrCreateNormaTransformer();
 			normaTransformer.setCurrentCTree(currentCTree);
 			String transformTypeString = option.getStringValue();
-//			LOG.debug("transform type: "+transformTypeString);
 			normaTransformer.clearVariables();
 			normaTransformer.runTransform(transformTypeString);
 		}
@@ -417,6 +416,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 
 	public File checkAndGetInputFile(CTree cTree) {
+		File inputFile = null;
 		if (cTree == null) {
 			throw new RuntimeException("null cTree");
 		}
@@ -424,18 +424,20 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
-			throw new RuntimeException("Input must be reserved file; found: "+inputName);
-		}
-		File inputFile = cTree.getExistingReservedFile(inputName);
-		if (inputFile == null) {
-			inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
-		}
-		if (inputFile == null) {
-			String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
-			TREE_LOG().error(msg);
-			System.err.print("!");
-//			throw new RuntimeException(msg);
+		if (inputName != null) {
+			if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
+				throw new RuntimeException("Input must be reserved file; found: "+inputName);
+			}
+			inputFile = cTree.getExistingReservedFile(inputName);
+			if (inputFile == null) {
+				inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
+			}
+			if (inputFile == null) {
+				String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
+				TREE_LOG().error(msg);
+				System.err.print("!");
+	//			throw new RuntimeException(msg);
+			}
 		}
 		return inputFile;
 	}
@@ -443,7 +445,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private void createCTreeListFromInputList() {
 		// proceed unless there is a single reserved file for input
 		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
-			LOG.trace("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
+			LOG.debug("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
 			// this actually creates directory
 			getOrCreateOutputDirectory();
 			ensureCTreeList();
