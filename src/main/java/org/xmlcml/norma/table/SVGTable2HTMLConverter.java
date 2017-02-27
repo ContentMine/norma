@@ -1,11 +1,19 @@
 package org.xmlcml.norma.table;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlP;
 import org.xmlcml.svg2xml.table.TableContentCreator;
+import org.xmlcml.svg2xml.table.TableSection;
+import org.xmlcml.svg2xml.text.TextStructurer;
+import org.xmlcml.xml.XMLUtil;
 
 public class SVGTable2HTMLConverter {
 	private static final Logger LOG = Logger.getLogger(SVGTable2HTMLConverter.class);
@@ -19,9 +27,11 @@ public class SVGTable2HTMLConverter {
 	private TableContentCreator tableContentCreator;
 	private File outputDir;
 	private HtmlElement bodyElement;
-	private HtmlElement titleElement;
+	public HtmlElement titleElement;
 	private HtmlElement headerElement;
 	private HtmlElement footerElement;
+	private TextStructurer textStructurer;
+	private HtmlElement outputHtmlElement;
 
 	public SVGTable2HTMLConverter() {
 		tableContentCreator = new TableContentCreator(); 
@@ -35,13 +45,31 @@ public class SVGTable2HTMLConverter {
 		this.outputDir = outputDir;
 	}
 	
-	public void convert() {
+	public HtmlElement convert()  {
 		getOrCreateOutputDir();
 		tableContentCreator.markupAndOutputTable(inputFile, outputDir);
-		bodyElement = tableContentCreator.getOrCreateTableBodySection().getOrCreatePhraseListList().toHtml();
-		titleElement = tableContentCreator.getOrCreateTableTitleSection().getOrCreatePhraseListList().toHtml();
-		headerElement = tableContentCreator.getOrCreateTableHeaderSection().getOrCreatePhraseListList().toHtml();
-		footerElement = tableContentCreator.getOrCreateTableFooterSection().getOrCreatePhraseListList().toHtml();
+		textStructurer = tableContentCreator.getTextStructurer();
+//		SVGElement inputSVGChunk = textStructurer.getSVGChunk();
+		tableContentCreator.annotateAreasInSVGChunk();
+		outputHtmlElement = tableContentCreator.createHtmlFromSVG();
+		try {
+			XMLUtil.debug(outputHtmlElement, new FileOutputStream("target/junk.html"), 1);
+		} catch (Exception e) {
+			throw new RuntimeException("e", e);
+		}
+		
+		/** these are not table-formatted */
+		TableSection tableTitleSection = tableContentCreator.getOrCreateTableTitleSection();
+		titleElement = tableTitleSection == null ? new HtmlP("no title") : tableTitleSection.toHtml();
+		TableSection tableHeaderSection = tableContentCreator.getOrCreateTableHeaderSection();
+		headerElement = tableHeaderSection == null ? new HtmlP("no header") : tableHeaderSection.toHtml();
+		TableSection tableBodySection = tableContentCreator.getOrCreateTableBodySection();
+		bodyElement = tableBodySection == null ? new HtmlP("no body") : tableBodySection.toHtml();
+		TableSection tableFooterSection = tableContentCreator.getOrCreateTableFooterSection();
+		footerElement = tableFooterSection == null ? new HtmlP("no footer") : tableFooterSection.toHtml();
+		
+		return outputHtmlElement;
+		
 	}
 
 	private void getOrCreateOutputDir() {

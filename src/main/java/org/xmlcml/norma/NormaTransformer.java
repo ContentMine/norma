@@ -520,12 +520,12 @@ public class NormaTransformer {
 	private HtmlElement applySVGTable2HTMLToInputFile(File inputFile) {
 		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
 		converter.readInput(inputFile);
-		converter.convert();
-		HtmlElement htmlElement = new HtmlHtml();
-		htmlElement.appendChild(converter.getTitleElement());
-		htmlElement.appendChild(converter.getHeaderElement());
-		htmlElement.appendChild(converter.getBodyElement());
-		htmlElement.appendChild(converter.getFooterElement());
+		HtmlElement htmlElement = converter.convert();
+//		HtmlElement htmlElement = new HtmlHtml();
+//		htmlElement.appendChild(converter.getTitleElement());
+//		htmlElement.appendChild(converter.getHeaderElement());
+//		htmlElement.appendChild(converter.getBodyElement());
+//		htmlElement.appendChild(converter.getFooterElement());
 		return htmlElement;
 	}
 
