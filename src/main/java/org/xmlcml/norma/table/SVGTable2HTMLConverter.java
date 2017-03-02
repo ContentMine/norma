@@ -49,7 +49,6 @@ public class SVGTable2HTMLConverter {
 		getOrCreateOutputDir();
 		tableContentCreator.markupAndOutputTable(inputFile, outputDir);
 		textStructurer = tableContentCreator.getTextStructurer();
-//		SVGElement inputSVGChunk = textStructurer.getSVGChunk();
 		tableContentCreator.annotateAreasInSVGChunk();
 		outputHtmlElement = tableContentCreator.createHtmlFromSVG();
 		try {
@@ -57,16 +56,6 @@ public class SVGTable2HTMLConverter {
 		} catch (Exception e) {
 			throw new RuntimeException("e", e);
 		}
-		
-		/** these are not table-formatted */
-		TableSection tableTitleSection = tableContentCreator.getOrCreateTableTitleSection();
-		titleElement = tableTitleSection == null ? new HtmlP("no title") : tableTitleSection.toHtml();
-		TableSection tableHeaderSection = tableContentCreator.getOrCreateTableHeaderSection();
-		headerElement = tableHeaderSection == null ? new HtmlP("no header") : tableHeaderSection.toHtml();
-		TableSection tableBodySection = tableContentCreator.getOrCreateTableBodySection();
-		bodyElement = tableBodySection == null ? new HtmlP("no body") : tableBodySection.toHtml();
-		TableSection tableFooterSection = tableContentCreator.getOrCreateTableFooterSection();
-		footerElement = tableFooterSection == null ? new HtmlP("no footer") : tableFooterSection.toHtml();
 		
 		return outputHtmlElement;
 		

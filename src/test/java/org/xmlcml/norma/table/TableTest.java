@@ -9,8 +9,10 @@ import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
+import org.xmlcml.xml.XMLUtil;
 
 public class TableTest {
 	private static final Logger LOG = Logger.getLogger(TableTest.class);
@@ -53,12 +55,13 @@ public class TableTest {
 	/** iterate over whole CProject
 	 * 
 	 */
-	@Ignore // too long
+	@Ignore // production
 	public void testCProject() {
 		// these ones have single text characters
 		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
 		if (sourceDir.exists()) {
-			File targetDir = new File("target/pdftable/cm-ucl/corpus-oa-pmr/");
+			File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v01/");
+//			File targetDir = new File("target/corpus-oa-pmr-v01/");
 			CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
 			// note historical regex /ctree/table%d.svg
 			String cmd = "--project "+targetDir+" --fileFilter ^.*/table\\d+(cont)?\\.svg.*$ --transform svgtable2html";
@@ -67,6 +70,22 @@ public class TableTest {
 		} else {
 			LOG.debug("no data, skipped");
 		}
+	}
+	
+	/** align rows and columns
+	 * 
+	 * @param inputFile
+	 * @return
+	 * @throws IOException 
+	 */
+	@Test
+	public void testRowAndColumns() throws IOException {
+		File inputFile = new File(NormaFixtures.TEST_TABLE_DIR, "svg/10.1007_s00213-015-4198-1.svg");
+		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
+		converter.readInput(inputFile);
+		HtmlElement htmlElement = converter.convert();
+		File file = new File(NormaFixtures.TARGET_DIR, "table/svg/10.1007_s00213-015-4198-1.svg.html");
+		XMLUtil.debug(htmlElement, file, 1);
 	}
 	
 }

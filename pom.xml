@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-	    <norma.version>0.3.7</norma.version>
+	    <norma.version>0.3.8</norma.version>
 	    <!-- upstream -->
-	    <cproject.version>0.3.7</cproject.version>
+	    <cproject.version>0.3.8</cproject.version>
 	    <imageanalysis.version>1.0.4</imageanalysis.version>
 	    <!-- other -->
 	    <opennlp.version>1.6.0</opennlp.version>        
@@ -33,13 +33,11 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>appassembler-maven-plugin</artifactId>
                 <version>1.8.1</version>
                 <configuration>
-
                     <programs>
                         <program>
                             <mainClass>org.xmlcml.norma.Norma</mainClass>

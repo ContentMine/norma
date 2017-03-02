@@ -518,14 +518,10 @@ public class NormaTransformer {
 	}
 
 	private HtmlElement applySVGTable2HTMLToInputFile(File inputFile) {
+		LOG.debug("==========="+inputFile+"============");
 		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
 		converter.readInput(inputFile);
 		HtmlElement htmlElement = converter.convert();
-//		HtmlElement htmlElement = new HtmlHtml();
-//		htmlElement.appendChild(converter.getTitleElement());
-//		htmlElement.appendChild(converter.getHeaderElement());
-//		htmlElement.appendChild(converter.getBodyElement());
-//		htmlElement.appendChild(converter.getFooterElement());
 		return htmlElement;
 	}
 

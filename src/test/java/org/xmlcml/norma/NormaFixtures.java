@@ -108,11 +108,10 @@ public class NormaFixtures {
 	public final static File TEST_PDFTABLE0_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable0/");
 	public final static File TEST_PDFTABLE_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable/");
 
-	public final static File TARGET_PUBSTYLE_DIR = new File("target/pubstyle");
-
+	public final static File TARGET_DIR = new File("target");
+	public final static File TARGET_PUBSTYLE_DIR = new File(TARGET_DIR, "pubstyle");
 
 	private static File shtmlFile;
-
 	
 	public static void copyToTargetRunHtmlTidy(File from, File to) {
 		CMineTestFixtures.cleanAndCopyDir(from, to);
