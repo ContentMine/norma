@@ -76,6 +76,21 @@
 		</help>
 	</arg>
 
+	<arg name="htmlDisplay" long="--htmlDisplay" args="[fileFilter [...fileFilter]]"
+		countRange="{1,*}" parseMethod="parseHtmlDisplay" runMethod="runHtmlDisplay">
+		<help>
+		aggregates the results of fileFilter into &lt;td> cells in an &lt;tr> for display. 
+		Future versions may aggregate these into a larger table.
+typical command:
+<pre>
+norma --project foo --fileFilter subdirFilter --htmlDisplay filter1 filter2 ... --output tableRow.html		
+</pre>
+this will iterate over the CTrees down to level subdirFilter, then apply the display filters. The result of
+each will be an a TD cell. The result is an HTML TR output to tableRow.html
+NOT YET FULLY IMPLEMENTED.
+		</help>
+	</arg>
+
 	<arg 
 	    name="move" 
 	    long="--move" 
@@ -300,6 +315,7 @@
 			determine the type of files to convert.
 			</p>
 			<p>NOTE: multiple stylesheets are deprecated</p>
+			NOTE : the transformer mechanism will be refactored to be more plugin-like
 		</help>
 		<value name="pdfbox"></value> 
 		<value name="pdf2html" input="fulltext.pdf" output="fulltext.html"></value> 

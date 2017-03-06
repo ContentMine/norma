@@ -8,7 +8,6 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,15 +20,14 @@ import javax.xml.transform.Transformer;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
-import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.image.ocr.NamedImage;
@@ -231,9 +229,8 @@ public class NormaTransformer {
 
 	private void transformFilteredFiles() {
 		File dir = currentCTree.getDirectory();
-		Collection<File> fileCollection = FileUtils.listFiles(dir, 
-				ioFileFilter, TrueFileFilter.INSTANCE);
-		File[] files = fileCollection.toArray(new File[0]);
+		IOFileFilter ioFileFilter1 = ioFileFilter;
+		File[] files = Utils.getFilesWithFilter(dir, ioFileFilter1);
 		transformFiles(files);
 	}
 

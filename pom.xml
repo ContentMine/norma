@@ -20,15 +20,6 @@
     <packaging>jar</packaging>
     <name>norma</name>
     <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
     <inceptionYear>2014</inceptionYear>
 
     <build>
@@ -62,11 +53,11 @@
                 </executions>
 
             </plugin>
-        <plugin>
-          <groupId>com.github.ferstl</groupId>
-          <artifactId>depgraph-maven-plugin</artifactId>
-          <version>2.0.1</version>
-        </plugin>  
+            <plugin>
+                <groupId>com.github.ferstl</groupId>
+                <artifactId>depgraph-maven-plugin</artifactId>
+                <version>2.0.1</version>
+            </plugin>  
 
             <plugin>
                 <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 

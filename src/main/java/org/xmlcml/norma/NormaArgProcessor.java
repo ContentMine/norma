@@ -22,9 +22,12 @@ import org.xmlcml.cproject.args.ValueElement;
 import org.xmlcml.cproject.args.VersionManager;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlTr;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
+import org.xmlcml.norma.output.HtmlDisplay;
 import org.xmlcml.norma.tagger.SectionTaggerX;
+import org.xmlcml.xml.XMLUtil;
 
 /**
  * Processes commandline arguments.
@@ -69,6 +72,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private HtmlElement cleanedHtmlElement;
 	List<String> transformTokenList;
 	private List<String> relabelStrings;
+	private List<String> htmlDisplayFilters;
+	private HtmlDisplay htmlDisplay;
 
 	public NormaArgProcessor() {
 		super();
@@ -113,6 +118,10 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		List<String> tokens = argIterator.getStrings(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 		LOG.trace("HTML: "+tidyName);
+	}
+
+	public void parseHtmlDisplay(ArgumentOption option, ArgIterator argIterator) {
+		htmlDisplay = new HtmlDisplay(argIterator.getStrings(option));
 	}
 
 	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
@@ -230,6 +239,14 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	public void runHtml(ArgumentOption option) {
 		String cleanerType = option.getStringValue();
 		runHtmlCleaner(cleanerType);
+	}
+
+	public void runHtmlDisplay(ArgumentOption option) {
+		if (htmlDisplay != null && currentCTree != null) {
+			htmlDisplay.setCTree(currentCTree);
+			htmlDisplay.setOutput(output);
+			htmlDisplay.display();
+		}
 	}
 
 	void runHtmlCleaner(String cleanerType) {
