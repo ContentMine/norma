@@ -53,11 +53,11 @@
                 </executions>
 
             </plugin>
-            <plugin>
-                <groupId>com.github.ferstl</groupId>
-                <artifactId>depgraph-maven-plugin</artifactId>
-                <version>2.0.1</version>
-            </plugin>  
+        <plugin>
+          <groupId>com.github.ferstl</groupId>
+          <artifactId>depgraph-maven-plugin</artifactId>
+          <version>2.0.1</version>
+        </plugin>  
 
             <plugin>
                 <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
@@ -228,25 +228,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>index</report>
-                            <report>summary</report>
-                            <report>dependencies</report>
-                            <report>project-team</report>
-                            <report>license</report>
-                            <report>cim</report>
-                            <report>scm</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-        </plugins>
-    </reporting>
 </project>

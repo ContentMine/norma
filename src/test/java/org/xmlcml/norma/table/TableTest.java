@@ -98,8 +98,6 @@ public class TableTest {
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
 		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$ --outputDir "+"target/pdftable01/"
 				+ " --transform svgtable2html");
-//		String cmd = "--project "+targetDir+" --fileFilter ^.*tables/table\\d+/$ --output table.html"
-//				+ " --htmlDisplay table.png table.annot.svg table.svg.html";
 		String cmd = "--project "+targetDir+" --fileFilter ^.*tables/table\\d+/$"
 				// needs to be relative to ^.*tables/table\\d+/ NYI
 				+ " --output tables/table.html"
