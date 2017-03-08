@@ -13,12 +13,12 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.util.CellCalculator;
-import org.xmlcml.cmine.util.CellRenderer;
-import org.xmlcml.cmine.util.DataTablesTool;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.metadata.AbstractMetadata;
+import org.xmlcml.cproject.util.CellCalculator;
+import org.xmlcml.cproject.util.CellRenderer;
+import org.xmlcml.cproject.util.DataTablesTool;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlTd;
@@ -114,7 +114,7 @@ public class EPMCConverter implements CellCalculator {
 
 	private void writeCurrentCTree(JsonElement entry) {
 		if (currentCTree != null && currentCTree.getDirectory() != null) {
-			File entryFile = new File(currentCTree.getDirectory(), CProject.EUPMC_RESULTS_JSON);
+			File entryFile = new File(currentCTree.getDirectory(), AbstractMetadata.Type.EPMC.getCProjectMDFilename());
 			entry = stripOneElementArrays(entry);
 			try {
 				DefaultArgProcessor.CM_LOG.debug("wrote: "+entryFile);
@@ -142,7 +142,7 @@ public class EPMCConverter implements CellCalculator {
 				id = resultJson.getIdText();
 			}
 			if (id == null) {
-				System.err.println("entry without ID: "+entry);
+				LOG.error("entry without ID: "+entry);
 //				return null;
 			}
 		}
@@ -214,7 +214,7 @@ public class EPMCConverter implements CellCalculator {
 	
 	public DataTablesTool getOrCreateDataTablesTool() {
 		if (dataTablesTool == null) {
-			dataTablesTool = new DataTablesTool();
+			dataTablesTool = new DataTablesTool(DataTablesTool.ARTICLES);
 		}
 		return dataTablesTool;
 	}

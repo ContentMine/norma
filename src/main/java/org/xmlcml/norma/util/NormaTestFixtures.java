@@ -1,14 +1,12 @@
 package org.xmlcml.norma.util;
 
 import java.io.File;
-import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CProject;
-import org.xmlcml.cmine.files.CTree;
-import org.xmlcml.cmine.files.CTreeList;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.CTreeList;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 
@@ -54,7 +52,7 @@ public class NormaTestFixtures {
 		String args = null;
 		if (type.equals("project")) {
 			CProject project = new CProject(dir);
-			CTreeList cTreeList = project.getCTreeList();
+			CTreeList cTreeList = project.getResetCTreeList();
 			for (CTree cTree : cTreeList) {
 				if (!cTree.hasScholarlyHTML()) {
 					// mising SHTML, normalize all

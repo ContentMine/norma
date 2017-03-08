@@ -1,7 +1,6 @@
 package org.xmlcml.norma.input;
 
 import java.io.IOException;
-
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;

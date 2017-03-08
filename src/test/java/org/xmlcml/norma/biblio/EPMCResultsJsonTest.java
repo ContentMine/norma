@@ -12,8 +12,7 @@ import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.args.log.AbstractLogElement;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.biblio.json.EPMCConverter;
@@ -32,7 +31,7 @@ public class EPMCResultsJsonTest {
 	}
 	
 	@Test
-	public void testReadResultsJSON() throws IOException {
+	public void testReadEpmcMD() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
@@ -47,7 +46,7 @@ public class EPMCResultsJsonTest {
 	}
 	
 	@Test
-	public void testReadResultsJSONFields() throws IOException {
+	public void testReadEpmcMDFields() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"));
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
@@ -188,9 +187,28 @@ public class EPMCResultsJsonTest {
 		
 	}
 		
+	@Test
+	public void testHindawi() throws IOException {
+		
+		File resultsJson = new File("../../hindawi/epmc/eupmc_results.json");
+		if (resultsJson.exists()) {
+			EPMCConverter epmcConverter = new EPMCConverter();
+			epmcConverter.readInputStream(new FileInputStream(resultsJson));
+			epmcConverter.createJsonEntryListAndPossiblyCProject();
+			epmcConverter.setColumnHeadingList(Arrays.asList(EPMCResultsJsonEntry.FLAGS));
+			HtmlHtml html = epmcConverter.createHtml();
+			XMLUtil.debug(html, new File("../../hindawi/epmc/metadataTable.html"), 1);
+			
+		} else {
+			LOG.debug(resultsJson.getCanonicalPath()+" does not exist");
+		}
+		
+	}
+		
+
 
 	@Test
-	public void testReadResultsJSON1() throws IOException {
+	public void testReadEpmcMD1() throws IOException {
 		// a 5 Mbyte file
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"));
 	    JsonParser parser = new JsonParser();
@@ -209,7 +227,7 @@ public class EPMCResultsJsonTest {
 	 * 
 	 * @throws IOException
 	 */
-	public void testCreateCTreesFromEPMCResultsJSON() throws IOException {
+	public void testCreateCTreesFromEPMCMD() throws IOException {
 		File jsonFile = new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursus1.json");
 		File cProjectDir = new File("target/json/cproject/ursus1/");
 		EPMCConverter epmcConverter = new EPMCConverter();
@@ -251,4 +269,34 @@ public class EPMCResultsJsonTest {
 		epmcConverter.readInputStream(new FileInputStream(jsonFile));
 		epmcConverter.readAndProcessEntry();
 	}
+	
+	/** not required since latest getpapers splits files
+	 * 
+	 */
+//	@Test
+//	/** complete project
+//	 * 
+//	 * starts with a CProject and aggregated results.json which it splits
+//	 * @throws IOException
+//	 */
+//	public void testCreateCompleteProject() throws IOException {
+//		
+//		File cProjectDir = new File("../../hindawi/epmc/hindawi");
+//		if (!cProjectDir.exists()) {
+//			LOG.debug("PMR only test");
+//			return;
+//		}
+//		File jsonFile = new File(cProjectDir, "eupmc_results.json");
+//		if (!jsonFile.exists()) {
+//			LOG.debug("No json file");
+//			return;
+//		}
+//		EPMCConverter epmcConverter = new EPMCConverter();
+//		epmcConverter.setCProjectDir(cProjectDir);
+//		epmcConverter.readInputStream(new FileInputStream(jsonFile));
+//		epmcConverter.createJsonEntryListAndPossiblyCProject();
+//		Assert.assertEquals("entries: ", 1000, epmcConverter.getOrCreateEntryArray().size());
+//	}
+
+
 }

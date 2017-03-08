@@ -5,8 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import nu.xom.Element;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -15,6 +13,8 @@ import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 public class SubstitutionEditorTest {
 

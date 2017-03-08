@@ -16,7 +16,7 @@ public class Prototypes {
 //		runHalThesis2();
 //		runHalThesis3();
 //		runHalManyThesis();
-		runImages();
+//		runImages();
 	}
 
 	private static void runHalThesis1() {
@@ -66,4 +66,5 @@ public class Prototypes {
 		new Norma().run("-i examples/theses/"+name+".pdf -o examples/theses/");
 		new Norma().run("-q examples/theses/"+name+" -i fulltext.pdf -o fulltext.pdf.txt --transform pdf2txt");
 	}
+	
 }

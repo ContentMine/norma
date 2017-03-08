@@ -3,6 +3,7 @@ package org.xmlcml.norma.input.tex;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
@@ -11,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Entities;
 import org.jsoup.parser.Parser;
-import org.xmlcml.cmine.misc.CMineUtil;
+import org.xmlcml.cproject.util.CMineUtil;
 
 /**
  * Converts TeX input to HTML 5 using LaTeXML
@@ -73,4 +74,29 @@ public class TEX2HTMLConverter {
         String html = IOUtils.toString(latexMLPostProc.getInputStream(), StandardCharsets.UTF_8);
         return convertHTMLToXHTML(html);
     }
+    
+    /** converts TeX to HTML.
+     * relies on LatexML.
+     * 
+     * @param input
+     * @return
+     * @throws IOException // if LatexML not present
+     * @throws InterruptedException
+     */
+    public String convertTeXToHTMLNew(File input) throws IOException, InterruptedException {
+        InputStream inputStream = new FileInputStream(input);
+
+        // latexml performs the initial TeX => XML conversion,
+        Process proc = CMineUtil.runProcess(new String[]{LATEXML, "-", "--quiet"}, inputStream);
+
+        inputStream = proc.getInputStream();
+
+        // latexmlpost transforms the resulting XML to HTML 5
+        proc = CMineUtil.runProcess(new String[]{LATEXMLPOST, "-", "--quiet"}, inputStream);
+
+        String html = IOUtils.toString(proc.getInputStream(), StandardCharsets.UTF_8);
+        return convertHTMLToXHTML(html);
+    }
+
+
 }

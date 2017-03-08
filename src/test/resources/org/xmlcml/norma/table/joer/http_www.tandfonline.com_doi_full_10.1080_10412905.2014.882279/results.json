@@ -1,0 +1,66 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.882279"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.882279#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.882279&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.882279&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0003&doi=10.1080%2F10412905.2014.882279&downloadType=CSV"
+    ]
+  },
+  "title": {
+    "value": [
+      "Anti-dermatophyte, anti-Fusarium and cytotoxic activity of essential oils and plant extracts of Piper genus"
+    ]
+  },
+  "author": {
+    "value": [
+      "V. Tangarife-Castaño",
+      "J.B. Correa-Royero",
+      "V.C. Roa-Linares",
+      "N. Pino-Benitez",
+      "L.A. Betancur-Galvis",
+      "D.C. Durán",
+      "E.E. Stashenko",
+      "A.C. Mesa-Arango"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.882279"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

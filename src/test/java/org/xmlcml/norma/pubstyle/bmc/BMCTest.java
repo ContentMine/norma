@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.euclid.Real2;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
@@ -24,14 +24,13 @@ import org.xmlcml.graphics.svg.objects.SVGBoxChart;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
-import com.google.common.collect.Multiset.Entry;
 
 public class BMCTest {
 
@@ -169,11 +168,12 @@ public class BMCTest {
 		// this is a valid CTree
 		CTree cTree = new CTree(NormaFixtures.BMC_15_1_511_DIR);
 		// it's got 4 files
-		Assert.assertEquals("reserved files", 4, cTree.getReservedFileList().size());
+		Assert.assertEquals("reserved files", 5, cTree.getReservedFileList().size());
 		Assert.assertNotNull("fulltext.xml", cTree.getExistingFulltextXML());
 		Assert.assertNotNull("fulltext.html", cTree.getExistingFulltextHTML());
 		Assert.assertNotNull("fulltext.pdf", cTree.getExistingFulltextPDF());
-		Assert.assertNotNull("results.json", cTree.getExistingResultsJSON());
+//		Assert.assertNotNull("results.json", cTree.getExistingQuickscrapeMD());
+		Assert.assertNotNull("quickscrape_result.json", cTree.getExistingQuickscrapeMD());
 		// these files don't exist yet
 		Assert.assertNull("scholarly.html", cTree.getExistingScholarlyHTML());
 		Assert.assertNull("results.xml", cTree.getExistingResultsDir());
@@ -192,7 +192,8 @@ public class BMCTest {
 				"--output", "scholarly.html",
 				// using a BMC-specifc stylesheet (BMC is not JATS-compliant)
 				"--standalone", "true",
-				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
+//				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
+				"--transform", "/org/xmlcml/norma/"+"pubstyle/bmc/xml2html.xsl", // stylesheet to convert 
 		};
 		// the primary entry point
 		Norma norma = new Norma();
@@ -256,7 +257,8 @@ public class BMCTest {
 				"--input", "fulltext.xml",
 				"--output", "scholarly.html",
 				"--standalone", "true",
-				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
+//				"--transform", SRC_MAIN_RESOURCES+"/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
+				"--transform", "/org/xmlcml/norma/"+"pubstyle/nlm/toHtml.xsl", // stylesheet to convert 
 		};
 		Norma norma = new Norma();
 		norma.run(args);

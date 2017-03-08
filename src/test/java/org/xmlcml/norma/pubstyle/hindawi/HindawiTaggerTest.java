@@ -4,10 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import junit.framework.Assert;
-import nu.xom.Element;
-
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.norma.NormaFixtures;
@@ -18,6 +16,8 @@ import org.xmlcml.norma.tagger.TagElement;
 import org.xmlcml.norma.tagger.hindawi.HTMLHindawiTagger;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 public class HindawiTaggerTest {
 

@@ -7,11 +7,10 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import junit.framework.Assert;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.codehaus.plexus.util.FileUtils;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -61,7 +60,7 @@ public class ImageToHOCRConverterTest {
 	}
 
 	@Test
-//	@Ignore("Tesseract")
+	@Ignore("closed access")
 	public void testConvertPNGsToSVG() throws Exception {
 		File ERIN_PNG = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/erinPngs/");
 		File[] pngs = new File[] { 

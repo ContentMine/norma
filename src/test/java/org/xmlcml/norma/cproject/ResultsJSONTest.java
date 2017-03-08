@@ -4,12 +4,11 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CContainer;
-import org.xmlcml.cmine.files.CProject;
+import org.xmlcml.cproject.files.CContainer;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.metadata.AbstractMetadata;
 import org.xmlcml.norma.NormaFixtures;
-import org.xmlcml.norma.InputTest;
 
 public class ResultsJSONTest {
 
@@ -21,7 +20,6 @@ public class ResultsJSONTest {
 	@Test
 	public void testSplitAndNormalize() {
 		CContainer cProject = new CProject(new File(NormaFixtures.TEST_MISC_DIR, "cproject"));
-		File file = cProject.getAllowedChildFile(CProject.EUPMC_RESULTS_JSON);
-		
+		File file = cProject.getAllowedChildFile(AbstractMetadata.Type.EPMC.getCProjectMDFilename());
 	}
 }

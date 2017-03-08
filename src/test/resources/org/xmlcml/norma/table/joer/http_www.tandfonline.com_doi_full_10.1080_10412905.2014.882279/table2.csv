@@ -1,0 +1,8 @@
+Samples,GM-MIC (μg/mL),IC50 ± SD (μg/mL),R2
+F. oxysporum,T. rubrum,T. mentagrophytes,Vero ATCC CCL-81
+PH oil,500,99,125,51.7±9.3,0.8
+PE oil,>500,>500,500,15.8±1.1,1.0
+PBR oil,>500,157,125,15.2±3,0.8
+PBO oil,>500,79,500,25.8±4.5,0.8
+PM oil,>500,500,250,30.3±5.5,0.7
+PD oil,>500,397,500,≥ 200,NA

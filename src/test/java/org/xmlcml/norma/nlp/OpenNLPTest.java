@@ -1,19 +1,5 @@
 package org.xmlcml.norma.nlp;
 
-import java.util.List;
-
-import junit.framework.Assert;
-import opennlp.tools.postag.POSTagger;
-import opennlp.tools.sentdetect.SentenceDetector;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.util.Span;
-
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.junit.Test;
-import org.xmlcml.norma.biblio.PMIDParserTest;
-import org.xmlcml.svg2xml.paths.Chunk;
-
 /** uses OpenNLP
  * 
  * @author pm286

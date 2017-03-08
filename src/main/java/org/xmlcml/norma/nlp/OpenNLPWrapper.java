@@ -1,29 +1,5 @@
 package org.xmlcml.norma.nlp;
 
-import java.io.IOException;
-
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import opennlp.tools.chunker.Chunker;
-import opennlp.tools.chunker.ChunkerME;
-import opennlp.tools.chunker.ChunkerModel;
-import opennlp.tools.namefind.NameFinderME;
-import opennlp.tools.namefind.TokenNameFinder;
-import opennlp.tools.namefind.TokenNameFinderModel;
-import opennlp.tools.postag.POSModel;
-import opennlp.tools.postag.POSTagger;
-import opennlp.tools.postag.POSTaggerME;
-import opennlp.tools.sentdetect.SentenceDetector;
-import opennlp.tools.sentdetect.SentenceDetectorME;
-import opennlp.tools.sentdetect.SentenceModel;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.tokenize.TokenizerME;
-import opennlp.tools.tokenize.TokenizerModel;
-import opennlp.tools.util.Span;
-
 /** OpenNLP has useful entity recognition resources but is large (ca 60+ MBytes)
  * 
  * @author pm286

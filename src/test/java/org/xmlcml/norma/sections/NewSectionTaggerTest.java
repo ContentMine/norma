@@ -8,7 +8,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.norma.sections.SectionTagger.SectionTag;
+import org.xmlcml.norma.sections.JASTSectionTagger.SectionTag;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -24,8 +24,8 @@ public class NewSectionTaggerTest {
 
 	@Test
 	public void testReadSectionTags() throws IOException {
-		SectionTagger tagger = new SectionTagger();
-		Element element = tagger.readSectionTags(SectionTagger.DEFAULT_SECTION_TAGGER_FILE);
+		JASTSectionTagger tagger = new JASTSectionTagger();
+		Element element = tagger.readSectionTags(JASTSectionTagger.DEFAULT_SECTION_TAGGER_FILE);
 		Assert.assertNotNull(element);
 		Assert.assertEquals("child", 26, XMLUtil.getQueryElements(element, "./*[local-name()='tag']").size());
 		
@@ -33,14 +33,14 @@ public class NewSectionTaggerTest {
 	
 	@Test
 	public void testReadDefaultSectionTags() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		Element element = tagger.readSectionTags();
 		Assert.assertNotNull(element);
 	}
 
 	@Test
 	public void testMakeTagMap() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		Map<SectionTag, TagElementX> tagElementByTag = tagger.getOrCreateMap();
 		Assert.assertTrue("tag set", tagElementByTag.keySet().contains(SectionTag.ABSTRACT));
 		TagElementX tagElement = tagElementByTag.get(SectionTag.ABSTRACT);
@@ -51,7 +51,7 @@ public class NewSectionTaggerTest {
 	
 	@Test
 	public void testSearchTagMap() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		TagElementX tagElement = tagger.getTagElement(SectionTag.ABSTRACT);
 		Assert.assertNotNull(tagElement);
 		Assert.assertEquals("id", "cm:ABSTRACT", tagElement.getId());
@@ -59,7 +59,7 @@ public class NewSectionTaggerTest {
 	
 	@Test
 	public void testGetRegexListXpath() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		TagElementX tagElement = tagger.getTagElement(SectionTag.ABSTRACT);
 		List<String> regexList = tagElement.getRegexList();
 //		Assert.assertEquals("[(abstract)]", regexList.toString());
@@ -69,7 +69,7 @@ public class NewSectionTaggerTest {
 
 	@Test
 	public void testGetMajorSections() throws IOException {
-		SectionTagger tagger = new SectionTagger();
+		JASTSectionTagger tagger = new JASTSectionTagger();
 		TagElementX tagElement = tagger.getTagElement(SectionTag.ABSTRACT);
 		String xpath = tagElement.getXpath();
 		Assert.assertEquals("//*[@class='abstract' and not(*[@abstract-type='summary'])]", xpath);

@@ -3,13 +3,13 @@ package org.xmlcml.norma.tagger;
 import java.io.File;
 import java.io.InputStream;
 
+import org.xmlcml.xml.XMLUtil;
+
 import nu.xom.Comment;
 import nu.xom.Element;
 import nu.xom.Node;
 import nu.xom.ProcessingInstruction;
 import nu.xom.Text;
-
-import org.xmlcml.xml.XMLUtil;
 
 public abstract class AbstractTElement extends Element {
 

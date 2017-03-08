@@ -23,3 +23,4 @@ DOCTYPE: NO
 ...
 
 ```
+file:///Users/pm286/workspace/cmdev/norma/src/test/resources/org/xmlcml/norma/pubstyle/elife/e04407/fulltext.html

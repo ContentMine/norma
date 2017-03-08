@@ -10,7 +10,6 @@ import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
-import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
 import org.xmlcml.xml.XMLUtil;
 
 public class HtmlReadTest {

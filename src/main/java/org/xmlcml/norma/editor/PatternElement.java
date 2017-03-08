@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import nu.xom.Element;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 public class PatternElement extends AbstractEditorElement {
 

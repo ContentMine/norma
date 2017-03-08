@@ -33,7 +33,7 @@ div {border: 2px solid black; margin: 5pt; padding: 5pt;}
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="*">
-		       <xsl:message>UNKNOWN: <xsl:value-of select="$name"></xsl:value-of></xsl:message>
+		       <xsl:message>UNKNOWN uspto tag: <xsl:value-of select="$name"/></xsl:message>
 				<div>
 					<h2><xsl:value-of select="$name" /></h2>
 					<xsl:apply-templates />

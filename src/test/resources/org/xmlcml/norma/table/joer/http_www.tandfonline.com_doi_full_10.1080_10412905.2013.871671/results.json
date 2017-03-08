@@ -1,0 +1,59 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2013.871671"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2013.871671#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2013.871671&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": []
+  },
+  "csv3": {
+    "value": []
+  },
+  "title": {
+    "value": [
+      "An examination of the leaf essential oils of three Eugenia (Myrtaceae) species endemic to New Caledonia"
+    ]
+  },
+  "author": {
+    "value": [
+      "Joseph J. Brophy",
+      "Edouard Hnawia",
+      "Douglas J. Lawes",
+      "Nicolas Lebouvier",
+      "Mohammed Nour"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2013.871671"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

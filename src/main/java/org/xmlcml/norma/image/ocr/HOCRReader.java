@@ -1,7 +1,6 @@
 package org.xmlcml.norma.image.ocr;
 
 import java.awt.image.BufferedImage;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,10 +13,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
-
-import nu.xom.Attribute;
-import nu.xom.Element;
-import nu.xom.Elements;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
@@ -47,10 +42,13 @@ import org.xmlcml.html.HtmlMeta;
 import org.xmlcml.html.HtmlP;
 import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.html.HtmlStrong;
-import org.xmlcml.image.ImageUtil;
 import org.xmlcml.norma.editor.SubstitutionEditor;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Attribute;
+import nu.xom.Element;
+import nu.xom.Elements;
 
 /** reads the HTML output from Tesseract and generates SVG including text and boxes.
  * 
@@ -625,7 +623,7 @@ public class HOCRReader extends InputReader {
 
 	private BufferedImage addMargins(BufferedImage rawImage) {
 		BufferedImage newImage = imageMarginX > 0 || imageMarginY > 0 ? 
-				ImageUtil.addBorders(rawImage, imageMarginX, imageMarginY, marginColor) : rawImage;
+				org.xmlcml.image.ImageUtil.addBorders(rawImage, imageMarginX, imageMarginY, marginColor) : rawImage;
 		return newImage;
 	}
 

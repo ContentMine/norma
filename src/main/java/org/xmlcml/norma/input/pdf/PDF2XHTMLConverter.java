@@ -1,24 +1,22 @@
 package org.xmlcml.norma.input.pdf;
 
 import java.io.File;
-
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.List;
-
-import nu.xom.Element;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.util.HtmlUtil;
 import org.xmlcml.pdf2svg.PDF2SVGConverter;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 /** 
  * Convert PDF to XHTML, SVG and PNG.

@@ -1,7 +1,6 @@
 package org.xmlcml.norma.editor;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -10,13 +9,13 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import nu.xom.Element;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.xml.XMLUtil;
+
+import nu.xom.Element;
 
 public class AbstractEditorElementTest {
 	

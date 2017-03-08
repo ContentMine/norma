@@ -6,9 +6,6 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.euclid.IntArray;
-
-import boofcv.struct.flow.ImageFlow.D;
 
 public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 

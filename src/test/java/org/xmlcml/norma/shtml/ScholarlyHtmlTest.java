@@ -7,8 +7,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
+import org.xmlcml.norma.NormaFixtures;
 
 public class ScholarlyHtmlTest {
 

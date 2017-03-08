@@ -1,0 +1,61 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.882277"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.882277#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.882277&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.882277&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": []
+  },
+  "title": {
+    "value": [
+      "Nectandra megapotamica (Spreng.) Mez.: phytochemical characterization and neutralizing effect on Bothrops diporus venom"
+    ]
+  },
+  "author": {
+    "value": [
+      "Ana María Torres",
+      "Francisco José Camargo",
+      "Gabriela Ana Ricciardi",
+      "Armando I.A. Ricciardi",
+      "Eduardo Dellacassa"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.882277"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

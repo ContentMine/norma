@@ -1,5 +1,9 @@
-<argList name="norma" version="0.2.26">
+<argList name="norma" version="0.3.1">
 
+  <p>20160908: major revision of autodetection of stylesheets</p>
+  
+  <p>20160509: csv2html conversion and --inputDir</p>
+  <p>20160501: added TaylorAndFrancis cleaner - nearly finished</p>
   <p>20160329: citation extraction and plotting</p>
   <p>20160322: more JATS including PM(C)ID extraction</p>
   <p>20160322: major work on JATS </p>
@@ -23,9 +27,10 @@
   <p>20160114: moved classes to NormaFixtures</p>
   <p>20160113: compatibility with cmine and ami</p>
     <!-- added automatic editing (editor) -->
+    
 	<arg name="char" brief="-c" long="--chars"
 		args="[pairs of characters, as unicode points; i.e. char00, char01, char10, char11, char20, char21"
-		class="org.xmlcml.cmine.args.StringPair" countRange="{1,*}"
+		class="org.xmlcml.cproject.args.StringPair" countRange="{1,*}"
 		parseMethod="parseChars">
 		<help>
 			CHARS:
@@ -50,12 +55,67 @@
 		</help>
 	</arg>
 
+	<arg name="html" long="--html" args="[HTML tidy option, jsoup, jtidy, htmlunit]"
+		countRange="{1,1}" parseMethod="parseHtml" runMethod="runHtml">
+		<!-- default ="jsoup" -->
+		<help>
+			Clean raw HTML and produce XHTML. Requires heuristics:
+			<ul>
+			<li>quickscrape and getpapers create a JS DOM which has
+			normalised some, but not all, elements</li>
+			<li>remove &lt;script> and other elements which are likely
+			to be non-XML-compliant. Adjustable through &lt;value></li>
+			<li>remove other artefacts (e.g. attributes like "=""")</li>
+			<li>run through html-tidy (jsoup, jtidy, htmlunit). They all try
+			to sort out mess - the last is probably the best but I haven't
+			bolted it in yet.</li>
+			<li>remove empty &lt;div>s, &lt;p>s, etc.</li>
+			</ul>
+			This is NOT scholarly.html and will need a publisher-specific
+			stylesheet for further processing.
+		</help>
+	</arg>
+
+	<arg name="htmlDisplay" long="--htmlDisplay" args="[fileFilter [...fileFilter]]"
+		countRange="{1,*}" parseMethod="parseHtmlDisplay" runMethod="runHtmlDisplay">
+		<help>
+		aggregates the results of fileFilter into &lt;td> cells in an &lt;tr> for display. 
+		Future versions may aggregate these into a larger table.
+typical command:
+<pre>
+norma --project foo --fileFilter subdirFilter --htmlDisplay filter1 filter2 ... --output tableRow.html		
+</pre>
+this will iterate over the CTrees down to level subdirFilter, then apply the display filters. The result of
+each will be an a TD cell. The result is an HTML TR output to tableRow.html
+NOT YET FULLY IMPLEMENTED.
+		</help>
+	</arg>
+
+	<arg 
+	    name="move" 
+	    long="--move" 
+	    args=" glob directory"
+		class="org.xmlcml.cproject.args.StringPair" 
+		countRange="{1,*}"
+		parseMethod="parseMove"
+		runMethod="runMove">
+		<help>
+			NOT YET IMPLEMENTED
+			moves files of type glob to directory (subdirectory of CTree), creating it if necessary
+			at the moment globbing only on file suffixes as we need to protect the metacharacters
+			from the shell.
+			
+			So if glob = "csv" and directory is table, files of type "*.csv" are moved to ctree/table/
+			
+		</help>
+	</arg>
+
 	<arg 
 	    name="name" 
 	    brief="-n" 
 	    long="--name" 
 	    args=" tag1,tag2 [tag1,tag2 ....]"
-		class="org.xmlcml.cmine.args.StringPair" 
+		class="org.xmlcml.cproject.args.StringPair" 
 		countRange="{1,*}"
 		parseMethod="parseNames">
 		<help>
@@ -93,6 +153,40 @@
 			between publishers and journals
 			</p>
 			<p class="note">Does not trigger any actions</p>
+		</help>
+	</arg>
+
+	<arg 
+	    name="relabelContent" 
+	    long="--relabelContent" 
+	    args=" file1"
+		countRange="{1,*}"
+		parseMethod="parseRelabelContent"
+		runMethod="runRelabelContent">
+		<help>
+		  <p>Inspects content - probably mislabelled by remote site and attempts to relabel file.
+		   Currently tests for HTML and PDF.  Not robust. Cannot swap files in same tree.</p>
+		</help>
+	</arg>
+
+	<arg 
+	    name="rename" 
+	    long="--rename" 
+	    args=" file1,file2 [file1,file2 ....]"
+		class="org.xmlcml.cproject.args.StringPair" 
+		countRange="{1,*}"
+		parseMethod="parseRename"
+		runMethod="runRename">
+		<help>
+			NOT YET IMPLEMENTED
+			List of comma-separated pairs of filenames; the first is replaced by the
+			second. Supports simple regex
+			Example might be:
+			<tt>tab.htm table.html</tt>
+			i.e. rename tab.htm to table.html
+			<tt>table(\d+).html tables/table$1.html</tt>
+			i.e. rename table1.html, table2.html ... to tables/table1.html, tables/table2.html ...
+			
 		</help>
 	</arg>
 
@@ -170,86 +264,6 @@
 		</help>
 	</arg>
 
-	<arg name="tidy" brief="-t" long="--tidy" args="[HTML tidy option]"
-		countRange="{1,1}" parseMethod="parseTidy">
-		<!-- add default ="JSoup" -->
-		<help>
-			OBSOLETE - use --html
-			TIDY:
-			Choose an HTML tidy tool. At present we have:
-			JTidy JSoup and HtmlUnit
-			(NYI) This is very experimental at present.
-		</help>
-	</arg>
-
-	<arg name="html" long="--html" args="[HTML tidy option, jsoup, jtidy, htmlunit]"
-		countRange="{1,1}" parseMethod="parseHtml" runMethod="runHtml">
-		<!-- default ="jsoup" -->
-		<help>
-			Clean raw HTML and produce XHTML. Requires heuristics:
-			<ul>
-			<li>quickscrape and getpapers create a JS DOM which has
-			normalised some, but not all, elements</li>
-			<li>remove &lt;script> and other elements which are likely
-			to be non-XML-compliant. Adjustable through &lt;value></li>
-			<li>remove other artefacts (e.g. attributes like "=""")</li>
-			<li>run through html-tidy (jsoup, jtidy, htmlunit). They all try
-			to sort out mess - the last is probably the best but I haven't
-			bolted it in yet.</li>
-			<li>remove empty &lt;div>s, &lt;p>s, etc.</li>
-			</ul>
-			This is NOT scholarly.html and will need a publisher-specific
-			stylesheet for further processing.
-		</help>
-	</arg>
-
-	<arg 
-	    name="xsl" 
-	    brief="-x" 
-	    long="--xsl" 
-	    args="stylesheet"
-		countRange="{1,5}" 
-		parseMethod="parseXsl" 
-		runMethod="transform"
-		required="--input --output">
-		<help>
-			DEPRECATED (use transform)
-		</help>
-	</arg>
-
-	<arg 
-	    name="transform" 
-	    long="--transform" 
-	    args="stylesheet"
-		countRange="{1,*}" 
-		parseMethod="parseTransform" 
-		runMethod="runTransform"
-		required="--input --output">
-		<help>
-		<p class="brief">
-			Transform XML or HTML or PDF or other input</p>
-			<p class="note">Relacement for --xsl</p>
-			<p>Argument may be a file/URL reference to a
-			stylesheet,
-			or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup,
-			[jtidy, htmlunit NYI]}
-			the codes are checked first and then the document reference.
-
-			Requires input and output files (--input and --output). These must be
-			reserved names
-			(e.g. fulltext.xml) in cmDir OR files in reserved directories and
-			determine the type of files to convert.
-			</p>
-		</help>
-		<value name="pdfbox"></value> 
-		<value name="pdf2html" input="fulltext.pdf" output="fulltext.html"></value> 
-		<value name="pdf2txt" input="fulltext.pdf" output="fulltext.txt"></value> 
-		<value name="pdf2images"></value> 
-		<value name="hocr2svg" input="image/*.png" output="image/*.svg"></value> 
-		<value name="tex2html" input="fulltext.tex" output="fulltext.html"></value> 
-		<value name="*.xsl" input="fulltext.tex" output="fulltext.html"></value> 
-    </arg>
-
     <arg 
         name="tag"
         long="--tag"
@@ -265,6 +279,68 @@
         </help>
     </arg>
         
+	<arg name="tidy" brief="-t" long="--tidy" args="[HTML tidy option]"
+		countRange="{1,1}" parseMethod="parseTidy">
+		<!-- add default ="JSoup" -->
+		<help>
+			OBSOLETE - use --html
+			TIDY:
+			Choose an HTML tidy tool. At present we have:
+			JTidy JSoup and HtmlUnit
+			(NYI) This is very experimental at present.
+		</help>
+	</arg>
+
+	<arg 
+	    name="transform" 
+	    long="--transform" 
+	    args="stylesheet"
+		countRange="{1,*}" 
+		parseMethod="parseTransform" 
+		runMethod="runTransform"
+		>
+		<help>
+		<p class="brief">
+			Transform XML or HTML or PDF or other input</p>
+			<p class="note">Replacement for --xsl</p>
+			<p>Argument may be a file/URL reference to a
+			stylesheet,
+			or a code from one of {nlm, jats, pdfbox, hocr2svg, pdf2txt, jsoup,
+			[jtidy, htmlunit NYI]}
+			the codes are checked first and then the document reference.
+
+			Requires input and output files (--input and --output). These must be
+			reserved names
+			(e.g. fulltext.xml) in cmDir OR files in reserved directories and
+			determine the type of files to convert.
+			</p>
+			<p>NOTE: multiple stylesheets are deprecated</p>
+			NOTE : the transformer mechanism will be refactored to be more plugin-like
+		</help>
+		<value name="pdfbox"></value> 
+		<value name="pdf2html" input="fulltext.pdf" output="fulltext.html"></value> 
+		<value name="pdf2txt" input="fulltext.pdf" output="fulltext.pdf.txt"></value> 
+		<value name="pdf2images"></value> 
+		<value name="hocr2svg" input="image/*.png" output="image/*.svg"></value> 
+		<value name="tex2html" input="fulltext.tex" output="fulltext.html"></value> 
+		<value name="csv2html" input="table/*.csv" output="table/*.html"></value> 
+		<value name="*.xsl" input="fulltext.xml" output="fulltext.html"></value> 
+    </arg>
+
+	<arg 
+	    name="xsl" 
+	    brief="-x" 
+	    long="--xsl" 
+	    args="stylesheet"
+		countRange="{1,5}" 
+		parseMethod="parseXsl" 
+		runMethod="transform"
+		required="--input --output">
+		<help>
+			DEPRECATED (use transform)
+		</help>
+	</arg>
+
 	<examples>
 		<p class="note">
 			These examples contain some symbolic directory names.

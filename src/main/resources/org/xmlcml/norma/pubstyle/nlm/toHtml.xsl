@@ -5,6 +5,9 @@
 	xmlns:h="http://www.w3.org/1999/xhtml">
 
     <xsl:output method="xhtml"/>
+
+	<xsl:variable name="publisher">Generic NLM</xsl:variable>
+	<xsl:variable name="prefix">10.0000</xsl:variable>
     
     <xsl:variable name="doiroot">https://dx.doi.org/</xsl:variable>
     <xsl:variable name="nlmroot">http://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>    
@@ -28,7 +31,9 @@
 <!--  unmatched tags -->
 	<xsl:template match="*" >
 	    <div class="unknown" title="{local-name()}">
-	    <xsl:message>UNKNOWN: <xsl:value-of select="local-name()"/>: <xsl:value-of select="."/></xsl:message>
+	    <xsl:message>UNKNOWN nlm: <xsl:value-of select="local-name()"/>: 
+	    <!-- <xsl:value-of select="."/> -->
+	    </xsl:message>
 	        <xsl:attribute name="tagxxx"><xsl:value-of select="local-name()"/></xsl:attribute>
 			<xsl:apply-templates />
 	    </div>
@@ -36,13 +41,37 @@
 
 <!--  HTML5 -->
 	<xsl:template match="
+		*[local-name()='a'] | 
+		*[local-name()='b'] | 
+		*[local-name()='br'] | 
 		*[local-name()='caption'] | 
 		*[local-name()='col'] | 
 		*[local-name()='colgroup'] |
+		*[local-name()='div'] |
+		*[local-name()='form'] | 
 		*[local-name()='graphic'] | 
+		*[local-name()='h1'] | 
+		*[local-name()='h2'] | 
+		*[local-name()='h3'] | 
+		*[local-name()='h4'] | 
+		*[local-name()='h5'] | 
+		*[local-name()='h6'] | 
+		*[local-name()='head'] | 
 		*[local-name()='hr'] | 
+		*[local-name()='html'] | 
+		*[local-name()='img'] | 
+		*[local-name()='input'] | 
+		*[local-name()='li'] | 
+		*[local-name()='link'] | 
+		*[local-name()='meta'] | 
+		*[local-name()='object'] | 
+		*[local-name()='ol'] | 
 		*[local-name()='p'] | 
+		*[local-name()='pre'] | 
 		*[local-name()='sc'] | 
+		*[local-name()='script'] |
+		*[local-name()='span'] |
+		*[local-name()='style'] | 
 		*[local-name()='sub'] | 
 		*[local-name()='sup'] | 
 		*[local-name()='table'] | 
@@ -54,7 +83,23 @@
 		*[local-name()='th'] | 
 		*[local-name()='th'] | 
 		*[local-name()='thead'] | 
-		*[local-name()='tr'] 
+		*[local-name()='tr'] |
+		*[local-name()='ul'] 
+		
+		" >
+        <xsl:copy>
+           <xsl:apply-templates select=" * | text()" />
+        </xsl:copy>
+        </xsl:template>
+
+<!--  SVG -->
+	<xsl:template match="
+		*[local-name()='g'] | 
+		*[local-name()='path'] | 
+		*[local-name()='rect'] | 
+		*[local-name()='svg'] | 
+		*[local-name()='use']
+		
 		" >
         <xsl:copy>
            <xsl:apply-templates select=" * | text()" />
@@ -137,6 +182,7 @@
 	    *[local-name()='series'] |
 	    *[local-name()='suffix'] |
 	    *[local-name()='styled-content'] |
+		*[local-name()='isbn'] | 
 		*[local-name()='label'] | 
 		*[local-name()='name'] | 
 	 	*[local-name()='surname'] |
@@ -150,6 +196,15 @@
 	 	*[local-name()='trans-title-group'] |
 	 	*[local-name()='patent'] |
 	 	*[local-name()='target'] |
+	 	*[local-name()='glyph-data'] |
+	 	*[local-name()='private-char'] |
+	 	*[local-name()='sec-meta'] |
+	 	*[local-name()='volume-series'] |
+	 	*[local-name()='page-range'] |
+	 	*[local-name()='prefix'] |
+	 	*[local-name()='gov'] |
+	 	*[local-name()='roman'] |
+	 	*[local-name()='array'] |
 	 	
 	 	*[local-name()='lpage']" >
 		<span tagx="{local-name()}" class="{local-name()}" title="{local-name()}"><xsl:apply-templates select="*|text()" /></span>

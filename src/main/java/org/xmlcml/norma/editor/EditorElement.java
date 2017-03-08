@@ -1,7 +1,5 @@
 package org.xmlcml.norma.editor;
 
-import nu.xom.Node;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 

@@ -7,7 +7,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.html.HtmlA;
 import org.xmlcml.html.HtmlB;
-import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlCol;
 import org.xmlcml.html.HtmlColgroup;
 import org.xmlcml.html.HtmlDiv;
@@ -70,12 +69,10 @@ public class JATSFactory {
 	}
 
 	public HtmlElement createHtml(Element element) {
-		htmlElement = new HtmlHtml();
+		htmlElement = HtmlHtml.createUTF8Html();
 		htmlElement.appendChild(createHead());
-		HtmlBody body = new HtmlBody();
 		Element bodyContent = create(element);
-		body.appendChild(bodyContent);
-		htmlElement.appendChild(body);
+		htmlElement.ensureBody().appendChild(bodyContent);
 		return htmlElement;
 		
 		

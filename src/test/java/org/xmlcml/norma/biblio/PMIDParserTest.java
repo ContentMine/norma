@@ -8,17 +8,18 @@ import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.util.CMineUtil;
+import org.xmlcml.cproject.util.CMineUtil;
 import org.xmlcml.html.HtmlDiv;
 
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
+
 
 /** this may be possible in a hacked RISParser
  * 
@@ -55,6 +56,7 @@ public class PMIDParserTest {
 	}
 
 	@Test
+	@Ignore // LONG
 	public void testPubMedResult6() throws FileNotFoundException, IOException {
 		RISParser parser = new RISParser();
 		parser.read(new FileInputStream("src/test/resources/org/xmlcml/norma/biblio/pmid/pubmed_result6.txt"));

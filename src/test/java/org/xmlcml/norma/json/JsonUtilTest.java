@@ -1,9 +1,8 @@
 package org.xmlcml.norma.json;
 
-import junit.framework.Assert;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.norma.util.JsonUtil;
 

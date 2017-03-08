@@ -1,24 +1,21 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://www.w3.org/1999/xhtml">
 
-    <xsl:output method="xhtml"/>
+	<xsl:import href="../norma/src/main/resources/org/xmlcml/norma/pubstyle/util/toHtml.xsl"/>
 
-<!--     
-	<xsl:template match="/">
-		<xsl:apply-templates />
-	</xsl:template>
--->
 
-	<!--Identity template, strips PIs and comments -->
-	<xsl:template match="@*|node()">
-		<xsl:copy>
-			<xsl:apply-templates select="@*|node()" />
-		</xsl:copy>
-	</xsl:template>
-
-	<xsl:template match="comment()" priority="1.0"/>
-
-<!-- navigation -->
+<!--  IEEE -->
+	<!--  ACS -->
+    <xsl:variable name="publisher">IEEE</xsl:variable>
+    <xsl:variable name="prefix">10.000?</xsl:variable>
+    <!-- 
+    <xsl:variable name="publisherSelector">//*[local-name()='meta' and
+      (
+      (@name='dc.Publisher' and @content='IEEE') or 
+      (@name='citation_doi' and contains(@content,concat('10.1021','/')))
+      )
+    ]</xsl:variable>
+	-->
 	<xsl:template match="h:div[@id='global-notification']" priority="0.6"/>
  	<xsl:template match="h:div[@id='xplore-header']"/> 
   	<xsl:template match="h:div[@id='browse-by-topic']"/> 
@@ -41,7 +38,10 @@
 	<xsl:template match="h:div[@class='toc']"><!-- <p>TOC omitted</p>--></xsl:template>
 	<xsl:template match="h:div[@class='pure-u-1-4']"/>
 	<xsl:template match="h:div[@class='pure-g']"/>
+	<xsl:template match="h:div[@class='img-wrap']"/>
 	<xsl:template match="h:div[h:ul[@class='article-tools']]"/>
+  	<xsl:template match="h:div[contains(@class,'box-style-2')]" priority="-0.4"/> 
+
   	<xsl:template match="h:p[@class='JumpLink']"/> 
   	<xsl:template match="h:p[@class='links']"/> 
   	

@@ -6,7 +6,6 @@ import org.junit.Test;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
-import org.xmlcml.norma.pubstyle.hindawi.HindawiReader;
 
 public class URLReaderTest {
 

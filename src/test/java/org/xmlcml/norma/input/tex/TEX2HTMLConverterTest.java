@@ -12,10 +12,8 @@ import org.custommonkey.xmlunit.IgnoreTextAndAttributeValuesDifferenceListener;
 import org.custommonkey.xmlunit.XMLTestCase;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.xml.sax.SAXException;
-import org.xmlcml.cmine.misc.CMineUtil;
 import org.xmlcml.norma.NormaFixtures;
 
 public class TEX2HTMLConverterTest extends XMLTestCase {

@@ -8,16 +8,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.xmlcml.html.util.HtmlUtil;
+import org.xmlcml.xml.XMLUtil;
+
 import nu.xom.Attribute;
 import nu.xom.Builder;
 import nu.xom.Document;
 import nu.xom.Element;
 import nu.xom.XPathContext;
-
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.xmlcml.html.util.HtmlUtil;
-import org.xmlcml.xml.XMLUtil;
 
 /** reads a set of tag definitions and uses them to tag an Element and later search it.
  * 

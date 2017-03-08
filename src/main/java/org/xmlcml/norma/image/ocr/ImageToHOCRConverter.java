@@ -6,8 +6,8 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.misc.CMineUtil;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.util.CMineUtil;
 
 public class ImageToHOCRConverter {
 

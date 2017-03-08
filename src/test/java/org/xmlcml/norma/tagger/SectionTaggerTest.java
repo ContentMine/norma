@@ -2,9 +2,9 @@ package org.xmlcml.norma.tagger;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaArgProcessor;
+import org.xmlcml.norma.NormaFixtures;
 
 public class SectionTaggerTest {
 

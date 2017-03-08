@@ -7,14 +7,13 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import junit.framework.Assert;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.html.HtmlBody;
 import org.xmlcml.html.HtmlElement;
@@ -142,14 +141,15 @@ public class HOCRReaderTest {
 		if (cTreeTop.exists())FileUtils.forceDelete(cTreeTop);
 		FileUtils.copyDirectory(new File(IMAGES_DIR, "ijsem_003566"), cTreeTop);
 		CTree cTree = new CTree(cTreeTop);
-		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
-		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
+//		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png"));
+//		Assert.assertNotNull("image", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr"));
 		String args = "-q "+cTreeTop
 				+ " --transform hocr2svg"
 				+ " -i " + "image/ijs.0.003566-0-000.pbm.png.hocr"
 				+ " -o " + "image/ijs.0.003566-0-000.pbm.png.hocr.svg";
 		Norma norma = new Norma();
 		norma.run(args);
-		Assert.assertNotNull("svg", cTree.getExistingImageFile("ijs.0.003566-0-000.pbm.png.hocr.svg"));
+		File hocrSvg = new File(cTreeTop, "svg/ijs.0.003566-0-000.pbm.png.hocr.svg");
+		Assert.assertTrue(hocrSvg.exists());
 	}
 }

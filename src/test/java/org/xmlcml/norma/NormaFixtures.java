@@ -1,9 +1,17 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.files.CProject;
+import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.norma.pubstyle.util.XMLCleaner;
 
 public class NormaFixtures {
 	
@@ -11,6 +19,8 @@ public class NormaFixtures {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	public final static File EXAMPLES_DIR = new File("examples");
 	
 	public final static File MAIN_NORMA_DIR = new File("src/main/resources/org/xmlcml/norma/");
 	public final static File MAIN_STYLE_DIR = new File(NormaFixtures.MAIN_NORMA_DIR, "style");
@@ -25,6 +35,7 @@ public class NormaFixtures {
 	public final static File TEST_PUBSTYLE_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "pubstyle");
 	public final static File TEST_PATENTS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "patents");
 	public final static File TEST_SECTIONS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "sections");
+	public final static File TEST_TABLE_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "table");
 	public final static File TEST_TEX_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "tex");
 	
 	public final static File TEST_HINDAWI_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "hindawi");
@@ -69,7 +80,9 @@ public class NormaFixtures {
 	public final static File TEST_MISC_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "miscfiles/");
 	// edited copies of NLM-compliant XML files, numbered "nlm1.xml, etc"
 	public final static File TEST_NUMBERED_DIR = new File(NormaFixtures.TEST_MISC_DIR, "numbered/");
-	
+
+//	public static final File TEST_CROSSREF_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "crossref");
+
 	public final static File TEST_ELIFE_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "elife");
 	public final static File TEST_ELIFE_CTREE0 = new File(NormaFixtures.TEST_ELIFE_DIR, "e04407");
 	
@@ -92,5 +105,57 @@ public class NormaFixtures {
 	
 	public final static File TEST_PLOSONE_CTREE0 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884");
 	
+	public final static File TEST_PDFTABLE0_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable0/");
+	public final static File TEST_PDFTABLE_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "pdftable/");
+
+	public final static File TARGET_DIR = new File("target");
+	public final static File TARGET_PUBSTYLE_DIR = new File(TARGET_DIR, "pubstyle");
+
+	private static File shtmlFile;
 	
+	public static void copyToTargetRunHtmlTidy(File from, File to) {
+		CMineTestFixtures.cleanAndCopyDir(from, to);
+		String args = "--project "+to+" -i fulltext.html -o scholarly.html --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput();
+	}
+
+	public static void copyToTargetRunTidyTransformWithStylesheetSymbolRoot(File from, File projectDir, String abb) {
+		copyToTargetRunTidyTransformWithStylesheetSymbol(from, projectDir, abb+"2html");
+	}
+
+	public static void copyToTargetRunTidyTransformWithStylesheetSymbol(File from, File projectDir, String symbol) {
+		LOG.trace(projectDir+": tidy fulltext.html to fulltext.xhtml");
+		CMineTestFixtures.cleanAndCopyDir(from, projectDir);
+		String args = "--project "+projectDir+" -i fulltext.html -o fulltext.xhtml --html jsoup";
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
+		argProcessor.runAndOutput(); 
+		CProject project = new CProject(projectDir);
+		CTree ctree0 = project.getResetCTreeList().get(0);
+		File xhtmlFile = ctree0.getExistingFulltextXHTML();
+		if (xhtmlFile != null) {
+			Assert.assertTrue("xhtml: ", xhtmlFile.exists());
+			LOG.trace("convert xhtml to html Symbol: "+symbol);
+			args = "--project "+projectDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
+			argProcessor = new NormaArgProcessor(args); 
+			argProcessor.runAndOutput(); 
+			shtmlFile = ctree0.getExistingScholarlyHTML();
+			Assert.assertNotNull("failed convert using: "+symbol, shtmlFile);
+			Assert.assertTrue("shtml: ", shtmlFile.exists());
+		}
+	}
+	
+	public static void tidyTransformAndClean(File from, File projectDir, String abb) throws IOException {
+		copyToTargetRunTidyTransformWithStylesheetSymbolRoot(from, projectDir, abb);
+		XMLCleaner cleaner = XMLCleaner.createCleaner(shtmlFile);
+		cleaner.removeCommonEmptyElements();
+		String cleanedXml = cleaner.getElement().toXML();
+		File file = new File(projectDir, "cleaned.html");
+		FileUtils.write(file, cleanedXml);
+		cleaner.removeXMLNSNamespace();
+		FileUtils.write(new File(projectDir, "cleaned.xml"), cleaner.getElement().toXML());
+	}
+	
+	
+
 }

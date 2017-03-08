@@ -1,0 +1,144 @@
+.
+├── 10.1016_j.pain.2014.08.023
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table4
+│           ├── table.png
+│           └── table.svg
+├── 10.1016_j.pain.2014.09.020
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   ├── table.svg
+│       │   ├── table_1.png
+│       │   └── table_1.svg
+│       └── table4
+│           ├── table.png
+│           └── table.svg
+├── 10.1016_j.pain.2014.09.033
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table2
+│           ├── table.png
+│           └── table.svg
+├── 10.1080_00207454.2016.1185421
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table4
+│           ├── table.png
+│           └── table.svg
+├── 10.1080_00207454.2016.1194274
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table4
+│           ├── table.png
+│           └── table.svg
+├── 10.1179_1743132815Y.0000000036
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table4
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table5
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table6
+│           ├── table.png
+│           └── table.svg
+├── 10.1179_1743132815Y.0000000050
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table4
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table5
+│           ├── table.png
+│           └── table.svg
+├── 10.1186_s12916-014-0161-y
+│   ├── fulltext.pdf
+│   └── tables
+│       ├── table1
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table2
+│       │   ├── table.png
+│       │   ├── table.svg
+│       │   ├── table_1.png
+│       │   └── table_1.svg
+│       ├── table3
+│       │   ├── table.png
+│       │   ├── table.svg
+│       │   ├── table_1.png
+│       │   └── table_1.svg
+│       ├── table4
+│       │   ├── table.png
+│       │   ├── table.svg
+│       │   ├── table_1.png
+│       │   └── table_1.svg
+│       ├── table5
+│       │   ├── table.png
+│       │   └── table.svg
+│       ├── table6
+│       │   ├── table.png
+│       │   └── table.svg
+│       └── table7
+│           ├── table.png
+│           └── table.svg
+└── tree.txt
+
+52 directories, 89 files

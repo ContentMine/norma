@@ -1,0 +1,61 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.1001526"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.1001526#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.1001526&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.1001526&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0003&doi=10.1080%2F10412905.2014.1001526&downloadType=CSV"
+    ]
+  },
+  "title": {
+    "value": [
+      "Chemical composition, antioxidant and antimicrobial activity of Artemisia sieberi oils from different parts of Iran and France"
+    ]
+  },
+  "author": {
+    "value": [
+      "Mohaddese Mahboubi",
+      "Mahdi Valian",
+      "Nastaran Kazempour"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.1001526"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

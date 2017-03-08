@@ -1,0 +1,61 @@
+{
+  "fulltext_pdf": {
+    "value": [
+      "http://www.tandfonline.com/doi/pdf/10.1080/10412905.2014.889049"
+    ]
+  },
+  "fulltext_html": {
+    "value": [
+      "http://www.tandfonline.com/doi/full/10.1080/10412905.2014.889049#abstract"
+    ]
+  },
+  "csv1": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0001&doi=10.1080%2F10412905.2014.889049&downloadType=CSV"
+    ]
+  },
+  "csv2": {
+    "value": [
+      "http://www.tandfonline.com/action/downloadTable?id=T0002&doi=10.1080%2F10412905.2014.889049&downloadType=CSV"
+    ]
+  },
+  "csv3": {
+    "value": []
+  },
+  "title": {
+    "value": [
+      "Evaluation of essential plant oils for the control of Plasmopara viticola"
+    ]
+  },
+  "author": {
+    "value": [
+      "A. La Torre",
+      "C. Mandalà",
+      "L. Pezza",
+      "F. Caradonia",
+      "V. Battaglia"
+    ]
+  },
+  "date": {
+    "value": [
+      "research-article"
+    ]
+  },
+  "doi": {
+    "value": [
+      "http://dx.doi.org/10.1080/10412905.2014.889049"
+    ]
+  },
+  "volume": {
+    "value": []
+  },
+  "issue": {
+    "value": []
+  },
+  "firstpage": {
+    "value": []
+  },
+  "description": {
+    "value": []
+  }
+}

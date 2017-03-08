@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,17 +14,20 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cmine.args.ArgIterator;
-import org.xmlcml.cmine.args.ArgumentOption;
-import org.xmlcml.cmine.args.DefaultArgProcessor;
-import org.xmlcml.cmine.args.StringPair;
-import org.xmlcml.cmine.args.ValueElement;
-import org.xmlcml.cmine.args.VersionManager;
-import org.xmlcml.cmine.files.CTree;
+import org.xmlcml.cproject.args.ArgIterator;
+import org.xmlcml.cproject.args.ArgumentOption;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.args.StringPair;
+import org.xmlcml.cproject.args.ValueElement;
+import org.xmlcml.cproject.args.VersionManager;
+import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.html.HtmlElement;
+import org.xmlcml.html.HtmlTr;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
-import org.xmlcml.norma.tagger.SectionTagger;
+import org.xmlcml.norma.output.HtmlDisplay;
+import org.xmlcml.norma.tagger.SectionTaggerX;
+import org.xmlcml.xml.XMLUtil;
 
 /**
  * Processes commandline arguments.
@@ -55,6 +59,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// options
 	private List<StringPair> charPairList;
 	private List<String> divList;
+	private List<StringPair> movePairList;
+	private List<StringPair> renamePairList;
 	private List<StringPair> namePairList;
 	private Pubstyle pubstyle;
 	private List<String> stripList;
@@ -62,7 +68,12 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private List<String> xslNameList;
 	private boolean removeDTD;
 	private NormaTransformer normaTransformer;
-	private List<SectionTagger> sectionTaggerNameList;
+	private List<SectionTaggerX> sectionTaggerNameList;
+	private HtmlElement cleanedHtmlElement;
+	List<String> transformTokenList;
+	private List<String> relabelStrings;
+	private List<String> htmlDisplayFilters;
+	private HtmlDisplay htmlDisplay;
 
 	public NormaArgProcessor() {
 		super();
@@ -95,27 +106,36 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	// ============= METHODS =============
 
  	public void parseChars(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parseDivs(ArgumentOption option, ArgIterator argIterator) {
-		divList = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		divList = argIterator.getStrings(option);
 	}
 
 	public void parseHtml(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 		LOG.trace("HTML: "+tidyName);
 	}
 
+	public void parseHtmlDisplay(ArgumentOption option, ArgIterator argIterator) {
+		htmlDisplay = new HtmlDisplay(argIterator.getStrings(option));
+	}
+
+	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.getStrings(option);
+		movePairList = option.processArgs(tokens).getStringPairValues();
+	}
+
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
 
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 			Pubstyle.help();
@@ -125,14 +145,23 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		}
 	}
 
+	public void parseRelabelContent(ArgumentOption option, ArgIterator argIterator) {
+		relabelStrings = argIterator.getStrings(option);
+	}
+
+	public void parseRename(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.getStrings(option);
+		renamePairList = option.processArgs(tokens).getStringPairValues();
+	}
+
 	public void parseTag(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		sectionTaggerNameList = new ArrayList<SectionTagger>();
+		List<String> tokens = argIterator.getStrings(option);
+		sectionTaggerNameList = new ArrayList<SectionTaggerX>();
 		if (tokens.size() == 0) {
 			LOG.warn("parseTag requires list of taggers");
 		} else {
 			for (String token : tokens) {
-				SectionTagger sectionTagger = new SectionTagger(token);
+				SectionTaggerX sectionTagger = new SectionTaggerX(token);
 				sectionTaggerNameList.add(sectionTagger);
 			}
 		}
@@ -140,7 +169,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseStandalone(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		try {
 			removeDTD = tokens.size() == 1 ? new Boolean(tokens.get(0)) : false;
 		} catch (Exception e) {
@@ -149,7 +178,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseStrip(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
 		} else {
@@ -163,14 +192,15 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	}
 
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
-		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		List<String> tokenList = option.processArgs(tokens).getStringValues();
+//		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
+		List<String> tokens = argIterator.getStrings(option);
+		transformTokenList = option.processArgs(tokens).getStringValues();
 		getOrCreateNormaTransformer();
 		List<ValueElement> valueElements = option.getValueElements();
 		for (ValueElement valueElement : valueElements) {
 			LOG.trace("value "+valueElement.getName());
 		}
-		normaTransformer.parseTransform(this, tokenList);
+//		normaTransformer.parseTransform(transformTokenList.get(0));
 	}
 
 	/** deprecated // use transform instead
@@ -197,25 +227,158 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (currentCTree == null) {
 			LOG.warn("No current CTree");
 		} else {
-			LOG.trace("***run transform "+currentCTree);
+			LOG.trace("***run transform on tree "+currentCTree);
 			getOrCreateNormaTransformer();
-			ok = normaTransformer.transform(option);
-			if (!ok) {
-				currentCTree = null;
-			}
+			normaTransformer.setCurrentCTree(currentCTree);
+			String transformTypeString = option.getStringValue();
+			normaTransformer.clearVariables();
+			normaTransformer.runTransform(transformTypeString);
 		}
 	}
 
 	public void runHtml(ArgumentOption option) {
+		String cleanerType = option.getStringValue();
+		runHtmlCleaner(cleanerType);
+	}
+
+	public void runHtmlDisplay(ArgumentOption option) {
+		if (htmlDisplay != null && currentCTree != null) {
+			htmlDisplay.setCTree(currentCTree);
+			htmlDisplay.setOutput(output);
+			htmlDisplay.setFileFilterPattern(fileFilterPattern);
+			htmlDisplay.display();
+		}
+	}
+
+	void runHtmlCleaner(String cleanerType) {
 		LOG.trace("***run html "+currentCTree);
 		HtmlCleaner htmlCleaner = new HtmlCleaner(this);
-		HtmlElement htmlElement = htmlCleaner.cleanHTML2XHTML(option.getStringValue());
-		if (htmlElement == null) {
-			LOG.error("Cannot parse HTML");
+		cleanedHtmlElement = htmlCleaner.cleanHTML2XHTML(cleanerType);
+		if (cleanedHtmlElement == null) {
+			LOG.error("Cannot parse HTML in: "+currentCTree.getDirectory().getAbsolutePath());
 			return;
 		}
 		if (output != null) {
-			currentCTree.writeFile(htmlElement.toXML(), output);
+			currentCTree.writeFile(cleanedHtmlElement.toXML(), output);
+		}
+	}
+
+	public void runCopy(ArgumentOption option) {
+		LOG.trace("***run copy "+currentCTree);
+		try {
+			copyFile();
+		} catch (IOException e) {
+			throw new RuntimeException("cannot copy file", e);
+		}
+	}
+
+	public void runMove(ArgumentOption option) {
+		LOG.trace("***run move "+currentCTree.getDirectory());
+		moveFiles();
+	}
+
+	public void runRelabelContent(ArgumentOption option) {
+		if (currentCTree == null) {
+			LOG.warn("No current CTree");
+		}
+
+		LOG.trace("***run relabel "+currentCTree);
+		relabelContent();
+	}
+
+	public void runRename(ArgumentOption option) {
+		LOG.trace("***run rename "+currentCTree);
+		renameFiles();
+	}
+
+	private void moveFiles() {
+		if (movePairList == null) {
+			throw new RuntimeException("must give parseMove");
+		}
+		if (currentCTree == null) {
+			throw new RuntimeException("no current CTree");
+		}
+		for (StringPair movePair : movePairList) {
+			final String suffix = movePair.left;
+			String toDir = movePair.right;
+			File directory = currentCTree.getDirectory();
+			File to = new File(directory, toDir);
+			File[] files = directory.listFiles(new FilenameFilter() {
+				public boolean accept(File dir, String name) {
+					return suffix.equals(FilenameUtils.getExtension(name));
+				}
+			});
+			if (files != null) {
+				for (File file : files) {
+					try {
+						FileUtils.moveFileToDirectory(file, to, true);
+					} catch (IOException e) {
+						LOG.warn("cannot move file: "+file+"; "+e);
+					}
+				}
+			}
+		}
+	}
+
+	private void relabelContent() {
+		if (relabelStrings == null) {
+			throw new RuntimeException("must give parseRelabel");
+		}
+		for (String relabelFilename : relabelStrings) {
+			File relabelFile = new File(currentCTree.getDirectory(), relabelFilename);
+			if (relabelFile.exists()) {
+				String content = NormaUtil.getStringFromInputFile(relabelFile);
+				if (content != null) {
+					if (false) {
+					} else if (relabelFilename.equals(CTree.FULLTEXT_PDF) && !NormaUtil.isPDFContent(content)) {
+						if (NormaUtil.isHtmlContent(content)) {
+							relabelContent(relabelFile, content, CTree.FULLTEXT_HTML);
+						}
+					} else if (relabelFilename.equals(CTree.FULLTEXT_HTML) && !NormaUtil.isHtmlContent(content)) {
+						if (NormaUtil.isPDFContent(content)) {
+							relabelContent(relabelFile, content, CTree.FULLTEXT_PDF);
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	private boolean relabelContent(File oldFile, String content, String filenameType) {
+		File newFile = new File(oldFile.getParentFile(), filenameType);
+		try {
+			FileUtils.copyFile(oldFile, newFile, true);
+			FileUtils.forceDelete(oldFile);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot rename file: "+oldFile+" => "+newFile, e);
+		}
+		return false;
+	}
+
+	private void renameFiles() {
+		if (renamePairList == null) {
+			throw new RuntimeException("must give parseRename");
+		}
+		for (StringPair namePair : renamePairList) {
+			File from = new File(currentCTree.getDirectory(), namePair.left);
+			File to = new File(currentCTree.getDirectory(), namePair.right);
+			try {
+				FileUtils.copyFile(from, to, true);
+				FileUtils.forceDelete(from);
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot rename file: "+from+" => "+to, e);
+			}
+		}
+	}
+
+	private void copyFile() throws IOException {
+		if (namePairList == null) {
+			throw new RuntimeException("must give parseMove");
+		}
+		for (StringPair namePair : namePairList) {
+			File from = new File(currentCTree.getDirectory(), namePair.left);
+			File to = new File(currentCTree.getDirectory(), namePair.right);
+			FileUtils.copyFile(from, to);
 		}
 	}
 
@@ -271,25 +434,28 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 
 	public File checkAndGetInputFile(CTree cTree) {
+		File inputFile = null;
 		if (cTree == null) {
 			throw new RuntimeException("null cTree");
 		}
-		String inputName = getString();
+		String inputName = getSingleInputName();
 		if (inputName == null) {
 			throw new RuntimeException("Must have single input option");
 		}
-		if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
-			throw new RuntimeException("Input must be reserved file; found: "+inputName);
-		}
-		File inputFile = cTree.getExistingReservedFile(inputName);
-		if (inputFile == null) {
-			inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
-		}
-		if (inputFile == null) {
-			String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
-			TREE_LOG().error(msg);
-			System.err.print("!");
-//			throw new RuntimeException(msg);
+		if (inputName != null) {
+			if (!CTree.isReservedFilename(inputName) && !CTree.hasReservedParentDirectory(inputName) ) {
+				throw new RuntimeException("Input must be reserved file; found: "+inputName);
+			}
+			inputFile = cTree.getExistingReservedFile(inputName);
+			if (inputFile == null) {
+				inputFile = cTree.getExistingFileWithReservedParentDirectory(inputName);
+			}
+			if (inputFile == null) {
+				String msg = "Could not find input file "+inputName+" in directory "+cTree.getDirectory();
+				TREE_LOG().error(msg);
+				System.err.print("!");
+	//			throw new RuntimeException(msg);
+			}
 		}
 		return inputFile;
 	}
@@ -297,7 +463,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private void createCTreeListFromInputList() {
 		// proceed unless there is a single reserved file for input
 		if (CTree.isNonEmptyNonReservedInputList(inputList)) {
-			LOG.trace("CREATING CTree FROM INPUT:"+inputList);
+			LOG.debug("CREATING CTree FROM INPUT:"+inputList+"; FIX THIS, BAD STRATEGY");
 			// this actually creates directory
 			getOrCreateOutputDirectory();
 			ensureCTreeList();
@@ -360,9 +526,9 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	private void ensureReservedDirectoryAndCopyFile(CTree cTree, String reservedFilename, String filename) {
 		File reservedDir = new File(cTree.getDirectory(), reservedFilename);
-		LOG.trace("Res "+reservedDir.getAbsolutePath());
+		LOG.debug("Res "+reservedDir.getAbsolutePath());
 		File orig = new File(filename);
-		LOG.trace("Orig: "+orig.getAbsolutePath());
+		LOG.debug("Orig: "+orig.getAbsolutePath());
 		try {
 			FileUtils.forceMkdir(reservedDir);
 		} catch (IOException e) {
@@ -434,7 +600,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		return removeDTD;
 	}
 
-	public List<SectionTagger> getSectionTaggers() {
+	public List<SectionTaggerX> getSectionTaggers() {
 		return sectionTaggerNameList;
 	}
 
@@ -451,6 +617,14 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 
 	public CTree getCurrentCMTree() {
 		return currentCTree;
+	}
+
+	/** created by Tidy.
+	 * 
+	 * @return
+	 */
+	public HtmlElement getCleanedHtmlElement() {
+		return cleanedHtmlElement;
 	}
 
 }
