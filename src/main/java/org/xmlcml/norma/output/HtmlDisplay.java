@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -20,6 +21,8 @@ import org.xmlcml.html.HtmlTd;
 import org.xmlcml.html.HtmlTr;
 import org.xmlcml.xml.XMLUtil;
 
+import nu.xom.Element;
+
 /** creates HTML output for display
  * 
  * @author pm286
@@ -35,6 +38,7 @@ public class HtmlDisplay {
 	private String output;
 	private List<RegexPathFilter> displayFilters;
 	private CTree cTree;
+	private Pattern fileFilterPattern;
 
 	private HtmlDisplay() {
 	}
@@ -52,10 +56,13 @@ public class HtmlDisplay {
 			LOG.error("no output");
 			return null;
 		}
+		HtmlTr tr = createTrWithTdCellsForRegexFilters();
+		return tr;
+	}
+
+	private HtmlTr createTrWithTdCellsForRegexFilters() {
 		HtmlTr tr = new HtmlTr();
 		for (RegexPathFilter displayFilter : displayFilters) {
-//			LOG.debug("dir "+cTree.getDirectory());
-//			LOG.debug("filter "+displayFilter);
 			File[] files = Utils.getFilesWithFilter(cTree.getDirectory(), displayFilter);
 			File file = null;
 			if (files.length > 0) {
@@ -73,15 +80,14 @@ public class HtmlDisplay {
 		if (file == null) {
 			td.appendChild(new HtmlP("null file"));
 		} else if (filename.endsWith(".svg")) {
-			SVGElement svgElement = SVGElement.readAndCreateSVG(file);
+			SVGElement svgElement = createSVG(file);
 			td.appendChild(svgElement);
 		} else if (filename.endsWith(".png")) {
 			HtmlImg img = createHtmlImg(file);
 			td.appendChild(img);
 		} else if (filename.endsWith(".html")) {
-			HtmlElement htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(file).getRootElement());
-//			LOG.debug("HTML "+htmlElement.toXML());
-			td.appendChild(htmlElement);
+			HtmlElement htmlElement = createHtml(file);
+			if (htmlElement != null) td.appendChild(htmlElement);
 		} else {
 			td.appendChild(new HtmlP("unknown"));
 		}
@@ -89,6 +95,29 @@ public class HtmlDisplay {
 		String relativeToHome = file == null ? " null" : Util.getRelativeFilename(new File("."), file, File.separator);
 		td.appendChild(new HtmlP(relativeToHome));
 		return td;
+	}
+
+	private HtmlElement createHtml(File file) {
+		HtmlElement htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(file).getRootElement());
+		List<HtmlTable> tables = HtmlTable.extractSelfAndDescendantTables(htmlElement);
+		if (tables.size() == 1) {
+			htmlElement = tables.get(0);
+			htmlElement.detach();
+			return htmlElement;
+		} else {
+			return new HtmlP("no single table");
+		}
+	}
+
+	private SVGElement createSVG(File file) {
+		SVGElement svgElement = SVGElement.readAndCreateSVG(file);
+		// remove sodipodi inkscape //		<sodipodi:namedview
+		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='namedview']");
+		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='metadata']");
+		// remove defs/clipPath
+		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='defs']/*[local-name()='clipPath']");
+		
+		return svgElement;
 	}
 
 	private HtmlImg createHtmlImg(File file) {
@@ -113,19 +142,25 @@ public class HtmlDisplay {
 		this.cTree = currentCTree;
 	}
 
+	public void setFileFilterPattern(Pattern fileFilterPattern) {
+		this.fileFilterPattern = fileFilterPattern;
+	}
+	
 	public void display() {
 		if (output != null) {
 			HtmlTable table = new HtmlTable();
 			HtmlTr tr = createHtmlTr();
 			table.appendChild(tr);
 			try {
+				LOG.debug(fileFilterPattern);
+				File directory = cTree.getDirectory();
 				File outputFile = new File(cTree.getDirectory(), this.output);
-				LOG.debug("output to "+outputFile.getAbsolutePath());
+				LOG.debug("output to "+outputFile.getAbsolutePath()+"\n"+directory);
 				XMLUtil.debug(table, outputFile, 1);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+output, e);
 			}
 		}
 	}
-	
+
 }

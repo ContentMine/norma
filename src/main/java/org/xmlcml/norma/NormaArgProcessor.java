@@ -245,6 +245,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		if (htmlDisplay != null && currentCTree != null) {
 			htmlDisplay.setCTree(currentCTree);
 			htmlDisplay.setOutput(output);
+			htmlDisplay.setFileFilterPattern(fileFilterPattern);
 			htmlDisplay.display();
 		}
 	}
