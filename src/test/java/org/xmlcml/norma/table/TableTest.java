@@ -100,13 +100,13 @@ public class TableTest {
 				+ " --outputDir "+"target/pdftable01/"
 				+ " --transform svgtable2html");
 		String cmd = "--project "+targetDir+
-				" --fileFilter ^.*tables/table\\d+/$"
-				+ " --output  ^.*tables/table\\d+/table.html"
+				" --fileFilter ^.*tables/table\\d+$"
+				+ " --output  ./tableRow.html"
 				+ " --htmlDisplay"
-				+ " ^.*tables/table\\d+/table.png"
+				+ " ^.*/table.png"
 //				+ " ^.*tables/table\\d+/table.annot.svg"
 //				+ " ^.*tables/table\\d+/table.svg"
-				+ " ^.*tables/table\\d+/table.svg.html";
+				+ " ^.*/table.svg.html";
 		new Norma().run(cmd);
 		
 	}
