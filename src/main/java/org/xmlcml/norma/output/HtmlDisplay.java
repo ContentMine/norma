@@ -39,13 +39,13 @@ public class HtmlDisplay {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private String output;
+	protected String output;
 	private List<RegexPathFilter> displayFilters;
-	private CTree cTree;
-	private Pattern fileFilterPattern;
+	protected CTree cTree;
+	protected Pattern fileFilterPattern;
 	private File currentDirectory;
 
-	private HtmlDisplay() {
+	public HtmlDisplay() {
 	}
 
 	public HtmlDisplay(List<String> displayFilterStrings) {
@@ -174,10 +174,13 @@ public class HtmlDisplay {
 		return img;
 	}
 
-	private void createDisplayFilters(List<String> displayFilterStrings) {
+	protected void createDisplayFilters(List<String> displayFilterStrings) {
 		displayFilters = new ArrayList<RegexPathFilter>();
 		for (String displayFilterString : displayFilterStrings) {
 			displayFilters.add(new RegexPathFilter(displayFilterString));
+		}
+		if (displayFilterStrings.size() == 1) {
+			fileFilterPattern = Pattern.compile(displayFilterStrings.get(0));
 		}
 	}
 

@@ -47,12 +47,9 @@ td.body {
 	background-color: #ddf;
 	padding: 1px;
 }
-
-		
-}
 </style>
 <script>
-function openTable(evt, tableName) {
+function openTab(evt, tableName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -79,13 +76,13 @@ function openTable(evt, tableName) {
 
 <h1>10.1016_j.pain.2014.08.023</h1>
  <div class="tab">
-  <button class="tablinks" onclick="openTable(event, 'table1')">Table1</button>
-  <button class="tablinks" onclick="openTable(event, 'table2')">Table2</button>
-  <button class="tablinks" onclick="openTable(event, 'table3')">Table3</button>
-  <button class="tablinks" onclick="openTable(event, 'table4')">Table4</button>
+  <button class="tablinks" onclick="openTab(event, 'table1')">Table1</button>
+  <button class="tablinks" onclick="openTab(event, 'table2')">Table2</button>
+  <button class="tablinks" onclick="openTab(event, 'table3')">Table3</button>
+  <button class="tablinks" onclick="openTab(event, 'table4')">Table4</button>
 </div>
 
-<div id="table1" class="tabcontent">
+<div id="table1" class="tabcontent" title="Table 1">
 <table xmlns="http://www.w3.org/1999/xhtml">
  <tr>
   <td>

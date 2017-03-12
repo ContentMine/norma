@@ -11,6 +11,8 @@ public class Norma {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	public final static String NORMA_RESOURCE_BASE = "/org/xmlcml/norma";
+	public final static String NORMA_OUTPUT_RESOURCE = NORMA_RESOURCE_BASE+"/output";
 	private DefaultArgProcessor argProcessor;
 
 	public static void main(String[] args) {

@@ -72,7 +72,7 @@ public class JATSFactory {
 		htmlElement = HtmlHtml.createUTF8Html();
 		htmlElement.appendChild(createHead());
 		Element bodyContent = create(element);
-		htmlElement.ensureBody().appendChild(bodyContent);
+		htmlElement.getOrCreateBody().appendChild(bodyContent);
 		return htmlElement;
 		
 		

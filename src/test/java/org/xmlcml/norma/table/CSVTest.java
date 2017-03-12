@@ -29,7 +29,7 @@ public class CSVTest {
 		csvTransformer.readFile(new File(NormaFixtures.TEST_TABLE_DIR, "table.csv"));
 		HtmlTable table = csvTransformer.createTable();
 		HtmlHtml html = HtmlHtml.createUTF8Html();
-		html.ensureBody().appendChild(table);
+		html.getOrCreateBody().appendChild(table);
 		XMLUtil.debug(html, new File("target/table/table.html"), 1);
 	}
 

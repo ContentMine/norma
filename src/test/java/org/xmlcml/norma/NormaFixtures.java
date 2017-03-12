@@ -32,6 +32,7 @@ public class NormaFixtures {
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
 	public final static File TEST_JSON_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "json");
 	public final static File TEST_BIBLIO_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "biblio");
+	public final static File TEST_OUTPUT_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "output");
 	public final static File TEST_PUBSTYLE_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "pubstyle");
 	public final static File TEST_PATENTS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "patents");
 	public final static File TEST_SECTIONS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "sections");
