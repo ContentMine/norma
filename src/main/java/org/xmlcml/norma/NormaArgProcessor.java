@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
@@ -22,6 +23,7 @@ import org.xmlcml.cproject.args.StringPair;
 import org.xmlcml.cproject.args.ValueElement;
 import org.xmlcml.cproject.args.VersionManager;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.RegexPathFilter;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
@@ -76,6 +78,7 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private HtmlDisplay htmlDisplay;
 	private List<String> htmlAggregatorFilters;
 	private HtmlAggregate htmlAggregate;
+	private String outputFileRegex;
 
 	public NormaArgProcessor() {
 		super();
@@ -138,6 +141,10 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.getStrings(option);
 		movePairList = option.processArgs(tokens).getStringPairValues();
+	}
+
+	public void parseMove2(ArgumentOption option, ArgIterator argIterator) {
+		outputFileRegex = argIterator.getString(option);
 	}
 
 	public void parseNames(ArgumentOption option, ArgIterator argIterator) {
@@ -298,6 +305,13 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		moveFiles();
 	}
 
+	public void runMove2(ArgumentOption option) {
+		if (fileFilterPattern == null) {
+			throw new RuntimeException("move2 must have --fileFilter");
+		}
+		moveFiles2();
+	}
+
 	public void runRelabelContent(ArgumentOption option) {
 		if (currentCTree == null) {
 			LOG.warn("No current CTree");
@@ -339,6 +353,62 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 				}
 			}
 		}
+	}
+	
+	private void moveFiles2()  {
+		Pattern matchField = Pattern.compile("\\(\\\\\\d+\\)");
+		if (currentCTree == null) {
+			throw new RuntimeException("no current CTree");
+		}
+		List<File> files = new RegexPathFilter(fileFilterPattern).listNonDirectoriesRecursively(currentCTree.getDirectory());
+		for (File file : files) {
+			String inputPath;
+			try {
+				inputPath = file.getCanonicalPath();
+			} catch (IOException e) {
+				throw new RuntimeException("cannot canonicalize "+file, e);
+			}
+			Matcher inputMatcher = fileFilterPattern.matcher(inputPath);
+			if (!inputMatcher.matches()) {
+				throw new RuntimeException("BUG: "+fileFilterPattern+ "  should match "+inputPath);
+			}
+			String newFileName = replaceMatchingGroups(matchField, inputPath, inputMatcher, outputFileRegex);
+			File newFile = new File(currentCTree.getDirectory(), newFileName);
+			LOG.debug(file+" ==> "+newFile);
+			if (!newFile.exists()) {
+				try {
+					FileUtils.moveFile(file, newFile);
+				} catch (IOException e) {
+					throw new RuntimeException("cannot moveFile "+file, e);
+				}
+			} else {
+				LOG.debug("skipped: "+file);
+			}
+		}
+	}
+
+	private String replaceMatchingGroups(Pattern matchField, String inputPath, Matcher inputMatcher, String template) {
+		int idx = 0;
+		StringBuilder sb = new StringBuilder();
+		Matcher fieldMatcher = matchField.matcher(template);
+		LOG.trace(inputPath+"; "+fileFilterPattern+"; "+template);
+		while (fieldMatcher.find(idx)) {
+			int start = fieldMatcher.start();
+			String chunk = template.substring(idx, start);
+			LOG.trace("chunk "+chunk);
+			sb.append(chunk);
+			int end = fieldMatcher.end();
+			String groupS = template.substring(start + 2, end - 1);
+			LOG.trace("group "+groupS);
+			Integer group = Integer.parseInt(groupS);
+			if (group > inputMatcher.groupCount()) {
+				throw new RuntimeException("bad group match; cannot find "+groupS+" in "+inputPath);
+			}
+			sb.append(inputMatcher.group(group));
+			idx = end;
+		}
+		sb.append(template.substring(idx));
+		return sb.toString();
 	}
 
 	private void relabelContent() {

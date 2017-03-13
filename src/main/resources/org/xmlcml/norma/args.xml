@@ -107,6 +107,30 @@ NOT YET FULLY IMPLEMENTED.
 	</arg>
 
 	<arg 
+	    name="move2" 
+	    long="--move2" 
+	    args=" [new path]"
+		class="java.lang.String" 
+		countRange="{1,1}"
+		parseMethod="parseMove2"
+		runMethod="runMove2">
+		<help>
+		REPLACES the old "move" command.
+		Requires a -fileFilter to create the input. This will probably have capture groups
+		These files are renamed on a 1:1 basis 
+		Example:
+		norma --cproject foo --fileFilter .*foo/bar(\d+)/plugh(A|B).xml --move2 boof(\2)/bliff(\1)/splugh.txt
+		would move
+		ctree/foo/bar3/plughB.xml
+		to
+		ctree/boofB/bliff3/splugh.txt
+		
+		All regexes must be capture groups mapped to output counting from 1. 
+			
+		</help>
+	</arg>
+
+	<arg 
 	    name="move" 
 	    long="--move" 
 	    args=" glob directory"
@@ -115,7 +139,8 @@ NOT YET FULLY IMPLEMENTED.
 		parseMethod="parseMove"
 		runMethod="runMove">
 		<help>
-			NOT YET IMPLEMENTED
+			NOT YET FULLY IMPLEMENTED
+			NOTE complemented by new "move" command
 			moves files of type glob to directory (subdirectory of CTree), creating it if necessary
 			at the moment globbing only on file suffixes as we need to protect the metacharacters
 			from the shell.
