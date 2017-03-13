@@ -1,1 +1,6 @@
 language: java
+before_install:
+  - git clone https://github.com/contentmine/cproject.git
+  - cd cproject
+  - mvn clean install
+  - cd ../
