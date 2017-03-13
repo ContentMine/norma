@@ -33,13 +33,17 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
-/* td */
+/* th */
 th {
 	background-color: #fdd;
 }
 
 /* td */
-td.body {
+td.cell {
 	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
 	padding: 1px;
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
@@ -44,13 +45,13 @@ public class HtmlAggregate extends HtmlDisplay {
 	public void display() {
 		if (output != null) {
 			List<File> files = new RegexPathFilter(fileFilterPattern).listNonDirectoriesRecursively(cTree.getDirectory());
-			LOG.debug("files: "+files.size() + " "+cTree.getDirectory()+"; "+fileFilterPattern);
-			HtmlTabbedButtonDisplay htmlButtonDisplay = new HtmlTabbedButtonDisplay(files);
+			File outputFile = new File(cTree.getDirectory(), this.output);
+			LOG.debug("files: "+files.size() + " "+cTree.getDirectory()+"; "+fileFilterPattern+"; "+outputFile);
+			HtmlTabbedButtonDisplay htmlButtonDisplay = new HtmlTabbedButtonDisplay(cTree.getDirectory().getName(), files, outputFile.getParentFile());
+			String htmlText = new HtmlTextifier().textify(htmlButtonDisplay);
 			try {
-				File outputFile = new File(cTree.getDirectory(), this.output);
-				LOG.debug("output to "+outputFile.getAbsolutePath());
-//				XMLUtil.debug(htmlButtonDisplay, outputFile, 1);
-				XMLUtil.debug(htmlButtonDisplay, outputFile, 0);
+				LOG.trace("output to "+outputFile.getAbsolutePath());
+				FileUtils.writeStringToFile(outputFile, htmlText);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+output, e);
 			}

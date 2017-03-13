@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.euclid.Util;
 import org.xmlcml.html.HtmlDiv;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlH1;
@@ -15,11 +16,10 @@ import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlScript;
 import org.xmlcml.html.HtmlStyle;
 import org.xmlcml.norma.Norma;
-import org.xmlcml.xml.CDataFactory;
 import org.xmlcml.xml.XMLUtil;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
-import nu.xom.Text;
 
 /** creates a tabbed display for multiple HTML files using buttons
  * 
@@ -72,8 +72,6 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-//	public final static HtmlScript BUTTON_SCRIPT = new HtmlScript(); 
-//	public final static HtmlStyle BUTTON_STYLE = new HtmlStyle(); 
 	
 //	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css.xml"; 
 //	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js.xml";
@@ -104,9 +102,9 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		String buttonScriptContent = readStringContent(resource);
 		if (buttonScriptContent != null) {
 			htmlScript = new HtmlScript();
-		//			Text text = CDataFactory.makeCDATASection(buttonScriptContent);
-		//	htmlScript.appendChild(text);
-			htmlScript.appendChild(buttonScriptContent);
+//			htmlScript.appendChild(buttonScriptContent);
+			htmlScript.setSrc(resource); // this will be a placeholder
+			htmlScript.setType(HtmlScript.TEXT_JAVASCRIPT);
 		}
 		return htmlScript;
 	}
@@ -133,6 +131,7 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 	}
 	
 	private String title;
+	private File parentFile;
 	
 	public HtmlTabbedButtonDisplay() {
 		
@@ -146,7 +145,9 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 	 * 
 	 * @param htmlFiles
 	 */
-	public HtmlTabbedButtonDisplay(List<File> htmlFiles) {
+	public HtmlTabbedButtonDisplay(String title, List<File> htmlFiles, File parentFile) {
+		this.title = title;
+		this.parentFile = parentFile;
 		createButtonsFromHtmlFiles(htmlFiles);
 	}
 
@@ -157,9 +158,9 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 	public void createButtonsFromHtmlFiles(List<File> files) {
 		getOrCreateH1Title();
 		getOrCreateScript();
-		LOG.debug("SCRIPT "+this.getOrCreateHead().getOrCreateScript().toXML());
+//		LOG.debug("SCRIPT "+this.getOrCreateHead().getOrCreateScript().toXML());
 		getOrCreateStyle();
-		LOG.debug("STYLE "+this.getOrCreateHead().getOrCreateHtmlStyle().toXML());
+//		LOG.debug("STYLE "+this.getOrCreateHead().getOrCreateHtmlStyle().toXML());
 		HtmlDiv tabDiv = getTabDiv();
 		if (tabDiv == null) {
 			tabDiv = getOrCreateTabDiv();
@@ -171,7 +172,9 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			getOrCreateBody().appendChild(contentDiv);
 		}
 		for (File file : files) {
+			String relative = Util.getRelativeFilename(parentFile, file.getParentFile(), null);
 			HtmlElement htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(file).getRootElement());
+			offsetImgSrcPaths(htmlElement, relative);
 			HtmlTabbedButton htmlButtonTab = HtmlTabbedButton.createButtonFromHtmlFile(file, htmlElement);
 			if (htmlButtonTab != null) {
 				tabDiv.appendChild(htmlButtonTab);
@@ -185,6 +188,21 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			}
 			contentDiv.appendChild(contentElement);
 		}
+	}
+
+	/** horrible kludge when aggregated compaonents are at the wrong level. Maybe later record actual files hierachies
+	 * 
+	 * @param relative
+	 */
+	private void offsetImgSrcPaths(HtmlElement htmlElement, String relative) {
+		List<Element> elements = XMLUtil.getQueryElements(htmlElement, ".//*[@src]");
+		for (Element element : elements) {
+			Attribute srcAttribute = element.getAttribute("src");
+			String attValue = srcAttribute.getValue();
+			attValue = relative+"/"+attValue;
+			srcAttribute.setValue(attValue);
+		}
+		
 	}
 
 	public HtmlElement getOrCreateH1Title() {
