@@ -49,7 +49,8 @@ public class HtmlAggregate extends HtmlDisplay {
 			try {
 				File outputFile = new File(cTree.getDirectory(), this.output);
 				LOG.debug("output to "+outputFile.getAbsolutePath());
-				XMLUtil.debug(htmlButtonDisplay, outputFile, 1);
+//				XMLUtil.debug(htmlButtonDisplay, outputFile, 1);
+				XMLUtil.debug(htmlButtonDisplay, outputFile, 0);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+output, e);
 			}

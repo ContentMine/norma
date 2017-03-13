@@ -15,9 +15,11 @@ import org.xmlcml.html.HtmlHtml;
 import org.xmlcml.html.HtmlScript;
 import org.xmlcml.html.HtmlStyle;
 import org.xmlcml.norma.Norma;
+import org.xmlcml.xml.CDataFactory;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;
+import nu.xom.Text;
 
 /** creates a tabbed display for multiple HTML files using buttons
  * 
@@ -73,6 +75,8 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 //	public final static HtmlScript BUTTON_SCRIPT = new HtmlScript(); 
 //	public final static HtmlStyle BUTTON_STYLE = new HtmlStyle(); 
 	
+//	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css.xml"; 
+//	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js.xml";
 	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css"; 
 	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js";
 	
@@ -89,12 +93,20 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		return htmlStyle;
 	}
 
+	private static HtmlElement readHtmlElement(String resource) {
+		Element element = readXMLContent(resource);
+		HtmlElement htmlElement = HtmlElement.create(element);
+		return htmlElement;
+	}
+
 	private static HtmlScript readButtonScript(String resource) {
 		HtmlScript htmlScript = null;
 		String buttonScriptContent = readStringContent(resource);
 		if (buttonScriptContent != null) {
 			htmlScript = new HtmlScript();
-			htmlScript.setContent(buttonScriptContent);
+		//			Text text = CDataFactory.makeCDATASection(buttonScriptContent);
+		//	htmlScript.appendChild(text);
+			htmlScript.appendChild(buttonScriptContent);
 		}
 		return htmlScript;
 	}
@@ -115,8 +127,8 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 	
 	private static Element readXMLContent(String resource) {
 		Element xmlContent = null;
-		InputStream buttonStyleStream = HtmlTabbedButtonDisplay.class.getResourceAsStream(resource);
-		xmlContent = XMLUtil.parseQuietlyToDocument(buttonStyleStream).getRootElement();
+		InputStream stream = HtmlTabbedButtonDisplay.class.getResourceAsStream(resource);
+		xmlContent = XMLUtil.parseQuietlyToDocument(stream).getRootElement();
 		return xmlContent;
 	}
 	
@@ -145,7 +157,9 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 	public void createButtonsFromHtmlFiles(List<File> files) {
 		getOrCreateH1Title();
 		getOrCreateScript();
+		LOG.debug("SCRIPT "+this.getOrCreateHead().getOrCreateScript().toXML());
 		getOrCreateStyle();
+		LOG.debug("STYLE "+this.getOrCreateHead().getOrCreateHtmlStyle().toXML());
 		HtmlDiv tabDiv = getTabDiv();
 		if (tabDiv == null) {
 			tabDiv = getOrCreateTabDiv();
@@ -165,10 +179,11 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			
 			List<Element> tabElements = XMLUtil.getQueryElements(
 					htmlElement, "//*[@class='"+HtmlTabbedButton.TABCONTENT+"']");
-			HtmlElement contentElement = tabElements == null ? null : (HtmlElement) tabElements.get(0);
-			if (contentElement != null) {
-				contentDiv.appendChild(contentElement);
+			HtmlElement contentElement = tabElements == null || tabElements.size() == 0 ? null : (HtmlElement) tabElements.get(0);
+			if (contentElement == null) {
+				contentElement = htmlElement;
 			}
+			contentDiv.appendChild(contentElement);
 		}
 	}
 
@@ -224,10 +239,11 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		if (element != null) {
 			script = (HtmlScript) HtmlElement.create(element);
 		} else {
+//			HtmlScript buttonScript = (HtmlScript) readHtmlElement(BUTTON_SCRIPT_RESOURCE);
 			HtmlScript buttonScript = readButtonScript(BUTTON_SCRIPT_RESOURCE);
 			LOG.debug(buttonScript.getValue());
 			getOrCreateHead().appendChild(buttonScript);
-			LOG.debug("BUTT"+getOrCreateHead().getOrCreateScript().getValue());
+			LOG.debug("BUTTON "+getOrCreateHead().getOrCreateScript().getValue());
 			
 		}
 		return script;
@@ -243,6 +259,8 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			style = (HtmlStyle) HtmlElement.create(element);
 		} else {
 			HtmlStyle buttonStyle = readButtonStyle(BUTTON_STYLE_RESOURCE);
+//			HtmlStyle buttonStyle = (HtmlStyle) readHtmlElement(BUTTON_STYLE_RESOURCE);
+			LOG.debug("STYLE "+buttonStyle.toXML());
 			getOrCreateHead().appendChild(buttonStyle);
 		}
 		return style;

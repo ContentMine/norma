@@ -90,15 +90,21 @@ public class TableTest {
 	
 	@Test
 	/** aggregate into HTML display
-	 * 
+	 * (a) creates table.svg.html from table.svg
+	 * (b) iterates over all (table.svg and table.svg.html) pairs to create a combined table
+	 *   with both
 	 */
 	public void testHtmlDisplay() {
+		boolean clean = false;
 		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
 		File targetDir = new File("target/pdftable1/");
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+		LOG.debug("Target: "+targetDir);
+		if (clean) {
+			CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+			new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
 				+ " --outputDir "+"target/pdftable01/"
 				+ " --transform svgtable2html");
+		}
 		String cmd = "--project "+targetDir+
 				" --fileFilter ^.*tables/table\\d+$"
 				+ " --output  ./tableRow.html"
@@ -109,6 +115,37 @@ public class TableTest {
 				+ " ^.*/table.svg.html";
 		new Norma().run(cmd);
 		
+	}
+	
+	@Test
+	/** aggregate into TabbedButton display
+	 * 
+	 */
+	public void testHtmlAggregate() {
+		boolean clean = false;
+		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
+		File targetDir = new File("target/pdftable1/");
+		if (clean) {
+			CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+			/** make the *.svg.html as we have cleaned the directory */
+			new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+					+ " --outputDir "+"target/pdftable01/"
+					+ " --transform svgtable2html");
+		}
+		String cmd = "--project "+targetDir+
+				" --fileFilter ^.*tables/table\\d+$"
+				+ " --output  ./tableRow.html"
+				+ " --htmlDisplay"
+				+ " ^.*/table.png"
+//				+ " ^.*tables/table\\d+/table.annot.svg"
+//				+ " ^.*tables/table\\d+/table.svg"
+				+ " ^.*/table.svg.html";
+		
+		new Norma().run(cmd);
+		cmd = "--project "+targetDir
+				+ " --output  tables/tableView.html"
+				+ " --htmlAggregate ^.*tables/table\\d+/tableRow.html";
+		new Norma().run(cmd);
 	}
 	
 	

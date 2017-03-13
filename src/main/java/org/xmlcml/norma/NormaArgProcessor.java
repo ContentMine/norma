@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
@@ -22,12 +23,11 @@ import org.xmlcml.cproject.args.ValueElement;
 import org.xmlcml.cproject.args.VersionManager;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlTr;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
+import org.xmlcml.norma.output.HtmlAggregate;
 import org.xmlcml.norma.output.HtmlDisplay;
 import org.xmlcml.norma.tagger.SectionTaggerX;
-import org.xmlcml.xml.XMLUtil;
 
 /**
  * Processes commandline arguments.
@@ -74,6 +74,8 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 	private List<String> relabelStrings;
 	private List<String> htmlDisplayFilters;
 	private HtmlDisplay htmlDisplay;
+	private List<String> htmlAggregatorFilters;
+	private HtmlAggregate htmlAggregate;
 
 	public NormaArgProcessor() {
 		super();
@@ -118,6 +120,15 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		List<String> tokens = argIterator.getStrings(option);
 		tidyName = option.processArgs(tokens).getStringValue();
 		LOG.trace("HTML: "+tidyName);
+	}
+
+	public void parseHtmlAggregate(ArgumentOption option, ArgIterator argIterator) {
+		htmlAggregatorFilters = argIterator.getStrings(option);
+		htmlAggregate = new HtmlAggregate(htmlAggregatorFilters);
+		if (htmlAggregatorFilters.size() == 1) {
+			fileFilterPattern = Pattern.compile(htmlAggregatorFilters.get(0));
+			htmlAggregate.setFileFilterPattern(fileFilterPattern);
+		}
 	}
 
 	public void parseHtmlDisplay(ArgumentOption option, ArgIterator argIterator) {
@@ -241,7 +252,17 @@ public class NormaArgProcessor extends DefaultArgProcessor {
 		runHtmlCleaner(cleanerType);
 	}
 
+	public void runHtmlAggregate(ArgumentOption option) {
+		LOG.debug("Aggregate----");
+		if (htmlAggregate != null && currentCTree != null) {
+			htmlAggregate.setCTree(currentCTree);
+			htmlAggregate.setOutput(output);
+			htmlAggregate.display();
+		}
+	}
+
 	public void runHtmlDisplay(ArgumentOption option) {
+		LOG.debug("Display----");
 		if (htmlDisplay != null && currentCTree != null) {
 			htmlDisplay.setCTree(currentCTree);
 			htmlDisplay.setOutput(output);

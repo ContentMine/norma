@@ -76,6 +76,21 @@
 		</help>
 	</arg>
 
+	<arg name="htmlAggregate" long="--htmlAggregate" args="[fileFilter [...fileFilter]]"
+		countRange="{1,*}" parseMethod="parseHtmlAggregate" runMethod="runHtmlAggregate">
+		<help>
+		aggregates the results of fileFilter into a buttonedDisplay.
+typical command:
+<pre>
+norma --project foo --fileFilter subdirFilter --htmlDisplay filter1 filter2 ... --output tableView.html		
+</pre>
+this will iterate over the CTrees down to level subdirFilter, then apply the display filters (normally only one) to collect 
+a bundle of files and then display them in a ButtonTab display.
+
+NOT YET FULLY IMPLEMENTED.
+		</help>
+	</arg>
+
 	<arg name="htmlDisplay" long="--htmlDisplay" args="[fileFilter [...fileFilter]]"
 		countRange="{1,*}" parseMethod="parseHtmlDisplay" runMethod="runHtmlDisplay">
 		<help>

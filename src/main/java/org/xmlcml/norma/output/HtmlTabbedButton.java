@@ -65,14 +65,18 @@ public class HtmlTabbedButton extends HtmlButton {
 	public static HtmlTabbedButton createButtonFromHtmlFile(File file, HtmlElement htmlElement) {
 		LOG.debug("file "+file.getAbsolutePath());
 		HtmlTabbedButton buttonTab = HtmlTabbedButton.createButtonFromHtmlElement(htmlElement);
-		buttonTab.createFromFile(file);
+		if (buttonTab == null) {
+			LOG.error("Cannot create buttonTab");
+		} else {
+			buttonTab.createFromFile(file);
+		}
 		return buttonTab;
 	}
 
 	private void createFromFile(File file) {
 		this.file = file;
 		this.setClassAttribute(TABLINKS);
-		this.setOnClick("openTab(event, '"+this.getIdRef()+"', '" + TABCONTENT + "', '"+TABLINKS+"')");
+		this.setOnClick("openTab(event, '"+this.getIdRef()+"', '" + TABCONTENT + "'"/*, '"+TABLINKS+"'*/+")");
 		this.setContent(this.getTitle());
 
 	}

@@ -60,10 +60,14 @@ public class HtmlDisplay {
 			List<File> files = new RegexPathFilter(fileFilterPattern).listDirectoriesRecursively(cTree.getDirectory());
 			LOG.debug("files: "+files.size() + " "+cTree.getDirectory()+"; "+fileFilterPattern);
 			for (File file : files) {
+				String title = getTitleFromFile(file);
 				currentDirectory = file;
 				HtmlTable table = new HtmlTable();
-				HtmlTr tr = createHtmlTr();
+				HtmlTr tr = createRowOfAggregatedHtmlFiles();
 				table.appendChild(tr);
+				table.setTitle(title);
+				table.setId(title);
+				table.setClassAttribute(HtmlTabbedButton.TABCONTENT);
 				try {
 					File outputFile = new File(file, this.output);
 					LOG.debug("output to "+outputFile.getAbsolutePath());
@@ -75,7 +79,13 @@ public class HtmlDisplay {
 		}
 	}
 
-	public HtmlTr createHtmlTr() {
+	private String getTitleFromFile(File file) {
+		String title = file.getName();
+		LOG.debug("getting title as: "+title);
+		return title;
+	}
+
+	public HtmlTr createRowOfAggregatedHtmlFiles() {
 		if (cTree == null) {
 			LOG.error("no CTree");
 			return null;
