@@ -280,7 +280,7 @@ public class PlantCollection {
 [N a m e _ s u b m i t t e d ,  N a m e _ m a t c h e d ,  A u t h o r _ m a t c h e d ,  O v e r a l l _ s c o r e ,  T a x o n o m i c _ s t a t u s ,  A c c e p t e d _ n a m e ,  A c c e p t e d _ a u t h o r ,  A c c e p t e d _ f a m i l y ,  S o u r c e ,  W a r n i n g s ,  A c c e p t e d _ n a m e _ l s i d ]
       0               1               2              3                4               5               6                7            8        9           10
 		 */
-		RectangularTable table = RectangularTable.readTable(new StringReader(s), useHeader, CSVFormat.TDF);
+		RectangularTable table = RectangularTable.readCSVTable(new StringReader(s), useHeader, CSVFormat.TDF);
 		List<String> submittedNames = table.getColumn("Name_submitted");
 		List<String> matchedNames = table.getColumn("Name_matched");
 		List<String> acceptedNames = table.getColumn("Accepted_name");

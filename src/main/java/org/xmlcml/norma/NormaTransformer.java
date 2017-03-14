@@ -23,6 +23,7 @@ import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
@@ -64,6 +65,7 @@ public class NormaTransformer {
 		PDF2IMAGES(    "pdf2images",    null,     CTree.FULLTEXT_PDF,  "image/", CTree.FULLTEXT_PDF_PNG),
 		PDF2SVG(       "pdf2svg",       null,     CTree.FULLTEXT_PDF,  "svg/",   CTree.FULLTEXT_PDF_SVG),
 		PDF2TXT(       "pdf2txt",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_PDF_TXT),
+		SVGTABLE2CSV ( "svgtable2csv", null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
 		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,  null,     CTree.SVG+"."+"html"),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
 		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
@@ -108,7 +110,6 @@ public class NormaTransformer {
 		public static Type createTransformType(String transformTypeString) {
 			for (Type type : values()) {
 				if (type.matches(transformTypeString)) {
-//					LOG.debug("transform type: "+type);
 					return type;
 				}
 			}
@@ -149,6 +150,7 @@ public class NormaTransformer {
 	private String transformTypeString;
 	private org.w3c.dom.Document xslDocument;
 	private IOFileFilter ioFileFilter;
+	private RectangularTable rectangularTable;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
@@ -261,7 +263,7 @@ public class NormaTransformer {
 				} else {
 					outputFile = new File(outputDir, filename);
 				}
-				LOG.debug("writing to "+outputFile);
+				LOG.trace("writing to "+outputFile);
 				transformSingleInput(file);
 				outputSpecifiedFormat();
 			}
@@ -281,7 +283,6 @@ public class NormaTransformer {
 		if (inputDirName != null) {
 			parseInputDirectoryAndAddDefaults(inputDirName, outputDirName);
 		} else if (ioFileFilter != null) {
-//			LOG.debug("IOFileFilter "+ioFileFilter);
 			// not sure what we should do here. Ignore at present
 		} else {
 			try {
@@ -348,7 +349,6 @@ public class NormaTransformer {
 	}
 
 	private void transformSingleInput0(File inputFile) {
-//		LOG.debug("Norma.transformer: "+type);
 		// clear old outputs
 		outputTxt = null;
 		htmlElement = null;
@@ -387,6 +387,10 @@ public class NormaTransformer {
 			outputTxt = applyPDF2TXTToInputFile(inputFile);
 		} else if (Type.SVGTABLE2HTML.equals(type)) {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
+		} else if (Type.SVGTABLE2CSV.equals(type)) {
+			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
+			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
+			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
 		} else if (Type.TEX2HTML.equals(type)) {
 			String xmlString = convertTeXToHTML(inputFile);
 			createHtmlElement(xmlString);
@@ -663,16 +667,18 @@ public class NormaTransformer {
 		if (htmlElement != null) {
 			currentCTree.writeFile(htmlElement.toXML(), (output != null ? output : CTree.FULLTEXT_HTML));
 		}
-//		// this is not good
-//		if (xmlString != null ) {
-//			tagSections();
-//			currentCTree.writeFile(xmlString, (output != null ? output : CTree.SCHOLARLY_HTML));
-//		}
 		if (svgElement != null && output != null) {
 			currentCTree.writeFile(svgElement.toXML(), output);
 		}
 		if (serialImageList != null) {
 			normaArgProcessor.writeImages();
+		}
+		if (rectangularTable != null) {
+			try {
+				rectangularTable.writeCsvFile(outputFile);
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot write: "+outputFile, e);
+			}
 		}
 	}
 

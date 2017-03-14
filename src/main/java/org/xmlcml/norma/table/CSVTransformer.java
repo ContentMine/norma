@@ -11,6 +11,7 @@ import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlTable;
 import org.xmlcml.html.HtmlTd;
@@ -158,4 +159,12 @@ public class CSVTransformer {
         }
         return cells;
 	}
+	
+	public static void writeHtmlTableAsCSV(HtmlTable table, File file) throws IOException {
+		HtmlTr trTh = table.getSingleLeadingTrThChild();
+		List<String> headers = trTh.getTdCellValues();
+		RectangularTable rectangularTable = RectangularTable.createRectangularTable(table, headers);
+		rectangularTable.writeCsvFile(file, headers);
+	}
+
 }

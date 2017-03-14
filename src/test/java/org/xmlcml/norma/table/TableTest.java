@@ -204,6 +204,7 @@ public class TableTest {
 		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
 				+ " --outputDir "+targetDir
 				+ " --transform svgtable2html");
+		
 		String cmd = "--project "+targetDir+
 				" --fileFilter ^.*tables/table\\d+$"
 				+ " --output  ./tableRow.html"
@@ -220,9 +221,47 @@ public class TableTest {
 		new Norma().run(cmd);
 	}
 	
-	
+	@Test
+	public void testOutputCSVMini() {
+		boolean clean = false;
+		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
+		File targetDir = new File("target/pdftable1/");
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		/** make the *.svg.html as we have cleaned the directory */
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+				+ " --outputDir "+"target/pdftable01/"
+				+ " --output table.svg.csv"
+				+ " --transform svgtable2csv");
 
+	}
 	
+	@Test
+	public void testOutputCSVUC() {
+		boolean clean = false;
+		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
+		if (!sourceDir.exists()) {
+			LOG.error("no cm-ucl; exiting");
+			return;
+		}
+		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
+		LOG.debug("copying");
+//		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		LOG.debug("copied");
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*svg/table(\\d+)\\.svg"
+				+ " --outputDir "+targetDir
+				+ " --move2 tables/table(\\1)/table.svg");
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*image/table(\\d+)\\.png"
+				+ " --outputDir "+targetDir
+				+ " --move2 tables/table(\\1)/table.png");
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*pdftable/table(\\d+)\\.annot\\.svg"
+				+ " --outputDir "+targetDir
+				+ " --move2 tables/table(\\1)/table.annot.png");
 
-	
+		/** make the *.svg.html as we have cleaned the directory */
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+				+ " --outputDir "+targetDir
+				+ " --output table.svg.csv"
+				+ " --transform svgtable2csv");
+
+	}
 }
