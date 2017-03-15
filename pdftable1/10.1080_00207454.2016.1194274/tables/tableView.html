@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i &lt; element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i &lt; tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* td */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.body {
+	background-color: #ddf;
+	padding: 1px;
+}
+</style><style/></head><body><h1/><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table1/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">All patients </th>
+     <th class="cell">Placebo group </th>
+    </tr>
+    <tr>
+     <td class="cell">n treated</td>
+     <td class="cell">86</td>
+     <td class="cell">43</td>
+    </tr>
+    <tr>
+     <td class="cell">Age (y)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">62.4 (8.7)</td>
+     <td class="cell">62.7 (9.1)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">37–79</td>
+     <td class="cell">43–79</td>
+    </tr>
+    <tr>
+     <td class="cell">Sex, n (%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Male</td>
+     <td class="cell">57 (66)</td>
+     <td class="cell">32 (74)</td>
+    </tr>
+    <tr>
+     <td class="cell">Female</td>
+     <td class="cell">29 (34)</td>
+     <td class="cell">11 (26)</td>
+    </tr>
+    <tr>
+     <td class="cell">Race, n (%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">White</td>
+     <td class="cell">83 (97)</td>
+     <td class="cell">42 (98)</td>
+    </tr>
+    <tr>
+     <td class="cell">Asian</td>
+     <td class="cell">2 (2)</td>
+     <td class="cell">1 (2)</td>
+    </tr>
+    <tr>
+     <td class="cell">Other</td>
+     <td class="cell">1 (1)</td>
+     <td class="cell">0</td>
+    </tr>
+    <tr>
+     <td class="cell">Country, n (%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">US</td>
+     <td class="cell">64 (74)</td>
+     <td class="cell">32 (74)</td>
+    </tr>
+    <tr>
+     <td class="cell">Italy</td>
+     <td class="cell">10 (12)</td>
+     <td class="cell">5 (12)</td>
+    </tr>
+    <tr>
+     <td class="cell">Serbia</td>
+     <td class="cell">8 (9)</td>
+     <td class="cell">4 (9)</td>
+    </tr>
+    <tr>
+     <td class="cell">Great Britain</td>
+     <td class="cell">4 (5)</td>
+     <td class="cell">2 (5)</td>
+    </tr>
+    <tr>
+     <td class="cell">Modified H&amp;Y stage , n (%)^{a}</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">1.5</td>
+     <td class="cell">3 (4)</td>
+     <td class="cell">2 (5)</td>
+    </tr>
+    <tr>
+     <td class="cell">2</td>
+     <td class="cell">50 (58)</td>
+     <td class="cell">24 (56)</td>
+    </tr>
+    <tr>
+     <td class="cell">2.5</td>
+     <td class="cell">20 (23)</td>
+     <td class="cell">11 (26)</td>
+    </tr>
+    <tr>
+     <td class="cell">3</td>
+     <td class="cell">13 (15)</td>
+     <td class="cell">6 (14)</td>
+    </tr>
+    <tr>
+     <td class="cell">UPDRS Part III score, mean (SD)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">OFF state</td>
+     <td class="cell">35.8 (12.0)</td>
+     <td class="cell">36.2 (12.1)</td>
+    </tr>
+    <tr>
+     <td class="cell">ON state</td>
+     <td class="cell">17.5 (9.0)</td>
+     <td class="cell">18.9 (9.8)</td>
+    </tr>
+    <tr>
+     <td class="cell">Time since PD diagnosis (mon)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">113 (47)</td>
+     <td class="cell">117 (48)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">38–255</td>
+     <td class="cell">41–255</td>
+    </tr>
+    <tr>
+     <td class="cell">Time since emergence of fluctuations (mon)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">51 (43)</td>
+     <td class="cell">46 (40)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">0–254</td>
+     <td class="cell">0–150</td>
+    </tr>
+    <tr>
+     <td class="cell">OFF time (h/d)^{b}</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">5.7 (1.8)</td>
+     <td class="cell">5.8 (1.5)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">2.6–10.3</td>
+     <td class="cell">2.6–9.2</td>
+    </tr>
+    <tr>
+     <td class="cell">Number of daily OFF episodes ^{c}</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">3.6 (1.1)</td>
+     <td class="cell">3.7 (1.0)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">1.0–7.0</td>
+     <td class="cell">1.7–6.0</td>
+    </tr>
+    <tr>
+     <td class="cell">Duration of LD treatment (mon)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">93 (46)^{d}</td>
+     <td class="cell">95 (48)^{e}</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">15–254^{d}</td>
+     <td class="cell">15–243^{e}</td>
+    </tr>
+    <tr>
+     <td class="cell">Number of daily LD doses</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">5.9 (1.9)</td>
+     <td class="cell">6.1 (2.2)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">4–15</td>
+     <td class="cell">4–15</td>
+    </tr>
+    <tr>
+     <td class="cell">LD daily dosage (mg/d)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Mean (SD)</td>
+     <td class="cell">770 (306)</td>
+     <td class="cell">853 (315)</td>
+    </tr>
+    <tr>
+     <td class="cell">Range</td>
+     <td class="cell">250–1800</td>
+     <td class="cell">400–1700</td>
+    </tr>
+    <tr>
+     <td class="cell">Other oral PD medications, n (%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Dopamine agonists</td>
+     <td class="cell">57 (66%)</td>
+     <td class="cell">26 (61%)</td>
+    </tr>
+    <tr>
+     <td class="cell">MAO-B inhibitors</td>
+     <td class="cell">37 (43%)</td>
+     <td class="cell">14 (33%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Adamantane derivatives</td>
+     <td class="cell">29 (34%)</td>
+     <td class="cell">13 (30%)</td>
+    </tr>
+    <tr>
+     <td class="cell">COMT inhibitors</td>
+     <td class="cell">9 (11%)</td>
+     <td class="cell">5 (12%)</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table2/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">Parameter </th>
+     <th class="cell">ON state (n = 86) </th>
+     <th class="cell">OFF state (n = 86) </th>
+     <th class="cell">ON-vs.-OFF estimated difference </th>
+    </tr>
+    <tr>
+     <td class="cell">FEV</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">1</td>
+     <td class="cell">(% of predicted)</td>
+     <td class="cell">89.7 (15.5)</td>
+     <td class="cell">88.3 (15.1)</td>
+     <td class="cell">–1.4 [–3.7; +0.9]</td>
+    </tr>
+    <tr>
+     <td class="cell">FVC (% of predicted)</td>
+     <td class="empty"/>
+     <td class="cell">85.6 (14.9)</td>
+     <td class="cell">85.3 (13.0)</td>
+     <td class="cell">–0.3 [–2.0; +1.5]</td>
+    </tr>
+    <tr>
+     <td class="cell">FEV /FVC (%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">1</td>
+     <td class="empty"/>
+     <td class="cell">79.6 (3.6)</td>
+     <td class="cell">78.5 (5.4)</td>
+     <td class="cell">–1.1 [–2.0; –0.1]</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table3/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <tr/>
+   </table>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table4/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">All patients (n = 74) </th>
+     <th class="cell">Patients with spirometry meeting ATS/ERS standards (n = 49) </th>
+    </tr>
+    <tr>
+     <td class="cell">FEV</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">1</td>
+     <td class="cell">7.84%</td>
+     <td class="cell">5.39%</td>
+    </tr>
+    <tr>
+     <td class="cell">FVC</td>
+     <td class="cell">6.71%</td>
+     <td class="cell">4.41%</td>
+    </tr>
+    <tr>
+     <td class="cell">FEV /FVC</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">1</td>
+     <td class="cell">4.17%</td>
+     <td class="cell">3.17%</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1080_00207454.2016.1194274/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

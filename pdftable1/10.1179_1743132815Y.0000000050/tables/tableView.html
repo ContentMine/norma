@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i &lt; element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i &lt; tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script><style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* td */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.body {
+	background-color: #ddf;
+	padding: 1px;
+}
+</style><style/></head><body><h1/><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table1/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">Patients (n548) </th>
+     <th class="cell">Type A (n514) </th>
+     <th class="cell">Type B (n520) </th>
+     <th class="cell">Type C (n514) </th>
+     <th class="cell">P value </th>
+    </tr>
+    <tr>
+     <td class="cell">Age (years)</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">65</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">15</td>
+     <td class="cell">0.547</td>
+    </tr>
+    <tr>
+     <td class="cell">Sex (male)</td>
+     <td class="cell">62</td>
+     <td class="cell">61</td>
+     <td class="cell">16</td>
+     <td class="empty"/>
+     <td class="cell">60</td>
+     <td class="empty"/>
+     <td class="cell">0.951</td>
+    </tr>
+    <tr>
+     <td class="cell">Lesion side (right)</td>
+     <td class="cell">14</td>
+     <td class="cell">10</td>
+     <td class="cell">13 (65%)</td>
+     <td class="empty"/>
+     <td class="cell">10 (71%)</td>
+     <td class="empty"/>
+     <td class="cell">0.750</td>
+    </tr>
+    <tr>
+     <td class="cell">Haematoma location</td>
+     <td class="cell">31 (65%)</td>
+     <td class="cell">8 (57%)</td>
+     <td class="cell">10 (50%)</td>
+     <td class="empty"/>
+     <td class="cell">7 (50%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Putamen</td>
+     <td class="cell">27 (56%)</td>
+     <td class="cell">10 (71%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">–</td>
+    </tr>
+    <tr>
+     <td class="cell">Thalamus</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">15 (75%)</td>
+     <td class="empty"/>
+     <td class="cell">12 (86%)</td>
+     <td class="empty"/>
+     <td class="cell">–</td>
+    </tr>
+    <tr>
+     <td class="cell">Combined</td>
+     <td class="cell">29 (60%)</td>
+     <td class="cell">2 (14%)</td>
+     <td class="cell">5 (25%)</td>
+     <td class="empty"/>
+     <td class="cell">1 (7%)</td>
+     <td class="empty"/>
+     <td class="cell">–</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">15 (31%)</td>
+     <td class="cell">9 (64%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="empty"/>
+     <td class="cell">1 (7%)</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">4 (9%)</td>
+     <td class="cell">3 (21%)</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Timing of MRI (days)</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">6</td>
+     <td class="empty"/>
+     <td class="cell">10</td>
+     <td class="empty"/>
+     <td class="cell">0.063</td>
+    </tr>
+    <tr>
+     <td class="cell">rFA</td>
+     <td class="cell">7</td>
+     <td class="cell">5</td>
+     <td class="cell">3</td>
+     <td class="empty"/>
+     <td class="cell">7</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">5</td>
+     <td class="cell">4</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Pons</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">0.9</td>
+     <td class="empty"/>
+     <td class="cell">1.0</td>
+     <td class="empty"/>
+     <td class="cell">0.540</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.0</td>
+     <td class="cell">1.0</td>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="cell">0.2</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.2</td>
+     <td class="cell">0.2</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Cerebral peduncle</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">0.9</td>
+     <td class="empty"/>
+     <td class="cell">1.3</td>
+     <td class="empty"/>
+     <td class="cell">0.285</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.1</td>
+     <td class="cell">1.1</td>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="cell">1.5</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.9</td>
+     <td class="cell">0.3</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Oedema</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">0.6</td>
+     <td class="empty"/>
+     <td class="cell">0.6</td>
+     <td class="empty"/>
+     <td class="cell">0.498</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.6</td>
+     <td class="cell">0.7</td>
+     <td class="cell">0.4</td>
+     <td class="empty"/>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.3</td>
+     <td class="cell">0.3</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Corona radiata</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">0.7</td>
+     <td class="empty"/>
+     <td class="cell">0.7</td>
+     <td class="empty"/>
+     <td class="cell">v0.001*</td>
+    </tr>
+    <tr>
+     <td class="cell">rADC</td>
+     <td class="cell">0.8</td>
+     <td class="cell">1.2</td>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.4</td>
+     <td class="cell">0.4</td>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Pons</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">1.1</td>
+     <td class="empty"/>
+     <td class="cell">1.0</td>
+     <td class="empty"/>
+     <td class="cell">0.543</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.0</td>
+     <td class="cell">1.1</td>
+     <td class="cell">0.2</td>
+     <td class="empty"/>
+     <td class="cell">0.2</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.2</td>
+     <td class="cell">0.3</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Cerebral peduncle</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">1.1</td>
+     <td class="empty"/>
+     <td class="cell">0.9</td>
+     <td class="empty"/>
+     <td class="cell">0.129</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.0</td>
+     <td class="cell">0.9</td>
+     <td class="cell">0.4</td>
+     <td class="empty"/>
+     <td class="cell">0.2</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.3</td>
+     <td class="cell">0.2</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Oedema</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">1.5</td>
+     <td class="empty"/>
+     <td class="cell">1.3</td>
+     <td class="empty"/>
+     <td class="cell">0.074</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.4</td>
+     <td class="cell">1.3</td>
+     <td class="cell">0.4</td>
+     <td class="empty"/>
+     <td class="cell">0.5</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.4</td>
+     <td class="cell">0.3</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Corona radiata</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">1.2</td>
+     <td class="empty"/>
+     <td class="cell">1.1</td>
+     <td class="empty"/>
+     <td class="cell">0.127</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">1.1</td>
+     <td class="cell">1.0</td>
+     <td class="cell">0.3</td>
+     <td class="empty"/>
+     <td class="cell">0.4</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">0.3</td>
+     <td class="cell">0.1</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Haematoma volume (ml)</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">20.8</td>
+     <td class="empty"/>
+     <td class="cell">24.6</td>
+     <td class="empty"/>
+     <td class="cell">0.002*</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">18.1</td>
+     <td class="cell">7.6</td>
+     <td class="cell">14.3</td>
+     <td class="empty"/>
+     <td class="cell">14.3</td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="cell">14.3</td>
+     <td class="cell">7.8</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="empty"/>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">Peri-haematoma oedema volume (ml)</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">19.0</td>
+     <td class="empty"/>
+     <td class="cell">36.4</td>
+     <td class="empty"/>
+     <td class="cell">v0.001*</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table2/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">DTT type </th>
+     <th class="cell">Type A (N514) </th>
+     <th class="cell">Type B (N520) </th>
+     <th class="cell">Type C (N514) </th>
+     <th class="cell">P value </th>
+    </tr>
+    <tr>
+     <td class="cell">MI at admission</td>
+     <td class="cell">75.7</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">Pv0.001*</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">34.5</td>
+     <td class="cell">49.9</td>
+     <td class="cell">17.9</td>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">35.3</td>
+     <td class="cell">26.8</td>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">MI at 1 month</td>
+     <td class="cell">83.3</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">Pv0.001*</td>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">24.4</td>
+     <td class="cell">47.8</td>
+     <td class="cell">22.8</td>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="empty"/>
+     <td class="cell">38.7</td>
+     <td class="cell">29.0</td>
+     <td class="empty"/>
+    </tr>
+    <tr>
+     <td class="cell">MI at 3 months</td>
+     <td class="cell">84.8</td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">char: 43; name: plus; f: AdvPi1; fn: BIDOPC+AdvPi1; e: WinAnsi </td>
+     <td class="cell">Pv0.001*</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table3/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">rFA location </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+    </tr>
+    <tr>
+     <td class="cell">Pons</td>
+     <td class="cell">0.276</td>
+     <td class="cell">0.057</td>
+     <td class="cell">0.138</td>
+     <td class="cell">0.349</td>
+     <td class="cell">0.217</td>
+     <td class="cell">0.138</td>
+    </tr>
+    <tr>
+     <td class="cell">Cerebral peduncle</td>
+     <td class="cell">0.197</td>
+     <td class="cell">0.180</td>
+     <td class="cell">0.149</td>
+     <td class="cell">0.314</td>
+     <td class="cell">0.189</td>
+     <td class="cell">0.198</td>
+    </tr>
+    <tr>
+     <td class="cell">Perihaematomal oedema</td>
+     <td class="cell">0.203</td>
+     <td class="cell">0.166</td>
+     <td class="cell">0.150</td>
+     <td class="cell">0.307</td>
+     <td class="cell">0.145</td>
+     <td class="cell">0.324</td>
+    </tr>
+    <tr>
+     <td class="cell">Corona radiata</td>
+     <td class="cell">0.443</td>
+     <td class="cell">0.002*</td>
+     <td class="cell">0.433</td>
+     <td class="cell">0.002*</td>
+     <td class="cell">0.405</td>
+     <td class="cell">0.004*</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table4/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">rADC </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+     <th class="cell">r </th>
+     <th class="cell">P value </th>
+    </tr>
+    <tr>
+     <td class="cell">Pons</td>
+     <td class="cell">{0.033</td>
+     <td class="cell">0.826</td>
+     <td class="cell">0.079</td>
+     <td class="cell">0.594</td>
+     <td class="cell">0.018</td>
+     <td class="cell">0.904</td>
+    </tr>
+    <tr>
+     <td class="cell">Cerebral peduncle</td>
+     <td class="cell">0.088</td>
+     <td class="cell">0.552</td>
+     <td class="cell">0.094</td>
+     <td class="cell">0.526</td>
+     <td class="cell">0.151</td>
+     <td class="cell">0.306</td>
+    </tr>
+    <tr>
+     <td class="cell">Perihaematomal oedema</td>
+     <td class="cell">0.040</td>
+     <td class="cell">0.790</td>
+     <td class="cell">0.043</td>
+     <td class="cell">0.773</td>
+     <td class="cell">{0.047</td>
+     <td class="cell">0.753</td>
+    </tr>
+    <tr>
+     <td class="cell">Corona radiata</td>
+     <td class="cell">0.088</td>
+     <td class="cell">0.553</td>
+     <td class="cell">0.053</td>
+     <td class="cell">0.721</td>
+     <td class="cell">0.028</td>
+     <td class="cell">0.851</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <img src="table.png"/>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table5/table.png</p>
+  </td>
+  <td>
+   <table class="table">
+    <caption/>
+    <tr>
+     <th class="cell">Odds ratio </th>
+     <th class="cell">P value </th>
+     <th class="cell">Odds ratio </th>
+     <th class="cell">P value </th>
+    </tr>
+    <tr>
+     <td class="cell">MI at admission</td>
+     <td class="cell">1.092</td>
+     <td class="cell">0.001*</td>
+     <td class="cell">1.100</td>
+     <td class="cell">0.000*</td>
+    </tr>
+    <tr>
+     <td class="cell">rFA corona radiata</td>
+     <td class="cell">0.204</td>
+     <td class="cell">0.408</td>
+     <td class="cell">2.458</td>
+     <td class="cell">0.689</td>
+    </tr>
+    <tr>
+     <td class="cell">Haematoma size</td>
+     <td class="cell">0.922</td>
+     <td class="cell">0.094</td>
+     <td class="cell">1.063</td>
+     <td class="cell">0.210</td>
+    </tr>
+   </table>
+   <p>target/pdftable1/10.1179_1743132815Y.0000000050/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>
