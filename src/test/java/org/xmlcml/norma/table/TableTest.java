@@ -8,6 +8,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.Norma;
@@ -94,8 +95,26 @@ public class TableTest {
 	 * (b) iterates over all (table.svg and table.svg.html) pairs to create a combined table
 	 *   with both
 	 */
-	public void testHtmlDisplay() {
+	public void testHtmlDisplay0() {
 		boolean clean = false;
+		File sourceDir = NormaFixtures.TEST_PDFTABLE00_DIR;
+		File targetDir = new File("target/pdftable00/");
+		LOG.debug("Target: "+targetDir);
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+			+ " --outputDir "+"target/pdftable00/"
+			+ " --transform svgtable2html");
+		
+	}
+	
+	@Test
+	/** aggregate into HTML display
+	 * (a) creates table.svg.html from table.svg
+	 * (b) iterates over all (table.svg and table.svg.html) pairs to create a combined table
+	 *   with both
+	 */
+	public void testHtmlDisplay() {
+		boolean clean = true;
 		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
 		File targetDir = new File("target/pdftable1/");
 		LOG.debug("Target: "+targetDir);
@@ -122,7 +141,7 @@ public class TableTest {
 	 * 
 	 */
 	public void testHtmlAggregate() {
-		boolean clean = false;
+		boolean clean = true;
 		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
 		File targetDir = new File("target/pdftable1/");
 		if (clean) {
@@ -205,6 +224,12 @@ public class TableTest {
 				+ " --outputDir "+targetDir
 				+ " --transform svgtable2html");
 		
+		/** make the *.svg.csv */
+		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
+				+ " --outputDir "+targetDir
+				+ " --output table.svg.csv"
+				+ " --transform svgtable2csv");
+		
 		String cmd = "--project "+targetDir+
 				" --fileFilter ^.*tables/table\\d+$"
 				+ " --output  ./tableRow.html"
@@ -215,10 +240,23 @@ public class TableTest {
 				+ " ^.*/table.svg.html";
 		
 		new Norma().run(cmd);
+		
 		cmd = "--project "+targetDir
 				+ " --output  tables/tableView.html"
 				+ " --htmlAggregate ^.*tables/table\\d+/tableRow.html";
 		new Norma().run(cmd);
+		
+	}
+	
+	@Test
+	public void testMenu() {
+//		File targetDir = new File("target/pdftable1/");
+		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
+		/**  */
+		new CProject().run("--project "+targetDir
+				+ " --output tableViewList.html"
+				+ " --projectMenu .*/tables/tableView.html");
+
 	}
 	
 	@Test
