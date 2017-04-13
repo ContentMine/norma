@@ -1,0 +1,519 @@
+<argList name="cmine" version="0.3">
+
+  <p>20161028: moved to consistent cmine-norma-ami version and fixed bugs</p>
+
+
+  <p>20160526: accumulated changes to support pubstyles</p>
+  <p>20160509: more args and refactoring of CTree directories to support conversions</p>
+  <p>20160324: fixed col headings on dataTables</p>
+  <p>20160320: support for sectioning</p>
+  <p>20160313: moved optionFlags from AMI</p>
+  <p>20160305: minor tidying</p>
+  <p>20160304: major tidying of output</p>
+  <p>20160301: dataTable tweaking</p>
+  <p>20160223: more dataTable tweaking</p>
+  <p>20160219: added CellRendering</p>
+  <p>20160211: added Datatables</p>
+  <p>20160211: fixed nlm2html</p>
+  <p>20160207: support for automated processing, slight tidying of args and cleaning bugs</p>
+  <p>20160201: finished summary</p>
+  <p>20160201: moved xpath from AMI; added summary:</p>
+  <p>20160201: fixed commandline:</p>
+  <p>20160126: more development of --analyze</p>
+  <p>20160125: fixed immediate bugs</p>
+  <p>20160124: implemented filesTree and snippetesTree</p>
+  <p>20160124: separated ArgumentExpander</p>
+  <p>20160124: fixed bug in ProjectTreeFactory</p>
+  <p>20160123: fixed test bugs</p>
+  <p>20160122: tested globbing, snippets</p>
+  <p>20160122: added search paths and globbing</p>
+  <p>20160118: minor syncs with ami</p>
+  <p>20160118: dictionary enhancement</p>
+  <p>20160118: dictionary enhancement</p>
+  <p>20160114: changed List ResultElement to ResultsElement</p>
+  <p>20160112: refactoring to transfer some classes such as searchers to AMI</p>
+  <p>20150807: added logfile</p>
+
+  <arg name="ctree" 
+    brief="-q"
+    long="--ctree"
+    args="director(ies)"
+    class="org.xmlcml.cproject.files.CTree"
+    countRange="{0,*}"
+    parseMethod="parseCTree"
+    >
+    <help>
+    <p class="note">NOTE WAS quickscrapeNorma and cmDir</p>
+    <p class="brief">create or use $ctree directory.</p>
+    <p>A ContentTree (ctree) may contain
+      <ul>
+      <li>results.json * // a listing of scraped files</li>
+      
+      <li>fulltext.xml ? // publishers XML</li>
+      <li>fulltext.pdf ? // publishers PDF</li>
+      <li>fulltext.html ? // raw HTML</li>
+      <li>provisional.pdf ? // provisional PDF (often disappears)</li>
+      
+      <li>foo12345.docx ? // data files numbered by publisher/author</li>
+      <li>bar54321.docx ?</li>
+      <li>ah1234.cif ? // crystallographic data</li>
+      <li>pqr987.cml ? // chemistry file</li>
+      <li>mmm.csv ? // table</li>
+      <li>pic5656.png ? // images</li>
+      <li>pic5657.gif ? // image</li>
+      <li>suppdata.pdf ? // supplemental data</li>
+    </ul>      
+      and more.</p>
+      
+      <p>only results.json is mandatory. However there will normally be at least one fulltext.* file and probably at 
+      least one *.html file (as the landing page must be in HTML). Since quickscrape can extract data without 
+      fulltext it might also be deployed against a site with data files.
+      </p>
+      
+      <p>There may be some redundancy - *.xml may be transformable into *.html and *.pdf into *.html. The PDF may also 
+      contain the same images as some exposed *.png.</p>
+    </help>
+  </arg>  
+  
+  <arg name="exception" 
+    long="--exception"
+    args="error , warn, info"
+    countRange="{1,1}"
+    parseMethod="parseException"
+    >
+    <help>
+      <p>determines action on an Exception, e.g. when looping through CTrees. ERROR = rethrow, WARN = detailed message, 
+      INFO = brief notification.</p>
+    </help>
+  </arg>  
+  
+
+  <arg name="input" 
+    brief="-i"
+    long="--input"
+    args="[file(s)_and/or_url(s)]"
+    countRange="{1,*}"
+    parseMethod="parseInput"
+    >
+    <help>
+      <p class="brief">Input stream (Files, directories, URLs)</p> 
+      <p>Norma tries to guess reasonable actions and
+        also expand some simple wildcards. The argument can either be a single object, or a list. Within objects
+        the content of curly brackets {...} is expanded as wildcards (cannot recurse). There can be multiple {...}
+        within an object and all are expanded (but be sensible - this could generate the known universe and crash the
+        system. If this is misused it will be withdrawn). Objects (URLs, files) can be mixed but it's probably a
+        poor idea.
+      </p>  
+      <p>The logic is: 
+        <ul>
+        <li>(a) if an object starts with 'www' or 'http:' or 'https;' it's assumed to be a URL</li>
+        <li>(b) if it is a directory, then the contents (filtered by extension) are added to the list as files</li>
+        <li>(c) if it's a file it's added to the list</li>
+        </ul>
+        the wildcards in files and URLs are then expanded and the results added to the list
+        </p>
+
+        <p>      
+        Current wildcards:
+          <ul>
+    <li><code>{n1:n2}</code> n1,n2 are integers: generate n1 ... n2 inclusive</li>
+    <li><code>{foo,bar,plugh}</code> list of strings</li>
+          </ul>
+        </p>
+        <p class="note">Undergoing continuing development. Often the filenames are redundant 
+        (e.g. <code>fulltext.pdf</code> for <code>--transform pdf2txt</code>) and we are trying to make
+        these implicit. The mechanisms for creating <em><code>ctree</code></em>s from isolated files will
+        probably be altered. 
+        </p>    
+        <p> see also --filefilter which operates on existing files</p>
+    </help>
+  </arg>  
+  
+  <arg name="fileFilter" 
+    long="--fileFilter"
+    args="[regex for allowed files]"
+    countRange="{1,1}"
+    parseMethod="parseFileFilter"
+    >
+    <help>
+      <p class="brief">Filter allowing list of files to be processed</p> 
+      <p>Regex for allowed files. rooted in `CTree` directory. Can include directory tree; example
+      <pre>
+      tables/table(\\d+)/table(_\\d+)?\\.svg
+      </pre>
+      would list 
+      <pre>  
+      tables/table2/table_1.svg
+      </pre>
+      </p>  
+    </help>
+  </arg>  
+  
+  <arg name="inputDir" 
+    long="--inputDir"
+    args="[inputDirectory]"
+    countRange="{1,1}"
+    parseMethod="parseInputDirectory"
+    >
+    <help>
+      <p class="brief">Input Directory (tables, images, supplemental, etc)</p> 
+      <p>Diectory holding files to be analyzed or transformed. The type of the file may be set by the transform 
+      w.g. csv2html or operation
+      </p>  
+    </help>
+  </arg>  
+  
+  <arg name="outputDir" 
+    long="--outputDir"
+    args="[outputDirectory]"
+    countRange="{1,1}"
+    parseMethod="parseOutputDirectory"
+    >
+    <help>
+      <p class="brief">output Directory (tables, images, supplemental, etc)</p> 
+      <p>Directory holding files to be analyzed or transformed. The type of the file may be set by the transform 
+      w.g. csv2html or operation
+      </p>  
+    </help>
+  </arg>  
+  
+  <arg name="output"
+    brief="-o"
+    long="--output"
+    args="file_or_directory"
+    countRange="{1,1}"
+    parseMethod="parseOutput"
+    outputMethod="outputMethod"
+    >
+    <help>
+      <p class="brief">Output to local filestore, normally within <em><code>ctree</code></em>.
+      If there is only one input
+      after wildcard expansion then a filename can be given. If the argument must be a writeable directory; Norma
+      will do her best to create filenames derived from the input names. Directory structures will not be preserved.
+      </p>
+    </help>
+  </arg>  
+      
+  <arg name="projectMenu"
+    long="--projectMenu"
+    args="fileFilter"
+    countRange="{1,1}"
+    parseMethod="parseProjectMenu"
+    runMethod="runProjectMenu"
+    >
+    <help>
+    Create a menu of files expended by fileFilter. Menu is of form
+    &lt;a href="file">file&lt;/a>
+    </help>
+  </arg>  
+      
+  <arg name="makeProject"
+    long="--makeProject"
+    args="fileFilter"
+    countRange="{1,1}"
+    parseMethod="parseMakeProject"
+    finalMethod="finalMakeProject"
+    >
+    <help>
+    Create a CProject from a set of files. Normally these will all be of the same type.
+    Example
+    <pre>
+    norma --project foo --fileFilter (.*).pdf --makeProject (\1)/fulltext.pdf 
+    </pre>
+    will take all child files of foo/ (e.g. a123.pdf, b345.pdf) and restructure as:
+    foo/a123/fulltext.pdf
+    foo/b123/fulltext.pdf
+    requires a --fileFilter to aggregate the files. Should only be used for homogeneous collection of files, i.i. not mixed types.
+    </help>
+  </arg>  
+      
+  <arg name="recursive"      
+    brief="-r"
+    long="--recursive"
+    args=""
+    class="java.lang.Boolean"
+    countRange="{1,1}"
+    parseMethod="parseRecursive"
+    >
+    
+<!-- default ="false"  -->
+    <help>
+      If the input is a directory then by default only the first level is searched
+      if the --recursive flag is set then all files in the directory tree may be input
+      See also --extensions
+      <p class="note">probably obsolete</p>
+    </help>
+  </arg>  
+  
+  <arg name="extensions"
+    brief="-e"
+    long="--extensions"
+    args="ext1 [ext2...]"
+    countRange="{1,*}"
+    parseMethod="parseExtensions"
+    >
+    <help>
+      <p>When a directory or directories are searched then all files are input by default.
+      It is possible to limit the search by using only certain extensions.
+      </p>
+      <p class="note">The 'dot' is NOT included (so <code>xml png</code> not <code>.xml .png</code>)</p>
+    </help>
+  </arg>
+    
+  <arg name="summaryfile"
+    long="--summaryfile"
+    args="summaryfile"
+    countRange="{1,1}"
+    parseMethod="parseSummaryFile"
+    runMethod="runSummaryFile"
+    finalMethod="finalSummaryFile"
+    >
+    <help>
+      <p>File to write summaries to.</p>
+      <p>May invoke some default behaviour</p>
+      <p class="note">Not fully developed. Some functions provided by --search</p>
+    </help>
+  </arg>
+    
+  <arg name="documentFrequencyFile"
+    long="--dffile"
+    args="dffile"
+    countRange="{1,1}"
+    parseMethod="parseDFFile"
+    runMethod="runDFFile"
+    finalMethod="finalDFFile"
+    >
+    <help>
+      <p>File to write document Frequencies to.</p>
+      <p>May invoke some default behaviour</p>
+    </help>
+  </arg>
+    
+  <arg name="project"
+    long="--project"
+    args="projectFile"
+    countRange="{1,1}"
+    parseMethod="parseProject"
+    >
+    <help>
+      <p>Toplevel directory with only CTree children</p>
+      <p class="note">Not fully developed.</p>
+      <p>A project has subdirectories which are assumed to be CTrees. These are all aggregated in the 
+      initMethod into a List which is processed in the main program loop. 
+      </p>
+    </help>
+  </arg>
+    
+  <arg name="help"
+    brief="-h"
+    long="--help"
+    args=" "
+    countRange="{0,0}"
+    parseMethod="printHelp"
+    >
+    <help>
+      <p>output help for all options, including superclass DefaultArgProcessor.</p>
+    </help>
+  </arg>  
+  
+  <arg name="makedocs"
+      long="--makedocs"
+    args=" "
+      countRange="{0,0}"
+      runMethod="runMakeDocs"
+      >
+      <help>
+        <p>Create HTML version of all args.xml file for inclusion in documentation</p>
+        <p>Iterates over <code>src/main/resources</code> directory to find all <code>args.xml</code> files
+        and creates a sister <code>args.html</code> file.</p>
+      </help>
+      </arg>
+      
+        
+  <arg name="log"
+      long="--log"
+    args=" logfile"
+      countRange="{0,1}"
+      parseMethod="parseLogfile"
+      >
+      <help>
+        <p>Write expected logging output to XML file</p>
+        <p>Defaults to [CTree]/log.xml</p>
+        <p>Still under development. This logfile is separate from the Log4J or other logger. It is the formal record of the analysis and can be used for metrics, archiving, 
+        re-use and guiding re-runs (and more). Each CTree will has a log.xml which records all operations and is extensible. 
+        Subdirectories of the Ctree
+        may also have <code>log.xml</code> files (referenced in the toplevel <code>log.xml</code>)</p>
+      </help>
+    </arg>
+
+  <arg name="unzip"
+    long="--unzip"
+    args="??"
+    countRange="{1,1}"
+    parseMethod="parseUnzip"
+    >
+    <help>
+      <p class="brief">unzip files into proto-<em><code>ctree</code></em>s.
+      </p>
+      <p>At present only acts on *.zip or *.ZIP</p>
+      <p>The extracted files may need renaming</p>
+    </help>
+  </arg>  
+      
+  <arg name="version"
+    brief="-v"
+    long="--version"
+    args=" "
+    countRange="{0,0}"
+    parseMethod="parseVersion"
+    >
+    <help>
+    <p>Prints version number.</p>
+    <p class="note">Future versions will print the versions of ancestors.</p>
+    </help>
+  </arg>  
+  
+  <arg name="include"
+    long="--include"
+    args="??"
+    countRange="{1,1}"
+    parseMethod="parseInclude"
+    >
+    <help>
+      <p class="brief">only include files whose patterns match this regex</p>
+    </help>
+  </arg>  
+      
+  <arg name="rename"
+    long="--rename"
+    args="??"
+    countRange="{2,*}"
+    parseMethod="parseRename"
+    >
+    <help>
+      <p class="brief">renames files in ctree</p>
+      <p>pairs of strings for renaming. <code>.*\\.XML fulltext\\.xml</code> will rename *.XML to fulltext.xml.</p>
+    </help>
+  </arg>  
+      
+  <arg name="c.text"
+      long="--c.test"
+    args=" "
+      countRange="{0,0}"
+      runMethod="runTest"
+      >
+      <help>
+        <p>Test method to support debugging of workflow</p>
+        <p>Does very little</p>
+      </help>
+    </arg>
+      
+  <arg name="dictionary"
+      long="--c.dictionary"
+      args="source [source]"
+      parseMethod="parseDictionary"
+      countRange="{1,*}"
+      >
+      <help>
+      <p>Dictionaries for lookup. sources follow EuclidSource and can be resources, files, or URLs.
+      in some cases they may also be symbolic.</p>
+      </help>
+  </arg>
+
+  
+  <arg name="filter"
+      long="--filter"
+      args="filterExpression"
+      parseMethod="parseFilter"
+      runMethod="runFilter"
+      outputMethod="outputFilter"
+      finalMethod="finalFilter"
+      countRange="{1,1}"
+      >
+      <help>
+      <p>Filter files with glob, and XML documents with Xpath.</p>
+      <p>The filter expression is of the form:<code>
+      file(glob-expression)[xpath(xpath-expression)[.file() ...]]</code>.
+      The result is either a list of files or an list of Xpath snippets, depending on the final
+      filter component. The result is held in an XML file. We try to record both the files and the 
+      snippets and extract the hierarchy. Still being developed.
+      </p>
+      </help>
+  </arg>
+
+<!--       
+  <arg name="analysis"
+      long="- -analyze"
+      args="analysisExpression"
+      parseMethod="parseAnalysis"
+      runMethod="runAnalysis"
+      outputMethod="outputAnalysis"
+      finalMethod="finalAnalysis"
+      countRange="{1,1}"
+      >
+      <help>
+      <p>DEPRECATED: use - -filter; Searches files with glob, and XML documents with Xpath.</p>
+      <p>The search expression is of the form:<code>
+      file(glob-expression)[.xpath(xpath-expression)[.file() ...]]</code>.
+      The result is either a list of files or an list of Xpath snippets, depending on the final
+      search component. The result is held in an XML file. We try to record both the files and the 
+      snippets and extract the hierarchy. Still being developed.
+      </p>
+      </help>
+  </arg>
+-->  
+    <arg name="xpath" 
+    brief="-x"
+    long="--xpath"
+    args="xpath [xpath]"
+    countRange="{1,*}"
+    parseMethod="parseXpath"
+    >
+    <help>
+      XPATH
+      Defines the section/s of the document to analyze. The argument is one or more xpath
+      strings separated by spaces. (The xpaths cannot contain spaces currently.)
+    </help>
+  </arg>  
+  
+  
+  <arg name="qsNorma" 
+    brief="-q"
+    long="--quickscrapeNorma"
+    args="director(ies)"
+    class="org.xmlcml.cproject.files.CTree"
+    countRange="{0,*}"
+    parseMethod="parseQSNorma"
+    >
+    <help>
+    OBSOLETE // use --ctree instead
+    </help>
+  </arg>  
+  
+  <arg name="cmdir" 
+    brief="-q"
+    long="--cmdir"
+    args="director(ies)"
+    class="org.xmlcml.cproject.files.CTree"
+    countRange="{0,*}"
+    parseMethod="parseQSNorma"
+    >
+    <help>
+    OBSOLETE // use --ctree instead
+    </help>
+  </arg>  
+  
+  <arg name="dependencyGraph" 
+    long="--dependencyGraph"
+    args=""
+    countRange="{0,*}"
+    finalMethod="finalDependency"
+    >
+    <help>
+    create dependency graph of project modules (software maintenance). Uses --inputDir as the top project directory
+    </help>
+  </arg>  
+  
+  
+        
+</argList>

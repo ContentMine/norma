@@ -42,6 +42,7 @@ public class TableTest {
 	/** file filter to iterate over all files of a type
 	 * 
 	 */
+	@Ignore // LARGE
 	public void testFileFilter() {
 		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
 		File targetDir = new File("target/pdftable1/");
@@ -95,7 +96,7 @@ public class TableTest {
 	 * (b) iterates over all (table.svg and table.svg.html) pairs to create a combined table
 	 *   with both
 	 */
-	public void testHtmlDisplay0() {
+	public void testCreateSvgHtml() {
 		boolean clean = false;
 		File sourceDir = NormaFixtures.TEST_PDFTABLE00_DIR;
 		File targetDir = new File("target/pdftable00/");
@@ -104,147 +105,6 @@ public class TableTest {
 		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
 			+ " --outputDir "+"target/pdftable00/"
 			+ " --transform svgtable2html");
-		
-	}
-	
-	@Test
-	/** aggregate into HTML display
-	 * (a) creates table.svg.html from table.svg
-	 * (b) iterates over all (table.svg and table.svg.html) pairs to create a combined table
-	 *   with both
-	 */
-	public void testHtmlDisplay() {
-		boolean clean = true;
-		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
-		File targetDir = new File("target/pdftable1/");
-		LOG.debug("Target: "+targetDir);
-		if (clean) {
-			CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-			new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --outputDir "+"target/pdftable01/"
-				+ " --transform svgtable2html");
-		}
-		String cmd = "--project "+targetDir+
-				" --fileFilter ^.*tables/table\\d+$"
-				+ " --output  ./tableRow.html"
-				+ " --htmlDisplay"
-				+ " ^.*/table.png"
-//				+ " ^.*tables/table\\d+/table.annot.svg"
-//				+ " ^.*tables/table\\d+/table.svg"
-				+ " ^.*/table.svg.html";
-		new Norma().run(cmd);
-		
-	}
-	
-	@Test
-	/** aggregate into TabbedButton display
-	 * 
-	 */
-	public void testHtmlAggregate() {
-		boolean clean = true;
-		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
-		File targetDir = new File("target/pdftable1/");
-		if (clean) {
-			CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-			/** make the *.svg.html as we have cleaned the directory */
-			new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-					+ " --outputDir "+"target/pdftable01/"
-					+ " --transform svgtable2html");
-		}
-		String cmd = "--project "+targetDir+
-				" --fileFilter ^.*tables/table\\d+$"
-				+ " --output  ./tableRow.html"
-				+ " --htmlDisplay"
-				+ " ^.*/table.png"
-//				+ " ^.*tables/table\\d+/table.annot.svg"
-//				+ " ^.*tables/table\\d+/table.svg"
-				+ " ^.*/table.svg.html";
-		
-		new Norma().run(cmd);
-		cmd = "--project "+targetDir
-				+ " --output tables/tableView.html"
-				+ " --htmlAggregate ^.*tables/table\\d+/tableRow.html";
-		new Norma().run(cmd);
-	}
-	
-	@Test
-	/** 
-	 * tests renaming and moving files
-	 */
-	public void testMove2() {
-		boolean clean = true;
-		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
-		if (!sourceDir.exists()) {
-			LOG.error("no cm-ucl; exiting");
-			return;
-		}
-		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
-		LOG.debug("copying");
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		LOG.debug("copied");
-		
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*svg/table(\\d+)\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.svg");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*image/table(\\d+)\\.png"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.png");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*pdftable/table(\\d+)\\.annot\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.annot.png");
-	}
-	
-	@Test
-	/** aggregate into TabbedButton display
-	 */
-	public void testHtmlAggregateCMUCL() {
-		boolean clean = true;
-		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
-		if (!sourceDir.exists()) {
-			LOG.error("no cm-ucl; exiting");
-			return;
-		}
-		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
-		LOG.debug("copying");
-		
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		LOG.debug("copied");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*svg/table(\\d+)\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.svg");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*image/table(\\d+)\\.png"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.png");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*pdftable/table(\\d+)\\.annot\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.annot.png");
-
-		/** make the *.svg.html as we have cleaned the directory */
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --outputDir "+targetDir
-				+ " --transform svgtable2html");
-		
-		/** make the *.svg.csv */
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --outputDir "+targetDir
-				+ " --output table.svg.csv"
-				+ " --transform svgtable2csv");
-		
-		String cmd = "--project "+targetDir+
-				" --fileFilter ^.*tables/table\\d+$"
-				+ " --output  ./tableRow.html"
-				+ " --htmlDisplay"
-				+ " ^.*/table.png"
-//				+ " ^.*tables/table\\d+/table.annot.svg"
-//				+ " ^.*tables/table\\d+/table.svg"
-				+ " ^.*/table.svg.html";
-		
-		new Norma().run(cmd);
-		
-		cmd = "--project "+targetDir
-				+ " --output  tables/tableView.html"
-				+ " --htmlAggregate ^.*tables/table\\d+/tableRow.html";
-		new Norma().run(cmd);
 		
 	}
 	
@@ -259,47 +119,5 @@ public class TableTest {
 
 	}
 	
-	@Test
-	public void testOutputCSVMini() {
-		boolean clean = false;
-		File sourceDir = NormaFixtures.TEST_PDFTABLE_DIR;
-		File targetDir = new File("target/pdftable1/");
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		/** make the *.svg.html as we have cleaned the directory */
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --outputDir "+"target/pdftable01/"
-				+ " --output table.svg.csv"
-				+ " --transform svgtable2csv");
-
-	}
 	
-	@Test
-	public void testOutputCSVUC() {
-		boolean clean = false;
-		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
-		if (!sourceDir.exists()) {
-			LOG.error("no cm-ucl; exiting");
-			return;
-		}
-		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
-		LOG.debug("copying");
-//		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		LOG.debug("copied");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*svg/table(\\d+)\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.svg");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*image/table(\\d+)\\.png"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.png");
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*pdftable/table(\\d+)\\.annot\\.svg"
-				+ " --outputDir "+targetDir
-				+ " --move2 tables/table(\\1)/table.annot.png");
-
-		/** make the *.svg.html as we have cleaned the directory */
-		new Norma().run("--project "+targetDir+" --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --outputDir "+targetDir
-				+ " --output table.svg.csv"
-				+ " --transform svgtable2csv");
-
-	}
 }

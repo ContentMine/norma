@@ -11,6 +11,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.graphics.svg.SVGRect;
+import org.xmlcml.graphics.svg.SVGShape;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.xml.XMLUtil;
 
@@ -38,7 +39,7 @@ public class SubstitutionEditorTest {
 	public void testSubstituteWord() {
 		SVGWord svgWord = new SVGWord();
 		String wordValue = "acdaf";
-		SVGRect rect = new SVGRect();
+		SVGShape rect = new SVGRect();
 		SubstitutionEditor substitutionManager = new SubstitutionEditor();
 		substitutionManager.addSubstitution(new Substitution("a", "b"));
 		wordValue = substitutionManager.applySubstitutions(svgWord, wordValue, rect);

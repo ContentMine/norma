@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.CTreeList;
@@ -68,7 +69,7 @@ public class NormaTestFixtures {
 			}
 		}
 		if (args != null) {
-			NormaArgProcessor argProcessor = new NormaArgProcessor(args);
+			DefaultArgProcessor argProcessor = new NormaArgProcessor(args);
 			argProcessor.runAndOutput();
 		}
 	}

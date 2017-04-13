@@ -8,7 +8,7 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.graphics.svg.SVGRect;
+import org.xmlcml.graphics.svg.SVGShape;
 import org.xmlcml.graphics.svg.text.SVGWord;
 import org.xmlcml.xml.XMLUtil;
 
@@ -95,7 +95,7 @@ public class SubstitutionEditor {
 	 * @param rect
 	 * @return
 	 */
-	public String applySubstitutions(SVGWord word, String wordValue, SVGRect rect) {
+	public String applySubstitutions(SVGWord word, String wordValue, SVGShape rect) {
 		LOG.trace("applySubstitutionsWordValue");
 		ensureSubstitutionMap();
 		String newWordValue = wordValue;
@@ -151,7 +151,7 @@ public class SubstitutionEditor {
 		}
 	}
 
-	private String recordEditsInWord(SVGWord word, SVGRect rect) {
+	private String recordEditsInWord(SVGWord word, SVGShape rect) {
 		LOG.trace("recordEditsInWord");
 		String editString = editRecord.toString().trim();
 		word.addAttribute(new Attribute(EDITS, editString));

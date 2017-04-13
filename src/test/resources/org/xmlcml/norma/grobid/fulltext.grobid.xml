@@ -1,0 +1,2053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /Users/pm286/workspace/grobid-grobid-parent-0.4.1/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.1" ident="GROBID" when="2017-03-20T20:58+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Differential effects of vilazodone versus citalopram and paroxetine on sexual behaviors and serotonin transporter and receptors in male rats</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename type="first">Ronald</forename>
+								<forename type="middle">S</forename>
+								<surname>Oosting</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">Johnny</forename>
+								<forename type="middle">S</forename>
+								<surname>Chan</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">Berend</forename>
+								<surname>Olivier</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">Pradeep</forename>
+								<surname>Banerjee</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">&amp;</forename>
+								<surname>Yong</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">Kee</forename>
+								<surname>Choi</surname>
+							</persName>
+						</author>
+						<author>
+							<persName>
+								<forename type="first">Frank</forename>
+								<surname>Tarazi</surname>
+							</persName>
+						</author>
+						<title level="a" type="main">Differential effects of vilazodone versus citalopram and paroxetine on sexual behaviors and serotonin transporter and receptors in male rats</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1007/s00213-015-4198-1</idno>
+					<note type="submission">Received: 24 June 2015 / Accepted: 4 December 2015 / Published online: 13 January 2016 # The Author(s) 2016. This article is published with open access at Springerlink.com</note>
+					<note>ORIGINAL INVESTIGATION</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>Rationale Sexual side effects are commonly associated with selective serotonin reuptake inhibitor (SSRI) treatment. Some evidence suggest that activation of 5-HT 1A receptors attenuates SSRI-induced sexual dysfunction. Objective This study in male rats compared the effects of vilazodone, an antidepressant with SSRI and 5-HT 1A receptor partial agonist activity, with other prototypical SSRIs (citalopram and paroxetine) on sexual behaviors and 5-HT receptors (5-HT 1A and 5-HT 2A) and transporter (5-HT T) levels in select forebrain regions of the limbic system using quantitative autoradiography. Methods Rats received vilazodone (1, 3, and 10 mg/kg), citalopram (10 and 30 mg/kg), or paroxetine (10 mg/kg) treatment for 14 days. Sexual behaviors (frequency and latency of mounts, intromissions, and ejaculations) were measured in the presence of an estrous female rat on days 1 (acute), 7 (sub-chronic), and 14 (chronic). Results Vilazodone-treated rats exhibited no sexual dysfunc-tion compared with controls; in contrast, the citalopram-and paroxetine-treated rats exhibited impaired copulatory and ejaculatory behaviors after subchronic and chronic treatments. Chronic vilazodone treatment markedly decreased 5-HT 1A receptor levels in cortical and hippocampal regions, while the SSRIs increased levels of this receptor in similar regions. All chronic treatments reduced 5-HT T levels across the fore-brain; however, the magnitude of the decrease was considerably smaller for vilazodone than for the SSRIs. Conclusions The current studies showed that chronic treatment with vilazodone, in contrast to citalopram and paroxe-tine, was not associated with diminished sexual behaviors in male rats, which may be related to the differential effects of vilazodone on 5-HT 1A receptor and 5-HT T levels relative to conventional SSRIs. Keywords Sexual behavior. 5-HT 1A. 5-HT 2A. 5-HT T. 5-HT. Vilazodone. Paroxetine. Citalopram. Ejaculatory behavior. SSRI</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction </head><p>Major depressive disorder (MDD) is one of the most common mental disorders, with an estimated lifetime prevalence in the USA of 19.2 % (<ref type="bibr" coords="1,375.13,545.11,70.02,9.07" target="#b20">Kessler et al. 2010</ref> ). Selective serotonin reuptake inhibitors (SSRIs) are efficacious in treating MDD and are the most commonly prescribed first-line therapy. However, their clinical effectiveness is often limited by poor adherence and discontinuation due to lack of therapeutic response and adverse effects (<ref type="bibr" coords="1,420.13,607.35,65.62,9.07" target="#b29">Nantz et al. 2009</ref> ). Sexual dysfunction , which affects up to 60 % of patients treated with SSRIs (<ref type="bibr" coords="1,337.83,632.24,97.64,9.07" target="#b19">Kennedy and Rizvi 2009)</ref> , is a leading cause of treatment nonadherence (<ref type="bibr" coords="1,391.00,644.71,71.97,9.07" target="#b2">Ashton et al. 2005</ref>) and is reported by patients to be one of the most unacceptable side effects associated with SSRIs (<ref type="bibr" coords="1,386.03,669.60,53.50,9.07" target="#b16">Hu et al. 2004</ref>). Therefore, reducing the incidence and burden of sexual dysfunction associated with SSRIs is important in improving clinical outcomes in patients with MDD. Approaches to mitigating the sexual dysfunction associated with SSRI treatment include lowering dosage, switching antidepressant medications, or adding concomitant medications such as a phosphodiesterase inhibitor type 5 (PDE5; e.g., sildenafil), a norepinephrinedopamine reuptake inhibitor (e.g., bupropion), or a 5- HT 1A receptor partial agonist (e.g., buspirone) (<ref type="bibr" coords="2,267.31,134.14,21.84,9.07;2,51.02,146.55,80.24,9.07" target="#b35">Rizvi and Kennedy 2013</ref>). Clinical and preclinical evidence supports a role for the 5-HT 1A receptor in regulating sexual behavior. Buspirone was shown to improve sexual function in depressed patients that were experiencing sexual dysfunction while taking the SSRIs paroxetine and citalopram (<ref type="bibr" coords="2,103.06,208.86,75.79,9.07" target="#b23">Landen et al. 1999</ref>). In male rats, buspirone and full 5-HT 1A receptor agonists (8-OH-DPAT and flesinoxan) promoted sexual behavior by decreasing ejaculation latencies (<ref type="bibr" coords="2,126.76,246.22,71.06,9.07" target="#b6">Chan et al. 2010;</ref><ref type="bibr" coords="2,201.61,246.22,78.80,9.07" target="#b38"> Snoeren et al. 2014</ref>). In contrast, the 5-HT 1A receptor antagonist WAY-100635 inhibited sexual behavior when it was coadministered with citalopram (<ref type="bibr" coords="2,129.48,283.58,91.19,9.07" target="#b13">de Jong et al. 2005a</ref>) or paroxetine (<ref type="bibr" coords="2,55.97,296.00,80.27,9.07" target="#b25">Looney et al. 2005</ref>) and when administered in 5-HT T knockout rats (<ref type="bibr" coords="2,117.15,308.47,67.41,9.07" target="#b7">Chan et al. 2011</ref>). These studies suggest that 5-HT 1A receptor antagonism only inhibits sexual behaviors under conditions of chronically elevated serotonin (5-HT) (<ref type="bibr" coords="2,86.96,345.83,72.75,9.07" target="#b31">Olivier et al. 2011</ref>). Vilazodone is an SSRI and 5-HT 1A receptor partial agonist (<ref type="bibr" coords="2,92.16,370.72,113.85,9.07" target="#b12">Dawson and Watson 2009</ref>) approved by the Food and Drug Administration (FDA) for the treatment of MDD in adults (<ref type="bibr" coords="2,133.88,395.61,45.40,9.07">Forest 2011</ref>). Efficacy for vilazodone in adults with MDD was demonstrated in two pivotal trials (<ref type="bibr" coords="2,82.65,420.55,78.04,9.07" target="#b21">Khan et al. 2011;</ref><ref type="bibr" coords="2,166.16,420.55,83.45,9.07" target="#b34"> Rickels et al. 2009</ref>); safety was further supported in a 52-week open-label study ( ). Vilazodone treatment was associated with relatively low adverse impact on sexual function relative to the high prevalence of sexual dysfunction in patients at baseline (<ref type="bibr" coords="2,158.81,482.80,83.28,9.07" target="#b9">Clayton et al. 2013</ref>). Limited evidence from these clinical trials in MDD has shown that the incidence of sexual dysfunction was similar between patients treated with vilazodone and patients treated with placebo, suggesting that vilazodone may be associated with less sexual dysfunction than other SSRIs (<ref type="bibr" coords="2,55.44,557.52,77.56,9.07" target="#b9">Clayton et al. 2013</ref>). The mechanism by which 5-HT 1A receptor agonists affect sexual behavior is not well understood. Previous evidence showing that 5-HT 1A receptor agonists can stimulate male sexual function (<ref type="bibr" coords="2,193.58,607.35,95.52,9.07" target="#b5">Blier and Ward 2003;</ref><ref type="bibr" coords="2,51.02,619.77,79.16,9.07" target="#b6"> Chan et al. 2010;</ref><ref type="bibr" coords="2,135.93,619.77,86.89,9.07" target="#b38"> Snoeren et al. 2014</ref>) suggests that the clinical advantages of vilazodone may in part be mediated through its activity at the 5-HT 1A receptor. This study compared the effects of vilazodone treatment and other SSRIs on copulatory and ejaculatory behaviors , as well as on brain 5-HT receptor and transporter levels in select forebrain regions of the limbic system in male rats. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods Animals </head><p>Male and female Wistar rats (Charles River Laboratories, Germany), initially weighing 250-300 g, were group housed (4 per cage) and maintained under reversed 12/12 h day/night cycles (lights off 7:00 a.m.; lights on 7:00 p.m.); food and water were available ad libitum. Estrus was induced in female rats by a single injection of 50 μg estradiol benzoate dissolved in sesame oil 36 to 42 h before testing with a male rat. Animals were weighed on days 1, 7, and 14 of the drug experiment. All behavioral experiments, including the drug administrations, were reviewed and approved by Utrecht University's animal welfare committee (DEC). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Drugs </head><p>Vilazodone hydrochloride (1, 3, 10 mg/kg) and citalopram hydrochloride (10, 30 mg/kg) were received from Forest Laboratories, LLC. Paroxetine (10 mg/kg) was obtained from a local pharmacy (20 mg tablet, Hexal Pharma Nederland BV) and crushed into powder form. All drugs were dissolved or suspended in vehicle (1 % methylcellulose and water) and were administered orally (PO) at a dose volume of 2 mL/kg. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sexual behavior test </head><p> The sexual behavior test was performed as previously described (<ref type="bibr" coords="2,340.00,420.54,56.51,9.07" target="#b6">Chan et al. 2010</ref>). Briefly, estrus was induced in female rats with estradiol injection 36 to 42 h before testing. Male rats were placed in an observation cage (30 × 40 × 60 cm) for a 30- min habituation period. Following the habituation period, an estrous female was placed in the cage and video recording commenced for 30 min. The frequencies of mounts (no vaginal penetration), intromissions (vaginal penetration), and ejaculations , and the latency to the first ejaculation (time between first mount to ejaculation) were measured and scored during the 30- min test using Observer® 5.0 (Noldus, Wageningen, The Netherlands). Copulatory efficiency was defined as [number of intromissions / (number of intromissions + number of mounts)] × 100 %. Data from the first ejaculation series, which included all events occurring before the first ejaculation, were reported for mounting frequency, ejaculation latency, and copulatory efficiency. The ejaculation frequency for the entire 30- min test was reported. All assessments were performed in the dark phase of the light/dark cycle under dim red light conditions. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sexual training and the selection of male rats </head><p>In order to achieve stable sexual behavior, male rats (N = 145) were trained once per week for five consecutive weeks (pretreatment) against an estrous female in an observation cage. Male rats that exhibited an ejaculation frequency of 2– 3 per 30-min test in the final two of the five training sessions were classified as normal-performers (<ref type="bibr" coords="3,203.05,96.78,64.15,9.07" target="#b33">Pattij et al. 2005</ref>) and were included in the drug studies (n = 98). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental design </head><p>Sexual behavior test Normal-performing male rats were randomly divided into seven treatment groups (n = 14/group): vehicle, vilazodone 1 mg/ kg, vilazodone 3 mg/kg, vilazodone 10 mg/kg, citalopram 10 mg/kg, citalopram 30 mg/kg, and paroxetine 10 mg/kg. All treatments were administered once daily for 14 days, either 1 h before the sexual test or around 11:00 a.m. on days without a sex test. The evaluations of sexual behaviors were performed on day 1 (acute), day 7 (subchronic), and day 14 (chronic). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Animal treatment and tissue preparation </head><p>Following the chronic (14 days) treatment with vilazodone (3, 10 mg/kg), citalopram (10 mg/kg), paroxetine (10 mg/kg), or vehicle (1 % methylcellulose and water) and the day 14 sexual behavior tests, n = 8 animals per treatment group were randomly chosen for the autoradiography experiments. Rats were decapitated, and their brains were rapidly excised and stored at −80 °C. Next, coronal sections (10 μm) were cut on a cryostat at −20 °C and stored at −80 °C. Brain tissue from regions that are thought to mediate neural pathways and behaviors (and are typically disturbed in MDD patients) were selected for evaluation (<ref type="bibr" coords="3,76.64,457.90,66.11,9.07" target="#b3">Baldessarini 2006</ref> ). The following brain regions selected for quantitative autoradiography: medial prefrontal cortex (MPC), dorsolateral frontal cortex (DFC), medial caudate putamen (CP-M), lateral caudate putamen (CP-L), nucleus accumbens (NAc), hippocampus CA 1 region (HIPP-CA 1 ), hippocampus CA 3 region (HIPP-CA 3 ), and entorhinal cortex (EC). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Autoradiography assays </head><p> Serotonin transporter (5-HT T ) levels were determined as previously described (<ref type="bibr" coords="3,129.93,594.88,68.46,9.07" target="#b43">Zhang et al. 2002</ref>). First, sections were preincubated for 2 h at 4 °C in 50 mM Tris-HCl buffer (pH 7.4) containing 120 mM NaCl. Next, sections were incubated for 24 h at room temperature (RT) with fresh buffer containing 1 nM <ref type="bibr" coords="3,122.02,644.72,3.21,9.07;3,125.18,642.60,3.74,6.04;3,128.86,644.71,9.25,9.07">[ 3 H]</ref>cyanoimipramine (5-HT T ligand) and the nonspecific binding (NSB) agent 5 mM sertraline. Following incubation, sections were washed twice for 30 min in ice-cold buffer, rinsed in water, and air dried. 5-HT 1A receptor levels were determined as previously described (<ref type="bibr" coords="3,86.40,706.96,67.17,9.07" target="#b39">Tarazi et al. 2002</ref>). Sections were preincubated for treatment on any of the sexual behavior parameters (Figs. 1 and 2a–b) </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Day 7/subchronic administration </head><p>There were no differences in vehicle-treated rats on day 7 compared with day 1, indicating stable endophenotypes of the sexual behavior parameters. For the day 7 tests, there were significant effects of treatment on mount frequency (F 6, 91 = 5.52; P &lt; .001), copulatory efficiency (F 6, 91 = 5.61; P &lt; .001), latency to first ejaculation (F 6, 91 = 12.65; P &lt; .001), and ejaculation frequency (F 6, 91 = 3.94; P = .002). Post hoc comparisons showed that vilazodone-treated rats did not display any significant differences from vehicle-treated rats in sexual behavior after 7 days of treatment. In contrast, citalopram-treated rats displayed increased latency to ejaculation and decreased ejaculation frequency compared with vehicle-treated controls (P &lt; .05) (<ref type="figure" coords="4,54.74,284.09,25.02,9.07" target="#fig_2">Fig. 2a</ref> –b). Paroxetine-treated rats displayed significantly impaired sexual behavior on all measures after 7 days of treatment (P &lt; .05) (Figs. 1 and 2). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Day 14/chronic administration </head><p> Representative traces of individual rat scores for mounts, intromissions , and ejaculations during the 30-min sex test on day 14 (i.e., chronic treatment) are shown in <ref type="figure" coords="4,481.58,109.19,21.71,9.07">Fig. 3</ref>, 2, 3, or 4 ejaculations during the test than rats treated with vehicle or vilazodone, suggesting that these treatments adversely affected ejaculation frequency (<ref type="figure" coords="5,174.30,706.96,24.81,9.07" target="#fig_2">Fig. 2c</ref>). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5-HT 1A receptor levels </head><p> In vilazodone-treated rats, 5-HT 1A receptor levels were reduced in the MPC, HIPP-CA 1 , HIPP-CA 3 , and EC regions (P &lt; .05) (<ref type="figure" coords="5,348.76,682.08,27.91,9.07" target="#fig_3">Fig. 4a</ref>, and day 14 (chronic) in male Wistar rats (n = 14/drug/dose). Data are shown as the mean ± SEM. *P &lt; .05 compared with vehicle. c The number of rats (n = 14/group) that had 1, 2, 3, or 4 ejaculations during the 30- min sexual behavior test on day 14 (<ref type="figure" coords="6,309.86,146.55,25.79,9.07" target="#fig_3">Fig. 4a</ref>, <ref type="figure" coords="6,342.77,146.55,28.14,9.07" target="#tab_1">Table 1</ref>). Notably, vilazodone showed the opposite effects of citalopram or paroxetine on 5-HT 1A receptor levels in HIPP-CA 1 , HIPP-CA 3 , and EC brain regions. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5-HT 2A receptor levels </head><p>Vilazodone-treated rats had increased 5-HT 2A receptor levels in the MPC and the DFC (10 mg/kg only) regions (P &lt; .05) (<ref type="figure" coords="6,309.85,246.22,26.66,9.07" target="#fig_3">Fig. 4b</ref>, <ref type="figure" coords="6,344.18,246.22,28.60,9.07" target="#tab_1">Table 1</ref> ). Similarly, paroxetine-treated rats had increased 5-HT 2A receptor levels in the MPC and DFC regions (P &lt; .05) (<ref type="figure" coords="6,346.75,271.11,26.87,9.07" target="#fig_3">Fig. 4b</ref>, <ref type="figure" coords="6,381.38,271.11,28.83,9.07" target="#tab_1">Table 1</ref> ). Citalopram-treated rats had increased 5-HT 2A receptor levels in the DFC region (P &lt; .05) (<ref type="figure" coords="6,309.86,295.99,25.57,9.07" target="#fig_3">Fig. 4b</ref>, <ref type="figure" coords="6,342.14,295.99,27.56,9.07" target="#tab_1">Table 1</ref>). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Serotonin transporter (5-HT T ) levels </head><p> Chronic treatment with vilazodone, citalopram, and paroxetine reduced 5-HT T levels in all brain regions (<ref type="figure" coords="6,490.80,358.30,25.36,9.07" target="#fig_3">Fig. 4c</ref>, <ref type="figure" coords="6,522.83,358.30,21.50,9.07;6,306.15,370.72,3.52,9.07" target="#tab_1">Table  1</ref>). Compared with vehicle, chronic vilazodone-treated (3 and 10 mg/kg/day) rats had dose-dependent reductions of 5-HT T levels in the MPC, DFC, NAc, CPu, HIPP-CA 1 , HIPP-CA 3 , and EC regions (P &lt; .05). Chronic citalopram-and paroxetinetreated rats (10 mg/kg/day for both) also had reductions in 5- HT T levels compared to vehicle (P &lt; .05); the magnitude of reductions in 5-HT T levels was greater for citalopram-and paroxetine-treated rats than for rats treated with both doses of vilazodone (P &lt; .05). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion </head><p>The current studies compared the effects of vilazodone, a combined SSRI and 5-HT 1A receptor partial agonist, and conventional SSRIs (citalopram and paroxetine) on male rat sexual behaviors and brain 5-HT receptor and transporter levels. SSRI treatment has been associated with dysfunction of the three sequential aspects of the sexual response cycle: sexual desire (i.e., libido), arousal (i.e., erectile function in men), and orgasm (<ref type="bibr" coords="6,340.74,619.76,93.14,9.07" target="#b37">Serretti and Chiesa 2009</ref>). Rats also exhibit a sexual response cycle, which includes introductory, copulatory, and ejaculatory phases, that is sensitive to SSRI treatment (<ref type="bibr" coords="6,310.52,657.12,71.54,9.07" target="#b38">Snoeren et al. 2014</ref>). Vilazodone treatment had no adverse effects on copulatory and ejaculatory behaviors following acute, subchronic (7 days), and chronic (14 days) treatment; however, subchronic and chronic treatment with paroxetine, and to a lesser extent  <ref type="figure" coords="6,306.77,60.21,20.16,7.44">Fig. 3</ref>Representative traces of individual sexual function after chronic (14 days) treatment. Representative traces of sexual function during the 30-min sex test (x-axis) of individual rats (n = 1/group) treated with a vehicle, b vilazodone, c citalopram, or d paroxetine (10 mg/kg) on day 14. Y-axis shows the events scored during the test (number of mounts, intromissions, and ejaculations) citalopram, inhibited copulatory efficiency and ejaculatory parameters (decreased frequency and increased latency to first ejaculation). The paroxetine and citalopram results were consistent with previous reports in rats (<ref type="bibr" coords="7,451.98,457.91,92.23,9.07" target="#b13">de Jong et al. 2005a, b;</ref><ref type="bibr" coords="7,306.14,470.38,80.86,9.07" target="#b42"> Waldinger et al. 2002</ref>) and similar to humans (<ref type="bibr" coords="7,484.84,470.38,59.38,9.07;7,306.14,482.80,16.84,9.07" target="#b41">Waldinger et al. 2001</ref>). Since the 5-HT system maintains an inhibitory tone on sexual behavior, chronic elevation of extracellular 5-HT by SSRI treatment is believed to underlie delayed and inhibited ejaculation in men (<ref type="bibr" coords="7,384.84,520.16,64.92,9.07" target="#b36">Rosen et al. 1999</ref>) and male rats (<ref type="bibr" coords="7,515.74,520.16,28.57,9.07;7,306.14,532.63,30.58,9.07" target="#b6">Chan et al. 2010</ref>). Notably, the acute treatments had no effects on sexual behavior which, given the inhibitory role of 5-HT in sexual behaviors, may seem surprising. Acute administration of SSRIs and vilazodone results in rapid and sharp increases in extracellular 5-HT levels in the rat medial and lateral cortices (van <ref type="bibr" coords="7,325.65,594.88,117.09,9.07" target="#b40">Amsterdam and Seyfried 2014</ref> ) and in the ventral hippocampus (<ref type="bibr" coords="7,343.61,607.35,60.74,9.07" target="#b32">Page et al. 2002</ref> ). The increase in 5-HT levels following vilazodone treatment was nearly two times greater than following citalopram, paroxetine, or fluoxetine (van Amsterdam and Seyfried 2014). However, evidence in humans and rats suggests that acute treatments of SSRIs generally do not cause sexual dysfunction (<ref type="bibr" coords="7,468.35,669.60,75.89,9.07" target="#b31">Olivier et al. 2011;</ref><ref type="bibr" coords="7,306.16,682.07,81.08,9.07" target="#b41"> Waldinger et al. 2001</ref><ref type="bibr" coords="7,393.92,682.07,16.97,9.07" target="#b42"> Waldinger et al. , 2002</ref> ); rather, SSRI-related sexual dysfunction is likely dependent upon delayed neurochemical adaptions following chronic, but not acute, elevation of  HT as well as modulations of neuroendocrine and other neurotransmitter systems (<ref type="bibr" coords="8,139.29,71.83,73.85,9.07" target="#b9">Clayton et al. 2013;</ref><ref type="bibr" coords="8,215.04,71.83,65.86,9.07" target="#b31"> Olivier et al. 2011</ref>). One notable exception may be the SSRI, dapoxetine, which has been developed for the treatment of premature ejaculation. The acute effects of dapoxetine on ejaculatory function have been attributed to its pharmacokinetic profile (i.e., rapid absorption and elimination) and its targeting of excitatory thalamic and hypothalamic regions associated with ejaculatory response (<ref type="bibr" coords="8,93.25,159.02,81.22,9.07" target="#b11">Clément et al. 2012;</ref><ref type="bibr" coords="8,178.08,159.02,61.24,9.07" target="#b26"> McMahon 2011</ref>). However, although one preclinical study found high-dose dapoxetine to have limited effects on ejaculation latency in rapidejaculating rats, other studies in normal male rats did not show differences between dapoxetine and paroxetine (<ref type="bibr" coords="8,260.51,208.86,28.57,9.07;8,51.01,221.27,16.84,9.07" target="#b30">Olivier 2015</ref>). From this standpoint, dapoxetine does not appear to differ from other SSRIs in its pharmacologic ability to inhibit ejaculation latency in either rats or men (<ref type="bibr" coords="8,221.03,246.22,47.70,9.07" target="#b30">Olivier 2015</ref>). In contrast to vilazodone, acute administration of 5-HT 1A receptor agonists stimulates copulatory and ejaculatory behaviors in male rats (<ref type="bibr" coords="8,92.39,283.58,72.44,9.07" target="#b0">Arnone et al. 1995;</ref><ref type="bibr" coords="8,166.83,283.58,79.42,9.07" target="#b14"> de Jong et al. 2005b;</ref><ref type="bibr" coords="8,248.32,283.58,40.89,9.07;8,51.03,296.00,29.37,9.07" target="#b38"> Snoeren et al. 2014</ref>), which may be due to the differences between full and partial agonism at the 5-HT 1A receptor; other differences in acute neurophysiological and behavioral responses in rats have been reported between full 5-HT 1A receptor agonists and vilazodone (<ref type="bibr" coords="8,100.45,345.83,84.56,9.07" target="#b4">Bartoszyk et al. 1997;</ref><ref type="bibr" coords="8,187.57,345.83,59.95,9.07" target="#b32"> Page et al. 2002</ref>). Since the impetus for this study was to better understand the adverse effects of SSRIs and other antidepressants on sexual functioning in patients who require such treatments, the current study focused on brain regions in the limbic system known to be associated with MDD and SSRI-mediated sexual dysfunction (<ref type="bibr" coords="8,110.39,420.55,80.69,9.07" target="#b3">Baldessarini 2006;</ref><ref type="bibr" coords="8,195.64,420.55,84.30,9.07" target="#b38"> Snoeren et al. 2014</ref>). However, it is important to note that other structures rich in 5-HT receptors, such as the raphé magnus, raphé pallidus, and gigantocelluar nuclei of the ventral medulla, may also contribute to the effects of antidepressants on male sexual behavior. Studies in rats have reported various effects of SSRIs on 5-HT receptor density. For example, repeated citalopram exposure was found to increase 5-HT 1A receptors and decrease 5-HT 2A receptors in the hippocampus in one study (<ref type="bibr" coords="8,236.28,520.16,52.85,9.07;8,51.02,532.63,16.84,9.07" target="#b22">Klimek et al. 1994</ref>), while a later study using positron emission tomography along with autoradiographic assays found no effect of chronic citalopram on 5-HT 1A receptor density in the dorsal raphé nucleus, frontal cortex, or hippocampus (<ref type="bibr" coords="8,214.62,569.99,74.56,9.07;8,51.02,582.41,28.34,9.07" target="#b28">Moulin-Sallanon et al. 2009</ref>). Repeated administration with paroxetine in rats was shown to have no effect on the density of 5-HT 1A receptors in the hypothalamus (<ref type="bibr" coords="8,125.19,607.35,46.82,9.07" target="#b24">Li et al. 1997</ref>). In the current study, chronic vilazodone treatment reduced postsynaptic 5-HT 1A receptor levels in the cortical and hippocampal regions, while citalopram and paroxetine increased 5-HT 1A receptor levels in the same brain regions. Importantly, the differential effects of the drugs on postsynaptic 5-HT 1A receptor levels occurred in the limbic cortex (MPC and EC) and the hippocampus. These are key brain substrates that receive afferent 5-HT projections from the dorsal and median raphé nucleus and are involved in the regulation of ejaculation (<ref type="bibr" coords="8,486.63,59.41,57.65,9.07;8,306.15,71.83,17.72,9.07" target="#b38">Snoeren et al. 2014</ref>). Stimulation of postsynaptic 5-HT 1A receptors by vilazodone via both direct activation and elevated extracellular 5-HT levels in the prefrontal cortex and hippocampus (<ref type="bibr" coords="8,310.85,109.19,77.18,9.07" target="#b17">Hughes et al. 2005;</ref><ref type="bibr" coords="8,391.53,109.19,63.79,9.07" target="#b32"> Page et al. 2002</ref>) may lead to 5-HT 1A receptor downregulation. The results of 5-HT 1A receptor downregulation and lack of sexual side effects with vilazodone may complement a recent electrophysiology study by Ashby et al. This study reported that presynaptic 5-HT 1A autoreceptors in the dorsal raphé nuclei , which normally inhibit 5-HT neuron firing, showed much greater desensitization following chronic vilazodone treatment than following a similar treatment with fluoxetine (<ref type="bibr" coords="8,510.30,208.86,34.01,9.07;8,306.14,221.27,28.25,9.07" target="#b1">Ashby et al. 2013</ref>). Therefore, this desensitization would be expected to increase extracellular 5-HT release in afferent brain regions, including the cortex and hippocampus, and consequently result in a higher likelihood of sexual side effects following chronic vilazodone administration compared with conventional SSRIs. However, one possible explanation for the lack of sexual side effects of vilazodone is that the 5-HT 1A partial agonist activity of this molecule may stimulate the postsynaptic 5-HT 1A receptors which can counteract the inhibitory effects of elevated extracellular 5-HT resulting from presynaptic 5-HT 1A receptor desensitization and 5-HT T blockade. In accordance with this explanation, systemic administration of several other 5-HT 1A receptor agonists and partial agonists enhanced ejaculatory behaviors in male rodents (<ref type="bibr" coords="8,505.70,383.19,38.55,9.07;8,306.14,395.60,34.73,9.07" target="#b0">Arnone et al. 1995;</ref><ref type="bibr" coords="8,344.09,395.60,83.74,9.07" target="#b14"> de Jong et al. 2005b;</ref><ref type="bibr" coords="8,431.04,395.60,74.36,9.07" target="#b38"> Snoeren et al. 2014</ref> ). For instance , de <ref type="bibr" coords="8,345.49,408.08,70.95,9.07" target="#b14">Jong et al. (2005b) </ref>reported that a challenge with the full 5-HT 1A receptor agonist 8-OH-DPAT in male rats chronically treated with paroxetine restored the sexual behavior of these animals. Vilazodone has demonstrated comparable activity to 8-OH-DPAT at postsynaptic 5-HT 1A receptors in hippocampal tissue (<ref type="bibr" coords="8,378.71,470.32,73.17,9.07" target="#b17">Hughes et al. 2005</ref>). If this hypothesis is correct, the timing of the sexual behavior tests in rats relative to drug administration may be critical and will be investigated in a future study. In humans, however, this may be less of an issue because of the much longer half-life of vilazodone. Chronic treatment with vilazodone, citalopram, and paroxetine reduced 5-HT T levels in all of the tested forebrain regions . This is consistent with existing literature demonstrating that elevated extracellular 5-HT concentrations in vitro (<ref type="bibr" coords="8,310.34,582.41,81.25,9.07" target="#b18">Jorgensen et al. 2014</ref> ) and chronic SSRI and serotonin norepinephrine reuptake inhibitor (SNRI) treatment in vivo (<ref type="bibr" coords="8,310.53,607.35,65.08,9.07" target="#b27">Mirza et al. 2007</ref>) can lead to reduced 5-HT T expression. A consequence of reduced 5-HT T availability is enhanced postsynaptic serotonergic neurotransmission, which may in turn contribute to sexual dysfunction (<ref type="bibr" coords="8,444.60,644.72,63.67,9.07" target="#b7">Chan et al. 2011</ref>). In the current study, the magnitude of reductions in 5-HT T levels was greater for citalopram and paroxetine (maximum reductions of 80 and 91 %, respectively) than for vilazodone (maximum reduction of 58 %). Because of the differential effects of vilazodone relative to the SSRIs on both 5-HT T and 5-HT 1A receptors, it is likely that the dynamics of extracellular 5-HT differ between rats that are chronically treated with the two different types of antidepressants. The increases in cortical 5-HT 2A receptor levels following the different types of antidepressant treatments may suggest a common mechanism of action that mediates the beneficial therapeutic effects of dissimilar antidepressant drugs. The 5-HT 2A receptor is purported to have an inhibitory role in copulatory behavior, as shown by a decreased number of rats that initiated copulation after receiving 5-HT 2A receptor agonists in a sexual behavior test (<ref type="bibr" coords="9,108.04,183.91,68.79,9.07" target="#b31">Olivier et al. 2011</ref>). During the day 14 sexual behavior tests, the majority of citalopram-and paroxetinetreated rats had ≤2 ejaculations and several rats had no ejaculations . These results may be related to elevated 5-HT 2A receptor activity following increased expression in cortical areas. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion </head><p>SSRI treatment is associated with direct negative effects on sexual function that may lead to treatment discontinuation and reduced quality of life (<ref type="bibr" coords="9,144.72,322.75,51.10,9.07" target="#b16">Hu et al. 2004</ref>). Combination therapy with SSRIs and 5-HT 1A agonists and partial agonists, such as buspirone, has been shown to ameliorate SSRI-induced sexual dysfunction (<ref type="bibr" coords="9,103.34,360.11,105.88,9.07" target="#b8">Clayton and Montejo 2006;</ref><ref type="bibr" coords="9,211.52,360.11,69.27,9.07" target="#b23"> Landen et al. 1999</ref>). In the current preclinical studies, unlike the conventional SSRIs, vilazodone was not associated with diminished copulatory or ejaculatory behaviors in male rats. These results support clinical trial data showing that vilazodone treatment, while effective in improving depressive symptoms, was associated with a relatively low incidence of direct adverse effects on sexual function (<ref type="bibr" coords="9,132.24,447.31,73.72,9.07" target="#b9">Clayton et al. 2013</ref><ref type="bibr" coords="9,213.72,447.31,16.83,9.07" target="#b10">Clayton et al. , 2015</ref>). The distinct effects of vilazodone on the 5-HT T and 5-HT 1A receptors may enhance serotonergic transmission to achieve clinical efficacy in depression while limiting the adverse events of SSRIinduced sexual dysfunction. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,503.30,109.19,3.68,9.07;4,317.46,121.66,226.75,9.07;4,306.12,134.13,238.07,10.00;4,306.14,146.55,22.35,9.07;4,328.48,150.56,16.88,6.04;4,346.85,146.55,191.80,9.07;4,538.64,150.56,5.60,6.04;4,306.15,159.03,238.07,10.00;4,306.15,171.50,238.18,9.07;4,306.15,183.91,238.09,9.07;4,306.15,196.39,238.14,9.07;4,306.15,208.86,238.07,9.07;4,306.15,221.27,238.18,9.07;4,306.15,233.75,238.11,9.07;4,306.15,246.22,238.21,9.07;4,306.15,258.63,238.06,9.07;4,306.15,271.11,238.22,9.07;4,306.15,283.58,157.40,9.07;4,317.47,295.99,226.87,9.07;4,306.14,308.47,238.10,9.07"><head></head><figDesc>. On day 14, there were significant effects of treatment for mount frequency (F 6, 91 = 3.59; P = .003), copulatory efficiency (F 6, 91 = 3.83; P = .002), latency to first ejaculation (F 6, 91 = 4.10; P = .001), and ejaculation frequency (F 6, 91 = 5.88; P &lt; .001). Similar to the previous test days, vilazodone-treated rats did not display any differences in the sexual behaviors compared with vehicle-treated rats. In contrast, citalopramtreated rats had an increase in mount frequency (P &lt; .05; 10 mg/kg) yet decreased ejaculation frequency and copulatory efficiency (P &lt; .05; 10 and 30 mg/kg) (Figs. 1 and 2b). Paroxetine-treated rats displayed no differences in mount frequency and ejaculation latency compared to vehicle-treated rats; however, ejaculation frequency and copulatory efficiency were decreased (P &lt; .05) (Figs. 1 and 2). During the day 14 sex test, the number of rats exhibiting 1, 2, 3, or 4 ejaculations was comparable following chronic </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,51.02,667.47,238.06,7.71;4,51.02,677.44,238.10,7.71;4,51.02,687.42,238.13,7.71;4,51.02,697.34,238.11,7.71;4,51.02,707.32,238.05,7.71"><head>Fig. 1 </head><figDesc>Fig. 1 Effects of vilazodone, citalopram, and paroxetine on first series copulatory behavior in male rats. Effects of vilazodone (1, 3, and 10 mg/ kg), citalopram (10 and 30 mg/kg), and paroxetine (10 mg/kg) on a mount frequency and b copulatory efficiency (defined as number of intromissions / [number of intromissions + number of mounts]) × 100 % </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,51.02,566.84,238.09,7.71;5,51.02,576.76,238.01,7.71;5,51.02,586.74,238.08,7.71;5,51.02,596.71,238.08,7.71;5,51.02,606.64,238.18,7.71"><head>Fig. 2 </head><figDesc>Fig. 2 Effects of vilazodone, citalopram, and paroxetine on ejaculatory behavior in male rats. Effects of vilazodone (1, 3, and 10 mg/kg), citalopram (10 and 30 mg/kg), and paroxetine (10 mg/kg) on a first ejaculation latency and b total ejaculation frequency during the 30-min sex tests conducted after treatment on day 1 (acute), day 7 (subchronic), </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,51.02,628.91,238.15,7.71;7,51.02,638.89,238.18,7.71;7,51.02,648.81,238.11,7.71;7,51.02,658.79,238.21,8.51;7,51.03,668.77,238.18,8.52;7,51.02,678.74,238.11,7.71;7,51.02,688.67,238.12,7.71;7,51.02,698.64,47.07,7.71"><head>Fig. 4 </head><figDesc> Fig. 4 Effects of chronic (14 days) vilazodone, citalopram, and paroxetine treatment on the levels of serotonergic markers in rat forebrain regions . CP-M indicates caudate putamen-medial, CP-L caudate putamenlateral , DFC dorsal frontal cortex, EC entorhinal cortex, HIPP-CA 1 hippocampus CA 1 region, HIPP-CA 3 hippocampus CA 3 region, MPC medial prefrontal cortex, NAc nucleus accumbens. Data are shown as the mean ± SEM (n = 8/group). *P &lt; .05 vs vehicle (ANOVA, post hoc Dunnett t test) </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false" coords="5,306.14,682.08,238.17,34.88"><figDesc coords="5,384.88,682.08,159.37,9.07;5,306.14,694.49,168.68,9.07;5,474.63,698.50,9.10,6.04;5,486.94,694.49,57.38,9.07;5,306.14,706.96,238.08,9.99">Table 1). In contrast, citalopram-and paroxetine-treated rats had increased 5-HT 1A receptor levels in the HIPP-CA 1 , HIPP-CA 3 , and EC regions (P &lt; .05)</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="true" coords="7,51.02,33.98,493.25,367.37"><figDesc coords="7,306.14,57.96,238.05,7.71;7,306.14,67.88,237.58,7.71">Table 1 Mean percent changes from vehicle in serotonergic markers after chronic (14 days) vilazodone, citalopram, and paroxetine treatment</figDesc><table coords="7,306.14,86.76,238.14,314.59">Brain region Vilazodone (%) 
+Citalopram (%) Paroxetine (%) 
+
+3 mg/kg 10 mg/kg 10 mg/kg 
+10 mg/kg 
+
+5-HT 1A 
+
+MPC 
+−31* 
+−32* 
+NS 
+NS 
+
+HIPP-CA 1 −49* 
+−49* 
++21* 
++20* 
+
+HIPP-CA 3 −49* 
+−42* 
++33* 
++34* 
+
+EC 
+−42* 
+−42* 
++39* 
++24* 
+5-HT 2A 
+MPC 
++22* 
++23* 
+NS 
++19* 
+
+DFC 
+NS 
++21* 
++21* 
++19* 
+5-HT T 
+MPC 
+−28* 
+−49* 
+−82* 
+−91* 
+
+DFC 
+−28* 
+−42* 
+−82* 
+−91* 
+
+NAc 
+−48* 
+−50* 
+−81* 
+−90* 
+
+CP-M 
+−37* 
+−41* 
+−69* 
+−78* 
+
+CP-L 
+−36* 
+−37* 
+−72* 
+−79* 
+
+HIPP-CA 1 −41* 
+−45* 
+−54* 
+−72* 
+
+HIPP-CA 3 −51* 
+−55* 
+−71* 
+−87* 
+
+EC 
+−45* 
+−58* 
+−71* 
+−88* 
+
+CP-M caudate putamen-medial, CP-L caudate putamen-lateral, DFC dor-
+sal frontal cortex, EC entorhinal cortex, HIPP-CA 1 hippocampus CA 1 
+region, HIPP-CA 3 hippocampus CA 3 region, MPC medial prefrontal cor-
+tex, NAc nucleus accumbens, NS not significantly different from vehicle 
+
+*P &lt; .05 versus vehicle (n = 8/group) 
+
+</table></figure>
+
+			<note place="foot">Psychopharmacology (2016) 233:1025–1034</note>
+
+			<note place="foot" n="60"> min at RT in 50 mM Tris-HCl buffer (pH 7.6) containing ascorbic acid (0.1 %, w/v), 4 mM CaCl 2 , and 10 μM pargyline-HCl . Next, sections were incubated for 1 h at RT with fresh buffer containing 2.0 nM [ 3 H]8-OH-DPAT and 1 μM 5-HT as the NSB agent. Following incubation, sections were washed twice for 5 min in ice-cold buffer, rinsed in water, and air dried. 5-HT 2A receptor levels were determined as previously described (Tarazi et al. 2002). Sections were preincubated for 1 h at RT in 50 mM Tris-HCl buffer (pH 7.7). Next, sections were incubated for 1 h at RT in fresh buffer containing 3.0 nM [ 3 H]ketanserin, 1 μM prazosin, and 100 nM tetrabenzine with the NSB 1 μM methysergide. Following the incubation, sections were washed twice for 30 min in ice-cold buffer, rinsed in water, and air-dried. For image analysis, radiolabeled slides and calibrated [ 3 H]standards (Amersham) were exposed to Biomax MR films for 5–6 weeks at 4 °C. The films were developed and fixed in Kodak D-19 for 5 min at RT. Optical density (OD) in brain regions of interest was measured with a computerized densitometric image analyzer (MCID-4 system, Imaging Research; St. Catharines, Ontario). OD was converted to nCi/mg of tissue with calibrated [ 3 H]standards. After subtracting nonspecific binding from total binding, the specific binding was determined and expressed as femtomole bound per milligram tissue. Statistical analysis All behavioral data were analyzed by analysis of variance (ANOVA; SPSSv22.0) to test for overall significance. If overall significant effects were found, post hoc Dunnett t tests were used to evaluate differences between active-and vehicletreatment groups on the same experimental day. Data from the autoradiography assays were analyzed using a two-way ANOVA to evaluate changes across treatments and brain regions for each assay. In case of overall statistically significant effects for drug or brain region, post hoc Dunnett t tests were used to evaluate differences between treatment and vehicle groups. All significance testing was two-sided at the P &lt; .05 level. All values are shown as the mean and standard error of the mean (SEM). Results Sexual behavior tests Day 1/acute administration On day 1, the vehicle-treated rats displayed an average of 2.5 ejaculations. Following acute administrations of vilazodone, citalopram, and paroxetine, there were no significant effects of Psychopharmacology (2016) 233:1025–1034</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,306.14,183.48,238.19,7.71;9,323.10,193.51,221.24,7.71;9,323.10,203.49,221.14,7.71"  xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Effect of SR 59026A, a new 5-HT(1A) receptor agonist, on sexual activity in male rats</title>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Arnone</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Baroni</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">J</forename>
+				<surname>Gai</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">U</forename>
+				<surname>Guzzi</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Mf</forename>
+				<surname>Desclaux</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Pe</forename>
+				<surname>Keane</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Le</forename>
+				<surname>Fur</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">G</forename>
+				<surname>Soubrie</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Behav Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="276" to="282" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.15,213.80,238.18,7.71;9,323.10,223.78,221.22,7.71;9,323.10,233.75,221.26,7.71;9,323.10,243.79,221.25,7.71;9,323.10,253.76,29.11,7.71"  xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Electrophysiological evidence for rapid 5- HT(1)A autoreceptor inhibition by vilazodone, a 5-HT(1)A receptor partial agonist and 5-HT reuptake inhibitor</title>
+		<author>
+			<persName>
+				<forename type="first">Cr</forename>
+				<surname>Ashby</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<surname>Jr</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jh</forename>
+				<surname>Kehne</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Gd</forename>
+				<surname>Bartoszyk</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Mj</forename>
+				<surname>Renda</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Athanasiou</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ka</forename>
+				<surname>Pierz</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ca</forename>
+				<surname>Seyfried</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">714</biblScope>
+			<biblScope unit="page" from="359" to="365" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.15,264.08,238.10,7.71;9,323.10,274.05,221.24,7.71;9,323.10,284.09,221.14,7.71"  xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Antidepressant-related adverse effects impacting treatment compliance: results of a patient survey</title>
+		<author>
+			<persName>
+				<forename type="first">Ak</forename>
+				<surname>Ashton</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Bd</forename>
+				<surname>Jamerson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Lw</forename>
+				<surname>Weinstein</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">C</forename>
+				<surname>Wagoner</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Ther Res Clin Exp</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="96" to="106" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.16,294.40,238.11,7.71;9,323.11,304.38,221.13,7.71;9,323.11,314.35,221.26,7.71;9,323.11,324.33,39.61,7.71"  xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Drug therapy of depression and anxiety disorders Goodman and Gilman&apos;s the pharmacological basis of therapeutics</title>
+		<author>
+			<persName>
+				<forename type="first">Rj</forename>
+				<surname>Baldessarini</surname>
+			</persName>
+		</author>
+		<editor>Brunton LL, Lazo JS, Parker KL</editor>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>McGraw-Hill</publisher>
+			<biblScope unit="page" from="429" to="460" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.16,334.64,238.03,7.71;9,323.11,344.68,221.15,7.71;9,323.11,354.65,161.05,7.71"  xml:id="b4">
+	<analytic>
+		<title level="a" type="main">EMD 68843, a serotonin reuptake inhibitor with selective presynaptic 5-HT 1A receptor agonistic properties</title>
+		<author>
+			<persName>
+				<forename type="first">Gd</forename>
+				<surname>Bartoszyk</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">R</forename>
+				<surname>Hegenbart</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Ziegler</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="page" from="147" to="153" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.17,364.97,238.08,7.71;9,323.12,374.94,175.28,7.71"  xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Is there a role for 5-HT1A agonists in the treatment of depression?</title>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+				<surname>Blier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Nm</forename>
+				<surname>Ward</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biol Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="193" to="203" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.18,385.26,238.07,7.71;9,323.13,395.23,221.14,7.71;9,323.13,405.27,24.52,7.71"  xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Drug-induced sexual dysfunction in rats</title>
+		<author>
+			<persName>
+				<forename type="first">Js</forename>
+				<surname>Chan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rs</forename>
+				<surname>Oosting</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Protoc Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="9" to="34" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+	<note>Suppl</note>
+</biblStruct>
+
+<biblStruct coords="9,306.18,415.58,238.21,7.71;9,323.13,425.56,221.19,7.71;9,323.13,435.53,221.12,7.71;9,323.13,445.51,63.25,7.71"  xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The serotonin transporter plays an important role in male sexual behavior: a study in serotonin transporter knockout rats</title>
+		<author>
+			<persName>
+				<forename type="first">Js</forename>
+				<surname>Chan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Em</forename>
+				<surname>Snoeren</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">E</forename>
+				<surname>Cuppen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rs</forename>
+				<surname>Oosting</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Sex Med</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="97" to="108" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.18,455.82,238.08,7.71;9,323.13,465.86,221.24,7.71"  xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Major depressive disorder, antidepressants , and sexual dysfunction</title>
+		<author>
+			<persName>
+				<forename type="first">Ah</forename>
+				<surname>Clayton</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Al</forename>
+				<surname>Montejo</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="33" to="37" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+	<note>Suppl</note>
+</biblStruct>
+
+<biblStruct coords="9,306.18,476.17,238.12,7.71;9,323.14,486.15,221.15,7.71;9,323.14,496.12,152.52,7.71"  xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The effect of vilazodone on sexual function during the treatment of major depressive disorder</title>
+		<author>
+			<persName>
+				<forename type="first">Ah</forename>
+				<surname>Clayton</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Sh</forename>
+				<surname>Kennedy</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jb</forename>
+				<surname>Edwards</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">S</forename>
+				<surname>Gallipoli</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Cr</forename>
+				<surname>Reed</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Sex Med</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="2465" to="2476" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.18,506.44,238.12,7.71;9,323.14,516.41,221.06,7.71;9,323.14,526.45,221.19,7.71;9,323.14,536.42,144.77,7.71"  xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Sexual dysfunction during treatment of major depressive disorder with vilazodone, citalopram, or placebo: results from a phase IV clinical trial</title>
+		<author>
+			<persName>
+				<forename type="first">Ah</forename>
+				<surname>Clayton</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">C</forename>
+				<surname>Gommoll</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">D</forename>
+				<surname>Chen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">R</forename>
+				<surname>Nunez</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Mathews</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="216" to="223" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.18,546.74,238.17,7.71;9,323.14,556.71,221.16,7.71;9,323.14,566.69,221.12,7.71;9,323.14,576.72,75.77,7.71"  xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Effect of dapoxetine on ejaculatory performance and related brain neuronal activity in rapid ejaculator rats</title>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+				<surname>Clément</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Laurin</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">S</forename>
+				<surname>Compagnie</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+				<surname>Facchinetti</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">J</forename>
+				<surname>Bernabé</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">L</forename>
+				<surname>Alexandre</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">F</forename>
+				<surname>Giuliano</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Sex Med</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="2562" to="2573" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.19,587.04,238.10,7.71;9,323.15,597.01,221.13,7.71;9,323.15,606.99,125.03,7.71"  xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Vilazodone: a 5-HT1A receptor agonist/ serotonin transporter inhibitor for the treatment of affective disorders</title>
+		<author>
+			<persName>
+				<forename type="first">La</forename>
+				<surname>Dawson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jm</forename>
+				<surname>Watson</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CNS Neurosci Ther</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="107" to="117" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.20,617.30,238.13,7.71;9,323.15,627.34,221.08,7.71;9,323.15,637.31,221.11,7.71;9,323.15,647.29,72.64,7.71"  xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Citalopram combined with WAY 100635 inhibits ejaculation and ejaculation-related Fos immunoreactivity</title>
+		<author>
+			<persName>
+				<forename type="first">Tr</forename>
+				<surname>Jong</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">T</forename>
+				<surname>Pattij</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Pj</forename>
+				<surname>Dederen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ar</forename>
+				<surname>Cools</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">509</biblScope>
+			<biblScope unit="page" from="49" to="59" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.20,657.60,238.09,7.71;9,323.15,667.58,221.22,7.71;9,323.15,677.61,221.22,7.71;9,323.15,687.59,221.14,7.71"  xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Effects of chronic selective serotonin reuptake inhibitors on 8-OH-DPAT-induced facilitation of ejaculation in rats: comparison of fluvoxamine and paroxetine</title>
+		<author>
+			<persName>
+				<forename type="first">Tr</forename>
+				<surname>Jong</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">T</forename>
+				<surname>Pattij</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ar</forename>
+				<surname>Cools</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychopharmacology</title>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page" from="509" to="515" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,306.21,697.90,238.13,7.71;9,323.16,707.88,107.37,7.71"  xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Forest Pharmaceuticals (2011) Viibryd [prescribing information]. Forest Pharmaceuticals</title>
+		<imprint>
+			<pubPlace>LLC, St. Louis</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.02,57.96,238.18,7.71;10,67.98,67.99,221.19,7.71;10,67.98,77.97,221.16,7.71;10,67.98,87.95,221.11,7.71;10,67.98,97.92,76.17,7.71"  xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Incidence and duration of side effects and those rated as bothersome with selective serotonin reuptake inhibitor treatment for depression: patient report versus physician estimate</title>
+		<author>
+			<persName>
+				<forename type="first">Xh</forename>
+				<surname>Hu</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Sa</forename>
+				<surname>Bull</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Em</forename>
+				<surname>Hunkeler</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ming</forename>
+				<forename type="middle">E</forename>
+				<surname>Lee</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jy</forename>
+				<surname>Fireman</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Markson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Le</forename>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="959" to="965" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.02,107.96,238.13,7.71;10,67.98,117.93,221.24,7.71;10,67.98,127.91,221.13,7.71;10,67.98,137.88,147.59,7.71"  xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Neurochemical evaluation of the novel 5-HT 1A receptor partial agonist/serotonin reuptake inhibitor , vilazodone</title>
+		<author>
+			<persName>
+				<forename type="first">Za</forename>
+				<surname>Hughes</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Kr</forename>
+				<surname>Starr</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Cj</forename>
+				<surname>Langmead</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Hill</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Gd</forename>
+				<surname>Bartoszyk</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jj</forename>
+				<surname>Hagan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Dn</forename>
+				<surname>Middlemiss</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">La</forename>
+				<surname>Dawson</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">510</biblScope>
+			<biblScope unit="page" from="49" to="57" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.02,147.92,238.03,7.71;10,67.98,157.89,221.14,7.71;10,67.98,167.87,50.59,7.71"  xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Serotonin-induced down-regulation of cell surface serotonin transporter</title>
+		<author>
+			<persName>
+				<forename type="first">Tn</forename>
+				<surname>Jorgensen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Pm</forename>
+				<surname>Christensen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">U</forename>
+				<surname>Gether</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurochem Int</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="107" to="112" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.02,177.84,238.06,7.71;10,67.98,187.88,209.30,7.71"  xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Sexual dysfunction, depression, and the impact of antidepressants</title>
+		<author>
+			<persName>
+				<forename type="first">Sh</forename>
+				<surname>Kennedy</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">S</forename>
+				<surname>Rizvi</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="157" to="164" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.03,197.85,238.08,7.71;10,67.99,207.83,221.17,7.71;10,67.99,217.81,221.15,7.71;10,67.99,227.84,39.50,7.71"  xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Age differences in major depression: results from the National Comorbidity Survey Replication (NCS-R)</title>
+		<author>
+			<persName>
+				<forename type="first">Rc</forename>
+				<surname>Kessler</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Birnbaum</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">E</forename>
+				<surname>Bromet</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">I</forename>
+				<surname>Hwang</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">N</forename>
+				<surname>Sampson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">V</forename>
+				<surname>Shahly</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol Med</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="225" to="237" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.03,237.82,238.08,7.71;10,67.99,247.79,221.15,7.71;10,67.99,257.77,221.15,7.71;10,67.99,267.80,221.15,7.71;10,67.99,277.78,29.11,7.71"  xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A randomized, double-blind, placebo-controlled , 8-week study of vilazodone, a serotonergic agent for the treatment of major depressive disorder</title>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Khan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Aj</forename>
+				<surname>Cutler</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Dk</forename>
+				<surname>Kajdasz</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">S</forename>
+				<surname>Gallipoli</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Athanasiou</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ds</forename>
+				<surname>Robinson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Whalen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Cr</forename>
+				<surname>Reed</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page" from="441" to="447" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.03,287.75,238.08,7.71;10,67.99,297.73,221.21,7.71;10,67.99,307.76,221.27,7.71;10,67.99,317.74,31.32,7.71"  xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Effects of repeated treatment with fluoxetine and citalopram, 5-HT uptake inhibitors, on 5- HT1A and 5-HT2 receptors in the rat brain</title>
+		<author>
+			<persName>
+				<forename type="first">V</forename>
+				<surname>Klimek</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">J</forename>
+				<surname>Zak-Knapik</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Mackowiak</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Psychiatry Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="63" to="67" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.03,327.71,238.15,7.71;10,67.99,337.69,221.12,7.71;10,67.99,347.72,206.68,7.71"  xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Effect of buspirone on sexual dysfunction in depressed patients treated with selective serotonin reuptake inhibitors</title>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Landen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">E</forename>
+				<surname>Eriksson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Agren</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">T</forename>
+				<surname>Fahlen</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="268" to="271" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.04,357.70,238.17,7.71;10,67.99,367.68,221.19,7.71;10,67.99,377.65,221.27,7.71;10,67.99,387.69,221.11,7.71;10,67.99,397.66,122.48,7.71"  xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A desensitization of hypothalamic 5-HT1A receptors by repeated injections of paroxetine: reduction in the levels of G(i) and G(o) proteins and neuroendocrine responses, but not in the density of 5-HT1A receptors</title>
+		<author>
+			<persName>
+				<forename type="first">Q</forename>
+				<surname>Li</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">N</forename>
+				<surname>Muma</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">G</forename>
+				<surname>Battaglia</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">L</forename>
+				<surname>Van De Kar</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Pharmacol Exp Ther</title>
+		<imprint>
+			<biblScope unit="volume">282</biblScope>
+			<biblScope unit="page" from="1581" to="1590" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.04,407.64,238.19,7.71;10,67.99,417.61,221.12,7.71;10,67.99,427.65,221.11,7.71;10,67.99,437.62,29.11,7.71"  xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Differential effects of simultaneous or sequential administration of paroxetine and WAY- 100,635 on ejaculatory behavior</title>
+		<author>
+			<persName>
+				<forename type="first">C</forename>
+				<surname>Looney</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Kb</forename>
+				<surname>Thor</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ricca</forename>
+				<forename type="middle">D</forename>
+				<surname>Marson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">L</forename>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pharmacol Biochem Behav</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="427" to="433" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.04,447.60,238.20,7.71;10,67.99,457.57,194.16,7.71"  xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Efficacy of dapoxetine in the treatment of premature ejaculation</title>
+		<author>
+			<persName>
+				<forename type="first">Cg</forename>
+				<surname>Mcmahon</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clin Med Insights Reprod Health</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="25" to="39" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.05,467.61,238.08,7.71;10,68.00,477.58,221.03,7.71;10,68.00,487.56,173.12,7.71"  xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Serotonin transporter density and anxiolytic-like effects of antidepressants in mice</title>
+		<author>
+			<persName>
+				<forename type="first">Nr</forename>
+				<surname>Mirza</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Eo</forename>
+				<surname>Nielsen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Kb</forename>
+				<surname>Troelsen</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Prog Neuropsychopharmacol Biol Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="858" to="866" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.06,497.54,238.07,7.71;10,68.01,507.57,221.21,7.71;10,68.01,517.55,221.16,7.71;10,68.01,527.52,221.13,7.71;10,68.01,537.50,28.88,7.71"  xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Acute and chronic effects of citalopram on 5-HT1A receptor-labeling by [18F]MPPF and -coupling to receptors-G proteins</title>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Moulin-Sallanon</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Y</forename>
+				<surname>Charnay</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">N</forename>
+				<surname>Ginovart</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+				<surname>Perret</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">L</forename>
+				<surname>Lanfumey</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Hamon</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">R</forename>
+				<surname>Hen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">D</forename>
+				<surname>Fagret</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">V</forename>
+				<surname>Ibáñez</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">P</forename>
+				<surname>Millet</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Synapse</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="106" to="116" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.06,547.53,238.12,7.71;10,68.01,557.51,221.13,7.71;10,68.01,567.48,86.93,7.71"  xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Predictors of premature discontinuation of treatment in multiple disease states</title>
+		<author>
+			<persName>
+				<forename type="first">E</forename>
+				<surname>Nantz</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Liu-Seifert</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">V</forename>
+				<surname>Skljarevski</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Patient Prefer Adherence</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="31" to="43" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,51.07,577.52,238.09,7.71;10,68.02,587.49,8.47,7.71"  xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Serotonin: a never-ending story</title>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">753</biblScope>
+			<biblScope unit="page" from="2" to="18" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.19,57.87,238.13,7.71;10,323.14,67.90,221.15,7.71;10,323.14,77.88,221.14,7.71;10,323.14,87.85,58.93,7.71"  xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Differences in sexual behaviour in male and female rodents: role of serotonin</title>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Js</forename>
+				<surname>Chan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Em</forename>
+				<surname>Snoeren</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jd</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ch</forename>
+				<surname>Vinkers</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rs</forename>
+				<surname>Oosting</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Top Behav Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="15" to="36" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.20,98.62,238.12,7.71;10,323.15,108.60,221.15,7.71;10,323.15,118.58,221.20,7.71;10,323.15,128.61,221.14,7.71;10,323.15,138.59,221.27,7.71;10,323.15,148.56,85.23,7.71"  xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Behavioral and neurochemical effects of 5-{4-[4-(5-cyano-3- indolyl)-butyl)-butyl]-1-piperazinyl}-benzofuran-2-carboxamide (EMD 68843): a combined selective inhibitor of serotonin reuptake and 5-hydroxytryptamine1A receptor partial agonist</title>
+		<author>
+			<persName>
+				<forename type="first">Me</forename>
+				<surname>Page</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jf</forename>
+				<surname>Cryan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Sullivan</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Dalvi</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Saucy</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Dr</forename>
+				<surname>Manning</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">I</forename>
+				<surname>Lucki</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Pharmacol Exp Ther</title>
+		<imprint>
+			<biblScope unit="volume">302</biblScope>
+			<biblScope unit="page" from="1220" to="1227" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.20,159.33,238.08,7.71;10,323.15,169.31,221.11,7.71;10,323.15,179.28,221.22,7.71;10,323.15,189.32,149.76,7.71"  xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Individual differences in male rat ejaculatory behaviour: searching for models to study ejaculation disorders</title>
+		<author>
+			<persName>
+				<forename type="first">T</forename>
+				<surname>Pattij</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Tr</forename>
+				<surname>De Jong</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Uitterdijk</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ar</forename>
+				<surname>Cools</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ph</forename>
+				<surname>Van Der Graaf</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="724" to="734" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.20,200.03,238.07,7.71;10,323.15,210.07,221.16,7.71;10,323.15,220.04,221.25,7.71;10,323.15,230.02,178.39,7.71"  xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Evidence for efficacy and tolerability of vilazodone in the treatment of major depressive disorder: a randomized, double-blind, placebo-controlled trial</title>
+		<author>
+			<persName>
+				<forename type="first">K</forename>
+				<surname>Rickels</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Athanasiou</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ds</forename>
+				<surname>Robinson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Gibertini</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Whalen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Cr</forename>
+				<surname>Reed</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="326" to="333" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.20,240.79,238.07,7.71;10,323.15,250.76,181.27,7.71;10,306.20,261.54,238.08,7.71;10,323.16,271.51,221.22,7.71;10,323.16,281.55,221.10,7.71;10,323.16,291.52,100.05,7.71"  xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Management strategies for SSRI-induced sexual dysfunction A 1-year, open-label study assessing the safety and tolerability of vilazodone in patients with major depressive disorder</title>
+		<author>
+			<persName>
+				<forename type="first">Sj</forename>
+				<surname>Rizvi</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Sh</forename>
+				<surname>Kennedy</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ds</forename>
+				<surname>Robinson</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Dk</forename>
+				<surname>Kajdasz</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">S</forename>
+				<surname>Gallipoli</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">H</forename>
+				<surname>Whalen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Wamil</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Cr</forename>
+				<surname>Reed</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Psychiatry Neurosci J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">31</biblScope>
+			<biblScope unit="page" from="27" to="28643" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.21,302.28,238.09,7.84;10,323.09,312.40,187.16,7.71"  xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Effects of SSRIs on sexual function: a critical review</title>
+		<author>
+			<persName>
+				<forename type="first">Rc</forename>
+				<surname>Rosen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rm</forename>
+				<surname>Lane</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">M</forename>
+				<surname>Menza</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="67" to="85" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.14,323.17,238.15,7.71;10,323.09,333.14,221.26,7.71;10,323.09,343.12,39.50,7.71"  xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Treatment-emergent sexual dysfunction related to antidepressants: a meta-analysis</title>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Serretti</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Chiesa</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="259" to="266" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.14,353.89,238.19,7.71;10,323.09,363.86,221.10,7.71;10,323.09,373.90,98.73,7.71"  xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Serotonin 1A receptors and sexual behavior in male rats: a review</title>
+		<author>
+			<persName>
+				<forename type="first">Em</forename>
+				<surname>Snoeren</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rs</forename>
+				<surname>Oosting</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pharmacol Biochem Behav</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="102" to="114" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.14,384.61,238.11,7.71;10,323.09,394.65,221.13,7.71;10,323.09,404.62,221.16,7.71;10,323.09,414.60,71.53,7.71"  xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Long-term effects of olanzapine, risperidone, and quetiapine on serotonin 1A, 2A and 2C receptors in rat forebrain regions</title>
+		<author>
+			<persName>
+				<forename type="first">Fi</forename>
+				<surname>Tarazi</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">K</forename>
+				<surname>Zhang</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rj</forename>
+				<surname>Baldessarini</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychopharmacology (Berlin)</title>
+		<imprint>
+			<biblScope unit="volume">161</biblScope>
+			<biblScope unit="page" from="263" to="270" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.15,425.37,238.11,7.71;10,323.10,435.34,221.18,7.71;10,323.10,445.32,221.21,7.71;10,323.10,455.36,139.71,7.71"  xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Mechanism of action of the bimodal antidepressant vilazodone: evidence for serotonin1A- receptor-mediated auto-augmentation of extracellular serotonin output</title>
+		<author>
+			<persName>
+				<forename type="first">C</forename>
+				<surname>Van Amsterdam</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ca</forename>
+				<surname>Seyfried</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychopharmacology</title>
+		<imprint>
+			<biblScope unit="volume">231</biblScope>
+			<biblScope unit="page" from="2547" to="2558" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.15,466.13,238.14,7.71;10,323.10,476.10,221.24,7.71;10,323.10,486.08,175.05,7.71"  xml:id="b41">
+	<analytic>
+		<title level="a" type="main">SSRIs and ejaculation: a double-blind, randomized, fixed-dose study with paroxetine and citalopram</title>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Ah</forename>
+				<surname>Zwinderman</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Psychopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="556" to="560" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.15,496.85,238.18,7.71;10,323.10,506.82,221.18,7.71;10,323.10,516.80,221.11,7.71;10,323.10,526.84,221.24,7.71;10,323.10,536.81,29.11,7.71"  xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The selective serotonin re-uptake inhibitors fluvoxamine and paroxetine differ in sexual inhibitory effects after chronic treatment</title>
+		<author>
+			<persName>
+				<forename type="first">Md</forename>
+				<surname>Waldinger</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">A</forename>
+				<surname>Van De Plas</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">T</forename>
+				<surname>Pattij</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">R</forename>
+				<surname>Van Oorschot</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Lm</forename>
+				<surname>Coolen</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Jg</forename>
+				<surname>Veening</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">B</forename>
+				<surname>Olivier</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychopharmacology (Berlin)</title>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="page" from="283" to="289" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,306.15,547.58,238.03,7.71;10,323.10,557.56,221.08,7.71;10,323.10,567.53,221.15,7.71;10,323.10,577.51,221.15,7.71;10,323.10,587.54,62.34,7.71"  xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Serotonin transporter binding increases in caudate-putamen and nucleus accumbens after neonatal 6-hydroxydopamine lesions in rats: implications for motor hyperactivity</title>
+		<author>
+			<persName>
+				<forename type="first">K</forename>
+				<surname>Zhang</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">E</forename>
+				<surname>Davids</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Fi</forename>
+				<surname>Tarazi</surname>
+			</persName>
+		</author>
+		<author>
+			<persName>
+				<forename type="first">Rj</forename>
+				<surname>Baldessarini</surname>
+			</persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Res Dev Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page" from="135" to="138" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-	    <norma.version>0.3.8</norma.version>
+	    <norma.version>0.4.0</norma.version>
 	    <!-- upstream -->
-	    <cproject.version>0.3.8</cproject.version>
-	    <imageanalysis.version>1.0.4</imageanalysis.version>
+	    <cproject.version>0.4.0</cproject.version>
+	    <imageanalysis.version>1.1.0</imageanalysis.version>
 	    <!-- other -->
 	    <opennlp.version>1.6.0</opennlp.version>        
     </properties>
@@ -227,5 +227,12 @@
             <!-- Prevents jar bloat in final package -->
             <scope>provided</scope>
         </dependency>
+        
+        
+        <dependency>
+	        <groupId>org.grobid</groupId>
+		    <artifactId>grobid-core</artifactId>
+		    <version>0.4.1</version>
+		</dependency>
     </dependencies>
 </project>

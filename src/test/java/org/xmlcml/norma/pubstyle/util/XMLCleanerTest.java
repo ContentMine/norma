@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.CMineTestFixtures;
@@ -32,7 +33,7 @@ public class XMLCleanerTest {
 		String abb = "acs";
 		String symbol = abb+"2html";
 		String args = "--project "+targetDir+" -i fulltext.xhtml -o scholarly.html --transform "+symbol;
-		NormaArgProcessor argProcessor = new NormaArgProcessor(args); 
+		DefaultArgProcessor argProcessor = new NormaArgProcessor(args); 
 		argProcessor.runAndOutput(); 
 		CTree cTree = cProject.getCTreeByName("jo402790x");
 		File shtmlFile = cTree.getExistingScholarlyHTML();

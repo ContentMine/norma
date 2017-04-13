@@ -350,21 +350,21 @@ public class NormaArgProcessorTest {
 	@Test
 	public void testMakeDocs() {
 		String args = "--makedocs";
-		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		DefaultArgProcessor argProcessor = new NormaArgProcessor();
 		argProcessor.parseArgs(args);
 		argProcessor.runAndOutput();
 	}
 	
 	@Test
 	public void testVersion() {
-		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		DefaultArgProcessor argProcessor = new NormaArgProcessor();
 		argProcessor.parseArgs("--version");
 	}
 
 	
 	@Test
 	public void testTag() {
-		NormaArgProcessor argProcessor = new NormaArgProcessor();
+		DefaultArgProcessor argProcessor = new NormaArgProcessor();
 		argProcessor.parseArgs("--chars a,b");
 	}
 	

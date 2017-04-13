@@ -7,6 +7,7 @@ import org.xmlcml.euclid.Util;
 import org.xmlcml.graphics.svg.SVGConstants;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGRect;
+import org.xmlcml.graphics.svg.SVGShape;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.norma.image.ocr.GridExtractor.Coord;
 
@@ -86,7 +87,7 @@ public class HOCRChunk {
 		return (bboxRect == null) ? null : bboxRect.getX() + bboxRect.getWidth(); 
 	}
 
-	public SVGRect getBboxRect() {
+	public SVGShape getBboxRect() {
 		return bboxRect;
 	}
 

@@ -23,6 +23,7 @@ import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGRect;
 import org.xmlcml.graphics.svg.SVGSVG;
+import org.xmlcml.graphics.svg.SVGShape;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.SVGUtil;
 import org.xmlcml.graphics.svg.text.SVGPhrase;
@@ -390,7 +391,7 @@ public class HOCRReader extends InputReader {
 		if (bbox.getXRange().getRange() > MIN_WIDTH && bbox.getYRange().getRange() > MIN_WIDTH) {
 			boolean largeText = false;
 			hocrTitle.addAttributes(svgLine);
-			SVGRect rect = SVGRect.createFromReal2Range(bbox);
+			SVGShape rect = SVGRect.createFromReal2Range(bbox);
 			rect.setFill(LINE_COL);
 			rect.setOpacity(RECT_OPACITY);
 			svgLine.appendChild(rect);
@@ -492,7 +493,7 @@ public class HOCRReader extends InputReader {
 			// exclude traces of lines
 			if (wordValue.trim().length() > 0) {
 				double height = bbox.getYRange().getRange();
-				SVGRect rect = SVGRect.createFromReal2Range(bbox);
+				SVGShape rect = SVGRect.createFromReal2Range(bbox);
 				rect.setFill(UNEDITED_COL);
 				rect.setOpacity(RECT_OPACITY);
 				svgWord.appendChild(rect);
@@ -722,7 +723,7 @@ public class HOCRReader extends InputReader {
 
 	private void addDecorativeBoxToPotentialLabel(SVGElement svgElement) {
 		Real2Range bbox = svgElement.getBoundingBox();
-		SVGRect rect = SVGRect.createFromReal2Range(bbox);
+		SVGShape rect = SVGRect.createFromReal2Range(bbox);
 		if (rect != null) {
 			rect.setFill("magenta");
 			rect.setOpacity(0.2);

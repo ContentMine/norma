@@ -8,6 +8,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
+import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.norma.NormaArgProcessor;
@@ -27,7 +28,7 @@ public class USPTOTest {
 		File target = new File("target/us08978/US08978162-20150317");
 		FileUtils.copyDirectory(new File(NormaFixtures.TEST_USPTO08978_DIR, "US08978162-20150317/"), target);
 		String args = "-i fulltext.xml --transform uspto2html -o scholarly.html --ctree "+target; 
-		NormaArgProcessor norma = new NormaArgProcessor(args);
+		DefaultArgProcessor norma = new NormaArgProcessor(args);
 		norma.runAndOutput();
 		NormaTestFixtures.checkScholarlyHtml(target, 
 //				"<?xml version=\"1.0\"?>"
@@ -53,7 +54,7 @@ public class USPTOTest {
 		File target = new File("target/us08978/");
 		CMineTestFixtures.cleanAndCopyDir(NormaFixtures.TEST_USPTO08978_DIR, target);
 		String args = "-i fulltext.xml --transform uspto2html -o scholarly.html --project "+target; 
-		NormaArgProcessor norma = new NormaArgProcessor(args);
+		DefaultArgProcessor norma = new NormaArgProcessor(args);
 		norma.runAndOutput();
 		File shtmlFile = new File(target, "US08978162-20150317");
 		CProject project = new CProject(target);

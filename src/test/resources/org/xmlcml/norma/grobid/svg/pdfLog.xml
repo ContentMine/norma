@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdfLog glyphs="true">
+    <fontList>
+        <font name="NJCHAF+CrkwxyAdvTT3713a231"
+        family="CrkwxyAdvTT3713a231" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHAF+CrkwxyAdvTT3713a231"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJCHAG+CkbxnnAdvTTb8864ccf.B"
+        family="CkbxnnAdvTTb8864ccf.B" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHAG+CkbxnnAdvTTb8864ccf.B"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJCHBH+QsbmdyAdvP0005"
+        family="QsbmdyAdvP0005" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHBH+QsbmdyAdvP0005"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJCHBI+PcpsgkAdvPi3"
+        family="PcpsgkAdvPi3" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHBI+PcpsgkAdvPi3" bold="false"
+        italic="false" symbol="false"/>
+        <font name="NJCHBJ+SdkppbAdvTT50a2f13e.I"
+        family="SdkppbAdvTT50a2f13e.I" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHBJ+SdkppbAdvTT50a2f13e.I"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJCHEJ+GdspdlAdvTT4ff65459"
+        family="GdspdlAdvTT4ff65459" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHEJ+GdspdlAdvTT4ff65459"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJCHEK+HxcrjtAdvTT3713a231+20"
+        family="HxcrjtAdvTT3713a231+20" type="Font"
+        encoding="WinAnsiEncoding" fontencoding="WinAnsiEncoding"
+        basefont="NJCHEK+HxcrjtAdvTT3713a231+20"
+        bold="false" italic="false" symbol="false"/>
+        <font name="NJDIHC+RgqdmnAdvTT3713a231+03"
+        family="RgqdmnAdvTT3713a231+03" type="Font"
+        encoding="DictionaryEncoding" fontencoding="DictionaryEncoding"
+        basefont="NJDIHC+RgqdmnAdvTT3713a231+03"
+        bold="false" italic="false" symbol="true"/>
+        <font name="NJDIPA+LmfcmfAdvTT3713a231+22"
+        family="LmfcmfAdvTT3713a231+22" type="Font"
+        encoding="DictionaryEncoding" fontencoding="DictionaryEncoding"
+        basefont="NJDIPA+LmfcmfAdvTT3713a231+22"
+        bold="false" italic="false" symbol="true"/>
+        <font name="NJEEKJ+RwcqwyAdvTT53f821da"
+        family="RwcqwyAdvTT53f821da" type="Font"
+        encoding="DictionaryEncoding" fontencoding="DictionaryEncoding"
+        basefont="NJEEKJ+RwcqwyAdvTT53f821da"
+        bold="false" italic="false" symbol="true"/>
+    </fontList>
+    <pdf filename="/Users/pm286/workspace/cmdev/svg2xml/../../cm-ucl/corpus-oa/10.1007_s00213-015-4198-1/fulltext.pdf"
+    pageCount="10">
+        <page num="1"/>
+        <page num="2"/>
+        <page num="3"/>
+        <page num="4"/>
+        <page num="5"/>
+        <page num="6"/>
+        <page num="7"/>
+        <page num="8"/>
+        <page num="9"/>
+        <page num="10"/>
+    </pdf>
+</pdfLog>

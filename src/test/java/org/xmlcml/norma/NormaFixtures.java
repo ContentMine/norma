@@ -30,6 +30,7 @@ public class NormaFixtures {
 	public final static File GROUP_MAJOR_SECTIONS_XSL = new File(NormaFixtures.MAIN_HINDAWI_DIR, "groupMajorSections.xsl");
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
+	public final static File TEST_GROBID_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "grobid");
 	public final static File TEST_JSON_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "json");
 	public final static File TEST_BIBLIO_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "biblio");
 	public final static File TEST_OUTPUT_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "output");

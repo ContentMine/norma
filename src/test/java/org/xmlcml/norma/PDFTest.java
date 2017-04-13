@@ -16,7 +16,9 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
@@ -180,24 +182,39 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		pdf2HtmlConverter.readAndConvertToXHTML();
 	}
 	
-//	@Test
-//	@Ignore // closed PDF // LONG
-//	public void testNeuroFigures() throws Exception {
-//		CTree cTree = new CTree(new File("target/cmdir/neuro/Chen"));
-//		File pdfFile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/Chen2005.pdf");
-//		cTree.readFulltextPDF(pdfFile);
-//		PDF2XHTMLConverter pdf2HtmlConverter = new PDF2XHTMLConverter(cTree);
-////		pdf2HtmlConverter.readAndConvertToXHTML();
-//		PDF2ImagesConverter imagesConverter = new PDF2ImagesConverter();
-//		List<NamedImage> labelledImages = imagesConverter.readPDF(new FileInputStream(pdfFile));
-//		File imageDir = cTree.getOrCreateExistingImageDir();
-//		for (NamedImage labelledImage : labelledImages) {
-//			BufferedImage image = labelledImage.getImage();
-//			org.xmlcml.image.ImageProcessor imageProcessor = org.xmlcml.image.ImageProcessor.createDefaultProcessorAndProcess(image);
-//			image = imageProcessor.getImage();
-//			String imageName = labelledImage.getKey();
-//			ImageIO.write(image, "png", new File(imageDir, imageName+".png"));
-//		}
-//	}
+	@Test
+	@Ignore // LARGE
+	public void testPDF2SVG() {
+		File cprojectDir = new File(NormaFixtures.TEST_MISC_DIR, "cproject");
+		File targetDir = new File("target/pdfs/cproject");
+		File targetDir1 = new File("target/pdfs/cproject/temp");
+		CMineTestFixtures.cleanAndCopyDir(cprojectDir, targetDir);
+		String cmd = "--project " + targetDir + " --input fulltext.pdf "+ " --outputDir " + targetDir1 + " --transform pdf2svg ";
+		new Norma().run(cmd);
+	}
 	
+	@Test
+	@Ignore // LARGE
+	public void testPDF2SVGLarge() throws IOException {
+		File sourceDir = new File("../../projects/unesco");
+		Assert.assertTrue(""+sourceDir.getCanonicalPath(), sourceDir.exists());
+		String cmd = "--project "+sourceDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*/(.*)\\.pdf";
+		new CProject().run(cmd);
+		new Norma().run("--project " + sourceDir + " --input fulltext.pdf "+ " --outputDir " + sourceDir + " --transform pdf2svg ");
+	}
+
+	/**
+	 * @throws Exception
+	 */
+	@Test
+	@Ignore // LARGE
+	public void testPDF2HTML() throws Exception {
+		File targetDir = new File(NormaFixtures.TARGET_DIR, "sample2");
+		CMineTestFixtures.cleanAndCopyDir(new File(NormaFixtures.TEST_GROBID_DIR, "sample2"), targetDir);	
+		String cmd = "--project "+targetDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*/(.*)\\.pdf --outputDir "+targetDir;
+		new Norma().run(cmd);
+		cmd = "--project " + targetDir + " --input fulltext.pdf "+ " --outputDir " + targetDir + " --transform pdf2tei ";
+		new Norma().run(cmd);
+	}
+
 }

@@ -172,7 +172,11 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			getOrCreateBody().appendChild(contentDiv);
 		}
 		for (File file : files) {
-			String relative = Util.getRelativeFilename(parentFile, file.getParentFile(), null);
+			File fileParentFile = file.getParentFile();
+			if (fileParentFile == null || parentFile == null) {
+				continue;
+			}
+			String relative = Util.getRelativeFilename(parentFile, fileParentFile, null);
 			HtmlElement htmlElement = HtmlElement.create(XMLUtil.parseQuietlyToDocument(file).getRootElement());
 			offsetImgSrcPaths(htmlElement, relative);
 			HtmlTabbedButton htmlButtonTab = HtmlTabbedButton.createButtonFromHtmlFile(file, htmlElement);

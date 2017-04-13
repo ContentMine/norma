@@ -33,13 +33,16 @@ import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
+import org.xmlcml.norma.input.pdf.PDF2TEIConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
+import org.xmlcml.norma.input.tei.TEI2HTMLConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 import org.xmlcml.norma.table.CSVTransformer;
 import org.xmlcml.norma.table.SVGTable2HTMLConverter;
 import org.xmlcml.norma.tagger.SectionTaggerX;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
+import org.xmlcml.svg2xml.pdf.PDFAnalyzerIO;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Builder;
@@ -64,9 +67,11 @@ public class NormaTransformer {
 		PDF2HTML(      "pdf2html",      null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_HTML),
 		PDF2IMAGES(    "pdf2images",    null,     CTree.FULLTEXT_PDF,  "image/", CTree.FULLTEXT_PDF_PNG),
 		PDF2SVG(       "pdf2svg",       null,     CTree.FULLTEXT_PDF,  "svg/",   CTree.FULLTEXT_PDF_SVG),
+		PDF2TEI(       "pdf2tei",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_TEI_XML),
 		PDF2TXT(       "pdf2txt",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_PDF_TXT),
-		SVGTABLE2CSV ( "svgtable2csv", null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
+		SVGTABLE2CSV ( "svgtable2csv", null,      CTree.SVG,  null,     CTree.SVG+"."+"csv"),
 		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,  null,     CTree.SVG+"."+"html"),
+		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
 		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
 		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML);
@@ -137,7 +142,9 @@ public class NormaTransformer {
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
+	File teiFile;
 	String tsvString;
+	
 	private CTree currentCTree;
 	private Map<String, String> stylesheetByNameMap;
 	
@@ -312,6 +319,14 @@ public class NormaTransformer {
 				outputFile = type.getDefaultOutputFile(currentCTree);
 			}
 		}
+		if (outputDir == null) {
+			if (normaArgProcessor.getOutputDirName() != null) {
+				outputDir = new File(normaArgProcessor.getOutputDirName());
+			} else {
+				outputDir = inputDir;
+			}
+
+		}
 	}
 
 	private void warnNoFile() {
@@ -355,6 +370,7 @@ public class NormaTransformer {
 		svgElement = null;
 		tsvString = null;
 		serialImageList = null;
+		teiFile = null;
 		
 		if (inputFile == null || !inputFile.exists()) {
 			return;
@@ -377,12 +393,15 @@ public class NormaTransformer {
 		} else if (Type.CSV2TSV.equals(type)) {
 			tsvString = applyCSV2TSVToInputFile(inputFile);
 		} else if (Type.PDF2HTML.equals(type)) {
-			applyPDF2SVGToCurrentInputFile(inputFile);
+			applyPDF2SVGToCurrentInputFile(inputFile, outputDir);
 //				htmlElement = convertToHTML();
 		} else if (Type.PDF2IMAGES.equals(type)) {
 			serialImageList = applyPDF2ImagesToInputFile(inputFile);
 		} else if (Type.PDF2SVG.equals(type)) {
-			applyPDF2SVGToCurrentInputFile(inputFile);
+			applyPDF2SVGToCurrentInputFile(inputFile, outputDir);
+		} else if (Type.PDF2TEI.equals(type)) {
+			teiFile = applyPDF2TEIToInputFile(inputFile);
+			htmlElement = applyTEI2HTMLToInputFile(teiFile);
 		} else if (Type.PDF2TXT.equals(type)) {
 			outputTxt = applyPDF2TXTToInputFile(inputFile);
 		} else if (Type.SVGTABLE2HTML.equals(type)) {
@@ -391,6 +410,8 @@ public class NormaTransformer {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
 			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
 			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
+		} else if (Type.TEI2HTML.equals(type)) {
+			htmlElement = applyTEI2HTMLToInputFile(inputFile);
 		} else if (Type.TEX2HTML.equals(type)) {
 			String xmlString = convertTeXToHTML(inputFile);
 			createHtmlElement(xmlString);
@@ -494,11 +515,26 @@ public class NormaTransformer {
 		return svgSvg;
 	}
 
-	private String applyPDF2SVGToCurrentInputFile(File inputFile) {
-		String txt = "NYI";
+	private String applyPDF2SVGToCurrentInputFile(File inputFile, File outputDirectory) {
+		if (outputDirectory == null) {
+			throw new RuntimeException("Must give output directory");
+		}
+		String txt = "dummy";
 		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
 		try {
-			pdfAnalyzer.setSkipOutput(false);
+			this.outputDir = outputDirectory;
+			LOG.debug("outputDir: "+outputDir);
+			// this is the proper way
+//			File svgDir = currentCTree.getAllowedChildDirectory(CTree.SVG); 
+			// this is a kludge
+			File svgDir = new File(currentCTree.getDirectory(), CTree.SVG);
+			File imagesDir = new File(currentCTree.getDirectory(), CTree.IMAGES);
+			PDFAnalyzerIO pdfIo = pdfAnalyzer.getPDFIO();
+			pdfIo.setOutputDirectory(outputDirectory);
+			pdfIo.setOutputDirectory(new File(svgDir, "outputTop"));
+			pdfIo.setSvgDir(svgDir);
+			pdfIo.setImageDirectory(imagesDir);
+			pdfIo.setSkipOutput(true);
 			pdfAnalyzer.analyzePDFFile(inputFile);
 		} catch (Exception e) {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
@@ -509,13 +545,34 @@ public class NormaTransformer {
 	private String applyPDF2TXTToInputFile(File inputFile) {
 		PDF2TXTConverter converter = new PDF2TXTConverter();
 		String txt = null;
-		
 		try {
 			txt = converter.readPDF(new FileInputStream(inputFile), true);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
 		}
 		return txt;
+	}
+
+	private File applyPDF2TEIToInputFile(File inputFile) {
+		PDF2TEIConverter converter = new PDF2TEIConverter();
+		File teiFile = null;
+		try {
+			teiFile = converter.convertFulltextPDFToTEI(inputFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return teiFile;
+	}
+
+	private HtmlElement applyTEI2HTMLToInputFile(File teiFile) {
+		TEI2HTMLConverter converter = new TEI2HTMLConverter();
+		HtmlElement htmlElement = null;
+		try {
+			htmlElement = converter.convertTEI2HtmlElement(teiFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform TEI "+teiFile, e);
+		}
+		return htmlElement;
 	}
 
 	private HtmlElement applySVGTable2HTMLToInputFile(File inputFile) {
@@ -679,6 +736,10 @@ public class NormaTransformer {
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write: "+outputFile, e);
 			}
+		}
+		if (teiFile != null) {
+			LOG.debug("wrote TEI: "+teiFile);
+//			currentCTree.writeFile(teiFile.toXML(), (output != null ? output : CTree.FULLTEXT_XML));
 		}
 	}
 
