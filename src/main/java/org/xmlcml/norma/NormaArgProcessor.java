@@ -441,7 +441,6 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 
 	protected void printVersion() {
 		getVersionManager().printVersion();
-		DefaultArgProcessor.getVersionManager().printVersion();
 	}
 
 
