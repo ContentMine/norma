@@ -364,6 +364,7 @@ NOT YET FULLY IMPLEMENTED.
   <value name="pdf2txt" input="fulltext.pdf" output="fulltext.pdf.txt"></value> 
   <value name="pdf2images"></value> 
   <value name="hocr2svg" input="image/*.png" output="image/*.svg"></value> 
+  <value name="scatter2csv" input="figure/*.svg" output="figure/*.csv"></value> 
   <value name="tei2html" input="fulltext.tei.xml" output="fulltext.tei.html"></value> 
   <value name="tex2html" input="fulltext.tex" output="fulltext.html"></value> 
   <value name="csv2html" input="table/*.csv" output="table/*.html"></value> 

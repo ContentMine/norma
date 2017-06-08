@@ -553,6 +553,20 @@ public class NormaTransformer {
 		return txt;
 	}
 
+	private String applyScatter2CSVToInputFile(File inputFile) {
+		String csvString = null;
+		LOG.debug("NYI");
+//		PlotBox plotBox = new PlotBox();
+//		try {
+//			csvTransformer.readFile(inputFile);
+//			csvString = csvTransformer.createTSV();
+//		} catch (IOException e) {
+//			throw new RuntimeException("Cannot convert scatterplot: ", e);
+//		}
+		return tsvString;
+	}
+
+
 	private File applyPDF2TEIToInputFile(File inputFile) {
 		PDF2TEIConverter converter = new PDF2TEIConverter();
 		File teiFile = null;
