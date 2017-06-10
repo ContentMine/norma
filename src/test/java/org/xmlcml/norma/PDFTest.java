@@ -203,18 +203,5 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		new Norma().run("--project " + sourceDir + " --input fulltext.pdf "+ " --outputDir " + sourceDir + " --transform pdf2svg ");
 	}
 
-	/**
-	 * @throws Exception
-	 */
-	@Test
-	@Ignore // LARGE
-	public void testPDF2HTML() throws Exception {
-		File targetDir = new File(NormaFixtures.TARGET_DIR, "sample2");
-		CMineTestFixtures.cleanAndCopyDir(new File(NormaFixtures.TEST_GROBID_DIR, "sample2"), targetDir);	
-		String cmd = "--project "+targetDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*/(.*)\\.pdf --outputDir "+targetDir;
-		new Norma().run(cmd);
-		cmd = "--project " + targetDir + " --input fulltext.pdf "+ " --outputDir " + targetDir + " --transform pdf2tei ";
-		new Norma().run(cmd);
-	}
 
 }

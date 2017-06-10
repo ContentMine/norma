@@ -27,6 +27,7 @@ import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
+import org.xmlcml.graphics.svg.plot.PlotBox;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.HtmlTable;
@@ -35,7 +36,6 @@ import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TEIConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
-import org.xmlcml.norma.input.tei.TEI2HTMLConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 import org.xmlcml.norma.table.CSVTransformer;
 import org.xmlcml.norma.table.SVGTable2HTMLConverter;
@@ -69,7 +69,8 @@ public class NormaTransformer {
 		PDF2SVG(       "pdf2svg",       null,     CTree.FULLTEXT_PDF,  "svg/",   CTree.FULLTEXT_PDF_SVG),
 		PDF2TEI(       "pdf2tei",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_TEI_XML),
 		PDF2TXT(       "pdf2txt",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_PDF_TXT),
-		SVGTABLE2CSV ( "svgtable2csv", null,      CTree.SVG,  null,     CTree.SVG+"."+"csv"),
+		SCATTER2CSV (  "scatter2csv",   null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
+		SVGTABLE2CSV ( "svgtable2csv",  null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
 		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,  null,     CTree.SVG+"."+"html"),
 		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
@@ -404,6 +405,10 @@ public class NormaTransformer {
 			htmlElement = applyTEI2HTMLToInputFile(teiFile);
 		} else if (Type.PDF2TXT.equals(type)) {
 			outputTxt = applyPDF2TXTToInputFile(inputFile);
+		} else if (Type.SCATTER2CSV.equals(type)) {
+			tsvString = applyPlotBoxCSVToInput(inputFile);
+//			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
+//			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
 		} else if (Type.SVGTABLE2HTML.equals(type)) {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
 		} else if (Type.SVGTABLE2CSV.equals(type)) {
@@ -553,9 +558,21 @@ public class NormaTransformer {
 		return txt;
 	}
 
+	private String applyPlotBoxCSVToInput(File inputSVGFile) {
+		String csv = null;
+//		PlotBox plotBox = new PlotBox();
+//		try {
+//			plotBox.readAndCreatePlot(new FileInputStream(inputSVGFile));
+//		} catch (FileNotFoundException e) {
+//			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
+//		}
+//		csv = plotBox.getCSV();
+		return csv;
+	}
+
 	private String applyScatter2CSVToInputFile(File inputFile) {
 		String csvString = null;
-		LOG.debug("NYI");
+		throw new RuntimeException("Scatter NYI");
 //		PlotBox plotBox = new PlotBox();
 //		try {
 //			csvTransformer.readFile(inputFile);
@@ -563,7 +580,7 @@ public class NormaTransformer {
 //		} catch (IOException e) {
 //			throw new RuntimeException("Cannot convert scatterplot: ", e);
 //		}
-		return tsvString;
+//		return csvString;
 	}
 
 
@@ -579,13 +596,13 @@ public class NormaTransformer {
 	}
 
 	private HtmlElement applyTEI2HTMLToInputFile(File teiFile) {
-		TEI2HTMLConverter converter = new TEI2HTMLConverter();
+//		TEI2HTMLConverter converter = new TEI2HTMLConverter();
 		HtmlElement htmlElement = null;
-		try {
-			htmlElement = converter.convertTEI2HtmlElement(teiFile);
-		} catch (Exception e) {
-			throw new RuntimeException("Cannot transform TEI "+teiFile, e);
-		}
+//		try {
+//			htmlElement = converter.convertTEI2HtmlElement(teiFile);
+//		} catch (Exception e) {
+//			throw new RuntimeException("Cannot transform TEI "+teiFile, e);
+//		}
 		return htmlElement;
 	}
 
