@@ -560,13 +560,13 @@ public class NormaTransformer {
 
 	private String applyPlotBoxCSVToInput(File inputSVGFile) {
 		String csv = null;
-//		PlotBox plotBox = new PlotBox();
-//		try {
-//			plotBox.readAndCreatePlot(new FileInputStream(inputSVGFile));
-//		} catch (FileNotFoundException e) {
-//			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
-//		}
-//		csv = plotBox.getCSV();
+		PlotBox plotBox = new PlotBox();
+		try {
+			plotBox.readAndCreatePlot(new FileInputStream(inputSVGFile));
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
+		}
+		csv = plotBox.getCSV();
 		return csv;
 	}
 

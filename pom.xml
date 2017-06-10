@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-	    <norma.version>0.4.0</norma.version>
+	    <norma.version>0.5.0-SNAPSHOT</norma.version>
 	    <!-- upstream -->
-	    <cproject.version>0.4.0</cproject.version>
-	    <imageanalysis.version>1.1.0</imageanalysis.version>
+	    <cproject.version>0.5.0-SNAPSHOT</cproject.version>
+	    <imageanalysis.version>1.2.0-SNAPSHOT</imageanalysis.version>
 	    <!-- other -->
 	    <opennlp.version>1.6.0</opennlp.version>        
     </properties>
