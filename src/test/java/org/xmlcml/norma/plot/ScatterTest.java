@@ -15,21 +15,120 @@ public class ScatterTest {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-
+	
+	File SCATTERPLOT_DIR = new File("target/scatterplots"); 
+	
 	@Test
-	public void testScatter() {
-		File sourceDir = NormaFixtures.TEST_PLOT_DIR;
-		File targetDir = new File("target/plot1/");
+	/** a single tree with a single figure file.
+	 * 
+tilburg00/
+	└── ctree1
+	    └── figures
+	        ├── figure1.svg
+	        
+	 *
+	 * The file is the "bakker" example of a simple scatterplot
+	 */
+	public void testScatterSingleTreeSingleFigure() {
+		File targetDir = createTargetAndReport("singleTreeSingleFigure");
+		String cmd = "--project "+targetDir
+				+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		+ " --outputDir "+targetDir+" --transform scatter2csv";
+		new Norma().run(cmd);
+	}
+
+	
+	
+	@Test
+	/** a single tree with a multiply populated figures/ directory.
+	 * 
+tilburg0/
+	└── ctree1
+	    └── figures
+	        ├── figure1.svg
+	        ├── figure2.svg
+	        ├── figure3.svg
+	 */
+	public void testScatterSingleTreeMultipleFigures() {
+		File targetDir = createTargetAndReport("singleTreeMultipleFigures");
+		String cmd = "--project "+targetDir
+				+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		+ " --outputDir "+targetDir+" --transform scatter2csv";
+		new Norma().run(cmd);
+	}
+
+	
+	
+	@Test
+	/**
+	 * 
+multipleTreesSingleFigure/
+	├── bakker
+	│   └── figure.svg
+	├── calvin
+	│   └── figure.svg
+	├── dong
+	│   └── figure.svg
+	├── kerr
+	│   └── figure.svg
+	├── nair
+	│   └── figure.svg
+	└── sbarra
+	    └── figure.svg
+    */
+	public void testScatterMultipleTreesSingleFigure() {
+		File targetDir = createTargetAndReport("multipleTreesSingleFigure");
+		String cmd = "--project "+targetDir
+				+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		+ " --outputDir "+targetDir+" --transform scatter2csv";
+		new Norma().run(cmd);
+	}
+
+	
+	/** this traverses a tree with format:
+	 * 
+	 *
+├── bakker
+│   └── figures
+│       └── figure1.svg
+├── calvin
+│   └── figures
+│       └── figure2.svg
+├── dong
+│   └── figures
+│       └── figure1.svg
+├── joint
+│   └── figures
+│       ├── figure1.svg
+│       ├── figure2.svg
+│       ├── figure3.svg
+│       ├── figure4.svg
+│       ├── figure5.svg
+│       └── figure6.svg
+
+	 */
+	@Test
+	
+	public void testScatterMultipleTreesMultipleFigures() {
+		File targetDir = createTargetAndReport("multipleTreesMultipleFigures");
+		String cmd = "--project "+targetDir
+				+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		+ " --outputDir "+targetDir+" --transform scatter2csv";
+		new Norma().run(cmd);
+	}
+
+	// ===============================
+	
+	private File createTargetAndReport(String cprojectName) {
+		LOG.debug("\n********** "+cprojectName+" ***********\n");
+		File sourceDir = new File(NormaFixtures.TEST_PLOT_DIR, cprojectName);
+		File targetDir = new File(SCATTERPLOT_DIR, cprojectName);
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
 		File[] files = targetDir.listFiles();
 		for (File file : files) {
 			LOG.debug("file "+file);
 		}
-		String cmd = "--project "+targetDir
-//				+ " --fileFilter ^.*tables/table(\\d+)/table(_\\d+)?\\.svg.*$"
-				+ " --fileFilter ^.*fulltext\\.svg.*$"
-		+ " --outputDir "+"target/plot1/"+" --transform scatter2csv";
-		new Norma().run(cmd);
+		return targetDir;
 	}
 
 }

@@ -19,6 +19,7 @@ import javax.xml.transform.Transformer;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -143,6 +144,7 @@ public class NormaTransformer {
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
+	SVGElement svgAnnotElement;
 	File teiFile;
 	String tsvString;
 	
@@ -562,7 +564,11 @@ public class NormaTransformer {
 		String csv = null;
 		PlotBox plotBox = new PlotBox();
 		try {
+//			plotBox.setCsvOutFile(new File("target/testplot/"));
+//			plotBox.setSvgOutFile(new File("target/plot/bakker1.svg"));
 			plotBox.readAndCreatePlot(new FileInputStream(inputSVGFile));
+			csv = plotBox.getCSV();
+			svgAnnotElement = plotBox.createSVGElement();
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
 		}
@@ -758,6 +764,11 @@ public class NormaTransformer {
 		if (svgElement != null && output != null) {
 			currentCTree.writeFile(svgElement.toXML(), output);
 		}
+		if (svgAnnotElement != null && output != null) {
+			String outputAnnot = output.replaceAll("\\.[^\\.]+$", ".annot.svg");
+			File outputSvgFile = new File(currentCTree.getDirectory(), outputAnnot);
+			SVGSVG.wrapAndWriteAsSVG(svgAnnotElement, outputSvgFile);
+		}
 		if (serialImageList != null) {
 			normaArgProcessor.writeImages();
 		}
@@ -772,6 +783,14 @@ public class NormaTransformer {
 			LOG.debug("wrote TEI: "+teiFile);
 //			currentCTree.writeFile(teiFile.toXML(), (output != null ? output : CTree.FULLTEXT_XML));
 		}
+		if (tsvString != null && output != null) {
+			try {
+				IOUtils.write(tsvString, new FileOutputStream(new File(currentCTree.getDirectory(), output)));
+			} catch (IOException e) {
+				throw new RuntimeException("cannot write CSV: ", e);
+			}
+		}
+
 	}
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
