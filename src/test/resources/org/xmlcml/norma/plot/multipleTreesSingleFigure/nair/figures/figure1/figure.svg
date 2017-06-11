@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g string-value="FunnelPlotofStandardErrorbyFisher'sZ//" class="textBox">
+   <g class="phraseListList" string-value="FunnelPlotofStandardErrorbyFisher'sZ//">
+    <g class="phraseList" string-value="FunnelPlotofStandardErrorbyFisher'sZ">
+     <g class="phrase" string-value="FunnelPlotofStandardErrorbyFisher'sZ">
+      <g class="word" font-weight="bold">
+       <text id="text5282" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="202.522" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5284" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="208.632" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5286" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="214.742" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5288" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="220.852" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5290" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="226.962" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5292" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="232.522" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5294" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="235.302" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5296" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="238.082" svgx:width="667.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P</text>
+       <text id="text5298" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="244.751" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5300" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="247.531" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5302" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="253.641" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5304" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="256.971" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5306" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="259.751" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5308" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="265.861" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+       <text id="text5310" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="269.191" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5312" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="271.971" svgx:width="667.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">S</text>
+       <text id="text5314" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="278.641" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5316" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="281.971" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5318" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="287.531" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5320" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="293.641" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5322" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="299.751" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5324" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="305.311" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5326" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="309.201" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5328" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="315.311" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5330" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="318.091" svgx:width="667.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">E</text>
+       <text id="text5332" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="324.761" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5334" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="328.65" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5336" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="332.54" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5338" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="338.65" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5340" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="342.54" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5342" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="345.32" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+       <text id="text5344" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="351.43" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">y</text>
+       <text id="text5346" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="356.99" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5348" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="359.77" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5350" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="365.88" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5352" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="368.66" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5354" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="374.22" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5356" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="380.33" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5358" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="385.89" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5360" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="389.78" svgx:width="238.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">'</text>
+       <text id="text5362" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="392.16" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5364" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="397.72" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5366" font-weight="bold" font-family="Helvetica" font-size="10.0" y="491.844" x="400.5" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Z</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.0//" class="textBox">
+   <g class="phraseListList" string-value="0.0//">
+    <g class="phraseList" string-value="0.0">
+     <g class="phrase" string-value="0.0">
+      <g class="word" font-weight="bold">
+       <text id="text5030" font-weight="bold" font-family="Helvetica" font-size="7.0" y="503.645" x="154.652" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text5032" font-weight="bold" font-family="Helvetica" font-size="7.0" y="503.645" x="158.544" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5034" font-weight="bold" font-family="Helvetica" font-size="7.0" y="503.645" x="160.49" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.1//" class="textBox">
+   <g class="phraseListList" string-value="0.1//">
+    <g class="phraseList" string-value="0.1">
+     <g class="phrase" string-value="0.1">
+      <g class="word" font-weight="bold">
+       <text id="text5038" font-weight="bold" font-family="Helvetica" font-size="7.0" y="550.169" x="154.652" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text5040" font-weight="bold" font-family="Helvetica" font-size="7.0" y="550.169" x="158.544" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5042" font-weight="bold" font-family="Helvetica" font-size="7.0" y="550.169" x="160.49" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="r//" class="textBox">
+   <g class="phraseListList" string-value="r//">
+    <g class="phraseList" string-value="r">
+     <g class="phrase" string-value="r">
+      <g class="word" font-weight="bold">
+       <text id="text5260" font-weight="bold" font-family="Helvetica" font-size="8.0" y="570.231" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-427.92,712.542)" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="o">
+      <g class="word" font-weight="bold">
+       <text id="text5258" font-weight="bold" font-family="Helvetica" font-size="8.0" y="575.119" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-432.808,717.43)" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="r//" class="textBox">
+   <g class="phraseListList" string-value="r//">
+    <g class="phraseList" string-value="r">
+     <g class="phrase" string-value="r">
+      <g class="word" font-weight="bold">
+       <text id="text5256" font-weight="bold" font-family="Helvetica" font-size="8.0" y="578.231" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-435.92,720.542)" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="r">
+      <g class="word" font-weight="bold">
+       <text id="text5254" font-weight="bold" font-family="Helvetica" font-size="8.0" y="581.343" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-439.032,723.654)" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="E//" class="textBox">
+   <g class="phraseListList" string-value="E//">
+    <g class="phraseList" string-value="E">
+     <g class="phrase" string-value="E">
+      <g class="word" font-weight="bold">
+       <text id="text5252" font-weight="bold" font-family="Helvetica" font-size="8.0" y="586.679" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-444.368,728.99)" svgx:width="667.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">E</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="//" class="textBox">
+   <g class="phraseListList" string-value="//">
+    <g class="phraseList" string-value="">
+     <g class="phrase" string-value="">
+      <g class="word" font-weight="bold">
+       <text id="text5250" font-weight="bold" font-family="Helvetica" font-size="8.0" y="588.903" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-446.592,731.214)" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="d">
+      <g class="word" font-weight="bold">
+       <text id="text5248" font-weight="bold" font-family="Helvetica" font-size="8.0" y="593.791" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-451.48,736.102)" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.2//" class="textBox">
+   <g class="phraseListList" string-value="0.2//">
+    <g class="phraseList" string-value="0.2">
+     <g class="phrase" string-value="0.2">
+      <g class="word" font-weight="bold">
+       <text id="text5046" font-weight="bold" font-family="Helvetica" font-size="7.0" y="596.696" x="154.652" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text5048" font-weight="bold" font-family="Helvetica" font-size="7.0" y="596.696" x="158.544" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5050" font-weight="bold" font-family="Helvetica" font-size="7.0" y="596.696" x="160.49" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="r//" class="textBox">
+   <g class="phraseListList" string-value="r//">
+    <g class="phraseList" string-value="r">
+     <g class="phrase" string-value="r">
+      <g class="word" font-weight="bold">
+       <text id="text5246" font-weight="bold" font-family="Helvetica" font-size="8.0" y="596.903" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-454.592,739.214)" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="a">
+      <g class="word" font-weight="bold">
+       <text id="text5244" font-weight="bold" font-family="Helvetica" font-size="8.0" y="601.351" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-459.04,743.662)" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="d//" class="textBox">
+   <g class="phraseListList" string-value="d//">
+    <g class="phraseList" string-value="d">
+     <g class="phrase" string-value="d">
+      <g class="word" font-weight="bold">
+       <text id="text5242" font-weight="bold" font-family="Helvetica" font-size="8.0" y="606.239" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-463.928,748.55)" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="n">
+      <g class="word" font-weight="bold">
+       <text id="text5240" font-weight="bold" font-family="Helvetica" font-size="8.0" y="611.127" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-468.816,753.438)" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="a//" class="textBox">
+   <g class="phraseListList" string-value="a//">
+    <g class="phraseList" string-value="a">
+     <g class="phrase" string-value="a">
+      <g class="word" font-weight="bold">
+       <text id="text5238" font-weight="bold" font-family="Helvetica" font-size="8.0" y="615.575" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-473.264,757.886)" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+      </g>
+     </g>
+    </g>
+    <g class="phraseList">
+     <g class="phrase" string-value="t">
+      <g class="word" font-weight="bold">
+       <text id="text5236" font-weight="bold" font-family="Helvetica" font-size="8.0" y="618.239" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-475.928,760.55)" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="S//" class="textBox">
+   <g class="phraseListList" string-value="S//">
+    <g class="phraseList" string-value="S">
+     <g class="phrase" string-value="S">
+      <g class="word" font-weight="bold">
+       <text id="text5234" font-weight="bold" font-family="Helvetica" font-size="8.0" y="623.575" x="142.311" transform="matrix(0.0,-1.0,1.0,0.0,-481.264,765.886)" svgx:width="667.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">S</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.3//" class="textBox">
+   <g class="phraseListList" string-value="0.3//">
+    <g class="phraseList" string-value="0.3">
+     <g class="phrase" string-value="0.3">
+      <g class="word" font-weight="bold">
+       <text id="text5054" font-weight="bold" font-family="Helvetica" font-size="7.0" y="643.223" x="154.652" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text5056" font-weight="bold" font-family="Helvetica" font-size="7.0" y="643.223" x="158.544" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5058" font-weight="bold" font-family="Helvetica" font-size="7.0" y="643.223" x="160.49" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.4//" class="textBox">
+   <g class="phraseListList" string-value="0.4//">
+    <g class="phraseList" string-value="0.4">
+     <g class="phrase" string-value="0.4">
+      <g class="word" font-weight="bold">
+       <text id="text5062" font-weight="bold" font-family="Helvetica" font-size="7.0" y="689.747" x="154.652" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text5064" font-weight="bold" font-family="Helvetica" font-size="7.0" y="689.747" x="158.544" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5066" font-weight="bold" font-family="Helvetica" font-size="7.0" y="689.747" x="160.49" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="-2.0//" class="textBox">
+   <g class="phraseListList" string-value="-2.0//">
+    <g class="phraseList" string-value="-2.0">
+     <g class="phrase" string-value="-2.0">
+      <g class="word">
+       <text id="text4946" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="160.119" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
+       <text id="text4948" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="162.45" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+       <text id="text4950" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="166.342" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4952" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="168.288" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="-1.5//" class="textBox">
+   <g class="phraseListList" string-value="-1.5//">
+    <g class="phraseList" string-value="-1.5">
+     <g class="phrase" string-value="-1.5">
+      <g class="word">
+       <text id="text4954" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="195.017" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
+       <text id="text4956" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="197.348" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
+       <text id="text4958" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="201.24" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4960" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="203.186" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="-1.0//" class="textBox">
+   <g class="phraseListList" string-value="-1.0//">
+    <g class="phraseList" string-value="-1.0">
+     <g class="phrase" string-value="-1.0">
+      <g class="word">
+       <text id="text4962" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="229.914" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
+       <text id="text4964" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="232.245" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
+       <text id="text4966" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="236.137" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4968" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="238.083" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="-0.5//" class="textBox">
+   <g class="phraseListList" string-value="-0.5//">
+    <g class="phraseList" string-value="-0.5">
+     <g class="phrase" string-value="-0.5">
+      <g class="word">
+       <text id="text4970" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="264.811" svgx:width="333.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
+       <text id="text4972" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="267.142" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text4974" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="271.034" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4976" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="272.98" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.0//" class="textBox">
+   <g class="phraseListList" string-value="0.0//">
+    <g class="phraseList" string-value="0.0">
+     <g class="phrase" string-value="0.0">
+      <g class="word">
+       <text id="text4978" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="300.874" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text4980" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="304.766" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4982" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="306.712" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="0.5//" class="textBox">
+   <g class="phraseListList" string-value="0.5//">
+    <g class="phraseList" string-value="0.5">
+     <g class="phrase" string-value="0.5">
+      <g class="word">
+       <text id="text4984" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="335.771" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+       <text id="text4986" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="339.663" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4988" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="341.609" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="1.0//" class="textBox">
+   <g class="phraseListList" string-value="1.0//">
+    <g class="phraseList" string-value="1.0">
+     <g class="phrase" string-value="1.0">
+      <g class="word">
+       <text id="text4990" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="370.669" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
+       <text id="text4992" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="374.56" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text4994" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="376.506" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="1.5//" class="textBox">
+   <g class="phraseListList" string-value="1.5//">
+    <g class="phraseList" string-value="1.5">
+     <g class="phrase" string-value="1.5">
+      <g class="word">
+       <text id="text4996" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="405.566" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
+       <text id="text4998" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="409.458" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5000" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="411.404" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="2.0//" class="textBox">
+   <g class="phraseListList" string-value="2.0//">
+    <g class="phraseList" string-value="2.0">
+     <g class="phrase" string-value="2.0">
+      <g class="word" font-weight="bold">
+       <text id="text5002" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="440.464" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+       <text id="text5004" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="444.355" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+       <text id="text5006" font-weight="bold" font-family="Helvetica" font-size="7.0" y="700.357" x="446.301" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="Fisher'sZ//" class="textBox">
+   <g class="phraseListList" string-value="Fisher'sZ//">
+    <g class="phraseList" string-value="Fisher'sZ">
+     <g class="phrase" string-value="Fisher'sZ">
+      <g class="word" font-weight="bold">
+       <text id="text5262" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="290.06" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5264" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="294.948" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5266" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="297.172" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5268" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="301.62" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5270" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="306.508" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5272" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="310.956" svgx:width="389.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5274" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="314.068" svgx:width="238.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">'</text>
+       <text id="text5276" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="315.972" svgx:width="556.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5278" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="320.42" svgx:width="278.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx"/>
+       <text id="text5280" font-weight="bold" font-family="Helvetica" font-size="8.0" y="715.815" x="322.644" svgx:width="611.0" svgx:fontName="PTUFNX+Helvetica-Bold" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Z</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="Fig. 2. Funnel plot for ‘total cognition’and insight analysis showing imputed missing studies (flled circles) based on Duval and Tweedie's Trim and Fit analysis. Filled diamond represents//" class="textBox">
+   <g class="phraseListList" string-value="Fig. 2. Funnel plot for ‘total cognition’and insight analysis showing imputed missing studies (flled circles) based on Duval and Tweedie's Trim and Fit analysis. Filled diamond represents//">
+    <g class="phraseList" string-value="Fig. 2. Funnel plot for ‘total cognition’and insight analysis showing imputed missing studies (flled circles) based on Duval and Tweedie's Trim and Fit analysis. Filled diamond represents">
+     <g class="phrase" string-value="Fig. 2. Funnel plot for ‘total cognition’and insight analysis showing imputed missing studies (flled circles) based on Duval and Tweedie's Trim and Fit analysis. Filled diamond represents">
+      <g class="word">
+       <text id="text5368" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="33.732" svgx:width="541.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5370" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="37.182" svgx:width="322.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5372" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="39.061" svgx:width="562.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+       <text id="text5374" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="42.52" svgx:width="250.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+      </g>
+      <g class="word">
+       <text id="text5376" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="45.525" svgx:width="572.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+       <text id="text5378" font-weight="bold" font-family="Helvetica" font-size="6.376" y="734.38" x="49.172" svgx:width="250.0" svgx:fontName="ZLDHMI+AdvTT28000ce1.B" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+      </g>
+      <g class="word">
+       <text id="text5380" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="52.044" svgx:width="500.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5382" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="55.232" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5384" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="58.847" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5386" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="62.698" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5388" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="66.331" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5390" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="69.646" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+      </g>
+      <g class="word">
+       <text id="text5392" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="72.794" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
+       <text id="text5394" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="76.575" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5396" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="78.237" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5398" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="81.82" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+      </g>
+      <g class="word">
+       <text id="text5400" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="85.437" svgx:width="322.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+       <text id="text5402" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="87.49" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5404" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="90.88" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+      </g>
+      <g class="word">
+       <text id="text5406" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="94.848" svgx:hexCode="2018" svgx:charCode="8216" svgx:fontName="FIGZKF+AdvTT5235d5a9+20" clip-path="url(#clipPath1)" fill="#000000" stroke="none" svgx:width="750.0" xmlns:svgx="http://www.xml-cml.org/schema/svgx">‘</text>
+       <text id="text5408" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="96.208" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5410" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="98.529" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5412" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="101.934" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5414" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="104.255" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5416" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="107.32" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+      </g>
+      <g class="word">
+       <text id="text5418" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="110.552" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5420" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="113.536" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5422" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="116.958" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+       <text id="text5424" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="120.408" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5426" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="124.045" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5428" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="125.901" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5430" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="128.07" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5432" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="129.926" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5434" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="133.286" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5436" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="137.084" svgx:hexCode="2019" svgx:charCode="8217" svgx:fontName="FIGZKF+AdvTT5235d5a9+20" clip-path="url(#clipPath1)" fill="#000000" stroke="none" svgx:width="750.0" xmlns:svgx="http://www.xml-cml.org/schema/svgx">’</text>
+       <text id="text5438" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="139.919" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5440" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="143.037" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5442" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="146.888" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5444" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="151.994" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5446" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="153.85" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5448" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="157.494" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5450" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="160.28" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5452" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="161.973" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+       <text id="text5454" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="165.422" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5456" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="169.06" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+      </g>
+      <g class="word">
+       <text id="text5458" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="172.802" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5460" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="175.92" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5462" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="179.771" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5464" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="182.836" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5466" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="184.692" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">y</text>
+       <text id="text5468" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="187.939" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5470" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="190.725" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5472" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="192.418" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+      </g>
+      <g class="word">
+       <text id="text5474" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="196.614" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5476" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="199.278" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5478" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="203.129" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5480" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="206.535" svgx:width="854.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">w</text>
+       <text id="text5482" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="211.864" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5484" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="213.72" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5486" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="217.364" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+      </g>
+      <g class="word">
+       <text id="text5488" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="222.239" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5490" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="224.095" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+       <text id="text5492" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="229.723" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
+       <text id="text5494" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="233.504" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5496" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="237.093" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5498" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="239.414" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5500" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="242.536" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5502" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="247.751" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+       <text id="text5504" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="253.477" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5506" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="255.333" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5508" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="257.956" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5510" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="260.62" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5512" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="262.476" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5514" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="266.12" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+      </g>
+      <g class="word">
+       <text id="text5516" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="270.995" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5518" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="273.66" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5520" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="275.871" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5522" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="279.652" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5524" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="283.298" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5526" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="285.153" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5528" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="288.23" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+      </g>
+      <g class="word">
+       <text id="text5530" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="292.426" svgx:width="447.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">(</text>
+       <text id="text5532" font-weight="normal" font-family="Helvetica" font-size="6.376" svgx:hexCode="fb01" svgx:charCode="64257" svgx:fontName="VSTHKY+AdvTT5235d5a9+fb" clip-path="url(#clipPath1)" fill="#000000" stroke="none" x="295.201" y="734.38" svgx:width="3415.714285714286" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+       <text id="text5534" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="298.999" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5536" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="300.855" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5538" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="302.514" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5540" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="305.83" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5542" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="310.905" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5544" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="313.889" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5546" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="315.554" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5548" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="318.143" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5550" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="320.94" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5552" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="322.795" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5554" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="325.929" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5556" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="328.715" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">)</text>
+      </g>
+      <g class="word">
+       <text id="text5558" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="332.789" svgx:width="572.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+       <text id="text5560" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="336.436" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5562" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="339.535" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5564" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="342.2" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5566" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="345.516" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5568" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="350.591" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5570" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="354.174" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+      </g>
+      <g class="word">
+       <text id="text5572" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="359.322" svgx:width="708.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">D</text>
+       <text id="text5574" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="363.836" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5576" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="367.429" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">v</text>
+       <text id="text5578" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="370.878" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5580" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="373.949" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+      </g>
+      <g class="word">
+       <text id="text5582" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="377.18" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5584" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="380.432" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5586" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="384.097" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5588" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="389.256" svgx:width="552.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">T</text>
+       <text id="text5590" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="392.775" svgx:width="854.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">w</text>
+       <text id="text5592" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="398.043" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5594" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="401.359" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5596" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="404.506" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5598" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="408.287" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5600" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="409.949" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5602" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="413.264" svgx:width="229.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">'</text>
+       <text id="text5604" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="414.541" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+      </g>
+      <g class="word">
+       <text id="text5606" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="418.68" svgx:width="552.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">T</text>
+       <text id="text5608" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="422.199" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5610" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="424.632" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5612" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="426.488" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+      </g>
+      <g class="word">
+       <text id="text5614" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="433.59" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5616" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="436.842" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5618" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="440.507" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5620" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="445.665" svgx:width="500.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5622" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="448.853" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5624" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="450.541" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+      </g>
+      <g class="word">
+       <text id="text5626" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="454.226" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5628" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="457.478" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5630" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="461.143" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5632" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="464.395" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5634" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="466.076" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">y</text>
+       <text id="text5636" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="469.525" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5638" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="472.142" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5640" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="473.997" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5642" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="476.564" svgx:width="229.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+      </g>
+      <g class="word">
+       <text id="text5644" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="479.399" svgx:width="500.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
+       <text id="text5646" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="482.587" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5648" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="484.275" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5650" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="486.13" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5652" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="487.79" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5654" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="491.105" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5656" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="496.18" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5658" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="499.961" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5660" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="501.623" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5662" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="504.875" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+       <text id="text5664" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="510.524" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5666" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="514.107" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5668" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="517.781" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word" font-weight="normal">
+       <text id="text5670" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="522.94" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5672" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="525.529" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5674" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="528.666" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
+       <text id="text5676" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="532.447" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5678" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="534.846" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5680" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="538.161" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5682" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="540.798" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5684" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="543.973" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5686" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="547.824" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5688" font-weight="normal" font-family="Helvetica" font-size="6.376" y="734.38" x="549.982" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <g string-value="the change in overall effect size if imputed studies are taken into comparison.//" class="textBox">
+   <g class="phraseListList" string-value="the change in overall effect size if imputed studies are taken into comparison.//">
+    <g class="phraseList" string-value="the change in overall effect size if imputed studies are taken into comparison.">
+     <g class="phrase" string-value="the change in overall effect size if imputed studies are taken into comparison.">
+      <g class="word">
+       <text id="text5690" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="33.732" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5692" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="35.943" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5694" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="39.794" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+      </g>
+      <g class="word">
+       <text id="text5696" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="44.674" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5698" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="47.657" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">h</text>
+       <text id="text5700" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="51.306" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5702" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="54.558" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5704" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="58.223" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">g</text>
+       <text id="text5706" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="61.673" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+      </g>
+      <g class="word">
+       <text id="text5708" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="66.5" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5710" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="68.356" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+      </g>
+      <g class="word">
+       <text id="text5712" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="73.757" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5714" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="77.215" svgx:width="541.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">v</text>
+       <text id="text5716" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="80.665" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5718" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="83.848" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5720" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="86.286" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5722" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="89.538" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+       <text id="text5724" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="91.218" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">l</text>
+      </g>
+      <g class="word">
+       <text id="text5726" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="94.733" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5728" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="98.049" svgx:width="322.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+       <text id="text5730" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="99.893" svgx:width="322.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+       <text id="text5732" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="101.946" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5734" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="105.108" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5736" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="108.092" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+      </g>
+      <g class="word">
+       <text id="text5738" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="111.912" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5740" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="114.698" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5742" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="116.391" svgx:width="489.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">z</text>
+       <text id="text5744" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="119.396" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+      </g>
+      <g class="word">
+       <text id="text5746" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="124.328" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5748" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="126.184" svgx:width="322.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">f</text>
+      </g>
+      <g class="word">
+       <text id="text5750" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="129.771" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5752" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="131.626" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+       <text id="text5754" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="137.311" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
+       <text id="text5756" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="141.092" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5758" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="144.681" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5760" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="146.892" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5762" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="150.208" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+      </g>
+      <g class="word">
+       <text id="text5764" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="155.51" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5766" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="158.296" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5768" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="160.443" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">u</text>
+       <text id="text5770" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="164.224" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">d</text>
+       <text id="text5772" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="167.813" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5774" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="169.668" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5776" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="172.802" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+      </g>
+      <g class="word">
+       <text id="text5778" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="177.224" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5780" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="180.475" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5782" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="182.893" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+      </g>
+      <g class="word">
+       <text id="text5784" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="187.826" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5786" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="190.037" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5788" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="193.289" svgx:width="552.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">k</text>
+       <text id="text5790" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="196.613" svgx:width="520.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">e</text>
+       <text id="text5792" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="199.929" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+      </g>
+      <g class="word">
+       <text id="text5794" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="205.344" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5796" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="207.199" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5798" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="210.843" svgx:width="364.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">t</text>
+       <text id="text5800" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="213.054" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+      </g>
+      <g class="word" font-weight="normal">
+       <text id="text5802" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="218.27" svgx:width="468.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
+       <text id="text5804" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="221.254" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5806" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="224.676" svgx:width="916.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">m</text>
+       <text id="text5808" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="230.403" svgx:width="593.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
+       <text id="text5810" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="234.184" svgx:width="510.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
+       <text id="text5812" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="237.263" svgx:width="406.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+       <text id="text5814" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="239.851" svgx:width="291.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">i</text>
+       <text id="text5816" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="241.515" svgx:width="437.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">s</text>
+       <text id="text5818" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="244.179" svgx:width="562.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">o</text>
+       <text id="text5820" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="247.763" svgx:width="604.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">n</text>
+       <text id="text5822" font-weight="normal" font-family="Helvetica" font-size="6.376" y="742.94" x="251.436" svgx:width="229.0" svgx:fontName="TEYVQK+AdvTT5235d5a9" clip-path="url(#clipPath1)" fill="#000000" stroke="none" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+      </g>
+     </g>
+    </g>
+   </g>
+     </g>
+  <line points="167.178 687.931 167.178 501.844" fill="none" stroke-width="1.0" x1="167.178" y1="687.931" x2="167.178" y2="501.844" id="line.0" stroke="red"/>
+  <line points="201.98 686.885 201.98 688.959" fill="none" stroke-width="1.0" x1="201.98" y1="686.885" x2="201.98" y2="688.959" id="line.1" stroke="red"/>
+  <line points="236.775 686.885 236.775 688.959" fill="none" stroke-width="1.0" x1="236.775" y1="686.885" x2="236.775" y2="688.959" id="line.2" stroke="red"/>
+  <line points="271.57 686.885 271.57 688.959" fill="none" stroke-width="1.0" x1="271.57" y1="686.885" x2="271.57" y2="688.959" id="line.3" stroke="red"/>
+  <line points="306.365 686.885 306.365 688.959" fill="none" stroke-width="1.0" x1="306.365" y1="686.885" x2="306.365" y2="688.959" id="line.4" stroke="red"/>
+  <line points="341.159 686.885 341.159 688.959" fill="none" stroke-width="1.0" x1="341.159" y1="686.885" x2="341.159" y2="688.959" id="line.5" stroke="red"/>
+  <line points="375.959 686.885 375.959 688.959" fill="none" stroke-width="1.0" x1="375.959" y1="686.885" x2="375.959" y2="688.959" id="line.6" stroke="red"/>
+  <line points="410.754 686.885 410.754 688.959" fill="none" stroke-width="1.0" x1="410.754" y1="686.885" x2="410.754" y2="688.959" id="line.7" stroke="red"/>
+  <line points="445.549 687.931 445.549 501.844" fill="none" stroke-width="1.0" x1="445.549" y1="687.931" x2="445.549" y2="501.844" id="line.8" stroke="red"/>
+  <line points="317.044 687.931 317.044 501.844" fill="none" stroke-width="1.0" x1="317.044" y1="687.931" x2="317.044" y2="501.844" id="line.9" stroke="red"/>
+  <line points="167.179 501.819 445.533 501.819" fill="none" stroke-width="1.0" x1="167.179" y1="501.819" x2="445.533" y2="501.819" id="line.10" stroke="red"/>
+  <line points="166.135 548.344 167.16 548.344" fill="none" stroke-width="1.0" x1="166.135" y1="548.344" x2="167.16" y2="548.344" id="line.11" stroke="red"/>
+  <line points="166.135 594.878 167.16 594.878" fill="none" stroke-width="1.0" x1="166.135" y1="594.878" x2="167.16" y2="594.878" id="line.12" stroke="red"/>
+  <line points="166.135 641.403 167.16 641.403" fill="none" stroke-width="1.0" x1="166.135" y1="641.403" x2="167.16" y2="641.403" id="line.13" stroke="red"/>
+  <line points="167.178 687.931 445.532 687.931" fill="none" stroke-width="1.0" x1="167.178" y1="687.931" x2="445.532" y2="687.931" id="line.14" stroke="red"/>
+  <line fill="none" stroke-width="1.0" x1="371.592" y1="687.931" x2="317.042" y2="501.844" id="line.15" stroke="red"/>
+  <line fill="none" stroke-width="1.0" x1="262.478" y1="687.931" x2="317.043" y2="501.844" id="line.16" stroke="red"/>
+  <circle fill="none" stroke-width="0.5" cx="298.677" cy="591.121" r="1.715" id="circle.17" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="298.969" cy="591.121" r="1.715" id="circle.18" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="301.476" cy="580.218" r="1.711" id="circle.19" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="301.559" cy="578.07" r="1.715" id="circle.20" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="304.715" cy="551.738" r="1.711" id="circle.21" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="307.454" cy="544.232" r="1.712" id="circle.22" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="308.061" cy="563.196" r="1.712" id="circle.23" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="308.416" cy="581.367" r="1.712" id="circle.24" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="308.811" cy="565.475" r="1.712" id="circle.25" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="309.626" cy="529.633" r="1.711" id="circle.26" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="310.612" cy="571.143" r="1.711" id="circle.27" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="310.714" cy="535.699" r="1.712" id="circle.28" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="310.714" cy="564.892" r="1.712" id="circle.29" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="311.194" cy="552.344" r="1.711" id="circle.30" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="311.467" cy="540.489" r="1.712" id="circle.31" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="311.549" cy="545.945" r="1.712" id="circle.32" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="311.697" cy="541.469" r="1.711" id="circle.33" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="311.947" cy="587.976" r="1.711" id="circle.34" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="312.406" cy="586.514" r="1.712" id="circle.35" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="312.595" cy="556.798" r="1.712" id="circle.36" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="313.076" cy="592.829" r="1.711" id="circle.37" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="313.43" cy="578.07" r="1.715" id="circle.38" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="313.453" cy="578.07" r="1.715" id="circle.39" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.015" cy="554.601" r="1.712" id="circle.40" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.015" cy="561.146" r="1.712" id="circle.41" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.015" cy="568.048" r="1.713" id="circle.42" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.015" cy="589.503" r="1.713" id="circle.43" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.015" cy="603.094" r="1.712" id="circle.44" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.101" cy="589.503" r="1.713" id="circle.45" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="314.266" cy="539.944" r="1.712" id="circle.46" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="315.289" cy="564.305" r="1.712" id="circle.47" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="315.374" cy="563.74" r="1.712" id="circle.48" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="315.416" cy="564.305" r="1.712" id="circle.49" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="315.855" cy="542.828" r="1.712" id="circle.50" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="316.419" cy="550.357" r="1.711" id="circle.51" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="317.821" cy="557.989" r="1.713" id="circle.52" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="317.946" cy="561.231" r="1.712" id="circle.53" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.259" cy="554.938" r="1.711" id="circle.54" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.549" cy="557.99" r="1.713" id="circle.55" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.593" cy="586.515" r="1.712" id="circle.56" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.802" cy="547.207" r="1.715" id="circle.57" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.946" cy="569.45" r="1.711" id="circle.58" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="318.99" cy="580.219" r="1.711" id="circle.59" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="319.177" cy="542.536" r="1.712" id="circle.60" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="319.241" cy="561.146" r="1.712" id="circle.61" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="319.368" cy="527.583" r="1.712" id="circle.62" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="319.951" cy="630.616" r="1.713" id="circle.63" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="320.473" cy="546.553" r="1.712" id="circle.64" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="320.578" cy="567.382" r="1.712" id="circle.65" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="320.578" cy="555.294" r="1.712" id="circle.66" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="321.833" cy="591.123" r="1.715" id="circle.67" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="321.895" cy="534.487" r="1.712" id="circle.68" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="323.568" cy="560.676" r="1.715" id="circle.69" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="323.67" cy="611.232" r="1.711" id="circle.70" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="323.82" cy="530.054" r="1.712" id="circle.71" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="323.881" cy="580.22" r="1.711" id="circle.72" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="324.005" cy="587.977" r="1.711" id="circle.73" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="324.631" cy="550.901" r="1.712" id="circle.74" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="324.696" cy="572.53" r="1.714" id="circle.75" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="324.758" cy="553.914" r="1.713" id="circle.76" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="324.924" cy="559.726" r="1.712" id="circle.77" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="326.136" cy="551.173" r="1.712" id="circle.78" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="326.952" cy="561.147" r="1.711" id="circle.79" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="327.287" cy="589.503" r="1.712" id="circle.80" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="327.496" cy="553.913" r="1.712" id="circle.81" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="327.831" cy="546.991" r="1.712" id="circle.82" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="329.483" cy="611.231" r="1.711" id="circle.83" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="331.55" cy="594.626" r="1.712" id="circle.84" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="333.054" cy="589.503" r="1.713" id="circle.85" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="335.479" cy="589.503" r="1.712" id="circle.86" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="337.109" cy="582.561" r="1.712" id="circle.87" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="338.112" cy="591.122" r="1.716" id="circle.88" stroke="purple"/>
+  <circle fill="#000000" stroke-width="0.5" cx="295.459" cy="591.121" r="1.715" id="circle.89" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="295.459" cy="591.121" r="1.715" id="circle.90" stroke="purple"/>
+  <circle fill="#000000" stroke-width="0.5" cx="296.461" cy="582.56" r="1.712" id="circle.91" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="296.461" cy="582.56" r="1.712" id="circle.92" stroke="purple"/>
+  <circle fill="#000000" stroke-width="0.5" cx="298.091" cy="589.502" r="1.712" id="circle.93" stroke="purple"/>
+  <circle fill="none" stroke-width="0.5" cx="298.091" cy="589.502" r="1.712" id="circle.94" stroke="purple"/>
+  <polygon points="317.378 690.02 315.48 692.111 317.378 694.201 319.259 692.111" id="polygon.95" fill="orange" stroke="black" stroke-width="1.0"/>
+  <polygon points="317.043 696.294 315.163 698.384 317.043 700.477 318.907 698.384" id="polygon.96" fill="orange" stroke="black" stroke-width="1.0"/>
+  <polygon points="317.043 696.294 315.163 698.384 317.043 700.477 318.907 698.384" id="polygon.97" fill="orange" stroke="black" stroke-width="1.0"/>
+ </g>
+</svg>
