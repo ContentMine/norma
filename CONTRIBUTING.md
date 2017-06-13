@@ -53,3 +53,7 @@ In order to set up your development environment for norma, you need a recent ver
   1. check error logs and if necessary review test outputs
 1. When your changes work as intended, push them to your repository and [create a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request).
 1. We will then review the pull request and merge it as soon as possible. If problems arise, they will be discussed within the pull request.
+
+## License
+
+All content in the issue tracker and the wiki is offered under the terms of the [Creative Commons Attribution 4.0 (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/). Please do not contribute issues, comments, or wiki content to this repository unless you consent to the application of that license.
