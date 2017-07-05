@@ -1,0 +1,5816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svgx="http://www.xml-cml.org/schema/svgx"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600.0"
+   height="800.0"
+   stroke="none"
+   stroke-width="0.0"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fig15b.svg">
+  <metadata
+     id="metadata4438">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1159"
+     inkscape:window-height="813"
+     id="namedview4436"
+     showgrid="false"
+     inkscape:zoom="0.75017578"
+     inkscape:cx="300"
+     inkscape:cy="400"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="clipPath6">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M61.8 365.76 L61.8 498.96 L261.6 498.96 L261.6 365.76 Z"
+         id="path6" />
+    </clipPath>
+    <clipPath
+       id="clipPath3">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M41.64 85.2 L41.64 268.2 L285.6 268.2 L285.6 85.2 Z"
+         id="path9" />
+    </clipPath>
+    <clipPath
+       id="clipPath2">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M0.0 0.0 L595.0 0.0 L595.0 842.0 L0.0 842.0 L0.0 0.0 Z"
+         id="path12" />
+    </clipPath>
+    <clipPath
+       id="clipPath5">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M41.64 573.48 L41.64 756.48 L285.6 756.48 L285.6 573.48 Z"
+         id="path15" />
+    </clipPath>
+    <clipPath
+       id="clipPath1">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M0.0 0.0 L0.0 841.92 L594.96 841.92 L594.96 0.0 Z"
+         id="path18" />
+    </clipPath>
+    <clipPath
+       id="clipPath7">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M64.68 609.24 L64.68 741.12 L262.56 741.12 L262.56 609.24 Z"
+         id="path21" />
+    </clipPath>
+    <clipPath
+       id="clipPath4">
+      <path
+         stroke="black"
+         stroke-width="0.5"
+         fill="none"
+         d="M41.64 329.4 L41.64 512.4 L285.6 512.4 L285.6 329.4 Z"
+         id="path24" />
+    </clipPath>
+  </defs>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="RHWEVP+Times-Roman"
+     svgx:width="500.0"
+     x="573.96"
+     y="835.8"
+     font-size="13.556"
+     font-family="TimesNewRoman"
+     font-weight="normal"
+     id="text26">1</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="RHWEVP+Times-Roman"
+     svgx:width="500.0"
+     x="580.92"
+     y="835.8"
+     font-size="13.556"
+     font-family="TimesNewRoman"
+     font-weight="normal"
+     id="text28">5</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="103.32"
+     y="102.6"
+     font-size="9.477"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text54" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="87.24"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text80" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="103.8"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text90" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="145.32"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text118" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="183.84"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text142" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="210.0"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text158" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="218.16"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text164" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="238.92"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text174" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="259.08"
+     y="117.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text188" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="59.16"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text194" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="70.44"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text200" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="107.88"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text220" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="123.72"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text228" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="160.8"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text248" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="178.8"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text258" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="198.12"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text268" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="214.8"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text278" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="229.8"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text288" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="239.4"
+     y="127.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text294" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="88.56"
+     y="137.04"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text326" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="87.24"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text360" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="103.8"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text370" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="145.32"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text398" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="183.84"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text422" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="210.0"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text438" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="218.16"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text444" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="238.32"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text458" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="247.44"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text464" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="258.72"
+     y="151.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text470" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="87.241"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text490" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="108.001"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text500" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="152.161"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text524" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="170.401"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text534" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="189.72"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text544" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="206.4"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text554" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="221.4"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text564" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="230.88"
+     y="161.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text570" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="88.56"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text602" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="114.72"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text618" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="133.68"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text626" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="164.88"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text644" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="173.4"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text650" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="198.36"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text664" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="224.52"
+     y="171.12"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text678" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="68.161"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text706" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="103.441"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text724" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="119.281"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text732" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="159.121"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text752" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="192.961"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text770" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="201.121"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text776" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="217.8"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text786" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="238.08"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text800" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="247.2"
+     y="185.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text806" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="81.84"
+     y="195.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text822" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="123.24"
+     y="195.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text850" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="161.76"
+     y="195.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text874" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="187.92"
+     y="195.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text890" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="205.92"
+     y="195.48"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text900" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="85.441"
+     y="205.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text928" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="101.281"
+     y="205.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text936" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="141.001"
+     y="205.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text956" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="177.121"
+     y="205.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text976" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="91.321"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text996" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="108.36"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1006" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="145.56"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1026" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="173.52"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1042" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="191.16"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1050" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="208.8"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1060" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="217.8"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1066" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="229.08"
+     y="219.84"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1072" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="86.28"
+     y="229.56"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1104" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="100.2"
+     y="346.8"
+     font-size="9.477"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text1154" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="153.36"
+     y="346.8"
+     font-size="9.477"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text1178" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="78.96"
+     y="361.68"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text1200" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="57.72"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1214" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="73.2"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1224" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="82.2"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1230" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="104.28"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1244" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="120.96"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1254" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="149.4"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1270" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="177.84"
+     y="376.32"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1284" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="62.76"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1300" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="79.92"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1310" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="88.08"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1316" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="117.48"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1332" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="158.88"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1348" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="173.28"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1358" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="180.12"
+     y="391.2"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1362" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="67.439"
+     y="407.64"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1382" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="104.519"
+     y="407.64"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1402" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="132.479"
+     y="407.64"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1418" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="72.719"
+     y="417.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1428" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="89.159"
+     y="417.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1438" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="111.239"
+     y="417.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1452" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="118.199"
+     y="417.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1456" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="83.279"
+     y="432.0"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1478" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="100.919"
+     y="432.0"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1490" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="122.879"
+     y="432.0"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1504" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="84.599"
+     y="441.72"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1520" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="113.039"
+     y="441.72"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1534" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="74.64"
+     y="456.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1552" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="83.64"
+     y="456.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1558" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="111.72"
+     y="456.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1574" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="137.879"
+     y="456.36"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1588" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="66.48"
+     y="466.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1596" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="89.519"
+     y="466.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1610" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="103.199"
+     y="466.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1618" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="124.319"
+     y="466.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1632" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="84.959"
+     y="480.6"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1648" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="96.359"
+     y="480.6"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1654" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="109.919"
+     y="480.6"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1662" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="130.919"
+     y="480.6"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1672" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="78.239"
+     y="490.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1684" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="111.239"
+     y="490.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1700" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="128.759"
+     y="490.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1710" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="85.559"
+     y="500.16"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1724" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="96.839"
+     y="500.16"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text1730" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="216.24"
+     y="505.68"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2842" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="233.76"
+     y="505.68"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2856" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath5)"
+     fill="#ffffff"
+     stroke-width="0.0"
+     d="M41.64 756.48 L285.6 756.48 L285.6 573.48 L41.64 573.48 Z"
+     id="path2868" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="100.2"
+     y="590.88"
+     font-size="9.477"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text2892" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="153.36"
+     y="590.88"
+     font-size="9.477"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text2916" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="EBYFVP+Helvetica-Bold"
+     svgx:width="278.0"
+     x="78.96"
+     y="605.76"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="bold"
+     id="text2938" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="57.72"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2952" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="73.2"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2962" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="82.2"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2968" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="104.28"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2982" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="120.96"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text2992" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="149.4"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3008" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="177.84"
+     y="620.4"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3022" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="62.76"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3038" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="79.92"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3048" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="88.08"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3054" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="117.48"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3070" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="158.88"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3086" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="173.28"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3096" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="180.12"
+     y="635.28"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3100" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="67.439"
+     y="651.72"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3120" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="104.519"
+     y="651.72"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3140" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="132.479"
+     y="651.72"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3156" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="72.719"
+     y="661.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3166" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="89.159"
+     y="661.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3176" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="111.239"
+     y="661.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3190" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="118.199"
+     y="661.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3194" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="83.279"
+     y="676.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3216" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="100.919"
+     y="676.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3228" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="122.879"
+     y="676.08"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3242" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="84.599"
+     y="685.8"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3258" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="118.439"
+     y="685.8"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3276" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="99.599"
+     y="700.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3310" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="113.519"
+     y="700.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3318" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="130.559"
+     y="700.44"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3326" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="85.079"
+     y="710.16"
+     font-size="8.158"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text3344" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="0.0"
+     d="M150.12 755.16 L284.4 755.16 L284.4 657.6 L150.12 657.6 Z"
+     id="path3358" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="0.0"
+     d="M150.24 755.04 L284.16 755.04 L284.16 657.84 L150.24 657.84 Z"
+     id="path3360" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#ffffff"
+     stroke-width="1.352"
+     d="M150.24 755.04 L284.16 755.04 L284.16 657.84 L150.24 657.84 Z"
+     id="path3362" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 737.04 L280.8 737.04 L280.8 661.2 L168.36 661.2 Z"
+     id="path3364" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#303030"
+     stroke-width="3.38"
+     d="M168.36 699.12 L280.8 699.12 "
+     id="path3366" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M273.6 726.12 L272.4 727.32 L273.6 728.4 L274.68 727.32 "
+     id="path3368" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M273.6 726.12 L272.4 727.32 L273.6 728.4 L274.68 727.32 Z"
+     id="path3370" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M273.6 678.96 L272.4 680.04 L273.6 681.24 L274.68 680.04 "
+     id="path3372" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M273.6 678.96 L272.4 680.04 L273.6 681.24 L274.68 680.04 Z"
+     id="path3374" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M269.64 699.0 L268.44 700.2 L269.64 701.28 L270.72 700.2 "
+     id="path3376" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M269.64 699.0 L268.44 700.2 L269.64 701.28 L270.72 700.2 Z"
+     id="path3378" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M269.64 695.28 L268.44 696.36 L269.64 697.44 L270.72 696.36 "
+     id="path3380" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M269.64 695.28 L268.44 696.36 L269.64 697.44 L270.72 696.36 Z"
+     id="path3382" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M259.92 694.8 L258.839 696.0 L259.92 697.08 L261.12 696.0 "
+     id="path3384" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M259.92 694.8 L258.839 696.0 L259.92 697.08 L261.12 696.0 Z"
+     id="path3386" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M248.76 712.32 L247.56 713.52 L248.76 714.6 L249.84 713.52 "
+     id="path3388" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M248.76 712.32 L247.56 713.52 L248.76 714.6 L249.84 713.52 Z"
+     id="path3390" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M243.72 704.64 L242.52 705.72 L243.72 706.92 L244.8 705.72 "
+     id="path3392" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M243.72 704.64 L242.52 705.72 L243.72 706.92 L244.8 705.72 Z"
+     id="path3394" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M243.72 686.64 L242.52 687.72 L243.72 688.92 L244.8 687.72 "
+     id="path3396" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M243.72 686.64 L242.52 687.72 L243.72 688.92 L244.8 687.72 Z"
+     id="path3398" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M236.16 701.04 L234.96 702.12 L236.16 703.2 L237.24 702.12 "
+     id="path3400" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M236.16 701.04 L234.96 702.12 L236.16 703.2 L237.24 702.12 Z"
+     id="path3402" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M232.2 692.88 L231.12 693.96 L232.2 695.16 L233.4 693.96 "
+     id="path3404" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M232.2 692.88 L231.12 693.96 L232.2 695.16 L233.4 693.96 Z"
+     id="path3406" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M228.84 697.92 L227.76 699.0 L228.84 700.2 L230.04 699.0 "
+     id="path3408" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M228.84 697.92 L227.76 699.0 L228.84 700.2 L230.04 699.0 Z"
+     id="path3410" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M227.4 703.68 L226.32 704.76 L227.4 705.96 L228.6 704.76 "
+     id="path3412" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M227.4 703.68 L226.32 704.76 L227.4 705.96 L228.6 704.76 Z"
+     id="path3414" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M225.48 687.36 L224.28 688.44 L225.48 689.64 L226.56 688.44 "
+     id="path3416" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M225.48 687.36 L224.28 688.44 L225.48 689.64 L226.56 688.44 Z"
+     id="path3418" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M223.68 711.12 L222.6 712.32 L223.68 713.4 L224.88 712.32 "
+     id="path3420" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M223.68 711.12 L222.6 712.32 L223.68 713.4 L224.88 712.32 Z"
+     id="path3422" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M223.68 702.72 L222.6 703.92 L223.68 705.0 L224.88 703.92 "
+     id="path3424" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M223.68 702.72 L222.6 703.92 L223.68 705.0 L224.88 703.92 Z"
+     id="path3426" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M221.04 707.16 L219.96 708.24 L221.04 709.44 L222.24 708.24 "
+     id="path3428" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M221.04 707.16 L219.96 708.24 L221.04 709.44 L222.24 708.24 Z"
+     id="path3430" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M218.76 695.88 L217.68 696.96 L218.76 698.16 L219.96 696.96 "
+     id="path3432" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M218.76 695.88 L217.68 696.96 L218.76 698.16 L219.96 696.96 Z"
+     id="path3434" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M218.76 681.96 L217.68 683.04 L218.76 684.24 L219.96 683.04 "
+     id="path3436" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M218.76 681.96 L217.68 683.04 L218.76 684.24 L219.96 683.04 Z"
+     id="path3438" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M218.4 699.72 L217.32 700.92 L218.4 702.0 L219.6 700.92 "
+     id="path3440" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M218.4 699.72 L217.32 700.92 L218.4 702.0 L219.6 700.92 Z"
+     id="path3442" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M218.04 702.72 L216.84 703.8 L218.04 705.0 L219.12 703.8 "
+     id="path3444" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M218.04 702.72 L216.84 703.8 L218.04 705.0 L219.12 703.8 Z"
+     id="path3446" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M209.76 695.04 L208.56 696.24 L209.76 697.32 L210.84 696.24 "
+     id="path3448" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M209.76 695.04 L208.56 696.24 L209.76 697.32 L210.84 696.24 Z"
+     id="path3450" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M208.68 702.12 L207.48 703.2 L208.68 704.4 L209.76 703.2 "
+     id="path3452" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M208.68 702.12 L207.48 703.2 L208.68 704.4 L209.76 703.2 Z"
+     id="path3454" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M207.12 698.52 L205.92 699.6 L207.12 700.8 L208.2 699.6 "
+     id="path3456" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M207.12 698.52 L205.92 699.6 L207.12 700.8 L208.2 699.6 Z"
+     id="path3458" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M205.56 711.0 L204.48 712.08 L205.56 713.28 L206.64 712.08 "
+     id="path3460" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M205.56 711.0 L204.48 712.08 L205.56 713.28 L206.64 712.08 Z"
+     id="path3462" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M205.44 697.08 L204.24 698.28 L205.44 699.36 L206.52 698.28 "
+     id="path3464" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M205.44 697.08 L204.24 698.28 L205.44 699.36 L206.52 698.28 Z"
+     id="path3466" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M204.84 696.48 L203.64 697.56 L204.84 698.76 L205.92 697.56 "
+     id="path3468" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M204.84 696.48 L203.64 697.56 L204.84 698.76 L205.92 697.56 Z"
+     id="path3470" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M203.52 690.6 L202.44 691.68 L203.52 692.88 L204.72 691.68 "
+     id="path3472" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M203.52 690.6 L202.44 691.68 L203.52 692.88 L204.72 691.68 Z"
+     id="path3474" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M201.96 696.96 L200.76 698.16 L201.96 699.24 L203.04 698.16 "
+     id="path3476" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M201.96 696.96 L200.76 698.16 L201.96 699.24 L203.04 698.16 Z"
+     id="path3478" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M201.6 698.76 L200.4 699.96 L201.6 701.04 L202.68 699.96 "
+     id="path3480" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M201.6 698.76 L200.4 699.96 L201.6 701.04 L202.68 699.96 Z"
+     id="path3482" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M201.36 699.24 L200.28 700.44 L201.36 701.52 L202.56 700.44 "
+     id="path3484" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M201.36 699.24 L200.28 700.44 L201.36 701.52 L202.56 700.44 Z"
+     id="path3486" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M201.36 693.96 L200.16 695.04 L201.36 696.24 L202.44 695.04 "
+     id="path3488" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M201.36 693.96 L200.16 695.04 L201.36 696.24 L202.44 695.04 Z"
+     id="path3490" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M197.16 699.24 L195.96 700.44 L197.16 701.52 L198.24 700.44 "
+     id="path3492" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M197.16 699.24 L195.96 700.44 L197.16 701.52 L198.24 700.44 Z"
+     id="path3494" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M196.32 697.2 L195.12 698.28 L196.32 699.48 L197.4 698.28 "
+     id="path3496" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M196.32 697.2 L195.12 698.28 L196.32 699.48 L197.4 698.28 Z"
+     id="path3498" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M196.32 687.84 L195.12 688.92 L196.32 690.12 L197.4 688.92 "
+     id="path3500" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M196.32 687.84 L195.12 688.92 L196.32 690.12 L197.4 688.92 Z"
+     id="path3502" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M195.6 700.44 L194.52 701.52 L195.6 702.72 L196.8 701.52 "
+     id="path3504" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M195.6 700.44 L194.52 701.52 L195.6 702.72 L196.8 701.52 Z"
+     id="path3506" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M193.92 699.24 L192.84 700.32 L193.92 701.52 L195.12 700.32 "
+     id="path3508" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M193.92 699.24 L192.84 700.32 L193.92 701.52 L195.12 700.32 Z"
+     id="path3510" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M193.8 701.16 L192.72 702.24 L193.8 703.44 L195.0 702.24 "
+     id="path3512" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M193.8 701.16 L192.72 702.24 L193.8 703.44 L195.0 702.24 Z"
+     id="path3514" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M192.6 701.88 L191.4 702.96 L192.6 704.16 L193.68 702.96 "
+     id="path3516" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M192.6 701.88 L191.4 702.96 L192.6 704.16 L193.68 702.96 Z"
+     id="path3518" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M190.8 700.32 L189.72 701.52 L190.8 702.6 L192.0 701.52 "
+     id="path3520" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M190.8 700.32 L189.72 701.52 L190.8 702.6 L192.0 701.52 Z"
+     id="path3522" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M190.32 694.92 L189.24 696.0 L190.32 697.2 L191.52 696.0 "
+     id="path3524" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M190.32 694.92 L189.24 696.0 L190.32 697.2 L191.52 696.0 Z"
+     id="path3526" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M187.8 699.48 L186.72 700.56 L187.8 701.76 L189.0 700.56 "
+     id="path3528" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M187.8 699.48 L186.72 700.56 L187.8 701.76 L189.0 700.56 Z"
+     id="path3530" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M186.0 698.4 L184.8 699.48 L186.0 700.68 L187.08 699.48 "
+     id="path3532" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M186.0 698.4 L184.8 699.48 L186.0 700.68 L187.08 699.48 Z"
+     id="path3534" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M185.04 698.52 L183.84 699.6 L185.04 700.8 L186.12 699.6 "
+     id="path3536" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M185.04 698.52 L183.84 699.6 L185.04 700.8 L186.12 699.6 Z"
+     id="path3538" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M184.92 693.84 L183.72 695.04 L184.92 696.12 L186.0 695.04 "
+     id="path3540" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M184.92 693.84 L183.72 695.04 L184.92 696.12 L186.0 695.04 Z"
+     id="path3542" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M184.32 696.24 L183.24 697.44 L184.32 698.52 L185.52 697.44 "
+     id="path3544" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M184.32 696.24 L183.24 697.44 L184.32 698.52 L185.52 697.44 Z"
+     id="path3546" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M184.2 699.24 L183.0 700.32 L184.2 701.52 L185.28 700.32 "
+     id="path3548" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M184.2 699.24 L183.0 700.32 L184.2 701.52 L185.28 700.32 Z"
+     id="path3550" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M182.28 698.16 L181.2 699.24 L182.28 700.44 L183.48 699.24 "
+     id="path3552" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M182.28 698.16 L181.2 699.24 L182.28 700.44 L183.48 699.24 Z"
+     id="path3554" />
+  <path
+     stroke="black"
+     clip-path="url(#clipPath2)"
+     fill="#ffffff"
+     stroke-width="3.38"
+     d="M178.92 697.08 L177.72 698.28 L178.92 699.36 L180.0 698.28 "
+     id="path3556" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#5f5f5f"
+     stroke-width="3.38"
+     d="M178.92 697.08 L177.72 698.28 L178.92 699.36 L180.0 698.28 Z"
+     id="path3558" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M273.6 664.44 L273.6 664.44 "
+     id="path3560" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M273.6 664.44 L271.68 665.04 "
+     id="path3562" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M270.84 665.4 L269.64 665.76 "
+     id="path3564" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M269.64 665.76 L269.64 665.76 "
+     id="path3566" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M269.64 665.76 L268.92 666.0 "
+     id="path3568" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M268.08 666.36 L266.16 666.84 "
+     id="path3570" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M265.32 667.2 L263.4 667.92 "
+     id="path3572" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M262.56 668.16 L260.64 668.88 "
+     id="path3574" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M259.8 669.12 L257.88 669.72 "
+     id="path3576" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M257.04 670.08 L255.12 670.68 "
+     id="path3578" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M254.28 671.04 L252.36 671.64 "
+     id="path3580" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M251.52 671.88 L249.6 672.6 "
+     id="path3582" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M248.76 672.96 L246.84 673.56 "
+     id="path3584" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M246.0 673.8 L244.08 674.4 "
+     id="path3586" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M243.12 674.76 L241.32 675.36 "
+     id="path3588" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M240.36 675.72 L238.56 676.32 "
+     id="path3590" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M237.6 676.68 L236.16 677.16 "
+     id="path3592" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M236.16 677.16 L235.8 677.28 "
+     id="path3594" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M234.84 677.64 L233.04 678.24 "
+     id="path3596" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M232.08 678.48 L230.28 679.2 "
+     id="path3598" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M229.32 679.44 L228.84 679.68 "
+     id="path3600" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M228.84 679.68 L227.4 680.16 "
+     id="path3602" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M226.56 680.4 L225.48 680.76 "
+     id="path3604" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M225.48 680.76 L224.64 681.0 "
+     id="path3606" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.8 681.36 L223.68 681.48 "
+     id="path3608" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.68 681.48 L223.68 681.48 "
+     id="path3610" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.68 681.48 L221.88 681.96 "
+     id="path3612" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M221.04 682.32 L219.12 682.92 "
+     id="path3614" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M218.28 683.28 L218.04 683.4 "
+     id="path3616" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M218.04 683.4 L216.36 683.88 "
+     id="path3618" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M215.52 684.24 L213.6 684.84 "
+     id="path3620" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M212.76 685.2 L210.84 685.68 "
+     id="path3622" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M210.0 686.04 L209.76 686.16 "
+     id="path3624" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M209.76 686.16 L208.68 686.52 "
+     id="path3626" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M208.68 686.52 L208.08 686.76 "
+     id="path3628" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.24 687.0 L207.12 687.0 "
+     id="path3630" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.12 687.0 L207.0 687.12 "
+     id="path3632" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.0 687.12 L206.04 687.36 "
+     id="path3634" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M206.04 687.36 L205.56 687.6 "
+     id="path3636" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M205.56 687.6 L205.44 687.6 "
+     id="path3638" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M205.44 687.6 L205.32 687.72 "
+     id="path3640" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M204.48 687.96 L203.88 688.2 "
+     id="path3642" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.88 688.2 L203.52 688.2 "
+     id="path3644" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.52 688.2 L203.16 688.44 "
+     id="path3646" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.16 688.44 L202.56 688.56 "
+     id="path3648" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M202.56 688.56 L202.56 688.56 "
+     id="path3650" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.6 688.92 L201.6 688.92 "
+     id="path3652" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.6 688.92 L201.36 688.92 "
+     id="path3654" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 688.92 L201.36 688.92 "
+     id="path3656" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 688.92 L201.36 688.92 "
+     id="path3658" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 688.92 L200.88 689.16 "
+     id="path3660" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M200.88 689.16 L200.4 689.28 "
+     id="path3662" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M200.4 689.28 L199.92 689.52 "
+     id="path3664" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M199.92 689.52 L199.8 689.52 "
+     id="path3666" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.84 689.88 L198.6 689.88 "
+     id="path3668" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.6 689.88 L198.24 690.0 "
+     id="path3670" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.24 690.0 L197.88 690.24 "
+     id="path3672" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.88 690.24 L197.52 690.24 "
+     id="path3674" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.52 690.24 L197.16 690.48 "
+     id="path3676" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.16 690.48 L197.16 690.48 "
+     id="path3678" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.16 690.48 L197.04 690.48 "
+     id="path3680" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M196.08 690.72 L195.96 690.84 "
+     id="path3682" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.96 690.84 L195.6 690.96 "
+     id="path3684" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.6 690.96 L195.6 690.96 "
+     id="path3686" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.6 690.96 L195.36 690.96 "
+     id="path3688" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.36 690.96 L195.12 691.08 "
+     id="path3690" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.12 691.08 L194.88 691.2 "
+     id="path3692" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.88 691.2 L194.64 691.2 "
+     id="path3694" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.64 691.2 L194.4 691.32 "
+     id="path3696" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.4 691.32 L194.28 691.44 "
+     id="path3698" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.32 691.68 L193.32 691.68 "
+     id="path3700" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.32 691.68 L193.08 691.8 "
+     id="path3702" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.08 691.8 L192.84 691.92 "
+     id="path3704" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.84 691.92 L192.72 691.92 "
+     id="path3706" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.72 691.92 L192.6 691.92 "
+     id="path3708" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.6 691.92 L192.48 691.92 "
+     id="path3710" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.48 691.92 L192.36 692.04 "
+     id="path3712" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.36 692.04 L192.12 692.16 "
+     id="path3714" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.12 692.16 L192.0 692.28 "
+     id="path3716" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.0 692.28 L191.88 692.28 "
+     id="path3718" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M191.88 692.28 L191.64 692.28 "
+     id="path3720" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M191.64 692.28 L191.52 692.4 "
+     id="path3722" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.56 692.64 L190.44 692.76 "
+     id="path3724" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.44 692.76 L190.32 692.76 "
+     id="path3726" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.32 692.76 L190.32 692.76 "
+     id="path3728" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.32 692.76 L190.2 692.76 "
+     id="path3730" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.2 692.76 L190.08 692.76 "
+     id="path3732" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.08 692.76 L189.96 692.88 "
+     id="path3734" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.96 692.88 L189.84 693.0 "
+     id="path3736" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.84 693.0 L189.72 693.0 "
+     id="path3738" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.72 693.0 L189.6 693.0 "
+     id="path3740" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.6 693.0 L189.48 693.0 "
+     id="path3742" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.48 693.0 L189.36 693.0 "
+     id="path3744" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.36 693.0 L189.24 693.12 "
+     id="path3746" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.24 693.12 L189.12 693.12 "
+     id="path3748" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.12 693.12 L189.0 693.24 "
+     id="path3750" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.0 693.24 L188.88 693.24 "
+     id="path3752" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M188.88 693.24 L188.76 693.24 "
+     id="path3754" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M188.76 693.24 L188.76 693.24 "
+     id="path3756" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.8 693.6 L187.8 693.6 "
+     id="path3758" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.8 693.6 L187.68 693.6 "
+     id="path3760" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.68 693.6 L187.56 693.72 "
+     id="path3762" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.56 693.72 L187.56 693.72 "
+     id="path3764" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.56 693.72 L187.44 693.72 "
+     id="path3766" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.44 693.72 L187.32 693.72 "
+     id="path3768" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.32 693.72 L187.32 693.72 "
+     id="path3770" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.32 693.72 L187.2 693.72 "
+     id="path3772" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.2 693.72 L187.08 693.84 "
+     id="path3774" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.08 693.84 L187.08 693.84 "
+     id="path3776" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.08 693.84 L186.96 693.84 "
+     id="path3778" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.96 693.84 L186.96 693.96 "
+     id="path3780" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.96 693.96 L186.84 693.96 "
+     id="path3782" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.84 693.96 L186.84 693.96 "
+     id="path3784" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.84 693.96 L186.72 693.96 "
+     id="path3786" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.72 693.96 L186.6 693.96 "
+     id="path3788" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.6 693.96 L186.6 693.96 "
+     id="path3790" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.6 693.96 L186.48 693.96 "
+     id="path3792" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.48 693.96 L186.48 694.08 "
+     id="path3794" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.48 694.08 L186.36 694.08 "
+     id="path3796" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.36 694.08 L186.24 694.08 "
+     id="path3798" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.24 694.08 L186.24 694.2 "
+     id="path3800" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.24 694.2 L186.12 694.2 "
+     id="path3802" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.12 694.2 L186.12 694.2 "
+     id="path3804" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.12 694.2 L186.0 694.2 "
+     id="path3806" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 694.2 L186.0 694.2 "
+     id="path3808" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 694.2 L186.0 694.2 "
+     id="path3810" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 694.2 L186.0 694.2 "
+     id="path3812" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 694.56 L185.04 694.56 "
+     id="path3814" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 694.56 L185.04 694.56 "
+     id="path3816" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 694.56 L185.04 694.56 "
+     id="path3818" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 694.56 L184.92 694.56 "
+     id="path3820" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.92 694.56 L184.92 694.56 "
+     id="path3822" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.92 694.56 L184.8 694.56 "
+     id="path3824" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 694.56 L184.8 694.56 "
+     id="path3826" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 694.56 L184.8 694.68 "
+     id="path3828" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 694.68 L184.8 694.68 "
+     id="path3830" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 694.68 L184.68 694.68 "
+     id="path3832" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.68 694.68 L184.68 694.68 "
+     id="path3834" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.68 694.68 L184.56 694.68 "
+     id="path3836" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 694.68 L184.56 694.68 "
+     id="path3838" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 694.68 L184.56 694.68 "
+     id="path3840" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 694.68 L184.44 694.68 "
+     id="path3842" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.44 694.68 L184.44 694.68 "
+     id="path3844" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.44 694.68 L184.32 694.68 "
+     id="path3846" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 694.68 L184.32 694.68 "
+     id="path3848" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 694.68 L184.32 694.68 "
+     id="path3850" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 694.68 L184.32 694.8 "
+     id="path3852" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 694.8 L184.32 694.8 "
+     id="path3854" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 694.8 L184.2 694.8 "
+     id="path3856" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 694.8 L184.2 694.8 "
+     id="path3858" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 694.8 L184.2 694.8 "
+     id="path3860" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 694.8 L184.08 694.8 "
+     id="path3862" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 694.8 L184.08 694.8 "
+     id="path3864" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 694.8 L184.08 694.92 "
+     id="path3866" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 694.92 L184.08 694.92 "
+     id="path3868" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 694.92 L183.96 694.92 "
+     id="path3870" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 694.92 L183.96 694.92 "
+     id="path3872" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 694.92 L183.96 694.92 "
+     id="path3874" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 694.92 L183.84 694.92 "
+     id="path3876" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.84 694.92 L183.84 695.04 "
+     id="path3878" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.84 695.04 L183.72 695.04 "
+     id="path3880" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 695.04 L183.72 695.04 "
+     id="path3882" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 695.04 L183.72 695.04 "
+     id="path3884" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 695.04 L183.72 695.04 "
+     id="path3886" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 695.04 L183.6 695.04 "
+     id="path3888" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 695.04 L183.6 695.04 "
+     id="path3890" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 695.04 L183.6 695.04 "
+     id="path3892" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 695.04 L183.48 695.04 "
+     id="path3894" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 695.04 L183.48 695.04 "
+     id="path3896" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 695.04 L183.48 695.04 "
+     id="path3898" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 695.04 L183.48 695.04 "
+     id="path3900" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 695.04 L183.36 695.04 "
+     id="path3902" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 695.04 L183.36 695.04 "
+     id="path3904" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 695.04 L183.36 695.16 "
+     id="path3906" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 695.16 L183.24 695.16 "
+     id="path3908" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 695.16 L183.24 695.16 "
+     id="path3910" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 695.16 L183.24 695.16 "
+     id="path3912" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 695.16 L183.24 695.16 "
+     id="path3914" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 695.16 L183.24 695.16 "
+     id="path3916" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 695.16 L183.24 695.16 "
+     id="path3918" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M182.28 695.52 L180.48 696.12 "
+     id="path3920" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M179.52 696.48 L178.92 696.6 "
+     id="path3922" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M273.6 733.8 L273.6 733.8 "
+     id="path3924" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M273.6 733.8 L271.68 733.2 "
+     id="path3926" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M270.84 732.84 L269.64 732.48 "
+     id="path3928" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M269.64 732.48 L269.64 732.48 "
+     id="path3930" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M269.64 732.48 L268.92 732.24 "
+     id="path3932" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M268.08 731.88 L266.16 731.4 "
+     id="path3934" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M265.32 731.04 L263.4 730.32 "
+     id="path3936" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M262.56 730.08 L260.64 729.36 "
+     id="path3938" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M259.8 729.12 L257.88 728.52 "
+     id="path3940" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M257.04 728.16 L255.12 727.56 "
+     id="path3942" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M254.28 727.2 L252.36 726.6 "
+     id="path3944" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M251.52 726.36 L249.6 725.64 "
+     id="path3946" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M248.76 725.28 L246.84 724.68 "
+     id="path3948" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M246.0 724.32 L244.08 723.84 "
+     id="path3950" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M243.12 723.48 L241.32 722.88 "
+     id="path3952" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M240.36 722.52 L238.56 721.92 "
+     id="path3954" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M237.6 721.56 L236.16 721.08 "
+     id="path3956" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M236.16 721.08 L235.8 720.96 "
+     id="path3958" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M234.84 720.6 L233.04 720.0 "
+     id="path3960" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M232.08 719.64 L230.28 719.04 "
+     id="path3962" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M229.32 718.8 L228.84 718.56 "
+     id="path3964" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M228.84 718.56 L227.4 718.08 "
+     id="path3966" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M226.56 717.84 L225.48 717.48 "
+     id="path3968" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M225.48 717.48 L224.64 717.24 "
+     id="path3970" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.8 716.88 L223.68 716.76 "
+     id="path3972" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.68 716.76 L223.68 716.76 "
+     id="path3974" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M223.68 716.76 L221.88 716.28 "
+     id="path3976" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M221.04 715.92 L219.12 715.32 "
+     id="path3978" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M218.28 714.96 L218.04 714.84 "
+     id="path3980" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M218.04 714.84 L216.36 714.36 "
+     id="path3982" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M215.52 714.0 L213.6 713.4 "
+     id="path3984" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M212.76 713.04 L210.84 712.56 "
+     id="path3986" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M210.0 712.2 L209.76 712.08 "
+     id="path3988" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M209.76 712.08 L208.68 711.72 "
+     id="path3990" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M208.68 711.72 L208.08 711.48 "
+     id="path3992" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.24 711.24 L207.12 711.24 "
+     id="path3994" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.12 711.24 L207.0 711.12 "
+     id="path3996" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M207.0 711.12 L206.04 710.76 "
+     id="path3998" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M206.04 710.76 L205.56 710.64 "
+     id="path4000" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M205.56 710.64 L205.44 710.64 "
+     id="path4002" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M205.44 710.64 L205.32 710.52 "
+     id="path4004" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M204.48 710.28 L203.88 710.04 "
+     id="path4006" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.88 710.04 L203.52 710.04 "
+     id="path4008" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.52 710.04 L203.16 709.8 "
+     id="path4010" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M203.16 709.8 L202.56 709.68 "
+     id="path4012" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M202.56 709.68 L202.56 709.68 "
+     id="path4014" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.6 709.32 L201.6 709.32 "
+     id="path4016" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.6 709.32 L201.36 709.32 "
+     id="path4018" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 709.32 L201.36 709.32 "
+     id="path4020" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 709.32 L201.36 709.32 "
+     id="path4022" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M201.36 709.32 L200.88 709.08 "
+     id="path4024" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M200.88 709.08 L200.4 708.96 "
+     id="path4026" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M200.4 708.96 L199.92 708.72 "
+     id="path4028" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M199.92 708.72 L199.8 708.72 "
+     id="path4030" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.84 708.36 L198.6 708.36 "
+     id="path4032" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.6 708.36 L198.24 708.24 "
+     id="path4034" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M198.24 708.24 L197.88 708.0 "
+     id="path4036" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.88 708.0 L197.52 708.0 "
+     id="path4038" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.52 708.0 L197.16 707.76 "
+     id="path4040" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.16 707.76 L197.16 707.76 "
+     id="path4042" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M197.16 707.76 L197.04 707.76 "
+     id="path4044" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M196.08 707.52 L195.96 707.4 "
+     id="path4046" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.96 707.4 L195.6 707.28 "
+     id="path4048" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.6 707.28 L195.6 707.28 "
+     id="path4050" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.6 707.28 L195.36 707.28 "
+     id="path4052" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.36 707.28 L195.12 707.16 "
+     id="path4054" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M195.12 707.16 L194.88 707.04 "
+     id="path4056" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.88 707.04 L194.64 707.04 "
+     id="path4058" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.64 707.04 L194.4 706.92 "
+     id="path4060" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M194.4 706.92 L194.28 706.8 "
+     id="path4062" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.32 706.56 L193.32 706.56 "
+     id="path4064" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.32 706.56 L193.08 706.44 "
+     id="path4066" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M193.08 706.44 L192.84 706.32 "
+     id="path4068" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.84 706.32 L192.72 706.32 "
+     id="path4070" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.72 706.32 L192.6 706.32 "
+     id="path4072" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.6 706.32 L192.48 706.32 "
+     id="path4074" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.48 706.32 L192.36 706.2 "
+     id="path4076" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.36 706.2 L192.12 706.08 "
+     id="path4078" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.12 706.08 L192.0 705.96 "
+     id="path4080" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M192.0 705.96 L191.88 705.96 "
+     id="path4082" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M191.88 705.96 L191.64 705.96 "
+     id="path4084" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M191.64 705.96 L191.52 705.84 "
+     id="path4086" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.56 705.6 L190.44 705.48 "
+     id="path4088" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.44 705.48 L190.32 705.48 "
+     id="path4090" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.32 705.48 L190.32 705.48 "
+     id="path4092" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.32 705.48 L190.2 705.48 "
+     id="path4094" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.2 705.48 L190.08 705.36 "
+     id="path4096" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M190.08 705.36 L189.96 705.36 "
+     id="path4098" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.96 705.36 L189.84 705.24 "
+     id="path4100" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.84 705.24 L189.72 705.24 "
+     id="path4102" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.72 705.24 L189.6 705.24 "
+     id="path4104" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.6 705.24 L189.48 705.24 "
+     id="path4106" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.48 705.24 L189.36 705.12 "
+     id="path4108" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.36 705.12 L189.24 705.12 "
+     id="path4110" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.24 705.12 L189.12 705.12 "
+     id="path4112" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.12 705.12 L189.0 705.0 "
+     id="path4114" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M189.0 705.0 L188.88 705.0 "
+     id="path4116" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M188.88 705.0 L188.76 705.0 "
+     id="path4118" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M188.76 705.0 L188.76 705.0 "
+     id="path4120" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.8 704.64 L187.8 704.64 "
+     id="path4122" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.8 704.64 L187.68 704.64 "
+     id="path4124" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.68 704.64 L187.56 704.52 "
+     id="path4126" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.56 704.52 L187.56 704.52 "
+     id="path4128" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.56 704.52 L187.44 704.52 "
+     id="path4130" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.44 704.52 L187.32 704.52 "
+     id="path4132" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.32 704.52 L187.32 704.52 "
+     id="path4134" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.32 704.52 L187.2 704.52 "
+     id="path4136" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.2 704.52 L187.08 704.4 "
+     id="path4138" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.08 704.4 L187.08 704.4 "
+     id="path4140" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M187.08 704.4 L186.96 704.4 "
+     id="path4142" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.96 704.4 L186.96 704.28 "
+     id="path4144" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.96 704.28 L186.84 704.28 "
+     id="path4146" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.84 704.28 L186.84 704.28 "
+     id="path4148" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.84 704.28 L186.72 704.28 "
+     id="path4150" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.72 704.28 L186.6 704.28 "
+     id="path4152" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.6 704.28 L186.6 704.28 "
+     id="path4154" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.6 704.28 L186.48 704.28 "
+     id="path4156" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.48 704.28 L186.48 704.16 "
+     id="path4158" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.48 704.16 L186.36 704.16 "
+     id="path4160" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.36 704.16 L186.24 704.16 "
+     id="path4162" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.24 704.16 L186.24 704.04 "
+     id="path4164" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.24 704.04 L186.12 704.04 "
+     id="path4166" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.12 704.04 L186.12 704.04 "
+     id="path4168" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.12 704.04 L186.0 704.04 "
+     id="path4170" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 704.04 L186.0 704.04 "
+     id="path4172" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 704.04 L186.0 704.04 "
+     id="path4174" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M186.0 704.04 L186.0 704.04 "
+     id="path4176" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 703.68 L185.04 703.68 "
+     id="path4178" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 703.68 L185.04 703.68 "
+     id="path4180" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 703.68 L185.04 703.68 "
+     id="path4182" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M185.04 703.68 L184.92 703.68 "
+     id="path4184" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.92 703.68 L184.92 703.68 "
+     id="path4186" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.92 703.68 L184.8 703.68 "
+     id="path4188" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 703.68 L184.8 703.68 "
+     id="path4190" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 703.68 L184.8 703.56 "
+     id="path4192" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 703.56 L184.8 703.56 "
+     id="path4194" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.8 703.56 L184.68 703.56 "
+     id="path4196" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.68 703.56 L184.68 703.56 "
+     id="path4198" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.68 703.56 L184.56 703.56 "
+     id="path4200" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 703.56 L184.56 703.56 "
+     id="path4202" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 703.56 L184.56 703.56 "
+     id="path4204" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.56 703.56 L184.44 703.56 "
+     id="path4206" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.44 703.56 L184.44 703.56 "
+     id="path4208" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.44 703.56 L184.32 703.56 "
+     id="path4210" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 703.56 L184.32 703.56 "
+     id="path4212" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 703.56 L184.32 703.56 "
+     id="path4214" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 703.56 L184.32 703.44 "
+     id="path4216" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 703.44 L184.32 703.44 "
+     id="path4218" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.32 703.44 L184.2 703.44 "
+     id="path4220" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 703.44 L184.2 703.44 "
+     id="path4222" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 703.44 L184.2 703.44 "
+     id="path4224" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.2 703.44 L184.08 703.44 "
+     id="path4226" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 703.44 L184.08 703.32 "
+     id="path4228" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 703.32 L184.08 703.32 "
+     id="path4230" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 703.32 L184.08 703.32 "
+     id="path4232" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M184.08 703.32 L183.96 703.32 "
+     id="path4234" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 703.32 L183.96 703.32 "
+     id="path4236" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 703.32 L183.96 703.32 "
+     id="path4238" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.96 703.32 L183.84 703.32 "
+     id="path4240" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.84 703.32 L183.84 703.2 "
+     id="path4242" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.84 703.2 L183.72 703.2 "
+     id="path4244" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 703.2 L183.72 703.2 "
+     id="path4246" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 703.2 L183.72 703.2 "
+     id="path4248" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 703.2 L183.72 703.2 "
+     id="path4250" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.72 703.2 L183.6 703.2 "
+     id="path4252" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 703.2 L183.6 703.2 "
+     id="path4254" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 703.2 L183.6 703.2 "
+     id="path4256" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.6 703.2 L183.48 703.2 "
+     id="path4258" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 703.2 L183.48 703.2 "
+     id="path4260" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 703.2 L183.48 703.2 "
+     id="path4262" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 703.2 L183.48 703.2 "
+     id="path4264" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.48 703.2 L183.36 703.2 "
+     id="path4266" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 703.2 L183.36 703.08 "
+     id="path4268" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 703.08 L183.36 703.08 "
+     id="path4270" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.36 703.08 L183.24 703.08 "
+     id="path4272" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 703.08 L183.24 703.08 "
+     id="path4274" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 703.08 L183.24 703.08 "
+     id="path4276" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 703.08 L183.24 703.08 "
+     id="path4278" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 703.08 L183.24 703.08 "
+     id="path4280" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M183.24 703.08 L183.24 703.08 "
+     id="path4282" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M182.28 702.72 L180.48 702.12 "
+     id="path4284" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="3.38"
+     d="M179.52 701.76 L178.92 701.64 "
+     id="path4286" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 737.04 L168.36 661.2 "
+     id="path4288" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 729.84 L166.32 729.84 "
+     id="path4290" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-568.56009,896.87997)"
+     x="164.16"
+     y="732.72"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4292">-</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-566.8801,895.19998)"
+     x="164.16"
+     y="731.04"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4294">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-565.56009,893.87997)"
+     x="164.16"
+     y="729.72"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4296">5</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 714.48 L166.32 714.48 "
+     id="path4298" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-551.7601,880.07999)"
+     x="164.16"
+     y="715.92"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4300">0</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 699.12 L166.32 699.12 "
+     id="path4302" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-537.12009,865.43997)"
+     x="164.16"
+     y="701.28"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4304">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-535.80014,864.12003)"
+     x="164.16"
+     y="699.96"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4306">5</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 683.76 L166.32 683.76 "
+     id="path4308" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-521.04013,849.36002)"
+     x="164.16"
+     y="685.2"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4310">1</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 668.4 L166.32 668.4 "
+     id="path4312" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-507.84012,836.16)"
+     x="164.16"
+     y="672.0"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4314">1</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-504.96011,833.28)"
+     x="164.16"
+     y="669.12"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4316">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-503.64011,831.95999)"
+     x="164.16"
+     y="667.8"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4318">5</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="722.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-552.12007,869.15996)"
+     x="158.52"
+     y="710.64"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4320">D</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="222.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-548.5201,865.55998)"
+     x="158.52"
+     y="707.04"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4322">i</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-547.32008,864.35997)"
+     x="158.52"
+     y="705.84"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4324">f</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-546.00008,863.03996)"
+     x="158.52"
+     y="704.52"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4326">f</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-544.56007,861.59996)"
+     x="158.52"
+     y="703.08"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4328">e</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-541.80013,858.84001)"
+     x="158.52"
+     y="700.32"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4330">r</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-540.12007,857.15996)"
+     x="158.52"
+     y="698.64"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4332">e</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-537.36012,854.40001)"
+     x="158.52"
+     y="695.88"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4334">n</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="500.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-534.48012,851.52)"
+     x="158.52"
+     y="693.0"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4336">c</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     transform="matrix(0.0,-1.0,1.0,0.0,-531.9601,848.99998)"
+     x="158.52"
+     y="690.48"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4338">e</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M168.36 737.04 L280.8 737.04 "
+     id="path4340" />
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M171.6 737.04 L171.6 739.08 "
+     id="path4342" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="170.16"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4344">0</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M207.0 737.04 L207.0 739.08 "
+     id="path4346" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="204.84"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4348">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="206.28"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4350">2</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M242.28 737.04 L242.28 739.08 "
+     id="path4352" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="240.24"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4354">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="241.56"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4356">4</text>
+  <path
+     fill="none"
+     clip-path="url(#clipPath2)"
+     stroke="#000000"
+     stroke-width="2.704"
+     d="M277.56 737.04 L277.56 739.08 "
+     id="path4358" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="275.52"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4360">.</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="276.84"
+     y="744.6"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4362">6</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="667.0"
+     x="208.44"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4364">S</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="211.8"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4366">t</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="213.24"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4368">a</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="216.0"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4370">n</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="218.88"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4372">d</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="221.64"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4374">a</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     x="224.4"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4376">r</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="226.08"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4378">d</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="278.0"
+     x="228.96"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4380" />
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="230.28"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4382">e</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     x="233.04"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4384">r</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     x="234.72"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4386">r</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="556.0"
+     x="236.4"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4388">o</text>
+  <text
+     stroke="none"
+     fill="#000000"
+     clip-path="url(#clipPath2)"
+     svgx:fontName="Helvetica"
+     svgx:width="333.0"
+     x="239.28"
+     y="749.76"
+     font-size="5.035"
+     font-family="Helvetica"
+     font-weight="normal"
+     id="text4390">r</text>
+</svg>
