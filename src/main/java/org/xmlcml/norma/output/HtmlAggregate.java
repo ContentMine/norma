@@ -8,11 +8,8 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.RegexPathFilter;
-import org.xmlcml.html.HtmlTable;
-import org.xmlcml.html.HtmlTr;
-import org.xmlcml.xml.XMLUtil;
+import org.xmlcml.euclid.Util;
 
 /** aggregates a number of files into a single (display) table.
  * Still under development. May interact with HtmlDisplay
@@ -45,6 +42,7 @@ public class HtmlAggregate extends HtmlDisplay {
 	public void display() {
 		if (output != null) {
 			List<File> files = new RegexPathFilter(fileFilterPattern).listNonDirectoriesRecursively(cTree.getDirectory());
+			Util.sortByEmbeddedInteger(files);
 			File outputFile = new File(cTree.getDirectory(), this.output);
 			LOG.debug("files: "+files.size() + " "+cTree.getDirectory()+"; "+fileFilterPattern+"; "+outputFile);
 			HtmlTabbedButtonDisplay htmlButtonDisplay = new HtmlTabbedButtonDisplay(cTree.getDirectory().getName(), files, outputFile.getParentFile());

@@ -27,7 +27,10 @@ import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
+import org.xmlcml.graphics.svg.SVGText;
+import org.xmlcml.graphics.svg.normalize.TextDecorator;
 import org.xmlcml.graphics.svg.plot.PlotBox;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
@@ -62,6 +65,8 @@ public class NormaTransformer {
 		TIDY("tidy", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
 		// HTMLCleaner
 
+		DECOMPACTSVG(  "decompactsvg",  "null",   CTree.SVG,  null,    CTree.SVG+"."+"compact"+".svg"),
+		COMPACTSVG(    "compactsvg",    "null",   CTree.SVG,  null,    CTree.SVG+"."+"compact"+".svg"),
 		HOCR2SVG(      "hocr2svg",      "image/", CTree.HOCR,  "svg/",   CTree.HOCR_SVG),
 		CSV2HTML(      "csv2html",      "table/", CTree.CSV,  "table/", CTree.FULLTEXT_HTML),
 		CSV2TSV(       "csv2tsv",       "table/", CTree.CSV,  "table/", CTree.TSV),
@@ -161,6 +166,7 @@ public class NormaTransformer {
 	private org.w3c.dom.Document xslDocument;
 	private IOFileFilter ioFileFilter;
 	private RectangularTable rectangularTable;
+	private String annotationFilename;
 
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
@@ -273,8 +279,13 @@ public class NormaTransformer {
 				} else {
 					outputFile = new File(outputDir, filename);
 				}
-				LOG.trace("writing to "+outputFile);
-				transformSingleInput(file);
+				LOG.debug("writing to "+outputFile);
+				try {
+					transformSingleInput(file);
+				} catch (Exception e) {
+					LOG.error("transform failed, skipping: "+e.getMessage());
+					continue;
+				}
 				outputSpecifiedFormat();
 			}
 		}
@@ -290,10 +301,11 @@ public class NormaTransformer {
 		inputDirName = (type.inputDirName != null) ? type.inputDirName : inputDirName;
 		outputDirName = (type.outputDirName != null) ? type.outputDirName : outputDirName;
 		ioFileFilter = normaArgProcessor.getIOFileFilter();
-		if (inputDirName != null) {
+		if (inputDirName != null && !"null".equals(inputDirName)) { // check for duplicate code
 			parseInputDirectoryAndAddDefaults(inputDirName, outputDirName);
 		} else if (ioFileFilter != null) {
-			// not sure what we should do here. Ignore at present
+			LOG.debug("fileFilter: "+ioFileFilter);
+			LOG.debug("IGNORED, but MUST CHANGE");
 		} else {
 			try {
 				parseInputFile();
@@ -301,7 +313,7 @@ public class NormaTransformer {
 				LOG.warn("Cannot parse file: "+currentCTree.getDirectory()+"; "+e);
 			}
 		} 
-		LOG.trace("inputFile: "+inputFile+"; outputFile: "+outputFile + "; fileFilter: " + ioFileFilter + "; inputDir: "+inputDirName+"; outputDir: "+outputDirName);
+		LOG.debug("inputFile: "+inputFile+"; outputFile: "+outputFile + "; fileFilter: " + ioFileFilter + "; inputDir: "+inputDirName+"; outputDir: "+outputDirName);
 	}
 
 	private void parseInputFile() {
@@ -342,12 +354,17 @@ public class NormaTransformer {
 		} else if (inputFile != null) {
 			LOG.trace("inputFile must be not given with --inputDirName; found "+inputFile);
 		}
-		inputDir = new File(currentCTree.getDirectory(), inputDirName);
-		if (!inputDir.exists()) {
-			throw new RuntimeException("Input directory does not exist: "+inputDir);
+		
+		if (inputDirName != null && !"null".equals(inputDirName)) { // don't know where "null" comes from
+			inputDir = new File(currentCTree.getDirectory(), inputDirName);
+			if (!inputDir.exists()) {
+				throw new RuntimeException("Input directory does not exist: "+inputDir);
+			}
 		}
-		outputDir = new File(currentCTree.getDirectory(), outputDirName);
-		outputDir.mkdirs();
+		if (outputDirName != null) {
+			outputDir = new File(currentCTree.getDirectory(), outputDirName);
+			outputDir.mkdirs();
+		}
 	}
 
 	private void transformSingleInput(File inputFile) {
@@ -389,6 +406,10 @@ public class NormaTransformer {
 			) {
 			LOG.warn("Please use --html to clean HTML, and include *before* --transform");
 			normaArgProcessor.runHtmlCleaner(type.transform);
+		} else if (Type.DECOMPACTSVG.equals(type)) {
+			svgElement = applyDecompactSVGToInputFile(inputFile);
+		} else if (Type.COMPACTSVG.equals(type)) {
+			svgElement = applyCompactSVGToInputFile(inputFile);
 		} else if (Type.HOCR2SVG.equals(type)) {
 			svgElement = applyHOCR2SVGToInputFile(inputFile);
 		} else if (Type.CSV2HTML.equals(type)) {
@@ -409,8 +430,6 @@ public class NormaTransformer {
 			outputTxt = applyPDF2TXTToInputFile(inputFile);
 		} else if (Type.SCATTER2CSV.equals(type)) {
 			tsvString = applyPlotBoxCSVToInput(inputFile);
-//			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
-//			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
 		} else if (Type.SVGTABLE2HTML.equals(type)) {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
 		} else if (Type.SVGTABLE2CSV.equals(type)) {
@@ -560,15 +579,34 @@ public class NormaTransformer {
 		return txt;
 	}
 
+	private SVGElement applyCompactSVGToInputFile(File inputSVGFile) {
+		TextDecorator textDecorator = new TextDecorator(); 
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
+		SVGG g = textDecorator.compact(textList);
+		return g;
+	}
+
+	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
+		TextDecorator textDecorator = new TextDecorator(); 
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
+		SVGG g = textDecorator.decompact(textList);
+		return g;
+	}
+
+
 	private String applyPlotBoxCSVToInput(File inputSVGFile) {
+		if (inputSVGFile == null) {
+			throw new RuntimeException("Null inputSVGFile");
+		}
 		String csv = null;
 		PlotBox plotBox = new PlotBox();
 		try {
-//			plotBox.setCsvOutFile(new File("target/testplot/"));
-//			plotBox.setSvgOutFile(new File("target/plot/bakker1.svg"));
-			plotBox.readAndCreatePlot(new FileInputStream(inputSVGFile));
+			File parent = inputSVGFile.getParentFile();
+			plotBox.setCsvOutFile(new File(parent, "figure.csv"));
+			plotBox.setSvgOutFile(new File(parent, "figure.annot.svg"));
+			plotBox.readAndCreateCSVPlot(inputSVGFile);
 			csv = plotBox.getCSV();
-			svgAnnotElement = plotBox.createSVGElement();
+			svgAnnotElement = plotBox.getSVGStore().createSVGElement();
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
 		}
@@ -764,10 +802,17 @@ public class NormaTransformer {
 		if (svgElement != null && output != null) {
 			currentCTree.writeFile(svgElement.toXML(), output);
 		}
-		if (svgAnnotElement != null && output != null) {
-			String outputAnnot = output.replaceAll("\\.[^\\.]+$", ".annot.svg");
-			File outputSvgFile = new File(currentCTree.getDirectory(), outputAnnot);
-			SVGSVG.wrapAndWriteAsSVG(svgAnnotElement, outputSvgFile);
+		// later we will drive the annotation by filename; at present keep it automatic
+		if (svgAnnotElement != null) {
+			if (annotationFilename == null && output != null) {
+				annotationFilename = output.replaceAll("\\.[^\\.]+$", ".annot.svg");
+			}
+			if (annotationFilename != null) {
+				
+				File outputSvgFile = new File(currentCTree.getDirectory(), annotationFilename);
+				LOG.debug("@@@@@@@@@@@@@@@@@@@@@@output annotation: "+outputSvgFile.getAbsolutePath());
+				SVGSVG.wrapAndWriteAsSVG(svgAnnotElement, outputSvgFile);
+			}
 		}
 		if (serialImageList != null) {
 			normaArgProcessor.writeImages();
