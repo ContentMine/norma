@@ -360,6 +360,8 @@ NOT YET FULLY IMPLEMENTED.
    <p>NOTE: multiple stylesheets are deprecated</p>
    NOTE : the transformer mechanism will be refactored to be more plugin-like
   </help>
+  <value name="compactsvg" input="*.svg" output="*.svg"></value> 
+  <value name="decompactsvg" input="*.svg" output="*.svg"></value> 
   <value name="pdfbox"></value> 
   <value name="pdf2tei" input="fulltext.pdf" output="fulltext.tei.xml"></value> 
   <value name="pdf2svg" input="fulltext.pdf" output="fulltext.pdf.html"></value> 
