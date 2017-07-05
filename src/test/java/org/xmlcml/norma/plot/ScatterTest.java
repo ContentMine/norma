@@ -6,6 +6,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.plot.PlotBox;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 
@@ -111,13 +113,96 @@ multipleTreesSingleFigure/
 	
 	public void testScatterMultipleTreesMultipleFigures() {
 		File targetDir = createTargetAndReport("multipleTreesMultipleFigures");
-		String cmd = "--project "+targetDir
-				+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		LOG.debug("target: "+targetDir);
+		String cmd = "--project "+targetDir	+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
 		+ " --outputDir "+targetDir+" --transform scatter2csv";
 		new Norma().run(cmd);
 	}
 
-	// ===============================
+	
+	@Test
+	public void testFailing() {
+		String[] ctrees = new String[]{
+				"13643", // OUTLINE GLYPHS no horizontal or vertical scale text (LEFT rot90) // also SLOW, multiline has 2000 components
+				"6400831a", // fullbox null (no horizontal lines) (orange box?)
+				"8546", // OK
+				"copas", // fullbox null also LEFT rot90
+				"hetpub-compact", // Cannot parse, perhaps emDash problem
+				"PHM_2011_9", // OK
+				"Publicationbias", // OK
+				"sjart_st0061", //can't find axis scales // NO Axial TEXT???
+				"spiegelhalter", // fullbox null //
+				"uk09_palmer_handouts", // Bad axisScale capture RuntimeException: cannot match ticks with values; LEFT tickValues: 0; ticks: 4
+		};
+		for (String ctree : ctrees) {	
+			analyzeRoot("multipleTreesSingleFigure", ctree);
+		}
+		
+	}
+
+	@Test
+	public void testFailing1() {
+		String[] trees = {
+				"10.21053_ceo.2016.9.1.1",
+		};
+		for (String tree : trees) {	
+			analyzeRoot("singleTreeSingleFigure1", tree);
+		}
+	}
+
+	/** final tilburg
+	 * 
+	 */
+	@Test
+	public void testFinalTilburg() {
+		File tilburg1 = new File(System.getProperty("user.home")+"/workspace/tilburgrc1/");
+		String cprojectName = "corpus";
+		File sourceDir = new File(tilburg1, cprojectName);
+		File targetDir = new File(SCATTERPLOT_DIR, cprojectName);
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		LOG.debug("target: "+targetDir);
+		String cmd = "--project "+targetDir	+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+		+ " --outputDir "+targetDir+" --transform scatter2csv";
+		new Norma().run(cmd);
+	}
+
+//	/** final tilburg
+//	 * 
+//	 */
+//	@Test
+//	public void testFinalTilburg() {
+//		File tilburg1 = new File(System.getProperty("user.home")+"/workspace/tilburgrc1/");
+//		String cprojectName = "corpus";
+//		File sourceDir = new File(tilburg1, cprojectName);
+//		File targetDir = new File(SCATTERPLOT_DIR, cprojectName);
+//		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+//		LOG.debug("target: "+targetDir);
+//		String cmd = "--project "+targetDir	+ " --fileFilter ^.*/figure\\d+/figure\\.svg.*$"
+//		+ " --outputDir "+targetDir+" --transform scatter2csv";
+//		new Norma().run(cmd);
+//	}
+
+
+
+	// ====================
+	
+	private void analyzeRoot(String cproject, String ctree) {
+		try {
+			File svgFile = new File(NormaFixtures.TEST_PLOT_DIR, cproject+"/"+ctree+"/"+"figures"+"/"+"figure1"+"/"+"figure.svg");
+			if (!svgFile.exists()) {
+				LOG.error("File does not exist: "+svgFile);
+				return;
+			}
+			LOG.debug(svgFile.getAbsolutePath());
+			SVGElement svgElement = SVGElement.readAndCreateSVG(svgFile);
+			PlotBox plotBox = new PlotBox();
+			plotBox.setSvgOutFile(new File(new File("target/scatterplots/"), ctree+".out.svg"));
+			plotBox.setCsvOutFile(new File(new File("target/scatterplots/"), ctree+".out.csv"));
+			plotBox.readAndCreateCSVPlot(svgElement);
+		} catch (Exception e) {
+			LOG.error(ctree+": Exception "+e);
+		}
+	}
 	
 	private File createTargetAndReport(String cprojectName) {
 		LOG.debug("\n********** "+cprojectName+" ***********\n");
