@@ -1,0 +1,3110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svgx="http://www.xml-cml.org/schema/svgx"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   stroke-width="0.0"
+   stroke="none"
+   height="800.0"
+   width="600.0">
+  <metadata
+     id="metadata9332">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1">
+    <clipPath
+       id="clipPath6">
+      <path
+         id="path6"
+         d="M122.616 93.885 L122.616 447.593 L484.834 447.593 L484.834 93.885 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath1">
+      <path
+         id="path9"
+         d="M0.0 0.0 L593.0 0.0 L593.0 790.0 L0.0 790.0 L0.0 0.0 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath7">
+      <path
+         id="path12"
+         d="M62.237 93.993 L62.237 569.822 L514.943 569.822 L514.943 93.993 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath8">
+      <path
+         id="path15"
+         d="M167.972 93.691 L167.972 338.817 L439.623 338.817 L439.623 93.691 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath9">
+      <path
+         id="path18"
+         d="M167.972 382.845 L167.972 651.371 L439.637 651.371 L439.637 382.845 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath10">
+      <path
+         id="path21"
+         d="M62.236 93.785 L62.236 428.318 L515.361 428.318 L515.361 93.785 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath4">
+      <path
+         id="path24"
+         d="M77.26 405.859 L77.26 554.46 L530.387 554.46 L530.387 405.859 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath5">
+      <path
+         id="path27"
+         d="M62.229 93.858 L62.229 518.549 L515.66 518.549 L515.66 93.858 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath3">
+      <path
+         id="path30"
+         d="M62.245 93.372 L62.245 478.762 L515.032 478.762 L515.032 93.372 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath11">
+      <path
+         id="path33"
+         d="M62.24 472.435 L62.24 627.894 L515.72 627.894 L515.72 472.435 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+    <clipPath
+       id="clipPath2">
+      <path
+         id="path36"
+         d="M107.593 93.396 L107.593 422.994 L470.035 422.994 L470.035 93.396 Z"
+         fill="none"
+         stroke-width="0.5"
+         stroke="black" />
+    </clipPath>
+  </defs>
+  <text
+     id="text74"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="135.952"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text76"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="137.515"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text88"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="322.627"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text90"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="324.19"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text102"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="182.379"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text104"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="183.942"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text116"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="462.835"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text118"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="464.399"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text130"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="498.95"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text132"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="426.325"
+     x="500.513"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6760"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="152.153"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6772"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="174.991"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6778"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="183.752"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6792"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="273.048"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6812"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="394.266"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6824"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="417.518"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6830"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="115.203"
+     x="426.28"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6842"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="147.317"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6870"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="195.978"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6892"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="232.892"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6904"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="253.713"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6916"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="279.834"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6928"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="300.828"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6934"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="100.343"
+     x="308.08"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6962"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="136.427"
+     x="114.468"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6976"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="136.427"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text6998"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="145.632"
+     x="113.155"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7012"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="145.632"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7028"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="154.835"
+     x="112.632"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7042"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="154.835"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7064"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="164.04"
+     x="112.632"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7078"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="164.04"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7094"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="173.244"
+     x="112.632"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7108"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="173.244"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7130"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="182.447"
+     x="112.631"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7144"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="182.447"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7166"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="191.652"
+     x="113.093"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7180"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="191.652"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7196"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="200.856"
+     x="112.632"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7210"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="200.856"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7228"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="210.06"
+     x="112.631"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7242"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="210.06"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7260"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="219.264"
+     x="94.413"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7270"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="219.264"
+     x="113.093"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7284"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="219.264"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7306"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="228.468"
+     x="112.631"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7320"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="228.468"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7342"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="237.672"
+     x="112.632"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7356"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="237.672"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7372"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="246.877"
+     x="112.631"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7386"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="246.877"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7400"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="256.08"
+     x="112.921"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7414"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="256.08"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7436"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="265.284"
+     x="112.631"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7450"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="265.284"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7464"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="274.489"
+     x="114.468"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7478"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="274.489"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7502"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="283.692"
+     x="116.781"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7516"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="283.692"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7532"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="292.897"
+     x="116.782"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7546"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="292.897"
+     x="137.633"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7564"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="302.102"
+     x="116.782"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7578"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="302.102"
+     x="137.633"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7604"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="311.306"
+     x="114.468"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7618"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="311.306"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7636"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="320.51"
+     x="115.469"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7650"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="320.51"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7666"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="329.713"
+     x="115.469"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7680"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="329.713"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7692"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="338.918"
+     x="117.031"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7722"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="348.122"
+     x="117.243"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7760"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="357.326"
+     x="115.68"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7774"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="357.326"
+     x="137.635"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7794"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="366.53"
+     x="115.679"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7808"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="366.53"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7826"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="375.734"
+     x="115.679"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7840"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="375.734"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7852"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="384.938"
+     x="90.388"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7866"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="384.938"
+     x="114.944"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7880"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="384.938"
+     x="137.633"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7902"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="394.142"
+     x="114.945"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7916"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="394.142"
+     x="137.634"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text7930"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="7.816"
+     y="403.346"
+     x="116.969"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath10)"
+     fill="#000000"
+     stroke="none" />
+  <path
+     id="path8072"
+     d="M89.59 606.241 L249.821 606.241 L249.821 484.378 L89.59 484.378 Z"
+     stroke-width="0.0"
+     fill="#ffffff"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8074"
+     d="M89.59 606.241 L249.821 606.241 L249.821 484.378 L89.59 484.378 Z"
+     stroke-width="2.79482"
+     stroke="#ffffff"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8076"
+     d="M89.59 487.907 L249.821 487.907 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8078"
+     d="M89.59 510.895 L249.821 510.895 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8080"
+     d="M89.59 533.883 L249.821 533.883 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8082"
+     d="M89.59 556.871 L249.821 556.871 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8084"
+     d="M89.59 579.987 L249.821 579.987 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8086"
+     d="M89.59 602.974 L249.821 602.974 "
+     stroke-width="5.58964"
+     stroke="#edfbf7"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8088"
+     d="M100.907 494.051 C100.907 494.705 101.353 495.227 101.796 495.227 C102.351 495.227 102.796 494.705 102.796 494.051 C102.796 493.528 102.351 493.007 101.796 493.007 C101.353 493.007 100.907 493.528 100.907 494.051 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8090"
+     d="M100.907 494.051 C100.907 494.705 101.353 495.227 101.796 495.227 C102.351 495.227 102.796 494.705 102.796 494.051 C102.796 493.528 102.351 493.007 101.796 493.007 C101.353 493.007 100.907 493.528 100.907 494.051 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8092"
+     d="M109.681 495.096 C109.681 495.749 110.125 496.272 110.68 496.272 C111.237 496.272 111.68 495.749 111.68 495.096 C111.68 494.444 111.237 493.92 110.68 493.92 C110.125 493.92 109.681 494.444 109.681 495.096 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8094"
+     d="M109.681 495.096 C109.681 495.749 110.125 496.272 110.68 496.272 C111.237 496.272 111.68 495.749 111.68 495.096 C111.68 494.444 111.237 493.92 110.68 493.92 C110.125 493.92 109.681 494.444 109.681 495.096 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8096"
+     d="M113.557 514.291 C113.557 514.948 114.002 515.472 114.557 515.472 C115.112 515.472 115.556 514.948 115.556 514.291 C115.556 513.638 115.112 513.115 114.557 513.115 C114.002 513.115 113.557 513.638 113.557 514.291 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8098"
+     d="M113.557 514.291 C113.557 514.948 114.002 515.472 114.557 515.472 C115.112 515.472 115.556 514.948 115.556 514.291 C115.556 513.638 115.112 513.115 114.557 513.115 C114.002 513.115 113.557 513.638 113.557 514.291 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8100"
+     d="M113.891 501.485 C113.891 502.138 114.335 502.662 114.779 502.662 C115.334 502.662 115.778 502.138 115.778 501.485 C115.778 500.963 115.334 500.44 114.779 500.44 C114.335 500.44 113.891 500.963 113.891 501.485 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8102"
+     d="M113.891 501.485 C113.891 502.138 114.335 502.662 114.779 502.662 C115.334 502.662 115.778 502.138 115.778 501.485 C115.778 500.963 115.334 500.44 114.779 500.44 C114.335 500.44 113.891 500.963 113.891 501.485 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8104"
+     d="M114.112 500.572 C114.112 501.225 114.557 501.746 115.001 501.746 C115.556 501.746 116.0 501.225 116.0 500.572 C116.0 499.917 115.556 499.396 115.001 499.396 C114.557 499.396 114.112 499.917 114.112 500.572 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8106"
+     d="M114.112 500.572 C114.112 501.225 114.557 501.746 115.001 501.746 C115.556 501.746 116.0 501.225 116.0 500.572 C116.0 499.917 115.556 499.396 115.001 499.396 C114.557 499.396 114.112 499.917 114.112 500.572 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8108"
+     d="M116.557 509.588 C116.557 510.241 117.002 510.765 117.555 510.765 C118.11 510.765 118.554 510.241 118.554 509.588 C118.554 508.935 118.11 508.413 117.555 508.413 C117.002 508.413 116.557 508.935 116.557 509.588 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8110"
+     d="M116.557 509.588 C116.557 510.241 117.002 510.765 117.555 510.765 C118.11 510.765 118.554 510.241 118.554 509.588 C118.554 508.935 118.11 508.413 117.555 508.413 C117.002 508.413 116.557 508.935 116.557 509.588 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8112"
+     d="M117.223 528.784 C117.223 529.437 117.667 529.965 118.11 529.965 C118.665 529.965 119.109 529.437 119.109 528.784 C119.109 528.131 118.665 527.608 118.11 527.608 C117.667 527.608 117.223 528.131 117.223 528.784 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8114"
+     d="M117.223 528.784 C117.223 529.437 117.667 529.965 118.11 529.965 C118.665 529.965 119.109 529.437 119.109 528.784 C119.109 528.131 118.665 527.608 118.11 527.608 C117.667 527.608 117.223 528.131 117.223 528.784 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8116"
+     d="M117.667 511.549 C117.667 512.202 118.11 512.724 118.554 512.724 C119.109 512.724 119.553 512.202 119.553 511.549 C119.553 511.026 119.109 510.503 118.554 510.503 C118.11 510.503 117.667 511.026 117.667 511.549 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8118"
+     d="M117.667 511.549 C117.667 512.202 118.11 512.724 118.554 512.724 C119.109 512.724 119.553 512.202 119.553 511.549 C119.553 511.026 119.109 510.503 118.554 510.503 C118.11 510.503 117.667 511.026 117.667 511.549 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8120"
+     d="M120.112 523.438 C120.112 524.092 120.556 524.603 121.0 524.603 C121.555 524.603 121.998 524.092 121.998 523.438 C121.998 522.917 121.555 522.395 121.0 522.395 C120.556 522.395 120.112 522.917 120.112 523.438 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8122"
+     d="M120.112 523.438 C120.112 524.092 120.556 524.603 121.0 524.603 C121.555 524.603 121.998 524.092 121.998 523.438 C121.998 522.917 121.555 522.395 121.0 522.395 C120.556 522.395 120.112 522.917 120.112 523.438 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8124"
+     d="M121.555 512.07 C121.555 512.724 121.998 513.246 122.554 513.246 C123.108 513.246 123.543 512.724 123.543 512.07 C123.543 511.549 123.108 511.026 122.554 511.026 C121.998 511.026 121.555 511.549 121.555 512.07 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8126"
+     d="M121.555 512.07 C121.555 512.724 121.998 513.246 122.554 513.246 C123.108 513.246 123.543 512.724 123.543 512.07 C123.543 511.549 123.108 511.026 122.554 511.026 C121.998 511.026 121.555 511.549 121.555 512.07 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8128"
+     d="M122.331 502.53 C122.331 503.183 122.775 503.706 123.33 503.706 C123.876 503.706 124.32 503.183 124.32 502.53 C124.32 502.008 123.876 501.485 123.33 501.485 C122.775 501.485 122.331 502.008 122.331 502.53 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8130"
+     d="M122.331 502.53 C122.331 503.183 122.775 503.706 123.33 503.706 C123.876 503.706 124.32 503.183 124.32 502.53 C124.32 502.008 123.876 501.485 123.33 501.485 C122.775 501.485 122.331 502.008 122.331 502.53 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8132"
+     d="M124.875 505.148 C124.875 505.801 125.318 506.324 125.873 506.324 C126.427 506.324 126.876 505.801 126.876 505.148 C126.876 504.495 126.427 503.967 125.873 503.967 C125.318 503.967 124.875 504.495 124.875 505.148 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8134"
+     d="M124.875 505.148 C124.875 505.801 125.318 506.324 125.873 506.324 C126.427 506.324 126.876 505.801 126.876 505.148 C126.876 504.495 126.427 503.967 125.873 503.967 C125.318 503.967 124.875 504.495 124.875 505.148 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8136"
+     d="M125.873 517.562 C125.873 518.216 126.317 518.736 126.761 518.736 C127.32 518.736 127.764 518.216 127.764 517.562 C127.764 517.039 127.32 516.517 126.761 516.517 C126.317 516.517 125.873 517.039 125.873 517.562 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8138"
+     d="M125.873 517.562 C125.873 518.216 126.317 518.736 126.761 518.736 C127.32 518.736 127.764 518.216 127.764 517.562 C127.764 517.039 127.32 516.517 126.761 516.517 C126.317 516.517 125.873 517.039 125.873 517.562 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8140"
+     d="M128.763 513.9 C128.763 514.552 129.207 515.08 129.65 515.08 C130.205 515.08 130.649 514.552 130.649 513.9 C130.649 513.246 130.205 512.724 129.65 512.724 C129.207 512.724 128.763 513.246 128.763 513.9 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8142"
+     d="M128.763 513.9 C128.763 514.552 129.207 515.08 129.65 515.08 C130.205 515.08 130.649 514.552 130.649 513.9 C130.649 513.246 130.205 512.724 129.65 512.724 C129.207 512.724 128.763 513.246 128.763 513.9 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8144"
+     d="M128.874 518.345 C128.874 518.998 129.317 519.52 129.761 519.52 C130.316 519.52 130.759 518.998 130.759 518.345 C130.759 517.823 130.316 517.299 129.761 517.299 C129.317 517.299 128.874 517.823 128.874 518.345 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8146"
+     d="M128.874 518.345 C128.874 518.998 129.317 519.52 129.761 519.52 C130.316 519.52 130.759 518.998 130.759 518.345 C130.759 517.823 130.316 517.299 129.761 517.299 C129.317 517.299 128.874 517.823 128.874 518.345 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8148"
+     d="M129.538 510.634 C129.538 511.287 129.983 511.809 130.426 511.809 C130.982 511.809 131.426 511.287 131.426 510.634 C131.426 509.981 130.982 509.458 130.426 509.458 C129.983 509.458 129.538 509.981 129.538 510.634 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8150"
+     d="M129.538 510.634 C129.538 511.287 129.983 511.809 130.426 511.809 C130.982 511.809 131.426 511.287 131.426 510.634 C131.426 509.981 130.982 509.458 130.426 509.458 C129.983 509.458 129.538 509.981 129.538 510.634 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8152"
+     d="M132.208 513.376 C132.208 514.029 132.651 514.552 133.095 514.552 C133.65 514.552 134.093 514.029 134.093 513.376 C134.093 512.855 133.65 512.332 133.095 512.332 C132.651 512.332 132.208 512.855 132.208 513.376 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8154"
+     d="M132.208 513.376 C132.208 514.029 132.651 514.552 133.095 514.552 C133.65 514.552 134.093 514.029 134.093 513.376 C134.093 512.855 133.65 512.332 133.095 512.332 C132.651 512.332 132.208 512.855 132.208 513.376 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8156"
+     d="M132.539 512.462 C132.539 513.115 132.983 513.638 133.538 513.638 C134.093 513.638 134.538 513.115 134.538 512.462 C134.538 511.94 134.093 511.417 133.538 511.417 C132.983 511.417 132.539 511.94 132.539 512.462 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8158"
+     d="M132.539 512.462 C132.539 513.115 132.983 513.638 133.538 513.638 C134.093 513.638 134.538 513.115 134.538 512.462 C134.538 511.94 134.093 511.417 133.538 511.417 C132.983 511.417 132.539 511.94 132.539 512.462 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8160"
+     d="M134.204 512.07 C134.204 512.724 134.647 513.246 135.091 513.246 C135.638 513.246 136.081 512.724 136.081 512.07 C136.081 511.549 135.638 511.026 135.091 511.026 C134.647 511.026 134.204 511.549 134.204 512.07 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8162"
+     d="M134.204 512.07 C134.204 512.724 134.647 513.246 135.091 513.246 C135.638 513.246 136.081 512.724 136.081 512.07 C136.081 511.549 135.638 511.026 135.091 511.026 C134.647 511.026 134.204 511.549 134.204 512.07 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8164"
+     d="M135.638 521.089 C135.638 521.741 136.081 522.263 136.637 522.263 C137.191 522.263 137.635 521.741 137.635 521.089 C137.635 520.566 137.191 520.044 136.637 520.044 C136.081 520.044 135.638 520.566 135.638 521.089 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8166"
+     d="M135.638 521.089 C135.638 521.741 136.081 522.263 136.637 522.263 C137.191 522.263 137.635 521.741 137.635 521.089 C137.635 520.566 137.191 520.044 136.637 520.044 C136.081 520.044 135.638 520.566 135.638 521.089 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8168"
+     d="M137.413 521.871 C137.413 522.525 137.857 523.047 138.3 523.047 C138.86 523.047 139.304 522.525 139.304 521.871 C139.304 521.349 138.86 520.827 138.3 520.827 C137.857 520.827 137.413 521.349 137.413 521.871 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8170"
+     d="M137.413 521.871 C137.413 522.525 137.857 523.047 138.3 523.047 C138.86 523.047 139.304 522.525 139.304 521.871 C139.304 521.349 138.86 520.827 138.3 520.827 C137.857 520.827 137.413 521.349 137.413 521.871 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8172"
+     d="M138.3 524.474 C138.3 525.126 138.749 525.649 139.304 525.649 C139.858 525.649 140.303 525.126 140.303 524.474 C140.303 523.832 139.858 523.308 139.304 523.308 C138.749 523.308 138.3 523.832 138.3 524.474 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8174"
+     d="M138.3 524.474 C138.3 525.126 138.749 525.649 139.304 525.649 C139.858 525.649 140.303 525.126 140.303 524.474 C140.303 523.832 139.858 523.308 139.304 523.308 C138.749 523.308 138.3 523.832 138.3 524.474 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8176"
+     d="M144.635 533.1 C144.635 533.753 145.078 534.275 145.633 534.275 C146.188 534.275 146.631 533.753 146.631 533.1 C146.631 532.577 146.188 532.054 145.633 532.054 C145.078 532.054 144.635 532.577 144.635 533.1 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8178"
+     d="M144.635 533.1 C144.635 533.753 145.078 534.275 145.633 534.275 C146.188 534.275 146.631 533.753 146.631 533.1 C146.631 532.577 146.188 532.054 145.633 532.054 C145.078 532.054 144.635 532.577 144.635 533.1 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8180"
+     d="M150.506 502.4 C150.506 503.052 150.955 503.576 151.51 503.576 C152.064 503.576 152.508 503.052 152.508 502.4 C152.508 501.877 152.064 501.355 151.51 501.355 C150.955 501.355 150.506 501.877 150.506 502.4 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8182"
+     d="M150.506 502.4 C150.506 503.052 150.955 503.576 151.51 503.576 C152.064 503.576 152.508 503.052 152.508 502.4 C152.508 501.877 152.064 501.355 151.51 501.355 C150.955 501.355 150.506 501.877 150.506 502.4 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8184"
+     d="M167.266 540.941 C167.266 541.594 167.713 542.117 168.269 542.117 C168.825 542.117 169.268 541.594 169.268 540.941 C169.268 540.419 168.825 539.892 168.269 539.892 C167.713 539.892 167.266 540.419 167.266 540.941 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8186"
+     d="M167.266 540.941 C167.266 541.594 167.713 542.117 168.269 542.117 C168.825 542.117 169.268 541.594 169.268 540.941 C169.268 540.419 168.825 539.892 168.269 539.892 C167.713 539.892 167.266 540.419 167.266 540.941 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8188"
+     d="M178.694 510.503 C178.694 511.156 179.138 511.68 179.698 511.68 C180.253 511.68 180.696 511.156 180.696 510.503 C180.696 509.851 180.253 509.328 179.698 509.328 C179.138 509.328 178.694 509.851 178.694 510.503 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8190"
+     d="M178.694 510.503 C178.694 511.156 179.138 511.68 179.698 511.68 C180.253 511.68 180.696 511.156 180.696 510.503 C180.696 509.851 180.253 509.328 179.698 509.328 C179.138 509.328 178.694 509.851 178.694 510.503 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8192"
+     d="M183.127 510.112 C183.127 510.765 183.572 511.287 184.015 511.287 C184.571 511.287 185.015 510.765 185.015 510.112 C185.015 509.458 184.571 508.935 184.015 508.935 C183.572 508.935 183.127 509.458 183.127 510.112 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8194"
+     d="M183.127 510.112 C183.127 510.765 183.572 511.287 184.015 511.287 C184.571 511.287 185.015 510.765 185.015 510.112 C185.015 509.458 184.571 508.935 184.015 508.935 C183.572 508.935 183.127 509.458 183.127 510.112 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8196"
+     d="M205.441 596.453 C205.441 597.107 205.885 597.63 206.319 597.63 C206.874 597.63 207.318 597.107 207.318 596.453 C207.318 595.93 206.874 595.408 206.319 595.408 C205.885 595.408 205.441 595.93 205.441 596.453 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8198"
+     d="M205.441 596.453 C205.441 597.107 205.885 597.63 206.319 597.63 C206.874 597.63 207.318 597.107 207.318 596.453 C207.318 595.93 206.874 595.408 206.319 595.408 C205.885 595.408 205.441 595.93 205.441 596.453 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8200"
+     d="M220.633 523.57 C220.633 524.212 221.077 524.735 221.521 524.735 C222.081 524.735 222.524 524.212 222.524 523.57 C222.524 523.047 222.081 522.525 221.521 522.525 C221.077 522.525 220.633 523.047 220.633 523.57 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8202"
+     d="M220.633 523.57 C220.633 524.212 221.077 524.735 221.521 524.735 C222.081 524.735 222.524 524.212 222.524 523.57 C222.524 523.047 222.081 522.525 221.521 522.525 C221.077 522.525 220.633 523.047 220.633 523.57 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8204"
+     d="M234.84 570.984 C234.84 571.636 235.284 572.158 235.728 572.158 C236.284 572.158 236.727 571.636 236.727 570.984 C236.727 570.461 236.284 569.938 235.728 569.938 C235.284 569.938 234.84 570.461 234.84 570.984 "
+     stroke-width="5.58964"
+     fill="#07358c"
+     clip-path="url(#clipPath11)"
+     stroke="black" />
+  <path
+     id="path8206"
+     d="M234.84 570.984 C234.84 571.636 235.284 572.158 235.728 572.158 C236.284 572.158 236.727 571.636 236.727 570.984 C236.727 570.461 236.284 569.938 235.728 569.938 C235.284 569.938 234.84 570.461 234.84 570.984 Z"
+     stroke-width="5.58964"
+     stroke="#07358c"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8208"
+     d="M120.224 487.907 L119.553 490.917 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8210"
+     d="M119.109 492.354 L118.332 495.356 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8212"
+     d="M117.999 496.794 L117.223 499.789 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8214"
+     d="M116.778 501.355 L116.113 504.359 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8216"
+     d="M115.668 505.801 L114.89 508.804 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8218"
+     d="M114.557 510.373 L113.779 513.376 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8220"
+     d="M113.336 514.813 L112.558 517.823 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8222"
+     d="M112.225 519.39 L111.458 522.395 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8224"
+     d="M111.125 523.832 L110.348 526.825 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8226"
+     d="M109.904 528.391 L109.125 531.401 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8228"
+     d="M108.793 532.838 L108.015 535.842 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8230"
+     d="M107.682 537.279 L106.905 540.289 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8232"
+     d="M106.46 541.856 L105.683 544.861 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8234"
+     d="M105.35 546.297 L104.572 549.301 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8236"
+     d="M104.239 550.857 L103.461 553.861 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8238"
+     d="M103.017 555.303 L102.24 558.308 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8240"
+     d="M101.907 559.875 L101.129 562.879 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8242"
+     d="M100.684 564.316 L100.018 567.325 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8244"
+     d="M99.586 568.893 L98.809 571.897 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8246"
+     d="M98.475 573.334 L97.698 576.341 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8248"
+     d="M97.254 577.766 L96.476 580.771 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8250"
+     d="M96.143 582.339 L95.366 585.345 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8252"
+     d="M95.032 586.782 L94.255 589.788 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8254"
+     d="M93.81 591.357 L93.033 594.363 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8256"
+     d="M92.7 595.799 L92.477 596.583 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8258"
+     d="M120.224 487.907 L121.0 490.917 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8260"
+     d="M121.444 492.354 L122.221 495.356 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8262"
+     d="M122.554 496.794 L123.33 499.789 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8264"
+     d="M123.765 501.355 L124.43 504.359 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8266"
+     d="M124.875 505.801 L125.651 508.804 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8268"
+     d="M125.983 510.373 L126.761 513.376 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8270"
+     d="M127.209 514.813 L127.875 517.823 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8272"
+     d="M128.318 519.39 L129.095 522.395 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8274"
+     d="M129.428 523.832 L130.205 526.825 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8276"
+     d="M130.649 528.391 L131.426 531.401 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8278"
+     d="M131.763 532.838 L132.539 535.842 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8280"
+     d="M132.873 537.279 L133.65 540.289 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8282"
+     d="M134.093 541.856 L134.87 544.861 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8284"
+     d="M135.203 546.297 L135.971 549.301 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8286"
+     d="M136.304 550.857 L137.08 553.861 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8288"
+     d="M137.523 555.303 L138.3 558.308 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8290"
+     d="M138.633 559.875 L139.414 562.879 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8292"
+     d="M139.748 564.316 L140.525 567.325 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8294"
+     d="M140.969 568.893 L141.745 571.897 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8296"
+     d="M142.078 573.334 L142.855 576.341 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8298"
+     d="M143.298 577.766 L144.08 580.771 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8300"
+     d="M144.412 582.339 L145.19 585.345 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8302"
+     d="M145.522 586.782 L146.299 589.788 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8304"
+     d="M146.743 591.357 L147.51 594.363 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8306"
+     d="M147.843 595.799 L148.065 596.583 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8308"
+     d="M120.224 487.907 L120.224 596.583 "
+     stroke-width="5.58964"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8310"
+     d="M89.59 606.371 L89.59 484.38 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8312"
+     d="M89.59 487.907 L87.713 487.907 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8314"
+     d="M89.59 510.895 L87.713 510.895 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8316"
+     d="M89.59 533.883 L87.713 533.883 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8318"
+     d="M89.59 556.871 L87.713 556.871 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8320"
+     d="M89.59 579.987 L87.713 579.987 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8322"
+     d="M89.59 602.974 L87.713 602.974 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8324"
+     d="M89.59 606.371 L249.821 606.371 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <path
+     id="path8326"
+     d="M96.809 606.371 L96.809 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8328"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="95.589"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">0</text>
+  <path
+     id="path8330"
+     d="M126.761 606.371 L126.761 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8332"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="124.876"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">.</text>
+  <text
+     id="text8334"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="126.216"
+     svgx:width="327.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">1</text>
+  <path
+     id="path8336"
+     d="M156.84 606.371 L156.84 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8338"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="154.95"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">.</text>
+  <text
+     id="text8340"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="156.29"
+     svgx:width="495.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">2</text>
+  <path
+     id="path8342"
+     d="M186.794 606.371 L186.794 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8344"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="184.904"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">.</text>
+  <text
+     id="text8346"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="186.244"
+     svgx:width="468.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">3</text>
+  <path
+     id="path8348"
+     d="M216.87 606.371 L216.87 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8350"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="214.984"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">.</text>
+  <text
+     id="text8352"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="216.324"
+     svgx:width="562.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">4</text>
+  <path
+     id="path8354"
+     d="M246.936 606.371 L246.936 608.594 "
+     stroke-width="2.79482"
+     stroke="#000000"
+     clip-path="url(#clipPath11)"
+     fill="none" />
+  <text
+     id="text8356"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="245.044"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">.</text>
+  <text
+     id="text8358"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="614.604"
+     x="246.384"
+     svgx:width="503.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">5</text>
+  <text
+     id="text8360"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="107.294"
+     svgx:width="479.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">F</text>
+  <text
+     id="text8362"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="110.048"
+     svgx:width="612.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">u</text>
+  <text
+     id="text8364"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="113.608"
+     svgx:width="620.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">n</text>
+  <text
+     id="text8366"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="117.219"
+     svgx:width="620.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">n</text>
+  <text
+     id="text8368"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="120.831"
+     svgx:width="492.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">e</text>
+  <text
+     id="text8370"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="123.706"
+     svgx:width="302.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">l</text>
+  <text
+     id="text8372"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="125.42"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8374"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="126.593"
+     svgx:width="527.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">P</text>
+  <text
+     id="text8376"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="129.669"
+     svgx:width="302.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">l</text>
+  <text
+     id="text8378"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="131.383"
+     svgx:width="564.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">o</text>
+  <text
+     id="text8380"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="134.672"
+     svgx:width="366.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">t</text>
+  <text
+     id="text8382"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="136.801"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8384"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="137.974"
+     svgx:width="769.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">w</text>
+  <text
+     id="text8386"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="142.379"
+     svgx:width="307.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">i</text>
+  <text
+     id="text8388"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="144.121"
+     svgx:width="366.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">t</text>
+  <text
+     id="text8390"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="146.249"
+     svgx:width="616.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">h</text>
+  <text
+     id="text8392"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="149.837"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8394"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="151.01"
+     svgx:width="527.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">P</text>
+  <text
+     id="text8396"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="154.087"
+     svgx:width="421.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">s</text>
+  <text
+     id="text8398"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="156.508"
+     svgx:width="492.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">e</text>
+  <text
+     id="text8400"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="159.395"
+     svgx:width="612.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">u</text>
+  <text
+     id="text8402"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="162.96"
+     svgx:width="598.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">d</text>
+  <text
+     id="text8404"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="166.446"
+     svgx:width="564.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">o</text>
+  <text
+     id="text8406"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="169.735"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8408"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="170.908"
+     svgx:width="562.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">9</text>
+  <text
+     id="text8410"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="174.186"
+     svgx:width="503.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">5</text>
+  <text
+     id="text8412"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="177.125"
+     svgx:width="563.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">%</text>
+  <text
+     id="text8414"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="180.374"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8416"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="181.547"
+     svgx:width="605.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">C</text>
+  <text
+     id="text8418"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="185.026"
+     svgx:width="564.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">o</text>
+  <text
+     id="text8420"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="188.327"
+     svgx:width="620.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">n</text>
+  <text
+     id="text8422"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="191.939"
+     svgx:width="323.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">f</text>
+  <text
+     id="text8424"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="193.946"
+     svgx:width="307.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">i</text>
+  <text
+     id="text8426"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="195.688"
+     svgx:width="598.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">d</text>
+  <text
+     id="text8428"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="199.173"
+     svgx:width="492.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">e</text>
+  <text
+     id="text8430"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="202.049"
+     svgx:width="620.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">n</text>
+  <text
+     id="text8432"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="205.66"
+     svgx:width="466.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">c</text>
+  <text
+     id="text8434"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="208.34"
+     svgx:width="492.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">e</text>
+  <text
+     id="text8436"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="211.227"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8438"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="212.4"
+     svgx:width="481.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">L</text>
+  <text
+     id="text8440"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="215.143"
+     svgx:width="307.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">i</text>
+  <text
+     id="text8442"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="216.885"
+     svgx:width="929.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">m</text>
+  <text
+     id="text8444"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="222.314"
+     svgx:width="307.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">i</text>
+  <text
+     id="text8446"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="224.056"
+     svgx:width="366.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">t</text>
+  <text
+     id="text8448"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.239"
+     y="478.115"
+     x="226.184"
+     svgx:width="421.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none">s</text>
+  <text
+     id="text8690"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.411"
+     y="506.091"
+     x="514.463"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8700"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.411"
+     y="504.523"
+     x="467.838"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8708"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.411"
+     y="524.429"
+     x="494.74"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8714"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.411"
+     y="524.429"
+     x="501.729"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8722"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.411"
+     y="524.429"
+     x="511.032"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#000000"
+     stroke="none" />
+  <text
+     id="text8742"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="489.34"
+     x="81.633"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8744"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="512.304"
+     x="77.897"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8746"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="512.304"
+     x="79.42"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8748"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="512.304"
+     x="83.637"
+     svgx:width="327.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">1</text>
+  <text
+     id="text8750"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="535.269"
+     x="76.759"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8752"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="535.269"
+     x="78.282"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8754"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="535.269"
+     x="82.5"
+     svgx:width="495.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">2</text>
+  <text
+     id="text8756"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="558.233"
+     x="76.942"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8758"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="558.233"
+     x="78.465"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8760"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="558.233"
+     x="82.682"
+     svgx:width="468.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">3</text>
+  <text
+     id="text8762"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="581.197"
+     x="76.306"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8764"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="581.197"
+     x="77.829"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8766"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="581.197"
+     x="82.046"
+     svgx:width="562.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">4</text>
+  <text
+     id="text8768"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="604.161"
+     x="76.705"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8770"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="604.161"
+     x="78.228"
+     svgx:width="623.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">0</text>
+  <text
+     id="text8772"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="604.161"
+     x="82.446"
+     svgx:width="503.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">5</text>
+  <text
+     id="text8782"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="553.913"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-485.9935,621.83196)"
+     svgx:width="421.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">s</text>
+  <text
+     id="text8784"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="551.063"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-483.14358,618.98205)"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8786"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="549.54"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-481.62045,617.45891)"
+     svgx:width="492.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">e</text>
+  <text
+     id="text8788"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="546.209"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-478.28994,614.12841)"
+     svgx:width="225.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">.</text>
+  <text
+     id="text8790"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="544.686"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-476.76681,612.60528)"
+     svgx:width="598.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">d</text>
+  <text
+     id="text8792"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="540.638"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-472.71872,608.55718)"
+     svgx:width="323.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">f</text>
+  <text
+     id="text8794"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="538.451"
+     x="67.919"
+     transform="matrix(0.0,-1.0,1.0,0.0,-470.53219,606.37066)"
+     svgx:width="598.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none">p</text>
+  <text
+     id="text8802"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="558.75"
+     x="274.943"
+     transform="matrix(0.0,-1.0,1.0,0.0,-283.80764,833.69286)"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none" />
+  <text
+     id="text8808"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="551.054"
+     x="274.943"
+     transform="matrix(0.0,-1.0,1.0,0.0,-276.11098,825.99621)"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none" />
+  <text
+     id="text8820"
+     font-weight="normal"
+     font-family="Helvetica"
+     font-size="6.769"
+     y="532.918"
+     x="274.943"
+     transform="matrix(0.0,-1.0,1.0,0.0,-257.97573,807.86095)"
+     svgx:width="200.0"
+     svgx:fontName="IVCHUM+CapitoliumNews-Regular"
+     clip-path="url(#clipPath11)"
+     fill="#060708"
+     stroke="none" />
+</svg>
