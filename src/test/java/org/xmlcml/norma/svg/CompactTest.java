@@ -2,6 +2,7 @@ package org.xmlcml.norma.svg;
 
 import java.io.File;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
@@ -31,8 +32,12 @@ private static final Logger LOG = Logger.getLogger(CompactTest.class);
 		File targetDir = new File("target/compact", cprojectName);
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
 		String cmd = "--project "+targetDir+" --fileFilter .*/figures/figure(\\d+)/figure.svg --outputDir "+targetDir+" --transform compactsvg";
+		File inputFile = new File(targetDir, "ctree1/figures/figure1/figure.svg");
+		Assert.assertEquals("input file ", 48389, FileUtils.sizeOf(inputFile));
 		new Norma().run(cmd);
-		
+		File outputFile = new File(targetDir, "ctree1/figures/figure1/figure.svg.compact.svg");
+		long size = FileUtils.sizeOf(outputFile);
+//		Assert.assertEquals("new file "+size, 28150, size);
 	}
 	
 }

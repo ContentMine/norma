@@ -579,11 +579,18 @@ public class NormaTransformer {
 		return txt;
 	}
 
+	/** this just does the Text.
+	 * 
+	 * @param inputSVGFile
+	 * @return
+	 */
 	private SVGElement applyCompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
-		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
+		SVGElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
 		SVGG g = textDecorator.compact(textList);
-		return g;
+		svgElement.appendChild(g);
+		return svgElement;
 	}
 
 	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
