@@ -18,6 +18,7 @@ import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.RegexPathFilter;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.euclid.Util;
+import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlImg;
@@ -128,7 +129,7 @@ public class HtmlDisplay {
 		if (file == null) {
 			td.appendChild(new HtmlP("null file"));
 		} else if (filename.endsWith(".svg")) {
-			SVGElement svgElement = createSVG(file);
+			GraphicsElement svgElement = createSVG(file);
 			td.appendChild(svgElement);
 		} else if (filename.endsWith(".png")) {
 			HtmlImg img = createHtmlImg(file.getName());
@@ -157,8 +158,8 @@ public class HtmlDisplay {
 		}
 	}
 
-	private SVGElement createSVG(File file) {
-		SVGElement svgElement = SVGElement.readAndCreateSVG(file);
+	private GraphicsElement createSVG(File file) {
+		GraphicsElement svgElement = SVGElement.readAndCreateSVG(file);
 		// remove sodipodi inkscape //		<sodipodi:namedview
 		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='namedview']");
 		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='metadata']");

@@ -208,14 +208,15 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 	}
 
 	public void parseTransform(ArgumentOption option, ArgIterator argIterator) {
-//		List<String> tokens = argIterator.createTokenListUpToNextNonDigitMinus(option);
 		List<String> tokens = argIterator.getStrings(option);
 		transformTokenList = option.processArgs(tokens).getStringValues();
 		getOrCreateNormaTransformer();
-		List<ValueElement> valueElements = option.getValueElements();
-		for (ValueElement valueElement : valueElements) {
-			LOG.trace("value "+valueElement.getName());
-		}
+		
+		/** value elements are not used */
+//		List<ValueElement> valueElements = option.getValueElements();
+//		for (ValueElement valueElement : valueElements) {
+//			LOG.trace("value "+valueElement.getName());
+//		}
 //		normaTransformer.parseTransform(transformTokenList.get(0));
 	}
 

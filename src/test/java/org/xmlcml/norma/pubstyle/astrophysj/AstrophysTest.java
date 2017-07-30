@@ -7,6 +7,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGPolyline;
 import org.xmlcml.graphics.svg.SVGText;
@@ -30,7 +31,7 @@ public class AstrophysTest {
 	@Test
 	@Ignore // plot lost
 	public void testExtractPlot() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
+		GraphicsElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
 		SVGPlot plot = new SVGPlot(rawChart);
 		plot.createPlot();
 		List<SVGText> textList = plot.getSVGTextList();

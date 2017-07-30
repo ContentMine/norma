@@ -42,5 +42,17 @@ public class TransformTest {
 
 	}
 	
-	
+	@Test 
+	public void testRotate() {
+		File sourceDir = new File(NormaFixtures.TEST_TABLE_DIR, "rotated");
+		Assert.assertTrue(sourceDir.exists());
+		File targetDir = new File("target/rotate/rotated");
+		LOG.debug("TARG "+targetDir);
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		
+		String cmd = "--project "+targetDir
+				+ " --fileFilter ^.*/table\\d+/table\\.svg$"
+		+ " --outputDir "+targetDir+" --transform svg2svg rotate clock90";
+		new Norma().run(cmd);
+	}
 }

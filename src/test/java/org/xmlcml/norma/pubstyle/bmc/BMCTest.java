@@ -15,6 +15,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.euclid.Real2;
+import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGPath;
@@ -76,7 +77,7 @@ public class BMCTest {
 	// this one has outline glyphs... :-( // all papers in this journal do :-(
 	// 4 boxes and three lines
 	public void testExtractFlowChart() {
-		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
+		GraphicsElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
 		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		List<SVGPath> pathList = boxChart.getSVGPathList();
@@ -138,7 +139,7 @@ public class BMCTest {
 				} else {
 					deltay = (h < 10) ? fontSize * 0.60 : fontSize * 0.8;
 					path.setOpacity(0.3);
-					SVGText text = new SVGText(path.getBoundingBox().getCorners()[0].plus(new Real2(fontSize * (-0.1), deltay * 0.95)), character);
+					SVGText text = new SVGText(path.getBoundingBox().getLLURCorners()[0].plus(new Real2(fontSize * (-0.1), deltay * 0.95)), character);
 					text.setFontSize(fontSize);
 					text.setFill("red");
 					text.setOpacity(0.8);

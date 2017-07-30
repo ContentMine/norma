@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -26,6 +27,7 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
+import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
@@ -41,6 +43,7 @@ import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TEIConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
+import org.xmlcml.norma.svg.SVG2SVGConverter;
 import org.xmlcml.norma.table.CSVTransformer;
 import org.xmlcml.norma.table.SVGTable2HTMLConverter;
 import org.xmlcml.norma.tagger.SectionTaggerX;
@@ -78,6 +81,7 @@ public class NormaTransformer {
 		SCATTER2CSV (  "scatter2csv",   null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
 		SVGTABLE2CSV ( "svgtable2csv",  null,     CTree.SVG,  null,     CTree.SVG+"."+"csv"),
 		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,  null,     CTree.SVG+"."+"html"),
+		SVG2SVG(       "svg2svg",       null,     CTree.SVG,  null,     CTree.SVG+"."+"svg"),
 		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
 		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
@@ -137,8 +141,8 @@ public class NormaTransformer {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	private static final String TRANSFORM = "--transform";
-	private static final String XSL = "--xsl";
+//	private static final String TRANSFORM = "--transform";
+//	private static final String XSL = "--xsl";
 	private static final String STYLESHEET_BY_NAME_XML = "/org/xmlcml/norma/pubstyle/stylesheetByName.xml";
 	private static final String NAME = "name";
 
@@ -148,8 +152,8 @@ public class NormaTransformer {
 	String outputTxt;
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
-	SVGElement svgElement;
-	SVGElement svgAnnotElement;
+	GraphicsElement svgElement;
+	GraphicsElement svgAnnotElement;
 	File teiFile;
 	String tsvString;
 	
@@ -279,7 +283,7 @@ public class NormaTransformer {
 				} else {
 					outputFile = new File(outputDir, filename);
 				}
-				LOG.debug("writing to "+outputFile);
+				LOG.debug("writing to "+outputFile+"; output="+normaArgProcessor.getOutput());
 				try {
 					transformSingleInput(file);
 				} catch (Exception e) {
@@ -430,6 +434,8 @@ public class NormaTransformer {
 			outputTxt = applyPDF2TXTToInputFile(inputFile);
 		} else if (Type.SCATTER2CSV.equals(type)) {
 			tsvString = applyPlotBoxCSVToInput(inputFile);
+		} else if (Type.SVG2SVG.equals(type)) {
+			svgElement = applySVG2SVG(inputFile);
 		} else if (Type.SVGTABLE2HTML.equals(type)) {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
 		} else if (Type.SVGTABLE2CSV.equals(type)) {
@@ -530,7 +536,7 @@ public class NormaTransformer {
 		return tsvString;
 	}
 
-	private SVGElement applyHOCR2SVGToInputFile(File inputFile) {
+	private GraphicsElement applyHOCR2SVGToInputFile(File inputFile) {
 		HOCRReader hocrReader = new HOCRReader();
 		try {
 			hocrReader.readHOCR(new FileInputStream(inputFile));
@@ -539,6 +545,19 @@ public class NormaTransformer {
 		}
 		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
 		return svgSvg;
+	}
+
+	private SVGElement applySVG2SVG(File inputFile) {
+		SVG2SVGConverter svgConverter = new SVG2SVGConverter();
+		List<String> tokenList = new ArrayList<String>(normaArgProcessor.transformTokenList); 
+		try {
+			svgConverter.readFile(inputFile);
+			svgConverter.setTransformTokenList(tokenList);
+			svgElement = svgConverter.createSVGElement();
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot convert SVG: ", e);
+		}
+		return (SVGElement) svgElement;
 	}
 
 	private String applyPDF2SVGToCurrentInputFile(File inputFile, File outputDirectory) {
@@ -584,16 +603,16 @@ public class NormaTransformer {
 	 * @param inputSVGFile
 	 * @return
 	 */
-	private SVGElement applyCompactSVGToInputFile(File inputSVGFile) {
+	private GraphicsElement applyCompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
-		SVGElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
+		GraphicsElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
 		SVGG g = textDecorator.compact(textList);
 		svgElement.appendChild(g);
 		return svgElement;
 	}
 
-	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
+	private GraphicsElement applyDecompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
 		SVGG g = textDecorator.decompact(textList);
@@ -799,6 +818,10 @@ public class NormaTransformer {
 			// output is of form "table/table1.html"
 		} else {
 			output = normaArgProcessor.getOutput();
+		}
+		// the output is a mess
+		if (output == null) {
+			output = outputFile == null ? null : outputFile.toString();
 		}
 		if (outputTxt != null) {
 			currentCTree.writeFile(outputTxt, (output != null ? output : CTree.FULLTEXT_PDF_TXT));

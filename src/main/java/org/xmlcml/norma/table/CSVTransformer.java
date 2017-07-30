@@ -2,6 +2,7 @@ package org.xmlcml.norma.table;
 
 import java.io.File;
 
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
@@ -43,6 +44,45 @@ public class CSVTransformer {
 	}
 
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((charset == null) ? 0 : charset.hashCode());
+		result = prime * result + ((csvFormat == null) ? 0 : csvFormat.hashCode());
+		result = prime * result + ((recordList == null) ? 0 : recordList.hashCode());
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CSVTransformer other = (CSVTransformer) obj;
+		if (charset == null) {
+			if (other.charset != null)
+				return false;
+		} else if (!charset.equals(other.charset))
+			return false;
+		if (csvFormat == null) {
+			if (other.csvFormat != null)
+				return false;
+		} else if (!csvFormat.equals(other.csvFormat))
+			return false;
+		if (recordList == null) {
+			if (other.recordList != null)
+				return false;
+		} else if (!recordList.equals(other.recordList))
+			return false;
+		return true;
+	}
+
+
 	public Charset getCharset() {
 		return charset;
 	}

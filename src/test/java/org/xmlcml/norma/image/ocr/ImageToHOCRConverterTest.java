@@ -14,7 +14,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.args.DefaultArgProcessor;
-import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
@@ -45,7 +45,7 @@ public class ImageToHOCRConverterTest {
 			Assert.assertEquals("filename", "image.2.1.hocr.html", outfile.getName());
 			HOCRReader hocrReader = new HOCRReader();
 			hocrReader.readHOCR(new FileInputStream(outfile));
-			SVGElement svgg = hocrReader.getOrCreateSVG();
+			GraphicsElement svgg = hocrReader.getOrCreateSVG();
 			Assert.assertNotNull("svgg not null", svgg);
 			SVGSVG.wrapAndWriteAsSVG(svgg, new File("target/neuro/image.2.1.hocr.svg"));
 		}
