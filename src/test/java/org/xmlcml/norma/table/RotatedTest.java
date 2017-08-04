@@ -1,4 +1,4 @@
-package org.xmlcml.norma;
+package org.xmlcml.norma.table;
 
 
 import java.io.File;
@@ -17,6 +17,7 @@ import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
+import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.xml.XMLUtil;
 
 import junit.framework.Assert;
@@ -27,17 +28,30 @@ public class RotatedTest {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	private static final File ROTATED1186_2= new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1186.s12966-017-0535-6/tables/table2/table.svg");
-	private static final File ROTATED1186_1= new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1186.s12966-017-0535-6/tables/table1/table.svg");
-	private static final File ROTATED1177_6= new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1177.1029864916682822/tables/table6/table.svg");
-	private static final File ROTATED1177_4= new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1177.1029864916682822/tables/table4/table.svg");
-	private static final File ROTATED_TABLE3 = new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1111.add.12677/tables/table3/table.svg");
+	private static final File ROTATED_DIR = new File(NormaFixtures.TEST_TABLE_DIR, "rotated/");
+	
+	private static final File ROTATED1186_1 = new File(ROTATED_DIR, "10.1186.s12966-017-0535-6/tables/table1/table.svg");
+	private static final File ROTATED1186_2 = new File(ROTATED_DIR, "10.1186.s12966-017-0535-6/tables/table2/table.svg");
+	
+	private static final File ROTATED1177_6 = new File(ROTATED_DIR, "10.1177.1029864916682822/tables/table6/table.svg");
+	private static final File ROTATED1177_4 = new File(ROTATED_DIR, "10.1177.1029864916682822/tables/table4/table.svg");
+	
+	private static final File ROTATED1111_3= new File(ROTATED_DIR, "10.1111.add.12677/tables/table3/table.svg");
+	
+	private static final File ROTATED1038_2 = new File(ROTATED_DIR, "_10.1038.ijo.2016.239/tables/table2/table.svg");
+	private static final File ROTATED1038_3 = new File(ROTATED_DIR, "_10.1038.ijo.2016.239/tables/table3/table.svg");
+	
 	File[] ROT_FILES = new File[]{
-			ROTATED1177_4,
-			ROTATED1177_6,
 			ROTATED1186_1,
 			ROTATED1186_2,
-			ROTATED_TABLE3,
+			
+			ROTATED1177_4,
+			ROTATED1177_6,
+			
+			ROTATED1111_3,
+			
+			ROTATED1038_2,
+			ROTATED1038_3,
 	};
 	private static final File ROTATED_TABLE3A = new File(NormaFixtures.TEST_TABLE_DIR, "rotated/10.1111.add.12677/tables/table3/tablea.svg");
 	private static final double EPS_ANGLE = 0.001;
@@ -47,8 +61,8 @@ public class RotatedTest {
 	 */
 	@Test
 	public void testRotateCharactersOnly() {
-		Assert.assertTrue("table3 exists", ROTATED_TABLE3.exists());
-		SVGElement tableElement = SVGElement.readAndCreateSVG(ROTATED_TABLE3);
+		Assert.assertTrue("table3 exists", ROTATED1111_3.exists());
+		SVGElement tableElement = SVGElement.readAndCreateSVG(ROTATED1111_3);
 		List<SVGText> textLists = SVGText.extractSelfAndDescendantTexts(tableElement);
 		SVGG g = new SVGG();
 		for (SVGText text : textLists) {
@@ -83,7 +97,7 @@ public class RotatedTest {
 				text1.rotateTextAboutPoint(centre, t90);
 				g.appendChild(text1);
 			}
-			SVGSVG.wrapAndWriteAsSVG(g, new File("target/rotate"+"/"+svgFile.getPath()), 1000., 1000.);
+			SVGSVG.wrapAndWriteAsSVG(g, NormaFixtures.getCompactSVGFile(new File("target/rotate"), svgFile), 1000., 1000.);
 		}
 		
 	}
@@ -98,8 +112,8 @@ public class RotatedTest {
 		for (File svgFile : ROT_FILES) {
 			File svgOutFile = new File("target/rotate"+"/"+svgFile.getPath());
 			SVGElement svgElementIn = SVGElement.readAndCreateSVG(svgFile);
-			SVGElement g = svgElementIn.createElementWithRotatedDescendants(new Angle(Math.PI/2.));
-			SVGSVG.wrapAndWriteAsSVG(g, svgOutFile, 1000., 1000.);
+			SVGElement g = svgElementIn.createElementWithRotatedDescendants(new Angle(-Math.PI/2.));
+			SVGSVG.wrapAndWriteAsSVG(g, svgOutFile, 1200., 1000.);
 		}
 		
 	}

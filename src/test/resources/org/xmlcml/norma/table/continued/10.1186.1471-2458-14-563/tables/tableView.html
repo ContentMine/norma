@@ -1,0 +1,1027 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>10.1186.1471-2458-14-563</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">% or mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">N </th>
+     <th class="cell">% or mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">N </th>
+    </tr>
+    <tr>
+     <td class="cell">Demographic</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Nationality</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">UK</td>
+     <td class="cell">75.74</td>
+     <td class="cell">-</td>
+     <td class="cell">537</td>
+     <td class="cell">74.46</td>
+     <td class="cell">-</td>
+     <td class="cell">548</td>
+    </tr>
+    <tr>
+     <td class="cell">Non UK</td>
+     <td class="cell">24.26</td>
+     <td class="cell">-</td>
+     <td class="cell">172</td>
+     <td class="cell">25.54</td>
+     <td class="cell">-</td>
+     <td class="cell">188</td>
+    </tr>
+    <tr>
+     <td class="cell">Ethnicity</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">White British</td>
+     <td class="cell">67.42</td>
+     <td class="cell">-</td>
+     <td class="cell">476</td>
+     <td class="cell">65.98</td>
+     <td class="cell">-</td>
+     <td class="cell">483</td>
+    </tr>
+    <tr>
+     <td class="cell">White other</td>
+     <td class="cell">5.95</td>
+     <td class="cell">-</td>
+     <td class="cell">42</td>
+     <td class="cell">6.97</td>
+     <td class="cell">-</td>
+     <td class="cell">51</td>
+    </tr>
+    <tr>
+     <td class="cell">Mixed</td>
+     <td class="cell">3.97</td>
+     <td class="cell">-</td>
+     <td class="cell">28</td>
+     <td class="cell">2.46</td>
+     <td class="cell">-</td>
+     <td class="cell">18</td>
+    </tr>
+    <tr>
+     <td class="cell">Asian and Asian British</td>
+     <td class="cell">8.64</td>
+     <td class="cell">-</td>
+     <td class="cell">61</td>
+     <td class="cell">8.61</td>
+     <td class="cell">-</td>
+     <td class="cell">63</td>
+    </tr>
+    <tr>
+     <td class="cell">Black and Black British</td>
+     <td class="cell">2.27</td>
+     <td class="cell">-</td>
+     <td class="cell">16</td>
+     <td class="cell">2.46</td>
+     <td class="cell">-</td>
+     <td class="cell">18</td>
+    </tr>
+    <tr>
+     <td class="cell">Chinese</td>
+     <td class="cell">10.48</td>
+     <td class="cell">-</td>
+     <td class="cell">74</td>
+     <td class="cell">12.16</td>
+     <td class="cell">-</td>
+     <td class="cell">89</td>
+    </tr>
+    <tr>
+     <td class="cell">Other</td>
+     <td class="cell">1.27</td>
+     <td class="cell">-</td>
+     <td class="cell">9</td>
+     <td class="cell">1.37</td>
+     <td class="cell">-</td>
+     <td class="cell">10</td>
+    </tr>
+    <tr>
+     <td class="cell">Gender</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Female</td>
+     <td class="cell">55.15</td>
+     <td class="cell">-</td>
+     <td class="cell">391</td>
+     <td class="cell">61.55</td>
+     <td class="cell">-</td>
+     <td class="cell">453</td>
+    </tr>
+    <tr>
+     <td class="cell">Male</td>
+     <td class="cell">44.85</td>
+     <td class="cell">-</td>
+     <td class="cell">318</td>
+     <td class="cell">38.45</td>
+     <td class="cell">-</td>
+     <td class="cell">283</td>
+    </tr>
+    <tr>
+     <td class="cell">Age</td>
+     <td class="cell">19.04</td>
+     <td class="cell">2.91</td>
+     <td class="cell">709</td>
+     <td class="cell">18.76</td>
+     <td class="cell">1.99</td>
+     <td class="cell">736</td>
+    </tr>
+    <tr>
+     <td class="cell">Fruit and vegetable intake</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean portions</td>
+     <td class="cell">6.36</td>
+     <td class="cell">4.96</td>
+     <td class="cell">669</td>
+     <td class="cell">6.67</td>
+     <td class="cell">5.17</td>
+     <td class="cell">701</td>
+    </tr>
+    <tr>
+     <td class="cell">Physical activity</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">METS</td>
+     <td class="cell">3402.37</td>
+     <td class="cell">5101.72</td>
+     <td class="cell">688</td>
+     <td class="cell">3140.11</td>
+     <td class="cell">3861.42</td>
+     <td class="cell">709</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean hours sitting</td>
+     <td class="cell">344.36</td>
+     <td class="cell">179.09</td>
+     <td class="cell">609</td>
+     <td class="cell">336.17</td>
+     <td class="cell">171.42</td>
+     <td class="cell">641</td>
+    </tr>
+    <tr>
+     <td class="cell">Alcohol consumption</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean total units in last 7 days</td>
+     <td class="cell">11.88</td>
+     <td class="cell">18.54</td>
+     <td class="cell">708</td>
+     <td class="cell">11.17</td>
+     <td class="cell">18.72</td>
+     <td class="cell">736</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean number of days binge drinking in last 7 days (drinkers only)</td>
+     <td class="cell">1.00</td>
+     <td class="cell">1.04</td>
+     <td class="cell">447</td>
+     <td class="cell">1.04</td>
+     <td class="cell">1.14</td>
+     <td class="cell">425</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean alcohol objective (FAEE)</td>
+     <td class="cell">2.07</td>
+     <td class="cell">2.02</td>
+     <td class="cell">54</td>
+     <td class="cell">2.08</td>
+     <td class="cell">2.56</td>
+     <td class="cell">54</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoking</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Has smoked</td>
+     <td class="cell">37.24</td>
+     <td class="cell">-</td>
+     <td class="cell">264</td>
+     <td class="cell">37.23</td>
+     <td class="cell">-</td>
+     <td class="cell">274</td>
+    </tr>
+    <tr>
+     <td class="cell">Has never smoked</td>
+     <td class="cell">62.76</td>
+     <td class="cell">-</td>
+     <td class="cell">445</td>
+     <td class="cell">62.77</td>
+     <td class="cell">-</td>
+     <td class="cell">462</td>
+    </tr>
+    <tr>
+     <td class="cell">Current smokers</td>
+     <td class="cell">11.99</td>
+     <td class="cell">-</td>
+     <td class="cell">85</td>
+     <td class="cell">11.28</td>
+     <td class="cell">-</td>
+     <td class="cell">83</td>
+    </tr>
+    <tr>
+     <td class="cell">Not a current smoker</td>
+     <td class="cell">88.01</td>
+     <td class="cell">-</td>
+     <td class="cell">624</td>
+     <td class="cell">88.72</td>
+     <td class="cell">-</td>
+     <td class="cell">653</td>
+    </tr>
+    <tr>
+     <td class="cell">Cigarettes smoked per week</td>
+     <td class="cell">3.19</td>
+     <td class="cell">14.12</td>
+     <td class="cell">496</td>
+     <td class="cell">1.88</td>
+     <td class="cell">10.95</td>
+     <td class="cell">483</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoking objective (cotinine)</td>
+     <td class="cell">.48</td>
+     <td class="cell">.49</td>
+     <td class="cell">54</td>
+     <td class="cell">.45</td>
+     <td class="cell">.42</td>
+     <td class="cell">54</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoking objective (nicotine)</td>
+     <td class="cell">7.19</td>
+     <td class="cell">18.67</td>
+     <td class="cell">54</td>
+     <td class="cell">9.49</td>
+     <td class="cell">19.16</td>
+     <td class="cell">54</td>
+    </tr>
+    <tr>
+     <td class="cell">Other outcomes</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">EQ-5D-3L</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean health index scores from EQ-5D-3L (VAS)</td>
+     <td class="cell">.90</td>
+     <td class="cell">.14</td>
+     <td class="cell">708</td>
+     <td class="cell">.91</td>
+     <td class="cell">.14</td>
+     <td class="cell">735</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean health index score from EQ-5D-3L (TTO)</td>
+     <td class="cell">.92</td>
+     <td class="cell">.13</td>
+     <td class="cell">708</td>
+     <td class="cell">.92</td>
+     <td class="cell">.14</td>
+     <td class="cell">735</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean EQ-5D-3L visual analogue scale</td>
+     <td class="cell">78.21</td>
+     <td class="cell">13.61</td>
+     <td class="cell">706</td>
+     <td class="cell">78.11</td>
+     <td class="cell">15.85</td>
+     <td class="cell">730</td>
+    </tr>
+    <tr>
+     <td class="cell">Recreational drugs</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Have taken recreational drugs (SSC measure)^{1}</td>
+     <td class="cell">18.73</td>
+     <td class="cell">± 9.54</td>
+     <td class="cell">132</td>
+     <td class="cell">16.49</td>
+     <td class="cell">± 9.56</td>
+     <td class="cell">121</td>
+    </tr>
+    <tr>
+     <td class="cell">Have not taken recreational drugs (SSC measure)</td>
+     <td class="cell">81.27</td>
+     <td class="empty" />
+     <td class="cell">575</td>
+     <td class="cell">83.51</td>
+     <td class="empty" />
+     <td class="cell">613</td>
+    </tr>
+    <tr>
+     <td class="cell">Have taken recreational drugs (biochemical measure)</td>
+     <td class="cell">39.53</td>
+     <td class="cell">-</td>
+     <td class="cell">17</td>
+     <td class="cell">45.71</td>
+     <td class="cell">-</td>
+     <td class="cell">16</td>
+    </tr>
+    <tr>
+     <td class="cell">Have not taken recreational drugs (biochemical measure)</td>
+     <td class="cell">60.47</td>
+     <td class="cell">-</td>
+     <td class="cell">26</td>
+     <td class="cell">54.29</td>
+     <td class="cell">-</td>
+     <td class="cell">19</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2458-14-563/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">technique, SSC = single count method, BMI = body mass index. </th>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2458-14-563/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Physical activity Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Binge drinking Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude Smoking Mean descriptive norm Mean injunctive norm Mean perceived control Mean self-efficacy Mean intention Mean plan Mean attitude ^{1 Includes confidence interval.} </th>
+     <th class="cell">6.05 5.63 5.50 5.39 4.85 6.22 3.75 6.04 5.80 5.62 5.63 4.94 6.10 5.70 2.48 6.24 5.70 3.18 4.66 2.50 4.19 1.34 6.61 5.36 1.53 5.58 1.45 </th>
+     <th class="cell">1.10 1.33 1.55 1.10 1.55 .88 1.33 1.11 1.11 1.33 1.11 1.55 .89 1.11 1.33 1.11 1.55 1.11 1.99 .89 1.33 .88 1.10 1.77 .88 2.21 .66 </th>
+     <th class="cell">488 488 488 488 488 488 493 493 493 493 493 493 493 491 491 491 491 491 491 491 488 488 488 488 488 488 488 </th>
+     <th class="cell">5.93 5.65 5.49 5.31 4.78 6.20 3.78 5.99 5.93 5.82 5.64 5.04 6.18 5.59 2.47 6.13 5.66 3.16 4.45 2.52 4.05 1.35 6.58 5.28 1.51 5.30 1.47 </th>
+     <th class="cell">1.08 1.31 1.53 1.09 1.53 .87 1.31 1.31 1.10 1.31 1.10 1.53 .88 1.31 1.31 1.09 1.53 1.31 1.97 .88 1.31 .88 1.09 1.75 .88 2.19 .66 </th>
+     <th class="cell">478 478 478 478 478 478 480 480 480 480 480 480 480 479 479 479 479 479 479 479 479 479 479 479 479 479 479 </th>
+     <th class="cell">-.12 .02 -.01 -.08 -.07 -.22 .03 -.05 .13 .20 .01 .08 .08 -.11 -.01 -.11 -.04 -.02 -.21 .02 .14 .01 .03 -.08 -.02 -.28 .02 </th>
+     <th class="cell">.116 .785 .944 .270 .474 .652 .637 .550 .078 .020 .921 .338 .119 .177 .974 .171 .704 .824 .115 .819 .113 .751 .666 .490 .671 .050 .573 </th>
+     <th class="cell">-0.11 0.02 -0.01 -0.07 -0.05 -0.02 0.02 -0.04 0.12 0.15 0.01 0.06 0.09 0.09 0.01 -0.01 -0.03 0.02 -0.11 -0.02 0.11 -0.01 -0.03 -0.05 0.02 -0.13 -0.03 </th>
+     <th class="cell">3.18 5.66 5.58 5.52 5.09 6.65 5.71 4.10 5.83 5.78 5.67 5.14 6.63 2.79 5.10 6.27 5.81 3.13 4.89 1.83 1.73 3.63 6.55 5.12 1.61 5.57 1.32 </th>
+     <th class="cell">1.62 1.39 1.39 1.16 1.39 .69 1.39 1.63 1.16 1.39 1.16 1.63 .70 1.85 1.62 1.16 1.39 1.39 2.09 .93 1.39 1.62 1.16 1.62 .93 2.32 .70 </th>
+     <th class="cell">534 534 534 534 534 534 539 539 539 539 539 539 539 537 537 537 537 537 537 537 537 537 537 537 537 537 537 </th>
+     <th class="cell">3.43 5.85 5.72 5.47 5.13 6.59 5.65 4.20 5.96 5.83 5.74 5.13 6.62 3.00 4.93 6.14 5.69 3.07 4.50 1.91 1.87 3.57 6.51 5.37 1.53 5.19 1.35 </th>
+     <th class="cell">1.61 1.38 1.38 1.15 1.38 .69 1.38 1.61 1.15 1.38 1.15 1.61 .69 1.83 1.83 1.15 1.38 1.37 2.06 1.15 1.37 1.60 1.15 1.83 .92 2.29 .69 </th>
+     <th class="cell">527 527 527 527 527 527 527 527 527 527 527 527 527 525 525 525 525 525 525 525 525 525 525 525 525 525 525 </th>
+     <th class="cell">.25 .19 .14 -.05 .04 -.06 -.06 .10 .13 .05 .07 -.01 .01 .21 -.17 -.13 -.12 -.06 .39 .09 .14 -.06 -.04 .25 -.08 -.38 .03 </th>
+     <th class="cell">.017 .018 .106 .442 .628 .208 .530 .288 .069 .523 .306 .944 .948 .059 .110 .097 .194 .457 .003 .207 .105 .593 .518 .172 .164 .003 .491 </th>
+     <th class="cell">0.15 0.14 0.10 -0.04 0.03 -0.09 -0.04 0.06 0.11 0.04 0.06 -0.01 -0.01 -0.06 0.10 -0.10 -0.09 0.04 -0.19 -0.08 -0.10 0.04 -0.03 0.14 0.09 -0.16 -0.04 </th>
+    </tr>
+    <tr>
+     <td class="cell">^{2 These do not include imputed data as only measured at 6 months.}</td>
+    </tr>
+    <tr>
+     <td class="cell">Notes. METS = metabolic equivalent of task, AUDIT = alcohol use disorder identification test FAEE = fatty acid ethyl esters, VAS = visual analogue scale technique, TTO = time trade-off technique SSC = single sample</td>
+    </tr>
+    <tr>
+     <td class="cell">count, OR = odds ratio, BMI = body mass index, GP = general practitioner, A&amp;E = accident and emergency</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2458-14-563/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Mean health index scores from EQ-5D-3L (TTO) Mean EQ-5D-3L visual analogue scale Recreational drug use Have taken recreational drugs (SSC measure)^{1} Have not taken recreational drugs (SSC measure) Have taken recreational drugs (biochemical measure) Have not taken recreational drugs (biochemical measure) BMI Mean BMI Mean objective BMI Health service usage^{2} Mean times visited GP in last 6 months Alcohol intervention offered by GP Alcohol intervention not offered by GP Attended alcohol intervention Did not attend alcohol intervention Mean times visited A&amp;E Mean times admitted to A&amp;E Mean times required an ambulance Mean times admitted to hospital Mean elective admissions to hospital Mean non-elective admissions to hospital Mean other times visited hospital (not incl. above) Academic achievement Mean grade of academic year Progressed from level one Did not progress Social cognition variables Fruit and vegetables Mean descriptive norm </th>
+     <th class="cell">.92 77.63 9.52 90.48 21.97 2.67 </th>
+     <th class="cell">.22 12.45 ±10.74 2.96 1.10 </th>
+     <th class="cell">495 494 47 450 448 488 </th>
+     <th class="cell">.92 76.66 22.57 77.43 22.22 2.63 </th>
+     <th class="cell">.22 12.45 ±12.11 3.15 1.09 </th>
+     <th class="cell">482 477 109 373 440 478 </th>
+     <th class="cell">0.00 -.97 13.05 -13.05 .25 -.04 </th>
+     <th class="cell">.728 .224 &lt;.001 .230 .684 </th>
+     <th class="cell">0.00 -0.08 -0.57 OR 2.04 -0.08 -0.04 </th>
+     <th class="cell">.92 77.69 8.27 91.73 41.86 58.14 22.15 22.01 1.33 .39 99.61 0 100 .10 .19 .03 .04 .34 1.02 .25 62.49 96.54 3.46 5.61 </th>
+     <th class="cell">.23 13.01 ±11.12 - 2.23 2.90 1.49 - - - - .43 .52 .21 .21 .69 .66 .85 8.99 - 1.62 </th>
+     <th class="cell">542 540 38 418 18 25 499 100 455 1 253 0 1 452 42 429 450 13 12 447 481 446 16 534 </th>
+     <th class="cell">.92 77.17 24.36 75.64 45.71 54.29 22.12 22.27 1.18 .82 99.18 0 100 .10 .25 .03 .06 .68 .44 .22 62.35 95.45 3.55 5.37 </th>
+     <th class="cell">.23 13.05 ±12.7 - - 2.22 2.86 1.66 - - - - .41 .51 .20 .21 .67 .63 .82 9.13 1.84 </th>
+     <th class="cell">530 524 105 324 16 19 494 91 429 2 241 0 2 426 40 404 425 20 20 424 473 435 16 527 </th>
+     <th class="cell">.00 .01 16.09 -16.09 3.85 -3.85 -.03 .01 .01 .43 -.43 .00 .00 .00 .06 .02 .02 .34 -.58 -.03 -.14 -.09 .09 .24 </th>
+     <th class="cell">.739 .508 &lt;.001 .491 .870 .550 .169 .648 - .882 .622 .802 .253 .181 .020 .642 .814 .810 .027 </th>
+     <th class="cell">0.00 -0.04 -0.70 OR 2.39 -0.09 OR 1.29 0.01 -0.09 0.10 -0.41 OR 1.68 0.00 -0.12 0.00 -0.10 -0.50 0.90 0.04 -0.02 -0.01 OR 1.01 -0.14 </th>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2458-14-563/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">% or Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">n </th>
+     <th class="cell">% or Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">n </th>
+     <th class="cell">Diff </th>
+     <th class="cell">p </th>
+     <th class="cell">d </th>
+     <th class="cell">% or Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">n </th>
+     <th class="cell">% or Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">n </th>
+     <th class="cell">Diff </th>
+     <th class="cell">p </th>
+     <th class="cell">d </th>
+    </tr>
+    <tr>
+     <td class="cell">Fruit and vegetable intake</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean portions</td>
+     <td class="cell">5.47</td>
+     <td class="cell">4.26</td>
+     <td class="cell">453</td>
+     <td class="cell">6.02</td>
+     <td class="cell">4.18</td>
+     <td class="cell">436</td>
+     <td class="cell">.55</td>
+     <td class="cell">.053</td>
+     <td class="cell">0.13</td>
+     <td class="cell">5.72</td>
+     <td class="cell">4.98</td>
+     <td class="cell">512</td>
+     <td class="cell">5.61</td>
+     <td class="cell">4.89</td>
+     <td class="cell">495</td>
+     <td class="cell">-.11</td>
+     <td class="cell">.708</td>
+     <td class="cell">-0.02</td>
+    </tr>
+    <tr>
+     <td class="cell">Physical activity</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean METS</td>
+     <td class="cell">2563.39</td>
+     <td class="cell">2162.88</td>
+     <td class="cell">471</td>
+     <td class="cell">2755.63</td>
+     <td class="cell">2169.40</td>
+     <td class="cell">452</td>
+     <td class="cell">192.24</td>
+     <td class="cell">.179</td>
+     <td class="cell">0.09</td>
+     <td class="cell">3316.10</td>
+     <td class="cell">5143.79</td>
+     <td class="cell">526</td>
+     <td class="cell">3350.52</td>
+     <td class="cell">5144.16</td>
+     <td class="cell">513</td>
+     <td class="cell">34.42</td>
+     <td class="cell">.914</td>
+     <td class="cell">0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean hours sitting</td>
+     <td class="cell">400.55</td>
+     <td class="cell">150.49</td>
+     <td class="cell">388</td>
+     <td class="cell">396.19</td>
+     <td class="cell">150.44</td>
+     <td class="cell">372</td>
+     <td class="cell">-4.36</td>
+     <td class="cell">.890</td>
+     <td class="cell">0.03</td>
+     <td class="cell">408.12</td>
+     <td class="cell">158.25</td>
+     <td class="cell">450</td>
+     <td class="cell">412.24</td>
+     <td class="cell">158.30</td>
+     <td class="cell">435</td>
+     <td class="cell">4.12</td>
+     <td class="cell">.699</td>
+     <td class="cell">-0.03</td>
+    </tr>
+    <tr>
+     <td class="cell">Member of Sport Sheffield</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">56.52</td>
+     <td class="cell">-</td>
+     <td class="cell">325</td>
+     <td class="cell">54.92</td>
+     <td class="cell">-</td>
+     <td class="cell">318</td>
+     <td class="cell">-1.60</td>
+     <td class="cell">.392</td>
+     <td class="cell">-0.04</td>
+    </tr>
+    <tr>
+     <td class="cell">Not a member of Sport Sheffield</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">43.48</td>
+     <td class="cell">-</td>
+     <td class="cell">250</td>
+     <td class="cell">45.08</td>
+     <td class="cell">-</td>
+     <td class="cell">261</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">OR 1.11</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean Sport Sheffield attendance</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">8.15</td>
+     <td class="cell">15.50</td>
+     <td class="cell">325</td>
+     <td class="cell">9.92</td>
+     <td class="cell">15.34</td>
+     <td class="cell">318</td>
+     <td class="cell">1.77</td>
+     <td class="cell">.149</td>
+     <td class="cell">0.15</td>
+    </tr>
+    <tr>
+     <td class="cell">Alcohol consumption</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean units in last 7 days</td>
+     <td class="cell">13.86</td>
+     <td class="cell">16.89</td>
+     <td class="cell">507</td>
+     <td class="cell">12.55</td>
+     <td class="cell">17.06</td>
+     <td class="cell">491</td>
+     <td class="cell">.02</td>
+     <td class="cell">.222</td>
+     <td class="cell">0.08</td>
+     <td class="cell">13.41</td>
+     <td class="cell">19.65</td>
+     <td class="cell">547</td>
+     <td class="cell">13.01</td>
+     <td class="cell">19.75</td>
+     <td class="cell">540</td>
+     <td class="cell">-.40</td>
+     <td class="cell">.737</td>
+     <td class="cell">0.02</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean number of days binge drinking</td>
+     <td class="cell">1.33</td>
+     <td class="cell">.99</td>
+     <td class="cell">271</td>
+     <td class="cell">1.31</td>
+     <td class="cell">.92</td>
+     <td class="cell">234</td>
+     <td class="cell">-.02</td>
+     <td class="cell">.901</td>
+     <td class="cell">0.02</td>
+     <td class="cell">1.16</td>
+     <td class="cell">.89</td>
+     <td class="cell">319</td>
+     <td class="cell">1.16</td>
+     <td class="cell">.85</td>
+     <td class="cell">288</td>
+     <td class="cell">.00</td>
+     <td class="cell">.973</td>
+     <td class="cell">0.00</td>
+    </tr>
+    <tr>
+     <td class="cell">in last 7 days (drinkers only)</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">AUDIT</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Mean consumption</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">6.45</td>
+     <td class="cell">2.60</td>
+     <td class="cell">400</td>
+     <td class="cell">6.32</td>
+     <td class="cell">2.52</td>
+     <td class="cell">376</td>
+     <td class="cell">-.13</td>
+     <td class="cell">.480</td>
+     <td class="cell">0.05</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean dependency</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">.93</td>
+     <td class="cell">1.39</td>
+     <td class="cell">393</td>
+     <td class="cell">.88</td>
+     <td class="cell">1.34</td>
+     <td class="cell">366</td>
+     <td class="cell">-.05</td>
+     <td class="cell">.597</td>
+     <td class="cell">0.04</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean problems</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">2.26</td>
+     <td class="cell">2.60</td>
+     <td class="cell">393</td>
+     <td class="cell">2.05</td>
+     <td class="cell">2.49</td>
+     <td class="cell">366</td>
+     <td class="cell">-.21</td>
+     <td class="cell">.256</td>
+     <td class="cell">0.08</td>
+    </tr>
+    <tr>
+     <td class="cell">Mean alcohol objective (FAEE)</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">2.55</td>
+     <td class="cell">4.59</td>
+     <td class="cell">43</td>
+     <td class="cell">2.80</td>
+     <td class="cell">4.61</td>
+     <td class="cell">34</td>
+     <td class="cell">.25</td>
+     <td class="cell">.816</td>
+     <td class="cell">-0.05</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoking</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Has smoked</td>
+     <td class="cell">42.37</td>
+     <td class="cell">-</td>
+     <td class="cell">211</td>
+     <td class="cell">40.41</td>
+     <td class="cell">-</td>
+     <td class="cell">196</td>
+     <td class="cell">-1.96</td>
+     <td class="cell">.849</td>
+     <td class="cell">0.04</td>
+     <td class="cell">47.74</td>
+     <td class="cell">-</td>
+     <td class="cell">264</td>
+     <td class="cell">46.30</td>
+     <td class="cell">-</td>
+     <td class="cell">250</td>
+     <td class="cell">-1.44</td>
+     <td class="cell">.776</td>
+     <td class="cell">0.03</td>
+    </tr>
+    <tr>
+     <td class="cell">Has never smoked</td>
+     <td class="cell">57.63</td>
+     <td class="cell">-</td>
+     <td class="cell">287</td>
+     <td class="cell">59.59</td>
+     <td class="cell">-</td>
+     <td class="cell">289</td>
+     <td class="cell">1.96</td>
+     <td class="empty" />
+     <td class="cell">OR 1.04</td>
+     <td class="cell">52.26</td>
+     <td class="cell">-</td>
+     <td class="cell">289</td>
+     <td class="cell">53.70</td>
+     <td class="cell">-</td>
+     <td class="cell">290</td>
+     <td class="cell">1.44</td>
+     <td class="empty" />
+     <td class="cell">OR 1.05</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoked since attending University</td>
+     <td class="cell">25 96</td>
+     <td class="cell">-</td>
+     <td class="cell">129</td>
+     <td class="cell">24 33</td>
+     <td class="cell">-</td>
+     <td class="cell">118</td>
+     <td class="cell">-1 63</td>
+     <td class="cell">578</td>
+     <td class="cell">0 05</td>
+     <td class="cell">35 51</td>
+     <td class="cell">-</td>
+     <td class="cell">196</td>
+     <td class="cell">35 93</td>
+     <td class="cell">-</td>
+     <td class="cell">194</td>
+     <td class="cell">42</td>
+     <td class="cell">878</td>
+     <td class="cell">-0 01</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2458-14-563/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

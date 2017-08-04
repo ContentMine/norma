@@ -1,0 +1,454 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>10.1186.1471-2407-12-560</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">n=22 </th>
+    </tr>
+    <tr>
+     <td class="cell">Age, mean (SD)</td>
+     <td class="cell">47.3 (13.4)</td>
+    </tr>
+    <tr>
+     <td class="cell">Gender, n (%) female</td>
+     <td class="cell">18 (81.8)</td>
+    </tr>
+    <tr>
+     <td class="cell">Born in Australia, n (%)</td>
+     <td class="cell">20 (90.9)</td>
+    </tr>
+    <tr>
+     <td class="cell">Aboriginal/Torres Strait Islander, n (%)</td>
+     <td class="cell">0</td>
+    </tr>
+    <tr>
+     <td class="cell">English speaking, n (%)</td>
+     <td class="cell">22 (100)</td>
+    </tr>
+    <tr>
+     <td class="cell">Married/De-facto, n (%)</td>
+     <td class="cell">16 (72.7)</td>
+    </tr>
+    <tr>
+     <td class="cell">Completed at least high school, n (%)</td>
+     <td class="cell">21 (95.5)</td>
+    </tr>
+    <tr>
+     <td class="cell">Employed, n (%)</td>
+     <td class="cell">13 (59.1)</td>
+    </tr>
+    <tr>
+     <td class="cell">Private Health Insurance, n (%)</td>
+     <td class="cell">19 (86.4)</td>
+    </tr>
+    <tr>
+     <td class="cell">Household income, n (%)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">–&lt; $25,000</td>
+     <td class="cell">4 (18.2)</td>
+    </tr>
+    <tr>
+     <td class="cell">–$25,000-$40,000</td>
+     <td class="cell">1 (4.6)</td>
+    </tr>
+    <tr>
+     <td class="cell">–$40,000-$65,000</td>
+     <td class="cell">6 (27.3)</td>
+    </tr>
+    <tr>
+     <td class="cell">–$65,000-$100,000</td>
+     <td class="cell">5 (22.7)</td>
+    </tr>
+    <tr>
+     <td class="cell">–&gt;$100,000</td>
+     <td class="cell">1 (4.6)</td>
+    </tr>
+    <tr>
+     <td class="cell">Number of First Degree Relatives &gt;1, n (%)</td>
+     <td class="cell">4 (21.1)</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2407-12-560/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">Baseline mean (SD) </th>
+     <th class="cell">Six weeks mean (SD) </th>
+     <th class="cell">Six weeks –baseline (95%CI) </th>
+     <th class="cell">p </th>
+    </tr>
+    <tr>
+     <td class="cell">MVPA, mins/week</td>
+     <td class="cell">66.6 (21.1)</td>
+     <td class="cell">217.3 (34.7)</td>
+     <td class="cell">150.7 (22.7 110.5)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">TV viewing, hrs/week</td>
+     <td class="cell">12.9 (1.7)</td>
+     <td class="cell">11.5 (1.6)</td>
+     <td class="cell">-1.4 (-4.0 1.2)</td>
+     <td class="cell">0.28</td>
+    </tr>
+    <tr>
+     <td class="cell">Diet</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Red meat, serves/week</td>
+     <td class="cell">2.8 (1.5)</td>
+     <td class="cell">2.8(1.5)</td>
+     <td class="cell">0.02 (-0.6 0.6)</td>
+     <td class="cell">0.93</td>
+    </tr>
+    <tr>
+     <td class="cell">Processed meat, serves/week</td>
+     <td class="cell">2.0 (1.8)</td>
+     <td class="cell">0.9(1.2)</td>
+     <td class="cell">-1.2 (-1.8 -0.5)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Fruit, serves/day</td>
+     <td class="cell">1.8 (0.9)</td>
+     <td class="cell">2.2 (1.2)</td>
+     <td class="cell">0.3 (-0.3 0.9)</td>
+     <td class="cell">0.27</td>
+    </tr>
+    <tr>
+     <td class="cell">Vegetables, serves/day</td>
+     <td class="cell">2.5 (1.3)</td>
+     <td class="cell">3.5 (1.1)</td>
+     <td class="cell">1.0 (0.4 1.6)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Alcohol, standard drinks/day</td>
+     <td class="cell">1.9 (0.3)</td>
+     <td class="cell">1.5(0.3)</td>
+     <td class="cell">-0.4 (-0.8 0.1)</td>
+     <td class="cell">0.13</td>
+    </tr>
+    <tr>
+     <td class="cell">Body mass index, kg/m^{2}</td>
+     <td class="cell">30.4 (7.4)</td>
+     <td class="cell">29.0 (6.1)</td>
+     <td class="cell">-1.4 (-2.3 -0.5)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Waist circumference, cm</td>
+     <td class="cell">97.5 (18.4)</td>
+     <td class="cell">92.4 (15.7)</td>
+     <td class="cell">-5.1 (-8.3 -2.0)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2407-12-560/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Short form-36 subscale </th>
+     <th class="cell">Baseline mean (SD) </th>
+     <th class="cell">Six weeks mean (SD) </th>
+     <th class="cell">Six weeks - baseline (95%CI) </th>
+     <th class="cell">p </th>
+    </tr>
+    <tr>
+     <td class="cell">Physical Functioning</td>
+     <td class="cell">50.6 (6.5)</td>
+     <td class="cell">52.8 (4.4)</td>
+     <td class="cell">2.2 (0.9 3.5)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Role Physical</td>
+     <td class="cell">47.2 (8.5)</td>
+     <td class="cell">50.2 (7.7)</td>
+     <td class="cell">3.1 (-0.9 7.0)</td>
+     <td class="cell">0.12</td>
+    </tr>
+    <tr>
+     <td class="cell">Bodily Pain</td>
+     <td class="cell">45.0 (11.4)</td>
+     <td class="cell">50.7 (9.7)</td>
+     <td class="cell">5.8 (1.4 10.1)</td>
+     <td class="cell">0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">General Health</td>
+     <td class="cell">48.4 (29.6)</td>
+     <td class="cell">52.1 (8.6)</td>
+     <td class="cell">3.7 (0.3 7.1)</td>
+     <td class="cell">0.03</td>
+    </tr>
+    <tr>
+     <td class="cell">Vitality</td>
+     <td class="cell">47.3 (42.7)</td>
+     <td class="cell">52.0 (49.3)</td>
+     <td class="cell">4.8 (1.4 8.2)</td>
+     <td class="cell">0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Social Functioning</td>
+     <td class="cell">48.0 (43.2)</td>
+     <td class="cell">52.3 (49.8)</td>
+     <td class="cell">4.3 (-0.4 9.0)</td>
+     <td class="cell">0.07</td>
+    </tr>
+    <tr>
+     <td class="cell">Role Emotional</td>
+     <td class="cell">47.0 (14.2)</td>
+     <td class="cell">50.7 (6.5)</td>
+     <td class="cell">3.7 (-2.0 9.4)</td>
+     <td class="cell">0.19</td>
+    </tr>
+    <tr>
+     <td class="cell">Mental Health</td>
+     <td class="cell">45.8 (13.7)</td>
+     <td class="cell">50.6 (6.8)</td>
+     <td class="cell">4.8 (-0.7 10.3)</td>
+     <td class="cell">0.08</td>
+    </tr>
+    <tr>
+     <td class="cell">Physical HRQoL</td>
+     <td class="cell">48.6 (1.6)</td>
+     <td class="cell">51.9 (6.6)</td>
+     <td class="cell">3.3 (03 6.3)</td>
+     <td class="cell">0.03</td>
+    </tr>
+    <tr>
+     <td class="cell">Mental HRQoL</td>
+     <td class="cell">46.4 (14.9)</td>
+     <td class="cell">50.8 (6.9)</td>
+     <td class="cell">4.4 (-1.9 10.7)</td>
+     <td class="cell">0.16</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2407-12-560/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable MVPA^{1} </th>
+     <th class="cell">Baseline n (%) </th>
+     <th class="cell">Six weeks n (%) </th>
+     <th class="cell">p </th>
+    </tr>
+    <tr>
+     <td class="cell">≥ 150 mins/week</td>
+     <td class="cell">6(27.3)</td>
+     <td class="cell">13(59.1)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">&lt; 150 mins/week</td>
+     <td class="cell">16(72.7)</td>
+     <td class="cell">9(40.9)</td>
+     <td class="cell">0.02</td>
+    </tr>
+    <tr>
+     <td class="cell">Red Meat</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">≤ 4 serves/week</td>
+     <td class="cell">19(86.4)</td>
+     <td class="cell">20(90.9)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">&gt; 4 serves/week</td>
+     <td class="cell">3(13.6)</td>
+     <td class="cell">2(9.1)</td>
+     <td class="cell">0.12</td>
+    </tr>
+    <tr>
+     <td class="cell">Fruit</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">≥ 2 serves/day</td>
+     <td class="cell">15(68.2)</td>
+     <td class="cell">18(81.8)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">&lt; 2 serves/day</td>
+     <td class="cell">7(31.8)</td>
+     <td class="cell">4(18.2)</td>
+     <td class="cell">0.04</td>
+    </tr>
+    <tr>
+     <td class="cell">Vegetables</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">≥ 5 serves/day</td>
+     <td class="cell">1(4.6)</td>
+     <td class="cell">4(18.2)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">&lt; 5 serves/day</td>
+     <td class="cell">21(95.5)</td>
+     <td class="cell">18(81.8)</td>
+     <td class="cell">0.03</td>
+    </tr>
+    <tr>
+     <td class="cell">Alcohol</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">≤ 2 standard drinks/day</td>
+     <td class="cell">13(59.1)</td>
+     <td class="cell">16(72.7)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">&gt; 2 standard drinks/day</td>
+     <td class="cell">9(40.9)</td>
+     <td class="cell">6(27.3)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Body mass index</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Normal weight^{2}</td>
+     <td class="cell">7(31.8)</td>
+     <td class="cell">10(45.5)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Overweight/obese^{3}</td>
+     <td class="cell">15(68.2)</td>
+     <td class="cell">12(54.5)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">Waist circumference</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Low risk^{4}</td>
+     <td class="cell">4(18.2)</td>
+     <td class="cell">6(27.3)</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Increased risk^{5}</td>
+     <td class="cell">18(81.8)</td>
+     <td class="cell">16(72.7)</td>
+     <td class="cell">&lt;0.01</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1186.1471-2407-12-560/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

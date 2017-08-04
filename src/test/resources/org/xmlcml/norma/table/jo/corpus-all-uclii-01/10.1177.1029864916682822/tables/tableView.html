@@ -1,0 +1,864 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>10.1177.1029864916682822</h1><div class="tab"><button title="table6" class="tablinks" onClick="openTab(event, 'table6', 'tabcontent')">table6</button><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button><button title="table7" class="tablinks" onClick="openTab(event, 'table7', 'tabcontent')">table7</button></div><div class="tabcontentdiv"><table title="table6" id="table6" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <tr />
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table6/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Demographic variable </th>
+     <th class="cell">(n = 19) </th>
+     <th class="cell">(n = 18) </th>
+     <th class="cell">(n = 18) </th>
+     <th class="cell">(N = 55) </th>
+    </tr>
+    <tr>
+     <td class="cell">Age</td>
+     <td class="cell">40.37 (9.64)</td>
+     <td class="cell">40.72 (11.02)</td>
+     <td class="cell">41.39 (12.73)</td>
+     <td class="cell">40.61 (10.99)</td>
+    </tr>
+    <tr>
+     <td class="cell">Gender (female)</td>
+     <td class="cell">7 (37%)</td>
+     <td class="cell">12 (67%)</td>
+     <td class="cell">6 (32%)</td>
+     <td class="cell">25 (45%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Indigenous status (Aboriginal)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">2 (4%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Receiving mental health treatment</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">5 (28%)</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">8 (14%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Receiving physical health</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">5 (28%)</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">9 (16%)</td>
+    </tr>
+    <tr>
+     <td class="cell">treatment</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Educational attainment</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Primary only</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (6%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (2%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Some secondary</td>
+     <td class="cell">6 (32%)</td>
+     <td class="cell">1 (6%)</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">12 (21%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Completed secondary</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">5 (28%)</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">13 (23%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Some tertiary</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">7 (39%)</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">15 (27%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Completed tertiary</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">4 (22%)</td>
+     <td class="cell">6 (32%)</td>
+     <td class="cell">15 (27%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Employment status</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Full-time</td>
+     <td class="cell">14 (74%)</td>
+     <td class="cell">16 (89%)</td>
+     <td class="cell">16 (84%)</td>
+     <td class="cell">46 (82%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Part-time</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">4 (7%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Unable to work</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">1 (6%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">2 (4%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Home duties</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (6%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (2%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Home duties and part time</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (2%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Student and part time</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">1 (2%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Retired</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (2%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Smoking history</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Cohabiting with other smokers</td>
+     <td class="cell">9 (47%)</td>
+     <td class="cell">10 (56%)</td>
+     <td class="cell">7 (39%)</td>
+     <td class="cell">26 (46%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Age of smoking initiation (years)</td>
+     <td class="cell">16.16 (4.27)</td>
+     <td class="cell">16.06 (6.21)</td>
+     <td class="cell">16.35 (6.40)</td>
+     <td class="cell">16.46 (5.70)</td>
+    </tr>
+    <tr>
+     <td class="cell">Age of regular smoking (years)</td>
+     <td class="cell">17.42 (3.08)</td>
+     <td class="cell">16.78 (5.43)</td>
+     <td class="cell">18.00 (4.02)</td>
+     <td class="cell">17.64 (4.40)</td>
+    </tr>
+    <tr>
+     <td class="cell">Years spent regularly smoking</td>
+     <td class="cell">22.94 (11.18)</td>
+     <td class="cell">23.94 (12.40)</td>
+     <td class="cell">22.35 (15.08)</td>
+     <td class="cell">22.96 (12.70)</td>
+    </tr>
+    <tr>
+     <td class="cell">Number of previous quit attempts</td>
+     <td class="cell">3.16 (1.61)</td>
+     <td class="cell">7.28 (7.37)</td>
+     <td class="cell">4.82 (4.57)</td>
+     <td class="cell">4.96 (5.18)</td>
+    </tr>
+    <tr>
+     <td class="cell">Longest quit in last 5 years</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Have not quit in last 5 years</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">4 (7%)</td>
+    </tr>
+    <tr>
+     <td class="cell">&lt; 1 day</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">1 (6%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">3 (5%)</td>
+    </tr>
+    <tr>
+     <td class="cell">1– 6 days</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">3 (17%)</td>
+     <td class="cell">4 (21%)</td>
+     <td class="cell">12 (21%)</td>
+    </tr>
+    <tr>
+     <td class="cell">1– 4 weeks</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">4 (22%)</td>
+     <td class="cell">4 (21%)</td>
+     <td class="cell">8 (14%)</td>
+    </tr>
+    <tr>
+     <td class="cell">1– 3 months</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">4 (22%)</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">8 (14%)</td>
+    </tr>
+    <tr>
+     <td class="cell">3– 6 months</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">3 (5%)</td>
+    </tr>
+    <tr>
+     <td class="cell">6– 12 months</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">4 (21%)</td>
+     <td class="cell">9 (16%)</td>
+    </tr>
+    <tr>
+     <td class="cell">&gt; 12 months</td>
+     <td class="cell">2 (11%)</td>
+     <td class="cell">4 (22%)</td>
+     <td class="cell">3 (16%)</td>
+     <td class="cell">9 (16%)</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Website element </th>
+     <th class="cell">MUSIC condition contents: emotion regulation via music-listening </th>
+     <th class="cell">CBTE condition contents: cognitive- behavioural strategies to quit smoking </th>
+    </tr>
+    <tr>
+     <td class="cell">Video 1</td>
+     <td class="cell">Background information normalising</td>
+     <td class="cell">Background information normalising</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">the difficulty of quitting smoking, and</td>
+     <td class="cell">the difficulty of quitting smoking, and</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">smoking cues which make it difficult.</td>
+     <td class="cell">smoking cues which make it difficult.</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">Background research suggesting how</td>
+     <td class="cell">Information about automatic thoughts,</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">music may provide an additional</td>
+     <td class="cell">and how changing cognitions with self-</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">strategy to help smokers quit.</td>
+     <td class="cell">talk can be used to cope with cravings.</td>
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Selecting the emotional cue most</td>
+     <td class="cell">Writing an automatic smoking thought</td>
+    </tr>
+    <tr>
+     <td class="cell">component 1</td>
+     <td class="cell">associated with smoking from a list.</td>
+     <td class="cell">and a self-talk example to cope with it.</td>
+    </tr>
+    <tr>
+     <td class="cell">Video 2</td>
+     <td class="cell">Explanation of the two-dimensional</td>
+     <td class="cell">Information about removing the reward</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">valence-arousal model of emotions.</td>
+     <td class="cell">of smoking by changing smoking</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">environment.</td>
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Clicking where previously-selected</td>
+     <td class="cell">Writing ideas for how to remove the</td>
+    </tr>
+    <tr>
+     <td class="cell">component 2</td>
+     <td class="cell">emotional cue lies on valence/arousal</td>
+     <td class="cell">reward from smoking, in a free-response</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">chart.</td>
+     <td class="cell">text box.</td>
+    </tr>
+    <tr>
+     <td class="cell">Video 3</td>
+     <td class="cell">Smoking to change feelings, and how</td>
+     <td class="cell">Automatic smoking habits, and changing</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">the feeling changes in terms of valence/</td>
+     <td class="cell">them by replacing smoking’s function.</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">arousal.</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Indicating how emotional smoking</td>
+     <td class="cell">Writing a situation in which smoking is</td>
+    </tr>
+    <tr>
+     <td class="cell">component 3</td>
+     <td class="cell">cue changes in valence/arousal after</td>
+     <td class="cell">performed habitually, in a free-response</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">smoking, by selecting “increases/</td>
+     <td class="cell">text box; writing a non-smoking</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">decreases/stays the same” from</td>
+     <td class="cell">replacement habit, in a free-response text</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">dropdown boxes.</td>
+     <td class="cell">box.</td>
+    </tr>
+    <tr>
+     <td class="cell">Video 4</td>
+     <td class="cell">Asking participants to consider</td>
+     <td class="cell">Asking participants to consider what</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">what music would match the target,</td>
+     <td class="cell">benefits they expect to get from smoking,</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">post-smoking emotion, followed by</td>
+     <td class="cell">and what non-smoking coping strategies</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">explanation that personally-meaningful</td>
+     <td class="cell">would provide the same benefits as</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">music works best.</td>
+     <td class="cell">smoking.</td>
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Writing the features of their chosen</td>
+     <td class="cell">Choosing a feeling linked to smoking from</td>
+    </tr>
+    <tr>
+     <td class="cell">component 4</td>
+     <td class="cell">music important in changing emotions,</td>
+     <td class="cell">a dropdown box; writing the expected</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">in a free-response text box.</td>
+     <td class="cell">benefit of smoking; writing a coping</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">strategy that would provide the same</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">expected benefit.</td>
+    </tr>
+    <tr>
+     <td class="cell">Video 5</td>
+     <td class="cell">Strategies for listening to music in</td>
+     <td class="cell">Importance of clarifying reasons for</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">various locations/situations, instead of</td>
+     <td class="cell">quitting, quit support, and smoke-free</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">smoking.</td>
+     <td class="cell">areas.</td>
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Writing ideas for how music-listening</td>
+     <td class="cell">Writing main reasons for quitting; writing</td>
+    </tr>
+    <tr>
+     <td class="cell">component 5</td>
+     <td class="cell">could be used to change feelings when</td>
+     <td class="cell">who will be a source of social support;</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">an emotional cue induces smoking</td>
+     <td class="cell">writing plans for creating smoke-free</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">urges, in a free-response text box.</td>
+     <td class="cell">areas.</td>
+    </tr>
+    <tr>
+     <td class="cell">Video 6</td>
+     <td class="cell">Creating a “quitting playlist”.</td>
+     <td class="cell">Incorporating strategies into a “quit plan”.</td>
+    </tr>
+    <tr>
+     <td class="cell">Interactive</td>
+     <td class="cell">Writing the first three songs and artists</td>
+     <td class="cell">Writing three main smoking triggers;</td>
+    </tr>
+    <tr>
+     <td class="cell">component 6</td>
+     <td class="cell">to be added to the quitting playlist.</td>
+     <td class="cell">writing coping strategies for those triggers.</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Predictor </th>
+     <th class="cell">F </th>
+     <th class="cell">p </th>
+     <th class="cell">η^{2}_{p} </th>
+     <th class="cell">B </th>
+     <th class="cell">SE </th>
+     <th class="cell">95% CI </th>
+    </tr>
+    <tr>
+     <td class="cell">T1 managing</td>
+     <td class="cell">6.79</td>
+     <td class="cell">.013</td>
+     <td class="cell">.17</td>
+     <td class="cell">− 3.61*</td>
+     <td class="cell">1.59</td>
+     <td class="cell">[− 6.79, − 0.66]</td>
+    </tr>
+    <tr>
+     <td class="cell">emotions</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intervention</td>
+     <td class="cell">0.78</td>
+     <td class="cell">.465</td>
+     <td class="cell">.04</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+    </tr>
+    <tr>
+     <td class="cell">program condition</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">MUSIC</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">− 4.85</td>
+     <td class="cell">6.39</td>
+     <td class="cell">[− 16.71, 5.58]</td>
+    </tr>
+    <tr>
+     <td class="cell">CBTE</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">− 8.65</td>
+     <td class="cell">7.39</td>
+     <td class="cell">[− 21.46, 5.81]</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <tr />
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Variable </th>
+     <th class="cell">(N = 55) </th>
+     <th class="cell">(n = 19) </th>
+     <th class="cell">(n = 18) </th>
+     <th class="cell">(n = 18) </th>
+    </tr>
+    <tr>
+     <td class="cell">Dependent variables</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Fagerstrom test for nicotine</td>
+     <td class="cell">4.92 (2.29)</td>
+     <td class="cell">4.89 (2.54)</td>
+     <td class="cell">5.14 (1.93)</td>
+     <td class="cell">4.74 (2.45)</td>
+    </tr>
+    <tr>
+     <td class="cell">dependence</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Craving experience</td>
+     <td class="cell">48.25 (21.64)</td>
+     <td class="cell">57.00 (20.21)</td>
+     <td class="cell">41.27 (22.59)</td>
+     <td class="cell">46.10 (20.17)</td>
+    </tr>
+    <tr>
+     <td class="cell">questionnaire</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Self-efficacy</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Importance of quitting</td>
+     <td class="cell">9.50 (1.06)</td>
+     <td class="cell">9.53 (0.90)</td>
+     <td class="cell">9.56 (1.15)</td>
+     <td class="cell">9.42 (1.17)</td>
+    </tr>
+    <tr>
+     <td class="cell">Confidence in quitting</td>
+     <td class="cell">6.41 (2.26)</td>
+     <td class="cell">6.53 (2.57)</td>
+     <td class="cell">6.67 (2.00)</td>
+     <td class="cell">6.05 (2.25)</td>
+    </tr>
+    <tr>
+     <td class="cell">Determination to quit</td>
+     <td class="cell">8.66 (1.79)</td>
+     <td class="cell">8.68 (2.19)</td>
+     <td class="cell">8.83 (1.34)</td>
+     <td class="cell">8.47 (1.81)</td>
+    </tr>
+    <tr>
+     <td class="cell">Confidence Managing Emotions</td>
+     <td class="cell">6.59 (2.18)</td>
+     <td class="cell">6.66 (2.57)</td>
+     <td class="cell">6.63 (1.46)</td>
+     <td class="cell">6.47 (2.44)</td>
+    </tr>
+    <tr>
+     <td class="cell">without smoking</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Other explanatory variables</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Alcohol use disorders</td>
+     <td class="cell">5.41 (2.90)</td>
+     <td class="cell">5.54 (3.04)</td>
+     <td class="cell">4.39 (2.30)</td>
+     <td class="cell">6.23 (3.11)</td>
+    </tr>
+    <tr>
+     <td class="cell">identification test</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Pharmacotherapy used</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Patch nicotine replacement</td>
+     <td class="cell">31 (55%)</td>
+     <td class="cell">5 (26%)</td>
+     <td class="cell">4 (22%)</td>
+     <td class="cell">2 (11%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Oral nicotine replacement</td>
+     <td class="cell">11 (20%)</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">2 (11%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Patches and oral nicotine</td>
+     <td class="cell">3 (5%)</td>
+     <td class="cell">12 (63%)</td>
+     <td class="cell">11 (61%)</td>
+     <td class="cell">8 (44%)</td>
+    </tr>
+    <tr>
+     <td class="cell">Champix</td>
+     <td class="cell">1 (2%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">0 (0%)</td>
+     <td class="cell">1 (6%)</td>
+    </tr>
+    <tr>
+     <td class="cell">None</td>
+     <td class="cell">10 (18%)</td>
+     <td class="cell">1 (5%)</td>
+     <td class="cell">3 (17%)</td>
+     <td class="cell">6 (33%)</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table7" id="table7" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Predictor </th>
+     <th class="cell">F </th>
+     <th class="cell">p </th>
+     <th class="cell">η^{2}_{p} </th>
+     <th class="cell">B </th>
+     <th class="cell">SE </th>
+     <th class="cell">95% CI </th>
+    </tr>
+    <tr>
+     <td class="cell">T1 Confidence Managing Emotions</td>
+     <td class="cell">5.28</td>
+     <td class="cell">.028</td>
+     <td class="cell">.14</td>
+     <td class="cell">0.38*</td>
+     <td class="cell">0.17</td>
+     <td class="cell">[0.06, 0.70]</td>
+    </tr>
+    <tr>
+     <td class="cell">T1 Nicotine dependence</td>
+     <td class="cell">6.44</td>
+     <td class="cell">.016</td>
+     <td class="cell">.16</td>
+     <td class="cell">− 0.36*</td>
+     <td class="cell">0.14</td>
+     <td class="cell">[− 0.58, − 0.02]</td>
+    </tr>
+    <tr>
+     <td class="cell">Intervention program condition</td>
+     <td class="cell">3.87</td>
+     <td class="cell">.031</td>
+     <td class="cell">.19</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+    </tr>
+    <tr>
+     <td class="cell">MUSIC</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">− 0.52</td>
+     <td class="cell">1.04</td>
+     <td class="cell">[− 2.54, 1.45]</td>
+    </tr>
+    <tr>
+     <td class="cell">CBTE</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">–</td>
+     <td class="cell">2.06*</td>
+     <td class="cell">0.76</td>
+     <td class="cell">[0.43, 3.69]</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1177.1029864916682822/tables/table7/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

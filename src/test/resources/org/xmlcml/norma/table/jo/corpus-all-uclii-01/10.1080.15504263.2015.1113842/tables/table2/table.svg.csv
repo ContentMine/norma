@@ -1,0 +1,49 @@
+"","Characteristics ","Exercise and Counseling (n = 35) ","Control (n = 35) ","Statistic, p-level "
+Age,M (SD),M (SD),,
+Age at smoking initiation,48.5 (10.9),48.4 (10.0),,
+Weight (kg),18.9 (5.1),17.6 (3.1),,"Z = 1.02, p = .20"
+BMI,72.2 (16.9),64.7 (13.9),,
+Cigarettes per day,24.9 (5.1),24.3 (5.1),,"Z = 0.75, p = .45"
+Nicotine dependence (FTND),21.9 (8.5),21 (9.3),,"Z = -0.07, p = .94"
+Expired CO level (ppm),6.3 (1.5),6.4 (1.8),,"Z = 0.16, p = .87"
+Prior quit attempts,30.3 (17.1),28.1 (12.3),,"Z = .17, p = .85"
+Longest time without cigarette,1.8 (1.2),1.8 (1.5),,"Z = -.78, p = .43"
+HADS-D score,596.4 (997.9),330.8 (482.4),,"Z = 0.16, p = .87"
+HADS-A score,10.7 (3.1),10.2 (2.7),,"t = 0.32, p = .74"
+AUDIT score,11.7 (3.7),11.4 (4.1),,"Z = -0.25, p = .80"
+TCQ-12 score,7.2 (6.5),6.9 (6.2),,"t = 0.6, p = .54"
+SSQ-12 score,42.7 (11.8),41.0 (11.0),,"t = -2.04, p = .04"
+PSPP score,28.4 (9.9),33.1 (9.0),,
+Global self-concept,,,,"t = -0.47, p = .64"
+Physical self-worth,2.9 (0.9),3.0 (0.9),,"Z = 0.31, p = .76"
+Perceived physical condition,2.4 (1.1),2.4 (0.9),,"Z = 0.44, p = .83"
+Sport competence,2.0 (1.0),2.0 (1.4),,"Z = 0.57, p = .99"
+Perceived strength,2.1 (1.2),2.0 (0.9),,"Z = 0.59, p = .99"
+SF-12,2.4 (1.1),2.4 (1.1),,"t = -0.79, p = .43"
+MVPA time,78.8 (9.7),78.1 (73.5),,"Z = 1.06, p = .29"
+Sedentary time,864.4 (719.4),1057.5 (911.9),,"Z = 1.20, p = .23"
+6MWT distance,7228.6 (3165.6),8509.3 (3460.5),,"t = 0.31, p = .76"
+"",580.2 (84.5),573.9 (69.1),,
+Gender,n (%),n (%),"χ (1) = 2.88, p = .09^{2}",
+Female,,,,
+Male,17 (48.6),24 (68.6),,
+Marital status,18 (51.4),11 (31.4),"χ (1) = 4.28, p = .04^{2}",
+Single,,,,
+Married/partnered,15 (42.8),23 (67.6),,
+Education,20 (57.1),11 (32.5),"χ (1) = 0.52, p = .47^{2}",
+High school,,,,
+College or higher,15 (42.8),18 (51.4),,
+Smoking cessation medication,20 (57.1),17 (48.5),,
+Nicotine Replacement Therapy,,,"χ (1) = 0.23, p = .63^{2}",
+Varenicline,17 (48.5),19 (54.2),"χ (1) = 0.51, p = .47^{2}",
+Current Axis I diagnoses,18 (51.4),15 (42.8),,
+Major depressive disorder,,,,"Fisher, p = .61"
+Dysthymia,3 (8.5),2 (5.7),"χ (1) = 0.54, p = .46^{2}",
+Substance abuse,15 (42.8),12 (34.2),,"Fisher, p = .49"
+Panic disorder without agoraphobia,4 (11.4),2 (5.7),,"Fisher, p = 1"
+Lifetime Axis I diagnoses,2 (5.7),2 (5.7),,
+Major depressive disorder,,,"χ (1) = 0.85, p = .35^{2}",
+Hypomanic episode,27 (77.1),30 (85.7),,"Fisher, p = 1"
+Current antidepressant,4 (11.4),4 (11.4),"χ (1) = 0.28, p = .59^{2}",
+Current anxiolytic,26 (74.2),24 (68.5),"χ (1) = 0.70, p = .40^{2}",
+IPAQ-SF,10 (28.5),7 (20.0),,"Fisher, p = .30"

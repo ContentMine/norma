@@ -1,0 +1,74 @@
+"","First Visit ","End of Intervention ","12-Week Visit ","24-Week Visit ","52-Week Visit "
+Demographic data,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,,
+MINI 5.0,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,,
+SF-12,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,
+AUDIT,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,,
+Smoking,,,,,
+Consumption,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+Abstinence,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+Expired CO,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+Fagerstro ̈m,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,,
+PSPP,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,
+SSQ-12,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,
+TCQ-12,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,
+Mood,,,,,
+HADS-D,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+HADS-A,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+Physical activity,,,,,
+Accelerometer,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,
+IPAQ-SF,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+Physical Fitness,,,,,
+Weight (kg),"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+"
+6MWT,"char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+","char: 2; name: squaresolid; f: MSAM7; fn: KIBJOM+MSAM7; e: Dictionary
+",,,

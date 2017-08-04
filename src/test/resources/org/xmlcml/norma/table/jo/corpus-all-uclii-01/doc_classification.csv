@@ -1,0 +1,83 @@
+UID/DOI,Table,Segmentation,CSV created,CSV wf,"Special: cont, rot, grid, band",Subtables,Comments
+10.1016.j.pec.2005.10.002,table1,[F]THB,Y,Y,N,Y,
+10.1016.j.pec.2005.10.002,table2, THBF,Y,Y,N,N,
+10.1016.j.pec.2005.10.002,table4,THBF,Y,Y,N,Y,
+10.1016.j.pec.2005.10.002,table3,THBF,Y,Y,N,Y,
+10.1186.1471-2458-14-563,table1,[F]THB,Y,Y,N,Y,
+10.1186.1471-2458-14-563,table2,[F][T],Y,N (1 line),Cont,Y,Body treated as title (no rows or columns)
+10.1186.1471-2458-14-563,table5,THF,Y,N (no sep),Cont,Y,"Body treated as header (columns only, no rows)"
+10.1186.1471-2458-14-563,table4,THF,Y,,Cont,N,"Body treated as header (columns only, no rows)"
+10.1186.1471-2458-14-563,table3,[F]THB,Y,Y,N,N,
+10.2196.mhealth.5768,table1,[F]TH,Y,N (content 1 line),N,Y,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.2196.mhealth.5768,table2,[F][TH[B],Y,N (content 1 line),N,Y,"Body treated as header (columns only, no rows); Footer treated as body (rows/cols)"
+10.2196.mhealth.5768,table3,[F][TH[B],Y,N (content 1 line),N,Y,"Body treated as header (columns only, no rows); Footer treated as body (rows/cols)"
+10.1007.s13142-010-0006-y,table1,[T],N,N (empty),Grid; Band (coloured header bg),Y,Horiz grid lines in body; header col bg only no lines - no segmentation
+10.1007.s13142-010-0006-y,table2,[T],N,N (empty),Grid; Band (coloured header bg),N,Horiz grid lines in body; header col bg only no lines - no segmentation
+10.1177.0956797611400615,table1,[F]TH,Y,N (1 line),N,N,Opaque green; seg failed
+10.1177.0956797611400615,table2,[F]TH,Y,N (1 line),N,N,Opaque green; seg failed
+10.1080.15504263.2015.1113842,table1,THBF,Y,Y,Plot not table,N,Plot - should be OOS - no numerical content to extract
+10.1080.15504263.2015.1113842,table2,THBF,Y,N - commas inside quotes,N,Y,Commas inside quotes - will break CSV
+10.1080.15504263.2015.1113842,table4,THBF,Y,Y,N,Y,
+10.1080.15504263.2015.1113842,table3,THBF,Y,N - commas inside quotes,N,N,Commas inside quotes - will break CSV
+10.1186.s12966-017-0535-6,table1,[F],N,N (empty),Rot,,
+10.1186.s12966-017-0535-6,table2,[F],N,N (empty),Rot,,
+10.1186.s12966-017-0535-6,table4,THBF,Y,N - commas inside quotes,N,N,Commas inside quotes - will break CSV
+10.1186.s12966-017-0535-6,table3,[F]THB,Y,N - commas inside quotes,N,N,
+10.1136.bmjopen-2016-12335,table5,THBF,Y,Y,Col bg,N,
+10.1136.bmjopen-2016-12335,table2,THBF,Y,Y,Col bg,,
+10.1136.bmjopen-2016-12335,table4,THBF,Y, ,Col bg,Y,
+10.2196.jmir.1963,table6,[F]TH,Y,N (1 line),N,N,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.2196.jmir.1963,table2,[F]TH,Y,N (1 line),N,N,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.2196.jmir.1963,table5,[F]TH,Y,N (content 1 line),N,Y,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.2196.jmir.1963,table4,[F]TH[B],Y,N (content 1 line),N,N,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.2196.jmir.1963,table3,[F]TH[B],Y,N (content 1 line),N,N,"Body treated as header (columns only, no rows); Font/spacing issues causing problems"
+10.1186.1471-2407-12-560,table1,[F]THB,Y,Y,N,Y,Subtable indent marked by initial dashes not just leading spaces (not resolved as subtable)
+10.1186.1471-2407-12-560,table2,[F]THB,Y,Y,N,Y,
+10.1186.1471-2407-12-560,table4,[F]THB,Y,Y,N,N,
+10.1186.1471-2407-12-560,table3,THBF,Y,Y,N,Y,
+10.1186.s12889-015-1453-7,table1,THBF,Y,Y,N,Y,Subtable indent marked by initial dashes not just leading spaces (not resolved as subtable)
+10.1111.add.12677,table2,THBF,Y,Y,N,Y,
+10.1111.add.12677,table3,[F],N,N (empty),Rot,Y,
+10.1080.21642850.2016.1256211,table1,THBF,Y,Y,N,N,
+10.1177.1029864916682822,table6,[F],N,N (empty),Rot,Y,
+10.1177.1029864916682822,table1,THBF,Y,Y,N,N,
+10.1177.1029864916682822,table2,[F]THB,Y,Y,N,N,Narrative table as layout (text only) - make OOS
+10.1177.1029864916682822,table5,THBF,Y,Y,N,Y,
+10.1177.1029864916682822,table4,[F],N,N (empty),Rot,Y,
+10.1177.1029864916682822,table3,THBF,Y,Y,N,Y,
+10.1177.1029864916682822,table7,THBF,Y,Y,N,Y,
+10.1093.alcalc.ags133,table1,THBF,Y,Y,N,Y,
+10.1093.alcalc.ags133,table2,[F]THB,Y,Y,N,Y,
+10.1093.alcalc.ags133,table5,THBF,Y,Y,N,Y,"All rows under single subtable heading (just layout, not a true case of subtables?)"
+10.1093.alcalc.ags133,table4,THBF,Y,Y,N,Y,
+10.1093.alcalc.ags133,table3,[F]THB,Y,Y,N,Y,
+10.1016.S2213-2600_14_70195-X,table1,[F]T[S],Y,N (1 line),Banded; col bg,N,
+10.1016.S2213-2600_14_70195-X,table2,[F][T][H][S],Y,N (2 lines),Banded; col bg,Y,Title at bottom
+10.1016.S2213-2600_14_70195-X,table3, THBF,Y,N (1 line),Banded; col bg,,Title at bottom; subtable incorrectly applied (opaque green (layered translucent?))
+_10.1037.a0021821,table1,THBF,Y,"Y; font info in text, wrong chars",N,Y,Font; Unrecognised char <
+_10.1037.a0021821,table2,[F]THB,Y,"Y; Font info in text, wrong chars",N,Y,Font; Unrecognised char <
+_10.1111.j.1465-3362.2008.00012.x,table1,THBF,Y,Y,N,Y,Subtables indicated by italic headings
+_10.1111.j.1465-3362.2008.00012.x,table2,THBF,Y,"Y; font info in text, wrong chars",N,Y,Font; Unrecognised and incorrect chars
+_10.1111.j.1465-3362.2008.00012.x,table3,[F]THB,Y,Y,N,N,
+_10.1038.ijo.2016.239,table1,[T],N,N (empty),Framed,Y,
+_10.1038.ijo.2016.239,table2,[T],N,N (empty),Rot; Framed,Y,
+_10.1038.ijo.2016.239,table3,[F][T],N,N (empty),Rot; Framed,N,
+_10.1016.j.ypmed.2009.07.022,table1,THBF,Y,Y,B bg col,Y,
+_10.1016.j.ypmed.2009.07.022,table2,THBF,Y,Y,B bg col,N,
+_10.1016.j.ypmed.2009.07.022,table3,THBF,Y,Y,B bg col,N,
+_bmj.2001.323.1–5,table1,[T][H][B][F],Y,N (content 2 lines),Grid; horiz lines,N,Horiz grid lines in body; THBF but first row as B and next as F
+_bmj.2001.323.1–5,table2,[T][H][B][F],Y,N (content 2 lines),Grid; horiz lines,Y,Horiz grid lines in body; THBF but first row as B and next as F
+_bmj.2001.323.1–5,table4,[T][H][B][F],Y,N (content 2 lines),Grid; horiz lines,Y,Horiz grid lines in body; THBF but first row as B and next as F
+_bmj.2001.323.1–5,table3,[T][H][B][F],Y,N (content 2 lines),Grid; horiz lines,N,Horiz grid lines in body; THBF but first row as B and next as F
+_10.1007.s00038-009-8028-2,table2,[F][T]HB,Y,Y; title/header capture,Col bg; H lines and col bg,Y,Title to right of table; partially 'captured' as extra header column
+_10.1007.s00038-009-8028-2,table4,[F]THB,Y,Y,Col bg; H lines and col bg,Y,Subtable annot on header row
+_10.1007.s00038-009-8028-2,table3,THBF,Y,Y,Col bg; H lines and col bg,Y,
+_10.1038.sj.ijo.0803805,table2,[F][T][H][S],Y,Y,N,Y,T captures top row of header
+_10.1038.sj.ijo.0803805,table4, THBF,Y,N (1 line),N,N,T captures top row of header
+_10.1038.sj.ijo.0803805,table3,[F][T],N,N (empty),N,Y,
+_10.1348.135910705X42940,table1, THBF,Y,Y,N,N,Font: unrecognised characters <
+_10.1348.135910705X42940,table2,THBF,Y,Y,N,N,Font: unrecognised characters <
+_10.1348.135910705X42940,table4,THBF,Y,Y,N,Y,Font: unrecognised characters <
+_10.1348.135910705X42940,table3,THBF,Y,Y,N,Y,Font: unrecognised characters <
+_10.1093.her.cym014,table1,[F]THB,Y,Y,N,,
+_10.1093.her.cym014,table2,[F]THB,Y,Y,Y,,

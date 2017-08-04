@@ -1,0 +1,296 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>_10.1016.j.ypmed.2009.07.022</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th />
+     <th />
+     <th class="cell">Control </th>
+     <th class="cell">PAAC </th>
+    </tr>
+    <tr>
+     <td class="cell">BMI (kg/m )^{2}</td>
+     <td class="cell">Grade 2</td>
+     <td class="cell">Female</td>
+     <td class="cell">17.4 (3.0)</td>
+     <td class="cell">17.7 (3.0)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">17.5 (3.1)</td>
+     <td class="cell">17.7 (3.0)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">Grade 3</td>
+     <td class="cell">Female</td>
+     <td class="cell">18.7 (3.8)</td>
+     <td class="cell">18.4 (3.4)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">18.6 (4.0)</td>
+     <td class="cell">18.1 (3.4)</td>
+    </tr>
+    <tr>
+     <td class="cell">Age (years)</td>
+     <td class="cell">Grade 2</td>
+     <td class="cell">Female</td>
+     <td class="cell">7.8 (0.4)</td>
+     <td class="cell">7.7 (0.3)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">7.8 (0.3)</td>
+     <td class="cell">7.7 (0.4)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">Grade 3</td>
+     <td class="cell">Female</td>
+     <td class="cell">8.7 (0.4)</td>
+     <td class="cell">8.7 (0.4)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">8.8 (0.4)</td>
+     <td class="cell">8.7 (0.3)</td>
+    </tr>
+    <tr>
+     <td class="cell">Height (cm)</td>
+     <td class="cell">Grade 2</td>
+     <td class="cell">Female</td>
+     <td class="cell">126.6 (5.6)</td>
+     <td class="cell">125.6 (5.6)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">127.3 (6.4)</td>
+     <td class="cell">127.3 (6.2)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">Grade 3</td>
+     <td class="cell">Female</td>
+     <td class="cell">132.1 (6.5)</td>
+     <td class="cell">131.9 (6.2)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">132.9 (6.2)</td>
+     <td class="cell">132.4 (6.4)</td>
+    </tr>
+    <tr>
+     <td class="cell">Weight (kg)</td>
+     <td class="cell">Grade 2</td>
+     <td class="cell">Female</td>
+     <td class="cell">28.2 (6.5)</td>
+     <td class="cell">28.3 (6.5)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">28.6 (7.3)</td>
+     <td class="cell">28.9 (6.8)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="cell">Grade 3</td>
+     <td class="cell">Female</td>
+     <td class="cell">33.0 (9.5)</td>
+     <td class="cell">32.2 (7.6)</td>
+    </tr>
+    <tr>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">Male</td>
+     <td class="cell">33.1 (9.1)</td>
+     <td class="cell">32.1 (8.3)</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/_10.1016.j.ypmed.2009.07.022/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Semester </th>
+     <th class="cell">Control </th>
+     <th class="cell">n </th>
+     <th class="cell">PAAC </th>
+     <th class="cell">n </th>
+     <th class="cell">p-value </th>
+    </tr>
+    <tr>
+     <td class="cell">Fall 2003</td>
+     <td class="cell">18.0 (3.7)</td>
+     <td class="cell">713</td>
+     <td class="cell">17.9 (3.1)</td>
+     <td class="cell">814</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Spring 2006</td>
+     <td class="cell">20.0 (4.6)</td>
+     <td class="cell">698</td>
+     <td class="cell">19.9 (4.1)</td>
+     <td class="cell">792</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Change from baseline</td>
+     <td class="cell">2.0 (1.9)</td>
+     <td class="empty" />
+     <td class="cell">2.0 (1.9)</td>
+     <td class="empty" />
+     <td class="cell">0.83</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/_10.1016.j.ypmed.2009.07.022/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th class="cell">Accelerometer Periods </th>
+     <th class="cell">Control (n = 90) </th>
+     <th class="cell">PAAC (n = 77) </th>
+     <th class="cell">p^{a} </th>
+    </tr>
+    <tr>
+     <td class="cell">4-day average</td>
+     <td class="cell">744 (183)</td>
+     <td class="cell">851 (233)</td>
+     <td class="cell">0.007</td>
+    </tr>
+    <tr>
+     <td class="cell">Weekday</td>
+     <td class="cell">738 (192)</td>
+     <td class="cell">800 (222)</td>
+     <td class="cell">NS</td>
+    </tr>
+    <tr>
+     <td class="cell">Weekend day</td>
+     <td class="cell">750 (219)</td>
+     <td class="cell">901 (279)</td>
+     <td class="cell">0.001</td>
+    </tr>
+    <tr>
+     <td class="cell">During school (8 AM–2:59 PM)</td>
+     <td class="cell">606 (205)</td>
+     <td class="cell">688 (199)</td>
+     <td class="cell">0.01</td>
+    </tr>
+    <tr>
+     <td class="cell">After school (3 PM–5:59 PM)</td>
+     <td class="cell">946 (332)</td>
+     <td class="cell">1017 (365)</td>
+     <td class="cell">NS</td>
+    </tr>
+    <tr>
+     <td class="cell">Evening (6 PM–11 PM)</td>
+     <td class="cell">812 (349)</td>
+     <td class="cell">891 (361)</td>
+     <td class="cell">NS</td>
+    </tr>
+    <tr>
+     <td class="cell">Minutes of MVPA (≥ 4 METs)</td>
+     <td class="cell">72 (36.5)</td>
+     <td class="cell">98 (42.7)</td>
+     <td class="cell">0.001</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/_10.1016.j.ypmed.2009.07.022/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

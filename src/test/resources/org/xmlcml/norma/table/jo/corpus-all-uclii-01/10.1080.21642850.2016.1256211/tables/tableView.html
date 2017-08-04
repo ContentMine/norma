@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>10.1080.21642850.2016.1256211</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">Mean </th>
+     <th class="cell">SD </th>
+     <th class="cell">Mean </th>
+     <th class="cell">SD </th>
+    </tr>
+    <tr>
+     <td class="cell">BL F&amp;V</td>
+     <td class="cell">3.54</td>
+     <td class="cell">1.44</td>
+     <td class="cell">3.78</td>
+     <td class="cell">1.56</td>
+     <td class="cell">3.24</td>
+     <td class="cell">1.50</td>
+    </tr>
+    <tr>
+     <td class="cell">FU F&amp;V</td>
+     <td class="cell">4.11</td>
+     <td class="cell">1.39</td>
+     <td class="cell">3.72</td>
+     <td class="cell">1.49</td>
+     <td class="cell">3.28</td>
+     <td class="cell">1.50</td>
+    </tr>
+    <tr>
+     <td class="cell">BL Snack</td>
+     <td class="cell">4.24</td>
+     <td class="cell">2.03</td>
+     <td class="cell">4.98</td>
+     <td class="cell">1.76</td>
+     <td class="cell">5.05</td>
+     <td class="cell">2.10</td>
+    </tr>
+    <tr>
+     <td class="cell">FU Snack</td>
+     <td class="cell">4.42</td>
+     <td class="cell">2.10</td>
+     <td class="cell">4.80</td>
+     <td class="cell">1.80</td>
+     <td class="cell">4.91</td>
+     <td class="cell">2.11</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1080.21642850.2016.1256211/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>

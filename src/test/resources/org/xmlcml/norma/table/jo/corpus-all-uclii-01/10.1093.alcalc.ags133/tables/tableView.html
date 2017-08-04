@@ -1,0 +1,668 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script>
+function openTab(evt, currentTabId, tabClass) {
+    var i, element, tablinks;
+
+    element = document.getElementsByClassName(tabClass);
+    for (i = 0; i < element.length; i++) {
+        element[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(currentTabId).style.display = "block";
+    evt.currentTarget.className += " active";
+    
+}
+</script>
+<style>
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* th */
+th {
+	background-color: #fdd;
+}
+
+/* td */
+td.cell {
+	background-color: #ddf;
+	padding: 1px;
+}
+td.empty {
+	background-color: #eef;
+	padding: 1px;
+}
+</style></head><body><h1>10.1093.alcalc.ags133</h1><div class="tab"><button title="table1" class="tablinks" onClick="openTab(event, 'table1', 'tabcontent')">table1</button><button title="table2" class="tablinks" onClick="openTab(event, 'table2', 'tabcontent')">table2</button><button title="table5" class="tablinks" onClick="openTab(event, 'table5', 'tabcontent')">table5</button><button title="table4" class="tablinks" onClick="openTab(event, 'table4', 'tabcontent')">table4</button><button title="table3" class="tablinks" onClick="openTab(event, 'table3', 'tabcontent')">table3</button></div><div class="tabcontentdiv"><table title="table1" id="table1" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">Intervention (n = 456) </th>
+     <th class="cell">Control (n = 451) </th>
+     <th class="cell">Total sample (n = 907) </th>
+     <th class="cell">Significant difference I and C </th>
+    </tr>
+    <tr>
+     <td class="cell">Male</td>
+     <td class="cell">60.3</td>
+     <td class="cell">60.1</td>
+     <td class="cell">60.2</td>
+     <td class="cell">n.s.</td>
+    </tr>
+    <tr>
+     <td class="cell">Age, mean (SD)</td>
+     <td class="cell">20.9 (1.7)</td>
+     <td class="cell">20.8 (1.7)</td>
+     <td class="cell">20.8 (1.7)</td>
+     <td class="cell">n.s.</td>
+    </tr>
+    <tr>
+     <td class="cell">Education</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">n.s.</td>
+    </tr>
+    <tr>
+     <td class="cell">Higher professional education</td>
+     <td class="cell">26.5</td>
+     <td class="cell">25.9</td>
+     <td class="cell">26.2</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">University</td>
+     <td class="cell">73.2</td>
+     <td class="cell">73.8</td>
+     <td class="cell">73.5</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Moderators</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">_{a}</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">n.s.</td>
+    </tr>
+    <tr>
+     <td class="cell">Contemplation stage_{b}</td>
+     <td class="cell">20.4</td>
+     <td class="cell">22.4</td>
+     <td class="cell">21.4</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Problem drinking</td>
+     <td class="cell">38.8</td>
+     <td class="cell">39.2</td>
+     <td class="cell">39.0</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Freshmen</td>
+     <td class="cell">23.3</td>
+     <td class="cell">19.3</td>
+     <td class="cell">21.3</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Fraternity or sorority membership</td>
+     <td class="cell">50.4</td>
+     <td class="cell">52.3</td>
+     <td class="cell">51.4</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Carnival participation T1</td>
+     <td class="cell">43.9</td>
+     <td class="cell">45.5</td>
+     <td class="cell">44.7</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Measures</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">_{c}</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="cell">n.s.</td>
+    </tr>
+    <tr>
+     <td class="cell">Heavy drinking</td>
+     <td class="cell">82.2</td>
+     <td class="cell">82.3</td>
+     <td class="cell">82.2</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Frequency of binge drinking</td>
+     <td class="cell">81.8</td>
+     <td class="cell">81.6</td>
+     <td class="cell">81.7</td>
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Weekly alcohol consumption, mean (SD)</td>
+     <td class="cell">22.0 (15.9)</td>
+     <td class="cell">21.6 (16.0)</td>
+     <td class="cell">21.8 (15.9)</td>
+     <td class="empty" />
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1093.alcalc.ags133/tables/table1/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table2" id="table2" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">n </th>
+     <th class="cell">% </th>
+     <th class="cell">n </th>
+     <th class="cell">% </th>
+     <th class="cell">OR </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+    </tr>
+    <tr>
+     <td class="cell">Heavy drinking</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">1-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">456</td>
+     <td class="cell">81.5</td>
+     <td class="cell">451</td>
+     <td class="cell">82.8</td>
+     <td class="cell">0.92</td>
+     <td class="cell">[0.64–1.31]</td>
+     <td class="cell">0.63</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">412</td>
+     <td class="cell">81.6</td>
+     <td class="cell">409</td>
+     <td class="cell">83.1</td>
+     <td class="cell">0.90</td>
+     <td class="cell">[0.62–1.29]</td>
+     <td class="cell">0.55</td>
+    </tr>
+    <tr>
+     <td class="cell">6-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">456</td>
+     <td class="cell">68.0</td>
+     <td class="cell">451</td>
+     <td class="cell">66.0</td>
+     <td class="cell">1.10</td>
+     <td class="cell">[0.83–1.46]</td>
+     <td class="cell">0.52</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">412</td>
+     <td class="cell">67.5</td>
+     <td class="cell">409</td>
+     <td class="cell">65.5</td>
+     <td class="cell">1.09</td>
+     <td class="cell">[0.82–1.46]</td>
+     <td class="cell">0.55</td>
+    </tr>
+    <tr>
+     <td class="cell">Frequency of binge drinking</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">1-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">456</td>
+     <td class="cell">80.2</td>
+     <td class="cell">451</td>
+     <td class="cell">82.3</td>
+     <td class="cell">0.88</td>
+     <td class="cell">[0.61–1.25]</td>
+     <td class="cell">0.46</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">412</td>
+     <td class="cell">80.6</td>
+     <td class="cell">409</td>
+     <td class="cell">82.9</td>
+     <td class="cell">0.86</td>
+     <td class="cell">[0.60–1.22]</td>
+     <td class="cell">0.39</td>
+    </tr>
+    <tr>
+     <td class="cell">6-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">456</td>
+     <td class="cell">67.0</td>
+     <td class="cell">451</td>
+     <td class="cell">65.2</td>
+     <td class="cell">1.09</td>
+     <td class="cell">[0.82–1.44]</td>
+     <td class="cell">0.56</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">412</td>
+     <td class="cell">66.7</td>
+     <td class="cell">409</td>
+     <td class="cell">65.0</td>
+     <td class="cell">1.08</td>
+     <td class="cell">[0.81–1.44]</td>
+     <td class="cell">0.61</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1093.alcalc.ags133/tables/table2/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table5" id="table5" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">β </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+     <th class="cell">β </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+    </tr>
+    <tr>
+     <td class="cell">Weekly alcohol consumption by</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Gender</td>
+     <td class="cell">0.10</td>
+     <td class="cell">[−3.12 to 9.67]</td>
+     <td class="cell">0.32</td>
+     <td class="cell">0.05</td>
+     <td class="cell">[−4.14 to 6.69]</td>
+     <td class="cell">0.64</td>
+    </tr>
+    <tr>
+     <td class="cell">Readiness to change T0</td>
+     <td class="cell">−0.10</td>
+     <td class="cell">[−15.89 to 0.06]</td>
+     <td class="cell">0.05</td>
+     <td class="cell">−0.02</td>
+     <td class="cell">[−8.01 to 5.27]</td>
+     <td class="cell">0.69</td>
+    </tr>
+    <tr>
+     <td class="cell">Problem drinking T0</td>
+     <td class="cell">−0.12</td>
+     <td class="cell">[−14.09 to −1.24]</td>
+     <td class="cell">0.02</td>
+     <td class="cell">−0.02</td>
+     <td class="cell">[−6.69 to 4.37]</td>
+     <td class="cell">0.68</td>
+    </tr>
+    <tr>
+     <td class="cell">Freshmen T0</td>
+     <td class="cell">−0.01</td>
+     <td class="cell">[−8.65 to 7.50]</td>
+     <td class="cell">0.89</td>
+     <td class="cell">0.04</td>
+     <td class="cell">[−3.78 to 9.58]</td>
+     <td class="cell">0.40</td>
+    </tr>
+    <tr>
+     <td class="cell">Fraternity or sorority membership T0</td>
+     <td class="cell">0.12</td>
+     <td class="cell">[−3.16 to 10.06]</td>
+     <td class="cell">0.31</td>
+     <td class="cell">0.00</td>
+     <td class="cell">[−5.36 to 5.45]</td>
+     <td class="cell">0.99</td>
+    </tr>
+    <tr>
+     <td class="cell">Carnival participation T1</td>
+     <td class="cell">−0.12</td>
+     <td class="cell">[−13.52 to −1.74]</td>
+     <td class="cell">0.01</td>
+     <td class="cell">−0.05</td>
+     <td class="cell">[−7.84 to 3.21]</td>
+     <td class="cell">0.41</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1093.alcalc.ags133/tables/table5/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table4" id="table4" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">OR </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+     <th class="cell">OR </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+    </tr>
+    <tr>
+     <td class="cell">Heavy drinking by</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Gender</td>
+     <td class="cell">0.72</td>
+     <td class="cell">[0.35–1.44]</td>
+     <td class="cell">0.35</td>
+     <td class="cell">1.39</td>
+     <td class="cell">[0.78–2.49]</td>
+     <td class="cell">0.27</td>
+    </tr>
+    <tr>
+     <td class="cell">Readiness to change T0</td>
+     <td class="cell">0.61</td>
+     <td class="cell">[0.26–1.48]</td>
+     <td class="cell">0.28</td>
+     <td class="cell">1.28</td>
+     <td class="cell">[0.64–2.55]</td>
+     <td class="cell">0.49</td>
+    </tr>
+    <tr>
+     <td class="cell">Problem drinking T0</td>
+     <td class="cell">0.75</td>
+     <td class="cell">[0.35–1.65]</td>
+     <td class="cell">0.48</td>
+     <td class="cell">0.74</td>
+     <td class="cell">[0.41–1.33]</td>
+     <td class="cell">0.31</td>
+    </tr>
+    <tr>
+     <td class="cell">Freshmen T0</td>
+     <td class="cell">1.04</td>
+     <td class="cell">[0.45–2.38]</td>
+     <td class="cell">0.93</td>
+     <td class="cell">1.15</td>
+     <td class="cell">[0.57–2.33]</td>
+     <td class="cell">0.69</td>
+    </tr>
+    <tr>
+     <td class="cell">Fraternity or sorority membership T0</td>
+     <td class="cell">1.07</td>
+     <td class="cell">[0.53–2.18]</td>
+     <td class="cell">0.85</td>
+     <td class="cell">0.87</td>
+     <td class="cell">[0.48–1.56]</td>
+     <td class="cell">0.63</td>
+    </tr>
+    <tr>
+     <td class="cell">Carnival participation T1</td>
+     <td class="cell">0.78</td>
+     <td class="cell">[0.31–1.94]</td>
+     <td class="cell">0.59</td>
+     <td class="cell">0.99</td>
+     <td class="cell">[0.55–1.80]</td>
+     <td class="cell">0.99</td>
+    </tr>
+    <tr>
+     <td class="cell">Frequency of binge drinking by</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Gender</td>
+     <td class="cell">0.75</td>
+     <td class="cell">[0.37–1.52]</td>
+     <td class="cell">0.43</td>
+     <td class="cell">1.38</td>
+     <td class="cell">[0.78–2.44]</td>
+     <td class="cell">0.27</td>
+    </tr>
+    <tr>
+     <td class="cell">Readiness to change T0</td>
+     <td class="cell">0.67</td>
+     <td class="cell">[0.28–1.61]</td>
+     <td class="cell">0.37</td>
+     <td class="cell">1.30</td>
+     <td class="cell">[0.65–2.59]</td>
+     <td class="cell">0.45</td>
+    </tr>
+    <tr>
+     <td class="cell">Problem drinking T0</td>
+     <td class="cell">0.70</td>
+     <td class="cell">[0.32–1.49]</td>
+     <td class="cell">0.35</td>
+     <td class="cell">0.75</td>
+     <td class="cell">[0.41–1.36]</td>
+     <td class="cell">0.33</td>
+    </tr>
+    <tr>
+     <td class="cell">Freshmen T0</td>
+     <td class="cell">1.00</td>
+     <td class="cell">[0.45–2.24]</td>
+     <td class="cell">0.99</td>
+     <td class="cell">1.14</td>
+     <td class="cell">[0.57–2.32]</td>
+     <td class="cell">0.71</td>
+    </tr>
+    <tr>
+     <td class="cell">Fraternity or sorority membership T0</td>
+     <td class="cell">1.08</td>
+     <td class="cell">[0.54–2.18]</td>
+     <td class="cell">0.83</td>
+     <td class="cell">0.90</td>
+     <td class="cell">[0.50–1.61]</td>
+     <td class="cell">0.72</td>
+    </tr>
+    <tr>
+     <td class="cell">Carnival participation T1</td>
+     <td class="cell">0.83</td>
+     <td class="cell">[0.33–2.09]</td>
+     <td class="cell">0.69</td>
+     <td class="cell">1.06</td>
+     <td class="cell">[0.59–1.91]</td>
+     <td class="cell">0.84</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1093.alcalc.ags133/tables/table4/table.svg.html</p>
+  </td>
+ </tr>
+</table><table title="table3" id="table3" class="tabcontent">
+ <tr>
+  <td>
+   <table class="table">
+    <caption />
+    <tr>
+     <th />
+     <th class="cell">M </th>
+     <th class="cell">SD </th>
+     <th class="cell">M </th>
+     <th class="cell">SD </th>
+     <th class="cell">β </th>
+     <th class="cell">95% CI </th>
+     <th class="cell">P </th>
+    </tr>
+    <tr>
+     <td class="cell">1-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">28.6</td>
+     <td class="cell">22.6</td>
+     <td class="cell">31.0</td>
+     <td class="cell">26.9</td>
+     <td class="cell">−0.06</td>
+     <td class="cell">[−6.11 to 0.45]</td>
+     <td class="cell">0.09</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">28.4</td>
+     <td class="cell">22.9</td>
+     <td class="cell">31.7</td>
+     <td class="cell">27.5</td>
+     <td class="cell">−0.07</td>
+     <td class="cell">[−6.74 to 0.20]</td>
+     <td class="cell">0.07</td>
+    </tr>
+    <tr>
+     <td class="cell">6-month follow-up</td>
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+     <td class="empty" />
+    </tr>
+    <tr>
+     <td class="cell">Intention-to-treat</td>
+     <td class="cell">21.5</td>
+     <td class="cell">20.6</td>
+     <td class="cell">22.4</td>
+     <td class="cell">20.5</td>
+     <td class="cell">−0.02</td>
+     <td class="cell">[−3.61 to 1.88]</td>
+     <td class="cell">0.54</td>
+    </tr>
+    <tr>
+     <td class="cell">Completers-only</td>
+     <td class="cell">21.2</td>
+     <td class="cell">20.7</td>
+     <td class="cell">22.3</td>
+     <td class="cell">20.6</td>
+     <td class="cell">−0.03</td>
+     <td class="cell">[−3.94 to 1.72]</td>
+     <td class="cell">0.44</td>
+    </tr>
+   </table>
+   <p>corpus-all-uclii-01/10.1093.alcalc.ags133/tables/table3/table.svg.html</p>
+  </td>
+ </tr>
+</table></div></body></html>
