@@ -160,6 +160,19 @@ public class NormaFixtures {
 		FileUtils.write(new File(projectDir, "cleaned.xml"), cleaner.getElement().toXML());
 	}
 	
+	/** compacts a filename tracking tables or figures hierarchy
+	 * 
+	 * @param root
+	 * @param file
+	 * @return
+	 */
+	public static File getCompactSVGFile(File root, File file) {
+		File parent = file.getParentFile();
+		File ggParent = parent.getParentFile().getParentFile();
+		return new File(new File(root, ggParent.getName()), parent.getName()+".svg");
+		
+	}
+
 	
 
 }

@@ -1,0 +1,25 @@
+"","Feasibility study ","Control ","Intervention "
+N schools,1,1,2
+N participants,234,138,458
+invited*,,,
+N parent opt out,9,6,23
+N student opt out,13,0,8
+N non-attendance,29,17,82
+N assented,183,115,345
+N 2 waves,160*,115,285
+measured,,,
+N 2 waves AG,57,68,152
+N 2 waves ≥3d,52,43,112
+AG,,,
+Age,13.7 (0.4),13.1,13.2 (0.4)
+"",,(0.3),
+Sex N (% male),71 (43.3%),50,164 (47.7%)
+"",,(43.5),
+Height (cm),165.8 (8.8),161.8,162.6 (8.5)
+"",,(7.0),
+Weight (kg),58.7 (12.7),53.0,53.4 (10.6)
+"",,(10.6),
+BMI z-score,0.63 (1.2),0.52,0.44 (1.1)
+"",,(1.1),
+Per cent of,26.9,22.7,24.1
+overweight/obese,,,
