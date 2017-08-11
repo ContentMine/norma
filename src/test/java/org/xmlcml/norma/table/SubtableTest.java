@@ -7,7 +7,6 @@ package org.xmlcml.norma.table;
 
 import java.io.File;
 import java.io.IOException;
-import nu.xom.Elements;
 import org.junit.Test;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
