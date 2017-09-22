@@ -28,20 +28,4 @@ public class AstrophysTest {
 		XMLUtil.debug(htmlElement, new FileOutputStream("target/astrophys/285.html"), 1);
 	}
 	
-	@Test
-	@Ignore // plot lost
-	public void testExtractPlot() {
-		GraphicsElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.TEST_ASTROPHYS_DIR, "754_2_85.fig1.svg"));
-		SVGPlot plot = new SVGPlot(rawChart);
-		plot.createPlot();
-		List<SVGText> textList = plot.getSVGTextList();
-		List<SVGPolyline> lineList = plot.getSVGPolylineList();
-		int[] sizes = {294, 178, 178};
-		Assert.assertEquals(sizes.length,  lineList.size());
-		int i = 0;
-		for (SVGPolyline line : lineList) {
-			Assert.assertEquals(sizes[i++], line.getReal2Array().size());
-//			System.out.println(line.size()+"/"+line.getReal2Array().format(1));
-		}
-	}
 }

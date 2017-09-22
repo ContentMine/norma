@@ -59,6 +59,7 @@ public class LargeTableTest {
 	public void testCProject() {
 		// these ones have single text characters
 		File sourceDir = new File("../../cm-ucl/corpus-oa-pmr/");
+		/** only works for PMR */
 		if (sourceDir.exists()) {
 			File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v01/");
 //			File targetDir = new File("target/corpus-oa-pmr-v01/");
@@ -71,6 +72,7 @@ public class LargeTableTest {
 			LOG.debug("no data, skipped");
 		}
 	}
+	
 	
 	/** align rows and columns
 	 * 
