@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.pdfbox.exceptions.COSVisitorException;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 public class PDFSplitter {
@@ -66,7 +65,7 @@ public class PDFSplitter {
     public void saveFile(File outfile) throws IOException {
 		try {
 			document.save(outfile);
-		} catch (COSVisitorException e) {
+		} catch (/*COSVisitor*/Exception e) {
 			throw new RuntimeException("cannot save file", e);
 		}
 		document.close();

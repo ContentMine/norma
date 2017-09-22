@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -33,7 +34,7 @@ import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.normalize.TextDecorator;
-import org.xmlcml.graphics.svg.plot.PlotBox;
+import org.xmlcml.graphics.svg.plot.SVGMediaBox;
 import org.xmlcml.html.HtmlElement;
 import org.xmlcml.html.HtmlFactory;
 import org.xmlcml.html.HtmlTable;
@@ -253,6 +254,7 @@ public class NormaTransformer {
 		File dir = currentCTree.getDirectory();
 		IOFileFilter ioFileFilter1 = ioFileFilter;
 		File[] files = Utils.getFilesWithFilter(dir, ioFileFilter1);
+		LOG.debug("filtered files: "+Arrays.asList(files));
 		transformFiles(files);
 	}
 
@@ -308,8 +310,8 @@ public class NormaTransformer {
 		if (inputDirName != null && !"null".equals(inputDirName)) { // check for duplicate code
 			parseInputDirectoryAndAddDefaults(inputDirName, outputDirName);
 		} else if (ioFileFilter != null) {
+			// used later in transformFilteredFiles() on ctree.dir
 			LOG.debug("fileFilter: "+ioFileFilter);
-			LOG.debug("IGNORED, but MUST CHANGE");
 		} else {
 			try {
 				parseInputFile();
@@ -317,7 +319,8 @@ public class NormaTransformer {
 				LOG.warn("Cannot parse file: "+currentCTree.getDirectory()+"; "+e);
 			}
 		} 
-		LOG.debug("inputFile: "+inputFile+"; outputFile: "+outputFile + "; fileFilter: " + ioFileFilter + "; inputDir: "+inputDirName+"; outputDir: "+outputDirName);
+		LOG.debug("inputFile: "+inputFile+"; outputFile: "+outputFile + "; fileFilter: " + ioFileFilter + "; inputDir: "+inputDirName+
+				"; ctree: "+this.currentCTree.getDirectory()+"; outputDir: "+outputDirName);
 	}
 
 	private void parseInputFile() {
@@ -381,6 +384,7 @@ public class NormaTransformer {
 			} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
 				System.out.print("?@?");
 			} else {
+				e.printStackTrace();
 				LOG.error("BAD TRANSFORM ("+e.getMessage()+") "+inputFile);
 			}
 		}
@@ -607,7 +611,7 @@ public class NormaTransformer {
 		TextDecorator textDecorator = new TextDecorator(); 
 		GraphicsElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
-		SVGG g = textDecorator.compact(textList);
+		SVGG g = textDecorator.compactTexts(textList);
 		svgElement.appendChild(g);
 		return svgElement;
 	}
@@ -625,14 +629,14 @@ public class NormaTransformer {
 			throw new RuntimeException("Null inputSVGFile");
 		}
 		String csv = null;
-		PlotBox plotBox = new PlotBox();
+		SVGMediaBox plotBox = new SVGMediaBox();
 		try {
 			File parent = inputSVGFile.getParentFile();
 			plotBox.setCsvOutFile(new File(parent, "figure.csv"));
 			plotBox.setSvgOutFile(new File(parent, "figure.annot.svg"));
 			plotBox.readAndCreateCSVPlot(inputSVGFile);
 			csv = plotBox.getCSV();
-			svgAnnotElement = plotBox.getSVGStore().createSVGElement();
+			svgAnnotElement = plotBox.getComponentCache().createSVGElement();
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
 		}

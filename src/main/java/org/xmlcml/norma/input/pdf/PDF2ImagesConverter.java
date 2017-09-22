@@ -14,7 +14,6 @@ import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDResources;
-import org.apache.pdfbox.pdmodel.graphics.xobject.PDXObjectImage;
 import org.xmlcml.norma.image.ocr.NamedImage;
 
 public class PDF2ImagesConverter {
@@ -35,6 +34,10 @@ public class PDF2ImagesConverter {
 	}
 	
 	public List<NamedImage> readPDF(InputStream filesInputStream) throws IOException {
+		LOG.error("Image conversion NYI");
+		return new ArrayList<NamedImage>();
+		/** uncomment this later and edit to PDFBox2
+		 * 
 		PDDocument doc=PDDocument.load(filesInputStream);
 		List<NamedImage> namedImageList = new ArrayList<NamedImage>();
 	    List<PDPage> pages =  (List<PDPage>) doc.getDocumentCatalog().getAllPages();
@@ -43,7 +46,7 @@ public class PDF2ImagesConverter {
 	        PDPage page = (PDPage) pages.get(pageNumber);
 	        PDResources resources = page.getResources();
 //	        Map<String, PDXObject> pageObjects = resources.getXObjects(); // we should use this
-	        Map<String, PDXObjectImage> pageImages = resources.getImages();
+	        Map<String, PDXObjectImage> pageImages = resources.  getImages();
 	        if (pageImages != null) { 
 	            Iterator<String> imageIter = pageImages.keySet().iterator();
 	            while (imageIter.hasNext()) {
@@ -71,6 +74,7 @@ public class PDF2ImagesConverter {
 	    }
 		doc.close();
 		return namedImageList;
+		*/
 	}
 		 
 }

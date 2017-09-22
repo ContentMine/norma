@@ -9,6 +9,10 @@
 	    <!-- upstream -->
 	    <cproject.version>0.5.0-SNAPSHOT</cproject.version>
 	    <imageanalysis.version>1.2.0-SNAPSHOT</imageanalysis.version>
+	    <!--  this is the old PDFBox2 version -->
+	    <pdf2svg.version>2.2.0-SNAPSHOT</pdf2svg.version>
+	    <!--  this is the new PDFBox2 version -->
+	    <pdf2svg2.version>2.3.0-SNAPSHOT</pdf2svg2.version>
 	    <!-- other -->
 	    <opennlp.version>1.6.0</opennlp.version>        
     </properties>
@@ -189,6 +193,18 @@
             <groupId>org.contentmine</groupId>
             <artifactId>imageanalysis</artifactId>
             <version>${imageanalysis.version}</version>
+        </dependency>
+        <!-- the old version -->
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>pdf2svg</artifactId>
+            <version>${pdf2svg.version}</version>
+        </dependency>
+        <!-- the new version -->
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>pdf2svg</artifactId>
+            <version>${pdf2svg2.version}</version>
         </dependency>
         <dependency>
             <groupId>net.sf.saxon</groupId>
