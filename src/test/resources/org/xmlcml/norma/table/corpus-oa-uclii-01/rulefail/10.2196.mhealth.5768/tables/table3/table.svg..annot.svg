@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g class="html">
+  <g class="body">
+   <g class="table">
+    <g class="caption"/>
+    <g class="tr">
+     <g class="cell">Postintervention,time=3 months Control 1.00(reference) T X T 2B F iT 1.31(0.79-2.15)P=.292 Postmaintenance,time=9months Control 1.00(reference) T X T 2B F iT 2.38(1.41-4.01)P=.001 </g>
+     <g class="cell">1.00(reference) 2.03 (1.23-3.35)P=.006 1.00(reference) 1.94(1.19-3.16)P=.008 </g>
+     <g class="cell">1.00(reference) 1.67 (1.07-2.61)P=.024 1.00(reference) 1.74(1.10-2.77)P=.018 </g>
+     <g class="cell">1.00(reference) 2.16 (1.18-3.95)P=.013 1.00(reference) 1.98(1.17-3.34)P=.010 </g>
+    </g>
+    <g class="tr">
+     <g class="cell">a</g>
+    </g>
+    <g class="tr">
+     <g class="cell">O ddsratioswereestimatedusingproportionaloddsmodels.L oweroddsratios, but greaterthan1, wereobservedforthemost improvedcategories.</g>
+    </g>
+   </g>
+  </g>
+  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+    <title>table.title</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+    <title>table.header</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+    <title>table.body</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+    <title>table.footer</title>
+   </rect>
+  </g>
+ </g>
+</svg>

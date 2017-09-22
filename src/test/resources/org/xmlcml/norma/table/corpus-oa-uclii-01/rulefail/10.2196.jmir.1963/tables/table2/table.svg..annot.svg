@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g class="html">
+  <g class="body">
+   <g class="table">
+    <g class="caption"/>
+    <g class="tr">
+     <g class="cell">N umberofwomen(men) Age(years) Socioeconomicdeprivationscore Perceivedrisk H and-washingfrequency </g>
+     <g class="cell">213 (123) 49.17 (11.02) 9.04(6.13) 5.05(1.62) 4.08(1.05) </g>
+     <g class="cell">117 (64) 50.94(12.05) 9.39(6.88) 4.77 (1.64) 4.01(1.13) </g>
+     <g class="cell">330(187) 49.76 (11.40) 9.17 (6.41) 4.99(1.63) 4.06 (1.07) </g>
+    </g>
+    <g class="tr">
+     <g class="cell">a</g>
+    </g>
+    <g class="tr">
+     <g class="cell">F iguresaremean(SD )exceptwherestated.</g>
+    </g>
+   </g>
+  </g>
+  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+    <title>table.title</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+    <title>table.header</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+    <title>table.body</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+    <title>table.footer</title>
+   </rect>
+  </g>
+ </g>
+</svg>

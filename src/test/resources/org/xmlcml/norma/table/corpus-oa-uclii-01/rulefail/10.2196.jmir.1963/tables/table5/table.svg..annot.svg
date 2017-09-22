@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g class="html">
+  <g class="body">
+   <g class="table">
+    <g class="caption"/>
+    <g class="tr">
+     <g class="cell">G ender M ale F emale Socioeconomicstatus L owerdeprivation H igherdeprivation Perceivedrisk L owerrisk H igherrisk Baselinehand-washing L owerrate H igherrate </g>
+     <g class="cell">53 104 111 46 35 44 42 39 </g>
+     <g class="cell">3.77 (1.03) 4.17 (1.01) 3.99(1.07) 4.15(0.92) 3.77 (1.14) 4.32(0.91) 3.40(0.96) 4.79(0.52) </g>
+     <g class="cell">101 184 215 70 93 185 146 135 </g>
+     <g class="cell">4.10(0.10) 4.57 (0.73) 4.39(0.86) 4.43 (0.86) 4.10(1.02) 4.58(0.69) 4.08(0.95) 4.79(0.51) </g>
+    </g>
+   </g>
+  </g>
+  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+    <title>table.title</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+    <title>table.header</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+    <title>table.body</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+    <title>table.footer</title>
+   </rect>
+  </g>
+ </g>
+</svg>

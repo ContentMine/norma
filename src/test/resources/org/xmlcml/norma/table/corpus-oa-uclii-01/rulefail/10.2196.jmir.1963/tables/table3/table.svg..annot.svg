@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g class="html">
+  <g class="body">
+   <g class="table">
+    <g class="caption"/>
+    <g class="tr">
+     <g class="cell">H and-washingatbaseline H and-washingat4weeks H and-washingat12weeks Intentionsatbaseline Intentionsat4weeks Intentionsat12weeks </g>
+     <g class="cell">91 157 154 87 142 134 </g>
+     <g class="cell">4.01(1.13) 4.04(0.86) 4.12(1.10) 4.93 (1.67) 4.96 (1.71) 4.96 (1.68) </g>
+     <g class="cell">316 285 282 310 270 252 </g>
+     <g class="cell">4.08(1.05) 4.40(0.86) 4.45(0.82) 5.23 (1.57) 6.13 (1.18) 6.06 (1.21) </g>
+     <g class="cell">0.06 (–0.20to0.33) 0.36 (0.17 to0.55) 0.33 (0.13 to0.53) 0.30(–0.09to0.70) 1.17 (0.85to1.48) 1.11(0.79to1.43) </g>
+     <g class="cell">0.06 0.42 0.34 0.19 0.80 0.75 </g>
+    </g>
+    <g class="tr">
+     <g class="cell">a</g>
+    </g>
+    <g class="tr">
+     <g class="cell">H and-washingwasscoredfrom1(0–2timesaday)to5 (≥10timesaday).Intentionswerescoredfrom1(stronglydisagree)to7 (stronglyagree).</g>
+    </g>
+    <g class="tr">
+     <g class="cell">Sincetheseanalyseswerenotbaselineadjusted, samplesizevarieddependingonresponseratesatfollow-up.B aselinegroup comparisonswerenot</g>
+    </g>
+    <g class="tr">
+     <g class="cell">significant.Allgroup comparisonsat4weeksand12weeksweresignificantatP &lt;.001.</g>
+    </g>
+    <g class="tr">
+     <g class="cell">b</g>
+    </g>
+    <g class="tr">
+     <g class="cell">Confidenceinterval.</g>
+    </g>
+   </g>
+  </g>
+  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+    <title>table.title</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+    <title>table.header</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+    <title>table.body</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+    <title>table.footer</title>
+   </rect>
+  </g>
+ </g>
+</svg>

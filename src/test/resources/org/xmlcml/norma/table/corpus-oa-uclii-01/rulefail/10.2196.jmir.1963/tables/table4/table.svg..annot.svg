@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="800.0" width="700.0" xmlns="http://www.w3.org/2000/svg">
+ <g class="html">
+  <g class="body">
+   <g class="table">
+    <g class="caption"/>
+    <g class="tr">
+     <g class="cell">Intentions Attitude Subjectivenorm Perceivedbehavioralcontrol </g>
+     <g class="cell">4.93 (1.67) 5.71(1.28) 4.99(1.77) 6.11(1.50) </g>
+     <g class="cell">5.23 (1.57) 5.73 (1.97) 5.15(1.60) 6.21(1.35) </g>
+     <g class="cell">5.05(1.68) 5.85(1.11) 5.27 (1.62) 6.47 (0.81) </g>
+     <g class="cell">6.00(1.23) 6.28(0.78) 5.66 (1.31) 6.45(1.09) </g>
+    </g>
+    <g class="tr">
+     <g class="cell">a</g>
+    </g>
+    <g class="tr">
+     <g class="cell">T heseanalyseswerecarriedoutonlyinthosewhocompletedmeasuresofbaselineintentions(controln= 87;interventionn= 310).Allconstructs</g>
+    </g>
+    <g class="tr">
+     <g class="cell">werescoredfrom1(stronglydisagree)to7 (stronglyagree).</g>
+    </g>
+   </g>
+  </g>
+  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+    <title>table.title</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+    <title>table.header</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+    <title>table.body</title>
+   </rect>
+   <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+    <title>table.footer</title>
+   </rect>
+  </g>
+ </g>
+</svg>
