@@ -11,6 +11,7 @@
 	    <imageanalysis.version>1.1.0</imageanalysis.version>
 	    <!-- other -->
 	    <opennlp.version>1.6.0</opennlp.version>        
+ 			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <groupId>org.contentmine</groupId>
