@@ -134,6 +134,28 @@ public class SubtableTest {
                 Assert.assertEquals(6, restructuredTableRowCount); 
         }
         
+        
+        @Test
+        /**
+         * Fail gracefully when grid is broken upstream
+         * 
+         */
+        public void testHandleBrokenGrid1() throws IOException {
+		File inputFile = new File(NormaFixtures.TEST_TABLE_DIR, "subtables/10.1080.15504263.2015.1113842_table4.svg");
+		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
+		converter.readInput(inputFile);
+		HtmlElement htmlElement = converter.convert();
+		File file = new File(NormaFixtures.TARGET_DIR, "table/subtables/10.1080.15504263.2015.1113842_table4.svg.html");
+		XMLUtil.debug(htmlElement, file, 1);
+                
+                int restructuredTableRowCount = getRestructuredRowCount(htmlElement);
+                
+                // Restructured table body has children: 
+                // 6 content rows, including a subtable
+                // Current output has 18 rows -- this is a test of graceful failure
+                Assert.assertEquals(18, restructuredTableRowCount); 
+        }
+        
         /**
          * Helper method
          * 
