@@ -8,11 +8,19 @@
 	    <!-- upstream -->
 	    <cproject.version>0.7.0-SNAPSHOT</cproject.version>
 	    
-	    <imageanalysis.version>1.2.0-SNAPSHOT</imageanalysis.version>
+	    <imageanalysis.version>1.3.0-SNAPSHOT</imageanalysis.version>
 	    <!--  this is the new PDFBox2 version -->
 	    <pdf2svg2.version>2.3.0-SNAPSHOT</pdf2svg2.version>
-	    <!-- other -->
-	    <opennlp.version>1.6.0</opennlp.version>        
+	    <opennlp.version>1.6.0</opennlp.version>       
+	    <xml-apis.version>1.4.01</xml-apis.version>
+	    <Saxon-HE.version>9.6.0-3</Saxon-HE.version>
+	    <json-path.version>2.0.0</json-path.version>
+	    <jsoup.version>1.8.2</jsoup.version>
+	    <xmlunit.version>1.4</xmlunit.version>
+	    <jdeb.version>1.3</jdeb.version>
+
+
+	     
     </properties>
 
     <groupId>org.contentmine</groupId>
@@ -192,14 +200,6 @@
             <artifactId>imageanalysis</artifactId>
             <version>${imageanalysis.version}</version>
         </dependency>
-        <!-- the old version -->
-        <!-- 
-        <dependency>
-            <groupId>org.xmlcml</groupId>
-            <artifactId>pdf2svg</artifactId>
-            <version>${pdf2svg.version}</version>
-        </dependency>
-        -->
         <!-- the new version -->
         <!--  remove while refactoring -->
         <!-- 
@@ -212,7 +212,7 @@
         <dependency>
             <groupId>net.sf.saxon</groupId>
             <artifactId>Saxon-HE</artifactId>
-             <version>9.6.0-3</version>
+             <version>${Saxon-HE.version}</version>
         </dependency>        
         <dependency>
             <groupId>org.apache.opennlp</groupId>
@@ -224,7 +224,7 @@
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
-            <version>2.0.0</version>
+            <version>${json-path.version}</version>
         </dependency>
         <!--  to avoid Xerces Hell? 
         http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
@@ -232,17 +232,17 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.8.2</version>
+            <version>${jsoup.version}</version>
         </dependency>
         <dependency>
             <groupId>xmlunit</groupId>
             <artifactId>xmlunit</artifactId>
-            <version>1.4</version>
+            <version>${xmlunit.version}</version>
         </dependency>
         <dependency>
             <groupId>org.vafer</groupId>
             <artifactId>jdeb</artifactId>
-            <version>1.3</version>
+            <version>${jdeb.version}</version>
             <!-- Prevents jar bloat in final package -->
             <scope>provided</scope>
         </dependency>
@@ -258,7 +258,7 @@
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
-		    <version>1.4.01</version>
+		    <version>${xml-apis.version}</version>
 		</dependency>
 		
 		
