@@ -25,11 +25,14 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.euclid.util.StyledText;
 import org.xmlcml.norma.util.TransformerWrapper;
 
 public class MiscTest {
 
+	public void testXMLApis() {
+		org.w3c.dom.ElementTraversal e;
+		org.w3c.dom.Element e1;
+	}
 
 	public void test() {
 		/** for example only

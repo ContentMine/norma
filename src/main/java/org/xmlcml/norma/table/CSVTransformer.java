@@ -1,8 +1,6 @@
 package org.xmlcml.norma.table;
 
 import java.io.File;
-
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
@@ -14,11 +12,11 @@ import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.util.RectangularTable;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlTable;
-import org.xmlcml.html.HtmlTd;
-import org.xmlcml.html.HtmlTh;
-import org.xmlcml.html.HtmlTr;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlTable;
+import org.xmlcml.graphics.html.HtmlTd;
+import org.xmlcml.graphics.html.HtmlTh;
+import org.xmlcml.graphics.html.HtmlTr;
 
 import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;

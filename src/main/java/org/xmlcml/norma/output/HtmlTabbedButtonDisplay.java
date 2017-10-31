@@ -9,12 +9,12 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.euclid.Util;
-import org.xmlcml.html.HtmlDiv;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlH1;
-import org.xmlcml.html.HtmlHtml;
-import org.xmlcml.html.HtmlScript;
-import org.xmlcml.html.HtmlStyle;
+import org.xmlcml.graphics.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlH1;
+import org.xmlcml.graphics.html.HtmlHtml;
+import org.xmlcml.graphics.html.HtmlScript;
+import org.xmlcml.graphics.html.HtmlStyle;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.xml.XMLUtil;
 

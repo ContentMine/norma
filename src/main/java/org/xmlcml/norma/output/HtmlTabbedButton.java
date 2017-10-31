@@ -4,10 +4,9 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.HtmlButton;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlTitle;
-import org.xmlcml.xml.XMLUtil;
+import org.xmlcml.graphics.html.HtmlButton;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlTitle;
 
 import nu.xom.Element;
 

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.cproject.files.RegexPathFilter;
-import org.xmlcml.html.HtmlScript;
+import org.xmlcml.graphics.html.HtmlScript;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.xml.XMLUtil;
 

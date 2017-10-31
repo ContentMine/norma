@@ -4,13 +4,15 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.graphics.svg.cache.ContentBoxCache;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
-import org.xmlcml.svg2xml.box.ContentBoxCache;
 import org.xmlcml.svg2xml.table.TableContentCreator;
 
+@Ignore // too long
 public class UCL2Test {
 	private static final Logger LOG = Logger.getLogger(UCL2Test.class);
 	static {

@@ -1,18 +1,13 @@
 package org.xmlcml.norma.table;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlP;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.svg.text.structure.TextStructurer;
 import org.xmlcml.svg2xml.table.TableContentCreator;
-import org.xmlcml.svg2xml.table.TableSection;
-import org.xmlcml.svg2xml.text.TextStructurer;
 import org.xmlcml.xml.XMLUtil;
 
 public class SVGTable2HTMLConverter {
@@ -48,7 +43,7 @@ public class SVGTable2HTMLConverter {
 	public HtmlElement convert()  {
 		getOrCreateOutputDir();
 		tableContentCreator.markupAndOutputTable(inputFile, outputDir);
-		textStructurer = tableContentCreator.getTextStructurer();
+		textStructurer = tableContentCreator.getOrCreateTextStructurer();
 		tableContentCreator.annotateAreasInSVGChunk();
 		outputHtmlElement = tableContentCreator.createHtmlFromSVG();
 		try {

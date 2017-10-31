@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.util.HtmlUtil;
+import org.xmlcml.graphics.html.util.HtmlUtil;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;

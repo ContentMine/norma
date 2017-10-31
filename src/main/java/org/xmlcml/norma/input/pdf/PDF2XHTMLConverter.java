@@ -1,7 +1,6 @@
 package org.xmlcml.norma.input.pdf;
 
 import java.io.File;
-
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URL;
@@ -9,11 +8,11 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.pdf2svg.PDF2SVGConverter;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.util.HtmlUtil;
 import org.xmlcml.graphics.svg.SVGSVG;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.util.HtmlUtil;
+import org.xmlcml.svg2xml.PDF2SVGConverter;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
 
@@ -62,31 +61,43 @@ public class PDF2XHTMLConverter {
 	}
 
 	public List<SVGSVG> readAndConvertToSVGList(File infile) throws Exception {
+		throw new RuntimeException("PDFAnalyzer not refactored into svghtml");
+/** old
 		PDF2SVGConverter converter = createAndSetConverter();
 		converter.openPDFFile(infile);
 		List<SVGSVG> svgList = converter.getPageList();
 		return svgList;
+		*/
 	}
 
 	public List<SVGSVG> readAndConvertToSVGList(URL url) throws Exception {
+		throw new RuntimeException("PDFAnalyzer not refactored into svghtml");
+		/* old not yet converted
 		PDF2SVGConverter converter = createAndSetConverter();
 		converter.openPDFURL(url);
 		List<SVGSVG> svgList = converter.getPageList();
 		return svgList;
+		*/
 	}
 
 	public List<SVGSVG> readAndConvertToSVGList(InputStream is) throws Exception {
+		throw new RuntimeException("PDFAnalyzer not refactored into svghtml");
+		/* old not yet refactored
 		PDF2SVGConverter converter = createAndSetConverter();
 		converter.openPDFInputStream(is);
 		List<SVGSVG> svgList = converter.getPageList();
 		return svgList;
+		*/
 	}
 
 	private PDF2SVGConverter createAndSetConverter() {
+		throw new RuntimeException("PDFAnalyzer not refactored into svghtml");
+		/*
 		PDF2SVGConverter converter = new PDF2SVGConverter();
 		converter.setWriteFile(false);
 		converter.setStoreSVG(true);
 		return converter;
+		*/
 	}
 
 	public HtmlElement readAndConvertToXHTML(List<SVGSVG> svgList) throws Exception {

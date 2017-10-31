@@ -10,7 +10,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.util.CMineTestFixtures;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.xml.XMLUtil;

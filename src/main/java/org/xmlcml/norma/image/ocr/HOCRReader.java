@@ -19,7 +19,16 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.euclid.Real2;
 import org.xmlcml.euclid.Real2Range;
-import org.xmlcml.graphics.svg.GraphicsElement;
+import org.xmlcml.graphics.html.HtmlBody;
+import org.xmlcml.graphics.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlEm;
+import org.xmlcml.graphics.html.HtmlHead;
+import org.xmlcml.graphics.html.HtmlHtml;
+import org.xmlcml.graphics.html.HtmlMeta;
+import org.xmlcml.graphics.html.HtmlP;
+import org.xmlcml.graphics.html.HtmlSpan;
+import org.xmlcml.graphics.html.HtmlStrong;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGRect;
@@ -34,16 +43,6 @@ import org.xmlcml.graphics.svg.text.SVGWordLine;
 import org.xmlcml.graphics.svg.text.SVGWordPage;
 import org.xmlcml.graphics.svg.text.SVGWordPageList;
 import org.xmlcml.graphics.svg.text.SVGWordPara;
-import org.xmlcml.html.HtmlBody;
-import org.xmlcml.html.HtmlDiv;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlEm;
-import org.xmlcml.html.HtmlHead;
-import org.xmlcml.html.HtmlHtml;
-import org.xmlcml.html.HtmlMeta;
-import org.xmlcml.html.HtmlP;
-import org.xmlcml.html.HtmlSpan;
-import org.xmlcml.html.HtmlStrong;
 import org.xmlcml.norma.editor.SubstitutionEditor;
 import org.xmlcml.norma.input.InputReader;
 import org.xmlcml.xml.XMLUtil;
@@ -201,7 +200,7 @@ public class HOCRReader extends InputReader {
 		return hocrHtmlElement;
 	}
 
-	public GraphicsElement getOrCreateSVG() {
+	public SVGElement getOrCreateSVG() {
 		if (svgSvg == null && hocrHtmlElement != null) {
 			processHTMLAndCreateSVG();
 		}
@@ -612,7 +611,7 @@ public class HOCRReader extends InputReader {
 			return;
 		}
 		readHOCR(new FileInputStream(outputHtml));
-		GraphicsElement svgg = getOrCreateSVG();
+		SVGElement svgg = getOrCreateSVG();
 		List<HOCRText> potentialTexts = this.getOrCreatePotentialTextElements(svgg);
 		List<HOCRLabel> potentialLabels = this.getOrCreatePotentialLabelElements(svgg);
 		List<HOCRPhrase> potentialPhrases = this.getOrCreatePotentialPhraseElements(svgg);
@@ -629,7 +628,7 @@ public class HOCRReader extends InputReader {
 		return newImage;
 	}
 
-	public List<HOCRLabel> getOrCreatePotentialLabelElements(GraphicsElement svgElement) {
+	public List<HOCRLabel> getOrCreatePotentialLabelElements(SVGElement svgElement) {
 		if (potentialLabelList == null) {
 			List <SVGElement> labelledGs = SVGUtil.getQuerySVGElements(
 					svgElement, "//*[local-name()='g' and contains(@class, '"+POTENTIAL_LABEL+"')]");
@@ -646,11 +645,11 @@ public class HOCRReader extends InputReader {
 	}
 
 	
-	public List<HOCRPhrase> getOrCreatePotentialPhraseElements(GraphicsElement svgElement) {
+	public List<HOCRPhrase> getOrCreatePotentialPhraseElements(SVGElement svgElement) {
 		List <SVGElement> lineGs = SVGUtil.getQuerySVGElements(
 				svgElement, "//*[local-name()='g' and contains(@class, '"+LINE+"')]");
 		potentialPhraseList = new ArrayList<HOCRPhrase>();
-		for (GraphicsElement lineG : lineGs) {
+		for (SVGElement lineG : lineGs) {
 			List<SVGElement> words = SVGUtil.getQuerySVGElements(
 					lineG, "*[local-name()='g' and contains(@class,'"+WORD+"')]");
 			List<HOCRPhrase> linePhraseList = new ArrayList<HOCRPhrase>();
@@ -709,12 +708,12 @@ public class HOCRReader extends InputReader {
 	}
 
 	
-	public List<HOCRText> getOrCreatePotentialTextElements(GraphicsElement svgElement) {
+	public List<HOCRText> getOrCreatePotentialTextElements(SVGElement svgElement) {
 		if (potentialTextList == null) {
 			List <SVGElement> textGs = SVGUtil.getQuerySVGElements(
 					svgElement, "//*[local-name()='g' and not(contains(@class, '"+POTENTIAL_LABEL+"')) and *[local-name()='text']]");
 			potentialTextList = new ArrayList<HOCRText>();
-			for (GraphicsElement textG : textGs) {
+			for (SVGElement textG : textGs) {
 				SVGText text = SVGText.extractSelfAndDescendantTexts(textG).get(0);
 				potentialTextList.add(new HOCRText((SVGG)textG));
 			}

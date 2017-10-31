@@ -10,9 +10,9 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.util.HtmlUtil;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
+import org.xmlcml.graphics.html.util.HtmlUtil;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 

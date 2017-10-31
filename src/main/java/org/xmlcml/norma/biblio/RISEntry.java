@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlDiv;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;

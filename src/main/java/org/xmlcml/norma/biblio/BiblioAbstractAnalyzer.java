@@ -5,9 +5,9 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.xmlcml.html.HtmlB;
-import org.xmlcml.html.HtmlDiv;
-import org.xmlcml.html.HtmlP;
+import org.xmlcml.graphics.html.HtmlB;
+import org.xmlcml.graphics.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlP;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;

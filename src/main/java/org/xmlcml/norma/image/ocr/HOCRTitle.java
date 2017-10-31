@@ -8,8 +8,8 @@ import org.apache.log4j.Logger;
 import org.xmlcml.euclid.Real2;
 import org.xmlcml.euclid.Real2Range;
 import org.xmlcml.euclid.RealRange;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.graphics.svg.SVGG;
-import org.xmlcml.html.HtmlElement;
 
 import nu.xom.Attribute;
 

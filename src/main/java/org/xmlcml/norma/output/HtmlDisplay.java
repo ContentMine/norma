@@ -3,29 +3,22 @@ package org.xmlcml.norma.output;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.DirectoryFileFilter;
-import org.apache.commons.io.filefilter.FileFilterUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.files.RegexPathFilter;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.euclid.Util;
-import org.xmlcml.graphics.svg.GraphicsElement;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlImg;
+import org.xmlcml.graphics.html.HtmlP;
+import org.xmlcml.graphics.html.HtmlTable;
+import org.xmlcml.graphics.html.HtmlTd;
+import org.xmlcml.graphics.html.HtmlTr;
 import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlImg;
-import org.xmlcml.html.HtmlP;
-import org.xmlcml.html.HtmlTable;
-import org.xmlcml.html.HtmlTd;
-import org.xmlcml.html.HtmlTr;
 import org.xmlcml.xml.XMLUtil;
 
 /** creates HTML output for display
@@ -129,7 +122,7 @@ public class HtmlDisplay {
 		if (file == null) {
 			td.appendChild(new HtmlP("null file"));
 		} else if (filename.endsWith(".svg")) {
-			GraphicsElement svgElement = createSVG(file);
+			SVGElement svgElement = createSVG(file);
 			td.appendChild(svgElement);
 		} else if (filename.endsWith(".png")) {
 			HtmlImg img = createHtmlImg(file.getName());
@@ -158,8 +151,8 @@ public class HtmlDisplay {
 		}
 	}
 
-	private GraphicsElement createSVG(File file) {
-		GraphicsElement svgElement = SVGElement.readAndCreateSVG(file);
+	private SVGElement createSVG(File file) {
+		SVGElement svgElement = SVGElement.readAndCreateSVG(file);
 		// remove sodipodi inkscape //		<sodipodi:namedview
 		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='namedview']");
 		XMLUtil.removeElementsByXPath(svgElement, "//*[local-name()='g' and @class='metadata']");

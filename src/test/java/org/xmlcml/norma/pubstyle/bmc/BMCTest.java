@@ -15,16 +15,15 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.euclid.Real2;
-import org.xmlcml.graphics.svg.GraphicsElement;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
+import org.xmlcml.graphics.html.util.HtmlUtil;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGPath;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.objects.SVGBoxChart;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.util.HtmlUtil;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
@@ -77,7 +76,7 @@ public class BMCTest {
 	// this one has outline glyphs... :-( // all papers in this journal do :-(
 	// 4 boxes and three lines
 	public void testExtractFlowChart() {
-		GraphicsElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
+		SVGElement rawChart = SVGElement.readAndCreateSVG(new File(NormaFixtures.BMC_MISC_DIR, "1745-6215-15-486.29.0.svg"));
 		SVGBoxChart boxChart = new SVGBoxChart(rawChart);
 		boxChart.createChart();
 		List<SVGPath> pathList = boxChart.getSVGPathList();

@@ -2,17 +2,10 @@ package org.xmlcml.norma.pubstyle.astrophysj;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.List;
 
-import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.graphics.svg.GraphicsElement;
-import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.graphics.svg.SVGPolyline;
-import org.xmlcml.graphics.svg.SVGText;
-import org.xmlcml.graphics.svg.objects.SVGPlot;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 import org.xmlcml.xml.XMLUtil;

@@ -1,19 +1,12 @@
 package org.xmlcml.norma.input.pdf;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
-import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDResources;
 import org.xmlcml.norma.image.ocr.NamedImage;
 
 public class PDF2ImagesConverter {

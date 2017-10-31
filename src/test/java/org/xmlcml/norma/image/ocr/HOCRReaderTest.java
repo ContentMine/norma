@@ -14,11 +14,11 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.graphics.html.HtmlBody;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlMeta;
+import org.xmlcml.graphics.html.HtmlSpan;
 import org.xmlcml.graphics.svg.SVGSVG;
-import org.xmlcml.html.HtmlBody;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlMeta;
-import org.xmlcml.html.HtmlSpan;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.xml.XMLUtil;
 

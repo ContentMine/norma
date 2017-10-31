@@ -8,7 +8,6 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.euclid.Angle;
-import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 
 /** converts SVG files.
@@ -28,7 +27,7 @@ public class SVG2SVGConverter {
 	
 	private SVGElement svgElementIn;
 	private List<String> transformTokenList;
-	private GraphicsElement svgElementOut;
+	private SVGElement svgElementOut;
 	private List<String> args;
 
 	public SVG2SVGConverter() {
@@ -48,7 +47,7 @@ public class SVG2SVGConverter {
 		LOG.debug(">> "+this.transformTokenList);
 	}
 
-	public GraphicsElement createSVGElement() {
+	public SVGElement createSVGElement() {
 		processTransforms();
 		return svgElementOut;
 	}

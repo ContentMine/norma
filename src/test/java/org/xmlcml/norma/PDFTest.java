@@ -1,14 +1,10 @@
 package org.xmlcml.norma;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.List;
-
-import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
@@ -19,9 +15,7 @@ import org.junit.Test;
 import org.xmlcml.cproject.files.CProject;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.CMineTestFixtures;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.norma.image.ocr.NamedImage;
-import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.pdf.PDF2XHTMLConverter;
 

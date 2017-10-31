@@ -4,8 +4,8 @@ import java.io.File;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
 import org.xmlcml.norma.NormaFixtures;
 
 public class EmptyCleanerTest {

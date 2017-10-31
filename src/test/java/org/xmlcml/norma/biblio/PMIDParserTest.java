@@ -15,7 +15,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineUtil;
-import org.xmlcml.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlDiv;
 
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;

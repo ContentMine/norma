@@ -5,12 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-	    <norma.version>0.5.0-SNAPSHOT</norma.version>
 	    <!-- upstream -->
-	    <cproject.version>0.5.0-SNAPSHOT</cproject.version>
+	    <cproject.version>0.7.0-SNAPSHOT</cproject.version>
+	    
 	    <imageanalysis.version>1.2.0-SNAPSHOT</imageanalysis.version>
-	    <!--  this is the old PDFBox2 version -->
-	    <pdf2svg.version>2.2.0-SNAPSHOT</pdf2svg.version>
 	    <!--  this is the new PDFBox2 version -->
 	    <pdf2svg2.version>2.3.0-SNAPSHOT</pdf2svg2.version>
 	    <!-- other -->
@@ -20,7 +18,7 @@
     <groupId>org.contentmine</groupId>
     <artifactId>norma</artifactId>
     <!-- to sync with new cproject-norma-ami versions -->
-    <version>${norma.version}</version>
+    <version>0.6.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>norma</name>
     <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
@@ -195,17 +193,22 @@
             <version>${imageanalysis.version}</version>
         </dependency>
         <!-- the old version -->
+        <!-- 
         <dependency>
-            <groupId>org.contentmine</groupId>
+            <groupId>org.xmlcml</groupId>
             <artifactId>pdf2svg</artifactId>
             <version>${pdf2svg.version}</version>
         </dependency>
+        -->
         <!-- the new version -->
+        <!--  remove while refactoring -->
+        <!-- 
         <dependency>
             <groupId>org.contentmine</groupId>
             <artifactId>pdf2svg</artifactId>
             <version>${pdf2svg2.version}</version>
         </dependency>
+        -->
         <dependency>
             <groupId>net.sf.saxon</groupId>
             <artifactId>Saxon-HE</artifactId>
@@ -251,5 +254,13 @@
 		    <version>0.4.1</version>
 		</dependency>
 		-->
+
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+		    <version>1.4.01</version>
+		</dependency>
+		
+		
     </dependencies>
 </project>

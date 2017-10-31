@@ -6,8 +6,8 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlScript;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlScript;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Element;

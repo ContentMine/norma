@@ -8,7 +8,7 @@ import java.util.Set;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.euclid.IntArray;
-import org.xmlcml.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlDiv;
 
 public class Chapter extends AbstractSection {
 

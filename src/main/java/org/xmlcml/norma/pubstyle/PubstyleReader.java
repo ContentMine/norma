@@ -11,8 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.RawInput;
 import org.xmlcml.norma.input.InputReader;

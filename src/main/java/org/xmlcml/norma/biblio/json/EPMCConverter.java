@@ -19,10 +19,10 @@ import org.xmlcml.cproject.metadata.AbstractMetadata;
 import org.xmlcml.cproject.util.CellCalculator;
 import org.xmlcml.cproject.util.CellRenderer;
 import org.xmlcml.cproject.util.DataTablesTool;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlHtml;
-import org.xmlcml.html.HtmlTd;
-import org.xmlcml.html.HtmlTr;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlHtml;
+import org.xmlcml.graphics.html.HtmlTd;
+import org.xmlcml.graphics.html.HtmlTr;
 import org.xmlcml.norma.biblio.EPMCResultsJsonEntry;
 
 import com.google.gson.JsonArray;

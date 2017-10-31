@@ -9,7 +9,7 @@ import org.joda.time.DateTime;
 import org.xmlcml.cproject.util.CellRenderer;
 import org.xmlcml.cproject.util.DataTablesTool;
 import org.xmlcml.euclid.JodaDate;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlElement;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

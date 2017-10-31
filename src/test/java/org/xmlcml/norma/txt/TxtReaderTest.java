@@ -14,7 +14,7 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xmlcml.euclid.IntArray;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.NormaFixtures;
 
 public class TxtReaderTest {

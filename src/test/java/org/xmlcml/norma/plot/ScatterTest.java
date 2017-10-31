@@ -4,14 +4,15 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineTestFixtures;
-import org.xmlcml.graphics.svg.GraphicsElement;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.plot.SVGMediaBox;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 
+@Ignore // TOO LONG
 public class ScatterTest {
 	private static final Logger LOG = Logger.getLogger(ScatterTest.class);
 

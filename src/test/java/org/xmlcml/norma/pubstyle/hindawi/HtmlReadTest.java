@@ -7,7 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.xmlcml.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.InputFormat;
 import org.xmlcml.norma.pubstyle.PubstyleReader;
 import org.xmlcml.xml.XMLUtil;

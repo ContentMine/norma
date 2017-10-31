@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.util.PDFTextStripper;
 
 public class PDF2TXTConverter {
 

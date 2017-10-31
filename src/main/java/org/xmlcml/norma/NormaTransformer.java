@@ -1,7 +1,6 @@
 package org.xmlcml.norma;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -28,16 +27,15 @@ import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
-import org.xmlcml.graphics.svg.GraphicsElement;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
+import org.xmlcml.graphics.html.HtmlTable;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.normalize.TextDecorator;
 import org.xmlcml.graphics.svg.plot.SVGMediaBox;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.HtmlTable;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
@@ -153,8 +151,8 @@ public class NormaTransformer {
 	String outputTxt;
 	List<NamedImage> serialImageList;
 	HtmlElement htmlElement;
-	GraphicsElement svgElement;
-	GraphicsElement svgAnnotElement;
+	SVGElement svgElement;
+	SVGElement svgAnnotElement;
 	File teiFile;
 	String tsvString;
 	
@@ -540,7 +538,7 @@ public class NormaTransformer {
 		return tsvString;
 	}
 
-	private GraphicsElement applyHOCR2SVGToInputFile(File inputFile) {
+	private SVGElement applyHOCR2SVGToInputFile(File inputFile) {
 		HOCRReader hocrReader = new HOCRReader();
 		try {
 			hocrReader.readHOCR(new FileInputStream(inputFile));
@@ -607,16 +605,16 @@ public class NormaTransformer {
 	 * @param inputSVGFile
 	 * @return
 	 */
-	private GraphicsElement applyCompactSVGToInputFile(File inputSVGFile) {
+	private SVGElement applyCompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
-		GraphicsElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
+		SVGElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
 		SVGG g = textDecorator.compactTexts(textList);
 		svgElement.appendChild(g);
 		return svgElement;
 	}
 
-	private GraphicsElement applyDecompactSVGToInputFile(File inputSVGFile) {
+	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
 		SVGG g = textDecorator.decompact(textList);

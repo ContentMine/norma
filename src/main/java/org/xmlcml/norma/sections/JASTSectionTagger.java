@@ -11,12 +11,12 @@ import java.util.Map;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.ResourceLocation;
-import org.xmlcml.html.HtmlDiv;
-import org.xmlcml.html.HtmlElement;
-import org.xmlcml.html.HtmlFactory;
-import org.xmlcml.html.HtmlHtml;
-import org.xmlcml.html.HtmlSpan;
-import org.xmlcml.html.HtmlTable;
+import org.xmlcml.graphics.html.HtmlDiv;
+import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.html.HtmlFactory;
+import org.xmlcml.graphics.html.HtmlHtml;
+import org.xmlcml.graphics.html.HtmlSpan;
+import org.xmlcml.graphics.html.HtmlTable;
 import org.xmlcml.norma.NormaArgProcessor;
 import org.xmlcml.xml.XMLUtil;
 
