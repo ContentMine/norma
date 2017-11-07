@@ -7,6 +7,7 @@
     <properties>
 	    <norma.version>0.4.1-SNAPSHOT</norma.version>
 	    <!-- upstream -->
+	    <pdf2svg.version>2.1.0</pdf2svg.version>
 	    <cproject.version>0.4.0</cproject.version>
 	    <imageanalysis.version>1.1.0</imageanalysis.version>
 	    <!-- other -->
@@ -60,9 +61,10 @@
           <version>2.0.1</version>
         </plugin>  
 
-            <plugin>
+   <!--         <plugin> -->
                 <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
                     https://github.com/brndkfr/xmppbot/blob/master/xmppbot/pom.xml -->
+<!--
                 <artifactId>jdeb</artifactId>
                 <groupId>org.vafer</groupId>
                 <version>1.3</version>
@@ -136,6 +138,7 @@
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                 </configuration>
             </plugin>
+-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -151,10 +154,21 @@
                 </configuration>
             </plugin>
             <!-- giant jar -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <executions>
+        <execution>
+            <id>default-testResources</id>
+            <phase>none</phase>
+        </execution>
+    </executions>
+</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                                 <version>2.4</version>
+
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
@@ -167,6 +181,10 @@
                     </archive>
                 </configuration>
                 <executions>
+												<execution>
+														<id>default-testResources</id>
+														<phase>none</phase>
+												</execution>
                     <execution>
                         <id>make-assembly</id>
                         <phase>package</phase>
@@ -175,8 +193,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            
+						</plugin>
         </plugins>
     </build>
 
