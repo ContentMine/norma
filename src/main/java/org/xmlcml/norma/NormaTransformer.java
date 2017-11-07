@@ -577,6 +577,7 @@ public class NormaTransformer {
 
 	private HtmlElement applySVGTable2HTMLToInputFile(File inputFile) {
 		LOG.debug("==========="+inputFile+"============");
+                System.out.println(inputFile);
 		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
 		converter.readInput(inputFile);
 		HtmlElement htmlElement = converter.convert();
