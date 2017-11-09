@@ -3,7 +3,10 @@ package org.xmlcml.norma.output;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Comparator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
@@ -20,6 +23,7 @@ import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import org.xmlcml.html.HtmlHead;
 
 /** creates a tabbed display for multiple HTML files using buttons
  * 
@@ -77,7 +81,8 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 //	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js.xml";
 	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css"; 
 	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js";
-	
+        public final static String SEMANTIC_RESTRUCTURE_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"cmtblstructure.css";
+        
 	private static final String TAB = "tab";
 	private static final String TABCONTENTDIV = "tabcontentdiv";
 	
@@ -171,6 +176,15 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			contentDiv = getOrCreateContentDiv();
 			getOrCreateBody().appendChild(contentDiv);
 		}
+                // Sort table names by numerical suffix so that buttons name are in ascending order
+                files.sort(new Comparator<File>() {
+                    @Override
+                    public int compare(File f1, File f2) {
+                        int n1 = extractNumber(f1.getParentFile().getName());
+                        int n2 = extractNumber(f2.getParentFile().getName());
+                        return n1 - n2;
+                    }
+                });
 		for (File file : files) {
 			File fileParentFile = file.getParentFile();
 			if (fileParentFile == null || parentFile == null) {
@@ -194,7 +208,7 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		}
 	}
 
-	/** horrible kludge when aggregated compaonents are at the wrong level. Maybe later record actual files hierachies
+	/** horrible kludge when aggregated components are at the wrong level. Maybe later record actual files hierachies
 	 * 
 	 * @param relative
 	 */
@@ -282,10 +296,29 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		} else {
 			HtmlStyle buttonStyle = readButtonStyle(BUTTON_STYLE_RESOURCE);
 //			HtmlStyle buttonStyle = (HtmlStyle) readHtmlElement(BUTTON_STYLE_RESOURCE);
-			LOG.debug("STYLE "+buttonStyle.toXML());
-			getOrCreateHead().appendChild(buttonStyle);
+                        HtmlStyle semanticStyle = readButtonStyle(SEMANTIC_RESTRUCTURE_STYLE_RESOURCE);
+
+///			LOG.debug("STYLE "+buttonStyle.toXML());
+                        HtmlHead head = getOrCreateHead();
+                        // Ensure Unicode
+                        head.addUTF8Charset();
+			head.appendChild(buttonStyle);
+                        head.appendChild(semanticStyle);  
 		}
 		return style;
 	}
 	
+        private int extractNumber(String tableParentFileName) {
+            Pattern regex = Pattern.compile("\\D*(\\d*)");
+            Matcher matcher = regex.matcher(tableParentFileName);
+            int result = 0;
+
+            if (matcher.matches() && matcher.groupCount() == 1) {
+                String digitStr = matcher.group(1);
+                Integer digit = Integer.parseInt(digitStr);
+                result = (int)digit;
+            }
+            
+            return result;
+        }
 }
