@@ -246,11 +246,5 @@
             <scope>provided</scope>
         </dependency>
         
-        
-        <dependency>
-	        <groupId>org.grobid</groupId>
-		    <artifactId>grobid-core</artifactId>
-		    <version>0.4.1</version>
-		</dependency>
     </dependencies>
 </project>
