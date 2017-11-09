@@ -1,0 +1,95 @@
+/* Make individual cells more visible and highlight cells marked as 'empty' */
+
+body, html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+td, th {
+	width: 130px;
+	min-width: 130px;
+	text-align: left;
+}
+
+/* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
+tbody th {
+	color: black;
+}
+
+
+td.cell, th {
+	border: #eee 1px solid;
+}
+
+td.empty {
+	border: yellow 1px dotted;
+}
+
+th[data-role="obslabel"] {
+	color: red;
+	text-align: left;
+}
+
+/* Supplemental data values created by decomposing compound columns */
+
+td[data-role="supp-obs"] {
+	color: blue;
+	background: #ff2;
+}
+
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
+
+/* Semantic markup for transformed structures */
+
+/* Subtable body, apply green background */
+
+.subtable {
+	background-color: #bbffbb;
+}
+
+/* Indent subtable rows of observation data, highlighted orange */
+
+.subtable th[data-role="obslabel"] {
+	color: #dd5533;
+}
+
+
+.subtable tr[data-role="obs"] {
+	color: purple;
+	border: dashed 1px black; padding-left: 0;
+}
+
+th[colspan] {
+	border-bottom: 3px solid black;
+}
+
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
+}
+
+thead {
+	border-bottom: 4px solid red;
+}
+
+/* Subtable title is not indented, highlighted red */
+
+tr[data-tblseg="subtabletitle"] th {
+	background-color: #00ff22;
+	padding-left: -10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.subtable tr:not([data-tblseg="subtabletitle"]) th[data-role="obslabel"] {
+	padding-left: 10px;
+}
+
+tbody:not[class="subtable"] th[data-role="obslabel"] {
+	color: blue;
+	padding-left: -10px;
+	margin-left: -10px;
+}
+
