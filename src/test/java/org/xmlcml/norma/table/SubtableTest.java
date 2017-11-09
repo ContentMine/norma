@@ -156,6 +156,45 @@ public class SubtableTest {
                 Assert.assertEquals(18, restructuredTableRowCount); 
         }
         
+        @Test
+        /**
+         * Fail gracefully when grid is broken upstream
+         * 
+         */
+        public void testUnknownCodePoint1() throws IOException {
+		File inputFile = new File(NormaFixtures.TEST_TABLE_DIR, "subtables/_10.1037.a0021821_table2.svg");
+		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
+		converter.readInput(inputFile);
+		HtmlElement htmlElement = converter.convert();
+		File file = new File(NormaFixtures.TARGET_DIR, "table/subtables/_10.1037.a0021821_table2.svg.html");
+		XMLUtil.debug(htmlElement, file, 1);
+                
+                int restructuredTableRowCount = getRestructuredRowCount(htmlElement);
+                
+                // Restructured table body has children: 
+                // 6 content rows, including a subtable
+                // Current output has 18 rows -- this is a test of graceful failure
+                Assert.assertEquals(4, restructuredTableRowCount); 
+        }
+        
+        @Test
+        /**
+         * Fail gracefully when grid is broken upstream
+         * 
+         */
+        public void testSegmentationFailure() throws IOException {
+		File inputFile = new File(NormaFixtures.TEST_TABLE_DIR, "subtables/10.1007.s13142-010-0006-y_table2.svg");
+		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
+		converter.readInput(inputFile);
+		HtmlElement htmlElement = converter.convert();
+		File file = new File(NormaFixtures.TARGET_DIR, "table/subtables/10.1007.s13142-010-0006-y_table2.svg.html");
+		XMLUtil.debug(htmlElement, file, 1);
+                
+                int restructuredTableRowCount = getRestructuredRowCount(htmlElement);
+                
+                Assert.assertEquals(0, restructuredTableRowCount); 
+        }
+        
         /**
          * Helper method
          * 
