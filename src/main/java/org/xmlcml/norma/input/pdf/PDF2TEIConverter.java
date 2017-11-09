@@ -5,8 +5,6 @@ import java.util.Arrays;
 
 import org.apache.commons.io.FileUtils;
 import org.xmlcml.cproject.files.CTree;
-import org.xmlcml.norma.grobid.runner.GrobidOption;
-import org.xmlcml.norma.grobid.runner.GrobidRunner;
 
 public class PDF2TEIConverter {
 
@@ -17,11 +15,7 @@ public class PDF2TEIConverter {
 	public File convertFulltextPDFToTEI(File pdfFile) throws Exception {
 		
 		File cTreeDirectory = pdfFile.getParentFile();
-		GrobidRunner grobidRunner = new GrobidRunner();
-		grobidRunner.setInputDirectory(cTreeDirectory);
-		grobidRunner.setOptions(GrobidOption.PROCESS_FULL_TEXT_OPTIONS);
-		grobidRunner.run();
-		// this transforms foo/fulltext.pdf to foo/fulltext/fulltext.tei.xml, 
+		// this trGansforms foo/fulltext.pdf to foo/fulltext/fulltext.tei.xml, 
 		// so rename foo/fulltext/fulltext.tei.xml -> foo/fulltext.tei.xml
 		// 
 		File fulltextDir = new File(cTreeDirectory, CTree.FULLTEXT);
