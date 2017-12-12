@@ -93,3 +93,10 @@ tbody:not[class="subtable"] th[data-role="obslabel"] {
 	margin-left: -10px;
 }
 
+caption {
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
+}
