@@ -14,6 +14,8 @@ import static org.junit.Assert.*;
  * Created by tom on 18/12/17.
  */
 public class TEI2TXTConverterTest {
+    private static String newline = System.getProperty("line.separator");
+
     @Test
     public void convertTEI2TXT() throws Exception {
         InputStream inputStream = getClass().getResourceAsStream("minimal.xml");
@@ -21,7 +23,7 @@ public class TEI2TXTConverterTest {
         // System.out.print(inputString);
         TEI2TXTConverter converter = new TEI2TXTConverter();
         String outputString = converter.convertTEI2TXT(inputString);
-        Assert.assertEquals("Test Test", outputString);
+        Assert.assertEquals("Test Test"+newline, outputString);
         System.out.print(outputString);
     }
 
