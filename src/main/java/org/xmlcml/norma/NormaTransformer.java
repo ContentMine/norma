@@ -36,6 +36,7 @@ import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
 import org.xmlcml.norma.input.pdf.PDF2TEIConverter;
 import org.xmlcml.norma.input.pdf.PDF2TXTConverter;
 import org.xmlcml.norma.input.tei.TEI2HTMLConverter;
+import org.xmlcml.norma.input.tei.TEI2TXTConverter;
 import org.xmlcml.norma.input.tex.TEX2HTMLConverter;
 import org.xmlcml.norma.table.CSVTransformer;
 import org.xmlcml.norma.table.SVGTable2HTMLConverter;
@@ -74,7 +75,8 @@ public class NormaTransformer {
 		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
 		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
-		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML);
+		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML),
+		TEI2TXT(       "tei2txt",      null,      CTree.FULLTEXT_TEI_XML,  null,     CTree.FULLTEXT_PDF+".tei.txt");
 	
 		public String inputSuffix;
 		public String outputSuffix;
@@ -419,6 +421,8 @@ public class NormaTransformer {
 			htmlElement = applyTXT2HTMLToInputFile(inputFile);
 		} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
 			LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
+		} else if (Type.TEI2TXT.equals(type)) {
+			outputTxt = applyTEI2TXTToCurrentInputFile(inputFile);
 		} else if (Type.XML2HTML.equals(type)) {
 			xslDocument = createW3CStylesheetDocument(transformTypeString);
 			if (xslDocument == null) {
@@ -562,6 +566,17 @@ public class NormaTransformer {
 			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
 		}
 		return teiFile;
+	}
+
+	private String applyTEI2TXTToCurrentInputFile(File inputFile) {
+		TEI2TXTConverter converter = new TEI2TXTConverter();
+		String txtString = null;
+		try {
+			txtString = converter.convertTEI2TXTFile(inputFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform TEI "+inputFile, e);
+		}
+		return txtString;
 	}
 
 	private HtmlElement applyTEI2HTMLToInputFile(File teiFile) {

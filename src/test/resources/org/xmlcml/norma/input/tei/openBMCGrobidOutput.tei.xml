@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /home/tom/src/contentmine/grobid/grobid-0.5.0/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.2-SNAPSHOT" ident="GROBID" when="2017-12-11T12:20+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Phase I/II study of temsirolimus for patients with unresectable Hepatocellular Carcinoma (HCC)- a correlative study to explore potential biomarkers for response</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Nature</publisher>
+				<availability status="unknown"><p>Copyright Springer Nature</p>
+				</availability>
+				<date type="published" when="2015-12">2015-12</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Winnie</forename><surname>Yeo</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Stephen</forename><forename type="middle">L</forename><surname>Chan</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Frankie</forename><forename type="middle">Kf</forename><surname>Mo</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Cheuk</forename><forename type="middle">M</forename><surname>Chu</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joyce</forename><forename type="middle">Wy</forename><surname>Hui</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joanne</forename><forename type="middle">Hm</forename><surname>Tong</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anthony</forename><forename type="middle">Wh</forename><surname>Chan</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jane</forename><surname>Koh</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Edwin</forename><forename type="middle">P</forename><surname>Hui</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Herbert</forename><surname>Loong</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kirsty</forename><surname>Lee</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Leung</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Brigette</forename><surname>Ma</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ka</forename><forename type="middle">F</forename><surname>To</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Simon</forename><forename type="middle">Ch</forename><surname>Yu</surname></persName>
+						</author>
+						<title level="a" type="main">Phase I/II study of temsirolimus for patients with unresectable Hepatocellular Carcinoma (HCC)- a correlative study to explore potential biomarkers for response</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">BMC Cancer</title>
+						<title level="j" type="abbrev">BMC Cancer</title>
+						<idno type="eISSN">1471-2407</idno>
+						<imprint>
+							<publisher>Springer Nature</publisher>
+							<biblScope unit="volume">15</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2015-12" />
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1186/s12885-015-1334-6</idno>
+					<note>R E S E A R C H A R T I C L E Open Access</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>Background: The oncogenic PI3K/Akt/mTOR pathway is frequently activated in HCC. Data on the mTOR inhibitor, temsirolimus, is limited in HCC patients with concomitant chronic liver disease. The objectives of this study were: (1) In phase I, to determine DLTs and MTD of temsirolimus in HCC patients with chronic liver disease; (2) In phase II, to assess activity of temsirolimus in HCC, and (3) to explore potential biomarkers for response. Methods: Major eligibility criteria included histologically confirmed advanced HCC and adequate organ function. In Phase I part of the study, temsirolimus was given weekly in 3-weekly cycle; dose levels were 20 mg (level 1), 25 mg (level 2) and 30 mg (level 3). The MTD was used in the subsequent phase II part; the primary endpoint was PFS and secondary endpoints were response and OS. In addition, exploratory analysis was conducted on pre-treatment tumour tissues to determine stathmin, pS6, pMTOR or p-AKT expressions as potential biomarkers for response. Overall survival and PFS were calculated using the Kaplan-Meier method. Reassessment CT scans were done every 6 weeks. All adverse events were reported using CTCAE v3.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>Hepatocellular carcinoma (HCC) is the sixth most com- mon cancer globally, and the third leading cause of can- cer mortality both in Hong Kong and worldwide <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. The outlook of patients with unresectable HCC is poor. To date, the only systemic agent that has been shown to provide survival benefit is sorafenib <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. In parts of the world including Hong Kong, HCC patients often present with advanced disease stage, but the use of sorafenib has only been approved in recent years as standard therapy.</p><p>It has been well-established that numerous genetic abnormalities are involved in HCC; comprehensive genomic analyses shows that components of the phosphatidylinositol-3 kinase (PI3K)/Akt/mTOR path- way are dysregulated in 40-50% of HCC <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref>. On the other hand, a meta-analysis of over 450 patients with HCC who received liver transplant demonstrated lower rates of recurrence and mortality for patients who received the mTOR inhibitor (mTORI), sirolimus, for immunosup- pression <ref type="bibr" target="#b7">[8]</ref>. The expansion of mTORIs as a therapeutic strategy for HCC was also strengthened by their successes in other cancers <ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref>. In various HCC models, mTORIs significantly reduced tumour volume and angiogenesis, delayed tumour growth and increased survival <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref>.</p><p>Everolimus had initially been evaluated in HCC in phase I and II studies. A US study achieved an MTD of 10 mg/day <ref type="bibr" target="#b16">[17]</ref>; among the 25 patients enrolled, 10 achieved stable disease, one achieved partial response, and median survival was 8.4 months. In another study, Taiwanese patients tolerated only a daily dose of 7.5 mg, and the median survival was 7.7 months <ref type="bibr" target="#b17">[18]</ref>. However, the efficacy of everolimus in HCC has not been con- firmed by the recently reported global phase III study (EVOLVE-1, NCT01035229) <ref type="bibr" target="#b18">[19]</ref>.</p><p>Temsirolimus is a prodrug of sirolimus; it is adminis- tered intravenously and has a long half-life of 73 hours. To date, there has been limited clinical data on the use of temsirolimus in HCC patients who often suffer from chronic liver disease. We conducted a phase I/II study of temsirolimus (Torisel®) in patients with unresectable HCC, majority of whom had concomitant hepatitis B virus-related chronic liver disease. The objectives in the phase I study were to determine dose limiting toxicity (DLT) and maximum tolerated dose (MTD). Once the MTD was determined, the phase II portion of the study was conducted to determine the activity of temsirolimus.</p><p>Although promising results have been shown with tem- sirolimus in a number of malignancies, there has been very limited data on potential biomarkers that could en- able appropriate selection of tumours which are likely to undergo a favorable clinical response. Further, the failure to demonstrate efficacy of everolimus in the EVOLVE study has highlighted the potential importance of appro- priate patient selection. Thus, in the current study, an exploratory analysis was also conducted to determine if the expression of stathmin, pS6, pMTOR and p-AKT might be predictive for response to temsirolimus in HCC.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>Eligibility criteria included: Histologically/cytologically confirmed unresectable HCC; ECOG ≤2; measurable disease; life expectancy &gt; 12 weeks; absolute neutrophil count ≥ 1.5 × 10 9 /L, platelets ≥ 80 × 10 9 /l, serum creatin- ine ≤ 150 μmol/L, total bilirubin ≤ 30 umol/l, albumin ≥ 28 g/l, alanine transaminases ≤ 5.0 × UNL (institutional upper normal limit), alkaline phosphatase ≤ 6 × UNL, prothrombin time ≤ 4 sec of ULN, and absence of clinical ascites.</p><p>The main exclusion criteria were Child's B or C cirrho- sis, use of other systemic treatments within 3 weeks prior to study entry; prior use of mTORI; significant car- diovascular disease; severe impairment of lung function; poorly controlled diabetes mellitus; and ≥ grade 2 pre- existing neuropathy.</p><p>Written consent was sought from individual patient to participate in the study and for the exploratory analysis that involved the use of tissue obtained for diagnostic purpose. This study was approved by the Clinical Re- search Ethics Committee of the Joint NTEC-Review Board of the Chinese University of Hong Kong, and has been registered in ClinicalTrials.gov (Id: NCT00321594).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pretreatment evaluation</head><p>All patients underwent complete medical history and physical examination, blood profiles including complete blood counts, renal and liver functions, fasting glucose and lipids, clotting profiles, alpha-fetoprotein (AFP), and hepatitis B surface antigen (HBsAg), hepatitis C antibody (anti-HCV), chest x-ray and CT scan of abdomen and/or other disease sites were performed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Treatment plan</head><p>Temsirolimus was added to 250 mL of 0.9% sodium chloride and administered intravenously over 30 minutes weekly, every 3 weeks. All patients received premedica- tion with diphenhydramine 25 mg or 50 mg IV bolus dose 30 minutes prior to temsirolimus. Standard anti- emetics included at least a 5-HT3 antagonist. Patients who were HBsAg seropositive were also given lamivu- dine prior to study treatment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase I study</head><p>For the phase 1 study, there were 5 dose levels of temsiro- limus: 10 (level −2), 15 (level −1), 20 (level 1), 25 (level 2) and 30 mg/week (level 3). Level 1 was the starting dose level.</p><p>DLT was defined during cycle 1 as: any grade 4 hematological toxicity; grade ≥3 non-hematological toxicity (excluding alopecia); grade 3 nausea, vomiting, or diarrhoea that did not respond to therapy; and treat- ment delay &gt; 2 weeks.</p><p>The conventional 3 + 3 design was employed. Dose escalation was based on the modified Fibonacci method <ref type="bibr" target="#b19">[20]</ref>. The MTD was defined as the dose below which ≥ 2 of 3 or ≥ 2 of 6 patients experiencing DLT. A total of 10 patients were entered into the MTD to further define toxicity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Treatment delay and modification</head><p>For each cycle, treatment was delayed if the ANC was &lt;1.5 × 10 9 /L or platelet count was &lt; 75 × 10 9 /ml on the scheduled day of drug administration. Patients who experienced grade 3 non-haematological toxicity, thrombocytopenia or febrile neutropenia, as well as grade 4 neutropenia continued to receive temsirolimus at the next lower dose level upon resolution of all toxicities to grade 1. For an individual, there could be a limit of two dose de-escalations for serious toxicity. The drug was discontinued for toxicities of the fol- lowing nature: grade 4 non-hematological toxicities, thrombocytopenia/febrile neutropenia/recurrent grade 4 neutropenia despite dose reduction, as well as any haematological or non-haematological toxicity requir- ing interruption for ≥ 3 weeks.</p><p>Treatment was continued provided that toxicities were tolerable or until one of the following criteria applied: disease progression; intercurrent illness that prevented further treatment administration; unacceptable adverse events; patient's decision; or investigator's judgment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase II study</head><p>Upon determination of MTD, patients were enrolled into the phase II part of the trial at MTD; the 10 pa- tients at the MTD in phase I were included in the phase II analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Definitions of response and toxicity</head><p>Tumour response assessment with CT every two cycles was assessed according to the Response Evaluation Criteria in Solid Tumors (RECIST) Committee <ref type="bibr" target="#b20">[21]</ref>. Toxicity was graded according to Common Toxicity Criteria of the National Cancer Institute (NCI-CTC v3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology for stathmin, pS6, pMTOR and p-AKT immunohistochemistry</head><p>Thirty-four patients had pre-treatment tissues available for this analysis. For immunohistochemistry, 5-μm tissue sections were prepared from each block. Tissue sections were deparaffinized, rehydrated and rinsed in distilled water. Antigen retrieval was done by using pressure cooker with 10 nM citrate buffer (pH 6.0) for 25 minutes. The endogenous peroxidase activity was then blocked by incubating the slides in 3% hydrogen peroxide in metha- nol for 10 min. The primary antibodies used in this study were STMN1 (1:50), pS6 (Ser235/236, 1:100), pMTOR (Ser2448, 1:50) and p-AKT (Ser473, clone D9E, 1:25) from Cell Signaling Technology (Danvers MA). The primary antibodies were incubated at 4°C overnight and chromogen development was performed using the DAKO EnVision System (Glostrup, Denmark) except for p-AKT, which was detected using the OptiView DAB IHC Detection Kit (Ventana Medical Systems).</p><p>An intensity score of 0 to 3 was assigned for the inten- sity of tumour cells (0, none; 1, weak; 2, intermediate; 3, strong). A proportional score was given by the estimated proportion of positive tumour cells in percentage. To assess the average degree of staining within a tumour, multiple regions were analyzed, and at least 100 tumour cells were assessed. The cytoplasmic expression was assessed by H-score system <ref type="bibr" target="#b21">[22]</ref>. The formula for the H-score is: Histoscore = ∑(I × Pi), where I = intensity of staining and Pi = percentage of stained tumour cells, producing a cytoplasmic score ranging from 0 to 300. The scoring was independently assessed by two assessors (AWHC and JHMT) who were not aware of the clinical outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical methods</head><p>For the Phase I portion, the estimated patient number would be 14-19. For the phase II portion, the primary endpoint was progression free survival (PFS). The sec- ondary endpoints were response according to RECIST, overall survival (OS) and toxicity. The PFS was assessed from day 1 of treatment cycle 1 to the date when object- ive disease progression was observed. OS was calculated from day 1 of treatment cycle 1 to the date of death. Death was regarded as a progression event in those sub- jects who died before disease progression. Subjects with- out documented objective progression at the time of the final analysis were censored at the date of their last tumour assessment. Survival curves were constructed using the Kaplan-Meier method.</p><p>The planned accrual for phase II was 30 assessable patients. Patients are considered assessable if they have completed ≥ 1 cycle of treatment or are removed from study due to disease progression. If the PFS at 3 months is ≤ 0.5, the regimen would be considered inactive. If the PFS at 3 months is ≥ 0.66, this regimen would be consid- ered worthy of further investigation. If ≥ 18 of 30 assess- able patients are observed to be progression-free by 3 months, the study would have 80% power and 0.18 significance level. An additional 6 patients (i.e. 20%) would be accrued to account for ineligibility, cancellation, major treatment violation, or other reasons. Therefore, the maximum accrual would be 36 patients (including the 10 patients from phase I at MTD). In order to observe enough events for the study, all patients would be followed up for at least 3 months.</p><p>Exploratory analysis on cytoplasmic expression of the biomarkers was viewed as hypothesis generating. The optimal cutoff for stathmin, pS6, pMTOR and p-AKT was determined by the receiver operating characteristic (ROC) curve distribution analysis <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>. Out of a total H-score of 300, the threshold for differentiating between positive and negative immunostaining were set at H- scores of 15, 120, 20 and 5 respectively; tumours were categorized as 'low H-score' and 'high H-score' depend- ing on whether the individual score were 'lower than or equal to' or 'higher than' the respective thresholds. Response rates in terms of disease stabilization (defined as complete response <ref type="bibr">[CR]</ref> + partial response [PR] + stable disease [SD] ≥ 12 weeks) and AFP drop in asso- ciation with H-scores of stathmin, pS6, pMTOR and p-AKT cytoplasmic were compared using Fisher's exact and proportional hazard model where applicable. Re- sponse assessment based on AFP was conducted for patients whose baseline AFP &gt; 20 ng/ml and who had 2 cycles of study treatment. The drop in AFP based on baseline AFP was compared with the lowest level of AFP detected after 2 cycles of study treatment, and AFP response was defined as a &gt; 20% decrease in AFP value <ref type="bibr" target="#b24">[25]</ref>.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>From November 2009 to December 2011, a total of 45 patients were consented and entered.</p><p>Phase I study Patient characteristics and study drug dosing</p><p>Nineteen patients were entered, 3 in level 1, 10 in level 2 and 6 in level 3 ( <ref type="table" target="#tab_0">Table 1</ref>). The median age was 56.0 years (range 36-77). Fifteen (79%) were male, 14 (78%) had ECOG 0. Fifteen (79%) had chronic HBV and 1 was hepatitis C seropositive. Two out of 6 patients developed DLTs at level 3 (dose being 30 mg/week), including 1 who developed grade 3 syncope and 1 who had treatment delay for &gt; 2 weeks due to prolonged neutropenia. Temsirolimus dose of 25 mg/week was declared as the MTD and the recom- mended phase II dose; at the MTD, temsirolimus was well tolerated with no DLTs. The 10 patients enrolled into the phase I study at MTD were included in the phase II analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase II study Patient characteristics</head><p>The following analyses pertain to the 36 patients who were being enrolled into the phase II study.</p><p>Patient characteristics are shown in <ref type="table" target="#tab_1">Table 2</ref>. Of note, 27 patients had BCLC stage C <ref type="bibr" target="#b25">[26]</ref>, 9 had BCLC stage B (including 8 who failed multiple lines of loco-regional therapies and 1 who had extensive intrahepatic disease); 24 (66.7%) had vascular involve- ment and 21 (58.3%) had extrahepatic metastases. Twenty-nine patients (80.5%) had received prior treat- ment for HCC; 13 (36.1%) had received ≥1 line of prior systemic therapies; 10 of the latter had received anti-vascular endothelial growth factor tyrosine kinase inhibitors (anti-VEGF TKIs). The median number of cycles was 3.5 (range: 1-16). Twelve (34%) patients underwent at least 6 cycles of temsirolimus. died; 34 (94.4%) were due to progressive disease, 1 due to liver failure and another due to pneumonia.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Response and survival</head><p>One patient was not assessable for response as he went abroad after receiving cycle 1 week 1 of temsirolimus. Amongst the 35 assessable patients, the best responses were: 1 PR (3%), 20 SD (57%) and 14 progressive disease [PD] (40.0%); 40% had disease stabilization. Overall, the median PFS was 2.83 months (95% C.I. 1.63-5.24); the 3-month PFS was 0.47 (95% C.I. 0.31- 0.64) <ref type="figure" target="#fig_0">(Figure 1a)</ref>. The median OS was 8.89 months (95% C.I. 5.89-13.30) <ref type="figure" target="#fig_0">(Figure 1b)</ref>.</p><p>Unplanned exploratory analyses revealed that patients who received prior anti-VEGF TKIs had similar PFS and OS compared with those who did not. In addition, treat- ment outcome was not associated with viral etiologies (data not shown).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Toxicity</head><p>In the phase II portion study, toxicity was assessable in the 35 patients <ref type="table">(Table 3)</ref>. The most common adverse events that occurred in &gt; 30% of patients included oral mucositis, rash, fatigue, cough, non-neutropenic fever, anorexia, insomnia, diarrhea, thrombocytopenia, and pain in abdomen and head. Grade ≥ 3 events that occurred in &gt; 10% included hyponatraemia and thrombocytopenia.</p><p>Of note, hyperglycaemia occurred in 6 patients (17%; 4 grade 1-2 and 1 grade 3), while 1 patient developed grade 2 hypercholesterolaemia; all could be managed with standard medical therapies. Two patients developed interstitial pneumonitis, which resolved with corticoster- oid and discontinuation of temsirolimus.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Exploratory analysis</head><p>Of the 35 assessable patients, 34 had pre-treatment tumour tissues available for this analysis, there were 14 patients who achieved disease stabilization.</p><p>The H-scores for stathmin, pS6, pMTOR and pAKT of individual patient's tumour are listed in <ref type="table">Table 4</ref>. The immunohistochemical findings with respect to H-scores for stathmin, pS6, pMTOR and pAKT are illustrated in <ref type="figure" target="#fig_3">Figure 2</ref>. Analysis of the H-scores in association with disease stabilization and AFP drop are detailed in <ref type="table" target="#tab_3">Table 5</ref>. Only pMTOR was found to be associated with disease stabilization, 7 of the 10 patients (70%) who had high H-scores (&gt; 20/300) achieved disease stabilization, in contrast to 7 out of 24 (29%) who had low H-scores (p = 0.028). The odds ratio (OR) for disease stabilization for high vs. low pMTOR H-scores is 5.667 (95% C.I. 1.129-28.454, p = 0.035).</p><p>Of the 36 patients, 22 were eligible for AFP response; there were 8 AFP responders and 14 non-responders. Correlation study of AFP response with H-scores for  stathmin, pS6, pMTOR and pAKT showed no association. Of interest, AFP response for high vs. low pMTOR scores occurred in 67% and 20% respectively (p = 0.085).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The present study confirmed the MTD for temsirolimus in patients with chronic liver disease and advanced HCC to be 25 mg weekly, which is the approved dose for metastatic renal cell carcinoma <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>. Common adverse reactions of temsirolimus noted in this study were con- sistent with the reported toxicity profile of this agent, which included skin and mucosal toxicities, constitu- tional symptoms (fatigue, anorexia, insomnia), myelo- suppression, metabolic disturbances (disturbances in glucose and lipids controls) and the uncommon but well-known occurrence of interstitial pneumonitis.</p><p>In an unselected population of advanced HCC patients, the current study reveals that the use of temsirolimus <ref type="table">Table 4</ref> Virological status, H-scores for stathmin, pS6, pMTOR and pAKT and clinical outcome in terms of having achieved disease stabilization of individual patient's tumour Patient no.</p><p>HBV/HCV/ Non-B non-C Stathmin pS6 pMTOR pAkt Disease stabilization yielded a 3-month PFS of 0.47, which is lower than the pre-specified limit considered to be efficacious. The present finding is in line with that of the EVOLVE study, in which everolimus has failed to achieve the primary end- point in improving OS in an unselected HCC patient population who had progressed on sorafenib <ref type="bibr" target="#b18">[19]</ref>. The dis- couraging result sheds light to the potential importance of suitable patient selection.</p><p>There has been limited ability to identify biomarkers for appropriate utilization of mTORIs. In the phase I study of everolimus, 11 HCC patients had pre-treatment tumour tissues available for assessment, one patient achieved PR and the tumour showed moderate to high levels of p-AKT, p-MTOR and pS6 <ref type="bibr" target="#b16">[17]</ref>. The key effector in the PI3K/Akt/ mTOR pathway is mTOR, which has a critical role in regulating cell proliferation, survival and angiogenesis  [27,28]. PIK3CA has also been suggested as a predictive marker for effective mTOR inhibition in breast cancer <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b29">30]</ref>, unfortunately, a recent report on endometrial cancer did not support this <ref type="bibr" target="#b30">[31]</ref>. Further, the reported rate of mutations in the PIK3CA gene has been incon- sistent in HCC varying from 0-35% <ref type="bibr" target="#b31">[32,</ref><ref type="bibr" target="#b32">33]</ref>. Activated PI3K propels two downstream effectors: mTOR com- plex 2 (mTORC2) and Akt. Akt activates mTORC1 which in turn activates downstream effector, the serine/ threonine kinase, S6K1. S6K1 participates in numerous cellular processes central to promoting cell prolifera- tion, cell growth and cell cycle progression <ref type="bibr" target="#b33">[34,</ref><ref type="bibr" target="#b34">35]</ref>. Phosphorylated mTOR and p-S6K is elevated in ap- proximately 40% of HCC <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b26">27,</ref><ref type="bibr" target="#b35">36]</ref>. It has been observed that loss of PTEN, the negative regulator of PI3K, re- sults in robust activation of this pathway <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b37">38]</ref>, and stathmin, encoded by the signature gene STMN1, has been suggested to be a more accurate immunohisto- chemical marker of the PTEN signature <ref type="bibr" target="#b38">[39]</ref>. These data have prompted us to explore the possibility of stathmin, pAKT, pMTOR and pS6 as potential biomarkers for response. The present exploratory analyses show pMTOR to be the only marker associated with disease stabilization effect of temsirolimus. Although some studies suggested that pMTOR overexpression may have prognostic im- pact independent of temsirolimus, studies in different tumour types have reported conflicting results <ref type="bibr" target="#b39">[40]</ref><ref type="bibr" target="#b40">[41]</ref><ref type="bibr" target="#b41">[42]</ref>. Specifically, a study in HCC patients undergoing ortho- topic liver transplantation reported mTOR pathway to be active in 40% of the patients, but none of the biomarkers [PTEN, p-AKT, p-mTOR, p-p70S6K and p- 4EBP-1] were associated with survival <ref type="bibr" target="#b42">[43]</ref>. In this current study, assessment of pMTOR in relation to pres- ence of vascular invasion and tumour grading was attempted; unfortunately, 22 of the 34 tumour analyzed were biopsy samples which limits detail pathological assessment.</p><p>On the other hand, the effect of rapalogs on Akt may vary with drug dose, with lower doses increasing Akt **Disease stabilization rate (CR + PR + SD) ≥12 weeks, number of patients available for analysis = 34; disease stabilization in association with H-scores were compared using Fisher's exact and proportional hazard model. ***AFP response, number of patients available for analysis = 22; AFP drop in association with H-scores were compared using Fisher's exact.</p><p>activation while higher doses diminishing Akt activity <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b44">45]</ref>. In addition, the effect on Akt also varies with cell type <ref type="bibr" target="#b45">[46]</ref>. Thus, determining the clinical effects of different dosages of mTORIs could be an important tactic to overcoming such limitation. Further, combining mTORIs with other systemic agents could improve clinical efficacy. The combination of everolimus and sorafenib has been reported to syner- gistically inhibit proliferation and tumor growth in HCC cell lines and xenografts <ref type="bibr" target="#b13">[14]</ref>. A phase I study of this combination in advanced HCC patients yielded an encouraging 8% PR and 60% SD <ref type="bibr" target="#b46">[47]</ref>. In addition, studies have shown that the activation of Akt markedly increases the resistance against microtubule-directed cytotoxic agents while mTORIs could inhibit this resistance <ref type="bibr" target="#b47">[48,</ref><ref type="bibr" target="#b48">49]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>In summary, this study demonstrates that temsirolimus enables disease stabilization with tolerable toxicity pro- file among HCC patients. Although the efficacy data has not reached the pre-specified PFS endpoint, patients with tumours having a high pMTOR score were more likely to achieve disease stabilization. In this respect, a recent study among bladder cancer patients have re- ported that everolimus was more effective in patients with a somatic mutation in the TSC1 complex <ref type="bibr" target="#b49">[50]</ref>. Therefore, the role pMTOR and TSC1 mutation as potential biomarkers for efficacy of mTOR inhibition should further be explored to enable better selection of appropriate patient population. However, further im- provement in clinical efficacy for HCC will likely require combining mTORIs with other novel compounds.</p><p>Abbreviations HCC: Hepatocellular carcinoma; DLTs: Dose limiting toxicities; MTD: Maximum tolerated dose; CR: Complete response; PR: Partial response; SD: Static disease; PFS: Progression free survival; OS: Overall survival; mTORI: mTOR inhibitor; pMTOR: Phosphorylated mTOR; pS6K: Phosphorylated serine/threonine kinase; ROC: Receiver operating characteristic; AFP: Alfa-fetoprotein.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1</head><label>1</label><figDesc>Figure 1 (a) Progression-free survival; (b) Overall survival of patients in the phase II study.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>A</head><label></label><figDesc>. high stathmin H-score (2/300). B. low stathmin H-score (210/300). C. high pS6 H-score (0/300). D. low pS6 H-score (270/300). G. high p-AKT H-score (5/300). E. high pMTOR H-score (3/300). F. low pMTOR H-score (105/300). H. low p-AKT H-score (240/300).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2</head><label>2</label><figDesc>Figure 2 Immunohistochemical staining of pretreatment tumour tissues. A. high stathmin H-score (2/300). B. low stathmin H-score (210/300). C. high pS6 H-score (0/300). D. low pS6 H-score (270/300). E. high pMTOR H-score (3/300). F. low pMTOR H-score (105/300). G. high p-AKT H-score (5/300). H. low p-AKT H-score (240/300).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 Summary of dose level and dose-limiting toxicities in phase 1</head><label>1</label><figDesc></figDesc><table>Patient no. 
+Dose level 
+Dose-limiting toxicities 
+
+001 
+1 
+nil 
+
+002 
+1 
+nil 
+
+003 
+1 
+nil 
+
+004 
+2 
+nil 
+
+005 
+2 
+nil 
+
+006 
+2 
+nil 
+
+007 
+3 
+nil 
+
+008 
+3 
+Grade 3 syncope 
+
+009 
+3 
+nil 
+
+010 
+3 
+nil 
+
+011 
+3 
+nil 
+
+012 
+3 
+Treatment delay for &gt; 2 weeks 
+due to prolonged neutropenia 
+
+013 
+2 
+nil 
+
+014 
+2 
+nil 
+
+015 
+2 
+nil 
+
+016 
+2 
+nil 
+
+017 
+2 
+nil 
+
+018 
+2 
+nil 
+
+019 
+2 
+nil 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="true"><head>Table 2 Baseline patient characteristics in phase II study</head><label>2</label><figDesc></figDesc><table>Characteristic 
+No. of patients 
+% 
+
+No. of patients 
+36 
+100 
+
+Gender 
+
+Male 
+31 
+86.1 
+
+Female 
+5 
+13.9 
+
+Age, years 
+
+Median 
+56 
+
+Range 
+26-77 
+
+ECOG performance status 
+
+0 
+24 
+66.7 
+
+1 
+12 
+33.3 
+
+Hepatitis status 
+
+Hepatitis B 
+29 
+80.5 
+
+Hepatitis C 
+1 
+2.8 
+
+Non-B non-C 
+6 
+16.7 
+
+Baseline AFP &gt; 10 μg/l 
+
+Yes 
+25 
+69.4 
+
+No 
+11 
+30.6 
+
+Tumour Burden 
+
+BCLC Stage B 
+28 
+
+BCLC stage C 
+8 
+
+Macroscopic vascular invasion 
+24 
+66.7 
+
+Extrahepatic disease 
+21 
+58.3 
+
+Prior therapy for HCC of any forms 
+29 
+80.6 
+
+Blood parameters (median, range): 
+
+Total bilirubin 
+16 (5-34) umol/l 
+
+Albumin 
+39. (32-48) g/l 
+
+Alanine transaminase 
+40 (18-140) iu/l 
+
+Alkaline phosphatase 
+108 (52-434) iu/l 
+
+AFP 
+82 (1-118712) ug/l 
+
+INR 
+1.06 (0.89-1.26) 
+
+Creatinine 
+82 (44-136) umol/l 
+
+Glucose 
+5.4 (4.0-8.5) mmol/l 
+
+Triglyceride 
+0.9 (0.5-2.0) mmol/l 
+
+LDL cholesterol 
+2.65 (1.6-7.3) mmol/l 
+
+HDL cholesterol 
+1.15 (0.7-2.5) mmol/l 
+
+Total cholesterol 
+4.45 (3.0-8.9) mmol/l 
+
+Prior systemic therapy 
+
+1 line 
+11 
+30.5 
+
+2 lines 
+1 
+2.8 
+
+3 lines 
+1 
+2.8 
+
+Prior local +/− regional therapy 
+
+Surgery 
+23 
+63.9 
+
+*Local ablation 
+4 
+11.0 
+
+Transarterial therapy 
+20 
+55.5 
+
+*2 had radiofrequency ablation and 2 had percutaneous ethanol injection. </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head>Table</head><label></label><figDesc></figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="true"><head>Table 5 Exploratory analysis on H-scores for stathmin, pS6, pMTOR and pAKT Stathmin H-scores Range: 0-300/300; Optimal Cut-off*: 15/300</head><label>5</label><figDesc></figDesc><table>H-scores: High vs. Low 
+High H-scores (&gt;15/300) 
+Low H-scores (≤15/300) 
+
+Disease stabilization rate** 
+7/21 (33%) 
+7/13 (46%) 
+p = 0.238 
+
+OR for disease stabilization** 
+0.429 (95% CI 0.104-1.770) 
+p = 0.242 
+
+AFP response*** 
+2/6 (33%) 
+6/16 (38%) 
+p = 0.376 
+
+pS6 
+
+H-scores Range: 0-300/300; Optimal Cut-off*:120/300 
+
+H-scores: High vs. Low 
+High H-scores (&gt;120/300) 
+Low H-scores (≤120/300) 
+
+Disease stabilization rate** 
+8/17 (47%) 
+6/17 (35%) 
+p = 0.489 
+
+OR for disease stabilization** 
+1.630 (95% CI 0.411-6.459) 
+p = 0.487 
+
+AFP response*** 
+4/11 (36%) 
+4/11 (36%) 
+p = 0.341 
+
+pMTOR 
+
+H-scores Range: 0-180/300; Optimal Cut-off*: 20/300 
+
+H-scores: High vs. Low 
+High H-scores (&gt;20/300) 
+Low H-scores (≤20/300) 
+
+Disease stabilization rate** 
+7/10 (70%) 
+7/24 (29%) 
+p = 0.028 
+
+OR for disease stabilization** 
+5.667 (95% CI 1.129-28.454) 
+p = 0.035 
+
+AFP response 
+4/16 (25%) 
+4/6 (67%) 
+p = 0.085 
+
+pAKT 
+
+H-scores Range: 0-240/300; Optimal Cut-off*: 5/300 
+
+H-scores: High vs. Low 
+High H-scores (&gt;5/300) 
+Low H-scores (≤5/300) 
+
+Disease stabilization rate** 
+4/11 (36%) 
+10/23 (43%) 
+p = 0.693 
+
+OR for disease stabilization** 
+0.743 (95% CI 0.169-3.262) 
+p = 0.694 
+
+AFP response*** 
+7/16 (44%) 
+1/6 (17%) 
+p = 0.215 
+
+*H-scores Optimal Cut-off based on ROC. 
+</table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The study was sponsored by Pfizer Corporation Inc. (drug support, funding of imaging required in the study, and funding for personnel for data entry and data analysis), and the Chinese University of Hong Kong Direct Grant for Research (Grant Ref No. 2012.1.011). The investigators were responsible for data collection, data analysis, data interpretation, and writing of the report.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare that they have no competing interests.  </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Global cancer statistics 2002</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">M</forename><surname>Parkin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ferlay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Pisani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CA Cancer J Clin</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="74" to="108" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Leading cancer sites in Hong Kong in 2012. Hong Kong Cancer Registry</title>
+	</analytic>
+	<monogr>
+		<title level="j">Hospital Authority</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Sorafenib in advanced hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Llovet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ricci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Mazzaferro</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Hilgard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Gane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">F</forename><surname>Blanc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">359</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="378" to="90" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Efficacy and safety of sorafenib in patients in the Asia-Pacific region with advanced hepatocellular carcinoma: a phase III randomised, double-blind, placebo-controlled trial</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">L</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">K</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">J</forename><surname>Tsao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lancet Oncol</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="25" to="34" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Pivotal role of mTOR signaling in hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Villanueva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">Y</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Newell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Peix</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Thung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Alsinet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Gastroenterology</title>
+		<imprint>
+			<biblScope unit="volume">135</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">mTOR and P70 S6 kinase expression in primary liver neoplasms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sahin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Kannangai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Adegbola</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Torbenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clin Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="8421" to="8426" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Targeting the mTOR pathway in hepatocellular carcinoma: Current state and future trends</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Matter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Decaens</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B</forename><surname>Andersen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Thorgeirsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Hepatol</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="855" to="65" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Meta-analysis: recurrence and survival following the use of sirolimus in liver transplantation for hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">V</forename><surname>Menon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Hakeem</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">D</forename><surname>Heaton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Aliment Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="411" to="420" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Renal cell carcinoma: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Escudier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Eisen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Porta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Patard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Khoo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Algaba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ann Oncol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="65" to="71" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Temsirolimus, interferon alfa, or both for advanced renal-cell carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Kudes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Carducci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Tomczak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Beard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bhayani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">B</forename><surname>Bolger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">356</biblScope>
+			<biblScope unit="page" from="2271" to="228" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Everolimus in postmenopausal hormone-receptor-positive advanced breast cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Baselga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Campone</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Piccart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">L</forename><surname>Bohas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">M</forename><surname>Wolin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Van Cutsem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">366</biblScope>
+			<biblScope unit="page" from="520" to="529" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Everolimus for advanced pancreatic neuroendocrine tumors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">C</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ito</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">364</biblScope>
+			<biblScope unit="page" from="514" to="537" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Vascular remodeling and antitumoral effects of mTOR inhibition in a rat model of hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Semela</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Piguet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kolev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Schmitter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Hlushchuk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Djonov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Hepatol</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="840" to="848" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Everolimus augments the effects of sorafenib in a syngeneic orthotopic model of hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Piguet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Saar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Hlushchuk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">V</forename><surname>St-Pierre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">M</forename><surname>Mcsheehy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Radojevic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Cancer Ther</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1007" to="1024" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">mTOR inhibitors synergize on regression, reversal of gene expression, and autophagy in hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">A</forename><surname>Mercer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">S</forename><surname>Carnevalli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B</forename><surname>Andersen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Conner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci Transl Med</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="139" to="84" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">RAD001 (everolimus) inhibits tumor growth in xenograft models of human hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Huynh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">H</forename><surname>Chow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">C</forename><surname>Soo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">C</forename><surname>Toh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">P</forename><surname>Choo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">F</forename><surname>Foo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Cell Mol Med</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1371" to="80" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Phase 1/2 study of everolimus in advanced hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Abrams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Miksad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">S</forename><surname>Blaszkowsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Meyerhardt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page" from="5094" to="102" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Randomised clinical trial: comparison of two everolimus dosing schedules in patients with advanced hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">S</forename><surname>Shiah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">F</forename><surname>Hsiao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">F</forename><surname>Hsiao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">C</forename><surname>Su</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Aliment Pharamcol Ther</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="62" to="73" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Phase 3 study of everolimus for advanced HCC that progressed during or after sorafenib</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kudo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Assenat</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Cattan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">K</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">Y</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<imprint>
+			<biblScope unit="volume">312</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="67" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Dose escalation methods in phase I cancer clinical trials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Le</forename><surname>Tourneau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Siu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Natl Cancer Inst</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="708" to="728" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">New guidelines to evaluate the response to treatment in solid tumors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Therasse</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">G</forename><surname>Arbuck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Eisenhauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wanders</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">S</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Rubinstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Natl Cancer Inst</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="205" to="221" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Immunohistochemical analyses of estrogen receptor in endometrial adenocarcinoma using a monoclonal antibody</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Budwit-Novotny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">S</forename><surname>Mccarty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">B</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">T</forename><surname>Soper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">G</forename><surname>Mutch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">T</forename><surname>Creasman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="5419" to="5444" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Basic principles of ROC analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Metz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Semin Nucl Med</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="283" to="98" />
+			<date type="published" when="1978" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Receiver-operating characteristic (ROC) plots: A fundamental evaluation tool in clinical medicine</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Zweig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Campbell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clin Chem</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="561" to="77" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">New Utility of an Old Marker: Serial α-fetoprotein measurement in predicting radiologic response and survival of patients with hepatocellular carcinoma undergoing systemic chemotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Fkf</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">P</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">B</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">M</forename><surname>Ho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="446" to="52" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">European Association for the Study of the Liver, European Organisation for Research and Treatment of Cancer. EASL-EORTC Clinical Practice Guidelines: Management of hepatocellular carcinoma</title>
+	</analytic>
+	<monogr>
+		<title level="j">J Hepatol</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="908" to="951" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The TOR pathway: a target for cancer therapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Bjornsti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">J</forename><surname>Houghton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Cancer</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="335" to="383" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Activation of Akt-mTOR-p70S6K pathway in angiogenesis in hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Brown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oncol Rep</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="713" to="722" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Defining biomarkers to predict sensitivity to PI3K/Akt/mTOR pathway inhibitors in breast cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Gonzalez-Angulo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Blumenschein</forename><surname>Jr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Treat Rev</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="313" to="333" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">PIK3CA genotype and a PIK3CA mutation-related gene signature and response to everolimus and letrozole in estrogen receptor positive breast cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Loi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Michiels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Baselga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Bartlett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Singhal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">S</forename><surname>Sabine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS One</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">53292</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Molecular determinants of outcome with mammalian target of rapamycin inhibition in endometrial cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">J</forename><surname>Mackay</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Eisenhauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kamel-Reid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tsao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Karakasis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="603" to="613" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">PIK3CA gene is frequently mutated in breast carcinomas and hepatocellular carcinomas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">H</forename><surname>Soung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">W</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1477" to="80" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Absence of PIK3CA hotspot mutations in hepatocellular carcinoma in Japanese patients</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Kanai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tada</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Asaoka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Guleng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Jazag</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="2950" to="2952" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Mammalian target of rapamycin complex 1: signaling inputs, substrates and feedback mechanisms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">A</forename><surname>Dunlop</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Tee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Signal</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="827" to="862" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Sonenberg N. mTOR, translation initiation and cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Mamane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Petroulakis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Lebacquer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oncogene</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">48</biblScope>
+			<biblScope unit="page" from="6416" to="6438" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Phosphorylation of p70S6 kinase predicts overall survival in patients with clear margin-resected hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">A</forename><surname>Baba</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wohlschlaeger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Cicinnati</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Hilgard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Lang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">C</forename><surname>Sotiropoulos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Liver Int</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="399" to="405" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The evolution of phosphatidylinositol 3-kinases as regulators of growth and metabolism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Engelman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">C</forename><surname>Cantley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Genet</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="606" to="625" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The biology and clinical relevance of the PTEN tumor suppressor pathway</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sansal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">R</forename><surname>Sellers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="2954" to="63" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Poor prognosis in carcinoma is associated with a gene expression signature of aberrant PTEN tumor suppressor pathway activity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">H</forename><surname>Saala</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Johanssonc</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Holmb</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Gruvberger-Saal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><forename type="middle">B</forename><surname>She</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Maurer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc Natl Acad Sci</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="7564" to="7573" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The mTOR pathway is associated with the poor prognosis of human hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Oncol</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="255" to="61" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Overexpression of phosphorylated mammalian target of rapamycin predicts lymph node metastasis and prognosis of Chinese patients with gastric cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clin Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1821" to="1830" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">The expression of phospho-AKT1 and phospho-MTOR is associated with a favorable prognosis independent of PTEN expression in intrahepatic cholangiocarcinomas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">G</forename><surname>Do</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">T</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">S</forename><surname>Heo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mod Pathol</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="131" to="140" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Mammalian target of rapamycin pathway activity in hepatocellular carcinomas of patients undergoing liver transplantation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Sieghart</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Fuereder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Schmid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cejka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Werzowa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Wrba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transplantation</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="425" to="457" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Pathological angiogenesis is induced by sustained Akt signaling and inhibited by rapamycin</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">L</forename><surname>Phung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ziv</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Dabydeen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Eyiah-Mensah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Riveros</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Perruzzi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="159" to="70" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Intracellular signaling in tumor and endothelial cells: The expected, and yet again, the unexpected</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Stoeltzing</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Meric-Bernstam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Ellis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Cell</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="89" to="91" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Prolonged rapamycin treatment inhibits mTORC2 assembly and Akt/PKB</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">D</forename><surname>Sarbassov</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sengupta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Sheen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">P</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">F</forename><surname>Bagley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Cell</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="159" to="68" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Temsirolimus combined with sorafenib in hepatocellular carcinoma: a phase I dose-finding trial with pharmacokinetic and biomarker correlates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">K</forename><surname>Kelley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">S</forename><surname>Nimeiri</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">N</forename><surname>Munster</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Vergo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ann Oncol</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="1900" to="1907" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Enhanced antitumor activity with combining effect of mTOR inhibition and microtubule stabilization in hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">H</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">P</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">W</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">W</forename><surname>Lui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Hepatol</title>
+		<imprint>
+			<biblScope unit="page">103830</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Sustained antitumor activity by co-targeting mTOR and the microtubule with temsirolimus/ vinblastine combination in hepatocellular carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Q</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">W</forename><surname>Lui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">P</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biochem Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="1146" to="58" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Genome sequencing identifies a basis for everolimus sensitivity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Iyer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">J</forename><surname>Hanrahan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">I</forename><surname>Milowsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Al-Ahmadie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">N</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Janakiraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">338</biblScope>
+			<biblScope unit="page">221</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

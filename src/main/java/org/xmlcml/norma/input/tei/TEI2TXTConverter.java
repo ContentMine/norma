@@ -4,6 +4,7 @@ import org.xmlcml.norma.util.TransformerWrapper;
 
 import javax.xml.transform.Transformer;
 import java.io.*;
+import java.util.Scanner;
 
 /**
  * Created by T Arrow on 18/12/17.
@@ -16,8 +17,10 @@ public class TEI2TXTConverter {
         stylesheet = getClass().getResourceAsStream("tei-to-text.xsl");
     }
 
-    public void convertTEI2TXTFile(File TEIFile) {
-
+    public String convertTEI2TXTFile(File TEIFile) throws Exception {
+        String inputString = new Scanner(new FileInputStream(TEIFile), "UTF-8").useDelimiter("\\A").next();
+        String outputString = convertTEI2TXT(inputString);
+        return outputString;
     }
 
     public String convertTEI2TXT(String XmlInput) throws Exception {
