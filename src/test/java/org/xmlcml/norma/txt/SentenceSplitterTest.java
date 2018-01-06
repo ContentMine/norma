@@ -2,6 +2,7 @@ package org.xmlcml.norma.txt;
 
 import java.util.List;
 
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Assert;

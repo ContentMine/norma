@@ -1,6 +1,7 @@
 package org.xmlcml.norma;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -113,8 +114,12 @@ public class NormaArgProcessorTest {
 		Assert.assertEquals("CTree/s",  1,  cTreeList.size());
 		CTree cTree = cTreeList.get(0);
 		List<File> files = cTree.listFiles(true);
-		LOG.trace(cTree+"; "+files);
+		LOG.debug(cTree+"; "+files);
 		Assert.assertEquals(5, files.size()); // was 4
+		File htmlFile = new File(container0115884, "scholarly.html");
+		Assert.assertTrue(""+htmlFile+" should exist", htmlFile.exists());
+		long size = FileUtils.sizeOf(htmlFile);
+		Assert.assertTrue("filesize should be 74388, was: "+size, size > 74000 && size < 75000);
 	}
 	
 	/** normalizes an XML file and writes out shtml.
@@ -405,6 +410,29 @@ public class NormaArgProcessorTest {
 //		FileUtils.copyFile(new File("target/nature/fulltext.xhtml"), new File("target/nature/junk.xml")); //for display
 	}
 	
+	@Test
+	// FIXME needs text output managing
+	/** transforms xml to flat text using explicit stylesheet
+	 * 
+	 
+	 */
+	public void testXML2Txt() {
+		File sourceDir = new File(NormaFixtures.TEST_NORMA_DIR, "tei");
+		File inputFile = new File(sourceDir, "fulltext.xml");
+		File targetDir = new File("target/xsl/tei");
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		Assert.assertTrue(""+targetDir+" exists", targetDir.exists());
+		File xslDir = new File(NormaFixtures.TEST_XSL_DIR, "tei");
+		File xslFile = new File(xslDir, "xml2txt.xsl");
+		Assert.assertTrue(""+xslFile+" exists", xslFile.exists());
+		File outputFile = new File(targetDir, "fulltext.xml.txt");
+		String args;
+		args = "--project "+targetDir+" -i "+"fulltext.xml"+" -o "+"fulltext.txt"+ " --transform "+xslFile;
+		LOG.debug("args: "+args);
+		new Norma().run(args);
+		// FIXME
+//		Assert.assertTrue(""+outputFile+" exists", outputFile.exists());
+	}
 
 	
 

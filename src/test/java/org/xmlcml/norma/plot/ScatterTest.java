@@ -8,7 +8,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.graphics.svg.plot.SVGMediaBox;
+import org.xmlcml.graphics.svg.plot.AbstractPlotBox;
+import org.xmlcml.graphics.svg.plot.XYPlotBox;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
 
@@ -197,7 +198,7 @@ multipleTreesSingleFigure/
 			}
 			LOG.debug(svgFile.getAbsolutePath());
 			SVGElement svgElement = SVGElement.readAndCreateSVG(svgFile);
-			SVGMediaBox plotBox = new SVGMediaBox();
+			XYPlotBox plotBox = new XYPlotBox();
 			plotBox.setSvgOutFile(new File(new File("target/scatterplots/"), ctree+".out.svg"));
 			plotBox.setCsvOutFile(new File(new File("target/scatterplots/"), ctree+".out.csv"));
 			plotBox.readAndCreateCSVPlot(svgElement);
