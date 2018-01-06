@@ -25,17 +25,17 @@ import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.cproject.files.ResourceLocation;
 import org.xmlcml.cproject.util.RectangularTable;
 import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.graphics.html.HtmlFactory;
 import org.xmlcml.graphics.html.HtmlTable;
 import org.xmlcml.graphics.svg.SVGElement;
-import org.xmlcml.graphics.svg.SVGG;
 import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.graphics.svg.SVGText;
 import org.xmlcml.graphics.svg.normalize.TextDecorator;
-import org.xmlcml.graphics.svg.plot.SVGMediaBox;
+import org.xmlcml.graphics.svg.plot.XYPlotBox;
 import org.xmlcml.norma.image.ocr.HOCRReader;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.pdf.PDF2ImagesConverter;
@@ -66,7 +66,7 @@ public class NormaTransformer {
 		JSOUP("jsoup", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
 		TIDY("tidy", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
 		// HTMLCleaner
-
+//        type             type         indir      informat   outdir     outformat
 		DECOMPACTSVG(  "decompactsvg",  "null",   CTree.SVG,  null,    CTree.SVG+"."+"compact"+".svg"),
 		COMPACTSVG(    "compactsvg",    "null",   CTree.SVG,  null,    CTree.SVG+"."+"compact"+".svg"),
 		HOCR2SVG(      "hocr2svg",      "image/", CTree.HOCR,  "svg/",   CTree.HOCR_SVG),
@@ -82,9 +82,14 @@ public class NormaTransformer {
 		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,  null,     CTree.SVG+"."+"html"),
 		SVG2SVG(       "svg2svg",       null,     CTree.SVG,  null,     CTree.SVG+"."+"svg"),
 		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
+		TEI2TXT(       "tei2txt",       null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_TXT),
 		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
 		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
-		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML);
+		// XML input // all requite stylesheets
+		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML),
+		XML2TXT(       "xml2txt",       null,     CTree.FULLTEXT_XML,  null,     CTree.FULLTEXT_TXT),
+		XML2XML(       "xml2xml",       null,     CTree.FULLTEXT_XML,  null,     CTree.FULLTEXT_XML),
+		;
 	
 		public String inputSuffix;
 		public String outputSuffix;
@@ -124,12 +129,13 @@ public class NormaTransformer {
 		
 		public static Type createTransformType(String transformTypeString) {
 			for (Type type : values()) {
+				LOG.trace("type: "+type);
 				if (type.matches(transformTypeString)) {
 					return type;
 				}
 			}
 			if (transformTypeString.endsWith(CTree.DOT+CTree.XSL)) {
-				LOG.trace("transform type: "+Type.XML2HTML);
+				LOG.debug("transform type: "+Type.XML2HTML);
 				return Type.XML2HTML;
 			}
 			return null;
@@ -150,6 +156,7 @@ public class NormaTransformer {
 
 	String outputTxt;
 	List<NamedImage> serialImageList;
+	Element xmlElement;
 	HtmlElement htmlElement;
 	SVGElement svgElement;
 	SVGElement svgAnnotElement;
@@ -453,22 +460,43 @@ public class NormaTransformer {
 			htmlElement = applyTXT2HTMLToInputFile(inputFile);
 		} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
 			LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
-		} else if (Type.XML2HTML.equals(type)) {
-			xslDocument = createW3CStylesheetDocument(transformTypeString);
-			if (xslDocument == null) {
-				throw new IllegalArgumentException("null stylesheet for: "+transformTypeString);
-			}
-			String xmlString = applyXSLDocumentToCurrentCTree(xslDocument);
-			if (xmlString == null) {
-				LOG.trace("null content in: "+currentCTree.getDirectory());
-			} else {
-				debug0(xmlString);
-				createHtmlElement(xmlString);
-				debug1();
-			}
+			
+		} else if (Type.XML2HTML.equals(type) ||
+				Type.XML2TXT.equals(type) ||
+				Type.XML2XML.equals(type)) {
+			transformXMLWithStylesheet();
 		} else {
 			LOG.warn("Cannot interpret transform: "+type);
 		}
+	}
+
+	private void transformXMLWithStylesheet() {
+		/** this is a generic XML transformation for XML input */
+		String xmlString = createAndApplyXSLDocument();
+		if (xmlString == null) {
+			LOG.trace("null content in: "+currentCTree.getDirectory());
+		} else if (Type.XML2HTML.equals(type)) {
+			debug0(xmlString);
+			createHtmlElement(xmlString);
+			debug1();
+		} else if (Type.XML2TXT.equals(type)) {
+			debug0(xmlString);
+			outputTxt = xmlString;
+			debug1();
+		} else if (Type.XML2XML.equals(type)) {
+			debug0(xmlString);
+			xmlElement = XMLUtil.parseXML(xmlString);
+			debug1();
+		}
+	}
+
+	private String createAndApplyXSLDocument() {
+		xslDocument = createW3CStylesheetDocument(transformTypeString);
+		if (xslDocument == null) {
+			throw new IllegalArgumentException("null stylesheet for: "+transformTypeString);
+		}
+		String xmlString = applyXSLDocumentToCurrentCTree(xslDocument);
+		return xmlString;
 	}
 
 	private void debug0(String xmlString) {
@@ -609,7 +637,7 @@ public class NormaTransformer {
 		TextDecorator textDecorator = new TextDecorator(); 
 		SVGElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
-		SVGG g = textDecorator.compactTexts(textList);
+		SVGElement g = textDecorator.compactTexts(textList);
 		svgElement.appendChild(g);
 		return svgElement;
 	}
@@ -617,7 +645,7 @@ public class NormaTransformer {
 	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
 		TextDecorator textDecorator = new TextDecorator(); 
 		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
-		SVGG g = textDecorator.decompact(textList);
+		SVGElement g = textDecorator.decompact(textList);
 		return g;
 	}
 
@@ -627,7 +655,7 @@ public class NormaTransformer {
 			throw new RuntimeException("Null inputSVGFile");
 		}
 		String csv = null;
-		SVGMediaBox plotBox = new SVGMediaBox();
+		XYPlotBox plotBox = new XYPlotBox();
 		try {
 			File parent = inputSVGFile.getParentFile();
 			plotBox.setCsvOutFile(new File(parent, "figure.csv"));
@@ -872,17 +900,27 @@ public class NormaTransformer {
 
 	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
 		DocumentBuilder db = createDocumentBuilder();
-		String stylesheetResourceName = lookupStylesheetByName(xslName);
-		org.w3c.dom.Document stylesheetDocument = readAsResource(db, stylesheetResourceName);
-		if (stylesheetDocument == null) {
-			LOG.warn("cannout find resource: "+xslName+"; "+stylesheetResourceName);
+		// 
+		org.w3c.dom.Document stylesheetDocument = null;
+		String stylesheetResourceName = null;
+		// treat as URL or filename
+		InputStream xslStream = new ResourceLocation().getInputStreamHeuristically(xslName);
+		if (xslStream != null) {
+			stylesheetDocument = readAsStream(db, xslName, xslStream);			
+		} else {
+			// no, lookup symbol
+			stylesheetResourceName = lookupStylesheetByName(xslName);
+			stylesheetDocument = readAsResource(db, stylesheetResourceName);
+			if (stylesheetDocument == null) {
+				LOG.warn("cannout find resource: "+xslName+"; "+stylesheetResourceName);
+			}
 		}
 		// if fails, try as file
-		if (stylesheetDocument == null) {
-			try {
-				stylesheetDocument = readAsStream(db, xslName, new FileInputStream(xslName));
-			} catch (FileNotFoundException e) { /* hide exception*/}
-		}
+//		if (stylesheetDocument == null) {
+//			try {
+//				stylesheetDocument = readAsStream(db, xslName, new FileInputStream(xslName));
+//			} catch (FileNotFoundException e) { /* hide exception*/}
+//		}
 		if (stylesheetDocument == null) {
 			LOG.trace("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
 		}
@@ -905,9 +943,16 @@ public class NormaTransformer {
 		return readAsStream(db, stylesheetResourceName, is);
 	}
 
+	/** create stylesshet from InputStream.
+	 * 
+	 * @param db documentBuilder
+	 * @param xslName name = only used for errors
+	 * @param is stylesheet as stream
+	 * @return
+	 */
 	private org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
 		if (is == null) {
-			throw new IllegalArgumentException("Null stylesheet input");
+			throw new IllegalArgumentException("Null stylesheet input: "+xslName);
 		}
 		org.w3c.dom.Document stylesheetDocument = null;
 		try {

@@ -12,7 +12,7 @@ import org.xmlcml.cproject.files.CTree;
 import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.graphics.html.util.HtmlUtil;
 import org.xmlcml.graphics.svg.SVGSVG;
-import org.xmlcml.svg2xml.PDF2SVGConverter;
+import org.xmlcml.svg2xml.PDF2SVGXXConverter;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.xml.XMLUtil;
 
@@ -90,7 +90,7 @@ public class PDF2XHTMLConverter {
 		*/
 	}
 
-	private PDF2SVGConverter createAndSetConverter() {
+	private PDF2SVGXXConverter createAndSetConverter() {
 		throw new RuntimeException("PDFAnalyzer not refactored into svghtml");
 		/*
 		PDF2SVGConverter converter = new PDF2SVGConverter();
