@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  some sections omitted for copyright reasons -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /home/jkb/Downloads/grobid-0.5.0/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.4.2-SNAPSHOT" ident="GROBID" when="2017-11-14T14:55+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Pharmacokinetics, Safety and Tolerability of ABT-494, a Novel Selective JAK 1 Inhibitor, in Healthy Volunteers and Subjects with Rheumatoid Arthritis</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Nature</publisher>
+				<availability status="unknown"><p>Copyright Springer Nature</p>
+				</availability>
+				<date type="published" when="2016-06-06">Published online: 6 June 2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mohamed-Eslam F.</forename><forename type="middle">F</forename><surname>Mohamed</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Heidi</forename><forename type="middle">S</forename><surname>Camp</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ping</forename><surname>Jiang</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Robert</forename><forename type="middle">J</forename><surname>Padley</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Armen</forename><surname>Asatryan</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ahmed</forename><forename type="middle">A</forename><surname>Othman</surname></persName>
+						</author>
+						<title level="a" type="main">Pharmacokinetics, Safety and Tolerability of ABT-494, a Novel Selective JAK 1 Inhibitor, in Healthy Volunteers and Subjects with Rheumatoid Arthritis</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Clinical Pharmacokinetics</title>
+						<title level="j" type="abbrev">Clin Pharmacokinet</title>
+						<idno type="ISSN">0312-5963</idno>
+						<idno type="eISSN">1179-1926</idno>
+						<imprint>
+							<publisher>Springer Nature</publisher>
+							<biblScope unit="volume">55</biblScope>
+							<biblScope unit="issue">12</biblScope>
+							<biblScope unit="page" from="1547" to="1558"/>
+							<date type="published" when="2016-06-06">Published online: 6 June 2016</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1007/s40262-016-0419-y</idno>
+					<note>ORIGINAL RESEARCH ARTICLE Ó Springer International Publishing Switzerland 2016</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>Background ABT-494 is a potent and selective Janus kinase (JAK) 1 inhibitor being developed for the treatment of several autoimmune disorders, with potential for an improved safety profile compared with non-selective JAK inhibitors. This work characterized the pharmacokinetics, safety, and tolerability of ABT-494 following single and multiple dosing of the immediate-release formulation. Methods ABT-494 single (1-48 mg or placebo; n = 56) and multiple (3-24 mg or placebo twice daily for 14 days; n = 44) doses in healthy subjects, as well as multiple doses (3-24 mg or placebo twice daily for 27 days; n = 14) in subjects with rheumatoid arthritis (RA) on a background of methotrexate were evaluated. Pharmacokinetic samples were collected and safety and tolerability were assessed. Results ABT-494 followed bi-exponential disposition, with a terminal elimination half-life of 6-16 h and a functional half-life, calculated from maximum observed plasma concentration (C max) to trough plasma concentration (C trough) ratio at steady state, of 3-4 h. ABT-494 exposure was approximately dose proportional over the 3-36 mg dose range, with no significant accumulation with repeated dosing. In subjects with RA, no pharmacokinetic interaction between ABT-494 and methotrexate was observed. The fraction of ABT-494 dose eliminated in urine as unchanged ABT-494 was 14-25 %. All treatment-emergent adverse events (TEAEs) were mild or moderate in severity, with headache being the most frequently observed TEAE (15.6 % for ABT-494 vs. 16.7 % for placebo) after multiple twice-daily administration to healthy subjects. No clinically significant changes in laboratory parameters, vital signs, or electrocardiogram findings in healthy or RA subjects were observed. Conclusions The favorable pharmacokinetics, safety, and tolerability results from these studies supported further evaluations of ABT-494 in phase IIb dose-ranging trials in RA and Crohn&apos;s disease. Trial Registration ClinicalTrials.gov (https://clinicaltrials. gov/) identifier: NCT01741493. Key Points ABT-494, a selective Janus kinase 1 inhibitor, was safe and well-tolerated at single oral doses up to 48 mg in healthy volunteers and at twice-daily doses up to 24 mg in healthy volunteers and rheumatoid arthritis (RA) patients using the immediate-release formulation. ABT-494 pharmacokinetics is characterized by a short functional half-life, dose-proportional exposures, and lack of significant accumulation with twice-daily dosing; no pharmacokinetic interaction between methotrexate and ABT-494 was observed in subjects with RA. The results presented in this report supported advancing ABT-494 to phase II dose-ranging studies in RA and Crohn&apos;s disease.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Rheumatoid arthritis (RA) is a chronic systemic inflam- matory disease of unknown etiology. The hallmark fea- ture of RA is an inflammatory process manifested by persistent symmetric polyarthritis of synovial joints, which can ultimately lead to bone erosions, deformity, and disability. Despite major progress in the treatment of RA with various current biologic and conventional syn- thetic disease-modifying antirheumatic drugs (csDMARDs), a significant proportion of patients still fail to respond to, or show inadequate response to, current treatments, and hence require alternative treatments <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. The Janus kinases (JAKs) are a family of four tyrosine receptor kinases (JAK1, JAK2, JAK3, and tyrosine kinase 2 <ref type="bibr">[Tyk2]</ref>) that play a pivotal role in cytokine receptor signaling. JAK-mediated signaling pathways are impor- tant for normal and pathologic processes of hematopoiesis and immune cell function, including pathogenic mecha- nisms in RA <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. Therefore, JAK inhibitors have the potential to be efficacious in the treatment of RA and several autoimmune disorders <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6]</ref>. Tofacitinib is a pan- JAK inhibitor developed for the treatment of RA that potently inhibits JAK1, JAK3 and, to a lesser extent, JAK2 <ref type="bibr" target="#b3">[4]</ref>. Tofacitinib demonstrated efficacy in subjects with RA; however, safety signals, particularly anemia, neutropenia, and infections associated with tofacitinib limit its wide use <ref type="bibr" target="#b6">[7,</ref><ref type="bibr" target="#b7">8]</ref>. Anemia and neutropenia are presumably related to JAK2 inhibition, which leads to interference with erythropoietin and other colony-stimu- lating factor signaling pathways <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>. More selective JAK inhibitors targeting JAK1, while minimizing inhibi- tion of JAK2, may provide a better safety profile while maintaining efficacy in RA <ref type="bibr" target="#b10">[11]</ref>. ABT-494 is a selective JAK1 inhibitor that is under development as an oral dis- ease-modifying drug for the treatment of RA as well as other autoimmune diseases. In cellular and biochemical assays, ABT-494 demonstrated 74-and 58-fold greater selectivity for JAK1 over JAK2 and JAK3, respectively <ref type="bibr" target="#b11">[12]</ref>. This improved selectivity for JAK1 has the potential to selectively inhibit cytokine signaling involved in the RA inflammatory pathways (e.g. interleukin (IL)-6 and interferon signaling pathways) while minimizing inhibi- tion of cytokine signaling for physiological functions (e.g. erythropoietin signaling responsible for hematopoiesis and IL-15 signaling responsible for natural killer cell homeostasis) <ref type="bibr" target="#b10">[11]</ref>.</p><p>In vitro metabolism studies suggested that ABT-494 is a non-sensitive substrate for cytochrome P450 (CYP) 3A, with a very minor metabolic contribution from CYP2D6 (data on file, AbbVie).</p><p>In two recently completed phase IIb dose-ranging studies in RA, ABT-494 demonstrated robust efficacy and acceptable safety and tolerability profiles in patients who have shown an inadequate response to methotrexate or anti-TNF therapy <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b13">14]</ref>. ABT-494 is currently being evaluated in phase III trials in RA and in a phase IIb trial in Crohn's disease, and additional phase II trials of ABT-494 in other autoimmune disorders are currently planned <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref>.</p><p>In this article, we report the results from phase I studies that characterized ABT-494 pharmacokinetics, safety, and tolerability in healthy subjects and in subjects with RA. Findings from these studies supported the design and dose selection of phase IIb dose-ranging studies in RA and Crohn's disease.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Study Designs</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1">Study 1: Single-Dose Escalation Study</head><p>This first-in-human evaluation of ABT-494 was designed as a single-site, randomized, double-blind, placebo-con- trolled study in healthy subjects. Fifty-six subjects in general good health were randomized to receive single doses of ABT-494 immediate-release capsules <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b2">3,</ref><ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b11">12,</ref><ref type="bibr" target="#b25">24,</ref><ref type="bibr">36</ref>, and 48 mg) or placebo in a 3:1 ratio, with eight subjects in each dose level. Study drug was administered following at least 10 h of fasting. The study was conducted at PPD Development (Austin, TX, USA), and subjects were confined to the study site and supervised for approximately 8 consecutive days. The study protocol and informed consent were approved by the RCRC Institutional Review Board (IRB; Austin, TX, USA).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Conclusions</head><p>ABT-494 displayed favorable safety and tolerability pro- files over single doses up to 48 mg and multiple doses up to 24 mg twice daily for 14 days in healthy subjects, and for 27 days in subjects with RA. ABT-494 demonstrated a pharmacokinetic profile suitable for twice-daily dosing with the immediate-release formulation. No pharmacoki- netic interaction was seen between methotrexate and ABT- 494, and no accumulation of ABT-494 was seen with repeated administration. The results generated in the pre- sent studies supported the design of the recently completed successful phase IIb trials of ABT-494 in subjects with RA <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b13">14]</ref> and an ongoing phase IIb trial in subjects with Crohn's disease <ref type="bibr" target="#b14">[15]</ref>.  MedDRA Medical Dictionary for Regulatory Activities a The two cases of presyncope were associated with venipuncture Phase 1 Pharmacokinetics, Safety and Tolerability of ABT-494</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 ABT-494 mean plasma concentration versus time profiles following administration of single oral doses of ABT-494 immediaterelease capsules to healthy subjects (linear and log-linear scales)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4 a</head><label>4</label><figDesc>Fig. 4 a Lack of effect of concomitant methotrexate administration on ABT-494 dose-normalized AUC. b Lack of effect of concomitant ABT-494 administration on methotrexate dose-normalized AUC. AUC area under the plasma concentration-time curve, bid twice daily</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 Baseline demographics of study participants</head><label>1</label><figDesc></figDesc><table>Study 1 
+Study 2, Part 1 
+Study 2, Part 2 
+
+ABT-494 [N = 42] 
+Placebo 
+[N = 14] 
+
+ABT-494 
+[N = 32] 
+
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head>Table 4 )</head><label>4</label><figDesc></figDesc><table>. The mean t  of 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="true"><head>Table 2 Pharmacokinetic parameters (mean ± SD) of ABT-494 after administration of single doses of the immediate-release formulation to healthy subjects</head><label>2</label><figDesc></figDesc><table>Pharmacokinetic 
+parameters 
+
+1 mg 
+ABT-494 
+[N = 6] 
+
+494 immediate-release capsules 
+to healthy subjects </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="false"><head>Table 3 Steady</head><label>3</label><figDesc></figDesc><table>-state (day 14) 
+pharmacokinetic parameters 
+(mean ± SD) of ABT-494 
+following administration of 
+multiple twice-daily oral doses 
+of the immediate-release 
+formulation to healthy subjects 
+
+Pharmacokinetic parameters 
+3 mg bid 
+[N = 8] 
+
+
+1.1 (0.9-1.2) 
+1.0 (0.9-1.2) 
+1.0 (0.9-1.1) 
+1.0 (0.8-1.3) 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" validated="true"><head>Table 4 Pharmacokinetic parameters (mean ± SD) of ABT-494 following administration of multiple twice-daily oral doses to subjects with mild to moderate rheumatoid arthritis receiving stable doses of methotrexate</head><label>4</label><figDesc></figDesc><table>Pharmacokinetic parameters 
+ABT-494 
+6 mg bid 
+[N = 4] 
+
+
+R ac for AUC 12 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="true"><head>Table 5 Pharmacokinetic parameters (mean ± SD) of methotrexate following administration to subjects with RA alone (day 1) or concomitant with ABT-494 (day 29)</head><label>5</label><figDesc></figDesc><table>Pharmacokinetic 
+parameters 
+
+ABT-494 
+6 mg bid 
+[N = 4] 
+
+
+f e , % 
+58 ± 29 
+51 ± 20 
+74 ± 19 
+59 ± 26 
+54 ± 25 
+63 ± 4 
+4 5± 25 
+57 ± 26 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" validated="false"><head>Table</head><label></label><figDesc></figDesc><table></table></figure>
+
+			<note place="foot">Phase 1 Pharmacokinetics, Safety and Tolerability of ABT-494</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Compliance with Ethical Standards</head><p>This work was supported by AbbVie. AbbVie contributed to the study design, research, and interpretation of data, and reviewing and approving the publication. Drs. Mohamed, Camp, Padley, Asatryan and Othman, and Ms. Jiang are employees and shareholders of AbbVie.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Strategies for the management of rheumatoid arthritis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">S</forename><surname>Wilkie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Schwieterman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Orthopedics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="125" to="155" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Diagnosis and management of rheumatoid arthritis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Rindfleisch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Muller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am Fam Phys</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1037" to="1084" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Role of Jak kinases and STATs in cytokine signal transduction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">J</forename><surname>Leonard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Hematol</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="271" to="278" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">JAK and STAT signaling molecules in immunoregulation and immune-mediated disease</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O&amp;apos;</forename><surname>Shea</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Plenge</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="542" to="50" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A multicenter, randomized, double-blind, placebo-controlled study of ABT-494 for the induction of symptomatic and endoscopic remission in subjects with moderately to severely active Crohn&apos;s disease who have inadequately responded to or are intolerant to anti-TNF therapy (Celest Study)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Abbvie</surname></persName>
+		</author>
+		<idno>ClinicalTrials.gov identifier NCT02365649</idno>
+		<ptr target="http://www.clinicaltrials.gov.Accessed22" />
+	</analytic>
+	<monogr>
+		<title level="j">ClinicalTrials.gov. Available</title>
+		<imprint>
+			<date type="published" when="2016-04" />
+		</imprint>
+		<respStmt>
+			<orgName>US National Institutes of Health</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A study comparing ABT-494 to placebo and to adalimumab in subjects with rheumatoid arthritis who are on a stable dose of methotrexate and who have an inadequate response to methotrexate (SELECT-COMPARE) [ClinicalTrials.gov identifier NCT02629159]. US National Institutes of Health</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Abbvie</surname></persName>
+		</author>
+		<ptr target="http://www.clinicaltrials.gov.Accessed22" />
+	</analytic>
+	<monogr>
+		<title level="j">ClinicalTrials.gov. Available</title>
+		<imprint>
+			<date type="published" when="2016-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">A study comparing ABT-494 monotherapy to methotrexate (MTX) monotherapy in subjects with rheumatoid arthritis (RA) who have an inadequate response to MTX (SELECT-MONOTHERAPY)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Abbvie</surname></persName>
+		</author>
+		<idno>ClinicalTrials.gov identifier NCT02706951</idno>
+		<ptr target="http://www.clinicaltrials.gov.Accessed22" />
+		<imprint>
+			<date type="published" when="2016-04" />
+		</imprint>
+	</monogr>
+	<note>US National Institutes of Health, ClinicalTrials.gov</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">A study to compare ABT-494 to placebo in subjects with rheumatoid arthritis on stable dose of conventional synthetic disease-modifying antirheumatic drugs (csDMARDs) who have an inadequate response or intolerance to biologic DMARDs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Abbvie</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>SELECT-BEYOND</note>
+</biblStruct>
+
+
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Age-related changes in pharmacokinetics and pharmacodynamics: basic principles and practical applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Mangoni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Jackson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Br J Clin Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6" to="14" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A systematic comparison of combination DMARD therapy and tumour necrosis inhibitor therapy with methotrexate in patients with early rheumatoid arthritis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">H</forename><surname>Kingsley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">L</forename><surname>Scott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rheumatol (Oxf)</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="99" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Polyglutamation of methotrexate with common polymorphisms in reduced folate carrier, aminoimidazole carboxamide ribonucleotide transformylase, and thymidylate synthase are associated with methotrexate effects in rheumatoid arthritis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Dervieux</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Furst</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">O</forename><surname>Lein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Capps</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Walsh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Arthritis Rheum</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="2766" to="74" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
