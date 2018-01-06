@@ -190,6 +190,13 @@
     </build>
 
     <dependencies>
+<!--     
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>svghtml</artifactId>
+            <version>${svghtml.version}</version>
+        </dependency>
+        -->
         <dependency>
             <groupId>org.contentmine</groupId>
             <artifactId>cproject</artifactId>
