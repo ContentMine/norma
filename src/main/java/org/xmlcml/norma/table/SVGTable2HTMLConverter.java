@@ -43,7 +43,7 @@ public class SVGTable2HTMLConverter {
 	public HtmlElement convert()  {
 		getOrCreateOutputDir();
 		tableContentCreator.markupAndOutputTable(inputFile, outputDir);
-		textStructurer = tableContentCreator.getOrCreateTextStructurer();
+		this.textStructurer = tableContentCreator.getOrCreateTextStructurer();
 		tableContentCreator.annotateAreasInSVGChunk();
 		outputHtmlElement = tableContentCreator.createHtmlFromSVG();
 		try {
