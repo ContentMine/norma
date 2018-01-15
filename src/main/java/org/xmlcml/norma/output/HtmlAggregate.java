@@ -9,7 +9,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.files.RegexPathFilter;
-import org.xmlcml.euclid.Util;
 
 /** aggregates a number of files into a single (display) table.
  * Still under development. May interact with HtmlDisplay
@@ -42,12 +41,13 @@ public class HtmlAggregate extends HtmlDisplay {
 	public void display() {
 		if (output != null) {
 			List<File> files = new RegexPathFilter(fileFilterPattern).listNonDirectoriesRecursively(cTree.getDirectory());
-			Util.sortByEmbeddedInteger(files);
 			File outputFile = new File(cTree.getDirectory(), this.output);
 			LOG.debug("files: "+files.size() + " "+cTree.getDirectory()+"; "+fileFilterPattern+"; "+outputFile);
 			HtmlTabbedButtonDisplay htmlButtonDisplay = new HtmlTabbedButtonDisplay(cTree.getDirectory().getName(), files, outputFile.getParentFile());
-			String htmlText = new HtmlTextifier().textify(htmlButtonDisplay);
-			try {
+			LOG.debug("after new HtmlButtonDisplay");
+                        String htmlText = new HtmlTextifier().textify(htmlButtonDisplay);
+			LOG.debug("after new HtmlTextifier");
+                        try {
 				LOG.trace("output to "+outputFile.getAbsolutePath());
 				FileUtils.writeStringToFile(outputFile, htmlText);
 			} catch (IOException e) {
