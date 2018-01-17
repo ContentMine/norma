@@ -49,6 +49,8 @@ import org.xmlcml.norma.tagger.SectionTaggerX;
 import org.xmlcml.norma.util.TransformerWrapper;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
 import org.xmlcml.svg2xml.pdf.PDFAnalyzerIO;
+//import org.xmlcml.svg2xml.pdf.PDFAnalyzer;
+//import org.xmlcml.svg2xml.pdf.PDFAnalyzerIO;
 import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Builder;
