@@ -277,6 +277,13 @@
 		    <version>${xml-apis.version}</version>
 		</dependency>
 		
+				<!-- https://mvnrepository.com/artifact/org.codehaus.plexus/plexus-utils -->
+				<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-utils</artifactId>
+						<version>1.5.12</version>
+				</dependency>
+
 		
     </dependencies>
 </project>
