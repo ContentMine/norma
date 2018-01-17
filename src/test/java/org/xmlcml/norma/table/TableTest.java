@@ -108,6 +108,8 @@ public class TableTest {
 		
 	}
 	
+        // FIXME Test should use resources which are available from source control
+        @Ignore
 	@Test
 	public void testMenu() {
 //		File targetDir = new File("target/pdftable1/");
