@@ -28,6 +28,7 @@ public class Norma {
 	}
 
 	public void run(String args) {
+		args = args == null ? null : args.trim();
 		argProcessor = new NormaArgProcessor(args.split("\\s+"));
 		argProcessor.runAndOutput();
 	}

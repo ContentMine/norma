@@ -47,6 +47,17 @@
   </help>
  </arg>
 
+ <arg name="cropbox" long="--cropbox" args="coordinates ..."
+  countRange="{8,*}" parseMethod="parseCropBox"
+  runMethod="runCropMediaBox"
+  >
+  <help>
+  reads a cropBox for clipping SVG pages. Format is:
+  "x0" x0 "y0" y0 ["x1" x1 "y1" y1 | "width" w "height" h ] ["ydown|yup"] ["units" units]
+  where "xx" is a literal string and [...] are optional.
+  </help>
+ </arg>
+
  <arg name="div" brief="-d" long="--divs" args="expression [expression] ..."
   countRange="{1,*}" parseMethod="parseDivs">
   <help>
@@ -106,6 +117,16 @@ norma --project foo --fileFilter subdirFilter --htmlDisplay filter1 filter2 ... 
 this will iterate over the CTrees down to level subdirFilter, then apply the display filters. The result of
 each will be an a TD cell. The result is an HTML TR output to tableRow.html
 NOT YET FULLY IMPLEMENTED.
+  </help>
+ </arg>
+ 
+  <arg name="mediabox" long="--mediabox" args="coordinates ..."
+  countRange="{8,*}" parseMethod="parseMediaBox"
+  >
+  <help>
+  reads a mediaBox for defining SVG pages. Format is:
+  "x0" x0 "y0" y0 ["x1" x1 "y1" y1 | "width" w "height" h ] ["ydown|yup"] ["units" units]
+  where "xx" is a literal string and [...] are optional.
   </help>
  </arg>
 
@@ -170,6 +191,20 @@ NOT YET FULLY IMPLEMENTED.
    i.e. replace all &lt;em>...&lt;/em> by &lt;i>...&lt;/i>
   </help>
  </arg>
+
+ <arg name="pageNumbers" long="--pageNumbers" args="pagenumber [pagenumber*] ..."
+  countRange="{1,*}" 
+  class="java.lang.Integer"
+  parseMethod="parsePageNumbers"
+  runMethod="runPageNumbers"
+  >
+  <help>
+  page numbers of PDF to select.
+  for each page (inner loop) some action will be taken. At present this is 
+  cropBox. More may come later.
+  </help>
+ </arg>
+
 
  <arg 
      name="pubstyle" 
