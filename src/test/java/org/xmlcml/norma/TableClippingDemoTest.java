@@ -15,6 +15,7 @@ import org.xmlcml.euclid.Real2;
 import org.xmlcml.euclid.Real2Range;
 import org.xmlcml.graphics.svg.SVGElement;
 import org.xmlcml.graphics.svg.SVGSVG;
+import org.xmlcml.norma.pubstyle.util.RegionFinder;
 import org.xmlcml.svg2xml.page.PageCropper;
 import org.xmlcml.svg2xml.page.PageCropper.Units;
 
@@ -24,10 +25,12 @@ import org.xmlcml.svg2xml.page.PageCropper.Units;
  *
  */
 public class TableClippingDemoTest {
-	private static final Logger LOG = Logger.getLogger(TableClippingDemoTest.class);
+	private static final String LANCET_BOX_FILL = "#b30838";
+	public static final Logger LOG = Logger.getLogger(TableClippingDemoTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	public static final String FULLTEXT_PAGE = "fulltext-page";
 	
 	@Test
 	public void testTotalClippingWorkflow() throws IOException {
@@ -50,7 +53,7 @@ public class TableClippingDemoTest {
 		new Norma().run(cmd);
 		File svgDir = new File(projectDir, "svg");
 		Assert.assertTrue(""+svgDir+" is existing dir", svgDir.exists() && svgDir.isDirectory());
-		File page1Svg = new File(svgDir, "fulltext-page"+1+".svg");
+		File page1Svg = new File(svgDir, FULLTEXT_PAGE+1+".svg");
 		Assert.assertTrue(""+page1Svg+" is existing file", page1Svg.exists() && !page1Svg.isDirectory());
 		CMineGlobber globber = new CMineGlobber();
 		globber.setLocation(svgDir.toString());
@@ -88,7 +91,7 @@ means that the RHS of the final letters is cropped.)		 */
 		PageCropper cropper = new PageCropper();
 		cropper.setTLBRUserMediaBox(new Real2(0, 800), new Real2(600, 0));
 //		cropper.setTLBRUserMediaBox(new Real2(0, 0), new Real2(600, 800));
-		String fileroot = "fulltext-page"+1;
+		String fileroot = FULLTEXT_PAGE+1;
 		File inputFile = new File(svgDir, fileroot + ".svg");
 		Assert.assertTrue(""+inputFile+" exists", inputFile.exists());
 		cropper.readSVG(inputFile);
@@ -148,7 +151,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 			cropper.getCropToLocalTransformation().toString());
 		// clip a table - cropping coordinates, 
 		cropper.setTLBRUserCropBox(new Real2(50, 467), new Real2(293, 242));
-		String fileroot = "fulltext-page"+1;
+		String fileroot = FULLTEXT_PAGE+1;
 		File svgDir = new File("target/clipping/tracemonkey-pldi-09/svg/");
 		File inputFile = new File(svgDir, fileroot + ".svg");
 		Assert.assertTrue(""+inputFile+" exists", inputFile.exists());
@@ -165,7 +168,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		 */
 		cropper = new PageCropper();
 		svgElement = SVGElement.readAndCreateSVG(inputFile);
-		cropper.setSVGElement(svgElement);
+		cropper.setSVGElementCopy(svgElement);
 		double x0 = 117.3;
 		double width = 85.6;
 		double x1 = x0 + width;
@@ -185,7 +188,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 	public void testCroppingArguments() {
 		File projectDir = new File("target/clipping/tracemonkey-pldi-09/");
 		File svgDir = new File("target/clipping/tracemonkey-pldi-09/svg/");
-		String fileroot = "fulltext-page"+1;
+		String fileroot = FULLTEXT_PAGE+1;
 		File inputFile = new File(svgDir, fileroot + ".svg");
 		Assert.assertTrue(""+inputFile+" exists", inputFile.exists());
 //		SVGElement svgElement = SVGElement.readAndCreateSVG(inputFile);
@@ -221,11 +224,11 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		new Norma().run(cmd);
 		cmd = "--project " + targetDir + " --input fulltext.pdf "+ " --outputDir " + targetDir + " --transform pdf2svg ";
 		new Norma().run(cmd);
-//		if (true) return;
 		/**
     UCL-style inputs to crop out Table 4 (units in mm, y is downwards):
     page: 10, top: 15.0, left: 13.0, width: 187.0, height: 60.0
 		 */
+		File svgFile; SVGElement svgElement; Real2Range box;
 		String outpath = "svg/crop10.1.svg";
 		cmd = "" +
 			"--project "+targetDir +
@@ -233,15 +236,126 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 			" --pageNumbers 10 "+
 			" --mediabox x0 0 y0 0 width 600 height 800 ydown units px " +
 			" --output " + outpath;
+		/** skip while testing */
 		new Norma().run(cmd);
-		File svgFile = new File("target/demos/bmj/10.1136.bmjopen-2016-12335/svg/crop10.1.svg");
+		svgFile = new File("target/demos/bmj/10.1136.bmjopen-2016-12335/svg/crop10.1.svg");
 		Assert.assertTrue(svgFile.toString()+" exists", svgFile.exists());
-		SVGElement svgElement = SVGElement.readAndCreateSVG(svgFile);
-		Real2Range box = svgElement.getBoundingBox();
+		svgElement = SVGElement.readAndCreateSVG(svgFile);
+		box = svgElement.getBoundingBox();
 		box = box.format(0);
 		Assert.assertEquals("box ", "((42.0,553.0),(48.0,195.0))" , box.toString());
 
+		/** lower box */
+		outpath = "svg/crop10.2.svg";
+		cmd = "" +
+				"--project "+targetDir +
+				" --cropbox x0 44.0 y0 580.0 x1 551.0 y1 736.0 ydown units px "+
+				" --pageNumbers 10 "+
+				" --mediabox x0 0 y0 0 width 600 height 800 ydown units px " +
+				" --output " + outpath;
+			new Norma().run(cmd);
+			svgFile = new File("target/demos/bmj/10.1136.bmjopen-2016-12335/svg/crop10.2.svg");
+			Assert.assertTrue(svgFile.toString()+" exists", svgFile.exists());
+			svgElement = SVGElement.readAndCreateSVG(svgFile);
+			box = svgElement.getBoundingBox();
+			box = box.format(0);
+			Assert.assertEquals("box ", "((48.0,547.0),(582.0,733.0))" , box.toString());
 		// check that we can create the cTreeLIst (see factory)
+	}
+
+	@Test
+	public void testGetRegionByXPath() throws IOException {
+		File svgDir = new File(NormaFixtures.TEST_DEMO_DIR, "bmj/svg");
+		CMineGlobber globber = new CMineGlobber();
+		globber.setRegex(".*/bmj/svg/" + FULLTEXT_PAGE + "\\d+\\.svg");
+		globber.setLocation(svgDir.toString());
+		List<File> svgFiles = globber.listFiles();
+		Assert.assertEquals("svg",  15, svgFiles.size());
+		RegionFinder regionFinder = new RegionFinder();
+		// this is BMJ box colour
+		String xpath = "*[local-name()='path' and contains(@style, 'fill:#b2ccff;')]";
+		regionFinder.setXPath(xpath);
+		PageCropper pageCropper = new PageCropper();
+		for (int pageNumber = 1; pageNumber < svgFiles.size(); pageNumber++) {
+			File svgFile = new File(svgDir, FULLTEXT_PAGE+ pageNumber + ".svg");
+			SVGElement svgElement = SVGElement.readAndCreateSVG(svgFile);
+			List<SVGElement> subElementList = regionFinder.findXPathRegions(svgElement);
+			if (subElementList.size() > 0) {
+				LOG.debug("page "+pageNumber+": "+subElementList.size());
+				int section = 1;
+				for (SVGElement subElement : subElementList) {
+					Real2Range bbox = subElement.getBoundingBox().format(0);
+					pageCropper.setSVGElementCopy(svgElement);
+					pageCropper.setTLBRUserCropBox(bbox);
+					pageCropper.detachElementsOutsideBox();
+					SVGElement svgElement0 = pageCropper.getSVGElement();
+					LOG.debug(bbox + "/" +svgElement0.getBoundingBox());
+					if (svgElement0 != null) {
+						SVGSVG.wrapAndWriteAsSVG(svgElement0, new File("target/clipping/bmj/", "box."+pageNumber+"."+(section++)+".svg"));
+					}
+				}
+			}
+		}
+		
+	}
+	
+	@Test
+	public void testGetBoxesByXPath() throws IOException {
+		File projectDir = new File(NormaFixtures.TEST_DEMO_DIR, "lancet");
+		File targetDir = new File("target/demos/lancet/");
+		CMineTestFixtures.cleanAndCopyDir(projectDir, targetDir);
+		Norma.convertToSVG(targetDir);
+		
+		RegionFinder regionFinder = new RegionFinder();
+		 // lancet
+		regionFinder.setOutputDir("target/clipping/lancet/");
+		regionFinder.setRegionPathFill(LANCET_BOX_FILL);
+		File[] ctreeDirectories = targetDir.listFiles();
+		Assert.assertEquals(3,  ctreeDirectories.length);
+		for (File ctreeDirectory : ctreeDirectories) {
+			regionFinder.findRegions(ctreeDirectory);
+		}
+		
+	}
+	
+	@Test
+	public void testCTree() {
+		File projectDir = new File(NormaFixtures.TEST_DEMO_DIR, "cert");
+		File targetDir = new File("target/demos/cert/");
+		CMineTestFixtures.cleanAndCopyDir(projectDir, targetDir);
+		Norma.convertToSVG(targetDir);
+		File ctree = new File(targetDir, "Varga2001");
+		String outpath = "tables/table1b/table.svg";
+		String cmd = "" +
+			"--ctree "+ctree +
+			" --cropbox x0 70.0 y0 62.0 x1 460 y1 252 "+
+			" --pageNumbers 3 "+
+			" --output " + outpath;
+		new Norma().run(cmd);
+	}
+		
+	@Test
+	public void testTablesAndEquations() {
+		File projectDir = new File(NormaFixtures.TEST_DEMO_DIR, "cert");
+		File targetDir = new File("target/demos/cert/");
+		CMineTestFixtures.cleanAndCopyDir(projectDir, targetDir);
+		Norma.convertToSVG(targetDir);
+		
+		File ctreeDir; String cmd;
+		
+		ctreeDir = new File(targetDir, "Timmermans_etal_2016_B_Cell_Crohns");
+		cmd = "--ctree "+ctreeDir +
+			" --cropbox x0 32.0 y0 728.0 x1 578 y1 274 yup " + " --pageNumbers 3 "+" --output " + "tables/table1/table.svg";
+		new Norma().run(cmd);
+
+		ctreeDir = new File(targetDir, "Varga2001");
+		cmd = "--ctree "+ctreeDir +
+			" --cropbox x0 70.0 y0 62.0 x1 460 y1 252 "+" --pageNumbers 3 "+" --output " + "tables/table1/table.svg";
+		new Norma().run(cmd);
+
+		cmd = "--ctree "+ctreeDir +
+			" --cropbox x0 268 y0 481 x1 514 y1 255 yup "+" --pageNumbers 7 "+" --output " + "maths/maths1/maths.svg";
+		new Norma().run(cmd);
 	}
 
 }
