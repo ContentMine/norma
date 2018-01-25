@@ -453,8 +453,11 @@ public class NormaTransformer {
 			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
 			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
 			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
-		} else if (Type.TEI2HTML.equals(type)) {
-			htmlElement = applyTEI2HTMLToInputFile(inputFile);
+			
+//		} else if (Type.TEI2HTML.equals(type)) {
+//			htmlElement = applyTEI2HTMLToInputFile(inputFile);
+			// skipped as we use the stylesheet mechanism directly
+			
 		} else if (Type.TEX2HTML.equals(type)) {
 			String xmlString = convertTeXToHTML(inputFile);
 			createHtmlElement(xmlString);
@@ -699,6 +702,7 @@ public class NormaTransformer {
 
 	private HtmlElement applyTEI2HTMLToInputFile(File teiFile) {
 //		TEI2HTMLConverter converter = new TEI2HTMLConverter();
+		LOG.warn("applyTEI2HTMLToInputFile is no-op");
 		HtmlElement htmlElement = null;
 //		try {
 //			htmlElement = converter.convertTEI2HtmlElement(teiFile);

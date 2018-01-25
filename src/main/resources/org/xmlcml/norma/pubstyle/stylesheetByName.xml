@@ -22,6 +22,8 @@
   <stylesheet name="tf2html">/org/xmlcml/norma/pubstyle/tf/toHtml.xsl</stylesheet>
   <stylesheet name="wiley2html">/org/xmlcml/norma/pubstyle/wiley/toHtml.xsl</stylesheet>
   <stylesheet name="wk2html">/org/xmlcml/norma/pubstyle/wk/toHtml.xsl</stylesheet>
+  <!--  tei grobid  -->
+  <stylesheet name="grobid2html">/org/xmlcml/norma/tei/grobid-html.xsl</stylesheet>
   <!--  patents  -->
   <stylesheet name="uspto2html">/org/xmlcml/norma/patents/uspto/toHtml.xsl</stylesheet>
 </stylesheetList>
