@@ -38,6 +38,7 @@ import org.xmlcml.norma.tagger.SectionTaggerX;
 public class NormaArgProcessor extends CProjectArgProcessor {
 //	public class NormaArgProcessor extends DefaultArgProcessor {
 
+	private static final String FULLTEXT_PAGE_PREFIX = "fulltext-page";
 	private static final String DOT_PNG = ".png";
 	private static final String IMAGE = "image";
 	private static final String PNG = "png";
@@ -655,5 +656,72 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 	public HtmlElement getCleanedHtmlElement() {
 		return cleanedHtmlElement;
 	}
+	
+	private void getOrCreatePageCropper() {
+		if (pageCropper == null) {
+			pageCropper = new PageCropper();
+		}
+	}
+	
+	private void processCropMediaBox() {
+		if (pageNumbers == null || pageNumbers.size() == 0) {
+			LOG.info("No pagenumbers given, no processing");
+		} else if (pageNumbers.size() > 1) {
+			throw new RuntimeException("Multiple page numbers not yet supported");
+		}
+		int page = pageNumbers.elementAt(0);
+		
+		/**
+		if (currentCTree == null) {
+			throw new RuntimeException("null current tree");
+		}
+		File dir = currentCTree.getDirectory();
+		if (dir == null) {
+			throw new RuntimeException("null current directory");
+		}
+		File svgFile = new File(dir, "svg/fulltext-page"+page+".svg");
+		if (!svgFile.exists()) {
+			throw new RuntimeException("svg page file does not exist: "+svgFile);
+		}
+		*/
+	}
 
+	private void processPageNumbers() {
+		getOrCreatePageCropper();
+		for (Integer pageNumber : pageNumbers) {
+			LOG.debug("pageNumber "+pageNumber);
+			File svgFile = createSVGPageFile(pageNumber);
+			LOG.debug("svg: "+svgFile);
+			if (svgFile.exists() && pageCropper.getOrCreateCropBoxProcessor().isValid()) {
+				SVGElement svgElement = null;
+				try {
+					svgElement = pageCropper.cropFile(svgFile);
+				} catch (IOException e) {
+					throw new RuntimeException("cannot read SVGFile", e);
+				}
+				if (svgElement != null) {
+					File svgOut = new File(currentCTree.getDirectory(), output);
+					LOG.debug("svg out "+svgOut);
+					SVGSVG.wrapAndWriteAsSVG(svgElement, svgOut);
+				}
+			}
+		}
+	}
+
+	private File createSVGPageFile(Integer pageNumber) {
+		if (currentCTree == null) {
+			throw new RuntimeException("null currentCTree; BUG");
+		}
+		LOG.debug("current tree: "+currentCTree);
+		File svgDir = new File(currentCTree.getDirectory(), "svg");
+		if (!svgDir.exists()) {
+			throw new RuntimeException("No SVG directory: "+svgDir);
+		}
+		File svgPageFile = new File(svgDir, FULLTEXT_PAGE_PREFIX+pageNumber+".svg");
+		if (!svgPageFile.exists()) {
+			throw new RuntimeException("No SVG directory: "+svgPageFile);
+		}
+		LOG.trace("svg "+svgPageFile);
+		return svgPageFile;
+	}
 }
