@@ -22,12 +22,16 @@ import org.xmlcml.cproject.args.DefaultArgProcessor;
 import org.xmlcml.cproject.args.StringPair;
 import org.xmlcml.cproject.args.VersionManager;
 import org.xmlcml.cproject.files.CTree;
+import org.xmlcml.euclid.IntArray;
 import org.xmlcml.graphics.html.HtmlElement;
+import org.xmlcml.graphics.svg.SVGElement;
+import org.xmlcml.graphics.svg.SVGSVG;
 import org.xmlcml.norma.image.ocr.NamedImage;
 import org.xmlcml.norma.input.html.HtmlCleaner;
 import org.xmlcml.norma.output.HtmlAggregate;
 import org.xmlcml.norma.output.HtmlDisplay;
 import org.xmlcml.norma.tagger.SectionTaggerX;
+import org.xmlcml.svg2xml.page.PageCropper;
 
 /**
  * Processes commandline arguments.
@@ -78,6 +82,9 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 	private HtmlDisplay htmlDisplay;
 	private List<String> htmlAggregatorFilters;
 	private HtmlAggregate htmlAggregate;
+	private PageCropper pageCropper;
+	private IntArray pageNumbers;
+	
 	public NormaArgProcessor() {
 		super();
 		this.readArgumentOptions(this.getArgsResource());
@@ -112,6 +119,13 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		List<String> tokens = argIterator.getStrings(option);
 		charPairList = option.processArgs(tokens).getStringPairValues();
 	}
+ 	
+	public void parseCropBox(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.getStrings(option);
+		getOrCreatePageCropper();
+		pageCropper.processCropBoxArgs(option.processArgs(tokens).getStringValues());
+		LOG.debug("PAGE CROPPER "+pageCropper.toString());
+	}
 
 	public void parseDivs(ArgumentOption option, ArgIterator argIterator) {
 		divList = argIterator.getStrings(option);
@@ -136,6 +150,12 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		htmlDisplay = new HtmlDisplay(argIterator.getStrings(option));
 	}
 
+	public void parseMediaBox(ArgumentOption option, ArgIterator argIterator) {
+		List<String> tokens = argIterator.getStrings(option);
+		getOrCreatePageCropper();
+		pageCropper.processMediaBoxArgs(option.processArgs(tokens).getStringValues());
+	}
+
 	public void parseMove(ArgumentOption option, ArgIterator argIterator) {
 		List<String> tokens = argIterator.getStrings(option);
 		movePairList = option.processArgs(tokens).getStringPairValues();
@@ -150,7 +170,19 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		namePairList = option.processArgs(tokens).getStringPairValues();
 	}
 
+	public void parsePageNumbers(ArgumentOption option, ArgIterator argIterator) {
+		LOG.trace("parsePageNumbers");
+		pageNumbers = argIterator.getIntArray(option);
+		if (pageNumbers == null || pageNumbers.size() == 0) {
+			throw new RuntimeException("No page numbers given");
+		} else if (pageNumbers.size() > 1) {
+			LOG.warn("Can only parse one page number at present");
+		}
+		return;
+	}
+
 	public void parsePubstyle(ArgumentOption option, ArgIterator argIterator) {
+		LOG.trace("parsePubtyle");
 		List<String> tokens = argIterator.getStrings(option);
 		if (tokens.size() == 0) {
 			stripList = new ArrayList<String>();
@@ -299,6 +331,11 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		}
 	}
 
+	public void runCropMediaBox(ArgumentOption option) {
+		// skip at present - called from pageNumbers
+//		processCropMediaBox();
+	}
+
 	public void runMove(ArgumentOption option) {
 		LOG.trace("***run move "+currentCTree.getDirectory());
 		moveFiles();
@@ -309,6 +346,13 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 			throw new RuntimeException("move2 must have --fileFilter");
 		}
 		moveFiles2();
+	}
+
+	public void runPageNumbers(ArgumentOption option) {
+		if (pageNumbers == null || pageNumbers.size() == 0) {
+			throw new RuntimeException("--pageNumber requires list of pages");
+		}
+		processPageNumbers();
 	}
 
 	public void runRelabelContent(ArgumentOption option) {
@@ -724,4 +768,10 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		LOG.trace("svg "+svgPageFile);
 		return svgPageFile;
 	}
+
+
+
+
+
+
 }
