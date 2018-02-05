@@ -23,7 +23,7 @@ import org.xmlcml.xml.XMLUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
-import org.xmlcml.html.HtmlHead;
+import org.xmlcml.graphics.html.HtmlHead;
 
 /** creates a tabbed display for multiple HTML files using buttons
  * 
