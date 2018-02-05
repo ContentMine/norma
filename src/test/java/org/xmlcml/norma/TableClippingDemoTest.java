@@ -190,7 +190,6 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		File svgDir = new File("target/clipping/tracemonkey-pldi-09/svg/");
 		String fileroot = FULLTEXT_PAGE+1;
 		File inputFile = new File(svgDir, fileroot + ".svg");
-		Assert.assertTrue(""+inputFile+" exists", inputFile.exists());
 //		SVGElement svgElement = SVGElement.readAndCreateSVG(inputFile);
 		/**
 		double MM2PX = 72 / 25.4;
@@ -210,6 +209,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		;
 		Norma norma = new Norma();
 		norma.run(cmd);
+		Assert.assertTrue(""+inputFile+" exists", inputFile.exists());
 	}
 	
 	@Test
