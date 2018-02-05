@@ -30,6 +30,7 @@ public class NormaFixtures {
 	public final static File GROUP_MAJOR_SECTIONS_XSL = new File(NormaFixtures.MAIN_HINDAWI_DIR, "groupMajorSections.xsl");
 
 	public final static File TEST_NORMA_DIR = new File("src/test/resources/org/xmlcml/norma/");
+	public final static File TEST_DEMO_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "demos");
 	public final static File TEST_JSON_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "json");
 	public final static File TEST_BIBLIO_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "biblio");
 	public final static File TEST_OUTPUT_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "output");
@@ -37,6 +38,7 @@ public class NormaFixtures {
 	public final static File TEST_PATENTS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "patents");
 	public final static File TEST_SECTIONS_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "sections");
 	public final static File TEST_TABLE_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "table");
+	public final static File TEST_GROBID_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "grobid");
 	public final static File TEST_TEX_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "tex");
 	public final static File TEST_XSL_DIR = new File(NormaFixtures.TEST_NORMA_DIR, "xsl");
 	
@@ -94,6 +96,8 @@ public class NormaFixtures {
 	public final static File TEST_FRONTIERS_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "frontiers");
 	public final static File TEST_FRONTIERS_CTREE0 = new File(NormaFixtures.TEST_FRONTIERS_DIR, "fpsyg-05-01582");
 
+	public final static File TEST_GROBID_TEI_DIR = new File(NormaFixtures.TEST_GROBID_DIR, "tei");
+	
 	public final static File TEST_GETPAPERS_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "getpapers");
 
 	public final static File TEST_MDPI_DIR = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "mdpi");
