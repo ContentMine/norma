@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
+		  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	    <!-- upstream -->
 	    <cproject.version>0.7.0-SNAPSHOT</cproject.version>
 	    

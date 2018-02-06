@@ -9,34 +9,12 @@
    </g>
   </g>
  </g>
- <g class="namedview" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1076" inkscape:window-height="838" id="namedview4965" showgrid="false" inkscape:zoom="0.77898437" inkscape:cx="300" inkscape:cy="400" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg2"/>
- <defs id="defs1">
-  <clipPath id="clipPath1">
-   <path stroke="black" stroke-width="0.5" fill="none" d="M0.0 0.0 L595.0 0.0 L595.0 790.0 L0.0 790.0 L0.0 0.0 Z" id="path6"/>
-  </clipPath>
-  <clipPath id="clipPath2">
-   <path stroke="black" stroke-width="0.5" fill="none" d="M507.913 34.621 C506.968 34.621 506.017 34.822 505.134 35.225 C504.828 35.365 504.544 35.525 504.268 35.711 L504.268 48.119 L507.892 45.194 L508.052 45.194 L511.669 48.119 L511.669 35.798 C511.039 35.361 510.325 35.03 509.564 34.831 C509.026 34.691 508.471 34.621 507.913 34.621 Z" id="path9"/>
-  </clipPath>
-  <clipPath id="clipPath3">
-   <path stroke="black" stroke-width="0.5" fill="none" d="M504.057 735.762 L504.057 745.951 L542.206 745.951 L542.206 735.762 Z" id="path12"/>
-  </clipPath>
-  <clipPath id="clipPath4">
-   <path stroke="black" stroke-width="0.5" fill="none" d="M51.024 735.762 L51.024 745.951 L89.173 745.951 L89.173 735.762 Z" id="path15"/>
-  </clipPath>
- </defs>
- <defs id="defs17">
-  <g class="marker" id="zeroline" viewBox="-5 -5 10 10" refX="0" refY="0" markerUnits="strokeWidth" markerWidth="5.0" markerHeight="5.0" orient="auto">
-   <circle cx="0.0" cy="0.0" r="4.0" stroke-width="1.5" stroke="red" fill="cyan" id="circle20"/>
-  </g>
-  <g class="marker" id="zeropath" viewBox="-5 -5 10 10" refX="0" refY="0" markerUnits="strokeWidth" markerWidth="5.0" markerHeight="5.0" orient="auto">
-   <circle cx="0.0" cy="0.0" r="4.0" stroke-width="1.5" stroke="blue" fill="orange" id="circle23"/>
-  </g>
- </defs>
- <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" d="M306.142 78.958 L544.252 78.958 L544.252 78.391 L306.142 78.391 Z" id="path3325"/>
- <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" d="M306.142 343.26 L544.252 343.26 L544.252 342.693 L306.142 342.693 Z" id="path3327"/>
- <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" d="M306.142 119.663 L358.129 119.663 L358.129 119.096 L306.142 119.096 Z" id="path3329"/>
- <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" d="M358.129 99.31 L426.897 99.31 L426.897 98.743 L358.129 98.743 Z" id="path3331"/>
- <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" d="M358.129 119.663 L544.252 119.663 L544.252 119.096 L358.129 119.096 Z" id="path3333"/>
+ <g class="namedview" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1076" inkscape:window-height="838" id="namedview4965" showgrid="false" inkscape:zoom="0.77898437" inkscape:cx="300" inkscape:cy="400" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg2"/> 
+ <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" id="path3325" d="M306.142 78.958 L544.252 78.958 L544.252 78.391 L306.142 78.391 Z"/>
+ <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" id="path3327" d="M306.142 343.26 L544.252 343.26 L544.252 342.693 L306.142 342.693 Z"/>
+ <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" id="path3329" d="M306.142 119.663 L358.129 119.663 L358.129 119.096 L306.142 119.096 Z"/>
+ <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" id="path3331" d="M358.129 99.31 L426.897 99.31 L426.897 98.743 L358.129 98.743 Z"/>
+ <path stroke="black" clip-path="url(#clipPath1)" fill="#131313" stroke-width="0.0" id="path3333" d="M358.129 119.663 L544.252 119.663 L544.252 119.096 L358.129 119.096 Z"/>
  <text svgx:fontName="NJCHAG+CkbxnnAdvTTb8864ccf.B" svgx:width="666.0" x="306.142" y="62.97" id="text3335" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:bold;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">T</text>
  <text svgx:fontName="NJCHAG+CkbxnnAdvTTb8864ccf.B" svgx:width="500.0" x="310.961" y="62.97" id="text3337" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:bold;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">a</text>
  <text svgx:fontName="NJCHAG+CkbxnnAdvTTb8864ccf.B" svgx:width="552.0" x="315.196" y="62.97" id="text3339" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:bold;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
@@ -243,11 +221,11 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="885.0" x="314.589" y="145.175" id="text3741" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">M</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="552.0" x="322.083" y="145.175" id="text3743" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="326.605" y="145.175" id="text3745" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.132" y="145.175" id="text3747" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.132" y="145.175" id="text3747" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.841" y="145.175" id="text3749" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.075" y="145.175" id="text3751" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.063" y="145.175" id="text3753" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.647" y="145.175" id="text3755" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.647" y="145.175" id="text3755" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.296" y="145.175" id="text3757" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.53" y="145.175" id="text3759" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.57" y="145.175" id="text3761" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -263,11 +241,11 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="335.006" y="157.877" id="text3781" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="340.645" y="157.877" id="text3783" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="346.564" y="159.235" id="text3785" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:5.988px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="157.874" id="text3787" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="157.874" id="text3787" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.837" y="157.874" id="text3789" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.072" y="157.874" id="text3791" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.06" y="157.874" id="text3793" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="157.874" id="text3795" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="157.874" id="text3795" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.293" y="157.874" id="text3797" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.527" y="157.874" id="text3799" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.566" y="157.874" id="text3801" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -287,11 +265,11 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="335.002" y="170.576" id="text3829" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="340.642" y="170.576" id="text3831" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="346.564" y="171.991" id="text3833" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:5.988px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="170.573" id="text3835" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="170.573" id="text3835" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.837" y="170.573" id="text3837" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.072" y="170.573" id="text3839" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.06" y="170.573" id="text3841" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="170.573" id="text3843" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="170.573" id="text3843" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.293" y="170.573" id="text3845" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.527" y="170.573" id="text3847" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.566" y="170.573" id="text3849" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -305,11 +283,11 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.948" y="170.573" id="text3865" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="604.0" x="314.594" y="183.276" id="text3867" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">E</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="319.709" y="183.276" id="text3869" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.138" y="183.276" id="text3871" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.138" y="183.276" id="text3871" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.846" y="183.276" id="text3873" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.08" y="183.276" id="text3875" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.068" y="183.276" id="text3877" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.652" y="183.276" id="text3879" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.652" y="183.276" id="text3879" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.301" y="183.276" id="text3881" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.536" y="183.276" id="text3883" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.575" y="183.276" id="text3885" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -369,57 +347,57 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="885.0" x="314.589" y="246.769" id="text3993" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">M</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="552.0" x="322.083" y="246.769" id="text3995" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="326.605" y="246.769" id="text3997" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.132" y="246.769" id="text3999" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.132" y="246.769" id="text3999" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.841" y="246.769" id="text4001" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.075" y="246.769" id="text4003" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.063" y="246.769" id="text4005" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.647" y="246.769" id="text4007" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.647" y="246.769" id="text4007" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.296" y="246.769" id="text4009" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.53" y="246.769" id="text4011" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.57" y="246.769" id="text4013" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.295" y="246.769" id="text4015" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.295" y="246.769" id="text4015" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.944" y="246.769" id="text4017" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.178" y="246.769" id="text4019" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.217" y="246.769" id="text4021" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.877" y="246.769" id="text4023" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.877" y="246.769" id="text4023" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.585" y="246.769" id="text4025" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.819" y="246.769" id="text4027" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.859" y="246.769" id="text4029" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="314.597" y="259.471" id="text4031" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">D</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="552.0" x="320.678" y="259.471" id="text4033" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">F</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="325.2" y="259.471" id="text4035" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.141" y="259.471" id="text4037" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.141" y="259.471" id="text4037" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.849" y="259.471" id="text4039" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.083" y="259.471" id="text4041" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.072" y="259.471" id="text4043" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.656" y="259.471" id="text4045" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.656" y="259.471" id="text4045" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.305" y="259.471" id="text4047" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.539" y="259.471" id="text4049" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.578" y="259.471" id="text4051" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.303" y="259.471" id="text4053" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.303" y="259.471" id="text4053" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.952" y="259.471" id="text4055" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.186" y="259.471" id="text4057" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.226" y="259.471" id="text4059" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.885" y="259.471" id="text4061" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.885" y="259.471" id="text4061" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.594" y="259.471" id="text4063" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.828" y="259.471" id="text4065" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.867" y="259.471" id="text4067" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="314.606" y="272.173" id="text4069" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">N</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="320.686" y="272.173" id="text4071" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="437.0" x="326.622" y="272.173" id="text4073" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">c</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.149" y="272.173" id="text4075" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.149" y="272.173" id="text4075" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.858" y="272.173" id="text4077" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.092" y="272.173" id="text4079" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.08" y="272.173" id="text4081" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.664" y="272.173" id="text4083" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.664" y="272.173" id="text4083" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.313" y="272.173" id="text4085" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.547" y="272.173" id="text4087" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.587" y="272.173" id="text4089" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.312" y="272.173" id="text4091" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.312" y="272.173" id="text4091" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.961" y="272.173" id="text4093" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.195" y="272.173" id="text4095" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.234" y="272.173" id="text4097" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.894" y="272.173" id="text4099" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.894" y="272.173" id="text4099" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.602" y="272.173" id="text4101" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.836" y="272.173" id="text4103" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.876" y="272.173" id="text4105" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -427,19 +405,19 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="552.0" x="320.254" y="284.875" id="text4109" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="322.0" x="324.759" y="284.875" id="text4111" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="885.0" x="327.367" y="284.875" id="text4113" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">M</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.158" y="284.875" id="text4115" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.158" y="284.875" id="text4115" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.866" y="284.875" id="text4117" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.1" y="284.875" id="text4119" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.089" y="284.875" id="text4121" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.673" y="284.875" id="text4123" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.673" y="284.875" id="text4123" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.322" y="284.875" id="text4125" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.556" y="284.875" id="text4127" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.595" y="284.875" id="text4129" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.32" y="284.875" id="text4131" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.32" y="284.875" id="text4131" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.969" y="284.875" id="text4133" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">6</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.203" y="284.875" id="text4135" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.243" y="284.875" id="text4137" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.902" y="284.875" id="text4139" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.902" y="284.875" id="text4139" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.611" y="284.875" id="text4141" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.845" y="284.875" id="text4143" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.884" y="284.875" id="text4145" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -447,19 +425,19 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="552.0" x="320.263" y="297.578" id="text4149" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="322.0" x="324.768" y="297.578" id="text4151" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">-</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="604.0" x="327.376" y="297.578" id="text4153" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">L</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.166" y="297.578" id="text4155" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.166" y="297.578" id="text4155" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.875" y="297.578" id="text4157" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.109" y="297.578" id="text4159" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">6</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.097" y="297.578" id="text4161" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.681" y="297.578" id="text4163" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.681" y="297.578" id="text4163" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.33" y="297.578" id="text4165" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.564" y="297.578" id="text4167" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.604" y="297.578" id="text4169" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.329" y="297.578" id="text4171" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.329" y="297.578" id="text4171" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.978" y="297.578" id="text4173" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.212" y="297.578" id="text4175" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.251" y="297.578" id="text4177" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.911" y="297.578" id="text4179" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.911" y="297.578" id="text4179" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.619" y="297.578" id="text4181" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.853" y="297.578" id="text4183" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">9</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.893" y="297.578" id="text4185" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -471,19 +449,19 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="335.04" y="310.28" id="text4197" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="340.679" y="310.28" id="text4199" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="346.564" y="311.682" id="text4201" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:5.988px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="310.265" id="text4203" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="310.265" id="text4203" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.837" y="310.265" id="text4205" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.072" y="310.265" id="text4207" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.06" y="310.265" id="text4209" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="310.265" id="text4211" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="310.265" id="text4211" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.293" y="310.265" id="text4213" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.527" y="310.265" id="text4215" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.566" y="310.265" id="text4217" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.291" y="310.265" id="text4219" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.291" y="310.265" id="text4219" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.94" y="310.265" id="text4221" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.174" y="310.265" id="text4223" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.214" y="310.265" id="text4225" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.874" y="310.265" id="text4227" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.874" y="310.265" id="text4227" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.582" y="310.265" id="text4229" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.816" y="310.265" id="text4231" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.855" y="310.265" id="text4233" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -495,37 +473,37 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="335.002" y="322.967" id="text4245" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="718.0" x="340.642" y="322.967" id="text4247" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="346.564" y="324.381" id="text4249" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:5.988px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">3</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="322.964" id="text4251" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.129" y="322.964" id="text4251" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.837" y="322.964" id="text4253" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.072" y="322.964" id="text4255" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.06" y="322.964" id="text4257" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="322.964" id="text4259" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.644" y="322.964" id="text4259" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.293" y="322.964" id="text4261" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.527" y="322.964" id="text4263" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.566" y="322.964" id="text4265" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.291" y="322.964" id="text4267" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.291" y="322.964" id="text4267" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.94" y="322.964" id="text4269" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.174" y="322.964" id="text4271" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.214" y="322.964" id="text4273" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.874" y="322.964" id="text4275" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.874" y="322.964" id="text4275" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.582" y="322.964" id="text4277" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.816" y="322.964" id="text4279" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.855" y="322.964" id="text4281" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="604.0" x="314.594" y="335.666" id="text4283" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">E</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="666.0" x="319.709" y="335.666" id="text4285" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="358.138" y="335.666" id="text4287" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="358.138" y="335.666" id="text4287" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="362.846" y="335.666" id="text4289" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="367.08" y="335.666" id="text4291" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="371.069" y="335.666" id="text4293" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="394.652" y="335.666" id="text4295" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="394.652" y="335.666" id="text4295" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="399.301" y="335.666" id="text4297" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="403.536" y="335.666" id="text4299" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="407.575" y="335.666" id="text4301" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="435.3" y="335.666" id="text4303" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="435.3" y="335.666" id="text4303" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="439.949" y="335.666" id="text4305" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="444.183" y="335.666" id="text4307" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">1</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="448.222" y="335.666" id="text4309" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
- <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:width="0.0" svgx:charCode="8722" svgx:hexCode="2212" x="494.882" y="335.666" id="text4311" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
+ <text svgx:fontName="NJDIPA+LmfcmfAdvTT3713a231+22" svgx:charCode="8722" svgx:hexCode="2212" x="494.882" y="335.666" id="text4311" svgx:width="750.0" style="clip-path:url(#clipPath1);fill:#131313;font-family:Helvetica;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="499.59" y="335.666" id="text4313" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="503.824" y="335.666" id="text4315" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">8</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="507.864" y="335.666" id="text4317" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">*</text>
@@ -799,17 +777,302 @@
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="500.0" x="420.201" y="398.652" id="text4853" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">p</text>
  <text svgx:fontName="NJCHAF+CrkwxyAdvTT3713a231" svgx:width="322.0" x="424.433" y="398.652" id="text4855" style="clip-path:url(#clipPath1);fill:#131313;font-family:TimesNewRoman;font-size:8.468px;font-weight:normal;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">)</text>
  <g class="sections" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
-  <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:yellow;opacity:0.2;" class="table.title">
+  <rect x="306.142" y="54.501999999999995" width="238.04918000000004" height="18.393" style="fill:yellow;opacity:0.2;" class="table.title">
    <title>table.title</title>
   </rect>
-  <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:red;opacity:0.2;" class="table.header">
+  <rect x="306.142" y="83.303" width="238.09969599999994" height="28.647000000000006" style="fill:red;opacity:0.2;" class="table.header">
    <title>table.header</title>
   </rect>
-  <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:cyan;opacity:0.2;" class="table.body">
+  <rect x="306.138" y="123.95" width="206.05300000000005" height="211.716" style="fill:cyan;opacity:0.2;" class="table.body">
    <title>table.body</title>
   </rect>
-  <rect x="0.0" y="0.0" width="200.0" height="30.0" style="fill:blue;opacity:0.2;" class="table.footer">
+  <rect x="306.136" y="347.496" width="238.13869599999992" height="51.156000000000006" style="fill:blue;opacity:0.2;" class="table.footer">
    <title>table.footer</title>
+  </rect>
+ </g>
+ <g class="title.title" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="306.142" y="54.501999999999995" width="238.04918000000004" height="18.393" style="fill:yellow;opacity:0.2;">
+   <title>TITLE: {[TimesNewRoman x 3]}{[8.468 x 3]}{[normal x 2, bold]}{[null x 3]} //Table 1 Mean percent changes from vehicle in serotonergic markers after chronic (14 days) vilazodone, citalopram, and paroxetine treatment </title>
+  </rect>
+ </g>
+ <g class="header.columnBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="306.0" y="83.303" width="41.0" height="28.647000000000006" style="fill:green;opacity:0.2;">
+   <title>HEADERCOLUMN: 0/Brain region // </title>
+  </rect>
+  <rect x="358.0" y="99.027" width="28.0" height="12.923000000000002" style="fill:green;opacity:0.2;">
+   <title>HEADERCOLUMN: 1/3 mg/kg // </title>
+  </rect>
+  <rect x="394.0" y="99.027" width="32.0" height="12.923000000000002" style="fill:green;opacity:0.2;">
+   <title>HEADERCOLUMN: 2/10 mg/kg // </title>
+  </rect>
+  <rect x="435.0" y="83.303" width="51.0" height="28.647000000000006" style="fill:green;opacity:0.2;">
+   <title>HEADERCOLUMN: 3/Citalopram (%) // 10 mg/kg // </title>
+  </rect>
+  <rect x="494.0" y="83.303" width="50.0" height="28.647000000000006" style="fill:green;opacity:0.2;">
+   <title>HEADERCOLUMN: 4/Paroxetine (%) // 10 mg/kg // </title>
+  </rect>
+ </g>
+ <g class="header.boxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="357.0" y="83.303" width="71.0" height="15.724000000000004" style="fill:green;opacity:0.2;">
+   <title>HEADERBOX: 0/Vilazodone (%)</title>
+  </rect>
+ </g>
+ <g class="body.subtableBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="314.631" y="136.70700000000002" width="197.56000000000006" height="50.803" style="fill:yellow;opacity:0.2;"/>
+  <rect x="314.631" y="200.203" width="197.56000000000006" height="25.405" style="fill:red;opacity:0.2;"/>
+  <rect x="314.631" y="238.30100000000002" width="197.56000000000006" height="97.36499999999998" style="fill:yellow;opacity:0.2;"/>
+ </g>
+ <g class="body.columnBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="306.0" y="123.95" width="43.0" height="211.716" style="fill:red;opacity:0.2;">
+   <title>BODYCOLUMN: 0/5-HT_{1A} // MPC // HIPP-CA_{1} // // HIPP-CA_{3} // // EC // 5-HT_{2A} // MPC // DFC // 5-HT_{T} // MPC // DFC // NAc // CP-M // CP-L // HIPP-CA_{1} // // HIPP-CA_{3} // // EC // </title>
+  </rect>
+  <rect x="358.0" y="123.95" width="17.0" height="211.716" style="fill:red;opacity:0.2;">
+   <title>BODYCOLUMN: 1/ // −31* // −49* // // −49* // // −42* // // +22* // NS // // −28* // −28* // −48* // −37* // −36* // −41* // // −51* // // −45* // </title>
+  </rect>
+  <rect x="394.0" y="123.95" width="17.0" height="211.716" style="fill:red;opacity:0.2;">
+   <title>BODYCOLUMN: 2/ // −32* // −49* // // −42* // // −42* // // +23* // +21* // // −49* // −42* // −50* // −41* // −37* // −45* // // −55* // // −58* // </title>
+  </rect>
+  <rect x="435.0" y="123.95" width="17.0" height="211.716" style="fill:red;opacity:0.2;">
+   <title>BODYCOLUMN: 3/ // NS // +21* // // +33* // // +39* // // NS // +21* // // −82* // −82* // −81* // −69* // −72* // −54* // // −71* // // −71* // </title>
+  </rect>
+  <rect x="494.0" y="123.95" width="18.0" height="211.716" style="fill:red;opacity:0.2;">
+   <title>BODYCOLUMN: 4/ // NS // +20* // // +34* // // +24* // // +19* // +19* // // −91* // −91* // −90* // −78* // −79* // −72* // // −87* // // −88* // </title>
+  </rect>
+ </g>
+ <g class="body.cellBoxes" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <g class="col.0">
+   <rect x="306.142" y="123.95" width="25.161383999999998" height="9.88600000000001" style="fill:red;opacity:0.2;" class="cell.0.0">
+    <title>0.0/5-HT_{1A}</title>
+   </rect>
+   <rect x="314.589" y="136.70700000000002" width="17.655687999999998" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.1">
+    <title>0.1/MPC</title>
+   </rect>
+   <rect x="314.597" y="149.40900000000002" width="34.96100000000007" height="9.825999999999993" style="fill:red;opacity:0.2;" class="cell.0.2">
+    <title>0.2/HIPP-CA_{1}</title>
+   </rect>
+   <rect x="314.594" y="162.108" width="34.964000000000055" height="9.88300000000001" style="fill:red;opacity:0.2;" class="cell.0.4">
+    <title>0.4/HIPP-CA_{3}</title>
+   </rect>
+   <rect x="314.594" y="174.80800000000002" width="10.754687999999987" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.6">
+    <title>0.6/EC</title>
+   </rect>
+   <rect x="306.151" y="187.51000000000002" width="25.152383999999984" height="9.87899999999999" style="fill:red;opacity:0.2;" class="cell.0.7">
+    <title>0.7/5-HT_{2A}</title>
+   </rect>
+   <rect x="314.589" y="200.203" width="17.655687999999998" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.8">
+    <title>0.8/MPC</title>
+   </rect>
+   <rect x="314.589" y="212.905" width="16.241687999999954" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.9">
+    <title>0.9/DFC</title>
+   </rect>
+   <rect x="306.138" y="225.608" width="21.421752000000026" height="9.87899999999999" style="fill:red;opacity:0.2;" class="cell.0.10">
+    <title>0.10/5-HT_{T}</title>
+   </rect>
+   <rect x="314.589" y="238.30100000000002" width="17.655687999999998" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.11">
+    <title>0.11/MPC</title>
+   </rect>
+   <rect x="314.597" y="251.00300000000001" width="16.242687999999987" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.0.12">
+    <title>0.12/DFC</title>
+   </rect>
+   <rect x="314.606" y="263.705" width="15.716516000000013" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.0.13">
+    <title>0.13/NAc</title>
+   </rect>
+   <rect x="314.614" y="276.407" width="20.247180000000014" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.0.14">
+    <title>0.14/CP-M</title>
+   </rect>
+   <rect x="314.623" y="289.10999999999996" width="17.86767199999997" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.0.15">
+    <title>0.15/CP-L</title>
+   </rect>
+   <rect x="314.631" y="301.81199999999995" width="34.92700000000008" height="9.870000000000061" style="fill:red;opacity:0.2;" class="cell.0.16">
+    <title>0.16/HIPP-CA_{1}</title>
+   </rect>
+   <rect x="314.594" y="314.49899999999997" width="34.964000000000055" height="9.882000000000005" style="fill:red;opacity:0.2;" class="cell.0.18">
+    <title>0.18/HIPP-CA_{3}</title>
+   </rect>
+   <rect x="314.594" y="327.198" width="10.754687999999987" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.0.20">
+    <title>0.20/EC</title>
+   </rect>
+  </g>
+  <g class="col.1">
+   <rect x="358.132" y="136.70700000000002" width="17.164999999999964" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.1">
+    <title>1.1/−31*</title>
+   </rect>
+   <rect x="358.129" y="149.406" width="17.164999999999964" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.2">
+    <title>1.2/−49*</title>
+   </rect>
+   <rect x="358.129" y="162.10500000000002" width="17.164999999999964" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.4">
+    <title>1.4/−49*</title>
+   </rect>
+   <rect x="358.138" y="174.80800000000002" width="17.163999999999987" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.6">
+    <title>1.6/−42*</title>
+   </rect>
+   <rect x="358.124" y="200.203" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.8">
+    <title>1.8/+22*</title>
+   </rect>
+   <rect x="358.132" y="212.905" width="10.755336" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.9">
+    <title>1.9/NS</title>
+   </rect>
+   <rect x="358.132" y="238.30100000000002" width="17.164999999999964" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.11">
+    <title>1.11/−28*</title>
+   </rect>
+   <rect x="358.141" y="251.00300000000001" width="17.164999999999964" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.1.12">
+    <title>1.12/−28*</title>
+   </rect>
+   <rect x="358.149" y="263.705" width="17.164999999999964" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.13">
+    <title>1.13/−48*</title>
+   </rect>
+   <rect x="358.158" y="276.407" width="17.164999999999964" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.14">
+    <title>1.14/−37*</title>
+   </rect>
+   <rect x="358.166" y="289.10999999999996" width="17.164999999999964" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.15">
+    <title>1.15/−36*</title>
+   </rect>
+   <rect x="358.129" y="301.79699999999997" width="17.164999999999964" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.16">
+    <title>1.16/−41*</title>
+   </rect>
+   <rect x="358.129" y="314.496" width="17.164999999999964" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.18">
+    <title>1.18/−51*</title>
+   </rect>
+   <rect x="358.138" y="327.198" width="17.16500000000002" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.1.20">
+    <title>1.20/−45*</title>
+   </rect>
+  </g>
+  <g class="col.2">
+   <rect x="394.647" y="136.70700000000002" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.1">
+    <title>2.1/−32*</title>
+   </rect>
+   <rect x="394.644" y="149.406" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.2">
+    <title>2.2/−49*</title>
+   </rect>
+   <rect x="394.644" y="162.10500000000002" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.4">
+    <title>2.4/−42*</title>
+   </rect>
+   <rect x="394.652" y="174.80800000000002" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.6">
+    <title>2.6/−42*</title>
+   </rect>
+   <rect x="394.63" y="200.203" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.8">
+    <title>2.8/+23*</title>
+   </rect>
+   <rect x="394.639" y="212.905" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.9">
+    <title>2.9/+21*</title>
+   </rect>
+   <rect x="394.647" y="238.30100000000002" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.11">
+    <title>2.11/−49*</title>
+   </rect>
+   <rect x="394.656" y="251.00300000000001" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.2.12">
+    <title>2.12/−42*</title>
+   </rect>
+   <rect x="394.664" y="263.705" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.13">
+    <title>2.13/−50*</title>
+   </rect>
+   <rect x="394.673" y="276.407" width="17.156000000000006" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.14">
+    <title>2.14/−41*</title>
+   </rect>
+   <rect x="394.681" y="289.10999999999996" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.15">
+    <title>2.15/−37*</title>
+   </rect>
+   <rect x="394.644" y="301.79699999999997" width="17.15599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.16">
+    <title>2.16/−45*</title>
+   </rect>
+   <rect x="394.644" y="314.496" width="17.15599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.18">
+    <title>2.18/−55*</title>
+   </rect>
+   <rect x="394.652" y="327.198" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.2.20">
+    <title>2.20/−58*</title>
+   </rect>
+  </g>
+  <g class="col.3">
+   <rect x="435.295" y="136.70700000000002" width="10.754335999999967" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.1">
+    <title>3.1/NS</title>
+   </rect>
+   <rect x="435.291" y="149.406" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.2">
+    <title>3.2/+21*</title>
+   </rect>
+   <rect x="435.291" y="162.10500000000002" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.4">
+    <title>3.4/+33*</title>
+   </rect>
+   <rect x="435.3" y="174.80800000000002" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.6">
+    <title>3.6/+39*</title>
+   </rect>
+   <rect x="435.278" y="200.203" width="10.754335999999967" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.8">
+    <title>3.8/NS</title>
+   </rect>
+   <rect x="435.286" y="212.905" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.9">
+    <title>3.9/+21*</title>
+   </rect>
+   <rect x="435.295" y="238.30100000000002" width="17.15599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.11">
+    <title>3.11/−82*</title>
+   </rect>
+   <rect x="435.303" y="251.00300000000001" width="17.156999999999982" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.3.12">
+    <title>3.12/−82*</title>
+   </rect>
+   <rect x="435.312" y="263.705" width="17.15599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.13">
+    <title>3.13/−81*</title>
+   </rect>
+   <rect x="435.32" y="276.407" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.14">
+    <title>3.14/−69*</title>
+   </rect>
+   <rect x="435.329" y="289.10999999999996" width="17.15599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.15">
+    <title>3.15/−72*</title>
+   </rect>
+   <rect x="435.291" y="301.79699999999997" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.16">
+    <title>3.16/−54*</title>
+   </rect>
+   <rect x="435.291" y="314.496" width="17.156999999999982" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.18">
+    <title>3.18/−71*</title>
+   </rect>
+   <rect x="435.3" y="327.198" width="17.15599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.3.20">
+    <title>3.20/−71*</title>
+   </rect>
+  </g>
+  <g class="col.4">
+   <rect x="494.877" y="136.70700000000002" width="10.754335999999967" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.1">
+    <title>4.1/NS</title>
+   </rect>
+   <rect x="494.874" y="149.406" width="17.307999999999993" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.2">
+    <title>4.2/+20*</title>
+   </rect>
+   <rect x="494.874" y="162.10500000000002" width="17.307999999999993" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.4">
+    <title>4.4/+34*</title>
+   </rect>
+   <rect x="494.882" y="174.80800000000002" width="17.309000000000026" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.6">
+    <title>4.6/+24*</title>
+   </rect>
+   <rect x="494.868" y="200.203" width="17.309000000000026" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.8">
+    <title>4.8/+19*</title>
+   </rect>
+   <rect x="494.868" y="212.905" width="17.309000000000026" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.9">
+    <title>4.9/+19*</title>
+   </rect>
+   <rect x="494.877" y="238.30100000000002" width="17.21599999999995" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.11">
+    <title>4.11/−91*</title>
+   </rect>
+   <rect x="494.885" y="251.00300000000001" width="17.216000000000008" height="8.46799999999999" style="fill:red;opacity:0.2;" class="cell.4.12">
+    <title>4.12/−91*</title>
+   </rect>
+   <rect x="494.894" y="263.705" width="17.216000000000008" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.13">
+    <title>4.13/−90*</title>
+   </rect>
+   <rect x="494.902" y="276.407" width="17.216000000000065" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.14">
+    <title>4.14/−78*</title>
+   </rect>
+   <rect x="494.911" y="289.10999999999996" width="17.21599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.15">
+    <title>4.15/−79*</title>
+   </rect>
+   <rect x="494.874" y="301.79699999999997" width="17.215000000000032" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.16">
+    <title>4.16/−72*</title>
+   </rect>
+   <rect x="494.874" y="314.496" width="17.215000000000032" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.18">
+    <title>4.18/−87*</title>
+   </rect>
+   <rect x="494.882" y="327.198" width="17.21599999999995" height="8.468000000000018" style="fill:red;opacity:0.2;" class="cell.4.20">
+    <title>4.20/−88*</title>
+   </rect>
+  </g>
+ </g>
+ <g class="footer.title" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)">
+  <rect x="306.136" y="347.496" width="238.13869599999992" height="51.156000000000006" style="fill:blue;opacity:0.2;">
+   <title>footer: footer.title: {[TimesNewRoman x 8]}{[8.468 x 8]}{[normal x 8]}{[null x 6, italic, NORMAL]} //CP-M caudate putamen-medial, CP-L caudate putamen-lateral, DFC dor- sal frontal cortex, EC entorhinal cortex, HIPP-CA_{1} hippocampus CA_{1} region, HIPP-CA_{3} hippocampus CA_{3} region, MPC medial prefrontal cor- tex, NAc nucleus accumbens, NS not significantly different from vehicle *P &lt; .05 versus vehicle (n = 8/group) </title>
   </rect>
  </g>
 </svg>
