@@ -20,6 +20,9 @@ public class Norma {
 	public static void main(String[] args) {
 		Norma norma = new Norma();
 		norma.run(args);
+                // Ensure command prompt is on a new line
+                // after any runtime outputs
+                System.out.println();
 	}
 
 	public void run(String[] args) {
