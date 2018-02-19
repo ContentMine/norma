@@ -18,11 +18,17 @@ public class Norma {
 	private DefaultArgProcessor argProcessor;
 
 	public static void main(String[] args) {
+            try {
 		Norma norma = new Norma();
 		norma.run(args);
-                // Ensure command prompt is on a new line
-                // after any runtime outputs
-                System.out.println();
+            } catch (Exception ex) {
+                LOG.trace(ex.getMessage());
+                LOG.trace(ex.getStackTrace());
+                System.err.println(ex.getMessage());
+            }
+            // Ensure command prompt is on a new line
+            // after any runtime outputs
+            System.out.println();
 	}
 
 	public void run(String[] args) {
