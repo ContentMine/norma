@@ -13,9 +13,10 @@ import org.xmlcml.cproject.util.CMineTestFixtures;
 import org.xmlcml.graphics.html.HtmlElement;
 import org.xmlcml.norma.Norma;
 import org.xmlcml.norma.NormaFixtures;
+import org.xmlcml.svg2xml.table.TableContentCreator;
 import org.xmlcml.xml.XMLUtil;
 
-@Ignore
+
 public class LargeTableTest {
 	private static final Logger LOG = Logger.getLogger(LargeTableTest.class);
 	static {
@@ -167,6 +168,17 @@ public class LargeTableTest {
 				+ " --htmlAggregate ^.*tables/table\\d+/tableRow.html";
 		new Norma().run(cmd);
 	}
+        	
+	@Test
+	public void testMenu() {
+		File targetDir = new File("target/pdftable1/");
+//		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
+
+		new CProject().run("--project "+targetDir
+				+ " --output tableViewList.html"
+				+ " --projectMenu .*/tables/tableView.html");
+	}
+	
 	
 	@Test
 	/** 
@@ -250,18 +262,7 @@ public class LargeTableTest {
 		new Norma().run(cmd);
 		
 	}
-	
-	@Test
-	public void testMenu() {
-//		File targetDir = new File("target/pdftable1/");
-		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
-		/**  */
-		new CProject().run("--project "+targetDir
-				+ " --output tableViewList.html"
-				+ " --projectMenu .*/tables/tableView.html");
 
-	}
-	
 	@Test
 	public void testOutputCSVMini() {
 		boolean clean = false;
@@ -307,4 +308,5 @@ public class LargeTableTest {
 				+ " --transform svgtable2csv");
 
 	}
+        
 }

@@ -180,9 +180,7 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
                 files.sort(new Comparator<File>() {
                     @Override
                     public int compare(File f1, File f2) {
-                        int n1 = extractNumber(f1.getParentFile().getName());
-                        int n2 = extractNumber(f2.getParentFile().getName());
-                        return n1 - n2;
+                        return Long.compare(extractNumber(f1.getParentFile().getName()),extractNumber(f2.getParentFile().getName()));
                     }
                 });
 		for (File file : files) {
@@ -308,15 +306,15 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 		return style;
 	}
 	
-        private int extractNumber(String tableParentFileName) {
+        private long extractNumber(String tableParentFileName) {
             Pattern regex = Pattern.compile("\\D*(\\d*)");
             Matcher matcher = regex.matcher(tableParentFileName);
-            int result = 0;
+            long result = 0;
 
             if (matcher.matches() && matcher.groupCount() == 1) {
                 String digitStr = matcher.group(1);
-                Integer digit = Integer.parseInt(digitStr);
-                result = (int)digit;
+                Long digits = Long.parseLong(digitStr);
+                result = (long)digits;
             }
             
             return result;
