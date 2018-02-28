@@ -5,6 +5,7 @@ import java.io.File;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.xmlcml.cproject.args.DefaultArgProcessor;
+import org.xmlcml.cproject.util.Utils;
 
 public class Norma {
 
@@ -51,7 +52,9 @@ public class Norma {
 	 * @param projectDir
 	 */
 	public static void convertRawPDFToProjectToSVG(File projectDir) {
-		new Norma().run("--project "+projectDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*\\/(.*)\\.pdf");
+                // Ensure fileFilter is cross-platform compatible
+                String fileFilterString = Utils.convertPathRegexToCurrentPlatform(".*/(.*)\\.pdf");
+		new Norma().run("--project "+projectDir+" --makeProject (\\1)/fulltext.pdf --fileFilter "+fileFilterString);
 		new Norma().run("--project " + projectDir + " --input fulltext.pdf "+ " --outputDir " + projectDir + " --transform pdf2svg ");
 	}
 	
