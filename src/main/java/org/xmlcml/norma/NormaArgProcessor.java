@@ -763,7 +763,7 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 		}
 		File svgPageFile = new File(svgDir, FULLTEXT_PAGE_PREFIX+pageNumber+".svg");
 		if (!svgPageFile.exists()) {
-			throw new RuntimeException("No SVG directory: "+svgPageFile);
+			throw new RuntimeException("No SVG page file: "+svgPageFile);
 		}
 		LOG.trace("svg "+svgPageFile);
 		return svgPageFile;
