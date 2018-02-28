@@ -173,7 +173,7 @@ public class LargeTableTest {
 	public void testMenu() {
 		File targetDir = new File("target/pdftable1/");
 //		File targetDir = new File("../../cm-ucl/corpus-oa-pmr-v02/");
-
+ 
 		new CProject().run("--project "+targetDir
 				+ " --output tableViewList.html"
 				+ " --projectMenu .*/tables/tableView.html");
