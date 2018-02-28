@@ -11,6 +11,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.xmlcml.cproject.util.CMineGlobber;
 import org.xmlcml.cproject.util.CMineTestFixtures;
+import org.xmlcml.cproject.util.Utils;
 import org.xmlcml.euclid.Real2;
 import org.xmlcml.euclid.Real2Range;
 import org.xmlcml.graphics.svg.SVGElement;
@@ -57,7 +58,14 @@ public class TableClippingDemoTest {
 		Assert.assertTrue(""+page1Svg+" is existing file", page1Svg.exists() && !page1Svg.isDirectory());
 		CMineGlobber globber = new CMineGlobber();
 		globber.setLocation(svgDir.toString());
-		globber.setRegex(".*/fulltext\\-page.*\\.svg");
+                // Handle platform-specific paths
+                String sep = File.separator;
+                String globbingPatternString = ".*/fulltext\\-page.*\\.svg";
+                if (sep.equalsIgnoreCase("\\")) { 
+                    String replS = "\\" + sep + "\\" + sep;
+                    globbingPatternString = globbingPatternString.replaceAll("/", replS);
+                }
+		globber.setRegex(globbingPatternString);
 		List<File> fulltextFiles = globber.listFiles();
 		Assert.assertEquals(14, fulltextFiles.size());
 		// now clip
@@ -220,7 +228,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		
 		CMineTestFixtures.cleanAndCopyDir(bmjDir, targetDir);
 		/** ignore while testing */
-		cmd = "--project "+targetDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*\\/(.*)\\.pdf";
+		cmd = "--project "+targetDir+" --makeProject (\\1)/fulltext.pdf --fileFilter .*/(.*)\\.pdf";
 		new Norma().run(cmd);
 		cmd = "--project " + targetDir + " --input fulltext.pdf "+ " --outputDir " + targetDir + " --transform pdf2svg ";
 		new Norma().run(cmd);
@@ -229,7 +237,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
     page: 10, top: 15.0, left: 13.0, width: 187.0, height: 60.0
 		 */
 		File svgFile; SVGElement svgElement; Real2Range box;
-		String outpath = "svg/crop10.1.svg";
+		String outpath = Utils.convertPathRegexToCurrentPlatform("svg/crop10.1.svg");
 		cmd = "" +
 			"--project "+targetDir +
 			" --cropbox x0 13.0 y0 15.0 width 187.0 height 60.0 ydown units mm "+
@@ -237,7 +245,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 			" --mediabox x0 0 y0 0 width 600 height 800 ydown units px " +
 			" --output " + outpath;
 		/** skip while testing */
-		new Norma().run(cmd);
+		new Norma().run(cmd);         
 		svgFile = new File("target/demos/bmj/10.1136.bmjopen-2016-12335/svg/crop10.1.svg");
 		Assert.assertTrue(svgFile.toString()+" exists", svgFile.exists());
 		svgElement = SVGElement.readAndCreateSVG(svgFile);
@@ -246,7 +254,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		Assert.assertEquals("box ", "((42.0,553.0),(48.0,195.0))" , box.toString());
 
 		/** lower box */
-		outpath = "svg/crop10.2.svg";
+		outpath = new File("svg/crop10.2.svg").toString();
 		cmd = "" +
 				"--project "+targetDir +
 				" --cropbox x0 44.0 y0 580.0 x1 551.0 y1 736.0 ydown units px "+
@@ -267,7 +275,8 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 	public void testGetRegionByXPath() throws IOException {
 		File svgDir = new File(NormaFixtures.TEST_DEMO_DIR, "bmj/svg");
 		CMineGlobber globber = new CMineGlobber();
-		globber.setRegex(".*/bmj/svg/" + FULLTEXT_PAGE + "\\d+\\.svg");
+                String globberRegex = Utils.convertPathRegexToCurrentPlatform(".*/bmj/svg/");
+		globber.setRegex(globberRegex + FULLTEXT_PAGE + "\\d+\\.svg");
 		globber.setLocation(svgDir.toString());
 		List<File> svgFiles = globber.listFiles();
 		Assert.assertEquals("svg",  15, svgFiles.size());
@@ -325,7 +334,7 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		CMineTestFixtures.cleanAndCopyDir(projectDir, targetDir);
 		Norma.convertRawPDFToProjectToSVG(targetDir);
 		File ctree = new File(targetDir, "Varga2001");
-		String outpath = "tables/table1b/table.svg";
+                String outpath = Utils.convertPathRegexToCurrentPlatform("tables/table1b/table.svg");
 		String cmd = "" +
 			"--ctree "+ctree +
 			" --cropbox x0 70.0 y0 62.0 x1 460 y1 252 "+
@@ -345,16 +354,19 @@ top: 117.3, left: 17.6, width: 85.6, height: 79.5
 		
 		ctreeDir = new File(targetDir, "Timmermans_etal_2016_B_Cell_Crohns");
 		cmd = "--ctree "+ctreeDir +
-			" --cropbox x0 32.0 y0 728.0 x1 578 y1 274 yup " + " --pageNumbers 3 "+" --output " + "tables/table1/table.svg";
+			" --cropbox x0 32.0 y0 728.0 x1 578 y1 274 yup " + " --pageNumbers 3 "+" --output " + 
+                        Utils.convertPathRegexToCurrentPlatform("tables/table1/table.svg");
 		new Norma().run(cmd);
 
 		ctreeDir = new File(targetDir, "Varga2001");
 		cmd = "--ctree "+ctreeDir +
-			" --cropbox x0 70.0 y0 62.0 x1 460 y1 252 "+" --pageNumbers 3 "+" --output " + "tables/table1/table.svg";
+			" --cropbox x0 70.0 y0 62.0 x1 460 y1 252 "+" --pageNumbers 3 "+" --output " + 
+                        Utils.convertPathRegexToCurrentPlatform("tables/table1/table.svg");
 		new Norma().run(cmd);
 
 		cmd = "--ctree "+ctreeDir +
-			" --cropbox x0 268 y0 481 x1 514 y1 255 yup "+" --pageNumbers 7 "+" --output " + "maths/maths1/maths.svg";
+			" --cropbox x0 268 y0 481 x1 514 y1 255 yup "+" --pageNumbers 7 "+" --output " + 
+                        Utils.convertPathRegexToCurrentPlatform("maths/maths1/maths.svg");
 		new Norma().run(cmd);
 	}
 
