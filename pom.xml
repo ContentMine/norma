@@ -27,7 +27,7 @@
     <groupId>org.contentmine</groupId>
     <artifactId>norma</artifactId>
     <!-- to sync with new cproject-norma-ami versions -->
-    <version>0.6.1-alpha</version>
+    <version>0.7.0-alpha</version>
     <packaging>jar</packaging>
     <name>norma</name>
     <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
