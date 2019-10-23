@@ -9,7 +9,7 @@
 	<xsl:variable name="publisher">Generic NLM</xsl:variable>
 	<xsl:variable name="prefix">10.0000</xsl:variable>
     
-    <xsl:variable name="doiroot">https://dx.doi.org/</xsl:variable>
+    <xsl:variable name="doiroot">https://doi.org/</xsl:variable>
     <xsl:variable name="nlmroot">http://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>    
 	<xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
