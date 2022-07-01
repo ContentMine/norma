@@ -11,7 +11,7 @@
 	    <cproject.version>0.4.0</cproject.version>
 	    <imageanalysis.version>1.1.0</imageanalysis.version>
 	    <!-- other -->
-	    <opennlp.version>1.6.0</opennlp.version>        
+	    <opennlp.version>1.8.2</opennlp.version>        
  			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
