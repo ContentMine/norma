@@ -223,7 +223,7 @@
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
-            <version>2.0.0</version>
+            <version>2.9.0</version>
         </dependency>
         <!--  to avoid Xerces Hell? 
         http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
